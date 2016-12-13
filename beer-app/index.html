@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="description" content="NY Times Beer Articles">
+		<meta name="keywords" content="NY Times Beer Articles">
+		<meta name="author" content="Jared Dillard">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Beer Related Articles from the New York Times</title>
+		<link href="css/normalize.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link href="css/main.css" rel="stylesheet" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Alegreya:400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/scrollToTop.css" />
+		<link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="js/jquery.scrollToTop.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
+		<script>
+			function loadArticles() {
+				//grab current page number
+				var page = $('#more-articles').data().counter;
+
+    			$.ajax({
+	        		url: 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=beer&page='+page+'&fq=document_type:("article")&api-key=662aa96949837651e321d84bdf755f93:5:70022190',
+		        	crossDomain: true,
+		        	dataType: 'json',
+			        success: function(json) {
+			            var response = json.response;
+
+			            //initialize article count based on current page
+			            var count = (page * 10) + 1;
+
+			            //cycle through each of the articles
+			            $.each(response.docs, function(i, item) {
+			            		//grab article headline
+								var headlineObj = item.headline;
+								if (headlineObj.main.length > 55) {
+									var headline = headlineObj.main.substring(0,55)+'...';
+								} else {
+									var headline = headlineObj.main;
+								}
+
+								//grab article category
+								if(item.news_desk === null) {
+									var category = "None";
+								} else {
+									var category = item.news_desk;
+								}
+
+								if(item.snippet != null) {
+									//append the html for the article to the grid
+									$('#content .row').append(
+										'<div class="article-wrapper col-xs-12 col-sm-4 col-md-3">' +
+											'<div class="article">' +
+												'<h3><a href="' + item.web_url + '" title="' + headlineObj.main + '">' + headline + '</a></h3>' +
+												'<p>' + item.snippet + '</p>' +
+												'<span class="pull-left">' + item.pub_date.substring(0,10) + '</span>' +
+												'<span class="pull-right">' + category + '</span>' +
+											'</div>' +
+										'</div><!--/article-wrapper-->'
+									);
+
+									//insert a clearfix for each screen size to keep grid clean due to variable height articles
+									if(count % 4 === 0) {
+										$('#content .row').append('<div class="visible-desktop" style="clear:both"></div>');
+									}
+									if(count % 3 === 0) {
+										$('#content .row').append('<div class="visible-phone" style="clear:both"></div>');
+									}
+	
+									//increment article counter
+									count++;
+								}
+		    			});	
+				    },
+			        error: function(jqXHR, textStatus, errorThrown) {
+						console.log(textStatus, errorThrown);
+					}
+		    	});
+
+				//increment page counter
+				$('#more-articles').data().counter++;
+			}	
+
+
+
+			//starts on page load
+			$(function() {
+				$.support.cors = true;
+
+				//initialize page counter
+				$('#more-articles').data('counter', 0);
+
+				//make API call to load articles
+				loadArticles();
+
+				//bind click event to dynamically created article elements
+				$('#content div.row').on('click', 'div.article-wrapper', function(event) {
+					//on click redirect browser to the href contained in the current article-wrapper div
+			    	window.location=$(this).find("a").attr("href"); 
+				});
+
+				//initialize scroll to top plugin
+				$("#toTop").scrollToTop();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="header">
+		    <h2 id="header-logo">
+		    	<img alt="Beer App Logo" src="img/logo.png"><br>
+		    	<small>Related Articles from<br class="responsive">the New York Times</small>
+		    </h2>
+		    <img alt="Portland Bar Menu" class="hero-image" src="img/Tap.jpg">
+		    <div class="chevron"></div>
+	  	</div>
+
+		<div id="content" class="container-fluid">
+			<div class="row">
+
+			</div>
+		</div> 
+
+		<p class="text-center"><button type="button" id="more-articles" class="btn btn-default" onclick="loadArticles()">Load More Articles</button></p>
+
+		<div id="brief-note">
+			<h1>A Brief Note</h1>
+			<p>Tools used:</p>
+			<ul>
+				<li>Bootstrap for the responsive front-end framework</li>
+				<li>jQuery for the javascript framework</li>
+				<li>jQuery scrollToTop plugin</li>
+				<li>jQuery xdomainrequest plugin for IE x-domain support</li>
+				<li>NY Times Article Search API V2 to grab the articles</li>
+				<li>icensed free images and typefaces to aid in design</li>
+				<li>GIMP as the image processor</li>
+				<li>Sublime Text 2 Editor</li>
+				<li>Browserstack to test cross-browser compatibility</li>
+			</ul>
+			<p>For the design I decided to go with a clean modern feel that contained plenty of white space and used an appeasing color palette.</p>
+			<p>I added a "back to the top" link for ease of use and also the option for the user to load more articles for endless reading. There is a hover change on articles to provide visual feedback and useful information included like publication date and category to help the user visually filter articles they might be interested in.</p>
+			<p>The responsive grid adjusts the number of columns based on the size of the screen, while keeping the width of articles at a fixed width regardless of screen size. The rows of articles are cleared so that they are at a uniform height across the top edge.</p>
+		</div>
+
+		<a href="#top" id="toTop"></a>
+
+		<div id="footer">
+			<hr />
+			<div>
+				Favicon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
+				<br />
+				Header image provided by <a href="http://jaymantri.com/" title="Jay Mantri">Jay Mantri</a> licensed under <a href="http://creativecommons.org/publicdomain/zero/1.0/" title="Creative Commons BY 1.0">CC0 BY 1.0</a>
+				<br />
+				Logo typeface designed by <a href="http://www.theviciouscircus.com/" title="Greg Eckler">Greg Eckler</a> and provided through <a href="http://www.losttype.com/" title="Lost Type Co-Op">Lost Type Co-Op</a>
+			</div>
+		</div>
+	</body>
+</html>

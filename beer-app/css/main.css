@@ -1,0 +1,152 @@
+body {
+	font-family: Alegreya, serif;
+	background-color:#fff;
+	color: #000;
+	font-size: 16px;
+}
+
+img {
+	margin: 0;
+	max-width: 100%;
+}
+
+a {
+	color: #D9853B;
+}
+
+a:hover {
+	color: #d66360;
+	text-decoration: none;
+}
+
+#header {
+	min-height: 140px;
+	background-color: #1d1d1a;
+	position: relative;
+	line-height: 1;
+	margin-bottom: 30px;
+}
+
+#header .hero-image {
+	min-height: 280px;
+	width: auto;
+	display: block;
+}
+
+#header-logo {
+	display: block;
+	position: absolute;
+	text-align: center;
+	width: 80%;
+	margin: 5% 10%;
+	line-height: 28px;
+	color: white;
+	font-size: 38pt;
+}
+
+#header-logo small {
+	color: #FFF !important;
+}
+
+#header .chevron {
+	display: block;
+	background: url(../img/chevron.png) no-repeat center bottom;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	bottom: -1px;
+	z-index: 100;
+	line-height: 1;
+}
+
+#content {
+	padding: 0 20px;
+}
+
+.article-wrapper:hover {
+	background-color: #efefef;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.article {
+	width:230px;
+	margin: 15px auto;
+	padding-bottom: 20px;
+}
+
+.article h3 {
+	padding-bottom: 5px;
+	border-bottom: 2px solid #666;
+	margin-bottom: 5px;
+
+}
+
+.article span {
+	color: #999;
+}
+
+.article p {
+	padding-bottom: 5px;
+	margin: 5px 0;
+	border-bottom: 2px dotted #999;
+}
+
+#more-articles {
+	margin: 25px;
+}
+
+#brief-note {
+	width: 40%;
+	text-align: left;
+	margin: 0 auto;
+	color: #666;
+	font-size: 18px;
+}
+
+#brief-note h1 {
+	color: #666;
+	font-size: 55px;
+	text-align: center;
+}
+
+#footer {
+	text-align: center;
+	padding: 20px;
+	color: #999;
+	font-size: 14px;
+}
+
+#footer hr {
+	width:75%;
+	border-top: 1px solid #e2e2e2;
+}
+
+.visible-phone {
+	display: none;
+} 
+
+@media (max-width: 980px) { 
+	.visible-phone {
+		display:block;
+	}
+	.visible-desktop {
+		 display: none;
+	}
+}
+
+@media (max-width: 768px) { 
+	#header .hero-image {
+		min-height: 280px;
+		max-width: 150%;
+		margin: 0 -25%;
+		width: auto;
+	}
+
+	#brief-note {
+		width: 90%;
+	}
+}
