@@ -1,52 +1,29 @@
 ---
 # Let's add a comment to make this file sass-y.
+# Change this file for any custom CSS.
 ---
 
-/* Font size of 2.0 is too big, I'll reduce it */
-body {
-	font-size: 1.9rem;
+/* We need to add display:inline in order to align the '>>' of the 'read more' link */
+.post-excerpt p {
+	display:inline;
 }
 
-/* Adding some text shadow*/
-.site-head {
-	text-shadow: 2px 2px #234;
-
-	a {
-		color: #eee;
-	}
+header.no-cover nav.main-nav.clearfix {
+    margin-bottom: 0;
 }
 
-/* The font is too large in the post view. Revert to small size*/
-.post-header .blog-title {
-	font-size: inherit;
-}
-
-/* Reduce font size and add line-height*/
-pre {
-	font-size: 0.75em;  
-	line-height: 1.4em;
-}
-
-/* Author styling */
-.author {
-	margin-bottom: 1em;
-
-	header {
-		float: left;
-		width: 80px;
-	}
-
-	article {
-		margin-left: 80px;
-		min-height: 80px;
-		padding-left: 20px;
-	}
-}
-
-img.profile {
-	width: 80px;
-	height: auto;
-  	border-radius: 50px;
+header .chevron {
+    display: block;
+    background: url(/assets/images/chevron.png) no-repeat center bottom;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    bottom: 0px;
+    z-index: 100;
+    line-height: 1;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)

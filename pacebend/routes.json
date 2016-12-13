@@ -1,0 +1,143 @@
+var allRoutes = [{
+  "area": 0,
+  "routes": [
+    {
+      "name": "Marshall",
+      "desc": "Orange overhang with bolts south of the cove. large ledge and slab at the bottom. lots of plants at the top out.",
+      "min": 682,
+      "max": 696
+    }
+  ]
+},
+{
+  "area": 1,
+  "routes": [
+    {
+      "name": "Baldwin",
+      "desc": "Low water grey wall with small roof just north of the cove. bullet headwall.",
+      "min": 662,
+      "max": 672
+    }
+  ]
+},
+{
+  "area": 2,
+  "routes": [
+    {
+      "name": "A Little Chossy",
+      "desc": "Yellowish wall on the south side of the cove is a little chossy but climbable.",
+      "min": 675,
+      "max": 696
+    },
+    {
+      "name": "Bolted Climbs",
+      "desc": "North side of the cove has two or thee good climbs with bolts.",
+      "min": 675,
+      "max": 696
+    },
+    {
+      "name": "Warm-Up Boulder",
+      "desc": "A little further north there is a small boulder for warming up.",
+      "min": 675,
+      "max": 696
+    }
+  ]
+},
+{
+  "area": 3,
+  "routes": [
+    {
+      "name": "North Maugham",
+      "desc": "White wall north of the cove with a dark grey bullet head wall. there's a pile of rocks under the left side of the cave and one to the right of the wall.",
+      "min": 670,
+      "max": 685
+    }
+  ]
+},
+{
+  "area": 4,
+  "routes": [
+    {
+      "name": "Overhung Route",
+      "desc": "Overhung climb with a top out on the outer corner of the large boulder that is broke off. We climbed at 682.",
+      "min": 682,
+      "max": 1000 /* used when the max is unknown */
+    },
+    {
+      "name": "Long Traverse",
+      "desc": "Long traverse starting at the overhung outer corner of the large boulder that is broken off and follows the outside wall up river for about 30m. We climbed at 682.",
+      "min": 682,
+      "max": 1000 /* used when the max is unknown */
+    }
+  ]
+},
+{
+  "area": 5,
+  "routes": [
+    {
+      "name": "Thrasher",
+      "desc": "Bullet hard orange overhang inside the cove on the north side.",
+      "min": 685,
+      "max": 693
+    }
+  ]
+},
+{
+  "area": 6,
+  "routes": [
+    {
+      "name": "Gracy",
+      "desc": "Dark grey, orange, and brown godstone wall north of the cove half way to davis cove. large slab at the base of the cliff.",
+      "min": 674,
+      "max": 688
+    }
+  ]
+},
+{
+  "area": 7,
+  "routes": [
+    {
+      "name": "Maugham",
+      "desc": "Big jug covered grotto inside the cove on the south side with a large ledge under it.",
+      "min": 674,
+      "max": 686
+    }
+  ]
+},
+{
+  "area": 8,
+  "routes": [
+    {
+      "name": "Greyskull",
+      "desc": "White tufa covered walls on the lago vista side of the lake. top out into a lot of plantlife. weird ecosystem.",
+      "min": 666,
+      "max": 681
+    }
+  ]
+},
+{
+  "area": 9,
+  "routes": [
+    {
+      "name": "Giles",
+      "desc": "Large white virt dihedral leading to big multi-tiered roof.",
+      "min": 655,
+      "max": 672
+    }
+  ]
+},
+{
+  "area": 10,
+  "routes": [
+    {
+      "name": "Briarcliff",
+      "desc": "Giant bullet grey tufa and stalactite covered scoop at the back of the cove near the briarcliff marina.",
+      "min": 682,
+      "max": 700
+    }
+  ]
+},
+{
+  "area": 11,
+  "routes": []
+}];
