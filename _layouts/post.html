@@ -23,6 +23,10 @@ post_class: post-template
                 {% if page.categories.size > 0 %}
                     {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
                 {% endif %}
+                <br />
+                <a class="post-date" href="https://github.com/jdillard/jdillard.github.io/commits/master/{{ page.path }}" target="_blank">View Version History</a></span>
+                <br />
+                <a class="post-date" href="https://github.com/jdillard/jdillard.github.io/issues" target="_blank">Leave A Comment</a></span>
             </section>
         </header>
 
