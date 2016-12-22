@@ -3,7 +3,7 @@ description: Random Thoughts
 meta_description: "Jared Dillard, Web Developer from Austin, Texas"
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 logo: false
 paginate: 15
 baseurl: /
