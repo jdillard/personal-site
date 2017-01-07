@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  My Favorite Thought Leaders
-date:   2017-01-05 10:18:00
+date:   2017-01-05
 categories: 
   - thought leaders
 ---
@@ -26,7 +26,7 @@ Richard Wolf is a professor at ___ and is a great introduction into Karl Marx. H
 
 ## Chris Hedges
 
-This dude has seen some shit.
+This dude has seen some shit. As a war correspondent, he was paid to defy authority and often authority that was trying to kill him. He is an american journalist, activist, author, and Presbyterian minister.
 
 ## Dr. Gabor Maté
 
