@@ -31,7 +31,7 @@
     <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
-
+    {% if jekyll.environment == "production" %}
     <!-- Google Analytics Tracking code -->
     <script type="text/javascript">
 
@@ -45,6 +45,7 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
-    </script>   
+    </script>
+    {% endif %}
 </body>
 </html>
