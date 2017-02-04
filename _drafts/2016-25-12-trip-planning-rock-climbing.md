@@ -8,7 +8,7 @@ categories:
 cover: /assets/images/covers/coastal-kayaking.jpg
 ---
 
-I recently went on what I would consider my first kayaking fishing trip down at Rockport on the Texas coast.
+So you've been climbing in the gym or maybe at the local crag, but you've been wanting get out on some new rock.
 
 <!--
 - picking location
