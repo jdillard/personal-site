@@ -11,6 +11,8 @@ domain_name: 'http://jareddillard.com'
 google_analytics: 'UA-7883601-2 '
 gems: [jekyll-paginate]
 
+exclude: ["Gemfile.lock","Rakefile","Gemfile","README.md","node_modules","npm-debug.log","package.json"]
+
 # Details for the RSS feed generator
 url:            'http://jareddillard.com'
 author:         'Jared Dillard'
