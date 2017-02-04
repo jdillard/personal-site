@@ -9,7 +9,7 @@ paginate: 15
 baseurl: /
 domain_name: 'http://jareddillard.com'
 google_analytics: 'UA-7883601-2 '
-gems: [jekyll-paginate]
+gems: [jekyll-paginate,jekyll-assets,html-proofer]
 
 exclude: ["Gemfile.lock","Rakefile","Gemfile","README.md","node_modules","npm-debug.log","package.json"]
 
