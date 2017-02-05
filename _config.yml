@@ -8,13 +8,23 @@ logo: false
 paginate: 15
 baseurl: /
 domain_name: 'http://jareddillard.com'
+url:            'http://jareddillard.com'
+author:         'Jared Dillard'
+title: "Jared Dillard's Personal Site"
+description: 'Random Thoughts'
 google_analytics: 'UA-7883601-2 '
-gems: [jekyll-paginate,jekyll-assets,html-proofer]
+gems: [jekyll-paginate,jekyll-assets,jekyll-seo-tag,html-proofer]
 
 exclude: ["Gemfile.lock","Rakefile","Gemfile","README.md","node_modules","npm-debug.log","package.json"]
 
-# Details for the RSS feed generator
-url:            'http://jareddillard.com'
-author:         'Jared Dillard'
+twitter:
+  username: itslogicwon
+social:
+  name: Jared Dillard
+  links:
+    - https://twitter.com/itslogicwon
+    - https://www.linkedin.com/in/jareddillard
+    - https://github.com/jdillard
+    - https://www.instagram.com/farmerofbits/
 
 permalink: /blog/:title.html
