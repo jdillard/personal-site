@@ -1,7 +1,3 @@
-//= require vendor/jquery/jquery-1.10.2.min
-//= require vendor/jquery/jquery-1.11.1.min
-//= require vendor/jquery/jquery.fitvids
-
 /**
  * Main JS file for Casper behaviours
  */
