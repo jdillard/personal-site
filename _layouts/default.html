@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     <!-- Customisation  -->
-    {% css main %}
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
@@ -28,8 +28,9 @@
       </section>
     </footer>
     
-    {% js main %}
-    
+    <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
     {% if jekyll.environment == "production" %}
     <!-- Google Analytics Tracking code -->
     <script type="text/javascript">
