@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jdillard/jdillard.github.io.svg?branch=master)](https://travis-ci.org/jdillard/jdillard.github.io/)
+
 ## Theme 
 
 I used the Kasper theme to get me up and running with something: https://github.com/rosario/kasper.git
