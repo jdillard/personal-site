@@ -6,7 +6,7 @@ markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
-baseurl: /
+baseurl: ""
 domain_name: 'http://jareddillard.com'
 url:            'http://jareddillard.com'
 author:         'Jared Dillard'
