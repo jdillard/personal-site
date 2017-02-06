@@ -4,7 +4,7 @@ rvm:
 
 install: gem install jekyll jekyll-paginate jekyll-seo-tag html-proofer
 
-script: jekyll build && htmlproofer ./_site
+script: jekyll build && htmlproofer --allow-hash-href --only-4xx ./_site
 
 # branch whitelist
 branches:
