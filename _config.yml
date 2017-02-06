@@ -8,8 +8,8 @@ logo: false
 paginate: 15
 baseurl: ""
 domain_name: 'http://jareddillard.com'
-url:            'http://jareddillard.com'
-author:         'Jared Dillard'
+url: 'http://jareddillard.com'
+author: 'Jared Dillard'
 title: "Jared Dillard's Personal Site"
 description: 'Random Thoughts'
 google_analytics: 'UA-7883601-2 '
