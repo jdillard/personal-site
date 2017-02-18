@@ -1,5 +1,5 @@
 # encoding: utf-8
-task :default => [:test]
+task :default => [:help]
 
 # CONFIGURATION VARIABLES (on top of those defined by Jekyll in _config(_deploy).yml)
 
@@ -22,17 +22,37 @@ $git_autopush = false
 # --- NO NEED TO TOUCH ANYTHING BELOW THIS LINE ---
 #
 
+desc 'echo the help commands'
+task :help do
+  puts "rake build                                     # Build for deployment (but do not deploy)"
+  puts "rake test                                      # Check links for generated site"
+  puts "rake clean                                     # Delete generated site"
+  puts "rake preview                                   # Preview on local machine"
+end
+
 desc 'Clean up generated site'
 task :clean do
   cleanup
 end
 
 
-desc 'Preview on local machine'
-task :preview => :clean do
-  jekyll('serve')
+desc 'Preview on local machine without using docker image'
+task :serve, [:environment_configuration] => :clean do |t, args|
+  args.with_defaults(:environment_configuration => 'development')
+  if (args.environment_configuration == 'dev' || args.environment_configuration == 'development')
+    jekyll_env = 'development'
+  elsif (args.environment_configuration == 'prod')
+    jekyll_env = 'production'
+  else
+    puts "\n\nWarning! Jekyll Environment variable '" + args.environment_configuration + "' not recognized.\n\n"
+    puts "Are you sure you want to continue? [Y|n]"
+
+    ans = STDIN.gets.chomp
+    exit if ans != 'Y'
+  end
+
+  jekyll(jekyll_env, 'serve --unpublished --future --limit_posts 20')
 end
-task :serve => :preview
 
 
 desc 'Test on local machine'
@@ -73,8 +93,8 @@ def cleanup
 end
 
 # launch jekyll
-def jekyll(directives = '')
-  sh 'bundle exec jekyll ' + directives
+def jekyll(jekyll_env = 'development', directives = '')
+  sh 'JEKYLL_ENV=' + jekyll_env + ' bundle exec jekyll ' + directives
 end
 
 # check if there is another rake task running (in addition to this one!)
