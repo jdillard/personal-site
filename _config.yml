@@ -13,6 +13,7 @@ author: 'Jared Dillard'
 title: "Jared Dillard's Personal Site"
 description: 'Random Thoughts'
 google_analytics: 'UA-7883601-2 '
+repository: jdillard/jdillard.github.io
 gems: [jekyll-paginate,jekyll-seo-tag,html-proofer,jekyll-sitemap]
 
 exclude: ["Gemfile.lock","Rakefile","Gemfile","README.md","node_modules","npm-debug.log","package.json","vendor"]
