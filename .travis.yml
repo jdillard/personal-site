@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.3.3
 
-script: bundle exec jekyll build && htmlproofer --allow-hash-href --only-4xx ./_site
+script: bundle exec jekyll build && bundle exec htmlproofer --allow-hash-href --only-4xx ./_site
 
 # branch whitelist
 branches:
