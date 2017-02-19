@@ -2,6 +2,7 @@
 layout: post
 title:  The Code Warrior's Way
 date:   2017-02-05
+published: false
 categories: 
   - coding
   - training
