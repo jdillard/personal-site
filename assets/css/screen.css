@@ -1058,6 +1058,7 @@ body:not(.post-template) .post-title {
     height: 65%;
     min-height: 180px;
     max-height: 350px;
+    text-align: left;
 }
 
 .no-cover.post-head.main-header {

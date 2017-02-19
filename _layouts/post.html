@@ -10,7 +10,11 @@ post_class: post-template
         <a class="back-button icon-arrow-left" href="/">Home</a>
         <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
     </nav>
-    {% if page.cover %}<div class="chevron"></div>{% endif %}
+    {% if page.cover %}
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon fill="white" points="0,100 100,0 100,100"/>
+    {% endif %}
+  </svg>
 </header>
 
 <main class="content" role="main">
