@@ -2,9 +2,9 @@ language: ruby
 rvm:
 - 2.3.3
 
-install: gem install jekyll jekyll-paginate jekyll-seo-tag html-proofer jekyll-sitemap
+#install: gem install jekyll jekyll-paginate jekyll-seo-tag html-proofer jekyll-sitemap
 
-script: jekyll build && htmlproofer --allow-hash-href --only-4xx ./_site
+script: bundle exec jekyll build && htmlproofer --allow-hash-href --only-4xx ./_site
 
 # branch whitelist
 branches:
