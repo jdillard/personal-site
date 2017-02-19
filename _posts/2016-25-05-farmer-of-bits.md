@@ -1,8 +1,12 @@
 ---
 layout: post
 title:  Farmer of Bits
-date:   2016-05-25 10:18:00
-categories: gardening cooperatives software
+date:   2016-05-25
+published: true
+categories: 
+  - gardening
+  - cooperatives
+  - software
 cover: /assets/images/covers/mullen-garden.jpg
 ---
 

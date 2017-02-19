@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Trip Report: Devil's Dome Loop"
-date:   2016-09-25 10:18:00
+date:   2016-09-25
+published: true
 categories: 
   - backpacking
   - hiking
