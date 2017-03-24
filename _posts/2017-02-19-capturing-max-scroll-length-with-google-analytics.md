@@ -14,6 +14,8 @@ I started simple by just adding the [googleanalytics/autotrack](https://github.c
 
 During this process I felt I ran into some gaps in the documentation so I'll try and fill those in with the steps I went through to arrive at what I think was the correct destination.
 
+> **Note:** [@philipwalton](https://github.com/philipwalton) said this post [_"covers it pretty well"_](https://github.com/googleanalytics/autotrack/issues/161#issuecomment-288890527), so I wasn't too far off.
+
 ### Include autotrack.js
 
 [autotrack.js](https://github.com/googleanalytics/autotrack/blob/master/autotrack.js) is an enhanced Google Analytics (GA) tracking library for common user interactions that includes several plugins, one of which is `maxScrollTracker`. There are many ways to include `autotrack.js`, but I simply went with:
