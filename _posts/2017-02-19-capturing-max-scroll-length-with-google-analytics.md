@@ -83,6 +83,6 @@ And for the second tab:
 | **Filters**              | (optional)                    |
 | **Views**                | (optional)                    |
 
-You're done! It will take a while for the data to populate with enough data to be meaningful, but once it has check the report to see if it seems accurate.
+You're done! It will take a while for the data to populate, possibly 24 hours, with enough data to be meaningful, but once it has check the report to see if it seems accurate.
 
-> *Note:* If you see anything that's wrong or missing, please [open an issue](https://github.com/jdillard/jdillard.github.io/issues) or [create a pull request](https://github.com/jdillard/jdillard.github.io/pulls) so it can be improved.
+> *Note:* If you see anything that's wrong or missing with this post, please [open an issue](https://github.com/jdillard/jdillard.github.io/issues) or [create a pull request](https://github.com/jdillard/jdillard.github.io/pulls) so it can be improved.
