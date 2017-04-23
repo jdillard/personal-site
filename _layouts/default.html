@@ -13,19 +13,16 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     {% seo %}
 </head>
-<body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
+<body>
 
     {{ content }}
 
     <footer class="f7 ph3 pv2 light-silver bt b--light-gray">
-      <section class="copyright">
         <a class="b no-underline light-silver" href="{{ site.baseurl }}">{{ site.name }}</a> &copy;
               {{ 'now' | date: "%Y"}} &bull; All rights reserved.
-      </section>
     </footer>
 
     <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
 
     {% if jekyll.environment == "development" %}
