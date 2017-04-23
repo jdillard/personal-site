@@ -29,7 +29,7 @@ the correct destination.
 [_"covers it pretty well"_](https://github.com/googleanalytics/autotrack/issues/161#issuecomment-288890527),
 so I wasn't too far off.
 
-### Include autotrack.js
+## Include autotrack.js
 
 [autotrack.js](https://github.com/googleanalytics/autotrack/blob/master/autotrack.js)
 is an enhanced Google Analytics (GA) tracking library for common user
@@ -40,7 +40,7 @@ There are many ways to include `autotrack.js`, but I simply went with:
 <script async src='path/to/autotrack.js'></script>
 ```
 
-### Set Up the Custom Metric
+## Set Up the Custom Metric
 
 Once you have that on your page and feeding into Google Analytics, you will need
 to log in to the GA admin panel for the appropriate view and set up a new
@@ -65,7 +65,7 @@ ga('require', 'maxScrollTracker', {
 });
 ```
 
-### Set Up the Calculated Metric
+## Set Up the Calculated Metric
 
 Once that is done, set up a **Calculated Metric** on the **View** section of the
 admin panel. Click **New Calculated Metric** and fill out the fields:
@@ -82,7 +82,7 @@ just set up, which is per unique page path per session, and calculates the
 average by dividing by the already existing `Unique Pageviews` metric, allowing
 it to be applied to different dimensions in a report.
 
-### Set Up the Custom Report
+## Set Up the Custom Report
 
 To set up a custom report using this calculated metric, go to the
 **Customization** section and then **Custom Reports**. Click on **New Custom

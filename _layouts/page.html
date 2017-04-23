@@ -3,18 +3,20 @@ layout: default
 post_class: post-template page-template
 ---
 
-<nav class="main-nav clearfix">
-    <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
-    <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>
-</nav>
+<header class="h3">
+    <nav class="pa4">
+        <a class="fl f6 link dim br2 ba ph3 pv2 mb2 dib silver" href="/">Home</a>
+        <a class="fr f6 link dim br2 ba ph3 pv2 mb2 dib silver" href="/feed.xml">Subscribe</a>
+    </nav>
+</header>
 
 
-<main class="content" role="main">
-    <article class="post">
+<main>
+    <article class="mw7 center">
 
-        <h1 class="post-title">{{ page.title }}</h1>
+        <h1 class="f1 lh-title black-70">{{ page.title }}</h1>
 
-        <section class="post-content">
+        <section class="fw1 f4 lh-copy">
             {{content}}
         </section>
 

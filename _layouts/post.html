@@ -1,14 +1,12 @@
 ---
 layout: default
-disqus: false
-archive: false
 post_class: post-template
 ---
 
-<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
-        <a class="back-button icon-arrow-left" href="/">Home</a>
-        <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
+<header class="tl relative cover bg-center {% if page.cover %} h5" style="background-image: url({{ page.cover }})" {% else %} " {% endif %}>
+    <nav class="pa4">
+        <a class="fl f6-ns f7 link dim br2 ba ph3 pv2 mb2 dib silver" href="/">Home</a>
+        <a class="fr f6-ns f7 link dim br2 ba ph3 pv2 mb2 dib silver" href="/feed.xml">Subscribe</a>
     </nav>
     {% if page.cover %}
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -17,65 +15,33 @@ post_class: post-template
   </svg>
 </header>
 
-<main class="content" role="main">
+<main>
 
-    <article class="post">
+    <article class="center mw7 avenir pt2 ph2 black-70">
         <header>
-            <section class="post-meta">
-                <h1 class="post-title">{{ page.title }}</h1>
-                <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+            <h1 class="f1-ns f3 black-70 lh-title sans-serif mb3">{{ page.title }}</h1>
+            <div class="f6-ns f7 mh1 ph2 pv1 tr sans-serif lh-copy light-silver">
+                <time class="fl" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time>
                 {% if page.categories.size > 0 %}
-                    {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
+                    {{ page.categories | array_to_sentence_string }}
                 {% endif %}
-                <br />
-                <a class="post-date" href="https://github.com/jdillard/jdillard.github.io/commits/master/{{ page.path }}" target="_blank">View Version History</a></span>
-                <br />
-                <a class="post-date" href="https://github.com/jdillard/jdillard.github.io/issues" target="_blank">Leave A Comment</a></span>
-            </section>
+            </div>
         </header>
 
-        <section class="post-content">
+        <section class="post-content f4-ns f5 lh-copy mt4-ns mt3 pt2 bt b--light-gray">
             {{content}}
         </section>
 
-        {% if page.archive %}
-        <section class="archive">
-            <h5>Archive</h5>
-            <ul>
-                {% for post in site.posts %}
-                    <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </section>
-        {% endif %}
-
-        <footer class="post-footer">
-            <!-- If we want to display author's name and bio -->
-            {% if site.author %}
-                <figure class="author-image">
-                    <a class="img" href="{{ site.baseurl }}" style="background-image: url(/assets/images/profile.png)">
-                    <span class="hidden">{{site.author}}'s Picture</span></a>
-                </figure>
-                <section class="author">
-                    <!-- Author Name -->
-                    <h4> {{ site.author }} </h4>
-                    <!-- Author Bio -->
-                    <p>
-                        I'm a Web Developer based in Austin, Texas that enjoys climbing and exploring a distributed food system.
-                    </p>
-                </section>
-            {% endif %}
-
-            <!-- Share links section -->
-            {% include share.html %}
-
-            <!-- Disqus comments -->
-            {% if page.disqus %}
-                {% include disqus.html %}
-            {% endif %}
-
-        </footer>
-
     </article>
+
+    <footer class="mw7 center tc bt b--light-silver pt4 ph2">
+
+        <a class="f6-ns f7 link dim br2 ba ph3 pv2 mh2 dib silver" href="https://github.com/jdillard/jdillard.github.io/commits/master/{{ page.path }}" target="_blank">View Post History</a></span>
+        <a class="f6-ns f7 link dim br2 ba ph3 pv2 mh2 dib silver" href="https://github.com/jdillard/jdillard.github.io/issues" target="_blank">Leave Some Feedback</a></span>
+
+        <!-- Share links section -->
+        {% include share.html %}
+
+    </footer>
 
 </main>

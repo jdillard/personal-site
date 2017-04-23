@@ -16,7 +16,7 @@ Since it was later in the season we only saw a couple other cars in the parking 
 
 We heard it can be quite a busy time, often with teams of horses used to haul the meat and equipment, but luckily the grade and trail conditions of this section often made it nearly impossible to take a team of horses up. If you plan on backpacking the Pasayten Wilderness during this time make sure to keep this in mind, because even though we didn't have any issues, I feel it could potentially have an impact on the hunters and/or the vibe of the trip.
 
-### Day 1 - Switchbacks
+## Day 1 - Switchbacks
 
 After flying into Seattle the previous day, we stopped at the Marblemount Ranger Station to pick up any necessary permits, let them know our itinerary, and try to get some trail conditions. While we were there we were able to pick up Green Trail maps 16, 17, 48, and 49. We decided to take the loop counterclockwise, because we (and our knees) preferred to go up the section that has a steep elevation change, rather than down.
 
@@ -32,7 +32,7 @@ Even though we tried to check the nearest weather stations to the area we didn't
 
 > **Pro Tip:** Don't place your tent in a low lying area -- guess how we know.
 
-### Day 2 - "The Cabin"
+## Day 2 - "The Cabin"
 
 We were rained on pretty consistently the entire first night and both of our Half Dome 2 tents didn't do the best job of keeping the rain out. We were discussing our options after we woke up wet when some hunters started to come back down the trail. They told us there was a three sided shelter at Devil's Park with some dry wood for a fire that they left behind. With that information we decided to make "The Cabin" our next spot to make a decision since it offered a place to dry out around the fire.
 
@@ -54,7 +54,7 @@ We later came across a hunter that said he had been coming out to that shelter f
 ![Devils Park Shelter](/assets/images/posts/devils-park-shelter.jpg "Devil's Park Shelter")
 <small><i>Devil's Park Shelter where we were able to dry out most of our things</i></small>
 
-### Day 3 - Crater Mountain
+## Day 3 - Crater Mountain
 
 In the morning we decided it would be best to start heading back. It was a tough decision, but probably a wise one given the circumstances. We decided we would do the side trail up to Crater Mountain, then to camp at the same spot we did the previous night before heading back down the next day.
 
@@ -78,7 +78,7 @@ It worked out great as he had been hiking and bushwhacking in the North Cascades
 
 > **Pro Tip:** If you have to share the camping spot, be friendly -- guess how we know. 
 
-### Day 4 - The Hike Back Down
+## Day 4 - The Hike Back Down
 
 We woke up that morning without a solid plan and decided to hike back down, waiting until we got to the trailhead to figure it out. Along the way we stopped to talk to a regular hunter of the area going the other direction and was able to glean a little mores regional knowledge of his. 
 
@@ -88,6 +88,6 @@ One of the hunters had raved about the Winthrop Ranger station so we decided we 
 
 We got to the station and found out they really only cared if our car was parked at the trailhead for longer than our itinerary stated. They ended up recommending a burger joint in town and spot to camp near the trailhead, so we stopped in for a quick meal before heading to the Long Fur Campground for the night. We were able to get in some excellent stargazing now that we were more East of the mountain range we where there is less rainfall.
 
-### Summary
+## Summary
 
 Even though we didn't finish the whole loop, the first half alone makes it worth it. I would recommend going a little earlier in the season or being more prepared for cold rain and hiking in the snow. I definitely want to go back and explore the North Cascades and Pasayten Wilderness more thoroughly.
