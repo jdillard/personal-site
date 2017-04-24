@@ -24,6 +24,7 @@ With me being a perpetual renter in an increasingly urban environment and intere
 
 In order to [live this question](https://www.goodreads.com/quotes/717-be-patient-toward-all-that-is-unsolved-in-your-heart) I first became involved with an organization called [Urban Patchwork](http://www.urbanpatchwork.org/) that happened to have already organized a front yard garden paired with an excellent green thumbed mentor just down the street from where I was renting. This cut my costs and need for buying land and even came bundled with knowledge!
 
+{: .shadow-5 .bg-lightest-blue }
 > **Side Note:** Urban Patchwork worked by bringing together a person with land (often a residential lot) that wanted a garden, an experienced gardener, volunteers and beginners, and paying customers. At one point there was a patchwork of them across the city and they would have a harvest in their area every two weeks to create CSA baskets and the land owners, lead gardeners, long term volunteers, and paying customers would each get one. It was quite wonderful, but relied solely on volunteer efforts.
 
 ## With Cooperation
@@ -32,6 +33,7 @@ Unfortunately, the patch in the patchwork I was working on came undone around th
 
 A [producer cooperative](http://www.geo.coop/taxonomy/term/139) is a producer owned and democratically-controlled organization that serves its members through any combination of cooperative marketing, support, and bulk purchasing. In this case the producers were all hobbyist gardeners.
 
+{: .shadow-5 .bg-lightest-blue }
 > **Side Note:** Producer cooperatives have a long and strong history in the United States, gaining popularity with the [Granger Movement](http://www.britannica.com/EBchecked/topic/241647/Granger-movement) in the late 1800s, as documented by [Solon Justus Buck](https://books.google.com/books?id=Hfi5AAAAIAAJ).
 
 It was a new venture for everyone involved, but we dove right in and created the [Yard to Market Coop](http://www.yardtomarket.coop/). It wasn't long before we had bylaws, a board of directors, and a farmstand at one of the local farmers' markets. Gardeners could go through a short on-boarding process to become members and shortly after start selling produce through the cooperative, which would take a small cut to help fund the operations that were volunteer run, with goals of paid wages. This, among other things, allowed the gardeners to concentrate on growing food and let the cooperative handle the marketing and selling side, essentially functioning as a distributor.
