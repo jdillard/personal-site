@@ -3,16 +3,11 @@ layout: default
 post_class: post-template
 ---
 
-<header class="tl relative cover bg-center {% if page.cover %} h5" style="background-image: url({{ page.cover }})" {% else %} " {% endif %}>
+<header class="tl relative cover bg-center {% if page.cover %}post-cover h5-ns h4 {{ page.cover }}-cover{% endif %}">
     <nav class="pa4">
         <a class="fl f6-ns f7 link dim br2 ba ph3 pv2 mb2 dib silver" href="/">Home</a>
         <a class="fr f6-ns f7 link dim br2 ba ph3 pv2 mb2 dib silver" href="/feed.xml">Subscribe</a>
     </nav>
-    {% if page.cover %}
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <polygon fill="white" points="0,100 100,0 100,100"/>
-    {% endif %}
-  </svg>
 </header>
 
 <main>

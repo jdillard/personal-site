@@ -7,7 +7,7 @@ categories:
   - backpacking
   - hiking
   - trip reports
-cover: /assets/images/covers/crater-mountain.jpg
+cover: devils-dome
 ---
 
 Devil's Dome Loop is located in the Pasayten Wilderness which overlaps with the North Cascades National Park. We started September 18th at the Canyon Creek Trailhead just off Highway 20, which has a large gravel lot for parking, an outhouse, and a stream flowing beside it when we were there. It also requires a Northwest Forest Pass to park at the trailhead, although other passes may also be valid. 

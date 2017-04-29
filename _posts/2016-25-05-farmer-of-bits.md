@@ -7,7 +7,7 @@ categories:
   - gardening
   - cooperatives
   - software
-cover: /assets/images/covers/mullen-garden.jpg
+cover: farmer-of-bits
 ---
 
 I recently tried my hand at cooperative small-scale urban "market gardening" as a hobby and thought I would document it as a comparison to writing software -- because who doesn't like analogies.

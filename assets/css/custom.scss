@@ -25,29 +25,29 @@ blockquote p {
 } 
 
 code {
-        padding: 1px 3px;
-            font-family: Inconsolata, monospace, sans-serif;
-                font-size: 0.85em;
-                    white-space: pre-wrap;
-                        border: #E3EDF3 1px solid;
-                            background: #F7FAFB;
-                                border-radius: 2px;
-                            }
+    padding: 1px 3px;
+    font-family: Inconsolata, monospace, sans-serif;
+    font-size: 0.85em;
+    white-space: pre-wrap;
+    border: #E3EDF3 1px solid;
+    background: #F7FAFB;
+    border-radius: 2px;
+}
 
 .post-content img {
-        width: 126%;
-            max-width: none;
-                margin: 0 -13%;
-            }
+    width: 126%;
+    max-width: none;
+    margin: 0 -13%;
+}
 
 pre code, tt {
-        font-size: inherit;
-            white-space: -moz-pre-wrap;
-                white-space: pre-wrap;
-                    background: transparent;
-                        border: none;
-                            padding: 0;
-                        }
+    font-size: inherit;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
 
 pre {
     -moz-box-sizing: border-box;
@@ -64,12 +64,16 @@ pre {
     border-radius: 3px;
 }
 
-header svg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5vw;
+header.post-cover {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+header.devils-dome-cover {
+    background-image: url(/assets/images/covers/crater-mountain.jpg);
+}
+
+header.farmer-of-bits-cover {
+    background-image: url(/assets/images/covers/mullen-garden.jpg);
 }
 
 table {
