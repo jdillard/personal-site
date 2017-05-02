@@ -18,7 +18,7 @@ for sustainability.
   </div>
   <div class="measure">
     <label for="email-input" class="f6 b db mb2">Email</label>
-    <input id="email-input" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text">
+    <input id="email-input" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="email">
   </div>
   <div class="measure">
     <label for="description-input" class="f6 b db mb2">Message</label>
