@@ -30,16 +30,16 @@ cover: false
 
     {% for post in paginator.posts %}
 
-    <article class="sans-serif center mw7 f5 lh-copy ph3 pt4-ns pt2 pb4-ns pb2">
+    <article class="sans-serif center mw6-5 f5 lh-copy ph3 pt4-ns pt2 pb4-ns pb2">
         <header>
-            <h2 class="f1-ns f3 lh-title mv3 sans-serif"><a class="black-70 no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
+            <h2 class="f2-ns f3 lh-title mv3 sans-serif"><a class="black-70 no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
         </header>
-        <section class="f4-ns f6 fw3 mb3 lh-copy silver">
+        <section class="f5-ns f6 fw3 mb3 lh-copy silver">
             <p>
                 {{ post.excerpt | strip_html }}
             </p>
         </section>
-        <footer class="moon-gray tr f6-ns f7 fw1-ns fw4">
+        <footer class="moon-gray tr f7 fw1-ns fw4">
             <time class="fl mr2" datetime="{{ post.date | date: "%Y-%m-%d" }}">
                 {{ post.date | date: "%B %d, %Y" }}                                
             </time>
