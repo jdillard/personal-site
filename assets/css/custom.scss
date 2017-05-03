@@ -64,15 +64,34 @@ pre {
     border-radius: 3px;
 }
 
+// Hero
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.h6{
+  height: 20em;
+}
+
+.top-4 {
+    top: 4em;
+}
+
+.hero__no-cover {
+    clip-path: polygon(0 0%, 100% 100%, 100% 100%, 0 100%);
+}
+
+.hero__seperator {
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+}
+
 header.post-cover {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
-header.devils-dome-cover {
+.devils-dome-cover {
     background-image: url(/assets/images/covers/crater-mountain.jpg);
 }
 
-header.farmer-of-bits-cover {
+.farmer-of-bits-cover {
     background-image: url(/assets/images/covers/mullen-garden.jpg);
 }
 

@@ -3,15 +3,29 @@ layout: default
 post_class: post-template
 ---
 
-<header class="tl relative cover bg-center {% if page.cover %}post-cover h5-ns h4 {{ page.cover }}-cover{% endif %}">
-    <nav class="pa4">
-        <a class="fl f6-ns f7 link dim br2 ba ph3 pv2 mb2 dib silver" href="/">Home</a>
-        <a class="fr f6-ns f7 link dim br2 ba ph3 pv2 mb2 dib silver" href="/feed.xml">Subscribe</a>
+<div class="flex relative overflow-hidden {% if page.cover %}h6{% else %}h4{% endif %}">
+    <div class="w-100 bg-black-90">
+    <nav class="mw7 center flex justify-between">
+    <a class="link white hover-white no-underline flex items-center pa3" href="/">
+        Jared Dillard
+    </a>
+    <div class="flex-grow pa3 flex items-center">
+        <a class="f6 link dib white dim mr3 mr4-ns" href="about.html">About</a>
+        <a class="f6 link dib white dim mr3 mr4-ns" href="/">Blog</a>
+        <a class="f6 dib white bg-animate hover-bg-white hover-black no-underline pv2 ph4 br-pill ba b--white-20" href="/feed.xml"">Subscribe</a>
+    </div>
     </nav>
-</header>
+    </div>
+  {% if page.cover %}
+    <div class="hero__image cover bg-center absolute top-4 left-0 right-0 bottom-0 {{ page.cover }}-cover" id="ParallaxImage"></div>
+  {% else %}
+    <div class="hero__no-cover h3 absolute top-4 left-0 right-0 bottom-0 bg-lightest-blue" id="ParallaxImage"></div>
+  {% endif %}
+</div>
+
+<div class="hero__seperator h3 nt5 bg-white"></div>
 
 <main>
-
     <article class="center mw7 avenir pt2 ph2 black-70">
         <header>
             <h1 class="f1-ns f3 black-70 lh-title sans-serif mb3">{{ page.title }}</h1>
