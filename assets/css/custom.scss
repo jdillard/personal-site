@@ -67,10 +67,6 @@ pre {
 // Hero
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-.h6{
-  height: 20em;
-}
-
 .top-4{
     top: 4em;
 }
@@ -81,14 +77,17 @@ pre {
 
 .hero__no-cover {
     clip-path: polygon(0 0%, 100% 100%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0%, 100% 100%, 100% 100%, 0 100%);
 }
 
 .hero__seperator {
     clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
 }
 
 header.post-cover {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .devils-dome-cover {
@@ -142,6 +141,20 @@ table table table {
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
     background-color: #F6F6F6;
+}
+
+@media screen and (min-width: 30em) {
+    .h6-ns{
+        height: 20em;
+    }
+}
+
+@media only screen and (max-width: 29.9em) {
+    .hero__image {
+        background-image: none;
+        clip-path: polygon(0 0%, 100% 100%, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0%, 100% 100%, 100% 100%, 0 100%);
+    }
 }
 
 @media only screen and (max-width: 900px) {

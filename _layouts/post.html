@@ -3,7 +3,7 @@ layout: default
 post_class: post-template
 ---
 
-<div class="flex relative overflow-hidden {% if page.cover %}h6{% else %}h4{% endif %}">
+<div class="flex relative overflow-hidden {% if page.cover %}h6-ns h4{% else %}h4{% endif %}">
     <div class="w-100 bg-black-90">
     <nav class="mw7 center flex justify-between">
     <a class="link white hover-white no-underline flex items-center pa3" href="/">
@@ -17,7 +17,7 @@ post_class: post-template
     </nav>
     </div>
   {% if page.cover %}
-    <div class="hero__image cover bg-center absolute top-4 left-0 right-0 bottom-0 {{ page.cover }}-cover" id="ParallaxImage"></div>
+    <div class="hero__image cover bg-lightest-blue bg-center absolute top-4 left-0 right-0 bottom-0 {{ page.cover }}-cover" id="ParallaxImage"></div>
   {% else %}
     <div class="hero__no-cover h3 absolute top-4 left-0 right-0 bottom-0 bg-lightest-blue" id="ParallaxImage"></div>
   {% endif %}
