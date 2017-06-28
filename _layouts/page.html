@@ -4,26 +4,6 @@ post_class: post-template page-template
 cover: false
 ---
 
-<div class="flex relative overflow-hidden {% if page.cover %}h6-ns h4{% else %}h4{% endif %}">
-    <div class="w-100 bg-black-90">
-    <nav class="mw7 center flex justify-between">
-    <a class="link white hover-white no-underline flex items-center pa3" href="/">
-        Jared Dillard
-    </a>
-    <div class="flex-grow pa3 flex items-center">
-        <a class="f6 link dib white dim mr3 mr4-ns" href="/about.html">About</a>
-        <a class="f6 link dib white dim mr3 mr4-ns" href="/">Blog</a>
-        <a class="f6 dib white bg-animate hover-bg-white hover-black no-underline pv2 ph4 br-pill ba b--white-20" href="/feed.xml"">Subscribe</a>
-    </div>
-    </nav>
-    </div>
-  {% if page.cover %}
-    <div class="hero__image cover bg-center absolute top-4 left-0 right-0 bottom-0 {{ page.cover }}-cover" id="ParallaxImage"></div>
-  {% else %}
-    <div class="hero__no-cover h3 absolute top-4 left-0 right-0 bottom-0 bg-lightest-blue" id="ParallaxImage"></div>
-  {% endif %}
-</div>
-
 <div class="hero__seperator h3 nt5 bg-white"></div>
 
 <main>
