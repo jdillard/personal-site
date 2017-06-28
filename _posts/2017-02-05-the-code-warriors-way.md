@@ -3,6 +3,7 @@ layout: post
 title:  The Code Warrior's Way
 date:   2017-02-05
 published: false
+cover: rock-warrior
 categories: 
   - coding
   - training
