@@ -29,3 +29,6 @@ social:
     - https://www.instagram.com/farmerofbits/
 
 permalink: /blog/:title.html
+
+sass:
+    style: compressed
