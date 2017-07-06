@@ -6,7 +6,7 @@ published: false
 categories: 
   - rock climbing
   - trip planning
-cover: /assets/images/covers/coastal-kayaking.jpg
+cover: rock-warrior
 ---
 
 So you've been climbing in the gym or maybe at the local crag, but you've been wanting get out on some new rock.
