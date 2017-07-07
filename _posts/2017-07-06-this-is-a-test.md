@@ -5,7 +5,7 @@ categories:
 - test1
 - test2
 '': ''
-published: false
+published: true
 ---
 
 
