@@ -40,6 +40,10 @@ code {
     margin: 0 -13%;
 }
 
+.highlighter-rouge {
+    margin: 1.75em -2.2em 1.75em -2.2em;
+}
+
 pre code, tt {
     font-size: inherit;
     white-space: -moz-pre-wrap;
@@ -55,13 +59,13 @@ pre {
     margin: 0 0 1.75em 0;
     border: #E3EDF3 1px solid;
     width: 100% ;
-    padding: 10px;
+    padding: 2em 3em;
     font-family: Inconsolata, monospace, sans-serif;
-    font-size: 0.7em;
+    font-size: 1em;
     white-space: pre;
     overflow: auto;
     background: #F7FAFB;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .top-4{
