@@ -28,7 +28,6 @@ code {
     padding: 1px 3px;
     font-family: Inconsolata, monospace, sans-serif;
     font-size: 0.85em;
-    white-space: pre-wrap;
     border: #E3EDF3 1px solid;
     background: #F7FAFB;
     border-radius: 2px;
@@ -46,8 +45,6 @@ div.highlighter-rouge {
 
 pre code, tt {
     font-size: inherit;
-    white-space: -moz-pre-wrap;
-    white-space: pre-wrap;
     background: transparent;
     border: none;
     padding: 0;
@@ -62,10 +59,10 @@ pre {
     padding: 2em 3em;
     font-family: Inconsolata, monospace, sans-serif;
     font-size: 1em;
-    white-space: pre;
-    overflow: auto;
+    overflow: visible;
     background: #F7FAFB;
     border-radius: 10px;
+    overflow-x: scroll;
 }
 
 .top-4{
