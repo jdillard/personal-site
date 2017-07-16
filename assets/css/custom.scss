@@ -50,6 +50,15 @@
     padding: 0;
 }
 
+::selection {
+    color:#ffffff;
+    background: #FF725C;
+}
+::-moz-selection {
+    color:#ffffff;
+    background: #FF725C;
+}
+
 .post-content pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
