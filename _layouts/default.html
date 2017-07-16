@@ -27,10 +27,7 @@
 
     {{ content }}
 
-    <footer class="f7 ph3 pv2 light-silver bt b--light-gray">
-        <a class="b no-underline light-silver" href="{{ site.baseurl }}">{{ site.name }}</a> &copy;
-              {{ 'now' | date: "%Y"}} &bull; All rights reserved.
-    </footer>
+    {% include footer.html %}
 
     <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
