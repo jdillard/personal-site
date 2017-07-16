@@ -14,21 +14,19 @@
     color: currentColor;
 }
 
-blockquote {
+.post-content blockquote {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 1.75em -2.2em 1.75em -2.2em;
     padding: .1em 2.2em .1em 1.75em;
-    background-color: #f4f4f4;
-    border-left: rgba(0,0,0,.7) 0.4em solid;
 }
 
-blockquote p {                                                                  
+.post-content blockquote p {                                                                  
      margin: 0.8em 0;                                                            
      font-style: italic;                                                         
 } 
 
-code {
+.post-content code {
     padding: 1px 3px;
     font-family: Inconsolata, monospace, sans-serif;
     font-size: 0.85em;
@@ -43,18 +41,18 @@ code {
     margin: 0 -13%;
 }
 
-div.highlighter-rouge {
+.post-content div.highlighter-rouge {
     margin: 1.75em -5em 1.75em -5em;
 }
 
-pre code, tt {
+.post-content pre code, .post-content tt {
     font-size: inherit;
     background: transparent;
     border: none;
     padding: 0;
 }
 
-pre {
+.post-content pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 0 1.75em 0;
@@ -67,6 +65,51 @@ pre {
     background: #F7FAFB;
     border-radius: 10px;
     overflow-x: scroll;
+}
+
+.post-content table {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1.75em 0;
+    width: 100% ;
+    max-width: 100% ;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+.post-content table th,
+.post-content table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: #EFEFEF 1px solid;
+}
+
+.post-content table th {
+    color: #000;
+}
+
+.post-content table caption + thead tr:first-child th,
+.post-content table caption + thead tr:first-child td,
+.post-content table colgroup + thead tr:first-child th,
+.post-content table colgroup + thead tr:first-child td,
+.post-content table thead:first-child tr:first-child th,
+.post-content table thead:first-child tr:first-child td {
+    border-top: 0;
+}
+
+.post-content table tbody + tbody {
+    border-top: #EFEFEF 2px solid;
+}
+
+.post-content table table table {
+    background-color: #FFF;
+}
+
+.post-content table tbody > tr:nth-child(odd) > td,
+.post-content table tbody > tr:nth-child(odd) > th {
+    background-color: #F6F6F6;
 }
 
 .top-4{
@@ -108,51 +151,6 @@ header.post-cover {
     background-image: url(/assets/images/covers/mullen-garden.jpg);
 }
 
-table {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 1.75em 0;
-    width: 100% ;
-    max-width: 100% ;
-    background-color: transparent;
-    border-collapse: collapse;
-}
-
-table th,
-table td {
-    padding: 8px;
-    line-height: 20px;
-    text-align: left;
-    vertical-align: top;
-    border-top: #EFEFEF 1px solid;
-}
-
-table th {
-    color: #000;
-}
-
-table caption + thead tr:first-child th,
-table caption + thead tr:first-child td,
-table colgroup + thead tr:first-child th,
-table colgroup + thead tr:first-child td,
-table thead:first-child tr:first-child th,
-table thead:first-child tr:first-child td {
-    border-top: 0;
-}
-
-table tbody + tbody {
-    border-top: #EFEFEF 2px solid;
-}
-
-table table table {
-    background-color: #FFF;
-}
-
-table tbody > tr:nth-child(odd) > td,
-table tbody > tr:nth-child(odd) > th {
-    background-color: #F6F6F6;
-}
-
 @media screen and (min-width: 30em) {
     .h6-ns{
         height: 20em;
@@ -168,7 +166,7 @@ table tbody > tr:nth-child(odd) > th {
 }
 
 @media only screen and (max-width: 900px) {
-    blockquote {
+    .post-content blockquote {
         margin-left: 0;
     }
 }
