@@ -4,7 +4,7 @@ title: Home
 cover: false
 ---
 
-<main>
+<main class="mb5">
 
     {% for post in paginator.posts %}
 
@@ -28,6 +28,6 @@ cover: false
     </article>
     {% endfor %}
 
-    {% include pagination.html %}
+ </main>   
 
-</main>
+ {% include pagination.html %}
