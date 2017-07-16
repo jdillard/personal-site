@@ -33,7 +33,8 @@
 
 //  Variables 
 //  Importing here will allow you to override any variables in the modules 
-@import 'tachyons/colors';
+//@import 'tachyons/colors';
+@import 'tachyons-overrides/colors';
 @import 'tachyons/media-queries';
 
 //  Debugging 
@@ -96,5 +97,4 @@
 @import 'tachyons/nested';
 @import 'tachyons/styles';
 
-/* custom modules */
-@import "tachyons/svgs";
+@import 'tachyons-extensions/svgs';
