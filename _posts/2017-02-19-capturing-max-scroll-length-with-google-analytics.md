@@ -25,7 +25,7 @@ During this process I felt I ran into some gaps in the documentation so I'll try
 and fill those in with the steps I went through to arrive at what I think was
 the correct destination.
 
-{: .shadow-5 .bg-lightest-blue }
+{: {{site.data.css.info-box}} }
 > **Note:** [@philipwalton](https://github.com/philipwalton) said this post
 [_"covers it pretty well"_](https://github.com/googleanalytics/autotrack/issues/161#issuecomment-288890527),
 so I wasn't too far off.
@@ -116,7 +116,7 @@ You're done! It will take a while for the data to populate, possibly 24 hours,
 with enough data to be meaningful, but once it has check the report to see if it
 seems accurate.
 
-{: .shadow-5 .bg-lightest-blue }
+{: {{site.data.css.info-box}} }
 > **Note:** If you see anything that's wrong or missing with this post, please
 [open an issue](https://github.com/jdillard/jdillard.github.io/issues) or
 [create a pull request](https://github.com/jdillard/jdillard.github.io/pulls) so

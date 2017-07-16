@@ -21,7 +21,7 @@ We heard it can be quite a busy time, often with teams of horses used to haul th
 
 After flying into Seattle the previous day, we stopped at the Marblemount Ranger Station to pick up any necessary permits, let them know our itinerary, and try to get some trail conditions. While we were there we were able to pick up Green Trail maps 16, 17, 48, and 49. We decided to take the loop counterclockwise, because we (and our knees) preferred to go up the section that has a steep elevation change, rather than down.
 
-{: .shadow-5 .bg-light-green }
+{: {{site.data.css.tip-box}} }
 
 <blockquote>
 <p><strong>Pro Tip:</strong> Prepare for the weather conditions or you'll end up going back down it again anyways -- guess how we know.</p>
@@ -29,7 +29,7 @@ After flying into Seattle the previous day, we stopped at the Marblemount Ranger
 
 While the hike up is strenuous, full of switchbacks, and has some downed trees over the trail, but still has plenty of spots to rest. While we were we could even refill our water at easily accessible streams.
 
-{: .shadow-5 .bg-lightest-blue }
+{: {{site.data.css.info-box}} }
 
 <blockquote>
 <p><strong>Side Note:</strong> As others have reported, the GPS didn't quite match up with the map for a small portion of this section, but we believe it might have been caused by a small landslide at some point whiched then caused them to move the trail.</p>
@@ -39,7 +39,7 @@ Shortly after the turnoff for the Crater Lake trail we found what appears to be 
 
 Even though we tried to check the nearest weather stations to the area we didn't quite have a grasp on what the weather conditions would be like this time of year. As it turns out, since this is still on the Western side of the mountain range it is highly susceptible to rain so make sure to bring proper shelter.
 
-{: .shadow-5 .bg-light-green }
+{: {{site.data.css.tip-box}} }
 
 <blockquote>
 <p><strong>Pro Tip:</strong> Don't place your tent in a low lying area -- guess how we know.</p>
@@ -56,7 +56,7 @@ The hike started off nearly flat, which a nice reprieve from the previous day's 
 
 The shelter was a welcome site upon arrival and we immediately set out on gathering fire supplies before everything became drenched. We ended up spending about 7 hours hanging out and drying everything we could, with a few fire casualties along the way.
 
-{: .shadow-5 .bg-light-green }
+{: {{site.data.css.tip-box}} }
 
 <blockquote>
 <p><strong>Pro Tip:</strong> Be patient when drying off by the fire -- guess how we know.</p>
@@ -93,7 +93,7 @@ We hung out at the top a little bit and after taking our fill of pictures we hea
 
 It worked out great as he had been hiking and bushwhacking in the North Cascades region for around thirty years and dropped a lot of regional knowledge on us -- including demonstrations of the various encounters with elks he's had on his many hikes and hunts.
 
-{: .shadow-5 .bg-light-green }
+{: {{site.data.css.tip-box}} }
 
 <blockquote>
 <p><strong>Pro Tip:</strong> If you have to share the camping spot, be friendly -- guess how we know.</p>

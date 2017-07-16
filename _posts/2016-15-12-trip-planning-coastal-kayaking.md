@@ -12,7 +12,7 @@ cover: coastal-kayaking
 
 I recently went on a weekend kayaking fishing trip down in Rockport on the Texas coast and while we weren't successful in catching any keepers, I feel like we arrived at a productive planning strategy for future trips. We chose [Goose Island State Park](http://tpwd.texas.gov/state-parks/goose-island), because you can stay right on the water and we were already familiar with the area.
 
-{: .shadow-5 .bg-light-green }
+{: {{site.data.css.tip-box}} }
 > **Pro Tip:** Not only does staying on the water allow you to fish from your campsite, but the constant breeze tends to help keep the mosquitoes away.
 
 The basis of our planning was reviewing information in the Hook-N-Line Fishing Maps, which includes GPS coordinates for points of interest, kayak drop off points, depth charts, and more.
