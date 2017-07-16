@@ -9,8 +9,8 @@ post_class: post-template
     <article class="avenir pt2 ph2 black-70">
         <header>
             <h1 class="f1-ns f3 center tc mw7 black-70 athelas lh-title avenir">{{ page.title }}</h1>
-            <div class="f6-ns f7 center mw6-5 mh1 ph2 pv1 tr sans-serif lh-copy light-silver">
-                <time class="fl" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+            <div class="f6-ns f7 center mw6-5 mh1 ph2 pv1 tr sans-serif lh-copy gray">
+                <a class="link gray hover-light-red" href="https://github.com/jdillard/jdillard.github.io/commits/master/{{ page.path }}" target="_blank" rel="noopener"><time class="fl" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time></a>
                 {% if page.categories.size > 0 %}
                     {{ page.categories | array_to_sentence_string }}
                 {% endif %}
@@ -25,19 +25,11 @@ post_class: post-template
 
     <footer class="mw7 center bt b--light-silver pt3 ph2">
 
-        <!-- Share links section -->
-        {% include share.html %}
-
-        <div class="tc">
-            <a class="f6-ns f7 link dim br2 ba ph3 pv2 ma2 dib gray" href="https://github.com/jdillard/jdillard.github.io/commits/master/{{ page.path }}" target="_blank" rel="noopener">View Post History</a></span>
-            <a class="f6-ns f7 link dim br2 ba ph3 pv2 ma2 dib gray" href="https://github.com/jdillard/jdillard.github.io/issues" target="_blank" rel="noopener">Leave Some Feedback</a></span>
-        </div>
-
         <div class="mt3 b f3-ns f4-ns f5 black-70">Recent Posts</div>
 
         <ul class="list pl0">
             {% for post in site.related_posts limit:10 %}
-            <li class="pv2 f4-ns f5"><a class="pa2 link black-70 bg-animate hover-bg-near-white" href="{{ post.url }}"><span class="f5-ns f6 gray mr1"> {{ post.date | date: "%b %d, %Y" }}</span> {{ post.title }}</a></li>
+            <li class="pv2 f4-ns f5"><a class="pa2 link black-70 hover-light-red" href="{{ post.url }}"><span class="f5-ns f6 gray mr1"> {{ post.date | date: "%b %d, %Y" }}</span> {{ post.title }}</a></li>
             {% endfor %}
         </ul>
 

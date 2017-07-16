@@ -1,22 +1,22 @@
 <div class="flex relative overflow-hidden {% if page.cover %}h6-ns h4{% else %}h4{% endif %}">
-    <div class="w-100 bg-black-90">
-    <nav class="mw7 center flex justify-between">
-    <a class="link baskerville ttu tracked white hover-white no-underline flex items-center pa3" href="/">
-        Jared Dillard
-    </a>
-    <div class="pa3 flex items-center">
-        <a class="f6 link dib white dim mr3 mr4-ns" href="/about.html">About</a>
-        <a class="f6 link dib white dim mr3 mr4-ns" href="/">Blog</a>
-        <a class="f6 link dib white dim" href="https://twitter.com/itslogicwon" rel="noopener">{% include svgs/twitter.svg class='fill-white' width='40' height='40' %}</a>
-        <a class="f6 link dib white dim" href="https://github.com/jdillard" rel="noopener">{% include svgs/github.svg class='fill-white' width='40' height='40' %}</a>
-        <a class="f6 link dib white dim" href="https://www.instagram.com/farmerofbits" rel="noopener">{% include svgs/instagram.svg class='fill-white' width='40' height='40' %}</a>
-        <a class="f6 link dib white dim" href="https://www.linkedin.com/in/jareddillard/" rel="noopener">{% include svgs/linkedin.svg class='fill-white' width='40' height='40' %}</a>
-    </div>
-    </nav>
+    <div class="w-100 flex h3 justify-between bg-white bb b--moon-gray">
+      <nav class="flex items-stretch">
+        <a class="link flex items-center baskerville ttu tracked b black-90 hover-bg-light-red hover-white no-underline ph3 br bw1 b--near-white" href="/">
+            Jared Dillard
+        </a>
+        <a class="f6 link flex items-center justify-center mid-gray hover-bg-light-red hover-white ph3 br bw1 b--near-white" href="/about.html">about</a>
+        <a class="f6 link flex items-center mid-gray hover-bg-light-red hover-white ph3 br bw1 b--near-white" href="/">articles</a>
+      </nav>
+      <div class="flex items-stretch">
+          <a class="f6 link flex items-center black-70 hover-bg-light-red hover-white ph3 bl bw1 b--near-white" href="https://twitter.com/itslogicwon" rel="noopener">{% include svgs/twitter.svg class='' width='40' height='40' %}</a>
+          <a class="f6 link flex items-center black-70 hover-bg-light-red hover-white ph3 bl bw1 b--near-white" href="https://github.com/jdillard" rel="noopener">{% include svgs/github.svg class='' width='40' height='40' %}</a>
+          <a class="f6 link flex items-center black-70 hover-bg-light-red hover-white ph3 bl bw1 b--near-white" href="https://www.instagram.com/farmerofbits" rel="noopener">{% include svgs/instagram.svg class='' width='40' height='40' %}</a>
+          <a class="f6 link flex items-center black-70 hover-bg-light-red hover-white ph3 bl bw1 b--near-white" href="https://www.linkedin.com/in/jareddillard/" rel="noopener">{% include svgs/linkedin.svg class='' width='40' height='40' %}</a>
+      </div>
     </div>
   {% if page.cover %}
     <div class="hero__image cover bg-center absolute top-4 left-0 right-0 bottom-0 {{ page.cover }}-cover" id="ParallaxImage"></div>
   {% else %}
-    <div class="hero__no-cover h3 absolute top-4 left-0 right-0 bottom-0 bg-lightest-blue" id="ParallaxImage"></div>
+    <div id="ParallaxImage"></div>
   {% endif %}
 </div>
