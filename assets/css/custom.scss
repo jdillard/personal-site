@@ -6,8 +6,18 @@
     "syntax"
 ;
 
-.post-content a {
-    color: rgba(0,0,0,.7);
+.post-content a, .post-content a:visited, .post-content a:active {
+    color: #FF725C;
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+.post-content blockquote p a, .post-content blockquote p a:visited, .post-content blockquote p :active {
+    color: currentColor;
+    text-decoration: underline;
 }
 
 blockquote {
