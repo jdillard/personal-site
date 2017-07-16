@@ -6,10 +6,10 @@ post_class: post-template
 <div class="hero__seperator h3 nt5 bg-white"></div>
 
 <main>
-    <article class="center mw6-5 avenir pt2 ph2 black-70">
+    <article class="avenir pt2 ph2 black-70">
         <header>
-            <h1 class="f2-ns f3 black-70 lh-title sans-serif mb3">{{ page.title }}</h1>
-            <div class="f6-ns f7 mh1 ph2 pv1 tr sans-serif lh-copy light-silver">
+            <h1 class="f1-ns f3 center tc mw7 black-70 athelas lh-title avenir">{{ page.title }}</h1>
+            <div class="f6-ns f7 center mw6-5 mh1 ph2 pv1 tr sans-serif lh-copy light-silver">
                 <time class="fl" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time>
                 {% if page.categories.size > 0 %}
                     {{ page.categories | array_to_sentence_string }}
@@ -17,7 +17,7 @@ post_class: post-template
             </div>
         </header>
 
-        <section class="post-content f5 lh-copy mt4-ns mt3 pt2 bt-ns b--light-gray">
+        <section class="post-content f5 center mw6-5 lh-copy mt3 pt2 bt-ns b--light-gray">
             {{content}}
         </section>
 
