@@ -1,4 +1,4 @@
-<div class="flex relative overflow-hidden {% if page.cover %}h6-ns h4{% else %}h4{% endif %}">
+<div class="flex relative overflow-hidden {% if page.cover %}h6-ns h3{% else %}h3{% endif %}">
     <div class="w-100 flex h3 justify-between bg-white bb b--moon-gray">
       <nav class="flex items-stretch">
         <a class="link flex items-center baskerville ttu tracked b black-90 hover-bg-light-red hover-white no-underline ph3 br bw1 b--near-white" href="/">
@@ -20,3 +20,7 @@
     <div id="ParallaxImage"></div>
   {% endif %}
 </div>
+
+{% if page.cover %}
+<div class="hero__seperator h3 nt5 bg-white"></div>
+{% endif %}
