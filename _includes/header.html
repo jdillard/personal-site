@@ -1,20 +1,20 @@
 <div class="flex relative overflow-hidden {% if page.cover %}h6-ns h3{% else %}h3{% endif %}">
-    <div class="w-100 flex h3 justify-between bg-white bb b--moon-gray">
+    <div class="w-100 flex h3 z-5 justify-between bg-white bb b--moon-gray">
       <nav class="flex items-stretch">
-        <a class="link flex items-center baskerville ttu tracked b black-90 hover-bg-light-red hover-white no-underline ph3 br bw1 b--near-white" href="/">
+        <a class="link flex items-center baskerville ttu tracked b black-90 hover-bg-light-red hover-white no-underline ph4 br bw1 b--near-white" href="/">
             Jared Dillard
         </a>
         <a class="f6 link flex items-center justify-center mid-gray hover-bg-light-red hover-white ph3 br bw1 b--near-white" href="/about.html">about</a>
         <a class="f6 link flex items-center mid-gray hover-bg-light-red hover-white ph3 br bw1 b--near-white" href="/">articles</a>
       </nav>
       <div class="flex-ns items-stretch dn">
-          <a class="f6 link flex items-center black-70 hover-bg-light-red hover-white ph3 bl bw1 b--near-white" href="https://twitter.com/itslogicwon" rel="noopener">{% include svgs/twitter.svg class='' width='40' height='40' %}</a>
-          <a class="f6 link flex items-center black-70 hover-bg-light-red hover-white ph3 bl bw1 b--near-white" href="https://github.com/jdillard" rel="noopener">{% include svgs/github.svg class='' width='40' height='40' %}</a>
-          <a class="f6 link flex items-center black-70 hover-bg-light-red hover-white ph3 bl bw1 b--near-white" href="/feed.xml">{% include svgs/rss.svg class='' width='30' height='30' %}</a>
+          <a class="f6 link flex items-center black-70 hover-bg-light-red hover-white ph3 bl bw1 b--near-white" href="https://twitter.com/itslogicwon" rel="noopener">{% include svgs/twitter.svg class='grow' width='40' height='40' %}</a>
+          <a class="f6 link flex items-center black-70 hover-bg-light-red hover-white ph3 bl bw1 b--near-white" href="https://github.com/jdillard" rel="noopener">{% include svgs/github.svg class='grow' width='40' height='40' %}</a>
+          <a class="f6 link flex items-center black-70 hover-bg-light-red hover-white ph3 bl bw1 b--near-white" href="/feed.xml">{% include svgs/rss.svg class='grow' width='30' height='30' %}</a>
       </div>
     </div>
   {% if page.cover %}
-    <div class="hero__image cover bg-center absolute top-4 left-0 right-0 bottom-0 {{ page.cover }}-cover" id="ParallaxImage"></div>
+    <div class="hero__image cover bg-center absolute top-0 left-0 right-0 bottom-0 {{ page.cover }}-cover" id="ParallaxImage"></div>
   {% else %}
     <div id="ParallaxImage"></div>
   {% endif %}

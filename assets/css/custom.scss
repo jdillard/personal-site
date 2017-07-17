@@ -52,6 +52,22 @@
     padding: 0;
 }
 
+ul.list li a span {
+    display: block;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+ul.list li:hover a span {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+}
+
 ::selection {
     color:#ffffff;
     background: #FF725C;

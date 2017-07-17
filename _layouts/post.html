@@ -3,7 +3,7 @@ layout: default
 post_class: post-template
 ---
 
-<main class="mb5">
+<main class="mb4">
     <article class="avenir pt2 ph2 black-70">
         <header>
             <h1 class="f1-ns f3 center tc mw7 black-70 athelas lh-title avenir">{{ page.title }}</h1>
@@ -15,19 +15,24 @@ post_class: post-template
             </div>
         </header>
 
-        <section class="post-content f5 center mw6-5 lh-copy mt3 pt2 bt-ns b--light-gray">
+        <section class="post-content f5 center mw6-5 lh-copy mt3 mb5 pt2 bt-ns b--light-gray">
             {{content}}
         </section>
 
     </article>
 
-    <footer class="mw7 center bt b--light-silver pt3 ph2">
+    <footer class="mw6-5 center bt bw1 b--light-red pt3 ph2">
 
-        <div class="mt3 b f3-ns f4-ns f5 black-70">Recent Posts</div>
+        <div class="mt4 b f3-ns f4-ns f5 black-70">Recent Posts</div>
 
         <ul class="list pl0">
             {% for post in site.related_posts limit:10 %}
-            <li class="pv3-ns pv2 f4-ns f5"><a class="flex-ns items-center link black-70 hover-light-red" href="{{ post.url }}"><time class="f5-ns f6 gray db mr3"> {{ post.date | date: "%b %d, %Y" }}</time> <span class="pv0-ns pv1 db">{{ post.title }}</span></a></li>
+            <li class="pv3-ns pv2 f4-ns f5">
+                <a class="flex-ns items-center no-underline black-70 hover-light-red" href="{{ post.url }}">
+                    <time class="f5-ns f6 gray db mr3"> {{ post.date | date: "%b %d, %Y" }}</time>
+                    <span class="pv0-ns pv1 db">{{ post.title }}</span>
+                </a>
+            </li>
             {% endfor %}
         </ul>
 
