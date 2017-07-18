@@ -24,7 +24,7 @@ After flying into Seattle the previous day, we stopped at the Marblemount Ranger
 {: {{site.data.css.tip-box}} }
 
 <blockquote>
-<p><strong>Pro Tip:</strong> Prepare for the weather conditions or you'll end up going back down it again anyways -- guess how we know.</p>
+<p><strong>Pro Tip:</strong> Prepare for the weather conditions or you'll end up going down it on the way back regardless -- guess how we know.</p>
 </blockquote>
 
 While the hike up is strenuous, full of switchbacks, and has some downed trees over the trail, but still has plenty of spots to rest. While we were we could even refill our water at easily accessible streams.
@@ -32,10 +32,10 @@ While the hike up is strenuous, full of switchbacks, and has some downed trees o
 {: {{site.data.css.info-box}} }
 
 <blockquote>
-<p><strong>Side Note:</strong> As others have reported, the GPS didn't quite match up with the map for a small portion of this section, but we believe it might have been caused by a small landslide at some point whiched then caused them to move the trail.</p>
+<p><strong>Side Note:</strong> As others have reported, the GPS didn't quite match up with the map for a small portion of this section, but we believe it might have been caused by a small landslide at some point which then caused them to move the trail.</p>
 </blockquote>
 
-Shortly after the turnoff for the Crater Lake trail we found what appears to be the first available camping spot, which had options for tent placement and enough to handle two smallish parties. There was also a stream at the Crater Lake turnoff a short distance from the camping area that came in real handy.
+Shortly after the turnoff for the Crater Lake trail, we found what appears to be the first available camping spot, which had options for tent placement and enough to handle two smallish parties. There was also a stream at the Crater Lake turnoff a short distance from the camping area that came in real handy.
 
 Even though we tried to check the nearest weather stations to the area we didn't quite have a grasp on what the weather conditions would be like this time of year. As it turns out, since this is still on the Western side of the mountain range it is highly susceptible to rain so make sure to bring proper shelter.
 
@@ -47,14 +47,14 @@ Even though we tried to check the nearest weather stations to the area we didn't
 
 ## Day 2 - "The Cabin"
 
-We were rained on pretty consistently the entire first night and both of our Half Dome 2 tents didn't do the best job of keeping the rain out. We were discussing our options after we woke up wet when some hunters started to come back down the trail. They told us there was a three sided shelter at Devil's Park with some dry wood for a fire that they left behind. With that information we decided to make "The Cabin" our next spot to make a decision since it offered a place to dry out around the fire.
+We were rained on pretty consistently the entire first night and both of our Half Dome 2 tents didn't do the best job of keeping the rain out. We were discussing our options after we woke up wet when some hunters started to come back down the trail. They told us there was a three sided shelter at Devil's Park with some dry wood for a fire that they left behind. With that information, we decided to make "The Cabin" our next spot to make a decision since it offered a place to dry out around the fire.
 
-The hike started off nearly flat, which a nice reprieve from the previous day's hike, with great views often cut short by the rolling fog. As we started climbing in elevation the light rain quickly turned to sleet and then to snow. It was quite a sight and even though our feet and hands were cold we were sill in constant amazement.
+The hike started off nearly flat, which a nice reprieve from the previous day's hike, with great views often cut short by the rolling fog. As we started climbing in elevation the light rain quickly turned to sleet and then to snow. It was quite a sight and even though our feet and hands were cold we were still in constant amazement.
 
 <img src="/assets/images/posts/devils-pass.jpg" alt="Devils Pass" title="Devil's Pass">{: .shadow-5 }
 <small><i>Rain turned to sleet then snow as we hiked through Devil's Pass</i></small>
 
-The shelter was a welcome site upon arrival and we immediately set out on gathering fire supplies before everything became drenched. We ended up spending about 7 hours hanging out and drying everything we could, with a few fire casualties along the way.
+The shelter was a welcome sight upon arrival and we immediately set out on gathering fire supplies before everything became drenched. We ended up spending about 7 hours hanging out and drying everything we could, with a few fire casualties along the way.
 
 {: {{site.data.css.tip-box}} }
 
@@ -62,7 +62,7 @@ The shelter was a welcome site upon arrival and we immediately set out on gather
 <p><strong>Pro Tip:</strong> Be patient when drying off by the fire -- guess how we know.</p>
 </blockquote>
 
-There is a stream to refill water and if you are there during blueberry season there are plenty of opportunities to gather blueberries (or huckleberries -- we never confirmed which).
+There is a stream to refill water and if you are there during the blueberry season there are plenty of opportunities to gather blueberries (or huckleberries -- we never confirmed which).
 
 There was an old faded sign posted on the shelter that appeared to say something about it being a snow survey location, but these days it seems to mainly be used by hunters during the high hunt season as there is the perfect backdrop behind it.
 
@@ -89,7 +89,7 @@ The view from the lower summit is incredible, with a view of Jack Mountain over 
 <img src="/assets/images/posts/crater-mountain.jpg" alt="Crater Mountain" title="Crater Mountain">{: .shadow-5 }
 <small><i>The view of Jack Mountain from the lower summit of Crater Mountain</i></small>
 
-We hung out at the top a little bit and after taking our fill of pictures we headed back down to camp and start supper. When we got back to camp there was an older gentleman there that said he just hiked up the steep accent and wanted to know if he could share the site with us, which of course wasn't a problem.
+We hung out at the top a little bit and after taking our fill of pictures we headed back down to camp and start supper. When we got back to camp there was an older gentleman there that said he just hiked up the steep ascent and wanted to know if he could share the site with us, which of course wasn't a problem.
 
 It worked out great as he had been hiking and bushwhacking in the North Cascades region for around thirty years and dropped a lot of regional knowledge on us -- including demonstrations of the various encounters with elks he's had on his many hikes and hunts.
 
@@ -101,11 +101,11 @@ It worked out great as he had been hiking and bushwhacking in the North Cascades
 
 ## Day 4 - The Hike Back Down
 
-We woke up that morning without a solid plan and decided to hike back down, waiting until we got to the trailhead to figure it out. Along the way we stopped to talk to a regular hunter of the area going the other direction and was able to glean a little mores regional knowledge of his.
+We woke up that morning without a solid plan and decided to hike back down, waiting until we got to the trailhead to figure it out. Along the way, we stopped to talk to a regular hunter of the area going the other direction and was able to glean a little mores regional knowledge of his.
 
-Once at the trailhead we met a local camper and asked for recommendations and he recommended the Maple Pass Loop due to it's amazing views and the fact that it's a day hike. Before waiting too long we thought we should check in at a ranger station to let them know we were safe, since we didn't stick to our itinerary.
+Once at the trailhead, we met a local camper and asked for recommendations and he recommended the Maple Pass Loop due to it's amazing views and the fact that its a day hike. Before waiting too long we thought we should check in at a ranger station to let them know we were safe since we didn't stick to our itinerary.
 
-One of the hunters had raved about the Winthrop Ranger station so we decided we would go there as it also happened to be near the Maple Pass Loop. The drive into Winthrop has scenic view and once you get there, a classic western town vibe.
+One of the hunters had raved about the Winthrop Ranger station so we decided we would go there as it also happened to be near the Maple Pass Loop. The drive into Winthrop has scenic views and once you get there, a classic western town vibe.
 
 We got to the station and found out they really only cared if our car was parked at the trailhead for longer than our itinerary stated. They ended up recommending a burger joint in town and spot to camp near the trailhead, so we stopped in for a quick meal before heading to the Long Fur Campground for the night. We were able to get in some excellent stargazing now that we were more East of the mountain range we where there is less rainfall.
 

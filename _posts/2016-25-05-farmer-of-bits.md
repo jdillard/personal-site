@@ -16,7 +16,7 @@ First I'll muddy the waters with a flood of background and loose definitions in 
 
 ## Market Gardening
 
-[Market Gardening](http://en.wikipedia.org/wiki/Market_garden) is defined as the relatively small-scale production of crops that are sold directly to customers. This term is typically reserved for someone making a full time or at least a healthy part-time income from it, which often requires an [acre and a half](http://www.amazon.com/The-Market-Gardener-Successful-Small-scale/dp/0865717656) to a few acres acres depending on the location and what is being grown. 
+[Market Gardening](http://en.wikipedia.org/wiki/Market_garden) is defined as the relatively small-scale production of crops that are sold directly to customers. This term is typically reserved for someone making a full time or at least a healthy part-time income from it, which often requires an [acre and a half](http://www.amazon.com/The-Market-Gardener-Successful-Small-scale/dp/0865717656) to a few acres depending on the location and what is being grown. 
 
 ## In The 21st Century
 
@@ -25,13 +25,13 @@ With me being a perpetual renter in an increasingly urban environment and intere
 In order to [live this question](https://www.goodreads.com/quotes/717-be-patient-toward-all-that-is-unsolved-in-your-heart) I first became involved with an organization called [Urban Patchwork](http://www.urbanpatchwork.org/) that happened to have already organized a front yard garden paired with an excellent green thumbed mentor just down the street from where I was renting. This cut my costs and need for buying land and even came bundled with knowledge!
 
 {: {{site.data.css.info-box}} }
-> **Side Note:** Urban Patchwork worked by bringing together a person with land (often a residential lot) that wanted a garden, an experienced gardener, volunteers and beginners, and paying customers. At one point there was a patchwork of them across the city and they would have a harvest in their area every two weeks to create CSA baskets and the land owners, lead gardeners, long term volunteers, and paying customers would each get one. It was quite wonderful, but relied solely on volunteer efforts.
+> **Side Note:** Urban Patchwork worked by bringing together a person with land (often a residential lot) that wanted a garden, an experienced gardener, volunteers and beginners, and paying customers. At one point there was a patchwork of them across the city and they would have a harvest in their area every two weeks to create CSA baskets and the land owners, lead gardeners, long term volunteers, and paying customers would each get one. It was quite wonderful but relied solely on volunteer efforts.
 
 ## With Cooperation
 
 Unfortunately, the patch in the patchwork I was working on came undone around the time I started and so other ideas of what to do with it started circulating. The idea of a producer cooperative for gardeners quickly took hold.
 
-A [producer cooperative](http://www.geo.coop/taxonomy/term/139) is a producer owned and democratically-controlled organization that serves its members through any combination of cooperative marketing, support, and bulk purchasing. In this case the producers were all hobbyist gardeners.
+A [producer cooperative](http://www.geo.coop/taxonomy/term/139) is a producer owned and democratically-controlled organization that serves its members through any combination of cooperative marketing, support, and bulk purchasing. In this case, the producers were all hobbyist gardeners.
 
 {: {{site.data.css.info-box}} }
 > **Side Note:** Producer cooperatives have a long and strong history in the United States, gaining popularity with the [Granger Movement](http://www.britannica.com/EBchecked/topic/241647/Granger-movement) in the late 1800s, as documented by [Solon Justus Buck](https://books.google.com/books?id=Hfi5AAAAIAAJ).
@@ -46,7 +46,7 @@ Since the success of the coop, in part, depended on enough produce being availab
 
 ## It's Kind of Like Software
 
-Anyone that has been involved in developing a large software product, and its surrounding ecosystem, knows it also requires a tremendous amounts of discipline, planning, and maintenance. And if you're like me, seeing concepts from a different point of view helps them sink in. The main difference with "market gardening" is that unlike technology driven software everything is much slower and palpable. For example, if you plant something at the wrong time you can't pull an all-nighter to make it ready for harvest by morning. You also have to work along side that mistake as it isn't hidden on some other server for you to worry about later. 
+Anyone that has been involved in developing a large software product, and its surrounding ecosystem, knows it also requires tremendous amounts of discipline, planning, and maintenance. And if you're like me, seeing concepts from a different point of view helps them sink in. The main difference with "market gardening" is that unlike technology driven software everything is much slower and palpable. For example, if you plant something at the wrong time you can't pull an all-nighter to make it ready for harvest by morning. You also have to work along side that mistake as it isn't hidden on some other server for you to worry about later. 
 
 ## The End
 

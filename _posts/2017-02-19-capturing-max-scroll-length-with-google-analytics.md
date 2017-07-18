@@ -13,15 +13,14 @@ After reading Google Analytics developer Philip Walton's post on
 I realized I didn't know nearly as much as I had originally thought about
 setting up Google Analytics.
 
-I started simple by just adding the
-[googleanalytics/autotrack](https://github.com/googleanalytics/autotrack) script
-along with the [maxScrollTracker](https://github.com/googleanalytics/autotrack/blob/master/docs/plugins/max-scroll-tracker.md)
+I started by only adding the [googleanalytics/autotrack](https://github.com/googleanalytics/autotrack)
+script along with the [maxScrollTracker](https://github.com/googleanalytics/autotrack/blob/master/docs/plugins/max-scroll-tracker.md)
 plugin to my sites in order to tell which pages users scroll the most on and
 what sources refer the most engaged readers. This information could be useful to
 see how engaging your current content is or when deciding on how to structure
 important content on particular pages.
 
-During this process I felt I ran into some gaps in the documentation so I'll try
+During this process, I felt I ran into some gaps in the documentation so I'll try
 and fill those in with the steps I went through to arrive at what I think was
 the correct destination.
 
@@ -78,10 +77,10 @@ admin panel. Click **New Calculated Metric** and fill out the fields:
 | **Formula**         | {{Max Scroll Percentage}} / ( 100 * {{Unique Pageviews}} ) |
 {% endraw %}
 
-The calculated formula takes the `Max Scroll Percentage` custom metric that was
-just set up, which is per unique page path per session, and calculates the
-average by dividing by the already existing `Unique Pageviews` metric, allowing
-it to be applied to different dimensions in a report.
+The calculated formula takes the `Max Scroll Percentage` custom metric, which is per
+unique page path per session, and calculates the average by dividing by the already 
+existing `Unique Pageviews` metric, allowing it to be applied to different dimensions
+in a report.
 
 ## Set Up the Custom Report
 
