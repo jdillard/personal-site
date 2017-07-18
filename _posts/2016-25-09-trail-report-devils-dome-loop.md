@@ -105,7 +105,7 @@ We woke up that morning without a solid plan and decided to hike back down, wait
 
 Once at the trailhead, we met a local camper and asked for recommendations and he recommended the Maple Pass Loop due to it's amazing views and the fact that its a day hike. Before waiting too long we thought we should check in at a ranger station to let them know we were safe since we didn't stick to our itinerary.
 
-One of the hunters had raved about the Winthrop Ranger station so we decided we would go there as it also happened to be near the Maple Pass Loop. The drive into Winthrop has scenic views and once you get there, a classic western town vibe.
+One of the hunters had raved about the Winthrop Ranger station so we decided we would go there as it also happened to be near the Maple Pass Loop. Winthrop has a classic western town vibe with some great scenic views on the drive in.
 
 We got to the station and found out they really only cared if our car was parked at the trailhead for longer than our itinerary stated. They ended up recommending a burger joint in town and spot to camp near the trailhead, so we stopped in for a quick meal before heading to the Long Fur Campground for the night. We were able to get in some excellent stargazing now that we were more East of the mountain range we where there is less rainfall.
 
