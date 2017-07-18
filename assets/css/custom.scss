@@ -6,6 +6,16 @@
     "syntax"
 ;
 
+.hover-shadow-5:hover {
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
+    transition: box-shadow 0.10s ease-out;
+}
+
+.hover-b--light-red:hover {
+    border-color: #FF725C;
+    transition: border-left 0.10s ease-out;
+}
+
 .post-content a, .post-content a:visited, .post-content a:active, .post-content a:hover {
     color: #FF725C;
 }
