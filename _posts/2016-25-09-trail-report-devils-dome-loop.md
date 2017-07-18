@@ -11,7 +11,7 @@ cover: devils-dome
 ---
 
 
-Devil's Dome Loop is located in the Pasayten Wilderness which overlaps with the North Cascades National Park. We started September 18th at the Canyon Creek Trailhead just off Highway 20, which has a large gravel lot for parking, an outhouse, and a stream flowing beside it when we were there. To park at the trailhead requires a Northwest Forest Pass, although other passes may also be valid.
+Devil's Dome Loop is located in the Pasayten Wilderness which overlaps with the North Cascades National Park. We started September 18th at the Canyon Creek Trailhead right off Highway 20, which has a large gravel lot for parking, an outhouse, and a stream flowing beside it when we were there. To park at the trailhead requires a Northwest Forest Pass, although other passes may also be valid.
 
 Since it was later in the season we only saw a couple other cars in the parking lot that happened to belong to hunters. We later found out that September 15th through the 25th is known as the "High Hunt" when hunters come out to hunt the deer that go up near the tree line during that time of year.
 
@@ -49,7 +49,7 @@ Even though we tried to check the nearest weather stations to the area we didn't
 
 We were rained on pretty consistently the entire first night and both of our Half Dome 2 tents didn't do the best job of keeping the rain out. We were discussing our options after we woke up wet when some hunters started to come back down the trail. They told us there was a three sided shelter at Devil's Park with some dry wood for a fire that they left behind. With that information, we decided to make "The Cabin" our next spot to make a decision since it offered a place to dry out around the fire.
 
-The hike started off nearly flat, which a nice reprieve from the previous day's hike, with great views often cut short by the rolling fog. As we started climbing in elevation the light rain quickly turned to sleet and then to snow. It was quite a sight and even though our feet and hands were cold we were still in constant amazement.
+The hike started off flat, which a nice reprieve from the previous day's hike, with great views often cut short by the rolling fog. As we started climbing in elevation the light rain turned to sleet and then to snow. It was quite a sight and even though our feet and hands were cold we were still in constant amazement.
 
 <img src="/assets/images/posts/devils-pass.jpg" alt="Devils Pass" title="Devil's Pass">{: .shadow-5 }
 <small><i>Rain turned to sleet then snow as we hiked through Devil's Pass</i></small>
@@ -64,7 +64,7 @@ The shelter was a welcome sight upon arrival and we immediately set out on gathe
 
 There is a stream to refill water and if you are there during the blueberry season there are plenty of opportunities to gather blueberries (or huckleberries -- we never confirmed which).
 
-There was an old faded sign posted on the shelter that appeared to say something about it being a snow survey location, but these days it seems to mainly be used by hunters during the high hunt season as there is the perfect backdrop behind it.
+There was an old faded sign posted on the shelter that appeared to say something about it being a snow survey location, but these days it seems to be used by hunters during the high hunt season as there is the perfect backdrop behind it.
 
 We later came across a hunter that said he had been coming out to that shelter for over a decade and had put an effort into upkeeping it every trip, but noticed fewer and fewer others were helping out in that regard. So if you're handy and stop at the shelter maybe replace a shingle or two with the hammer, nails, and shingles left in the corner.
 
@@ -89,7 +89,7 @@ The view from the lower summit is incredible, with a view of Jack Mountain over 
 <img src="/assets/images/posts/crater-mountain.jpg" alt="Crater Mountain" title="Crater Mountain">{: .shadow-5 }
 <small><i>The view of Jack Mountain from the lower summit of Crater Mountain</i></small>
 
-We hung out at the top a little bit and after taking our fill of pictures we headed back down to camp and start supper. When we got back to camp there was an older gentleman there that said he just hiked up the steep ascent and wanted to know if he could share the site with us, which of course wasn't a problem.
+We hung out at the top a little bit and after taking our fill of pictures we headed back down to camp and start supper. When we got back to camp there was an older gentleman there that said he had just hiked up the steep ascent and wanted to know if he could share the site with us, which of course wasn't a problem.
 
 It worked out great as he had been hiking and bushwhacking in the North Cascades region for around thirty years and dropped a lot of regional knowledge on us -- including demonstrations of the various encounters with elks he's had on his many hikes and hunts.
 
@@ -107,8 +107,8 @@ Once at the trailhead, we met a local camper and asked for recommendations and h
 
 One of the hunters had raved about the Winthrop Ranger station so we decided we would go there as it also happened to be near the Maple Pass Loop. Winthrop has a classic western town vibe with some great scenic views on the drive in.
 
-We got to the station and found out they really only cared if our car was parked at the trailhead for longer than our itinerary stated. They ended up recommending a burger joint in town and spot to camp near the trailhead, so we stopped in for a quick meal before heading to the Long Fur Campground for the night. We were able to get in some excellent stargazing now that we were more East of the mountain range we where there is less rainfall.
+We got to the station and found out they only cared if our car was parked at the trailhead for longer than our itinerary stated. They ended up recommending a burger joint in town and spot to camp near the trailhead, so we stopped in for a quick meal before heading to the Long Fur Campground for the night. We were able to get in some excellent stargazing now that we were more East of the mountain range we where there is less rainfall.
 
 ## Summary
 
-Even though we didn't finish the whole loop, the first half alone makes it worth it. I would recommend going a little earlier in the season or being more prepared for cold rain and hiking in the snow. I definitely want to go back and explore the North Cascades and Pasayten Wilderness more thoroughly.
+Even though we didn't finish the whole loop, the first half alone makes it worth it. I would recommend going a little earlier in the season or being more prepared for cold rain and hiking in the snow. I definitely want to go back and explore the North Cascades and Pasayten Wilderness more.
