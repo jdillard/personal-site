@@ -8,9 +8,11 @@ post_class: post-template
         <header>
             <h1 class="f1-ns f3 center tc mw7 mt5-ns mt4 black-70 athelas lh-title avenir">{{ page.title }}</h1>
             <div class="f6-ns f7 center mw6-5 mh1 ph2 pv1 tr sans-serif lh-copy gray">
-                <a class="fl link gray hover-light-red" href="https://github.com/jdillard/jdillard.github.io/commits/master/{{ page.path }}" target="_blank" rel="noopener"><time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time></a>
+                <a class="fl no-underline fancy-link relative gray hover-light-red" href="https://github.com/jdillard/jdillard.github.io/commits/master/{{ page.path }}" target="_blank" rel="noopener"><time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time></a>
                 {% if page.categories.size > 0 %}
-                    {{ page.categories | array_to_sentence_string }}
+                    {% for category in page.categories %}
+                        <a class="no-underline fancy-link relative gray hover-light-red" href="/blog/archive.html#{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %} / {% endunless %}
+                    {% endfor %}
                 {% endif %}
             </div>
         </header>
@@ -20,8 +22,10 @@ post_class: post-template
         </section>
 
     </article>
+    
+    <hr class="mw6-ns mw5 mv0 p0 b0 bt bw1 b--light-red light-red bg-light-red">
 
-    <footer class="mw6-5 center bt bw1 b--light-red pt3 ph2">
+    <footer class="mw6-5 center pt3 ph2">
 
         <div class="mt4 b f3-ns f4-ns f5 black-70">Recent Posts</div>
 
