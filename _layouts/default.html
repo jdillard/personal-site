@@ -19,6 +19,13 @@
 
     <link rel="stylesheet" type="text/css" href="/assets/css/tachyons.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/custom.css" />
+
+    {% if page.css_includes %}
+      {% for css_file in page.css_includes %}
+    <link rel="stylesheet" href="{{ css_file }}">
+      {% endfor %}
+    {% endif %}
+
     {% seo %}
 </head>
 <body class="sans-serif bg-white">
@@ -31,6 +38,18 @@
 
     <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
+
+    {% if page.js_includes %}
+      {% for js_file in page.js_includes %}
+    <script src='{{ js_file }}' type="text/javascript"></script>
+      {% endfor %}
+    {% endif %}
+
+    {% if page.script_include %}
+    <script>
+      {{ page.script_include }}
+    </script>
+    {% endif %}
 
     {% if jekyll.environment == "development" %}
     <script src="/assets/js/html-inspector.js"></script>
