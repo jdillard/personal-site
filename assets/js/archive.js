@@ -56,6 +56,10 @@ function grabArticles(load = true, s = 'date') {
 function sortArticles(sort) {
 
     var archive = document.getElementById("archive");
+    var articles_by_date = {};
+    articles_by_date[0] = [];
+    var template = Handlebars.templates['articles'];
+    var len = 0;
     
     archive.innerHTML = "";
     
@@ -66,85 +70,34 @@ function sortArticles(sort) {
         });
 
         var most_recent_year = new Date(articles['data'][0]['date_published']).getFullYear();
-
-        var h = document.createElement("h2");
-            h.setAttribute("id", most_recent_year);
-            h.setAttribute("class", "f3-ns f4");
-        var t = document.createTextNode(most_recent_year);
-        var u = document.createElement("ul");
-            u.setAttribute("class", "list pl0");
-        archive.appendChild(h).appendChild(t);
-        archive.appendChild(u);
+        var new_year = true;
 
         for (var i = 0; i < articles['total']; i++) {
 
             var post_date = new Date(articles['data'][i]['date_published']);
 
-            if(post_date.getFullYear() ===  most_recent_year) {
-
-                var l = document.createElement("li");
-                    l.setAttribute("class", "pv1 f4-ns f5");
-                var a = document.createElement("a");
-                    a.setAttribute("href", articles['data'][i]['url']);
-                    a.setAttribute("class", "flex-ns items-center no-underline black-70 hover-light-red");
-                var time = document.createElement("time");
-                    time.setAttribute("class", "f5-ns f6 gray db mr3");
-                var tt = document.createTextNode(post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12)); 
-                var s = document.createElement("span");
-                    s.setAttribute("class", "pv0-ns pv1 lh-copy db");
-                var st = document.createTextNode(articles['data'][i]['title']);
-                
-                l.appendChild(a).appendChild(time).appendChild(tt);
-                l.appendChild(a).appendChild(s).appendChild(st);
-
-                u.appendChild(l);
-
-            } else {
+            if(post_date.getFullYear() !==  most_recent_year | new_year) {
 
                 most_recent_year = new Date(articles['data'][i]['date_published']).getFullYear();
-                
-                var h = document.createElement("H2");
-                    h.setAttribute("id", most_recent_year);
-                    h.setAttribute("class", "f3-ns f4");
-                var t = document.createTextNode(most_recent_year);
-                var u = document.createElement("ul");
-                    u.setAttribute("class", "list pl0");
-                archive.appendChild(h).appendChild(t);
-                archive.appendChild(u);
+                new_year = false;
 
-                var l = document.createElement("li");
-                    l.setAttribute("class", "pv1 f4-ns f5");
-                var a = document.createElement("a");
-                    a.setAttribute("href", articles['data'][i]['url']);
-                    a.setAttribute("class", "flex-ns items-center no-underline black-70 hover-light-red");
-                var time = document.createElement("time");
-                    time.setAttribute("class", "f5-ns f6 gray db mr3");
-                var tt = document.createTextNode(post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12)); 
-                var s = document.createElement("span");
-                    s.setAttribute("class", "pv0-ns pv1 lh-copy db");
-                var st = document.createTextNode(articles['data'][i]['title']);
-                
-                l.appendChild(a).appendChild(time).appendChild(tt);
-                l.appendChild(a).appendChild(s).appendChild(st);
-
-                u.appendChild(l);
+                //create new json structure
+                len = articles_by_date[0].push({"heading": most_recent_year, "slug": most_recent_year, "data": []});
 
             }
 
+            var post_data = {"date": post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12), "title": articles['data'][i]['title'], "url": articles['data'][i]['url']};
+            articles_by_date[0][len-1]["data"].push(post_data);
+
         }
+
+        archive.innerHTML = template(articles_by_date[0]);
 
     } else if(sort === 'categories') {
 
         for(category = 0; category < categories.length; category++) {
 
-            var h = document.createElement("h2");
-                h.setAttribute("id", categories[category].replace(' ', '-'));
-                h.setAttribute("class", "f3-ns f4");
-            var t = document.createTextNode(categories[category]);
-            var u = document.createElement("ul");
-                u.setAttribute("class", "list pl0");
-            archive.appendChild(h).appendChild(t);
-            archive.appendChild(u);
+            len = articles_by_date[0].push({"heading": categories[category], "slug": categories[category].replace(' ', '-'), "data": []});
 
             for (var i = 0; i < articles['total']; i++) {
 
@@ -154,28 +107,16 @@ function sortArticles(sort) {
 
                 if(post_categories.indexOf(categories[category]) > -1) {
 
-                    var l = document.createElement("li");
-                        l.setAttribute("class", "pv1 f4-ns f5");
-                    var a = document.createElement("a");
-                        a.setAttribute("href", articles['data'][i]['url']);
-                        a.setAttribute("class", "flex-ns items-center no-underline black-70 hover-light-red");
-                    var time = document.createElement("time");
-                        time.setAttribute("class", "f5-ns f6 gray db mr3");
-                    var tt = document.createTextNode(post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12)); 
-                    var s = document.createElement("span");
-                        s.setAttribute("class", "pv0-ns pv1 lh-copy db");
-                    var st = document.createTextNode(articles['data'][i]['title']);
-                    
-                    l.appendChild(a).appendChild(time).appendChild(tt);
-                    l.appendChild(a).appendChild(s).appendChild(st);
-
-                    u.appendChild(l);
+                    var post_data = {"date": post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12), "title": articles['data'][i]['title'], "url": articles['data'][i]['url']};
+                    articles_by_date[0][len-1]["data"].push(post_data);
 
                 }
 
             }
 
         }
+
+        archive.innerHTML = template(articles_by_date[0]);
 
         if(urlHash) {
             document.getElementById(urlHash).scrollIntoView();
