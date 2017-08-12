@@ -10,8 +10,7 @@ baseurl: ""
 domain_name: 'http://jareddillard.com'
 url: 'http://jareddillard.com'
 author: 'Jared Dillard'
-title: "Jared Dillard's Personal Site"
-description: 'Random Thoughts'
+title: "Jared Dillard"
 google_analytics: 'UA-7883601-2 '
 repository: jdillard/jdillard.github.io
 gems: [jekyll-paginate,jekyll-seo-tag,html-proofer,jekyll-sitemap]
