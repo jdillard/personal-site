@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Capturing Max Scroll Length with Google Analytics
+title:  Tracking Max Scroll Length with Google Analytics
 date:   2017-02-19
 published: true
 categories:
@@ -15,7 +15,7 @@ setting up Google Analytics.
 
 I started by only adding the [googleanalytics/autotrack](https://github.com/googleanalytics/autotrack)
 script along with the [maxScrollTracker](https://github.com/googleanalytics/autotrack/blob/master/docs/plugins/max-scroll-tracker.md)
-plugin to my sites in order to tell which pages users scroll the most on and
+plugin to my sites in order to track which pages users scroll the most on and
 what sources refer the most engaged readers. This information could be useful to
 see how engaging your current content is or when deciding on how to structure
 important content on particular pages.
@@ -44,7 +44,7 @@ There are many ways to include `autotrack.js`, but I simply went with:
 
 Once you have that on your page and feeding into Google Analytics, you will need
 to log in to the GA admin panel for the appropriate view and set up a new
-**Custom Metric** that collects the max scroll percentage captured by the
+**Custom Metric** that tracks the max scroll percentage captured by the
 plugin. You can find it in the **Property** section under **Custom
 Definitions**. Then click **New Custom Metric** and fill out the fields:
 
