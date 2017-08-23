@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Farmer of Bits
+title:  "Farmer of Bits"
 date:   2016-05-25
 published: true
 categories: 

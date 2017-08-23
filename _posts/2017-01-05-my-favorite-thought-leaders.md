@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  My Favorite Thought Leaders
+title:  "My Favorite Thought Leaders"
 date:   2017-01-05
 published: false
 categories: 
