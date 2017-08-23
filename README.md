@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/jdillard/jdillard.github.io.svg?branch=master)](https://travis-ci.org/jdillard/jdillard.github.io/)
-
 ## Contributing
 
 Feel free to [create a pull request](https://github.com/jdillard/jdillard.github.io/pulls) or [open an issue](https://github.com/jdillard/jdillard.github.io/issues) for any problems that you run into or corrections that you think need to be made.
