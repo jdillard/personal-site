@@ -15,6 +15,7 @@ google_analytics: 'UA-7883601-2 '
 repository: jdillard/jdillard.github.io
 gems: [jekyll-paginate,jekyll-seo-tag,html-proofer,jekyll-sitemap]
 
+include: ["_headers"]
 exclude: ["Gemfile.lock","Rakefile","Gemfile","README.md","node_modules","npm-debug.log","package.json","vendor"]
 
 twitter:
