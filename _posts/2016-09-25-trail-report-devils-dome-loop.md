@@ -17,23 +17,27 @@ Since it was late in the season we only saw a couple other cars in the parking l
 
 We heard it can be quite a busy time, often with teams of horses used to haul the meat and equipment, but luckily the grade and trail conditions of this section often made it nearly impossible to take a team of horses up.
 
-{: {{site.data.css.info-box}} } &gt; **Side Note:** If you plan on backpacking the Pasayten Wilderness during the High Hunt, September 15th through the 25th, make sure to keep this in mind. While we didn't have any issues, I feel it could potentially have an impact on the hunters and/or the vibe of your trip.
+{: {{site.data.css.info-box}} }
+> **Side Note:** If you plan on backpacking the Pasayten Wilderness during the High Hunt, September 15th through the 25th, make sure to keep this in mind. While we didn't have any issues, I feel it could potentially have an impact on the hunters and/or the vibe of your trip.
 
 ## Day 1 - Switchbacks
 
 After flying into Seattle the previous day, we stopped at the Marblemount Ranger Station to pick up any necessary permits/passes, let them know our itinerary, and ask about the trail conditions. While we were there we picked up [Green Trail](https://greentrailsmaps.com/) waterproof maps 16, 17, 48, and 49, which between them cover the whole loop. After talking with the Rangers, We decided to take the loop counterclockwise, because we (and our knees) preferred to go up the section that has a steep elevation change, rather than down.
 
-{: {{site.data.css.tip-box}} } &gt; **Pro Tip:** Prepare for the weather conditions or you'll end up going down it on the way back regardless – guess how we know.
+{: {{site.data.css.tip-box}} }
+> **Pro Tip:** Prepare for the weather conditions or you'll end up going down it on the way back regardless – guess how we know.
 
 The hike up is strenuous, full of switchbacks, and has some downed trees over the trail, but had easily accessible streams that we could use to refill our water.
 
-{: {{site.data.css.info-box}} } &gt; **Side Note:** As others have reported, the GPS didn't quite match up with the map for a small portion of this section, but we believe it might have been caused by a small landslide at some point which then caused them to move the trail.
+{: {{site.data.css.info-box}} }
+> **Side Note:** As others have reported, the GPS didn't quite match up with the map for a small portion of this section, but we believe it might have been caused by a small landslide at some point which then caused them to move the trail.
 
 Shortly after the turnoff for the Crater Lake trail we found what appears to be the first available camping spot, which had options for tent placement and enough space to handle two smaller parties. There was also a stream at the Crater Lake turnoff a short distance from the camping area that came in handy.
 
 Even though we tried to check the nearest weather stations to the area we didn't quite have a grasp on what the weather conditions would be like this time of year. As it turns out, since this is part of the trail is still on the Western side of the mountain range it is highly susceptible to rain, so make sure to bring proper shelter.
 
-{: {{site.data.css.tip-box}} } &gt; **Pro Tip:** Don't place your tent in a low lying area – guess how we know.
+{: {{site.data.css.tip-box}} }
+> **Pro Tip:** Don't place your tent in a low lying area – guess how we know.
 
 ## Day 2 - "The Cabin"
 
@@ -45,7 +49,8 @@ The hike started off flat, which was a nice reprieve from the previous day's hik
 
 The shelter was a welcome sight upon arrival and we immediately set out on gathering fire supplies before everything became drenched. We ended up spending about 7 hours hanging out and drying everything we could, with a few fire casualties along the way.
 
-{: {{site.data.css.tip-box}} } &gt; **Pro Tip:** Be patient when drying off by the fire – guess how we know.
+{: {{site.data.css.tip-box}} }
+> **Pro Tip:** Be patient when drying off by the fire – guess how we know.
 
 There is a stream to refill water and if you are there during the blueberry season there are plenty of opportunities to gather blueberries (or huckleberries – we never confirmed which).
 
@@ -53,7 +58,8 @@ There was an old faded sign posted on the shelter that appeared to say something
 
 One hunter noted that he had been coming out to that shelter for over a decade and had put an effort into upkeeping it every trip, but noticed fewer and fewer others were helping out in that regard.
 
-{: {{site.data.css.info-box}} } &gt; **Side Note:** If you are handy and decide to stop at the shelter, maybe replace a shingle or two with the hammer, nails, and shingles left in the corner.
+{: {{site.data.css.info-box}} }
+> **Side Note:** If you are handy and decide to stop at the shelter, maybe replace a shingle or two with the hammer, nails, and shingles left in the corner.
 
 ![Devils Park Shelter](/assets/images/posts/devils-park-shelter.jpg "Devil's Park Shelter"){: .shadow-5} <small><i>Devil's Park Shelter where we were able to dry out most of our things</i></small>
 
@@ -75,7 +81,8 @@ We hung out at the top a little bit, then after taking our fill of pictures, hea
 
 It worked out great as he had been hiking and bushwhacking in the North Cascades region for around thirty years and dropped a lot of regional knowledge on us – including entertaining demonstrations of the various encounters with elks he's had on his many hikes and hunts.
 
-{: {{site.data.css.tip-box}} } &gt; **Pro Tip:** If you have to share the camping spot, be friendly – guess how we know.
+{: {{site.data.css.tip-box}} }
+> **Pro Tip:** If you have to share the camping spot, be friendly – guess how we know.
 
 ## Day 4 - The Hike Back Down
 
