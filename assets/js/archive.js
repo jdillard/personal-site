@@ -1,3 +1,7 @@
+//import 'babel-polyfill';
+
+const template = require("./templates/articles.hbs");
+
 var articles = {};
 var categories = [];
 
@@ -24,9 +28,9 @@ function grabArticles(load = true, s = 'date') {
 
                 articles = data;
 
-                for (var key in articles['data']) {
+                for (var key in articles.data) {
 
-                    articles['data'][key]['categories'].forEach(function(element) {
+                    articles.data[key].categories.forEach(function(element) {
 
                         if(categories.indexOf(element) < 0) {
 
@@ -42,7 +46,7 @@ function grabArticles(load = true, s = 'date') {
 
                 sortArticles(sort);
 
-            }
+            };
         })());
 
     } else {
@@ -58,27 +62,26 @@ function sortArticles(sort) {
     var archive = document.getElementById("archive");
     var articles_by_date = {};
     articles_by_date[0] = [];
-    var template = Handlebars.templates['articles'];
     var len = 0;
     
     archive.innerHTML = "";
     
     if(sort === "date") {
 
-        articles["data"].sort(function(a, b) {
+        articles.data.sort(function(a, b) {
             return new Date(b.date_published) - new Date(a.date_published);
         });
 
-        var most_recent_year = new Date(articles['data'][0]['date_published']).getFullYear();
+        var most_recent_year = new Date(articles.data[0].date_published).getFullYear();
         var new_year = true;
 
-        for (var i = 0; i < articles['total']; i++) {
+        for (var i = 0; i < articles.total; i++) {
 
-            var post_date = new Date(articles['data'][i]['date_published']);
+            var post_date = new Date(articles.data[i].date_published);
 
             if(post_date.getFullYear() !==  most_recent_year | new_year) {
 
-                most_recent_year = new Date(articles['data'][i]['date_published']).getFullYear();
+                most_recent_year = new Date(articles.data[i].date_published).getFullYear();
                 new_year = false;
 
                 //create new json structure
@@ -86,8 +89,8 @@ function sortArticles(sort) {
 
             }
 
-            var post_data = {"date": post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12), "title": articles['data'][i]['title'], "url": articles['data'][i]['url']};
-            articles_by_date[0][len-1]["data"].push(post_data);
+            var post_data = {"date": post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12), "title": articles.data[i].title, "url": articles.data[i].url};
+            articles_by_date[0][len-1].data.push(post_data);
 
         }
 
@@ -99,16 +102,16 @@ function sortArticles(sort) {
 
             len = articles_by_date[0].push({"heading": categories[category], "slug": categories[category].replace(' ', '-'), "data": []});
 
-            for (var i = 0; i < articles['total']; i++) {
+            for (var i = 0; i < articles.total; i++) {
 
-                post_categories = articles['data'][i]['categories'];
+                post_categories = articles.data[i].categories;
 
-                post_date = new Date(articles['data'][i]['date_published']);
+                post_date = new Date(articles.data[i].date_published);
 
                 if(post_categories.indexOf(categories[category]) > -1) {
 
-                    var post_data = {"date": post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12), "title": articles['data'][i]['title'], "url": articles['data'][i]['url']};
-                    articles_by_date[0][len-1]["data"].push(post_data);
+                    var post_data = {"date": post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12), "title": articles.data[i].title, "url": articles.data[i].url};
+                    articles_by_date[0][len-1].data.push(post_data);
 
                 }
 
