@@ -39,11 +39,22 @@
     <script type="text/javascript" src="/assets/js/vendor/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/assets/js/vendor/baffle.min.js"></script>
     <script type="text/javascript" src="/assets/dist/js/vendor.bundle.js"></script>
-    <script type="text/javascript" src="/assets/dist/js/index.bundle.js"></script>
+    <script type="text/javascript" src="/assets/dist/js/commons.bundle.js"></script>
 
     {% if page.js_includes %}
       {% for js_file in page.js_includes %}
     <script src='{{ js_file }}' type="text/javascript"></script>
+      {% endfor %}
+    {% endif %}
+
+    {% if layout.js_includes %}
+      {% for js_file in layout.js_includes %}
+          {% assign js_file_origin = js_file | slice: 0, 4 %}
+          {% if js_file_origin == "http" %}
+              <script src='{{ js_file }}' type="text/javascript"></script>
+          {% else %}
+              <script src='{{ js_file }}?{{ site.time | date: "%m%d" }}' type="text/javascript"></script>
+          {% endif %}
       {% endfor %}
     {% endif %}
 

@@ -30,8 +30,10 @@ module.exports = {
           })*/
     ],
     entry: {
-        index: "./assets/js/index.js",
-        archive: "./assets/js/archive.js"
+        about: "./assets/js/about.js",
+        archive: "./assets/js/archive.js",
+        post: "./assets/js/post.js",
+        commons: "./assets/js/commons.js"
     },
     output: {
         path: __dirname,
