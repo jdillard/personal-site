@@ -2,8 +2,8 @@
 
 const template = require("./templates/articles.hbs");
 
-var articles = {};
-var categories = [];
+let articles = {};
+const categories = [];
 
 var urlHash = window.location.hash.substring(1);
 
@@ -28,7 +28,7 @@ function grabArticles(load = true, s = 'date') {
 
                 articles = data;
 
-                for (var key in articles.data) {
+                for (let key in articles.data) {
 
                     articles.data[key].categories.forEach(function(element) {
 
@@ -77,7 +77,7 @@ function sortArticles(sort) {
 
         for (var i = 0; i < articles.total; i++) {
 
-            var post_date = new Date(articles.data[i].date_published);
+            let post_date = new Date(articles.data[i].date_published);
 
             if(post_date.getFullYear() !==  most_recent_year | new_year) {
 
@@ -89,7 +89,7 @@ function sortArticles(sort) {
 
             }
 
-            var post_data = {"date": post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12), "title": articles.data[i].title, "url": articles.data[i].url};
+            let post_data = {"date": post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12), "title": articles.data[i].title, "url": articles.data[i].url};
             articles_by_date[0][len-1].data.push(post_data);
 
         }
@@ -98,19 +98,19 @@ function sortArticles(sort) {
 
     } else if(sort === 'categories') {
 
-        for(category = 0; category < categories.length; category++) {
+        for(let category = 0; category < categories.length; category++) {
 
             len = articles_by_date[0].push({"heading": categories[category], "slug": categories[category].replace(' ', '-'), "data": []});
 
-            for (var i = 0; i < articles.total; i++) {
+            for (let i = 0; i < articles.total; i++) {
 
-                post_categories = articles.data[i].categories;
+                let post_categories = articles.data[i].categories;
 
-                post_date = new Date(articles.data[i].date_published);
+                let post_date = new Date(articles.data[i].date_published);
 
                 if(post_categories.indexOf(categories[category]) > -1) {
 
-                    var post_data = {"date": post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12), "title": articles.data[i].title, "url": articles.data[i].url};
+                    let post_data = {"date": post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12), "title": articles.data[i].title, "url": articles.data[i].url};
                     articles_by_date[0][len-1].data.push(post_data);
 
                 }
@@ -127,4 +127,12 @@ function sortArticles(sort) {
 
     } 
 
+}
+
+const archiveNav = document.getElementById("archive-nav").getElementsByClassName("nav-item");
+
+for (let i = 0; i < archiveNav.length; i++) {
+    archiveNav[i].onclick = function(){ // jshint ignore:line
+        grabArticles(false, archiveNav[i].getAttribute('data-name'));
+    };
 }
