@@ -7,7 +7,8 @@
     "babel-polyfill": "^6.26.0",
     "handlebars": "^4.0.11",
     "jquery": "^3.2.1",
-    "moment": "^2.19.1"
+    "moment": "^2.19.1",
+    "tachyons-generator": "^0.17.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
