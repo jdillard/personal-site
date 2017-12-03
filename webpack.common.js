@@ -3,7 +3,6 @@ const path = require("path");
 const ManifestPlugin = require('webpack-manifest-plugin');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 //const ExtractTextPlugin = require("extract-text-webpack-plugin");
-//const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 //const extractSass = new ExtractTextPlugin({
 //  filename: "css/styles.[contenthash].css",
@@ -25,20 +24,6 @@ module.exports = {
       fileName: '../../_data/asset-manifest.json'
     }),
     new WebpackCleanupPlugin()
-    /*
-    new UglifyJSPlugin({
-      test: /\.js($|\?)/i,
-      include: /\/assets\/js/,
-      uglifyOptions: {
-        ie8: false,
-        ecma: 8,
-        output: {
-          comments: false,
-          beautify: false,
-        },
-        warnings: false
-        }
-      })*/
   ],
   entry: {
     about: "./assets/js/about.js",
@@ -100,6 +85,5 @@ module.exports = {
         }
       }
     ]
-  },
-  devtool: 'eval-source-map'
+  }
 };
