@@ -1,3 +1,5 @@
+[![david Dependency badge](https://david-dm.org/jdillard/personal-site.svg)](https://david-dm.org/jdillard/personal-site)
+
 ## Contributing
 
 Feel free to [create a pull request](https://github.com/jdillard/jdillard.github.io/pulls) or [open an issue](https://github.com/jdillard/jdillard.github.io/issues) for any problems that you run into or corrections that you think need to be made.
