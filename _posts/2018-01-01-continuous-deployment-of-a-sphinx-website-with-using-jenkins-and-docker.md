@@ -10,19 +10,29 @@ categories:
   - web development
 ---
 
-If you have ever set up a [sphinx](http://www.sphinx-doc.org/en/stable/) project you have probably reached the point where you wanted to automate the build and deploy part of the creation process. This can be done several ways, but I chose git hooks going into a [Jenkins](https://jenkins-ci.org/) pipeline using [Docker](https://www.docker.com/) agents.
+If you have ever set up a [sphinx](http://www.sphinx-doc.org/en/stable/) project you have probably reached the point where you want to start automating the build and deploy part of the creation process. This can be done several ways, but I chose git hooks going into a [Jenkins](https://jenkins-ci.org/) pipeline using [Docker](https://www.docker.com/) agents. I am also doing this as a single branch deploy using the **master** branch, how you get your source onto **master** is up to you.
 
-
-
-The four main tasks of the pipeline are to:
-1. Grab the latest source code
-2. Re-create the latest dev environment
-3. Build the sphinx website
-4. Deploy the generated HTML.
+Jenkins pipelines allow to script a build process, from setting up the environment to deploying assets. The main tasks of this sphinx build pipeline are to:
+1. Run the environment.
+2. Pull the latest source code.
+3. Install the latest dependencies.
+4. Build the sphinx site.
+5. Deploy the generated HTML.
 
 ## Preparation
 
 As mentioned, sphinx is a documentation generator written in Python. So it made sense to use ``requirements.txt`` to define the dependencies and a virtual environment to install them in. I also put all of my source documents (including **conf.py**) into a directory called ``source`` to keep them separate from the build files.
+
+```
+.
+├── Dockerfile
+├── Jenkinsfile
+├── requirements.txt
+├── rsync-exclude.txt
+└── source
+    ├── conf.py
+    └── index.rst
+```
 
 Before you start, you will also need to hook in your SCM (source control manager) into Jenkins as well as install and configure some plugins.
 
