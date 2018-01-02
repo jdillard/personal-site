@@ -86,7 +86,12 @@ pipeline {
                 sh 'rm -rf ${BUILD_DIR}'
                 sh 'rm -f ./sphinx-build.log'
 
-                sh '${WORKSPACE}/pyenv/bin/sphinx-build -q -w ./sphinx-build.log -b html -d ${BUILD_DIR}/doctrees ${SOURCE_DIR} ${BUILD_DIR}'
+                sh '''
+                   ${WORKSPACE}/pyenv/bin/sphinx-build \
+                   -q -w ./sphinx-build.log \
+                   -b html \
+                   -d ${BUILD_DIR}/doctrees ${SOURCE_DIR} ${BUILD_DIR}
+                '''
             }
             post {
                 failure {
@@ -98,11 +103,13 @@ pipeline {
             steps {
                 sshagent(credentials: ['deployer']) {
                    sh '''#!/bin/bash
-                      set -x
                       rm -f ./rsync.log
                       RSYNCOPT=(-aze 'ssh -o StrictHostKeyChecking=no')
-                      rsync "${RSYNCOPT[@]}" --exclude-from=./rsync-exclude.txt --log-file=./rsync.log --delete ${BUILD_DIR}/ ${DEPLOY_HOST}
-                      set +x
+                      rsync "${RSYNCOPT[@]}" \
+                      --exclude-from=./rsync-exclude.txt \
+                      --log-file=./rsync.log \
+                      --delete \
+                      ${BUILD_DIR}/ ${DEPLOY_HOST}
                     '''
                 }
             }
