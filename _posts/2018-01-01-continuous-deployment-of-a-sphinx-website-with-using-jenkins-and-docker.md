@@ -31,6 +31,7 @@ As mentioned, sphinx is a documentation generator written in Python. So it made 
 ├── rsync-exclude.txt
 └── source
     ├── conf.py
+    ├── _static
     └── index.rst
 ```
 
