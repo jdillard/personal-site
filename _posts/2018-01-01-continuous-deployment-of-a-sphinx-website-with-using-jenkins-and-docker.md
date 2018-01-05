@@ -13,11 +13,11 @@ categories:
 If you have ever set up a [sphinx](http://www.sphinx-doc.org/en/stable/) project you have probably reached the point where you want to start automating the build and deploy part of the creation process. This can be done several ways, but I chose git hooks going into a [Jenkins](https://jenkins-ci.org/) pipeline using [Docker](https://www.docker.com/) agents. I am also doing this as a single branch deploy using the **master** branch, how you get your source onto **master** is up to you.
 
 Jenkins pipelines allow to script a build process, from setting up the environment to deploying assets. The main tasks of this sphinx build pipeline are to:
-1. Run the environment.
-2. Pull the latest source code.
-3. Install the latest dependencies.
-4. Build the sphinx site.
-5. Deploy the generated HTML.
+1. **Boot** the environment.
+2. **Pull** the latest source code.
+3. **Install** the latest dependencies.
+4. **Build** the sphinx site.
+5. **Deploy** the generated HTML.
 
 ## Preparation
 
@@ -35,7 +35,7 @@ As mentioned, sphinx is a documentation generator written in Python. So it made 
     └── index.rst
 ```
 
-Before you start, you will also need to hook in your SCM (source control manager) into Jenkins as well as install and configure some plugins.
+Before you start, you will also need to hook in your SCM (source control manager) into Jenkins as well as install and configure some plugins. You will also need an external Docker host or to install it locally.
 
 Jenkins Plugins Required:
 
@@ -64,7 +64,7 @@ RUN pip install virtualenv
 CMD ["/bin/bash"]
 ```
 
-The **Dockerfile** is referenced in a **Jenkinsfile**, also stored in the repo, that defines the pipeline process. The parts of the environment that are more likely to change are built out in his file, and the build files it references.
+The **Dockerfile** is referenced in a **Jenkinsfile**, also stored in the repo, that defines the pipeline process. The parts of the environment that are more likely to change are built out in this file, and the build files it references.
 
 ```groovy
 pipeline {
@@ -134,8 +134,18 @@ pipeline {
 }
 ```
 
-> **Note:** If you see anything that's wrong or missing with this post, please
-[open an issue](https://github.com/jdillard/jdillard.github.io/issues) or
-[create a pull request](https://github.com/jdillard/jdillard.github.io/pulls) so
-it can be improved.
-{: {{site.data.css.info-box}} }
+## Troubleshooting tips
+
+Chances are you aren't going to nail it on the first try, so here are some tips to help you get through:
+
+On the Jenkins host, run ``docker images`` to see a list of images that have been created by Jenkins jobs. Any time a change is made to the **Dockerfile** and it needs to rebuild, you will have to delete the now unused image with ``docker rmi <image_id>``.
+
+---
+
+After you have a successful run of you pipeline, you can go to the build URL in Jenkins and use the **Replay** option. This option allows you edit the **Jenkinsfile** locally and rerun it on the same hook event instead of troubleshooting through a stream of commits. Once you have what you need working, you can commit changes to the **Jenkinsfile** in a planned manner.
+
+---
+
+Make sure to turn on log rotation for each pipeline and discard old builds, otherwise you'll end up with a surprise later.
+
+{% include feedback.html %}
