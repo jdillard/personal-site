@@ -31,10 +31,10 @@
     padding: .1em 2.2em .1em 1.75em;
 }
 
-.post-content blockquote p {                                                                  
-     margin: 0.8em 0;                                                            
-     font-style: italic;                                                         
-} 
+.post-content blockquote p {
+     margin: 0.8em 0;
+     font-style: italic;
+}
 
 .post-content code {
     padding: 1px 3px;
@@ -63,7 +63,7 @@
     padding: 0;
 }
 
-ul.list li a span {
+ul.list li a span, .rslide {
     display: block;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -73,7 +73,7 @@ ul.list li a span {
     transition: all .25s ease;
 }
 
-ul.list li:hover a span {
+ul.list li:hover a span, .rslide:hover {
     -webkit-transform: translateX(10px);
     -ms-transform: translateX(10px);
     transform: translateX(10px);

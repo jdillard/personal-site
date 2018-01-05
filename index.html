@@ -1,42 +1,28 @@
 ---
 layout: default
-title: Articles
+title: Welcome
 cover: false
+js_includes:
+- index.js
 ---
 
 <main class="mb5-ns mb4">
 
-    <h1 class="f1-ns f3 center lh-title tc mw7 mt5-ns mt4 mb3 black-70 athelas lh-title avenir">{{ page.title }}</h1>
+  <h1 class="f1-ns f3 center lh-title tc mw7 mt5-ns mt4 mb3 black-70 athelas lh-title avenir">Articles</h1>
+  <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
+  <section id="latest-articles" class="mw7 mt4-ns mt3 ph3 center"></section>
 
-    <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
+  <div class="cf ph3 ph5-ns pv2">
+    <div class="fn fl-ns w-50-ns pr4-ns">
+      <h1 class="f1-ns f3 center lh-title tc mw7 mt3-ns mt2 mb3 black-70 athelas lh-title avenir">Projects</h1>
+      <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
+      <section id="github-projects" class="mw7 mt4-ns mt3 ph3 center"></section>
+    </div>
+    <div class="fn fl-ns w-50-ns">
+      <h1 class="f1-ns f3 center lh-title tc mw7 mt3-ns mt2 mb3 black-70 athelas lh-title avenir">Activity</h1>
+      <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
+      <section id="github-activity" class="mw7 mt4-ns mt3 ph3 center"></section>
+    </div>
+  </div>
 
-    {% for post in paginator.posts %}
-
-    <article class="sans-serif center mw6-5 f5 lh-copy ph3 mv3 pt3-ns pt2 pb3 hide-child hover-bg-near-white bl bw2 b--white hover-b--light-red">
-        <header>
-            <h2 class="f2-ns f3 lh-title mb3 mt2 sans-serif"><a class="black-70 hover-light-red no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
-        </header>
-        <section class="f5-ns f6 fw3 mb3 lh-copy mid-gray">
-            <p>
-                {{ post.excerpt | strip_html }}
-            </p>
-        </section>
-        <footer class="gray f7 fw1-ns fw4 flex items-center justify-between">
-            <time class="mr2" datetime="{{ post.date | date: "%Y-%m-%d" }}">
-                {{ post.date | date: "%B %d, %Y" }}                                
-            </time>
-            <!--show Read More link/button on parent hover-->
-            <a class="br-pill b light-red hover-white hover-bg-light-red no-underline ba grow pv1 ph3 dib inline-flex items-center child mr3" href="{{ post.url }}">
-                Read More
-                <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
-                    <title>chevronRight icon</title>
-                    <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
-                </svg>
-            </a>
-        </footer>
-    </article>
-    {% endfor %}
-
- </main>   
-
- {% include pagination.html %}
+</main>

@@ -1,0 +1,23 @@
+{{#if @root.length}}
+<div class="entry">
+  {{#each @root}}
+    <h4 class="mt3 mb1">
+      <time class="f6 db mr3">{{this.year}}</time>
+    </h4>
+    {{#each this.data}}
+    <a class="flex-ns items-center no-underline f6 black-70 hover-light-red" href="{{this.repo_url}}">
+      <span class="pv0-ns ml3 pv1 lh-copy rslide db">
+        <!--<span class="near-white bg-animate bg-mid-gray inline-flex items-center mh1 f7 tc br2 ph1">Github</span>-->
+        {{this.action}} <strong>{{this.repo_name}}</strong>
+      </span>
+    </a>
+    {{/each}}
+  {{/each}}
+</div>
+{{else}}
+<div class="entry"></div>
+  <div class="ma2 pa3 f4-ns f5 ba b--light-gray">
+    <span class="pv0-ns pv1 b lh-copy">No recent activity.</span>
+  </div>
+</div>
+{{/if}}
