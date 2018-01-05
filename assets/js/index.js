@@ -46,15 +46,32 @@ axios.get('https://api.github.com/users/jdillard/events')
     console.log(error);
   });
 
-function getContributors(item, contributors) {
-  return {
-    'name': item.name,
-    'full_name': item.full_name,
-    'url': item.html_url,
-    'desc': item.description,
-    'stargazers': item.stargazers_count,
-    'contributors': contributors
+function timeSince(date) {
+
+  var seconds = Math.floor((new Date() - date) / 1000);
+
+  var interval = Math.floor(seconds / 31536000);
+
+  if (interval > 1) {
+    return interval + " years ago";
   }
+  interval = Math.floor(seconds / 2592000);
+  if (interval > 1) {
+    return interval + " months ago";
+  }
+  interval = Math.floor(seconds / 86400);
+  if (interval > 1) {
+    return interval + " days ago";
+  }
+  interval = Math.floor(seconds / 3600);
+  if (interval > 1) {
+    return interval + " hours ago";
+  }
+  interval = Math.floor(seconds / 60);
+  if (interval > 1) {
+    return interval + " minutes ago";
+  }
+  return Math.floor(seconds) + " seconds ago";
 }
 
 function articles(articles) {
@@ -82,6 +99,8 @@ function projects(projects = []) {
   .filter(project => !project.fork)
   .map(i => {
     let contributors = 0;
+    const last_push = timeSince(new Date(i.pushed_at));
+
     /* TODO add contributor count
     axios.get('https://api.github.com/repos/' + i.full_name + '/contributors')
       .then(function (response) {
@@ -98,7 +117,8 @@ function projects(projects = []) {
       'url': i.html_url,
       'desc': i.description,
       'stargazers': i.stargazers_count,
-      'contributors': i.open_issues_count
+      'contributors': i.open_issues_count,
+      'last_push': last_push
     };
   });
 
