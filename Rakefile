@@ -30,6 +30,26 @@ task :help do
   puts "rake preview                                   # Preview on local machine"
 end
 
+task :assets do
+  require 'open-uri'
+  begin
+    projects = open('https://api.github.com/users/jdillard/repos').read
+  rescue
+    puts "The request for github repos timed out...exiting."
+    exit
+  end
+  File.write('assets/json/projects.json', projects)
+
+  begin
+    activity = open('https://api.github.com/users/jdillard/events').read
+  rescue
+    puts "The request for github events timed out...exiting."
+    exit
+  end
+  File.write('assets/json/activity.json', activity)
+end
+
+
 desc 'Clean up generated site'
 task :clean do
   cleanup
@@ -55,7 +75,6 @@ task :serve, [:environment_configuration] => :clean do |t, args|
 end
 
 
-desc 'Test on local machine'
 task :test do
   require "html-proofer"
 
