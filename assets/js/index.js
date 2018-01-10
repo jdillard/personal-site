@@ -149,6 +149,12 @@ function activity(activities = []) {
         case "IssueCommentEvent":
           value.action = "Made a comment on";
           break;
+        case "ForkEvent":
+          value.action = "Made a clone of";
+          break;
+        case "PullRequestEvent":
+          value.action = "Made a pull request on";
+          break;
       }
       if(value.created_at != last_year) {
         var temp_arr = [];
