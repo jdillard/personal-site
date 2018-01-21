@@ -123,23 +123,16 @@ function projects(projects = []) {
   });
 
   projects_element.innerHTML = template_github_projects(projects_list);
-  console.log(projects_list);
 }
 
 function activity(activities = []) {
   const activity_element = document.getElementById("github-activity");
   let last_year = "";
 
-  const activity_list = activities.map(i => ({
-      'action': i.type,
-      'created_at': i.created_at,
-      'repo_name': i.repo.name,
-      'repo_url': 'https://github.com/' + i.repo.name
-    }))
-  .reduce((new_arr, value, index) => {
+  const activity_list = activities.reduce((new_arr, value, index) => {
       value.created_at = moment(value.created_at).format('MMM DD, YYYY');
 
-      switch(value.action) {
+      switch(value.type) {
         case "WatchEvent":
           value.action = "Started watching";
           break;
@@ -154,6 +147,9 @@ function activity(activities = []) {
           break;
         case "PullRequestEvent":
           value.action = "Made a pull request on";
+          break;
+          case "IssuesEvent":
+          value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " a pull request on";
           break;
       }
       if(value.created_at != last_year) {
