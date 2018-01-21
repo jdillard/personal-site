@@ -134,22 +134,22 @@ function activity(activities = []) {
 
       switch(value.type) {
         case "WatchEvent":
-          value.action = "Started watching";
+          value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " watching";
           break;
         case "PushEvent":
           value.action = "Made a push event on";
           break;
         case "IssueCommentEvent":
-          value.action = "Made a comment on";
+          value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " a comment on";
           break;
         case "ForkEvent":
           value.action = "Made a clone of";
           break;
         case "PullRequestEvent":
-          value.action = "Made a pull request on";
+          value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " a pull request on";
           break;
           case "IssuesEvent":
-          value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " a pull request on";
+          value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " an issue on";
           break;
       }
       if(value.created_at != last_year) {
