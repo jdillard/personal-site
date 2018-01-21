@@ -5,7 +5,7 @@
       <time class="f6 db mr3">{{this.year}}</time>
     </h4>
     {{#each this.data}}
-    <a class="flex-ns items-center no-underline f6 black-70 hover-light-red" href="https://github.com/{{this.repo_url}}">
+    <a class="flex-ns items-center no-underline f6 black-70 hover-light-red" href="https://github.com/{{this.repo.name}}">
       <span class="pv0-ns ml3 pv1 lh-copy rslide db">
         <!--<span class="near-white bg-animate bg-mid-gray inline-flex items-center mh1 f7 tc br2 ph1">Github</span>-->
         {{this.action}} <strong>{{this.repo.name}}</strong>
