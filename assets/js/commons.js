@@ -31,8 +31,6 @@ document.getElementById('logo').onmouseleave=function(){LogoBaffleOut();};
 var openNavButton = document.getElementById("openNav");
 var closeNavButton = document.getElementById("closeNav");
 var smNav = document.getElementById("sm-nav-container");
-console.log(document.getElementById("sm-nav-container"));
-smNav.style.display = "none";
 
 openNavButton.addEventListener("click", function(){
     smNav.style.display = "block";
