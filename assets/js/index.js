@@ -148,8 +148,11 @@ function activity(activities = []) {
         case "PullRequestEvent":
           value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " a pull request on";
           break;
-          case "IssuesEvent":
+        case "IssuesEvent":
           value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " an issue on";
+          break;
+        case "CreateEvent":
+          value.action = "Created a " + value.payload.ref_type + " at";
           break;
       }
       if(value.created_at != last_year) {
