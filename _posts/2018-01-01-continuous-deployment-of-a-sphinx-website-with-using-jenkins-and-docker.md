@@ -95,6 +95,7 @@ pipeline {
         }
     }
     environment {
+        SPHINX_DIR  = '.'
         BUILD_DIR   = './_built'
         SOURCE_DIR  = './source'
         DEPLOY_HOST = 'deployer@www.example.com:/path/to/docs/'
@@ -107,7 +108,7 @@ pipeline {
                 sh '''
                    virtualenv pyenv
                    . pyenv/bin/activate
-                   pip install -r requirements.txt
+                   pip install -r ${SPHINX_DIR}/requirements.txt
                 '''
             }
         }
@@ -115,18 +116,18 @@ pipeline {
             steps {
                 // clear out old files
                 sh 'rm -rf ${BUILD_DIR}'
-                sh 'rm -f ./sphinx-build.log'
+                sh 'rm -f ${SPHINX_DIR}/sphinx-build.log'
 
                 sh '''
                    ${WORKSPACE}/pyenv/bin/sphinx-build \
-                   -q -w ./sphinx-build.log \
+                   -q -w ${SPHINX_DIR}/sphinx-build.log \
                    -b html \
                    -d ${BUILD_DIR}/doctrees ${SOURCE_DIR} ${BUILD_DIR}
                 '''
             }
             post {
                 failure {
-                    sh 'cat ./sphinx-build.log'
+                    sh 'cat ${SPHINX_DIR}/sphinx-build.log'
                 }
             }
         }
@@ -134,11 +135,11 @@ pipeline {
             steps {
                 sshagent(credentials: ['deployer']) {
                    sh '''#!/bin/bash
-                      rm -f ./rsync.log
+                      rm -f ${SPHINX_DIR}/rsync.log
                       RSYNCOPT=(-aze 'ssh -o StrictHostKeyChecking=no')
                       rsync "${RSYNCOPT[@]}" \
-                      --exclude-from=./rsync-exclude.txt \
-                      --log-file=./rsync.log \
+                      --exclude-from=${SPHINX_DIR}/rsync-exclude.txt \
+                      --log-file=${SPHINX_DIR}/rsync.log \
                       --delete \
                       ${BUILD_DIR}/ ${DEPLOY_HOST}
                     '''
@@ -146,7 +147,7 @@ pipeline {
             }
             post {
                 failure {
-                    sh 'cat ./rsync.log'
+                    sh 'cat ${SPHINX_DIR}/rsync.log'
                 }
             }
         }
