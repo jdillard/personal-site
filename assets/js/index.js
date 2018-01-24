@@ -154,6 +154,9 @@ function activity(activities = []) {
         case "CreateEvent":
           value.action = "Created a " + value.payload.ref_type + " at";
           break;
+        case "PullRequestReviewCommentEvent":
+          value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " a pull request comment on";
+          break;
       }
       if(value.created_at != last_year) {
         var temp_arr = [];
