@@ -57,7 +57,7 @@ function sortArticles(sort) {
         var new_year = true;
 
         for (var i = 0; i < articles.total; i++) {
-            let post_date = new Date(articles.data[i].date_published);
+            let post_date = new Date(articles.data[i].date_published + ' CST');
 
             if(post_date.getFullYear() !==  most_recent_year | new_year) {
                 most_recent_year = new Date(articles.data[i].date_published).getFullYear();
@@ -66,11 +66,9 @@ function sortArticles(sort) {
                 //create new json structure
                 len = articles_by_date[0].push({"heading": most_recent_year, "slug": most_recent_year, "data": []});
             }
-
             let post_data = {"date": post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12), "title": articles.data[i].title, "url": articles.data[i].url};
             articles_by_date[0][len-1].data.push(post_data);
         }
-
         archive.innerHTML = template(articles_by_date[0]);
 
     } else if(sort === 'categories') {
@@ -78,7 +76,7 @@ function sortArticles(sort) {
             len = articles_by_date[0].push({"heading": categories[category], "slug": categories[category].replace(' ', '-'), "data": []});
             for (let i = 0; i < articles.total; i++) {
                 let post_categories = articles.data[i].categories;
-                let post_date = new Date(articles.data[i].date_published);
+                let post_date = new Date(articles.data[i].date_published + ' CST');
 
                 if(post_categories.indexOf(categories[category]) > -1) {
                     let post_data = {"date": post_date.toLocaleTimeString([], { month: "short", day: "2-digit", year: "numeric" }).substr(0,12), "title": articles.data[i].title, "url": articles.data[i].url};
