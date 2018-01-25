@@ -157,6 +157,9 @@ function activity(activities = []) {
         case "PullRequestReviewCommentEvent":
           value.action = "Reviewed a pull request on";
           break;
+        case "DeleteEvent":
+          value.action = "Deleted a " + value.payload.ref_type + " on";
+          break;
       }
       if(value.created_at != last_year) {
         var temp_arr = [];
