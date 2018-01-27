@@ -5,10 +5,10 @@ js_includes:
   - post.js
 ---
 
-<main class="mb4">
-    <article class="avenir pt2 ph2 black-70">
+<main {% if page.cover %}class="post-cover"{% endif %}>
+    <article class="avenir pt2 center mw7 bg-white ph2 black-70 br bl b--near-white">
         <header>
-            <h1 class="f1-ns f3 center tc mw7 mt5-ns mt4 black-70 athelas lh-title avenir">{{ page.title }}</h1>
+            <h1 class="f2-ns f3 center tc mw7 mv5-ns mv4 black-70 athelas lh-title avenir">{{ page.title }}</h1>
             <div class="f6-ns f7 center mw6-5 mh1 ph2 pv1 tr sans-serif lh-copy gray">
                 <a class="fl no-underline fancy-link relative gray hover-light-red" href="https://github.com/jdillard/jdillard.github.io/commits/master/{{ page.path }}" target="_blank" rel="noopener"><time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time></a>
                 {% if page.categories.size > 0 %}
@@ -18,30 +18,24 @@ js_includes:
                 {% endif %}
             </div>
         </header>
-
-        <section class="post-content f5 center mw6-5 lh-copy mt3 mb5 pt2 bt-ns b--light-gray">
+        <section class="post-content f5 center mw6-5 lh-copy mt3 pb5 pt2 bt-ns b--light-gray">
             {{content}}
         </section>
-
     </article>
-
-    <hr class="mw6-ns mw5 mv0 p0 b0 bt bw1 b--light-red light-red bg-light-red">
-
-    <footer class="mw6-5 center pt3 ph2">
-
-        <div class="mt4 b f3-ns f4-ns f5 black-70">Recent Posts</div>
-
-        <ul class="list pl0">
-            {% for post in site.related_posts limit:10 %}
-            <li class="pv3-ns pv2 f4-ns f5">
-                <a class="flex-ns items-center no-underline black-70 hover-light-red" href="{{ post.url }}">
-                    <time class="f5-ns f6 gray db mr3"> {{ post.date | date: "%b %d, %Y" }}</time>
-                    <span class="pv0-ns pv1 db">{{ post.title }}</span>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-
-    </footer>
-
+    <section class="center mw7 bg-white ph2 br bl b--near-white">
+        <hr class="mw6-ns mw5 mv0 p0 b0 bt bw1 b--light-red light-red bg-light-red">
+        <div class="mw6-5 center pv3 ph2">
+            <div class="mt4 b f3-ns f4-ns f5 black-70">Recent Posts</div>
+            <ul class="list pl0 mb0">
+                {% for post in site.related_posts limit:10 %}
+                <li class="pv3-ns pv2 f4-ns f5">
+                    <a class="flex-ns items-center no-underline black-70 hover-light-red" href="{{ post.url }}">
+                        <time class="f5-ns f6 gray db nowrap mr3"> {{ post.date | date: "%b %d, %Y" }}</time>
+                        <span class="pv0-ns pv1 db">{{ post.title }}</span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
 </main>

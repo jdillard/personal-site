@@ -6,6 +6,11 @@
     "syntax"
 ;
 
+.top-nav {
+    box-shadow:4px 4px 8px 0 rgba(0,0,0,.05);
+}
+
+
 .hover-shadow-5:hover {
     box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
     transition: box-shadow 0.10s ease-out;
@@ -86,6 +91,11 @@ ul.list li:hover a span, .rslide:hover {
 ::-moz-selection {
     color:#ffffff;
     background: #FF725C;
+}
+
+.clip-svg {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
 .post-content pre {
@@ -208,6 +218,12 @@ header.post-cover {
 @media screen and (min-width: 30em) {
     .h6-ns{
         height: 20em;
+    }
+    main.post-cover {
+        margin-top: -40px;
+    }
+    .nav-cover {
+        box-shadow: none;
     }
 }
 

@@ -28,7 +28,7 @@
 
     {% seo %}
 </head>
-<body class="sans-serif bg-white">
+<body class="sans-serif bg-white" {% if page.layout == 'post' %}style="background-image: url('/assets/images/topography.svg');"{% endif %}>
 
     {% include header.html %}
 
