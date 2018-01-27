@@ -26,7 +26,7 @@ js_includes:
         <hr class="mw6-ns mw5 mv0 p0 b0 bt bw1 b--light-red light-red bg-light-red">
         <div class="mw6-5 center pv3 ph2">
             <div class="mt4 b f3-ns f4-ns f5 black-70">Recent Posts</div>
-            <ul class="list pl0 mb0">
+            <ul class="list pl0">
                 {% for post in site.related_posts limit:10 %}
                 <li class="pv3-ns pv2 f4-ns f5">
                     <a class="flex-ns items-center no-underline black-70 hover-light-red" href="{{ post.url }}">

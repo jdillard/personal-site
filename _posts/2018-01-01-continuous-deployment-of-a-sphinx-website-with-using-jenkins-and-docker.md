@@ -179,4 +179,3 @@ Make sure to turn on log rotation for each pipeline and discard old builds,
 otherwise you'll end up with a surprise later.
 
 {% include feedback.html %}
-

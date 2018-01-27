@@ -79,7 +79,7 @@ admin panel. Click **New Calculated Metric** and fill out the fields:
 {% endraw %}
 
 The calculated formula takes the `Max Scroll Percentage` custom metric, which is per
-unique page path per session, and calculates the average by dividing by the already 
+unique page path per session, and calculates the average by dividing by the already
 existing `Unique Pageviews` metric, allowing it to be applied to different dimensions
 in a report.
 
@@ -116,9 +116,4 @@ You're done! It will take a while for the data to populate, possibly 24 hours,
 with enough data to be meaningful, but once it has check the report to see if it
 seems accurate.
 
-
-> **Note:** If you see anything that's wrong or missing with this post, please
-[open an issue](https://github.com/jdillard/jdillard.github.io/issues) or
-[create a pull request](https://github.com/jdillard/jdillard.github.io/pulls) so
-it can be improved.
-{: {{site.data.css.info-box}} }
+{% include feedback.html %}
