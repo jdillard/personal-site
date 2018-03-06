@@ -1,8 +1,9 @@
 {
-  "about.js": "js/about.708b57a7108996a34801.js",
-  "archive.js": "js/archive.625e1c8942ddc8095173.js",
-  "commons.js": "js/commons.d18b5335de9063146672.js",
-  "index.js": "js/index.42525f55d5b3ad76e187.js",
-  "post.js": "js/post.047a4136a9ed96d75bcf.js",
-  "vendor.js": "js/vendor.e756ba8cdbb0783ac6c3.js"
+  "about.js": "js/about.ce3861e9075bd9517423.js",
+  "archive.js": "js/archive.973c3f8edd4c207a339e.js",
+  "commons.js": "js/commons.0000ab57d6956184fed2.js",
+  "index.js": "js/index.d9747eb14c9bf8d35cf0.js",
+  "post.js": "js/post.6aacf67b11908d2635dd.js",
+  "vendor.js": "js/vendor.6101042a70c46c8d1f27.js",
+  "weather.js": "js/weather.6cb144e08cfdd9d3edd2.js"
 }

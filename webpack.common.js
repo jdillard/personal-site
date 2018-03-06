@@ -30,7 +30,8 @@ module.exports = {
     archive: "./assets/js/archive.js",
     index: "./assets/js/index.js",
     post: "./assets/js/post.js",
-    commons: "./assets/js/commons.js"
+    commons: "./assets/js/commons.js",
+    weather: "./assets/js/weather.js"
   },
   output: {
     path: path.resolve(__dirname, 'assets/dist/'),
