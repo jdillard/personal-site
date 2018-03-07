@@ -106,73 +106,48 @@ function projects(crag_index, crag_name, crag_location, observations_data = []) 
 }
 
 function graph_precip(crag_index, data) {
-  var svg = d3.select("#precip-"+crag_index);
-  const margin = {top: 20, right: 5, bottom: 20, left: 5};
-  var width = +svg.attr("width") - margin.left - margin.right;
-  var height = +svg.attr("height") - margin.top - margin.bottom;
+  const svg = d3.select("#precip-"+crag_index);
+  const margin = {top: 20, right: 15, bottom: 20, left: 15};
+  const width = +svg.attr("width") - margin.left - margin.right;
+  const height = +svg.attr("height") - margin.top - margin.bottom;
   let g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var parseTime = d3.timeParse("%y-%m-%d %H:%M");
+  const parseTime = d3.timeParse("%y-%m-%d %H:%M");
+  const bisectDate = d3.bisector(function(d) { return d.date; }).left
 
-  var x = d3.scaleTime()
+  const x = d3.scaleTime()
       .rangeRound([0, width]);
 
-  var y = d3.scaleLinear()
+  const y = d3.scaleLinear()
       .rangeRound([height, 0]);
 
-  var line = d3.line()
+  const line = d3.line()
       .x(function(d) { return x(d.date); })
       .y(function(d) { return y(d.precip); });
 
-    data = data
-      .map(i => {
-        i.date = parseTime(i.date);
-        return i;
-      });
+  data = data
+    .map(i => {
+      i.date = parseTime(i.date);
+      return i;
+    });
 
-    x.domain(d3.extent(data, function(d) { return d.date; }));
-    y.domain(d3.extent(data, function(d) { return d.precip; }));
+  x.domain(d3.extent(data, function(d) { return d.date; }));
+  y.domain(d3.extent(data, function(d) { return d.precip; }));
 
-    // Setup the moving average calculation.
-    // Currently is a hacky way of doing it by manually storing and using the
-    // previous 3 values for averaging.
-    var prevPrevVal = 0;
-    var prevVal = 0;
-    var curVal = 0
-    var movingAverageLine = d3.line()
-        .x(function(d,i) { return x(d.key); })
-        .y(function(d,i) {
-            if (i == 0) {
-                prevPrevVal  = y(d.value);
-                prevVal = y(d.value);
-                curVal =  y(d.value);
-            } else if (i == 1) {
-                prevPrevVal = prevVal;
-                prevVal = curVal;
-                curVal = (prevVal + y(d.value)) / 2.0;
-            } else {
-                prevPrevVal = prevVal;
-                prevVal = curVal;
-                curVal = (prevPrevVal + prevVal + y(d.value)) / 3.0;
-            }
-            return curVal;
-        });
-        //.interpolate("basis");
+  g.append("g")
+    .attr("class", "precip-axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x).ticks(5))
+    .select(".domain")
+    .remove();
 
-    g.append("g")
-      .attr("class", "precip-axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x).ticks(5))
-      .select(".domain")
-      .remove();
-
-    g.append("path")
-      .datum(data)
-      .attr("class", "line")
-      .attr("fill", "none")
-      .attr("stroke", "#555555")
-      .attr("stroke-linejoin", "round")
-      .attr("stroke-linecap", "round")
-      .attr("stroke-width", 1.5)
-      .attr("d", line);
+  g.append("path")
+    .datum(data)
+    .attr("class", "line")
+    .attr("fill", "none")
+    .attr("stroke", "#555555")
+    .attr("stroke-linejoin", "round")
+    .attr("stroke-linecap", "round")
+    .attr("stroke-width", 1.5)
+    .attr("d", line);
 }

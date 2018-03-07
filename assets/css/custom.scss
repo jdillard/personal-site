@@ -155,11 +155,11 @@ ul.list li:hover a span, .rslide:hover {
     background-color: #F6F6F6;
 }
 
-.precip-axis > g > text {
+svg .precip-axis > g > text {
     fill: #777777;
 }
 
-.precip-axis > g > line {
+svg .precip-axis > g > line {
     stroke: #777777;
 }
 

@@ -3,7 +3,7 @@
       <div class="bl bw3 b--{{this.color}} pa3">
         <div class="flex flex-column flex-row-ns">
           <div class="pr3-ns mb2 mb0-ns w-100 w-70-ns">
-            <h3 class="pv0-ns pv1 mv0 b f4-ns f5 lh-copy">{{this.name}}</h3>
+            <h3 class="pv0-ns mv0 b f4 lh-copy">{{this.name}}</h3>
           </div>
           <div class="w-100 w-30-ns pl3-ns mid-gray lh-copy">
             <strong>Last Update:</strong> {{this.curr_timestamp}}<br />
@@ -11,7 +11,7 @@
           </div>
         </div>
         <div class="flex flex-column flex-row-ns">
-          <div class="pr3-ns mb0 w-100 w-40-ns mid-gray lh-copy">
+          <div class="pr3-ns mb0 w-100 w-50-ns mid-gray lh-copy">
             <strong>Current Temp:</strong> {{this.curr_temp}}&deg;F
             {{#if this.curr_heat_index}}
             (feels like {{this.curr_heat_index}}&deg;F)
@@ -22,8 +22,8 @@
             <br /><strong>Wind:</strong> {{this.curr_wind}}<br />
             <strong>Humidity:</strong> {{this.curr_humidity}}%<br />
           </div>
-          <div class="w-100 w-60-ns pl3-ns">
-            <svg id="precip-{{crag_index}}" width="325" height="75"></svg>
+          <div class="w-100 w-50-ns pl3-ns">
+            <svg id="precip-{{crag_index}}" width="300" height="75"></svg>
           </div>
         </div>
       </div>
