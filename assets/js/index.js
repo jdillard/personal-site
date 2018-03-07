@@ -159,6 +159,8 @@ function activity(activities = []) {
           break;
         case "DeleteEvent":
           value.action = "Deleted a " + value.payload.ref_type + " on";
+        case "CommitCommentEvent":
+          value.action = "Made a comment on a commit in";
           break;
       }
       if(value.created_at != last_year) {
