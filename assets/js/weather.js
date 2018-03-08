@@ -2,25 +2,29 @@
 
 const days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 
+const template_crag_boilerplate = require("./templates/crag_boilerplate.hbs");
 const template_weather_observations = require("./templates/weather-observations.hbs");
 const template_weather_forecasts = require("./templates/weather-forecasts.hbs");
 
-const crags_json = '[{"name": "The Greenbelt", "station": "KATT", "office": "EWX/153,89", "coordinates": [-97.801,30.244]},' +
-  '{"name": "Continental Ranch", "station": "KDRT", "office": "EWX/14,74", "coordinates": [-101.44,29.803]},' +
-  '{"name": "Reimer\'s Ranch", "station": "KRYW", "office": "EWX/141,93", "coordinates": [-98.122,30.334]},' +
-  '{"name": "Cochise Stronghold", "station": "KFHU", "office": "TWC/125,31", "coordinates": [-109.987,31.921]},' +
-  '{"name": "Enchanted Rock", "station": "KT82", "office": "EWX/114,101", "coordinates": [-98.821,30.503]},' +
-  '{"name": "Horseshoe Canyon Ranch", "station": "KHRO", "office": "LZK/44,127", "coordinates": [-93.292,36.012]},' +
-  '{"name": "Last Chance Canyon", "station": "KGDP", "office": "MAF/16,149", "coordinates": [-104.754,32.234]},' +
-  '{"name": "McKinney Falls", "station": "KAUS", "office": "EWX/156,86", "coordinates": [-97.722,30.181]},' +
-  '{"name": "Georgetown", "station": "KGTU", "office": "EWX/157,106", "coordinates": [-97.69,30.627]}]';
+const crags_json = '[{"number": 1, "name": "The Greenbelt", "station": "KATT", "office": "EWX/153,89", "coordinates": [-97.801,30.244]},' +
+  '{"number": 2, "name": "Continental Ranch", "station": "KDRT", "office": "EWX/14,74", "coordinates": [-101.44,29.803]},' +
+  '{"number": 3, "name": "Reimer\'s Ranch", "station": "KRYW", "office": "EWX/141,93", "coordinates": [-98.122,30.334]},' +
+  '{"number": 4, "name": "Cochise Stronghold", "station": "KFHU", "office": "TWC/125,31", "coordinates": [-109.987,31.921]},' +
+  '{"number": 5, "name": "Enchanted Rock", "station": "KT82", "office": "EWX/114,101", "coordinates": [-98.821,30.503]},' +
+  '{"number": 6, "name": "Horseshoe Canyon Ranch", "station": "KHRO", "office": "LZK/44,127", "coordinates": [-93.292,36.012]},' +
+  '{"number": 7, "name": "Last Chance Canyon", "station": "KGDP", "office": "MAF/16,149", "coordinates": [-104.754,32.234]},' +
+  '{"number": 8, "name": "McKinney Falls", "station": "KAUS", "office": "EWX/156,86", "coordinates": [-97.722,30.181]},' +
+  '{"number": 9, "name": "Georgetown", "station": "KGTU", "office": "EWX/157,106", "coordinates": [-97.69,30.627]}]';
 
 const crags = JSON.parse(crags_json);
 
 for (let c in crags) {
+  // create crag boilerplate
+  document.getElementById("weather").innerHTML += template_crag_boilerplate(crags[c]);
+
   axios.get('https://api.weather.gov/stations/' + crags[c].station + '/observations')
     .then(function (response) {
-      populateObservations(c, crags[c].name, crags[c].coordinates , response.data.features);
+      populateObservations(crags[c].number, crags[c].name, crags[c].coordinates , response.data.features);
     })
     .catch(function (error) {
       console.log(error);
@@ -28,7 +32,7 @@ for (let c in crags) {
 
   axios.get('https://api.weather.gov/gridpoints/' + crags[c].office + '/forecast')
     .then(function (response) {
-      populateForecasts(c, crags[c].name, crags[c].coordinates , response.data);
+      populateForecasts(crags[c].number, crags[c].name, crags[c].coordinates , response.data);
     })
     .catch(function (error) {
       console.log(error);
@@ -87,45 +91,38 @@ function iconToSVG(time, icon) {
     case "wind_sct":
     case "wind_bkn":
       return time + "_cloudy";
-      break;
     case "skc":
       return time + "_clear";
-      break;
     case "rain_showers":
       return time + "_rain";
-      break;
     case "tsra":
     case "tsra_sct":
     case "tsra_hi":
       return time + "_thunderstorms";
-      break;
     case "snow":
       return time + "_snow";
-      break;
     default:
       return time + "_na";
-      break;
   }
 }
 
 function populateForecasts(crag_index, crag_name, crag_location, forecasts_data = []) {
-  const forecasts_element = document.getElementById("weather-forecasts");
-  let forecasts = new Array();
+  let forecasts = [];
   let half_day = false;
+  let clear_forecast = true;
+  const precipitation = ["rain","snow","thunderstorms"];
 
   forecasts.name = crag_name;
   forecasts.crag_index = crag_index;
-  forecasts.color = 'green';
   forecasts.updated = moment(forecasts_data.properties.updated).format('MM/DD hh:mm a');
   forecasts.distance = getDistanceFromLatLonInMi(crag_location[1], crag_location[0], forecasts_data.geometry.geometries[0].coordinates[1], forecasts_data.geometry.geometries[0].coordinates[0]).toFixed(2);
   forecasts.periods = forecasts_data.properties.periods
     .reduce(function(a, b, i) {
-      let day_icons = new Array();
+      let day_icons = [];
       let night_icons = b.icon.substring(35,b.icon.length-12).split("/");
       if (i === 1) {
         day_icons = a.icon.substring(35,a.icon.length-12).split("/");
-        night_icons = b.icon.substring(35,b.icon.length-12).split("/");
-        let arr = new Array();
+        let arr = [];
         // The first period is a half day
         if(days.indexOf(b.name.toLowerCase())) {
           half_day = true;
@@ -151,6 +148,9 @@ function populateForecasts(crag_index, crag_name, crag_location, forecasts_data 
           delete a.isDaytime;
           delete a.temperatureUnit;
           delete a.temperatureTrend;
+          if(new RegExp(precipitation.join("|")).test(a.icon_left) || new RegExp(precipitation.join("|")).test(a.night_icon_left)) {
+            clear_forecast = false;
+          }
           arr.push(a);
           return arr;
         }
@@ -176,6 +176,9 @@ function populateForecasts(crag_index, crag_name, crag_location, forecasts_data 
             delete b.isDaytime;
             delete b.temperatureUnit;
             delete b.temperatureTrend;
+            if(new RegExp(precipitation.join("|")).test(b.icon_left) || new RegExp(precipitation.join("|")).test(b.night_icon_left)) {
+              clear_forecast = false;
+            }
             a.push(b);
           } else {
             a.push(b);
@@ -200,19 +203,25 @@ function populateForecasts(crag_index, crag_name, crag_location, forecasts_data 
           delete a[a.length-1].isDaytime;
           delete a[a.length-1].temperatureUnit;
           delete a[a.length-1].temperatureTrend;
+          if(new RegExp(precipitation.join("|")).test(a[a.length-1].icon_left) || new RegExp(precipitation.join("|")).test(a[a.length-1].night_icon_left)) {
+            clear_forecast = false;
+          }
           return a;
         }
       }
     });
+  forecasts.color = (clear_forecast) ? 'green' : 'yellow';
 
-    console.log(forecasts_data.properties.periods,forecasts.periods);
+  //console.log(forecasts_data.properties.periods,forecasts.periods);
 
-  forecasts_element.innerHTML += template_weather_forecasts(forecasts);
+  document.getElementById("last-forecast-"+crag_index).innerHTML = forecasts.updated;
+  document.getElementById("office-"+crag_index).innerHTML = forecasts.distance + " miles";
+  document.getElementById("forecast-"+crag_index).classList.add("b--" + forecasts.color);
+  document.getElementById("forecast-"+crag_index).innerHTML = template_weather_forecasts(forecasts);
 }
 
 function populateObservations(crag_index, crag_name, crag_location, observations_data = []) {
-  const observations_element = document.getElementById("weather-observations");
-  let observations = new Array();
+  let observations = [];
 
   observations.name = crag_name;
   observations.crag_index = crag_index;
@@ -243,7 +252,8 @@ function populateObservations(crag_index, crag_name, crag_location, observations
     observations.color = 'green';
   }
 
-  observations_element.innerHTML += template_weather_observations(observations);
+  document.getElementById("crag-"+crag_index).classList.add("b--" + observations.color);
+  document.getElementById("observation-"+crag_index).innerHTML += template_weather_observations(observations);
   graph_precip(crag_index, precips);
 }
 

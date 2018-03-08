@@ -1,37 +1,20 @@
-<div class="entry">
-    <div class="mv2 mh2-ns mh0 f7 ba b--moon-gray">
-      <div class="bb b--light-gray">
-        <div class="flex flex-column flex-row-ns pa3 bl bw3 b--{{this.color}}">
-          <div class="pr3-ns mb2 mb0-ns w-100 w-70-ns">
-            <h3 class="pv0-ns mv0 b f3-ns f4 lh-copy">{{this.name}}</h3>
-          </div>
-          <div class="w-100 w-30-ns pl3-ns mid-gray lh-copy">
-            <strong>Last Update:</strong> {{this.updated}}<br />
-            <strong>Office Distance:</strong> {{this.distance}} miles
-          </div>
-        </div>
+{{#each this.periods}}
+  <div class="tc mt3" style="flex:1;">
+    <div class="mid-gray b f5-ns f3 mv0-ns mv2">{{name}}</div>
+    <div class="flex items-stretch justify-center flex-row flex-column-ns">
+      <div class="mid-gray f6-ns f4 mv1 pa2 lh-copy flex flex-column flex-auto">
+        <div class="b">{{temperature}}&deg;F</div>
+        <div class="pa3"><img alt="{{shortForecast}}" title="{{shortForecast}}" src="/assets/images/svg/{{icon_left}}.svg" /></div>
       </div>
-      <div class="flex flex-column flex-row-ns bl bw3 b--{{this.color}}">
-      {{#each this.periods}}
-        <div class="tc mt3" style="flex:1;">
-          <div class="b f6-ns f5 mv0-ns mv2">{{name}}</div>
-          <div class="flex items-stretch justify-center flex-row flex-column-ns">
-            <div class="mid-gray f7-ns f6 mv1 pa2 lh-copy flex flex-column flex-auto">
-              <div class="b">{{temperature}}&deg;F</div>
-              <div class="pa3"><img alt="{{shortForecast}}" title="{{shortForecast}}" src="/assets/images/svg/{{icon_left}}.svg" /></div>
-            </div>
-            <div class="bg-mid-gray white f7-ns f6 mt1 pa2 lh-copy flex flex-column flex-auto">
-              {{#if night_temperature}}
-              <div class="b">{{night_temperature}}&deg;F</div>
-              <div class="pa3"><img alt="{{night_shortForecast}}" title="{{night_shortForecast}}" src="/assets/images/svg/{{night_icon_left}}.svg" /></div>
-              {{else}}
-              <div class="b">N/A</div>
-              <div class="pa3"><img src="/assets/images/svg/night_na.svg" /></div>
-              {{/if}}
-            </div>
-          </div>
-        </div>
-      {{/each}}
+      <div class="bg-mid-gray white f6-ns f4 mt1 pa2 lh-copy flex flex-column flex-auto">
+        {{#if night_temperature}}
+        <div class="b">{{night_temperature}}&deg;F</div>
+        <div class="pa3"><img alt="{{night_shortForecast}}" title="{{night_shortForecast}}" src="/assets/images/svg/{{night_icon_left}}.svg" /></div>
+        {{else}}
+        <div class="b">&dash;</div>
+        <div class="pa3"><img src="/assets/images/svg/night_na.svg" /></div>
+        {{/if}}
       </div>
     </div>
-</div>
+  </div>
+{{/each}}

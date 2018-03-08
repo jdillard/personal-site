@@ -1,31 +1,17 @@
-<div class="entry">
-    <div class="mv2 mh2-ns mh0 f7 ba b--moon-gray">
-      <div class="bl bw3 b--{{this.color}} pa3">
-        <div class="flex flex-column flex-row-ns">
-          <div class="pr3-ns mb2 mb0-ns w-100 w-70-ns">
-            <h3 class="pv0-ns mv0 b f4 lh-copy">{{this.name}}</h3>
-          </div>
-          <div class="w-100 w-30-ns pl3-ns mid-gray lh-copy">
-            <strong>Last Update:</strong> {{this.curr_timestamp}}<br />
-            <strong>Station Distance:</strong> {{this.distance}} miles
-          </div>
-        </div>
-        <div class="flex flex-column flex-row-ns">
-          <div class="pr3-ns mb0 w-100 w-50-ns mid-gray lh-copy">
-            <strong>Current Temp:</strong> {{this.curr_temp}}&deg;F
-            {{#if this.curr_heat_index}}
-            (feels like {{this.curr_heat_index}}&deg;F)
-            {{/if}}
-            {{#if this.curr_wind_chill}}
-            (feels like {{this.curr_wind_chill}}&deg;F)
-            {{/if}}
-            <br /><strong>Wind:</strong> {{this.curr_wind}}<br />
-            <strong>Humidity:</strong> {{this.curr_humidity}}%<br />
-          </div>
-          <div class="w-100 w-50-ns pl3-ns">
-            <svg id="precip-{{crag_index}}" width="300" height="75"></svg>
-          </div>
-        </div>
-      </div>
-    </div>
+
+<div class="pr3-ns mb0 w-100 w-50-ns mid-gray lh-copy">
+  <strong>Current Temp:</strong> {{this.curr_temp}}&deg;F
+  {{#if this.curr_heat_index}}
+  (feels like {{this.curr_heat_index}}&deg;F)
+  {{/if}}
+  {{#if this.curr_wind_chill}}
+  (feels like {{this.curr_wind_chill}}&deg;F)
+  {{/if}}
+  <br /><strong>Wind:</strong> {{this.curr_wind}}<br />
+  <strong>Humidity:</strong> {{this.curr_humidity}}%<br />
+  <strong>Last Update:</strong> {{this.curr_timestamp}}<br />
+  <strong>Station Accuracy:</strong> {{this.distance}} miles
+</div>
+<div class="w-100 w-50-ns pl3-ns">
+  <svg id="precip-{{crag_index}}" width="300" height="75"></svg>
 </div>
