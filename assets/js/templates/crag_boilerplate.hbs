@@ -4,7 +4,7 @@
         <div id="crag-{{this.number}}" class="bl bw3">
           <div class="flex flex-column flex-row-ns pa3">
             <div class="pr3-ns mb2 mb0-ns w-100 w-70-ns">
-              <h3 class="pv0-ns mv0 b f3-ns f4 lh-copy">{{this.name}}</h3>
+              <h3 class="pv0-ns mv0 b f3-ns f4 lh-copy"><a class="no-underline relative fancy-link hover-light-red black-70" href="https://forecast.weather.gov/MapClick.php?lat={{this.coordinates.[1]}}&lon={{this.coordinates.[0]}}">{{this.name}}</a></h3>
             </div>
             <div class="w-100 w-30-ns pl3-ns mid-gray lh-copy">
               <strong>Last Forecast:</strong> <span id="last-forecast-{{this.number}}"></span><br />

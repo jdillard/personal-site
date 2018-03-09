@@ -89,20 +89,22 @@ function iconToSVG(time, icon) {
     case "sct":
     case "bkn":
     case "wind_sct":
+      return time + "-cloudy";
     case "wind_bkn":
-      return time + "_cloudy";
+    case "wind_bkn":
+      return time + "-overcast";
     case "skc":
-      return time + "_clear";
+      return time + "-clear";
     case "rain_showers":
-      return time + "_rain";
+      return time + "-rain";
     case "tsra":
     case "tsra_sct":
     case "tsra_hi":
-      return time + "_thunderstorms";
+      return time + "-thunderstorms";
     case "snow":
-      return time + "_snow";
+      return time + "-snow";
     default:
-      return time + "_na";
+      return time + "-na";
   }
 }
 
@@ -124,7 +126,7 @@ function populateForecasts(crag_index, crag_name, crag_location, forecasts_data 
         day_icons = a.icon.substring(35,a.icon.length-12).split("/");
         let arr = [];
         // The first period is a half day
-        if(days.indexOf(b.name.toLowerCase())) {
+        if(days.indexOf(b.name.toLowerCase()) > 0) {
           half_day = true;
           arr.push(b);
           return arr;
@@ -132,16 +134,21 @@ function populateForecasts(crag_index, crag_name, crag_location, forecasts_data 
           a.name = "Today";
           a.night_temperature = b.temperature;
           a.night_shortForecast = b.shortForecast;
-          a.icon_count = day_icons.length-1;
+          //TODO handle multiple day icons in template
           a.icon_left = iconToSVG(day_icons[0], day_icons[1].split(",")[0]);
-          a.icon_left_text = (day_icons[1].split(",")[1]) ? day_icons[1].split(",")[1] : null;
+          a.icon_left_text = (day_icons[1].split(",")[1]) ? day_icons[1].split(",")[1]+'%' : '&nbsp;';
           a.icon_right = (day_icons.length-1 > 1) ? iconToSVG(day_icons[0],day_icons[2].split(",")[0]) :  null;
-          a.icon_right_text = (a.icon_right && day_icons[2].split(",")[1]) ? day_icons[2].split(",")[1] :  null;
-          a.night_icon_count = night_icons.length-1;
+          a.icon_right_text = (a.icon_right && day_icons[2].split(",")[1]) ? day_icons[2].split(",")[1]+'%' : '&nbsp;';
+          //TODO handle multiple night icons in template
           a.night_icon_left = iconToSVG(night_icons[0], night_icons[1].split(",")[0]);
-          a.night_icon_left_text = (night_icons[1].split(",")[1]) ? night_icons[1].split(",")[1] : null;
+          a.night_icon_left_text = (night_icons[1].split(",")[1]) ? night_icons[1].split(",")[1]+'%' : '&nbsp;';
           a.night_icon_right = (night_icons.length-1 > 1) ? iconToSVG(night_icons[0],night_icons[2].split(",")[0]) :  null;
-          a.night_icon_right_text = (a.night_icon_right && night_icons[2].split(",")[1]) ? night_icons[2].split(",")[1] :  null;
+          a.night_icon_right_text = (a.night_icon_right && night_icons[2].split(",")[1]) ? night_icons[2].split(",")[1]+'%' : '&nbsp;';
+          // two icons, but they are the same
+          a.icon_count = (a.icon_left === a.icon_right) ? 1 : day_icons.length-1;
+          a.night_icon_count = (a.night_icon_left === a.night_icon_right) ? 1 : night_icons.length-1;
+          a.icon_left_text = (a.night_icon_left === a.night_icon_right) ? a.icon_left_text + " &rarr; " + a.icon_right_text : a.icon_left_text;
+          a.night_icon_left_text = (a.night_icon_left === a.night_icon_right) ?  a.night_icon_left_text + " &rarr; " + a.night_icon_right_text : a.night_icon_left_text;
           delete a.number;
           delete a.startTime;
           delete a.endTime;
@@ -160,16 +167,19 @@ function populateForecasts(crag_index, crag_name, crag_location, forecasts_data 
           if(half_day && i === forecasts_data.properties.periods.length-1) {
             b.night_temperature = null;
             b.night_shortForecast = null;
-            b.icon_count = day_icons.length-1;
             b.icon_left = iconToSVG(day_icons[0], day_icons[1].split(",")[0]);
-            b.icon_left_text = (day_icons[1].split(",")[1]) ? day_icons[1].split(",")[1] : null;
+            b.icon_left_text = (day_icons[1].split(",")[1]) ? day_icons[1].split(",")[1]+'%' : '&nbsp;';
             b.icon_right = (day_icons.length-1 > 1) ? iconToSVG(day_icons[0],day_icons[2].split(",")[0]) :  null;
-            b.icon_right_text = (b.icon_right && day_icons[2].split(",")[1]) ? day_icons[2].split(",")[1] :  null;
-            b.night_icon_count = night_icons.length-1;
+            b.icon_right_text = (b.icon_right && day_icons[2].split(",")[1]) ? day_icons[2].split(",")[1]+'%' : '&nbsp;';
             b.night_icon_left = iconToSVG(night_icons[0], night_icons[1].split(",")[0]);
-            b.night_icon_left_text = (night_icons[1].split(",")[1]) ? night_icons[1].split(",")[1] : null;
+            b.night_icon_left_text = (night_icons[1].split(",")[1]) ? night_icons[1].split(",")[1]+'%' : '&nbsp;';
             b.night_icon_right = (night_icons.length-1 > 1) ? iconToSVG(night_icons[0],night_icons[2].split(",")[0]) :  null;
-            b.night_icon_right_text = (b.night_icon_right && night_icons[2].split(",")[1]) ? night_icons[2].split(",")[1] :  null;
+            b.night_icon_right_text = (b.night_icon_right && night_icons[2].split(",")[1]) ? night_icons[2].split(",")[1]+'%' : '&nbsp;';
+            // two icons, but they are the same
+            b.icon_count = (b.icon_left === b.icon_right) ? 1 : day_icons.length-1;
+            b.night_icon_count = (b.night_icon_left === b.night_icon_right) ? 1 : night_icons.length-1;
+            b.icon_left_text = (b.icon_left === b.icon_right) ? b.icon_left_text + " &rarr; " + b.icon_right_text : b.icon_left_text;
+            b.night_icon_left_text = (b.night_icon_left === b.night_icon_right) ? b.night_icon_left_text + " &rarr; " + b.night_icon_right_text : b.night_icon_left_text;
             delete b.number;
             delete b.startTime;
             delete b.endTime;
@@ -187,16 +197,19 @@ function populateForecasts(crag_index, crag_name, crag_location, forecasts_data 
         } else {
           a[a.length-1].night_temperature = b.temperature;
           a[a.length-1].night_shortForecast = b.shortForecast;
-          a[a.length-1].icon_count = day_icons.length-1;
           a[a.length-1].icon_left = iconToSVG(day_icons[0], day_icons[1].split(",")[0]);
-          a[a.length-1].icon_left_text = (day_icons[1].split(",")[1]) ? day_icons[1].split(",")[1] : null;
+          a[a.length-1].icon_left_text = (day_icons[1].split(",")[1]) ? day_icons[1].split(",")[1]+'%' : '&nbsp;';
           a[a.length-1].icon_right = (day_icons.length-1 > 1) ? iconToSVG(day_icons[0],day_icons[2].split(",")[0]) :  null;
-          a[a.length-1].icon_right_text = (a.icon_right && day_icons[2].split(",")[1]) ? day_icons[2].split(",")[1] :  null;
-          a[a.length-1].night_icon_count = night_icons.length-1;
+          a[a.length-1].icon_right_text = (a.icon_right && day_icons[2].split(",")[1]) ? day_icons[2].split(",")[1]+'%' : '&nbsp;';
           a[a.length-1].night_icon_left = iconToSVG(night_icons[0], night_icons[1].split(",")[0]);
-          a[a.length-1].night_icon_left_text = (night_icons[1].split(",")[1]) ? night_icons[1].split(",")[1] : null;
+          a[a.length-1].night_icon_left_text = (night_icons[1].split(",")[1]) ? night_icons[1].split(",")[1]+'%' : '&nbsp;';
           a[a.length-1].night_icon_right = (night_icons.length-1 > 1) ? iconToSVG(night_icons[0],night_icons[2].split(",")[0]) :  null;
-          a[a.length-1].night_icon_right_text = (a[a.length-1].night_icon_right && night_icons[2].split(",")[1]) ? night_icons[2].split(",")[1] :  null;
+          a[a.length-1].night_icon_right_text = (a[a.length-1].night_icon_right && night_icons[2].split(",")[1]) ? night_icons[2].split(",")[1]+'%' : '&nbsp;';
+          // two icons, but they are the same
+          a[a.length-1].icon_count = (a[a.length-1].icon_left === a[a.length-1].icon_right) ? 1 : day_icons.length-1;
+          a[a.length-1].icon_left_text = (a[a.length-1].icon_left === a[a.length-1].icon_right) ? a[a.length-1].icon_left_text+' &rarr; '+a[a.length-1].icon_right_text : a[a.length-1].icon_left_text;
+          a[a.length-1].night_icon_count = (a[a.length-1].night_icon_left === a[a.length-1].night_icon_right) ? 1 : night_icons.length-1;
+          a[a.length-1].night_icon_left_text = (a[a.length-1].night_icon_left === a[a.length-1].night_icon_right) ? a[a.length-1].night_icon_left_text+' &rarr; '+a[a.length-1].night_icon_right_text : a[a.length-1].night_icon_left_text;
           delete a[a.length-1].number;
           delete a[a.length-1].startTime;
           delete a[a.length-1].endTime;
@@ -211,8 +224,6 @@ function populateForecasts(crag_index, crag_name, crag_location, forecasts_data 
       }
     });
   forecasts.color = (clear_forecast) ? 'green' : 'yellow';
-
-  //console.log(forecasts_data.properties.periods,forecasts.periods);
 
   document.getElementById("last-forecast-"+crag_index).innerHTML = forecasts.updated;
   document.getElementById("office-"+crag_index).innerHTML = forecasts.distance + " miles";
@@ -229,9 +240,9 @@ function populateObservations(crag_index, crag_name, crag_location, observations
   observations.curr_timestamp = moment(observations_data[0].properties.timestamp).format('MM/DD hh:mm a');
   observations.curr_temp = (observations_data[0].properties.temperature.value*(9/5)+32).toFixed(0);
   observations.curr_heat_index = (observations_data[0].properties.heatIndex.value && observations.curr_temp != (observations_data[0].properties.heatIndex.value*(9/5)+32).toFixed(0)) ? (observations_data[0].properties.heatIndex.value*(9/5)+32).toFixed(0) : null;
-  observations.curr_wind = (observations_data[0].properties.windSpeed.value > 0) ? (observations_data[0].properties.windSpeed.value * 2.23694).toFixed(0)+"mph "+degreeToDirection(observations_data[0].properties.windDirection.value) : "Calm";
+  observations.curr_wind = (observations_data[0].properties.windSpeed.value) ? (observations_data[0].properties.windSpeed.value * 2.23694).toFixed(0) + "mph " + degreeToDirection(observations_data[0].properties.windDirection.value) : null;
   observations.curr_wind_chill = (observations_data[0].properties.windChill.value) ? (observations_data[0].properties.windChill.value*(9/5)+32).toFixed(0) : null;
-  observations.curr_humidity = observations_data[0].properties.relativeHumidity.value.toFixed(0);
+  observations.curr_humidity = (observations_data[0].properties.relativeHumidity.value) ? observations_data[0].properties.relativeHumidity.value.toFixed(0) : null;
 
   let total_inches = 0;
 

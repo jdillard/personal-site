@@ -7,9 +7,13 @@
   {{#if this.curr_wind_chill}}
   (feels like {{this.curr_wind_chill}}&deg;F)
   {{/if}}
-  <br /><strong>Wind:</strong> {{this.curr_wind}}<br />
-  <strong>Humidity:</strong> {{this.curr_humidity}}%<br />
-  <strong>Last Update:</strong> {{this.curr_timestamp}}<br />
+  {{#if this.curr_wind}}
+  <br /><strong>Wind:</strong> {{this.curr_wind}}
+  {{/if}}
+  {{#if this.curr_humidity}}
+  <br /><strong>Humidity:</strong> {{this.curr_humidity}}%
+  {{/if}}
+  <br /><strong>Last Update:</strong> {{this.curr_timestamp}}<br />
   <strong>Station Accuracy:</strong> {{this.distance}} miles
 </div>
 <div class="w-100 w-50-ns pl3-ns">

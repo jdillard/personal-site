@@ -2,17 +2,24 @@
   <div class="tc mt3" style="flex:1;">
     <div class="mid-gray b f5-ns f3 mv0-ns mv2">{{name}}</div>
     <div class="flex items-stretch justify-center flex-row flex-column-ns">
-      <div class="mid-gray f6-ns f4 mv1 pa2 lh-copy flex flex-column flex-auto">
-        <div class="b">{{temperature}}&deg;F</div>
-        <div class="pa3"><img alt="{{shortForecast}}" title="{{shortForecast}}" src="/assets/images/svg/{{icon_left}}.svg" /></div>
+      <div class="mid-gray f6-ns f4 ph2 pt2 pb0 lh-copy flex flex-column flex-auto">
+        <div class="b mb2">{{temperature}}&deg;F</div>
+        <img class="w-60 center" alt="{{shortForecast}}" title="{{shortForecast}}" src="/assets/images/svg/weather.svg#{{icon_left}}" />
+        <div class="pa2 f7">
+          {{{icon_left_text}}}
+        </div>
       </div>
       <div class="bg-mid-gray white f6-ns f4 mt1 pa2 lh-copy flex flex-column flex-auto">
         {{#if night_temperature}}
-        <div class="b">{{night_temperature}}&deg;F</div>
-        <div class="pa3"><img alt="{{night_shortForecast}}" title="{{night_shortForecast}}" src="/assets/images/svg/{{night_icon_left}}.svg" /></div>
+        <div class="b mb2">{{night_temperature}}&deg;F</div>
+        <img class="w-60 center" alt="{{night_shortForecast}}" title="{{night_shortForecast}}" src="/assets/images/svg/weather.svg#{{night_icon_left}}" />
+        <div class="pa2 f7">
+          {{{night_icon_left_text}}}
+        </div>
         {{else}}
-        <div class="b">&dash;</div>
-        <div class="pa3"><img src="/assets/images/svg/night_na.svg" /></div>
+        <div class="b mb2">&dash;</div>
+        <img class="w-60 center" src="/assets/images/svg/weather.svg#night-na" />
+        <div class="pa2 f7">&nbsp;</div>
         {{/if}}
       </div>
     </div>
