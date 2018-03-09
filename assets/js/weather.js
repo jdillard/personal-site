@@ -86,6 +86,7 @@ function degreeToDirection(degree) {
 function iconToSVG(time, icon) {
   switch(icon) {
     case "few":
+    case "wind_few":
     case "sct":
     case "bkn":
     case "wind_sct":
@@ -95,6 +96,7 @@ function iconToSVG(time, icon) {
       return time + "-overcast";
     case "skc":
       return time + "-clear";
+    case "rain":
     case "rain_showers":
       return time + "-rain";
     case "tsra":
