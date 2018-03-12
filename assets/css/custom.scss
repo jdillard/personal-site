@@ -55,6 +55,13 @@
     margin-top: 5px;
 }
 
+.crag-weather {
+    width: 114%;
+    max-width: none;
+    margin: 0 -7%;
+    margin-top: 5px;
+}
+
 .post-content div.highlighter-rouge {
     margin: 1.75em -5em 1.75em -5em;
     border-radius: 10px;
@@ -246,5 +253,11 @@ header.post-cover {
 @media only screen and (max-width: 900px) {
     .post-content blockquote {
         margin-left: 0;
+    }
+    .post-content img, .crag-weather {
+        width: 106%;
+        max-width: none;
+        margin: 0 -3%;
+        margin-top: 5px;
     }
 }

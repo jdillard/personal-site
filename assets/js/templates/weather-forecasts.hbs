@@ -1,25 +1,42 @@
 {{#each this.periods}}
-  <div class="tc mt3" style="flex:1;">
-    <div class="mid-gray b f5-ns f3 mv0-ns mv2">{{name}}</div>
+  <div class="tc" style="flex:1;">
+    <!-- //TODO add hourly API call on name.click-->
+    <div class="sans-serif mid-gray b f5-ns f4 bt bb b--light-gray pv2">{{name}}</div>
     <div class="flex items-stretch justify-center flex-row flex-column-ns">
-      <div class="mid-gray f6-ns f4 ph2 pt2 pb0 lh-copy flex flex-column flex-auto">
-        <div class="b mb2">{{temperature}}&deg;F</div>
-        <img class="w-60 center" alt="{{shortForecast}}" title="{{shortForecast}}" src="/assets/images/svg/weather.svg#{{icon_left}}" />
-        <div class="pa2 f7">
-          {{{icon_left_text}}}
+      <div class="mid-gray f6-ns f4 ph2 pt2 pb0 lh-copy flex flex-column">
+        <div class="f6 b mb1">{{temperature}}&deg;F</div>
+        <div class="relative w-60-ns w-30 center">
+          {{#if icon_split}}
+          <img class="relative top-0 left-0" src="/assets/images/svg/{{icon_left}}.svg#left" />
+          <img class="absolute top-0 left-0" src="/assets/images/svg/{{icon_right}}.svg#right" />
+          {{else}}
+          <img class="relative top-0 left-0" alt="{{shortForecast}}" title="{{shortForecast}}" src="/assets/images/svg/{{icon_left}}.svg#full" />
+          {{/if}}
+        </div>
+        <div class="pv2-ns f7">
+          {{{icon_text}}}
         </div>
       </div>
-      <div class="bg-mid-gray white f6-ns f4 mt1 pa2 lh-copy flex flex-column flex-auto">
+      <div class="bg-mid-gray white f6-ns f4 pa2 lh-copy flex flex-column flex-auto">
         {{#if night_temperature}}
-        <div class="b mb2">{{night_temperature}}&deg;F</div>
-        <img class="w-60 center" alt="{{night_shortForecast}}" title="{{night_shortForecast}}" src="/assets/images/svg/weather.svg#{{night_icon_left}}" />
-        <div class="pa2 f7">
-          {{{night_icon_left_text}}}
+        <div class="f6 b mb1">{{night_temperature}}&deg;F</div>
+        <div class="relative w-60-ns w-30 center">
+          {{#if night_icon_split}}
+          <img class="relative top-0 left-0" src="/assets/images/svg/{{night_icon_left}}.svg#left" />
+          <img class="absolute top-0 left-0" src="/assets/images/svg/{{night_icon_right}}.svg#right" />
+          {{else}}
+          <img class="relative top-0 left-0" alt="{{shortForecast}}" title="{{shortForecast}}" src="/assets/images/svg/{{night_icon_left}}.svg#full" />
+          {{/if}}
+        </div>
+        <div class="pv2-ns f7">
+          {{{night_icon_text}}}
         </div>
         {{else}}
-        <div class="b mb2">&dash;</div>
-        <img class="w-60 center" src="/assets/images/svg/weather.svg#night-na" />
-        <div class="pa2 f7">&nbsp;</div>
+        <div class="f6 b mb1">&dash;</div>
+        <div class="relative w-60-ns w-30 center">
+          <img class="relative top-0 left-0" src="/assets/images/svg/night_na.svg#full" />
+        </div>
+        <div class="pv2-ns f7">&nbsp;</div>
         {{/if}}
       </div>
     </div>

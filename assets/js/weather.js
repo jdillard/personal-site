@@ -85,28 +85,30 @@ function degreeToDirection(degree) {
 
 function iconToSVG(time, icon) {
   switch(icon) {
+    case "skc":
+      return time + "_clear";
+    case "fog":
+      return time + "_fog";
     case "few":
     case "wind_few":
     case "sct":
     case "bkn":
     case "wind_sct":
-      return time + "-cloudy";
+      return time + "_cloudy";
     case "wind_bkn":
     case "wind_bkn":
-      return time + "-overcast";
-    case "skc":
-      return time + "-clear";
+      return time + "_overcast";
     case "rain":
     case "rain_showers":
-      return time + "-rain";
+      return time + "_rain";
     case "tsra":
     case "tsra_sct":
     case "tsra_hi":
-      return time + "-thunderstorms";
+      return time + "_thunderstorms";
     case "snow":
-      return time + "-snow";
+      return time + "_snow";
     default:
-      return time + "-na";
+      return time + "_na";
   }
 }
 
@@ -128,7 +130,7 @@ function populateForecasts(crag_index, crag_name, crag_location, forecasts_data 
         day_icons = a.icon.substring(35,a.icon.length-12).split("/");
         let arr = [];
         // The first period is a half day
-        if(days.indexOf(b.name.toLowerCase()) > 0) {
+        if(days.indexOf(b.name.toLowerCase()) >= 0) {
           half_day = true;
           arr.push(b);
           return arr;
@@ -136,21 +138,21 @@ function populateForecasts(crag_index, crag_name, crag_location, forecasts_data 
           a.name = "Today";
           a.night_temperature = b.temperature;
           a.night_shortForecast = b.shortForecast;
-          //TODO handle multiple day icons in template
+          a.icon_split = (day_icons.length-1 > 1) ? true: false;
           a.icon_left = iconToSVG(day_icons[0], day_icons[1].split(",")[0]);
-          a.icon_left_text = (day_icons[1].split(",")[1]) ? day_icons[1].split(",")[1]+'%' : '&nbsp;';
+          a.icon_left_text = (day_icons[1].split(",")[1]) ? day_icons[1].split(",")[1]+'%' : '';
           a.icon_right = (day_icons.length-1 > 1) ? iconToSVG(day_icons[0],day_icons[2].split(",")[0]) :  null;
-          a.icon_right_text = (a.icon_right && day_icons[2].split(",")[1]) ? day_icons[2].split(",")[1]+'%' : '&nbsp;';
-          //TODO handle multiple night icons in template
+          a.icon_right_text = (a.icon_right && day_icons[2].split(",")[1]) ? day_icons[2].split(",")[1]+'%' : '';
+          a.night_icon_split = (night_icons.length-1 > 1) ? true: false;
           a.night_icon_left = iconToSVG(night_icons[0], night_icons[1].split(",")[0]);
-          a.night_icon_left_text = (night_icons[1].split(",")[1]) ? night_icons[1].split(",")[1]+'%' : '&nbsp;';
+          a.night_icon_left_text = (night_icons[1].split(",")[1]) ? night_icons[1].split(",")[1]+'%' : '';
           a.night_icon_right = (night_icons.length-1 > 1) ? iconToSVG(night_icons[0],night_icons[2].split(",")[0]) :  null;
-          a.night_icon_right_text = (a.night_icon_right && night_icons[2].split(",")[1]) ? night_icons[2].split(",")[1]+'%' : '&nbsp;';
+          a.night_icon_right_text = (a.night_icon_right && night_icons[2].split(",")[1]) ? night_icons[2].split(",")[1]+'%' : '';
+          a.icon_text = (a.night_icon_left_text || a.night_icon_right_text) ? a.icon_left_text + " &rarr; " + a.icon_right_text : '&nbsp;';
+          a.night_icon_text = (a.night_icon_left_text || a.night_icon_right_text) ?  a.night_icon_left_text + " &rarr; " + a.night_icon_right_text : '&nbsp;';
           // two icons, but they are the same
-          a.icon_count = (a.icon_left === a.icon_right) ? 1 : day_icons.length-1;
-          a.night_icon_count = (a.night_icon_left === a.night_icon_right) ? 1 : night_icons.length-1;
-          a.icon_left_text = (a.night_icon_left === a.night_icon_right) ? a.icon_left_text + " &rarr; " + a.icon_right_text : a.icon_left_text;
-          a.night_icon_left_text = (a.night_icon_left === a.night_icon_right) ?  a.night_icon_left_text + " &rarr; " + a.night_icon_right_text : a.night_icon_left_text;
+          a.icon_split = (a.icon_left === a.icon_right) ? false : a.icon_split;
+          a.night_icon_split = (a.night_icon_left === a.night_icon_right) ? false : a.night_icon_split;
           delete a.number;
           delete a.startTime;
           delete a.endTime;
@@ -169,19 +171,21 @@ function populateForecasts(crag_index, crag_name, crag_location, forecasts_data 
           if(half_day && i === forecasts_data.properties.periods.length-1) {
             b.night_temperature = null;
             b.night_shortForecast = null;
+            b.icon_split = (day_icons.length-1 > 1) ? true: false;
             b.icon_left = iconToSVG(day_icons[0], day_icons[1].split(",")[0]);
-            b.icon_left_text = (day_icons[1].split(",")[1]) ? day_icons[1].split(",")[1]+'%' : '&nbsp;';
+            b.icon_left_text = (day_icons[1].split(",")[1]) ? day_icons[1].split(",")[1]+'%' : '';
             b.icon_right = (day_icons.length-1 > 1) ? iconToSVG(day_icons[0],day_icons[2].split(",")[0]) :  null;
-            b.icon_right_text = (b.icon_right && day_icons[2].split(",")[1]) ? day_icons[2].split(",")[1]+'%' : '&nbsp;';
+            b.icon_right_text = (b.icon_right && day_icons[2].split(",")[1]) ? day_icons[2].split(",")[1]+'%' : '';
+            b.night_icon_split = (night_icons.length-1 > 1) ? true: false;
             b.night_icon_left = iconToSVG(night_icons[0], night_icons[1].split(",")[0]);
-            b.night_icon_left_text = (night_icons[1].split(",")[1]) ? night_icons[1].split(",")[1]+'%' : '&nbsp;';
+            b.night_icon_left_text = (night_icons[1].split(",")[1]) ? night_icons[1].split(",")[1]+'%' : '';
             b.night_icon_right = (night_icons.length-1 > 1) ? iconToSVG(night_icons[0],night_icons[2].split(",")[0]) :  null;
-            b.night_icon_right_text = (b.night_icon_right && night_icons[2].split(",")[1]) ? night_icons[2].split(",")[1]+'%' : '&nbsp;';
+            b.night_icon_right_text = (b.night_icon_right && night_icons[2].split(",")[1]) ? night_icons[2].split(",")[1]+'%' : '';
+            b.icon_text = (b.icon_left_text || b.icon_right_text) ? b.icon_left_text + " &rarr; " + b.icon_right_text : '&nbsp;';
+            b.night_icon_text = (b.night_icon_left_text || b.night_icon_right_text) ? b.night_icon_left_text + " &rarr; " + b.night_icon_right_text : '&nbsp;';
             // two icons, but they are the same
-            b.icon_count = (b.icon_left === b.icon_right) ? 1 : day_icons.length-1;
-            b.night_icon_count = (b.night_icon_left === b.night_icon_right) ? 1 : night_icons.length-1;
-            b.icon_left_text = (b.icon_left === b.icon_right) ? b.icon_left_text + " &rarr; " + b.icon_right_text : b.icon_left_text;
-            b.night_icon_left_text = (b.night_icon_left === b.night_icon_right) ? b.night_icon_left_text + " &rarr; " + b.night_icon_right_text : b.night_icon_left_text;
+            b.icon_split = (b.icon_left === b.icon_right) ? false : b.icon_split;
+            b.night_icon_split = (b.night_icon_left === b.night_icon_right) ? false : b.night_icon_split;
             delete b.number;
             delete b.startTime;
             delete b.endTime;
@@ -199,19 +203,21 @@ function populateForecasts(crag_index, crag_name, crag_location, forecasts_data 
         } else {
           a[a.length-1].night_temperature = b.temperature;
           a[a.length-1].night_shortForecast = b.shortForecast;
+          a[a.length-1].icon_split = (day_icons.length-1 > 1) ? true: false;
           a[a.length-1].icon_left = iconToSVG(day_icons[0], day_icons[1].split(",")[0]);
-          a[a.length-1].icon_left_text = (day_icons[1].split(",")[1]) ? day_icons[1].split(",")[1]+'%' : '&nbsp;';
+          a[a.length-1].icon_left_text = (day_icons[1].split(",")[1]) ? day_icons[1].split(",")[1]+'%' : '';
           a[a.length-1].icon_right = (day_icons.length-1 > 1) ? iconToSVG(day_icons[0],day_icons[2].split(",")[0]) :  null;
-          a[a.length-1].icon_right_text = (a.icon_right && day_icons[2].split(",")[1]) ? day_icons[2].split(",")[1]+'%' : '&nbsp;';
+          a[a.length-1].icon_right_text = (a.icon_right && day_icons[2].split(",")[1]) ? day_icons[2].split(",")[1]+'%' : '';
+          a[a.length-1].night_icon_split = (night_icons.length-1 > 1) ? true: false;
           a[a.length-1].night_icon_left = iconToSVG(night_icons[0], night_icons[1].split(",")[0]);
-          a[a.length-1].night_icon_left_text = (night_icons[1].split(",")[1]) ? night_icons[1].split(",")[1]+'%' : '&nbsp;';
+          a[a.length-1].night_icon_left_text = (night_icons[1].split(",")[1]) ? night_icons[1].split(",")[1]+'%' : '';
           a[a.length-1].night_icon_right = (night_icons.length-1 > 1) ? iconToSVG(night_icons[0],night_icons[2].split(",")[0]) :  null;
-          a[a.length-1].night_icon_right_text = (a[a.length-1].night_icon_right && night_icons[2].split(",")[1]) ? night_icons[2].split(",")[1]+'%' : '&nbsp;';
+          a[a.length-1].night_icon_right_text = (a[a.length-1].night_icon_right && night_icons[2].split(",")[1]) ? night_icons[2].split(",")[1]+'%' : '';
+          a[a.length-1].icon_text = (a[a.length-1].icon_left_text || a[a.length-1].icon_right_text) ? a[a.length-1].icon_left_text+' &rarr; '+a[a.length-1].icon_right_text : '&nbsp;';
+          a[a.length-1].night_icon_text = (a[a.length-1].night_icon_left_text || a[a.length-1].night_icon_right_text) ? a[a.length-1].night_icon_left_text+' &rarr; '+a[a.length-1].night_icon_right_text : '&nbsp;';
           // two icons, but they are the same
-          a[a.length-1].icon_count = (a[a.length-1].icon_left === a[a.length-1].icon_right) ? 1 : day_icons.length-1;
-          a[a.length-1].icon_left_text = (a[a.length-1].icon_left === a[a.length-1].icon_right) ? a[a.length-1].icon_left_text+' &rarr; '+a[a.length-1].icon_right_text : a[a.length-1].icon_left_text;
-          a[a.length-1].night_icon_count = (a[a.length-1].night_icon_left === a[a.length-1].night_icon_right) ? 1 : night_icons.length-1;
-          a[a.length-1].night_icon_left_text = (a[a.length-1].night_icon_left === a[a.length-1].night_icon_right) ? a[a.length-1].night_icon_left_text+' &rarr; '+a[a.length-1].night_icon_right_text : a[a.length-1].night_icon_left_text;
+          a[a.length-1].icon_split = (a[a.length-1].icon_left === a[a.length-1].icon_right) ? false : a[a.length-1].icon_split;
+          a[a.length-1].night_icon_split = (a[a.length-1].night_icon_left === a[a.length-1].night_icon_right) ? false : a[a.length-1].night_icon_split;
           delete a[a.length-1].number;
           delete a[a.length-1].startTime;
           delete a[a.length-1].endTime;
