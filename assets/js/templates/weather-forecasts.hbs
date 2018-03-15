@@ -1,16 +1,16 @@
 <div class="flex flex-column flex-row-ns bl bw3 b--light-gray">
 {{#each this.periods}}
   <div class="tc" style="flex:1;">
-      <div data-crag="{{@root.crag_index}}" data-day="{{@index}}" data-active="false" class="forecast-day db-ns dn pointer hover-bg-light-gray sans-serif mid-gray b f5-ns f4 bt bb b--light-gray pv2">{{name}}</div>
+      <div data-crag="{{@root.crag_index}}" data-day="{{@index}}" data-date="{{date}}" data-active="false" class="forecast-day db-ns dn pointer hover-bg-light-gray sans-serif mid-gray b f5-ns f4 bt bb b--light-gray pv2">{{name}}</div>
   </div>
 {{/each}}
 </div>
-<div id="hourly-forecast-{{this.crag_index}}" class="dn flex-row bl bw3 b--light-gray overflow-scroll"></div>
+<div id="hourly-forecast-{{this.crag_index}}" class="hourly-forecast dn flex-row bl bw3 b--light-gray overflow-x-auto"></div>
 <div class="flex flex-column flex-row-ns bl bw3 b--{{this.color}}">
 {{#each this.periods}}
   <div class="tc" style="flex:1;">
-    <div data-crag="{{@root.crag_index}}" data-day="{{@index}}" data-active="false" class="forecast-day dn-ns pointer hover-bg-light-gray sans-serif mid-gray b f5-ns f4 bt bb b--light-gray pv2">{{name}}</div>
-    <div id="hourly-forecast-{{@root.crag_index}}-{{@index}}" class="dn flex-row overflow-scroll"></div>
+    <div data-crag="{{@root.crag_index}}" data-day="{{@index}}" data-date="{{date}}" data-active="false" class="forecast-day dn-ns pointer hover-bg-light-gray sans-serif mid-gray b f5-ns f4 bt bb b--light-gray pv2">{{name}}</div>
+    <div id="hourly-forecast-{{@root.crag_index}}-{{@index}}" class="hourly-forecast dn flex-row overflow-x-auto"></div>
     <div class="flex items-stretch justify-center flex-row flex-column-ns">
       <div id="{{@root.crag_index}}-daytime-{{@index}}" class="daytime mid-gray bg-white f6-ns f4 ph2 pt2 pb0 lh-copy flex flex-column">
         <div class="f6 b mb1">{{temperature}}&deg;F</div>

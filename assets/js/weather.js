@@ -41,6 +41,7 @@ for (let c in crags) {
     });
 }
 
+// helper function for getDistanceFromLatLonInMi
 function deg2rad(deg) {
   return deg * (Math.PI/180);
 }
@@ -59,6 +60,7 @@ function getDistanceFromLatLonInMi(lat1,lon1,lat2,lon2) {
 }
 
 //TODO change to 3 letter abbreviation
+// helper function for degreeToDirection
 function calcPoint(input) {
   const j = input % 8;
   input = (input / 8)|0 % 4;
@@ -138,6 +140,7 @@ function populateForecasts(crag, data = []) {
           return arr;
         } else {
           a.name = "Today";
+          a.date = moment(a.startTime).format('YYYY-MM-DD');
           a.night_temperature = b.temperature;
           a.night_shortForecast = b.shortForecast;
           a.icon_split = (day_icons.length-1 > 1) ? true: false;
@@ -170,6 +173,7 @@ function populateForecasts(crag, data = []) {
         day_icons = a[a.length-1].icon.substring(35,a[a.length-1].icon.length-12).split("/");
         if((!half_day && i % 2 === 0) || (half_day && i % 2 != 0)) {
           if(half_day && i === data.properties.periods.length-1) {
+            b.date = moment(b.startTime).format('YYYY-MM-DD');
             b.night_temperature = null;
             b.night_shortForecast = null;
             b.icon_split = (day_icons.length-1 > 1) ? true: false;
@@ -201,6 +205,7 @@ function populateForecasts(crag, data = []) {
           }
           return a;
         } else {
+          a[a.length-1].date = moment(a[a.length-1].startTime).format('YYYY-MM-DD');
           a[a.length-1].night_temperature = b.temperature;
           a[a.length-1].night_shortForecast = b.shortForecast;
           a[a.length-1].icon_split = (day_icons.length-1 > 1) ? true: false;
@@ -271,7 +276,7 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
         a.hour = moment(a.startTime).format('HH');
         a.svg = iconToSVG(left_icons[0], left_icons[1].split(",")[0]);
         a.color = (new RegExp(precipitation.join("|")).test(a.svg)) ? 'yellow' : 'green';
-        if(moment(a.startTime).isSameOrAfter(moment(week_start_time), 'day')) {
+        if(moment(a.startTime).isSameOrAfter(moment(week_start_time), 'day') && moment(a.startTime).isBefore(moment(week_start_time).add(1, 'week'), 'day')) {
           arr[days.indexOf(moment(a.startTime).format('dddd').toLowerCase())].push(a);
         }
         delete b.number;
@@ -282,7 +287,7 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
         b.hour = moment(b.startTime).format('HH');
         b.svg = iconToSVG(right_icons[0], right_icons[1].split(",")[0]);
         b.color = (new RegExp(precipitation.join("|")).test(b.svg)) ? 'yellow' : 'green';
-        if(moment(b.startTime).isSameOrAfter(moment(week_start_time), 'day')) {
+        if(moment(b.startTime).isSameOrAfter(moment(week_start_time), 'day') && moment(b.startTime).isBefore(moment(week_start_time).add(1, 'week'), 'day')) {
           arr[days.indexOf(moment(b.startTime).format('dddd').toLowerCase())].push(b);
         }
         return arr;
@@ -295,7 +300,7 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
         b.hour = moment(b.startTime).format('HH');
         b.svg = iconToSVG(right_icons[0], right_icons[1].split(",")[0]);
         b.color = (new RegExp(precipitation.join("|")).test(b.svg)) ? 'yellow' : 'green';
-        if(moment(b.startTime).isSameOrAfter(moment(week_start_time), 'day')) {
+        if(moment(b.startTime).isSameOrAfter(moment(week_start_time), 'day') && moment(b.startTime).isBefore(moment(week_start_time).add(1, 'week'), 'day')) {
           a[days.indexOf(moment(b.startTime).format('dddd').toLowerCase())].push(b);
         }
         return a;
@@ -307,17 +312,34 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
     if(value.length < 24) {
       value.sort(function(a, b) { return +a.hour - +b.hour; });
       const last_hour = +value[value.length-1].hour;
-      for (let i=last_hour+1; i < 24; i++) {
-        let isDaytime = (i < 6 || i > 17) ? false : true;
-        let svg = (i < 6 || i > 17) ? 'night_na' : 'day_na';
-        value.push({
-          'hour': i.toString().padStart(2, 0),
-          'svg': svg,
-          'isDaytime': isDaytime,
-          'shortForecast': 'Not Available',
-          'temperature': null,
-          'color': 'light-gray'
-        });
+      const first_hour = +value[0].hour;
+      if(first_hour > 0) {
+        for (let i=first_hour-1; i > 0; i--) {
+          //TODO dynamically get daytime boundaries
+          let isDaytime = (i < 6 || i > 17) ? false : true;
+          let svg = (i < 6 || i > 17) ? 'night_na' : 'day_na';
+          value.unshift({
+            'hour': i.toString().padStart(2, 0),
+            'svg': svg,
+            'isDaytime': isDaytime,
+            'shortForecast': 'Not Available',
+            'temperature': null,
+            'color': 'light-gray'
+          });
+        }
+      } else {
+        for (let i=last_hour+1; i < 24; i++) {
+          let isDaytime = (i < 6 || i > 17) ? false : true;
+          let svg = (i < 6 || i > 17) ? 'night_na' : 'day_na';
+          value.push({
+            'hour': i.toString().padStart(2, 0),
+            'svg': svg,
+            'isDaytime': isDaytime,
+            'shortForecast': 'Not Available',
+            'temperature': null,
+            'color': 'light-gray'
+          });
+        }
       }
     }
   }
@@ -409,9 +431,30 @@ function graph_precip(crag_index, data) {
     .attr("d", line);
 }
 
+function normalizePage() {
+  $('.hourly-forecast').each(function(i, obj) {
+    $(this).removeClass('flex');
+    $(this).addClass('dn');
+  });
+  $('.forecast-day').each(function(i, obj) {
+      $(this)[0].dataset.active = false;
+      $(this).removeClass('bg-light-gray');
+  });
+  $('.daytime').each(function(i, obj) {
+    $(this).removeClass('bg-near-white');
+    $(this).addClass('bg-white');
+  });
+  $('.nighttime').each(function(i, obj) {
+    $(this).removeClass('bg-gray');
+    $(this).addClass('bg-mid-gray');
+  });
+}
+
+// load the hourly forecast for a particular day
 $(document).on( "click", '.forecast-day', function() {
   const crag_index = $(this)[0].dataset.crag;
   const day_index = $(this)[0].dataset.day;
+  const date = moment($(this)[0].dataset.date).format('dddd').toLowerCase();
   const is_active = ($(this)[0].dataset.active == 'true');
 
   let hourly_forecast = (window.outerWidth > 480) ? document.getElementById('hourly-forecast-'+crag_index) : document.getElementById('hourly-forecast-'+crag_index+'-'+day_index);
@@ -451,10 +494,11 @@ $(document).on( "click", '.forecast-day', function() {
 
   const hourly = JSON.parse(localStorage.getItem(crag_index));
 
-  hourly_forecast.innerHTML = template_weather_hourly(hourly[days.indexOf($(this).text().toLowerCase())]);
+  hourly_forecast.innerHTML = template_weather_hourly(hourly[days.indexOf(date)]);
 });
 
-//TODO unset all hourly settings on all crags on window resize
+// normalize all hourly settings on all crags on window resize
+window.addEventListener("resize", normalizePage);
 
 /*
 //TODO remove localStrage on tab closure
