@@ -1,0 +1,23 @@
+{{#each @root}}
+  <div class="tc" style="flex:1;">
+    <div class="flex items-stretch justify-center flex-row flex-column-ns">
+      {{#if isDaytime}}
+      <div class="mid-gray bb bw2 b--{{color}} f6-ns f4 ph1 pt2 pb0 lh-copy flex flex-column">
+      {{else}}
+      <div class="white bb bw2 b--{{color}} bg-mid-gray f6-ns f4 ph1 pt2 pb0 lh-copy flex flex-column">
+      {{/if}}
+        <div class="f7 mb1">{{hour}}</div>
+        <div class="relative w-80-ns w-90 center">
+          <img class="relative top-0 left-0" alt="{{shortForecast}}" title="{{shortForecast}}" src="/assets/images/svg/{{svg}}.svg#full" />
+        </div>
+        <div class="pv2-ns f7">
+          {{#if temperature}}
+          {{temperature}}&deg;
+          {{else}}
+          &mdash;
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}

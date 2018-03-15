@@ -1,9 +1,18 @@
+<div class="flex flex-column flex-row-ns bl bw3 b--light-gray">
 {{#each this.periods}}
   <div class="tc" style="flex:1;">
-    <!-- //TODO add hourly API call on name.click-->
-    <div class="sans-serif mid-gray b f5-ns f4 bt bb b--light-gray pv2">{{name}}</div>
+      <div data-crag="{{@root.crag_index}}" data-day="{{@index}}" data-active="false" class="forecast-day db-ns dn pointer hover-bg-light-gray sans-serif mid-gray b f5-ns f4 bt bb b--light-gray pv2">{{name}}</div>
+  </div>
+{{/each}}
+</div>
+<div id="hourly-forecast-{{this.crag_index}}" class="dn flex-row bl bw3 b--light-gray overflow-scroll"></div>
+<div class="flex flex-column flex-row-ns bl bw3 b--{{this.color}}">
+{{#each this.periods}}
+  <div class="tc" style="flex:1;">
+    <div data-crag="{{@root.crag_index}}" data-day="{{@index}}" data-active="false" class="forecast-day dn-ns pointer hover-bg-light-gray sans-serif mid-gray b f5-ns f4 bt bb b--light-gray pv2">{{name}}</div>
+    <div id="hourly-forecast-{{@root.crag_index}}-{{@index}}" class="dn flex-row overflow-scroll"></div>
     <div class="flex items-stretch justify-center flex-row flex-column-ns">
-      <div class="mid-gray f6-ns f4 ph2 pt2 pb0 lh-copy flex flex-column">
+      <div id="{{@root.crag_index}}-daytime-{{@index}}" class="daytime mid-gray bg-white f6-ns f4 ph2 pt2 pb0 lh-copy flex flex-column">
         <div class="f6 b mb1">{{temperature}}&deg;F</div>
         <div class="relative w-60-ns w-30 center">
           {{#if icon_split}}
@@ -17,7 +26,7 @@
           {{{icon_text}}}
         </div>
       </div>
-      <div class="bg-mid-gray white f6-ns f4 pa2 lh-copy flex flex-column flex-auto">
+      <div id="{{@root.crag_index}}-nighttime-{{@index}}" class="nighttime bg-mid-gray white f6-ns f4 pa2 lh-copy flex flex-column flex-auto">
         {{#if night_temperature}}
         <div class="f6 b mb1">{{night_temperature}}&deg;F</div>
         <div class="relative w-60-ns w-30 center">
@@ -42,3 +51,4 @@
     </div>
   </div>
 {{/each}}
+</div>
