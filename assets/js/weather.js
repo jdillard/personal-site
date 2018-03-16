@@ -9,15 +9,15 @@ const template_weather_observations = require("./templates/weather-observations.
 const template_weather_forecasts = require("./templates/weather-forecasts.hbs");
 const template_weather_hourly = require("./templates/weather-hourly.hbs");
 
-const crags_json = '[{"number": 1, "name": "The Greenbelt", "station": "KATT", "office": "EWX/153,89", "coordinates": [-97.801,30.244]},' +
-  '{"number": 2, "name": "Continental Ranch", "station": "KDRT", "office": "EWX/14,74", "coordinates": [-101.44,29.803]},' +
-  '{"number": 3, "name": "Reimer\'s Ranch", "station": "KRYW", "office": "EWX/141,93", "coordinates": [-98.122,30.334]},' +
-  '{"number": 4, "name": "Cochise Stronghold", "station": "KFHU", "office": "TWC/125,31", "coordinates": [-109.987,31.921]},' +
-  '{"number": 5, "name": "Enchanted Rock", "station": "KT82", "office": "EWX/114,101", "coordinates": [-98.821,30.503]},' +
-  '{"number": 6, "name": "Horseshoe Canyon Ranch", "station": "KHRO", "office": "LZK/44,127", "coordinates": [-93.292,36.012]},' +
-  '{"number": 7, "name": "Last Chance Canyon", "station": "KGDP", "office": "MAF/16,149", "coordinates": [-104.754,32.234]},' +
-  '{"number": 8, "name": "Georgetown", "station": "KGTU", "office": "EWX/157,106", "coordinates": [-97.69,30.627]},' +
-  '{"number": 9, "name": "McKinney Falls", "station": "KAUS", "office": "EWX/156,86", "coordinates": [-97.722,30.181]}]';
+const crags_json = '[{"number": 1, "name": "The Greenbelt", "slug": "the-greenbelt", "station": "KATT", "office": "EWX/153,89", "coordinates": [-97.801,30.244]},' +
+  '{"number": 2, "name": "Continental Ranch", "slug": "continental-ranch","station": "KDRT", "office": "EWX/14,74", "coordinates": [-101.44,29.803]},' +
+  '{"number": 3, "name": "Reimer\'s Ranch", "slug": "reimers-ranch", "station": "KRYW", "office": "EWX/141,93", "coordinates": [-98.122,30.334]},' +
+  '{"number": 4, "name": "Cochise Stronghold", "slug": "the-greenbelt", "station": "KFHU", "office": "TWC/125,31", "coordinates": [-109.987,31.921]},' +
+  '{"number": 5, "name": "Enchanted Rock", "slug": "cochise-stronghold", "station": "KT82", "office": "EWX/114,101", "coordinates": [-98.821,30.503]},' +
+  '{"number": 6, "name": "Horseshoe Canyon Ranch", "slug": "horseshoe-canyon-ranch", "station": "KHRO", "office": "LZK/44,127", "coordinates": [-93.292,36.012]},' +
+  '{"number": 7, "name": "Last Chance Canyon", "slug": "last-chance-canyon", "station": "KGDP", "office": "MAF/16,149", "coordinates": [-104.754,32.234]},' +
+  '{"number": 8, "name": "Georgetown", "slug": "georgetown", "station": "KGTU", "office": "EWX/157,106", "coordinates": [-97.69,30.627]},' +
+  '{"number": 9, "name": "McKinney Falls", "slug": "mckinney-falls", "station": "KAUS", "office": "EWX/156,86", "coordinates": [-97.722,30.181]}]';
 
 const crags = JSON.parse(crags_json);
 
