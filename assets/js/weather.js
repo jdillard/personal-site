@@ -1,4 +1,5 @@
 //import 'babel-polyfill';
+import * as d3 from 'd3';
 
 const days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 const precipitation = ["rain","snow","thunderstorms"];
