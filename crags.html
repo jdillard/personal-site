@@ -5,10 +5,14 @@ js_includes:
  - weather.js
 ---
 
-<!-- //TODO move to npm/webpack -->
-<script src="https://d3js.org/d3.v4.min.js"></script>
-
-<!-- //TODO add intro section (possibly with expand option for instructions) -->
+<!-- //TODO possibly add expand option for instructions -->
+<section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
+    <strong>Is it dry?</strong>, the age-old question. Below are real-time,
+    precipitation-focused reports of the current, past, and future conditions.
+    Currently, only crags located in the United States and within a day's
+    drive of Austin, TX are included, but nationwide coverage is coming soon.
+    All weather data is sourced from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.
+</section>
 
 <section id="weather" class="mv4-ns mv3 ph2 center"></section>
 {% include feedback.html %}
