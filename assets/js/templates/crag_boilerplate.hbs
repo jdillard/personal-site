@@ -1,15 +1,30 @@
 <div class="crag-weather mv2 mh2-ns mh0 f7 bg-white ba b--moon-gray shadow-4">
   <div id="crag-{{this.number}}" id="{{this.slug}}" class="bl bw3">
     <div class="flex flex-column flex-row-ns pa3">
-      <div class="pr3-ns mb2 mb0-ns w-100 w-70-ns">
+      <div class="pr3-ns mb2 mb0-ns w-100 w-40-ns">
         <h3 class="sans-serif pv0-ns mv0 b f3-ns f4 lh-copy"><a class="no-underline relative fancy-link hover-light-red black-70" href="https://forecast.weather.gov/MapClick.php?lat={{this.coordinates.[1]}}&lon={{this.coordinates.[0]}}">{{this.name}}</a></h3>
       </div>
-      <div class="w-100 w-30-ns pl3-ns mid-gray lh-copy">
-        <strong>Last Forecast:</strong> <span id="last-forecast-{{this.number}}"></span><br />
-        <strong>Office Accuracy:</strong> <span id="office-{{this.number}}"></span>
+      <div class="mb2 mb0-ns w-100 w-60-ns">
+        <div class="mid-gray pv2 ph3 lh-copy ba b--light-gray bg-near-white">{{this.note}}</div>
       </div>
     </div>
-    <div id="observation-{{this.number}}" class="flex flex-column flex-row-ns ph3 pb3"></div>
+    <div id="observation-{{this.number}}" class="flex flex-column flex-row-ns ph3 pb3">
+      <div class="w-100 w-40-ns ml2-ns mv0-ns mv2 mid-gray lh-copy ba b--light-gray">
+        <div class="tc bg-mid-gray white">Past Precipitation</div>
+        <svg class="cf" id="precip-{{this.number}}" width="300" height="65"></svg>
+        <div class="fl w-50 ph2 tc bt b--light-gray"><span id="precip-total-{{this.number}}"></span></div>
+        <div class="fr w-50 ph2 tc bl bt b--light-gray"><span id="precip-period-{{this.number}}"></span></div>
+      </div>
+      <div class="w-100 w-30-ns ml3-ns mid-gray lh-copy ba b--light-gray">
+        <div class="tc bg-mid-gray white">Forecast</div>
+        <div class="pa2 cf bb b--light-gray" style="min-height:6em">
+          <strong>Start Date:</strong> <span id="forecast-start-{{this.number}}"></span><br />
+          <strong>End Date:</strong> <span id="forecast-end-{{this.number}}"></span><br />
+        </div>
+        <div class="fl w-50 ph2 tc"><span id="last-forecast-{{this.number}}"></span></div>
+        <div class="fr w-50 ph2 tc bl b--light-gray"><span id="office-{{this.number}}"></span></div>
+      </div>
+    </div>
   </div>
   <div id="forecast-{{this.number}}"></div>
 </div>

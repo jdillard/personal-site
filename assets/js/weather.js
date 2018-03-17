@@ -9,21 +9,21 @@ const template_weather_observations = require("./templates/weather-observations.
 const template_weather_forecasts = require("./templates/weather-forecasts.hbs");
 const template_weather_hourly = require("./templates/weather-hourly.hbs");
 
-const crags_json = '[{"number": 1, "name": "The Greenbelt", "slug": "the-greenbelt", "station": "KATT", "office": "EWX/153,89", "coordinates": [-97.801,30.244]},' +
-  '{"number": 2, "name": "Continental Ranch", "slug": "continental-ranch","station": "KDRT", "office": "EWX/14,74", "coordinates": [-101.44,29.803]},' +
-  '{"number": 3, "name": "Reimer\'s Ranch", "slug": "reimers-ranch", "station": "KRYW", "office": "EWX/141,93", "coordinates": [-98.122,30.334]},' +
-  '{"number": 4, "name": "Cochise Stronghold", "slug": "the-greenbelt", "station": "KFHU", "office": "TWC/125,31", "coordinates": [-109.987,31.921]},' +
-  '{"number": 5, "name": "Enchanted Rock", "slug": "cochise-stronghold", "station": "KT82", "office": "EWX/114,101", "coordinates": [-98.821,30.503]},' +
-  '{"number": 6, "name": "Horseshoe Canyon Ranch", "slug": "horseshoe-canyon-ranch", "station": "KHRO", "office": "LZK/44,127", "coordinates": [-93.292,36.012]},' +
-  '{"number": 7, "name": "Last Chance Canyon", "slug": "last-chance-canyon", "station": "KGDP", "office": "MAF/16,149", "coordinates": [-104.754,32.234]},' +
-  '{"number": 8, "name": "Georgetown", "slug": "georgetown", "station": "KGTU", "office": "EWX/157,106", "coordinates": [-97.69,30.627]},' +
-  '{"number": 9, "name": "McKinney Falls", "slug": "mckinney-falls", "station": "KAUS", "office": "EWX/156,86", "coordinates": [-97.722,30.181]}]';
+const crags_json = '[{"number": 1, "name": "The Greenbelt", "slug": "the-greenbelt", "note": "Porous limestone that can take a couple days to dry out.", "station": "KATT", "office": "EWX/153,89", "coordinates": [-97.801,30.244]},' +
+  '{"number": 2, "name": "Continental Ranch", "slug": "continental-ranch", "note": "Hard limestone, so dries fairly fast. The ranch also seems to sit in a weather bubble with the rain passing around it.", "station": "KDRT", "office": "EWX/14,74", "coordinates": [-101.44,29.803]},' +
+  '{"number": 3, "name": "Reimer\'s Ranch", "slug": "reimers-ranch", "note": "Porous limestone that can take a couple days to dry out.", "station": "KRYW", "office": "EWX/141,93", "coordinates": [-98.122,30.334]},' +
+  '{"number": 4, "name": "Cochise Stronghold", "slug": "cochise-stronghold", "note": "Granite, so the exposed areas dry fast.", "station": "KFHU", "office": "TWC/125,31", "coordinates": [-109.987,31.921]},' +
+  '{"number": 5, "name": "Enchanted Rock", "slug": "enchanted-rock", "note": "Granite, so the exposed areas dry fast.", "station": "KT82", "office": "EWX/114,101", "coordinates": [-98.821,30.503]},' +
+  '{"number": 6, "name": "Horseshoe Canyon Ranch", "slug": "horseshoe-canyon-ranch", "note": "Sandstone, so give it plenty of time to dry so it doesn\'t get damaged.", "station": "KHRO", "office": "LZK/44,127", "coordinates": [-93.292,36.012]},' +
+  '{"number": 7, "name": "Last Chance Canyon", "slug": "last-chance-canyon", "note": "Limestone", "station": "KGDP", "office": "MAF/16,149", "coordinates": [-104.754,32.234]},' +
+  '{"number": 8, "name": "Georgetown", "slug": "georgetown", "note": "Porous limestone that can take a couple days to dry out.", "station": "KGTU", "office": "EWX/157,106", "coordinates": [-97.69,30.627]},' +
+  '{"number": 9, "name": "McKinney Falls", "slug": "mckinney-falls", "note": "Porous limestone that can take a couple days to dry out.", "station": "KAUS", "office": "EWX/156,86", "coordinates": [-97.722,30.181]}]';
 
 const crags = JSON.parse(crags_json);
 
 for (let c in crags) {
   // create crag boilerplate
-  document.getElementById("weather").innerHTML += template_crag_boilerplate(crags[c]);
+  document.getElementById("weather").insertAdjacentHTML("beforeend", template_crag_boilerplate(crags[c]));
 
   axios.get('https://api.weather.gov/stations/' + crags[c].station + '/observations')
     .then(function (response) {
@@ -40,6 +40,35 @@ for (let c in crags) {
     .catch(function (error) {
       console.log(error);
     });
+}
+
+// TODO make DRY, this is pulled from index.js
+function timeSince(date, recentDate = new Date()) {
+
+  var seconds = Math.floor((recentDate - date) / 1000);
+
+  var interval = Math.floor(seconds / 31536000);
+
+  if (interval > 1) {
+    return interval + " years";
+  }
+  interval = Math.floor(seconds / 2592000);
+  if (interval > 1) {
+    return interval + " months";
+  }
+  interval = Math.floor(seconds / 86400);
+  if (interval > 1) {
+    return interval + " days";
+  }
+  interval = Math.floor(seconds / 3600);
+  if (interval > 1) {
+    return interval + " hours";
+  }
+  interval = Math.floor(seconds / 60);
+  if (interval > 1) {
+    return interval + " minutes";
+  }
+  return Math.floor(seconds) + " seconds";
 }
 
 // helper function for getDistanceFromLatLonInMi
@@ -122,6 +151,8 @@ function populateForecasts(crag, data = []) {
   let forecasts = [];
   let half_day = false;
   let clear_forecast = true;
+  let start_date = '';
+  let end_date = '';
 
   forecasts.name = crag.name;
   forecasts.crag_index = crag.number;
@@ -140,6 +171,7 @@ function populateForecasts(crag, data = []) {
           arr.push(b);
           return arr;
         } else {
+          start_date = moment(a.startTime).format('MMM DD, YYYY');
           a.name = "Today";
           a.date = moment(a.startTime).format('YYYY-MM-DD');
           a.night_temperature = b.temperature;
@@ -160,7 +192,6 @@ function populateForecasts(crag, data = []) {
           a.icon_split = (a.icon_left === a.icon_right) ? false : a.icon_split;
           a.night_icon_split = (a.night_icon_left === a.night_icon_right) ? false : a.night_icon_split;
           delete a.number;
-          delete a.endTime;
           delete a.isDaytime;
           delete a.temperatureUnit;
           delete a.temperatureTrend;
@@ -174,6 +205,7 @@ function populateForecasts(crag, data = []) {
         day_icons = a[a.length-1].icon.substring(35,a[a.length-1].icon.length-12).split("/");
         if((!half_day && i % 2 === 0) || (half_day && i % 2 != 0)) {
           if(half_day && i === data.properties.periods.length-1) {
+            end_date = moment(b.endTime).format('MMM DD, YYYY');
             b.date = moment(b.startTime).format('YYYY-MM-DD');
             b.night_temperature = null;
             b.night_shortForecast = null;
@@ -193,7 +225,6 @@ function populateForecasts(crag, data = []) {
             b.icon_split = (b.icon_left === b.icon_right) ? false : b.icon_split;
             b.night_icon_split = (b.night_icon_left === b.night_icon_right) ? false : b.night_icon_split;
             delete b.number;
-            delete b.endTime;
             delete b.isDaytime;
             delete b.temperatureUnit;
             delete b.temperatureTrend;
@@ -206,6 +237,8 @@ function populateForecasts(crag, data = []) {
           }
           return a;
         } else {
+          start_date = (start_date) ? start_date : moment(b.startTime).format('MMM DD, YYYY');
+          end_date = moment(a[a.length-1].endTime).format('MMM DD, YYYY');
           a[a.length-1].date = moment(a[a.length-1].startTime).format('YYYY-MM-DD');
           a[a.length-1].night_temperature = b.temperature;
           a[a.length-1].night_shortForecast = b.shortForecast;
@@ -225,7 +258,6 @@ function populateForecasts(crag, data = []) {
           a[a.length-1].icon_split = (a[a.length-1].icon_left === a[a.length-1].icon_right) ? false : a[a.length-1].icon_split;
           a[a.length-1].night_icon_split = (a[a.length-1].night_icon_left === a[a.length-1].night_icon_right) ? false : a[a.length-1].night_icon_split;
           delete a[a.length-1].number;
-          delete a[a.length-1].endTime;
           delete a[a.length-1].isDaytime;
           delete a[a.length-1].temperatureUnit;
           delete a[a.length-1].temperatureTrend;
@@ -238,8 +270,10 @@ function populateForecasts(crag, data = []) {
     });
   forecasts.color = (clear_forecast) ? 'green' : 'yellow';
 
-  document.getElementById("last-forecast-"+crag.number).innerHTML = forecasts.updated;
-  document.getElementById("office-"+crag.number).innerHTML = forecasts.distance + " miles";
+  document.getElementById("last-forecast-"+crag.number).innerHTML = timeSince(new Date(data.properties.updated)) + " ago";
+  document.getElementById("forecast-start-"+crag.number).innerHTML = start_date;
+  document.getElementById("forecast-end-"+crag.number).innerHTML = end_date;
+  document.getElementById("office-"+crag.number).innerHTML = forecasts.distance + " miles away";
   document.getElementById("forecast-"+crag.number).innerHTML = template_weather_forecasts(forecasts);
 
   axios.get('https://api.weather.gov/gridpoints/' + crag.office + '/forecast/hourly')
@@ -354,7 +388,7 @@ function populateObservations(crag, data = []) {
   observations.name = crag.name;
   observations.crag_index = crag.number;
   observations.distance = getDistanceFromLatLonInMi(crag.coordinates[1], crag.coordinates[0], data[0].geometry.coordinates[1], data[0].geometry.coordinates[0]).toFixed(2);
-  observations.curr_timestamp = moment(data[0].properties.timestamp).format('MM/DD hh:mm a');
+  observations.curr_timestamp = timeSince(new Date(data[0].properties.timestamp));
   observations.curr_temp = (data[0].properties.temperature.value*(9/5)+32).toFixed(0);
   observations.curr_heat_index = (data[0].properties.heatIndex.value && observations.curr_temp != (data[0].properties.heatIndex.value*(9/5)+32).toFixed(0)) ? (data[0].properties.heatIndex.value*(9/5)+32).toFixed(0) : null;
   observations.curr_wind = (data[0].properties.windSpeed.value) ? (data[0].properties.windSpeed.value * 2.23694).toFixed(0) + "mph " + degreeToDirection(data[0].properties.windDirection.value) : null;
@@ -368,7 +402,7 @@ function populateObservations(crag, data = []) {
     total_inches += +i.properties.precipitationLastHour.value;
     return {
       'precip': +i.properties.precipitationLastHour.value,
-      'date': moment(i.properties.timestamp).format('YY-MM-DD HH:mm')
+      'date': moment(i.properties.timestamp).format('YYYY-MM-DD HH:mm')
     };
   });
 
@@ -381,7 +415,9 @@ function populateObservations(crag, data = []) {
   }
 
   document.getElementById("crag-"+crag.number).classList.add("b--" + observations.color);
-  document.getElementById("observation-"+crag.number).innerHTML += template_weather_observations(observations);
+  document.getElementById("precip-total-"+crag.number).innerHTML = total_inches + " inches";
+  document.getElementById("precip-period-"+crag.number).innerHTML = timeSince(new Date(moment(precips[precips.length-1].date)),new Date(moment(precips[0].date)));
+  document.getElementById("observation-"+crag.number).insertAdjacentHTML("afterbegin", template_weather_observations(observations));
   graph_precip(crag.number, precips);
 }
 
@@ -393,7 +429,7 @@ function graph_precip(crag_index, data) {
   const height = +svg.attr("height") - margin.top - margin.bottom;
   let g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  const parseTime = d3.timeParse("%y-%m-%d %H:%M");
+  const parseTime = d3.timeParse("%Y-%m-%d %H:%M");
 
   const x = d3.scaleTime()
     .rangeRound([0, width]);

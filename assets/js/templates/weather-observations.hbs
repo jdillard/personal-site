@@ -1,21 +1,25 @@
 
-<div class="pr3-ns mb0 w-100 w-50-ns mid-gray lh-copy">
-  <strong>Current Temp:</strong> {{this.curr_temp}}&deg;F
-  {{#if this.curr_heat_index}}
-  (feels like {{this.curr_heat_index}}&deg;F)
-  {{/if}}
-  {{#if this.curr_wind_chill}}
-  (feels like {{this.curr_wind_chill}}&deg;F)
-  {{/if}}
-  {{#if this.curr_wind}}
-  <br /><strong>Wind:</strong> {{this.curr_wind}}
-  {{/if}}
-  {{#if this.curr_humidity}}
-  <br /><strong>Humidity:</strong> {{this.curr_humidity}}%
-  {{/if}}
-  <br /><strong>Last Update:</strong> {{this.curr_timestamp}}<br />
-  <strong>Station Accuracy:</strong> {{this.distance}} miles
-</div>
-<div class="w-100 w-50-ns pl3-ns">
-  <svg id="precip-{{crag_index}}" width="300" height="75"></svg>
+<div class="w-100 w-30-ns mid-gray lh-copy ba b--light-gray">
+  <div class="flex flex-column">
+    <div class="tc bg-mid-gray white">Currently</div>
+    <div class="pa2 cf bb b--light-gray" style="min-height:6em">
+      <strong>Current Temp:</strong> {{this.curr_temp}}&deg;F
+      {{#if this.curr_heat_index}}
+      (feels like {{this.curr_heat_index}}&deg;F)
+      {{/if}}
+      {{#if this.curr_wind_chill}}
+      (feels like {{this.curr_wind_chill}}&deg;F)
+      {{/if}}
+      {{#if this.curr_wind}}
+      <br /><strong>Wind:</strong> {{this.curr_wind}}
+      {{/if}}
+      {{#if this.curr_humidity}}
+      <br /><strong>Humidity:</strong> {{this.curr_humidity}}%
+      {{/if}}
+    </div>
+    <div class="flex flex-row self-end items-center">
+      <div class="self-center ph2 tc" style="flex:1">{{this.curr_timestamp}} ago</div>
+      <div class="self-center ph2 tc bl b--light-gray nowrap" style="flex:1">{{this.distance}} miles away</div>
+    </div>
+  </div>
 </div>
