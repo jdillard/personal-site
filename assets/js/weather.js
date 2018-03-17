@@ -11,21 +11,36 @@ const template_weather_observations = require("./templates/weather-observations.
 const template_weather_forecasts = require("./templates/weather-forecasts.hbs");
 const template_weather_hourly = require("./templates/weather-hourly.hbs");
 
-//TODO store in localStorage
-const crags_json = '[{"number": 1, "name": "The Greenbelt", "slug": "the-greenbelt", "note": "Porous limestone that can take a couple days to dry out.", "station": "KATT", "office": "EWX/153,89", "coordinates": [-97.801,30.244]},' +
-  '{"number": 2, "name": "Continental Ranch", "slug": "continental-ranch", "note": "Hard limestone, so dries fairly fast. The ranch also seems to sit in a weather bubble with the rain passing around it.", "station": "KDRT", "office": "EWX/14,74", "coordinates": [-101.44,29.803]},' +
-  '{"number": 3, "name": "Reimer\'s Ranch", "slug": "reimers-ranch", "note": "Porous limestone that can take a couple days to dry out.", "station": "KRYW", "office": "EWX/141,93", "coordinates": [-98.122,30.334]},' +
-  '{"number": 4, "name": "Cochise Stronghold", "slug": "cochise-stronghold", "note": "Granite, so the exposed areas dry fast.", "station": "KFHU", "office": "TWC/125,31", "coordinates": [-109.987,31.921]},' +
-  '{"number": 5, "name": "Enchanted Rock", "slug": "enchanted-rock", "note": "Granite, so the exposed areas dry fast.", "station": "KT82", "office": "EWX/114,101", "coordinates": [-98.821,30.503]},' +
-  '{"number": 6, "name": "Horseshoe Canyon Ranch", "slug": "horseshoe-canyon-ranch", "note": "Sandstone, so give it plenty of time to dry so it doesn\'t get damaged.", "station": "KHRO", "office": "LZK/44,127", "coordinates": [-93.292,36.012]},' +
-  '{"number": 7, "name": "Last Chance Canyon", "slug": "last-chance-canyon", "note": "Limestone", "station": "KGDP", "office": "MAF/16,149", "coordinates": [-104.754,32.234]},' +
-  '{"number": 8, "name": "Georgetown", "slug": "georgetown", "note": "Porous limestone that can take a couple days to dry out.", "station": "KGTU", "office": "EWX/157,106", "coordinates": [-97.69,30.627]},' +
-  '{"number": 9, "name": "McKinney Falls", "slug": "mckinney-falls", "note": "Porous limestone that can take a couple days to dry out.", "station": "KAUS", "office": "EWX/156,86", "coordinates": [-97.722,30.181]}]';
+//TODO move to JSON file(s) and only fetch if localstorage is empty
+const crags_json = '[{"name": "The Greenbelt", "note": "Porous limestone that can take a couple days to dry out.", "station": "KATT", "office": "EWX/153,89", "coordinates": [-97.801,30.244]},' +
+  '{"name": "Continental Ranch", "note": "Hard limestone, so dries fairly fast. The ranch also seems to sit in a weather bubble with the rain passing around it.", "station": "KDRT", "office": "EWX/14,74", "coordinates": [-101.44,29.803]},' +
+  '{"name": "Reimer\'s Ranch", "note": "Porous limestone that can take a couple days to dry out.", "station": "KRYW", "office": "EWX/141,93", "coordinates": [-98.122,30.334]},' +
+  '{"name": "Cochise Stronghold", "note": "Granite, so the exposed areas dry fast.", "station": "KFHU", "office": "TWC/125,31", "coordinates": [-109.987,31.921]},' +
+  '{"name": "Enchanted Rock", "note": "Granite, so the exposed areas dry fast.", "station": "KT82", "office": "EWX/114,101", "coordinates": [-98.821,30.503]},' +
+  '{"name": "Horseshoe Canyon Ranch", "note": "Sandstone, so give it plenty of time to dry so it doesn\'t get damaged.", "station": "KHRO", "office": "LZK/44,127", "coordinates": [-93.292,36.012]},' +
+  '{"name": "Last Chance Canyon", "note": "Limestone", "station": "KGDP", "office": "MAF/16,149", "coordinates": [-104.754,32.234]},' +
+  '{"name": "Georgetown", "note": "Porous limestone that can take a couple days to dry out.", "station": "KGTU", "office": "EWX/157,106", "coordinates": [-97.69,30.627]},' +
+  '{"name": "McKinney Falls", "note": "Porous limestone that can take a couple days to dry out.", "station": "KAUS", "office": "EWX/156,86", "coordinates": [-97.722,30.181]}]';
 
-const crags = JSON.parse(crags_json);
+let crags = [];
+let storage_keys = Object.keys(localStorage);
+
+if(localStorage.length == 0) {
+  crags = JSON.parse(crags_json);
+  for (let c in crags) {
+    localStorage.setItem(slugify(crags[c].name), JSON.stringify(crags[c]));
+  }
+  storage_keys = Object.keys(localStorage);
+} else {
+  for (let i=0; i < storage_keys.length; i++) {
+    crags.push(JSON.parse(localStorage[storage_keys[i]]));
+  }
+}
 
 for (let c in crags) {
   // create crag boilerplate
+  crags[c].number = c;
+  crags[c].slug = slugify(crags[c].name);
   document.getElementById("weather").insertAdjacentHTML("beforeend", template_crag_boilerplate(crags[c]));
 
   axios.get('https://api.weather.gov/stations/' + crags[c].station + '/observations')
@@ -43,6 +58,13 @@ for (let c in crags) {
     .catch(function (error) {
       console.log(error);
     });
+}
+
+function slugify(text) {
+  return text.toString().toLowerCase().trim()
+    .replace(/&/g, '-and-')      // Replace & with 'and'
+    .replace(/[\s\W-]+/g, '-')   // Replace spaces, non-word characters and dashes with a single dash (-)
+    .replace(/-$/, '')           // Remove last floating dash if exists
 }
 
 // TODO make DRY, this is pulled from index.js
@@ -175,7 +197,7 @@ function populateForecasts(crag, data = []) {
           return arr;
         } else {
           start_date = moment(a.startTime).format('MMM DD, YYYY');
-          a.name = moment(a.startTime).format('dddd')
+          a.name = moment(a.startTime).format('dddd');
           a.date = moment(a.startTime).format('YYYY-MM-DD');
           a.night_temperature = b.temperature;
           a.night_shortForecast = b.shortForecast;
@@ -390,7 +412,9 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
     }
   }
 
-  localStorage.setItem(crag_index, JSON.stringify(hourly.days));
+  const crag = JSON.parse(localStorage.getItem(storage_keys[crag_index]));
+  crag.hourly = hourly.days;
+  localStorage.setItem(storage_keys[crag_index], JSON.stringify(crag));
 }
 
 function populateObservations(crag, data = []) {
@@ -540,20 +564,9 @@ $(document).on( "click", '.forecast-day', function() {
     nighttime.classList.add('bg-gray');
   }
 
-  const hourly = JSON.parse(localStorage.getItem(crag_index));
-
-  hourly_forecast.innerHTML = template_weather_hourly(hourly[days.indexOf(date)]);
+  const crag = JSON.parse(localStorage.getItem([storage_keys[crag_index]]));
+  hourly_forecast.innerHTML = template_weather_hourly(crag.hourly[days.indexOf(date)]);
 });
 
 // normalize all crags hourly settings on window resize
 window.addEventListener("resize", normalizePage);
-
-/*
-//TODO remove localStrage on tab closure
-window.onbeforeunload = function() {
-  for (let crag in crags) {
-    localStorage.removeItem(crag.number);
-  }
-  return '';
-};
-*/
