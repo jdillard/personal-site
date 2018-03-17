@@ -1,6 +1,8 @@
 //import 'babel-polyfill';
 import * as d3 from 'd3';
 
+//TODO add loading icons / dummy data where needed
+
 const days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 const precipitation = ["rain","snow","thunderstorms"];
 
@@ -173,7 +175,7 @@ function populateForecasts(crag, data = []) {
           return arr;
         } else {
           start_date = moment(a.startTime).format('MMM DD, YYYY');
-          a.name = "Today";
+          a.name = moment(a.startTime).format('dddd')
           a.date = moment(a.startTime).format('YYYY-MM-DD');
           a.night_temperature = b.temperature;
           a.night_shortForecast = b.shortForecast;
@@ -276,6 +278,14 @@ function populateForecasts(crag, data = []) {
   document.getElementById("forecast-end-"+crag.number).innerHTML = end_date;
   document.getElementById("office-"+crag.number).innerHTML = forecasts.distance + " miles away";
   document.getElementById("forecast-"+crag.number).innerHTML = template_weather_forecasts(forecasts);
+
+  $( '#forecast-'+crag.number+' .forecast-day' ).hover(
+    function() {
+      $(this).html(moment($(this)[0].dataset.date).format('MMM DD'));
+    },
+    function() {
+      $(this).html(moment($(this)[0].dataset.date).format('dddd'));
+    } );
 
   axios.get('https://api.weather.gov/gridpoints/' + crag.office + '/forecast/hourly')
   .then(function (response) {
@@ -535,7 +545,7 @@ $(document).on( "click", '.forecast-day', function() {
   hourly_forecast.innerHTML = template_weather_hourly(hourly[days.indexOf(date)]);
 });
 
-// normalize all hourly settings on all crags on window resize
+// normalize all crags hourly settings on window resize
 window.addEventListener("resize", normalizePage);
 
 /*
