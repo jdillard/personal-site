@@ -9,6 +9,7 @@ const template_weather_observations = require("./templates/weather-observations.
 const template_weather_forecasts = require("./templates/weather-forecasts.hbs");
 const template_weather_hourly = require("./templates/weather-hourly.hbs");
 
+//TODO store in localStorage
 const crags_json = '[{"number": 1, "name": "The Greenbelt", "slug": "the-greenbelt", "note": "Porous limestone that can take a couple days to dry out.", "station": "KATT", "office": "EWX/153,89", "coordinates": [-97.801,30.244]},' +
   '{"number": 2, "name": "Continental Ranch", "slug": "continental-ranch", "note": "Hard limestone, so dries fairly fast. The ranch also seems to sit in a weather bubble with the rain passing around it.", "station": "KDRT", "office": "EWX/14,74", "coordinates": [-101.44,29.803]},' +
   '{"number": 3, "name": "Reimer\'s Ranch", "slug": "reimers-ranch", "note": "Porous limestone that can take a couple days to dry out.", "station": "KRYW", "office": "EWX/141,93", "coordinates": [-98.122,30.334]},' +
