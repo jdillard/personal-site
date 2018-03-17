@@ -159,6 +159,7 @@ function activity(activities = []) {
           break;
         case "DeleteEvent":
           value.action = "Deleted a " + value.payload.ref_type + " on";
+          break;
         case "CommitCommentEvent":
           value.action = "Made a comment on a commit in";
           break;
