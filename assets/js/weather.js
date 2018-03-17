@@ -22,6 +22,9 @@ const crags_json = '[{"name": "The Greenbelt", "note": "Porous limestone that ca
   '{"name": "Georgetown", "note": "Porous limestone that can take a couple days to dry out.", "station": "KGTU", "office": "EWX/157,106", "coordinates": [-97.69,30.627]},' +
   '{"name": "McKinney Falls", "note": "Porous limestone that can take a couple days to dry out.", "station": "KAUS", "office": "EWX/156,86", "coordinates": [-97.722,30.181]}]';
 
+//TODO store crags in a "crag namespace" so this isn't necessary
+localStorage.clear();
+
 let crags = [];
 let storage_keys = Object.keys(localStorage);
 
