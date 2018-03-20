@@ -11,70 +11,68 @@ const template_weather_observations = require("./templates/weather-observations.
 const template_weather_forecasts = require("./templates/weather-forecasts.hbs");
 const template_weather_hourly = require("./templates/weather-hourly.hbs");
 
-//TODO move to JSON file(s) and only fetch if localstorage is empty
-const crags_json = '[{"name": "The Greenbelt", "note": "Porous limestone that can take a couple days to dry out.", "station": "KATT", "office": "EWX/153,89", "coordinates": [-97.801,30.244]},' +
-  '{"name": "Continental Ranch", "note": "Hard limestone, so dries fairly fast. The ranch also seems to sit in a weather bubble with the rain passing around it.", "station": "KDRT", "office": "EWX/14,74", "coordinates": [-101.44,29.803]},' +
-  '{"name": "Reimer\'s Ranch", "note": "Porous limestone that can take a couple days to dry out.", "station": "KRYW", "office": "EWX/141,93", "coordinates": [-98.122,30.334]},' +
-  '{"name": "Cochise Stronghold", "note": "Granite, so the exposed areas dry fast.", "station": "KFHU", "office": "TWC/125,31", "coordinates": [-109.987,31.921]},' +
-  '{"name": "Enchanted Rock", "note": "Granite, so the exposed areas dry fast.", "station": "KT82", "office": "EWX/114,101", "coordinates": [-98.821,30.503]},' +
-  '{"name": "Horseshoe Canyon Ranch", "note": "Sandstone, so give it plenty of time to dry so it doesn\'t get damaged.", "station": "KHRO", "office": "LZK/44,127", "coordinates": [-93.292,36.012]},' +
-  '{"name": "Last Chance Canyon", "note": "Limestone", "station": "KGDP", "office": "MAF/16,149", "coordinates": [-104.754,32.234]},' +
-  '{"name": "Georgetown", "note": "Porous limestone that can take a couple days to dry out.", "station": "KGTU", "office": "EWX/157,106", "coordinates": [-97.69,30.627]},' +
-  '{"name": "McKinney Falls", "note": "Porous limestone that can take a couple days to dry out.", "station": "KAUS", "office": "EWX/156,86", "coordinates": [-97.722,30.181]}]';
-
-//TODO store crags in a "crag namespace" so this isn't necessary
+//TODO store crags in a "crag namespace" so this step isn't necessary
 localStorage.clear();
 
 let crags = [];
 let storage_keys = Object.keys(localStorage);
 
 if(localStorage.length == 0) {
-  crags = JSON.parse(crags_json);
-  for (let c in crags) {
-    localStorage.setItem(slugify(crags[c].name), JSON.stringify(crags[c]));
-  }
-  storage_keys = Object.keys(localStorage);
+  axios.get('/assets/json/crags/austin-tx.json')
+    .then(function (response) {
+      for (let c in response.data) {
+        localStorage.setItem(slugify(response.data[c].name), JSON.stringify(response.data[c]));
+        crags.push(response.data[c]);
+      }
+      storage_keys = Object.keys(localStorage);
+      populate(crags);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 } else {
   for (let i=0; i < storage_keys.length; i++) {
     crags.push(JSON.parse(localStorage[storage_keys[i]]));
   }
+  populate(crags);
 }
 
-for (let c in crags) {
-  // create crag boilerplate
-  crags[c].number = c;
-  crags[c].slug = slugify(crags[c].name);
-  document.getElementById("weather").insertAdjacentHTML("beforeend", template_crag_boilerplate(crags[c]));
+function populate(crags) {
+  for (let c in crags) {
+    // create crag boilerplate
+    crags[c].number = c;
+    crags[c].slug = slugify(crags[c].name);
+    document.getElementById("weather").insertAdjacentHTML("beforeend", template_crag_boilerplate(crags[c]));
 
-  axios.get('https://api.weather.gov/stations/' + crags[c].station + '/observations')
-    .then(function (response) {
-      populateObservations(crags[c], response.data.features);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+    axios.get('https://api.weather.gov/stations/' + crags[c].station + '/observations')
+      .then(function (response) {
+        populateObservations(crags[c], response.data.features);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
 
-  axios.get('https://api.weather.gov/gridpoints/' + crags[c].office + '/forecast')
-    .then(function (response) {
-      populateForecasts(crags[c], response.data);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+    //TODO handle 404 (look up next nearest?)
+    axios.get('https://api.weather.gov/gridpoints/' + crags[c].office + '/forecast')
+      .then(function (response) {
+        populateForecasts(crags[c], response.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
 }
 
 function slugify(text) {
   return text.toString().toLowerCase().trim()
     .replace(/&/g, '-and-')      // Replace & with 'and'
     .replace(/[\s\W-]+/g, '-')   // Replace spaces, non-word characters and dashes with a single dash (-)
-    .replace(/-$/, '')           // Remove last floating dash if exists
+    .replace(/-$/, '');           // Remove last floating dash if exists
 }
 
 // TODO make DRY, this is pulled from index.js
 function timeSince(date, recentDate = new Date()) {
-
   var seconds = Math.floor((recentDate - date) / 1000);
-
   var interval = Math.floor(seconds / 31536000);
 
   if (interval > 1) {
@@ -137,7 +135,7 @@ function degreeToDirection(degree) {
   s.prototype.r = s.prototype.replace;
 
   let input = degree / 11.25;
-  input = input+.5|0;
+  input = input+0.5|0;
 
   let direction = calcPoint(input);
   direction = direction[0].toUpperCase() + direction.slice(1);
@@ -453,13 +451,14 @@ function populateObservations(crag, data = []) {
   }
 
   document.getElementById("crag-"+crag.number).classList.add("b--" + observations.color);
-  document.getElementById("precip-total-"+crag.number).innerHTML = total_inches + " inches";
+  document.getElementById("precip-total-"+crag.number).innerHTML = (total_inches < 0.005 && total_inches > 0) ? "< 0.005 inches" : total_inches.toFixed(2) + " inches";
   document.getElementById("precip-period-"+crag.number).innerHTML = timeSince(new Date(moment(precips[precips.length-1].date)),new Date(moment(precips[0].date)));
   document.getElementById("observation-"+crag.number).insertAdjacentHTML("afterbegin", template_weather_observations(observations));
   graph_precip(crag.number, precips);
 }
 
 //TODO make responsive
+//TODO make bar chart
 function graph_precip(crag_index, data) {
   const svg = d3.select("#precip-"+crag_index);
   const margin = {top: 20, right: 15, bottom: 20, left: 15};
