@@ -19,7 +19,7 @@ module.exports = {
       axios: "axios"
     }),
     //new ExtractTextPlugin("./assets/dist/css/styles.css"),
-    new webpack.optimize.CommonsChunkPlugin('vendor'),
+    new webpack.optimize.CommonsChunkPlugin({name: 'commons', filename: 'js/[name].[chunkhash].js', children: true}),
     new ManifestPlugin({
       fileName: '../../_data/asset-manifest.json'
     }),
