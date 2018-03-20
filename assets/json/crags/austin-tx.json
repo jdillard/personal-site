@@ -1,0 +1,92 @@
+[
+    {
+      "name": "The Greenbelt",
+      "note": "Porous limestone that can take a couple days to dry out.",
+      "station": "KATT",
+      "office": "EWX\/153,89",
+      "coordinates": [
+        -97.801,
+        30.244
+      ]
+    },
+    {
+      "name": "Continental Ranch",
+      "note": "Hard limestone, so dries fairly fast. The ranch also seems to sit in a weather bubble with the rain passing around it.",
+      "station": "KDRT",
+      "office": "EWX\/14,74",
+      "coordinates": [
+        -101.44,
+        29.803
+      ]
+    },
+    {
+      "name": "Reimer's Ranch",
+      "note": "Porous limestone that can take a couple days to dry out.",
+      "station": "KRYW",
+      "office": "EWX\/141,93",
+      "coordinates": [
+        -98.122,
+        30.334
+      ]
+    },
+    {
+      "name": "Cochise Stronghold",
+      "note": "Granite, so the exposed areas dry fast.",
+      "station": "KFHU",
+      "office": "TWC\/125,31",
+      "coordinates": [
+        -109.987,
+        31.921
+      ]
+    },
+    {
+      "name": "Enchanted Rock",
+      "note": "Granite, so the exposed areas dry fast.",
+      "station": "KT82",
+      "office": "EWX\/114,101",
+      "coordinates": [
+        -98.821,
+        30.503
+      ]
+    },
+    {
+      "name": "Horseshoe Canyon Ranch",
+      "note": "Sandstone, so give it plenty of time to dry so it doesn't get damaged.",
+      "station": "KHRO",
+      "office": "LZK\/44,127",
+      "coordinates": [
+        -93.292,
+        36.012
+      ]
+    },
+    {
+      "name": "Last Chance Canyon",
+      "note": "Limestone",
+      "station": "KGDP",
+      "office": "MAF\/16,149",
+      "coordinates": [
+        -104.754,
+        32.234
+      ]
+    },
+    {
+      "name": "Georgetown",
+      "note": "Porous limestone that can take a couple days to dry out.",
+      "station": "KGTU",
+      "office": "EWX\/157,106",
+      "coordinates": [
+        -97.69,
+        30.627
+      ]
+    },
+    {
+      "name": "McKinney Falls",
+      "note": "Porous limestone that can take a couple days to dry out.",
+      "station": "KAUS",
+      "office": "EWX\/156,86",
+      "coordinates": [
+        -97.722,
+        30.181
+      ]
+    }
+  ]
