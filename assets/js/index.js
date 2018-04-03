@@ -72,6 +72,31 @@ function timeSince(date, recentDate = new Date()) {
   return Math.floor(seconds) + " seconds";
 }
 
+function summarizeAction(type, words, count) {
+  switch(type) {
+    case "WatchEvent":
+      return words + " watching";
+    case "PushEvent":
+      return (count > 1) ? "Made "+count+" "+words+"s on" : "Made a "+words+" on";
+    case "IssueCommentEvent":
+      return words + " a comment on";
+    case "ForkEvent":
+      return "Made a " + words + " of";
+    case "PullRequestEvent":
+      return words + " a pull request on";
+    case "IssuesEvent":
+      return (count > 1) ? words+" "+count+" issues on" : words+" an issue on";
+    case "CreateEvent":
+      return "Created a " + words + " at";
+    case "PullRequestReviewCommentEvent":
+      return "Reviewed a " + words + " on";
+    case "DeleteEvent":
+      return "Deleted a " + words + " on";
+    case "CommitCommentEvent":
+      return "Made a " + words + " on a commit in";
+  }
+}
+
 function articles(articles) {
   var archive = document.getElementById("latest-articles");
   var articles_by_date = [];
@@ -79,10 +104,10 @@ function articles(articles) {
   articles.data.sort(function(a, b) {
     return new Date(b.date_published) - new Date(a.date_published);
   })
-  .reduce((new_arr, value) => {
-      value.date_published = moment(value.date_published).format('MMM DD, YYYY');
-      new_arr.push(value);
-      return new_arr;
+  .reduce((a, b, i) => {
+      b.date_published = moment(b.date_published).format('MMM DD, YYYY');
+      a.push(b);
+      return a;
   }, []);
 
   archive.innerHTML = template_articles(articles.data);
@@ -125,54 +150,82 @@ function projects(projects = []) {
 
 function activity(activities = []) {
   const activity_element = document.getElementById("github-activity");
-  let last_year = "";
+  let prev_date = "";
 
-  const activity_list = activities.reduce((new_arr, value, index) => {
-      value.created_at = moment(value.created_at).format('MMM DD, YYYY');
+  const activity_list = activities.reduce((a, b, i) => {
+      b.created_at = moment(b.created_at).format('MMM DD, YYYY');
 
-      switch(value.type) {
+      switch(b.type) {
         case "WatchEvent":
-          value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " watching";
+          b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1);
           break;
         case "PushEvent":
-          value.action = "Made a push event on";
+          b.words = "push event";
           break;
         case "IssueCommentEvent":
-          value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " a comment on";
+          b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1);
           break;
         case "ForkEvent":
-          value.action = "Made a clone of";
+          b.words = "clone";
           break;
         case "PullRequestEvent":
-          value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " a pull request on";
+          b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1);
           break;
         case "IssuesEvent":
-          value.action = value.payload.action.charAt(0).toUpperCase() + value.payload.action.slice(1) + " an issue on";
+          b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1);
           break;
         case "CreateEvent":
-          value.action = "Created a " + value.payload.ref_type + " at";
+          b.words = b.payload.ref_type;
           break;
         case "PullRequestReviewCommentEvent":
-          value.action = "Reviewed a pull request on";
+          b.words = "pull request";
           break;
         case "DeleteEvent":
-          value.action = "Deleted a " + value.payload.ref_type + " on";
+          b.words = b.payload.ref_type;
           break;
         case "CommitCommentEvent":
-          value.action = "Made a comment on a commit in";
+          b.words = "comment";
           break;
       }
-      if(value.created_at != last_year) {
-        var temp_arr = [];
-        temp_arr.push(value);
-        new_arr.push({'year': value.created_at, 'data': temp_arr});
+      if(b.created_at != prev_date) {
+        let dates = [];
+        dates.push(b);
+        a.push({'date': b.created_at, 'data': dates});
       } else {
-        new_arr[new_arr.length-1].data.push(value);
+        a[a.length-1].data.push(b);
       }
-      last_year = value.created_at;
+      prev_date = b.created_at;
 
-      return new_arr;
+      return a;
     }, []);
+
+    // reduce each day to collapse multiple of same type
+    for (let d in activity_list) {
+      let dupe_count = 1;
+
+      if(activity_list[d].data.length > 1) {
+        activity_list[d].data = activity_list[d].data.reduce((a, b, i) => {
+          if(i === 1) {
+            a.action = summarizeAction(a.type, a.words, dupe_count);
+            a = [a];
+          }
+
+          //TODO make applicable to all types, not just PushEvent and IssuesEvent
+          if(a[a.length-1].type === b.type && a[a.length-1].repo.name === b.repo.name && (a[a.length-1].type === "PushEvent" || a[a.length-1].type === "IssuesEvent")) {
+            dupe_count++;
+            a[a.length-1].action = summarizeAction(a[a.length-1].type, a[a.length-1].words, dupe_count);
+            return a;
+          } else {
+            dupe_count = 1;
+            b.action = summarizeAction(b.type, b.words, dupe_count);
+            a.push(b);
+            return a;
+          }
+        });
+      } else {
+        activity_list[d].data[0].action = summarizeAction(activity_list[d].data[0].type, activity_list[d].data[0].words, 1);
+      }
+    }
 
   activity_element.innerHTML = template_github_activity(activity_list);
 }
