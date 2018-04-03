@@ -1,7 +1,7 @@
 //import 'babel-polyfill';
 import * as d3 from 'd3';
 
-//TODO add loading icons / dummy data where needed
+//TODO add loading icons / "dummy data" where needed
 
 const days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 const precipitation = ["rain","snow","thunderstorms"];
@@ -11,17 +11,44 @@ const template_weather_observations = require("./templates/weather-observations.
 const template_weather_forecasts = require("./templates/weather-forecasts.hbs");
 const template_weather_hourly = require("./templates/weather-hourly.hbs");
 
-//TODO store crags in a "crag namespace" so this step isn't necessary
-localStorage.clear();
-
 let crags = [];
 let storage_keys = Object.keys(localStorage);
 
+//TODO or storage_keys doesn't contain any crags
 if(localStorage.length == 0) {
-  axios.get('/assets/json/crags/austin-tx.json')
+  //TODO add multiple locations to drop down
+  getCrags('austin-tx');
+} else {
+  $('#region-selector').val(localStorage.getItem('region-selector'));
+  for (let i=0; i < storage_keys.length; i++) {
+    if(storage_keys[i].startsWith("crag-")) {
+      crags.push(JSON.parse(localStorage[storage_keys[i]]));
+    }
+  }
+  populate(crags);
+}
+
+function getCrags(location) {
+  //TODO reset height of menu
+  crags = [];
+  $('#menu .menu-item').remove();
+  const weather_section = document.getElementById("weather");
+  while (weather_section.firstChild) {
+    weather_section.removeChild(weather_section.firstChild);
+  }
+  for(let key in localStorage) {
+    if(key.startsWith("crag-")) {
+      localStorage.removeItem(key);
+    }
+  }
+
+  console.log(crags);
+  axios.get('/assets/json/crags/'+location+'.json')
     .then(function (response) {
+      localStorage.setItem('region-selector', location);
       for (let c in response.data) {
-        localStorage.setItem(slugify(response.data[c].name), JSON.stringify(response.data[c]));
+        response.data[c].active = true;
+        localStorage.setItem("crag-"+slugify(response.data[c].name), JSON.stringify(response.data[c]));
         crags.push(response.data[c]);
       }
       storage_keys = Object.keys(localStorage);
@@ -30,36 +57,49 @@ if(localStorage.length == 0) {
     .catch(function (error) {
       console.log(error);
     });
-} else {
-  for (let i=0; i < storage_keys.length; i++) {
-    crags.push(JSON.parse(localStorage[storage_keys[i]]));
-  }
-  populate(crags);
 }
 
-function populate(crags) {
+function populate(crags, menu = true, element = 'weather', adjacent = 'beforeend') {
+  let temp_html = '';
   for (let c in crags) {
-    // create crag boilerplate
-    crags[c].number = c;
+    //TODO only load 10 max, output error otherwise
+    crags[c].number = (crags[c].number) ? crags[c].number : c;
     crags[c].slug = slugify(crags[c].name);
-    document.getElementById("weather").insertAdjacentHTML("beforeend", template_crag_boilerplate(crags[c]));
 
-    axios.get('https://api.weather.gov/stations/' + crags[c].station + '/observations')
-      .then(function (response) {
-        populateObservations(crags[c], response.data.features);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    // populate top menu
+    //TODO only run on page load?
+    if(menu) {
+      let status = (crags[c].active) ? 'green' : 'mid-gray';
+      temp_html = '<div id="menu-item-'+crags[c].number+'" class="menu-item f7 ba b--light-gray hover-bg-near-white mv1 mw5 center pointer"><div id="crag-status-'+crags[c].number+'" data-crag="'+crags[c].number+'" data-slug="'+crags[c].slug+'" data-active="'+crags[c].active+'" class="crag-status fl w-100 ph2 pv1 bl bw2 b--'+status+'">'+crags[c].name+'</div><span class="crag-delete fr light-red nr3 pv1 pointer" data-name="' + crags[c].name + '" data-crag="' + crags[c].number + '">&#215</span><div class="cf"></div></div>';
+      document.getElementById("menu").insertAdjacentHTML("beforeend", temp_html);
+    }
 
-    //TODO handle 404 (look up next nearest?)
-    axios.get('https://api.weather.gov/gridpoints/' + crags[c].office + '/forecast')
-      .then(function (response) {
-        populateForecasts(crags[c], response.data);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    if(crags[c].active) {
+      document.getElementById(element).insertAdjacentHTML(adjacent, template_crag_boilerplate(crags[c]));
+
+      axios.get('https://api.weather.gov/stations/' + crags[c].station + '/observations')
+        .then(function (response) {
+          populateObservations(crags[c], response.data.features);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+
+      //TODO handle 404 (look up next nearest station and office every time, but use cache)
+      axios.get('https://api.weather.gov/gridpoints/' + crags[c].office + '/forecast')
+        .then(function (response) {
+          populateForecasts(crags[c], response.data);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
+  }
+
+  if(menu) {
+    // TODO make an input field and add lat/long field
+    //temp_html = '<div class="f7 ba b--light-gray ph2 pv1 mv1 mw5 center light-silver">Add A Crag <span class="crag-add fr green nr4 pointer">&#43;</span></div>';
+    //document.getElementById("menu").insertAdjacentHTML("beforeend", temp_html);
   }
 }
 
@@ -67,7 +107,7 @@ function slugify(text) {
   return text.toString().toLowerCase().trim()
     .replace(/&/g, '-and-')      // Replace & with 'and'
     .replace(/[\s\W-]+/g, '-')   // Replace spaces, non-word characters and dashes with a single dash (-)
-    .replace(/-$/, '');           // Remove last floating dash if exists
+    .replace(/-$/, '');          // Remove last floating dash if exists
 }
 
 // TODO make DRY, this is pulled from index.js
@@ -145,6 +185,7 @@ function degreeToDirection(degree) {
 
 function iconToSVG(time, icon) {
   switch(icon) {
+    case "wind_skc":
     case "skc":
       return time + "_clear";
     case "fog":
@@ -162,6 +203,8 @@ function iconToSVG(time, icon) {
     case "rain":
     case "rain_showers":
       return time + "_rain";
+    case "sleet":
+      return time + "_na"; //TODO add sleet.svg (24)
     case "tsra":
     case "tsra_sct":
     case "tsra_hi":
@@ -169,6 +212,7 @@ function iconToSVG(time, icon) {
     case "snow":
       return time + "_snow";
     default:
+      console.log(time, icon);
       return time + "_na";
   }
 }
@@ -433,11 +477,13 @@ function populateObservations(crag, data = []) {
 
   let total_inches = 0;
 
-  const precips = data.slice(0, 48)
+  const precips = data.filter(
+    period => moment(period.properties.timestamp).isSameOrAfter(moment(data[0].properties.timestamp).subtract(2, "days"))
+  )
   .map(i => {
-    total_inches += +i.properties.precipitationLastHour.value;
+    total_inches += +i.properties.precipitationLastHour.value*39.3701;
     return {
-      'precip': +i.properties.precipitationLastHour.value,
+      'precip': +i.properties.precipitationLastHour.value*39.3701,
       'date': moment(i.properties.timestamp).format('YYYY-MM-DD HH:mm')
     };
   });
@@ -450,7 +496,7 @@ function populateObservations(crag, data = []) {
     observations.color = 'green';
   }
 
-  document.getElementById("crag-"+crag.number).classList.add("b--" + observations.color);
+  document.getElementById("overview-"+crag.number).classList.add("b--" + observations.color);
   document.getElementById("precip-total-"+crag.number).innerHTML = (total_inches < 0.005 && total_inches > 0) ? "< 0.005 inches" : total_inches.toFixed(2) + " inches";
   document.getElementById("precip-period-"+crag.number).innerHTML = timeSince(new Date(moment(precips[precips.length-1].date)),new Date(moment(precips[0].date)));
   document.getElementById("observation-"+crag.number).insertAdjacentHTML("afterbegin", template_weather_observations(observations));
@@ -458,7 +504,8 @@ function populateObservations(crag, data = []) {
 }
 
 //TODO make responsive
-//TODO make bar chart
+//TODO add hover (circle on line and number even across top)
+//TODO add 24 hour total chart
 function graph_precip(crag_index, data) {
   const svg = d3.select("#precip-"+crag_index);
   const margin = {top: 20, right: 15, bottom: 20, left: 15};
@@ -568,6 +615,97 @@ $(document).on( "click", '.forecast-day', function() {
 
   const crag = JSON.parse(localStorage.getItem([storage_keys[crag_index]]));
   hourly_forecast.innerHTML = template_weather_hourly(crag.hourly[days.indexOf(date)]);
+});
+
+
+$(document).on( "click", '.crag-add', function() {
+  alert("Adding crags is not supported at this time.");
+  if(localStorage.length > 10) {
+    alert("Only a max of ten crags is allowed.");
+  }
+  console.log($(this));
+  //TODO add crag to localStorage and at end of weather section
+  //localStorage.setItem(crag_slug, JSON.stringify(crag));
+  //document.getElementById("weather").insertAdjacentHTML("beforeend", template_crag_boilerplate(crag));
+  //$('#region-selector').val('custom');
+});
+
+// delete crag from localStorage and from weather section
+$(document).on( "click", '.crag-delete', function() {
+  const crag_index = $(this)[0].dataset.crag;
+  const crag_name = $(this)[0].dataset.name;
+  const remove = window.confirm("Are you sure you want to remove " + crag_name + "?");
+
+  //TODO reset height of menu
+  if(remove) {
+    localStorage.setItem('region-selector', 'custom');
+    $('#region-selector').val('custom');
+    document.getElementById("menu-item-"+crag_index).remove();
+    document.getElementById("crag-"+crag_index).remove();
+    document.getElementById("hr-"+crag_index).remove();
+    localStorage.removeItem("crag-"+slugify(crag_name));
+  }
+});
+
+// change active status
+$(document).on( "click", '.crag-status', function() {
+  const crag_index = $(this)[0].dataset.crag;
+  const crag_active = $(this)[0].dataset.active;
+  const crag_slug = $(this)[0].dataset.slug;
+  const crag = JSON.parse(localStorage.getItem("crag-"+crag_slug));
+  crag.number = +crag_index;
+  const crags = [];
+
+  if(crag_active === "true") {
+    document.getElementById("crag-status-"+crag_index).dataset.active = false;
+    document.getElementById("crag-status-"+crag_index).classList.remove('b--green');
+    document.getElementById("crag-status-"+crag_index).classList.add('b--mid-gray');
+    document.getElementById("crag-"+crag_index).remove();
+    document.getElementById("hr-"+crag_index).remove();
+    crag.active = false;
+    localStorage.setItem("crag-"+crag_slug, JSON.stringify(crag));
+  } else {
+    document.getElementById("crag-status-"+crag_index).dataset.active = true;
+    document.getElementById("crag-status-"+crag_index).classList.remove('b--mid-gray');
+    document.getElementById("crag-status-"+crag_index).classList.add('b--green');
+    crag.active = true;
+    localStorage.setItem("crag-"+crag_slug, JSON.stringify(crag));
+    crags.push(crag);
+    // add to weather section in the correct ordering
+    if(+crag_index === 0) {
+      populate(crags, false, "weather", 'afterbegin');
+    } else if(+crag_index === localStorage.length-1) {
+      populate(crags, false);
+    } else {
+      let active_crags = [];
+      $(".crag-weather").each(function(index) {
+        active_crags.push(+$(this)[0].dataset.crag);
+      });
+      active_crags.push(crag.number);
+      active_crags.sort();
+      populate(crags, false, "crag-"+(active_crags[active_crags.indexOf(crag.number)+1]), 'beforebegin');
+    }
+  }
+});
+
+$( "#region-selector" ).change(function() {
+  if($(this).val() === "custom") {
+    localStorage.setItem('region-selector', 'custom');
+  } else {
+    getCrags($(this).val());
+  }
+});
+
+$("#settings-toggle").click(function() {
+  if($("#settings").hasClass('open')) {
+    $("#settings").removeClass('open');
+    $("#settings-toggle").text('Show Settings');
+    $("#settings").height(0);
+  } else {
+    $("#settings").addClass('open');
+    $("#settings-toggle").text('Hide Settings');
+    $("#settings").height($("#menu").outerHeight(true));
+  }
 });
 
 // normalize all crags hourly settings on window resize

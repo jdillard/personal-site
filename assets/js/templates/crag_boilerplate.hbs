@@ -1,5 +1,5 @@
-<div class="crag-weather mv2 mh2-ns mh0 f7 bg-white ba b--moon-gray shadow-4">
-  <div id="crag-{{this.number}}" id="{{this.slug}}" class="bl bw3">
+<div id="crag-{{this.number}}" data-crag="{{this.number}}" class="crag-weather mv2 mh2-ns mh0 f7 bg-white ba b--moon-gray shadow-4">
+  <div id="overview-{{this.number}}" id="{{this.slug}}" class="bl bw3">
     <div class="flex flex-column flex-row-ns pa3">
       <div class="pr3-ns mb2 mb0-ns w-100 w-40-ns">
         <h3 class="sans-serif pv0-ns mv0 b f3-ns f4 lh-copy"><a class="no-underline relative fancy-link hover-light-red black-70" href="https://forecast.weather.gov/MapClick.php?lat={{this.coordinates.[1]}}&lon={{this.coordinates.[0]}}">{{this.name}}</a></h3>
@@ -28,4 +28,4 @@
   </div>
   <div id="forecast-{{this.number}}"></div>
 </div>
-<hr class="mw5 p0 mv4 o-70 b0 bt b--light-red light-red bg-light-red">
+<hr id="hr-{{this.number}}" class="mw5 p0 mv4 o-70 b0 bt b--light-red light-red bg-light-red">
