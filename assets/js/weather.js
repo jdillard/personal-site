@@ -12,10 +12,16 @@ const template_weather_forecasts = require("./templates/weather-forecasts.hbs");
 const template_weather_hourly = require("./templates/weather-hourly.hbs");
 
 let crags = [];
+let has_crags = false;
 let storage_keys = Object.keys(localStorage);
 
-//TODO or storage_keys doesn't contain any crags
-if(localStorage.length == 0) {
+for(let key in localStorage) {
+  if(key.startsWith("crag-")) {
+    has_crags = true;
+  }
+}
+
+if(localStorage.length == 0 || !has_crags) {
   //TODO add multiple locations to drop down
   getCrags('austin-tx');
 } else {
@@ -42,7 +48,6 @@ function getCrags(location) {
     }
   }
 
-  console.log(crags);
   axios.get('/assets/json/crags/'+location+'.json')
     .then(function (response) {
       localStorage.setItem('region-selector', location);
