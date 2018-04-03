@@ -34,16 +34,20 @@ task :assets do
   require 'open-uri'
   begin
     projects = open('https://api.github.com/users/jdillard/repos').read
-  rescue
-    puts "The request for github repos timed out...exiting."
+  rescue OpenURI::HTTPError => error
+    response = error.io
+    response.status
+    puts response.status
     exit
   end
   File.write('assets/json/projects.json', projects)
 
   begin
     activity = open('https://api.github.com/users/jdillard/events').read
-  rescue
-    puts "The request for github events timed out...exiting."
+  rescue OpenURI::HTTPError => error
+    response = error.io
+    response.status
+    puts response.status
     exit
   end
   File.write('assets/json/activity.json', activity)
