@@ -4,7 +4,7 @@ import * as d3 from 'd3';
 //TODO add loading icons / "dummy data" where needed
 
 const days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
-const precipitation = ["rain","snow","thunderstorms"];
+const precipitation = ["rain", "sleet", "snow", "thunderstorms"];
 
 const template_crag_boilerplate = require("./templates/crag_boilerplate.hbs");
 const template_weather_observations = require("./templates/weather-observations.hbs");
@@ -208,13 +208,16 @@ function iconToSVG(time, icon) {
     case "rain":
     case "rain_showers":
       return time + "_rain";
+    case "rain_fzra":
+    case "rain_snow":
     case "sleet":
-      return time + "_na"; //TODO add sleet.svg (24)
+      return time + "_sleet";
     case "tsra":
     case "tsra_sct":
     case "tsra_hi":
       return time + "_thunderstorms";
     case "snow":
+    case "snow_fzra":
       return time + "_snow";
     default:
       console.log(time, icon);
