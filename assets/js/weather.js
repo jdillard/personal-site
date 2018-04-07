@@ -192,6 +192,7 @@ function iconToSVG(time, icon) {
     case "bkn":
     case "wind_bkn":
     case "wind_bkn":
+    case "wind_ovc":
     case "ovc":
       return time + "_overcast";
     case "rain":
