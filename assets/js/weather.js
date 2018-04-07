@@ -15,7 +15,6 @@ let crags = [];
 let storage_keys = Object.keys(localStorage).filter(word => word.startsWith("crag-"));
 
 if(storage_keys.length == 0) {
-  //TODO add multiple locations to drop down
   getCrags('austin-tx');
 } else {
   $('#region-selector').val(localStorage.getItem('region-selector'));
@@ -26,7 +25,6 @@ if(storage_keys.length == 0) {
 }
 
 function getCrags(location) {
-  //TODO reset height of menu
   crags = [];
   $('#menu .menu-item').remove();
   const weather_section = document.getElementById("weather");
@@ -56,7 +54,6 @@ function getCrags(location) {
 function populate(crags, menu = true, element = 'weather', adjacent = 'beforeend') {
   let temp_html = '';
   for (let c in crags) {
-    //TODO only load 10 max, output error otherwise
     crags[c].number = (crags[c].number) ? crags[c].number : c;
     crags[c].slug = slugify(crags[c].name);
 
@@ -91,7 +88,6 @@ function populate(crags, menu = true, element = 'weather', adjacent = 'beforeend
   }
 
   if(menu) {
-    // TODO make an input field and add lat/long field
     //temp_html = '<div class="f7 ba b--light-gray ph2 pv1 mv1 mw5 center light-silver">Add A Crag <span class="crag-add fr green nr4 pointer">&#43;</span></div>';
     //document.getElementById("menu").insertAdjacentHTML("beforeend", temp_html);
   }
