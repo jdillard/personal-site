@@ -12,24 +12,15 @@ const template_weather_forecasts = require("./templates/weather-forecasts.hbs");
 const template_weather_hourly = require("./templates/weather-hourly.hbs");
 
 let crags = [];
-let has_crags = false;
-let storage_keys = Object.keys(localStorage);
+let storage_keys = Object.keys(localStorage).filter(word => word.startsWith("crag-"));
 
-for(let key in localStorage) {
-  if(key.startsWith("crag-")) {
-    has_crags = true;
-  }
-}
-
-if(localStorage.length == 0 || !has_crags) {
+if(storage_keys.length == 0) {
   //TODO add multiple locations to drop down
   getCrags('austin-tx');
 } else {
   $('#region-selector').val(localStorage.getItem('region-selector'));
   for (let i=0; i < storage_keys.length; i++) {
-    if(storage_keys[i].startsWith("crag-")) {
-      crags.push(JSON.parse(localStorage[storage_keys[i]]));
-    }
+    crags.push(JSON.parse(localStorage[storage_keys[i]]));
   }
   populate(crags);
 }
@@ -43,9 +34,7 @@ function getCrags(location) {
     weather_section.removeChild(weather_section.firstChild);
   }
   for(let key in localStorage) {
-    if(key.startsWith("crag-")) {
-      localStorage.removeItem(key);
-    }
+    localStorage.removeItem(key);
   }
 
   axios.get('/assets/json/crags/'+location+'.json')
