@@ -1,8 +1,6 @@
 //import 'babel-polyfill';
 import * as d3 from 'd3';
 
-//TODO add loading icons / "dummy data" where needed
-
 const days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 const precipitation = ["rain", "sleet", "snow", "thunderstorms"];
 
@@ -76,7 +74,6 @@ function populate(crags, menu = true, element = 'weather', adjacent = 'beforeend
           console.log(error);
         });
 
-      //TODO handle 404 (look up next nearest station and office every time, but use cache)
       axios.get('https://api.weather.gov/gridpoints/' + crags[c].office + '/forecast')
         .then(function (response) {
           populateForecasts(crags[c], response.data);
@@ -145,7 +142,6 @@ function getDistanceFromLatLonInMi(lat1,lon1,lat2,lon2) {
   return d;
 }
 
-//TODO change to 3 letter abbreviation
 // helper function for degreeToDirection
 function calcPoint(input) {
   const j = input % 8;
@@ -422,7 +418,6 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
       const first_hour = +value[0].hour;
       if(first_hour > 0) {
         for (let i=first_hour-1; i > 0; i--) {
-          //TODO dynamically get daytime boundaries
           let isDaytime = (i < 6 || i > 17) ? false : true;
           let svg = (i < 6 || i > 17) ? 'night_na' : 'day_na';
           value.unshift({
@@ -497,9 +492,6 @@ function populateObservations(crag, data = []) {
   graph_precip(crag.number, precips);
 }
 
-//TODO make responsive
-//TODO add hover (circle on line and number even across top)
-//TODO add 24 hour total chart
 function graph_precip(crag_index, data) {
   const svg = d3.select("#precip-"+crag_index);
   const margin = {top: 20, right: 15, bottom: 20, left: 15};
@@ -618,7 +610,6 @@ $(document).on( "click", '.crag-add', function() {
     alert("Only a max of ten crags is allowed.");
   }
   console.log($(this));
-  //TODO add crag to localStorage and at end of weather section
   //localStorage.setItem(crag_slug, JSON.stringify(crag));
   //document.getElementById("weather").insertAdjacentHTML("beforeend", template_crag_boilerplate(crag));
   //$('#region-selector').val('custom');
@@ -630,7 +621,6 @@ $(document).on( "click", '.crag-delete', function() {
   const crag_name = $(this)[0].dataset.name;
   const remove = window.confirm("Are you sure you want to remove " + crag_name + "?");
 
-  //TODO reset height of menu
   if(remove) {
     localStorage.setItem('region-selector', 'custom');
     $('#region-selector').val('custom');
