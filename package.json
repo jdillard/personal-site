@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "source files for jared.dillard.com",
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "d3": "^4.13.0",
     "handlebars": "^4.0.11",
