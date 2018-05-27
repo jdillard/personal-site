@@ -170,8 +170,9 @@ function degreeToDirection(degree) {
 
 function iconToSVG(time, icon) {
   switch(icon) {
-    case "wind_skc":
+    case "hot":
     case "skc":
+    case "wind_skc":
       return time + "_clear";
     case "fog":
       return time + "_fog";
@@ -182,9 +183,8 @@ function iconToSVG(time, icon) {
       return time + "_cloudy";
     case "bkn":
     case "wind_bkn":
-    case "wind_bkn":
-    case "wind_ovc":
     case "ovc":
+    case "wind_ovc":
       return time + "_overcast";
     case "rain":
     case "rain_showers":
@@ -194,8 +194,8 @@ function iconToSVG(time, icon) {
     case "sleet":
       return time + "_sleet";
     case "tsra":
-    case "tsra_sct":
     case "tsra_hi":
+    case "tsra_sct":
       return time + "_thunderstorms";
     case "snow":
     case "snow_fzra":
