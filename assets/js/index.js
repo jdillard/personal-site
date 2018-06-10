@@ -72,20 +72,20 @@ function timeSince(date, recentDate = new Date()) {
   return Math.floor(seconds) + " seconds";
 }
 
-function summarizeAction(type, words, count) {
+function summarizeAction(type, words) {
   switch(type) {
     case "WatchEvent":
       return words + " watching";
     case "PushEvent":
-      return (count > 1) ? "Made "+count+" "+words+"s on" : "Made a "+words+" on";
+      return (words > 1) ? "Made "+words+" commits on" : "Made a commit on";
     case "IssueCommentEvent":
-      return words + " a comment on";
+      return words + " on";
     case "ForkEvent":
       return "Made a " + words + " of";
     case "PullRequestEvent":
-      return words + " a pull request on";
+      return words + " on";
     case "IssuesEvent":
-      return (count > 1) ? words+" "+count+" issues on" : words+" an issue on";
+      return words + " on";
     case "CreateEvent":
       return "Created a " + words + " at";
     case "PullRequestReviewCommentEvent":
@@ -158,33 +158,44 @@ function activity(activities = []) {
       switch(b.type) {
         case "WatchEvent":
           b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1);
+          b.link = "https://github.com/" + b.repo.name;
           break;
         case "PushEvent":
-          b.words = "push event";
+          b.words = b.payload.commits.length;
+          b.link = "https://github.com/" + b.repo.name + "/commits?author=" + b.actor.display_login;
           break;
         case "IssueCommentEvent":
-          b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1);
+          b.link = b.payload.comment.html_url;
+          let issue_type = (b.link.includes("pull")) ? "pull request" : "issue";
+          b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1) + " a comment on <strong>" + issue_type + " #" + b.payload.issue.number + "</strong>";
           break;
         case "ForkEvent":
           b.words = "clone";
+          b.link = "https://github.com/" + b.repo.name;
           break;
         case "PullRequestEvent":
-          b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1);
+          b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1) + " <strong>pull request #" + b.payload.pull_request.number + "</strong>";
+          b.link = b.payload.pull_request.html_url;
           break;
         case "IssuesEvent":
-          b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1);
+          b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1) + " <strong>issue #" + b.payload.issue.number + "</strong>";
+          b.link = b.payload.issue.html_url;
           break;
         case "CreateEvent":
           b.words = b.payload.ref_type;
+          b.link = "https://github.com/" + b.repo.name;
           break;
         case "PullRequestReviewCommentEvent":
           b.words = "pull request";
+          b.link = "https://github.com/" + b.repo.name;
           break;
         case "DeleteEvent":
           b.words = b.payload.ref_type;
+          b.link = "https://github.com/" + b.repo.name;
           break;
         case "CommitCommentEvent":
           b.words = "comment";
+          b.link = "https://github.com/" + b.repo.name;
           break;
       }
       if(b.created_at != prev_date) {
@@ -201,31 +212,31 @@ function activity(activities = []) {
 
     // reduce each day to collapse multiple of same type
     for (let d in activity_list) {
-      let dupe_count = 1;
+      let dupe_count = 0;
 
       if(activity_list[d].data.length > 1) {
         activity_list[d].data = activity_list[d].data.reduce((a, b, i) => {
           if(i === 1) {
-            a.action = summarizeAction(a.type, a.words, dupe_count);
+            if(a.type === "PushEvent") { dupe_count += a.words; }
+            a.action = summarizeAction(a.type, a.words);
             a = [a];
+            console.log("b",i,b);
           }
 
-          //TODO make applicable to all types, not just PushEvent and IssuesEvent
-          if(a[a.length-1].type === b.type && a[a.length-1].repo.name === b.repo.name && (a[a.length-1].type === "PushEvent" || a[a.length-1].type === "IssuesEvent")) {
-            dupe_count++;
-            a[a.length-1].action = summarizeAction(a[a.length-1].type, a[a.length-1].words, dupe_count);
+          if(a[a.length-1].type === b.type && a[a.length-1].repo.name === b.repo.name && b.type === "PushEvent") {
+            dupe_count += b.words;
+            a[a.length-1].action = summarizeAction(b.type, dupe_count);
             return a;
           } else {
-            dupe_count = 1;
-            b.action = summarizeAction(b.type, b.words, dupe_count);
+            dupe_count = 0;
+            b.action = summarizeAction(b.type, b.words);
             a.push(b);
             return a;
           }
         });
       } else {
-        activity_list[d].data[0].action = summarizeAction(activity_list[d].data[0].type, activity_list[d].data[0].words, 1);
+        activity_list[d].data[0].action = summarizeAction(activity_list[d].data[0].type, activity_list[d].data[0].words);
       }
     }
-
   activity_element.innerHTML = template_github_activity(activity_list);
 }
