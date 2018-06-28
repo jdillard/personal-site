@@ -464,19 +464,25 @@ function populateObservations(crag, data = []) {
   observations.curr_humidity = (data[0].properties.relativeHumidity.value) ? data[0].properties.relativeHumidity.value.toFixed(0) : null;
 
   let total_inches = 0;
+  let precipitationLastHour = 0;
 
   const precips = data.filter(
     period => moment(period.properties.timestamp).isSameOrAfter(moment(data[0].properties.timestamp).subtract(2, "days"))
   )
   .map(i => {
-    total_inches += +i.properties.precipitationLastHour.value*39.3701;
+    if(i.properties.precipitationLastHour) {
+      precipitationLastHour = +i.properties.precipitationLastHour.value*39.3701;
+    } else {
+      precipitationLastHour += 0;
+    }
+    total_inches += precipitationLastHour;
     return {
-      'precip': +i.properties.precipitationLastHour.value*39.3701,
+      'precip': precipitationLastHour,
       'date': moment(i.properties.timestamp).format('YYYY-MM-DD HH:mm')
     };
   });
 
-  if(data[0].properties.precipitationLastHour.value > 0) {
+  if(data[0].properties.precipitationLastHour && data[0].properties.precipitationLastHour.value > 0) {
     observations.color = 'light-red';
   } else if(total_inches > 0) {
     observations.color = 'yellow';
