@@ -1,0 +1,32 @@
+[
+    {
+      "name": "Icicle Creek",
+      "note": "Granite, so exposed areas dry fast.",
+      "station": "KEAT",
+      "office": "OTX\/35,103",
+      "coordinates": [
+        -120.711,
+        47.543
+      ]
+    },
+    {
+      "name": "Tieton River Rock",
+      "note": "Mostly andesite (similar to basalt).",
+      "station": "AT095",
+      "office": "PDT\/70,159",
+      "coordinates": [
+        -120.958,
+        46.684
+      ]
+    },
+    {
+      "name": "Vantage (Frenchman Coulee)",
+      "note": "The rocks are basalt.",
+      "station": "KEAT",
+      "office": "OTX\/54,74",
+      "coordinates": [
+        -119.969,
+        47.025
+      ]
+    }
+  ]
