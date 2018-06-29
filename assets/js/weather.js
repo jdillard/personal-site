@@ -48,6 +48,20 @@ function getCrags(location) {
     });
 }
 
+function getIssues() {
+  axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=crags&state=open')
+    .then(function (response) {
+      for (let c in response.data) {
+        console.log(response.data[c].html_url,response.data[c].title);
+        let temp_html = '<div class="tc mv3"><a class="no-underline fancy-link relative hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
+        document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
+      }
+    })
+    .catch(function (error) {
+      console.log(error);
+  });
+}
+
 function populate(crags, menu = true, element = 'weather', adjacent = 'beforeend') {
   let temp_html = '';
   for (let c in crags) {
@@ -694,6 +708,19 @@ $("#settings-toggle").click(function() {
     $("#settings").addClass('open');
     $("#settings-toggle").text('Hide Settings');
     $("#settings").height($("#menu").outerHeight(true));
+  }
+});
+
+$("#issues-toggle").click(function() {
+  if($("#issues").hasClass('open')) {
+    $("#issues").removeClass('open');
+    $("#issues-toggle").text('Show Known Issues');
+    $("#issues").height(0);
+  } else {
+    $("#issues").addClass('open');
+    $("#issues-toggle").text('Hide Known Issues');
+    getIssues();
+    $("#issues").height($("#menu").outerHeight(true));
   }
 });
 
