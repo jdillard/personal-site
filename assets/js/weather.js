@@ -280,6 +280,7 @@ function populateForecasts(crag, data = []) {
           if(half_day && i === data.properties.periods.length-1) {
             end_date = moment(b.endTime).format('MMM DD, YYYY');
             b.date = moment(b.startTime).format('YYYY-MM-DD');
+            b.name = moment(b.startTime).format('dddd');
             b.night_temperature = null;
             b.night_shortForecast = null;
             b.icon_split = (day_icons.length-1 > 1) ? true: false;
@@ -313,6 +314,7 @@ function populateForecasts(crag, data = []) {
           start_date = (start_date) ? start_date : moment(b.startTime).format('MMM DD, YYYY');
           end_date = moment(a[a.length-1].endTime).format('MMM DD, YYYY');
           a[a.length-1].date = moment(a[a.length-1].startTime).format('YYYY-MM-DD');
+          a[a.length-1].name = moment(a[a.length-1].startTime).format('dddd');
           a[a.length-1].night_temperature = b.temperature;
           a[a.length-1].night_shortForecast = b.shortForecast;
           a[a.length-1].icon_split = (day_icons.length-1 > 1) ? true: false;
