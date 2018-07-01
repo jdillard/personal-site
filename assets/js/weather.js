@@ -52,7 +52,6 @@ function getIssues() {
   axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=crags&state=open')
     .then(function (response) {
       for (let c in response.data) {
-        console.log(response.data[c].html_url,response.data[c].title);
         let temp_html = '<div class="tc mv3"><a class="no-underline fancy-link relative hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
         document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
       }
