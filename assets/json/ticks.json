@@ -1,0 +1,30 @@
+[
+  {
+    "rating": "5.8",
+    "sport": 10
+  },
+  {
+    "rating": "5.9",
+    "sport": 8
+  },
+  {
+    "rating": "5.10a",
+    "sport": 6
+  },
+  {
+    "rating": "5.10b",
+    "sport": 4
+  },
+  {
+    "rating": "5.10c",
+    "sport": 3
+  },
+  {
+    "rating": "5.10d",
+    "sport": 2
+  },
+  {
+    "rating": "5.11a",
+    "sport": 1
+  }
+]

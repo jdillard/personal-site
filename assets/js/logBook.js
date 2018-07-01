@@ -27,7 +27,7 @@ function getRoutes(mpRoutes, mpKey) {
       if (routeTypes.hasOwnProperty(key) && key == "Sport") {
         let routeRatings = groupBy(routeTypes[key], 'rating');
         const exampleData = [];
-        console.log(routeRatings);
+        //console.log(routeRatings);
         for(var key in routeRatings) {
           if(routeRatings.hasOwnProperty(key)) {
             exampleData.push({rating: simpleRating[key], sport: routeRatings[key].length});
@@ -42,9 +42,6 @@ function getRoutes(mpRoutes, mpKey) {
     console.log(error);
   });
 }
-
-let ticks = [];
-let routes = [];
 
 function getStyle(nameKey, prop, myArray){
   for (var i=0; i < myArray.length; i++) {
@@ -67,18 +64,6 @@ function getIssues() {
   });
 }
 
-$( "#mp-submit" ).click(function() {
-  const email = document.getElementById("mp-email").value;
-  const key = document.getElementById("mp-key").value;
-
-  if(email && key) {
-    var type = (email.includes('@')) ? 'email' : 'id' ;
-    getTicks(type, email, key);
-  } else {
-    alert("There was an error");
-  }
-});
-
 const groupBy = function(xs, key) {
   return xs.reduce(function(rv, x) {
     (rv[x[key]] = rv[x[key]] || []).push(x);
@@ -86,30 +71,8 @@ const groupBy = function(xs, key) {
   }, {});
 };
 
-const simpleRating = {
-  "5.7": "5.7",
-  "5.8": "5.8",
-  "5.8 R": "5.8",
-  "5.8+": "5.8",
-  "5.9": "5.9",
-  "5.9+": "5.9",
-  "5.10-": "5.10a",
-  "5.10": "5.10b",
-  "5.10a": "5.10a",
-  "5.10a/b": "5.10b",
-  "5.10b": "5.10b",
-  "5.10b R": "5.10b",
-  "5.10c": "5.10c",
-  "5.10b/c": "5.10c",
-  "5.10+": "5.10d",
-  "5.10d": "5.10d",
-  "5.11a": "5.11a",
-  "5.11b": "5.11b",
-};
-
-const ratingOrder = ["5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b"];
-
 function createGraph(exampleData) {
+  document.getElementById("log-chart").innerHTML = "";
 
   var w = 500,
       h = 300;
@@ -235,6 +198,52 @@ function createGraph(exampleData) {
   }
 
 }
+
+let ticks = [];
+let routes = [];
+
+const simpleRating = {
+  "5.7": "5.7",
+  "5.8": "5.8",
+  "5.8 R": "5.8",
+  "5.8+": "5.8",
+  "5.9": "5.9",
+  "5.9+": "5.9",
+  "5.10-": "5.10a",
+  "5.10": "5.10b",
+  "5.10a": "5.10a",
+  "5.10a/b": "5.10b",
+  "5.10b": "5.10b",
+  "5.10b R": "5.10b",
+  "5.10c": "5.10c",
+  "5.10b/c": "5.10c",
+  "5.10+": "5.10d",
+  "5.10d": "5.10d",
+  "5.11a": "5.11a",
+  "5.11b": "5.11b",
+};
+
+const ratingOrder = ["5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b"];
+
+axios.get('/assets/json/ticks.json')
+.then(function (response) {
+  createGraph(response.data);
+})
+.catch(function (error) {
+  console.log(error);
+});
+
+$( "#mp-submit" ).click(function() {
+  const email = document.getElementById("mp-email").value;
+  const key = document.getElementById("mp-key").value;
+
+  if(email && key) {
+    var type = (email.includes('@')) ? 'email' : 'id' ;
+    getTicks(type, email, key);
+  } else {
+    alert("There was an error");
+  }
+});
 
 $("#issues-toggle").click(function() {
   if($("#issues").hasClass('open')) {
