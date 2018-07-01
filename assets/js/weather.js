@@ -697,6 +697,7 @@ $( "#region-selector" ).change(function() {
     localStorage.setItem('region-selector', 'custom');
   } else {
     getCrags($(this).val());
+    $("#settings").height('auto');
   }
 });
 
@@ -708,7 +709,7 @@ $("#settings-toggle").click(function() {
   } else {
     $("#settings").addClass('open');
     $("#settings-toggle").text('Hide Settings');
-    $("#settings").height($("#menu").outerHeight(true));
+    $("#settings").height('auto');
   }
 });
 
