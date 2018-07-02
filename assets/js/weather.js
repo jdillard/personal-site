@@ -1,4 +1,8 @@
 import * as d3 from 'd3';
+import moment from 'moment-timezone';
+var SunCalc = require('suncalc');
+var tzlookup = require("tz-lookup");
+
 
 const days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 const precipitation = ["rain", "sleet", "snow", "thunderstorms"];
@@ -379,6 +383,11 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
       arr[5] = [];
       arr[6] = [];
 
+  let times = SunCalc.getTimes(new Date(), data.geometry.geometries[0].coordinates[1], data.geometry.geometries[0].coordinates[0]);
+  const sunrise = moment(times.sunrise).tz(tzlookup(data.geometry.geometries[0].coordinates[1], data.geometry.geometries[0].coordinates[0])).format('k');
+  const sunset = moment(times.sunset).tz(tzlookup(data.geometry.geometries[0].coordinates[1], data.geometry.geometries[0].coordinates[0])).format('k');
+  let svgTime = '';
+
   hourly.days = data.properties.periods
     .reduce(function(a, b, i) {
       let left_icons = [];
@@ -391,7 +400,9 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
         delete a.endTime;
         delete a.temperatureTrend;
         a.hour = moment(a.startTime).format('HH');
-        a.svg = iconToSVG(left_icons[0], left_icons[1].split(",")[0]);
+        a.isDaytime = (+a.hour < sunrise || +a.hour > sunset) ? false : true;
+        svgTime = (a.isDaytime) ? 'day' : 'night';
+        a.svg = iconToSVG(svgTime, left_icons[1].split(",")[0]);
         a.color = (new RegExp(precipitation.join("|")).test(a.svg)) ? 'yellow' : 'green';
         if(moment(a.startTime).isSameOrAfter(moment(week_start_time), 'day') && moment(a.startTime).isBefore(moment(week_start_time).add(1, 'week'), 'day')) {
           arr[days.indexOf(moment(a.startTime).format('dddd').toLowerCase())].push(a);
@@ -402,7 +413,9 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
         delete b.endTime;
         delete b.temperatureTrend;
         b.hour = moment(b.startTime).format('HH');
-        b.svg = iconToSVG(right_icons[0], right_icons[1].split(",")[0]);
+        b.isDaytime = (+b.hour < sunrise || +b.hour > sunset) ? false : true;
+        svgTime = (b.isDaytime) ? 'day' : 'night';
+        b.svg = iconToSVG(svgTime, right_icons[1].split(",")[0]);
         b.color = (new RegExp(precipitation.join("|")).test(b.svg)) ? 'yellow' : 'green';
         if(moment(b.startTime).isSameOrAfter(moment(week_start_time), 'day') && moment(b.startTime).isBefore(moment(week_start_time).add(1, 'week'), 'day')) {
           arr[days.indexOf(moment(b.startTime).format('dddd').toLowerCase())].push(b);
@@ -415,7 +428,9 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
         delete b.endTime;
         delete b.temperatureTrend;
         b.hour = moment(b.startTime).format('HH');
-        b.svg = iconToSVG(right_icons[0], right_icons[1].split(",")[0]);
+        b.isDaytime = (+b.hour < sunrise || +b.hour > sunset) ? false : true;
+        svgTime = (b.isDaytime) ? 'day' : 'night';
+        b.svg = iconToSVG(svgTime, right_icons[1].split(",")[0]);
         b.color = (new RegExp(precipitation.join("|")).test(b.svg)) ? 'yellow' : 'green';
         if(moment(b.startTime).isSameOrAfter(moment(week_start_time), 'day') && moment(b.startTime).isBefore(moment(week_start_time).add(1, 'week'), 'day')) {
           a[days.indexOf(moment(b.startTime).format('dddd').toLowerCase())].push(b);
@@ -432,8 +447,8 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
       const first_hour = +value[0].hour;
       if(first_hour > 0) {
         for (let i=first_hour-1; i > 0; i--) {
-          let isDaytime = (i < 6 || i > 17) ? false : true;
-          let svg = (i < 6 || i > 17) ? 'night_na' : 'day_na';
+          let isDaytime = (i < sunrise || i > sunset) ? false : true;
+          let svg = (i < sunrise || i > sunset) ? 'night_na' : 'day_na';
           value.unshift({
             'hour': i.toString().padStart(2, 0),
             'svg': svg,
@@ -445,8 +460,8 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
         }
       } else {
         for (let i=last_hour+1; i < 24; i++) {
-          let isDaytime = (i < 6 || i > 17) ? false : true;
-          let svg = (i < 6 || i > 17) ? 'night_na' : 'day_na';
+          let isDaytime = (i < sunrise || i > sunset) ? false : true;
+          let svg = (i < sunrise || i > sunset) ? 'night_na' : 'day_na';
           value.push({
             'hour': i.toString().padStart(2, 0),
             'svg': svg,
@@ -477,6 +492,10 @@ function populateObservations(crag, data = []) {
   observations.curr_wind = (data[0].properties.windSpeed.value) ? (data[0].properties.windSpeed.value * 2.23694).toFixed(0) + "mph " + degreeToDirection(data[0].properties.windDirection.value) : null;
   observations.curr_wind_chill = (data[0].properties.windChill.value) ? (data[0].properties.windChill.value*(9/5)+32).toFixed(0) : null;
   observations.curr_humidity = (data[0].properties.relativeHumidity.value) ? data[0].properties.relativeHumidity.value.toFixed(0) : null;
+
+  let times = SunCalc.getTimes(new Date(), crag.coordinates[1], crag.coordinates[0]);
+  observations.sunrise = moment(times.sunrise).tz(tzlookup(crag.coordinates[1], crag.coordinates[0])).format('h:mma');
+  observations.sunset = moment(times.sunset).tz(tzlookup(crag.coordinates[1], crag.coordinates[0])).format('h:mma');
 
   let total_inches = 0;
   let precipitationLastHour = 0;
