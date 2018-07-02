@@ -158,31 +158,9 @@ function getDistanceFromLatLonInMi(lat1,lon1,lat2,lon2) {
   return d;
 }
 
-// helper function for degreeToDirection
-function calcPoint(input) {
-  const j = input % 8;
-  input = (input / 8)|0 % 4;
-  const cardinal = ['north', 'east', 'south', 'west'];
-  const pointDesc = ['1', '1 by 2', '1-C', 'C by 1', 'C', 'C by 2', '2-C', '2 by 1'];
-
-  const str1 = cardinal[input];
-  const str2 = cardinal[(input + 1) % 4];
-  const strC = (str1 == cardinal[0] | str1 == cardinal[2]) ? str1 + str2 : str2 + str1;
-
-  return pointDesc[j].r(1, str1).r(2, str2).r('C', strC);
-}
-
-function degreeToDirection(degree) {
-  let s = String;
-  s.prototype.r = s.prototype.replace;
-
-  let input = degree / 11.25;
-  input = input+0.5|0;
-
-  let direction = calcPoint(input);
-  direction = direction[0].toUpperCase() + direction.slice(1);
-
-  return direction;
+function getDirection(degree) {
+  var directions = ['North', 'NW', 'West', 'SW', 'South', 'SE', 'East', 'NE'];
+  return directions[Math.round(((degree %= 360) < 0 ? degree + 360 : degree) / 45) % 8];
 }
 
 function iconToSVG(time, icon) {
@@ -489,7 +467,7 @@ function populateObservations(crag, data = []) {
   observations.curr_timestamp = timeSince(new Date(data[0].properties.timestamp));
   observations.curr_temp = (data[0].properties.temperature.value*(9/5)+32).toFixed(0);
   observations.curr_heat_index = (data[0].properties.heatIndex.value && observations.curr_temp != (data[0].properties.heatIndex.value*(9/5)+32).toFixed(0)) ? (data[0].properties.heatIndex.value*(9/5)+32).toFixed(0) : null;
-  observations.curr_wind = (data[0].properties.windSpeed.value) ? (data[0].properties.windSpeed.value * 2.23694).toFixed(0) + "mph " + degreeToDirection(data[0].properties.windDirection.value) : null;
+  observations.curr_wind = (data[0].properties.windSpeed.value) ? (data[0].properties.windSpeed.value * 2.23694).toFixed(0) + "mph " + getDirection(data[0].properties.windDirection.value) : null;
   observations.curr_wind_chill = (data[0].properties.windChill.value) ? (data[0].properties.windChill.value*(9/5)+32).toFixed(0) : null;
   observations.curr_humidity = (data[0].properties.relativeHumidity.value) ? data[0].properties.relativeHumidity.value.toFixed(0) : null;
 
