@@ -696,6 +696,13 @@ $( "#region-selector" ).change(function() {
   }
 });
 
+document.getElementById("clear-cache").addEventListener("click", function(event){
+  localStorage.clear();
+  $('#region-selector').val('austin-tx');
+  getCrags('austin-tx');
+  event.preventDefault()
+});
+
 $("#settings-toggle").click(function() {
   if($("#settings").hasClass('open')) {
     $("#settings").removeClass('open');

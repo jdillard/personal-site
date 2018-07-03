@@ -15,8 +15,8 @@ js_includes:
 
 <p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Settings</p>
 <section id="settings" class="overflow-hidden" style="transition: height 200ms;height: 0px;">
-    <div id="menu" class="mv2 ph2 center">
-        <div>
+    <div class="mv2 ph2 center">
+        <div id="menu" class="fn fl-ns w-50-l w-100 pv2 pr4-l">
             <div class="f7 tc b">Select a default:</div>
             <div class="select-style ba b--moon-gray overflow-hidden mw5 mt1 mb3 center" style="background: #fafafa url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDg2LjAwMSA4Ni4wMDEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDg2LjAwMSA4Ni4wMDE7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPGc+Cgk8cGF0aCBkPSJNNS45MDcsMjEuMDA0Yy0xLjM1Mi0xLjMzOC0zLjU0Mi0xLjMzOC00Ljg5NCwwYy0xLjM1LDEuMzM2LTEuMzUyLDMuNTA2LDAsNC44NDRsMzkuNTQsMzkuMTUgICBjMS4zNTIsMS4zMzgsMy41NDIsMS4zMzgsNC44OTQsMGwzOS41NC0zOS4xNWMxLjM1MS0xLjMzOCwxLjM1Mi0zLjUwNiwwLTQuODQ0Yy0xLjM1Mi0xLjMzOC0zLjU0Mi0xLjMzOC00Ljg5NC0wLjAwMkw0Myw1Ni43MDcgICBMNS45MDcsMjEuMDA0eiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=) no-repeat 90% 50%">
                 <select id="region-selector" class="mid-gray w-100 pv2 ph3 bn" style="background: transparent; background-image: none; box-shadow: none; appearance: none; -moz-appearance: none; -webkit-appearance: none;">
@@ -26,13 +26,23 @@ js_includes:
                 </select>
             </div>
         </div>
+        <div class="fn f6 tc fl-ns w-50-l w-100 pv2">
+            <span class="f7 b">Instructions:</span>
+            <p class="measure lh-copy center"><strong>Show/hide crags</strong> by clicking on their name to the left; green mean shown and gray means hidden.</p>
+            <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
+            <p class="measure lh-copy center"><strong>Show/hide hourly forecasts</strong> by clicking the desired day.</p>
+            <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
+            <p class="measure lh-copy center"><strong>Current and Past conditions</strong> are measured by the nearest weather station. <strong>Forecast conditions</strong> are calculated and polled separately.</p>
+            <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
+            <p class="measure lh-copy center"><strong>Having issues?</strong> Try <a id="clear-cache" class="no-underline relative fancy-link light-red hover-light-red" href="#">clearing the local cache</a>.</p>
+        </div>
     </div>
 </section>
 
 <section id="weather" class="mv4-ns mv3 ph2 center"></section>
 
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
-<section id="issues" class="overflow-hidden" style="transition: height 200ms;height: 0px;">
+<section id="issues" class="overflow-hidden tc f6" style="transition: height 200ms;height: 0px;">
 </section>
 
 {% include feedback.html %}
