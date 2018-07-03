@@ -22,6 +22,17 @@
       ]
     },
     {
+      "name": "Pace Bend Park",
+      "note": "Limestone. To check water levels for DWS, see: http://www.bloodyflapper.com/pacebend",
+      "mountainProject": "https://www.mountainproject.com/area/107104361/pace-bend-park-dws",
+      "station": "KRYW",
+      "office": "EWX\/145,98",
+      "coordinates": [
+        -98.019,
+        30.455
+      ]
+    },
+    {
       "name": "Reimer's Ranch",
       "note": "Porous limestone that can take a couple days to dry out.",
       "mountainProject": "https://www.mountainproject.com/area/105837312/reimers-ranch",
