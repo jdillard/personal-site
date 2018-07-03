@@ -56,7 +56,7 @@ function getIssues() {
   axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=crags&state=open')
     .then(function (response) {
       for (let c in response.data) {
-        let temp_html = '<div class="tc mv3"><a class="no-underline relative black-70 hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
+        let temp_html = '<div class="mv2"><a class="no-underline relative black-70 hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
         document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
       }
     })
@@ -713,6 +713,7 @@ $("#issues-toggle").click(function() {
     $("#issues").removeClass('open');
     $("#issues-toggle").text('Show Known Issues');
     $("#issues").height(0);
+    document.getElementById("issues").innerHTML = "";
   } else {
     $("#issues").addClass('open');
     $("#issues-toggle").text('Hide Known Issues');
