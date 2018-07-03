@@ -211,7 +211,6 @@ function populateForecasts(crag, data = []) {
   forecasts.name = crag.name;
   forecasts.crag_index = crag.number;
   forecasts.updated = moment(data.properties.updated).format('MM/DD hh:mm a');
-  forecasts.distance = getDistanceFromLatLonInMi(crag.coordinates[1], crag.coordinates[0], data.geometry.geometries[0].coordinates[1], data.geometry.geometries[0].coordinates[0]).toFixed(2);
   forecasts.periods = data.properties.periods
     .reduce(function(a, b, i) {
       let day_icons = [];
@@ -326,10 +325,9 @@ function populateForecasts(crag, data = []) {
     });
   forecasts.color = (clear_forecast) ? 'green' : 'yellow';
 
-  document.getElementById("last-forecast-"+crag.number).innerHTML = timeSince(new Date(data.properties.updated)) + " ago";
+  document.getElementById("last-forecast-"+crag.number).innerHTML = "updated " + timeSince(new Date(data.properties.updated)) + " ago";
   document.getElementById("forecast-start-"+crag.number).innerHTML = start_date;
   document.getElementById("forecast-end-"+crag.number).innerHTML = end_date;
-  document.getElementById("office-"+crag.number).innerHTML = forecasts.distance + " miles away";
   document.getElementById("forecast-"+crag.number).innerHTML = template_weather_forecasts(forecasts);
 
   $( '#forecast-'+crag.number+' .forecast-day' ).hover(
