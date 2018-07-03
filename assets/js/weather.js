@@ -502,7 +502,7 @@ function populateObservations(crag, data = []) {
 
   document.getElementById("overview-"+crag.number).classList.add("b--" + observations.color);
   document.getElementById("precip-total-"+crag.number).innerHTML = (total_inches < 0.005 && total_inches > 0) ? "< 0.005 inches" : total_inches.toFixed(2) + " inches";
-  document.getElementById("precip-period-"+crag.number).innerHTML = timeSince(new Date(moment(precips[precips.length-1].date)),new Date(moment(precips[0].date)));
+  document.getElementById("precip-period-"+crag.number).innerHTML = "last " + timeSince(new Date(moment(precips[precips.length-1].date)),new Date(moment(precips[0].date)));
   document.getElementById("observation-"+crag.number).insertAdjacentHTML("afterbegin", template_weather_observations(observations));
   graph_precip(crag.number, precips);
 }
