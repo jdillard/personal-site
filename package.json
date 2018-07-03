@@ -12,6 +12,7 @@
     "moment": "^2.22.2",
     "moment-timezone": "^0.5.21",
     "suncalc": "^1.8.0",
+    "tippy.js": "^2.5.3",
     "tz-lookup": "^6.1.8"
   },
   "devDependencies": {
