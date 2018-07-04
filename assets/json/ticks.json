@@ -1,15 +1,11 @@
 [
   {
-    "rating": "5.8",
+    "rating": "5.9",
     "sport": 10
   },
   {
-    "rating": "5.9",
-    "sport": 8
-  },
-  {
     "rating": "5.10a",
-    "sport": 6
+    "sport": 7
   },
   {
     "rating": "5.10b",
@@ -17,14 +13,10 @@
   },
   {
     "rating": "5.10c",
-    "sport": 3
-  },
-  {
-    "rating": "5.10d",
     "sport": 2
   },
   {
-    "rating": "5.11a",
+    "rating": "5.10d",
     "sport": 1
   }
 ]
