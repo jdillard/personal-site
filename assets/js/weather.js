@@ -700,7 +700,7 @@ document.getElementById("clear-cache").addEventListener("click", function(event)
   localStorage.clear();
   $('#region-selector').val('austin-tx');
   getCrags('austin-tx');
-  event.preventDefault()
+  event.preventDefault();
 });
 
 $("#settings-toggle").click(function() {
