@@ -5,6 +5,7 @@ function getTicks(type, mpEmail, mpKey) {
   .then(function (response) {
     ticks = response.data.ticks;
     const routes = ticks.map(e => e.routeId).join(',');
+    document.getElementById("mp-key").value = '';
     getRoutes(routes, mpKey);
   })
   .catch(function (error) {
@@ -72,10 +73,11 @@ const groupBy = function(xs, key) {
 };
 
 function createGraph(exampleData) {
+  // clear previous chart
   document.getElementById("log-chart").innerHTML = "";
 
   var w = 500,
-      h = 300;
+      h = 200; //TODO base height on number of grades
 
   // margin.middle is distance from center line to each y-axis
   var margin = {
@@ -225,6 +227,7 @@ const simpleRating = {
 
 const ratingOrder = ["5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b"];
 
+//TODO if rememberMe use localstorage instead
 axios.get('/assets/json/ticks.json')
 .then(function (response) {
   createGraph(response.data);
@@ -239,11 +242,14 @@ $( "#mp-submit" ).click(function() {
 
   if(email && key) {
     var type = (email.includes('@')) ? 'email' : 'id' ;
+    //TODO if rememberMe, store in localStorage
     getTicks(type, email, key);
   } else {
     alert("There was an error");
   }
 });
+
+//TODO if rememberMe is unchecked, clear localStorage
 
 $("#issues-toggle").click(function() {
   if($("#issues").hasClass('open')) {

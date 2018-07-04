@@ -17,7 +17,7 @@ js_includes:
 }
 .bar {
   fill-opacity: 0.5;
-  fill: steelblue;
+  fill: #333333;
 }
 </style>
 
@@ -38,13 +38,21 @@ js_includes:
     </p>
 
     <div class="mb1">
-      <form>
-        <input type="email" name="mp-email" id="mp-email" placeholder="MP E-mail">
-        <input type="text" name="mp-key" id="mp-key" placeholder="MP Key">
-        <button type="button" name="mp-submit" id="mp-submit">View Ticks</button>
+      <form class="pv2 black-80">
+        <div class="measure">
+          <label for="mp-email" class="f6 b db mb2">Mountain Project E-mail</label>
+          <input name="mp-email" id="mp-email" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="email" placeholder="me@example.com">
+        </div>
+        <div class="measure">
+          <label for="mp-key" class="f6 b db mb2">Mountain Project Private Key</label>
+          <input autocomplete=off name="mp-key" id="mp-key" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" placeholder="488040894-dr6ha7mehmvczdoxnbtig3e3nv5k6u2s">
+        </div>
+        <div class="mt3">
+          <input class="b ph3 pv2 mr3 input-reset ba b--black bg-transparent dim pointer f6" type="button" name="mp-submit" id="mp-submit" value="View Ticks">
+          <!--<span class="f7 fw6"><input name="remember-me" id="checkBox" type="checkbox"> Remember me</span>-->
+        </div>
       </form>
     </div>
-    <span class="f7"><input name="remember-me" id="checkBox" type="checkbox"> Remember me</span>
 </section>
 
 <section id="log-book" class="mv4-ns tc mv3 ph2 center">
