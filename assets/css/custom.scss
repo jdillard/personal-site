@@ -100,6 +100,19 @@ ul.list li:hover a span, .rslide:hover {
     background: #FF725C;
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba( 0, 0, 0, .2 );
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: rgba( 0, 0, 0, .2 );
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: rgba( 0, 0, 0, .2 );
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: rgba( 0, 0, 0, .2 );
+}
+
 .clip-svg {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
