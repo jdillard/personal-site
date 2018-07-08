@@ -3,12 +3,17 @@ import * as d3 from 'd3';
 function getTicks(type, mpEmail, mpKey) {
   axios.get('https://www.mountainproject.com/data/get-ticks?'+type+'='+mpEmail+'&key='+mpKey)
   .then(function (response) {
+    if(document.getElementById("remember-me").checked == true) {
+      localStorage.setItem('logbook-email', mpEmail);
+      localStorage.setItem('logbook-key', mpKey);
+    }
     ticks = response.data.ticks;
     const routes = ticks.map(e => e.routeId).join(',');
     document.getElementById("mp-key").value = '';
     getRoutes(routes, mpKey);
   })
   .catch(function (error) {
+    //TODO return 403 (etc?) back to the UI
     console.log(error);
   });
 }
@@ -227,13 +232,30 @@ const simpleRating = {
 
 const ratingOrder = ["5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b"];
 
-//TODO if rememberMe use localstorage instead
-axios.get('/assets/json/ticks.json')
-.then(function (response) {
-  createGraph(response.data);
-})
-.catch(function (error) {
-  console.log(error);
+if(localStorage.getItem('logbook-remember') === "true") {
+  document.getElementById("remember-me").checked = true;
+}
+
+if(localStorage.getItem("logbook-key") === null) {
+  axios.get('/assets/json/ticks.json')
+    .then(function (response) {
+      createGraph(response.data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+} else {
+  getTicks('email', localStorage.getItem("logbook-email"), localStorage.getItem("logbook-key"));
+}
+
+$( "#remember-me" ).click(function() {
+  if(this.checked === true) {
+    localStorage.setItem('logbook-remember', true);
+  } else {
+    localStorage.setItem('logbook-remember', false);
+    localStorage.removeItem('logbook-email');
+    localStorage.removeItem('logbook-key');
+  }
 });
 
 $( "#mp-submit" ).click(function() {
@@ -241,15 +263,12 @@ $( "#mp-submit" ).click(function() {
   const key = document.getElementById("mp-key").value;
 
   if(email && key) {
-    var type = (email.includes('@')) ? 'email' : 'id' ;
-    //TODO if rememberMe, store in localStorage
+    var type = (email.includes('@')) ? 'email' : 'id' ; //TODO remove the need for this, email only
     getTicks(type, email, key);
   } else {
     alert("There was an error");
   }
 });
-
-//TODO if rememberMe is unchecked, clear localStorage
 
 $("#issues-toggle").click(function() {
   if($("#issues").hasClass('open')) {
