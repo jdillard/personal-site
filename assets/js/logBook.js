@@ -1,24 +1,28 @@
 import * as d3 from 'd3';
 
-function getTicks(type, mpEmail, mpKey) {
-  axios.get('https://www.mountainproject.com/data/get-ticks?'+type+'='+mpEmail+'&key='+mpKey)
-  .then(function (response) {
+function getTicks(email, key) {
+  Promise.all([
+    axios.get(`https://www.mountainproject.com/data/get-ticks?email=${email}&key=${key}`),
+    axios.get(`https://www.mountainproject.com/data/get-user?email=${email}&key=${key}`)
+  ]).then(([ticksResponse, userResponse]) => {
     if(document.getElementById("remember-me").checked == true) {
-      localStorage.setItem('logbook-email', mpEmail);
-      localStorage.setItem('logbook-key', mpKey);
+      localStorage.setItem('logbook-email', email);
+      localStorage.setItem('logbook-key', key);
     }
-    ticks = response.data.ticks;
-    const routes = ticks.map(e => e.routeId).join(',');
     document.getElementById("mp-key").value = '';
-    getRoutes(routes, mpKey);
-  })
-  .catch(function (error) {
+    ticks = ticksResponse.data.ticks; //TODO make this unnecessary by passing ticks to getRoutes?
+    getRoutes(
+      userResponse.data.name,
+      ticksResponse.data.ticks.map(e => e.routeId).join(','),
+      key
+    );
+  }, (error) => {
     //TODO return 403 (etc?) back to the UI
-    console.log(error);
+    console.log(error.message)
   });
 }
 
-function getRoutes(mpRoutes, mpKey) {
+function getRoutes(owner, mpRoutes, mpKey) {
   axios.get('https://www.mountainproject.com/data/get-routes?routeIds='+mpRoutes+'&key='+mpKey)
   .then(function (response) {
     routes = response.data.routes.map(i => {
@@ -32,15 +36,14 @@ function getRoutes(mpRoutes, mpKey) {
     for (var key in routeTypes) {
       if (routeTypes.hasOwnProperty(key) && key == "Sport") {
         let routeRatings = groupBy(routeTypes[key], 'rating');
-        const exampleData = [];
-        //console.log(routeRatings);
+        const formattedTicks = [];
         for(var key in routeRatings) {
           if(routeRatings.hasOwnProperty(key)) {
-            exampleData.push({rating: simpleRating[key], sport: routeRatings[key].length});
+            formattedTicks.push({rating: simpleRating[key], sport: routeRatings[key].length});
           }
         }
-        exampleData.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating))
-        createGraph(exampleData);
+        formattedTicks.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating));
+        createGraph({"owner": owner, "ticks": formattedTicks});
       }
     }
   })
@@ -77,7 +80,9 @@ const groupBy = function(xs, key) {
   }, {});
 };
 
-function createGraph(exampleData) {
+function createGraph(logData) {
+  console.log(logData);
+  document.getElementById("log-owner").innerHTML = logData.owner + "'s Ticks";
   // clear previous chart
   document.getElementById("log-chart").innerHTML = "";
 
@@ -101,7 +106,7 @@ function createGraph(exampleData) {
       pointB = w - regionWidth;
 
   // GET THE TOTAL POPULATION SIZE AND CREATE A FUNCTION FOR RETURNING THE PERCENTAGE
-  var totalPopulation = d3.sum(exampleData, function(d) { return d.sport; });
+  var totalPopulation = d3.sum(logData.ticks, function(d) { return d.sport; });
 
   var svg = d3.select("#log-chart")
     .attr('width', margin.left + w + margin.right)
@@ -111,7 +116,7 @@ function createGraph(exampleData) {
       .attr('transform', translation(margin.left, margin.top));
 
   var maxValue = Math.max(
-    d3.max(exampleData, function(d) { return d.sport; })
+    d3.max(logData.ticks, function(d) { return d.sport; })
   );
 
   // SET UP SCALES
@@ -132,7 +137,7 @@ function createGraph(exampleData) {
     .range([0, regionWidth]);
 
   var yScale = d3.scaleBand()
-    .domain(exampleData.map(function(d) { return d.rating; }))
+    .domain(logData.ticks.map(function(d) { return d.rating; }))
     .range([h,0], 0.1);
 
   // SET UP AXES
@@ -183,7 +188,7 @@ function createGraph(exampleData) {
 
   // DRAW BARS
   leftBarGroup.selectAll('.bar.left')
-    .data(exampleData)
+    .data(logData.ticks)
     .enter().append('rect')
       .attr('class', 'bar left')
       .attr('x', 0)
@@ -192,7 +197,7 @@ function createGraph(exampleData) {
       .attr('height', yScale.bandwidth());
 
   rightBarGroup.selectAll('.bar.right')
-    .data(exampleData)
+    .data(logData.ticks)
     .enter().append('rect')
       .attr('class', 'bar right')
       .attr('x', 0)
@@ -245,7 +250,7 @@ if(localStorage.getItem("logbook-key") === null) {
       console.log(error);
     });
 } else {
-  getTicks('email', localStorage.getItem("logbook-email"), localStorage.getItem("logbook-key"));
+  getTicks(localStorage.getItem("logbook-email"), localStorage.getItem("logbook-key"));
 }
 
 $( "#remember-me" ).click(function() {
@@ -263,8 +268,7 @@ $( "#mp-submit" ).click(function() {
   const key = document.getElementById("mp-key").value;
 
   if(email && key) {
-    var type = (email.includes('@')) ? 'email' : 'id' ; //TODO remove the need for this, email only
-    getTicks(type, email, key);
+    getTicks(email, key);
   } else {
     alert("There was an error");
   }

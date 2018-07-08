@@ -1,22 +1,25 @@
-[
-  {
-    "rating": "5.9",
-    "sport": 10
-  },
-  {
-    "rating": "5.10a",
-    "sport": 7
-  },
-  {
-    "rating": "5.10b",
-    "sport": 4
-  },
-  {
-    "rating": "5.10c",
-    "sport": 2
-  },
-  {
-    "rating": "5.10d",
-    "sport": 1
-  }
-]
+{
+  "owner": "Joe Dirtbag",
+  "ticks": [
+    {
+      "rating": "5.9",
+      "sport": 10
+    },
+    {
+      "rating": "5.10a",
+      "sport": 7
+    },
+    {
+      "rating": "5.10b",
+      "sport": 4
+    },
+    {
+      "rating": "5.10c",
+      "sport": 2
+    },
+    {
+      "rating": "5.10d",
+      "sport": 1
+    }
+  ]
+}
