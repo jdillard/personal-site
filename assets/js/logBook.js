@@ -10,10 +10,9 @@ function getTicks(email, key) {
       localStorage.setItem('logbook-key', key);
     }
     document.getElementById("mp-key").value = '';
-    ticks = ticksResponse.data.ticks; //TODO make this unnecessary by passing ticks to getRoutes?
     getRoutes(
       userResponse.data.name,
-      ticksResponse.data.ticks.map(e => e.routeId).join(','),
+      ticksResponse.data.ticks,
       key
     );
   }, (error) => {
@@ -22,10 +21,10 @@ function getTicks(email, key) {
   });
 }
 
-function getRoutes(owner, mpRoutes, mpKey) {
-  axios.get('https://www.mountainproject.com/data/get-routes?routeIds='+mpRoutes+'&key='+mpKey)
+function getRoutes(owner, ticks, key) {
+  axios.get(`https://www.mountainproject.com/data/get-routes?routeIds=${ticks.map(e => e.routeId).join(',')}&key=${key}`)
   .then(function (response) {
-    routes = response.data.routes.map(i => {
+    const routes = response.data.routes.map(i => {
       return {
         'type': i.type,
         'rating': simpleRating[i.rating],
@@ -81,9 +80,7 @@ const groupBy = function(xs, key) {
 };
 
 function createGraph(logData) {
-  console.log(logData);
   document.getElementById("log-owner").innerHTML = logData.owner + "'s Ticks";
-  // clear previous chart
   document.getElementById("log-chart").innerHTML = "";
 
   var w = 500,
@@ -210,9 +207,6 @@ function createGraph(logData) {
   }
 
 }
-
-let ticks = [];
-let routes = [];
 
 const simpleRating = {
   "5.7": "5.7",
