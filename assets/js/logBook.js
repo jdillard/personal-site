@@ -17,7 +17,7 @@ function getTicks(email, key) {
     );
   }, (error) => {
     //TODO return 403 (etc?) back to the UI
-    console.log(error.message)
+    console.log(error.message);
   });
 }
 
