@@ -89,7 +89,7 @@ function summarizeAction(type, words) {
     case "CreateEvent":
       return "Created a " + words + " at";
     case "PullRequestReviewCommentEvent":
-      return "Reviewed a " + words + " on";
+      return (words > 1) ? "Left " + words + " pull request reviews on" : "Left a pull request review on";
     case "DeleteEvent":
       return "Deleted a " + words + " on";
     case "CommitCommentEvent":
@@ -186,8 +186,8 @@ function activity(activities = []) {
           b.link = "https://github.com/" + b.repo.name;
           break;
         case "PullRequestReviewCommentEvent":
-          b.words = "pull request";
-          b.link = "https://github.com/" + b.repo.name;
+          b.words = 1;
+          b.link = "https://github.com/" + b.repo.name + "/pulls";
           break;
         case "DeleteEvent":
           b.words = b.payload.ref_type;
@@ -212,23 +212,28 @@ function activity(activities = []) {
 
     // reduce each day to collapse multiple of same type
     for (let d in activity_list) {
-      let dupe_count = 0;
+      let dupe_count = 1;
 
       if(activity_list[d].data.length > 1) {
         activity_list[d].data = activity_list[d].data.reduce((a, b, i) => {
           if(i === 1) {
-            if(a.type === "PushEvent") { dupe_count += a.words; }
+            if(a.type === "PushEvent") { dupe_count = a.words; }
+            if(a.type === "PullRequestReviewCommentEvent") { dupe_count = a.words; }
             a.action = summarizeAction(a.type, a.words);
             a = [a];
-            console.log("b",i,b);
           }
 
           if(a[a.length-1].type === b.type && a[a.length-1].repo.name === b.repo.name && b.type === "PushEvent") {
             dupe_count += b.words;
             a[a.length-1].action = summarizeAction(b.type, dupe_count);
             return a;
+          }
+          else if(a[a.length-1].type === b.type && a[a.length-1].repo.name === b.repo.name && b.type === "PullRequestReviewCommentEvent") {
+            dupe_count += b.words;
+            a[a.length-1].action = summarizeAction(b.type, dupe_count);
+            return a;
           } else {
-            dupe_count = 0;
+            dupe_count = 1;
             b.action = summarizeAction(b.type, b.words);
             a.push(b);
             return a;
