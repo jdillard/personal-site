@@ -170,6 +170,8 @@ function iconToSVG(time, icon) {
     case "wind_skc":
       return time + "_clear";
     case "fog":
+    case "haze":
+    case "smoke":
       return time + "_fog";
     case "few":
     case "wind_few":
