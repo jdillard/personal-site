@@ -45,7 +45,7 @@ We were rained on pretty consistently the entire first night and the Half Dome 2
 
 The hike started off flat, which was a nice reprieve from the previous day's hike, with great views often cut short by the rolling fog. As we started climbing in elevation the light rain transitioned to a slushy sleet and then to snow.
 
-![Devils Pass](/assets/images/posts/devils-pass.jpg "Devil's Pass"){: .shadow-5} <small><i>Rain turned to sleet then snow as we hiked through Devil's Pass</i></small>
+![Devils Pass](/assets/images/posts/devils-pass.jpg "Devil's Pass"){: .shadow-5.oversized} <small><i>Rain turned to sleet then snow as we hiked through Devil's Pass</i></small>
 
 The shelter was a welcome sight upon arrival and we immediately set out on gathering fire supplies before everything became drenched. We ended up spending about 7 hours hanging out and drying everything we could, with a few fire casualties along the way.
 
@@ -61,7 +61,7 @@ One hunter noted that he had been coming out to that shelter for over a decade a
 {: {{site.data.css.info-box}} }
 > **Side Note:** If you are handy and decide to stop at the shelter, maybe replace a shingle or two with the hammer, nails, and shingles left in the corner.
 
-![Devils Park Shelter](/assets/images/posts/devils-park-shelter.jpg "Devil's Park Shelter"){: .shadow-5} <small><i>Devil's Park Shelter where we were able to dry out most of our things</i></small>
+![Devils Park Shelter](/assets/images/posts/devils-park-shelter.jpg "Devil's Park Shelter"){: .shadow-5.oversized} <small><i>Devil's Park Shelter where we were able to dry out most of our things</i></small>
 
 ## Day 3 - Crater Mountain
 
@@ -69,13 +69,13 @@ In the morning we decided it would be best to start heading back. It was a tough
 
 When we got to camp we quickly set up our tents to claim our little corner then ate lunch and started on our day hike. We arrived at Crater Lake, which was an obvious milestone, before taking the short summit trail to the right. The other trail to the left is known to be more treacherous as it has a [higher summit](http://www.summitpost.org/crater-mountain/150949) and our conditions were less than ideal to begin with.
 
-![Crater Lake](/assets/images/posts/crater-lake.jpg "Crater Lake"){: .shadow-5} <small><i>Coming up on Crater Lake on the way to summit Crater Mountain</i></small>
+![Crater Lake](/assets/images/posts/crater-lake.jpg "Crater Lake"){: .shadow-5.oversized} <small><i>Coming up on Crater Lake on the way to summit Crater Mountain</i></small>
 
 The hike up to the lower summit had more downed trees over the path, but without packs it was trivial to cross them. The weather cleared a little and we had countless views that seemed to get more amazing every few steps you took. It started to gather snow near the top which made the last little stretch interesting. Having hiking poles made a world of a difference and I can't imagine doing the hike without them.
 
 The view from the lower summit is incredible, with a view of Jack Mountain over a glacial lake. The upper summit is said to be in the top 5 views for the North Cascade region by the out-of-print classic, *Routes and Rocks*.
 
-![Crater Mountain](/assets/images/posts/crater-mountain.jpg "Crater Mountain"){: .shadow-5} <small><i>The view of Jack Mountain from the lower summit of Crater Mountain</i></small>
+![Crater Mountain](/assets/images/posts/crater-mountain.jpg "Crater Mountain"){: .shadow-5.oversized} <small><i>The view of Jack Mountain from the lower summit of Crater Mountain</i></small>
 
 We hung out at the top a little bit, then after taking our fill of pictures, headed back down to camp and start supper. When we got back to camp there was an older gentleman there that said he had just hiked up the steep ascent, didn't want to go an further, and wanted to know if he could share the site with us, which of course wasn't a problem.
 

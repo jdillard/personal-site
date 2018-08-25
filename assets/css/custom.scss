@@ -10,7 +10,6 @@
     box-shadow:4px 4px 8px 0 rgba(0,0,0,.05);
 }
 
-
 .hover-shadow-5:hover {
     box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
     transition: box-shadow 0.10s ease-out;
@@ -44,15 +43,22 @@
 .post-content code {
     padding: 1px 3px;
     font-size: 0.85em;
-    border: #E3EDF3 1px solid;
+    border: #CCCCCC 1px solid;
+    background-color: #F4F4F4;
     border-radius: 2px;
 }
 
 .post-content img {
+    margin-top: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.post-content img.oversized {
     width: 126%;
     max-width: none;
     margin: 0 -13%;
-    margin-top: 5px;
+    display: inline;
 }
 
 .crag-weather {
