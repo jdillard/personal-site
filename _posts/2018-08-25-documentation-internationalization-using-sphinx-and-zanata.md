@@ -12,7 +12,7 @@ categories:
 One of the great things about [Sphinx](http://www.sphinx-doc.org/en/stable/), is
 that it natively provides [internationalization (i18n)](http://www.sphinx-doc.org/en/master/intl.html)
 mechanisms to facilitate translation using the common `gettext` method. The
-gettext files can be run translated a number of different ways, but I have had
+gettext files can be translated a number of different ways, but I have had
 great results using [Zanata](http://zanata.org/), a separate open source project
 that facilitates community driven translation. Reguardless of how you translate
 the files, the process should end up being pretty similar.
