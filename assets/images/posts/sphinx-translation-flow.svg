@@ -1,0 +1,73 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="641px" height="401px" viewBox="0 -10 641 421">
+    <g transform="translate(0.5,0.5)">
+        <path d="M 90 150 L 180 150 L 210 180 L 210 220 L 90 220 L 90 150 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 180 150 L 180 180 L 210 180" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 259 330 L 361 330 L 391 360 L 391 400 L 259 400 L 259 330 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 361 330 L 361 360 L 391 360" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 280 18 C 280 -6 360 -6 360 18 L 360 72 C 360 96 280 96 280 72 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 280 18 C 280 36 360 36 360 18" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 455 158 C 455 134 530 134 530 158 L 530 212 C 530 236 455 236 455 212 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 455 158 C 455 176 530 176 530 158" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 170 150 L 274.61 84.38" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 279.05 81.59 L 274.98 88.28 L 274.61 84.38 L 271.26 82.35 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 211 222 L 254.67 250.52" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 259.06 253.39 L 251.29 252.49 L 254.67 250.52 L 255.12 246.63 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 456 216 L 385.7 251.15" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 381 253.5 L 385.7 247.24 L 385.7 251.15 L 388.83 253.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 348 86 L 444.85 156.26" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 449.1 159.34 L 441.37 158.07 L 444.85 156.26 L 445.48 152.4 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="605" cy="88" rx="7.5" ry="7.5" fill="#ffffff" stroke="#000000" pointer-events="none"/>
+        <path d="M 605 95 L 605 120 M 605 100 L 590 100 M 605 100 L 620 100 M 605 120 L 590 140 M 605 120 L 620 140" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <g transform="translate(569.5,147.5)">
+            <text x="36" y="17" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">Translator</text>
+        </g>
+        <path d="M 580 120 L 534.3 150.47" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 529.93 153.38 L 533.81 146.58 L 534.3 150.47 L 537.7 152.41 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <g transform="translate(478.5,186.5)">
+            <text x="11" y="17" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">.po</text>
+        </g>
+        <g transform="translate(306.5,46.5)">
+            <text x="13" y="17" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">.pot</text>
+        </g>
+        <g transform="translate(277.5,352.5)">
+            <text x="0" y="0" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">
+                <tspan x="38" dy="12">Translated</tspan>
+                <tspan x="38" dy="1.2em">build</tspan>
+            </text>
+        </g>
+        <g transform="translate(128.5,176.5)">
+            <text x="11" y="17" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">.rst</text>
+        </g>
+        <g transform="translate(395.5,94.5)">
+            <text x="25" y="17" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">
+                zanata-cli
+            </text>
+        </g>
+        <g transform="translate(405.5,244.5)">
+            <text x="25" y="17" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">
+                zanata-cli
+            </text>
+        </g>
+        <path d="M 320 280 L 320 313.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 320 318.88 L 316.5 311.88 L 320 313.63 L 323.5 311.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/>
+        <g transform="translate(271.5,235.5)">
+            <text x="0" y="0" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">
+                <tspan x="48" dy="12">sphinx-build</tspan>
+                <tspan x="48" dy="1.2em">-D language=</tspan>
+            </text>
+        </g>
+        <g transform="translate(136.5,74.5)">
+            <text x="0" y="0" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">
+                <tspan x="43" dy="12">sphinx-build</tspan>
+                <tspan x="43" dy="1.2em">gettext</tspan>
+            </text>
+        </g>
+        <path d="M 0 185 L 90 185" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/>
+        <g transform="translate(15.5,191.5)">
+            <text x="0" y="0" fill="#000000" text-anchor="middle" font-size="16px" font-family="Helvetica">
+                <tspan x="25" dy="12">sphinx</tspan>
+                <tspan x="25" dy="1.2em">project</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
