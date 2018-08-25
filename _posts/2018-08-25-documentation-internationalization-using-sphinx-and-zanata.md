@@ -69,7 +69,7 @@ repo's folder structure. In order to keep the translation files separate from
 source, we'll use:
 
 ```python
-locale_dirs = ['../locales'] # relative to source directory
+locale_dirs = ['../../locales'] # relative to source directory
 ```
 
 Next, configure authentication for `zanata-cli` by creating [zanata.ini](http://docs.zanata.org/en/release/client/configuration/)
