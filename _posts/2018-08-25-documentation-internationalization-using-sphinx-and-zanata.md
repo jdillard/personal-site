@@ -115,7 +115,7 @@ After the translators have done sufficient work on certain languages, pull the
 example pulling the German translations:
 
 ```
-zanata-cli pull -l de-DE  --disable-ssl-cert
+zanata-cli pull -l de-DE --disable-ssl-cert
 ```
 
 {: {{site.data.css.tip-box}} }
@@ -144,7 +144,7 @@ zanata-cli -B push --url https://translate.zanata.org/ --username YOUR_USERNAME 
 
 # pull latest .po files from Zanata for each translated language
 for locale in de-DE es; do
-   zanata-cli -B pull --url https://translate.zanata.org/ --username YOUR_USERNAME --key YOUR_KEY -l $locale  --disable-ssl-cert
+   zanata-cli -B pull --url https://translate.zanata.org/ --username YOUR_USERNAME --key YOUR_KEY -l $locale --disable-ssl-cert
 done
 
 # build translated docs for each language
