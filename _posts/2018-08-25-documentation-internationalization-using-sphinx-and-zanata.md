@@ -149,7 +149,7 @@ done
 
 # build translated docs for each language
 for lang in de_DE es; do
-   sphinx-build -b html -D language=$lang ./source/ ./build/$lang/
+   sphinx-build -b html -D language=$lang ./source/ ./build/$lang/latest
 done
 ```
 
