@@ -11,20 +11,19 @@ categories:
 
 One of the great things about [Sphinx](http://www.sphinx-doc.org/en/stable/), is
 that it natively provides [internationalization (i18n)](http://www.sphinx-doc.org/en/master/intl.html)
-mechanisms to facilitate translation using the common `gettext` method. The
-gettext files can be translated a number of different ways, but I have had
-great results using [Zanata](http://zanata.org/), a separate open source project
-that facilitates community driven translation. Reguardless of how you translate
-the files, the process should end up being pretty similar.
-
-The process of how sphinx and Zanata work together is summed up the chart below:
+mechanisms to facilitate translation using the common [gettext](https://en.wikipedia.org/wiki/Gettext)
+method. The gettext files can be translated a number of different ways, but I have
+had great results using [Zanata](http://zanata.org/), a separate open source project
+that facilitates community driven translation. Reguardless of how the generated files
+are translated though, the process should end up being pretty similar:
 
 ![Sphinx translation flow](/assets/images/posts/sphinx-translation-flow.svg) <small><i>The sphinx tranlation process using `gettext` and `zanata-cli`.</i></small>
 
 ## Preparation
 
-A fairly common convention is to create a seperate repo where the internationalization
-process takes place. This usually means [creating a submodule](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/)
+A fairly common convention is to create a seperate git repository where the
+internationalization process takes place. This usually means [creating a
+submodule](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/)
 for the main documentation source repo, the **docs** directory in this case, or
 tying to the original sources repo using another method.
 
@@ -38,14 +37,14 @@ folders are for.
 ├── zanata.xml
 ├── templates
 ├── locales
-│   └── LC_MESSAGES
-│       ├── de_DE
-│       └── es
+│    └── LC_MESSAGES
+│         ├── de_DE
+│         └── es
 └── docs (submodule or similar)
-    └── source
-        ├── conf.py
-        ├── _static
-        └── index.rst
+     └── source
+          ├── conf.py
+          ├── _static
+          └── index.rst
 ```
 
 To prepare the Zanata side of things, you will need to [sign up](https://translate.zanata.org/)
@@ -56,7 +55,7 @@ give access to translators and translation reviewers.
 {: {{site.data.css.tip-box}} }
 > **Tip:** I use `master` or `latest` for my project version, but any convention
 > works. It's also possible to have multiple versions to match the different
-> versions of your documentation.
+> versions of your docs.
 
 Finally, in order to easily sync translations with Zanata using the command
 line, you will need to install the [Zanata CLI client](http://docs.zanata.org/en/release/client/).
@@ -112,7 +111,7 @@ zanata-cli push --disable-ssl-cert
 
 After the translators have done sufficient work on certain languages, pull the
 **.po** files for those languages from Zanta by using the language flag. For
-example pulling the German translations:
+example, pulling the German translations:
 
 ```
 zanata-cli pull -l de-DE --disable-ssl-cert
@@ -131,7 +130,7 @@ sphinx-build -b html -D language=de_DE ./source/ ./build/de_DE/latest/
 
 To simplify this process you can combine those steps in a shell script,
 **build.sh**. You can even run `zanata-cli` in non-interactive mode so that it
-is more portable for your CI/CD pipeline:
+is more portable for your [CI/CD pipeline](/blog/continuous-deployment-of-a-sphinx-website-with-using-jenkins-and-docker.html):
 
 ```bash
 #!/bin/bash
@@ -160,6 +159,6 @@ extension to auto-generate a [multi-lingual sitemap](https://en.wikipedia.org/wi
 
 {: {{site.data.css.info-box}} }
 > **Note:** Shout out to [Frank Kloeker](https://github.com/eumel8) for helping
-me get through the first time with [i18n docs](http://docs-i18n.readthedocs.io/en/latest/sphinx.html).
+me get through this the first time with [i18n docs](http://docs-i18n.readthedocs.io/en/latest/sphinx.html).
 
 {% include feedback.html %}
