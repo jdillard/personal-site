@@ -14,8 +14,10 @@ that it natively provides [internationalization (i18n)](http://www.sphinx-doc.or
 mechanisms to facilitate translation using the common [gettext](https://en.wikipedia.org/wiki/Gettext)
 method. The gettext files can be translated a number of different ways, but I have
 had great results using [Zanata](http://zanata.org/), a separate open source project
-that facilitates community driven translation. Reguardless of how the generated files
-are translated though, the process should end up being pretty similar:
+that facilitates community driven translation.
+
+Reguardless of how the generated files are translated though, the process should end
+up being pretty similar:
 
 ![Sphinx translation flow](/assets/images/posts/sphinx-translation-flow.svg) <small><i>The sphinx tranlation process using `gettext` and `zanata-cli`.</i></small>
 
@@ -59,7 +61,7 @@ give access to translators and translation reviewers.
 > versions of your docs.
 
 Finally, in order to easily sync translations with Zanata using the command
-line, you will need to install the [Zanata CLI client](http://docs.zanata.org/en/release/client/).
+line, install the [Zanata CLI client](http://docs.zanata.org/en/release/client/).
 
 ## Configuration
 
@@ -104,7 +106,7 @@ gettext:
 	@echo "Build finished. The message catalogs are in ../templates."
 ```
 
-Next is to push the **.pot** files to Zanta using:
+Next is to push the **.pot** files to Zanta:
 
 ```
 zanata-cli push --disable-ssl-cert
