@@ -34,6 +34,7 @@ folders are for.
 ```
 .
 ├── build.sh
+├── Makefile
 ├── zanata.xml
 ├── templates
 ├── locales
@@ -94,7 +95,7 @@ An example **zanata.xml**, once configured, would look something like:
 ## Building the docs
 
 As shown in the initial diagram, the first step is to generate the **.pot** files
-by invoking the gettext builder using `make gettext`:
+by invoking the gettext builder using `make gettext` in the **Makefile**:
 
 ```makefile
 gettext:
