@@ -101,7 +101,7 @@ by invoking the gettext builder using `make gettext` in the **Makefile**:
 
 ```makefile
 gettext:
-	$(SPHINXBUILD) -b gettext -t i18n ./source/ ./templates/
+	$(SPHINXBUILD) -b gettext -t i18n ./docs/source/ ./templates/
 	@echo
 	@echo "Build finished. The message catalogs are in ../templates."
 ```
@@ -128,7 +128,7 @@ that language.
 Now it is possible to build with the latest translations for a language:
 
 ```
-sphinx-build -b html -D language=de_DE ./source/ ./build/de_DE/latest/
+sphinx-build -b html -D language=de_DE ./docs/source/ ./build/de_DE/latest/
 ```
 
 To simplify this process you can combine those steps in a shell script,
@@ -139,7 +139,7 @@ is more portable for your [CI/CD pipeline](/blog/continuous-deployment-of-a-sphi
 #!/bin/bash
 
 # build .pot files
-sphinx-build -b gettext -t i18n ./source/ ./templates/
+sphinx-build -b gettext -t i18n ./docs/source/ ./templates/
 
 # push .pot files to Zanata
 zanata-cli -B push --url https://translate.zanata.org/ --username YOUR_USERNAME --key YOUR_KEY --disable-ssl-cert
@@ -151,7 +151,7 @@ done
 
 # build translated docs for each language
 for lang in de_DE es; do
-   sphinx-build -b html -D language=$lang ./source/ ./build/$lang/latest
+   sphinx-build -b html -D language=$lang ./docs/source/ ./build/$lang/latest
 done
 ```
 
