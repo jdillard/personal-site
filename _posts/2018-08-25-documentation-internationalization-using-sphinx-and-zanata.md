@@ -27,7 +27,7 @@ A fairly common convention is to create a seperate git repository where the
 internationalization process takes place. This usually means [creating a
 submodule](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/)
 for the main documentation source repo, the **docs** directory in this case, or
-tying to the original sources repo using another method.
+tying in the original sources repo using another method.
 
 For the purposes of the article, the structure of the internationalization repo
 is shown below. The configuration section will cover what each of the files and
@@ -51,14 +51,15 @@ folders are for.
 ```
 
 To prepare the Zanata side of things, you will need to [sign up](https://translate.zanata.org/)
-for an account on their site, [create a new project](http://docs.zanata.org/en/release/user-guide/projects/create-project/),
-and a project version. The project version will be the area of Zanata that you
-give access to translators and translation reviewers.
+for an account on their site, create a [new project](http://docs.zanata.org/en/release/user-guide/projects/create-project/),
+and project version. Most use `master` or `latest` for the main project version, but any
+convention works. It's also possible to have multiple versions to match the
+different versions of your docs.
 
-{: {{site.data.css.tip-box}} }
-> **Tip:** I use `master` or `latest` for my project version, but any convention
-> works. It's also possible to have multiple versions to match the different
-> versions of your docs.
+{: {{site.data.css.info-box}} }
+> **Note:** I won't cover it in this article, but you can manage the available
+> languages for translation, translations, translators, reviewers, and much more
+> for each project through the Zanata web interface.
 
 Finally, in order to easily sync translations with Zanata using the command
 line, install the [Zanata CLI client](http://docs.zanata.org/en/release/client/).
@@ -113,7 +114,7 @@ zanata-cli push --disable-ssl-cert
 ```
 
 After the translators have done sufficient work on certain languages, pull the
-**.po** files for those languages from Zanta by using the language flag. For
+**.po** files for those languages from Zanata by using the language flag. For
 example, pulling the German translations:
 
 ```
@@ -133,7 +134,7 @@ sphinx-build -b html -D language=de_DE ./docs/source/ ./build/de_DE/latest/
 
 To simplify this process you can combine those steps in a shell script,
 **build.sh**. You can even run `zanata-cli` in non-interactive mode so that it
-is more portable for your [CI/CD pipeline](/blog/continuous-deployment-of-a-sphinx-website-with-using-jenkins-and-docker.html):
+is more portable for your [continuous deployment](/blog/continuous-deployment-of-a-sphinx-website-with-using-jenkins-and-docker.html) pipeline:
 
 ```bash
 #!/bin/bash
