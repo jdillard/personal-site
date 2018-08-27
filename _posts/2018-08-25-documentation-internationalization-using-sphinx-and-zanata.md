@@ -158,7 +158,7 @@ done
 
 Optionally, in order to keep search engines from choosing a
 semi-translated language for English search results, a fairly common problem which may puzzle
-your users, you can use the [sphinx-sitemap](https://github.com/jdillard/sphinx-sitemap)
+your users, you can use my [sphinx-sitemap](https://github.com/jdillard/sphinx-sitemap)
 extension to auto-generate a [multi-lingual sitemap](https://en.wikipedia.org/wiki/Sitemaps#Multilingual_and_multinational_Sitemaps) for your documentation.
 
 {: {{site.data.css.info-box}} }
