@@ -110,7 +110,7 @@ function articles(articles) {
       return a;
   }, []);
 
-  archive.innerHTML = template_articles(articles.data);
+  archive.innerHTML = template_articles(articles.data.slice(0,5));
 }
 
 function projects(projects = []) {
