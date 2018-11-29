@@ -5,7 +5,6 @@ date: 2016-09-25 00:00:00
 published: true
 categories:
   - backpacking
-  - hiking
   - trip reports
 cover: devils-dome
 ---
