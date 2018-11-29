@@ -141,3 +141,5 @@ case, to see if any alerts are triggered.
 alert is working, then tweak it to match the types of traffic flows that are
 unique to your website.
 {: {{site.data.css.tip-box}} }
+
+{% include feedback.html %}
