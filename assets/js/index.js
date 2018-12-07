@@ -94,6 +94,8 @@ function summarizeAction(type, words) {
       return "Deleted a " + words + " on";
     case "CommitCommentEvent":
       return "Made a " + words + " on a commit in";
+    case "MemberEvent":
+      return words + " a collaborator to";
   }
 }
 
@@ -197,6 +199,9 @@ function activity(activities = []) {
           b.words = "comment";
           b.link = "https://github.com/" + b.repo.name;
           break;
+        case "MemberEvent":
+          b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1);
+          b.link = "https://github.com/" + b.repo.name;
       }
       if(b.created_at != prev_date) {
         let dates = [];
