@@ -54,22 +54,6 @@ module.exports = {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
         use: 'url-loader?limit=100000'
       },
-      /*
-      {
-        test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader!postcss-loader!sass-loader"
-        })
-      },
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
-        })
-      },
-      */
       {
         test: /\.hbs$/,
         loader: 'handlebars-loader',
