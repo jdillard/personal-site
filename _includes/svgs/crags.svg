@@ -1,0 +1,9 @@
+<!-- Mountains by Andrey Vasiliev from the Noun Project -->
+<svg role="img" aria-labelledby="crags-logo-svg" x="0px" y="0px" width="{{ include.width }}" height="{{ include.height }}" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <title id="crags-logo-svg">Crags Logo</title>
+    <polygon class="{{ include.class }}" fill="currentColor" points="54.729,20.812 40.095,46.572 33.265,35.881 13.84,64.846 3.583,64.846 3.583,69.396 91.394,69.396 91.394,64.846 82.905,64.846 "/>
+    <path class="{{ include.class }}" fill="currentColor" d="M70.193,30.657L70.193,30.657l8.649,13.793l1.208,1.927c5.396-3.385,7.033-10.528,3.649-15.925  c-3.384-5.395-10.526-7.032-15.924-3.65L70.193,30.657z"/>
+    <rect class="{{ include.class }}" fill="currentColor" x="88.066" y="19.765" transform="matrix(0.5359 0.8443 -0.8443 0.5359 62.264 -65.0949)" width="4.55" height="8.642"/>
+    <rect class="{{ include.class }}" fill="currentColor" x="91.049" y="38.102" transform="matrix(0.1883 -0.9821 0.9821 0.1883 34.3486 125.8763)" width="4.549" height="8.115"/>
+    <rect class="{{ include.class }}" fill="currentColor" x="74.644" y="11.019" transform="matrix(0.973 0.2306 -0.2306 0.973 5.536 -17.3365)" width="4.549" height="7.982"/>
+</svg>
