@@ -24,8 +24,11 @@ function getTicks(email, key) {
 function getRoutes(owner, ticks, key) {
   axios.get(`https://www.mountainproject.com/data/get-routes?routeIds=${ticks.map(e => e.routeId).join(',')}&key=${key}`)
   .then(function (response) {
+    //TODO store routes in localStorage
     const routes = response.data.routes.map(i => {
       if(!simpleRating[i.rating]) { console.log(i.rating); }
+      if(i.type === '') { console.log(i.name + " doesn't have a route type set."); }
+      if(getStyle(i.id, "routeId", ticks) === '') { console.log(i.name + " doesn't have a route style set."); }
       return {
         'type': i.type,
         'rating': simpleRating[i.rating],
@@ -33,19 +36,41 @@ function getRoutes(owner, ticks, key) {
       };
     });
     const routeTypes = groupBy(routes, 'type');
-    for (var key in routeTypes) {
-      if (routeTypes.hasOwnProperty(key) && key == "Sport") {
-        let routeRatings = groupBy(routeTypes[key], 'rating');
-        const formattedTicks = [];
-        for(var key in routeRatings) {
-          if(routeRatings.hasOwnProperty(key)) {
-            formattedTicks.push({rating: simpleRating[key], sport: routeRatings[key].length});
-          }
+    // Generate radio buttons based on the different route types
+    let index = 0;
+    let firstType = '';
+    document.getElementById("route-types").innerHTML = "";
+    for (let type in routeTypes) {
+      if (routeTypes.hasOwnProperty(type) && type != '') {
+        let checked = '';
+        if(index === 0) {
+          checked = "checked";
+          firstType = type;
         }
-        formattedTicks.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating));
-        createGraph({"owner": owner, "ticks": formattedTicks});
+        let temp_html = '<input type="radio" id="'+type+'" name="routeType" value="'+type+'" '+checked+'></input><label class="lh-copy ml1 mr3" for="'+type+'"><strong>'+type+'</strong> <small>('+routeTypes[type].length+')</small></label>';
+        //document.getElementById("route-types").insertAdjacentHTML("beforeend", temp_html);
+        index++;
       }
     }
+    const routeStyles = groupBy(routes, 'style', firstType);
+    document.getElementById("route-styles").innerHTML = "";
+    for (let style in routeStyles) {
+      if (routeStyles.hasOwnProperty(style) && style != '') {
+        let temp_html = '<input type="checkbox" id="'+style+'" name="routeStyles[]" value="'+style+'" checked></input><label class="lh-copy ml1 mr3" for="'+style+'"><strong>'+style+'</strong> <small>('+routeStyles[style].length+')</small></label>';
+        //document.getElementById("route-styles").insertAdjacentHTML("beforeend", temp_html);
+        index++;
+      }
+    }
+
+    const formattedTicks = [];
+    let routeRatings = groupBy(routeTypes[firstType], 'rating');
+    for(var key in routeRatings) {
+      if(routeRatings.hasOwnProperty(key)) {
+        formattedTicks.push({rating: simpleRating[key], sport: routeRatings[key].length});
+      }
+    }
+    formattedTicks.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating));
+    createGraph({"owner": owner, "ticks": formattedTicks});
   })
   .catch(function (error) {
     console.log(error);
@@ -73,9 +98,21 @@ function getIssues() {
   });
 }
 
-const groupBy = function(xs, key) {
+// If a route has multiple types, it is added to all of its types
+const groupBy = function(xs, key, firstType='') {
   return xs.reduce(function(rv, x) {
-    (rv[x[key]] = rv[x[key]] || []).push(x);
+    if(key === "type") {
+      const types = x.type.split(', ');
+      types.forEach(function (type) {
+        (rv[type] = rv[type] || []).push(x);
+      });
+    } else if(key === "style") {
+      if(x.type.includes(firstType)) {
+        (rv[x[key]] = rv[x[key]] || []).push(x);
+      }
+    } else {
+      (rv[x[key]] = rv[x[key]] || []).push(x);
+    }
     return rv;
   }, {});
 };
@@ -250,7 +287,7 @@ const simpleRating = {
   "V7+": "V7"
 };
 
-const ratingOrder = ["5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b"];
+const ratingOrder = ["V1", "V2", "V3", "V4", "V5", "V6", "V7", "5.6", "5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b"];
 
 if(localStorage.getItem('logbook-remember') === "true") {
   document.getElementById("remember-me").checked = true;
@@ -268,7 +305,7 @@ if(localStorage.getItem("logbook-key") === null) {
   getTicks(localStorage.getItem("logbook-email"), localStorage.getItem("logbook-key"));
 }
 
-$( "#remember-me" ).click(function() {
+$("#remember-me").click(function() {
   if(this.checked === true) {
     localStorage.setItem('logbook-remember', true);
   } else {
@@ -278,7 +315,7 @@ $( "#remember-me" ).click(function() {
   }
 });
 
-$( "#mp-submit" ).click(function() {
+$("#mp-submit").click(function() {
   const email = document.getElementById("mp-email").value;
   const key = document.getElementById("mp-key").value;
 
@@ -288,6 +325,19 @@ $( "#mp-submit" ).click(function() {
     alert("There was an error");
   }
 });
+
+$('#route-types').on('change', function() {
+ console.log($("input[name='routeType']:checked").val());
+ //TODO function call to kick of new filtered graph
+});
+
+$('#route-styles').on('change', function() {
+  let styles = [];
+  $.each($("input[name='routeStyles[]']:checked"), function() {
+    styles.push($(this).val());
+  });
+  //TODO function call to kick of new filtered graph
+ });
 
 $("#issues-toggle").click(function() {
   if($("#issues").hasClass('open')) {
