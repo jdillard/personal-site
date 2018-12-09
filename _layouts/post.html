@@ -28,9 +28,9 @@ js_includes:
             <div class="mt4 b f3-ns f4-ns f5 black-70">Recent Posts</div>
             <ul class="list pl0">
                 {% for post in site.related_posts limit:5 %}
-                <li class="pv3-ns pv2 f4-ns f5">
+                <li class="pv2 f5">
                     <a class="flex-ns items-center no-underline black-70 hover-light-red" href="{{ post.url }}">
-                        <time class="f5-ns f6 gray db nowrap mr3"> {{ post.date | date: "%b %d, %Y" }}</time>
+                        <time class="f6 gray db nowrap mr3"> {{ post.date | date: "%b %d, %Y" }}</time>
                         <span class="pv0-ns pv1 db">{{ post.title }}</span>
                     </a>
                 </li>
