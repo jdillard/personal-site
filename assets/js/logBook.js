@@ -25,6 +25,7 @@ function getRoutes(owner, ticks, key) {
   axios.get(`https://www.mountainproject.com/data/get-routes?routeIds=${ticks.map(e => e.routeId).join(',')}&key=${key}`)
   .then(function (response) {
     const routes = response.data.routes.map(i => {
+      if(!simpleRating[i.rating]) { console.log(i.rating); }
       return {
         'type': i.type,
         'rating': simpleRating[i.rating],
@@ -209,17 +210,22 @@ function createGraph(logData) {
 }
 
 const simpleRating = {
+  "5.6": "5.6",
   "5.7": "5.7",
   "5.8": "5.8",
   "5.8 R": "5.8",
   "5.8+": "5.8",
+  "5.8+ R": "5.8",
+  "5.9-": "5.9",
   "5.9": "5.9",
+  "5.9 R": "5.9",
   "5.9+": "5.9",
   "5.10-": "5.10a",
   "5.10": "5.10b",
   "5.10a": "5.10a",
   "5.10a/b": "5.10b",
   "5.10b": "5.10b",
+  "5.10b PG13": "5.10b",
   "5.10b R": "5.10b",
   "5.10c": "5.10c",
   "5.10b/c": "5.10c",
@@ -227,6 +233,21 @@ const simpleRating = {
   "5.10d": "5.10d",
   "5.11a": "5.11a",
   "5.11b": "5.11b",
+  "V1": "V1",
+  "V1+": "V1",
+  "V1+ PG13": "V1",
+  "V2": "V2",
+  "V2+": "V2",
+  "V3": "V3",
+  "V3+": "V3",
+  "V4": "V4",
+  "V4+": "V4",
+  "V5": "V5",
+  "V5+": "V5",
+  "V6": "V6",
+  "V6+": "V6",
+  "V7": "V7",
+  "V7+": "V7"
 };
 
 const ratingOrder = ["5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b"];
