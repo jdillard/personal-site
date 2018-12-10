@@ -1,30 +1,26 @@
 import * as d3 from 'd3';
 
-function getTicks(email, key) {
+function getTicks(email, mpKey, selectedType='', selectedStyles=[]) {
   Promise.all([
-    axios.get(`https://www.mountainproject.com/data/get-ticks?email=${email}&key=${key}`),
-    axios.get(`https://www.mountainproject.com/data/get-user?email=${email}&key=${key}`)
+    axios.get(`https://www.mountainproject.com/data/get-ticks?email=${email}&key=${mpKey}`),
+    axios.get(`https://www.mountainproject.com/data/get-user?email=${email}&key=${mpKey}`)
   ]).then(([ticksResponse, userResponse]) => {
     if(document.getElementById("remember-me").checked == true) {
       localStorage.setItem('logbook-email', email);
-      localStorage.setItem('logbook-key', key);
+      localStorage.setItem('logbook-key', mpKey);
     }
     document.getElementById("mp-key").value = '';
-    getRoutes(
-      userResponse.data.name,
-      ticksResponse.data.ticks,
-      key
-    );
+    document.getElementById("log-owner").innerHTML = userResponse.data.name + "'s Ticks";
+    getRoutes(ticksResponse.data.ticks,mpKey,selectedType, selectedStyles);
   }, (error) => {
     //TODO return 403 (etc?) back to the UI
     console.log(error.message);
   });
 }
 
-function getRoutes(owner, ticks, key) {
-  axios.get(`https://www.mountainproject.com/data/get-routes?routeIds=${ticks.map(e => e.routeId).join(',')}&key=${key}`)
+function getRoutes(ticks, mpKey, selectedType, selectedStyles) {
+  axios.get(`https://www.mountainproject.com/data/get-routes?routeIds=${ticks.map(e => e.routeId).join(',')}&key=${mpKey}`)
   .then(function (response) {
-    //TODO store routes in localStorage
     const routes = response.data.routes.map(i => {
       if(!simpleRating[i.rating]) { console.log(i.rating); }
       if(i.type === '') { console.log(i.name + " doesn't have a route type set."); }
@@ -38,39 +34,42 @@ function getRoutes(owner, ticks, key) {
     const routeTypes = groupBy(routes, 'type');
     // Generate radio buttons based on the different route types
     let index = 0;
-    let firstType = '';
     document.getElementById("route-types").innerHTML = "";
     for (let type in routeTypes) {
       if (routeTypes.hasOwnProperty(type) && type != '') {
         let checked = '';
-        if(index === 0) {
+        if(selectedType === '' && index === 0) {
           checked = "checked";
-          firstType = type;
+          selectedType = type;
         }
+        if(selectedType != '' && type === selectedType) { checked = "checked"; }
         let temp_html = '<input type="radio" id="'+type+'" name="routeType" value="'+type+'" '+checked+'></input><label class="lh-copy ml1 mr3" for="'+type+'"><strong>'+type+'</strong> <small>('+routeTypes[type].length+')</small></label>';
         //document.getElementById("route-types").insertAdjacentHTML("beforeend", temp_html);
         index++;
       }
     }
-    const routeStyles = groupBy(routes, 'style', firstType);
+    const routeStyles = groupBy(routes, 'style', selectedType);
     document.getElementById("route-styles").innerHTML = "";
     for (let style in routeStyles) {
       if (routeStyles.hasOwnProperty(style) && style != '') {
-        let temp_html = '<input type="checkbox" id="'+style+'" name="routeStyles[]" value="'+style+'" checked></input><label class="lh-copy ml1 mr3" for="'+style+'"><strong>'+style+'</strong> <small>('+routeStyles[style].length+')</small></label>';
+        let checked = '';
+        if(selectedStyles.length === 0) { checked = "checked"; }
+        if(selectedStyles.includes(style)) { checked = "checked"; }
+        let temp_html = '<input type="checkbox" id="'+style+'" name="routeStyles[]" value="'+style+'" '+checked+'></input><label class="lh-copy ml1 mr3" for="'+style+'"><strong>'+style+'</strong> <small>('+routeStyles[style].length+')</small></label>';
         //document.getElementById("route-styles").insertAdjacentHTML("beforeend", temp_html);
         index++;
       }
     }
 
     const formattedTicks = [];
-    let routeRatings = groupBy(routeTypes[firstType], 'rating');
+    let routeRatings = groupBy(routeTypes[selectedType], 'rating');
     for(var key in routeRatings) {
       if(routeRatings.hasOwnProperty(key)) {
         formattedTicks.push({rating: simpleRating[key], sport: routeRatings[key].length});
       }
     }
     formattedTicks.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating));
-    createGraph({"owner": owner, "ticks": formattedTicks});
+    createGraph({"ticks": formattedTicks});
   })
   .catch(function (error) {
     console.log(error);
@@ -118,11 +117,10 @@ const groupBy = function(xs, key, firstType='') {
 };
 
 function createGraph(logData) {
-  document.getElementById("log-owner").innerHTML = logData.owner + "'s Ticks";
   document.getElementById("log-chart").innerHTML = "";
 
   var w = 500,
-      h = 200; //TODO base height on number of grades
+      h = 200;
 
   // margin.middle is distance from center line to each y-axis
   var margin = {
@@ -317,26 +315,31 @@ $("#remember-me").click(function() {
 
 $("#mp-submit").click(function() {
   const email = document.getElementById("mp-email").value;
-  const key = document.getElementById("mp-key").value;
+  const mpKey = document.getElementById("mp-key").value;
 
-  if(email && key) {
-    getTicks(email, key);
+  if(email && mpKey) {
+    getTicks(email, mpKey);
   } else {
     alert("There was an error");
   }
 });
 
 $('#route-types').on('change', function() {
- console.log($("input[name='routeType']:checked").val());
- //TODO function call to kick of new filtered graph
+  const email = localStorage.getItem("logbook-email");
+  const mpKey = localStorage.getItem("logbook-key");
+  const selectedType = $("input[name='routeType']:checked").val();
+  getTicks(email, mpKey, selectedType);
 });
 
 $('#route-styles').on('change', function() {
-  let styles = [];
+  const email = localStorage.getItem("logbook-email");
+  const mpKey = localStorage.getItem("logbook-key");
+  const selectedType = $("input[name='routeType']:checked").val();
+  let selectedStyles = [];
   $.each($("input[name='routeStyles[]']:checked"), function() {
-    styles.push($(this).val());
+    selectedStyles.push($(this).val());
   });
-  //TODO function call to kick of new filtered graph
+  getTicks(email, mpKey, selectedType, selectedStyles);
  });
 
 $("#issues-toggle").click(function() {
