@@ -23,8 +23,8 @@ function getRoutes(ticks, mpKey, selectedType, selectedStyles) {
   .then(function (response) {
     const routes = response.data.routes.map(i => {
       if(!simpleRating[i.rating]) { console.log(i.rating); }
-      if(i.type === '') { console.log(i.name + " doesn't have a route type set."); }
-      if(getStyle(i.id, "routeId", ticks) === '') { console.log(i.name + " doesn't have a route style set."); }
+      if(i.type === '') { console.log(`${i.name} doesn't have a route type set.`); }
+      if(getStyle(i.id, "routeId", ticks) === '') { console.log(`${i.name} doesn't have a route style set.`); }
       return {
         'type': i.type,
         'rating': simpleRating[i.rating],
@@ -36,33 +36,39 @@ function getRoutes(ticks, mpKey, selectedType, selectedStyles) {
     let index = 0;
     document.getElementById("route-types").innerHTML = "";
     for (let type in routeTypes) {
-      if (routeTypes.hasOwnProperty(type) && type != '') {
+      if (routeTypes.hasOwnProperty(type) && type != '' && type != 'TR') {
         let checked = '';
         if(selectedType === '' && index === 0) {
           checked = "checked";
           selectedType = type;
         }
         if(selectedType != '' && type === selectedType) { checked = "checked"; }
-        let temp_html = '<input type="radio" id="'+type+'" name="routeType" value="'+type+'" '+checked+'></input><label class="lh-copy ml1 mr3" for="'+type+'"><strong>'+type+'</strong> <small>('+routeTypes[type].length+')</small></label>';
-        //document.getElementById("route-types").insertAdjacentHTML("beforeend", temp_html);
+        let temp_html = `<input type="radio" id="${type}" name="routeType" value="${type}" ${checked}></input><label class="lh-copy ml1 mr3" for="${type}"><strong>${type}</strong> <small>(${routeTypes[type].length})</small></label>`;
+        document.getElementById("route-types").insertAdjacentHTML("beforeend", temp_html);
         index++;
       }
     }
+    // Generate checkboxes based on the different route styles
     const routeStyles = groupBy(routes, 'style', selectedType);
     document.getElementById("route-styles").innerHTML = "";
+    let empty = false;
+    if(selectedStyles.length === 0) { empty = true; }
     for (let style in routeStyles) {
       if (routeStyles.hasOwnProperty(style) && style != '') {
         let checked = '';
-        if(selectedStyles.length === 0) { checked = "checked"; }
+        if(empty) {
+          selectedStyles.push(style);
+          checked = "checked";
+        }
         if(selectedStyles.includes(style)) { checked = "checked"; }
-        let temp_html = '<input type="checkbox" id="'+style+'" name="routeStyles[]" value="'+style+'" '+checked+'></input><label class="lh-copy ml1 mr3" for="'+style+'"><strong>'+style+'</strong> <small>('+routeStyles[style].length+')</small></label>';
-        //document.getElementById("route-styles").insertAdjacentHTML("beforeend", temp_html);
+        let temp_html = `<input type="checkbox" id="${style}" name="routeStyles[]" value="${style}" ${checked}></input><label class="lh-copy ml1 mr3" for="${style}"><strong>${style}</strong> <small>(${routeStyles[style].length})</small></label>`;
+        document.getElementById("route-styles").insertAdjacentHTML("beforeend", temp_html);
         index++;
       }
     }
 
     const formattedTicks = [];
-    let routeRatings = groupBy(routeTypes[selectedType], 'rating');
+    let routeRatings = groupBy(routeTypes[selectedType].filter(route => selectedStyles.includes(route.style)), 'rating');
     for(var key in routeRatings) {
       if(routeRatings.hasOwnProperty(key)) {
         formattedTicks.push({rating: simpleRating[key], sport: routeRatings[key].length});
