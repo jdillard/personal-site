@@ -62,13 +62,11 @@ The theme options be referenced in the theme's HTML template by pre-pending
 `theme_` to the variables name, such as:
 
 ```liquid
-{% raw %}
-<select>
+{% raw %}<select>
 {% for resource, url in theme_external_resources %}
     <option  value="{{ url }}">{{ resource }}</option>
 {% endfor %}
-</select>
-{% endraw %}
+</select>{% endraw %}
 ```
 
 ## Using html_context Variables
@@ -90,14 +88,15 @@ sphinx-build -E -b html \
 Then reference them in the theme's HTML template:
 
 ```liquid
-{% raw %}
-{% if display_github %}
+{% raw %}{% if display_github %}
     <a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/{{ theme_vcs_pageview_mode|default("blob") }}/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}" class="fa fa-github"> {{ _('Edit on GitHub') }}</a>
-{% endif %}
-{% endraw %}
+{% endif %}{% endraw %}
 ```
 
 ## Deploy, Edit, and Feedback Buttons
+
+Deploy, edit, and feedback buttons improve the usability of the documentation
+website while increasing the speed of the feedback and editing loops.
 
 ### Edit Button
 
@@ -105,11 +104,9 @@ Allowing less technical user's to easily edit the page they are reading make's
 it feel a lot more like a traditional CMS system:
 
 ```liquid
-{% raw %}
-{% if display_gitlab %}
+{% raw %}{% if display_gitlab %}
     <a href="https://{{ gitlab_host|default("gitlab.com") }}/{{ gitlab_user }}/{{ gitlab_repo }}/{{ theme_vcs_pageview_mode|default("blob") }}/{{ gitlab_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}" class="btn btn-neutral" title="{{ _('Edit on GitLab') }}" rel="{{ _('Edit on GitLab') }}"><span class="fa fa-pencil"></span></a>
-{% endif %}
-{% endraw %}
+{% endif %}{% endraw %}
 ```
 
 ### Feedback Button
@@ -118,11 +115,9 @@ If you want an easy way for people to contribute feedback to your documentation,
 you can often use API calls, such as GitHubs, to open and pre-populate issues:
 
 ```liquid
-{% raw %}
-{% if display_feedback %}
+{% raw %}{% if display_feedback %}
     <a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/issues/new?title=Feedback%20on%20{% for doc in parents %}{{ doc.title|striptags|e }}%20%E2%80%94%20{% endfor %}{{ title|striptags|e }}&body=**Page:**%20{{ html_baseurl }}{{ pagename }}.html%0A%0A**Feedback:**" class="btn btn-neutral" title="Give Feedback" rel="Give Feedback"><span class="fa fa-bug"></span></a>
-{% endif %}
-{% endraw %}
+{% endif %}{% endraw %}
 ```
 
 ### Deploy Button
@@ -131,19 +126,17 @@ Most CI/CD platforms support the use of webhooks to trigger a build. To trigger
 a build using a webhook you can add the following to the theme's HTML template:
 
 ```liquid
-{% raw %}
-{% if display_deploy %}
+{% raw %}{% if display_deploy %}
     <a href="http://{{ jenkins_host }}/job/{{ jenkins_job }}/job/master/" title="Deploy to Production" rel="Deploy to Production" onclick="deploy('{{ jenkins_job }}-deploy')"><span class="fa fa-rocket"></span></a>
-{% endif %}
-{% endraw %}
+{% endif %}{% endraw %}
 ```
 
 Then, add the following to the **custom.js** file:
 
 ```javascript
 function deploy(job) {
-    var initials = prompt('Please enter your initials');
-    if(initials != null && initials != '') {
+    const confirmed = confirm('Are you sure you want to deploy?');
+    if(confirmed) {
         fetch('https://jenkins.example.com/job/' + job + '/build?token=abcd1234',{ method: 'GET' });
     }
 }
@@ -155,13 +148,12 @@ function deploy(job) {
 
 ## Javascript Based Feedback Form
 
-If you would like an embedded feedback form over a feedback button, you can add
+For an embedded feedback form versus just a feedback button, you can add
 the code for that to the theme's HTML template instead. Here is an example using
 Hubspot, but you could go with any javascript based form service:
 
 ```html
-{% raw %}
-{% if pagename != "search" %}
+{% raw %}{% if pagename != "search" %}
   <div>
     <p>Documentation Feedback</p>
     <!--[if lte IE 8]>
@@ -176,8 +168,7 @@ Hubspot, but you could go with any javascript based form service:
     });
     </script>
   </div>
-{% endif %}
-{% endraw %}
+{% endif %}{% endraw %}
 ```
 
 Once the form is embedded, add custom styles for the form in the **custom.css**
