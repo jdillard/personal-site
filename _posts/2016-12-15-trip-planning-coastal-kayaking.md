@@ -3,9 +3,7 @@ layout: post
 title:  "Trip Planning: Coastal Kayaking"
 date:   2016-12-15
 published: true
-categories: 
-  - kayaking
-  - fishing
+categories:
   - trip planning
 cover: coastal-kayaking
 ---
