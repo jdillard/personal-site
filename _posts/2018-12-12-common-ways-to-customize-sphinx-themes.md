@@ -100,8 +100,9 @@ website while increasing the speed of the feedback and editing loops.
 
 ### Edit Button
 
-Allowing less technical user's to easily edit the page they are reading make's
-it feel a lot more like a traditional CMS system:
+Allowing less technical user's to easily edit the page they are reading, using
+the editor built into the repository manager, can make it feel a lot more like a
+traditional CMS system:
 
 ```liquid
 {% raw %}{% if display_gitlab %}
@@ -126,7 +127,7 @@ Most CI/CD platforms support the use of webhooks to trigger a build. To trigger
 a build using a webhook you can add the following to the theme's HTML template:
 
 ```liquid
-{% raw %}{% if display_deploy %}
+{% raw %}{% if display_jenkins %}
     <a href="http://{{ jenkins_host }}/job/{{ jenkins_job }}/job/master/" title="Deploy to Production" rel="Deploy to Production" onclick="deploy('{{ jenkins_job }}-deploy')"><span class="fa fa-rocket"></span></a>
 {% endif %}{% endraw %}
 ```
@@ -134,10 +135,18 @@ a build using a webhook you can add the following to the theme's HTML template:
 Then, add the following to the **custom.js** file:
 
 ```javascript
-function deploy(job) {
+function deploy(site) {
     const confirmed = confirm('Are you sure you want to deploy?');
     if(confirmed) {
-        fetch('https://jenkins.example.com/job/' + job + '/build?token=abcd1234',{ method: 'GET' });
+        fetch('https://jenkins.example.com/job/' + site + '-deploy/build?token=abcd1234',{ method: 'GET' })
+            .then(response => {
+                if(response.status === 201) {
+                    document.location.href = 'https://jenkins.example.com/job/' + site + '/job/master/';
+                } else {
+                    console.log('Deploy webhook failed.')
+                }
+            })
+            .catch(error => console.log('error is', error));
     }
 }
 ```
