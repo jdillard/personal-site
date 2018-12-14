@@ -1,25 +1,257 @@
-{
-  "owner": "Joe Dirtbag",
-  "ticks": [
-    {
-      "rating": "5.9",
-      "sport": 10
-    },
-    {
-      "rating": "5.10a",
-      "sport": 7
-    },
-    {
-      "rating": "5.10b",
-      "sport": 4
-    },
-    {
-      "rating": "5.10c",
-      "sport": 2
-    },
-    {
-      "rating": "5.10d",
-      "sport": 1
-    }
-  ]
-}
+[
+  {
+    "type": "Sport, TR",
+    "rating": "5.10c",
+    "style": "Onsight"
+  },
+  {
+    "type": "Trad",
+    "rating": "5.8",
+    "style": "Onsight"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.9",
+    "style": ""
+  },
+  {
+    "type": "Trad",
+    "rating": "5.10a",
+    "style": "Lead"
+  },
+  {
+    "type": "Trad",
+    "rating": "5.10a",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.10c",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.10d",
+    "style": "Onsight"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.10a",
+    "style": "Onsight"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.9",
+    "style": "Onsight"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.10c",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.9",
+    "style": ""
+  },
+  {
+    "type": "Trad",
+    "rating": "5.9",
+    "style": "Flash"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.9",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.9",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.10d",
+    "style": "Follow"
+  },
+  {
+    "type": "Trad",
+    "rating": "5.8",
+    "style": "Follow"
+  },
+  {
+    "type": "Trad",
+    "rating": "5.10a",
+    "style": "Follow"
+  },
+  {
+    "type": "Trad",
+    "rating": "5.9",
+    "style": ""
+  },
+  {
+    "type": "Trad",
+    "rating": "5.10b",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Trad",
+    "rating": "5.9",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Trad",
+    "rating": "5.8",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V1",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V1",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V1",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V3",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V2",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V2",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V3",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V3",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V4",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V1",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V1",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V2",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V2",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.10b",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V1",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Trad",
+    "rating": "5.8",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Trad",
+    "rating": "5.9",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.10b",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.10b",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.9",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Trad",
+    "rating": "5.10b",
+    "style": "Follow"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.10a",
+    "style": "Onsight"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.10a",
+    "style": "Onsight"
+  },
+  {
+    "type": "Trad, Alpine",
+    "rating": "5.9",
+    "style": "Follow"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.10b",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.11a",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Trad",
+    "rating": "5.9",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Boulder",
+    "rating": "V5",
+    "style": "Redpoint"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.9",
+    "style": "Onsight"
+  },
+  {
+    "type": "Sport",
+    "rating": "5.10a",
+    "style": "Onsight"
+  }
+]

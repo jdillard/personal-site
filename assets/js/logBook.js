@@ -1,24 +1,20 @@
 import * as d3 from 'd3';
 
-function getTicks(email, mpKey, selectedType='', selectedStyles=[]) {
+function getTicks(email, mpKey) {
   Promise.all([
     axios.get(`https://www.mountainproject.com/data/get-ticks?email=${email}&key=${mpKey}`),
     axios.get(`https://www.mountainproject.com/data/get-user?email=${email}&key=${mpKey}`)
   ]).then(([ticksResponse, userResponse]) => {
-    if(document.getElementById("remember-me").checked == true) {
-      localStorage.setItem('logbook-email', email);
-      localStorage.setItem('logbook-key', mpKey);
-    }
     document.getElementById("mp-key").value = '';
     document.getElementById("log-owner").innerHTML = userResponse.data.name + "'s Ticks";
-    getRoutes(ticksResponse.data.ticks,mpKey,selectedType, selectedStyles);
+    getRoutes(ticksResponse.data.ticks,mpKey);
   }, (error) => {
     //TODO return 403 (etc?) back to the UI
     console.log(error.message);
   });
 }
 
-function getRoutes(ticks, mpKey, selectedType, selectedStyles) {
+function getRoutes(ticks, mpKey) {
   axios.get(`https://www.mountainproject.com/data/get-routes?routeIds=${ticks.map(e => e.routeId).join(',')}&key=${mpKey}`)
   .then(function (response) {
     const routes = response.data.routes.map(i => {
@@ -31,6 +27,16 @@ function getRoutes(ticks, mpKey, selectedType, selectedStyles) {
         'style': getStyle(i.id, "routeId", ticks)
       };
     });
+    localStorage.setItem('logbook-routes', JSON.stringify(routes));
+    localStorage.setItem('logbook-status', Date.now());
+    filterRoutes(routes);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+}
+
+function filterRoutes(routes, selectedType='', selectedStyles=[]) {
     const routeTypes = groupBy(routes, 'type');
     // Generate radio buttons based on the different route types
     let index = 0;
@@ -76,10 +82,6 @@ function getRoutes(ticks, mpKey, selectedType, selectedStyles) {
     }
     formattedTicks.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating));
     createGraph({"ticks": formattedTicks});
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
 }
 
 function getStyle(nameKey, prop, myArray){
@@ -293,31 +295,14 @@ const simpleRating = {
 
 const ratingOrder = ["V1", "V2", "V3", "V4", "V5", "V6", "V7", "5.6", "5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b"];
 
-if(localStorage.getItem('logbook-remember') === "true") {
-  document.getElementById("remember-me").checked = true;
-}
-
-if(localStorage.getItem("logbook-key") === null) {
-  axios.get('/assets/json/ticks.json')
-    .then(function (response) {
-      createGraph(response.data);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-} else {
-  getTicks(localStorage.getItem("logbook-email"), localStorage.getItem("logbook-key"));
-}
-
-$("#remember-me").click(function() {
-  if(this.checked === true) {
-    localStorage.setItem('logbook-remember', true);
-  } else {
-    localStorage.setItem('logbook-remember', false);
-    localStorage.removeItem('logbook-email');
-    localStorage.removeItem('logbook-key');
-  }
-});
+axios.get('/assets/json/ticks.json')
+  .then(function (response) {
+    localStorage.setItem('logbook-routes', JSON.stringify(response.data));
+    filterRoutes(response.data);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 
 $("#mp-submit").click(function() {
   const email = document.getElementById("mp-email").value;
@@ -334,7 +319,7 @@ $('#route-types').on('change', function() {
   const email = localStorage.getItem("logbook-email");
   const mpKey = localStorage.getItem("logbook-key");
   const selectedType = $("input[name='routeType']:checked").val();
-  getTicks(email, mpKey, selectedType);
+  filterRoutes(JSON.parse(localStorage.getItem("logbook-routes")), selectedType);
 });
 
 $('#route-styles').on('change', function() {
@@ -345,7 +330,7 @@ $('#route-styles').on('change', function() {
   $.each($("input[name='routeStyles[]']:checked"), function() {
     selectedStyles.push($(this).val());
   });
-  getTicks(email, mpKey, selectedType, selectedStyles);
+  filterRoutes(JSON.parse(localStorage.getItem("logbook-routes")), selectedType, selectedStyles);
  });
 
 $("#issues-toggle").click(function() {
