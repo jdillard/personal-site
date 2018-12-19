@@ -34,7 +34,7 @@ def setup(app):
 ## Custom theme.conf Options
 
 Sometimes the options available in **theme.conf** aren't enough and custom
-options are needed, do so by just added more:
+options need to be added, for example:
 
 ```
 [options]
@@ -59,7 +59,7 @@ html_theme_options = {
 ```
 
 The theme options be referenced in the theme's HTML template by pre-pending
-`theme_` to the variables name, such as:
+`theme_` to the variables name, for example:
 
 ```liquid
 {% raw %}<select>
@@ -120,6 +120,9 @@ you can often use API calls, such as GitHubs, to open and pre-populate issues:
     <a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/issues/new?title=Feedback%20on%20{% for doc in parents %}{{ doc.title|striptags|e }}%20%E2%80%94%20{% endfor %}{{ title|striptags|e }}&body=**Page:**%20{{ html_baseurl }}{{ pagename }}.html%0A%0A**Feedback:**" class="btn btn-neutral" title="Give Feedback" rel="Give Feedback"><span class="fa fa-bug"></span></a>
 {% endif %}{% endraw %}
 ```
+
+![Documentation GitHub Feedback](/assets/images/posts/docs-github-feedback.png) <small><i>An example of feedback left using the GitHub API to pre-populate an issue.</i></small>
+
 
 ### Deploy Button
 
@@ -182,5 +185,7 @@ Hubspot, but you could go with any javascript based form service:
 
 Once the form is embedded, add custom styles for the form in the **custom.css**
 file.
+
+![Documentation Feedback Form](/assets/images/posts/docs-form-feedback.png) <small><i>An example of an embedded Hubspot feedback form.</i></small>
 
 {% include feedback.html %}
