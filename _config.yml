@@ -1,6 +1,6 @@
 name: Jared Dillard
-description: Jared Dillard, Web Developer from Austin, Texas
-meta_description: "Jared Dillard, Web Developer from Austin, Texas"
+description: Jared Dillard is a web developer based in the Pacific North West.
+meta_description: 'Jared Dillard is a web developer based in the Pacific North West.'
 
 markdown: kramdown
 highlighter: rouge
@@ -10,19 +10,16 @@ baseurl: ""
 domain_name: 'https://jareddillard.com'
 url: 'https://jareddillard.com'
 author: 'Jared Dillard'
-title: "Jared Dillard"
-google_analytics: 'UA-7883601-2 '
-repository: jdillard/jdillard.github.io
+title: 'Jared Dillard'
+google_analytics: 'UA-7883601-2'
+repository: jdillard/personal-site
 
 include: ["_headers"]
 exclude: ["Gemfile.lock","Rakefile","Gemfile","README.md","node_modules","npm-debug.log","package.json","vendor"]
 
-twitter:
-  username: itslogicwon
 social:
   name: Jared Dillard
   links:
-    - https://twitter.com/itslogicwon
     - https://www.linkedin.com/in/jareddillard
     - https://github.com/jdillard
     - https://www.instagram.com/farmerofbits/
