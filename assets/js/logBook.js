@@ -191,11 +191,11 @@ function createGraph(logData) {
     .tickFormat('');
 
   var xAxisRight = d3.axisBottom(xScale)
-    .ticks(6,"d");
+    .ticks(logData.ticks.length,"d");
 
   // REVERSE THE X-AXIS SCALE ON THE LEFT SIDE BY REVERSING THE RANGE
   var xAxisLeft = d3.axisBottom(xScale.copy().range([pointA, 0]))
-    .ticks(6,"d");
+    .ticks(logData.ticks.length,"d");
 
   // MAKE GROUPS FOR EACH SIDE OF CHART
   // scale(-1,1) is used to reverse the left side so the bars grow left instead of right
