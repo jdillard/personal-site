@@ -128,7 +128,7 @@ function createGraph(logData) {
   document.getElementById("log-chart").innerHTML = "";
 
   var w = 500,
-      h = 200;
+      h = 40 * logData.ticks.length;
 
   // margin.middle is distance from center line to each y-axis
   var margin = {
