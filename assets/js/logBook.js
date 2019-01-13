@@ -127,8 +127,8 @@ const groupBy = function(xs, key, firstType='') {
 function createGraph(logData) {
   document.getElementById("log-chart").innerHTML = "";
 
-  var w = 500,
-      h = 40 * logData.ticks.length;
+  var w = document.getElementById("log-chart").clientWidth,
+      h = 30 * logData.ticks.length;
 
   // margin.middle is distance from center line to each y-axis
   var margin = {
@@ -249,7 +249,6 @@ function createGraph(logData) {
   function translation(x,y) {
     return 'translate(' + x + ',' + y + ')';
   }
-
 }
 
 const simpleRating = {
@@ -295,15 +294,6 @@ const simpleRating = {
 
 const ratingOrder = ["V1", "V2", "V3", "V4", "V5", "V6", "V7", "5.6", "5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b"];
 
-axios.get('/assets/json/ticks.json')
-  .then(function (response) {
-    localStorage.setItem('logbook-routes', JSON.stringify(response.data));
-    filterRoutes(response.data);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-
 $("#mp-submit").click(function() {
   const email = document.getElementById("mp-email").value;
   const mpKey = document.getElementById("mp-key").value;
@@ -315,22 +305,36 @@ $("#mp-submit").click(function() {
   }
 });
 
+//TODO figure out how to use reDrawGraph
 $('#route-types').on('change', function() {
-  const email = localStorage.getItem("logbook-email");
-  const mpKey = localStorage.getItem("logbook-key");
   const selectedType = $("input[name='routeType']:checked").val();
   filterRoutes(JSON.parse(localStorage.getItem("logbook-routes")), selectedType);
 });
 
+window.addEventListener('resize', reDrawGraph());
+
+function reDrawGraph() {
+  if(localStorage.getItem("logbook-routes")) {
+    const selectedType = $("input[name='routeType']:checked").val();
+    let selectedStyles = [];
+    $.each($("input[name='routeStyles[]']:checked"), function() {
+      selectedStyles.push($(this).val());
+    });
+    filterRoutes(JSON.parse(localStorage.getItem("logbook-routes")), selectedType, selectedStyles);
+  } else {
+    axios.get('/assets/json/ticks.json')
+      .then(function (response) {
+        localStorage.setItem('logbook-routes', JSON.stringify(response.data));
+        filterRoutes(response.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+}
+
 $('#route-styles').on('change', function() {
-  const email = localStorage.getItem("logbook-email");
-  const mpKey = localStorage.getItem("logbook-key");
-  const selectedType = $("input[name='routeType']:checked").val();
-  let selectedStyles = [];
-  $.each($("input[name='routeStyles[]']:checked"), function() {
-    selectedStyles.push($(this).val());
-  });
-  filterRoutes(JSON.parse(localStorage.getItem("logbook-routes")), selectedType, selectedStyles);
+  reDrawGraph();
  });
 
 $("#issues-toggle").click(function() {
