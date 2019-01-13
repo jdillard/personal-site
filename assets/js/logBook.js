@@ -127,8 +127,10 @@ const groupBy = function(xs, key, firstType='') {
 function createGraph(logData) {
   document.getElementById("log-chart").innerHTML = "";
 
-  var w = document.getElementById("log-chart").clientWidth,
-      h = 30 * logData.ticks.length;
+  console.log(logData.ticks);
+
+  var width = document.getElementById("log-chart").clientWidth,
+      height = 30 * logData.ticks.length;
 
   // margin.middle is distance from center line to each y-axis
   var margin = {
@@ -140,18 +142,15 @@ function createGraph(logData) {
   };
 
   // the width of each side of the chart
-  var regionWidth = w/2 - margin.middle;
+  var regionWidth = width/2 - margin.middle;
 
   // these are the x-coordinates of the y-axes
   var pointA = regionWidth,
-      pointB = w - regionWidth;
-
-  // GET THE TOTAL POPULATION SIZE AND CREATE A FUNCTION FOR RETURNING THE PERCENTAGE
-  var totalPopulation = d3.sum(logData.ticks, function(d) { return d.sport; });
+      pointB = width - regionWidth;
 
   var svg = d3.select("#log-chart")
-    .attr('width', margin.left + w + margin.right)
-    .attr('height', margin.top + h + margin.bottom)
+    .attr('width', margin.left + width + margin.right)
+    .attr('height', margin.top + height + margin.bottom)
     // ADD A GROUP FOR THE SPACE WITHIN THE MARGINS
     .append('g')
       .attr('transform', translation(margin.left, margin.top));
@@ -179,7 +178,7 @@ function createGraph(logData) {
 
   var yScale = d3.scaleBand()
     .domain(logData.ticks.map(function(d) { return d.rating; }))
-    .range([h,0], 0.1);
+    .range([height,0], 0.1);
 
   // SET UP AXES
   var yAxisLeft = d3.axisRight(yScale)
@@ -219,12 +218,12 @@ function createGraph(logData) {
 
   svg.append('g')
     .attr('class', 'axis x left')
-    .attr('transform', translation(0, h))
+    .attr('transform', translation(0, height))
     .call(xAxisLeft);
 
   svg.append('g')
     .attr('class', 'axis x right')
-    .attr('transform', translation(pointB, h))
+    .attr('transform', translation(pointB, height))
     .call(xAxisRight);
 
   // DRAW BARS
