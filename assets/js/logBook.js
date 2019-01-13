@@ -77,7 +77,7 @@ function filterRoutes(routes, selectedType='', selectedStyles=[]) {
     let routeRatings = groupBy(routeTypes[selectedType].filter(route => selectedStyles.includes(route.style)), 'rating');
     for(var key in routeRatings) {
       if(routeRatings.hasOwnProperty(key)) {
-        formattedTicks.push({rating: simpleRating[key], sport: routeRatings[key].length});
+        formattedTicks.push({rating: simpleRating[key], total: routeRatings[key].length});
       }
     }
     formattedTicks.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating));
@@ -127,8 +127,6 @@ const groupBy = function(xs, key, firstType='') {
 function createGraph(logData) {
   document.getElementById("log-chart").innerHTML = "";
 
-  console.log(logData.ticks);
-
   var width = document.getElementById("log-chart").clientWidth,
       height = 30 * logData.ticks.length;
 
@@ -156,7 +154,7 @@ function createGraph(logData) {
       .attr('transform', translation(margin.left, margin.top));
 
   var maxValue = Math.max(
-    d3.max(logData.ticks, function(d) { return d.sport; })
+    d3.max(logData.ticks, function(d) { return d.total; })
   );
 
   // SET UP SCALES
@@ -233,7 +231,7 @@ function createGraph(logData) {
       .attr('class', 'bar left')
       .attr('x', 0)
       .attr('y', function(d) { return yScale(d.rating); })
-      .attr('width', function(d) { return xScale(d.sport); })
+      .attr('width', function(d) { return xScale(d.total); })
       .attr('height', yScale.bandwidth());
 
   rightBarGroup.selectAll('.bar.right')
@@ -242,7 +240,7 @@ function createGraph(logData) {
       .attr('class', 'bar right')
       .attr('x', 0)
       .attr('y', function(d) { return yScale(d.rating); })
-      .attr('width', function(d) { return xScale(d.sport); })
+      .attr('width', function(d) { return xScale(d.total); })
       .attr('height', yScale.bandwidth());
 
   function translation(x,y) {
