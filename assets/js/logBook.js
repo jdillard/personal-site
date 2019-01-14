@@ -91,7 +91,7 @@ function filterRoutes(routes, selectedType='', selectedStyles=[]) {
       }
     }
     formattedTicks.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating));
-    createGraph({ticks: formattedTicks, keys: Object.keys(routeStyles).filter(function(e){return e})});
+    createGraph({ticks: formattedTicks, keys: Object.keys(groupBy(routes, 'style')).filter(function(e){return e})});
 }
 
 function getStyle(nameKey, prop, myArray){
