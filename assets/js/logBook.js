@@ -77,11 +77,21 @@ function filterRoutes(routes, selectedType='', selectedStyles=[]) {
     let routeRatings = groupBy(routeTypes[selectedType].filter(route => selectedStyles.includes(route.style)), 'rating');
     for(var key in routeRatings) {
       if(routeRatings.hasOwnProperty(key)) {
-        formattedTicks.push({rating: simpleRating[key], total: routeRatings[key].length});
+        let chartData = {};
+        for(const route of routeRatings[key]) {
+            if(route.style in chartData) {
+              chartData[route.style] += 1;
+            } else {
+              chartData[route.style] = 1;
+            }
+        }
+        chartData.rating = simpleRating[key];
+        chartData.total = routeRatings[key].length;
+        formattedTicks.push(chartData);
       }
     }
     formattedTicks.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating));
-    createGraph({"ticks": formattedTicks});
+    createGraph({ticks: formattedTicks, keys: selectedStyles});
 }
 
 function getStyle(nameKey, prop, myArray){
@@ -148,10 +158,9 @@ function createGraph(logData) {
 
   var svg = d3.select("#log-chart")
     .attr('width', margin.left + width + margin.right)
-    .attr('height', margin.top + height + margin.bottom)
-    // ADD A GROUP FOR THE SPACE WITHIN THE MARGINS
-    .append('g')
-      .attr('transform', translation(margin.left, margin.top));
+    .attr('height', margin.top + height + margin.bottom),
+    g = svg.append('g'); // for the space within the margins
+     // .attr('transform', translation(margin.left, margin.top));
 
   var maxValue = Math.max(
     d3.max(logData.ticks, function(d) { return d.total; })
@@ -159,26 +168,24 @@ function createGraph(logData) {
 
   // SET UP SCALES
 
-  // the xScale goes from 0 to the width of a region
-  //  it will be reversed for the left x-axis
+  // the xScale goes from 0 to the width of a region and is reversed for the
+  // left x-axis
   var xScale = d3.scaleLinear()
     .domain([0, maxValue])
     .range([0, regionWidth])
     .nice();
 
-  var xScaleLeft = d3.scaleLinear()
-    .domain([0, maxValue])
-    .range([regionWidth, 0]);
-
-  var xScaleRight = d3.scaleLinear()
-    .domain([0, maxValue])
-    .range([0, regionWidth]);
-
   var yScale = d3.scaleBand()
     .domain(logData.ticks.map(function(d) { return d.rating; }))
     .range([height,0], 0.1);
 
-  // SET UP AXES
+  var z = d3.scaleOrdinal()
+    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
+  z.domain(logData.keys);
+
+  // DRAW AXES
+
   var yAxisLeft = d3.axisRight(yScale)
     .tickSize(4,0)
     .tickPadding(margin.middle-4);
@@ -190,58 +197,86 @@ function createGraph(logData) {
   var xAxisRight = d3.axisBottom(xScale)
     .ticks(maxValue,"d");
 
-  // REVERSE THE X-AXIS SCALE ON THE LEFT SIDE BY REVERSING THE RANGE
+  // reverse the x-axis scale on the left side by reversing the range
   var xAxisLeft = d3.axisBottom(xScale.copy().range([pointA, 0]))
     .ticks(maxValue,"d");
 
-  // MAKE GROUPS FOR EACH SIDE OF CHART
-  // scale(-1,1) is used to reverse the left side so the bars grow left instead of right
-  var leftBarGroup = svg.append('g')
-    .attr('transform', translation(pointA, 0) + 'scale(-1,1)');
-  var rightBarGroup = svg.append('g')
-    .attr('transform', translation(pointB, 0));
-
-  // DRAW AXES
-  svg.append('g')
+  g.append('g')
     .attr('class', 'axis y left')
     .attr('transform', translation(pointA, 0))
     .call(yAxisLeft)
     .selectAll('text')
     .style('text-anchor', 'middle');
 
-  svg.append('g')
+  g.append('g')
     .attr('class', 'axis y right')
     .attr('transform', translation(pointB, 0))
     .call(yAxisRight);
 
-  svg.append('g')
+  g.append('g')
     .attr('class', 'axis x left')
     .attr('transform', translation(0, height))
     .call(xAxisLeft);
 
-  svg.append('g')
+  g.append('g')
     .attr('class', 'axis x right')
     .attr('transform', translation(pointB, height))
     .call(xAxisRight);
 
-  // DRAW BARS
-  leftBarGroup.selectAll('.bar.left')
-    .data(logData.ticks)
-    .enter().append('rect')
-      .attr('class', 'bar left')
-      .attr('x', 0)
-      .attr('y', function(d) { return yScale(d.rating); })
-      .attr('width', function(d) { return xScale(d.total); })
-      .attr('height', yScale.bandwidth());
+  // DRAW GROUPS FOR EACH SIDE OF CHART
 
-  rightBarGroup.selectAll('.bar.right')
-    .data(logData.ticks)
-    .enter().append('rect')
-      .attr('class', 'bar right')
-      .attr('x', 0)
-      .attr('y', function(d) { return yScale(d.rating); })
-      .attr('width', function(d) { return xScale(d.total); })
-      .attr('height', yScale.bandwidth());
+  // scale(-1,1) is used to reverse the left side so the bars grow left instead of right
+  var leftBarGroup = g.append('g')
+    .attr('transform', translation(pointA, 0) + 'scale(-1,1)');
+  var rightBarGroup = g.append('g')
+    .attr('transform', translation(pointB, 0));
+
+  leftBarGroup.selectAll('.bar.left')
+    .data(d3.stack().keys(logData.keys)(logData.ticks))
+    .enter().append("g")
+      .attr("fill", function(d) { return z(d.key); })
+    .selectAll("rect")
+    .data(function(d) { return d; })
+    .enter().append("rect")
+      .attr("y", function(d) { return yScale(d.data.rating); })
+      .attr("x", function(d) { return xScale(d[0]); })
+      .attr("width", function(d) { return xScale(d[1]) - xScale(d[0]); })
+      .attr("height", yScale.bandwidth());
+
+  rightBarGroup.selectAll('.bar.left')
+    .data(d3.stack().keys(logData.keys)(logData.ticks))
+    .enter().append("g")
+      .attr("fill", function(d) { return z(d.key); })
+    .selectAll("rect")
+    .data(function(d) { return d; })
+    .enter().append("rect")
+      .attr("y", function(d) { return yScale(d.data.rating); })
+      .attr("x", function(d) { return xScale(d[0]); })
+      .attr("width", function(d) { return xScale(d[1]) - xScale(d[0]); })
+      .attr("height", yScale.bandwidth());
+
+  // DRAW LEGEND
+
+  var legend = g.append("g")
+      .attr("font-family", "sans-serif")
+      .attr("font-size", 10)
+      .attr("text-anchor", "end")
+    .selectAll("g")
+    .data(logData.keys.slice().reverse())
+    .enter().append("g")
+    .attr("transform", function(d, i) { return "translate(0," + (i * 20) + ")"; });
+
+  legend.append("rect")
+      .attr("x", width - 19)
+      .attr("width", 19)
+      .attr("height", 19)
+      .attr("fill", z);
+
+  legend.append("text")
+      .attr("x", width - 24)
+      .attr("y", 9.5)
+      .attr("dy", "0.32em")
+      .text(function(d) { return d; });
 
   function translation(x,y) {
     return 'translate(' + x + ',' + y + ')';
