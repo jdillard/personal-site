@@ -137,17 +137,17 @@ const groupBy = function(xs, key, firstType='') {
 function createGraph(logData) {
   document.getElementById("log-chart").innerHTML = "";
 
-  var width = document.getElementById("log-chart").clientWidth,
-      height = 30 * logData.ticks.length;
-
   // margin.middle is distance from center line to each y-axis
   var margin = {
     top: 20,
     right: 20,
-    bottom: 24,
+    bottom: 50,
     left: 20,
     middle: 28
   };
+
+  var width = document.getElementById("log-chart").clientWidth - margin.left - margin.right,
+      height = 70 + 30 * logData.ticks.length - margin.top - margin.bottom;
 
   // the width of each side of the chart
   var regionWidth = width/2 - margin.middle;
@@ -159,8 +159,8 @@ function createGraph(logData) {
   var svg = d3.select("#log-chart")
     .attr('width', margin.left + width + margin.right)
     .attr('height', margin.top + height + margin.bottom),
-    g = svg.append('g'); // for the space within the margins
-     // .attr('transform', translation(margin.left, margin.top));
+    g = svg.append('g') // for the space within the margins
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   var maxValue = Math.max(
     d3.max(logData.ticks, function(d) { return d.total; })
@@ -178,7 +178,7 @@ function createGraph(logData) {
     .range([height,0], 0.1);
 
   var z = d3.scaleOrdinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+    .range(["#555555", "#FF6300", "#FF725C", "#FFB700", "#999999", "#9EEBCF", "#FF80CC"]);
 
   z.domain(logData.keys);
 
@@ -255,20 +255,23 @@ function createGraph(logData) {
 
   // DRAW LEGEND
 
-  var legend = g.append("g")
+  var legend = svg.append("g")
       .attr("font-family", "sans-serif")
       .attr("font-size", 10)
       .attr("text-anchor", "end")
     .selectAll("g")
     .data(logData.keys.slice().reverse())
     .enter().append("g")
-    .attr("transform", function(d, i) { return "translate(0," + (i * 20) + ")"; });
+    .attr("transform", function(d, i) { return "translate(" + (-i * 70) + "," + (height+margin.bottom) + ")"; });
 
   legend.append("rect")
       .attr("x", width - 19)
       .attr("width", 19)
       .attr("height", 19)
-      .attr("fill", z);
+      .attr("fill", z)
+      .on("click", function(d){
+        console.log(d);
+      });
 
   legend.append("text")
       .attr("x", width - 24)
