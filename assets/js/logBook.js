@@ -368,7 +368,24 @@ function reDrawGraph() {
 
 $('#route-styles').on('change', function() {
   reDrawGraph();
- });
+});
+
+$("#settings-toggle").click(function() {
+  if($("#settings").hasClass('open')) {
+    $("#settings").removeClass('open');
+    $("#settings-toggle").text('Show Instructions');
+    $("#settings").height(0);
+  } else {
+    $("#settings").addClass('open');
+    $("#settings-toggle").text('Hide Instructions');
+    $("#settings").height('auto');
+  }
+});
+
+document.getElementById("clear-cache").addEventListener("click", function(event){
+  localStorage.clear();
+  //TODO reload graph
+});
 
 $("#issues-toggle").click(function() {
   if($("#issues").hasClass('open')) {
