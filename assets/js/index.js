@@ -87,7 +87,7 @@ function summarizeAction(type, words) {
     case "IssuesEvent":
       return words + " on";
     case "CreateEvent":
-      return "Created a " + words + " at";
+      return "Created " + words + " on";
     case "PullRequestReviewCommentEvent":
       return (words > 1) ? "Left " + words + " pull request reviews on" : "Left a pull request review on";
     case "DeleteEvent":
@@ -184,7 +184,7 @@ function activity(activities = []) {
           b.link = b.payload.issue.html_url;
           break;
         case "CreateEvent":
-          b.words = b.payload.ref_type;
+          b.words = '<strong>' + b.payload.ref_type + ' ' + b.payload.ref + '</strong>';
           b.link = "https://github.com/" + b.repo.name;
           break;
         case "PullRequestReviewCommentEvent":
