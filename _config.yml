@@ -26,5 +26,10 @@ social:
 
 permalink: /blog/:title.html
 
+collections:
+  library:
+    output: true
+    permalink: /library/:title:output_ext
+
 sass:
     style: compressed

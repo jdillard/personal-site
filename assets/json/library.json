@@ -1,0 +1,22 @@
+---
+---
+
+{% assign library_size = site.library | size %}
+
+{
+    "total": {{ library_size }},
+    "page": 1,
+    "per_page": {{ library_size }},
+    "data": [
+        {% for item in site.library %}
+        {
+            "type": "{{ item.type }}",
+            "date_published": "{{ item.date | date: '%Y-%m-%d' }}",
+            "url": "{{ site.url }}{{ item.url }}",
+            "summary": {{ item.content | strip_html | truncatewords: 18 | jsonify }},
+            "categories": {{ item.categories | jsonify }},
+            "title": {{ item.title | jsonify }}
+        }{% unless forloop.last == true %},{% endunless %}
+        {% endfor %}
+        ]
+}
