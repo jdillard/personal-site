@@ -41,11 +41,14 @@
 }
 
 .post-content code {
-    padding: 1px 3px;
+    padding: 1px 4px;
     font-size: 0.85em;
-    border: #CCCCCC 1px solid;
-    background-color: #F4F4F4;
+    border: #FFDFDF 3px solid;
+    background-color: #FFDFDF;
     border-radius: 2px;
+    font-weight: 600;
+    color: #555555;
+    box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.2);
 }
 
 .post-content img {
