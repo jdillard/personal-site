@@ -14,9 +14,10 @@ achieve this using the following methods:
 
 1. Custom Javascript and CSS
 2. Custom theme.conf Variables
-3. Using html_context Variables
-4. Adding Deploy, Edit, and Feedback Buttons
-5. Using a javascript Based Feedback Form
+3. Changing the code highlighting styles
+4. Using html_context Variables
+5. Adding Deploy, Edit, and Feedback Buttons
+6. Using a javascript Based Feedback Form
 
 ## 1. Custom Javascript and CSS
 
@@ -69,7 +70,17 @@ The theme options be referenced in the theme's HTML template by pre-pending
 </select>{% endraw %}
 ```
 
-## 3. Using html_context Variables
+## 3. Changing the code highlighting styles
+
+Most themes should support using the different [pygment](http://pygments.org/)
+styles for code highlighting. For example, to use the [monokai](http://pygments.org/demo/6783511/?style=monokai)
+style you can set the following in **conf.py**, or **theme.conf** if it exists:
+
+```python
+pygments_style = 'monokai'
+```
+
+## 4. Using html_context Variables
 
 Passing in custom configuration overrides at runtime can come in handy when
 deploying to different environments. To take advantage of custom configuration
@@ -94,7 +105,7 @@ Then reference them in the theme's HTML template:
 {% endif %}{% endraw %}
 ```
 
-## 4. Adding Edit, History, Contribution, Feedback, and Deploy Buttons
+## 5. Adding Edit, History, Contribution, Feedback, and Deploy Buttons
 
 Placing deploy, edit, history, contribution, and feedback buttons to the page
 navigation improves the usability of the documentation website while also
@@ -162,7 +173,7 @@ function deploy(site) {
 > webhook service.
 {: {{site.data.css.info-box}} }
 
-## 5. Using a javascript Based Feedback Form
+## 6. Using a javascript Based Feedback Form
 
 For an embedded feedback form versus just a feedback button, you can add
 the code for that to the theme's HTML template instead. Here is an example using
