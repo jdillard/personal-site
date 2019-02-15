@@ -15,10 +15,10 @@ achieve this using the following methods:
 1. Custom Javascript and CSS
 2. Custom theme.conf Variables
 3. Using html_context Variables
-4. Deploy, Edit, and Feedback Buttons
-5. Javascript Based Feedback Form
+4. Adding Deploy, Edit, and Feedback Buttons
+5. Using a javascript Based Feedback Form
 
-## Custom Javascript and CSS
+## 1. Custom Javascript and CSS
 
 Custom javascript and CSS files can be great for overrides and snippets of
 functionality. First, create a **custom.js** and **custom.css** file in the
@@ -31,7 +31,7 @@ def setup(app):
    app.add_stylesheet("custom.css")
 ```
 
-## Custom theme.conf Options
+## 2. Custom theme.conf Options
 
 Sometimes the options available in **theme.conf** aren't enough and custom
 options need to be added, for example:
@@ -69,10 +69,11 @@ The theme options be referenced in the theme's HTML template by pre-pending
 </select>{% endraw %}
 ```
 
-## Using html_context Variables
+## 3. Using html_context Variables
 
-To take advantage of custom configuration overrides at runtime, add flags to the
-`sphinx-build` command:
+Passing in custom configuration overrides at runtime can come in handy when
+deploying to different environments. To take advantage of custom configuration
+overrides at runtime, add `html_context` flags to the `sphinx-build` command:
 
 ```
 sphinx-build -E -b html \
@@ -93,12 +94,13 @@ Then reference them in the theme's HTML template:
 {% endif %}{% endraw %}
 ```
 
-## Deploy, Edit, and Feedback Buttons
+## 4. Adding Edit, History, Contribution, Feedback, and Deploy Buttons
 
-Deploy, edit, and feedback buttons improve the usability of the documentation
-website while increasing the speed of the feedback and editing loops.
+Placing deploy, edit, history, contribution, and feedback buttons to the page
+navigation improves the usability of the documentation website while also
+increasing the speed of the feedback and editing loops.
 
-### Edit Button
+### Edit, History, and Contribution Buttons
 
 Allowing less technical user's to easily edit the page they are reading, using
 the editor built into the repository manager, can make it feel a lot more like a
@@ -106,7 +108,9 @@ traditional CMS system:
 
 ```liquid
 {% raw %}{% if display_gitlab %}
-    <a href="https://{{ gitlab_host|default("gitlab.com") }}/{{ gitlab_user }}/{{ gitlab_repo }}/{{ theme_vcs_pageview_mode|default("blob") }}/{{ gitlab_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}" class="btn btn-neutral" title="{{ _('Edit on GitLab') }}" rel="{{ _('Edit on GitLab') }}"><span class="fa fa-pencil"></span></a>
+    <a href="https://{{ gitlab_host|default("gitlab.com") }}/{{ gitlab_user }}/{{ gitlab_repo }}/{{ theme_vcs_pageview_mode|default("blob") }}/{{ gitlab_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}" class="btn btn-neutral" title="{{ _('Edit Page') }}" rel="{{ _('Edit Page') }}"><span class="fa fa-pencil"></span></a>
+    <a href="https://{{ gitlab_host|default("gitlab.com") }}/{{ gitlab_user }}/{{ gitlab_repo }}/commits/{{ gitlab_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}" class="btn btn-neutral" title="{{ _('Page History') }}" rel="{{ _('Page History') }}"><span class="fa fa-clock-o"></span></a>
+    <a href="https://{{ gitlab_host|default("gitlab.com") }}/{{ gitlab_user }}/{{ gitlab_repo }}/blame/{{ gitlab_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}" class="btn btn-neutral" title="{{ _('Page Contributors') }}" rel="{{ _('Page Contributors') }}"><span class="fa fa-users"></span></a>
 {% endif %}{% endraw %}
 ```
 
@@ -158,7 +162,7 @@ function deploy(site) {
 > webhook service.
 {: {{site.data.css.info-box}} }
 
-## Javascript Based Feedback Form
+## 5. Using a javascript Based Feedback Form
 
 For an embedded feedback form versus just a feedback button, you can add
 the code for that to the theme's HTML template instead. Here is an example using
