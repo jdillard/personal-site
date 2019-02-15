@@ -40,7 +40,7 @@
      font-style: italic;
 }
 
-.post-content code {
+.post-content code.highlighter-rouge {
     padding: 1px 4px;
     margin: 0 3px;
     font-size: 0.85em;
@@ -84,6 +84,18 @@
     padding: 0;
 }
 
+.post-content pre {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 1.75em 0;
+    width: 100% ;
+    padding: 1.5em 5em;
+    font-size: .85em;
+    overflow: visible;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
 ul.list li a span, .rslide {
     display: block;
     -webkit-transform: translateX(0);
@@ -125,18 +137,6 @@ ul.list li:hover a span, .rslide:hover {
 .clip-svg {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-}
-
-.post-content pre {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0 0 1.75em 0;
-    width: 100% ;
-    padding: 1.5em 5em;
-    font-size: 1em;
-    overflow: visible;
-    border-radius: 10px;
-    overflow-x: auto;
 }
 
 .post-content table {
