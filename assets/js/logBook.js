@@ -1,5 +1,7 @@
 import * as d3 from 'd3';
 
+const template_logbook = require("./templates/logbook.hbs");
+
 function getTicks(email, mpKey) {
   Promise.all([
     axios.get(`https://www.mountainproject.com/data/get-ticks?email=${email}&key=${mpKey}`),
@@ -18,17 +20,22 @@ function getRoutes(ticks, mpKey) {
   axios.get(`https://www.mountainproject.com/data/get-routes?routeIds=${ticks.map(e => e.routeId).join(',')}&key=${mpKey}`)
   .then(function (response) {
     const routes = response.data.routes.map(i => {
+      let style = getTickInfo(i.id, "style", ticks);
+      if(style === '') { style = 'Unknown'; }
       if(!simpleRating[i.rating]) { console.log(i.rating); }
-      if(i.type === '') { console.log(`${i.name} doesn't have a route type set.`); }
-      if(getStyle(i.id, "routeId", ticks) === '') { console.log(`${i.name} doesn't have a route style set.`); }
       return {
+        'route': i.name,
+        'url': i.url,
         'type': i.type,
         'rating': simpleRating[i.rating],
-        'style': getStyle(i.id, "routeId", ticks)
+        'style': style,
+        'date': getTickInfo(i.id, "date", ticks)
       };
     });
     localStorage.setItem('logbook-routes', JSON.stringify(routes));
     localStorage.setItem('logbook-status', Date.now());
+    const logbook = document.getElementById("logbook");
+    logbook.innerHTML = template_logbook(routes);
     filterRoutes(routes);
   })
   .catch(function (error) {
@@ -94,10 +101,13 @@ function filterRoutes(routes, selectedType='', selectedStyles=[]) {
     createGraph({ticks: formattedTicks, keys: Object.keys(groupBy(routes, 'style')).filter(function(e){return e})});
 }
 
-function getStyle(nameKey, prop, myArray){
+function getTickInfo(nameKey, prop, myArray){
   for (var i=0; i < myArray.length; i++) {
-    if (myArray[i][prop]=== nameKey) {
+    if (myArray[i].routeId === nameKey && prop === "style") {
       return (myArray[i].leadStyle) ? myArray[i].leadStyle : myArray[i].style;
+    }
+    if (myArray[i].routeId === nameKey && prop === "date") {
+      return myArray[i].date;
     }
   }
 }
