@@ -12,11 +12,13 @@ const template_weather_observations = require("./templates/weather-observations.
 const template_weather_forecasts = require("./templates/weather-forecasts.hbs");
 const template_weather_hourly = require("./templates/weather-hourly.hbs");
 
+const weather_section = document.getElementById("weather");
+
 let crags = [];
 let storage_keys = Object.keys(localStorage).filter(word => word.startsWith("crag-"));
 
 if(storage_keys.length == 0) {
-  getCrags('austin-tx');
+  getCrags(weather_section.dataset.crag);
 } else {
   $('#region-selector').val(localStorage.getItem('region-selector'));
   for (let i=0; i < storage_keys.length; i++) {
@@ -28,7 +30,6 @@ if(storage_keys.length == 0) {
 function getCrags(location) {
   crags = [];
   $('#menu .menu-item').remove();
-  const weather_section = document.getElementById("weather");
   while (weather_section.firstChild) {
     weather_section.removeChild(weather_section.firstChild);
   }
@@ -73,7 +74,7 @@ function populate(crags, menu = true, element = 'weather', adjacent = 'beforeend
 
     // populate top menu
     //TODO only run on page load?
-    if(menu) {
+    if(menu && document.getElementById("menu")) {
       let status = (crags[c].active) ? 'green' : 'mid-gray';
       temp_html = '<div id="menu-item-'+crags[c].number+'" class="menu-item f7 ba b--light-gray hover-bg-near-white mv1 mw5 center pointer"><div id="crag-status-'+crags[c].number+'" data-crag="'+crags[c].number+'" data-slug="'+crags[c].slug+'" data-active="'+crags[c].active+'" class="crag-status fl w-100 ph2 pv1 bl bw2 b--'+status+'">'+crags[c].name+'</div><span class="crag-delete fr light-red nr3 pv1 pointer" data-name="' + crags[c].name + '" data-crag="' + crags[c].number + '">&#215</span><div class="cf"></div></div>';
       document.getElementById("menu").insertAdjacentHTML("beforeend", temp_html);
