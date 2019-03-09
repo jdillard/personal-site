@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Last Chance Canyon Weather
-description: Real-time, precipitation-focused reports of current, past, and future weather conditions for Last Chance Canyon near Last Chance Canyon, Texas
+description: Real-time, precipitation-focused reports of current, past, and future weather conditions for Last Chance Canyon near Last Chance Canyon, New Mexico
 js_includes:
   - weather.js
 ---
@@ -28,7 +28,7 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
         </div>
     </div>
 </section>
-<section id="weather" data-crag="last-chance-canyon-texas" class="mv4-ns mv3 ph2 center"></section>
+<section id="weather" data-crag="last-chance-canyon-new-mexico" class="mv4-ns mv3 ph2 center"></section>
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
 <section id="issues" class="overflow-hidden tc f6" style="transition: height 200ms;height: 0px;">
 </section>

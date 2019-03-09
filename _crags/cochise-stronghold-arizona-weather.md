@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Cochise Stronghold Weather
-description: Real-time, precipitation-focused reports of current, past, and future weather conditions for Cochise Stronghold near Cochise Stronghold, Texas
+description: Real-time, precipitation-focused reports of current, past, and future weather conditions for Cochise Stronghold near Cochise Stronghold, Arizona
 js_includes:
   - weather.js
 ---
@@ -28,7 +28,7 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
         </div>
     </div>
 </section>
-<section id="weather" data-crag="cochise-stronghold-texas" class="mv4-ns mv3 ph2 center"></section>
+<section id="weather" data-crag="cochise-stronghold-arizona" class="mv4-ns mv3 ph2 center"></section>
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
 <section id="issues" class="overflow-hidden tc f6" style="transition: height 200ms;height: 0px;">
 </section>

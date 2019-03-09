@@ -63,6 +63,8 @@ def create_metros(crags)
     slug = crag["name"].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + "-" + crag["state"].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
     File.open("_crags/" + slug + "-weather.md","w") do |f|
       f << "---\n"
+      end
+    end
   end
 
 # clear the old crags markdown files
