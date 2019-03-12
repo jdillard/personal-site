@@ -16,8 +16,7 @@ const weather_section = document.getElementById("weather");
 
 let crags = [];
 let storage_keys = Object.keys(localStorage).filter(word => word.startsWith("crag-"));
-
-if(storage_keys.length == 0) {
+if(storage_keys.length == 0 || weather_section.dataset.crag != localStorage.getItem('region-selector')) {
   getCrags(weather_section.dataset.crag);
 } else {
   $('#region-selector').val(localStorage.getItem('region-selector'));
