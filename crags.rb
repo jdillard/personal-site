@@ -22,13 +22,13 @@ def create_crag_page(crags)
 
   # determine the crags near each locale
   metros.each do |metro|
-    local_crags[metro] = Set[];
+    local_crags[metro] = []
   end
 
   #TODO needs to loop through each metros cell
   crags.each do |crag|
     state_locals[crag["metros"].split(", ").last].add(crag["metros"].split(", ").shift)
-    local_crags[crag["metros"]].add(crag["name"])
+    local_crags[crag["metros"]].push({ name: crag["name"], state: crag["state"] })
   end
 
   File.open("crags.html","w") do |f|
@@ -53,8 +53,8 @@ def create_crag_page(crags)
         f << '<h3 class="mb2"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/crags/' + local_slug + '-weather.html">' + local + "</a></h3>\n"
         f << '<ul class="list pl3 f6 mt2">'+"\n"
         local_crags[local+", "+state].each do |crag|
-          crag_slug = crag.to_s.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + '-' + state.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
-          f << '<li><a class="no-underline fancy-link relative black-70 hover-light-red" href="/crags/' + crag_slug + '-weather.html">' + crag.to_s + "</a></li>\n"
+          crag_slug = crag[:name].to_s.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + '-' + crag[:state].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+          f << '<li><a class="no-underline fancy-link relative black-70 hover-light-red" href="/crags/' + crag_slug + '-weather.html">' + crag[:name] + "</a></li>\n"
         end
         f << "</ul>\n"
       end
