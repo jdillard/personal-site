@@ -1,15 +1,15 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Horseshoe Canyon Ranch Weather
-description: Real-time, precipitation-focused reports of current, past, and future weather conditions for Horseshoe Canyon Ranch near Horseshoe Canyon Ranch, Arkansas
+title: Horseshoe Canyon Ranch Current, Past, and Forecasted Weather
+description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for Horseshoe Canyon Ranch
 js_includes:
   - weather.js
 ---
 
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
 <strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,
-precipitation-focused reports of current, past, and future weather conditions sourced
+precipitation-focused reports of current, past, and forecasted weather conditions sourced
 from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.
 </section>
 
