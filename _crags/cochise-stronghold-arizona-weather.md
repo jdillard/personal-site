@@ -2,6 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Cochise Stronghold Current, Past, and Forecasted Weather
+title_override: Cochise Stronghold Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for Cochise Stronghold
 js_includes:
   - weather.js

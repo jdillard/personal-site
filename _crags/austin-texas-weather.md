@@ -2,6 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Austin, Texas Current, Past, and Forecasted Weather Conditions
+title_override: Austin, Texas Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for crags near Austin, Texas
 js_includes:
   - weather.js

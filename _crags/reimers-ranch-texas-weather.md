@@ -2,6 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Reimer's Ranch Current, Past, and Forecasted Weather
+title_override: Reimer's Ranch Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for Reimer's Ranch
 js_includes:
   - weather.js

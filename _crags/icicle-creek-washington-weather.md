@@ -2,6 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Icicle Creek Current, Past, and Forecasted Weather
+title_override: Icicle Creek Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for Icicle Creek
 js_includes:
   - weather.js

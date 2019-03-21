@@ -2,6 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Horseshoe Canyon Ranch Current, Past, and Forecasted Weather
+title_override: Horseshoe Canyon Ranch Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for Horseshoe Canyon Ranch
 js_includes:
   - weather.js

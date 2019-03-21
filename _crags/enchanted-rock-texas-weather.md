@@ -2,6 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Enchanted Rock Current, Past, and Forecasted Weather
+title_override: Enchanted Rock Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for Enchanted Rock
 js_includes:
   - weather.js

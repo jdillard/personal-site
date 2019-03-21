@@ -2,6 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Last Chance Canyon Current, Past, and Forecasted Weather
+title_override: Last Chance Canyon Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for Last Chance Canyon
 js_includes:
   - weather.js

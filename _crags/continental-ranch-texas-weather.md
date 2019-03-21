@@ -2,6 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Continental Ranch Current, Past, and Forecasted Weather
+title_override: Continental Ranch Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for Continental Ranch
 js_includes:
   - weather.js

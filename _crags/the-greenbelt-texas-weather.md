@@ -2,6 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: The Greenbelt Current, Past, and Forecasted Weather
+title_override: The Greenbelt Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for The Greenbelt
 js_includes:
   - weather.js

@@ -2,6 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Tieton River Rock Current, Past, and Forecasted Weather
+title_override: Tieton River Rock Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for Tieton River Rock
 js_includes:
   - weather.js

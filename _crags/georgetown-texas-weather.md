@@ -2,6 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Georgetown Current, Past, and Forecasted Weather
+title_override: Georgetown Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for Georgetown
 js_includes:
   - weather.js

@@ -2,6 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Seattle, Washington Current, Past, and Forecasted Weather Conditions
+title_override: Seattle, Washington Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for crags near Seattle, Washington
 js_includes:
   - weather.js
