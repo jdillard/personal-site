@@ -1,19 +1,19 @@
-<table class="collapse ba br2 b--black-10 center pv2 ph3 f6">
+<table class="collapse ba br2 b--black-10 center pv2 ph3 f6-ns f7">
     <tbody>
         <tr class="striped--light-gray ">
-            <th class="pv2 ph3 tl f6 fw6 ttu">Route</th>
-            <th class="tl f6 ttu fw6 pv2 ph3">Rating</th>
-            <th class="tl f6 ttu fw6 pv2 ph3">Type</th>
-            <th class="tl f6 ttu fw6 pv2 ph3">Style</th>
-            <th class="tl f6 ttu fw6 pv2 ph3">Date</th>
+            <th class="tl ttu fw6 pv2-ns pv1 ph3-ns ph1">Route</th>
+            <th class="tl ttu fw6 pv2-ns pv1 ph3-ns ph1">Rating</th>
+            <th class="tl ttu fw6 pv2-ns pv1 ph3-ns ph1">Type</th>
+            <th class="tl ttu fw6 pv2-ns pv1 ph3-ns ph1">Style</th>
+            <th class="tl ttu fw6 pv2-ns pv1 ph3-ns ph1">Date</th>
         </tr>
         {{#each @root}}
         <tr class="striped--light-gray ">
-            <td class="pv2 ph3"><a class="no-underline fancy-link relative black-70 hover-light-red" href="{{this.url}}" target="_blank">{{this.route}}</a></td>
-            <td class="pv2 ph3">{{this.rating}}</td>
-            <td class="pv2 ph3">{{this.type}}</td>
-            <td class="pv2 ph3">{{this.style}}</td>
-            <td class="pv2 ph3">{{this.date}}</td>
+            <td class="pv2-ns pv1 ph3-ns ph1"><a class="no-underline fancy-link relative black-70 hover-light-red" href="{{this.url}}" target="_blank">{{this.route}}</a></td>
+            <td class="pv2-ns pv1 ph3-ns ph1">{{this.rating}}</td>
+            <td class="pv2-ns pv1 ph3-ns ph1">{{this.type}}</td>
+            <td class="pv2-ns pv1 ph3-ns ph1">{{this.style}}</td>
+            <td class="pv2-ns pv1 ph3-ns ph1">{{this.date}}</td>
         </tr>
         {{/each}}
     </tbody>
