@@ -10,7 +10,7 @@ js_includes:
 
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
 <strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,
-precipitation-focused reports of current, past, and forecasted weather conditions sourced
+precipitation-focused reports of current, past, and forecasted weather conditions for crags near Seattle, Washington, sourced
 from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.
 </section>
 
