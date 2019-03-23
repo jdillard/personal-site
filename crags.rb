@@ -37,8 +37,6 @@ def create_crag_page(crags)
     f << "layout: page\n"
     f << "title: Crag Conditions\n"
     f << "description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for local climbing crags\n"
-    f << "js_includes:\n"
-    f << "  - weather.js\n"
     f << "---\n\n"
     f << '<section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">'+"\n"
     f << '<strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,'+"\n"
@@ -59,10 +57,7 @@ def create_crag_page(crags)
         f << "</ul>\n"
       end
     end
-    f << "</section>\n\n"
-    f << '<p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>'+"\n"
-    f << '<section id="issues" class="overflow-hidden tc f6" style="transition: height 200ms;height: 0px;">'+"\n"
-    f << "</section>\n\n"
+    f << "</section>\n"
   end
 end
 
