@@ -1,3 +1,5 @@
+import baffle from 'baffle';
+
 /* header animation */
 function LogoBaffleOut() {
     var b = baffle('#logo').start().set({
