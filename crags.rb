@@ -12,7 +12,7 @@ def create_crag_page(crags)
   #TODO needs to loop through each metros cell
   crags.each do |crag|
     metros.add(crag["metros"])
-    states.add(crag["metros"].split(", ").last)
+    states.add(crag["state"])
     end
 
   # determine the locales in each state
@@ -20,15 +20,9 @@ def create_crag_page(crags)
     state_locals[state] = Set[]
   end
 
-  # determine the crags near each locale
-  metros.each do |metro|
-    local_crags[metro] = []
-  end
-
-  #TODO needs to loop through each metros cell
+  #TODO combine into original crag loop?
   crags.each do |crag|
-    state_locals[crag["metros"].split(", ").last].add(crag["metros"].split(", ").shift)
-    local_crags[crag["metros"]].push({ name: crag["name"], state: crag["state"] })
+    state_locals[crag["state"]].add(crag["name"])
   end
 
   File.open("crags.html","w") do |f|
@@ -44,18 +38,22 @@ def create_crag_page(crags)
     f << 'from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.'+"\n"
     f << "</section>\n\n"
     f << '<section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">'+"\n"
-    state_locals.each do |state, locals|
-      f << '<h2 class="bb b--moon-gray">' + state + "</h2>\n"
-      locals.each do |local|
-        local_slug = local.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + '-' + state.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
-        f << '<h3 class="mb2"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/crags/' + local_slug + '-weather.html">' + local + "</a></h3>\n"
-        f << '<ul class="list pl3 f6 mt2">'+"\n"
-        local_crags[local+", "+state].each do |crag|
-          crag_slug = crag[:name].to_s.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + '-' + crag[:state].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
-          f << '<li><a class="no-underline fancy-link relative black-70 hover-light-red" href="/crags/' + crag_slug + '-weather.html">' + crag[:name] + "</a></li>\n"
-        end
-        f << "</ul>\n"
+    f << '<h2 class="bb b--moon-gray">Crags by Nearest Metro</h2>'+"\n"
+    f << '<ul class="list pl3 f6 mt2">'+"\n"
+    metros.each do |metro|
+      metro_slug = metro.gsub(',', '').gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+      f << '<li><a class="no-underline fancy-link relative black-70 hover-light-red" href="/crags/' + metro_slug + '-weather.html">' + metro + "</a></li>\n"
+    end
+    f << "</ul>\n"
+    f << '<h2 class="bb b--moon-gray">Crag by State</h2>'+"\n"
+    state_locals.each do |state, crags|
+      f << '<h3 class="mb2">' + state + "</h3>\n"
+      f << '<ul class="list pl3 f6 mt2">'+"\n"
+      crags.each do |crag|
+        crag_slug = crag.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + '-' + state.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+        f << '<li><a class="no-underline fancy-link relative black-70 hover-light-red" href="/crags/' + crag_slug + '-weather.html">' + crag + "</a></li>\n"
       end
+      f << "</ul>\n"
     end
     f << "</section>\n"
   end

@@ -42,5 +42,38 @@
       -122.627,
       48.453
     ]
+  },
+  {
+    "name": "Index",
+    "note": "Fine-grained granite",
+    "mountainProject": "https://www.mountainproject.com/area/105790635/index",
+    "station": "TSTEV",
+    "office": "SEW/150,72",
+    "coordinates": [
+      -121.556,
+      47.82
+    ]
+  },
+  {
+    "name": "Darrington",
+    "note": "A collection of granite domes",
+    "mountainProject": "https://www.mountainproject.com/area/106006698/darrington",
+    "station": "KAWO",
+    "office": "SEW/151,89",
+    "coordinates": [
+      -121.638,
+      48.161
+    ]
+  },
+  {
+    "name": "Smith Rock",
+    "note": "Volcanic welded tuff with surrounding bands of columnar basalt.",
+    "mountainProject": "https://www.mountainproject.com/area/105788989/smith-rock",
+    "station": "KRDM",
+    "office": "PDT/43,53",
+    "coordinates": [
+      -121.143,
+      44.366
+    ]
   }
 ]
