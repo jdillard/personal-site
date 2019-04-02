@@ -3,14 +3,14 @@
 layout: page
 title: Georgetown Current, Past, and Forecasted Weather
 title_override: Georgetown Weather
-description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for Georgetown, Texas
+description: Real-time, precipitation-focused reports of current, past, and forecasted climbing weather for Georgetown, Texas
 js_includes:
   - weather.js
 ---
 
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
 <strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,
-precipitation-focused reports of current, past, and forecasted weather conditions for Georgetown, Texas, sourced
+precipitation-focused reports of current, past, and forecasted climbing weather for Georgetown, Texas, sourced
 from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.
 </section>
 

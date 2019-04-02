@@ -3,14 +3,14 @@
 layout: page
 title: Icicle Creek Current, Past, and Forecasted Weather
 title_override: Icicle Creek Weather
-description: Real-time, precipitation-focused reports of current, past, and forecasted weather conditions for Icicle Creek, Washington
+description: Real-time, precipitation-focused reports of current, past, and forecasted climbing weather for Icicle Creek, Washington
 js_includes:
   - weather.js
 ---
 
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
 <strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,
-precipitation-focused reports of current, past, and forecasted weather conditions for Icicle Creek, Washington, sourced
+precipitation-focused reports of current, past, and forecasted climbing weather for Icicle Creek, Washington, sourced
 from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.
 </section>
 
