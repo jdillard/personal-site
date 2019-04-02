@@ -14,7 +14,8 @@
     "moment-timezone": "^0.5.23",
     "suncalc": "^1.8.0",
     "tippy.js": "^3.3.0",
-    "tz-lookup": "^6.1.8"
+    "tz-lookup": "^6.1.8",
+    "umbrellajs": "^3.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
