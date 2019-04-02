@@ -14,13 +14,10 @@ precipitation-focused reports of current, past, and forecasted climbing weather 
 from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.
 </section>
 
-<p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Settings</p>
+<p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Instructions</p>
 <section id="settings" class="overflow-hidden" style="transition: height 200ms;height: 0px;">
     <div class="mv2 ph2 center">
         <div class="fn f6 tc pv2">
-            <span class="f7 b">Instructions:</span>
-            <p class="measure lh-copy center"><strong>Show/hide crags</strong> by clicking on their name to the left; green mean shown and gray means hidden.</p>
-            <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
             <p class="measure lh-copy center"><strong>Show/hide hourly forecasts</strong> by clicking the desired day.</p>
             <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
             <p class="measure lh-copy center"><strong>Current and Past conditions</strong> are measured by the nearest weather station. <strong>Forecast conditions</strong> are calculated and polled separately.</p>
