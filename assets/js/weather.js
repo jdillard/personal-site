@@ -708,11 +708,13 @@ document.getElementById("clear-cache").addEventListener("click", function(event)
 $("#settings-toggle").click(function() {
   if($("#settings").hasClass('open')) {
     $("#settings").removeClass('open');
-    $("#settings-toggle").text('Show Settings');
+    const toggled_text = $("#settings-toggle").text().replace("Hide", "Show");
+    $("#settings-toggle").text(toggled_text);
     $("#settings").height(0);
   } else {
     $("#settings").addClass('open');
-    $("#settings-toggle").text('Hide Settings');
+    const toggled_text = $("#settings-toggle").text().replace("Show", "Hide");
+    $("#settings-toggle").text(toggled_text);
     $("#settings").height('auto');
   }
 });
