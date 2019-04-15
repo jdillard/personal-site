@@ -15,7 +15,7 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
 </section>
 
 <p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Instructions</p>
-<section id="settings" class="overflow-hidden" style="transition: height 200ms;height: 0px;">
+<section id="settings" class="overflow-hidden" style="display:none;">
     <div class="mv2 ph2 center">
         <div class="fn f6 tc pv2">
             <p class="measure lh-copy center"><strong>Show/hide hourly forecasts</strong> by clicking the desired day.</p>
@@ -28,6 +28,6 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
 </section>
 <section id="weather" data-crag="smith-rock-oregon" class="mv4-ns mv3 ph2 center"></section>
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
-<section id="issues" class="overflow-hidden tc f6" style="transition: height 200ms;height: 0px;">
+<section id="issues" class="overflow-hidden tc f6">
 </section>
 

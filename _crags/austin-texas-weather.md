@@ -15,7 +15,7 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
 </section>
 
 <p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Settings</p>
-<section id="settings" class="overflow-hidden" style="transition: height 200ms;height: 0px;">
+<section id="settings" class="overflow-hidden" style="display:none;">
     <div class="mv2 ph2 center">
         <div id="menu" class="fn fl-ns w-50-l w-100 pv2 pr4-l">
             <div class="f7 tc b">Select Defaults:</div>
@@ -34,6 +34,6 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
 </section>
 <section id="weather" data-crag="austin-texas" class="mv4-ns mv3 ph2 center"></section>
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
-<section id="issues" class="overflow-hidden tc f6" style="transition: height 200ms;height: 0px;">
+<section id="issues" class="overflow-hidden tc f6">
 </section>
 
