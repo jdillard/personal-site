@@ -78,7 +78,7 @@ def create_crags(crags)
         f << 'from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.'+"\n"
         f << "</section>\n\n"
         f << '<p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Instructions</p>'+"\n"
-        f << '<section id="settings" class="overflow-hidden" style="transition: height 200ms;height: 0px;">'+"\n"
+        f << '<section id="settings" class="overflow-hidden" style="display:none;">'+"\n"
         f << '    <div class="mv2 ph2 center">'+"\n"
         f << '        <div class="fn f6 tc pv2">'+"\n"
         f << '            <p class="measure lh-copy center"><strong>Show/hide hourly forecasts</strong> by clicking the desired day.</p>'+"\n"
@@ -91,7 +91,7 @@ def create_crags(crags)
         f << "</section>\n"
         f << '<section id="weather" data-crag="' + slug + '" class="mv4-ns mv3 ph2 center"></section>'+"\n"
         f << '<p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>'+"\n"
-        f << '<section id="issues" class="overflow-hidden tc f6" style="transition: height 200ms;height: 0px;">'+"\n"
+        f << '<section id="issues" class="overflow-hidden tc f6">'+"\n"
         f << "</section>\n\n"
       end
 
@@ -176,7 +176,7 @@ def create_metros(crags)
         f << 'from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.'+"\n"
         f << "</section>\n\n"
         f << '<p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Settings</p>'+"\n"
-        f << '<section id="settings" class="overflow-hidden" style="transition: height 200ms;height: 0px;">'+"\n"
+        f << '<section id="settings" class="overflow-hidden" style="display:none;">'+"\n"
         f << '    <div class="mv2 ph2 center">'+"\n"
         f << '        <div id="menu" class="fn fl-ns w-50-l w-100 pv2 pr4-l">'+"\n"
         f << '            <div class="f7 tc b">Select Defaults:</div>'+"\n"
@@ -195,7 +195,7 @@ def create_metros(crags)
         f << "</section>\n"
         f << '<section id="weather" data-crag="' + slug + '" class="mv4-ns mv3 ph2 center"></section>'+"\n"
         f << '<p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>'+"\n"
-        f << '<section id="issues" class="overflow-hidden tc f6" style="transition: height 200ms;height: 0px;">'+"\n"
+        f << '<section id="issues" class="overflow-hidden tc f6">'+"\n"
         f << "</section>\n\n"
       end
     end

@@ -8,35 +8,38 @@ const categories = [];
 var urlHash = window.location.hash.substring(1);
 
 if(!urlHash || urlHash.length === 0 || urlHash.substr(0,2) === "20") {
-    grabArticles(true, 'date');
+    grabArticles().then( function(result) {
+        articles = result;
+
+        for (let key in result.data) {
+            result.data[key].categories.forEach(function(element) {
+                if(categories.indexOf(element) < 0) {
+                    categories.push(element);
+                }
+            });
+        }
+        categories.sort();
+        sortArticles('date');
+    });
 } else {
-    grabArticles(true, 'categories');
+    grabArticles().then( function(result) {
+        articles = result;
+
+        for (let key in result.data) {
+            result.data[key].categories.forEach(function(element) {
+                if(categories.indexOf(element) < 0) {
+                    categories.push(element);
+                }
+            });
+        }
+        categories.sort();
+        sortArticles('categories');
+    });
 }
 
-function grabArticles(load = true, s = 'date') {
-    if(load) {
-        $.getJSON( "/assets/json/articles.json", (function() {
-            var sort = s;
-
-            return function( data, textStatus, jqxhr ) {
-                articles = data;
-
-                for (let key in articles.data) {
-                    articles.data[key].categories.forEach(function(element) {
-                        if(categories.indexOf(element) < 0) {
-                            categories.push(element);
-                        }
-                    });
-                }
-
-                categories.sort();
-
-                sortArticles(sort);
-            };
-        })());
-    } else {
-       sortArticles(s);
-    }
+async function grabArticles() {
+    let response = await axios.get('/assets/json/articles.json');
+    return response.data;
 }
 
 function sortArticles(sort) {
@@ -96,7 +99,7 @@ function sortArticles(sort) {
 const archiveNav = document.getElementById("archive-nav").getElementsByClassName("nav-item");
 
 for (let i = 0; i < archiveNav.length; i++) {
-    archiveNav[i].onclick = function(){ // jshint ignore:line
-        grabArticles(false, archiveNav[i].getAttribute('data-name'));
+    archiveNav[i].onclick = function(){
+        sortArticles(archiveNav[i].getAttribute('data-name'));
     };
 }

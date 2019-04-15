@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 import moment from 'moment-timezone';
+import u from 'umbrellajs';
 var SunCalc = require('suncalc');
 var tzlookup = require("tz-lookup");
 
@@ -19,7 +20,6 @@ let storage_keys = Object.keys(localStorage).filter(word => word.startsWith("cra
 if(storage_keys.length == 0 || weather_section.dataset.crag != localStorage.getItem('region-selector')) {
   getCrags(weather_section.dataset.crag);
 } else {
-  $('#region-selector').val(localStorage.getItem('region-selector'));
   for (let i=0; i < storage_keys.length; i++) {
     crags.push(JSON.parse(localStorage[storage_keys[i]]));
   }
@@ -28,7 +28,7 @@ if(storage_keys.length == 0 || weather_section.dataset.crag != localStorage.getI
 
 function getCrags(location) {
   crags = [];
-  $('#menu .menu-item').remove();
+  u('#menu .menu-item').remove();
   while (weather_section.firstChild) {
     weather_section.removeChild(weather_section.firstChild);
   }
@@ -332,13 +332,12 @@ function populateForecasts(crag, data = []) {
   document.getElementById("forecast-end-"+crag.number).innerHTML = end_date;
   document.getElementById("forecast-"+crag.number).innerHTML = template_weather_forecasts(forecasts);
 
-  $( '#forecast-'+crag.number+' .forecast-day' ).hover(
-    function() {
-      $(this).html(moment($(this)[0].dataset.date).format('MMM DD'));
-    },
-    function() {
-      $(this).html(moment($(this)[0].dataset.date).format('dddd'));
-    } );
+  u('#forecast-'+crag.number+' .forecast-day').on( "mouseenter", function(el) {
+    el.srcElement.innerHTML = moment(el.srcElement.dataset.date).format('MMM DD');
+  });
+  u('#forecast-'+crag.number+' .forecast-day').on( "mouseleave", function(el) {
+    el.srcElement.innerHTML = moment(el.srcElement.dataset.date).format('dddd');
+  });
 
   axios.get('https://api.weather.gov/gridpoints/' + crag.office + '/forecast/hourly')
   .then(function (response) {
@@ -556,30 +555,31 @@ function graph_precip(crag_index, data) {
 }
 
 function normalizePage() {
-  $('.hourly-forecast').each(function(i, obj) {
-    $(this).removeClass('flex');
-    $(this).addClass('dn');
+  u('.hourly-forecast').each(function(el){
+    console.log(el);
+    el.classList.remove('flex');
+    el.classList.add('dn');
   });
-  $('.forecast-day').each(function(i, obj) {
-      $(this)[0].dataset.active = false;
-      $(this).removeClass('bg-light-gray');
+  u('.forecast-day').each(function(el){
+    el.dataset.active = false;
+    el.classList.remove('bg-light-gray');
   });
-  $('.daytime').each(function(i, obj) {
-    $(this).removeClass('bg-near-white');
-    $(this).addClass('bg-white');
+  u('.daytime').each(function(el){
+    el.classList.remove('bg-near-white');
+    el.classList.add('bg-white');
   });
-  $('.nighttime').each(function(i, obj) {
-    $(this).removeClass('bg-gray');
-    $(this).addClass('bg-mid-gray');
+  u('.nighttime').each(function(el){
+    el.classList.remove('bg-gray');
+    el.classList.add('bg-mid-gray');
   });
 }
 
 // load the hourly forecast for a particular day
-$(document).on( "click", '.forecast-day', function() {
-  const crag_index = $(this)[0].dataset.crag;
-  const day_index = $(this)[0].dataset.day;
-  const date = moment($(this)[0].dataset.date).format('dddd').toLowerCase();
-  const is_active = ($(this)[0].dataset.active == 'true');
+u('.forecast-day').on( "click", function(el) {
+  const crag_index = el.srcElement.dataset.crag;
+  const day_index = el.srcElement.dataset.day;
+  const date = moment(el.srcElement.dataset.date).format('dddd').toLowerCase();
+  const is_active = (el.srcElement.dataset.active == 'true');
 
   let hourly_forecast = (window.outerWidth > 480) ? document.getElementById('hourly-forecast-'+crag_index) : document.getElementById('hourly-forecast-'+crag_index+'-'+day_index);
   let daytime = document.getElementById(crag_index+'-daytime-'+day_index);
@@ -587,30 +587,30 @@ $(document).on( "click", '.forecast-day', function() {
   if(is_active) {
     hourly_forecast.classList.remove('flex');
     hourly_forecast.classList.add('dn');
-    $(this).removeClass('bg-light-gray');
-    $(this)[0].dataset.active = false;
+    el.removeClass('bg-light-gray');
+    el.srcElement.dataset.active = false;
     daytime.classList.add('bg-white');
     daytime.classList.remove('bg-near-white');
     nighttime.classList.add('bg-mid-gray');
     nighttime.classList.remove('bg-gray');
   } else {
-    $('#forecast-'+crag_index+' .forecast-day').each(function(i, obj) {
-      $(this)[0].dataset.active = false;
-      $(this).removeClass('bg-light-gray');
+    u('#forecast-'+crag_index+' .forecast-day').each(function(el) {
+      el.srcElement.dataset.active = false;
+      el.removeClass('bg-light-gray');
     });
-    $(this).addClass('bg-light-gray');
-    $(this)[0].dataset.active = true;
+    el.addClass('bg-light-gray');
+    el.srcElement.dataset.active = true;
     hourly_forecast.classList.remove('dn');
     hourly_forecast.classList.add('flex');
-    $('#forecast-'+crag_index+' .daytime').each(function(i, obj) {
-      $(this).removeClass('bg-near-white');
-      $(this).addClass('bg-white');
+    u('#forecast-'+crag_index+' .daytime').each(function(el) {
+      el.removeClass('bg-near-white');
+      el.addClass('bg-white');
     });
     daytime.classList.remove('bg-white');
     daytime.classList.add('bg-near-white');
-    $('#forecast-'+crag_index+' .nighttime').each(function(i, obj) {
-      $(this).removeClass('bg-gray');
-      $(this).addClass('bg-mid-gray');
+    u('#forecast-'+crag_index+' .nighttime').each(function(el) {
+      el.removeClass('bg-gray');
+      el.addClass('bg-mid-gray');
     });
     nighttime.classList.remove('bg-mid-gray');
     nighttime.classList.add('bg-gray');
@@ -621,26 +621,13 @@ $(document).on( "click", '.forecast-day', function() {
 });
 
 
-$(document).on( "click", '.crag-add', function() {
-  alert("Adding crags is not supported at this time.");
-  if(localStorage.length > 10) {
-    alert("Only a max of ten crags is allowed.");
-  }
-  console.log($(this));
-  //localStorage.setItem(crag_slug, JSON.stringify(crag));
-  //document.getElementById("weather").insertAdjacentHTML("beforeend", template_crag_boilerplate(crag));
-  //$('#region-selector').val('custom');
-});
-
 // delete crag from localStorage and from weather section
-$(document).on( "click", '.crag-delete', function() {
-  const crag_index = $(this)[0].dataset.crag;
-  const crag_name = $(this)[0].dataset.name;
+u('.crag-delete').on( "click", function(el) {
+  const crag_index = el.srcElement.dataset.crag;
+  const crag_name = el.srcElement.dataset.name;
   const remove = window.confirm("Are you sure you want to remove " + crag_name + "?");
 
   if(remove) {
-    localStorage.setItem('region-selector', 'custom');
-    $('#region-selector').val('custom');
     document.getElementById("menu-item-"+crag_index).remove();
     document.getElementById("crag-"+crag_index).remove();
     document.getElementById("hr-"+crag_index).remove();
@@ -649,10 +636,10 @@ $(document).on( "click", '.crag-delete', function() {
 });
 
 // change active status
-$(document).on( "click", '.crag-status', function() {
-  const crag_index = $(this)[0].dataset.crag;
-  const crag_active = $(this)[0].dataset.active;
-  const crag_slug = $(this)[0].dataset.slug;
+u('.crag-status').on( "click", function(el) {
+  const crag_index = el.srcElement.dataset.crag;
+  const crag_active = el.srcElement.dataset.active;
+  const crag_slug = el.srcElement.dataset.slug;
   const crag = JSON.parse(localStorage.getItem("crag-"+crag_slug));
   crag.number = +crag_index;
   const crags = [];
@@ -679,8 +666,8 @@ $(document).on( "click", '.crag-status', function() {
       populate(crags, false);
     } else {
       let active_crags = [];
-      $(".crag-weather").each(function(index) {
-        active_crags.push(+$(this)[0].dataset.crag);
+      u(".crag-weather").each(function(el) {
+        active_crags.push(+el.srcElement.dataset.crag);
       });
       active_crags.push(crag.number);
       active_crags.sort();
@@ -689,47 +676,35 @@ $(document).on( "click", '.crag-status', function() {
   }
 });
 
-$( "#region-selector" ).change(function() {
-  if($(this).val() === "custom") {
-    localStorage.setItem('region-selector', 'custom');
-  } else {
-    getCrags($(this).val());
-    $("#settings").height('auto');
-  }
-});
-
 document.getElementById("clear-cache").addEventListener("click", function(event){
   localStorage.clear();
-  $('#region-selector').val('austin-tx');
   getCrags('austin-tx');
   event.preventDefault();
 });
 
-$("#settings-toggle").click(function() {
-  if($("#settings").hasClass('open')) {
-    $("#settings").removeClass('open');
-    const toggled_text = $("#settings-toggle").text().replace("Hide", "Show");
-    $("#settings-toggle").text(toggled_text);
-    $("#settings").height(0);
+u("#settings-toggle").on( "click", function() {
+  if(u("#settings").hasClass('open')) {
+    u("#settings").removeClass('open');
+    const toggled_text = u("#settings-toggle").text().replace("Hide", "Show");
+    u("#settings-toggle").text(toggled_text);
+    document.getElementById("settings").style.display = "none";
   } else {
-    $("#settings").addClass('open');
-    const toggled_text = $("#settings-toggle").text().replace("Show", "Hide");
-    $("#settings-toggle").text(toggled_text);
-    $("#settings").height('auto');
+    u("#settings").addClass('open');
+    const toggled_text = u("#settings-toggle").text().replace("Show", "Hide");
+    u("#settings-toggle").text(toggled_text);
+    document.getElementById("settings").style.display = "block";
   }
 });
 
-$("#issues-toggle").click(function() {
-  if($("#issues").hasClass('open')) {
-    $("#issues").removeClass('open');
-    $("#issues-toggle").text('Show Known Issues');
-    $("#issues").height(0);
+u("#issues-toggle").on( "click", function() {
+  if(u("#issues").hasClass('open')) {
+    u("#issues").removeClass('open');
+    u("#issues-toggle").text('Show Known Issues');
     document.getElementById("issues").innerHTML = "";
   } else {
-    $("#issues").addClass('open');
-    $("#issues-toggle").text('Hide Known Issues');
+    u("#issues").addClass('open');
+    u("#issues-toggle").text('Hide Known Issues');
     getIssues();
-    $("#issues").height('auto');
   }
 });
 

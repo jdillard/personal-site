@@ -1,4 +1,5 @@
 import * as d3 from 'd3';
+import u from 'umbrellajs';
 
 const template_logbook = require("./templates/logbook.hbs");
 
@@ -98,7 +99,7 @@ function filterRoutes(routes, selectedType='', selectedStyles=[]) {
       }
     }
     formattedTicks.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating));
-    createGraph({ticks: formattedTicks, keys: Object.keys(groupBy(routes, 'style')).filter(function(e){return e})});
+    createGraph({ticks: formattedTicks, keys: Object.keys(groupBy(routes, 'style')).filter(function(e){return e;})});
 }
 
 function getTickInfo(nameKey, prop, myArray){
@@ -337,7 +338,7 @@ const simpleRating = {
 
 const ratingOrder = ["V1", "V2", "V3", "V4", "V5", "V6", "V7", "5.6", "5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b"];
 
-$("#mp-submit").click(function() {
+u("#mp-submit").on('click', function(){
   const email = document.getElementById("mp-email").value;
   const mpKey = document.getElementById("mp-key").value;
 
@@ -349,8 +350,8 @@ $("#mp-submit").click(function() {
 });
 
 //TODO figure out how to use reDrawGraph
-$('#route-types').on('change', function() {
-  const selectedType = $("input[name='routeType']:checked").val();
+u('#route-types').on('change', function() {
+  const selectedType = document.querySelector("input[name='routeType']:checked").value;
   filterRoutes(JSON.parse(localStorage.getItem("logbook-routes")), selectedType);
 });
 
@@ -358,11 +359,16 @@ window.addEventListener('resize', reDrawGraph());
 
 function reDrawGraph() {
   if(localStorage.getItem("logbook-routes")) {
-    const selectedType = $("input[name='routeType']:checked").val();
+    let selectedType =  '';
     let selectedStyles = [];
-    $.each($("input[name='routeStyles[]']:checked"), function() {
-      selectedStyles.push($(this).val());
-    });
+    if(document.querySelector("input[name='routeType']:checked")) {
+      selectedType = document.querySelector("input[name='routeType']:checked").value;
+    }
+    if(document.querySelector("input[name='routeStyles[]']:checked")) {
+      u("input[name='routeStyles[]']:checked").each(function(el){
+        selectedStyles.push(el.value);
+      });
+    }
     filterRoutes(JSON.parse(localStorage.getItem("logbook-routes")), selectedType, selectedStyles);
   } else {
     axios.get('/assets/json/ticks.json')
@@ -376,19 +382,19 @@ function reDrawGraph() {
   }
 }
 
-$('#route-styles').on('change', function() {
+u('#route-styles').on('change', function() {
   reDrawGraph();
 });
 
-$("#settings-toggle").click(function() {
-  if($("#settings").hasClass('open')) {
-    $("#settings").removeClass('open');
-    $("#settings-toggle").text('Show Instructions');
-    $("#settings").height(0);
+u("#settings-toggle").on('click', function() {
+  if(u("#settings").hasClass('open')) {
+    u("#settings").removeClass('open');
+    u("#settings-toggle").text('Show Instructions');
+    document.getElementById("settings").style.display = "none";
   } else {
-    $("#settings").addClass('open');
-    $("#settings-toggle").text('Hide Instructions');
-    $("#settings").height('auto');
+    u("#settings").addClass('open');
+    u("#settings-toggle").text('Hide Instructions');
+    document.getElementById("settings").style.display = "block";
   }
 });
 
@@ -397,16 +403,14 @@ document.getElementById("clear-cache").addEventListener("click", function(event)
   //TODO reload graph
 });
 
-$("#issues-toggle").click(function() {
-  if($("#issues").hasClass('open')) {
-    $("#issues").removeClass('open');
-    $("#issues-toggle").text('Show Known Issues');
-    $("#issues").height(0);
+u("#issues-toggle").on('click', function() {
+  if(u("#issues").hasClass('open')) {
+    u("#issues").removeClass('open');
+    u("#issues-toggle").text('Show Known Issues');
     document.getElementById("issues").innerHTML = "";
   } else {
-    $("#issues").addClass('open');
-    $("#issues-toggle").text('Hide Known Issues');
+    u("#issues").addClass('open');
+    u("#issues-toggle").text('Hide Known Issues');
     getIssues();
-    $("#issues").height('auto');
   }
 });

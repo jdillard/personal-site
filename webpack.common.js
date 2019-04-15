@@ -12,9 +12,6 @@ const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 module.exports = {
   plugins: [
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery",
       moment: "moment",
       axios: "axios"
     }),
@@ -69,7 +66,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules$/,
         query: {
-          presets: ['es2015']
+          presets: ['env']
         }
       }
     ]
