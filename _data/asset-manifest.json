@@ -1,10 +1,11 @@
 {
-  "about.js": "js/about.aefa362894d898235dbc.js",
-  "archive.js": "js/archive.f64873fd96c2594148b1.js",
-  "commons.js": "js/commons.5054cd0e2eae09f2e364.js",
-  "index.js": "js/index.91cb58f5ade69b718ee5.js",
-  "library.js": "js/library.a5aa86ef268df04411db.js",
-  "logBook.js": "js/logBook.a252d8f1bc9b4611f680.js",
-  "post.js": "js/post.c04b45398aad76aa2d23.js",
-  "weather.js": "js/weather.56f9efea9167d52315cf.js"
+  "about.js": "js/about.2afca2543b0444776583.js",
+  "archive.js": "js/archive.cb509a13a16121368d09.js",
+  "commons.js": "js/commons.1d6bb18b7bc82625886d.js",
+  "index.js": "js/index.6ad8003a82a5a88f22b0.js",
+  "library.js": "js/library.1e01e95f3588568d2abf.js",
+  "logBook.js": "js/logBook.49b0726ed6f9958aa39c.js",
+  "post.js": "js/post.39fd318e727531041b23.js",
+  "trad.js": "js/trad.a9ccdfbf855eb4aad66a.js",
+  "weather.js": "js/weather.d5b2db262d5409cf75c3.js"
 }
