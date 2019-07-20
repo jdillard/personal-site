@@ -1,12 +1,27 @@
 import * as d3 from 'd3';
 
-function create_timeline(domElement) {
+/***
+TODOS:
+    - Add Manufacturer label to left side of bands
+    - Add Model label to right side of tracks
+    - Dynamically calculate bands based on unique manufacturers
+    - Dynamically calulate height of chart
+    - Toggle band/manufacturer
+    - Toggle each model/track
+    - Toggle between mm or in
+    - Fix how tooltip shows up on page load
+    - Make responsive
+    - Add vertical gridlines
+        - https://bl.ocks.org/d3noob/c506ac45617cf9ed39337f99f8511218
+***/
+
+function create_timeline(domElement, min, max) {
 
     //--------------------------------------------------------------------------
     // chart
 
     // chart geometry
-    var margin = {top: 20, right: 20, bottom: 20, left: 20},
+    var margin = {top: 10, right: 10, bottom: 10, left: 10},
         outerWidth = 750,
         outerHeight = 1375,
         width = outerWidth - margin.left - margin.right,
@@ -53,10 +68,6 @@ function create_timeline(domElement) {
         var tracks = [];
 
         data.items = items;
-
-        // items.forEach(function (d) {
-        //     console.log(+d.start + " - " + +d.end + ": " + d.model);
-        // })
 
         function showItems(n) {
             var count = 0, n = n || 10;
@@ -126,7 +137,7 @@ function create_timeline(domElement) {
             band.itemHeight = band.trackHeight * 0.8,
             band.parts = [],
             band.xScale = d3.scaleLinear()
-                .domain([d3.min(filtered, function (d) { return +d.start; }), d3.max(filtered, function (d) { return +d.end; })])
+                .domain([min, max])
                 .range([0, band.w]);
             band.yScale = function (track) {
                 return band.trackOffset + track * band.trackHeight;
@@ -334,6 +345,19 @@ function create_timeline(domElement) {
                 tooltip.style("visibility", "hidden");
             }
 
+            // Gridline
+            var gridlines = d3.axisTop()
+                .tickFormat("")
+                .tickSize(band.h)
+                .scale(band.xScale)
+                .ticks(40);
+
+
+            svg.append("g")
+                .attr("class", "gridlines")
+                .attr("transform", "translate(0," + (band.y + band.h)  + ")")
+                .call(gridlines);
+
         });
 
         return timeline;
@@ -349,7 +373,7 @@ function create_timeline(domElement) {
         var axis = d3.axisBottom(band.xScale)
             .tickSize(6, 0)
             .tickFormat(function (d) { return d; })
-            .ticks(30);
+            .ticks(40);
 
         var xAxis = chart.append("g")
             .attr("class", "axis")
@@ -408,19 +432,6 @@ function create_timeline(domElement) {
 }
 
 /***
-TODOS:
-    - Add Manufacturer label to left side of bands
-    - Add Model label to right side of tracks
-    - Dynamically calculate bands based on unique manufacturers
-    - Dynamically calulate height of chart
-    - Toggle band/manufacturer
-    - Toggle each model/track
-    - Toggle between mm or in
-    - Fix how tooltip shows up on page load
-    - Make responsive
-    - Add vertical gridlines
-        - https://bl.ocks.org/d3noob/c506ac45617cf9ed39337f99f8511218
-
 A timeline can have the following components:
 
     // Defines an area for timeline items. Multiple bands are
@@ -459,14 +470,12 @@ d3.csv("/assets/csv/cams-by-size.csv")
         //const brandIds = brands.map(item => item.replace(/\s+/g, ''));
         //brands.length = 2;
         //TODO if grouping is true use brands, else use one large band
-        create_timeline("#timeline")
+        const max = dataset.reduce((max, p) => +p.end > max ? +p.end : max, +dataset[0].end);
+        create_timeline("#timeline", 0, max)
             .data(dataset)
             .band(brands, 1)
             .tooltips(brands)
             .xAxis(brands[brands.length - 1])
             .labels(brands[brands.length - 1])
             .redraw();
-    })
-    .catch(function(error){
-        console.log(error);
-     });
+    });
