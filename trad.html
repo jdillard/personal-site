@@ -1,0 +1,129 @@
+---
+layout: page
+title: Cam Comparison Chart
+description: Interactive cam comparison chart by size and by brand
+js_includes:
+  - trad.js
+---
+<style>
+    /* axis */
+    .axis { /* axis labels */
+        fill: #808080;
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+    .axis line{ /* axis tick marks */
+        stroke-width : 1;
+        stroke: grey;
+        shape-rendering: crispEdges;
+    }
+    .axis path { /* axis line */
+        stroke-width : 1;
+        stroke: grey;
+        shape-rendering: crispEdges;
+    }
+
+    /* timeline band */
+    .band { /* band background */
+        fill: #FAFAFA;
+    }
+
+    /* labels */
+    .bandLabel {
+        fill: #F0F0F0;
+        font: 10px sans-serif;
+        font-weight: bold;
+    }
+    .bandMinMaxLabel {
+        fill: blue;
+        font: 10px sans-serif;
+        font-weight: bold;
+    }
+    .bandTitle {
+        fill: blue;
+        font: 10px sans-serif;
+        font-weight: bold;
+    }
+
+    /* brush */
+    .brush .extent {
+        stroke: gray;
+        fill: blue;
+        fill-opacity: .1;
+    }
+    .chart {
+        fill: #EEEEEE;
+    }
+    .interval {
+        stroke-width: 6;
+        cursor : default;
+        pointer-events: true;
+    }
+    .interval.black {
+        fill: #333333; /* dark-gray */
+    }
+    .interval.blue {
+        fill: #357EDD; /* blue */
+    }
+    .interval.gray {
+        fill: #777777; /* gray */
+    }
+    .interval.green {
+        fill: #19A974; /* green */
+    }
+    .interval.maroon {
+        fill: maroon;
+    }
+    .interval.orange {
+        fill: #FF6300; /* orange */
+    }
+    .interval.purple {
+        fill: #A463F2; /* light-purple */
+    }
+    .interval.red {
+        fill: #FF725C; /* light-red */
+    }
+    .interval.yellow {
+        fill: #FFD700; /* yellow */
+    }
+    .intervalLabel {
+        fill : black;
+        font: 10px sans-serif;
+        shape-rendering: crispEdges;
+    }
+    .item {
+        cursor : default;
+        pointer-events: auto;
+    }
+    .svg {
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        background-color: #FFFFFF;
+    }
+    .tooltip {
+        width: auto;
+        position: absolute;
+        visibility: hidden;
+        color : black;
+        cursor:default;
+        background-color: #FFFFEE;
+        border: 1px solid;
+        padding: 4px;
+        shape-rendering: crispEdges;
+        pointer-events: none;
+    }
+</style>
+
+<section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
+    <p>
+        <strong>"What's the equivalent?"</strong> Searching for new cams or
+        piecing together a rack with a new climbing partner can feel like an
+        overwhelming task at times, this comparison chart aims to make that easier.
+        Data sourced from <a class="no-underline i light-red" target="_blank"
+        href="http://www.stephabegg.com/home/projects/camerasandcams#camsize">
+        Steph Abegg's website</a>.
+    </p>
+</section>
+
+<div id="timeline"></div>

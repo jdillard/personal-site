@@ -30,6 +30,7 @@ module.exports = {
     commons: "./assets/js/commons.js",
     library: "./assets/js/library.js",
     logBook: "./assets/js/logBook.js",
+    trad: "./assets/js/trad.js",
     weather: "./assets/js/weather.js"
   },
   output: {

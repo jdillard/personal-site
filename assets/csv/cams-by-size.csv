@@ -1,0 +1,117 @@
+manufacturer,model,size,color,start,end
+Black Diamond,Stoppers,1,red,4.3,9.1
+Black Diamond,Stoppers,2,yellow,4.8,9.9
+Black Diamond,Stoppers,3,blue,6.1,11.4
+Black Diamond,Stoppers,4,gray,7,12.4
+Black Diamond,C3,0,gray,7.8,12.9
+Fixe,Alien,1/3,black,8,14
+Black Diamond,X4,0.1,red,8.4,13.8
+Black Diamond,Stoppers,5,purple,8.4,13.5
+Metolius,Master Cam,0,gray,8.5,12
+Metolius,TCU,0,gray,8.5,12
+Black Diamond,C3,0,purple,9,13.7
+Black Diamond,X4,0.2,yellow,9.9,16.5
+Fixe,Alien,3/8,blue,10,17
+Metolius,Master Cam,0,purple,10,15
+Metolius,TCU,0,purple,10,15
+Black Diamond,Stoppers,6,green,10.2,15.5
+Black Diamond,C3,0,green,10.7,15.8
+Trango,Flex Cam,1,gray,11,17
+Totem,Basic,0.5,blue,11.2,17.4
+Totem,Totem,0.5,black,11.7,18.9
+Black Diamond,Stoppers,7,red,11.7,16.3
+Black Diamond,C3,1,red,12,18.8
+Black Diamond,X4,0.3,blue,12.4,21.2
+Metolius,Master Cam,1,blue,12.5,18
+Metolius,TCU,1,blue,12.5,18
+Fixe,Alien,1/2,green,13,22
+Omega Pacific,Link Cam,0.5,purple,13.5,35
+Black Diamond,Stoppers,8,yellow,13.5,18.3
+DMM,Dragon,0,blue,13.6,22.5
+Totem,Basic,0.65,green,13.6,21.4
+Black Diamond,C4,0.3,blue,13.8,23.4
+Totem,Totem,0.65,blue,13.8,22.5
+Wild Country,Helium Friends,0,blue,14,22.5
+Black Diamond,C3,2,yellow,14.2,22.6
+Fixe,Alien,3/4,yellow,15,25
+Trango,Flex Cam,2,orange,15,21
+Black Diamond,Stoppers,9,blue,15.2,20.8
+Black Diamond,C4,0.4,gray,15.5,26.7
+Black Diamond,X4,0.4,gray,15.5,26.6
+Metolius,Master Cam,2,yellow,15.5,22.5
+Metolius,TCU,2,yellow,15.5,22.5
+DMM,Dragon,0,gray,16,25.7
+Totem,Basic,0.75,yellow,16.6,26.1
+Wild Country,Helium Friends,0.5,red,16.6,26.7
+Fixe,Alien,7/8,gray,17,30
+Totem,Totem,0.8,yellow,17,27.7
+Black Diamond,Stoppers,10,gray,17.3,23.4
+Omega Pacific,Link Cam,0.75,green,17.8,44.5
+Metolius,Master Cam,3,orange,18.5,26.5
+Metolius,TCU,3,orange,18.5,26.5
+Trango,Flex Cam,3,purple,19,27
+Black Diamond,C4,0.5,purple,19.6,33.5
+Wild Country,Helium Friends,1,yellow,19.7,31.7
+Black Diamond,X4,0.5,purple,19.8,33.7
+Totem,Basic,0.95,red,19.9,31.6
+DMM,Dragon,1,purple,20,33
+Fixe,Alien,1,red,20,33
+Black Diamond,Stoppers,11,purple,20.1,26.7
+Wild Country,New Friends,0.5,purple,20.6,34.5
+Totem,Totem,1,purple,20.9,34.2
+Omega Pacific,Link Cam,1,red,21.1,53.3
+Black Diamond,Stoppers,12,green,22.9,30.5
+Metolius,Master Cam,4,red,23.5,33.5
+Metolius,TCU,4,red,23.5,33.5
+Wild Country,Helium Friends,1.5,gray,23.6,38
+Black Diamond,C4,0.75,green,23.9,41.2
+Black Diamond,X4,0.75,green,24,41.2
+DMM,Dragon,2,green,24,41
+Trango,Flex Cam,4,green,24,33
+Omega Pacific,Link Cam,2,yellow,25.4,64
+Totem,Totem,1.25,green,25.7,42.3
+Wild Country,New Friends,0.75,green,25.8,43
+Black Diamond,Stoppers,13,red,26.4,35.1
+Trango,Flex Cam,5,gray,27,43
+Metolius,Master Cam,5,black,28,39.5
+Wild Country,Helium Friends,2,red,28.4,45.7
+DMM,Dragon,3,red,29,50
+Black Diamond,C4,1,red,30.2,52.1
+Totem,Totem,1.5,red,31.6,52.2
+Wild Country,New Friends,1,red,31.7,53.6
+Metolius,Master Cam,6,green,32.5,48
+Trango,Flex Cam,6,orange,34,55
+Wild Country,Helium Friends,2.5,yellow,34.4,55.4
+Black Diamond,C4,2,yellow,37.2,64.9
+DMM,Dragon,4,yellow,38,64
+Totem,Totem,1.8,orange,39.7,64.2
+Metolius,Master Cam,7,blue,40,57.5
+Wild Country,New Friends,2,yellow,41.5,69.3
+Wild Country,Helium Friends,3,purple,41.9,67.5
+Metolius,Supercam,sm,gray,42,63.4
+Trango,Flex Cam,7,purple,44,68
+Metolius,Master Cam,8,purple,48.5,71.5
+DMM,Dragon,5,blue,50,85
+Black Diamond,C4,3,blue,50.7,87.9
+Wild Country,Helium Friends,3.5,blue,51.3,82.7
+Metolius,Supercam,med,maroon,52.5,91.5
+Wild Country,New Friends,3,blue,52.7,88
+Trango,Flex Cam,8,green,53,86
+Trango,Flex Cam,9,gray,63,107
+Wild Country,Helium Friends,4,gray,63.3,101.83
+Black Diamond,C4,4,gray,66,114.7
+Metolius,Supercam,lrg,blue,66.5,118.5
+Wild Country,New Friends,4,gray,66.8,112.1
+DMM,Dragon,6,gray,68,114
+Trango,Big Bros,0.5,gray,69,86
+Trango,Big Bros,1,red,81,109
+Wild Country,Technical Friends,5,red,84,138
+Black Diamond,C4,5,purple,85.4,148.5
+Trango,Big Bros,2,purple,101,145
+Black Diamond,C4,6,green,114.1,195
+Wild Country,Technical Friends,6,green,118,194
+Trango,Big Bros,3,green,135,203
+Valley Giant,Valley Giant,9,gray,145,229
+Valley Giant,Valley Giant,12,gray,188,305
+Trango,Big Bros,4,blue,191,305
+Trango,Big Bros,5,yellow,287.02,467
