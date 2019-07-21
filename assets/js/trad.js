@@ -1,18 +1,13 @@
 import * as d3 from 'd3';
+import u from 'umbrellajs';
 
 /***
 TODOS:
-    - Add Manufacturer label to left side of bands
-    - Add Model label to right side of tracks
-    - Dynamically calculate bands based on unique manufacturers
+    - Make gridlines in back
     - Dynamically calulate height of chart
-    - Toggle band/manufacturer
-    - Toggle each model/track
-    - Toggle between mm or in
-    - Fix how tooltip shows up on page load
-    - Make responsive
-    - Add vertical gridlines
-        - https://bl.ocks.org/d3noob/c506ac45617cf9ed39337f99f8511218
+    - Add Issues
+    - Replace archive in footer
+    - Convert mm to in
 ***/
 
 function create_timeline(domElement, min, max) {
@@ -431,6 +426,19 @@ function create_timeline(domElement, min, max) {
     return timeline;
 }
 
+function getIssues() {
+    axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=trad&state=open')
+      .then(function (response) {
+        for (let c in response.data) {
+          let temp_html = '<div class="mv2"><a class="no-underline relative f6 black-70 hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
+          document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
+        }
+      })
+      .catch(function (error) {
+        console.log(error);
+    });
+  }
+
 /***
 A timeline can have the following components:
 
@@ -478,4 +486,16 @@ d3.csv("/assets/csv/cams-by-size.csv")
             .xAxis(brands[brands.length - 1])
             .labels(brands[brands.length - 1])
             .redraw();
+    });
+
+u("#issues-toggle").on('click', function() {
+    if(u("#issues").hasClass('open')) {
+        u("#issues").removeClass('open');
+        u("#issues-toggle").text('Show Known Issues');
+        document.getElementById("issues").innerHTML = "";
+    } else {
+        u("#issues").addClass('open');
+        u("#issues-toggle").text('Hide Known Issues');
+        getIssues();
+    }
     });
