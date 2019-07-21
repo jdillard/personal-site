@@ -1,12 +1,6 @@
 import * as d3 from 'd3';
 import u from 'umbrellajs';
 
-/***
-TODOS:
-    - Make gridlines in back
-    - Convert mm to in
-***/
-
 function create_timeline(domElement, min, max, totalItems, totalBrands) {
 
     //--------------------------------------------------------------------------
@@ -139,11 +133,6 @@ function create_timeline(domElement, min, max, totalItems, totalBrands) {
                 .attr("id", band.id)
                 .attr("transform", "translate(0," + band.y +  ")");
 
-            band.g.append("rect")
-                .attr("class", "band")
-                .attr("width", band.w)
-                .attr("height", band.h);
-
             // Items
             var items = band.g.selectAll("g")
                 .data(filtered)
@@ -160,6 +149,19 @@ function create_timeline(domElement, min, max, totalItems, totalBrands) {
                 .attr("class", "intervalLabel")
                 .attr("x", 1)
                 .attr("y", 10);
+
+            // Gridline
+            var gridlines = d3.axisTop()
+                .tickFormat("")
+                .tickSize(band.h)
+                .scale(band.xScale)
+                .ticks(40);
+
+
+            band.g.append("g").lower()
+                .attr("class", "gridlines")
+                .attr("transform", "translate(0," + (band.h)  + ")")
+                .call(gridlines);
 
             band.addActions = function(actions) {
                 // actions - array: [[trigger, function], ...]
@@ -336,20 +338,6 @@ function create_timeline(domElement, min, max, totalItems, totalBrands) {
             function hideTooltip () {
                 tooltip.style("visibility", "hidden");
             }
-
-            // Gridline
-            var gridlines = d3.axisTop()
-                .tickFormat("")
-                .tickSize(band.h)
-                .scale(band.xScale)
-                .ticks(40);
-
-
-            svg.append("g")
-                .attr("class", "gridlines")
-                .attr("transform", "translate(0," + (band.y + band.h)  + ")")
-                .call(gridlines);
-
         });
 
         return timeline;
