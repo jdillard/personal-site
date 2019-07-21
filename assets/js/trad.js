@@ -4,13 +4,10 @@ import u from 'umbrellajs';
 /***
 TODOS:
     - Make gridlines in back
-    - Dynamically calulate height of chart
-    - Add Issues
-    - Replace archive in footer
     - Convert mm to in
 ***/
 
-function create_timeline(domElement, min, max) {
+function create_timeline(domElement, min, max, totalItems, totalBrands) {
 
     //--------------------------------------------------------------------------
     // chart
@@ -18,7 +15,7 @@ function create_timeline(domElement, min, max) {
     // chart geometry
     var margin = {top: 10, right: 10, bottom: 10, left: 10},
         outerWidth = 750,
-        outerHeight = 1375,
+        outerHeight = totalItems*11 + totalBrands*8,
         width = outerWidth - margin.left - margin.right,
         height = outerHeight - margin.top - margin.bottom;
 
@@ -479,7 +476,8 @@ d3.csv("/assets/csv/cams-by-size.csv")
         //brands.length = 2;
         //TODO if grouping is true use brands, else use one large band
         const max = dataset.reduce((max, p) => +p.end > max ? +p.end : max, +dataset[0].end);
-        create_timeline("#timeline", 0, max)
+
+        create_timeline("#timeline", 0, max, dataset.length, brands.length)
             .data(dataset)
             .band(brands, 1)
             .tooltips(brands)
