@@ -316,7 +316,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands) {
             ]);
 
             function getHtml(element, d) {
-                return d.manufacturer + ' ' + d.model + ' #' + d.size + "<br>" + +d.start + "mm - " + +d.end + 'mm';
+                return d.manufacturer + '<br>' + d.model + ' #' + d.size + "<br>" + +d.start + "mm - " + +d.end + 'mm';
             }
 
             function showTooltip (d) {
@@ -353,7 +353,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands) {
         var axis = d3.axisBottom(band.xScale)
             .tickSize(6, 0)
             .tickFormat(function (d) { return d; })
-            .ticks(40);
+            .ticks(20);
 
         var xAxis = chart.append("g")
             .attr("class", "axis")
