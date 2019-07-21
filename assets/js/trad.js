@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
 import u from 'umbrellajs';
 
-function create_timeline(domElement, min, max, totalItems, totalBrands) {
+function create_timeline(domElement, min, max, totalItems, totalBrands, metric=true) {
 
     //--------------------------------------------------------------------------
     // chart
@@ -9,9 +9,10 @@ function create_timeline(domElement, min, max, totalItems, totalBrands) {
     // chart geometry
     var margin = {top: 10, right: 10, bottom: 10, left: 10},
         outerWidth = 750,
-        outerHeight = totalItems*11 + totalBrands*8,
+        outerHeight = totalItems*10 + totalBrands*14,
         width = outerWidth - margin.left - margin.right,
-        height = outerHeight - margin.top - margin.bottom;
+        height = outerHeight - margin.top - margin.bottom,
+        units = metric ? "mm" : "in";
 
     // global timeline variables
     var timeline = {},   // The timeline
@@ -45,6 +46,16 @@ function create_timeline(domElement, min, max, totalItems, totalBrands) {
         .append("div")
         .attr("class", "tooltip")
         .style("visibility", "visible");
+
+    function convertToInches(length, metric=true) {
+        if(metric)  {
+            return +length;
+        } else {
+            return (+length / 25.4).toFixed(2);
+        }
+    }
+
+    console.log(convertToInches(max, metric));
 
     //--------------------------------------------------------------------------
     // data
@@ -94,8 +105,8 @@ function create_timeline(domElement, min, max, totalItems, totalBrands) {
 
         calculateTracks(data.items);
         data.nTracks = tracks.length;
-        data.minItem = d3.min(data.items, function (d) { return +d.start; });
-        data.maxItem = d3.max(data.items, function (d) { return +d.end; });
+        data.minItem = d3.min(data.items, function (d) { return convertToInches(d.start, metric); });
+        data.maxItem = d3.max(data.items, function (d) { return convertToInches(d.end, metric); });
 
         return timeline;
     };
@@ -104,26 +115,28 @@ function create_timeline(domElement, min, max, totalItems, totalBrands) {
     // band
 
 
-    timeline.band = function (bandNames, sizeFactor) {
+    timeline.band = function (bandNames) {
 
         let filtered = data.items;
 
         bandNames.forEach(function(bandName) {
             if(bandNames.length > 1) {
-                filtered = data.items.filter(function(d){return d.manufacturer === bandName;});
+                filtered = data.items.filter(function(d){
+                    return d.manufacturer === bandName;
+                });
             }
             var band = {};
             band.id = "band" + bandNum;
             band.x = 0;
             band.y = bandY;
             band.w = width;
-            band.h = filtered.length * 11;
+            band.h = filtered.length * 10 + 6;
             band.trackOffset = 4;
             band.trackHeight = 10;
             band.itemHeight = band.trackHeight * 0.8,
             band.parts = [],
             band.xScale = d3.scaleLinear()
-                .domain([min, max])
+                .domain([convertToInches(min, metric), convertToInches(max, metric)])
                 .range([0, band.w]);
             band.yScale = function (track) {
                 return band.trackOffset + track * band.trackHeight;
@@ -172,9 +185,9 @@ function create_timeline(domElement, min, max, totalItems, totalBrands) {
 
             band.redraw = function () {
                 items
-                    .attr("x", function (d) { return band.xScale(+d.start);})
+                    .attr("x", function (d) { return band.xScale(convertToInches(d.start, metric));})
                     .attr("width", function (d) {
-                        return band.xScale(+d.end) - band.xScale(+d.start); });
+                        return band.xScale(convertToInches(d.end, metric)) - band.xScale(convertToInches(d.start, metric)); });
                 band.parts.forEach(function(part) { part.redraw(); });
             };
 
@@ -202,10 +215,10 @@ function create_timeline(domElement, min, max, totalItems, totalBrands) {
 
         var labelDefs = [
                 ["start", "bandMinMaxLabel", 0, 4,
-                    function(min, max) { return min.toFixed(2) + 'mm'; },
+                    function(min, max) { return min.toFixed(2) + units; },
                     "Start of the selected interval", band.x + 30, labelTop],
                 ["end", "bandMinMaxLabel", band.w - labelWidth, band.w - 4,
-                    function(min, max) { return max.toFixed(2) + 'mm'; },
+                    function(min, max) { return max.toFixed(2) + units; },
                     "End of the selected interval", band.x + band.w - 152, labelTop]
             ];
 
@@ -316,7 +329,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands) {
             ]);
 
             function getHtml(element, d) {
-                return d.manufacturer + '<br>' + d.model + ' #' + d.size + "<br>" + +d.start + "mm - " + +d.end + 'mm';
+                return d.manufacturer + '<br>' + d.model + ' #' + d.size + "<br>" + convertToInches(d.start, metric) + units + " - " + convertToInches(d.end, metric) + units;
             }
 
             function showTooltip (d) {
@@ -429,10 +442,8 @@ A timeline can have the following components:
 
     // Defines an area for timeline items. Multiple bands are
     // allowed.
-    .band(bandName, sizeFactor)
+    .band(bandName)
         bandName - string; the name of the band for references.
-        sizeFactor - percentage; height of the band relation to the
-            total height.
 
     // Defines an xAxis for a band.
     .xAxis(bandName)
@@ -459,18 +470,22 @@ A timeline can have the following components:
 
 d3.csv("/assets/csv/cams-by-size.csv")
     .then(function(dataset) {
-        const brands = [...new Set(dataset.map(item => item.manufacturer))];
+        //const brands = [...new Set(dataset.map(item => item.manufacturer))];
         //const brandIds = brands.map(item => item.replace(/\s+/g, ''));
-        //brands.length = 2;
         //TODO if grouping is true use brands, else use one large band
         const max = dataset.reduce((max, p) => +p.end > max ? +p.end : max, +dataset[0].end);
+        const filteredData = dataset.filter(function(d){
+            return d.start >= 0 && d.end <= max;
+        });
+        const filteredBrands = [...new Set(filteredData.map(item => item.manufacturer))];
+        const filteredMax = filteredData.reduce((max, p) => +p.end > max ? +p.end : max, +filteredData[0].end);
 
-        create_timeline("#timeline", 0, max, dataset.length, brands.length)
-            .data(dataset)
-            .band(brands, 1)
-            .tooltips(brands)
-            .xAxis(brands[brands.length - 1])
-            .labels(brands[brands.length - 1])
+        create_timeline("#timeline", 0, filteredMax, filteredData.length, filteredBrands.length)
+            .data(filteredData)
+            .band(filteredBrands, 1)
+            .tooltips(filteredBrands)
+            .xAxis(filteredBrands[filteredBrands.length - 1])
+            //.labels(filteredBrands[filteredBrands.length - 1])
             .redraw();
     });
 
