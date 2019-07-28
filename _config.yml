@@ -14,7 +14,7 @@ title: 'Jared Dillard'
 google_analytics: 'UA-7883601-2'
 repository: jdillard/personal-site
 
-include: ["_headers"]
+include: ["_headers", "_redirects"]
 exclude: ["Gemfile.lock","Rakefile","Gemfile","README.md","node_modules","npm-debug.log","package.json","vendor"]
 
 social:
