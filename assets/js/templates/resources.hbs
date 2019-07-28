@@ -1,0 +1,15 @@
+<div class="entry">
+    {{#each @root}}
+    <h2 id="{{this.slug}}" class="f3-ns f4">{{this.heading}}</h2>
+    <ul class="list pl0">
+        {{#each this.data}}
+        <li class="pv1 f4-ns f5">
+            <a class="flex-ns items-center no-underline black-70 hover-light-red" href="{{this.url}}">
+                <time class="f5-ns f6 gray db nowrap mr3">{{this.desc}}</time>
+                <span class="pv0-ns pv1 lh-copy db">{{this.title}}</span>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+    {{/each}}
+</div>

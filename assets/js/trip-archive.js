@@ -6,7 +6,7 @@ const categories = [];
 var urlHash = window.location.hash.substring(1);
 
 if(!urlHash || urlHash.length === 0 || urlHash.substr(0,2) === "20") {
-    grabArticles().then(function(result) {
+    grabArticles().then( function(result) {
         articles = result;
 
         for (let key in result.data) {
@@ -20,7 +20,7 @@ if(!urlHash || urlHash.length === 0 || urlHash.substr(0,2) === "20") {
         sortArticles('date');
     });
 } else {
-    grabArticles().then(function(result) {
+    grabArticles().then( function(result) {
         articles = result;
 
         for (let key in result.data) {
@@ -36,7 +36,7 @@ if(!urlHash || urlHash.length === 0 || urlHash.substr(0,2) === "20") {
 }
 
 async function grabArticles() {
-    let response = await axios.get('/assets/json/articles.json');
+    let response = await axios.get('/assets/json/trips.json');
     return response.data;
 }
 

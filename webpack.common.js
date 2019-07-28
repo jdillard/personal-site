@@ -30,7 +30,10 @@ module.exports = {
     commons: "./assets/js/commons.js",
     library: "./assets/js/library.js",
     logBook: "./assets/js/logBook.js",
+    getInvolved: "./assets/js/get-involved.js",
     trad: "./assets/js/trad.js",
+    trip: "./assets/js/trip.js",
+    tripArchive: "./assets/js/trip-archive.js",
     weather: "./assets/js/weather.js"
   },
   output: {
@@ -64,11 +67,13 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader',
         exclude: /node_modules$/,
-        query: {
-          presets: ['env']
-        }
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['es2017'],
+          },
+        },
       }
     ]
   }

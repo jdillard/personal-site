@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: trip
 title: 'Trip Report: Devil''s Dome Loop'
 date: 2016-09-25 00:00:00
+state: Washington
+type: climbing
 published: true
 categories:
   - backpacking

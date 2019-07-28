@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "Trip Planning: Coastal Kayaking"
-date:   2016-12-15
+layout: trip
+title: "Trip Planning: Coastal Kayaking"
+date: 2016-12-15
 published: true
+state: Texas
+type: fishing
 categories:
   - trip planning
 cover: coastal-kayaking

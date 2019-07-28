@@ -1,0 +1,10 @@
+<ul class="list pl0">
+    {{#each @root}}
+    <li class="pv2 f5">
+        <a class="flex-ns items-center no-underline black-70 hover-light-red" href="{{ this.url }}">
+            <span class="pv0-ns pv1 db mr3">{{ this.title }}</span>
+            <time class="f6 gray db nowrap"> {{ this.desc }}...</time>
+        </a>
+    </li>
+{{/each}}
+</ul>

@@ -33,6 +33,9 @@ collections:
   crags:
     output: true
     permalink: /crags/:title:output_ext
+  trips:
+    output: true
+    permalink: /trips/:title:output_ext
 
 sass:
     style: compressed
