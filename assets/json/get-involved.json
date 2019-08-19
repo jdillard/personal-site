@@ -7,7 +7,7 @@
          "Texas"
       ],
       "types": [
-         "fishing"
+         "kayaking"
       ]
    },
    {
@@ -18,7 +18,7 @@
          "Texas"
       ],
       "types": [
-         "fishing"
+         "kayaking"
       ]
    },
    {
@@ -29,7 +29,7 @@
          "Texas"
       ],
       "types": [
-         "fishing"
+         "kayaking"
       ]
    },
    {
@@ -40,7 +40,8 @@
          "Washington"
       ],
       "types": [
-         "climbing"
+         "climbing",
+         "hiking"
       ]
    },
    {
@@ -51,7 +52,8 @@
          "California"
       ],
       "types": [
-         "climbing"
+         "climbing",
+         "hiking"
       ]
    },
    {
@@ -62,6 +64,89 @@
          "Utah"
       ],
       "types": [
+         "climbing",
+         "hiking"
+      ]
+   },
+   {
+      "name": "Access Fund",
+      "url": "https://www.accessfund.org/take-action/volunteer",
+      "desc": "Save Our Canyons is dedicated to protecting the beauty and wildness of the Wasatch canyons, mountains, and foothills.",
+      "states": [
+         "All"
+      ],
+      "types": [
+         "climbing"
+      ]
+   },
+   {
+      "name": "The Mountaineers",
+      "url": "https://www.mountaineers.org/membership/join-the-mountaineers",
+      "desc": "Save Our Canyons is dedicated to protecting the beauty and wildness of the Wasatch canyons, mountains, and foothills.",
+      "states": [
+         "All"
+      ],
+      "types": [
+         "climbing"
+      ]
+   },
+   {
+      "name": "Washington Water Trails Association - WWTA",
+      "url": "https://www.wwta.org",
+      "desc": "Through advocacy, education, and stewardship, Washington Water Trails Association protects and promotes public access to Washington waterways, shorelines, and marine trails for human-powered watercraft.",
+      "states": [
+         "Washington"
+      ],
+      "types": [
+         "kayaking"
+      ]
+   },
+   {
+      "name": "Puget Soundkeeper Alliance",
+      "url": "https://pugetsoundkeeper.org",
+      "desc": "Protecting and preserving the waters of Puget Sound.",
+      "states": [
+         "Washington"
+      ],
+      "types": [
+         "kayaking"
+      ]
+   },
+   {
+      "name": "Washington Environmental Council",
+      "url": "https://wecprotects.org",
+      "desc": "Protect, restore, and sustain Washington's environment for all.",
+      "states": [
+         "Washington"
+      ],
+      "types": [
+         "kayaking",
+         "hiking",
+         "climbing"
+      ]
+   },
+   {
+      "name": "The San Juan Preservation Trust",
+      "url": "https://sjpt.org",
+      "desc": "Protect, restore, and sustain Washington's environment for all.",
+      "states": [
+         "Washington"
+      ],
+      "types": [
+         "kayaking",
+         "hiking"
+      ]
+   },
+   {
+      "name": "American Whitewater",
+      "url": "https://www.americanwhitewater.org",
+      "desc": "Primary advocate for the preservation and protection of whitewater rivers throughout the United States.",
+      "states": [
+         "All"
+      ],
+      "types": [
+         "kayaking",
+         "hiking",
          "climbing"
       ]
    }
