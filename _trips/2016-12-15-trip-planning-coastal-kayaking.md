@@ -4,7 +4,7 @@ title: "Trip Planning: Coastal Kayaking"
 date: 2016-12-15
 published: true
 state: Texas
-type: fishing
+type: kayaking
 categories:
   - trip planning
 cover: coastal-kayaking
