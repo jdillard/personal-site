@@ -2,21 +2,40 @@ const webpack = require('webpack');
 const path = require("path");
 const ManifestPlugin = require('webpack-manifest-plugin');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
-//const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
-//const extractSass = new ExtractTextPlugin({
-//  filename: "css/styles.[contenthash].css",
-//  disable: process.env.NODE_ENV === "development"
-//});
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const autoprefixer = require("autoprefixer");
 
 module.exports = {
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /css$/,
+          chunks: 'all',
+          enforce: true
+        },
+        vendors: {
+          filename: 'js/[name].[chunkhash].js'
+        }
+      }
+    }
+  },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].[contenthash].css'
+    }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [
+          autoprefixer()
+        ]
+      }
+    }),
     new webpack.ProvidePlugin({
       moment: "moment",
       axios: "axios"
     }),
-    //new ExtractTextPlugin("./assets/dist/css/styles.css"),
-    new webpack.optimize.CommonsChunkPlugin({name: 'commons', filename: 'js/[name].[chunkhash].js', children: true}),
     new ManifestPlugin({
       fileName: '../../_data/asset-manifest.json'
     }),
@@ -43,16 +62,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/, // include .js files
-        enforce: "pre", // preload the jshint loader
-        exclude: /node_modules/, // exclude any and all files in the node_modules folder
-        use: [
-          {
-            loader: "jshint-loader"
-          }
-        ]
-      },
-      {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
         use: 'url-loader?limit=100000'
       },
@@ -71,7 +80,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['es2017'],
+            presets: ['@babel/preset-env'],
           },
         },
       }
