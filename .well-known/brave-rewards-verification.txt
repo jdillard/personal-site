@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jareddillard.com
+Token: 50e8b7f7cfc1923638626a6e0b5eb94b135d845395d529470a3ea50f759ac71a
