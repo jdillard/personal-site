@@ -16,6 +16,11 @@ method. The gettext files can be translated a number of different ways, but I ha
 had great results using [Zanata](http://zanata.org/), a separate open source project
 that facilitates community driven translation.
 
+{: {{site.data.css.warning-box}} }
+> **Note:** RedHat has choosen to step away from Zanata and the last time I
+checked no one has stepped forward to carry the project forward. Reguardless of
+the tool used, these concepts are still applicable.
+
 Reguardless of how the generated files are translated though, the process should end
 up being pretty similar:
 
