@@ -1,3 +1,4 @@
 #blockquote styles
 info-box: .shadow-5 .dark-blue .bg-lightest-blue .bl .bw3 .b--dark-blue
 tip-box: .shadow-5 .dark-green .bg-light-green .bl .bw3 .b--dark-green
+warning-box: .shadow-5 .red .bg-light-yellow .bl .bw3 .b--red
