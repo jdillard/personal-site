@@ -184,8 +184,13 @@ function activity(activities = []) {
           b.link = b.payload.issue.html_url;
           break;
         case "CreateEvent":
-          b.words = '<strong>' + b.payload.ref_type + ' ' + b.payload.ref + '</strong>';
-          b.link = "https://github.com/" + b.repo.name;
+          if(b.payload.ref_type === "repository") {
+            b.words = 'a <strong>' + b.payload.ref_type + '</strong>';
+            b.link = "https://github.com/" + b.repo.name;
+          } else {
+            b.words = '<strong>' + b.payload.ref_type + ' ' + b.payload.ref + '</strong>';
+            b.link = "https://github.com/" + b.repo.name;
+          }
           break;
         case "PullRequestReviewCommentEvent":
           b.words = 1;
