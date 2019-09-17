@@ -36,6 +36,10 @@
       "name": "Whatcom Land Trust",
       "url": "http://www.whatcomlandtrust.org/get-involved/",
       "desc": "Invasive plant removal, wildlife surveys, event and office support, or running a table at an outreach event.",
+      "social": {
+         "instagram": "https://www.instagram.com/whatcom_landtrust/",
+         "facebook": "https://www.facebook.com/WhatcomLandTrust/"
+      },
       "states": [
          "Washington"
       ],
@@ -48,6 +52,9 @@
       "name": "Yosemite Facelift",
       "url": "http://www.yosemiteclimbing.org/faqs/",
       "desc": "Trash pick up event, for and by climbers, that takes place throughout the park.",
+      "social": {
+         "instagram": "https://www.instagram.com/yosemitefacelift/"
+      },
       "states": [
          "California"
       ],
