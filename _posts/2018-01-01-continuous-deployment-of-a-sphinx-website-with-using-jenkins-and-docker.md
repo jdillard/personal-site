@@ -38,6 +38,7 @@ build files.
 
 ```
 .
+├── .dockerignore
 ├── Dockerfile
 ├── Jenkinsfile
 ├── requirements.txt
@@ -80,6 +81,14 @@ RUN apt-get update && apt-get install -y \
 RUN pip install virtualenv
 
 CMD ["/bin/bash"]
+```
+
+To prevent the `docker build` process from including the repo's unnecessary
+files in the build process, add a **.dockerignore** with the following:
+
+```
+# ignore all unnecessary files
+**
 ```
 
 The **Dockerfile** is referenced in a **Jenkinsfile**, also stored in the repo,
