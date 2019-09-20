@@ -28,6 +28,11 @@ are to:
 4. **Build** the sphinx site.
 5. **Deploy** the generated HTML.
 
+> **Side Note:** To see a live example of a sphinx site using continuous deployment
+  and integration with Travis-CI and Netlify, check out the
+  [continuous-sphinx](https://github.com/jdillard/continuous-sphinx) repo.
+{: {{site.data.css.tip-box}} }
+
 ## Preparation
 
 As mentioned, sphinx is a documentation generator written in Python. So it made
