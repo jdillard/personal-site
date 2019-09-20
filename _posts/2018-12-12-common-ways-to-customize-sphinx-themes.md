@@ -18,6 +18,8 @@ achieve this using the following methods:
 4. Using html_context Variables
 5. Adding Deploy, Edit, and Feedback Buttons
 6. Using a javascript Based Feedback Form
+7. Adding a sitemap
+8. Showing last update with git timestamps
 
 ## 1. Custom Javascript and CSS
 
@@ -202,5 +204,19 @@ Once the form is embedded, add custom styles for the form in the **custom.css**
 file.
 
 ![Documentation Feedback Form](/assets/images/posts/docs-form-feedback.png) <small><i>An example of an embedded Hubspot feedback form.</i></small>
+
+## 7. Adding a sitemap
+
+Sitemaps can be great for SEO and general website maintenance. The
+[sphinx-sitemap](https://github.com/jdillard/sphinx-sitemap) extension silently
+adds a sitemap with very little configuration.
+
+## 8. Showing last update with git timestamps
+
+Sphinx has the ability to show the [last updated](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_last_updated_fmt)
+timestamp, but that only shows the last time the page was built, not the last
+time it was actually changed. The [sphinx-gitstamp](https://github.com/jdillard/sphinx-gitstamp)
+extention will grab the last change in the page's commit history and make it
+available to the HTML template.
 
 {% include feedback.html %}
