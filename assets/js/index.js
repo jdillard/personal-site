@@ -12,6 +12,14 @@ axios.get('/assets/json/articles.json')
       console.log(error);
     });
 
+axios.get('/assets/json/trips.json')
+    .then(function (response) {
+      trips(response.data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
 axios.get('https://api.github.com/users/jdillard/repos')
   .then(function (response) {
     projects(response.data);
@@ -113,6 +121,22 @@ function articles(articles) {
   }, []);
 
   archive.innerHTML = template_articles(articles.data.slice(0,5));
+}
+
+function trips(trips) {
+  var archive = document.getElementById("latest-trips");
+  var articles_by_date = [];
+
+  trips.data.sort(function(a, b) {
+    return new Date(b.date_published) - new Date(a.date_published);
+  })
+  .reduce((a, b, i) => {
+      b.date_published = moment(b.date_published).format('MMM DD, YYYY');
+      a.push(b);
+      return a;
+  }, []);
+
+  archive.innerHTML = template_articles(trips.data.slice(0,5));
 }
 
 function projects(projects = []) {
