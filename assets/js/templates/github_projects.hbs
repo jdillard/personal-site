@@ -1,25 +1,23 @@
-<div class="entry">
-    {{#each @root}}
-    <div class="grow mv2 mh2-ns mh0 pa3 f7 ba b--light-gray">
-      <a class="no-underline fancy-link black-70 hover-light-red" href="{{this.url}}">
-        <span class="pv0-ns pv1 b f4-ns f5 lh-copy">{{this.name}}</span>
-      </a>
-      <p class="lh-copy mt2 mb3 mid-gray">{{this.desc}}</p>
-      <span class="gray">
-        <svg aria-label="stargazers" class="v-mid ml2 mr" height="16" role="img" viewBox="0 0 14 16" width="14">
-          <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path>
-        </svg>
-        {{this.stargazers}}
-        <svg aria-hidden="true" class="v-mid ml2 mr1" height="16" viewBox="0 0 14 16" width="14">
-          <path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path>
-        </svg>
-        {{this.contributors}}
-        <span class="fr light-silver"><strong>Last Change:</strong> {{this.last_push}}</span>
-      </span>
-    </div>
-    {{else}}
-    <div class="ma2 pa3 f4-ns f5 ba b--light-gray">
-      <span class="pv0-ns pv1 b lh-copy">There was an error.</span>
-    </div>
-    {{/each}}
+{{#each @root}}
+<div class="mv2 mh2-ns mh0 pa3 f7 ba b--light-gray" style="transform: translateZ(0);">
+  <a class="no-underline fancy-link black-70 hover-light-red" href="{{this.url}}">
+    <span class="pv0-ns pv1 b f4-ns f5 lh-copy">{{this.name}}</span>
+  </a>
+  <p class="lh-copy mt2 mb3 mid-gray">{{this.desc}}</p>
+  <span class="gray">
+    <svg aria-label="stargazers" class="v-mid ml2 mr" height="16" role="img" viewBox="0 0 14 16" width="14">
+      <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path>
+    </svg>
+    {{this.stargazers}}
+    <svg aria-hidden="true" class="v-mid ml2 mr1" height="16" viewBox="0 0 14 16" width="14">
+      <path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path>
+    </svg>
+    {{this.contributors}}
+    <span class="fr light-silver"><strong>Last Change:</strong> {{this.last_push}}</span>
+  </span>
 </div>
+{{else}}
+<div class="ma2 pa3 f4-ns f5 ba b--light-gray">
+  <span class="pv0-ns pv1 b lh-copy">There was an error.</span>
+</div>
+{{/each}}
