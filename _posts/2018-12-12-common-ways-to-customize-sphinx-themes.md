@@ -21,6 +21,10 @@ achieve this using the following methods:
 7. Adding a sitemap
 8. Showing last update with git timestamps
 
+> **Tip:** To see some of these examples in a live demo, check out
+> [continuous-sphinx](https://github.com/jdillard/continuous-sphinx).
+{: {{site.data.css.tip-box}} }
+
 ## 1. Custom Javascript and CSS
 
 Custom javascript and CSS files can be great for overrides and snippets of
