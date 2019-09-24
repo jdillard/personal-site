@@ -20,6 +20,7 @@ achieve this using the following methods:
 6. Using a javascript Based Feedback Form
 7. Adding a sitemap
 8. Showing last update with git timestamps
+9. Adding a custom 404 page
 
 > **Tip:** To see some of these examples in a live demo, check out
 > [continuous-sphinx](https://github.com/jdillard/continuous-sphinx).
@@ -222,5 +223,17 @@ timestamp, but that only shows the last time the page was built, not the last
 time it was actually changed. The [sphinx-gitstamp](https://github.com/jdillard/sphinx-gitstamp)
 extention will grab the last change in the page's commit history and make it
 available to the HTML template.
+
+## 9. Adding a custom 404 page
+
+Sphinx does not create a 404 page by default and simply adding a 404.rst file
+will break all of the static assets due to the use of relative links. The
+[sphinx-notfound-page](https://github.com/readthedocs/sphinx-notfound-page/)
+extension fixes that by allowing you to config default page templates and paths
+for a 404 page.
+
+> **Tip:** Set up a [custom Google Analytics report to track 404 error codes](https://jareddillard.com/blog/custom-google-analytics-reports-and-alerts-that-every-website-should-have.html)
+> to know when there is an important redirect opportunity that is being missed.
+{: {{site.data.css.tip-box}} }
 
 {% include feedback.html %}
