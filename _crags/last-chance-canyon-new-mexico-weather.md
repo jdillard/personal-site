@@ -3,7 +3,7 @@
 layout: page
 title: Last Chance Canyon Current, Past, and Forecasted Weather
 title_override: Last Chance Canyon Weather
-description: Real-time, precipitation-focused reports of current, past, and forecasted climbing weather for Last Chance Canyon, New Mexico
+description: A lightweight climbing weather report for Last Chance Canyon, New Mexico. Optimized for poor connections.
 js_includes:
   - weather.js
 ---

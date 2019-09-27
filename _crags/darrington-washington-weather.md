@@ -3,7 +3,7 @@
 layout: page
 title: Darrington Current, Past, and Forecasted Weather
 title_override: Darrington Weather
-description: Real-time, precipitation-focused reports of current, past, and forecasted climbing weather for Darrington, Washington
+description: A lightweight climbing weather report for Darrington, Washington. Optimized for poor connections.
 js_includes:
   - weather.js
 ---

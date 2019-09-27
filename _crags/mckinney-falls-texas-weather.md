@@ -3,7 +3,7 @@
 layout: page
 title: McKinney Falls Current, Past, and Forecasted Weather
 title_override: McKinney Falls Weather
-description: Real-time, precipitation-focused reports of current, past, and forecasted climbing weather for McKinney Falls, Texas
+description: A lightweight climbing weather report for McKinney Falls, Texas. Optimized for poor connections.
 js_includes:
   - weather.js
 ---

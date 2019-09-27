@@ -3,7 +3,7 @@
 layout: page
 title: Continental Ranch Current, Past, and Forecasted Weather
 title_override: Continental Ranch Weather
-description: Real-time, precipitation-focused reports of current, past, and forecasted climbing weather for Continental Ranch, Texas
+description: A lightweight climbing weather report for Continental Ranch, Texas. Optimized for poor connections.
 js_includes:
   - weather.js
 ---

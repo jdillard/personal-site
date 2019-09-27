@@ -3,7 +3,7 @@
 layout: page
 title: Vantage Current, Past, and Forecasted Weather
 title_override: Vantage Weather
-description: Real-time, precipitation-focused reports of current, past, and forecasted climbing weather for Vantage, Washington
+description: A lightweight climbing weather report for Vantage, Washington. Optimized for poor connections.
 js_includes:
   - weather.js
 ---

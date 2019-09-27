@@ -3,7 +3,7 @@
 layout: page
 title: Horseshoe Canyon Ranch Current, Past, and Forecasted Weather
 title_override: Horseshoe Canyon Ranch Weather
-description: Real-time, precipitation-focused reports of current, past, and forecasted climbing weather for Horseshoe Canyon Ranch, Arkansas
+description: A lightweight climbing weather report for Horseshoe Canyon Ranch, Arkansas. Optimized for poor connections.
 js_includes:
   - weather.js
 ---

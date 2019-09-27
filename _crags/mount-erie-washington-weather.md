@@ -3,7 +3,7 @@
 layout: page
 title: Mount Erie Current, Past, and Forecasted Weather
 title_override: Mount Erie Weather
-description: Real-time, precipitation-focused reports of current, past, and forecasted climbing weather for Mount Erie, Washington
+description: A lightweight climbing weather report for Mount Erie, Washington. Optimized for poor connections.
 js_includes:
   - weather.js
 ---

@@ -3,7 +3,7 @@
 layout: page
 title: Seattle, Washington Current, Past, and Forecasted Climbing Weather
 title_override: Seattle, Washington Weather
-description: Real-time, precipitation-focused reports of current, past, and forecasted climbing weather for crags near Seattle, Washington
+description: A lightweight climbing weather report for crags near Seattle, Washington. Optimized for poor connections.
 js_includes:
   - weather.js
 ---
