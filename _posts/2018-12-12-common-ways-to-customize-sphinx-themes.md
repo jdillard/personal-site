@@ -21,6 +21,7 @@ achieve this using the following methods:
 7. Adding a sitemap
 8. Showing last update with git timestamps
 9. Adding a custom 404 page
+10. Process per-page metadata
 
 > **Tip:** To see some of these examples in a live demo, check out
 > [continuous-sphinx](https://github.com/jdillard/continuous-sphinx).
@@ -235,5 +236,24 @@ for a 404 page.
 > **Tip:** Set up a [custom Google Analytics report to track 404 error codes](https://jareddillard.com/blog/custom-google-analytics-reports-and-alerts-that-every-website-should-have.html)
 > to know when there is an important redirect opportunity that is being missed.
 {: {{site.data.css.tip-box}} }
+
+## 10. Process per-page metadata
+
+Sometimes there is a need to add metadata, or front matter, to specific pages
+so that custom logic can be built around those values. In order to do that, add
+[document metadata fields](https://www.sphinx-doc.org/en/1.8/usage/restructuredtext/field-lists.html#file-wide-metadata)
+to the top of the rst file:
+
+```
+:fieldname: value
+```
+
+Then build the desired logic into the theme's Jinja templates:
+
+```liquid
+{% raw %}{%- if meta is defined and meta is not none and 'fieldname' in meta %}
+    {%- set page_field = meta.get('fieldname') %}
+{%- endif %}{% endraw %}
+```
 
 {% include feedback.html %}
