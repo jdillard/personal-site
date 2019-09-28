@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Smith Rock Current, Past, and Forecasted Weather
+title: Smith Rock, Oregon Current, Past, and Forecasted Climbing Weather Report
 title_override: Smith Rock Weather
 description: A lightweight climbing weather report for Smith Rock, Oregon. Optimized for poor connections.
 js_includes:

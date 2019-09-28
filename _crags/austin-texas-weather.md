@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Austin, Texas Current, Past, and Forecasted Climbing Weather
+title: Austin, Texas Current, Past, and Forecasted Climbing Weather Report
 title_override: Austin, Texas Weather
 description: A lightweight climbing weather report for crags near Austin, Texas. Optimized for poor connections.
 js_includes:

@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Georgetown Current, Past, and Forecasted Weather
+title: Georgetown, Texas Current, Past, and Forecasted Climbing Weather Report
 title_override: Georgetown Weather
 description: A lightweight climbing weather report for Georgetown, Texas. Optimized for poor connections.
 js_includes:

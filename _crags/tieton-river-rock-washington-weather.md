@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Tieton River Rock Current, Past, and Forecasted Weather
+title: Tieton River Rock, Washington Current, Past, and Forecasted Climbing Weather Report
 title_override: Tieton River Rock Weather
 description: A lightweight climbing weather report for Tieton River Rock, Washington. Optimized for poor connections.
 js_includes:

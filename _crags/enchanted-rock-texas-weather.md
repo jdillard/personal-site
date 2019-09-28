@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Enchanted Rock Current, Past, and Forecasted Weather
+title: Enchanted Rock, Texas Current, Past, and Forecasted Climbing Weather Report
 title_override: Enchanted Rock Weather
 description: A lightweight climbing weather report for Enchanted Rock, Texas. Optimized for poor connections.
 js_includes:

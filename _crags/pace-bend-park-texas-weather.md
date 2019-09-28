@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Pace Bend Park Current, Past, and Forecasted Weather
+title: Pace Bend Park, Texas Current, Past, and Forecasted Climbing Weather Report
 title_override: Pace Bend Park Weather
 description: A lightweight climbing weather report for Pace Bend Park, Texas. Optimized for poor connections.
 js_includes:

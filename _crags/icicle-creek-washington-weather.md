@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Icicle Creek Current, Past, and Forecasted Weather
+title: Icicle Creek, Washington Current, Past, and Forecasted Climbing Weather Report
 title_override: Icicle Creek Weather
 description: A lightweight climbing weather report for Icicle Creek, Washington. Optimized for poor connections.
 js_includes:

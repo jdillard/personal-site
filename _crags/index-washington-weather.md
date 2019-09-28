@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Index Current, Past, and Forecasted Weather
+title: Index, Washington Current, Past, and Forecasted Climbing Weather Report
 title_override: Index Weather
 description: A lightweight climbing weather report for Index, Washington. Optimized for poor connections.
 js_includes:

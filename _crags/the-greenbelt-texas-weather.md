@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: The Greenbelt Current, Past, and Forecasted Weather
+title: The Greenbelt, Texas Current, Past, and Forecasted Climbing Weather Report
 title_override: The Greenbelt Weather
 description: A lightweight climbing weather report for The Greenbelt, Texas. Optimized for poor connections.
 js_includes:

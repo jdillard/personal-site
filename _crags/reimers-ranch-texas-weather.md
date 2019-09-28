@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Reimer's Ranch Current, Past, and Forecasted Weather
+title: Reimer's Ranch, Texas Current, Past, and Forecasted Climbing Weather Report
 title_override: Reimer's Ranch Weather
 description: A lightweight climbing weather report for Reimer's Ranch, Texas. Optimized for poor connections.
 js_includes:
