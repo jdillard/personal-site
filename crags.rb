@@ -60,6 +60,24 @@ def create_crag_page(crags)
 end
 
 def create_crags(crags)
+    # determine unique metros
+    metros = Set[]
+    local_crags = Hash.new
+
+    #TODO needs to loop through each metros cell
+    crags.each do |crag|
+      metros.add(crag["metros"])
+      end
+
+    # determine the crags near them
+    metros.each do |metro|
+      local_crags[metro] = [];
+    end
+
+    crags.each do |crag|
+      local_crags[crag["metros"]].push({ name: crag["name"], state: crag["state"], note: crag["note"], url: crag["url"], station: crag["station"], office: crag["office"], lat: crag["lat"], long: crag["long"] })
+    end
+
     crags.each do |crag|
       slug = crag["name"].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + "-" + crag["state"].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
       File.open("_crags/" + slug + "-weather.md","w") do |f|
@@ -90,6 +108,17 @@ def create_crags(crags)
         f << "    </div>\n"
         f << "</section>\n"
         f << '<section id="weather" data-crag="' + slug + '" class="mv4-ns mv3 ph2 center"></section>'+"\n"
+        f << '<section id="nearby" class="tc lh-copy">'+"\n"
+        f << '  <h3>Nearby Crags</h3>'+"\n"
+        local_crags.each do |metro, crags|
+          if metro == crag["metros"]
+            crags.each do |crag|
+              url = crag[:name].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + "-" + crag[:state].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+              f << '<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/' + url + '-weather.html">' + crag[:name] + '</a>'+"\n"
+            end
+          end
+        end
+        f << '</section>'+"\n"
         f << '<p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>'+"\n"
         f << '<section id="issues" class="overflow-hidden tc f6">'+"\n"
         f << "</section>\n\n"
