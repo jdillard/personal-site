@@ -31,6 +31,7 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
   <h3>Nearby Crags</h3>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/jackson-falls-illinois-weather.html">Jackson Falls</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/red-river-gorge-kentucky-weather.html">Red River Gorge</a>
+<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/foster-falls-tennessee-weather.html">Foster Falls</a>
 </section>
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
 <section id="issues" class="overflow-hidden tc f6">

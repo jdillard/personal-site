@@ -20,5 +20,49 @@
       -105.379,
       39.499
     ]
+  },
+  {
+    "name": "Lime Park (Lime Creek)",
+    "note": "Great limestone.",
+    "mountainProject": "https://www.mountainproject.com/area/105744451/lime-park-aka-lime-creek",
+    "station": "CO092",
+    "office": "GJT/165,110",
+    "coordinates": [
+      -106.656,
+      39.408
+    ]
+  },
+  {
+    "name": "Independence Pass",
+    "note": "Ultra-worthy granite.",
+    "mountainProject": "https://www.mountainproject.com/area/105744331/independence-pass",
+    "station": "IDPC2",
+    "office": "GJT/162,97",
+    "coordinates": [
+      -106.704,
+      39.119
+    ]
+  },
+  {
+    "name": "Moab",
+    "note": "Soft sandstone in a desert environment.",
+    "mountainProject": "https://www.mountainproject.com/area/105716711/moab-area",
+    "station": "MOAB",
+    "office": "GJT/60,82",
+    "coordinates": [
+      -109.550,
+      38.573
+    ]
+  },
+  {
+    "name": "Estes Park Valley",
+    "note": "Good variety of granitic, gneiss, and schist crags.",
+    "mountainProject": "https://www.mountainproject.com/area/105801865/estes-park-valley",
+    "station": "KLMO",
+    "office": "BOU/46,92",
+    "coordinates": [
+      -105.513,
+      40.397
+    ]
   }
 ]
