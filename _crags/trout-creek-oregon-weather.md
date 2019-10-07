@@ -1,16 +1,16 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Darrington, Washington Current, Past, and Forecasted Climbing Weather Report
-title_override: Darrington Weather
-description: A lightweight climbing weather report for Darrington, Washington. Optimized for poor connections.
+title: Trout Creek, Oregon Current, Past, and Forecasted Climbing Weather Report
+title_override: Trout Creek Weather
+description: A lightweight climbing weather report for Trout Creek, Oregon. Optimized for poor connections.
 js_includes:
   - weather.js
 ---
 
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
 <strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,
-precipitation-focused reports of current, past, and forecasted climbing weather for Darrington, Washington, sourced
+precipitation-focused reports of current, past, and forecasted climbing weather for Trout Creek, Oregon, sourced
 from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.
 </section>
 
@@ -26,7 +26,7 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
         </div>
     </div>
 </section>
-<section id="weather" data-crag="darrington-washington" class="mv4-ns mv3 ph2 center"></section>
+<section id="weather" data-crag="trout-creek-oregon" class="mv4-ns mv3 ph2 center"></section>
 <section id="nearby" class="tc lh-copy">
   <h3>Nearby Crags</h3>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/icicle-creek-washington-weather.html">Icicle Creek</a>
