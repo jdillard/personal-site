@@ -29,7 +29,7 @@ def create_crag_page(crags)
     f << "---\n"
     f << "### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###\n"
     f << "layout: page\n"
-    f << "title: Crag Conditions\n"
+    f << "title: Climbing Weather\n"
     f << "description: Real-time, precipitation-focused reports of current, past, and forecasted climbing weather for local climbing crags\n"
     f << "---\n\n"
     f << '<section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">'+"\n"
