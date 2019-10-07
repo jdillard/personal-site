@@ -223,6 +223,13 @@ def create_metros(crags)
         f << "    </div>\n"
         f << "</section>\n"
         f << '<section id="weather" data-crag="' + slug + '" class="mv4-ns mv3 ph2 center"></section>'+"\n"
+        f << '<section id="nearby" class="tc lh-copy">'+"\n"
+        f << '  <h3>Other Metros</h3>'+"\n"
+        metros.each do |othermetro|
+              url = othermetro.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+              f << '<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/' + url + '-weather.html">' + othermetro + '</a>'+"\n"
+        end
+        f << '</section>'+"\n"
         f << '<p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>'+"\n"
         f << '<section id="issues" class="overflow-hidden tc f6">'+"\n"
         f << "</section>\n\n"

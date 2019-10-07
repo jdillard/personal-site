@@ -33,6 +33,14 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
     </div>
 </section>
 <section id="weather" data-crag="denver-colorado" class="mv4-ns mv3 ph2 center"></section>
+<section id="nearby" class="tc lh-copy">
+  <h3>Other Metros</h3>
+<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/austin-texas-weather.html">Austin, Texas</a>
+<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/seattle-washington-weather.html">Seattle, Washington</a>
+<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/denver-colorado-weather.html">Denver, Colorado</a>
+<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/nashville-tennessee-weather.html">Nashville, Tennessee</a>
+<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/san-francisco-california-weather.html">San Francisco, California</a>
+</section>
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
 <section id="issues" class="overflow-hidden tc f6">
 </section>
