@@ -53,8 +53,8 @@ the kayaks, it isn't that hard for things to go sideways out there.
 We finally got the kayaks all geared up and hit the water at **12:00 PM**, a bit
 later than planned. Everything was going pretty smooth as we crossed the exposed
 and windy San Juan Channel, until we neared Turn Point where we misjudged our
-approach in the strong tides, causing us to almost get swept North East,
-over into the middle of the San Juan Channel.
+approach in the strong tides, causing us to almost get swept North East into the
+middle of the San Juan Channel where it takes a 90 degree turn.
 
 In what seemed like an eternity of fighting the tides and the wind, we finally
 made it over to shore to gather ourselves. It was our first dose of reality,
