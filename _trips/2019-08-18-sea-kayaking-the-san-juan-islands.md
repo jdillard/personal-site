@@ -50,7 +50,7 @@ to get first hand experience practicing rescue techniques before it really
 matters. Between the water temperatures, speed of the currents, and weight of
 the kayaks, it isn't that hard for things to go sideways out there.
 
-We finally got the kayaks all geared up hit the water at **12:00 PM**, a bit
+We finally got the kayaks all geared up and hit the water at **12:00 PM**, a bit
 later than planned. Everything was going pretty smooth as we crossed the exposed
 and windy San Juan Channel, until we neared Turn Point where we misjudged our
 approach in the strong tides, causing us to almost get swept North East,
