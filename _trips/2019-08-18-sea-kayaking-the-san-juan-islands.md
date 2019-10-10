@@ -119,10 +119,10 @@ waves formed off the bow of the kayak like a scene from Tron.
 ## Day 2 - Return to Lopez Island
 
 We woke up early to pack up so that we could catch the slack tide back, which
-worked out perfectly. Crossing the San Juan Channel when everything was dead
-still and not a boat in sight was a completely different experience. We even had
-some curious seals cruising around our kayaks and poking there little bald heads
-up to keep an eye on us.
+worked out perfectly. Crossing the San Juan Channel when everything was
+completely still and not a boat in sight was a totally different experience.
+We even had some curious seals cruising around our kayaks and poking there
+little bald heads up to keep an eye on us.
 
 | Marker                                                                         | Time                | Tide  | Speed (knots) |
 |--------------------------------------------------------------------------------|---------------------|-------|---------------|
@@ -131,5 +131,5 @@ up to keep an eye on us.
 | [C1](https://tidesandcurrents.noaa.gov/noaacurrents/Predictions?id=PUG1746_10) | 2019-08-17 01:00 PM | slack | -             |
 
 After returning the kayaks, we did some hiking and got in line early for the
-ferry back, since there are only so many spots available on the return rige and
+ferry back, since there are only so many spots available on the return ride and
 we were told it can get pretty backed up on the weekends.
