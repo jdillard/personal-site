@@ -1,7 +1,7 @@
 ---
 layout: trip
 title: 'Trip Report: Sea Kayaking the San Juan Islands'
-date: 2019-08-15
+date: 2019-08-18
 state: Washington
 type: kayaking
 published: true
@@ -19,13 +19,13 @@ our abilities with the unknown.
 ## Itinerary
 
 Our original plan was a 3 day trip that started on Lopez Island, used [Jones
-Island State Park](https://parks.state.wa.us/525/Jones-Island) as a basecamp
-instead, before ending back at Lopez Island.
+Island State Park](https://parks.state.wa.us/525/Jones-Island) as a basecamp,
+before ending back at Lopez Island.
 
 ![Salish Sea Itinerary](/assets/images/trips/kayaking-san-juans-itinerary.png "Salish Sea Itinerary"){: .shadow-5.oversized} <small><i>The original route we had mapped out based on [Steph Abegg's trip report](http://www.stephabegg.com/home/tripreports/washington/olympics/sanjuanskayak).</i></small>
 
 For reasons I'll cover later, we ended up using [Turn Island Marine State Park](https://parks.state.wa.us/295/Turn-Island)
-as a base camp instead, before heading back to Lopez Island. Even though it
+as a basecamp instead, before heading back to Lopez Island. Even though it
 wasn't the planned iternary it was still a lot of fun and a great learning
 opportunity.
 
