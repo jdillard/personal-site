@@ -11,7 +11,7 @@
       ]
    },
    {
-      "name": "Animal Rehabilitation Keep (ARK)",
+      "name": "Animal Rehabilitation Keep",
       "url": "https://missionaransas.org/get-involved/become-volunteer",
       "desc": "Care for injured coastal wildlife by cleaning cages, doing laundry, and cutting up fish.",
       "states": [
@@ -98,7 +98,7 @@
       ]
    },
    {
-      "name": "Washington Water Trails Association - WWTA",
+      "name": "Washington Water Trails Association",
       "url": "https://www.wwta.org",
       "desc": "Through advocacy, education, and stewardship, Washington Water Trails Association protects and promotes public access to Washington waterways, shorelines, and marine trails for human-powered watercraft.",
       "states": [
@@ -120,6 +120,17 @@
       ]
    },
    {
+      "name": "Nooksack Salmon Enhancement Association",
+      "url": "https://www.n-sea.org",
+      "desc": "Improve river, creek and riparian habitat so that salmon and steelhead are provided the best chance for survival.",
+      "states": [
+         "Washington"
+      ],
+      "types": [
+         "kayaking"
+      ]
+   },
+   {
       "name": "Washington Environmental Council",
       "url": "https://wecprotects.org",
       "desc": "Protect, restore, and sustain Washington's environment for all.",
@@ -130,18 +141,6 @@
          "kayaking",
          "hiking",
          "climbing"
-      ]
-   },
-   {
-      "name": "The San Juan Preservation Trust",
-      "url": "https://sjpt.org",
-      "desc": "Protect, restore, and sustain Washington's environment for all.",
-      "states": [
-         "Washington"
-      ],
-      "types": [
-         "kayaking",
-         "hiking"
       ]
    },
    {
