@@ -144,6 +144,18 @@
       ]
    },
    {
+      "name": "Washington Trails Association",
+      "url": "https://www.wta.org",
+      "desc": "Help everyone to explore, steward and champion trails and public lands.",
+      "states": [
+         "Washington"
+      ],
+      "types": [
+         "hiking",
+         "climbing"
+      ]
+   },
+   {
       "name": "American Whitewater",
       "url": "https://www.americanwhitewater.org",
       "desc": "Primary advocate for the preservation and protection of whitewater rivers throughout the United States.",
