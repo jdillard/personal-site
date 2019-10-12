@@ -20,22 +20,21 @@ our abilities with the unknown.
 
 Our original plan was a 3 day trip that started on Lopez Island, used [Jones
 Island State Park](https://parks.state.wa.us/525/Jones-Island) as a basecamp,
-before ending back on Lopez Island.
+and ended back on Lopez Island.
 
 ![Salish Sea Itinerary](/assets/images/trips/kayaking-san-juans-itinerary.png "Salish Sea Itinerary"){: .shadow-5.oversized} <small><i>The original route we had mapped out based on [Steph Abegg's trip report](http://www.stephabegg.com/home/tripreports/washington/olympics/sanjuanskayak).</i></small>
 
 For reasons I'll cover later, we ended up using [Turn Island Marine State Park](https://parks.state.wa.us/295/Turn-Island)
-as a basecamp instead, before heading back to Lopez Island. Even though it
-wasn't the planned iternary it was still a lot of fun and a great learning
-opportunity.
+as a basecamp instead. Even though we didn't stick to the planned iternary it
+was still a lot of fun and a great learning opportunity.
 
 ## Day 1 - Arrive at Lopez Island
 
 We reserved the **9:35 AM** [ferry from Anacortes to Lopez Island](https://www.wsdot.wa.gov/Ferries/Schedule/ScheduleDetail.aspx?departingterm=1&arrivingterm=13&roundtrip=true), because [Lopez Kayaks](https://www.lopezkayaks.com)
-didn't open until **9:00 AM** and we thought it would still allow us to time
+didn't open until **9:00 AM** and we thought that would still allow us to time
 the tides correctly. In hindsight, catching the **6:15 AM** ferry and using that
 extra time to unload the gear and have it prepped would have given us the margin
-of error that we needed.
+of error we would needed.
 
 Since there were three of us, we decided to do one double touring kayak and one
 single, with a total of five dry bags between us. According to
@@ -53,13 +52,14 @@ the kayaks, it isn't that hard for things to go sideways out there.
 We finally got the kayaks all geared up and hit the water at **12:00 PM**, a bit
 later than planned. Everything was going pretty smooth as we crossed the exposed
 and windy San Juan Channel, until we neared Turn Point where we misjudged our
-approach in the strong tides, causing us to almost get swept North East into the
-middle of the San Juan Channel where it takes a 90 degree turn.
+approach in the strong tides, causing us to almost get swept North East back out
+into the middle of the channel where it takes a 90 degree turn.
 
 In what seemed like an eternity of fighting the tides and the wind, we finally
-made it over to shore to gather ourselves. It was our first dose of reality,
-having learned the hard way how to apply the tide charts we read on the internet
-to how the tides interact with local land features.
+made it over to shore to gather ourselves. It turns out there is a small island
+that shows up at low tide just off of Turn Point that funnels the tide and
+causes the currents to be quite a bit faster. It was our first dose of reality,
+having learned the hard way the limits of the tide charts we had read online.
 
 | Marker                                                                         | Time                | Tide  | Speed (knots) |
 |--------------------------------------------------------------------------------|---------------------|-------|---------------|
@@ -79,9 +79,9 @@ longer rest and discuss our options. We decided on heading back, but to look for
 opporunities along the way just in case.
 
 Luckily for us, we came across a mostly empty Turn Island Marine State Park and
-were able to pick a prime camping spot right on the bay. We settled in and later
-that night we could hear whales breaching off in the distance as they migrated
-down the channel.
+were able to pick a prime camping spot right on the bay. Later that night we
+were able to hear whales breaching off in the distance as they migrated down the
+channel.
 
 ![Turn Island Camp Spot](/assets/images/trips/turn-island-camp-spot.JPG "Turn Island Camp Spot"){: .shadow-5.oversized} <small><i>A perfect view of the sun falling behind Friday Harbor.</i></small>
 
@@ -107,18 +107,19 @@ shopping for beer, cheese, and sausage -- oh, and water.
 
 We got back to camp where we were greeted by a large group of kayakers that
 turned out to be members of the Washington Kayak Club. They could tell we were
-beginners and gave us a bunch of helpful sea kayaking tips that made us a little
-more confident.
+beginners and gave us a bunch of helpful sea kayaking tips that made us more
+confident going forward.
 
 Once night hit, one of the kayakers came over to tell us that if we were lucky
 we might get a chance to see the bioluminescence in the bay. Sure enough, it
 finally got dark enough and it turned out to be an incredible experience as we
-splashed the water and sped our kayaks up and down the shorline as small glowing
-waves formed off the bow of the kayak like a scene from Tron.
+splashed the water to activate the chemical reaction and sped our kayaks up and
+down the shorline as small glowing bow waves formed off the front of the kayak
+like a scene from Tron.
 
 ## Day 2 - Return to Lopez Island
 
-We woke up early to pack up so that we could catch the slack tide back, which
+We woke up early to pack so that we could catch the slack tide back, which
 worked out perfectly. Crossing the San Juan Channel when everything was
 completely still and not a boat in sight was a totally different experience.
 We even had some curious seals cruising around our kayaks and poking there
