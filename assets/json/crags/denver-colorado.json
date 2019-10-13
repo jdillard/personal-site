@@ -64,5 +64,16 @@
       -105.513,
       40.397
     ]
+  },
+  {
+    "name": "Gunnison",
+    "note": "Granite.",
+    "mountainProject": "https://www.mountainproject.com/area/105802040/gunnison",
+    "station": "KGUC",
+    "office": "GJT/152,72",
+    "coordinates": [
+      -106.927,
+      38.546
+    ]
   }
 ]

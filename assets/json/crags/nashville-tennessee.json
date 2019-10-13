@@ -31,5 +31,16 @@
       -85.674,
       35.182
     ]
+  },
+  {
+    "name": "Seneca Rocks",
+    "note": "White Tuscarora quartzite, which feels much like sandstone.",
+    "mountainProject": "https://www.mountainproject.com/area/105861910/seneca-rocks",
+    "station": "KW99",
+    "office": "LWX/14,57",
+    "coordinates": [
+      -79.373,
+      38.835
+    ]
   }
 ]
