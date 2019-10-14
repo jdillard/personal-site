@@ -123,7 +123,7 @@ splashed the water to activate the chemical reaction and sped our kayaks up and
 down the shorline as small glowing bow waves formed off the front of the kayak
 like a scene from Tron.
 
-## Day 2 - Return to Lopez Island
+## Day 3 - Return to Lopez Island
 
 We woke up early to pack so that we could catch the slack tide back, which
 worked out perfectly. Crossing the San Juan Channel when everything was
