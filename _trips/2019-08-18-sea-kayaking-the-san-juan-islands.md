@@ -84,9 +84,10 @@ longer rest and discuss our options. We decided on heading back, but to look for
 opporunities along the way just in case.
 
 Luckily for us, we came across a mostly empty Turn Island Marine State Park and
-were able to pick a prime camping spot right on the bay. Later that night we
-were able to hear whales breaching off in the distance as they migrated down the
-channel.
+were able to pick a prime camping spot right on the bay. We made sure to hang up
+our food as we heard there is a ruthless gang of racoons on the island and later
+that night we were able to hear whales breaching off in the distance as they
+migrated down the channel.
 
 ![Turn Island Camp Spot](/assets/images/trips/turn-island-camp-spot.JPG "Turn Island Camp Spot"){: .shadow-5.oversized} <small><i>A perfect view from Turn Island of the sun falling behind Friday Harbor.</i></small>
 
