@@ -51,13 +51,18 @@ the kayaks, it isn't that hard for things to go sideways out there.
 
 We finally got the kayaks all geared up and hit the water at **12:00 PM**, a bit
 later than planned. Everything was going pretty smooth as we crossed the exposed
-and windy San Juan Channel, until we neared Turn Point where we misjudged our
-approach in the strong tides, causing us to almost get swept North East back out
-into the middle of the channel where it takes a 90 degree turn.
+and windy San Juan Channel, until we neared the Turn Rock Light where we
+misjudged our approach in the strong tides, causing us to almost get swept North
+East back out into the middle of the channel where it takes a 90 degree turn.
 
+{: {{site.data.css.info-box}} }
+> **Note:** On the [interactive Caltopo map](https://caltopo.com/m/0L17) of our
+original itinerary that is overlayed onto a marine chart you can see the shape
+of the Turn Rock island that Turn Rock Light sits on.
+ 
 In what seemed like an eternity of fighting the tides and the wind, we finally
 made it over to shore to gather ourselves. It turns out there is a small island
-that shows up at low tide just off of Turn Point that funnels the tide and
+that shows up at low tide just off of Turn Island that funnels the tide and
 causes the currents to be quite a bit faster. It was our first dose of reality,
 having learned the hard way the limits of the tide charts we had read online.
 
