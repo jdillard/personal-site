@@ -88,7 +88,7 @@ were able to pick a prime camping spot right on the bay. Later that night we
 were able to hear whales breaching off in the distance as they migrated down the
 channel.
 
-![Turn Island Camp Spot](/assets/images/trips/turn-island-camp-spot.JPG "Turn Island Camp Spot"){: .shadow-5.oversized} <small><i>A perfect view of the sun falling behind Friday Harbor.</i></small>
+![Turn Island Camp Spot](/assets/images/trips/turn-island-camp-spot.JPG "Turn Island Camp Spot"){: .shadow-5.oversized} <small><i>A perfect view from Turn Island of the sun falling behind Friday Harbor.</i></small>
 
 ## Day 2 - Checking out Friday Harbor
 
