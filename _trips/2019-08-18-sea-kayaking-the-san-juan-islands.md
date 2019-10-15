@@ -55,8 +55,7 @@ a more appropriate safety margin. Dry suits would have obviously been ideal.
 > matters. Between the water temperatures, speed of the currents, and weight of
 > the kayaks, it isn't that hard for things to go sideways out there. The book
 > [Sea Kayaker's Deep Trouble](https://www.amazon.com/Sea-Kayakers-Deep-Trouble-Magazine/dp/0070084998)
-> tells many tales of strong kayakers that have died of hypothermia in those
-> waters.
+> tells many tales of strong kayakers that have died in those waters.
 
 We finally got the kayaks all geared up and hit the water at **12:00 PM**, a bit
 later than planned. Everything was going pretty smooth as we crossed the exposed
@@ -67,8 +66,8 @@ East back out into the middle of the channel where it takes a 90 degree turn.
 In what seemed like an eternity of fighting the tides and the wind, we finally
 made it over to shore to gather ourselves. It turns out there is a small island
 that shows up at low tide just off of Turn Island that funnels the tide and
-causes the currents to be quite a bit faster. It was our first dose of reality,
-having learned the hard way the limits of the tide charts we had read online.
+causes the currents to be quite a bit faster. Another dose of reality, having
+learned the hard way the limits of the tide charts we had read online.
 
 {: {{site.data.css.info-box}} }
 > **Note:** The [interactive Caltopo map](https://caltopo.com/m/0L17) of our
