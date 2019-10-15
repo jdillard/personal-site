@@ -26,7 +26,7 @@ and ended back on Lopez Island.
 
 For reasons I'll cover later, we ended up using [Turn Island Marine State Park](https://parks.state.wa.us/295/Turn-Island)
 as a basecamp instead. Even though we didn't stick to the planned iternary it
-was still a lot of fun and a great learning opportunity.
+still ended up being a lot of fun and, more importantly, a great learning opportunity.
 
 ## Day 1 - Arrive at Lopez Island
 
@@ -34,37 +34,46 @@ We reserved the **9:35 AM** [ferry from Anacortes to Lopez Island](https://www.w
 didn't open until **9:00 AM** and we thought that would still allow us to time
 the tides correctly. In hindsight, catching the **6:15 AM** ferry and using that
 extra time to unload the gear and have it prepped would have given us the margin
-of error we would needed.
+of error we would need.
+
+On the ferry that morning there was a thick fog with minimal visability,
+something we wouldn't have been able to paddle in and something we didn't plan
+for. Luckily, it cleared up by the time we arrived on Lopez Island, but had it
+happened on the water and forced us to time the tides differently, it would have
+been a different story.
 
 Since there were three of us, we decided to do one double touring kayak and one
-single, with a total of five dry bags between us. According to
-[the 120&deg; Rule](https://www.gobair.org/Resources/Documents/Cold_Water.pdf)
-we probably didn't need wetsuits, so we opted out, but the morning temps were
-cutting it close so it might not have been a bad idea. Dry suites would have
-obviously been ideal.
+single, with a total of five dry bags between us. We had recieved advice that we
+wouldn't need a full wet suit, but according to [the 120&deg; Rule](https://www.gobair.org/Resources/Documents/Cold_Water.pdf)
+and the conditions we encountered wearing at least a farmer john would put us in
+a more appropriate safety margin. Dry suits would have obviously been ideal.
 
 {: {{site.data.css.tip-box}} }
-> **Pro Tip:** It would be a good idea to attend one of the [Washington Kayak Club Pool Sessions](https://wakayakclub.clubexpress.com/content.aspx?page_id=22&club_id=821680&module_id=137271)
-to get first hand experience practicing rescue techniques before it really
-matters. Between the water temperatures, speed of the currents, and weight of
-the kayaks, it isn't that hard for things to go sideways out there.
+> **Important:** It would be a good idea to attend at least a pool session, like
+> one from the [Washington Kayak Club](https://wakayakclub.clubexpress.com/content.aspx?page_id=22&club_id=821680&module_id=137271),
+> to get first hand experience practicing rescue techniques before it really
+> matters. Between the water temperatures, speed of the currents, and weight of
+> the kayaks, it isn't that hard for things to go sideways out there. The book
+> [Sea Kayaker's Deep Trouble](https://www.amazon.com/Sea-Kayakers-Deep-Trouble-Magazine/dp/0070084998)
+> tells many tales of strong kayakers that have died of hypothermia in those
+> waters.
 
 We finally got the kayaks all geared up and hit the water at **12:00 PM**, a bit
 later than planned. Everything was going pretty smooth as we crossed the exposed
 and windy San Juan Channel, until we neared the Turn Rock Light where we
 misjudged our approach in the strong tides, causing us to almost get swept North
 East back out into the middle of the channel where it takes a 90 degree turn.
-
-{: {{site.data.css.info-box}} }
-> **Note:** On the [interactive Caltopo map](https://caltopo.com/m/0L17) of our
-original itinerary that is overlayed onto a marine chart you can see the shape
-of the Turn Rock island that Turn Rock Light sits on.
  
 In what seemed like an eternity of fighting the tides and the wind, we finally
 made it over to shore to gather ourselves. It turns out there is a small island
 that shows up at low tide just off of Turn Island that funnels the tide and
 causes the currents to be quite a bit faster. It was our first dose of reality,
 having learned the hard way the limits of the tide charts we had read online.
+
+{: {{site.data.css.info-box}} }
+> **Note:** The [interactive Caltopo map](https://caltopo.com/m/0L17) of our
+> original itinerary, overlayed onto a marine chart, shows the shape of Turn
+> Rock that Turn Rock Light sits on.
 
 | Marker                                                                         | Time                | Tide  | Speed (knots) |
 |--------------------------------------------------------------------------------|---------------------|-------|---------------|
@@ -85,9 +94,10 @@ opporunities along the way just in case.
 
 Luckily for us, we came across a mostly empty Turn Island Marine State Park and
 were able to pick a prime camping spot right on the bay. We made sure to hang up
-our food as we heard there is a ruthless gang of racoons on the island and later
-that night we were able to hear whales breaching off in the distance as they
-migrated down the channel.
+our food as we heard there is a ruthless gang of racoons on the island, who once
+chewed through the hull of a kayak to get to some stowed food. To top to it off,
+later that night we were lucky enough to be able to hear whales breaching off in
+the distance as they migrated down the channel.
 
 ![Turn Island Camp Spot](/assets/images/trips/turn-island-camp-spot.JPG "Turn Island Camp Spot"){: .shadow-5.oversized} <small><i>A perfect view from Turn Island of the sun falling behind Friday Harbor.</i></small>
 
@@ -95,9 +105,9 @@ migrated down the channel.
 
 Since we had planned on having running water avialable at our original campsite,
 and Turn Island didn't provide that, we had to make a trek into Friday Harbor
-the next day. We decided to wait until around lunch time so we could grab a bite
-to eat and try to get closer to slack tide, but not so late that it was high
-tide while we were there and our potential landing areas would be underwater.
+the next day. We decided to wait until lunch time so we could grab a bite to eat
+and try to hit the slack tide, but not so late that it was high tide while we 
+were there and our potential landing areas would be underwater.
 
 | Marker                                                                         | Time                | Tide  | Speed (knots) |
 |--------------------------------------------------------------------------------|---------------------|-------|---------------|
