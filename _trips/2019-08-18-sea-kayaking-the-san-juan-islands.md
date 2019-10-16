@@ -45,8 +45,9 @@ been a different story.
 Since there were three of us, we decided to do one double touring kayak and one
 single, with a total of five dry bags between us. We had recieved advice that we
 wouldn't need a full wet suit, but according to [the 120&deg; Rule](https://www.gobair.org/Resources/Documents/Cold_Water.pdf)
-and the conditions we encountered wearing at least a farmer john would put us in
-a more appropriate safety margin. Dry suits would have obviously been ideal.
+and the conditions we encountered wearing at least a farmer john would have put
+us in a more appropriate safety margin. Dry suits would have obviously been
+ideal.
 
 {: {{site.data.css.tip-box}} }
 > **Important:** It would be a good idea to attend at least a pool session, like
@@ -58,21 +59,23 @@ a more appropriate safety margin. Dry suits would have obviously been ideal.
 > tells many tales of strong kayakers that have died in those waters.
 
 We finally got the kayaks all geared up and hit the water at **12:00 PM**, a bit
-later than planned. Everything was going pretty smooth as we crossed the exposed
-and windy San Juan Channel, until we neared the Turn Rock Light where we
-misjudged our approach in the strong tides, causing us to almost get swept North
-East back out into the middle of the channel where it takes a 90 degree turn.
+later than we planned, while the tides stuck to their schedule. Everything was
+going pretty smooth as we crossed the exposed and windy San Juan Channel, until
+we neared the Turn Rock Light where we misjudged our approach in the strong
+tides, causing us to almost get swept North East back out into the middle of the
+channel where it takes a 90 degree turn.
  
 In what seemed like an eternity of fighting the tides and the wind, we finally
 made it over to shore to gather ourselves. It turns out there is a small island
-that shows up at low tide just off of Turn Island that funnels the tide and
-causes the currents to be quite a bit faster. Another dose of reality, having
-learned the hard way the limits of the tide charts we had read online.
+that shows up at low tide that Turn Rock Light sits on just off of Turn Island
+that funnels the tide and causes the currents to be quite a bit faster. Another
+dose of reality, having learned the hard way the limits of the tide charts we
+had read online.
 
 {: {{site.data.css.info-box}} }
 > **Note:** The [interactive Caltopo map](https://caltopo.com/m/0L17) of our
-> original itinerary, overlayed onto a marine chart, shows the shape of Turn
-> Rock that Turn Rock Light sits on.
+> original itinerary, which is overlayed onto a marine chart, shows the shape of
+> Turn Rock that Turn Rock Light sits on.
 
 | Marker                                                                         | Time                | Tide  | Speed (knots) |
 |--------------------------------------------------------------------------------|---------------------|-------|---------------|
@@ -89,14 +92,15 @@ learned the hard way the limits of the tide charts we had read online.
 We headed off again towards our destination, but shortly after a member of our
 party started experiencing vertigo, so we pulled back over on land to take a
 longer rest and discuss our options. We decided on heading back, but to look for
-opporunities along the way just in case.
+camping opporunities along the way just in case.
 
 Luckily for us, we came across a mostly empty Turn Island Marine State Park and
 were able to pick a prime camping spot right on the bay. We made sure to hang up
 our food as we heard there is a ruthless gang of racoons on the island, who once
-chewed through the hull of a kayak to get to some stowed food. To top to it off,
-later that night we were lucky enough to be able to hear whales breaching off in
-the distance as they migrated down the channel.
+chewed through the hull of a kayak to get to some stowed food. We walked around
+and saw starfish crawling on the rocks and later that night we were lucky enough
+to be able to hear whales breaching off in the distance as they migrated down
+the channel.
 
 ![Turn Island Camp Spot](/assets/images/trips/turn-island-camp-spot.JPG "Turn Island Camp Spot"){: .shadow-5.oversized} <small><i>A perfect view from Turn Island of the sun falling behind Friday Harbor.</i></small>
 
@@ -137,8 +141,8 @@ like a scene from Tron.
 We woke up early to pack so that we could catch the slack tide back, which
 worked out perfectly. Crossing the San Juan Channel when everything was
 completely still and not a boat in sight was a totally different experience.
-We even had some curious seals cruising around our kayaks and poking there
-little bald heads up to keep an eye on us.
+We saw dolphins in the distance and even had some curious seals cruising around
+our kayaks and poking there little bald heads up to keep an eye on us.
 
 | Marker                                                                         | Time                | Tide  | Speed (knots) |
 |--------------------------------------------------------------------------------|---------------------|-------|---------------|
