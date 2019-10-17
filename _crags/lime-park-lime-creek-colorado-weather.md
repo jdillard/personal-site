@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Lime Park (Lime Creek), Colorado Current, Past, and Forecasted Climbing Weather Report
+title: Lime Park (Lime Creek), Colorado Climbing Weather - Current, Past, and Forecasted Report
 title_override: Lime Park (Lime Creek)<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Lime Park (Lime Creek), Colorado. Optimized for poor connections.
 js_includes:

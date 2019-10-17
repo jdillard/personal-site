@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Independence Pass, Colorado Current, Past, and Forecasted Climbing Weather Report
+title: Independence Pass, Colorado Climbing Weather - Current, Past, and Forecasted Report
 title_override: Independence Pass<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Independence Pass, Colorado. Optimized for poor connections.
 js_includes:

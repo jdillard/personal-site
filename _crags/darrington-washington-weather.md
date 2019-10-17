@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Darrington, Washington Current, Past, and Forecasted Climbing Weather Report
+title: Darrington, Washington Climbing Weather - Current, Past, and Forecasted Report
 title_override: Darrington<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Darrington, Washington. Optimized for poor connections.
 js_includes:

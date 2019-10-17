@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Mammoth Lakes, California Current, Past, and Forecasted Climbing Weather Report
+title: Mammoth Lakes, California Climbing Weather - Current, Past, and Forecasted Report
 title_override: Mammoth Lakes<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Mammoth Lakes, California. Optimized for poor connections.
 js_includes:

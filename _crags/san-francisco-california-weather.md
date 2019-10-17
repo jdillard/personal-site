@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: San Francisco, California Current, Past, and Forecasted Climbing Weather Report
+title: San Francisco, California Climbing Weather - Current, Past, and Forecasted Report
 title_override: San Francisco, California<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for crags near San Francisco, California. Optimized for poor connections.
 js_includes:

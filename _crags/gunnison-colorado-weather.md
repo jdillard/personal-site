@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Gunnison, Colorado Current, Past, and Forecasted Climbing Weather Report
+title: Gunnison, Colorado Climbing Weather - Current, Past, and Forecasted Report
 title_override: Gunnison<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Gunnison, Colorado. Optimized for poor connections.
 js_includes:

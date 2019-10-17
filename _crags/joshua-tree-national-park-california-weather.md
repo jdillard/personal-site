@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Joshua Tree National Park, California Current, Past, and Forecasted Climbing Weather Report
+title: Joshua Tree National Park, California Climbing Weather - Current, Past, and Forecasted Report
 title_override: Joshua Tree National Park<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Joshua Tree National Park, California. Optimized for poor connections.
 js_includes:

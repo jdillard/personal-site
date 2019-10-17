@@ -1,7 +1,7 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: Nashville, Tennessee Current, Past, and Forecasted Climbing Weather Report
+title: Nashville, Tennessee Climbing Weather - Current, Past, and Forecasted Report
 title_override: Nashville, Tennessee<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for crags near Nashville, Tennessee. Optimized for poor connections.
 js_includes:
