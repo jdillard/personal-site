@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Mount Erie, Washington Current, Past, and Forecasted Climbing Weather Report
-title_override: Mount Erie Weather
+title_override: Mount Erie<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Mount Erie, Washington. Optimized for poor connections.
 js_includes:
   - weather.js

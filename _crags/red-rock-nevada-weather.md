@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Red Rock, Nevada Current, Past, and Forecasted Climbing Weather Report
-title_override: Red Rock Weather
+title_override: Red Rock<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Red Rock, Nevada. Optimized for poor connections.
 js_includes:
   - weather.js

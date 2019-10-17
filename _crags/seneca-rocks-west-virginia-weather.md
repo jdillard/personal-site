@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Seneca Rocks, West Virginia Current, Past, and Forecasted Climbing Weather Report
-title_override: Seneca Rocks Weather
+title_override: Seneca Rocks<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Seneca Rocks, West Virginia. Optimized for poor connections.
 js_includes:
   - weather.js

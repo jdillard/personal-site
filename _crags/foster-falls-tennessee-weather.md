@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Foster Falls, Tennessee Current, Past, and Forecasted Climbing Weather Report
-title_override: Foster Falls Weather
+title_override: Foster Falls<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Foster Falls, Tennessee. Optimized for poor connections.
 js_includes:
   - weather.js

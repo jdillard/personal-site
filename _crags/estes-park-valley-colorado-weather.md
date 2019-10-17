@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Estes Park Valley, Colorado Current, Past, and Forecasted Climbing Weather Report
-title_override: Estes Park Valley Weather
+title_override: Estes Park Valley<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Estes Park Valley, Colorado. Optimized for poor connections.
 js_includes:
   - weather.js

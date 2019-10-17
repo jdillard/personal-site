@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Red River Gorge, Kentucky Current, Past, and Forecasted Climbing Weather Report
-title_override: Red River Gorge Weather
+title_override: Red River Gorge<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Red River Gorge, Kentucky. Optimized for poor connections.
 js_includes:
   - weather.js

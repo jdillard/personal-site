@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Trout Creek, Oregon Current, Past, and Forecasted Climbing Weather Report
-title_override: Trout Creek Weather
+title_override: Trout Creek<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Trout Creek, Oregon. Optimized for poor connections.
 js_includes:
   - weather.js

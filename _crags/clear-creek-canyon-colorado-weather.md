@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Clear Creek Canyon, Colorado Current, Past, and Forecasted Climbing Weather Report
-title_override: Clear Creek Canyon Weather
+title_override: Clear Creek Canyon<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Clear Creek Canyon, Colorado. Optimized for poor connections.
 js_includes:
   - weather.js

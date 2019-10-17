@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Cochise Stronghold, Arizona Current, Past, and Forecasted Climbing Weather Report
-title_override: Cochise Stronghold Weather
+title_override: Cochise Stronghold<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Cochise Stronghold, Arizona. Optimized for poor connections.
 js_includes:
   - weather.js

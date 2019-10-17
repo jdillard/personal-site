@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Jackson Falls, Illinois Current, Past, and Forecasted Climbing Weather Report
-title_override: Jackson Falls Weather
+title_override: Jackson Falls<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Jackson Falls, Illinois. Optimized for poor connections.
 js_includes:
   - weather.js

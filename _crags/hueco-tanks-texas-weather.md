@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Hueco Tanks, Texas Current, Past, and Forecasted Climbing Weather Report
-title_override: Hueco Tanks Weather
+title_override: Hueco Tanks<br /><small>Climbing Weather</small>
 description: A lightweight climbing weather report for Hueco Tanks, Texas. Optimized for poor connections.
 js_includes:
   - weather.js
