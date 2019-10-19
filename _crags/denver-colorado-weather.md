@@ -3,7 +3,7 @@
 layout: page
 title: Denver, Colorado Climbing Weather - Current, Past, and Forecasted Report
 title_override: Denver, Colorado<br /><small>Climbing Weather</small>
-description: A lightweight climbing weather report for crags near Denver, Colorado. Optimized for poor connections.
+description: A lightweight climbing weather report for crags near Denver, Colorado. Optimized for slow internet connections.
 js_includes:
   - weather.js
 ---

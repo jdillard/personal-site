@@ -86,14 +86,21 @@ def create_crags(crags)
         f << "layout: page\n"
         f << "title: " + crag["name"] + ", " + crag["state"] + " Climbing Weather - Current, Past, and Forecasted Report\n"
         f << "title_override: " + crag["name"] + "<br /><small>Climbing Weather</small>\n"
-        f << "description: A lightweight climbing weather report for " + crag["name"] + ', ' + crag["state"] + ". Optimized for poor connections.\n"
+        f << "description: A lightweight weather report for " + crag["name"] + ', ' + crag["state"] + ". Optimized for slow internet connections.\n"
         f << "js_includes:\n"
         f << "  - weather.js\n"
         f << "---\n\n"
         f << '<section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">'+"\n"
         f << '<strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,'+"\n"
-        f << 'precipitation-focused reports of current, past, and forecasted climbing weather for ' + crag["name"] + ', ' + crag["state"] + ', sourced'+"\n"
-        f << 'from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.'+"\n"
+        f << 'precipitation-focused reports of current, past, and forecasted climbing weather for ' + crag["name"] + ', ' + crag["state"] + '.'+"\n"
+        f << 'If it is too wet here, check for a dry crag near'
+        local_crags.each do |metro, crags|
+          if metro == crag["metros"]
+            url = metro.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+            f << ' <a class="nowrap no-underline fancy-link relative light-red" href="/crags/' + url + '-weather.html">' + metro + '</a>'
+          end
+        end
+        f << " and keep the stoke high.\n"
         f << "</section>\n\n"
         f << '<p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Instructions</p>'+"\n"
         f << '<section id="settings" class="overflow-hidden" style="display:none;">'+"\n"
@@ -104,6 +111,8 @@ def create_crags(crags)
         f << '            <p class="measure lh-copy center"><strong>Current and Past conditions</strong> are measured by the nearest weather station. <strong>Forecast conditions</strong> are calculated and polled separately.</p>'+"\n"
         f << '            <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">'+"\n"
         f << '            <p class="measure lh-copy center"><strong>Having issues?</strong> Try <a id="clear-cache" class="no-underline relative fancy-link light-red hover-light-red" href="#">clearing the local cache</a>.</p>'+"\n"
+        f << '            <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">'+"\n"
+        f << '            <p class="measure lh-copy center">Weather data sourced from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.</p>'+"\n"
         f << "        </div>\n"
         f << "    </div>\n"
         f << "</section>\n"
@@ -195,7 +204,7 @@ def create_metros(crags)
         f << "layout: page\n"
         f << "title: " + metro + " Climbing Weather - Current, Past, and Forecasted Report\n"
         f << "title_override: " + metro + "<br /><small>Climbing Weather</small>\n"
-        f << "description: A lightweight climbing weather report for crags near " + metro + ". Optimized for poor connections.\n"
+        f << "description: A lightweight climbing weather report for crags near " + metro + ". Optimized for slow internet connections.\n"
         f << "js_includes:\n"
         f << "  - weather.js\n"
         f << "---\n\n"

@@ -3,15 +3,15 @@
 layout: page
 title: Estes Park Valley, Colorado Climbing Weather - Current, Past, and Forecasted Report
 title_override: Estes Park Valley<br /><small>Climbing Weather</small>
-description: A lightweight climbing weather report for Estes Park Valley, Colorado. Optimized for poor connections.
+description: A lightweight weather report for Estes Park Valley, Colorado. Optimized for slow internet connections.
 js_includes:
   - weather.js
 ---
 
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
 <strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,
-precipitation-focused reports of current, past, and forecasted climbing weather for Estes Park Valley, Colorado, sourced
-from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.
+precipitation-focused reports of current, past, and forecasted climbing weather for Estes Park Valley, Colorado.
+If it is too wet here, check for a dry crag near <a class="nowrap no-underline fancy-link relative light-red" href="/crags/denver-colorado-weather.html">Denver, Colorado</a> and keep the stoke high.
 </section>
 
 <p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Instructions</p>
@@ -23,6 +23,8 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
             <p class="measure lh-copy center"><strong>Current and Past conditions</strong> are measured by the nearest weather station. <strong>Forecast conditions</strong> are calculated and polled separately.</p>
             <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
             <p class="measure lh-copy center"><strong>Having issues?</strong> Try <a id="clear-cache" class="no-underline relative fancy-link light-red hover-light-red" href="#">clearing the local cache</a>.</p>
+            <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
+            <p class="measure lh-copy center">Weather data sourced from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.</p>
         </div>
     </div>
 </section>
