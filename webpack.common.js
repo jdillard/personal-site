@@ -36,6 +36,11 @@ module.exports = {
       moment: "moment",
       axios: "axios"
     }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+          handlebarsLoader: {}
+      }
+    }),
     new ManifestPlugin({
       fileName: '../../_data/asset-manifest.json'
     }),
@@ -67,12 +72,7 @@ module.exports = {
       },
       {
         test: /\.hbs$/,
-        loader: 'handlebars-loader',
-        query: {
-          helperDirs: [
-            __dirname + "/assets/js/helpers"
-          ]
-        }
+        loader: 'handlebars-loader'
       },
       {
         test: /\.js$/,
