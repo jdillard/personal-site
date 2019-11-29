@@ -556,7 +556,6 @@ function graph_precip(crag_index, data) {
 
 function normalizePage() {
   u('.hourly-forecast').each(function(el){
-    console.log(el);
     el.classList.remove('flex');
     el.classList.add('dn');
   });
@@ -575,7 +574,7 @@ function normalizePage() {
 }
 
 // load the hourly forecast for a particular day
-u('.forecast-day').on( "click", function(el) {
+u('[id^=forecast-]').on("click", ".forecast-day", function(el) {
   const crag_index = el.srcElement.dataset.crag;
   const day_index = el.srcElement.dataset.day;
   const date = moment(el.srcElement.dataset.date).format('dddd').toLowerCase();
@@ -587,7 +586,7 @@ u('.forecast-day').on( "click", function(el) {
   if(is_active) {
     hourly_forecast.classList.remove('flex');
     hourly_forecast.classList.add('dn');
-    el.removeClass('bg-light-gray');
+    u(el.srcElement).removeClass('bg-light-gray');
     el.srcElement.dataset.active = false;
     daytime.classList.add('bg-white');
     daytime.classList.remove('bg-near-white');
@@ -595,22 +594,22 @@ u('.forecast-day').on( "click", function(el) {
     nighttime.classList.remove('bg-gray');
   } else {
     u('#forecast-'+crag_index+' .forecast-day').each(function(el) {
-      el.srcElement.dataset.active = false;
-      el.removeClass('bg-light-gray');
+      el.dataset.active = false;
+      u(el).removeClass('bg-light-gray');
     });
-    el.addClass('bg-light-gray');
+    u(el.srcElement).addClass('bg-light-gray');
     el.srcElement.dataset.active = true;
     hourly_forecast.classList.remove('dn');
     hourly_forecast.classList.add('flex');
     u('#forecast-'+crag_index+' .daytime').each(function(el) {
-      el.removeClass('bg-near-white');
-      el.addClass('bg-white');
+      u(el).removeClass('bg-near-white');
+      u(el).addClass('bg-white');
     });
     daytime.classList.remove('bg-white');
     daytime.classList.add('bg-near-white');
     u('#forecast-'+crag_index+' .nighttime').each(function(el) {
-      el.removeClass('bg-gray');
-      el.addClass('bg-mid-gray');
+      u(el).removeClass('bg-gray');
+      u(el).addClass('bg-mid-gray');
     });
     nighttime.classList.remove('bg-mid-gray');
     nighttime.classList.add('bg-gray');
