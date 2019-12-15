@@ -22,7 +22,9 @@
 }
 
 .post-content > p a, .post-content > p a:visited, .post-content > p a:active, .post-content > p a:hover,
-.post-content > table a, .post-content > table a:visited, .post-content > table a:active, .post-content > table a:hover {
+.post-content > table a, .post-content > table a:visited, .post-content > table a:active, .post-content > table a:hover,
+.post-content > ol a, .post-content > ol a:visited, .post-content > ol a:active, .post-content > ol a:hover,
+.post-content > ul a, .post-content > ul a:visited, .post-content > ul a:active, .post-content > ul a:hover {
     color: #FF725C;
     text-decoration: none;
 }
