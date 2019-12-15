@@ -12,22 +12,22 @@ is a need to extend its functionality in ways that are reusable across projects
 and more likely to survive upgrades. This article covers a variety of ways to
 achieve this using the following methods:
 
-1. Custom Javascript and CSS
-2. Custom theme.conf Variables
-3. Changing the code highlighting styles
-4. Using html_context Variables
-5. Adding Deploy, Edit, and Feedback Buttons
-6. Using a javascript Based Feedback Form
-7. Adding a sitemap
-8. Showing last update with git timestamps
-9. Adding a custom 404 page
-10. Process per-page metadata
+1. [Custom Javascript and CSS](#custom-javascript-and-css)
+2. [Custom theme.conf Variables](#custom-theme-conf-variables)
+3. [Changing the code highlighting styles](#changing-the-code-highlighting-styles)
+4. [Using html_context Variables](#using-html-context-variables)
+5. [Adding Deploy, Edit, and Feedback Buttons](#adding-deploy-edit-and-feedback-buttons)
+6. [Using a javascript Based Feedback Form](#using-a-javascript-based-feedback-form)
+7. [Adding a sitemap](#adding-a-sitemap)
+8. [Showing last update with git timestamps](#showing-last-update-with-git-timestamps)
+9. [Adding a custom 404 page](#adding-a-custom-404-page)
+10. [Process per-page metadata](#process-per-page-metadata)
 
 > **Tip:** To see some of these examples in a live demo, check out
 > [continuous-sphinx](https://github.com/jdillard/continuous-sphinx).
 {: {{site.data.css.tip-box}} }
 
-## 1. Custom Javascript and CSS
+## <a name="custom-javascript-and-css"></a>1. Custom Javascript and CSS
 
 Custom javascript and CSS files can be great for overrides and snippets of
 functionality. First, create a **custom.js** and **custom.css** file in the
@@ -40,7 +40,7 @@ def setup(app):
    app.add_stylesheet("custom.css")
 ```
 
-## 2. Custom theme.conf Options
+## <a name="custom-theme-conf-variables"></a>2. Custom theme.conf Options
 
 Sometimes the options available in **theme.conf** aren't enough and custom
 options need to be added, for example:
@@ -78,7 +78,7 @@ The theme options be referenced in the theme's HTML template by pre-pending
 </select>{% endraw %}
 ```
 
-## 3. Changing the code highlighting styles
+## <a name="changing-the-code-highlighting-styles"></a>3. Changing the code highlighting styles
 
 Most themes should support using the different [pygment](http://pygments.org/)
 styles for code highlighting. For example, to use the [monokai](http://pygments.org/demo/6783511/?style=monokai)
@@ -88,7 +88,7 @@ style you can set the following in **conf.py**, or **theme.conf** if it exists:
 pygments_style = 'monokai'
 ```
 
-## 4. Using html_context Variables
+## <a name="using-html-context-variables"></a>4. Using html_context Variables
 
 Passing in custom configuration overrides at runtime can come in handy when
 deploying to different environments. To take advantage of custom configuration
@@ -113,7 +113,7 @@ Then reference them in the theme's HTML template:
 {% endif %}{% endraw %}
 ```
 
-## 5. Adding Edit, History, Contribution, Feedback, and Deploy Buttons
+## <a name="adding-deploy-edit-and-feedback-buttons"></a>5. Adding Edit, History, Contribution, Feedback, and Deploy Buttons
 
 Placing deploy, edit, history, contribution, and feedback buttons to the page
 navigation improves the usability of the documentation website while also
@@ -181,7 +181,7 @@ function deploy(site) {
 > webhook service.
 {: {{site.data.css.info-box}} }
 
-## 6. Using a javascript Based Feedback Form
+## <a name="using-a-javascript-based-feedback-form"></a>6. Using a javascript Based Feedback Form
 
 For an embedded feedback form versus just a feedback button, you can add
 the code for that to the theme's HTML template instead. Here is an example using
@@ -211,13 +211,13 @@ file.
 
 ![Documentation Feedback Form](/assets/images/posts/docs-form-feedback.png) <small><i>An example of an embedded Hubspot feedback form.</i></small>
 
-## 7. Adding a sitemap
+## <a name="adding-a-sitemap"></a>7. Adding a sitemap
 
 Sitemaps can be great for SEO and general website maintenance. The
 [sphinx-sitemap](https://github.com/jdillard/sphinx-sitemap) extension silently
 adds a sitemap with very little configuration.
 
-## 8. Showing last update with git timestamps
+## <a name="showing-last-update-with-git-timestamps"></a>8. Showing last update with git timestamps
 
 Sphinx has the ability to show the [last updated](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_last_updated_fmt)
 timestamp, but that only shows the last time the page was built, not the last
@@ -225,7 +225,7 @@ time it was actually changed. The [sphinx-gitstamp](https://github.com/jdillard/
 extention will grab the last change in the page's commit history and make it
 available to the HTML template.
 
-## 9. Adding a custom 404 page
+## <a name="adding-a-custom-404-page"></a>9. Adding a custom 404 page
 
 Sphinx does not create a 404 page by default and simply adding a 404.rst file
 will break all of the static assets due to the use of relative links. The
@@ -237,7 +237,7 @@ for a 404 page.
 > to know when there is an important redirect opportunity that is being missed.
 {: {{site.data.css.tip-box}} }
 
-## 10. Process per-page metadata
+## <a name="process-per-page-metadata"></a>10. Process per-page metadata
 
 Sometimes there is a need to add metadata, or front matter, to specific pages
 so that custom logic can be built around those values. In order to do that, add
