@@ -1,16 +1,16 @@
 ---
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
-title: San Francisco, California Climbing Weather - Current, Past, and Forecasted Report
-title_override: San Francisco, California<br /><small>Climbing Weather</small>
-description: A lightweight climbing weather report for crags near San Francisco, California. Optimized for slow internet connections.
+title: Salt Lake City, Utah Climbing Weather - Current, Past, and Forecasted Report
+title_override: Salt Lake City, Utah<br /><small>Climbing Weather</small>
+description: A lightweight climbing weather report for crags near Salt Lake City, Utah. Optimized for slow internet connections.
 js_includes:
   - weather.js
 ---
 
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
 <strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,
-precipitation-focused reports of current, past, and forecasted climbing weather for crags near San Francisco, California, sourced
+precipitation-focused reports of current, past, and forecasted climbing weather for crags near Salt Lake City, Utah, sourced
 from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.
 </section>
 
@@ -32,7 +32,7 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
         </div>
     </div>
 </section>
-<section id="weather" data-crag="san-francisco-california" class="mv4-ns mv3 ph2 center"></section>
+<section id="weather" data-crag="salt-lake-city-utah" class="mv4-ns mv3 ph2 center"></section>
 <section id="nearby" class="tc lh-copy">
   <h3>Other Metros</h3>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/austin-texas-weather.html">Austin, Texas</a>

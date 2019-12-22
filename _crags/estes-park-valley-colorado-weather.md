@@ -11,7 +11,6 @@ js_includes:
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
 <strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,
 precipitation-focused reports of current, past, and forecasted climbing weather for Estes Park Valley, Colorado.
-If it is too wet here, check for a dry crag near <a class="nowrap no-underline fancy-link relative light-red" href="/crags/denver-colorado-weather.html">Denver, Colorado</a> and keep the stoke high.
 </section>
 
 <p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Instructions</p>
@@ -36,7 +35,6 @@ If it is too wet here, check for a dry crag near <a class="nowrap no-underline f
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/lime-park-lime-creek-colorado-weather.html">Lime Park (Lime Creek)</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/independence-pass-colorado-weather.html">Independence Pass</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/moab-utah-weather.html">Moab</a>
-<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/estes-park-valley-colorado-weather.html">Estes Park Valley</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/gunnison-colorado-weather.html">Gunnison</a>
 </section>
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>

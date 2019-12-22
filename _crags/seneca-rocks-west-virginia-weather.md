@@ -11,7 +11,6 @@ js_includes:
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
 <strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,
 precipitation-focused reports of current, past, and forecasted climbing weather for Seneca Rocks, West Virginia.
-If it is too wet here, check for a dry crag near <a class="nowrap no-underline fancy-link relative light-red" href="/crags/nashville-tennessee-weather.html">Nashville, Tennessee</a> and keep the stoke high.
 </section>
 
 <p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Instructions</p>
@@ -34,7 +33,6 @@ If it is too wet here, check for a dry crag near <a class="nowrap no-underline f
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/jackson-falls-illinois-weather.html">Jackson Falls</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/red-river-gorge-kentucky-weather.html">Red River Gorge</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/foster-falls-tennessee-weather.html">Foster Falls</a>
-<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/seneca-rocks-west-virginia-weather.html">Seneca Rocks</a>
 </section>
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
 <section id="issues" class="overflow-hidden tc f6">

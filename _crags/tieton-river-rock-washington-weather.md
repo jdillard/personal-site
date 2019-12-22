@@ -11,7 +11,6 @@ js_includes:
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
 <strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,
 precipitation-focused reports of current, past, and forecasted climbing weather for Tieton River Rock, Washington.
-If it is too wet here, check for a dry crag near <a class="nowrap no-underline fancy-link relative light-red" href="/crags/seattle-washington-weather.html">Seattle, Washington</a> and keep the stoke high.
 </section>
 
 <p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Instructions</p>
@@ -32,7 +31,6 @@ If it is too wet here, check for a dry crag near <a class="nowrap no-underline f
 <section id="nearby" class="tc lh-copy">
   <h3>Nearby Crags</h3>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/icicle-creek-washington-weather.html">Icicle Creek</a>
-<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/tieton-river-rock-washington-weather.html">Tieton River Rock</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/vantage-washington-weather.html">Vantage</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/mount-erie-washington-weather.html">Mount Erie</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/index-washington-weather.html">Index</a>

@@ -39,7 +39,9 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/seattle-washington-weather.html">Seattle, Washington</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/denver-colorado-weather.html">Denver, Colorado</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/nashville-tennessee-weather.html">Nashville, Tennessee</a>
+<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/salt-lake-city-utah-weather.html">Salt Lake City, Utah</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/san-francisco-california-weather.html">San Francisco, California</a>
+<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/los-angeles-california-weather.html">Los Angeles, California</a>
 </section>
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
 <section id="issues" class="overflow-hidden tc f6">
