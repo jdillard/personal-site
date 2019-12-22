@@ -8,7 +8,7 @@
     "babel-polyfill": "^6.26.0",
     "baffle": "^0.3.6",
     "d3": "^5.11.0",
-    "handlebars": "^4.2.0",
+    "handlebars": "^4.5.3",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.26",
     "node-gyp": "^5.0.3",
