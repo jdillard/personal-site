@@ -11,7 +11,9 @@ def create_crag_page(crags)
 
   #TODO needs to loop through each metros cell
   crags.each do |crag|
-    metros.add(crag["metros"])
+    crag["metros"].split("|").each do |metro|
+      metros.add(metro)
+    end  
     states.add(crag["state"])
     end
 
@@ -66,8 +68,10 @@ def create_crags(crags)
 
     #TODO needs to loop through each metros cell
     crags.each do |crag|
-      metros.add(crag["metros"])
-      end
+      crag["metros"].split("|").each do |metro|
+        metros.add(metro)
+      end 
+    end
 
     # determine the crags near them
     metros.each do |metro|
@@ -75,7 +79,9 @@ def create_crags(crags)
     end
 
     crags.each do |crag|
-      local_crags[crag["metros"]].push({ name: crag["name"], state: crag["state"], note: crag["note"], url: crag["url"], station: crag["station"], office: crag["office"], lat: crag["lat"], long: crag["long"] })
+      crag["metros"].split("|").each do |metro|
+        local_crags[metro].push({ name: crag["name"], state: crag["state"], note: crag["note"], url: crag["url"], station: crag["station"], office: crag["office"], lat: crag["lat"], long: crag["long"] })
+      end
     end
 
     crags.each do |crag|
@@ -93,14 +99,14 @@ def create_crags(crags)
         f << '<section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">'+"\n"
         f << '<strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,'+"\n"
         f << 'precipitation-focused reports of current, past, and forecasted climbing weather for ' + crag["name"] + ', ' + crag["state"] + '.'+"\n"
-        f << 'If it is too wet here, check for a dry crag near'
-        local_crags.each do |metro, crags|
-          if metro == crag["metros"]
-            url = metro.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
-            f << ' <a class="nowrap no-underline fancy-link relative light-red" href="/crags/' + url + '-weather.html">' + metro + '</a>'
-          end
-        end
-        f << " and keep the stoke high.\n"
+        # f << 'If it is too wet here, check for a dry crag near'
+        # local_crags.each do |metro, crags|
+        #   if metro == crag["metros"]
+        #     url = metro.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+        #     f << ' <a class="nowrap no-underline fancy-link relative light-red" href="/crags/' + url + '-weather.html">' + metro + '</a>'
+        #   end
+        # end
+        # f << " and keep the stoke high.\n"
         f << "</section>\n\n"
         f << '<p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Instructions</p>'+"\n"
         f << '<section id="settings" class="overflow-hidden" style="display:none;">'+"\n"
@@ -120,10 +126,14 @@ def create_crags(crags)
         f << '<section id="nearby" class="tc lh-copy">'+"\n"
         f << '  <h3>Nearby Crags</h3>'+"\n"
         local_crags.each do |metro, crags|
-          if metro == crag["metros"]
-            crags.each do |crag|
-              url = crag[:name].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + "-" + crag[:state].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
-              f << '<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/' + url + '-weather.html">' + crag[:name] + '</a>'+"\n"
+          crag["metros"].split("|").each do |metro2|
+            if metro == metro2
+              crags.each do |crag2|
+                if crag2[:name] != crag["name"]
+                  url = crag2[:name].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + "-" + crag2[:state].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+                  f << '<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/' + url + '-weather.html">' + crag2[:name] + '</a>'+"\n"
+                end
+              end
             end
           end
         end
@@ -158,8 +168,10 @@ def create_metros(crags)
 
   #TODO needs to loop through each metros cell
   crags.each do |crag|
-    metros.add(crag["metros"])
+    crag["metros"].split("|").each do |metro|
+      metros.add(metro)
     end
+  end
 
   # determine the crags near them
   metros.each do |metro|
@@ -167,7 +179,9 @@ def create_metros(crags)
   end
 
   crags.each do |crag|
-    local_crags[crag["metros"]].push({ name: crag["name"], note: crag["note"], url: crag["url"], station: crag["station"], office: crag["office"], lat: crag["lat"], long: crag["long"] })
+    crag["metros"].split("|").each do |metro|
+      local_crags[metro].push({ name: crag["name"], note: crag["note"], url: crag["url"], station: crag["station"], office: crag["office"], lat: crag["lat"], long: crag["long"] })
+    end
   end
 
   local_crags.each do |metro, crags|
