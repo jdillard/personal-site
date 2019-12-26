@@ -47,7 +47,6 @@ module.exports = {
     new WebpackCleanupPlugin()
   ],
   entry: {
-    about: "./assets/js/about.js",
     archive: "./assets/js/archive.js",
     index: "./assets/js/index.js",
     post: "./assets/js/post.js",

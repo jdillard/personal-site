@@ -2,8 +2,6 @@
 layout: page
 title: About Me
 description: Jared Dillard is a web developer based in the Pacific North West.
-js_includes:
-  - about.js
 ---
 
 <section class="mw7 mt5-ns mt4 center">
@@ -26,16 +24,16 @@ js_includes:
 <section class="mw6 center">
   <form class="pa4 black-80" name="contact-form" data-netlify="true">
     <div class="measure">
-      <label for="name-input" class="f6 b db mb2">Name</label>
-      <input id="name-input" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text">
+      <label for="name" class="f6 b db mb2">Name</label>
+      <input id="name" name="name" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text">
     </div>
     <div class="measure">
-      <label for="email-input" class="f6 b db mb2">Email</label>
-      <input id="email-input" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="email">
+      <label for="email" class="f6 b db mb2">Email</label>
+      <input id="email" name="email" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="email">
     </div>
     <div class="measure">
-      <label for="description-input" class="f6 b db mb2">Message</label>
-      <textarea id="description-input" name="description-input" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2"></textarea>
+      <label for="message" class="f6 b db mb2">Message</label>
+      <textarea id="message" name="message" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2"></textarea>
     </div>
     <div class="mt3"><input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="submit" value="Submit"></div>
   </form>
