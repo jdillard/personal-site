@@ -1,6 +1,7 @@
 //import 'babel-polyfill';
 
 const template_articles = require("./templates/latest_articles.hbs");
+const template_trips = require("./templates/latest_trips.hbs");
 const template_github_activity = require("./templates/github_activity.hbs");
 const template_github_projects = require("./templates/github_projects.hbs");
 
@@ -116,11 +117,12 @@ function articles(articles) {
   })
   .reduce((a, b, i) => {
       b.date_published = moment(b.date_published).format('MMM DD, YYYY');
+      b.summary = b.summary.split(" ").splice(0,40).join(" ");
       a.push(b);
       return a;
   }, []);
 
-  archive.innerHTML = template_articles(articles.data.slice(0,5));
+  archive.innerHTML = template_articles(articles.data.slice(0,3));
 }
 
 function trips(trips) {
@@ -136,7 +138,7 @@ function trips(trips) {
       return a;
   }, []);
 
-  archive.innerHTML = template_articles(trips.data.slice(0,5));
+  archive.innerHTML = template_trips(trips.data.slice(0,3));
 }
 
 function projects(projects = []) {

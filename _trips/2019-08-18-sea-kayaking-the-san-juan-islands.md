@@ -8,6 +8,7 @@ published: true
 categories:
   - kayaking
   - trip reports
+thumb: kayaking-san-juans-itinerary-thumb.png
 cover: false
 ---
 

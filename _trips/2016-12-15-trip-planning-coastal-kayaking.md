@@ -7,6 +7,7 @@ state: Texas
 type: kayaking
 categories:
   - trip planning
+thumb: kayak-trip-planning-thumb.png
 cover: coastal-kayaking
 ---
 

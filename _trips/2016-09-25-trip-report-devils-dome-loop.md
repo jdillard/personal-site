@@ -9,6 +9,7 @@ categories:
   - backpacking
   - trip reports
 cover: devils-dome
+thumb: crater-mountain-thumb.jpg
 ---
 
 

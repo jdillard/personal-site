@@ -1,0 +1,23 @@
+<div class="entry">
+    {{#each this}}
+    <article class="bb b--black-10 pb4 mb4">
+        <div class="ph3 ph0-l flex flex-column flex-row-ns">
+            <div class="pr3-ns mb4 mb0-ns w-100 w-30-ns">
+                <img src="{{this.thumb}}" class="db shadow-4" alt="Photo of a dimly lit room with a computer interface terminal.">
+            </div>
+            <div class="w-100 w-60-ns pl2-ns">
+                <div class="lh-copy mid-gray mb2">{{this.date_published}}</div>
+                <a class="f4 flex-ns items-center no-underline black-70 hover-light-red" href="{{this.url}}">
+                    <span class="pv0-ns pv1 db">{{this.title}}</span>
+                </a>
+                <div class="f6 f5-ns fw3 mt2 lh-copy mid-gray">
+                    {{#each this.categories}}
+                        <a class="f7 link dim br2 ph2 mb2 dib white bg-silver" href="#0">{{this}}</a>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        </a>
+    </article>
+    {{/each}}
+</div>

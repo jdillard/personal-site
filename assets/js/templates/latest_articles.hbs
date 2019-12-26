@@ -1,12 +1,10 @@
 <div class="entry">
-  <ul class="list pl0">
     {{#each this}}
-    <li class="pv1 f5">
-      <a class="flex-ns items-center no-underline black-70 hover-light-red" href="{{this.url}}">
-        <time class="f6 gray db nowrap mr3">{{this.date_published}}</time>
+    <div class="mt2 pv1 bb b--black-10 mb3">
+      <a class="f3 flex-ns items-center no-underline black-70 hover-light-red" href="{{this.url}}">
         <span class="pv0-ns pv1 lh-copy db">{{this.title}}</span>
       </a>
-    </li>
+      <p class="f5-ns f6 fw3 mt3 mb4 lh-copy mid-gray">{{this.summary}}...</p>
+    </div>
     {{/each}}
-  </ul>
 </div>
