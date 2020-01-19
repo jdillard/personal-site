@@ -43,6 +43,7 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/san-francisco-california-weather.html">San Francisco, California</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/los-angeles-california-weather.html">Los Angeles, California</a>
 </section>
+{% include feedback.html %}
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
 <section id="issues" class="overflow-hidden tc f6">
 </section>
