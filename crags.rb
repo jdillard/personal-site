@@ -57,7 +57,8 @@ def create_crag_page(crags)
       end
       f << "</ul>\n"
     end
-    f << "</section>\n"
+    f << "</section>\n\n"
+    f << "{% include feedback.html %}\n"
   end
 end
 
@@ -138,6 +139,7 @@ def create_crags(crags)
           end
         end
         f << '</section>'+"\n"
+        f << "{% include feedback.html %}\n"
         f << '<p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>'+"\n"
         f << '<section id="issues" class="overflow-hidden tc f6">'+"\n"
         f << "</section>\n\n"
@@ -253,6 +255,7 @@ def create_metros(crags)
               f << '<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/' + url + '-weather.html">' + othermetro + '</a>'+"\n"
         end
         f << '</section>'+"\n"
+        f << "{% include feedback.html %}\n"
         f << '<p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>'+"\n"
         f << '<section id="issues" class="overflow-hidden tc f6">'+"\n"
         f << "</section>\n\n"
