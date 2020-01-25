@@ -23,7 +23,7 @@ Our original plan was a 3 day trip that started on Lopez Island, used [Jones
 Island State Park](https://parks.state.wa.us/525/Jones-Island) as a basecamp,
 and ended back on Lopez Island.
 
-![Salish Sea Itinerary](/assets/images/trips/kayaking-san-juans-itinerary.png "Salish Sea Itinerary"){: .shadow-5.oversized} <small><i>The original route we had mapped out based on [Steph Abegg's trip report](http://www.stephabegg.com/home/tripreports/washington/olympics/sanjuanskayak).</i></small>
+![Salish Sea Itinerary](/assets/images/trips/kayaking-san-juans-itinerary.png "Salish Sea Itinerary"){: .shadow-5.oversized}{: loading="lazy"}<small><i>The original route we had mapped out based on [Steph Abegg's trip report](http://www.stephabegg.com/home/tripreports/washington/olympics/sanjuanskayak).</i></small>
 
 For reasons I'll cover later, we ended up using [Turn Island Marine State Park](https://parks.state.wa.us/295/Turn-Island)
 as a basecamp instead. Even though we didn't stick to the planned iternary it
@@ -103,7 +103,7 @@ and saw starfish crawling on the rocks and later that night we were lucky enough
 to be able to hear whales breaching off in the distance as they migrated down
 the channel.
 
-![Turn Island Camp Spot](/assets/images/trips/turn-island-camp-spot.JPG "Turn Island Camp Spot"){: .shadow-5.oversized} <small><i>A perfect view from Turn Island of the sun falling behind Friday Harbor.</i></small>
+![Turn Island Camp Spot](/assets/images/trips/turn-island-camp-spot.JPG "Turn Island Camp Spot"){: .shadow-5.oversized}{: loading="lazy"} <small><i>A perfect view from Turn Island of the sun falling behind Friday Harbor.</i></small>
 
 ## Day 2 - Checking out Friday Harbor
 

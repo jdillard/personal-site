@@ -144,7 +144,7 @@ you can often use API calls, such as GitHubs, to open and pre-populate issues:
 {% endif %}{% endraw %}
 ```
 
-![Documentation GitHub Feedback](/assets/images/posts/docs-github-feedback.png) <small><i>An example of feedback left using the GitHub API to pre-populate an issue.</i></small>
+![Documentation GitHub Feedback](/assets/images/posts/docs-github-feedback.png){: loading="lazy"} <small><i>An example of feedback left using the GitHub API to pre-populate an issue.</i></small>
 
 
 ### Deploy Button
@@ -209,7 +209,7 @@ Hubspot, but you could go with any javascript based form service:
 Once the form is embedded, add custom styles for the form in the **custom.css**
 file.
 
-![Documentation Feedback Form](/assets/images/posts/docs-form-feedback.png) <small><i>An example of an embedded Hubspot feedback form.</i></small>
+![Documentation Feedback Form](/assets/images/posts/docs-form-feedback.png){: loading="lazy"} <small><i>An example of an embedded Hubspot feedback form.</i></small>
 
 ## <a name="adding-a-sitemap"></a>7. Adding a sitemap
 
