@@ -4,8 +4,8 @@ title: "Using Google Analytics for per Page Ratings"
 date: 2020-05-17
 published: true
 categories:
-  - JAMStack
-  - Analytics
+  - jamstack
+  - google analytics
 ---
 
 Providing readers with a low friction way of giving feedback on a specific page
