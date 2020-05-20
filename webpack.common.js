@@ -47,20 +47,20 @@ module.exports = {
     new WebpackCleanupPlugin()
   ],
   entry: {
-    archive: "./assets/js/archive.js",
-    index: "./assets/js/index.js",
-    post: "./assets/js/post.js",
-    commons: "./assets/js/commons.js",
-    library: "./assets/js/library.js",
-    logBook: "./assets/js/logBook.js",
-    getInvolved: "./assets/js/get-involved.js",
-    trad: "./assets/js/trad.js",
-    trip: "./assets/js/trip.js",
-    tripArchive: "./assets/js/trip-archive.js",
-    weather: "./assets/js/weather.js"
+    archive: "./source/assets/js/archive.js",
+    index: "./source/assets/js/index.js",
+    post: "./source/assets/js/post.js",
+    commons: "./source/assets/js/commons.js",
+    library: "./source/assets/js/library.js",
+    logBook: "./source/assets/js/logBook.js",
+    getInvolved: "./source/assets/js/get-involved.js",
+    trad: "./source/assets/js/trad.js",
+    trip: "./source/assets/js/trip.js",
+    tripArchive: "./source/assets/js/trip-archive.js",
+    weather: "./source/assets/js/weather.js"
   },
   output: {
-    path: path.resolve(__dirname, 'assets/dist/'),
+    path: path.resolve(__dirname, 'source/assets/dist/'),
     filename: "js/[name].[chunkhash].js"
   },
   module: {

@@ -40,7 +40,7 @@ task :assets do
     puts response.status
     exit
   end
-  File.write('assets/json/projects.json', projects)
+  File.write('source/assets/json/projects.json', projects)
 
   begin
     activity = open('https://api.github.com/users/jdillard/events').read
@@ -50,7 +50,7 @@ task :assets do
     puts response.status
     exit
   end
-  File.write('assets/json/activity.json', activity)
+  File.write('source/assets/json/activity.json', activity)
 end
 
 
@@ -75,7 +75,7 @@ task :serve, [:environment_configuration] => :clean do |t, args|
     exit if ans != 'Y'
   end
 
-  jekyll(jekyll_env, 'serve --unpublished --future --limit_posts 20')
+  jekyll(jekyll_env, 'serve --source source --unpublished --future --limit_posts 20')
 end
 
 
@@ -90,8 +90,18 @@ end
 
 desc 'Build for deployment (but do not deploy)'
 task :build, [:deployment_configuration] => :clean do |t, args|
-  args.with_defaults(:deployment_configuration => 'deploy')
-  config_file = "_config_#{args[:deployment_configuration]}.yml"
+  args.with_defaults(:environment_configuration => 'development')
+  if (args.environment_configuration == 'dev' || args.environment_configuration == 'development')
+    jekyll_env = 'development'
+  elsif (args.environment_configuration == 'prod')
+    jekyll_env = 'production'
+  else
+    puts "\n\nWarning! Jekyll Environment variable '" + args.environment_configuration + "' not recognized.\n\n"
+    puts "Are you sure you want to continue? [Y|n]"
+
+    ans = STDIN.gets.chomp
+    exit if ans != 'Y'
+  end
 
   if rake_running then
     puts "\n\nWarning! An instance of rake seems to be running (it might not be *this* Rakefile, however).\n"
@@ -102,7 +112,7 @@ task :build, [:deployment_configuration] => :clean do |t, args|
     exit if ans != 'Y'
   end
 
-  jekyll("build --config _config.yml,#{config_file}")
+  jekyll(jekyll_env, "build --source source --config source/_config.yml")
 end
 
 
