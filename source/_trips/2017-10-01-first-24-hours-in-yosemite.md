@@ -4,7 +4,7 @@ title: 'First 24 Hours in Yosemite'
 date: 2017-10-01
 state: California
 type: climbing
-published: true
+published: false
 categories:
   - climbing
   - trip reports
