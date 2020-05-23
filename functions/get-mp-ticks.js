@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-exports.handler = async (event, context, callback) => {
+exports.handler = async (event, context) => {
   const MP_KEY = process.env
   const email = event.queryStringParameters.email
 
