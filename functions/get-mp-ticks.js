@@ -10,6 +10,6 @@ exports.handler = async (event, context) => {
   ]).then(([ticksResponse, userResponse]) => {
     return { statusCode: 200, body: JSON.stringify({ name: userResponse.data.name, ticks:  ticksResponse.data.ticks }) }
   }, (error) => {
-    return { statusCode: 500, body: error }
+    return { statusCode: 500, body: JSON.stringify({ error: error}) }
   });
 }
