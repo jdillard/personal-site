@@ -11,6 +11,7 @@
     "handlebars": "^4.7.6",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.26",
+    "netlify-lambda": "^1.6.3",
     "suncalc": "^1.8.0",
     "terser-webpack-plugin": "^2.3.0",
     "tippy.js": "^4.3.5",
@@ -43,7 +44,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "start:lambda": "netlify-lambda serve functions",
+    "build:lambda": "netlify-lambda build functions"
   },
   "repository": {
     "type": "git",
