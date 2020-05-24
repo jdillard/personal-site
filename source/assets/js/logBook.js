@@ -3,41 +3,15 @@ import u from 'umbrellajs';
 
 const template_logbook = require("./templates/logbook.hbs");
 
-function getTicks(email, mpKey) {
-  Promise.all([
-    axios.get(`https://www.mountainproject.com/data/get-ticks?email=${email}&key=${mpKey}`),
-    axios.get(`https://www.mountainproject.com/data/get-user?email=${email}&key=${mpKey}`)
-  ]).then(([ticksResponse, userResponse]) => {
-    document.getElementById("mp-key").value = '';
-    document.getElementById("log-owner").innerHTML = userResponse.data.name + "'s Ticks";
-    getRoutes(ticksResponse.data.ticks,mpKey);
-  }, (error) => {
-    //TODO return 403 (etc?) back to the UI
-    console.log(error.message);
-  });
-}
-
-function getRoutes(ticks, mpKey) {
-  axios.get(`https://www.mountainproject.com/data/get-routes?routeIds=${ticks.map(e => e.routeId).join(',')}&key=${mpKey}`)
+function getTicks(email) {
+  axios.get(`/.netlify/functions/get-mp-ticks?email=${email}`)
   .then(function (response) {
-    const routes = response.data.routes.map(i => {
-      let style = getTickInfo(i.id, "style", ticks);
-      if(style === '') { style = 'Unknown'; }
-      if(!simpleRating[i.rating]) { console.log(i.rating); }
-      return {
-        'route': i.name,
-        'url': i.url,
-        'type': i.type,
-        'rating': simpleRating[i.rating],
-        'style': style,
-        'date': getTickInfo(i.id, "date", ticks)
-      };
-    });
-    localStorage.setItem('logbook-routes', JSON.stringify(routes));
+    document.getElementById("log-owner").innerHTML = response.data.name + "'s Ticks";
+    localStorage.setItem('logbook-routes', JSON.stringify(response.data.routes));
     localStorage.setItem('logbook-status', Date.now());
     const logbook = document.getElementById("logbook");
-    logbook.innerHTML = template_logbook(routes);
-    filterRoutes(routes);
+    logbook.innerHTML = template_logbook(response.data.routes);
+    filterRoutes(response.data.routes);
   })
   .catch(function (error) {
     console.log(error);
@@ -93,24 +67,13 @@ function filterRoutes(routes, selectedType='', selectedStyles=[]) {
               chartData[route.style] = 1;
             }
         }
-        chartData.rating = simpleRating[key];
+        chartData.rating = key;
         chartData.total = routeRatings[key].length;
         formattedTicks.push(chartData);
       }
     }
     formattedTicks.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating));
     createGraph({ticks: formattedTicks, keys: Object.keys(groupBy(routes, 'style')).filter(function(e){return e;})});
-}
-
-function getTickInfo(nameKey, prop, myArray){
-  for (var i=0; i < myArray.length; i++) {
-    if (myArray[i].routeId === nameKey && prop === "style") {
-      return (myArray[i].leadStyle) ? myArray[i].leadStyle : myArray[i].style;
-    }
-    if (myArray[i].routeId === nameKey && prop === "date") {
-      return myArray[i].date;
-    }
-  }
 }
 
 function getIssues() {
@@ -295,55 +258,13 @@ function createGraph(logData) {
   }
 }
 
-const simpleRating = {
-  "5.6": "5.6",
-  "5.7": "5.7",
-  "5.8": "5.8",
-  "5.8 R": "5.8",
-  "5.8+": "5.8",
-  "5.8+ R": "5.8",
-  "5.9-": "5.9",
-  "5.9": "5.9",
-  "5.9 R": "5.9",
-  "5.9+": "5.9",
-  "5.10-": "5.10a",
-  "5.10": "5.10b",
-  "5.10a": "5.10a",
-  "5.10a/b": "5.10b",
-  "5.10b": "5.10b",
-  "5.10b PG13": "5.10b",
-  "5.10b R": "5.10b",
-  "5.10c": "5.10c",
-  "5.10b/c": "5.10c",
-  "5.10+": "5.10d",
-  "5.10d": "5.10d",
-  "5.11a": "5.11a",
-  "5.11b": "5.11b",
-  "V1": "V1",
-  "V1+": "V1",
-  "V1+ PG13": "V1",
-  "V2": "V2",
-  "V2+": "V2",
-  "V3": "V3",
-  "V3+": "V3",
-  "V4": "V4",
-  "V4+": "V4",
-  "V5": "V5",
-  "V5+": "V5",
-  "V6": "V6",
-  "V6+": "V6",
-  "V7": "V7",
-  "V7+": "V7"
-};
-
 const ratingOrder = ["V1", "V2", "V3", "V4", "V5", "V6", "V7", "5.6", "5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b"];
 
 u("#mp-submit").on('click', function(){
   const email = document.getElementById("mp-email").value;
-  const mpKey = document.getElementById("mp-key").value;
 
-  if(email && mpKey) {
-    getTicks(email, mpKey);
+  if(email) {
+    getTicks(email);
   } else {
     alert("There was an error");
   }
