@@ -56,7 +56,6 @@ const simpleRating = {
 
 exports.handler = async (event, context) => {
   const mpKey = process.env.MP_KEY
-
   try {
     const email = event.queryStringParameters.email || ""
     // If there is an Email, try to get the Mountain Project info for it
@@ -81,7 +80,13 @@ exports.handler = async (event, context) => {
             'date': getTickInfo(i.id, "date", ticksResponse.data.ticks)
           };
         });
-        return { statusCode: 200, body: JSON.stringify({ name: userResponse.data.name, routes: routes }) }
+        return { statusCode: 200,
+          // headers: {
+          //   'Access-Control-Allow-Origin': '*',
+          //   'Access-Control-Allow-Headers':
+          //   'Origin, X-Requested-With, Content-Type, Accept',
+          // },
+          body: JSON.stringify({ name: userResponse.data.name, routes: routes }) }
       } else {
         return { statusCode: 500, body: JSON.stringify({ error: 'Email not found'}) }
       }
