@@ -12,7 +12,7 @@ def create_crag_page(crags)
   crags.each do |crag|
     crag["metros"].split("|").each do |metro|
       metros.add(metro)
-    end  
+    end
     states.add(crag["state"])
     end
 
