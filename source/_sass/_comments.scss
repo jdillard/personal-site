@@ -1,0 +1,40 @@
+.comment .body a {
+    color: #FF725C;
+    text-decoration: none;
+}
+
+.comment .body a:hover {
+    color: #FF725C;
+    text-decoration: underline;
+}
+
+.comment .body blockquote {
+    border-left: 3px solid #ccc;
+    margin-left: 15px;
+}
+
+.comment .body blockquote p {
+    padding: 5px 0 5px 10px;
+}
+
+.comment .body > p > code {
+    background-color: #efefef;
+    padding: 2px;
+    font-size: .9em;
+}
+
+.comment .body pre > code {
+    padding: 10px;
+    display: block;
+    white-space: pre;
+    font-size: .9em;
+}
+
+.comment ul.task-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.comment input.task-list-item-checkbox {
+    margin-right: 5px;
+}

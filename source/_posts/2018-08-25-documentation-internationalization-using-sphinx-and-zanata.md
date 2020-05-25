@@ -3,6 +3,7 @@ layout: post
 title:  "Documentation Internationalization using Sphinx and Zanata"
 date:   2018-08-25
 published: true
+comments: 5
 categories:
   - internationalization
   - sphinx

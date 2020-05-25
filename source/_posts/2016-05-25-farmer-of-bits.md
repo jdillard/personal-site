@@ -3,6 +3,7 @@ layout: post
 title:  "Farmer of Bits"
 date:   2016-05-25
 published: true
+comments: 2
 categories:
   - gardening
   - cooperatives

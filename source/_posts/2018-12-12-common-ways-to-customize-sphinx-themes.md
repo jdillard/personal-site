@@ -3,6 +3,7 @@ layout: post
 title:  "Common Ways to Customize Sphinx Themes"
 date:   2018-12-12
 published: true
+comments: 7
 categories:
   - sphinx
 ---
