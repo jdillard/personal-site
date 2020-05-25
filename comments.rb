@@ -59,7 +59,7 @@ Dir.glob("source/_posts/*.md") do |blog_post|
           f << '        <img class="br2 mw3" src="' +  comment["user"]["avatar_url"] + '"/>'+"\n"
           f << '    </a>'+"\n"
           f << '  </div>'+"\n"
-          f << '  <div class="flex relative flex-column ba b--light-gray br1 mb3">'+"\n"
+          f << '  <div class="flex relative flex-column ba b--light-gray br1 mb3 w-100">'+"\n"
           f << '    <div class="f6 ph3 pv2 bg-near-white bb b--light-gray gray">'+"\n"
           f << '        <a href="' + comment["user"]["html_url"] + '" target="_blank" class="mid-gray b link">' + comment["user"]["login"] + '</a> commented on'+"\n"
           f << '        <a href="' + comment["html_url"] + '" target="_blank" class="gray link">'+"\n"
@@ -67,7 +67,7 @@ Dir.glob("source/_posts/*.md") do |blog_post|
           f << '               ' + comment["created_at"].strftime("%B %d, %Y") + "\n"
           f << '            </relative-time>'+"\n"
           f << '        </a>&nbsp;'
-                        comment["updated_at"].to_s === "" ? f << "\n" : f << "(edited)\n"
+                        comment["updated_at"] === comment["created_at"] ? f << "\n" : f << "(edited)\n"
           f << '    </div>'+"\n"
           f << '    <div class="body pv2 ph3 black-70">'+"\n"
           f << '      ' + Kramdown::Document.new(comment["body"], :input => 'GFM', :syntax_highlighter => 'rouge').to_html+"\n"
@@ -122,10 +122,10 @@ Dir.glob("source/_posts/*.md") do |blog_post|
           f << '    </div>'+"\n"
           f << '  </div>'+"\n"
           f << '</div>'+"\n"
+        end
           f << '<div class="pa3 tc ba b--light-gray black-70 mb3">'+"\n"
           f << '  <a href="https://github.com/' + repo + '/issues/' + front_matter["comments"].to_s + '" class="b mid-gray">Join the discussion on GitHub</a>'+"\n"
           f << '</div>'
-        end
       else
         f << '<div class="pa3 tc ba b--light-gray black-70 mb3">'+"\n"
         f << '  There are currently no comments. <a href="https://github.com/' + repo + '/issues/' + front_matter["comments"].to_s + '" class="b mid-gray">Leave a comment on GitHub</a>'+"\n"
