@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "octokit", "~> 4.0"
+
 group :jekyll_plugins do
    gem 'jekyll'
    gem 'jekyll-paginate'
