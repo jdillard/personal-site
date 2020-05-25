@@ -18,7 +18,7 @@ else
         echo "ruby crags.rb"
         ;;
       comments)
-        ruby comments.rb
+        bundle exec ruby comments.rb
         ;;
     esac
   done
