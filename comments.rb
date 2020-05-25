@@ -3,7 +3,7 @@ require 'yaml'
 require 'kramdown'
 
 # Set access token
-client = Octokit::Client.new(:access_token => COMMENTS_TOKEN)
+client = Octokit::Client.new(:access_token => ENV["COMMENTS_TOKEN"])
 
 # Configure client
 client.auto_paginate = true
