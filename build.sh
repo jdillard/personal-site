@@ -18,7 +18,7 @@ else
         echo "ruby crags.rb"
         ;;
       comments)
-        echo "ruby comments.rb"
+        ruby comments.rb
         ;;
     esac
   done
