@@ -44,7 +44,7 @@ def create_comments(client, repo, issue_id)
             reactions["rocket"] ? reactions["rocket"] +=  1 : reactions["rocket"] = 1
           end
         end
-        f << '<div class="comment flex flex-row">'+"\n"
+        f << '<div class="comment f6 flex flex-row">'+"\n"
         f << '  <div class="mr3">'+"\n"
         f << '    <a href="' + comment["user"]["html_url"] + '" target="_blank">'+"\n"
         f << '        <img class="br2 mw3" src="' +  comment["user"]["avatar_url"] + '"/>'+"\n"
