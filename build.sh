@@ -2,7 +2,7 @@
 
 function urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
 
-if [ -n "${INCOMING_HOOK_BODY}"]; then
+if [ -n "${INCOMING_HOOK_BODY}" ]; then
   PAYLOAD=$(urldecode "${INCOMING_HOOK_BODY}")
   SCRIPTS_STRING=$(echo "${PAYLOAD}" | jq -r .scripts)
   ARGUMENTS_STRING=$(echo "${PAYLOAD}" | jq -r .arguments)
