@@ -184,8 +184,3 @@ Even though we didn't finish the whole loop, the first half alone makes it worth
 it. I would recommend going a little earlier in the season or being more
 prepared for cold rain and hiking in the snow. I definitely want to go back and
 explore the North Cascades and Pasayten Wilderness more.
-
-## Current Weather Conditions
-
-I included a forecase of the current weather conditions in hopes your trip
-goes smoother than ours.
