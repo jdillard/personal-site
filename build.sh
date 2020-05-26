@@ -2,10 +2,7 @@
 
 function urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
 
-if [ "${INCOMING_HOOK_BODY}" == "" ] ; then
-  bundle exec jekyll build --source source
-  exit 0
-else
+if [ -n "${INCOMING_HOOK_BODY}"]; then
   PAYLOAD=$(urldecode "${INCOMING_HOOK_BODY}")
   SCRIPTS_STRING=$(echo "${PAYLOAD}" | jq -r .scripts)
   ARGUMENTS_STRING=$(echo "${PAYLOAD}" | jq -r .arguments)
@@ -21,9 +18,6 @@ else
         ;;
     esac
   done
-
-  bundle exec jekyll build --source source
 fi
 
-
-
+bundle exec jekyll build --source source
