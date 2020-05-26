@@ -1,7 +1,5 @@
 #!/bin/bash -x
 
-env
-
 function urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
 
 if [ "${INCOMING_HOOK_BODY}" == "" ] ; then
