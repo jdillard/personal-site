@@ -114,12 +114,13 @@ def create_comments(client, repo, issue_id)
         f << '  </div>'+"\n"
         f << '</div>'+"\n"
       end
-      f << '<div class="pa3 tc ba b--light-gray black-70 mb3">'+"\n"
-      f << '  <a href="https://github.com/' + repo + '/issues/' + issue_id.to_s + '" class="b mid-gray">Join the discussion on GitHub</a>'+"\n"
+      f << '<div class="pa3 tc ba b--light-gray black-70 bg-near-white shadow-5 mb3">'+"\n"
+      f << '  <a href="https://github.com/' + repo + '/issues/' + issue_id.to_s + '" class="b mid-gray">Join the discussion using GitHub</a>'+"\n"
       f << '</div>'
     else
-      f << '<div class="pa3 tc ba b--light-gray black-70 mb3">'+"\n"
-      f << '  There are currently no comments. <a href="https://github.com/' + repo + '/issues/' + issue_id.to_s + '" class="b mid-gray">Leave a comment on GitHub</a>'+"\n"
+      f << '<p class="tc pa3 pv3 f6 gray ba b--light-gray">There are currently no comments.</p>'+"\n"
+      f << '<div class="pa3 tc ba b--light-gray black-70 bg-near-white shadow-5 mb3">'+"\n"
+      f << '  <a href="https://github.com/' + repo + '/issues/' + issue_id.to_s + '" class="b mid-gray">Leave a comment using GitHub</a>'+"\n"
       f << '</div>'
     end
   end
