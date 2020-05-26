@@ -10,15 +10,18 @@ categories:
 ---
 
 I was looking for a way to host my comments on [GitHub Issues](https://github.com/jdillard/blog-comments/issues)
-when I stumbled on [Paul Knopf's blog post](https://pknopf.com/post/2018-10-13-comments-for-static-sites-using-github-issues) where he generated his blog posts comments server side. Since I didn't want to use client-side scripting to render and post comments or rely
-on a GitHub App like [Utterances](https://utteranc.es/), I decided to adapt his
+when I stumbled upon [Paul Knopf's blog post](https://pknopf.com/post/2018-10-13-comments-for-static-sites-using-github-issues)
+where he was able to generate his blog post's comments server side. Since I
+didn't want to use client-side scripting to render and post comments or rely on
+a GitHub App like [Utterances](https://utteranc.es/), I decided to adapt his
 approach to my Jekyll based blog.
 
-His implementation was done before GitHub Actions matured, so I was able to take
-it a step further and have GitHub trigger my blog's Netlify build hook any time
-a comment is created, edited, or deleted.
+{: {{site.data.css.info-box}} }
+> **Note:** His implementation was done before GitHub Actions matured, so I was
+> able to take it a step further and have GitHub trigger the Netlify build hook
+> for my blog any time a comment is created, edited, or deleted.
 
-## Add Post Front Matter
+## Add Blog Post Front Matter
 
 In each blog post's front-matter, add a [GitHub Issue ID](https://github.com/jdillard/blog-comments/issues/3)
 field that points to the comment thread for that page.
@@ -27,7 +30,7 @@ field that points to the comment thread for that page.
 comment_issue_id: 3
 ```
 
-## Convert GitHub API to HTML
+## Convert GitHub API to HTML Snippets
 
 Then loop through each posts front matter, using [Octokit](https://github.com/octokit/octokit.rb)
 to query the issues comments and auto-generate HTML snippets in the
@@ -36,11 +39,16 @@ to query the issues comments and auto-generate HTML snippets in the
 In this [example script](https://github.com/jdillard/personal-site/blob/master/comments.rb)
 the comments are styled using [Tachyons](https://tachyons.io/), but it is
 possible to customize how the HTML is generated. This script allows for comments
-to be generated for all posts, `ruby comments.rb` or for a single issue based on
+to be generated for all posts, `ruby comments.rb`, or for a single issue based on
 its number, `ruby comments.rb 3`.
 
 If your build system supports [environmental variables](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables), you can securely store your [GitHub Personal Access Token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
 in `ENV["COMMENTS_TOKEN"]` to prevent it from being stored in plain text.
+
+{: {{site.data.css.info-box}} }
+> **Note:** The [GitHub API rate limiting](https://developer.github.com/v3/#rate-limiting)
+> allows for 60 unauthenticated requests per hour, so the script will run
+> locally, even with `ENV["COMMENTS_TOKEN"]` being unset.
 
 
 ```ruby
@@ -196,7 +204,7 @@ end
 
 In the post layout, check if the `comment_issue_id` field exists before
 including the auto-generated comment snippet related to that blog post. In this
-example it would be located at `_includes/comments/3.html`.
+example the snippet would be located at `_includes/comments/3.html`.
 
 ```liquid
 {% raw %}{% if page.comment_issue_id %}
@@ -206,55 +214,42 @@ example it would be located at `_includes/comments/3.html`.
 
 ## Style the Rendered Markdown
 
-Then add [styles for the rendered markdown](https://github.com/jdillard/personal-site/blob/master/source/_sass/_comments.scss)
-that makes up the body of the comments.
+Then add [a stylesheet for the rendered markdown](https://github.com/jdillard/personal-site/blob/master/source/_sass/_comments.sass)
+that makes up the body of each comment.
 
-```css
-.comment .body a {
-    color: #FF725C;
-    text-decoration: none;
-}
-
-.comment .body a:hover {
-    color: #FF725C;
-    text-decoration: underline;
-}
-
-.comment .body blockquote {
-    border-left: 3px solid #ccc;
-    margin-left: 15px;
-}
-
-.comment .body blockquote p {
-    padding: 5px 0 5px 10px;
-}
-
-.comment .body > p > code {
-    background-color: #efefef;
-    padding: 2px;
-    font-size: .9em;
-}
-
-.comment .body pre > code {
-    padding: 10px;
-    display: block;
-    white-space: pre;
-    font-size: .9em;
-}
-
-.comment ul.task-list {
-    list-style: none;
-    padding-left: 20px;
-}
-
-.comment input.task-list-item-checkbox {
-    margin-right: 5px;
-}
+```sass
+.comment
+  .body
+    a
+      color: #FF725C
+      text-decoration: none
+    a:hover
+      color: #FF725C
+      text-decoration: underline
+    blockquote
+      border-left: 3px solid #ccc
+      margin-left: 15px
+      p
+        padding: 5px 0 5px 10px
+    & > p > code
+      background-color: #efefef
+      padding: 2px
+      font-size: .9em
+    pre > code
+      padding: 10px
+      display: block
+      white-space: pre
+      font-size: .9em
+    ul.task-list
+      list-style: none
+      padding-left: 20px
+    input.task-list-item-checkbox
+      margin-right: 5px
 ```
 
-## Create a GitHub Action
+## Create the GitHub Action
 
-Use [GitHub Actions](https://github.com/jdillard/blog-comments/blob/master/.github/workflows/main.yml)
+Use a [GitHub Action](https://github.com/jdillard/blog-comments/blob/master/.github/workflows/main.yml)
 to trigger a build any time an issue comment is created, edited, or deleted.
 Store the [deploy key](https://docs.netlify.com/configure-builds/build-hooks/)
 as an [encrypted secret](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) to prevent it from being stored in plain text.
@@ -280,7 +275,8 @@ jobs:
 ## Create a Build Script
 
 Finally, create a [build script](https://github.com/jdillard/personal-site/blob/master/build.sh)
-that the builder can pass environmental variables to.
+so that logic can be wrapped around the environmental variables that the builder
+passes.
 
 ```bash
 #!/bin/bash -x
