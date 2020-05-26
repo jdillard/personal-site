@@ -10,6 +10,7 @@ if [ "${INCOMING_HOOK_BODY}" == "" ] ; then
 else
   PAYLOAD=$(urldecode "${INCOMING_HOOK_BODY}")
   SCRIPTS_STRING=$(echo "${PAYLOAD}" | jq -r .scripts)
+  ARGUMENTS_STRING=$(echo "${PAYLOAD}" | jq -r .arguments)
   IFS='|' read -r -a SCRIPTS <<< "$SCRIPTS_STRING"
 
   for i in "${SCRIPTS[@]}" ; do
@@ -18,7 +19,7 @@ else
         echo "ruby crags.rb"
         ;;
       comments)
-        bundle exec ruby comments.rb
+        bundle exec ruby comments.rb $ARGUMENTS_STRING
         ;;
     esac
   done
