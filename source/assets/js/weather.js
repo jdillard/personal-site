@@ -707,5 +707,19 @@ u("#issues-toggle").on( "click", function() {
   }
 });
 
+const stateSel = document.getElementById("stateSel");
+const citySel = document.getElementById("citySel");
+const selectMetro = document.getElementById("selectMetro");
+
+stateSel.onchange = function () {
+  citySel.length = 0;
+  states[this.value].split("|").forEach(city => citySel.options[citySel.options.length] = new Option(city, city));
+  selectMetro.href = '/crags/' + slugify(states[this.value].split("|")[0].toLowerCase()) + '-' + slugify(this.value.toLowerCase()) + '-weather.html';
+}
+
+citySel.onchange = function () {
+  selectMetro.href = '/crags/' + slugify(this.value) + '-' + slugify(stateSel.value.toLowerCase()) + '-weather.html';
+}
+
 // normalize all crags hourly settings on window resize
 window.addEventListener("resize", normalizePage);

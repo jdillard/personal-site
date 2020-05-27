@@ -166,11 +166,13 @@ def create_metros(crags)
   # determine unique metros
   metros = Set[]
   local_crags = Hash.new
+  states = Hash.new
 
   #TODO needs to loop through each metros cell
   crags.each do |crag|
     crag["metros"].split("|").each do |metro|
       metros.add(metro)
+      states[metro.split(", ")[1]] ? states[metro.split(", ")[1]].add(metro.split(",")[0]) : states[metro.split(", ")[1]] = Set[metro.split(", ")[0]]
     end
   end
 
@@ -249,10 +251,27 @@ def create_metros(crags)
       f << '<section id="weather" data-crag="' + slug + '" class="mv4-ns mv3 ph2 center"></section>'+"\n"
       f << '<section id="nearby" class="tc lh-copy">'+"\n"
       f << '  <h3>Other Metros</h3>'+"\n"
-      metros.each do |othermetro|
-            url = othermetro.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
-            f << '<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/' + url + '-weather.html">' + othermetro + '</a>'+"\n"
+      f << '  <select class="ma1 bg-near-white pa2" id="stateSel">'+"\n"
+      states.each do |state, cities|
+        f << '    <option value="' + state + '"'
+        state === metro.split(', ')[1] ?  f << ' selected' :  f << ''
+          f << '>' + state + '</option>'+"\n"
       end
+      f << '  </select>'+"\n"
+      f << '  <select class="ma1 bg-near-white pa2" id="citySel">'+"\n"
+      states[metro.split(', ')[1]].each do |city|
+        f << '    <option value="' + city + '"'
+        city === metro.split(', ')[0] ?  f << ' selected' :  f << ''
+        f << '>' + city + '</option>'+"\n"
+      end
+      f << '  </select>'+"\n"
+      f << '  <a id="selectMetro" class="f6 link dim ph3 pv2 ma1 dib white bg-light-red" href="/crags/' + slug + '-weather.html">Select Metro</a>'+"\n"
+      f << '  <script>'+"\n"
+      f << '    var states = [];'+"\n"
+      states.each do |state, cities|
+        f << '    states["' + state + '"] = "' +  cities.to_a.join('|') + '"'+"\n"
+      end
+      f << '  </script>'+"\n"
       f << '</section>'+"\n"
       f << "{% include feedback.html %}\n"
       f << '<p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>'+"\n"
