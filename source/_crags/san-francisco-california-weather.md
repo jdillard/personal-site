@@ -35,13 +35,28 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
 <section id="weather" data-crag="san-francisco-california" class="mv4-ns mv3 ph2 center"></section>
 <section id="nearby" class="tc lh-copy">
   <h3>Other Metros</h3>
-<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/austin-texas-weather.html">Austin, Texas</a>
-<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/seattle-washington-weather.html">Seattle, Washington</a>
-<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/denver-colorado-weather.html">Denver, Colorado</a>
-<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/nashville-tennessee-weather.html">Nashville, Tennessee</a>
-<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/salt-lake-city-utah-weather.html">Salt Lake City, Utah</a>
-<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/san-francisco-california-weather.html">San Francisco, California</a>
-<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/los-angeles-california-weather.html">Los Angeles, California</a>
+  <select class="ma1 bg-near-white pa2" id="stateSel">
+    <option value="Texas">Texas</option>
+    <option value="Washington">Washington</option>
+    <option value="Colorado">Colorado</option>
+    <option value="Tennessee">Tennessee</option>
+    <option value="Utah">Utah</option>
+    <option value="California" selected>California</option>
+  </select>
+  <select class="ma1 bg-near-white pa2" id="citySel">
+    <option value="San Francisco" selected>San Francisco</option>
+    <option value="Los Angeles">Los Angeles</option>
+  </select>
+  <a id="selectMetro" class="f6 link dim ph3 pv2 ma1 dib white bg-light-red" href="/crags/san-francisco-california-weather.html">Select Metro</a>
+  <script>
+    var states = [];
+    states["Texas"] = "Austin"
+    states["Washington"] = "Seattle"
+    states["Colorado"] = "Denver"
+    states["Tennessee"] = "Nashville"
+    states["Utah"] = "Salt Lake City"
+    states["California"] = "San Francisco|Los Angeles"
+  </script>
 </section>
 {% include feedback.html %}
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
