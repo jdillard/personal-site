@@ -41,6 +41,30 @@ precipitation-focused reports of current, past, and forecasted climbing weather 
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/georgetown-texas-weather.html">Georgetown</a>
 <a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/mckinney-falls-texas-weather.html">McKinney Falls</a>
 </section>
+<section id="nearby" class="tc lh-copy">
+  <h3>Other Metros</h3>
+  <select class="ma1 bg-near-white pa2" id="stateSel">
+    <option value="Texas" selected>Texas</option>
+    <option value="Washington">Washington</option>
+    <option value="Colorado">Colorado</option>
+    <option value="Tennessee">Tennessee</option>
+    <option value="Utah">Utah</option>
+    <option value="California">California</option>
+  </select>
+  <select class="ma1 bg-near-white pa2" id="citySel">
+    <option value="Austin" selected>Austin</option>
+  </select>
+  <a id="selectMetro" class="f6 link dim ph3 pv2 ma1 dib white bg-light-red" href="/crags/hueco-tanks-texas-weather.html">Select Metro</a>
+  <script>
+    var states = [];
+    states["Texas"] = "Austin"
+    states["Washington"] = "Seattle"
+    states["Colorado"] = "Denver"
+    states["Tennessee"] = "Nashville"
+    states["Utah"] = "Salt Lake City"
+    states["California"] = "San Francisco|Los Angeles"
+  </script>
+</section>
 {% include feedback.html %}
 <p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
 <section id="issues" class="overflow-hidden tc f6">
