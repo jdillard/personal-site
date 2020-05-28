@@ -36,6 +36,7 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
       <h3>Submit a New Area</h3>
       <form class="black-80" name="new-crag" data-netlify="true">
           <label for="mp-url" class="f6 b db mb2">Mountain Project Area URL</label>
+          <input id="metro" name="metro" type="hidden" value="Nashville, Tennessee">
           <input id="mp-url" name="mp-url" class="input-reset ba b--black-20 pa2 mb2 db w-100" placeholder="https://www.mountainproject.com/area/105833381/yosemite-national-park" type="text">
         <div class="mt3"><input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="submit" value="Submit"></div>
       </form>
