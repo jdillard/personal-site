@@ -49,7 +49,7 @@ precipitation-focused reports of current, past, and forecasted climbing weather 
     <option value="San Francisco" selected>San Francisco</option>
     <option value="Los Angeles">Los Angeles</option>
   </select>
-  <a id="selectMetro" class="f6 link dim ph3 pv2 ma1 dib white bg-light-red" href="/crags/red-rock-nevada-weather.html">Select Metro</a>
+  <a id="selectMetro" class="f6 link dim ph3 pv2 ma1 dib white bg-light-red" href="/crags/san-francisco-california-weather.html">Select Metro</a>
   <script>
     var states = [];
     states["Texas"] = "Austin"

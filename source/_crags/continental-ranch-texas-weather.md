@@ -54,7 +54,7 @@ precipitation-focused reports of current, past, and forecasted climbing weather 
   <select class="ma1 bg-near-white pa2" id="citySel">
     <option value="Austin" selected>Austin</option>
   </select>
-  <a id="selectMetro" class="f6 link dim ph3 pv2 ma1 dib white bg-light-red" href="/crags/continental-ranch-texas-weather.html">Select Metro</a>
+  <a id="selectMetro" class="f6 link dim ph3 pv2 ma1 dib white bg-light-red" href="/crags/austin-texas-weather.html">Select Metro</a>
   <script>
     var states = [];
     states["Texas"] = "Austin"
