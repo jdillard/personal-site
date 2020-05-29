@@ -156,7 +156,9 @@ def create_crags(crags)
         f << '>' + city + '</option>'+"\n"
       end
       f << '  </select>'+"\n"
-      f << '  <a id="selectMetro" class="f6 link dim ph3 pv2 ma1 dib white bg-light-red" href="/crags/' + slug + '-weather.html">Select Metro</a>'+"\n"
+      state = crag["metros"].split('|')[0].split(', ')[1].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+      city = crag["metros"].split('|')[0].split(', ')[0].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+      f << '  <a id="selectMetro" class="f6 link dim ph3 pv2 ma1 dib white bg-light-red" href="/crags/' + city + '-' + state + '-weather.html">Select Metro</a>'+"\n"
       f << '  <script>'+"\n"
       f << '    var states = [];'+"\n"
       states.each do |state, cities|
