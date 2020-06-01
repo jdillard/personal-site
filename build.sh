@@ -10,9 +10,6 @@ if [ -n "${INCOMING_HOOK_BODY}" ]; then
 
   for i in "${SCRIPTS[@]}" ; do
     case "$i" in
-      crags)
-        echo "ruby crags.rb"
-        ;;
       comments)
         bundle exec ruby comments.rb $ARGUMENTS_STRING
         ;;
