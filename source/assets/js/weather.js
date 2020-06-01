@@ -90,13 +90,7 @@ function populate(crags, menu = true, element = 'weather', adjacent = 'beforeend
           console.log(error);
         });
 
-      axios.get('https://api.weather.gov/gridpoints/' + crags[c].office + '/forecast')
-        .then(function (response) {
-          populateForecasts(crags[c], response.data);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
+      populateForecasts(crags[c], eval('weekly_'+crags[c].office.replace(/\//g, '_').replace(/,/g, '_')));
     }
   }
 
@@ -212,8 +206,8 @@ function populateForecasts(crag, data = []) {
 
   forecasts.name = crag.name;
   forecasts.crag_index = crag.number;
-  forecasts.updated = moment(data.properties.updated).format('MM/DD hh:mm a');
-  forecasts.periods = data.properties.periods
+  forecasts.updated = moment(data.updated).format('MM/DD hh:mm a');
+  forecasts.periods = data.periods
     .reduce(function(a, b, i) {
       let day_icons = [];
       let night_icons = b.icon.substring(35,b.icon.length-12).split("/");
@@ -259,7 +253,7 @@ function populateForecasts(crag, data = []) {
       } else {
         day_icons = a[a.length-1].icon.substring(35,a[a.length-1].icon.length-12).split("/");
         if((!half_day && i % 2 === 0) || (half_day && i % 2 != 0)) {
-          if(half_day && i === data.properties.periods.length-1) {
+          if(half_day && i === data.periods.length-1) {
             end_date = moment(b.endTime).format('MMM DD, YYYY');
             b.date = moment(b.startTime).format('YYYY-MM-DD');
             b.name = moment(b.startTime).format('dddd');
@@ -327,7 +321,7 @@ function populateForecasts(crag, data = []) {
     });
   forecasts.color = (clear_forecast) ? 'green' : 'yellow';
 
-  document.getElementById("last-forecast-"+crag.number).innerHTML = "updated " + timeSince(new Date(data.properties.updated)) + " ago";
+  document.getElementById("last-forecast-"+crag.number).innerHTML = "updated " + timeSince(new Date(data.updated)) + " ago";
   document.getElementById("forecast-start-"+crag.number).innerHTML = start_date;
   document.getElementById("forecast-end-"+crag.number).innerHTML = end_date;
   document.getElementById("forecast-"+crag.number).innerHTML = template_weather_forecasts(forecasts);
@@ -339,13 +333,7 @@ function populateForecasts(crag, data = []) {
     el.srcElement.innerHTML = moment(el.srcElement.dataset.date).format('dddd');
   });
 
-  axios.get('https://api.weather.gov/gridpoints/' + crag.office + '/forecast/hourly')
-  .then(function (response) {
-    populateHourlyForecasts(crag.number, forecasts.periods[0].startTime, response.data);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+  populateHourlyForecasts(crag.number, forecasts.periods[0].startTime, eval('hourly_'+crag.office.replace(/\//g, '_').replace(/,/g, '_')));
 }
 
 function populateHourlyForecasts(crag_index, week_start_time, data) {
