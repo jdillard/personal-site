@@ -71,7 +71,7 @@ def create_forecast(f, office)
   f << '  var weekly_' + office.gsub('/', '_').gsub(',', '_') + ' = '
   f << JSON.parse(response.body)["properties"].to_json
   f << "\n"
-  sleep(2)
+  sleep(0.5)
 end
 
 def create_hourly(f, office)
@@ -82,7 +82,7 @@ def create_hourly(f, office)
   f << JSON.parse(response.body).to_json
   f << "\n"
 
-  sleep(2)
+  sleep(0.5)
 end
 
 def create_crags(crags)
