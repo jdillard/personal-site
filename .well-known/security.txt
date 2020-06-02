@@ -1,0 +1,3 @@
+Contact: jared.dillard+security@gmail.com
+Preferred-Languages: en
+Canonical: https://jareddillard.com/.well-known/security.txt
