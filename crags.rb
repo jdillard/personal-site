@@ -13,10 +13,10 @@ def create_crag_page(crags)
 
   #TODO needs to loop through each metros cell
   crags.each do |crag|
-    crag["metros"].split("|").each do |metro|
+    crag[:metros].split("|").each do |metro|
       metros.add(metro)
     end
-    states.add(crag["state"])
+    states.add(crag[:state])
     end
 
   # determine the locales in each state
@@ -26,7 +26,7 @@ def create_crag_page(crags)
 
   #TODO combine into original crag loop?
   crags.each do |crag|
-    state_locals[crag["state"]].add(crag["name"])
+    state_locals[crag[:state]].add(crag[:name])
   end
 
   File.open("source/crags.html","w") do |f|
@@ -85,15 +85,40 @@ def create_hourly(f, office)
   sleep(0.5)
 end
 
+def crags_config(f, crags)
+  f << '  var crags_config = '
+  f << "[\n"
+  crags.each do |crag|
+    f << "  {\n"
+    f << '    "name": "' + crag[:name] + '",'+"\n"
+    f << '    "note": "' + crag[:note] + '",'+"\n"
+    f << '    "mountainProject": "' + crag[:url] + '",'+"\n"
+    f << '    "station": "' + crag[:station] + '",'+"\n"
+    f << '    "office": "' + crag[:office] + '",'+"\n"
+    f << '    "coordinates": ['+"\n"
+    f << "      " + crag[:lat] + ",\n"
+    f << "      " + crag[:long] + "\n"
+    f << "    ]\n"
+    f << "  }"
+    if crag != crags.last
+      f << ",\n"
+    else
+      f << "\n"
+    end
+  end
+  f << "]"
+end
+
 def create_crags(crags)
   # determine unique metros
   metros = Set[]
+  crag_array = Array.new
   local_crags = Hash.new
   states = Hash.new
 
   #TODO needs to loop through each metros cell
   crags.each do |crag|
-    crag["metros"].split("|").each do |metro|
+    crag[:metros].split("|").each do |metro|
       metros.add(metro)
     end
   end
@@ -105,20 +130,20 @@ def create_crags(crags)
   end
 
   crags.each do |crag|
-    crag["metros"].split("|").each do |metro|
-      local_crags[metro].push({ name: crag["name"], state: crag["state"], note: crag["note"], url: crag["url"], station: crag["station"], office: crag["office"], lat: crag["lat"], long: crag["long"] })
+    crag[:metros].split("|").each do |metro|
+      local_crags[metro].push({ name: crag[:name], state: crag[:state], note: crag[:note], url: crag[:url], station: crag[:station], office: crag[:office], lat: crag[:lat], long: crag[:long] })
     end
   end
 
   crags.each do |crag|
-    slug = crag["name"].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + "-" + crag["state"].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+    slug = crag[:name].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + "-" + crag[:state].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
     File.open("source/_crags/" + slug + "-weather.md","w") do |f|
       f << "---\n"
       f << "### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###\n"
       f << "layout: page\n"
-      f << "title: " + crag["name"] + ", " + crag["state"] + " Climbing Weather - Current, Past, and Forecasted Report\n"
-      f << "title_override: " + crag["name"] + "<br /><small>Climbing Weather</small>\n"
-      f << "description: A lightweight weather report for " + crag["name"] + ', ' + crag["state"] + ". Optimized for slow internet connections.\n"
+      f << "title: " + crag[:name] + ", " + crag[:state] + " Climbing Weather - Current, Past, and Forecasted Report\n"
+      f << "title_override: " + crag[:name] + "<br /><small>Climbing Weather</small>\n"
+      f << "description: A lightweight weather report for " + crag[:name] + ', ' + crag[:state] + ". Optimized for slow internet connections.\n"
       # f << "state: Washington\n"
       # f << "type: climbing\n"
       f << "js_includes:\n"
@@ -127,10 +152,10 @@ def create_crags(crags)
       f << "---\n\n"
       f << '<section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">'+"\n"
       f << '<strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,'+"\n"
-      f << 'precipitation-focused reports of current, past, and forecasted climbing weather for ' + crag["name"] + ', ' + crag["state"] + '.'+"\n"
+      f << 'precipitation-focused reports of current, past, and forecasted climbing weather for ' + crag[:name] + ', ' + crag[:state] + '.'+"\n"
       # f << 'If it is too wet here, check for a dry crag near'
       # local_crags.each do |metro, crags|
-      #   if metro == crag["metros"]
+      #   if metro == crag[:metros:]
       #     url = metro.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
       #     f << ' <a class="nowrap no-underline fancy-link relative light-red" href="/crags/' + url + '-weather.html">' + metro + '</a>'
       #   end
@@ -155,10 +180,10 @@ def create_crags(crags)
       f << '<section id="nearby" class="tc lh-copy">'+"\n"
       f << '  <h3>Nearby Crags</h3>'+"\n"
       local_crags.each do |metro, crags|
-        crag["metros"].split("|").each do |metro2|
+        crag[:metros].split("|").each do |metro2|
           if metro == metro2
             crags.each do |crag2|
-              if crag2[:name] != crag["name"]
+              if crag2[:name] != crag[:name]
                 url = crag2[:name].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + "-" + crag2[:state].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
                 f << '<a class="nowrap no-underline fancy-link relative light-red mh3" href="/crags/' + url + '-weather.html">' + crag2[:name] + '</a>'+"\n"
               end
@@ -172,19 +197,19 @@ def create_crags(crags)
       f << '  <select class="ma1 bg-near-white pa2" id="stateSel">'+"\n"
       states.each do |state, cities|
         f << '    <option value="' + state + '"'
-        state === crag["metros"].split('|')[0].split(', ')[1] ?  f << ' selected' :  f << ''
+        state === crag[:metros].split('|')[0].split(', ')[1] ?  f << ' selected' :  f << ''
         f << '>' + state + '</option>'+"\n"
       end
       f << '  </select>'+"\n"
       f << '  <select class="ma1 bg-near-white pa2" id="citySel">'+"\n"
-      states[crag["metros"].split('|')[0].split(', ')[1]].each do |city|
+      states[crag[:metros].split('|')[0].split(', ')[1]].each do |city|
         f << '    <option value="' + city + '"'
-        city === crag["metros"].split('|')[0].split(', ')[0] ?  f << ' selected' :  f << ''
+        city === crag[:metros].split('|')[0].split(', ')[0] ?  f << ' selected' :  f << ''
         f << '>' + city + '</option>'+"\n"
       end
       f << '  </select>'+"\n"
-      state = crag["metros"].split('|')[0].split(', ')[1].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
-      city = crag["metros"].split('|')[0].split(', ')[0].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+      state = crag[:metros].split('|')[0].split(', ')[1].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
+      city = crag[:metros].split('|')[0].split(', ')[0].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
       f << '  <a id="selectMetro" class="f6 link dim ph3 pv2 ma1 dib white bg-light-red" href="/crags/' + city + '-' + state + '-weather.html">Select Metro</a>'+"\n"
       f << '  <script>'+"\n"
       f << '    var states = [];'+"\n"
@@ -211,25 +236,10 @@ def create_crags(crags)
       f << '<section id="issues" class="overflow-hidden tc f6">'+"\n"
       f << "</section>\n\n"
       f << "<script>\n"
-      create_forecast(f, crag["office"])
-      create_hourly(f, crag["office"])
+      create_forecast(f, crag[:office])
+      create_hourly(f, crag[:office])
+      crags_config(f, crag_array.push(crag.to_h))
       f << "</script>\n"
-    end
-
-    File.open("source/assets/json/crags/" + slug + ".json","w") do |f|
-      f << "[\n"
-      f << "  {\n"
-      f << '    "name": "' + crag["name"] + '",'+"\n"
-      f << '    "note": "' + crag["note"] + '",'+"\n"
-      f << '    "mountainProject": "' + crag["url"] + '",'+"\n"
-      f << '    "station": "' + crag["station"] + '",'+"\n"
-      f << '    "office": "' + crag["office"] + '",'+"\n"
-      f << '    "coordinates": ['+"\n"
-      f << "      " + crag["lat"] + ",\n"
-      f << "      " + crag["long"] + "\n"
-      f << "    ]\n"
-      f << "  }\n"
-      f << "]"
     end
   end
 end
@@ -242,7 +252,7 @@ def create_metros(crags)
 
   #TODO needs to loop through each metros cell
   crags.each do |crag|
-    crag["metros"].split("|").each do |metro|
+    crag[:metros].split("|").each do |metro|
       metros.add(metro)
       states[metro.split(", ")[1]] ? states[metro.split(", ")[1]].add(metro.split(",")[0]) : states[metro.split(", ")[1]] = Set[metro.split(", ")[0]]
     end
@@ -254,34 +264,8 @@ def create_metros(crags)
   end
 
   crags.each do |crag|
-    crag["metros"].split("|").each do |metro|
-      local_crags[metro].push({ name: crag["name"], note: crag["note"], url: crag["url"], station: crag["station"], office: crag["office"], lat: crag["lat"], long: crag["long"] })
-    end
-  end
-
-  local_crags.each do |metro, crags|
-    slug = metro.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
-    File.open("source/assets/json/crags/" + slug + ".json","w") do |f|
-      f << "[\n"
-      crags.each do |crag|
-        f << "  {\n"
-        f << '    "name": "' + crag[:name] + '",'+"\n"
-        f << '    "note": "' + crag[:note] + '",'+"\n"
-        f << '    "mountainProject": "' + crag[:url] + '",'+"\n"
-        f << '    "station": "' + crag[:station] + '",'+"\n"
-        f << '    "office": "' + crag[:office] + '",'+"\n"
-        f << '    "coordinates": ['+"\n"
-        f << "      " + crag[:lat] + ",\n"
-        f << "      " + crag[:long] + "\n"
-        f << "    ]\n"
-        f << "  }"
-        if crag != crags.last
-          f << ",\n"
-        else
-          f << "\n"
-        end
-      end
-      f << "]"
+    crag[:metros].split("|").each do |metro|
+      local_crags[metro].push({ name: crag[:name], note: crag[:note], url: crag[:url], station: crag[:station], office: crag[:office], lat: crag[:lat], long: crag[:long] })
     end
   end
 
@@ -336,6 +320,7 @@ def create_metros(crags)
         create_forecast(f, crag[:office])
         create_hourly(f, crag[:office])
       end
+      crags_config(f, local_crags[metro])
       f << "</script>\n"
       f << '<section id="nearby" class="tc lh-copy">'+"\n"
       f << '  <h3>Other Metros</h3>'+"\n"
@@ -369,7 +354,7 @@ def create_metros(crags)
   end
 end
 
-crags = CSV.read("crags.csv", headers: true)
+crags = CSV.read("crags.csv", {:headers => true, :header_converters => :symbol})
 
 # clear the old crags markdown files
 Dir.foreach('source/_crags') do |f|

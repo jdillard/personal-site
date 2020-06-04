@@ -36,20 +36,14 @@ function getCrags(location) {
     localStorage.removeItem(key);
   }
 
-  axios.get('/assets/json/crags/'+location+'.json')
-    .then(function (response) {
-      localStorage.setItem('region-selector', location);
-      for (let c in response.data) {
-        response.data[c].active = true;
-        localStorage.setItem("crag-"+slugify(response.data[c].name), JSON.stringify(response.data[c]));
-        crags.push(response.data[c]);
-      }
-      storage_keys = Object.keys(localStorage);
-      populate(crags);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+  localStorage.setItem('region-selector', location);
+  for (let c in crags_config) {
+    crags_config[c].active = true;
+    localStorage.setItem("crag-"+slugify(crags_config[c].name), JSON.stringify(crags_config[c]));
+    crags.push(crags_config[c]);
+  }
+  storage_keys = Object.keys(localStorage);
+  populate(crags);
 }
 
 function getIssues() {
