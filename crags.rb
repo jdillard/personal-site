@@ -362,12 +362,6 @@ Dir.foreach('source/_crags') do |f|
   File.delete(fn) if f != '.' && f != '..'
 end
 
-# clear the old crags json files
-Dir.foreach('source/assets/json/crags') do |f|
-  fn = File.join('source/assets/json/crags', f)
-  File.delete(fn) if f != '.' && f != '..'
-end
-
 create_crag_page(crags)
 create_crags(crags)
 create_metros(crags)
