@@ -62,3 +62,404 @@ precipitation-focused reports of current, past, and forecasted climbing weather 
 <section id="issues" class="overflow-hidden tc f6">
 </section>
 
+<script>
+  var weekly_SLC_102_165 = {"updated":"2020-06-03T06:12:01+00:00","units":"us","forecastGenerator":"BaselineForecastGenerator","generatedAt":"2020-06-03T06:28:38+00:00","updateTime":"2020-06-03T06:12:01+00:00","validTimes":"2020-06-03T00:00:00+00:00/P7DT1H","elevation":{"value":1872.0816000000002,"unitCode":"unit:m"},"periods":[{"number":1,"name":"Overnight","startTime":"2020-06-03T00:00:00-06:00","endTime":"2020-06-03T06:00:00-06:00","isDaytime":false,"temperature":62,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"ESE","icon":"https://api.weather.gov/icons/land/night/sct?size=medium","shortForecast":"Partly Cloudy","detailedForecast":"Partly cloudy, with a low around 62. East southeast wind around 5 mph."},{"number":2,"name":"Wednesday","startTime":"2020-06-03T06:00:00-06:00","endTime":"2020-06-03T18:00:00-06:00","isDaytime":true,"temperature":84,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 to 7 mph","windDirection":"SW","icon":"https://api.weather.gov/icons/land/day/few?size=medium","shortForecast":"Sunny","detailedForecast":"Sunny, with a high near 84. Southwest wind 3 to 7 mph."},{"number":3,"name":"Wednesday Night","startTime":"2020-06-03T18:00:00-06:00","endTime":"2020-06-04T06:00:00-06:00","isDaytime":false,"temperature":64,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 to 10 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/night/sct?size=medium","shortForecast":"Partly Cloudy","detailedForecast":"Partly cloudy, with a low around 64. West wind 7 to 10 mph."},{"number":4,"name":"Thursday","startTime":"2020-06-04T06:00:00-06:00","endTime":"2020-06-04T18:00:00-06:00","isDaytime":true,"temperature":85,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"SW","icon":"https://api.weather.gov/icons/land/day/sct?size=medium","shortForecast":"Mostly Sunny","detailedForecast":"Mostly sunny, with a high near 85. Southwest wind around 9 mph."},{"number":5,"name":"Thursday Night","startTime":"2020-06-04T18:00:00-06:00","endTime":"2020-06-05T06:00:00-06:00","isDaytime":false,"temperature":66,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 to 8 mph","windDirection":"SW","icon":"https://api.weather.gov/icons/land/night/sct?size=medium","shortForecast":"Partly Cloudy","detailedForecast":"Partly cloudy, with a low around 66. Southwest wind 5 to 8 mph."},{"number":6,"name":"Friday","startTime":"2020-06-05T06:00:00-06:00","endTime":"2020-06-05T18:00:00-06:00","isDaytime":true,"temperature":87,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 to 9 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/day/bkn/tsra_hi,20?size=medium","shortForecast":"Partly Sunny then Slight Chance Showers And Thunderstorms","detailedForecast":"A slight chance of showers and thunderstorms after noon. Partly sunny, with a high near 87. Chance of precipitation is 20%."},{"number":7,"name":"Friday Night","startTime":"2020-06-05T18:00:00-06:00","endTime":"2020-06-06T06:00:00-06:00","isDaytime":false,"temperature":61,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 to 9 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/night/tsra,70/tsra,60?size=medium","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":"Showers and thunderstorms likely before midnight, then showers and thunderstorms likely. Mostly cloudy, with a low around 61. Chance of precipitation is 70%."},{"number":8,"name":"Saturday","startTime":"2020-06-06T06:00:00-06:00","endTime":"2020-06-06T18:00:00-06:00","isDaytime":true,"temperature":72,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/day/tsra?size=medium","shortForecast":"Showers And Thunderstorms","detailedForecast":"Showers and thunderstorms. Mostly cloudy, with a high near 72."},{"number":9,"name":"Saturday Night","startTime":"2020-06-06T18:00:00-06:00","endTime":"2020-06-07T06:00:00-06:00","isDaytime":false,"temperature":51,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 to 7 mph","windDirection":"SW","icon":"https://api.weather.gov/icons/land/night/tsra_sct?size=medium","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":"Showers and thunderstorms likely. Mostly cloudy, with a low around 51."},{"number":10,"name":"Sunday","startTime":"2020-06-07T06:00:00-06:00","endTime":"2020-06-07T18:00:00-06:00","isDaytime":true,"temperature":66,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 to 7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/rain_showers/tsra_sct?size=medium","shortForecast":"Chance Rain Showers then Chance Showers And Thunderstorms","detailedForecast":"A chance of rain showers before noon, then a chance of showers and thunderstorms. Partly sunny, with a high near 66."},{"number":11,"name":"Sunday Night","startTime":"2020-06-07T18:00:00-06:00","endTime":"2020-06-08T06:00:00-06:00","isDaytime":false,"temperature":44,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"NNW","icon":"https://api.weather.gov/icons/land/night/tsra_hi/sct?size=medium","shortForecast":"Slight Chance Showers And Thunderstorms then Partly Cloudy","detailedForecast":"A slight chance of showers and thunderstorms before midnight. Partly cloudy, with a low around 44."},{"number":12,"name":"Monday","startTime":"2020-06-08T06:00:00-06:00","endTime":"2020-06-08T18:00:00-06:00","isDaytime":true,"temperature":58,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 to 7 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/day/rain_showers/tsra_hi?size=medium","shortForecast":"Slight Chance Rain Showers then Slight Chance Showers And Thunderstorms","detailedForecast":"A slight chance of rain showers before noon, then a slight chance of showers and thunderstorms. Mostly sunny, with a high near 58."},{"number":13,"name":"Monday Night","startTime":"2020-06-08T18:00:00-06:00","endTime":"2020-06-09T06:00:00-06:00","isDaytime":false,"temperature":42,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 to 6 mph","windDirection":"NNW","icon":"https://api.weather.gov/icons/land/night/tsra_hi/sct?size=medium","shortForecast":"Slight Chance Showers And Thunderstorms then Partly Cloudy","detailedForecast":"A slight chance of showers and thunderstorms before midnight. Partly cloudy, with a low around 42."},{"number":14,"name":"Tuesday","startTime":"2020-06-09T06:00:00-06:00","endTime":"2020-06-09T18:00:00-06:00","isDaytime":true,"temperature":63,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 to 6 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/day/sct/rain_showers?size=medium","shortForecast":"Mostly Sunny then Slight Chance Rain Showers","detailedForecast":"A slight chance of rain showers after noon. Mostly sunny, with a high near 63."}]}
+  var hourly_SLC_102_165 = {"@context":["https://raw.githubusercontent.com/geojson/geojson-ld/master/contexts/geojson-base.jsonld",{"wx":"https://api.weather.gov/ontology#","geo":"http://www.opengis.net/ont/geosparql#","unit":"http://codes.wmo.int/common/unit/","@vocab":"https://api.weather.gov/ontology#"}],"type":"Feature","geometry":{"type":"GeometryCollection","geometries":[{"type":"Point","coordinates":[-111.7818953,40.5632959]},{"type":"Polygon","coordinates":[[[-111.7980097,40.5728371],[-111.79443739999999,40.5510443],[-111.765784,40.5537528],[-111.7693503,40.5755458],[-111.7980097,40.5728371]]]}]},"properties":{"updated":"2020-06-03T06:12:01+00:00","units":"us","forecastGenerator":"HourlyForecastGenerator","generatedAt":"2020-06-03T06:28:38+00:00","updateTime":"2020-06-03T06:12:01+00:00","validTimes":"2020-06-03T00:00:00+00:00/P7DT1H","elevation":{"value":1872.0816000000002,"unitCode":"unit:m"},"periods":[{"number":1,"name":"","startTime":"2020-06-03T00:00:00-06:00","endTime":"2020-06-03T01:00:00-06:00","isDaytime":false,"temperature":67,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"ESE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":2,"name":"","startTime":"2020-06-03T01:00:00-06:00","endTime":"2020-06-03T02:00:00-06:00","isDaytime":false,"temperature":66,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"ESE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":3,"name":"","startTime":"2020-06-03T02:00:00-06:00","endTime":"2020-06-03T03:00:00-06:00","isDaytime":false,"temperature":65,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"ESE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":4,"name":"","startTime":"2020-06-03T03:00:00-06:00","endTime":"2020-06-03T04:00:00-06:00","isDaytime":false,"temperature":63,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"ESE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":5,"name":"","startTime":"2020-06-03T04:00:00-06:00","endTime":"2020-06-03T05:00:00-06:00","isDaytime":false,"temperature":63,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"ESE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":6,"name":"","startTime":"2020-06-03T05:00:00-06:00","endTime":"2020-06-03T06:00:00-06:00","isDaytime":false,"temperature":63,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"ESE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":7,"name":"","startTime":"2020-06-03T06:00:00-06:00","endTime":"2020-06-03T07:00:00-06:00","isDaytime":true,"temperature":62,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":8,"name":"","startTime":"2020-06-03T07:00:00-06:00","endTime":"2020-06-03T08:00:00-06:00","isDaytime":true,"temperature":63,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":9,"name":"","startTime":"2020-06-03T08:00:00-06:00","endTime":"2020-06-03T09:00:00-06:00","isDaytime":true,"temperature":64,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":10,"name":"","startTime":"2020-06-03T09:00:00-06:00","endTime":"2020-06-03T10:00:00-06:00","isDaytime":true,"temperature":69,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":11,"name":"","startTime":"2020-06-03T10:00:00-06:00","endTime":"2020-06-03T11:00:00-06:00","isDaytime":true,"temperature":73,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":12,"name":"","startTime":"2020-06-03T11:00:00-06:00","endTime":"2020-06-03T12:00:00-06:00","isDaytime":true,"temperature":77,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":13,"name":"","startTime":"2020-06-03T12:00:00-06:00","endTime":"2020-06-03T13:00:00-06:00","isDaytime":true,"temperature":79,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":14,"name":"","startTime":"2020-06-03T13:00:00-06:00","endTime":"2020-06-03T14:00:00-06:00","isDaytime":true,"temperature":82,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":15,"name":"","startTime":"2020-06-03T14:00:00-06:00","endTime":"2020-06-03T15:00:00-06:00","isDaytime":true,"temperature":83,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":16,"name":"","startTime":"2020-06-03T15:00:00-06:00","endTime":"2020-06-03T16:00:00-06:00","isDaytime":true,"temperature":83,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":17,"name":"","startTime":"2020-06-03T16:00:00-06:00","endTime":"2020-06-03T17:00:00-06:00","isDaytime":true,"temperature":84,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":18,"name":"","startTime":"2020-06-03T17:00:00-06:00","endTime":"2020-06-03T18:00:00-06:00","isDaytime":true,"temperature":84,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":19,"name":"","startTime":"2020-06-03T18:00:00-06:00","endTime":"2020-06-03T19:00:00-06:00","isDaytime":false,"temperature":83,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":20,"name":"","startTime":"2020-06-03T19:00:00-06:00","endTime":"2020-06-03T20:00:00-06:00","isDaytime":false,"temperature":80,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":21,"name":"","startTime":"2020-06-03T20:00:00-06:00","endTime":"2020-06-03T21:00:00-06:00","isDaytime":false,"temperature":78,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":22,"name":"","startTime":"2020-06-03T21:00:00-06:00","endTime":"2020-06-03T22:00:00-06:00","isDaytime":false,"temperature":73,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"10 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":23,"name":"","startTime":"2020-06-03T22:00:00-06:00","endTime":"2020-06-03T23:00:00-06:00","isDaytime":false,"temperature":71,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"10 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":24,"name":"","startTime":"2020-06-03T23:00:00-06:00","endTime":"2020-06-04T00:00:00-06:00","isDaytime":false,"temperature":71,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"10 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":25,"name":"","startTime":"2020-06-04T00:00:00-06:00","endTime":"2020-06-04T01:00:00-06:00","isDaytime":false,"temperature":70,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":26,"name":"","startTime":"2020-06-04T01:00:00-06:00","endTime":"2020-06-04T02:00:00-06:00","isDaytime":false,"temperature":69,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":27,"name":"","startTime":"2020-06-04T02:00:00-06:00","endTime":"2020-06-04T03:00:00-06:00","isDaytime":false,"temperature":68,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":28,"name":"","startTime":"2020-06-04T03:00:00-06:00","endTime":"2020-06-04T04:00:00-06:00","isDaytime":false,"temperature":66,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":29,"name":"","startTime":"2020-06-04T04:00:00-06:00","endTime":"2020-06-04T05:00:00-06:00","isDaytime":false,"temperature":65,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":30,"name":"","startTime":"2020-06-04T05:00:00-06:00","endTime":"2020-06-04T06:00:00-06:00","isDaytime":false,"temperature":64,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":31,"name":"","startTime":"2020-06-04T06:00:00-06:00","endTime":"2020-06-04T07:00:00-06:00","isDaytime":true,"temperature":64,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":32,"name":"","startTime":"2020-06-04T07:00:00-06:00","endTime":"2020-06-04T08:00:00-06:00","isDaytime":true,"temperature":65,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":33,"name":"","startTime":"2020-06-04T08:00:00-06:00","endTime":"2020-06-04T09:00:00-06:00","isDaytime":true,"temperature":68,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":34,"name":"","startTime":"2020-06-04T09:00:00-06:00","endTime":"2020-06-04T10:00:00-06:00","isDaytime":true,"temperature":71,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":35,"name":"","startTime":"2020-06-04T10:00:00-06:00","endTime":"2020-06-04T11:00:00-06:00","isDaytime":true,"temperature":75,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":36,"name":"","startTime":"2020-06-04T11:00:00-06:00","endTime":"2020-06-04T12:00:00-06:00","isDaytime":true,"temperature":78,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":37,"name":"","startTime":"2020-06-04T12:00:00-06:00","endTime":"2020-06-04T13:00:00-06:00","isDaytime":true,"temperature":80,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":38,"name":"","startTime":"2020-06-04T13:00:00-06:00","endTime":"2020-06-04T14:00:00-06:00","isDaytime":true,"temperature":82,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":39,"name":"","startTime":"2020-06-04T14:00:00-06:00","endTime":"2020-06-04T15:00:00-06:00","isDaytime":true,"temperature":83,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":40,"name":"","startTime":"2020-06-04T15:00:00-06:00","endTime":"2020-06-04T16:00:00-06:00","isDaytime":true,"temperature":84,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":41,"name":"","startTime":"2020-06-04T16:00:00-06:00","endTime":"2020-06-04T17:00:00-06:00","isDaytime":true,"temperature":85,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":42,"name":"","startTime":"2020-06-04T17:00:00-06:00","endTime":"2020-06-04T18:00:00-06:00","isDaytime":true,"temperature":85,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":43,"name":"","startTime":"2020-06-04T18:00:00-06:00","endTime":"2020-06-04T19:00:00-06:00","isDaytime":false,"temperature":84,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":44,"name":"","startTime":"2020-06-04T19:00:00-06:00","endTime":"2020-06-04T20:00:00-06:00","isDaytime":false,"temperature":82,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":45,"name":"","startTime":"2020-06-04T20:00:00-06:00","endTime":"2020-06-04T21:00:00-06:00","isDaytime":false,"temperature":78,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":46,"name":"","startTime":"2020-06-04T21:00:00-06:00","endTime":"2020-06-04T22:00:00-06:00","isDaytime":false,"temperature":75,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":47,"name":"","startTime":"2020-06-04T22:00:00-06:00","endTime":"2020-06-04T23:00:00-06:00","isDaytime":false,"temperature":73,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":48,"name":"","startTime":"2020-06-04T23:00:00-06:00","endTime":"2020-06-05T00:00:00-06:00","isDaytime":false,"temperature":72,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":49,"name":"","startTime":"2020-06-05T00:00:00-06:00","endTime":"2020-06-05T01:00:00-06:00","isDaytime":false,"temperature":71,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":50,"name":"","startTime":"2020-06-05T01:00:00-06:00","endTime":"2020-06-05T02:00:00-06:00","isDaytime":false,"temperature":70,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":51,"name":"","startTime":"2020-06-05T02:00:00-06:00","endTime":"2020-06-05T03:00:00-06:00","isDaytime":false,"temperature":69,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":52,"name":"","startTime":"2020-06-05T03:00:00-06:00","endTime":"2020-06-05T04:00:00-06:00","isDaytime":false,"temperature":68,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":53,"name":"","startTime":"2020-06-05T04:00:00-06:00","endTime":"2020-06-05T05:00:00-06:00","isDaytime":false,"temperature":67,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":54,"name":"","startTime":"2020-06-05T05:00:00-06:00","endTime":"2020-06-05T06:00:00-06:00","isDaytime":false,"temperature":66,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":55,"name":"","startTime":"2020-06-05T06:00:00-06:00","endTime":"2020-06-05T07:00:00-06:00","isDaytime":true,"temperature":67,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"SE","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":56,"name":"","startTime":"2020-06-05T07:00:00-06:00","endTime":"2020-06-05T08:00:00-06:00","isDaytime":true,"temperature":69,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"SE","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":57,"name":"","startTime":"2020-06-05T08:00:00-06:00","endTime":"2020-06-05T09:00:00-06:00","isDaytime":true,"temperature":72,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"SE","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":58,"name":"","startTime":"2020-06-05T09:00:00-06:00","endTime":"2020-06-05T10:00:00-06:00","isDaytime":true,"temperature":74,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/day/bkn?size=small","shortForecast":"Partly Sunny","detailedForecast":""},{"number":59,"name":"","startTime":"2020-06-05T10:00:00-06:00","endTime":"2020-06-05T11:00:00-06:00","isDaytime":true,"temperature":77,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/day/bkn?size=small","shortForecast":"Partly Sunny","detailedForecast":""},{"number":60,"name":"","startTime":"2020-06-05T11:00:00-06:00","endTime":"2020-06-05T12:00:00-06:00","isDaytime":true,"temperature":80,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/day/bkn?size=small","shortForecast":"Partly Sunny","detailedForecast":""},{"number":61,"name":"","startTime":"2020-06-05T12:00:00-06:00","endTime":"2020-06-05T13:00:00-06:00","isDaytime":true,"temperature":82,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":62,"name":"","startTime":"2020-06-05T13:00:00-06:00","endTime":"2020-06-05T14:00:00-06:00","isDaytime":true,"temperature":84,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":63,"name":"","startTime":"2020-06-05T14:00:00-06:00","endTime":"2020-06-05T15:00:00-06:00","isDaytime":true,"temperature":84,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":64,"name":"","startTime":"2020-06-05T15:00:00-06:00","endTime":"2020-06-05T16:00:00-06:00","isDaytime":true,"temperature":84,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra_sct?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":65,"name":"","startTime":"2020-06-05T16:00:00-06:00","endTime":"2020-06-05T17:00:00-06:00","isDaytime":true,"temperature":83,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra_sct?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":66,"name":"","startTime":"2020-06-05T17:00:00-06:00","endTime":"2020-06-05T18:00:00-06:00","isDaytime":true,"temperature":81,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra_sct?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":67,"name":"","startTime":"2020-06-05T18:00:00-06:00","endTime":"2020-06-05T19:00:00-06:00","isDaytime":false,"temperature":78,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/night/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":68,"name":"","startTime":"2020-06-05T19:00:00-06:00","endTime":"2020-06-05T20:00:00-06:00","isDaytime":false,"temperature":75,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/night/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":69,"name":"","startTime":"2020-06-05T20:00:00-06:00","endTime":"2020-06-05T21:00:00-06:00","isDaytime":false,"temperature":72,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/night/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":70,"name":"","startTime":"2020-06-05T21:00:00-06:00","endTime":"2020-06-05T22:00:00-06:00","isDaytime":false,"temperature":70,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/night/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":71,"name":"","startTime":"2020-06-05T22:00:00-06:00","endTime":"2020-06-05T23:00:00-06:00","isDaytime":false,"temperature":69,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/night/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":72,"name":"","startTime":"2020-06-05T23:00:00-06:00","endTime":"2020-06-06T00:00:00-06:00","isDaytime":false,"temperature":68,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/night/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":73,"name":"","startTime":"2020-06-06T00:00:00-06:00","endTime":"2020-06-06T01:00:00-06:00","isDaytime":false,"temperature":67,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SE","icon":"https://api.weather.gov/icons/land/night/tsra_sct?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":74,"name":"","startTime":"2020-06-06T01:00:00-06:00","endTime":"2020-06-06T02:00:00-06:00","isDaytime":false,"temperature":66,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SE","icon":"https://api.weather.gov/icons/land/night/tsra_sct?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":75,"name":"","startTime":"2020-06-06T02:00:00-06:00","endTime":"2020-06-06T03:00:00-06:00","isDaytime":false,"temperature":66,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SE","icon":"https://api.weather.gov/icons/land/night/tsra_sct?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":76,"name":"","startTime":"2020-06-06T03:00:00-06:00","endTime":"2020-06-06T04:00:00-06:00","isDaytime":false,"temperature":65,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"SE","icon":"https://api.weather.gov/icons/land/night/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":77,"name":"","startTime":"2020-06-06T04:00:00-06:00","endTime":"2020-06-06T05:00:00-06:00","isDaytime":false,"temperature":65,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"SE","icon":"https://api.weather.gov/icons/land/night/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":78,"name":"","startTime":"2020-06-06T05:00:00-06:00","endTime":"2020-06-06T06:00:00-06:00","isDaytime":false,"temperature":64,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"SE","icon":"https://api.weather.gov/icons/land/night/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":79,"name":"","startTime":"2020-06-06T06:00:00-06:00","endTime":"2020-06-06T07:00:00-06:00","isDaytime":true,"temperature":64,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SE","icon":"https://api.weather.gov/icons/land/day/tsra?size=small","shortForecast":"Showers And Thunderstorms","detailedForecast":""},{"number":80,"name":"","startTime":"2020-06-06T07:00:00-06:00","endTime":"2020-06-06T08:00:00-06:00","isDaytime":true,"temperature":64,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SE","icon":"https://api.weather.gov/icons/land/day/tsra?size=small","shortForecast":"Showers And Thunderstorms","detailedForecast":""},{"number":81,"name":"","startTime":"2020-06-06T08:00:00-06:00","endTime":"2020-06-06T09:00:00-06:00","isDaytime":true,"temperature":64,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SE","icon":"https://api.weather.gov/icons/land/day/tsra?size=small","shortForecast":"Showers And Thunderstorms","detailedForecast":""},{"number":82,"name":"","startTime":"2020-06-06T09:00:00-06:00","endTime":"2020-06-06T10:00:00-06:00","isDaytime":true,"temperature":64,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra?size=small","shortForecast":"Showers And Thunderstorms","detailedForecast":""},{"number":83,"name":"","startTime":"2020-06-06T10:00:00-06:00","endTime":"2020-06-06T11:00:00-06:00","isDaytime":true,"temperature":64,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra?size=small","shortForecast":"Showers And Thunderstorms","detailedForecast":""},{"number":84,"name":"","startTime":"2020-06-06T11:00:00-06:00","endTime":"2020-06-06T12:00:00-06:00","isDaytime":true,"temperature":65,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"8 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra?size=small","shortForecast":"Showers And Thunderstorms","detailedForecast":""},{"number":85,"name":"","startTime":"2020-06-06T12:00:00-06:00","endTime":"2020-06-06T13:00:00-06:00","isDaytime":true,"temperature":65,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":86,"name":"","startTime":"2020-06-06T13:00:00-06:00","endTime":"2020-06-06T14:00:00-06:00","isDaytime":true,"temperature":66,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":87,"name":"","startTime":"2020-06-06T14:00:00-06:00","endTime":"2020-06-06T15:00:00-06:00","isDaytime":true,"temperature":66,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":88,"name":"","startTime":"2020-06-06T15:00:00-06:00","endTime":"2020-06-06T16:00:00-06:00","isDaytime":true,"temperature":67,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":89,"name":"","startTime":"2020-06-06T16:00:00-06:00","endTime":"2020-06-06T17:00:00-06:00","isDaytime":true,"temperature":68,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":90,"name":"","startTime":"2020-06-06T17:00:00-06:00","endTime":"2020-06-06T18:00:00-06:00","isDaytime":true,"temperature":68,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"9 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/day/tsra?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":91,"name":"","startTime":"2020-06-06T18:00:00-06:00","endTime":"2020-06-06T19:00:00-06:00","isDaytime":false,"temperature":68,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/night/tsra_sct?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":92,"name":"","startTime":"2020-06-06T19:00:00-06:00","endTime":"2020-06-06T20:00:00-06:00","isDaytime":false,"temperature":67,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/night/tsra_sct?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":93,"name":"","startTime":"2020-06-06T20:00:00-06:00","endTime":"2020-06-06T21:00:00-06:00","isDaytime":false,"temperature":65,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/night/tsra_sct?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":94,"name":"","startTime":"2020-06-06T21:00:00-06:00","endTime":"2020-06-06T22:00:00-06:00","isDaytime":false,"temperature":63,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"WSW","icon":"https://api.weather.gov/icons/land/night/tsra_sct?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":95,"name":"","startTime":"2020-06-06T22:00:00-06:00","endTime":"2020-06-06T23:00:00-06:00","isDaytime":false,"temperature":62,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"WSW","icon":"https://api.weather.gov/icons/land/night/tsra_sct?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":96,"name":"","startTime":"2020-06-06T23:00:00-06:00","endTime":"2020-06-07T00:00:00-06:00","isDaytime":false,"temperature":60,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"WSW","icon":"https://api.weather.gov/icons/land/night/tsra_sct?size=small","shortForecast":"Showers And Thunderstorms Likely","detailedForecast":""},{"number":97,"name":"","startTime":"2020-06-07T00:00:00-06:00","endTime":"2020-06-07T01:00:00-06:00","isDaytime":false,"temperature":59,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"SW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Chance Showers And Thunderstorms","detailedForecast":""},{"number":98,"name":"","startTime":"2020-06-07T01:00:00-06:00","endTime":"2020-06-07T02:00:00-06:00","isDaytime":false,"temperature":58,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"SW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Chance Showers And Thunderstorms","detailedForecast":""},{"number":99,"name":"","startTime":"2020-06-07T02:00:00-06:00","endTime":"2020-06-07T03:00:00-06:00","isDaytime":false,"temperature":56,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"SW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Chance Showers And Thunderstorms","detailedForecast":""},{"number":100,"name":"","startTime":"2020-06-07T03:00:00-06:00","endTime":"2020-06-07T04:00:00-06:00","isDaytime":false,"temperature":55,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Chance Showers And Thunderstorms","detailedForecast":""},{"number":101,"name":"","startTime":"2020-06-07T04:00:00-06:00","endTime":"2020-06-07T05:00:00-06:00","isDaytime":false,"temperature":54,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Chance Showers And Thunderstorms","detailedForecast":""},{"number":102,"name":"","startTime":"2020-06-07T05:00:00-06:00","endTime":"2020-06-07T06:00:00-06:00","isDaytime":false,"temperature":54,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"S","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Chance Showers And Thunderstorms","detailedForecast":""},{"number":103,"name":"","startTime":"2020-06-07T06:00:00-06:00","endTime":"2020-06-07T07:00:00-06:00","isDaytime":true,"temperature":54,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/day/rain_showers?size=small","shortForecast":"Chance Rain Showers","detailedForecast":""},{"number":104,"name":"","startTime":"2020-06-07T07:00:00-06:00","endTime":"2020-06-07T08:00:00-06:00","isDaytime":true,"temperature":55,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/day/rain_showers?size=small","shortForecast":"Chance Rain Showers","detailedForecast":""},{"number":105,"name":"","startTime":"2020-06-07T08:00:00-06:00","endTime":"2020-06-07T09:00:00-06:00","isDaytime":true,"temperature":56,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"SSE","icon":"https://api.weather.gov/icons/land/day/rain_showers?size=small","shortForecast":"Chance Rain Showers","detailedForecast":""},{"number":106,"name":"","startTime":"2020-06-07T09:00:00-06:00","endTime":"2020-06-07T10:00:00-06:00","isDaytime":true,"temperature":57,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/rain_showers?size=small","shortForecast":"Chance Rain Showers","detailedForecast":""},{"number":107,"name":"","startTime":"2020-06-07T10:00:00-06:00","endTime":"2020-06-07T11:00:00-06:00","isDaytime":true,"temperature":58,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/rain_showers?size=small","shortForecast":"Chance Rain Showers","detailedForecast":""},{"number":108,"name":"","startTime":"2020-06-07T11:00:00-06:00","endTime":"2020-06-07T12:00:00-06:00","isDaytime":true,"temperature":59,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"SSW","icon":"https://api.weather.gov/icons/land/day/rain_showers?size=small","shortForecast":"Chance Rain Showers","detailedForecast":""},{"number":109,"name":"","startTime":"2020-06-07T12:00:00-06:00","endTime":"2020-06-07T13:00:00-06:00","isDaytime":true,"temperature":60,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"SW","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Chance Showers And Thunderstorms","detailedForecast":""},{"number":110,"name":"","startTime":"2020-06-07T13:00:00-06:00","endTime":"2020-06-07T14:00:00-06:00","isDaytime":true,"temperature":61,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"SW","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Chance Showers And Thunderstorms","detailedForecast":""},{"number":111,"name":"","startTime":"2020-06-07T14:00:00-06:00","endTime":"2020-06-07T15:00:00-06:00","isDaytime":true,"temperature":62,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"SW","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Chance Showers And Thunderstorms","detailedForecast":""},{"number":112,"name":"","startTime":"2020-06-07T15:00:00-06:00","endTime":"2020-06-07T16:00:00-06:00","isDaytime":true,"temperature":62,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Chance Showers And Thunderstorms","detailedForecast":""},{"number":113,"name":"","startTime":"2020-06-07T16:00:00-06:00","endTime":"2020-06-07T17:00:00-06:00","isDaytime":true,"temperature":62,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Chance Showers And Thunderstorms","detailedForecast":""},{"number":114,"name":"","startTime":"2020-06-07T17:00:00-06:00","endTime":"2020-06-07T18:00:00-06:00","isDaytime":true,"temperature":60,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Chance Showers And Thunderstorms","detailedForecast":""},{"number":115,"name":"","startTime":"2020-06-07T18:00:00-06:00","endTime":"2020-06-07T19:00:00-06:00","isDaytime":false,"temperature":59,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":116,"name":"","startTime":"2020-06-07T19:00:00-06:00","endTime":"2020-06-07T20:00:00-06:00","isDaytime":false,"temperature":57,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":117,"name":"","startTime":"2020-06-07T20:00:00-06:00","endTime":"2020-06-07T21:00:00-06:00","isDaytime":false,"temperature":56,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":118,"name":"","startTime":"2020-06-07T21:00:00-06:00","endTime":"2020-06-07T22:00:00-06:00","isDaytime":false,"temperature":54,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":119,"name":"","startTime":"2020-06-07T22:00:00-06:00","endTime":"2020-06-07T23:00:00-06:00","isDaytime":false,"temperature":53,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":120,"name":"","startTime":"2020-06-07T23:00:00-06:00","endTime":"2020-06-08T00:00:00-06:00","isDaytime":false,"temperature":52,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":121,"name":"","startTime":"2020-06-08T00:00:00-06:00","endTime":"2020-06-08T01:00:00-06:00","isDaytime":false,"temperature":51,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"NNW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":122,"name":"","startTime":"2020-06-08T01:00:00-06:00","endTime":"2020-06-08T02:00:00-06:00","isDaytime":false,"temperature":50,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"NNW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":123,"name":"","startTime":"2020-06-08T02:00:00-06:00","endTime":"2020-06-08T03:00:00-06:00","isDaytime":false,"temperature":50,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"5 mph","windDirection":"NNW","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":124,"name":"","startTime":"2020-06-08T03:00:00-06:00","endTime":"2020-06-08T04:00:00-06:00","isDaytime":false,"temperature":49,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"N","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":125,"name":"","startTime":"2020-06-08T04:00:00-06:00","endTime":"2020-06-08T05:00:00-06:00","isDaytime":false,"temperature":48,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"N","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":126,"name":"","startTime":"2020-06-08T05:00:00-06:00","endTime":"2020-06-08T06:00:00-06:00","isDaytime":false,"temperature":47,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"N","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":127,"name":"","startTime":"2020-06-08T06:00:00-06:00","endTime":"2020-06-08T07:00:00-06:00","isDaytime":true,"temperature":46,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/day/rain_showers?size=small","shortForecast":"Slight Chance Rain Showers","detailedForecast":""},{"number":128,"name":"","startTime":"2020-06-08T07:00:00-06:00","endTime":"2020-06-08T08:00:00-06:00","isDaytime":true,"temperature":46,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/day/rain_showers?size=small","shortForecast":"Slight Chance Rain Showers","detailedForecast":""},{"number":129,"name":"","startTime":"2020-06-08T08:00:00-06:00","endTime":"2020-06-08T09:00:00-06:00","isDaytime":true,"temperature":48,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/day/rain_showers?size=small","shortForecast":"Slight Chance Rain Showers","detailedForecast":""},{"number":130,"name":"","startTime":"2020-06-08T09:00:00-06:00","endTime":"2020-06-08T10:00:00-06:00","isDaytime":true,"temperature":49,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/day/rain_showers?size=small","shortForecast":"Slight Chance Rain Showers","detailedForecast":""},{"number":131,"name":"","startTime":"2020-06-08T10:00:00-06:00","endTime":"2020-06-08T11:00:00-06:00","isDaytime":true,"temperature":50,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/day/rain_showers?size=small","shortForecast":"Slight Chance Rain Showers","detailedForecast":""},{"number":132,"name":"","startTime":"2020-06-08T11:00:00-06:00","endTime":"2020-06-08T12:00:00-06:00","isDaytime":true,"temperature":52,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/day/rain_showers?size=small","shortForecast":"Slight Chance Rain Showers","detailedForecast":""},{"number":133,"name":"","startTime":"2020-06-08T12:00:00-06:00","endTime":"2020-06-08T13:00:00-06:00","isDaytime":true,"temperature":53,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":134,"name":"","startTime":"2020-06-08T13:00:00-06:00","endTime":"2020-06-08T14:00:00-06:00","isDaytime":true,"temperature":54,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":135,"name":"","startTime":"2020-06-08T14:00:00-06:00","endTime":"2020-06-08T15:00:00-06:00","isDaytime":true,"temperature":54,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":136,"name":"","startTime":"2020-06-08T15:00:00-06:00","endTime":"2020-06-08T16:00:00-06:00","isDaytime":true,"temperature":55,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":137,"name":"","startTime":"2020-06-08T16:00:00-06:00","endTime":"2020-06-08T17:00:00-06:00","isDaytime":true,"temperature":56,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":138,"name":"","startTime":"2020-06-08T17:00:00-06:00","endTime":"2020-06-08T18:00:00-06:00","isDaytime":true,"temperature":57,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"7 mph","windDirection":"WNW","icon":"https://api.weather.gov/icons/land/day/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":139,"name":"","startTime":"2020-06-08T18:00:00-06:00","endTime":"2020-06-08T19:00:00-06:00","isDaytime":false,"temperature":57,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":140,"name":"","startTime":"2020-06-08T19:00:00-06:00","endTime":"2020-06-08T20:00:00-06:00","isDaytime":false,"temperature":55,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":141,"name":"","startTime":"2020-06-08T20:00:00-06:00","endTime":"2020-06-08T21:00:00-06:00","isDaytime":false,"temperature":53,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"6 mph","windDirection":"NW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":142,"name":"","startTime":"2020-06-08T21:00:00-06:00","endTime":"2020-06-08T22:00:00-06:00","isDaytime":false,"temperature":51,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"NNW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":143,"name":"","startTime":"2020-06-08T22:00:00-06:00","endTime":"2020-06-08T23:00:00-06:00","isDaytime":false,"temperature":50,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"NNW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":144,"name":"","startTime":"2020-06-08T23:00:00-06:00","endTime":"2020-06-09T00:00:00-06:00","isDaytime":false,"temperature":50,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"NNW","icon":"https://api.weather.gov/icons/land/night/tsra_hi?size=small","shortForecast":"Slight Chance Showers And Thunderstorms","detailedForecast":""},{"number":145,"name":"","startTime":"2020-06-09T00:00:00-06:00","endTime":"2020-06-09T01:00:00-06:00","isDaytime":false,"temperature":50,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"N","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":146,"name":"","startTime":"2020-06-09T01:00:00-06:00","endTime":"2020-06-09T02:00:00-06:00","isDaytime":false,"temperature":49,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"N","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":147,"name":"","startTime":"2020-06-09T02:00:00-06:00","endTime":"2020-06-09T03:00:00-06:00","isDaytime":false,"temperature":48,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"3 mph","windDirection":"N","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":148,"name":"","startTime":"2020-06-09T03:00:00-06:00","endTime":"2020-06-09T04:00:00-06:00","isDaytime":false,"temperature":47,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"NNE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":149,"name":"","startTime":"2020-06-09T04:00:00-06:00","endTime":"2020-06-09T05:00:00-06:00","isDaytime":false,"temperature":46,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"NNE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":150,"name":"","startTime":"2020-06-09T05:00:00-06:00","endTime":"2020-06-09T06:00:00-06:00","isDaytime":false,"temperature":45,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"NNE","icon":"https://api.weather.gov/icons/land/night/sct?size=small","shortForecast":"Partly Cloudy","detailedForecast":""},{"number":151,"name":"","startTime":"2020-06-09T06:00:00-06:00","endTime":"2020-06-09T07:00:00-06:00","isDaytime":true,"temperature":45,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"ENE","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":152,"name":"","startTime":"2020-06-09T07:00:00-06:00","endTime":"2020-06-09T08:00:00-06:00","isDaytime":true,"temperature":46,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"ENE","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":153,"name":"","startTime":"2020-06-09T08:00:00-06:00","endTime":"2020-06-09T09:00:00-06:00","isDaytime":true,"temperature":48,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"ENE","icon":"https://api.weather.gov/icons/land/day/few?size=small","shortForecast":"Sunny","detailedForecast":""},{"number":154,"name":"","startTime":"2020-06-09T09:00:00-06:00","endTime":"2020-06-09T10:00:00-06:00","isDaytime":true,"temperature":50,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":155,"name":"","startTime":"2020-06-09T10:00:00-06:00","endTime":"2020-06-09T11:00:00-06:00","isDaytime":true,"temperature":52,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""},{"number":156,"name":"","startTime":"2020-06-09T11:00:00-06:00","endTime":"2020-06-09T12:00:00-06:00","isDaytime":true,"temperature":54,"temperatureUnit":"F","temperatureTrend":null,"windSpeed":"2 mph","windDirection":"W","icon":"https://api.weather.gov/icons/land/day/sct?size=small","shortForecast":"Mostly Sunny","detailedForecast":""}]}}
+  var crags_config = [
+  {
+    "name": "The Greenbelt",
+    "note": "Porous limestone that can take a couple days to dry out.",
+    "mountainProject": "https://www.mountainproject.com/area/105905087/barton-creek-greenbelt",
+    "station": "KATT",
+    "office": "EWX/153,89",
+    "coordinates": [
+      -97.801,
+      30.244
+    ]
+  },
+  {
+    "name": "Continental Ranch",
+    "note": "Hard limestone, so dries fairly fast. The ranch also seems to sit in a weather bubble with the rain passing around it.",
+    "mountainProject": "https://www.mountainproject.com/area/106169626/continental-ranch",
+    "station": "KDRT",
+    "office": "EWX/14,74",
+    "coordinates": [
+      -101.44,
+      29.803
+    ]
+  },
+  {
+    "name": "Pace Bend Park",
+    "note": "Limestone. To check water levels for DWS, see: http://www.bloodyflapper.com/pacebend",
+    "mountainProject": "https://www.mountainproject.com/area/107104361/pace-bend-park-dws",
+    "station": "KRYW",
+    "office": "EWX/145,98",
+    "coordinates": [
+      -98.019,
+      30.455
+    ]
+  },
+  {
+    "name": "Reimer's Ranch",
+    "note": "Porous limestone that can take a couple days to dry out.",
+    "mountainProject": "https://www.mountainproject.com/area/105837312/reimers-ranch",
+    "station": "KRYW",
+    "office": "EWX/141,93",
+    "coordinates": [
+      -98.122,
+      30.334
+    ]
+  },
+  {
+    "name": "Cochise Stronghold",
+    "note": "Granite, so the exposed areas dry fast.",
+    "mountainProject": "https://www.mountainproject.com/area/105738034/cochise-stronghold",
+    "station": "KFHU",
+    "office": "TWC/125,31",
+    "coordinates": [
+      -109.987,
+      31.921
+    ]
+  },
+  {
+    "name": "Enchanted Rock",
+    "note": "Granite, so the exposed areas dry fast.",
+    "mountainProject": "https://www.mountainproject.com/area/105855196/enchanted-rock-state-natural-area",
+    "station": "KT82",
+    "office": "EWX/114,101",
+    "coordinates": [
+      -98.821,
+      30.503
+    ]
+  },
+  {
+    "name": "Horseshoe Canyon Ranch",
+    "note": "Sandstone, so give it plenty of time to dry so it doesn't get damaged.",
+    "mountainProject": "https://www.mountainproject.com/area/105903004/horseshoe-canyon-ranch",
+    "station": "KHRO",
+    "office": "LZK/44,127",
+    "coordinates": [
+      -93.292,
+      36.012
+    ]
+  },
+  {
+    "name": "Last Chance Canyon",
+    "note": "Limestone",
+    "mountainProject": "https://www.mountainproject.com/area/105920274/last-chance-canyon",
+    "station": "KGDP",
+    "office": "MAF/16,149",
+    "coordinates": [
+      -104.754,
+      32.234
+    ]
+  },
+  {
+    "name": "Georgetown",
+    "note": "Porous limestone that can take a couple days to dry out.",
+    "mountainProject": "https://www.mountainproject.com/area/106715082/georgetown-hospital",
+    "station": "KGTU",
+    "office": "EWX/157,106",
+    "coordinates": [
+      -97.69,
+      30.627
+    ]
+  },
+  {
+    "name": "McKinney Falls",
+    "note": "Porous limestone that can take a couple days to dry out.",
+    "mountainProject": "https://www.mountainproject.com/area/106265889/mckinney-falls-state-park",
+    "station": "KAUS",
+    "office": "EWX/156,86",
+    "coordinates": [
+      -97.722,
+      30.181
+    ]
+  },
+  {
+    "name": "Icicle Creek",
+    "note": "Granite, so exposed areas dry fast.",
+    "mountainProject": "https://www.mountainproject.com/area/105790237/icicle-creek",
+    "station": "KEAT",
+    "office": "OTX/35,103",
+    "coordinates": [
+      -120.711,
+      47.543
+    ]
+  },
+  {
+    "name": "Tieton River Rock",
+    "note": "Mostly andesite (similar to basalt).",
+    "mountainProject": "https://www.mountainproject.com/area/105921237/tieton-river",
+    "station": "AT095",
+    "office": "PDT/70,159",
+    "coordinates": [
+      -120.958,
+      46.684
+    ]
+  },
+  {
+    "name": "Vantage",
+    "note": "The rocks are basalt.",
+    "mountainProject": "https://www.mountainproject.com/map/105792231/vantage-frenchman-coulee",
+    "station": "KEAT",
+    "office": "OTX/54,74",
+    "coordinates": [
+      -119.969,
+      47.025
+    ]
+  },
+  {
+    "name": "Mount Erie",
+    "note": "Highly textured and featured diorite.",
+    "mountainProject": "https://www.mountainproject.com/area/106413714/mount-erie",
+    "station": "KNUW",
+    "office": "SEW/123,109",
+    "coordinates": [
+      -122.627,
+      48.453
+    ]
+  },
+  {
+    "name": "Hueco Tanks",
+    "note": "Reservations required.",
+    "mountainProject": "https://www.mountainproject.com/area/105810691/hueco-tanks",
+    "station": "KELP",
+    "office": "EPZ/116,60",
+    "coordinates": [
+      -106.043,
+      31.917
+    ]
+  },
+  {
+    "name": "Index",
+    "note": "Fine-grained granite",
+    "mountainProject": "https://www.mountainproject.com/area/105790635/index",
+    "station": "TSTEV",
+    "office": "SEW/150,72",
+    "coordinates": [
+      -121.556,
+      47.82
+    ]
+  },
+  {
+    "name": "Darrington",
+    "note": "A collection of granite domes",
+    "mountainProject": "https://www.mountainproject.com/area/106006698/darrington",
+    "station": "KAWO",
+    "office": "SEW/151,89",
+    "coordinates": [
+      -121.638,
+      48.161
+    ]
+  },
+  {
+    "name": "Smith Rock",
+    "note": "Volcanic welded tuff with surrounding bands of columnar basalt.",
+    "mountainProject": "https://www.mountainproject.com/area/105788989/smith-rock",
+    "station": "KRDM",
+    "office": "PDT/43,53",
+    "coordinates": [
+      -121.143,
+      44.366
+    ]
+  },
+  {
+    "name": "Clear Creek Canyon",
+    "note": "Relatively solid gneiss and schist to sandy granite.",
+    "mountainProject": "https://www.mountainproject.com/area/105744243/clear-creek-canyon",
+    "station": "KBJC",
+    "office": "BOU/53,62",
+    "coordinates": [
+      -105.243,
+      39.754
+    ]
+  },
+  {
+    "name": "Staunton State Park",
+    "note": "Interesting and featured rock",
+    "mountainProject": "https://www.mountainproject.com/area/107838839/staunton-state-park",
+    "station": "KAPA",
+    "office": "BOU/48,51",
+    "coordinates": [
+      -105.379,
+      39.499
+    ]
+  },
+  {
+    "name": "Jackson Falls",
+    "note": "The walls offer slopers, various sized pockets, roofs, and slabs.",
+    "mountainProject": "https://www.mountainproject.com/area/106017458/jackson-falls",
+    "station": "KPAH",
+    "office": "PAH/116,58",
+    "coordinates": [
+      -88.682,
+      37.510
+    ]
+  },
+  {
+    "name": "Red River Gorge",
+    "note": "Sandstone cliffs.",
+    "mountainProject": "https://www.mountainproject.com/area/105841134/red-river-gorge",
+    "station": "KIOB",
+    "office": "JKL/47,57",
+    "coordinates": [
+      -83.683,
+      37.783
+    ]
+  },
+  {
+    "name": "Foster Falls",
+    "note": "High-quality sandstone.",
+    "mountainProject": "https://www.mountainproject.com/area/105883248/foster-falls",
+    "station": "KCHA",
+    "office": "MRX/19,12",
+    "coordinates": [
+      -85.674,
+      35.182
+    ]
+  },
+  {
+    "name": "Lime Park (Lime Creek)",
+    "note": "Great limestone.",
+    "mountainProject": "https://www.mountainproject.com/area/105744451/lime-park-aka-lime-creek",
+    "station": "CO092",
+    "office": "GJT/165,110",
+    "coordinates": [
+      -106.656,
+      39.408
+    ]
+  },
+  {
+    "name": "Independence Pass",
+    "note": "Ultra-worthy granite.",
+    "mountainProject": "https://www.mountainproject.com/area/105744331/independence-pass",
+    "station": "IDPC2",
+    "office": "GJT/162,97",
+    "coordinates": [
+      -106.704,
+      39.119
+    ]
+  },
+  {
+    "name": "Moab",
+    "note": "Soft sandstone in a desert environment.",
+    "mountainProject": "https://www.mountainproject.com/area/105716711/moab-area",
+    "station": "MOAB",
+    "office": "GJT/60,82",
+    "coordinates": [
+      -109.550,
+      38.573
+    ]
+  },
+  {
+    "name": "Estes Park Valley",
+    "note": "Good variety of granitic, gneiss, and schist crags.",
+    "mountainProject": "https://www.mountainproject.com/area/105801865/estes-park-valley",
+    "station": "KLMO",
+    "office": "BOU/46,92",
+    "coordinates": [
+      -105.513,
+      40.397
+    ]
+  },
+  {
+    "name": "Joshua Tree National Park",
+    "note": "Quartz monzonite.",
+    "mountainProject": "https://www.mountainproject.com/area/105720495/joshua-tree-national-park",
+    "station": "LTHC1",
+    "office": "PSR/12,103",
+    "coordinates": [
+      -116.168,
+      34.012
+    ]
+  },
+  {
+    "name": "Yosemite National Park",
+    "note": "Glacial granite.",
+    "mountainProject": "https://www.mountainproject.com/area/105833381/yosemite-national-park",
+    "station": "AHIC1",
+    "office": "HNX/66,143",
+    "coordinates": [
+      -119.604,
+      37.741
+    ]
+  },
+  {
+    "name": "Bishop",
+    "note": "Sharp, skin tearing quartz monzonite.",
+    "mountainProject": "https://www.mountainproject.com/area/106064825/bishop-area",
+    "station": "KBIH",
+    "office": "VEF/14,168",
+    "coordinates": [
+      -118.435,
+      37.361
+    ]
+  },
+  {
+    "name": "Mammoth Lakes",
+    "note": "Volcanic tuff to perfect granite.",
+    "mountainProject": "https://www.mountainproject.com/area/106064821/mammoth-lakes-area",
+    "station": "C2998",
+    "office": "REV/58,16",
+    "coordinates": [
+      -118.967,
+      37.647
+    ]
+  },
+  {
+    "name": "Trout Creek",
+    "note": "Large basalt columns.",
+    "mountainProject": "https://www.mountainproject.com/area/106505473/trout-creek",
+    "station": "KS33",
+    "office": "PDT/48,73",
+    "coordinates": [
+      -121.095,
+      44.816
+    ]
+  },
+  {
+    "name": "Red Rock",
+    "note": "Sandstone that can be fragile when wet.",
+    "mountainProject": "https://www.mountainproject.com/area/105731932/red-rock",
+    "station": "KYCN2",
+    "office": "VEF/111,97",
+    "coordinates": [
+      -115.427,
+      36.135
+    ]
+  },
+  {
+    "name": "Seneca Rocks",
+    "note": "White Tuscarora quartzite, which feels much like sandstone.",
+    "mountainProject": "https://www.mountainproject.com/area/105861910/seneca-rocks",
+    "station": "KW99",
+    "office": "LWX/14,57",
+    "coordinates": [
+      -79.373,
+      38.835
+    ]
+  },
+  {
+    "name": "Gunnison",
+    "note": "Granite.",
+    "mountainProject": "https://www.mountainproject.com/area/105802040/gunnison",
+    "station": "KGUC",
+    "office": "GJT/152,72",
+    "coordinates": [
+      -106.927,
+      38.546
+    ]
+  },
+  {
+    "name": "Little Cottonwood Canyon",
+    "note": "Primarily quartz monzonite (white granite, essentially)",
+    "mountainProject": "https://www.mountainproject.com/area/105739277/little-cottonwood-canyon",
+    "station": "KSLC",
+    "office": "SLC/102,165",
+    "coordinates": [
+      -111.775,
+      40.5727
+    ]
+  }
+]</script>
