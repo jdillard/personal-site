@@ -112,7 +112,6 @@ end
 def create_crags(crags)
   # determine unique metros
   metros = Set[]
-  crag_array = Array.new
   local_crags = Hash.new
   states = Hash.new
 
@@ -238,6 +237,7 @@ def create_crags(crags)
       f << "<script>\n"
       create_forecast(f, crag[:office])
       create_hourly(f, crag[:office])
+      crag_array = Array.new
       crags_config(f, crag_array.push(crag.to_h))
       f << "</script>\n"
     end
@@ -320,6 +320,7 @@ def create_metros(crags)
         create_forecast(f, crag[:office])
         create_hourly(f, crag[:office])
       end
+      crag_array = Array.new
       crags_config(f, local_crags[metro])
       f << "</script>\n"
       f << '<section id="nearby" class="tc lh-copy">'+"\n"
