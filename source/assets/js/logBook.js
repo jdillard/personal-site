@@ -19,7 +19,7 @@ function getTicks(email) {
 }
 
 function filterRoutes(routes, selectedType='', selectedStyles=[]) {
-    const routeTypes = groupBy(routes, 'type');
+    const routeTypes = groupBy(routes.filter(route => route.hasOwnProperty("rating")), 'type');
     // Generate radio buttons based on the different route types
     let index = 0;
     document.getElementById("route-types").innerHTML = "";
@@ -37,7 +37,7 @@ function filterRoutes(routes, selectedType='', selectedStyles=[]) {
       }
     }
     // Generate checkboxes based on the different route styles
-    const routeStyles = groupBy(routes, 'style', selectedType);
+    const routeStyles = groupBy(routes.filter(route => route.hasOwnProperty("rating")), 'style', selectedType);
     document.getElementById("route-styles").innerHTML = "";
     let empty = false;
     if(selectedStyles.length === 0) { empty = true; }
@@ -56,7 +56,7 @@ function filterRoutes(routes, selectedType='', selectedStyles=[]) {
     }
 
     const formattedTicks = [];
-    let routeRatings = groupBy(routeTypes[selectedType].filter(route => selectedStyles.includes(route.style)), 'rating');
+    let routeRatings = groupBy(routeTypes[selectedType].filter(route => selectedStyles.includes(route.style) && route.hasOwnProperty("rating")), 'rating');
     for(var key in routeRatings) {
       if(routeRatings.hasOwnProperty(key)) {
         let chartData = {};
