@@ -11,7 +11,7 @@
     "handlebars": "^4.7.6",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.26",
-    "netlify-lambda": "^1.6.3",
+    "netlify-lambda": "^2.0.1",
     "suncalc": "^1.8.0",
     "terser-webpack-plugin": "^2.3.0",
     "tippy.js": "^4.3.5",
