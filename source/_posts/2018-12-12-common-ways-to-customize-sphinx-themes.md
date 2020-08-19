@@ -36,9 +36,8 @@ functionality. First, create a **custom.js** and **custom.css** file in the
 
 ```python
 # add custom files that are stored in _static
-def setup(app):
-   app.add_javascript("custom.js")
-   app.add_stylesheet("custom.css")
+html_css_files = ['custom.css']
+html_js_files = ['custom.js']
 ```
 
 ## <a name="custom-theme-conf-variables"></a>2. Custom theme.conf Options
