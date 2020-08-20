@@ -12,7 +12,7 @@
             <td class="pv2-ns pv1 ph3-ns ph1"><a class="no-underline fancy-link relative black-70 hover-light-red" href="{{this.url}}" target="_blank">{{this.route}}</a></td>
             <td class="pv2-ns pv1 ph3-ns ph1">{{this.rating}}</td>
             <td class="pv2-ns pv1 ph3-ns ph1">{{this.type}}</td>
-            <td class="pv2-ns pv1 ph3-ns ph1">{{this.style}}</td>
+            <td class="pv2-ns pv1 ph3-ns ph1">{{#ifEquals this.style "Unknown"}}<span class="f7 br-pill ba ph2 pv1 dib bg-washed-red red">{{/ifEquals}}{{this.style}}{{#ifEquals this.style  "Unknown"}}</span>{{/ifEquals}}</td>
             <td class="pv2-ns pv1 ph3-ns ph1">{{this.date}}</td>
         </tr>
         {{/each}}
