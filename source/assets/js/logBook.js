@@ -326,10 +326,9 @@ u('#route-types').on('change', function() {
   filterRoutes(JSON.parse(localStorage.getItem("logbook-routes")), selectedType);
 });
 
-window.addEventListener('resize', reDrawGraph());
-
-function reDrawGraph() {
-  if(localStorage.getItem("logbook-routes")) {
+function reDrawGraph(firstLoad = false) {
+  console.log(firstLoad)
+  if(!firstLoad && localStorage.getItem("logbook-routes")) {
     let selectedType =  '';
     let selectedStyles = [];
     let selectedYears = [];
@@ -358,6 +357,8 @@ function reDrawGraph() {
       });
   }
 }
+
+reDrawGraph(true);
 
 u('#route-styles').on('change', function() {
   reDrawGraph();
