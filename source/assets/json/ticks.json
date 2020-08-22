@@ -2,256 +2,307 @@
   {
     "type": "Sport, TR",
     "rating": "5.10c",
-    "style": "Onsight"
+    "style": "Onsight",
+    "date": "2018-01-11"
   },
   {
     "type": "Trad",
     "rating": "5.8",
-    "style": "Onsight"
+    "style": "Onsight",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.9",
-    "style": ""
+    "style": "",
+    "date": "2018-01-11"
   },
   {
     "type": "Trad",
     "rating": "5.10a",
-    "style": "Fell/Hung"
+    "style": "Fell/Hung",
+    "date": "2018-01-11"
   },
   {
     "type": "Trad",
     "rating": "5.10a",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.10c",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.10d",
-    "style": "Onsight"
+    "style": "Onsight",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.10a",
-    "style": "Onsight"
+    "style": "Onsight",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.9",
-    "style": "Onsight"
+    "style": "Onsight",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.10c",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.9",
-    "style": ""
+    "style": "",
+    "date": "2018-01-11"
   },
   {
     "type": "Trad",
     "rating": "5.9",
-    "style": "Flash"
+    "style": "Flash",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.9",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.9",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.10d",
-    "style": "Follow"
+    "style": "Follow",
+    "date": "2018-01-11"
   },
   {
     "type": "Trad",
     "rating": "5.8",
-    "style": "Follow"
+    "style": "Follow",
+    "date": "2018-01-11"
   },
   {
     "type": "Trad",
     "rating": "5.10a",
-    "style": "Follow"
+    "style": "Follow",
+    "date": "2018-01-11"
   },
   {
     "type": "Trad",
     "rating": "5.9",
-    "style": ""
+    "style": "",
+    "date": "2018-01-11"
   },
   {
     "type": "Trad",
     "rating": "5.10b",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Trad",
     "rating": "5.9",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2012-11-28"
   },
   {
     "type": "Trad",
     "rating": "5.8",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2015-01-03"
   },
   {
     "type": "Boulder",
     "rating": "V1",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Boulder",
     "rating": "V1",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Boulder",
     "rating": "V1",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Boulder",
     "rating": "V3",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Boulder",
     "rating": "V2",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Boulder",
     "rating": "V2",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Boulder",
     "rating": "V3",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Boulder",
     "rating": "V3",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Boulder",
     "rating": "V4",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Boulder",
     "rating": "V1",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2015-09-09"
   },
   {
     "type": "Boulder",
     "rating": "V1",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Boulder",
     "rating": "V2",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Boulder",
     "rating": "V2",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2013-07-27"
   },
   {
     "type": "Sport",
     "rating": "5.10b",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Boulder",
     "rating": "V1",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Trad",
     "rating": "5.8",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Trad",
     "rating": "5.9",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.10b",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.10b",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.9",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Trad",
     "rating": "5.10b",
-    "style": "Follow"
+    "style": "Follow",
+    "date": "2014-11-14"
   },
   {
     "type": "Sport",
     "rating": "5.10a",
-    "style": "Onsight"
+    "style": "Onsight",
+    "date": "2015-04-24"
   },
   {
     "type": "Sport",
     "rating": "5.10a",
-    "style": "Onsight"
+    "style": "Onsight",
+    "date": "2016-08-01"
   },
   {
     "type": "Trad, Alpine",
     "rating": "5.9",
-    "style": "Follow"
+    "style": "Follow",
+    "date": "2016-04-21"
   },
   {
     "type": "Sport",
     "rating": "5.10b",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2017-06-11"
   },
   {
     "type": "Sport",
     "rating": "5.11a",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2017-04-11"
   },
   {
     "type": "Trad",
     "rating": "5.9",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2020-01-09"
   },
   {
     "type": "Boulder",
     "rating": "V5",
-    "style": "Redpoint"
+    "style": "Redpoint",
+    "date": "2018-01-11"
   },
   {
     "type": "Sport",
     "rating": "5.9",
-    "style": "Onsight"
+    "style": "Onsight",
+    "date": "2019-01-15"
   },
   {
     "type": "Sport",
     "rating": "5.10a",
-    "style": "Onsight"
+    "style": "Onsight",
+    "date": "2019-02-11"
   }
 ]
