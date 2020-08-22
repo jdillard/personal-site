@@ -88,10 +88,10 @@ exports.handler = async (event, context) => {
           // },
           body: JSON.stringify({ name: userResponse.data.name, routes: routes }) }
       } else {
-        return { statusCode: 500, body: JSON.stringify({ error: 'Email not found'}) }
+        return { statusCode: 500, body: JSON.stringify({ error: 'Mountain Project E-mail not found'}) }
       }
     } else {
-      return { statusCode: 500, body: JSON.stringify({ error: 'Email not specified'}) }
+      return { statusCode: 500, body: JSON.stringify({ error: 'Mountain Project E-mail not specified'}) }
     }
   } catch (err) {
     return { statusCode: 500, body: err.toString() }

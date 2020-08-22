@@ -5,7 +5,7 @@ const template_logbook = require("./templates/logbook.hbs");
 
 function getTicks(email) {
   axios.get(`/.netlify/functions/get-mp-ticks?email=${email}`)
-  .then(function (response) {
+  .then(response => {
     document.getElementById("log-owner").innerHTML = response.data.name + "'s Ticks";
     localStorage.setItem('logbook-routes', JSON.stringify(response.data.routes));
     localStorage.setItem('logbook-status', Date.now());
@@ -13,8 +13,14 @@ function getTicks(email) {
     logbook.innerHTML = template_logbook(response.data.routes);
     filterRoutes(response.data.routes);
   })
-  .catch(function (error) {
-    console.log(error);
+  .catch(error => {
+    if (error.response) {
+      alert(error.response.data.error)
+    } else if (error.request) {
+      console.log('Error', error.request);
+    } else {
+      console.log('Error', error.message);
+    }
   });
 }
 
@@ -313,10 +319,10 @@ const ratingOrder = ["V1", "V2", "V3", "V4", "V5", "V6", "V7", "5.6", "5.7", "5.
 u("#mp-submit").on('click', function(){
   const email = document.getElementById("mp-email").value;
 
-  if(email) {
+  if(email && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
     getTicks(email);
   } else {
-    alert("There was an error");
+    alert("Please enter a valid e-mail address.");
   }
 });
 
@@ -327,7 +333,6 @@ u('#route-types').on('change', function() {
 });
 
 function reDrawGraph(firstLoad = false) {
-  console.log(firstLoad)
   if(!firstLoad && localStorage.getItem("logbook-routes")) {
     let selectedType =  '';
     let selectedStyles = [];
