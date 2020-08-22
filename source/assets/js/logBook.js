@@ -18,8 +18,8 @@ function getTicks(email) {
   });
 }
 
-function filterRoutes(routes, selectedType='', selectedStyles=[]) {
-    const routeTypes = groupBy(routes.filter(route => route.hasOwnProperty("rating")), 'type');
+function filterRoutes(selectedroutes, selectedType='', selectedStyles=[], selectedYears=[]) {
+    const routeTypes = groupBy(selectedroutes.filter(route => route.hasOwnProperty("rating")), 'type');
     // Generate radio buttons based on the different route types
     let index = 0;
     document.getElementById("route-types").innerHTML = "";
@@ -37,7 +37,7 @@ function filterRoutes(routes, selectedType='', selectedStyles=[]) {
       }
     }
     // Generate checkboxes based on the different route styles
-    const routeStyles = groupBy(routes.filter(route => route.hasOwnProperty("rating")), 'style', selectedType);
+    const routeStyles = groupBy(selectedroutes.filter(route => route.hasOwnProperty("rating")), 'style', selectedType);
     document.getElementById("route-styles").innerHTML = "";
     let empty = false;
     if(selectedStyles.length === 0) { empty = true; }
@@ -54,9 +54,28 @@ function filterRoutes(routes, selectedType='', selectedStyles=[]) {
         index++;
       }
     }
+    // Generate checkboxes based on the different route years
+    const routeYears = groupBy(selectedroutes.filter(route => route.hasOwnProperty("rating")), 'date', selectedType);
+    document.getElementById("route-years").innerHTML = "";
+    empty = false;
+    if(selectedYears.length === 0) { empty = true; }
+    for (let year in routeYears) {
+      if (routeYears.hasOwnProperty(year) && year != '') {
+        let checked = '';
+        if(empty) {
+          selectedYears.push(year);
+          checked = "checked";
+        }
+        if(selectedYears.includes(year)) { checked = "checked"; }
+        let temp_html = `<input type="checkbox" id="${year}" name="routeYears[]" value="${year}" ${checked}></input><label class="lh-copy ml1 mr3" for="${year}"><strong>${year}</strong> <small>(${routeYears[year].length})</small></label>`;
+        let position = (year.includes(" and before")) ? "beforeend" : "afterbegin";
+        document.getElementById("route-years").insertAdjacentHTML(position, temp_html);
+        index++;
+      }
+    }
 
     const formattedTicks = [];
-    let routeRatings = groupBy(routeTypes[selectedType].filter(route => selectedStyles.includes(route.style) && route.hasOwnProperty("rating")), 'rating');
+    let routeRatings = groupBy(routeTypes[selectedType].filter(route => selectedStyles.includes(route.style) && isSelectedYear(route.date.substring(0, 4), selectedYears) && route.hasOwnProperty("rating")), 'rating');
     for(var key in routeRatings) {
       if(routeRatings.hasOwnProperty(key)) {
         let chartData = {};
@@ -73,7 +92,7 @@ function filterRoutes(routes, selectedType='', selectedStyles=[]) {
       }
     }
     formattedTicks.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating));
-    createGraph({ticks: formattedTicks, keys: Object.keys(groupBy(routes, 'style')).filter(function(e){return e;})});
+    createGraph({ticks: formattedTicks, keys: Object.keys(groupBy(selectedroutes, 'style')).filter(function(e){return e;})});
 }
 
 function getIssues() {
@@ -89,9 +108,25 @@ function getIssues() {
   });
 }
 
+function isSelectedYear(year, selectedYears) {
+  if(selectedYears.includes(year)) {
+    return true;
+  } else {
+    if(selectedYears[selectedYears.length-1].includes("before")) {
+      if(parseInt(selectedYears[selectedYears.length-1].substring(0, 4)) >= parseInt(year)) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  }
+}
+
 // If a route has multiple types, it is added to all of its types
 const groupBy = function(xs, key, firstType='') {
-  return xs.reduce(function(rv, x) {
+  return xs.sort((a, b) => new Date(b.date) - new Date(a.date)).reduce(function(rv, x) {
     if(key === "type") {
       const types = x.type.split(', ');
       types.forEach(function (type) {
@@ -101,7 +136,22 @@ const groupBy = function(xs, key, firstType='') {
       if(x.type.includes(firstType)) {
         (rv[x[key]] = rv[x[key]] || []).push(x);
       }
-    } else {
+    } else if(key == "date") {
+      let year = x[key].substring(0, 4);
+      if(Object.keys(rv).length > 2) {
+        if(Object.keys(rv)[Object.keys(rv).length-1].includes("before")) {
+          year = Object.keys(rv)[Object.keys(rv).length-1];
+        } else if(Object.keys(rv)[0].includes(year)) {
+          year = Object.keys(rv)[0];
+        } else {
+          year = x[key].substring(0, 4)+" and before";
+        }
+      }
+      if(x.type.includes(firstType)) {
+        (rv[year.toString()] = rv[year.toString()] || []).push(x);
+      }
+    }
+    else {
       (rv[x[key]] = rv[x[key]] || []).push(x);
     }
     return rv;
@@ -282,6 +332,7 @@ function reDrawGraph() {
   if(localStorage.getItem("logbook-routes")) {
     let selectedType =  '';
     let selectedStyles = [];
+    let selectedYears = [];
     if(document.querySelector("input[name='routeType']:checked")) {
       selectedType = document.querySelector("input[name='routeType']:checked").value;
     }
@@ -290,7 +341,12 @@ function reDrawGraph() {
         selectedStyles.push(el.value);
       });
     }
-    filterRoutes(JSON.parse(localStorage.getItem("logbook-routes")), selectedType, selectedStyles);
+    if(document.querySelector("input[name='routeYears[]']:checked")) {
+      u("input[name='routeYears[]']:checked").each(function(el){
+        selectedYears.push(el.value);
+      });
+    }
+    filterRoutes(JSON.parse(localStorage.getItem("logbook-routes")), selectedType, selectedStyles, selectedYears);
   } else {
     axios.get('/assets/json/ticks.json')
       .then(function (response) {
@@ -304,6 +360,10 @@ function reDrawGraph() {
 }
 
 u('#route-styles').on('change', function() {
+  reDrawGraph();
+});
+
+u('#route-years').on('change', function() {
   reDrawGraph();
 });
 
