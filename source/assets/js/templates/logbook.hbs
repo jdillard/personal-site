@@ -1,3 +1,4 @@
+<h2 class="tc">Selected Routes</h2>
 <table class="collapse ba br2 b--black-10 center pv2 ph3 f6-ns f7">
     <tbody>
         <tr class="striped--light-gray ">
@@ -8,13 +9,15 @@
             <th class="tl ttu fw6 pv2-ns pv1 ph3-ns ph1">Date</th>
         </tr>
         {{#each @root}}
-        <tr class="striped--light-gray ">
-            <td class="pv2-ns pv1 ph3-ns ph1"><a class="no-underline fancy-link relative black-70 hover-light-red" href="{{this.url}}" target="_blank">{{this.route}}</a></td>
-            <td class="pv2-ns pv1 ph3-ns ph1">{{this.rating}}</td>
-            <td class="pv2-ns pv1 ph3-ns ph1">{{this.type}}</td>
-            <td class="pv2-ns pv1 ph3-ns ph1">{{#ifEquals this.style "Unknown"}}<span class="f7 br-pill ba ph2 pv1 dib bg-washed-red red">{{/ifEquals}}{{this.style}}{{#ifEquals this.style  "Unknown"}}</span>{{/ifEquals}}</td>
-            <td class="pv2-ns pv1 ph3-ns ph1">{{this.date}}</td>
-        </tr>
+          {{#each this}}
+            <tr class="striped--light-gray ">
+                <td class="pv2-ns pv1 ph3-ns ph1"><a class="no-underline fancy-link relative black-70 hover-light-red" href="{{this.url}}" target="_blank">{{this.route}}</a></td>
+                <td class="pv2-ns pv1 ph3-ns ph1">{{this.rating}}</td>
+                <td class="pv2-ns pv1 ph3-ns ph1">{{this.type}}</td>
+                <td class="pv2-ns pv1 ph3-ns ph1">{{#ifEquals this.style "Unknown"}}<span class="f7 br-pill ba ph2 pv1 dib bg-washed-red red">{{/ifEquals}}{{this.style}}{{#ifEquals this.style  "Unknown"}}</span>{{/ifEquals}}</td>
+                <td class="pv2-ns pv1 ph3-ns ph1">{{this.date}}</td>
+            </tr>
+          {{/each}}
         {{/each}}
     </tbody>
 </table>

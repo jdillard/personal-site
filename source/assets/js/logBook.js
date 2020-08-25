@@ -9,8 +9,6 @@ function getTicks(email) {
     document.getElementById("log-owner").innerHTML = response.data.name + "'s Ticks";
     localStorage.setItem('logbook-routes', JSON.stringify(response.data.routes));
     localStorage.setItem('logbook-status', Date.now());
-    const logbook = document.getElementById("logbook");
-    logbook.innerHTML = template_logbook(response.data.routes);
     filterRoutes(response.data.routes);
   })
   .catch(error => {
@@ -99,6 +97,8 @@ function filterRoutes(selectedroutes, selectedType='', selectedStyles=[], select
     }
     formattedTicks.sort((a, b) => ratingOrder.indexOf(a.rating) - ratingOrder.indexOf(b.rating));
     createGraph({ticks: formattedTicks, keys: Object.keys(groupBy(selectedroutes, 'style')).filter(function(e){return e;})});
+    const logbook = document.getElementById("logbook");
+    logbook.innerHTML = template_logbook(routeRatings);
 }
 
 function getIssues() {
