@@ -342,9 +342,9 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
       arr[5] = [];
       arr[6] = [];
 
-  let times = SunCalc.getTimes(new Date(), data.geometry.geometries[0].coordinates[1], data.geometry.geometries[0].coordinates[0]);
-  const sunrise = moment(times.sunrise).tz(tzlookup(data.geometry.geometries[0].coordinates[1], data.geometry.geometries[0].coordinates[0])).format('k');
-  const sunset = moment(times.sunset).tz(tzlookup(data.geometry.geometries[0].coordinates[1], data.geometry.geometries[0].coordinates[0])).format('k');
+  let times = SunCalc.getTimes(new Date(), data.geometry.coordinates[0][0][1], data.geometry.coordinates[0][0][0]);
+  const sunrise = moment(times.sunrise).tz(tzlookup(data.geometry.coordinates[0][0][1], data.geometry.coordinates[0][0][0])).format('k');
+  const sunset = moment(times.sunset).tz(tzlookup(data.geometry.coordinates[0][0][1], data.geometry.coordinates[0][0][0])).format('k');
   let svgTime = '';
 
   hourly.days = data.properties.periods
