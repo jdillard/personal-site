@@ -26,6 +26,10 @@ if(storage_keys.length == 0 || weather_section.dataset.crag != localStorage.getI
   populate(crags);
 }
 
+/**
+ * Get list of active crags
+ * @param {String} location
+ */
 function getCrags(location) {
   crags = [];
   u('#menu .menu-item').remove();
@@ -59,6 +63,14 @@ function getIssues() {
   });
 }
 
+
+/**
+ * Populates forecast and observations for each crag in array
+ * @param {Array}   crags
+ * @param {Boolean} menu
+ * @param {String}  element
+ * @param {String}  adjacent
+ */
 function populate(crags, menu = true, element = 'weather', adjacent = 'beforeend') {
   let temp_html = '';
   for (let c in crags) {
@@ -330,6 +342,12 @@ function populateForecasts(crag, data = []) {
   populateHourlyForecasts(crag.number, forecasts.periods[0].startTime, eval('hourly_'+crag.office.replace(/\//g, '_').replace(/,/g, '_')));
 }
 
+/**
+ * Populates hourly forecast information
+ * @param {Number} crag_index
+ * @param {Time}   week_start_time
+ * @param {Object} data
+ */
 function populateHourlyForecasts(crag_index, week_start_time, data) {
   let hourly = [];
   //TODO make pretty
