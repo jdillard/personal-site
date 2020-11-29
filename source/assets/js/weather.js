@@ -341,15 +341,8 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
       arr[4] = [];
       arr[5] = [];
       arr[6] = [];
-  let lat, long = '';
-
-  if (data.geometry.geometries[0].type === "Polygon") {
-    lat = data.geometry.geometries[0].coordinates[0][0][1];
-    long = data.geometry.geometries[0].coordinates[0][0][0];
-  } else {
-    lat = data.geometry.geometries[0].coordinates[1];
-    long = data.geometry.geometries[0].coordinates[0];
-  }
+  const lat = data.geometry.coordinates[0][0][1];
+  const long = data.geometry.coordinates[0][0][0];
   let times = SunCalc.getTimes(new Date(), lat, long);
   const sunrise = moment(times.sunrise).tz(tzlookup(lat, long)).format('k');
   const sunset = moment(times.sunset).tz(tzlookup(lat, long)).format('k');
