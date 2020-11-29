@@ -5,56 +5,6 @@ const template_trips = require("./templates/latest_trips.hbs");
 const template_github_activity = require("./templates/github_activity.hbs");
 const template_github_projects = require("./templates/github_projects.hbs");
 
-axios.get('/assets/json/articles.json')
-    .then(function (response) {
-      articles(response.data);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-
-axios.get('/assets/json/trips.json')
-    .then(function (response) {
-      trips(response.data);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-
-axios.get('https://api.github.com/users/jdillard/repos')
-  .then(function (response) {
-    projects(response.data);
-  })
-  .catch(function (error) {
-    // call local file on 403
-    axios.get('/assets/json/projects.json')
-      .then(function (response) {
-        projects(response.data);
-      })
-      .catch(function (error) {
-        projects();
-        console.log(error);
-      });
-    console.log(error);
-  });
-
-axios.get('https://api.github.com/users/jdillard/events')
-  .then(function (response) {
-    activity(response.data);
-  })
-  .catch(function (error) {
-    // call local file on 403
-    axios.get('/assets/json/activity.json')
-      .then(function (response) {
-        activity(response.data);
-      })
-      .catch(function (error) {
-        activity();
-        console.log(error);
-      });
-    console.log(error);
-  });
-
 function timeSince(date, recentDate = new Date()) {
   var seconds = Math.floor((recentDate - date) / 1000);
   var interval = Math.floor(seconds / 31536000);
@@ -142,7 +92,7 @@ function trips(trips) {
 }
 
 function projects(projects = []) {
-  const projects_element = document.getElementById("github-projects");
+  const projects_element = document.getElementById("github");
 
   const projects_list = projects.sort(function(a, b) {
     return b.stargazers_count - a.stargazers_count;
@@ -177,7 +127,7 @@ function projects(projects = []) {
 }
 
 function activity(activities = []) {
-  const activity_element = document.getElementById("github-activity");
+  const activity_element = document.getElementById("github");
   let prev_date = "";
 
   const activity_list = activities.reduce((a, b, i) => {
@@ -282,3 +232,81 @@ function activity(activities = []) {
     }
   activity_element.innerHTML = template_github_activity(activity_list);
 }
+
+function github(githubNav, type) {
+  for (let i = 0; i < githubNav.length; i++) {
+    let name = githubNav[i].getAttribute('data-name');
+    if (name !== type && githubNav[i].classList.contains("light-red")) {
+      githubNav[i].classList.remove("light-red");
+    } else if (name === type && !githubNav[i].classList.contains("light-red")) {
+      githubNav[i].classList.add("light-red");
+    }
+  }
+
+  switch(type) {
+    case "activity":
+      axios.get('https://api.github.com/users/jdillard/events')
+        .then(function (response) {
+          activity(response.data);
+        })
+        .catch(function (error) {
+          // call local file on 403
+          axios.get('/assets/json/activity.json')
+            .then(function (response) {
+              activity(response.data);
+            })
+            .catch(function (error) {
+              activity();
+              console.log(error);
+            });
+          console.log(error);
+        });
+      break;
+    case "projects":
+      axios.get('https://api.github.com/users/jdillard/repos')
+        .then(function (response) {
+          projects(response.data);
+        })
+        .catch(function (error) {
+          // call local file on 403
+          axios.get('/assets/json/projects.json')
+            .then(function (response) {
+              projects(response.data);
+            })
+            .catch(function (error) {
+              projects();
+              console.log(error);
+            });
+          console.log(error);
+        });
+      break;
+  }
+}
+
+axios.get('/assets/json/articles.json')
+    .then(function (response) {
+      articles(response.data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+axios.get('/assets/json/trips.json')
+    .then(function (response) {
+      trips(response.data);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+const githubNav = document.getElementById("github-nav").getElementsByClassName("nav-item");
+
+github(githubNav, "activity");
+
+for (let i = 0; i < githubNav.length; i++) {
+  githubNav[i].onclick = function(){
+    let type = githubNav[i].getAttribute('data-name');
+    github(githubNav, type);
+  };
+}
+
