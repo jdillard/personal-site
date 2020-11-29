@@ -28,10 +28,11 @@ We camp at El Portal.
 
 ## The Big Approach
 
-We decided on Arrowhead Arête, first put up in 1956 by Mark Powell and his
-partner Bill Feuerer, and once regarded as possibly the most continuous
-difficult fifth-class climb in the country. We woke up before dawn, ate, drove
-all the way back into the park to ____ in order to gear up.
+We decided on [Arrowhead Arête](https://www.mountainproject.com/route/106269845/arrowhead-arete),
+first put up in 1956 by Mark Powell and his partner Bill Feuerer, and once
+regarded as possibly the most continuous difficult fifth-class climb in the
+country. We woke up before dawn, ate, drove all the way back into the park to
+Church Bowl in order to gear up.
 
 <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BZtioHTDrLd/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
   <div style="padding:16px;">
@@ -96,10 +97,4 @@ the van right as headlamps were becoming necessay.
 
 We finished the night by sleeping in line to soo if we could get Camp 4
 reservations first thing in the morning.
-
-{: {{site.data.css.info-box}} }
-> **Side Note:** If you plan on backpacking the Pasayten Wilderness during the High Hunt, September 15th through the 25th, make sure to keep this in mind. While we didn't have any issues, I feel it could potentially have an impact on the hunters and/or the vibe of your trip.
-
-{: {{site.data.css.tip-box}} }
-> **Pro Tip:** Prepare for the weather conditions or you'll end up going down it on the way back regardless – guess how we know.
 
