@@ -166,6 +166,7 @@ function getDirection(degree) {
 function iconToSVG(time, icon) {
   switch(icon) {
     case "hot":
+    case "cold":
     case "skc":
     case "wind_skc":
       return time + "_clear";
