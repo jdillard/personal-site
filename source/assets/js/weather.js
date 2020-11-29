@@ -341,10 +341,18 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
       arr[4] = [];
       arr[5] = [];
       arr[6] = [];
+  let lat, long = '';
 
-  let times = SunCalc.getTimes(new Date(), data.geometry.coordinates[0][0][1], data.geometry.coordinates[0][0][0]);
-  const sunrise = moment(times.sunrise).tz(tzlookup(data.geometry.coordinates[0][0][1], data.geometry.coordinates[0][0][0])).format('k');
-  const sunset = moment(times.sunset).tz(tzlookup(data.geometry.coordinates[0][0][1], data.geometry.coordinates[0][0][0])).format('k');
+  if (data.geometry.geometries[0].type === "Polygon") {
+    lat = data.geometry.geometries[0].coordinates[0][0][1];
+    long = data.geometry.geometries[0].coordinates[0][0][0];
+  } else {
+    lat = data.geometry.geometries[0].coordinates[1];
+    long = data.geometry.geometries[0].coordinates[0];
+  }
+  let times = SunCalc.getTimes(new Date(), lat, long);
+  const sunrise = moment(times.sunrise).tz(tzlookup(lat, long)).format('k');
+  const sunset = moment(times.sunset).tz(tzlookup(lat, long)).format('k');
   let svgTime = '';
 
   hourly.days = data.properties.periods
@@ -398,7 +406,8 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
       }
     });
 
-  // if less than 24, fill in the blanks with na.svg and delete the one that don't matter
+  // if less than 24, fill in the blanks with na.svg and delete the one that
+  // don't matter
   for (const [i, value] of hourly.days.entries()) {
     if(value.length < 24) {
       value.sort(function(a, b) { return +a.hour - +b.hour; });
@@ -562,7 +571,9 @@ u('[id^=forecast-]').on("click", ".forecast-day", function(el) {
   const date = moment(el.srcElement.dataset.date).format('dddd').toLowerCase();
   const is_active = (el.srcElement.dataset.active == 'true');
 
-  let hourly_forecast = (window.outerWidth > 480) ? document.getElementById('hourly-forecast-'+crag_index) : document.getElementById('hourly-forecast-'+crag_index+'-'+day_index);
+  let hourly_forecast = (window.outerWidth > 480) ?
+    document.getElementById('hourly-forecast-'+crag_index) :
+    document.getElementById('hourly-forecast-'+crag_index+'-'+day_index);
   let daytime = document.getElementById(crag_index+'-daytime-'+day_index);
   let nighttime = document.getElementById(crag_index+'-nighttime-'+day_index);
   if(is_active) {
