@@ -314,7 +314,7 @@ def create_metros(crags)
       f << '      </form>'+"\n"
       f << '    </section>'+"\n"
       f << "</section>\n"
-      f << '<section id="weather" data-crag="' + slug + '" class="mv4-ns mv3 ph2 center"></section>'+"\n"
+      f << '<section id="weather" data-metro data-crag="' + slug + '" class="mv4-ns mv3 ph2 center"></section>'+"\n"
       f << "<script>\n"
       local_crags[metro].each do |crag|
         create_forecast(f, crag[:office])
