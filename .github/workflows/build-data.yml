@@ -3,7 +3,7 @@ on:
   schedule:
     # Run at 08:15 UTC daily
     # - cron: '*/15 * * * *'
-    - cron: '15 8 * * *'
+    - cron: '30 8 * * *'
 
 jobs: 
   run:
