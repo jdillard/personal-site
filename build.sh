@@ -17,5 +17,4 @@ if [ -n "${INCOMING_HOOK_BODY}" ]; then
   done
 fi
 
-ruby crags.rb
 bundle exec jekyll build --source source
