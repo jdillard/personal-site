@@ -14,17 +14,19 @@ cover: false
 
 When your good buddy does #vanlife, you have to visit in Yosemite.
 
-## The First Night
+## Arriving
 
 After being picked up in Fresno and stocking up on supplies, we drove towards
-the valley and into that iconic view.
+the valley. A drive he had done several time, but was new to me. I knew to
+look, but not when.
 
 He had spent a few weeks in the Valley earlier in the season so he already had
-some spots scoped out to camp.
+some spots scoped out to camp. We camp in an employee lot
 
-We camp in an employee lot and get kicked out. Banging. Flashlight.
+ I'm not feeling so well and cough. Get up to get gatorade from front seat.
+ Leave the front curtain open. We get kicked out. Banging. Flashlight.
 
-We camp at El Portal.
+We camp at El Portal. Make it as level as we can and pass out.
 
 ## The Big Approach
 
