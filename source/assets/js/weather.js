@@ -17,14 +17,10 @@ const weather_section = document.getElementById("weather");
 
 let crags = [];
 let storage_keys = Object.keys(localStorage).filter(word => word.startsWith("crag-"));
-if(storage_keys.length == 0 || weather_section.dataset.crag != localStorage.getItem('region-selector')) {
-  getCrags(weather_section.dataset.crag);
-} else {
-  for (let i=0; i < storage_keys.length; i++) {
-    crags.push(JSON.parse(localStorage[storage_keys[i]]));
-  }
-  populate(crags);
-}
+
+const stateSel = document.getElementById("stateSel");
+const citySel = document.getElementById("citySel");
+const selectMetro = document.getElementById("selectMetro");
 
 /**
  * Get list of active crags
@@ -576,6 +572,33 @@ function normalizePage() {
   });
 }
 
+if (document.body.contains(weather_section)) {
+  if ((storage_keys.length == 0) || (weather_section.dataset.crag != localStorage.getItem('region-selector'))) {
+    getCrags(weather_section.dataset.crag);
+  } else {
+    for (let i=0; i < storage_keys.length; i++) {
+      crags.push(JSON.parse(localStorage[storage_keys[i]]));
+    }
+    populate(crags);
+  }
+
+  stateSel.onchange = function () {
+    citySel.length = 0;
+    states[this.value].split("|").forEach(city => citySel.options[citySel.options.length] = new Option(city, city));
+    selectMetro.href = '/crags/' + slugify(states[this.value].split("|")[0].toLowerCase()) + '-' + slugify(this.value.toLowerCase()) + '-weather.html';
+  }
+
+  citySel.onchange = function () {
+    selectMetro.href = '/crags/' + slugify(this.value) + '-' + slugify(stateSel.value.toLowerCase()) + '-weather.html';
+  }
+
+  document.getElementById("clear-cache").addEventListener("click", function(event){
+    localStorage.clear();
+    getCrags('austin-tx');
+    event.preventDefault();
+  });
+}
+
 // load the hourly forecast for a particular day
 u('[id^=forecast-]').on("click", ".forecast-day", function(el) {
   const crag_index = el.srcElement.dataset.crag;
@@ -680,12 +703,6 @@ u('.crag-status').on( "click", function(el) {
   }
 });
 
-document.getElementById("clear-cache").addEventListener("click", function(event){
-  localStorage.clear();
-  getCrags('austin-tx');
-  event.preventDefault();
-});
-
 u("#settings-toggle").on( "click", function() {
   if(u("#settings").hasClass('open')) {
     u("#settings").removeClass('open');
@@ -711,20 +728,6 @@ u("#issues-toggle").on( "click", function() {
     getIssues();
   }
 });
-
-const stateSel = document.getElementById("stateSel");
-const citySel = document.getElementById("citySel");
-const selectMetro = document.getElementById("selectMetro");
-
-stateSel.onchange = function () {
-  citySel.length = 0;
-  states[this.value].split("|").forEach(city => citySel.options[citySel.options.length] = new Option(city, city));
-  selectMetro.href = '/crags/' + slugify(states[this.value].split("|")[0].toLowerCase()) + '-' + slugify(this.value.toLowerCase()) + '-weather.html';
-}
-
-citySel.onchange = function () {
-  selectMetro.href = '/crags/' + slugify(this.value) + '-' + slugify(stateSel.value.toLowerCase()) + '-weather.html';
-}
 
 // normalize all crags hourly settings on window resize
 window.addEventListener("resize", normalizePage);

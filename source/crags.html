@@ -3,6 +3,8 @@
 layout: page
 title: Climbing Weather
 description: Real-time, precipitation-focused reports of current, past, and forecasted climbing weather for local climbing crags
+js_includes:
+  - weather.js
 ---
 
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
@@ -10,6 +12,27 @@ description: Real-time, precipitation-focused reports of current, past, and fore
 precipitation-focused reports of current, past, and future climbing weather for crags located in the United States, sourced
 from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.
 </section>
+
+<p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show How It Works</p>
+<div id="settings" class="overflow-hidden" style="display:none;">
+  <div class="mv2 ph2 f6 tc pv2 center">
+    <p class="measure lh-copy center">
+      Each crag has current/past <strong>observations</strong> and future
+      <strong>forecasts</strong>.
+    </p>
+    <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
+    <p class="measure lh-copy center">
+      <strong>Observations</strong> are pulled near real time and come from the
+      nearest weather station to the crag. The distance that is displayed
+      describes the distance from the station to the crag.
+    </p>
+    <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
+    <p class="measure lh-copy center">
+      <strong>Forecasts</strong> are updated about every 24 hours and the
+      forecasting models are based on a small region surrounding the crag.
+    </p>
+  </div>
+</div>
 
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
 <h2 class="bb b--moon-gray">Crags by Nearest Metro</h2>
