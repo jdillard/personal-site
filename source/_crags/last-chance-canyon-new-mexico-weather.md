@@ -72,7 +72,7 @@ precipitation-focused reports of current, past, and forecasted climbing weather 
 
 <script>
   var weekly_MAF_16_149 = null
-  var hourly_MAF_16_149 = {"correlationId":"4b98870","title":"Unexpected Problem","type":"https://api.weather.gov/problems/UnexpectedProblem","status":500,"detail":"An unexpected problem has occurred.","instance":"https://api.weather.gov/requests/4b98870"}
+  var hourly_MAF_16_149 = {"correlationId":"29a66dc","title":"Unavailable Resource","type":"https://api.weather.gov/problems/UnavailableWebService","status":503,"detail":"The resource you requested is currently unavailable.  Please try again later.","instance":"https://api.weather.gov/requests/29a66dc"}
   var crags_config = [
   {
     "name": "Last Chance Canyon",
