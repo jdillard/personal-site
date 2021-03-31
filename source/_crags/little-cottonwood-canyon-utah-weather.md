@@ -64,7 +64,7 @@ precipitation-focused reports of current, past, and forecasted climbing weather 
 
 <script>
   var weekly_SLC_102_165 = null
-  var hourly_SLC_102_165 = {"correlationId":"abf20a0","title":"Forecast Grid Expired","type":"https://api.weather.gov/problems/ForecastGridExpired","status":503,"detail":"The requested forecast grid was issued 2021-03-29T10:14:06+00:00 and has expired.","instance":"https://api.weather.gov/requests/abf20a0"}
+  var hourly_SLC_102_165 = {"correlationId":"15acfdb7","title":"Zone Does Not Exist","type":"https://api.weather.gov/problems/InvalidZone","status":404,"detail":"Public zone UTZ105 does not exist","instance":"https://api.weather.gov/requests/15acfdb7"}
   var crags_config = [
   {
     "name": "Little Cottonwood Canyon",
