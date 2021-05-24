@@ -634,6 +634,6 @@
 
 //! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 
-//! version : 0.5.32
+//! version : 0.5.33
 
 //! version : 2.29.1
