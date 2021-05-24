@@ -10,8 +10,8 @@
   "trip.js": "js/trip.74761076d13939867150.js",
   "tripArchive.js": "js/tripArchive.a5b3d601021a6f21b793.js",
   "weather.js": "js/weather.ec79891d2e602ddb9ecd.js",
-  "js/commons.729e3029346b66c2cac1.js.LICENSE.txt": "js/commons.729e3029346b66c2cac1.js.LICENSE.txt",
-  "js/index.203a9ab813c4c1f45dd8.js.LICENSE.txt": "js/index.203a9ab813c4c1f45dd8.js.LICENSE.txt",
-  "js/post.9f62b26b3f0c1b07bfc1.js.LICENSE.txt": "js/post.9f62b26b3f0c1b07bfc1.js.LICENSE.txt",
-  "js/weather.ec79891d2e602ddb9ecd.js.LICENSE.txt": "js/weather.ec79891d2e602ddb9ecd.js.LICENSE.txt"
+  "js/commons.js.LICENSE.txt": "js/commons.729e3029346b66c2cac1.js.LICENSE.txt",
+  "js/index.js.LICENSE.txt": "js/index.203a9ab813c4c1f45dd8.js.LICENSE.txt",
+  "js/post.js.LICENSE.txt": "js/post.9f62b26b3f0c1b07bfc1.js.LICENSE.txt",
+  "js/weather.js.LICENSE.txt": "js/weather.ec79891d2e602ddb9ecd.js.LICENSE.txt"
 }
