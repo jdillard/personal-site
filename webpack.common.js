@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require("path");
-const ManifestPlugin = require('webpack-manifest-plugin');
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require("autoprefixer");
@@ -41,7 +41,7 @@ module.exports = {
           handlebarsLoader: {}
       }
     }),
-    new ManifestPlugin({
+    new WebpackManifestPlugin({
       fileName: '../../_data/asset-manifest.json'
     }),
     new WebpackCleanupPlugin()
