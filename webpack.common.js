@@ -15,7 +15,7 @@ module.exports = {
           chunks: 'all',
           enforce: true
         },
-        vendors: {
+        defaultVendors: {
           filename: 'js/[name].[chunkhash].js'
         }
       }
@@ -59,9 +59,10 @@ module.exports = {
     weather: "./source/assets/js/weather.js"
   },
   output: {
-    path: path.resolve(__dirname, 'source/assets/dist/'),
+    path: path.resolve(__dirname, 'source/assets/dist'),
+    publicPath: '',
     filename: "js/[name].[chunkhash].js",
-    //clean: true
+    clean: true
   },
   module: {
     rules: [
