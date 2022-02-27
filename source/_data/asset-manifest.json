@@ -1,16 +1,13 @@
 {
-  "archive.js": "js/archive.74f8e9f4e30b8ed7f53f.js",
-  "commons.js": "js/commons.ebf9f6579b30a776a009.js",
-  "getInvolved.js": "js/getInvolved.3ce1c63a2f86bc3a18e5.js",
-  "index.js": "js/index.00267fb8a9ec54081374.js",
-  "library.js": "js/library.624a1ef134ee19fb5411.js",
-  "logBook.js": "js/logBook.74d1fb349cfa905bf053.js",
-  "post.js": "js/post.57fcf5ebe9fe2a4ef7c1.js",
-  "trad.js": "js/trad.e934d854bd59d3df749d.js",
-  "trip.js": "js/trip.02eeaabc428521701fc6.js",
-  "tripArchive.js": "js/tripArchive.d1f13c2d82f2b5a1f54e.js",
-  "weather.js": "js/weather.23dd69ec76a54ae61d14.js",
-  "js/commons.js.LICENSE.txt": "js/commons.ebf9f6579b30a776a009.js.LICENSE.txt",
-  "js/index.js.LICENSE.txt": "js/index.00267fb8a9ec54081374.js.LICENSE.txt",
-  "js/weather.js.LICENSE.txt": "js/weather.23dd69ec76a54ae61d14.js.LICENSE.txt"
+  "archive.js": "js/archive.a8b2a1ee309328bf1025.js",
+  "index.js": "js/index.12bc7bbc51f7a23e199a.js",
+  "post.js": "js/post.2bea87578d9888761601.js",
+  "commons.js": "js/commons.e4d59016860668475141.js",
+  "library.js": "js/library.4142883bff2f666d806b.js",
+  "logBook.js": "js/logBook.91a2a8dd273c683180d2.js",
+  "getInvolved.js": "js/getInvolved.d92616e3194ca313914c.js",
+  "trad.js": "js/trad.f5277eaa71f53f3ba567.js",
+  "trip.js": "js/trip.8fcf087dfcc40956c6aa.js",
+  "tripArchive.js": "js/tripArchive.5c0624b8395b48e5dbfa.js",
+  "weather.js": "js/weather.dcb7a1b03a128c5ec493.js"
 }
