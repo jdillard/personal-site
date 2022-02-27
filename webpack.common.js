@@ -1,7 +1,7 @@
+//process.traceDeprecation = true
 const webpack = require('webpack');
 const path = require("path");
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
-const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require("autoprefixer");
 
@@ -43,8 +43,7 @@ module.exports = {
     }),
     new WebpackManifestPlugin({
       fileName: '../../_data/asset-manifest.json'
-    }),
-    new WebpackCleanupPlugin()
+    })
   ],
   entry: {
     archive: "./source/assets/js/archive.js",
@@ -61,7 +60,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'source/assets/dist/'),
-    filename: "js/[name].[chunkhash].js"
+    filename: "js/[name].[chunkhash].js",
+    //clean: true
   },
   module: {
     rules: [
