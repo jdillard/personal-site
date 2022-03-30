@@ -23,7 +23,7 @@ Our original plan was a 3 day trip that started on Lopez Island, used [Jones
 Island State Park](https://parks.state.wa.us/525/Jones-Island) as a basecamp,
 and ended back on Lopez Island.
 
-![Salish Sea Itinerary](/assets/images/trips/kayaking-san-juans-itinerary.png "Salish Sea Itinerary"){: .shadow-5.oversized}{: loading="lazy"}<small><i>The original route we had mapped out based on [Steph Abegg's trip report](http://www.stephabegg.com/home/tripreports/washington/olympics/sanjuanskayak).</i></small>
+![Salish Sea Itinerary](/assets/images/trips/kayaking-san-juans-itinerary.png "Salish Sea Itinerary"){: .shadow-5.oversized}{: loading="lazy"}<small><i>The original route we had mapped out based on [Steph Abegg's trip report](https://sites.google.com/stephabegg.com/washington/tripreports/sanjuans).</i></small>
 
 For reasons I'll cover later, we ended up using [Turn Island Marine State Park](https://parks.state.wa.us/295/Turn-Island)
 as a basecamp instead. Even though we didn't stick to the planned iternary it
