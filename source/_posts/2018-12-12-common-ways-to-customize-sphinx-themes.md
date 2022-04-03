@@ -255,5 +255,3 @@ Then build the desired logic into the theme's Jinja templates:
     {%- set page_field = meta.get('fieldname') %}
 {%- endif %}{% endraw %}
 ```
-
-{% include feedback.html %}

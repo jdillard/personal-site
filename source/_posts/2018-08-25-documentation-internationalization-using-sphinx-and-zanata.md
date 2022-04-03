@@ -170,5 +170,3 @@ extension to auto-generate a [multi-lingual sitemap](https://en.wikipedia.org/wi
 {: {{site.data.css.info-box}} }
 > **Note:** Shout out to [Frank Kloeker](https://github.com/eumel8) for helping
 me get through this the first time with his [i18n docs](http://docs-i18n.readthedocs.io/en/latest/sphinx.html).
-
-{% include feedback.html %}
