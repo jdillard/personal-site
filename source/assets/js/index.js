@@ -55,6 +55,8 @@ function summarizeAction(type, words) {
       return "Made a " + words + " on a commit in";
     case "MemberEvent":
       return words + " a collaborator to";
+    case "ReleaseEvent":
+      return "Released " + words + " for";
   }
 }
 
@@ -184,6 +186,9 @@ function activity(activities = []) {
         case "MemberEvent":
           b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1);
           b.link = "https://github.com/" + b.repo.name;
+        case "ReleaseEvent":
+          b.words = '<strong>' + b.payload.release.name + '</strong>';
+          b.link = b.payload.release.html_url
       }
       if(b.created_at != prev_date) {
         let dates = [];
