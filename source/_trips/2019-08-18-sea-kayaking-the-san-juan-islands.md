@@ -7,7 +7,7 @@ type: kayaking
 published: true
 categories:
   - kayaking
-  - trip reports
+  - washington
 thumb: kayaking-san-juans-itinerary-thumb.png
 cover: false
 ---

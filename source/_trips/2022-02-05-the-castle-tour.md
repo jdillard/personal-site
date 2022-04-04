@@ -7,7 +7,7 @@ type: skiing
 published: false
 categories:
   - skiing
-  - trip reports
+  - washington
 thumb: the-castle-tour-thumb.jpg
 cover: false
 ---

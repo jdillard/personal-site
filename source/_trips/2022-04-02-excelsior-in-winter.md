@@ -7,7 +7,7 @@ type: skiing
 published: false
 categories:
   - skiing
-  - trip reports
+  - washington
 thumb: excelsior-in-winter-thumb.jpg
 cover: false
 ---

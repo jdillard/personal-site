@@ -7,7 +7,7 @@ type: climbing
 published: false
 categories:
   - climbing
-  - trip reports
+  - california
 thumb: yosemite-at-dawn-thumb.png
 cover: false
 ---

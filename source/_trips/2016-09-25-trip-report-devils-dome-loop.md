@@ -7,7 +7,7 @@ type: climbing
 published: true
 categories:
   - backpacking
-  - trip reports
+  - washington
 cover: devils-dome
 thumb: crater-mountain-thumb.jpg
 ---
