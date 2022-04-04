@@ -21,12 +21,7 @@ We decided to tour, 3 person team. Met at whitaker bunkhouse. Got to gate at
 
 ## The Approach
 
-Since there were three of us, we decided to do one double touring kayak and one
-single, with a total of five dry bags between us. We had recieved advice that we
-wouldn't need a full wet suit, but according to [the 120&deg; Rule](https://www.gobair.org/Resources/Documents/Cold_Water.pdf)
-and the conditions we encountered wearing at least a farmer john would have put
-us in a more appropriate safety margin. Dry suits would have obviously been
-ideal.
+Bootpack up to forest service road, follow scenic path, turn off by lake.
 
 ![The Castle Approach](/assets/images/trips/the-castle-tour-trees.jpg "The Castle Approach"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Winding our way through the trees after leaving the forest service road, with Pinnacle in the background.</i></small>
 
