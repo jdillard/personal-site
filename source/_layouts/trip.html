@@ -13,7 +13,7 @@ js_includes:
                 <a class="fl no-underline fancy-link relative gray hover-light-red" href="https://github.com/jdillard/personal-site/commits/master/{{ page.path }}" target="_blank" rel="noopener"><time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time></a>
                 {% if page.categories.size > 0 %}
                     {% for category in page.categories %}
-                        <a data-proofer-ignore class="no-underline fancy-link relative gray hover-light-red" href="/blog/archive.html#{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %} / {% endunless %}
+                        <a data-proofer-ignore class="no-underline fancy-link relative gray hover-light-red" href="/trips/archive.html#{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %} / {% endunless %}
                     {% endfor %}
                 {% endif %}
             </div>
