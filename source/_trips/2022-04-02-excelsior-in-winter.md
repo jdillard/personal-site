@@ -45,7 +45,7 @@ and saw starfish crawling on the rocks and later that night we were lucky enough
 to be able to hear whales breaching off in the distance as they migrated down
 the channel.
 
-![The West Face of Excelsior](/assets/images/trips/excelsior-in-winter-west-face.jpg "The West Face of Excelsior"){: .shadow-5.oversized}{: loading="lazy"}<small><i>The West face of Excelsior provides the chance for the longest run.</i></small>
+![The West Face of Excelsior](/assets/images/trips/excelsior-in-winter-west-face.jpg "The West Face of Excelsior"){: .shadow-5.oversized}{: loading="lazy"}<small><i>The West bowl is much shallower, resulting in shorter runs.</i></small>
 
 Since we had planned on having running water avialable at our original campsite,
 and Turn Island didn't provide that, we had to make a trek into Friday Harbor
