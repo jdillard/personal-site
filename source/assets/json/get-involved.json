@@ -49,6 +49,20 @@
       ]
    },
    {
+      "name": "Protect Our Winters",
+      "url": "https://protectourwinters.org/",
+      "desc": "Protect the places and lifestyles you love from climate change.",
+      "social": {
+         "instagram": "https://www.instagram.com/protectourwinters"
+      },
+      "states": [
+         "All"
+      ],
+      "types": [
+         "skiing"
+      ]
+   },
+   {
       "name": "Yosemite Facelift",
       "url": "http://www.yosemiteclimbing.org/faqs/",
       "desc": "Trash pick up event, for and by climbers, that takes place throughout the park.",
