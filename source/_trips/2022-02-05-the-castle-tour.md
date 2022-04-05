@@ -4,7 +4,7 @@ title: 'Trip Report: The Castle Tour'
 date: 2022-02-05
 state: Washington
 type: skiing
-published: false
+published: true
 categories:
   - skiing
   - washington
@@ -12,50 +12,66 @@ thumb: the-castle-tour-thumb.jpg
 cover: false
 ---
 
-We decided to tour, 3 person team. Met at whitaker bunkhouse. Got to gate at
-9am and parked at the __ lot.
-
+We met that morning at [Whittaker's Bunkhouse](https://goo.gl/maps/gKPFG59oSuxBbYRK9)
+for a second round of coffee and breakfast, then left in time to get to the
+gate to Paradise at Longmire right before 9am, parking at the
+[Narada Falls parking lot](https://goo.gl/maps/86cbrbDi7zrgz1Ap8).
 
 {: {{site.data.css.info-box}} }
-> **Note:** Note about open and closing times. twitter account. tire chains.
+> **Note:** The gate to Paradise at Longmire opens at 9am and closes at 4pm
+> during the winter, so plan accordingly. You can follow the
+> [MountRainierNPS](https://twitter.com/MountRainierNPS) Twitter account for
+> real time updates on when the gate will open for a given day. Also make sure
+> to bring tire chains.
 
 ## The Approach
 
-Bootpack up to forest service road, follow scenic path, turn off by lake.
+We walked past the bathrooms to the end of the short service road and started
+bootpacking up to Stevens Canyon Road. We followed the scenic flat road until
+we got to Reflection Lakes, then cut right to start skinning through the trees
+towards The Castle.
 
-![The Castle Approach](/assets/images/trips/the-castle-tour-trees.jpg "The Castle Approach"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Winding our way through the trees after leaving the forest service road, with Pinnacle in the background.</i></small>
+![The Castle Approach](/assets/images/trips/the-castle-tour-trees.jpg "The Castle Approach"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Winding our way through the trees after leaving Stevens Canyon Road, with Pinnacle Peak in the background.</i></small>
 
-Since we had planned on having running water avialable at our original campsite,
-and Turn Island didn't provide that, we had to make a trek into Friday Harbor
-the next day. We decided to wait until lunch time so we could grab a bite to eat
-and try to hit the slack tide, but not so late that it was high tide while we 
-were there and our potential landing areas would be underwater.
+We worked our way through the trees until we got to the tree line just above
+5,600ft, making for about 700ft of gain since leaving the road. The timing put
+sun just coming over the ridge line, offering an ominous silouette of The
+Castle in what remained of the low hanging clouds.
 
 ![The Castle Silhouette](/assets/images/trips/the-castle-tour-silhouette.jpg "The Castle Silhouette"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The sun rising behind The Castle as the clouds cook off.</i></small>
 
-The closer to Friday Harbor we got the more overwhelming it was due to the
-scattered boats of all sizes, ferries coming to and from the harbor, and
-sea planes landing and taking off with tourists. We carefully made it into to
-dock and were able to enjoy some fresh coffee and food before doing some
-shopping for beer, cheese, and sausage -- oh, and water.
+For most of the way you can turn around and get glimpses of Mount Rainier
+behind you, with more an more becomming visable as you gain elevation. Since,
+it was my first time in the Tatoosh, is was great getting a summary of the
+terrain and to talk about future objectives as we ran our pointed fingers all
+over the mountain.
 
 ![Rainier in the Rearview](/assets/images/trips/the-castle-tour-rainier.jpg "Rainier in the Rearview"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Mount Rainier looms behind you on the majority of the approach, giving you a good excuse to turn around and catch your breath.</i></small>
 
-We got back to camp where we were greeted by a large group of kayakers that
-turned out to be members of the Washington Kayak Club. They could tell we were
-beginners and gave us a bunch of helpful sea kayaking tips that made us more
-confident going forward.
+While the final push above tree line, another 600ft of gain, was a little technical with the iced up
+snow, you couldn't help but stare into the sun as it rose out of the belly of
+the saddle.
 
 ![The Castle Saddle](/assets/images/trips/the-castle-tour-saddle.jpg "The Castle Saddle"){: .shadow-5.oversized}{: loading="lazy"}<small><i>The last push up to the saddle of The Castle, right as the Sun crests over the ridge.</i></small>
 
-## Ripping the South Slope
+## Skiing the South Slope
 
-We woke up early to pack so that we could catch the slack tide back, which
-worked out perfectly. Crossing the San Juan Channel when everything was
-completely still and not a boat in sight was a totally different experience.
-We saw dolphins in the distance and even had some curious seals cruising around
-our kayaks and poking there little bald heads up to keep an eye on us.
+Once we got eyes on the South face we knew we had to give it a go, but given
+that it was South facing we wanted to get a closer look before making the final
+decision. Since it was still early the day, we made our way up to the base of
+the rock and ripped skins. The snow was nice an buttery as we dropped all the
+way down, before cutting over and skinng back up to the ridge.
 
 ![The South Slope of Castle](/assets/images/trips/the-castle-tour-south-slope.jpg "The South Slope of Castle"){: .shadow-5.oversized}{: loading="lazy"}<small><i>Our tracks on the South slope of The Castle.</i></small>
 
-Summary of decent.
+## The Descent
+
+We skiied our way down the tree line where I started to notice my binding was
+loose, realizing no on the team had any repair tools (I know have a repair
+kit), but luckily a pair of girls stopped and leant me there Leatherman Signal
+with the bit extension to adjust my binding back to the correct length.
+
+Besides that, eveything went smooth through the trees, just make sure you don't
+end up in a terrain trap as the terrain is very variable through that section.
+We got a last set of turns on the hill down to the service road and it ended up
+being a dreamy way to end the day.
