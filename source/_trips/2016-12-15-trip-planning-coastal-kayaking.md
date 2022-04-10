@@ -6,6 +6,7 @@ published: true
 state: Texas
 type: kayaking
 categories:
+  - kayaking
   - trip planning
   - texas
 thumb: kayak-trip-planning-thumb.png
