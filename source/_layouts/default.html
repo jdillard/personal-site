@@ -27,7 +27,14 @@
 
     {% seo %}
 </head>
-<body class="sans-serif bg-white" {% if page.url != "/" %}style="background-image: url('/assets/images/svg/topography.svg');"{% endif %}>
+{% if page.url == "/" %}
+  {% assign bg_image = '' %}
+{% page.url contains '/blog/' %}
+  {% capture bg_image %} style="background-image: url('/assets/images/svg/circuit-board.svg');" {% endcapture %}
+{% elsif page.layout == "trip" or page.layout == "page" %}
+  {% capture bg_image %} style="background-image: url('/assets/images/svg/topography.svg');" {% endcapture %}
+{% endif %}
+<body class="sans-serif bg-white" {{ bg_image }}>
 
   {% include header.html %}
 
