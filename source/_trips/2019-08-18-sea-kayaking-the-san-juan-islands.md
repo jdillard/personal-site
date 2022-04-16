@@ -9,7 +9,7 @@ categories:
   - kayaking
   - washington
 thumb: kayaking-san-juans-itinerary-thumb.png
-cover: false
+cover: sea-kayaking-san-juan-islands
 ---
 
 In an attempt to mix things up, some friends and I decided to go on our first

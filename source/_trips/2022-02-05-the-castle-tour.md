@@ -9,7 +9,7 @@ categories:
   - skiing
   - washington
 thumb: the-castle-tour-thumb.jpg
-cover: false
+cover: the-castle-tour
 ---
 
 We met that morning at [Whittaker's Bunkhouse](https://goo.gl/maps/gKPFG59oSuxBbYRK9)

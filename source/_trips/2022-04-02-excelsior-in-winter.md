@@ -9,7 +9,7 @@ categories:
   - skiing
   - washington
 thumb: excelsior-in-winter-thumb.jpg
-cover: false
+cover: excelsior-in-winter
 ---
 
 In an attempt to mix things up, some friends and I decided to go on our first
