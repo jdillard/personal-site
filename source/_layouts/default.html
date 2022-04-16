@@ -29,7 +29,7 @@
 </head>
 {% if page.url == "/" %}
   {% assign bg_image = '' %}
-{% page.url contains '/blog/' %}
+{% elsif page.url contains '/blog/' %}
   {% capture bg_image %} style="background-image: url('/assets/images/svg/circuit-board.svg');" {% endcapture %}
 {% elsif page.layout == "trip" or page.layout == "page" %}
   {% capture bg_image %} style="background-image: url('/assets/images/svg/topography.svg');" {% endcapture %}
