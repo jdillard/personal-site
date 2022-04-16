@@ -8,28 +8,39 @@ cover: false
 {% assign sorted = (site.trips | sort: 'date') | reverse %}
 {% for post in sorted %}
 
-<article class="sans-serif center mw6-5 f5 lh-copy ph3 mv3 pt3-ns pt2 pb3 hide-child hover-bg-near-white bl bw2 b--white hover-b--light-red">
-    <header>
-        <h2 class="f2-ns f3 lh-title mb3 mt2 sans-serif"><a class="black-70 hover-light-red no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
-    </header>
-    <section class="f5-ns f6 fw3 mb3 lh-copy mid-gray">
-        <p>
-            {{ post.excerpt | strip_html }}
-        </p>
-    </section>
-    <footer class="gray f7 fw1-ns fw4 flex items-center justify-between">
-        <time class="mr2" datetime="{{ post.date | date: "%Y-%m-%d" }}">
-            {{ post.date | date: "%B %d, %Y" }}
-        </time>
-        <!--show Read More link/button on parent hover-->
-        <a class="br-pill b light-red hover-white hover-bg-light-red no-underline ba grow pv1 ph3 dib inline-flex items-center child mr3" href="{{ post.url }}">
-            Read More
-            <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
-                <title>chevronRight icon</title>
-                <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
-            </svg>
+<article style="margin-left: -8px;margin-right: -8px;" class="sans-serif center f5 lh-copy mv3 pt3-ns pt2 pb3 hide-child hover-bg-near-white bl bw2 b--white hover-b--light-red">
+    <div style="margin-left: -50px;width: 25%;" class="fl pr3-ns db-ns dn mb4 mb0-ns w-100">
+        <a href="{{ post.url }}">
+            <img src="/assets/images/trips/{{ post.thumb }}" class="db shadow-4" alt="Trip Report: Excelsior in Winter" loading="lazy">
         </a>
-    </footer>
+    </div>
+    <div class="fr w-80-ns">
+        <header>
+            <h2 class="f2-ns f3 lh-title mb3 mt2 sans-serif"><a class="black-70 hover-light-red no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
+        </header>
+        <section class="f5-ns f6 fw3 mb3 lh-copy mid-gray">
+            <p>{{ post.excerpt | strip_html }}</p>
+        </section>
+        <footer class="gray f7 fw1-ns fw4 flex items-center justify-between">
+            <div>
+                <time class="mr2" datetime="{{ post.date | date: "%Y-%m-%d" }}">
+                    {{ post.date | date: "%B %d, %Y" }}
+                </time>
+                {% for category in post.categories %}
+                <a class="f7 link dim br2 ph2 mb2 dib white bg-silver" href="/trips/archive.html#{{ category }}">{{ category }}</a>
+                {% endfor %}
+            </div>
+            <!--show Read More link/button on parent hover-->
+            <a class="br-pill b light-red hover-white hover-bg-light-red no-underline ba grow pv1 ph3 dib inline-flex items-center child mr3" href="{{ post.url }}">
+                Read More
+                <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+                    <title>chevronRight icon</title>
+                    <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+                </svg>
+            </a>
+        </footer>
+    </div>
+    <div class="cb"></div>
 </article>
 {% endfor %}
 
