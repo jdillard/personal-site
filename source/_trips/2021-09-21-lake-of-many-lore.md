@@ -4,7 +4,7 @@ title: 'Trip Report: Lake of Many Lore'
 date: 2021-09-21
 state: Washington
 type: kayaking
-published: false
+published: true
 categories:
   - kayaking
   - washington
@@ -19,12 +19,19 @@ way to see it first hand.
 
 ![Makeshift Guidebook](/assets/images/trips/lake-of-many-lore-guidebook.jpg "Makeshift Guidebook"){: .shadow-5.oversized}{: loading="lazy"} <small><i>A makeshift guidebook made from an issue of [Douglasia](https://www.wnps.org/douglasia).</i></small>
 
-## Various Carnivorous Plants
+We took my inflatable pack raft and three piece Easy Rider kayak carefully down
+to the water as the bog has a sensative border of soil floating on water.
 
-![Yellow pitcher plant](/assets/images/trips/lake-of-many-lore-yellow-pitcher.jpg "Yellow pitcher plant"){: .shadow-5.oversized}{: loading="lazy"}<small><i>Sarracenia flava, yellow pitcher plant. Native along the coastal plain from New Jersey to Alabama.</i></small>
+## Various Carnivorous Plants
 
 Along the edges of the bog we were able to find common sundew as well as yellow
 and purple pitcher plants.
+
+
+![Yellow pitcher plant](/assets/images/trips/lake-of-many-lore-yellow-pitcher.jpg "Yellow pitcher plant"){: .shadow-5.oversized}{: loading="lazy"}<small><i>Sarracenia flava, yellow pitcher plant. Native along the coastal plain from New Jersey to Alabama.</i></small>
+
+The yellow pitcher plants were most prolific and are propegating more each
+year.
 
 ![Purple pitcher plant](/assets/images/trips/lake-of-many-lore-purple-pitcher.jpg "Purple pitcher plant"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Sarracenia purpurea, purple pitcher plant.</i></small>
 
@@ -36,10 +43,11 @@ Unfortunately, the venus flytraps remained elusive. Perhaps we were too late in
 the season or perhaps they finally perished, being as they come from quite a
 different climate in the Carolinas and Florida region.
 
-It turns out in recent years the lake was almost developed into waterfront
-properties, but after 3 years of negotiations, the [Skagit Land
-Trust](https://www.skagitlandtrust.org/) was able to secure the purchase of the
-land and thus it's protection.
+{: {{site.data.css.info-box}} }
+> **Note**: It turns out in recent years the lake was almost developed into
+> waterfront properties, but after 3 years of negotiations, the [Skagit Land
+> Trust](https://www.skagitlandtrust.org/) was able to secure the purchase of
+> the land and thus it's protection.
 
 ## Log Island
 
