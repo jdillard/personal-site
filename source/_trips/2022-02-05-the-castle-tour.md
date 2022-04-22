@@ -8,7 +8,10 @@ published: true
 categories:
   - skiing
   - washington
-thumb: the-castle-tour-thumb.jpg
+image:
+  path: /assets/images/trips/the-castle-tour-thumb.jpg
+  width: 175
+  height: 131
 cover: the-castle-tour
 ---
 

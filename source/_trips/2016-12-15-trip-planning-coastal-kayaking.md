@@ -9,7 +9,10 @@ categories:
   - kayaking
   - trip planning
   - texas
-thumb: kayak-trip-planning-thumb.png
+image:
+  path: /assets/images/trips/kayak-trip-planning-thumb.jpg
+  width: 175
+  height: 131
 cover: coastal-kayaking
 ---
 

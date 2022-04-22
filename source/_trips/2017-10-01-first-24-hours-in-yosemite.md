@@ -8,7 +8,10 @@ published: false
 categories:
   - climbing
   - california
-thumb: yosemite-at-dawn-thumb.png
+image:
+  path: /assets/images/trips/yosemite-at-dawn-thumb.jpg
+  width: 175
+  height: 131
 cover: false
 ---
 

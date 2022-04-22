@@ -8,7 +8,10 @@ published: false
 categories:
   - skiing
   - washington
-thumb: table-mountain-circumnav-thumb.jpg
+image:
+  path: /assets/images/trips/table-mountain-circumnav-thumb.jpg
+  width: 175
+  height: 131
 cover: table-mountain-circumnav
 ---
 

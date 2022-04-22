@@ -8,8 +8,11 @@ published: true
 categories:
   - backpacking
   - washington
+image:
+  path: /assets/images/trips/crater-mountain-thumb.jpg
+  width: 175
+  height: 131
 cover: devils-dome
-thumb: crater-mountain-thumb.jpg
 ---
 
 

@@ -8,7 +8,10 @@ published: true
 categories:
   - kayaking
   - washington
-thumb: lake-of-many-lore-thumb.jpg
+image:
+  path: /assets/images/trips/lake-of-many-lore-thumb.jpg
+  width: 175
+  height: 131
 cover: false
 ---
 

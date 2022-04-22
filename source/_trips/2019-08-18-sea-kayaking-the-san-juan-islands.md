@@ -8,7 +8,10 @@ published: true
 categories:
   - kayaking
   - washington
-thumb: kayaking-san-juans-itinerary-thumb.png
+image:
+  path: /assets/images/trips/kayaking-san-juans-itinerary-thumb.jpg
+  width: 175
+  height: 131
 cover: sea-kayaking-san-juan-islands
 ---
 

@@ -8,7 +8,10 @@ published: true
 categories:
   - skiing
   - washington
-thumb: excelsior-in-winter-thumb.jpg
+image:
+  path: /assets/images/trips/excelsior-in-winter-thumb.jpg
+  width: 175
+  height: 131
 cover: excelsior-in-winter
 ---
 
