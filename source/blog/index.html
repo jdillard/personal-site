@@ -17,9 +17,14 @@ cover: false
         </p>
     </section>
     <footer class="gray f7 fw1-ns fw4 flex items-center justify-between">
-        <time class="mr2" datetime="{{ post.date | date: "%Y-%m-%d" }}">
+        <div>
+            <time class="mr2" datetime="{{ post.date | date: "%Y-%m-%d" }}">
             {{ post.date | date: "%B %d, %Y" }}
-        </time>
+            </time>
+            {% for category in post.categories %}
+            <a class="f7 link dim br2 ph2 mb2 dib white bg-silver" href="/blog/archive.html#{{ category }}">{{ category }}</a>
+            {% endfor %}
+        </div>
         <!--show Read More link/button on parent hover-->
         <a class="br-pill b light-red hover-white hover-bg-light-red no-underline ba grow pv1 ph3 dib inline-flex items-center child mr3" href="{{ post.url }}">
             Read More
