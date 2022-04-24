@@ -116,5 +116,3 @@ And for the second tab:
 You're done! It will take a while for the data to populate, possibly 24 hours,
 with enough data to be meaningful, but once it has check the report to see if it
 seems accurate.
-
-{% include feedback.html %}
