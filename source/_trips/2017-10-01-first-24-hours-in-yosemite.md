@@ -4,7 +4,7 @@ title: 'First 24 Hours in Yosemite'
 date: 2017-10-01
 state: California
 type: climbing
-published: false
+published: true
 categories:
   - climbing
   - california
@@ -15,29 +15,44 @@ image:
 cover: false
 ---
 
-When your good buddy does #vanlife, you have to visit in Yosemite.
-
-## Arriving
-
-After being picked up in Fresno and stocking up on supplies, we drove towards
-the valley. A drive he had done several time, but was new to me. I knew to
-look, but not when.
+I flew into Fresno so we could stock up on supplies at the Grocery Outlet
+before driving back towards the valley. A drive he had done several times,
+since he started doing vanlife a few months prior. Given that the experience
+was new to me, I didn't know which corner we rounded would reveal that iconic
+valley view of El Capitan and Half Dome, as he waited with baited breathe in
+anticipation of my reaction.
 
 He had spent a few weeks in the Valley earlier in the season so he already had
-some spots scoped out to camp. We camp in an employee lot
+some potential spots scoped out to attempt to camp in the van. We ended up
+camping in what turned out to be an employee only lot, a risky move but by that
+time it was getting late and we had an early morning.
 
- I'm not feeling so well and cough. Get up to get gatorade from front seat.
- Leave the front curtain open. We get kicked out. Banging. Flashlight.
+## The First Night
 
-We camp at El Portal. Make it as level as we can and pass out.
+I don't usually take well to flights and had developed a cough, a strict
+violation of Rule #1: Be Quiet. At one point in the night I got up to get my
+gatorade from front seat in an effort to sooth my throat. The gatorade didn't
+quite help and I continued attempting to swallow coughs into the night.
 
-## The Big Approach
+Suddenly there was a banging on the side of the van. My worst nightmare, I
+screwed up on the first night. We decided, against better judgement, to stay
+still and wait it out, but it wasn't long before there was a flashlight shining
+on my head. In my inexperience, I didn't completely close the front curtain
+when I was done drinking my gatorade. I froze, and whispered for advice.
 
-We decided on [Arrowhead Arête](https://www.mountainproject.com/route/106269845/arrowhead-arete),
-first put up in 1956 by Mark Powell and his partner Bill Feuerer, and once
+We decide to get out and talk the Ranger who, after a stern lecture, let us off
+with a warning and adviced us to leave the park for the night and to not get
+caught again.  We drove to just outside of the park to camp on the side of the
+road at El Portal for what remains of the night and attempted to find as level
+a spot that we could, before giving up and passing out.
+
+## The Approach
+
+Our first climb was [Arrowhead Arête](https://www.mountainproject.com/route/106269845/arrowhead-arete),
+first put up in 1956 by Mark Powell with his partner Bill Feuerer, and once
 regarded as possibly the most continuous difficult fifth-class climb in the
-country. We woke up before dawn, ate, drove all the way back into the park to
-Church Bowl in order to gear up.
+country. We woke up before dawn, ate a quick breakfast, then drove all the way
+back into the park to Church Bowl in order to gear up near the approach.
 
 <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BZtioHTDrLd/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="12" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
   <div style="padding:16px;">
@@ -60,46 +75,54 @@ Church Bowl in order to gear up.
 <script async src="//www.instagram.com/embed.js"></script>
 
 Armed with only a description of the approach, and a peak at the objective
-through the trees, we started marching up the trail. It wasn't long before I
-accidently walked up on a young rattlesnake sunbathing mid-trail. I was taken
-back, a first dose of the reality of the situation. I wasn't in the city
-anymore.
+through the trees, I started leading us up the trail. It wasn't long before I
+walked up on a young rattlesnake sunbathing mid-trail. I was taken back, a
+first dose of the reality of the situation. I wasn't in the city I had just
+left less than twenty four hours before.
 
 Further down the trail, and after what were probably a couple wrong turns, we
 found ourselves at the end of a faint trail. We had an idea of what direction
 the objective was in, but couldn't find a trail in that direction, so read of
 the description of the approach a few more times and then made a b-line in the
 direction of the Arete. After a series of tree belays and short ropped down
-climbing, we arrived at the base of the Arete.
+climbing, we finally arrived at the base of the Arete.
 
 ## The Big Climb
 
-My buddy lead all the pitches. The Arrowhead Arete is a bit of an adventure
-climb, you find your way up multiple crack systems, where there is some
-ambiguaity where one pitch ends and the other begins. At one point, at about
-two-thirds the way up on an exposed section, we had our first route-finding
-issue.
+Since my buddy Ryan was all dialed in, he lead all the pitches. The Arrowhead
+Arete is a bit of an unbolted adventure climb, you find your way up multiple
+crack systems, where there is some ambiguity where one pitch ends and the
+next begins. At one point, at about two-thirds the way up on an exposed
+section, we had our first route-finding road block.
 
-The feature above us looked too loose to climb and nothing else was
-protectable. After attempting to read beween the lines of the topo we decided
-it would be best to hand a right around a corner and hope something came into
-view. It seemed like forever as he slowly scambled his way over, making sure
-every move he did could also be undone. The cold wind was howling through the
-valley and the sun was setting, it was hard not to think about having to sleep
-on the wall would be like.
+The feature above us looked too loose to climb and above the expected grade,
+but nothing else looked protectable. After attempting to read beween the lines
+of the topo's descriptions of the pitches, we decided it would be best to hang
+a right around a corner and hope something came into view.
 
-Luckily, around the corner was a tree fitting the description. We made quick
-work of the ramaining pitches, until we got to the knife edge traverse at the
-end of the route, our first time having to deal with a pitch that ended up
-being mostly horizontal. Finishing just as dusk was starting to hit, we
-scambled down the exit scree gulley as fast as was safely possible. The rapells
-went smooth, with one spitting out over the top of a huge cave phenonmenon you
-didn't realize you were hiking over.
+It seemed like forever as he slowly scambled his way over, making sure every
+move he did could also be undone. The cold wind was howling through the valley
+and the sun was setting, it was hard not to think about how miserable being
+benighted on the wall would be like.
 
-Pracitcally falling down the loose dirt on the way down we stumbled out onto
-flat ground after what seemed like first time an eternety and getting back to
-the van right as headlamps were becoming necessay.
+Luckily, around the corner was a tree fitting the the topo description. We made
+quick work of the remaining pitches, until we got to the knife edge traverse at
+the end of the route, our first time having to deal with a pitch that ended up
+being mostly horizontal.
 
-We finished the night by sleeping in line to soo if we could get Camp 4
-reservations first thing in the morning.
+## The Descent
+
+We finished just as dusk was starting to hit and quickly began scambling down
+the exit scree gulley as fast as was safely possible. The rapells went smooth,
+with one spitting us out over the top of a huge cave phenonmenon. As we
+abseiled, like a spider spinning the first strand in its web, it was as little
+unnerving to realize the fact we didn't know what we were hiking over.
+
+Pracitcally falling down the loose dirt on the way down, part physical
+exhaustion and part mental, we stumbled out on to flat ground after what seemed
+like first time an eternety, getting back to the van right as headlamps were
+becoming necessary.
+
+We finished the night by sleeping in line for a camping spot at Camp 4, so we
+could get reservations for the rest of the week first thing in the morning.
 
