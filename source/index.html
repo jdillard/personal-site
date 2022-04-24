@@ -6,26 +6,39 @@ js_includes:
 - index.js
 ---
 
-<main class="mb5-ns mb4">
-  <div class="cf ph3 ph5-ns">
-    <div class="fn fl-ns w-50-l w-100 pv2 pr4-l">
+<main class="flex" style="align-items: stretch;justify-content: space-around">
+  <div class="fn fl-ns w-50-l w-100 pt2 pb5-ns pb4 pr4-l" style="background-image: url(/assets/images/svg/circuit-board.svg);">
+    <div class="cf ph3 ph5-ns">
       <h1 class="f1-ns f2 center lh-title tc mw7 mt3-ns mt2 mb3 black-70 athelas lh-title avenir">Articles</h1>
       <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
       <section id="latest-articles" class="mw7 mt4-ns mt3 ph3-l ph2 center"></section>
     </div>
-    <div class="fn fl-ns w-50-l w-100 pv2 pr4-l">
+    <div class="cf ph3 ph5-ns">
+      <h1 class="f1-ns f2 center lh-title tc mw7 mt3-ns mt2 mb3 black-70 athelas lh-title avenir">GitHub</h1>
+      <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
+      <div id="github-nav" class= "mw7 center black-70">
+        <div data-name="activity" class="nav-item b fl w-50 tr b--black-70 hover-light-red pointer br bw1 ph4 pv1 mt3 mb2">
+          <span class="relative fancy-link">Activity</span>
+        </div>
+        <div data-name="projects" class="nav-item b fr w-50 tl b--black-70 hover-light-red pointer bl bw1 ph4 pv1 mt3 mb2">
+          <span class="relative fancy-link">Projects</span>
+        </div>
+        <div class="cb"></div>
+      </div>
+      <section id="github" class="mw7 mt3 ph3-ns ph2 center"></section>
+    </div>
+  </div>
+  <div class="fn fl-ns w-50-l w-100 pt2 pb5-ns pb4 pr4-l" style="background-image: url(/assets/images/svg/topography.svg);">
+    <div class="cf ph3 ph5-ns">
       <h1 class="f1-ns f2 center lh-title tc mw7 mt3-ns mt2 mb3 black-70 athelas lh-title avenir">Trips</h1>
       <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
       <section id="latest-trips" class="mw7 mt4-ns mt3 ph3-l ph2 center"></section>
     </div>
-  </div>
-
-  <div class="cf ph3 ph5-ns">
-    <div class="fn fl-ns w-50-l w-100 pv2 pr4-l">
+    <div class="cf ph3 ph5-ns">
       <h1 class="f1-ns f2 center lh-title tc mw7 mt3-ns mt2 mb3 black-70 athelas lh-title avenir">Tools</h1>
       <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
       <section id="tools" class="mw7 mt4-ns mt3 ph3-ns ph2 center">
-        <div class="mv2 mh2-ns mh0 pa3 ba b--light-gray" style="transform: translateZ(0);">
+        <div class="mv4 shadow-5 mh2-ns mh0 pa3 ba bg-white b--light-gray" style="transform: translateZ(0);">
           <a class="fl w-20 dn db-ns black-70 hover-light-red ph3 no-underline" href="/crags" rel="noopener">{% include svgs/crags.svg width='100' height='100' %}</a>
           <div class="fr w-80-ns">
             <a class="link fancy-link black-70 hover-light-red" href="/crags">
@@ -35,7 +48,7 @@ js_includes:
           </div>
           <div class="cb"></div>
         </div>
-        <div class="mv2 mh2-ns mh0 pa3 ba b--light-gray" style="transform: translateZ(0);">
+        <div class="mv4 shadow-5 mh2-ns mh0 pa3 ba bg-white b--light-gray" style="transform: translateZ(0);">
           <a class="fl w-20 dn db-ns black-70 hover-light-red ph3 no-underline" href="/logbook" rel="noopener">{% include svgs/logbook.svg width='100' height='100' %}</a>
           <div class="fr w-80-ns">
             <a class="no-underline fancy-link black-70 hover-light-red" href="/logbook">
@@ -45,7 +58,7 @@ js_includes:
           </div>
           <div class="cb"></div>
         </div>
-        <div class="mv2 mh2-ns mh0 pa3 ba b--light-gray" style="transform: translateZ(0);">
+        <div class="mv4 shadow-5 mh2-ns mh0 pa3 ba bg-white b--light-gray" style="transform: translateZ(0);">
           <a class="fl w-20 dn db-ns black-70 hover-light-red ph3 no-underline" href="/trad" rel="noopener">{% include svgs/trad.svg width='100' height='100' %}</a>
           <div class="fr w-80-ns">
             <a class="no-underline fancy-link black-70 hover-light-red" href="/trad">
@@ -56,22 +69,6 @@ js_includes:
           <div class="cb"></div>
         </div>
       </section>
-      </section>
-      </section>
-    </div>
-    <div class="fn fl-ns w-50-l w-100 pv2">
-      <h1 class="f1-ns f2 center lh-title tc mw7 mt3-ns mt2 mb3 black-70 athelas lh-title avenir">GitHub</h1>
-      <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
-      <div id="github-nav" class="black-70">
-        <div data-name="activity" class="nav-item b fl w-50 tr b--black-70 hover-light-red pointer br bw1 ph4 pv1 mt3 mb2">
-          <span class="relative fancy-link">Activity</span>
-        </div>
-        <div data-name="projects" class="nav-item b fr w-50 tl b--black-70 hover-light-red pointer bl bw1 ph4 pv1 mt3 mb2">
-          <span class="relative fancy-link">Projects</span>
-        </div>
-        <div class="cb"></div>
-      </div>
-      <section id="github" class="mw7 mt3 ph3-ns ph2 center"></section>
     </div>
   </div>
 </main>

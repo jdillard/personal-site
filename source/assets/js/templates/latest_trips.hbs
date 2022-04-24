@@ -1,22 +1,35 @@
 <div class="entry">
     {{#each this}}
-    <article class="bb b--black-10 pb4 mb4">
+    <article class="shadow-5 bg-white bl bw2 b--moon-gray hover-b--light-red pv3 mb4">
         <div class="ph3 ph0-l flex flex-column flex-row-ns">
-            <div class="pr3-ns db-ns dn mb4 mb0-ns w-100 w-30-ns">
+            <div class="pr3-ns db-ns grow dn mb4 mb0-ns w-100 w-30-ns" style="margin-left: -20px;">
                 <a href="{{this.url}}">
                     <img src="{{this.image}}" class="db shadow-4" alt="{{ this.title }}" loading="lazy">
                 </a>
             </div>
-            <div class="w-100 w-60-ns pl2-ns">
-                <div class="lh-copy mid-gray mb2">{{this.date_published}}</div>
-                <a class="f4 flex-ns items-center no-underline black-70 hover-light-red" href="{{this.url}}">
-                    <span class="pv0-ns pv1 db">{{this.title}}</span>
+            <div class="w-100 w-70-ns pl2-ns">
+                <a class="f3 flex-ns items-center no-underline black-70 hover-light-red" href="{{this.url}}">
+                    <span class="pv0-ns pv1 db lh-copy">{{this.title}}</span>
                 </a>
-                <div class="f6 f5-ns fw3 mt2 lh-copy mid-gray">
-                    {{#each this.categories}}
+                <section class="f6 fw3 mb3 lh-copy mid-gray">
+                    <p>{{this.summary}}</p>
+                </section>
+                <footer class="gray f7 fw1-ns fw4 flex items-center justify-between">
+                    <div>
+                        <time class="mr2" datetime="2022-04-16">{{this.date_published}}</time>
+                        {{#each this.categories}}
                         <a class="f7 link dim br2 ph2 mb2 dib white bg-silver" href="/trips/archive.html#{{this}}">{{this}}</a>
-                    {{/each}}
-                </div>
+                        {{/each}}
+                    </div>
+                    <!--show Read More link/button on parent hover-->
+                    <a class="br-pill b light-red hover-white hover-bg-light-red no-underline ba grow pv1 ph3 dib inline-flex items-center child mr3" href="{{this.url}}">
+                        Read More
+                        <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+                            <title>chevronRight icon</title>
+                            <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+                        </svg>
+                    </a>
+                </footer>
             </div>
         </div>
         </a>
