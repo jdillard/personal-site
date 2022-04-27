@@ -40,6 +40,12 @@ Snow gets better, not sure if it was reverse corn from the cloud cover, or just 
 {: {{site.data.css.info-box}} }
 > **Note:** If you can stay high on the left to cruise out.
 
-![Nisqually Chute Post Run](/assets/images/trips/nisqually-chute-after.jpg "Nisqually Chute Post Run"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Nisqually Chute Post Run</i></small>
+![Nisqually Chute Post Run](/assets/images/trips/nisqually-chute-after.jpg "Nisqually Chute Post Run"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Nisqually Chute Post Run.</i></small>
+
+![Nisqually Chute Half Way](/assets/images/trips/nisqually-chute-half-way.jpg "Nisqually Chute Half Way"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Nisqually Chute half way down.</i></small>
+
+![Nisqually Chute Last Leg](/assets/images/trips/nisqually-chute-last-leg.jpg "Nisqually Chute Last Leg"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Nisqually Chute last leg.</i></small>
+
+![Nisqually Chute Ant Farm](/assets/images/trips/nisqually-chute-ant-farm.jpg "Nisqually Chute Ant Farm"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Nisqually Chute ant farm.</i></small>
 
 Ski along creek. Reach bridge around 1:00PM.
