@@ -3,6 +3,7 @@ layout: post
 title: "Using Google Analytics for per Page Ratings"
 date: 2020-05-17
 published: true
+popularity: 65
 comment_issue_id: 8
 categories:
   - jamstack

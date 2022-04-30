@@ -61,7 +61,7 @@ function summarizeAction(type, words) {
 }
 
 /* Display recent articles */
-function articles(articles) {
+function recentArticles(articles = []) {
   var archive = document.getElementById("latest-articles");
 
   articles.data.sort(function(a, b) {
@@ -75,6 +75,56 @@ function articles(articles) {
   }, []);
 
   archive.innerHTML = template_articles(articles.data.slice(0,3));
+}
+
+/* Display popular articles */
+function popularArticles(articles = []) {
+  var archive = document.getElementById("latest-articles");
+
+  articles.data.sort(function(a, b) {
+    return new Date(b.popularity) - new Date(a.popularity);
+  })
+  .reduce((a, b, i) => {
+      b.date_published = moment(b.date_published).format('MMM DD, YYYY');
+      b.summary = b.summary.split(" ").splice(0,40).join(" ");
+      a.push(b);
+      return a;
+  }, []);
+
+  archive.innerHTML = template_articles(articles.data.slice(0,3));
+}
+
+/* Handle article navigation */
+function articles(articlesNav, type) {
+  for (let i = 0; i < articlesNav.length; i++) {
+    let name = articlesNav[i].getAttribute('data-name');
+    if (name !== type && articlesNav[i].classList.contains("light-red")) {
+      articlesNav[i].classList.remove("light-red");
+    } else if (name === type && !articlesNav[i].classList.contains("light-red")) {
+      articlesNav[i].classList.add("light-red");
+    }
+  }
+
+  switch(type) {
+    case "recent":
+      axios.get('/assets/json/articles.json')
+        .then(function (response) {
+          recentArticles(response.data);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+      break;
+    case "popular":
+      axios.get('/assets/json/articles.json')
+        .then(function (response) {
+          popularArticles(response.data);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+      break;
+  }
 }
 
 /* Display recent trips */
@@ -341,19 +391,20 @@ function github(githubNav, type) {
   }
 }
 
-axios.get('/assets/json/articles.json')
-    .then(function (response) {
-      articles(response.data);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-
+const articlesNav = document.getElementById("articles-nav").getElementsByClassName("nav-item");
 const tripsNav = document.getElementById("trips-nav").getElementsByClassName("nav-item");
 const githubNav = document.getElementById("github-nav").getElementsByClassName("nav-item");
 
+articles(articlesNav, "recent");
 trips(tripsNav, "recent");
 github(githubNav, "activity");
+
+for (let i = 0; i < articlesNav.length; i++) {
+  articlesNav[i].onclick = function(){
+    let type = articlesNav[i].getAttribute('data-name');
+    articles(articlesNav, type);
+  };
+}
 
 for (let i = 0; i < tripsNav.length; i++) {
   tripsNav[i].onclick = function(){

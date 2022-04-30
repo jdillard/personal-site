@@ -3,6 +3,7 @@ layout: post
 title:  "Custom Google Analytics Reports and Alerts That Every Website Should Have"
 date:   2018-11-28
 published: true
+popularity: 6
 comment_issue_id: 6
 categories:
   - google analytics

@@ -3,6 +3,7 @@ layout: post
 title: "Using GitHub Issues for Static Blog Comments"
 date: 2020-05-25
 published: true
+popularity: 17
 comment_issue_id: 9
 categories:
   - jamstack

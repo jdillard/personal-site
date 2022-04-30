@@ -3,6 +3,7 @@ layout: post
 title:  "Continuous deployment of a Sphinx website using Jenkins and Docker"
 date:   2018-01-01
 published: true
+popularity: 200
 comment_issue_id: 4
 categories:
   - continuous deployment
