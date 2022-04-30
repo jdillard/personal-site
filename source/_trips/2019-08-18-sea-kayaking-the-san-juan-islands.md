@@ -5,6 +5,7 @@ date: 2019-08-18
 state: Washington
 type: kayaking
 published: true
+popularity: 36
 categories:
   - kayaking
   - washington

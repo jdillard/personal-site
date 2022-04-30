@@ -60,9 +60,9 @@ function summarizeAction(type, words) {
   }
 }
 
+/* Display recent articles */
 function articles(articles) {
   var archive = document.getElementById("latest-articles");
-  var articles_by_date = [];
 
   articles.data.sort(function(a, b) {
     return new Date(b.date_published) - new Date(a.date_published);
@@ -77,9 +77,9 @@ function articles(articles) {
   archive.innerHTML = template_articles(articles.data.slice(0,3));
 }
 
-function trips(trips) {
+/* Display recent trips */
+function recent_trips(trips = []) {
   var archive = document.getElementById("latest-trips");
-  var articles_by_date = [];
 
   trips.data.sort(function(a, b) {
     return new Date(b.date_published) - new Date(a.date_published);
@@ -93,6 +93,57 @@ function trips(trips) {
   archive.innerHTML = template_trips(trips.data.slice(0,3));
 }
 
+/* Display popular trips */
+function popular_trips(trips = []) {
+  var archive = document.getElementById("latest-trips");
+
+  trips.data.sort(function(a, b) {
+    return new Date(b.popularity) - new Date(a.popularity);
+  })
+  .reduce((a, b, i) => {
+      b.date_published = moment(b.date_published).format('MMM DD, YYYY');
+      b.summary = b.summary.split(" ").splice(0,30).join(" ");
+      a.push(b);
+      return a;
+  }, []);
+
+  archive.innerHTML = template_trips(trips.data.slice(0,3));
+}
+
+/* Handle trips navigation */
+function trips(tripsNav, type) {
+  for (let i = 0; i < tripsNav.length; i++) {
+    let name = tripsNav[i].getAttribute('data-name');
+    if (name !== type && tripsNav[i].classList.contains("light-red")) {
+      tripsNav[i].classList.remove("light-red");
+    } else if (name === type && !tripsNav[i].classList.contains("light-red")) {
+      tripsNav[i].classList.add("light-red");
+    }
+  }
+
+  switch(type) {
+    case "recent":
+      axios.get('/assets/json/trips.json')
+        .then(function (response) {
+          recent_trips(response.data);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+      break;
+    case "popular":
+      axios.get('/assets/json/trips.json')
+        .then(function (response) {
+          popular_trips(response.data);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+      break;
+  }
+}
+
+/* Display GitHub Projects */
 function projects(projects = []) {
   const projects_element = document.getElementById("github");
 
@@ -128,6 +179,7 @@ function projects(projects = []) {
   projects_element.innerHTML = template_github_projects(projects_list);
 }
 
+/* Display GitHub Activity */
 function activity(activities = []) {
   const activity_element = document.getElementById("github");
   let prev_date = "";
@@ -238,6 +290,7 @@ function activity(activities = []) {
   activity_element.innerHTML = template_github_activity(activity_list);
 }
 
+/* Handle GitHub navigation */
 function github(githubNav, type) {
   for (let i = 0; i < githubNav.length; i++) {
     let name = githubNav[i].getAttribute('data-name');
@@ -296,17 +349,18 @@ axios.get('/assets/json/articles.json')
       console.log(error);
     });
 
-axios.get('/assets/json/trips.json')
-    .then(function (response) {
-      trips(response.data);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-
+const tripsNav = document.getElementById("trips-nav").getElementsByClassName("nav-item");
 const githubNav = document.getElementById("github-nav").getElementsByClassName("nav-item");
 
+trips(tripsNav, "recent");
 github(githubNav, "activity");
+
+for (let i = 0; i < tripsNav.length; i++) {
+  tripsNav[i].onclick = function(){
+    let type = tripsNav[i].getAttribute('data-name');
+    trips(tripsNav, type);
+  };
+}
 
 for (let i = 0; i < githubNav.length; i++) {
   githubNav[i].onclick = function(){

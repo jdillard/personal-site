@@ -5,6 +5,7 @@ date: 2016-12-15
 published: true
 state: Texas
 type: kayaking
+popularity: 6
 categories:
   - kayaking
   - trip planning

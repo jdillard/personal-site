@@ -5,6 +5,7 @@ date: 2021-09-21
 state: Washington
 type: kayaking
 published: true
+popularity: 1
 categories:
   - kayaking
   - washington

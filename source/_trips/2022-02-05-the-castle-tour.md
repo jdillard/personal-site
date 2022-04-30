@@ -5,6 +5,7 @@ date: 2022-02-05
 state: Washington
 type: skiing
 published: true
+popularity: 5
 categories:
   - skiing
   - washington

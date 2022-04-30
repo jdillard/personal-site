@@ -5,6 +5,7 @@ date: 2017-10-01
 state: California
 type: climbing
 published: true
+popularity: 1
 categories:
   - climbing
   - california
