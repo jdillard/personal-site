@@ -4,7 +4,7 @@ title: 'Trip Report: Nisqually Bridge Run'
 date: 2022-04-23
 state: Washington
 type: skiing
-published: false
+published: true
 popularity: 10
 categories:
   - skiing
@@ -25,11 +25,11 @@ spot near the front of the line at the gate.
 The snow from the previous storm had settled and the week leading up had
 contributed small amounts of consistant snow with cold temps and fairly low
 winds. A sunny window was forecasted for most the day, and since the gate was
-still opening at 9am, we knew we had to move fast.
+still opening at 9AM, we knew we had to move fast.
 
 {: {{site.data.css.info-box}} }
-> **Note:** During Winter, the gate to Paradise at Longmire opens at 9am and
-> closes at 4pm, so plan accordingly. You can follow the
+> **Note:** During Winter, the gate to Paradise at Longmire opens at 9AM and
+> closes at 4PM, so plan accordingly. You can follow the
 > [MountRainierNPS](https://twitter.com/MountRainierNPS) Twitter account for
 > real time updates on when the gate will open for a given day. Also, make sure
 > to bring tire chains.
@@ -83,10 +83,17 @@ reverse corn from the cloud cover, or had just been more protected from the sun.
 
 ![Nisqually Chute Half Way](/assets/images/trips/nisqually-chute-half-way.jpg "Nisqually Chute Half Way"){: .shadow-5.oversized}{: loading="lazy"} <small><i>There was a nice section of corn half way down the run.</i></small>
 
+From there we followed the tracks that were in ahead of use to the right into more
+grabby snow, trying to keep speed, but ultimately having to do the awkward ski
+stepping up the hill so we could build up enough gravity to side hill out. 
+
 {: {{site.data.css.tip-box}} }
-> **Tip:** The two guys that dropped down the chute just downhill of us stayed
-> high and were able to stay high on the left to cruise out.
+> **Tip:** The two guys that had dropped down the chute just downhill of ours
+> ended up catching up to use and took the more left, Southern, route staying
+> high and were able to cruise out with out much effort.
 
 ![Nisqually Chute Last Leg](/assets/images/trips/nisqually-chute-last-leg.jpg "Nisqually Chute Last Leg"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The last leg of the run with the bridge in sight.</i></small>
 
-Skiing along the creek on the way out was beautiful. Reach bridge around 1:00PM.
+Skiing along the creek on the way out was beautiful. We reached the bridge
+around 1:00PM and took some obligatory bridge pics, then finished the day at
+Rainier BaseCamp Bar & Grill for burgers and beer.
