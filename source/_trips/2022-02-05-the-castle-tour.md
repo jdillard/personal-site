@@ -22,10 +22,10 @@ gate to Paradise at Longmire right before 9am, parking at the
 [Narada Falls parking lot](https://goo.gl/maps/86cbrbDi7zrgz1Ap8).
 
 {: {{site.data.css.info-box}} }
-> **Note:** The gate to Paradise at Longmire opens at 9am and closes at 4pm
-> during the winter, so plan accordingly. You can follow the
+> **Note:** During Winter, the gate to Paradise at Longmire opens at 9am and
+> closes at 4pm, so plan accordingly. You can follow the
 > [MountRainierNPS](https://twitter.com/MountRainierNPS) Twitter account for
-> real time updates on when the gate will open for a given day. Also make sure
+> real time updates on when the gate will open for a given day. Also, make sure
 > to bring tire chains.
 
 ## The Approach
