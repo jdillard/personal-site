@@ -70,9 +70,9 @@
 }
 
 .post-content img.oversized {
-    width: 126%;
+    width: 168%;
     max-width: none;
-    margin: 0 -13%;
+    margin: 0 -34%;
     display: inline;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .post-content div.highlighter-rouge {
-    margin: 1.75em -5em 1.75em -5em;
+    margin: 1.75em -13em 1.75em -13em;
     border-radius: 10px;
     box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.2);
 }
@@ -296,6 +296,7 @@ header.post-cover {
     }
     .nav-cover {
         box-shadow: none;
+        filter: drop-shadow(-1px 6px 3px rgba(50, 50, 49, 0.2));
     }
 }
 
