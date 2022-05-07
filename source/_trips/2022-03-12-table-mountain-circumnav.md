@@ -33,8 +33,8 @@ high it is possible to ski traverse most of the way across.
 The wind was coming in pretty strong out of the West, with the sun coming in
 and out throughout the day. Koma Kulshan was showing off with whispy strands of
 cirrus clouds waving off of its summit. As we got closer to Ptarmigan Pass we
-were eyeing potental lines on Video Peak and making plans to
-return for it.
+were eyeing potental lines on [Video Peak](/trips/north-face-video-peak.html)
+and making plans to return for it.
 
 ![Corner Pocket](/assets/images/trips/table-mountain-corner-pocket.jpg "Corner Pocket"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The view of Corner Pocket from the approach.</i></small>
 
