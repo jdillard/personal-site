@@ -47,8 +47,9 @@ Castle in what remained of the low hanging clouds.
 For most of the way you can turn around and get glimpses of Mount Rainier
 behind you, with more an more becomming visable as you gain elevation. Since,
 it was my first time in the Tatoosh, is was great getting a summary of the
-terrain and to talk about future objectives as we ran our pointed fingers all
-over the mountain.
+terrain. We also talked about future objectives, such as the [Nisqually Bridge
+Run](/trips/nisqually-bridge-run.html) and Paradise Glacier, as we ran our
+pointed fingers all over the mountain.
 
 ![Rainier in the Rearview](/assets/images/trips/the-castle-tour-rainier.jpg "Rainier in the Rearview"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Mount Rainier looms behind you on the majority of the approach, giving you a good excuse to turn around and catch your breath.</i></small>
 
