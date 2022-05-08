@@ -121,17 +121,17 @@ replace a shingle or two with the hammer, nails, and shingles left in the corner
 
 ## Day 3 - Crater Mountain
 
-In the morning we decided it would be best to start heading back. It was a tough
-decision, but probably a wise one given the circumstances. We decided we would
-do the side trail up to Crater Mountain, then to camp at the same spot we did
-the previous night before heading back down the next day.
+In the morning we decided it would be best to start heading back. It was a
+tough decision, but probably a wise one given the circumstances. We decided we
+would do the side trail up to [Crater
+Mountain](https://www.peakbagger.com/peak.aspx?pid=1701), then to camp at the
+same spot we did the previous night before heading back down the next day.
 
 When we got to camp we quickly set up our tents to claim our little corner then
 ate lunch and started on our day hike. We arrived at Crater Lake, which was an
 obvious milestone, before taking the short summit trail to the right. The other
-trail to the left is known to be more treacherous as it has a
-[higher summit](http://www.summitpost.org/crater-mountain/150949) and our
-conditions were less than ideal to begin with.
+trail to the left is known to be more treacherous as it has a higher summit and
+our conditions were less than ideal to begin with.
 
 ![Crater Lake](/assets/images/posts/crater-lake.jpg "Crater Lake"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Coming up on Crater Lake on the way to summit Crater Mountain</i></small>
 
@@ -144,7 +144,7 @@ imagine doing the hike without them.
 
 The view from the lower summit is incredible, with a view of Jack Mountain over
 a glacial lake. The upper summit is said to be in the top 5 views for the North
-Cascade region by the out-of-print classic, *Routes and Rocks*.
+Cascade region by the out-of-print classic, [*Routes and Rocks*](https://www.thriftbooks.com/w/routes-and-rocks-hikers-guide-to-the-north-cascades-from-glacier-peak-to-lake-chelan/13864318).
 
 ![Crater Mountain](/assets/images/posts/crater-mountain.jpg "Crater Mountain"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The view of Jack Mountain from the lower summit of Crater Mountain</i></small>
 
