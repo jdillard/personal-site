@@ -1,6 +1,6 @@
 ---
 layout: trip
-title: 'Trip Report: Excelsior Ski Tour'
+title: 'Trip Report: Excelsior Peak Ski Tour'
 date: 2022-04-02
 state: Washington
 type: skiing
