@@ -9,6 +9,7 @@ popularity: 2
 categories:
   - skiing
   - washington
+  - peakbag
 image:
   path: /assets/images/trips/excelsior-in-winter-thumb.jpg
   width: 175
