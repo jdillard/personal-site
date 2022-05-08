@@ -70,9 +70,9 @@
 }
 
 .post-content img.oversized {
-    width: 168%;
+    width: 140%;
     max-width: none;
-    margin: 0 -34%;
+    margin: 0 -20%;
     display: inline;
 }
 
@@ -317,6 +317,9 @@ header.post-cover {
         max-width: none;
         margin: 0 -3%;
         margin-top: 5px;
+    }
+    .post-content img.oversized {
+        width: 122%;
     }
 }
 

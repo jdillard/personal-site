@@ -25,3 +25,16 @@ function resources(data=[]) {
           .map(function(r) { return {'title': r.name, 'url': r.url, 'desc': r.desc.split(" ").slice(0,8).join(" ") }; });
   resource_element.innerHTML = resources_template(resource_list);
 }
+
+var title = document.querySelector("h1");
+var copy = title.cloneNode(true);
+    copy.innerHTML = 'A';
+    title.after(copy)
+
+if (copy.clientHeight < title.clientHeight) {
+    var words = title.innerHTML.split(' ');
+    var firstLine = words.slice(0,Math.round(words.length/2))
+    var secondLine = words.slice(Math.round(words.length/2))
+    title.innerHTML = firstLine.join(' ') + '<br />' + secondLine.join(' ');
+}
+copy.remove();

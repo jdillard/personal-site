@@ -59,3 +59,17 @@ const tip = tippy('a[href*="wikipedia.org"]', {
     }
   }
 });
+
+
+var title = document.querySelector("h1");
+var copy = title.cloneNode(true);
+    copy.innerHTML = 'A';
+    title.after(copy)
+
+if (copy.clientHeight < title.clientHeight) {
+    var words = title.innerHTML.split(' ');
+    var firstLine = words.slice(0,Math.round(words.length/2))
+    var secondLine = words.slice(Math.round(words.length/2))
+    title.innerHTML = firstLine.join(' ') + '<br />' + secondLine.join(' ');
+}
+copy.remove();
