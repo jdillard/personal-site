@@ -16,9 +16,9 @@ image:
 cover: excelsior-in-winter
 ---
 
-I ran up Excelsior the previous August and it was hard not to notice the
-inviting bowls that split off on each side of the summit and knew I had to come
-back in the Winter.
+I ran up [Excelsior Peak](https://www.peakbagger.com/peak.aspx?pid=25604) the
+previous August and it was hard not to notice the inviting bowls that split off
+on each side of the summit and knew I had to come back in the Winter.
 
 ## The Approach
 
