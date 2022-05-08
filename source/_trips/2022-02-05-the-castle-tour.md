@@ -1,6 +1,6 @@
 ---
 layout: trip
-title: 'Trip Report: The Castle Tour'
+title: 'Trip Report: The Castle Ski Tour'
 date: 2022-02-05
 state: Washington
 type: skiing

@@ -1,6 +1,6 @@
 ---
 layout: trip
-title: 'Trip Report: North Face of Video Peak'
+title: 'Trip Report: Skiing the North Face of Video Peak'
 date: 2022-04-16
 state: Washington
 type: skiing

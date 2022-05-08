@@ -1,6 +1,6 @@
 ---
 layout: trip
-title: 'Trip Report: Nisqually Bridge Run'
+title: 'Trip Report: Nisqually Bridge Run Ski Tour'
 date: 2022-04-23
 state: Washington
 type: skiing

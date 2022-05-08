@@ -1,6 +1,6 @@
 ---
 layout: trip
-title: 'Trip Report: Table Mountain Circumnav'
+title: 'Trip Report: Table Mountain Circumnav Ski Tour'
 date: 2022-03-12
 state: Washington
 type: skiing
