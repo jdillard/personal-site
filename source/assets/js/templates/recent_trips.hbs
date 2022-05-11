@@ -1,0 +1,42 @@
+<div class="tc mv3">
+    {{#each types}}
+        <span data-type="{{this.type}}" class="related-top-nav f6 link dim br2 pv1 ph2 mb2 mh1 dib white bg-{{this.color}} pointer">{{this.type}}</span>
+    {{/each}}
+</div>
+{{#if trip_info}}
+    <ul style="width: 45%;" class="fl w-40 list pl0">
+        {{#each trips}}
+            <li data-trip="{{this.title}}" class="related-side-nav pointer pv2 ph2 {{this.text_color}} hover-light-red bl b--{{this.border_color}} hover-b--light-red bw2 f5">
+            {{this.title}}
+        </li>
+        {{/each}}
+    </ul>
+    <article style="width: 55%" class="fr ph2 pv3">
+        <div class="ph3 ph0-l flex">
+            <img src="{{trip_info.image}}" class="fl db shadow-4" alt="{{ trip_info.title }}" loading="lazy">
+            <footer class="gray f6 fw1-ns w-60 tc fw4 pa3">
+                <time class="mv2" datetime="2022-04-16">{{trip_info.date_published}}</time><br />
+                {{#each trip_info.categories}}
+                <a class="f6 link dim br2 pv1 ph2 mv2 dib white bg-silver" href="/trips/archive.html#{{this}}">{{this}}</a>
+                {{/each}}
+                <br />
+                <!--show Read More link/button on parent hover-->
+                <a class="br-pill b light-red hover-white hover-bg-light-red no-underline ba grow pv1 ph3 dib inline-flex items-center child mv3" href="{{trip_info.url}}">
+                    Read More
+                    <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+                        <title>chevronRight icon</title>
+                        <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+                    </svg>
+                </a>
+            </footer>
+        </div>
+        <section class="cb f5 fw3 mb3 lh-copy mid-gray">
+            <p>{{trip_info.summary}}</p>
+        </section>
+    </article>
+{{else}}
+    <div class="pa4 tc silver ma3 ba b--light-gray">No Related Trips. Try A Different Category.</div>
+{{/if}}
+<div class="cb pa3 tc ba b--light-gray black-70 bg-near-white shadow-5 mb3">
+  <a href="/trips" class="b mid-gray">Read More Trip Reports</a>
+</div>

@@ -9,12 +9,13 @@
     {% for post in site.trips %}
         {
             "id": "{{ post.id }}",
-            "title": {{ post.title | smartify | jsonify }},
+            "title": {{ post.title | jsonify }},
             "url": "{{ site.url }}{{ post.url }}",
             "summary": {{ post.excerpt | strip_html | jsonify }},
             "image": "{{ post.image.path }}",
             "date_published": "{{ post.date | date: "%Y-%m-%d" }}",
             "popularity": {{ post.popularity }},
+            "type": "{{ post.type }}",
             "categories": {{ post.categories | jsonify }}
         }{% unless forloop.last == true %},{% endunless %}
     {% endfor %}
