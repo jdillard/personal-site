@@ -9,6 +9,7 @@ popularity: 7
 categories:
   - skiing
   - washington
+  - peakbag
 image:
   path: /assets/images/trips/video-peak-thumb.jpg
   width: 175
