@@ -61,6 +61,7 @@ const tip = tippy('a[href*="wikipedia.org"]', {
 });
 
 
+/* If title breaks, break it in half */
 var title = document.querySelector("h1");
 var copy = title.cloneNode(true);
     copy.innerHTML = 'A';
