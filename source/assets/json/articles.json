@@ -14,6 +14,7 @@
             "summary": {{ post.excerpt | strip_html | jsonify }},
             "popularity": {{ post.popularity }},
             "date_published": "{{ post.date | date: "%Y-%m-%d" }}",
+            "type": "{{ post.type }}",
             "categories": {{ post.categories | jsonify }}
         }{% unless forloop.last == true %},{% endunless %}
     {% endfor %}
