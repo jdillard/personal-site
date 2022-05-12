@@ -5,6 +5,7 @@ date:   2017-02-19
 published: true
 popularity: 10
 comment_issue_id: 3
+type: misc
 categories:
   - google analytics
   - web development

@@ -5,6 +5,7 @@ date:   2018-08-25
 published: true
 popularity: 5
 comment_issue_id: 5
+type: sphinx
 categories:
   - internationalization
   - sphinx

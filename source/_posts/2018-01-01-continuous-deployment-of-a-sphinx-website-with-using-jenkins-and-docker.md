@@ -5,11 +5,11 @@ date:   2018-01-01
 published: true
 popularity: 200
 comment_issue_id: 4
+type: sphinx
 categories:
-  - continuous deployment
+  - continuous-deployment
   - sphinx
   - jenkins
-  - web development
 ---
 
 If you have ever set up a [sphinx](http://www.sphinx-doc.org/en/stable/) project

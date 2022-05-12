@@ -5,6 +5,7 @@ date:   2016-05-25
 published: true
 popularity: 4
 comment_issue_id: 2
+type: misc
 categories:
   - gardening
   - cooperatives

@@ -5,6 +5,7 @@ date:   2018-12-12
 published: true
 popularity: 140
 comment_issue_id: 7
+type: sphinx
 categories:
   - sphinx
 ---

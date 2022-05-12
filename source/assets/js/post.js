@@ -1,4 +1,7 @@
 import tippy from 'tippy.js';
+import u from 'umbrellajs';
+
+const articles_template = require("./templates/recent_articles.hbs");
 
 /* parallax on blog posts with cover image */
 var parallaxImage = document.getElementById('ParallaxImage');
@@ -60,6 +63,78 @@ const tip = tippy('a[href*="wikipedia.org"]', {
   }
 });
 
+/* Populate Related Articles */
+axios.get('/assets/json/articles.json')
+  .then(function (response) {
+    const articles_element = document.getElementById("articles");
+    articles(response.data, articles_element.dataset.article, false, articles_element.dataset.type);
+  })
+  .catch(function (error) {
+    // call local file on 403
+    console.log(error);
+  });
+
+function articles(items=[], current_item, active_item, active_type) {
+  var types = [];
+  items.data.forEach(function(item) {
+    var found = types.some(el => el.type === item.type);
+    if(!found) {
+      if(item.type === active_type) {
+        types.push({"color": "light-red", "type": item.type});
+      } else {
+        types.push({"color": "silver", "type": item.type});
+      }
+    }
+  });
+  var related_items = items.data.reduce(function(res, item) {
+    if(item.type == active_type && item.title != current_item) {
+      if((active_item && active_item == item.title) || (!active_item && res.length == 0)) {
+        item['border_color'] = 'light-red';
+        item['text_color'] = 'light-red';
+      } else {
+        item['border_color'] = 'white';
+        item['text_color'] = 'black-70';
+      }
+      const date = new Date(item['date_published']);
+      item['date_published'] = date.toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' });
+      res.push(item);
+    }
+    return res;
+  }, []);
+  if(active_item) {
+    var item_info = related_items.find(o => o.title === active_item);;
+  } else {
+    var item_info = related_items[0];
+  }
+  var items_list = {"types": types, "items": related_items, "item_info": item_info};
+  const items_element = document.getElementById("articles");
+  items_element.innerHTML = articles_template(items_list);
+}
+
+/* Recent articles nav */
+u("#articles").on('click', '.related-top-nav', function(node) {
+  axios.get('/assets/json/articles.json')
+    .then(function (response) {
+      const articles_element = document.getElementById("articles");
+      articles_element.dataset.type = u(node.target).data('type');
+      articles(response.data, articles_element.dataset.article, false, u(node.target).data('type'));
+    })
+    .catch(function (error) {
+      // call local file on 403
+      console.log(error);
+    });
+})
+u("#articles").on('click', '.related-side-nav', function(node) {
+  axios.get('/assets/json/articles.json')
+    .then(function (response) {
+      const articles_element = document.getElementById("articles");
+      articles(response.data, articles_element.dataset.article, u(node.target).data('article'), articles_element.dataset.type);
+    })
+    .catch(function (error) {
+      // call local file on 403
+      console.log(error);
+    });
+})
 
 /* If title breaks, break it in half */
 var title = document.querySelector("h1");

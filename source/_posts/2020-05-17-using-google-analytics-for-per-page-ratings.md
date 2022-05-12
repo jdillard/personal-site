@@ -5,6 +5,7 @@ date: 2020-05-17
 published: true
 popularity: 65
 comment_issue_id: 8
+type: ssg
 categories:
   - jamstack
   - google analytics

@@ -26,18 +26,9 @@ js_includes:
     </article>
     <section style="box-shadow: 0px 15px 17px rgb(50 50 50 / 26%);" class="center mw8 bg-white ph2 br bl b--near-white">
         <hr class="mw6-ns mw5 mv0 p0 b0 bt bw1 b--light-red light-red bg-light-red">
-        <div class="mw6-5 center pv3 ph2">
-            <div class="mt3 b f3-ns f4-ns f5 black-70">Recent Posts</div>
-            <ul class="list pl0">
-                {% for post in site.related_posts limit:5 %}
-                <li class="pv2 f5">
-                    <a class="flex-ns items-center no-underline black-70 hover-light-red" href="{{ post.url }}">
-                        <time class="f6 gray db nowrap mr3"> {{ post.date | date: "%b %d, %Y" }}</time>
-                        <span class="pv0-ns pv1 db">{{ post.title }}</span>
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
+        <div style="max-width: 56rem;" class="center pv3 ph2">
+            <div class="mt3 b tc f2-ns f4 black-70">Related Articles</div>
+            <div id="articles" data-article="{{ page.title }}" data-type="{{ page.type }}"></div>
         </div>
     </section>
     {% include comments.html %}
