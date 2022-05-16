@@ -76,6 +76,19 @@
     display: inline;
 }
 
+.post-content .video.oversized {
+    width: 138%;
+    margin: 0 -19%;
+}
+
+.post-content .video.oversized iframe {
+    width: 100%;
+}
+
+.post-content .video.oversized.landscape iframe {
+    height: 600px;
+}
+
 .crag-weather {
     width: 114%;
     max-width: none;
