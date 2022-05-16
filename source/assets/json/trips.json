@@ -6,7 +6,8 @@
     "page": 1,
     "per_page": {{ site.trips | size }},
     "data": [
-    {% for post in site.trips %}
+    {% assign sorted = (site.trips | sort: 'date') | reverse %}
+    {% for post in sorted %}
         {
             "id": "{{ post.id }}",
             "title": {{ post.title | jsonify }},
