@@ -73,7 +73,7 @@ function trips(trips=[], current_trip, active_trip, active_type) {
   } else {
     var trip_info = related_trips[0];
   }
-  var trips_list = {"types": types, "trips": related_trips, "trip_info": trip_info};
+  var trips_list = {"types": types, "trips": related_trips.slice(0, 5), "trip_info": trip_info};
   const trips_element = document.getElementById("trips");
   trips_element.innerHTML = trips_template(trips_list);
 }
