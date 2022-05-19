@@ -4,16 +4,24 @@
     {{/each}}
 </div>
 {{#if trip_info}}
-    <ul style="width: 45%;" class="fl w-40 list pl0">
-        {{#each trips}}
-            <li data-trip="{{this.title}}" class="related-side-nav pointer pv2 ph2 {{this.text_color}} hover-light-red bl b--{{this.border_color}} hover-b--light-red bw2 f5">
-            {{this.title}}
-        </li>
-        {{/each}}
-    </ul>
-    <article style="width: 55%" class="fr ph2 pv3">
+    <div style="width: 45%;" class="fl w-40">
+        <ul class="list pl0 mb4">
+            {{#each trips}}
+                <li data-trip="{{this.title}}" class="related-side-nav pointer pv2 ph2 {{this.text_color}} hover-light-red bl b--{{this.border_color}} hover-b--light-red bw2 f5">
+                {{this.title}}
+            </li>
+            {{/each}}
+        </ul>
+        <div class="cb mh3 pa3 tc ba b--light-gray black-70 bg-near-white shadow-5 mb3">
+            <a href="/trips" class="b mid-gray">Read More Trip Reports</a>
+        </div>
+    </div>
+    <div>
+    <div style="width: 55%" class="fr ph2 pv3">
         <div class="ph3 ph0-l flex">
-            <img src="{{trip_info.image}}" class="fl db shadow-4" alt="{{ trip_info.title }}" loading="lazy">
+            <a href="{{trip_info.url}}">
+                <img src="{{trip_info.image}}" class="fl grow db shadow-4" alt="{{ trip_info.title }}" loading="lazy">
+            </a>
             <footer class="gray f6 fw1-ns w-60 tc fw4 pa3">
                 <time class="mv2" datetime="2022-04-16">{{trip_info.date_published}}</time><br />
                 {{#each trip_info.categories}}
@@ -33,10 +41,9 @@
         <section class="cb f5 fw3 mb3 lh-copy mid-gray">
             <p>{{trip_info.summary}}</p>
         </section>
-    </article>
+    </div>
 {{else}}
     <div class="pa4 tc silver ma3 ba b--light-gray">No Related Trips. Try A Different Category.</div>
 {{/if}}
-<div class="cb pa3 tc ba b--light-gray black-70 bg-near-white shadow-5 mb3">
-  <a href="/trips" class="b mid-gray">Read More Trip Reports</a>
-</div>
+    </div>
+    <div class="cb"></div>
