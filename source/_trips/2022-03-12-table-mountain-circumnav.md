@@ -3,12 +3,14 @@ layout: trip
 title: 'Trip Report: Table Mountain Circumnav Ski Tour'
 date: 2022-03-12
 state: Washington
+area: Baker
 type: skiing
 published: true
 popularity: 3
 categories:
   - skiing
   - washington
+  - baker
 image:
   path: /assets/images/trips/table-mountain-circumnav-thumb.jpg
   width: 175

@@ -3,12 +3,14 @@ layout: trip
 title: 'Trip Report: Birthday Tour, WA Pass'
 date: 2022-05-14
 state: Washington
+area: Washington Pass
 type: skiing
 published: false
 popularity: 7
 categories:
   - skiing
   - washington
+  - wa-pass
 image:
   path: /assets/images/trips/birthday-tour-thumb.jpg
   width: 175

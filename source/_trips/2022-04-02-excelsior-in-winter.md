@@ -3,6 +3,7 @@ layout: trip
 title: 'Trip Report: Excelsior Peak Ski Tour'
 date: 2022-04-02
 state: Washington
+area: Baker
 type: skiing
 published: true
 popularity: 2
@@ -10,6 +11,7 @@ categories:
   - skiing
   - washington
   - peakbag
+  - baker
 image:
   path: /assets/images/trips/excelsior-in-winter-thumb.jpg
   width: 175

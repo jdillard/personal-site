@@ -3,12 +3,14 @@ layout: trip
 title: 'Trip Report: The Castle Ski Tour'
 date: 2022-02-05
 state: Washington
+area: Rainier
 type: skiing
 published: true
 popularity: 5
 categories:
   - skiing
   - washington
+  - rainier
 image:
   path: /assets/images/trips/the-castle-tour-thumb.jpg
   width: 175

@@ -3,6 +3,7 @@ layout: trip
 title: 'Trip Report: Skiing the North Face of Video Peak'
 date: 2022-04-16
 state: Washington
+area: Baker
 type: skiing
 published: true
 popularity: 7
@@ -10,6 +11,7 @@ categories:
   - skiing
   - washington
   - peakbag
+  - baker
 image:
   path: /assets/images/trips/video-peak-thumb.jpg
   width: 175

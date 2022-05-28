@@ -3,12 +3,14 @@ layout: trip
 title: 'Trip Report: Nisqually Bridge Ski Tour'
 date: 2022-04-23
 state: Washington
+area: Rainier
 type: skiing
 published: true
 popularity: 10
 categories:
   - skiing
   - washington
+  - rainier
 image:
   path: /assets/images/trips/nisqually-chute-thumb.jpg
   width: 175
