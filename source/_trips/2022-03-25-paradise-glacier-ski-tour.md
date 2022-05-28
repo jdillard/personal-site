@@ -3,12 +3,14 @@ layout: trip
 title: 'Trip Report: Paradise Glacier Ski Tour'
 date: 2022-03-25
 state: Washington
+area: Rainier
 type: skiing
 published: false
 popularity: 5
 categories:
   - skiing
   - washington
+  - rainier
 image:
   path: /assets/images/trips/paradise-glacier-thumb.jpg
   width: 175
@@ -40,9 +42,14 @@ Colder and windier than we expect.
 
 Nisqually Chute looks less intemidating the closer we get.
 
-Decide not to go all the way to Anvil rock since the wind is howling and the weather is only getting worse.
+Decide not to go all the way to Anvil rock since the wind is howling and the
+weather is only getting worse.
 
-Drop down to Paradise Glacier.
+Drop down to Paradise Glacier. Turns out this descent is mentioned in
+[Backcountry Ski & Snowboard Routes
+Washington](https://www.thriftbooks.com/w/backcountry-ski--snowboard-routes-washington/9172445/)
+for a descent option of Camp Muir as _"The often overlooked slopes of Paradise
+Glacier can offer excellent skiing"_.
 
 Work our way over icy wind scouled snow.
 
