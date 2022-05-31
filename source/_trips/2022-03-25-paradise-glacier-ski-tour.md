@@ -30,26 +30,37 @@ gate to Paradise at Longmire right before 9am, parking at the
 > real time updates on when the gate will open for a given day. Also, make sure
 > to bring tire chains.
 
-Originally trying for Nisqually Chute, via Anvil rock.
+Our plan that morning was to try for Nisqually Chute if the conditions allowed
+for it, something we weren't confident about that day, with a back up plan of
+trying out Paradise Glacier.
 
-![Mt Rainier Approach](/assets/images/trips/paradise-glacier-approach.jpg "Mt Rainier approach"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Mt. Rainier approach.</i></small>
+This option is mentioned in [Backcountry Ski & Snowboard Routes
+Washington](https://www.thriftbooks.com/w/backcountry-ski--snowboard-routes-washington/9172445/)
+as a descent option for Camp Muir, described as _"The often overlooked slopes of
+Paradise Glacier can offer excellent skiing"_. And after skiing it, we would
+have to agree.
 
-Panorama Point was icy, boot up it.
+## The Approach
 
-Colder and windier than we expect.
+![Mt Rainier Approach](/assets/images/trips/paradise-glacier-approach.jpg "Mt Rainier approach"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Mt. Rainier approach, heading towards Panorama Point.</i></small>
+
+The parking lot was average for a winter weekend and the sun loomed overhead,
+reminding us of the head start it got on us. We started moving fairly quickly
+across the frozen snow.
+
+Panorama Point was icy, so all but one of us booted up it.
+
+The weather was colder and windier than we expected, and cloud cover was
+starting to move in earlier than we expected.
 
 ![Nisqually Chute close-up](/assets/images/trips/paradise-glacier-nisqually-chute.jpg "Nisqually Chute close-up"){: .shadow-5.oversized}{: loading="lazy"} <small><i>A close up of Nisqually Chute.</i></small>
 
 Nisqually Chute looks less intemidating the closer we get.
 
 Decide not to go all the way to Anvil rock since the wind is howling and the
-weather is only getting worse.
+weather was only getting worse.
 
-Drop down to Paradise Glacier. Turns out this descent is mentioned in
-[Backcountry Ski & Snowboard Routes
-Washington](https://www.thriftbooks.com/w/backcountry-ski--snowboard-routes-washington/9172445/)
-for a descent option of Camp Muir as _"The often overlooked slopes of Paradise
-Glacier can offer excellent skiing"_.
+Drop down to Paradise Glacier.
 
 Work our way over icy wind scouled snow.
 

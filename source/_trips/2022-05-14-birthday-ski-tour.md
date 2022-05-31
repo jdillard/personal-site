@@ -18,11 +18,17 @@ image:
 cover: birthday-ski-tour
 ---
 
-Pass opened late. long winter. weather window. slept in Mazama.
+Washington Pass opened late this year, due to the never ending winter, but
+there was a short weather window the Friday after it opened.
 
-Coffee/Breakfast at Mazama store
+I slept in Mazama at the [Goat Creek Sno-Park](https://goo.gl/maps/1fcmUByfYYyAq2uY6)
+and Michael stopped before the pass to sleep since he had to come up from
+Seattle after work. On his way to meet me at the amazing [Mazama
+Store](https://www.themazamastore.com/) he noticed there was little parking dug
+out this year and most of it was already full.
 
-Lmited parking. Shuttle cars.
+So we grabbed a quick coffee and breakfast and headed out to park and shuttle
+cars.
 
 Busy, but not weekend busy. Start time.
 
