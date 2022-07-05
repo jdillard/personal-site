@@ -25,8 +25,6 @@ on Video Peak the first time we did the [Table
 Circumnav](/trips/table-mountain-circumnav.html) and were stoked to finally get
 a closer look.
 
-<div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/708964713?h=90c34b6741&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Alaskan Amber"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
 ## The Approach
 
 We tried going a little higher on the entrance to the South side of Table from
