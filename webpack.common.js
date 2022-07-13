@@ -53,6 +53,7 @@ module.exports = {
     library: "./source/assets/js/library.js",
     logBook: "./source/assets/js/logBook.js",
     getInvolved: "./source/assets/js/get-involved.js",
+    taylor: "./source/assets/js/taylor.js",
     trad: "./source/assets/js/trad.js",
     trip: "./source/assets/js/trip.js",
     tripArchive: "./source/assets/js/trip-archive.js",

@@ -1,0 +1,136 @@
+---
+layout: page
+title: Taylor Dock Tide Chart
+description: See when the tide is predicted to be low for mid-lining Taylor Dock.
+js_includes:
+  - taylor.js
+---
+<style>
+    /* axis */
+    .axis { /* axis labels */
+        fill: #EFEFEF;
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+    .axis line{ /* axis tick marks */
+        stroke-width : 1;
+        stroke: grey;
+        shape-rendering: crispEdges;
+    }
+    .axis path { /* axis line */
+        stroke-width : 1;
+        stroke: grey;
+        shape-rendering: crispEdges;
+    }
+
+    /* timeline band */
+    .band { /* band background */
+        fill: #FAFAFA;
+    }
+
+    /* labels */
+    .bandLabel {
+        fill: #F0F0F0;
+        font: 10px sans-serif;
+        font-weight: bold;
+    }
+    .bandMinMaxLabel {
+        fill: blue;
+        font: 10px sans-serif;
+        font-weight: bold;
+    }
+    .bandTitle {
+        fill: blue;
+        font: 10px sans-serif;
+        font-weight: bold;
+    }
+
+    /* brush */
+    .brush .extent {
+        stroke: gray;
+        fill: blue;
+        fill-opacity: .1;
+    }
+    .chart {
+        fill: #EEEEEE;
+    }
+    .interval {
+        stroke-width: 6;
+        cursor : default;
+        pointer-events: true;
+    }
+    .interval.black {
+        fill: #333333; /* dark-gray */
+    }
+    .interval.blue {
+        fill: #357EDD; /* blue */
+    }
+    .interval.gray {
+        fill: #777777; /* gray */
+    }
+    .interval.green {
+        fill: #19A974; /* green */
+    }
+    .interval.maroon {
+        fill: maroon;
+    }
+    .interval.orange {
+        fill: #FF6300; /* orange */
+    }
+    .interval.purple {
+        fill: #A463F2; /* light-purple */
+    }
+    .interval.red {
+        fill: #FF725C; /* light-red */
+    }
+    .interval.yellow {
+        fill: #FFD700; /* yellow */
+    }
+    .intervalLabel {
+        fill : black;
+        font: 10px sans-serif;
+        shape-rendering: crispEdges;
+    }
+    .item {
+        cursor : default;
+        pointer-events: auto;
+    }
+    .svg {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #EEEEEE;
+        background-color: #FFFFFF;
+    }
+    .gridlines line, path.domain {
+        stroke: #E0E0E080;
+    }
+    .tooltip {
+        width: auto;
+        position: absolute;
+        visibility: hidden;
+        color : black;
+        cursor:default;
+        background-color: #FFFFEE;
+        border: 1px solid;
+        padding: 4px;
+        shape-rendering: crispEdges;
+        pointer-events: none;
+        font-size: .8em;
+    }
+</style>
+
+<section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
+    <p>
+        <strong>"How's the Tide?"</strong> Slacklinking at Taylor Dock is best
+        done at low tide. Here are the times during the next two weeks in the
+        tide is low enough to stay dry. Data sourced from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://tidesandcurrents.noaa.gov/stationhome.html?id=9449424">NOAA Tides &amp; Currents</a>.
+    </p>
+</section>
+
+<div id="dates"></div>
+
+{% include feedback.html %}
+
+<p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
+<section id="issues" class="overflow-hidden tc">
+</section>
