@@ -3,11 +3,17 @@ import u from 'umbrellajs';
 const template_tide_predictions = require("./templates/taylor_tides.hbs");
 
 function getIssues() {
-    axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=trad&state=open')
+    axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=taylor&state=open')
       .then(function (response) {
-        for (let c in response.data) {
-          let temp_html = '<div class="mv2"><a class="no-underline relative f6 black-70 hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
-          document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
+        console.log(response.data)
+        if(response.data.length) {
+            for (let c in response.data) {
+            let temp_html = '<div class="mv2"><a class="no-underline relative f6 black-70 hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
+            document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
+            }
+        } else {
+            let temp_html = '<div class="mv2">No Issues Found.</div>';
+            document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
         }
       })
       .catch(function (error) {
@@ -102,7 +108,6 @@ axios.get('https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=pre
             }
         }
     }
-    console.log(dates)
 
     document.getElementById("dates").innerHTML = template_tide_predictions(dates);
   })
