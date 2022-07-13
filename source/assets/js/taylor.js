@@ -12,7 +12,7 @@ function getIssues() {
             document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
             }
         } else {
-            let temp_html = '<div class="mv2">No Issues Found.</div>';
+            let temp_html = '<div class="pa4 tc silver ma3 ba b--light-gray">No Issues Found.</div>';
             document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
         }
       })
