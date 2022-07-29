@@ -5,7 +5,6 @@ const template_tide_predictions = require("./templates/taylor_tides.hbs");
 function getIssues() {
     axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=taylor&state=open')
       .then(function (response) {
-        console.log(response.data)
         if(response.data.length) {
             for (let c in response.data) {
             let temp_html = '<div class="mv2"><a class="no-underline relative f6 black-70 hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
@@ -45,6 +44,7 @@ const lastdaystring = [lastday.getFullYear(),
             (mm2>9 ? '' : '0') + mm2,
             (dd2>9 ? '' : '0') + dd2
             ].join('');
+
 axios.get('https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=NOS.COOPS.TAC.WL&begin_date='+todaystring+'&end_date='+lastdaystring+'&datum=MLLW&station=9449424&time_zone=GMT&units=english&interval=h&format=json')
   .then(function (response) {
     const lowTide = []
@@ -89,24 +89,25 @@ axios.get('https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=pre
     const dates = []
           dates["thisweek"] = []
           dates["nextweek"] = []
+
     for (let s in streaks) {
-        if(streaks[s].start && streaks[s].end) {
             let starttime = new Date(streaks[s].start)
-            let endtime = new Date(streaks[s].end)
+            let lowtide = "N/A"
+            if(streaks[s].start && streaks[s].end) {
+                let endtime = new Date(streaks[s].end)
+                lowtide = starttime.toLocaleString('en-US', { hour: 'numeric', hour12: true }) + ' - ' +  endtime.toLocaleString('en-US', { hour: 'numeric', hour12: true })
+            }
             if(streaks[s].day < 8) {
                 dates['thisweek'].push({
                     "weekday": starttime.toLocaleString('en-US', { weekday: 'short' }).toUpperCase(),
                     "date": (starttime.getMonth()+1)+'/'+starttime.getDate(),
-                    "start": starttime.toLocaleString('en-US', { hour: 'numeric', hour12: true }),
-                    "end": endtime.toLocaleString('en-US', { hour: 'numeric', hour12: true })})
+                    "lowtide": lowtide})
             } else {
                 dates['nextweek'].push({
                     "weekday": starttime.toLocaleString('en-US', { weekday: 'short' }).toUpperCase(),
                     "date": (starttime.getMonth()+1)+'/'+starttime.getDate(),
-                    "start": starttime.toLocaleString('en-US', { hour: 'numeric', hour12: true }),
-                    "end": endtime.toLocaleString('en-US', { hour: 'numeric', hour12: true })})
+                    "lowtide": lowtide})
             }
-        }
     }
 
     document.getElementById("dates").innerHTML = template_tide_predictions(dates);
