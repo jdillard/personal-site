@@ -68,7 +68,7 @@ precipitation-focused reports of current, past, and forecasted climbing weather 
 
 <script>
   var weekly_BOU_48_51 = null
-  var hourly_BOU_48_51 = {"correlationId":"528e94f9","title":"Unexpected Problem","type":"https://api.weather.gov/problems/UnexpectedProblem","status":500,"detail":"An unexpected problem has occurred.","instance":"https://api.weather.gov/requests/528e94f9"}
+  var hourly_BOU_48_51 = {"correlationId":"310748d","title":"Unexpected Problem","type":"https://api.weather.gov/problems/UnexpectedProblem","status":500,"detail":"An unexpected problem has occurred.","instance":"https://api.weather.gov/requests/310748d"}
   var crags_config = [
   {
     "name": "Staunton State Park",
