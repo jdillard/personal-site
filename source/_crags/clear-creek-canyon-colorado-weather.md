@@ -68,7 +68,7 @@ precipitation-focused reports of current, past, and forecasted climbing weather 
 
 <script>
   var weekly_BOU_53_62 = null
-  var hourly_BOU_53_62 = {"correlationId":"13d3dc5f","title":"Unexpected Problem","type":"https://api.weather.gov/problems/UnexpectedProblem","status":500,"detail":"An unexpected problem has occurred.","instance":"https://api.weather.gov/requests/13d3dc5f"}
+  var hourly_BOU_53_62 = {"correlationId":"11968974","title":"Unexpected Problem","type":"https://api.weather.gov/problems/UnexpectedProblem","status":500,"detail":"An unexpected problem has occurred.","instance":"https://api.weather.gov/requests/11968974"}
   var crags_config = [
   {
     "name": "Clear Creek Canyon",
