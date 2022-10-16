@@ -68,9 +68,20 @@ def create_forecast(f, office)
   uri = URI.parse('https://api.weather.gov/gridpoints/' + office + '/forecast')
   response = Net::HTTP.get_response uri
 
+  # check if null response
+  if response.code == "200"
+    weekly = JSON.parse(response.body)["properties"].to_json
+  else
+    #TODO retry if 500 or 503? try a different office?
+    puts response.code
+    puts office
+    weekly = false
+  end
+
   f << '  var weekly_' + office.gsub('/', '_').gsub(',', '_') + ' = '
-  f << JSON.parse(response.body)["properties"].to_json
+  f << weekly
   f << "\n"
+
   sleep(0.5)
 end
 
@@ -78,8 +89,17 @@ def create_hourly(f, office)
   uri = URI.parse('https://api.weather.gov/gridpoints/' + office + '/forecast/hourly')
   response = Net::HTTP.get_response uri
 
+  if response.code == "200"
+    hourly = JSON.parse(response.body).to_json
+  else
+    #TODO retry if 500 or 503? try a different office?
+    puts response.code
+    puts office
+    hourly = false
+  end
+
   f << '  var hourly_' + office.gsub('/', '_').gsub(',', '_') + ' = '
-  f << JSON.parse(response.body).to_json
+  f << hourly
   f << "\n"
 
   sleep(0.5)

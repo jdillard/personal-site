@@ -92,7 +92,13 @@ function populate(crags, menu = true, element = 'weather', adjacent = 'beforeend
           console.log(error);
         });
 
-      populateForecasts(crags[c], eval('weekly_'+crags[c].office.replace(/\//g, '_').replace(/,/g, '_')));
+      if (eval('weekly_'+crags[c].office.replace(/\//g, '_').replace(/,/g, '_'))) {
+        populateForecasts(crags[c], eval('weekly_'+crags[c].office.replace(/\//g, '_').replace(/,/g, '_')));
+      } else {
+        console.warn('Daily forecast not available for ' + crags[c].office);
+        document.getElementById("forecast-"+crags[c].number).innerHTML = '<div class="ba b--light-gray ph3 pv4 tc gray f5">Daily forecast not available at this time.</div>';
+      }
+
     }
   }
 
@@ -336,7 +342,12 @@ function populateForecasts(crag, data = []) {
     el.srcElement.innerHTML = moment(el.srcElement.dataset.date).format('dddd');
   });
 
-  populateHourlyForecasts(crag.number, forecasts.periods[0].startTime, eval('hourly_'+crag.office.replace(/\//g, '_').replace(/,/g, '_')));
+  //TODO show error in UI
+  if (eval('hourly_'+crag.office.replace(/\//g, '_').replace(/,/g, '_'))) {
+    populateHourlyForecasts(crag.number, forecasts.periods[0].startTime, eval('hourly_'+crag.office.replace(/\//g, '_').replace(/,/g, '_')));
+  } else {
+    console.warn('Hourly forecast not available for ' + crag.office)
+  }
 }
 
 /**
@@ -356,6 +367,7 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
       arr[4] = [];
       arr[5] = [];
       arr[6] = [];
+  console.log(data)
   const lat = data.geometry.coordinates[0][0][1];
   const long = data.geometry.coordinates[0][0][0];
   let times = SunCalc.getTimes(new Date(), lat, long);
