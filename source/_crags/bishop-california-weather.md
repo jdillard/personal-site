@@ -66,8 +66,8 @@ precipitation-focused reports of current, past, and forecasted climbing weather 
 </section>
 
 <script>
-  var weekly_VEF_14_168 = null
-  var hourly_VEF_14_168 = {"correlationId":"48aecdda","title":"Unexpected Problem","type":"https://api.weather.gov/problems/UnexpectedProblem","status":500,"detail":"An unexpected problem has occurred.","instance":"https://api.weather.gov/requests/48aecdda"}
+  var weekly_VEF_14_168 = false
+  var hourly_VEF_14_168 = false
   var crags_config = [
   {
     "name": "Bishop",
