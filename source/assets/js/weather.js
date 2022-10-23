@@ -367,7 +367,7 @@ function populateHourlyForecasts(crag_index, week_start_time, data) {
       arr[4] = [];
       arr[5] = [];
       arr[6] = [];
-  console.log(data)
+
   const lat = data.geometry.coordinates[0][0][1];
   const long = data.geometry.coordinates[0][0][0];
   let times = SunCalc.getTimes(new Date(), lat, long);
