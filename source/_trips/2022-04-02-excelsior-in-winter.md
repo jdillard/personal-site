@@ -35,8 +35,9 @@ I was the only skiier that day, and while it was funny to pass people on a
 snowless trail with a full ski setup on my back, everyone I passed was stoked
 to see someone go play in the powder.
 
-Once I got to the tree line the landscape was flat white as clouds rolled
-through and the sun shined through in contrast.
+Once I got to the tree line the landscape was flat white. Clouds rolled through
+and the sun shined through gaps in the clouds providing beams of contrast that
+scanned the terrain.
 
 ![The West Face of Excelsior](/assets/images/trips/excelsior-in-winter-west-face.jpg "The West Face of Excelsior"){: .shadow-5.oversized}{: loading="lazy"}<small><i>The West bowl is much shallower, resulting in shorter runs.</i></small>
 

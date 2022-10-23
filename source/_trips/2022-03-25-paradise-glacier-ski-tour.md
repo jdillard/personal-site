@@ -54,10 +54,10 @@ decided to boot up it.
 The weather stayed colder and windier than we expected as we moved further and
 further up, and the cloud cover was starting to move in earlier than we expected.
 
-![Nisqually Chute close-up](/assets/images/trips/paradise-glacier-nisqually-chute.jpg "Nisqually Chute close-up"){: .shadow-5.oversized}{: loading="lazy"} <small><i>A close up of Nisqually Chute.</i></small>
+![Nisqually Chute close-up](/assets/images/trips/paradise-glacier-nisqually-chute.jpg "Nisqually Chute close-up"){: .shadow-5.oversized}{: loading="lazy"} <small><i>A close up of the entrance to Nisqually Chute.</i></small>
 
-Nisqually Chute looked less intemidating the closer we got, a welcome relief
-for me.
+[Nisqually Chute](/trips/nisqually-bridge-run.html) looked less intimidating
+the closer we got, a welcome relief for me.
 
 We decided not to go all the way to Anvil rock since the wind is howling, the
 snow never softened, and the weather was only getting worse.
