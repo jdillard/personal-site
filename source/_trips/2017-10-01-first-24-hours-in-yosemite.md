@@ -119,7 +119,7 @@ with one spitting us out over the top of a huge cave phenonmenon. As we
 abseiled, like a spider spinning the first strand in its web, it was as little
 unnerving to realize the fact we didn't know what we were hiking over.
 
-Pracitcally falling down the loose dirt on the way down, part physical
+Practically falling down the loose dirt on the way down, part physical
 exhaustion and part mental, we stumbled out on to flat ground after what seemed
 like first time an eternety, getting back to the van right as headlamps were
 becoming necessary.
