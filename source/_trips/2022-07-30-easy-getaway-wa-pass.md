@@ -18,28 +18,33 @@ image:
 cover: easy-getaway
 ---
 
-Decided to climb [Easy Getaway](https://www.mountainproject.com/route/115311402/easy-getaway) and met at [Cutthroat Trailhead](https://goo.gl/maps/E6wd9oj7Qe4ipGFH6) and I got there, a little later than I originally
-planned, to a sky full of stars and a fairly prominent Milky Way.
+In order to get an adventure climb in for the season, Michael and I decided to
+try out [Easy Getaway](https://www.mountainproject.com/route/115311402/easy-getaway),
+an undervisited climb with no established trail. I got to
+[Cutthroat Trailhead](https://goo.gl/maps/E6wd9oj7Qe4ipGFH6) a little later than
+I originally planned, to a sky full of stars and a fairly prominent Milky Way.
 
 Not only did I manage to forget my sleeping bag, but I also didn't think about
 preparing for a cold start in the morning. Which lead to a lack of motivation
-for the alpine start we had planned on doing.
+for the alpine start we had originally planned on doing.
 
 ## Approach
 
-The approach started off easy enough, a little light bushwacking on a mostly
-open trail. Then it turns left into steeper terrain, but for the most part you
+The late approach started off easy enough, with a little light bushwacking on a mostly
+open trail, before it turns left into steeper terrain. If you pick your path wisely, you
 can follow open areas all the way to the top, with only small patches of dense
 alger.
 
-![Easy Getaway Approach](/assets/images/trips/easy-getaway-approach.jpg "Easy Getaway Approach"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Taking a moment to enjoy the surroundings.</i></small>
+![Easy Getaway Approach](/assets/images/trips/easy-getaway-approach.jpg "Easy Getaway Approach"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Taking a moment to enjoy the surroundings, a cascading waterfall in the distance.</i></small>
 
 The approach eventually changes to mostly skree and small talus, but if you
 play your cards right, you can keep that to a minimum. The downloadable GPX on
 [Mountain Project](https://www.mountainproject.com/map/113436052/cutthroat-wall)
 was a great help and likely saved a ton of time and effort.
 
-The platform is pretty obvious. Look for streaked block.
+The platform where the first pitch starts is pretty obvious. Make sure to look
+up for the streaked block that is on the fifth pitch to give yourself some general
+direction.
 
 ## Climb
 
@@ -50,18 +55,18 @@ Finding the platform start was easy enough.
 ### First pitch
 
 The first pitch starts up the right facing crack. The middle slab section was
-tricky to protect, so just ended up launching through the crux move. After
+tricky to protect, so I ended up just launching through the crux move. After
 that, pull the overlap and head left to setup an anchor near the base of the
 next right facing corner.
 
 ### Second Pitch
 
-This pitch was fairly dirty with a crappy fall zone, otherwise it would be a
-nice pitch.
+This pitch was fairly dirty with a crappy fall zone, otherwise it is nice.
 
 ### Third Pitch
 
-Make sure to follow the thin ledge until you're underneath the larger overhang.
+After pulling the short corner, head left and make sure to follow the thin
+seperated ledge until you're underneath the larger overhang.
 
 ### Forth Pitch
 
@@ -71,7 +76,8 @@ the tree, as the next pitch is wondery.
 ### Fifth Pitch
 
 The right variation is fairly straight forward if you don't overthink the
-traverse. Stay low and work your way over to the crack system on the right.
+traverse. Stay low and work your way over to the base of the crack system on
+the right.
 
 ### Sixth Pitch
 
@@ -79,14 +85,14 @@ The chiminey is short and fairly secure. I went right shoulder in and kept the
 gear I wanted to use on my left side. Enjoy the view as you try to work your
 helmet past the constriction.
 
-To make it easier onthe follower, drop a loop from the first tree over the
-right of the crack to grab the bags. It's fairly easy climbing to finish, we ended
-up just using a hip belay.
+To make it easier on the follower, drop a loop from the first tree over the
+right of the crack to grab the bags. From there it's fairly easy climbing to 
+finish, we ended up just using a hip belay.
 
 ## Descent
 
 We found sun damaged slings wrapped around a large boulder on the right.  Given
-their condention we decided to back them up with an additional slings. Bringing
+their condition we decided to back them up with an additional slings. Bringing
 rapell gear on adventure climbs is good rule in general.
 
 We rapped to a tree below with more sun damaged slings that we backed up, then
@@ -102,8 +108,8 @@ started to countour towards the next gulley system.
 > have to go through loose skree vs slightly more pleasant meadows.
 
 Maybe it's because it was a hot day, but this descent was worse than expected.
-It isn't too difficult to find the stage again if you left bags, and there
-isn't much additional elevation distance to do so.
+It isn't too difficult to find the starting platform again if you left bags, and there
+isn't much additional elevation to gain to do so.
 
 ![Easy Getaway Descent](/assets/images/trips/easy-getaway-descent.jpg "Easy Getaway Descent"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Looking across from the top of the rapell towards the descent traverse.</i></small>
 
@@ -117,12 +123,13 @@ The creek gets big enough to dip your feet in down low and makes for a nice
 reprieve before the last push out.
 
 {: {{site.data.css.tip-box}} }
-> **Tip:** Bring a water filter as there is a possible water refill here, or you can wait
-> until further down the descent where the creek gets a little larger.
+> **Tip:** Bring a water filter as there is a possible water refill up high near
+> the traverse, or you can wait until further down the descent where the creek
+> gets a little larger.
 
 ## Thoughts
 
 All told, it was a nice adventure climb, it just would have been more enjoyable
-had we planned it being such an adventure. The fact it is Northish facing,
+had we planned on it being such an adventure. The fact it is Northish facing,
 gives you time to get most or all of the route done before the sun hits if you
 get an early start.
