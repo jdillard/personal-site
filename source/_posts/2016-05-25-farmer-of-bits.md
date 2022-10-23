@@ -25,7 +25,7 @@ First I'll muddy the waters with a flood of background and loose definitions in 
 
 With me being a perpetual renter in urban environments and interested in the nature of open source software I became curious if similar distributed concepts could be applied to urban "market gardening". This would mean that instead of having one small-scale farmer on one plot of land, that theoretical farmer and their plot could be split into several hobbyist gardeners each on their own plots and hopefully achieve the same production. Luckily I wasn't the only one in this head-space and there were a handful of wonderful gardeners in my area with differing talents and similar thoughts. 
 
-In order to [live this question](https://www.goodreads.com/quotes/717-be-patient-toward-all-that-is-unsolved-in-your-heart) I first became involved with an organization called [Urban Patchwork](http://www.urbanpatchwork.org/) that happened to have already organized a front yard garden paired with an excellent green thumbed mentor right down the street from where I was renting. This cut my costs and need for buying land and even came bundled with knowledge!
+In order to [live this question](https://www.goodreads.com/quotes/717-be-patient-toward-all-that-is-unsolved-in-your-heart) I first became involved with an organization called [Urban Patchwork](http://www.urbanpatchwork.org/) that happened to have already organized a front yard garden paired with an excellent green thumbed mentor right down the street from where I was renting.
 
 {: {{site.data.css.info-box}} }
 > **Side Note:** Urban Patchwork worked by bringing together a person with land (often a residential lot) that wanted a garden, an experienced gardener, volunteers and beginners, and paying customers. At one point there was a patchwork of them across the city and they would have a harvest in their area every two weeks to create CSA baskets and the land owners, lead gardeners, long term volunteers, and paying customers would each get one.
@@ -34,14 +34,14 @@ In order to [live this question](https://www.goodreads.com/quotes/717-be-patient
 
 Unfortunately, the patch in the patchwork I was working on came undone around the time I started and so other ideas of what to do with it started circulating. The idea of a producer cooperative for gardeners soon took hold.
 
-A [producer cooperative](http://www.geo.coop/taxonomy/term/139) is a producer owned and democratically-controlled organization that serves its members through any combination of cooperative marketing, support, and bulk purchasing. In this case, the producers were all hobbyist gardeners.
+A [producer cooperative](http://www.geo.coop/taxonomy/term/139) is a producer owned and democratically-controlled organization that serves its members, the producers in this case, through any combination of cooperative marketing, support, and bulk purchasing. In this case, the producers were all hobbyist gardeners.
 
 {: {{site.data.css.info-box}} }
 > **Side Note:** Producer cooperatives have a long and strong history in the United States, gaining popularity with the [Granger Movement](http://www.britannica.com/EBchecked/topic/241647/Granger-movement) in the late 1800s, as documented by [Solon Justus Buck](https://books.google.com/books?id=Hfi5AAAAIAAJ).
 
-It was a new venture for everyone involved, but we dove right in and created the [Yard to Market Coop](http://www.yardtomarket.coop/). It wasn't long before we had bylaws, a board of directors, and a farmstand at one of the local farmers' markets. Gardeners could go through a short on-boarding process to become members and shortly after start selling produce through the cooperative, which would take a small cut to help fund the operations that were volunteer run, with goals of paid wages. This, among other things, allowed the gardeners to concentrate on growing food and let the cooperative handle the marketing and selling side, functioning as a distributor.
+It was a new venture for everyone involved, but we dove right in and created the [Yard to Market Coop](http://www.yardtomarket.coop/). It wasn't long before we had bylaws, a board of directors, and a farmstand at one of the local farmers' markets. Gardeners could go through a short on-boarding process to become members and shortly after start selling produce through the cooperative, which would take a small cut to help fund the operations that were volunteer run, with goals of paid wages.
 
-Sharing the burden of labor with both the experienced and the curious made having an impact possible as a hobby!
+This, among other things, allowed the gardeners to concentrate on growing food and let the cooperative handle the marketing and selling side, functioning as a distributor. Sharing the burden of labor with both the experienced and the curious made having an impact possible as a hobby!
 
 ## And Market Forces
 
@@ -49,8 +49,15 @@ Since the success of the coop, in part, depended on enough produce being availab
 
 ## It's Kind of Like Software
 
-Anyone that has developed a large software product, and its surrounding ecosystem, knows it also requires tremendous amounts of discipline, planning, and maintenance. And if you're like me, seeing concepts from a different point of view helps them sink in. The main difference with "market gardening" is that unlike technology driven software everything is much slower and palpable. For example, if you plant something at the wrong time you can't pull an all-nighter to make it ready for harvest by morning. You also have to work along side that mistake as it isn't hidden on some other server for you to worry about later. 
+Anyone that has developed a large software product, and its surrounding ecosystem, knows it also requires tremendous amounts of discipline, planning, and maintenance. And if you're like me, seeing concepts from a different point of view helps them sink in. The main difference with "market gardening" is that unlike technology driven software everything is much slower and palpable.
+
+For example, if you plant something at the wrong time you can't pull an all-nighter to make it ready for harvest by morning. You also have to work along side that mistake as it isn't hidden on some other server for you to worry about later. 
 
 ## The End
 
-I think "market gardening" can be beneficial to a person's personal and professional life, whether through a greater appreciation or a greater understanding. I also understand that going full time on 1.5+ acres isn't realistic so I'd add trying to build a local producer cooperative even if only for the experience of participating in a democratic organization.
+I think "market gardening" can be beneficial to a person's personal and
+professional life, whether through a greater appreciation or a greater
+understanding. I also understand that going full time on 1.5+ acres isn't
+realistic for most people so I'd add trying to build a local producer
+cooperative even if only for gaining the experience of participating in a
+democratic organization.
