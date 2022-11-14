@@ -1,6 +1,3 @@
-[![david Dependency status](https://david-dm.org/jdillard/personal-site.svg)](https://david-dm.org/jdillard/personal-site)
-[![david devDependencies status](https://david-dm.org/jdillard/personal-site/dev-status.svg)](https://david-dm.org/jdillard/personal-site)
-
 ## Contributing
 
 Feel free to [create a pull request](https://github.com/jdillard/personal-site/pulls)
