@@ -6,8 +6,6 @@
 
 //! Author : Menelion Elensúle : https://github.com/Oire
 
-//! Copyright (c) JS Foundation and other contributors
-
 //! author : Abdel Said : https://github.com/abdelsaid
 
 //! author : Abdel Said: https://github.com/abdelsaid
@@ -344,8 +342,6 @@
 
 //! comment : miestasmia corrected the translation by colindean
 
-//! github.com/moment/moment-timezone
-
 //! improvements : Illimar Tambek : https://github.com/ragulka
 
 //! license : MIT
@@ -360,7 +356,7 @@
 
 //! locale : Arabic (Kuwait) [ar-kw]
 
-//! locale : Arabic (Lybia) [ar-ly]
+//! locale : Arabic (Libya) [ar-ly]
 
 //! locale : Arabic (Morocco) [ar-ma]
 
@@ -620,8 +616,6 @@
 
 //! locale : siSwati [ss]
 
-//! moment-timezone.js
-
 //! moment.js
 
 //! moment.js locale configuration
@@ -634,6 +628,4 @@
 
 //! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 
-//! version : 0.5.34
-
-//! version : 2.29.1
+//! version : 2.29.4
