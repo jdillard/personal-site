@@ -1,9 +1,9 @@
 name: Build Site Data
 on:
-  schedule:
-    # Run at 08:15 UTC daily
-    # - cron: '*/15 * * * *'
-    - cron: '30 8 * * *'
+  # Run at 08:30 UTC daily
+  schedule: [{cron: "30 8 * * *"}]
+  # (optional) Run workflow manually
+  workflow_dispatch:
 jobs: 
   run:
     name: Build Crag data
