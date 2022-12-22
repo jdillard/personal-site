@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 import u from 'umbrellajs';
+import axios from 'axios';
 
 const template_logbook = require("./templates/logbook.hbs");
 

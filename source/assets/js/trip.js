@@ -1,4 +1,5 @@
 import u from 'umbrellajs';
+import axios from 'axios';
 
 const resources_template = require("./templates/resources-simple.hbs");
 const trips_template = require("./templates/recent_trips.hbs");

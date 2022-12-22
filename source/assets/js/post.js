@@ -1,5 +1,6 @@
 import tippy from 'tippy.js';
 import u from 'umbrellajs';
+import axios from 'axios';
 
 const articles_template = require("./templates/recent_articles.hbs");
 

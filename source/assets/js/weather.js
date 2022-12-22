@@ -1,6 +1,8 @@
 import * as d3 from 'd3';
 import moment from 'moment-timezone';
 import u from 'umbrellajs';
+import axios from 'axios';
+
 var SunCalc = require('suncalc');
 var tzlookup = require("tz-lookup");
 

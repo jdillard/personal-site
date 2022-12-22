@@ -1,4 +1,5 @@
 import u from 'umbrellajs';
+import axios from 'axios';
 
 const template_tide_predictions = require("./templates/taylor_tides.hbs");
 

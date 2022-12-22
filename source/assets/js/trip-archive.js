@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 const template = require("./templates/articles.hbs");
 
 let articles = {};

@@ -33,8 +33,7 @@ module.exports = {
       }
     }),
     new webpack.ProvidePlugin({
-      moment: "moment",
-      axios: "axios"
+      moment: "moment"
     }),
     new webpack.LoaderOptionsPlugin({
       options: {

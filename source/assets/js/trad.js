@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 import u from 'umbrellajs';
+import axios from 'axios';
 
 function create_timeline(domElement, min, max, totalItems, totalBrands, metric=true) {
 

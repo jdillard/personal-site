@@ -1,4 +1,5 @@
 //import 'babel-polyfill';
+import axios from 'axios';
 
 const template_articles = require("./templates/latest_articles.hbs");
 const template_trips = require("./templates/latest_trips.hbs");
