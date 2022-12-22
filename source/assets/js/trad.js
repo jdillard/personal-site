@@ -56,8 +56,6 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
         }
     }
 
-    console.log(convertToInches(max, metric));
-
     //--------------------------------------------------------------------------
     // data
 
@@ -330,20 +328,18 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
             ]);
 
             function getHtml(element, d) {
-                return d.manufacturer + '<br>' + d.model + ' #' + d.size + "<br>" + convertToInches(d.start, metric) + units + " - " + convertToInches(d.end, metric) + units;
+                return element.manufacturer + '<br>' + element.model + ' #' + element.size + "<br>" + convertToInches(element.start, metric) + units + " - " + convertToInches(element.end, metric) + units;
             }
 
             function showTooltip (d) {
-
                 var x = event.pageX < band.x + band.w / 2
                         ? event.pageX + 10
                         : event.pageX - 110,
                     y = event.pageY < band.y + band.h / 2
                         ? event.pageY + 30
                         : event.pageY - 30;
-
                 tooltip
-                    .html(getHtml(d3.select(this), d))
+                    .html(getHtml(d3.select(this).datum(), d))
                     .style("top", y + "px")
                     .style("left", x + "px")
                     .style("visibility", "visible");
