@@ -31,35 +31,14 @@ js_includes:
       target="_blank" href="https://rockclimberstrainingmanual.com/">The Rock
       Climbers Training Manual</a>.
     </p>
-    <p>
-      To generate a Route Pyramid based on your <a class="no-underline light-red"
-      target="_blank" href="https://www.mountainproject.com">Mountain Project</a>
-      tick list, enter the e-mail associated with your login below:
-    </p>
-
-    <p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Instructions</p>
-    <div id="settings" class="overflow-hidden" style="display:none;">
-      <div class="mv2 ph2 f6 tc pv2 center">
-        <p class="measure lh-copy center"><strong>Set climbing styles</strong> for all ticks or they won't all show up.</p>
-        <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
-        <p class="measure lh-copy center"><strong>Set lead styles</strong> for all ticks or they will just show as a generic lead.</p>
-        <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
-        <p class="measure lh-copy center"><strong>Having issues?</strong> Try <a id="clear-cache" class="no-underline relative fancy-link light-red hover-light-red" href="#">clearing the local cache</a>.</p>
-      </div>
-    </div>
-
-    <div class="mb1">
-      <form class="pv2 black-80">
-        <div class="measure">
-          <label for="mp-email" class="f6 b db mb2">Mountain Project E-mail</label>
-          <input name="mp-email" id="mp-email" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="email" placeholder="me@example.com">
-        </div>
-        <div class="mt3">
-          <input class="b ph3 pv2 mr3 input-reset ba b--black bg-transparent dim pointer f6" type="button" name="mp-submit" id="mp-submit" value="View Your Ticks">
-          <!--<span class="f7 fw6">Last Updated: 2018-12-03 12:03</span>-->
-        </div>
-      </form>
-    </div>
+    <blockquote style="margin-left:-25px;margin-right: -25px;" class="shadow-5 ma0 dark-blue bg-lightest-blue bl bw3 b--dark-blue">
+      <p class="pa3"><strong>Note:</strong> Unfortunatly, onX has <a href="https://www.mountainproject.com/forum/topic/120168991/mountain-project-data-api-deprecated">deprecated the data API</a>
+      so this tool is no longer functional. I recommend using <a href="https://www.thecrag.com/">thecrag.com</a>
+      instead, as they have a built in <a href="https://www.thecrag.com/climber/leecujes">route pyramids</a>
+      and their user content is <a href="https://www.thecrag.com/terms#licensing-of-ip-user-content">creative commons</a>.
+      They even have an <a href="https://www.thecrag.com/en/article/importlogbook">import tool</a>
+      if you want to migrate your ticks over.</p>
+    </blockquote>
 </section>
 
 <section id="log-book" class="mv4-ns tc mv3 ph2 center">
@@ -73,9 +52,4 @@ js_includes:
 
 <section id="logbook"></section>
 
-
 {% include feedback.html %}
-
-<p id="issues-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Known Issues</p>
-<section id="issues" class="overflow-hidden tc">
-</section>

@@ -102,19 +102,6 @@ function filterRoutes(selectedroutes, selectedType='', selectedStyles=[], select
     logbook.innerHTML = template_logbook(routeRatings);
 }
 
-function getIssues() {
-  axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=logbook&state=open')
-    .then(function (response) {
-      for (let c in response.data) {
-        let temp_html = '<div class="mv2"><a class="no-underline relative f6 black-70 hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
-        document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
-      }
-    })
-    .catch(function (error) {
-      console.log(error);
-  });
-}
-
 function isSelectedYear(year, selectedYears) {
   if(selectedYears.includes(year)) {
     return true;
@@ -317,16 +304,6 @@ function createGraph(logData) {
 
 const ratingOrder = ["V1", "V2", "V3", "V4", "V5", "V6", "V7", "5.6", "5.7", "5.8", "5.9", "5.10a", "5.10b", "5.10c", "5.10d", "5.11a", "5.11b", "5.11c", "5.11d", "5.12a", "5.12b", "5.12c", "5.12d", "5.13a", "5.13b", "5.13c", "5.13d", "5.14a", "5.14b", "5.14c", "5.14d"];
 
-u("#mp-submit").on('click', function(){
-  const email = document.getElementById("mp-email").value;
-
-  if(email && /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-    getTicks(email);
-  } else {
-    alert("Please enter a valid e-mail address.");
-  }
-});
-
 //TODO figure out how to use reDrawGraph
 u('#route-types').on('change', function() {
   const selectedType = document.querySelector("input[name='routeType']:checked").value;
@@ -374,31 +351,7 @@ u('#route-years').on('change', function() {
   reDrawGraph();
 });
 
-u("#settings-toggle").on('click', function() {
-  if(u("#settings").hasClass('open')) {
-    u("#settings").removeClass('open');
-    u("#settings-toggle").text('Show Instructions');
-    document.getElementById("settings").style.display = "none";
-  } else {
-    u("#settings").addClass('open');
-    u("#settings-toggle").text('Hide Instructions');
-    document.getElementById("settings").style.display = "block";
-  }
-});
-
 document.getElementById("clear-cache").addEventListener("click", function(event){
   localStorage.clear();
   //TODO reload graph
-});
-
-u("#issues-toggle").on('click', function() {
-  if(u("#issues").hasClass('open')) {
-    u("#issues").removeClass('open');
-    u("#issues-toggle").text('Show Known Issues');
-    document.getElementById("issues").innerHTML = "";
-  } else {
-    u("#issues").addClass('open');
-    u("#issues-toggle").text('Hide Known Issues');
-    getIssues();
-  }
 });
