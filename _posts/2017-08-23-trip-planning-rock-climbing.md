@@ -1,8 +1,11 @@
 ---
 layout: post
 title: 'Trip Planning: Rock Climbing'
-date: 2017-08-24T02:30:24.852Z
+date: 2017-08-24
 published: false
+popularity: 6
+comment_issue_id: 6
+type: misc
 categories: 
   - rock climbing
   - trip planning
