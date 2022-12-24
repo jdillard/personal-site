@@ -8,10 +8,6 @@ categories:
 ---
 I recently went on what I would consider my first kayaking fishing trip down at Rockport on the Texas coast.
 
-## Jordan Peterson
-
-
-
 ## David Harvey
 
 David Harvey is a professor at __ and has been leading readings of Karl Marx's Das Kapital since 19__. He is a great resource for diving deeper into capital from a different point of view.
