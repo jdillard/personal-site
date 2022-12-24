@@ -1,11 +1,15 @@
 ---
 layout: post
 title: My Favorite Thought Leaders
-date: 2017-08-23T00:00:00-05:00
+date: 2017-08-23
 published: false
+popularity: 6
+comment_issue_id: 6
+type: misc
 categories: 
   - thought leaders
 ---
+
 I recently went on what I would consider my first kayaking fishing trip down at Rockport on the Texas coast.
 
 ## David Harvey
