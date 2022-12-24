@@ -3,6 +3,9 @@ layout: post
 title: The Code Warrior's Way
 date: 2017-08-23T00:00:00-05:00
 published: false
+popularity: 6
+comment_issue_id: 6
+type: misc
 cover: rock-warrior
 categories: 
   - coding
