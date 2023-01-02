@@ -1,0 +1,8 @@
+monokai
+Netlify
+Octokit
+Dockerfile
+Jenkinsfile
+Zanata
+Makefile
+Justus
