@@ -37,7 +37,7 @@ then select each rating to be graphed and compare how they have changed over
 time, as shown below. This can help to see the following:
 
 - If the ratio of **unusable** to **excellent** ratings is improving over time.
-- How a rating is changing over time as a pecentage of the number of total
+- How a rating is changing over time as a percentage of the number of total
   ratings.
 
 ![Graph over time with 1-5 selected](/assets/images/posts/ratings-over-time.png)
@@ -130,9 +130,9 @@ element, to handle the desired hover effects.
 }
 ```
 
-### Javascript
+### JavaScript
 
-Javascript is only used to send custom events to Google Analytics when a star
+JavaScript is only used to send custom events to Google Analytics when a star
 rating is clicked. In this example, the **event category** field in Google
 Analytics is set to `Rating`, **Event Action** is set as the rating value, and
 **Event Label** is set to the relative URL of the page.

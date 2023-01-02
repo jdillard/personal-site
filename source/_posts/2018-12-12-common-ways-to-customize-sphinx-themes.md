@@ -15,7 +15,7 @@ is a need to extend its functionality in ways that are reusable across projects
 and more likely to survive upgrades. This article covers a variety of ways to
 achieve this using the following methods:
 
-1. [Custom Javascript and CSS](#custom-javascript-and-css)
+1. [Custom JavaScript and CSS](#custom-javascript-and-css)
 2. [Custom theme.conf Variables](#custom-theme-conf-variables)
 3. [Changing the code highlighting styles](#changing-the-code-highlighting-styles)
 4. [Using html_context Variables](#using-html-context-variables)
@@ -30,7 +30,7 @@ achieve this using the following methods:
 > [continuous-sphinx](https://github.com/jdillard/continuous-sphinx).
 {: {{site.data.css.tip-box}} }
 
-## <a name="custom-javascript-and-css"></a>1. Custom Javascript and CSS
+## <a name="custom-javascript-and-css"></a>1. Custom JavaScript and CSS
 
 Custom javascript and CSS files can be great for overrides and snippets of
 functionality. First, create a **custom.js** and **custom.css** file in the
@@ -183,11 +183,11 @@ function deploy(site) {
 > webhook service.
 {: {{site.data.css.info-box}} }
 
-## <a name="using-a-javascript-based-feedback-form"></a>6. Using a javascript Based Feedback Form
+## <a name="using-a-javascript-based-feedback-form"></a>6. Using a JavaScript Based Feedback Form
 
 For an embedded feedback form versus just a feedback button, you can add
 the code for that to the theme's HTML template instead. Here is an example using
-Hubspot, but you could go with any javascript based form service:
+HubSpot, but you could go with any javascript based form service:
 
 ```html
 {% raw %}{% if pagename != "search" %}
@@ -211,7 +211,7 @@ Hubspot, but you could go with any javascript based form service:
 Once the form is embedded, add custom styles for the form in the **custom.css**
 file.
 
-![Documentation Feedback Form](/assets/images/posts/docs-form-feedback.png){: loading="lazy"} <small><i>An example of an embedded Hubspot feedback form.</i></small>
+![Documentation Feedback Form](/assets/images/posts/docs-form-feedback.png){: loading="lazy"} <small><i>An example of an embedded HubSpot feedback form.</i></small>
 
 ## <a name="adding-a-sitemap"></a>7. Adding a sitemap
 
@@ -224,7 +224,7 @@ adds a sitemap with very little configuration.
 Sphinx has the ability to show the [last updated](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_last_updated_fmt)
 timestamp, but that only shows the last time the page was built, not the last
 time it was actually changed. The [sphinx-gitstamp](https://github.com/jdillard/sphinx-gitstamp)
-extention will grab the last change in the page's commit history and make it
+extension will grab the last change in the page's commit history and make it
 available to the HTML template.
 
 ## <a name="adding-a-custom-404-page"></a>9. Adding a custom 404 page

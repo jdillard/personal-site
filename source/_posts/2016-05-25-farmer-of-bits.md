@@ -39,7 +39,7 @@ A [producer cooperative](http://www.geo.coop/taxonomy/term/139) is a producer ow
 {: {{site.data.css.info-box}} }
 > **Side Note:** Producer cooperatives have a long and strong history in the United States, gaining popularity with the [Granger Movement](http://www.britannica.com/EBchecked/topic/241647/Granger-movement) in the late 1800s, as documented by [Solon Justus Buck](https://books.google.com/books?id=Hfi5AAAAIAAJ).
 
-It was a new venture for everyone involved, but we dove right in and created the [Yard to Market Coop](http://www.yardtomarket.coop/). It wasn't long before we had bylaws, a board of directors, and a farmstand at one of the local farmers' markets. Gardeners could go through a short on-boarding process to become members and shortly after start selling produce through the cooperative, which would take a small cut to help fund the operations that were volunteer run, with goals of paid wages.
+It was a new venture for everyone involved, but we dove right in and created the [Yard to Market Coop](http://www.yardtomarket.coop/). It wasn't long before we had bylaws, a board of directors, and a farm stand at one of the local farmers' markets. Gardeners could go through a short on-boarding process to become members and shortly after start selling produce through the cooperative, which would take a small cut to help fund the operations that were volunteer run, with goals of paid wages.
 
 This, among other things, allowed the gardeners to concentrate on growing food and let the cooperative handle the marketing and selling side, functioning as a distributor. Sharing the burden of labor with both the experienced and the curious made having an impact possible as a hobby!
 
