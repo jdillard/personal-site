@@ -20,7 +20,7 @@ cover: easy-getaway
 
 In order to get an adventure climb in for the season, Michael and I decided to
 try out [Easy Getaway](https://www.mountainproject.com/route/115311402/easy-getaway),
-an undervisited climb with no established trail. I got to
+an under visited climb with no established trail. I got to
 [Cutthroat Trailhead](https://goo.gl/maps/E6wd9oj7Qe4ipGFH6) a little later than
 I originally planned, to a sky full of stars and a fairly prominent Milky Way.
 
@@ -33,11 +33,11 @@ for the alpine start we had originally planned on doing.
 The late approach started off easy enough, with a little light bushwacking on a mostly
 open trail, before it turns left into steeper terrain. If you pick your path wisely, you
 can follow open areas all the way to the top, with only small patches of dense
-alger.
+alder.
 
 ![Easy Getaway Approach](/assets/images/trips/easy-getaway-approach.jpg "Easy Getaway Approach"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Taking a moment to enjoy the surroundings, a cascading waterfall in the distance.</i></small>
 
-The approach eventually changes to mostly skree and small talus, but if you
+The approach eventually changes to mostly scree and small talus, but if you
 play your cards right, you can keep that to a minimum. The downloadable GPX on
 [Mountain Project](https://www.mountainproject.com/map/113436052/cutthroat-wall)
 was a great help and likely saved a ton of time and effort.
@@ -66,7 +66,7 @@ This pitch was fairly dirty with a crappy fall zone, otherwise it is nice.
 ### Third Pitch
 
 After pulling the short corner, head left and make sure to follow the thin
-seperated ledge until you're underneath the larger overhang.
+separated ledge until you're underneath the larger overhang.
 
 ### Forth Pitch
 
@@ -81,7 +81,7 @@ the right.
 
 ### Sixth Pitch
 
-The chiminey is short and fairly secure. I went right shoulder in and kept the
+The chimney is short and fairly secure. I went right shoulder in and kept the
 gear I wanted to use on my left side. Enjoy the view as you try to work your
 helmet past the constriction.
 
@@ -93,25 +93,25 @@ finish, we ended up just using a hip belay.
 
 We found sun damaged slings wrapped around a large boulder on the right.  Given
 their condition we decided to back them up with an additional slings. Bringing
-rapell gear on adventure climbs is good rule in general.
+rappel gear on adventure climbs is good rule in general.
 
 We rapped to a tree below with more sun damaged slings that we backed up, then
 to the ground.
 
-![Easy Getaway Rapell](/assets/images/trips/easy-getaway-rapell.jpg "Easy Getaway Rapell"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Looking back at the rapell route we took.</i></small>
+![Easy Getaway Rappel](/assets/images/trips/easy-getaway-rapell.jpg "Easy Getaway Rappel"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Looking back at the rappel route we took.</i></small>
 
-From there we crossed the gulley and started the traverse up a grassy ramp then
-started to countour towards the next gulley system.
+From there we crossed the gully and started the traverse up a grassy ramp then
+started to contour towards the next gully system.
 
 {: {{site.data.css.info-box}} }
-> **Note:** I would try to resist the urge to descend from countouring too early, as you'll
-> have to go through loose skree vs slightly more pleasant meadows.
+> **Note:** I would try to resist the urge to descend from contouring too early, as you'll
+> have to go through loose scree vs slightly more pleasant meadows.
 
 Maybe it's because it was a hot day, but this descent was worse than expected.
 It isn't too difficult to find the starting platform again if you left bags, and there
 isn't much additional elevation to gain to do so.
 
-![Easy Getaway Descent](/assets/images/trips/easy-getaway-descent.jpg "Easy Getaway Descent"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Looking across from the top of the rapell towards the descent traverse.</i></small>
+![Easy Getaway Descent](/assets/images/trips/easy-getaway-descent.jpg "Easy Getaway Descent"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Looking across from the top of the rappel towards the descent traverse.</i></small>
 
 Finding the optimal line on the way down proved to be more difficult, as we
 ended up charging through thick sections of brush versus taking the time to
