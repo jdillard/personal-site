@@ -32,27 +32,27 @@ spot near the front of the line at the gate.
 > to bring tire chains.
 
 The snow from the previous storm had settled and the week leading up had
-contributed small amounts of consistant snow with cold temps and fairly low
+contributed small amounts of consistent snow with cold temps and fairly low
 winds. A sunny window was forecasted for most the day, and since the gate was
 still opening at 9AM, we knew we had to move fast.
 
-The avalanche forecast was potential for wet loose, so we had some concearns
+The avalanche forecast was potential for wet loose, so we had some concerns
 about the chute, given it was so large, as well as the steep walls on either
 side of the valley exit. Every time we told someone we were doing the chute,
-they responded that you want to do it good condiitons. The reasons for that
+they responded that you want to do it good conditions. The reasons for that
 became more apparent throughout the day.
 
 ## The Approach
 
 We started the approach at around 9:20am and boy was it was hot down low, I
 always seem to underestimate the power of the sun. We sped our way up, feeling
-the pressure of the congo line behind us. Along the way, we talked to an older
+the pressure of the conga line behind us. Along the way, we talked to an older
 gentleman for a bit that looked like he frequented the area, and it was great
 to get some insights and share concerns and goals for the day.
 
 ![Nisqually Chute Approach](/assets/images/trips/nisqually-chute-approach.jpg "Nisqually Chute Approach"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Taking a quick break to appreciate the beautiful sights of the Nisqually Chute.</i></small>
 
-Given the the power of the sun and the head start it got on us this morning, we
+Given the power of the sun and the head start it got on us this morning, we
 split off from the main crowd early and decided to only go up as far as we
 needed to drop into the chute so the snow didn't bake anymore than it already
 had.
@@ -68,10 +68,10 @@ of the chute started to sink in.
 
 ![Down Nisqually Chute](/assets/images/trips/nisqually-chute-down-the-chute.jpg "Down Nisqually Chute"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Michael dropping in on the Nisqually Chute.</i></small>
 
-He gets skiiers right over the lip at the bottom of the run and signals that he
+He gets skiers right over the lip at the bottom of the run and signals that he
 is in an island of safety. I start making my turns, and the chute feels like a
 big open bowl it is so wide. By the time I reach the end my legs dead, I
-definitley need to work on my ski stamina.
+definitely need to work on my ski stamina.
 
 The snow in the chute was great, but as soon as I met up with Michael in the
 island of safety it started to get soft, warm, and grabby. We decide to finish
