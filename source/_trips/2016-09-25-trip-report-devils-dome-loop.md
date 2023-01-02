@@ -110,7 +110,7 @@ about it being a snow survey location, but these days it seems to be used by
 hunters during the high hunt season as there is the perfect backdrop behind it.
 
 One hunter noted that he had been coming out to that shelter for over a decade
-and had put an effort into upkeeping it every trip, but noticed fewer and fewer
+and had put an effort into upkeep every trip, but noticed fewer and fewer
 others were helping out in that regard.
 
 {: {{site.data.css.info-box}} }
@@ -179,7 +179,7 @@ itinerary and found out they only cared if our car was parked at the trailhead
 for longer than our itinerary stated. After chatting for a little while, we
 ended up going to a burger joint in town they recommended and camped at Long Fur
 Campground near the trailhead for the night. We were able to get in some
-excellent stargazing in now that we were more East of the mountain and the skys
+excellent stargazing in now that we were more East of the mountain and the skies
 had cleared up.
 
 ## Summary

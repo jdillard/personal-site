@@ -32,14 +32,14 @@ time it was getting late and we had an early morning.
 
 I don't usually take well to flights and had developed a cough, a strict
 violation of Rule #1: Be Quiet. At one point in the night I got up to get my
-gatorade from front seat in an effort to sooth my throat. The gatorade didn't
+Gatorade from front seat in an effort to sooth my throat. The Gatorade didn't
 quite help and I continued attempting to swallow coughs into the night.
 
 Suddenly there was a banging on the side of the van. My worst nightmare, I
 screwed up on the first night. We decided, against better judgement, to stay
 still and wait it out, but it wasn't long before there was a flashlight shining
 on my head. In my inexperience, I didn't completely close the front curtain
-when I was done drinking my gatorade. I froze, and whispered for advice.
+when I was done drinking my Gatorade. I froze, and whispered for advice.
 
 We decide to get out and talk the Ranger who, after a stern lecture, let us off
 with a warning and adviced us to leave the park for the night and to not get
@@ -101,20 +101,20 @@ but nothing else looked protectable. After attempting to read beween the lines
 of the topo's descriptions of the pitches, we decided it would be best to hang
 a right around a corner and hope something came into view.
 
-It seemed like forever as he slowly scambled his way over, making sure every
+It seemed like forever as he slowly scrambled his way over, making sure every
 move he did could also be undone. The cold wind was howling through the valley
 and the sun was setting, it was hard not to think about how miserable being
 benighted on the wall would be like.
 
-Luckily, around the corner was a tree fitting the the topo description. We made
+Luckily, around the corner was a tree fitting the topo description. We made
 quick work of the remaining pitches, until we got to the knife edge traverse at
 the end of the route, our first time having to deal with a pitch that ended up
 being mostly horizontal.
 
 ## The Descent
 
-We finished just as dusk was starting to hit and quickly began scambling down
-the exit scree gulley as fast as was safely possible. The rapells went smooth,
+We finished just as dusk was starting to hit and quickly began scrambling down
+the exit scree gully as fast as was safely possible. The rappels went smooth,
 with one spitting us out over the top of a huge cave phenonmenon. As we
 abseiled, like a spider spinning the first strand in its web, it was as little
 unnerving to realize the fact we didn't know what we were hiking over.

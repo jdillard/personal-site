@@ -33,7 +33,7 @@ gate to Paradise at Longmire right before 9am, parking at the
 ## The Approach
 
 We walked past the bathrooms to the end of the short service road and started
-bootpacking up to Stevens Canyon Road. We followed the scenic flat road until
+boot packing up to Stevens Canyon Road. We followed the scenic flat road until
 we got to Reflection Lakes, then cut right to start skinning through the trees
 towards The Castle.
 
@@ -47,7 +47,7 @@ Castle in what remained of the low hanging clouds.
 ![The Castle Silhouette](/assets/images/trips/the-castle-tour-silhouette.jpg "The Castle Silhouette"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The sun rising behind The Castle as the clouds cook off.</i></small>
 
 For most of the way you can turn around and get glimpses of Mount Rainier
-behind you, with more an more becomming visable as you gain elevation. Since,
+behind you, with more an more becoming visable as you gain elevation. Since,
 it was my first time in the Tatoosh, is was great getting a summary of the
 terrain. We also talked about future objectives, such as the [Nisqually Bridge
 Run](/trips/nisqually-bridge-run.html) and Paradise Glacier, as we ran our
@@ -67,7 +67,7 @@ Once we got eyes on the South face we knew we had to give it a go, but given
 that it was South facing we wanted to get a closer look before making the final
 decision. Since it was still early the day, we made our way up to the base of
 the rock and ripped skins. The snow was nice an buttery as we dropped all the
-way down, before cutting over and skinng back up to the ridge.
+way down, before cutting over and skinning back up to the ridge.
 
 ![The South Slope of Castle](/assets/images/trips/the-castle-tour-south-slope.jpg "The South Slope of Castle"){: .shadow-5.oversized}{: loading="lazy"}<small><i>Our tracks on the South slope of The Castle.</i></small>
 
@@ -78,7 +78,7 @@ loose, realizing no on the team had any repair tools (I know have a repair
 kit), but luckily a pair of girls stopped and leant me there Leatherman Signal
 with the bit extension to adjust my binding back to the correct length.
 
-Besides that, eveything went smooth through the trees, just make sure you don't
+Besides that, everything went smooth through the trees, just make sure you don't
 end up in a terrain trap as the terrain is very variable through that section.
 We got a last set of turns on the hill down to the service road and it ended up
 being a dreamy way to end the day.

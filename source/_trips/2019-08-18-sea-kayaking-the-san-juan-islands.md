@@ -24,13 +24,13 @@ our abilities with the unknown.
 ## Itinerary
 
 Our original plan was a 3 day trip that started on Lopez Island, used [Jones
-Island State Park](https://parks.state.wa.us/525/Jones-Island) as a basecamp,
+Island State Park](https://parks.state.wa.us/525/Jones-Island) as a base camp,
 and ended back on Lopez Island.
 
 ![Salish Sea Itinerary](/assets/images/trips/kayaking-san-juans-itinerary.png "Salish Sea Itinerary"){: .shadow-5.oversized}{: loading="lazy"}<small><i>The original route we had mapped out based on [Steph Abegg's trip report](https://sites.google.com/stephabegg.com/washington/tripreports/sanjuans).</i></small>
 
 For reasons I'll cover later, we ended up using [Turn Island Marine State Park](https://parks.state.wa.us/295/Turn-Island)
-as a basecamp instead. Even though we didn't stick to the planned iternary it
+as a base camp instead. Even though we didn't stick to the planned iternary it
 still ended up being a lot of fun and, more importantly, a great learning opportunity.
 
 ## Day 1 - Arrive at Lopez Island
@@ -78,7 +78,7 @@ dose of reality, having learned the hard way the limits of the tide charts we
 had read online.
 
 {: {{site.data.css.info-box}} }
-> **Note:** The [interactive Caltopo map](https://caltopo.com/m/0L17) of our
+> **Note:** The [interactive CalTopo map](https://caltopo.com/m/0L17) of our
 > original itinerary, which is overlayed onto a marine chart, shows the shape of
 > Turn Rock that Turn Rock Light sits on.
 

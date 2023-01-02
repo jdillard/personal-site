@@ -43,7 +43,7 @@ We worked our way up through the trees, making good time and passing a couple
 parties on the way. We shared our respective objectives for the day, discussing
 our thoughts on the snow conditions.
 
-Just as we neared the top of the trees, we saw a skiier dropping down through
+Just as we neared the top of the trees, we saw a skier dropping down through
 trees, the powdery turns looked like fun.
 
 ![Kendall ski lines](/assets/images/trips/kendall-knob-ski-lines.jpg "Kendall ski lines"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Ski lines above Kendall trees.</i></small>
@@ -61,7 +61,7 @@ Gettin to other side and back into some trees was such a relief as that was the
 crux of the day.
 
 After traversing some more through the trees we reached the top of the ridge
-and rip skins and decend down, getting a tiny huck off a downed tree, and
+and rip skins and descend down, getting a tiny huck off a downed tree, and
 coming to rest at an opening the banks of the lower Kendall Peak Lake.
 
 We then worked our way through terrain that was at too low of an angle, making
@@ -71,12 +71,12 @@ route again.
 
 We finally got to [Kendall Knob #2](https://www.peakbagger.com/peak.aspx?pid=2116),
 but didn't tag the true high point. The view here over I-90 was pretty amazing, you
-almost forget you're so close to civilaization at times.
+almost forget you're so close to civilization at times.
 
 ![Kendall Knob descent](/assets/images/trips/kendall-knob-tree-descent.jpg "Kendall Knob descent"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Descending off Kendall Knob through the trees.</i></small>
 
 We discussed the plan for getting down through the trees, but it wasn't long
-before we unknowingly got off course. In the exciment of an open section we
+before we unknowingly got off course. In the excitement of an open section we
 ended up following it too far right into steeper and denser trees.
 
 We decided to stick it out, and while charachter building, it wasn't exactly

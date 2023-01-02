@@ -64,14 +64,14 @@ snow never softened, and the weather was only getting worse.
 
 Instead we stopped on the ridge for a quick rest while we transitioned and
 discussed if we were going with plan A or B.  It didn't take long to decide to
-drop down to Paradise Glacier, so the converstation moved to route finding
+drop down to Paradise Glacier, so the conversation moved to route finding
 logistics to make sure we had a safe exit.
 
 ![Descending Paradise Glacier](/assets/images/trips/paradise-glacier-descent.jpg "Descending Paradise Glacier"){: .shadow-5.oversized}{: loading="lazy"}<small><i>Descending Paradise Glacier.</i></small>
 
-We started by having to Work our way over icy wind scouled snow. Luckily the
-snow pack was high this time of year, so crevasses weren't much of a concearn.
-Once we got down in to the valley, there were lots of recent avy debris to
+We started by having to Work our way over icy wind scoured snow. Luckily the
+snow pack was high this time of year, so crevasses weren't much of a concern.
+Once we got down in to the valley, there were lots of recent avalanche debris to
 dodge, but totally manageable.
 
 To do so, we traversed high on the left side, saving up enough gravity to get

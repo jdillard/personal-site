@@ -31,7 +31,7 @@ to be able to gain elevation faster and more efficiently.
 
 ![Excelsior Approach](/assets/images/trips/excelsior-in-winter-approach.jpg "Excelsior approach"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The approach to Excelsior from the Highway 542 trailhead.</i></small>
 
-I was the only skiier that day, and while it was funny to pass people on a
+I was the only skier that day, and while it was funny to pass people on a
 snowless trail with a full ski setup on my back, everyone I passed was stoked
 to see someone go play in the powder.
 
