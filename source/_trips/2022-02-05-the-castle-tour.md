@@ -41,19 +41,19 @@ towards The Castle.
 
 We worked our way through the trees until we got to the tree line just above
 5,600ft, making for about 700ft of gain since leaving the road. The timing put
-sun just coming over the ridge line, offering an ominous silouette of The
+sun just coming over the ridge line, offering an ominous silhouette of The
 Castle in what remained of the low hanging clouds.
 
 ![The Castle Silhouette](/assets/images/trips/the-castle-tour-silhouette.jpg "The Castle Silhouette"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The sun rising behind The Castle as the clouds cook off.</i></small>
 
 For most of the way you can turn around and get glimpses of Mount Rainier
-behind you, with more an more becoming visable as you gain elevation. Since,
+behind you, with more an more becoming visible as you gain elevation. Since,
 it was my first time in the Tatoosh, is was great getting a summary of the
 terrain. We also talked about future objectives, such as the [Nisqually Bridge
 Run](/trips/nisqually-bridge-run.html) and Paradise Glacier, as we ran our
 pointed fingers all over the mountain.
 
-![Rainier in the Rearview](/assets/images/trips/the-castle-tour-rainier.jpg "Rainier in the Rearview"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Mount Rainier looms behind you on the majority of the approach, giving you a good excuse to turn around and catch your breath.</i></small>
+![Rainier in the Rear-view](/assets/images/trips/the-castle-tour-rainier.jpg "Rainier in the Rear-view"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Mount Rainier looms behind you on the majority of the approach, giving you a good excuse to turn around and catch your breath.</i></small>
 
 While the final push above tree line, another 600ft of gain, was a little technical with the iced up
 snow, you couldn't help but stare into the sun as it rose out of the belly of
@@ -73,9 +73,9 @@ way down, before cutting over and skinning back up to the ridge.
 
 ## The Descent
 
-We skiied our way down the tree line where I started to notice my binding was
+We skied our way down the tree line where I started to notice my binding was
 loose, realizing no on the team had any repair tools (I know have a repair
-kit), but luckily a pair of girls stopped and leant me there Leatherman Signal
+kit), but luckily a pair of girls stopped and let me borrow their Leatherman Signal
 with the bit extension to adjust my binding back to the correct length.
 
 Besides that, everything went smooth through the trees, just make sure you don't

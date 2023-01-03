@@ -18,13 +18,13 @@ cover: false
 
 Upon discovering there was a nearby lake that not only contained several
 species of native and non-native carnivorous plants, one being the ever popular
-venus flytrap, but also a floating log island, I knew I had to figure out a
+Venus flytrap, but also a floating log island, I knew I had to figure out a
 way to see it first hand.
 
 ![Makeshift Guidebook](/assets/images/trips/lake-of-many-lore-guidebook.jpg "Makeshift Guidebook"){: .shadow-5.oversized}{: loading="lazy"} <small><i>A makeshift guidebook made from an issue of [Douglasia](https://www.wnps.org/douglasia).</i></small>
 
 We took my inflatable pack raft and three piece Easy Rider kayak carefully down
-to the water as the bog has a sensative border of soil floating on water.
+to the water as the bog has a sensitive border of soil floating on water.
 
 ## Various Carnivorous Plants
 
@@ -34,16 +34,16 @@ and purple pitcher plants.
 
 ![Yellow pitcher plant](/assets/images/trips/lake-of-many-lore-yellow-pitcher.jpg "Yellow pitcher plant"){: .shadow-5.oversized}{: loading="lazy"}<small><i>Sarracenia flava, yellow pitcher plant. Native along the coastal plain from New Jersey to Alabama.</i></small>
 
-The yellow pitcher plants were most prolific and are propegating more each
+The yellow pitcher plants were most prolific and are propagating more each
 year.
 
 ![Purple pitcher plant](/assets/images/trips/lake-of-many-lore-purple-pitcher.jpg "Purple pitcher plant"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Sarracenia purpurea, purple pitcher plant.</i></small>
 
-It was a little late in the season to see the Sarracenia Purpurea, purple pitcher plant, in it's full glory, but it still made a great showing. The nearest native populations are in Southern Alberta.
+It was a little late in the season to see the Sarracenia purpurea, purple pitcher plant, in it's full glory, but it still made a great showing. The nearest native populations are in Southern Alberta.
 
 ![Common Sundew](/assets/images/trips/lake-of-many-lore-common-sundew.jpg "Common Sundew"){: .shadow-5.oversized}{: loading="lazy"}<small><i>Drosera rotundifolia, common sundew, a native carnivorous plant.</i></small>
 
-Unfortunately, the venus flytraps remained elusive. Perhaps we were too late in
+Unfortunately, the Venus flytraps remained elusive. Perhaps we were too late in
 the season or perhaps they finally perished, being as they come from quite a
 different climate in the Carolinas and Florida region.
 
@@ -57,7 +57,7 @@ different climate in the Carolinas and Florida region.
 
 Much prior to that, as the local lore goes, it had been owned by a pre-eminent
 bootlegger of high quality whiskey who crafted a log platform with a mechanism
-to unload logs from the nearby railcars and transport them to the mill located
+to unload logs from the nearby rail cars and transport them to the mill located
 on the lake (as mills were steam fed and the lake water could also be used to
 store the logs, keeping them from drying out).
 
