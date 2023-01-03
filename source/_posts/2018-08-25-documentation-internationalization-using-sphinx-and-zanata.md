@@ -20,24 +20,24 @@ had great results using [Zanata](http://zanata.org/), a separate open source pro
 that facilitates community driven translation.
 
 {: {{site.data.css.warning-box}} }
-> **Note:** RedHat has choosen to step away from Zanata and the last time I
-checked no one has stepped forward to carry the project forward. Reguardless of
+> **Note:** RedHat has chosen to step away from Zanata and the last time I
+checked no one has stepped forward to carry the project forward. Regardless of
 the tool used, these concepts are still applicable.
 
-Reguardless of how the generated files are translated though, the process should end
+Regardless of how the generated files are translated though, the process should end
 up being pretty similar:
 
-![Sphinx translation flow](/assets/images/posts/sphinx-translation-flow.svg) <small><i>The sphinx tranlation process using `gettext` and `zanata-cli`.</i></small>
+![Sphinx translation flow](/assets/images/posts/sphinx-translation-flow.svg) <small><i>The sphinx translation process using `gettext` and `zanata-cli`.</i></small>
 
 ## Preparation
 
-A fairly common convention is to create a seperate git repository where the
+A fairly common convention is to create a separate git repository where the
 internationalization process takes place. This usually means [creating a
 submodule](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/)
-for the main documentation source repo, the **docs** directory in this case, or
-tying in the original sources repo using another method.
+for the main documentation source repository, the **docs** directory in this case, or
+tying in the original sources repository using another method.
 
-For the purposes of the article, the structure of the internationalization repo
+For the purposes of the article, the structure of the internationalization repository
 is shown below. The configuration section will cover what each of the files and
 folders are for.
 
@@ -115,7 +115,7 @@ gettext:
 	@echo "Build finished. The message catalogs are in ../templates."
 ```
 
-Next is to push the **.pot** files to Zanta:
+Next is to push the **.pot** files to Zanata:
 
 ```
 zanata-cli push --disable-ssl-cert

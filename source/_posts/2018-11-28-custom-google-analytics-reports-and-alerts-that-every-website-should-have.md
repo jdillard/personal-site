@@ -30,9 +30,9 @@ impossible to redirect every old page that ever existed to its best replacement.
 With this custom report, you can also see which redirects are no longer visited
 by pruning portions of legacy redirects and see at what rate they are reported.
 
-> **Note:** This information can also be achieved through searching webserver
-logs, but the logging causes a constant performance hit on webserver. Plus, with
-hosting services you don't always have access to the webserver config or logs.
+> **Note:** This information can also be achieved through searching web server
+logs, but the logging causes a constant performance hit on the web server. Plus, with
+hosting services you don't always have access to the web server configuration or logs.
 {: {{site.data.css.info-box}} }
 
 To create the custom report, navigate to **Customization > Custom Reports** and

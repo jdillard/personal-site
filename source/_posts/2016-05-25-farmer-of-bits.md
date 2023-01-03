@@ -45,7 +45,7 @@ This, among other things, allowed the gardeners to concentrate on growing food a
 
 ## And Market Forces
 
-Since the success of the coop, in part, depended on enough produce being available through it, my green thumbed mentor and I decided to try and (organically) produce as much as we could out of our fertile 1,100 sqft plot. Given the limited amount of spare time we had, this shifted our mindset, incentives, and goals in a direction that required better planning and discipline. 
+Since the success of the coop, in part, depended on enough produce being available through it, my green thumbed mentor and I decided to try and (organically) produce as much as we could out of our fertile 1,100 square feet plot. Given the limited amount of spare time we had, this shifted our mindset, incentives, and goals in a direction that required better planning and discipline. 
 
 ## It's Kind of Like Software
 

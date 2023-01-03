@@ -32,7 +32,7 @@ are to:
 
 > **Side Note:** To see a live example of a sphinx site using continuous deployment
   and integration with Travis-CI and Netlify, check out the
-  [continuous-sphinx](https://github.com/jdillard/continuous-sphinx) repo.
+  [continuous-sphinx](https://github.com/jdillard/continuous-sphinx) repository.
 {: {{site.data.css.tip-box}} }
 
 ## Preparation
@@ -71,7 +71,7 @@ Jenkins Plugins Required:
 ## Building the pipeline
 
 The build environment is created using the **Dockerfile** that is stored in the
-repo. This file isn't expected to change often, but modifications can be made
+repository. This file isn't expected to change often, but modifications can be made
 over time. It can also be used for similar, yet customized, sphinx jobs with
 little overhead.
 
@@ -90,7 +90,7 @@ RUN pip install virtualenv
 CMD ["/bin/bash"]
 ```
 
-To prevent the `docker build` process from including the repo's unnecessary
+To prevent the `docker build` process from including the repository's unnecessary
 files in the build process, add a **.dockerignore** with the following:
 
 ```
@@ -98,7 +98,7 @@ files in the build process, add a **.dockerignore** with the following:
 **
 ```
 
-The **Dockerfile** is referenced in a **Jenkinsfile**, also stored in the repo,
+The **Dockerfile** is referenced in a **Jenkinsfile**, also stored in the repository,
 that defines the pipeline process. The parts of the environment that are more
 likely to change are built out in this file, and the build files it references.
 
