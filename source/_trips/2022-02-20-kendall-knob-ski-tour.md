@@ -52,12 +52,12 @@ We ended up going a little higher then we planned, but decided to traverse over
 anyways and get a closer look before making a decision on whether or not to
 drop back down to a more conservative crossing.
 
-The steepness and exposure was concearning, but doesn't look too bad. That
+The steepness and exposure was concerning, but doesn't look too bad. That
 said, we ended up misjudging it and got worse the closer we got. We move fast
 and cautiously, spread out from each other, as we examine each step for
 shooting cracks in the snow.
 
-Gettin to other side and back into some trees was such a relief as that was the
+Getting to other side and back into some trees was such a relief as that was the
 crux of the day.
 
 After traversing some more through the trees we reached the top of the ridge
@@ -79,7 +79,7 @@ We discussed the plan for getting down through the trees, but it wasn't long
 before we unknowingly got off course. In the excitement of an open section we
 ended up following it too far right into steeper and denser trees.
 
-We decided to stick it out, and while charachter building, it wasn't exactly
+We decided to stick it out, and while character building, it wasn't exactly
 what I would call fun. Thankfully we both made it our without incident.
 
 After what seemed like an eternity of tricky turns, we were relieved to finally

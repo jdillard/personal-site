@@ -30,7 +30,7 @@ and ended back on Lopez Island.
 ![Salish Sea Itinerary](/assets/images/trips/kayaking-san-juans-itinerary.png "Salish Sea Itinerary"){: .shadow-5.oversized}{: loading="lazy"}<small><i>The original route we had mapped out based on [Steph Abegg's trip report](https://sites.google.com/stephabegg.com/washington/tripreports/sanjuans).</i></small>
 
 For reasons I'll cover later, we ended up using [Turn Island Marine State Park](https://parks.state.wa.us/295/Turn-Island)
-as a base camp instead. Even though we didn't stick to the planned iternary it
+as a base camp instead. Even though we didn't stick to the planned itinerary it
 still ended up being a lot of fun and, more importantly, a great learning opportunity.
 
 ## Day 1 - Arrive at Lopez Island
@@ -41,14 +41,14 @@ the tides correctly. In hindsight, catching the **6:15 AM** ferry and using that
 extra time to unload the gear and have it prepped would have given us the margin
 of error we would need.
 
-On the ferry that morning there was a thick fog with minimal visability,
+On the ferry that morning there was a thick fog with minimal visibility,
 something we wouldn't have been able to paddle in and something we didn't plan
 for. Luckily, it cleared up by the time we arrived on Lopez Island, but had it
 happened on the water and forced us to time the tides differently, it would have
 been a different story.
 
 Since there were three of us, we decided to do one double touring kayak and one
-single, with a total of five dry bags between us. We had recieved advice that we
+single, with a total of five dry bags between us. We had received advice that we
 wouldn't need a full wet suit, but according to [the 120&deg; Rule](https://www.gobair.org/Resources/Documents/Cold_Water.pdf)
 and the conditions we encountered wearing at least a farmer john would have put
 us in a more appropriate safety margin. Dry suits would have obviously been
@@ -79,7 +79,7 @@ had read online.
 
 {: {{site.data.css.info-box}} }
 > **Note:** The [interactive CalTopo map](https://caltopo.com/m/0L17) of our
-> original itinerary, which is overlayed onto a marine chart, shows the shape of
+> original itinerary, which is overlaid onto a marine chart, shows the shape of
 > Turn Rock that Turn Rock Light sits on.
 
 | Marker                                                                         | Time                | Tide  | Speed (knots) |
@@ -97,7 +97,7 @@ had read online.
 We headed off again towards our destination, but shortly after a member of our
 party started experiencing vertigo, so we pulled back over on land to take a
 longer rest and discuss our options. We decided on heading back, but to look for
-camping opporunities along the way just in case.
+camping opportunities along the way just in case.
 
 Luckily for us, we came across a mostly empty Turn Island Marine State Park and
 were able to pick a prime camping spot right on the bay. We made sure to hang up
@@ -111,7 +111,7 @@ the channel.
 
 ## Day 2 - Checking out Friday Harbor
 
-Since we had planned on having running water avialable at our original campsite,
+Since we had planned on having running water available at our original campsite,
 and Turn Island didn't provide that, we had to make a trek into Friday Harbor
 the next day. We decided to wait until lunch time so we could grab a bite to eat
 and try to hit the slack tide, but not so late that it was high tide while we 
@@ -138,7 +138,7 @@ Once night hit, one of the kayakers came over to tell us that if we were lucky
 we might get a chance to see the bioluminescence in the bay. Sure enough, it
 finally got dark enough and it turned out to be an incredible experience as we
 splashed the water to activate the chemical reaction and sped our kayaks up and
-down the shorline as small glowing bow waves formed off the front of the kayak
+down the shoreline as small glowing bow waves formed off the front of the kayak
 like a scene from Tron.
 
 ## Day 3 - Return to Lopez Island

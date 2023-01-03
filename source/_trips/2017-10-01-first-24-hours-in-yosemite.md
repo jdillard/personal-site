@@ -18,7 +18,7 @@ cover: false
 
 I flew into Fresno so we could stock up on supplies at the Grocery Outlet
 before driving back towards the valley. A drive he had done several times,
-since he started doing vanlife a few months prior. Given that the experience
+since he started doing van life a few months prior. Given that the experience
 was new to me, I didn't know which corner we rounded would reveal that iconic
 valley view of El Capitan and Half Dome, as he waited with baited breathe in
 anticipation of my reaction.
@@ -42,7 +42,7 @@ on my head. In my inexperience, I didn't completely close the front curtain
 when I was done drinking my Gatorade. I froze, and whispered for advice.
 
 We decide to get out and talk the Ranger who, after a stern lecture, let us off
-with a warning and adviced us to leave the park for the night and to not get
+with a warning and advised us to leave the park for the night and to not get
 caught again.  We drove to just outside of the park to camp on the side of the
 road at El Portal for what remains of the night and attempted to find as level
 a spot that we could, before giving up and passing out.
@@ -85,7 +85,7 @@ Further down the trail, and after what were probably a couple wrong turns, we
 found ourselves at the end of a faint trail. We had an idea of what direction
 the objective was in, but couldn't find a trail in that direction, so read of
 the description of the approach a few more times and then made a b-line in the
-direction of the Arete. After a series of tree belays and short ropped down
+direction of the Arete. After a series of tree belays and short roped down
 climbing, we finally arrived at the base of the Arete.
 
 ## The Big Climb
@@ -97,7 +97,7 @@ next begins. At one point, at about two-thirds the way up on an exposed
 section, we had our first route-finding road block.
 
 The feature above us looked too loose to climb and above the expected grade,
-but nothing else looked protectable. After attempting to read beween the lines
+but nothing else looked protectable. After attempting to read between the lines
 of the topo's descriptions of the pitches, we decided it would be best to hang
 a right around a corner and hope something came into view.
 
@@ -115,13 +115,13 @@ being mostly horizontal.
 
 We finished just as dusk was starting to hit and quickly began scrambling down
 the exit scree gully as fast as was safely possible. The rappels went smooth,
-with one spitting us out over the top of a huge cave phenonmenon. As we
+with one spitting us out over the top of a huge cave phenomenon. As we
 abseiled, like a spider spinning the first strand in its web, it was as little
 unnerving to realize the fact we didn't know what we were hiking over.
 
 Practically falling down the loose dirt on the way down, part physical
 exhaustion and part mental, we stumbled out on to flat ground after what seemed
-like first time an eternety, getting back to the van right as headlamps were
+like first time an eternity, getting back to the van right as headlamps were
 becoming necessary.
 
 We finished the night by sleeping in line for a camping spot at Camp 4, so we

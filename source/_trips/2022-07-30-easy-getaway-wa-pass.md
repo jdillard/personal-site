@@ -30,7 +30,7 @@ for the alpine start we had originally planned on doing.
 
 ## Approach
 
-The late approach started off easy enough, with a little light bushwacking on a mostly
+The late approach started off easy enough, with a little light bushwhacking on a mostly
 open trail, before it turns left into steeper terrain. If you pick your path wisely, you
 can follow open areas all the way to the top, with only small patches of dense
 alder.
