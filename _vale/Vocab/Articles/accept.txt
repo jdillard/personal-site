@@ -6,3 +6,10 @@ Jenkinsfile
 Zanata
 Makefile
 Justus
+combinator
+Kloeker
+dockerignore
+gettext
+Pageviews
+Autofills
+Drilldowns
