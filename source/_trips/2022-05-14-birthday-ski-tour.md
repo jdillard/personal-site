@@ -3,6 +3,8 @@ layout: trip
 title: 'Trip Report: Birthday Tour, WA Pass'
 date: 2022-05-14
 state: Washington
+avy_center_id: NWAC
+avy_zone_id: 145
 area: Washington Pass
 type: skiing
 published: true

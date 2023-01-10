@@ -1,6 +1,7 @@
 import u from 'umbrellajs';
 import axios from 'axios';
 
+const report_template = require("./templates/avalanche_report.hbs");
 const resources_template = require("./templates/resources-simple.hbs");
 const trips_template = require("./templates/recent_trips.hbs");
 
@@ -29,6 +30,19 @@ function resources(data=[]) {
           .filter(resource => (resource.states.includes(resource_element.dataset.state) || resource.states.includes('All')) && (resource.types.includes(resource_element.dataset.type)))
           .map(function(r) { return {'title': r.name, 'url': r.url, 'desc': r.desc.split(" ").slice(0,8).join(" ") }; });
   resource_element.innerHTML = resources_template(resource_list);
+}
+
+/* Populate Avalanche Report */
+const report_element = document.getElementById("avalanche-report")
+if(report_element) {
+  axios.get(`/assets/json/avalanche-reports/${report_element.dataset.center}-${report_element.dataset.zone}.json` )
+  .then(function (response) {
+    report_element.innerHTML = report_template(response.data);
+  })
+  .catch(function (error) {
+    // call local file on 403
+    console.log(error);
+  });
 }
 
 /* Populate Recent Trips */

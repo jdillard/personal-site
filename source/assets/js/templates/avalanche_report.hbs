@@ -1,0 +1,42 @@
+<div class="mt3 mb1 b f3-ns tc f5 black-70">Avalance Forecast</div>
+<table class="black-70 w-50 center">
+    <caption class="f4-ns f5 mb3"><a class="no-underline fancy-link relative black-70 hover-light-red" href="{{ url }}">{{ name }}</a></caption>
+    <thead>
+        <tr>
+            <td></td>
+            {{#each danger}}
+            <td>{{ valid_day }}</td>
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="pv2">Above Treeline</td>
+            {{#each danger}}
+            <td class="pa2">
+                <img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ upper_num }}.svg" />
+                {{upper_name}}
+            </td>
+            {{/each}}
+        </tr>
+        <tr>
+            <td class="pv2">Near Treeline</td>
+            {{#each danger}}
+            <td class="pa2">
+                <img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ middle_num }}.svg" />
+                {{ middle_name }}
+            </td>
+            {{/each}}
+        </tr>
+        <tr>
+            <td class="pv2">Below Treeline</td>
+            {{#each danger}}
+            <td class="pa2">
+                <img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ lower_num }}.svg" />
+                {{ lower_name }}
+            </td>
+            {{/each}}
+        </tr>
+    </tbody>
+</table>
+<p class="black-70 f6 tc"><strong>Issued:</strong> {{ published }} <strong>Expires:</strong> {{ expires }} <strong>Provided By:</strong> <a class="no-underline fancy-link relative light-red hover-light-red" href="{{ url }}">NWAC</a></p>

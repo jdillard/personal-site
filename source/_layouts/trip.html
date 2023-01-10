@@ -24,6 +24,12 @@ js_includes:
             {% include feedback.html %}
         </section>
     </article>
+    {% if page.avy_zone_id and page.avy_center_id %}
+    <section style="box-shadow: 0px 15px 17px rgb(50 50 50 / 26%);" class="center mw8 bg-white ph2 pb4 br bl b--near-white">
+        <hr class="mw6-ns mw5 mv0 p0 b0 bt bw1 b--light-red light-red bg-light-red">
+        <div id="avalanche-report" data-center="{{ page.avy_center_id }}" data-zone="{{ page.avy_zone_id }}"></div>
+    </section>
+    {% endif %}
     <section style="box-shadow: 0px 15px 17px rgb(50 50 50 / 26%);" class="center mw8 bg-white ph2 pb4 br bl b--near-white">
         <hr class="mw6-ns mw5 mv0 p0 b0 bt bw1 b--light-red light-red bg-light-red">
         <div class="center pv3 ph4 br2 bg-light-gray shadow-5" style="margin: 2rem -40px 0px -40px">
