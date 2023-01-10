@@ -12,11 +12,11 @@ import time
 
 level_name = [
     "No Report",
-    "Low",
-    "Moderate",
-    "Considerable",
-    "High",
-    "Extreme",
+    "1 - Low",
+    "2 - Moderate",
+    "3 - Considerable",
+    "4 - High",
+    "5 - Extreme",
 ]
 
 # delete all json files
