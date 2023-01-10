@@ -5,7 +5,7 @@ on:
   # (optional) Run workflow manually
   workflow_dispatch:
 jobs: 
-  run:
+  crags:
     name: Build Crag data
     runs-on: ubuntu-latest
     steps: 
@@ -19,6 +19,34 @@ jobs:
     
     - name: Run script
       run: ruby crags.rb
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        default_author: github_actions
+        message: "Update built data"
+        add: "source/_crags"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  avalanche:      
+    name: Build Avlanche data
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.8"
+    
+    - name: Run script
+      run: |
+        set -xe
+        python -VV
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        python avalanche.py
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
