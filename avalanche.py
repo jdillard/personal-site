@@ -51,11 +51,17 @@ for file in os.listdir("source/_trips"):
 
             published_date_time_obj = datetime.strptime(jsonResponse["published_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=8, minutes=0)
             expires_date_time_obj = datetime.strptime(jsonResponse["expires_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=8, minutes=0)
+            tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
+            outlook_date_time_obj = published_date_time_obj + timedelta(hours=48, minutes=0)
 
             published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
             expires = expires_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+            tomorrow = tomorrow_date_time_obj.strftime("%A, %B %d, %Y")
+            outlook = outlook_date_time_obj.strftime("%A, %B %d, %Y")
             name = jsonResponse["forecast_zone"][0]["name"]
             url = jsonResponse["forecast_zone"][0]["url"]
+
+            danger_dates = {"current": tomorrow, "tomorrow": outlook}
 
             data = {
                 "published": published,
@@ -64,7 +70,7 @@ for file in os.listdir("source/_trips"):
                 "url": url,
                 "danger": [
                     {
-                        "valid_day": jsonResponse["danger"][0]["valid_day"].title(),
+                        "valid_day": danger_dates[jsonResponse["danger"][0]["valid_day"]],
                         "lower_num": jsonResponse["danger"][0]["lower"],
                         "lower_name": level_name[jsonResponse["danger"][0]["lower"]],
                         "middle_num": jsonResponse["danger"][0]["middle"],
@@ -73,7 +79,7 @@ for file in os.listdir("source/_trips"):
                         "upper_name": level_name[jsonResponse["danger"][0]["upper"]],
                     },
                     {
-                        "valid_day": jsonResponse["danger"][1]["valid_day"].title(),
+                        "valid_day": danger_dates[jsonResponse["danger"][1]["valid_day"]],
                         "lower_num": jsonResponse["danger"][1]["lower"],
                         "lower_name": level_name[jsonResponse["danger"][1]["lower"]],
                         "middle_num": jsonResponse["danger"][1]["middle"],

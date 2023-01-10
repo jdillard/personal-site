@@ -1,7 +1,7 @@
 <div class="mt3 mb1 b f3-ns tc f5 black-70">Avalance Forecast</div>
-<table class="black-70 w-50 center">
+<table class="collapse black-70 w-80-ns center">
     <caption class="f4-ns f5 mb3"><a class="no-underline fancy-link relative black-70 hover-light-red" href="{{ url }}">{{ name }}</a></caption>
-    <thead>
+    <thead class="tc">
         <tr>
             <td></td>
             {{#each danger}}
@@ -10,30 +10,30 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="pv2">Above Treeline</td>
+        <tr class="bg-near-white">
+            <td class="b bw2 ba b--white pa2 tc">Above Treeline</td>
             {{#each danger}}
-            <td class="pa2">
-                <img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ upper_num }}.svg" />
+            <td class="tc bw2 ba b--white pv2 ph4">
                 {{upper_name}}
+                <img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ upper_num }}.svg" />
             </td>
             {{/each}}
         </tr>
-        <tr>
-            <td class="pv2">Near Treeline</td>
+        <tr class="bg-light-gray">
+            <td class="b bw2 ba b--white pa2 tc">Near Treeline</td>
             {{#each danger}}
-            <td class="pa2">
-                <img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ middle_num }}.svg" />
+            <td class="tc bw2 ba b--white pv2 ph4">
                 {{ middle_name }}
+                <img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ middle_num }}.svg" />
             </td>
             {{/each}}
         </tr>
-        <tr>
-            <td class="pv2">Below Treeline</td>
+        <tr class="bg-moon-gray">
+            <td class="b bw2 ba b--white pa2 tc">Below Treeline</td>
             {{#each danger}}
-            <td class="pa2">
-                <img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ lower_num }}.svg" />
+            <td class="tc bw2 ba b--white pv2 ph4">
                 {{ lower_name }}
+                <img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ lower_num }}.svg" />
             </td>
             {{/each}}
         </tr>
