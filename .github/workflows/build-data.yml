@@ -24,7 +24,7 @@ jobs:
       uses: EndBug/add-and-commit@v9
       with:
         default_author: github_actions
-        message: "Update built data"
+        message: "Update built crag data"
         add: "source/_crags"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -52,7 +52,7 @@ jobs:
       uses: EndBug/add-and-commit@v9
       with:
         default_author: github_actions
-        message: "Update built data"
-        add: "source/_crags"
+        message: "Update built avalanche data"
+        add: "source/assets/json/avalanche-reports"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
