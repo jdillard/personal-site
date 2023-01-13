@@ -1,4 +1,4 @@
-name: Build Site Data
+name: Build Avalanche Reports
 on:
   # Run at 06:33 and 18:33 PT daily
   schedule: [{cron: "33 2,14 * * *"}]

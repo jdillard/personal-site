@@ -1,4 +1,4 @@
-name: Build Site Data
+name: Build Crags
 on:
   # Run at 08:30 UTC daily
   schedule: [{cron: "30 8 * * *"}]
