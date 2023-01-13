@@ -1,0 +1,30 @@
+name: Build Site Data
+on:
+  # Run at 08:30 UTC daily
+  schedule: [{cron: "30 8 * * *"}]
+  # (optional) Run workflow manually
+  workflow_dispatch:
+jobs: 
+  crags:
+    name: Build Crag data
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '2.7.2'
+    
+    - name: Run script
+      run: ruby crags.rb
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        default_author: github_actions
+        message: "Update built crag data"
+        add: "source/_crags"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
