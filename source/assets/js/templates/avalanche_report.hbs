@@ -1,11 +1,5 @@
-<div class="mt3 mb1 b f3-ns tc f4 black-70">Avalanche Danger</div>
+<div class="mt3 mb4 b f3-ns tc f4 black-70">Avalanche Danger <img style="width: 15px;" src="/assets/images/svg/info-icon.svg"/></div>
 <table class="f5-ns f6 collapse black-70 w-80-ns center">
-    <caption class="f4-ns f5 mb4">
-        <a class="no-underline fancy-link relative black-70 hover-light-red" href="{{ url }}">
-            {{ name }}
-            <img style="width: 15px;" src="/assets/images/svg/info-icon.svg"/>
-        </a>
-    </caption>
     <thead class="tc">
         <tr>
             <td></td>
@@ -18,7 +12,7 @@
         <tr class="bg-near-white">
             <td class="b bw2 ba b--white pv3 ph2 tc">Above Treeline</td>
             {{#each danger}}
-            <td class="tc bw2 ba b--white pv3 ph4">
+            <td class="tc bw2 ba b--white pv3 ph3">
                 {{upper_name}}
                 <a href="{{ @root.url }}"><img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ upper_num }}.svg" /></a>
             </td>
@@ -27,7 +21,7 @@
         <tr class="bg-light-gray">
             <td class="b bw2 ba b--white pv3 ph2 tc">Near Treeline</td>
             {{#each danger}}
-            <td class="tc bw2 ba b--white pv3 ph4">
+            <td class="tc bw2 ba b--white pv3 ph3">
                 {{ middle_name }}
                 <a href="{{ @root.url }}"><img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ middle_num }}.svg" /></a>
             </td>
@@ -36,7 +30,7 @@
         <tr class="bg-moon-gray">
             <td class="b bw2 ba b--white pv3 ph2 tc">Below Treeline</td>
             {{#each danger}}
-            <td class="tc bw2 ba b--white pv3 ph4">
+            <td class="tc bw2 ba b--white pv3 ph3">
                 {{ lower_name }}
                 <a href="{{ @root.url }}"><img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ lower_num }}.svg" /></a>
             </td>
@@ -44,4 +38,4 @@
         </tr>
     </tbody>
 </table>
-<p class="black-70 f6 tc"><strong>Issued:</strong> {{ published }} <strong>Expires:</strong> {{ expires }} <strong>Provided By:</strong> <a class="no-underline fancy-link relative light-red hover-light-red" href="{{ url }}">NWAC</a></p>
+<p class="black-70 f6 tc"><strong>Issued:</strong> {{ published }} <strong>Expires:</strong> {{ expires }} <strong>Provided By:</strong> <a class="no-underline fancy-link relative light-red hover-light-red" href="{{ url }}">{{ name }}</a></p>

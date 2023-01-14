@@ -10,14 +10,20 @@ import time
 #TODO only run during certain months when NWAC is open
 #TODO create alternative message when NWAC is closed
 
-level_name = [
-    "No Report",
-    "1 - Low",
-    "2 - Moderate",
-    "3 - Considerable",
-    "4 - High",
-    "5 - Extreme",
-]
+danger_levels = {
+    0: "No Report",
+    1: "Low",
+    2: "Moderate",
+    3: "Considerable",
+    4: "High",
+    5: "Extreme",
+    "no report": 0,
+    "low": 1,
+    "moderate": 2,
+    "considerable": 3,
+    "high": 4,
+    "extreme": 5,
+}
 
 # delete all json files
 dir = "source/assets/json/avalanche-reports"
@@ -26,16 +32,24 @@ for f in os.listdir(dir):
 
 for file in os.listdir("source/_trips"):
     if file.endswith(".md"):
+        # parse trip reports front matter
         with open(f"source/_trips/{file}") as reader:
             center_id = False
             zone_id = False
+            avy_lat = False
+            avy_long = False
             content = reader.read()
             data = frontmatter.loads(content)
             if "avy_center_id" in data:
                 center_id = data["avy_center_id"]
             if "avy_zone_id" in data:
                 zone_id = data["avy_zone_id"]
+            if "avy_lat" in data:
+                avy_lat = data["avy_lat"]
+            if "avy_long" in data:
+                avy_long = data["avy_long"]
 
+        # create USA based avalanche reports
         if center_id and zone_id and not os.path.exists(f"{dir}/{center_id}-{zone_id}.json"):
             time.sleep(5.5)
             try:
@@ -58,7 +72,6 @@ for file in os.listdir("source/_trips"):
             expires = expires_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
             tomorrow = tomorrow_date_time_obj.strftime("%A, %B %d, %Y")
             outlook = outlook_date_time_obj.strftime("%A, %B %d, %Y")
-            name = jsonResponse["forecast_zone"][0]["name"]
             url = jsonResponse["forecast_zone"][0]["url"]
 
             danger_dates = {"current": tomorrow, "tomorrow": outlook}
@@ -66,29 +79,73 @@ for file in os.listdir("source/_trips"):
             data = {
                 "published": published,
                 "expires": expires,
-                "name": name,
                 "url": url,
+                "name": center_id,
                 "danger": [
                     {
                         "valid_day": danger_dates[jsonResponse["danger"][0]["valid_day"]],
                         "lower_num": jsonResponse["danger"][0]["lower"],
-                        "lower_name": level_name[jsonResponse["danger"][0]["lower"]],
+                        "lower_name": danger_levels[jsonResponse["danger"][0]["lower"]],
                         "middle_num": jsonResponse["danger"][0]["middle"],
-                        "middle_name": level_name[jsonResponse["danger"][0]["middle"]],
+                        "middle_name": danger_levels[jsonResponse["danger"][0]["middle"]],
                         "upper_num": jsonResponse["danger"][0]["upper"],
-                        "upper_name": level_name[jsonResponse["danger"][0]["upper"]],
+                        "upper_name": danger_levels[jsonResponse["danger"][0]["upper"]],
                     },
                     {
                         "valid_day": danger_dates[jsonResponse["danger"][1]["valid_day"]],
                         "lower_num": jsonResponse["danger"][1]["lower"],
-                        "lower_name": level_name[jsonResponse["danger"][1]["lower"]],
+                        "lower_name": danger_levels[jsonResponse["danger"][1]["lower"]],
                         "middle_num": jsonResponse["danger"][1]["middle"],
-                        "middle_name": level_name[jsonResponse["danger"][1]["middle"]],
+                        "middle_name": danger_levels[jsonResponse["danger"][1]["middle"]],
                         "upper_num": jsonResponse["danger"][1]["upper"],
-                        "upper_name": level_name[jsonResponse["danger"][1]["upper"]],
+                        "upper_name": danger_levels[jsonResponse["danger"][1]["upper"]],
                     },
                 ]
             }
 
             with open(f'{dir}/{center_id}-{zone_id}.json','w') as out:
+                out.write(json.dumps(data))
+
+        # create Canada based avalanche reports
+        if avy_lat and avy_long and not os.path.exists(f"{dir}/{avy_lat}-{avy_long}.json"):
+            time.sleep(5.5)
+            try:
+                response = requests.get(f'https://api.avalanche.ca/forecasts/:lang/products/point?lat={avy_lat}&long={avy_long}')
+                response.raise_for_status()
+                jsonResponse = response.json()
+            except HTTPError as http_err:
+                print(f'HTTP error occurred: {http_err}')
+                exit()
+            except Exception as err:
+                print(f'Other error occurred: {err}')
+                exit()
+
+            published_date_time_obj = datetime.strptime(jsonResponse["report"]["dateIssued"], '%Y-%m-%dT%H:%M:%SZ') - timedelta(hours=8, minutes=0)
+            expires_date_time_obj = datetime.strptime(jsonResponse["report"]["validUntil"], '%Y-%m-%dT%H:%M:%SZ') - timedelta(hours=8, minutes=0)
+
+            published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+            expires = expires_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+            url = jsonResponse["url"]
+            danger_ratings = []
+
+            for rating in jsonResponse["report"]["dangerRatings"]:
+                danger_ratings.append({
+                    "valid_day": rating["date"]["display"],
+                    "lower_num": danger_levels[rating["ratings"]["btl"]["rating"]["value"]],
+                    "lower_name": rating["ratings"]["btl"]["rating"]["value"].title(),
+                    "middle_num": danger_levels[rating["ratings"]["tln"]["rating"]["value"]],
+                    "middle_name":rating["ratings"]["tln"]["rating"]["value"].title(),
+                    "upper_num": danger_levels[rating["ratings"]["btl"]["rating"]["value"]],
+                    "upper_name": rating["ratings"]["alp"]["rating"]["value"].title(),
+                })
+
+            data = {
+                "published": published,
+                "expires": expires,
+                "url": url,
+                "name": "Avalanche Canada",
+                "danger": danger_ratings
+            }
+
+            with open(f'{dir}/{avy_lat}-{avy_long}.json','w') as out:
                 out.write(json.dumps(data))

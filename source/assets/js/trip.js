@@ -35,7 +35,16 @@ function resources(data=[]) {
 /* Populate Avalanche Report */
 const report_element = document.getElementById("avalanche-report")
 if(report_element) {
-  axios.get(`/assets/json/avalanche-reports/${report_element.dataset.center}-${report_element.dataset.zone}.json` )
+  let left = ""
+  let right = ""
+  if (report_element.dataset.center != "") {
+    left = report_element.dataset.center
+    right = report_element.dataset.zone
+  } else {
+    left = report_element.dataset.lat
+    right = report_element.dataset.long
+  }
+  axios.get(`/assets/json/avalanche-reports/${left}-${right}.json` )
   .then(function (response) {
     report_element.innerHTML = report_template(response.data);
   })
