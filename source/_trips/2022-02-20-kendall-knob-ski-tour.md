@@ -24,7 +24,7 @@ It was another weekend of conservative skiing due to avalanche conditions, so
 we decided to explore the Kendall Knob area in order to try and stay in the
 trees as much as possible.
 
-The danger level was moderate the night we made our decision, but it changed to
+The danger level was Moderate the night we made our decision, but it changed to
 High over night and we forgot to recheck it the morning of the tour. Had we
 known that we would have made different decisions, but thankfully we had the
 opportunity to learn without consequence this time around.
@@ -54,9 +54,9 @@ We ended up going a little higher then we planned, but decided to traverse over
 anyways and get a closer look before making a decision on whether or not to
 drop back down to a more conservative crossing.
 
-The steepness and exposure was concerning, but doesn't look too bad. That
-said, we ended up misjudging it and got worse the closer we got. We move fast
-and cautiously, spread out from each other, as we examine each step for
+The steepness and exposure was concerning, but didn't look too bad. That
+said, we ended up misjudging it and and the slope got steeper the closer we got. We moved fast
+yet cautiously, spread out from each other, as we examined each step for
 shooting cracks in the snow.
 
 Getting to other side and back into some trees was such a relief as that was the

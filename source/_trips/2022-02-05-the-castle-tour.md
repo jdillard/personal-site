@@ -76,7 +76,7 @@ way down, before cutting over and skinning back up to the ridge.
 ## The Descent
 
 We skied our way down the tree line where I started to notice my binding was
-loose, realizing no on the team had any repair tools (I know have a repair
+loose, realizing no on the team had any repair tools (I now have a repair
 kit), but luckily a pair of girls stopped and let me borrow their Leatherman Signal
 with the bit extension to adjust my binding back to the correct length.
 
