@@ -1,4 +1,3 @@
-name: Jared Dillard
 description: Jared Dillard is a web developer based in the Pacific Time Zone.
 meta_description: 'Jared Dillard is a web developer based in the Pacific Time Zone.'
 
@@ -10,7 +9,6 @@ baseurl: ""
 domain_name: 'https://jareddillard.com'
 url: 'https://jareddillard.com'
 author: 'Jared Dillard'
-title: 'Jared Dillard'
 google_analytics: 'UA-7883601-2'
 repository: jdillard/personal-site
 
