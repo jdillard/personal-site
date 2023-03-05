@@ -1,0 +1,28 @@
+---
+layout: page
+title: Avalanche DEM Shading
+description: Create a digital log book with a filterable route pyramid directly from your Mountain Project ticks to help increase training performance.
+---
+
+<section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
+<strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,
+precipitation-focused reports of current, past, and future climbing weather for crags located in the United States, sourced
+from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.
+</section>
+
+<section class="measure center lh-copy f5-ns f6 ph2 mv4">
+    <h2 class="bb b--moon-gray">Avalanche Regions</h2>
+
+    {% for region in regions %}
+    <h3><a class="no-underline fancy-link relative black-70 hover-light-red" href="{{ region.url }}">{{ region.name }}</a></h3>
+    <ul class="list pl3 f6 mt2">
+        {% for zone in region.zone_data %}
+        <li><a class="no-underline fancy-link relative black-70 hover-light-red" href="{{ region.url }}#zone-{{ zone.value }}">{{ zone.name }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</section>
+
+{% raw %}
+{% include feedback.html %}
+{% endraw %}
