@@ -23,13 +23,17 @@ function getIssues() {
 }
 
 function showZone(zone_id) {
-  console.log(zone_id)
-  const zone = document.getElementById(zone_id);
+  const report = document.getElementById(`${zone_id}-report`);
+  const title = document.getElementById(`${zone_id}-title`);
+  const shade = document.getElementById(`${zone_id}-shade`);
   document.querySelectorAll('.avy-zone').forEach(function(div) {
     div.classList.add('dn');
   });
-  zone.classList.remove('dn');
-  //TODO update published date
+  report.classList.remove('dn');
+  title.classList.remove('dn');
+  shade.classList.remove('dn');
+  //TODO update published date (done?)
+  //TODO replace hash without changing history
 }
 
 // grab url hash if it exists
@@ -44,7 +48,7 @@ zoneSel.onchange = function () {
 }
 
 regionSel.onchange = function () {
-  window.location.assign(`/dem/${value}`);
+  window.location.assign(this.value);
 }
 
 u("#settings-toggle").on( "click", function() {

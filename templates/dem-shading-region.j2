@@ -1,97 +1,128 @@
 ---
 layout: page
-title: {{ region }} DEM Shading
+title: {{ page }} DEM Shading
 description: Create a digital log book with a filterable route pyramid directly from your Mountain Project ticks to help increase training performance.
 js_includes:
   - dem.js
 ---
 
+<script>
+function myFunction(layer, tooltip) {
+  var copyText = document.getElementById(layer);
+  navigator.clipboard.writeText(copyText.textContent);
+
+  var tooltip = document.getElementById(tooltip);
+  tooltip.innerHTML = "Copied!";
+}
+
+function outFunc(tooltip) {
+  var tooltip = document.getElementById(tooltip);
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script>
+
+<!-- Looking out for you. -->
+
 <section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">
 <strong>"Is it dry?"</strong>, an oft-repeated, age-old question. Here are real-time,
 precipitation-focused reports of current, past, and future climbing weather for crags located in the United States, sourced
-from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.
+from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://avalanche.org/">avalanche.org</a>.
 </section>
 
 <p id="settings-toggle" class="mw5 b center tc hover-light-red black-70 pointer">Show Instructions</p>
 <section id="settings" class="overflow-hidden" style="display:none;">
     <div class="mv2 ph2 center">
-        <div class="fn f6 tc pv2">
-            <span class="f7 b">Instructions:</span>
-            <p>
-                <a class="no-underline fancy-link relative light-red" target="_blank" href="https://gml.noaa.gov/grad/solcalc/">solcalc</a>
-                <a class="no-underline fancy-link relative light-red" target="_blank" href="https://training.caltopo.com/all_users/base-layers/custom2#dem">Custom Layers</a>
+        <div class="fn f6 tc">
+            <p class="measure lh-copy center"><a class="no-underline fancy-link relative light-red" href="https://training.caltopo.com/all_users/base-layers/custom2#dem">Digital Elevation Model (DEM)</a> shading let's you can create custom shading schemes based on elevation, slope, aspect and tree cover.</p>
+
+            <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
+            <p class="measure lh-copy center"><strong>Avalanche Report</strong> by clicking the desired day.</p>
+            <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
+            <p class="measure lh-copy center">
+                <strong>Sunlight Angles</strong> are measured by the nearest weather station. <a class="no-underline fancy-link relative light-red" target="_blank" href="https://gml.noaa.gov/grad/solcalc/">solcalc</a>
             </p>
-            <p class="measure lh-copy center"><strong>Show/hide crags</strong> by clicking on their name to the left; green mean shown and gray means hidden.</p>
-            <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
-            <p class="measure lh-copy center"><strong>Show/hide hourly forecasts</strong> by clicking the desired day.</p>
-            <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
-            <p class="measure lh-copy center"><strong>Current and Past conditions</strong> are measured by the nearest weather station. <strong>Forecast conditions</strong> are calculated and polled separately.</p>
         </div>
     </div>
 </section>
 
+<div class="mt4 ph2 tc">
+    <strong class="f6">Select A Zone:</strong>
+    <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
+        {% for zone in zones %}
+        <option value="{{ zone.slug }}" {% if loop.first %}selected=""{% endif %}>{{ zone.name }}</option>
+        {% endfor %}
+    </select>
+    {% for zone in zones %}
+    <div id="{{ zone.slug }}-title" class="avy-zone tc{% if not loop.first %} dn{% endif %}">
+        <h2>{{ zone.name }} <a href="{{ zone.url }}"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h2>
+        <a class="no-underline fancy-link relative light-red" target="_blank" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Pre-populated CalTopo Map</a>
+    </div>
+    {% endfor %}
+</div>
+
 <div class="flex flex-column flex-row-ns">
     <div class="ph3 w-100 w-50-ns">
-        <h2 class="tc bb b--moon-gray">Avalanche Report</h2>
-
-        <strong class="f6">Subregion:</strong>
-        <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
-            {% for zone in zones %}
-            <option value="{{ zone.value }}" {% if loop.first %}selected=""{% endif %}>{{ zone.name }}</option>
-            {% endfor %}
-        </select>
-
+        <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
         {% for zone in zones %}
-        <div id="{{ zone.value }}" class="avy-zone{% if not loop.first %} dn{% endif %}" data-published="{{ zone.published }}">
-            <h3 class="tc">{{ zone.name }} <a href="{{ zone.url }}"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-published="{{ zone.published }}">
+            {% if zone.danger %}
             <dl class="f6">
                 <dt><strong>{{ sun_day }} Avalanche Danger</strong></dt>
                 <dd>
-<pre class="dib pa1 b--silver bw1 ba">
+<pre id="danger-layer-{{ zone.zone_id }}" class="dib pa1 b--silver bw1 ba">
 {% for rule in zone.danger %}
 {{- rule}}
-{% endfor %}</pre>
-                    </dd>
-                </dt>
+{% endfor %}</pre> <div class="tooltip dib v-top pt3"><a onclick="myFunction('danger-layer-{{ zone.zone_id }}', 'danger-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('danger-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="danger-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dd>
             </dl>
+            {% else %}
+            <div class="pv4 tc ba b--moon-gray">No report given.</div>
+            {% endif %}
 
+            {% if zone.problems %}
             <dl class="f6">
                 {% for problem in zone.problems %}
-                    <dt><strong>{{ sun_day }} {{ problem.name }}</strong></dt>
+                    <dt><strong>{{ problem.name }}</strong></dt>
                     <dd>
-<pre class="dib pa1 b--silver bw1 ba">
+<pre id="problem-{{ loop.index }}-layer-{{ zone.zone_id }}" class="dib pa1 b--silver bw1 ba">
 {% for rule in problem.rules %}
 {{- rule}}
-{% endfor %}</pre>
+{% endfor %}</pre> <div class="tooltip dib v-top pt3"><a onclick="myFunction('problem-{{ loop.index }}-layer-{{ zone.zone_id }}', 'problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dd>
                 {% endfor %}
             </dl>
+            {% endif %}
             <p class="tc f6">
             <strong>Issued:</strong> {{ zones[0].published }}<br />
-            <strong>Derived from:</strong> <a class="no-underline fancy-link relative light-red" href="{{ zone.url }}">{{ region }}</a></p>
+            <strong>Derived from:</strong> <a class="no-underline fancy-link relative light-red" href="{{ zone.url }}">{{ zone.center_id }}</a></p>
         </div>
         {% endfor %}
     </div>
     <div class="ph3 w-100 w-50-ns">
-        <h2 class="tc bb b--moon-gray">Sunlight Angles</h2>
-
-        <h3 class="tc">Location: {{ sun_loc }}</h3>
-        <table class="f6">
+        <h3 class="tc bb b--moon-gray">Sunlight Angles</h3>
+        {% for zone in zones %}
+        <table id="{{ zone.slug }}-shade" class="avy-zone{% if not loop.first %} dn{% endif %} f6">
             <thead>
                 <tr>
                     <th class="pa2">Time of day</th>
-                    <th class="pa2">Lighting</th>
+                    <th class="pa2">Lighting (Az/El)</th>
                 </tr>
             </thead>
             <tbody>
-            {% for hill in hillshading %}
+            {% for hill in zone.hillshading %}
             <tr>
-                <th class="pv2 ph1">{{ sun_day }} {{ hill.time }} Shade</th>
-                <td class="pv2 ph1"><code class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">{{ hill.lighting }}</code></td>
+                <th class="pv2 ph1">
+                    {{ hill.time }}
+                </th>
+                <td class="pv2 ph1">
+                    <code id="shade-{{ loop.index }}-layer-{{ zone.zone_id }}" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">{{ hill.lighting }}</code>
+                    <div class="tooltip dib v-top"><a onclick="myFunction('shade-{{ loop.index }}-layer-{{ zone.zone_id }}', 'shade-{{ loop.index }}-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('shade-{{ loop.index }}-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="shade-{{ loop.index }}-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </td>
             </tr>
             {% endfor %}
             </tbody>
         </table>
+        {% endfor %}
     </div>
 </div>
 
@@ -100,8 +131,10 @@ from <a class="no-underline fancy-link relative light-red" target="_blank" href=
     <h3>Other Regions</h3>
     <strong class="f6">Avalanche Region:</strong>
     <select class="f6 ma1 bg-near-white pa2" id="regionSel">
-        {% for region in regions %}
-        <option value="{{ region.url }}" selected="">{{ region.name }}</option>
+        {% for state in states %}
+        {% if state.active %}
+        <option value="{{ state.page }}.html"{% if state.name == page %} selected=""{% endif %}>{{ state.name }}</option>
+        {% endif %}
         {% endfor %}
     </select>
 </section>
