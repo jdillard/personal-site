@@ -1,2 +1,6 @@
+azely
+jinja2
 requests
 python-frontmatter
+python-slugify
+shapely

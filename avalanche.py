@@ -51,17 +51,19 @@ for file in os.listdir("source/_trips"):
 
         # create USA based avalanche reports
         if center_id and zone_id and not os.path.exists(f"{dir}/{center_id}-{zone_id}.json"):
-            time.sleep(5.5)
-            try:
-                response = requests.get(f'https://api.avalanche.org/v2/public/product?type=forecast&center_id={center_id}&zone_id={zone_id}')
-                response.raise_for_status()
-                jsonResponse = response.json()
-            except HTTPError as http_err:
-                print(f'HTTP error occurred: {http_err}')
-                exit()
-            except Exception as err:
-                print(f'Other error occurred: {err}')
-                exit()
+            # time.sleep(5.5)
+            # try:
+            #     response = requests.get(f'https://api.avalanche.org/v2/public/product?type=forecast&center_id={center_id}&zone_id={zone_id}')
+            #     response.raise_for_status()
+            #     jsonResponse = response.json()
+            # except HTTPError as http_err:
+            #     print(f'HTTP error occurred: {http_err}')
+            #     exit()
+            # except Exception as err:
+            #     print(f'Other error occurred: {err}')
+            #     exit()
+            with open(f"avalanche-reports-raw/{center_id}-{zone_id}.json") as fp:
+                    jsonResponse = json.load(fp)
 
             published_date_time_obj = datetime.strptime(jsonResponse["published_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=8, minutes=0)
             expires_date_time_obj = datetime.strptime(jsonResponse["expires_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=8, minutes=0)
