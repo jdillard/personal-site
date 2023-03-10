@@ -57,12 +57,14 @@ cirrus clouds waving off of its summit. As we got closer to Ptarmigan Pass we
 were eyeing potential lines on [Video Peak](/trips/north-face-video-peak.html)
 and making plans to return for it.
 remote-line.jpg
+
 ![Remote line](/assets/images/trips/2023-02-25-table-mountain-circumnav/remote-line.jpg "Remote line"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Remote line.</i></small>
 
 Finding the best place to cut through the trees from Artist Point to the South
 side of Table can be tricky, try to aim high, but not too high. We decided to
 drop in just on other side of the trees to get a few turns, but if you stay
 high it is possible to ski traverse most of the way across.
+
 ![Iceberg Lake](/assets/images/trips/2023-02-25-table-mountain-circumnav/iceberg-lake.jpg "Iceberg Lake"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Lunch break on Iceberg Lake.</i></small>
 
 Corner Pocket was fantastic, we slowly and cautiously worked our way down,
