@@ -4,7 +4,7 @@ title: 'Trip Report: Skiing the North Face of Video Peak'
 date: 2022-04-16
 state: Washington
 avy_center_id: NWAC
-avy_zone_id: 142
+avy_zone_id: 1129
 area: Baker
 type: skiing
 published: true

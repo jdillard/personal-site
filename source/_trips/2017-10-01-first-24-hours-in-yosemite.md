@@ -97,9 +97,10 @@ next begins. At one point, at about two-thirds the way up on an exposed
 section, we had our first route-finding road block.
 
 The feature above us looked too loose to climb and above the expected grade,
-but nothing else looked protectable. After attempting to read between the lines
-of the topo's descriptions of the pitches, we decided it would be best to hang
-a right around a corner and hope something came into view.
+but nothing else looked like it would take gear. After attempting to read
+between the lines of the topo's descriptions of the pitches, we decided it
+would be best to hang a right around a corner and hope something came into
+view.
 
 It seemed like forever as he slowly scrambled his way over, making sure every
 move he did could also be undone. The cold wind was howling through the valley

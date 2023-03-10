@@ -3,6 +3,8 @@ layout: trip
 title: 'Trip Report: Body Bag Bowl'
 date: 2022-12-28
 state: British Columbia
+avy_lat: 50.0812
+avy_long: -122.870875 
 area: Blackcomb
 type: skiing
 published: false
