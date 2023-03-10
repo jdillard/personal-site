@@ -1,17 +1,19 @@
 {{#if @root.length}}
 <div class="entry">
   {{#each @root}}
-    <h4 class="mt3 mb1">
-      <time class="f6 db mr3">{{this.date}}</time>
-    </h4>
-    {{#each this.data}}
-    <a class="flex-ns items-center no-underline f6 black-70 hover-light-red" href="{{this.link}}">
-      <span class="pv0-ns ml3 pv1 lh-copy rslide db">
-        <!--<span class="near-white bg-animate bg-mid-gray inline-flex items-center mh1 f7 tc br2 ph1">Github</span>-->
-        {{{this.action}}} <strong>{{this.repo.name}}</strong>
-      </span>
-    </a>
-    {{/each}}
+    <div class="mv4 shadow-5 mh2-ns mh0 pa3 ba bg-white b--light-gray">
+      <h4 class="mt1 mb1">
+        <time class="f6 db mr3">{{this.date}}</time>
+      </h4>
+      {{#each this.data}}
+      <a class="flex-ns items-center no-underline f6 black-70 hover-light-red" href="{{this.link}}">
+        <span class="pv0-ns ml3 pv1 lh-copy rslide db">
+          <!--<span class="near-white bg-animate bg-mid-gray inline-flex items-center mh1 f7 tc br2 ph1">Github</span>-->
+          {{{this.action}}} <strong>{{this.repo.name}}</strong>
+        </span>
+      </a>
+      {{/each}}
+    </div>
   {{/each}}
 </div>
 {{else}}
