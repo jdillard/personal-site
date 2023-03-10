@@ -7,7 +7,7 @@ avy_center_id: NWAC
 avy_zone_id: 1129
 area: Baker
 type: skiing
-published: true
+published: false
 popularity: 3
 categories:
   - skiing
