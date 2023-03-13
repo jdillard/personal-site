@@ -3,6 +3,11 @@ _site
 *.swp
 .sass-cache
 node_modules
+.venv
 
 # Local Netlify folder
 .netlify
+
+# automation
+avalanche-reports-raw
+user.toml
