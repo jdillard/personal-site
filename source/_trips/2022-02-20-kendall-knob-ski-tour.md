@@ -4,7 +4,7 @@ title: 'Trip Report: Kendall Knob Ski Tour'
 date: 2022-02-20
 state: Washington
 avy_center_id: NWAC
-avy_zone_id: 141
+avy_zone_id: 1136
 area: Snoqualmie
 type: skiing
 published: true
@@ -55,7 +55,7 @@ anyways and get a closer look before making a decision on whether or not to
 drop back down to a more conservative crossing.
 
 The steepness and exposure was concerning, but didn't look too bad. That
-said, we ended up misjudging it and and the slope got steeper the closer we got. We moved fast
+said, we ended up misjudging it and the slope got steeper the closer we got. We moved fast
 yet cautiously, spread out from each other, as we examined each step for
 shooting cracks in the snow.
 

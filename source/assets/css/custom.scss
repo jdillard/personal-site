@@ -8,6 +8,44 @@
     "comments"
 ;
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 85%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 .top-nav {
     box-shadow:4px 4px 8px 0 rgba(0,0,0,.05);
 }
@@ -260,6 +298,10 @@ header.post-cover {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
+.table-mountain-circumnav-cover {
+    background-image: url(/assets/images/covers/table-mountain-circumnav.jpg);
+}
+
 .body-bag-bowl-cover {
     background-image: url(/assets/images/covers/circle-lake.jpg);
 }
@@ -288,8 +330,8 @@ header.post-cover {
     background-image: url(/assets/images/covers/video-peak.jpg);
 }
 
-.table-mountain-circumnav-cover {
-    background-image: url(/assets/images/covers/table-mountain-circumnav.jpg);
+.corner-pocket-cover {
+    background-image: url(/assets/images/covers/corner-pocket.jpg);
 }
 
 .sea-kayaking-san-juan-islands-cover {

@@ -1,7 +1,7 @@
 name: Build Avalanche Reports
 on:
   # Run at 06:33 and 18:33 PT daily
-  schedule: [{cron: "33 2,14 * * *"}]
+  schedule: [{cron: "03 3,15 * * *"}]
   # (optional) Run workflow manually
   workflow_dispatch:
 jobs: 
@@ -23,6 +23,8 @@ jobs:
         python -VV
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        python download-avy-json.py
+        python caltopo-layers.py
         python avalanche.py
 
     - name: Commit changes

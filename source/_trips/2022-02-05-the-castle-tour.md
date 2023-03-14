@@ -4,7 +4,7 @@ title: 'Trip Report: The Castle Ski Tour'
 date: 2022-02-05
 state: Washington
 avy_center_id: NWAC
-avy_zone_id: 144
+avy_zone_id: 1139
 area: Rainier
 type: skiing
 published: true

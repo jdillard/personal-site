@@ -71,7 +71,7 @@ separated ledge until you're underneath the larger overhang.
 ### Forth Pitch
 
 A heady pitch compared to the previous ones. Try to finish all the way up at
-the tree, as the next pitch is wondery.
+the tree, as the next pitch wonders.
 
 ### Fifth Pitch
 
@@ -130,6 +130,6 @@ reprieve before the last push out.
 ## Thoughts
 
 All told, it was a nice adventure climb, it just would have been more enjoyable
-had we planned on it being such an adventure. The fact it is Northish facing,
+had we planned on it being such an adventure. The fact it faces towards the North,
 gives you time to get most or all of the route done before the sun hits if you
 get an early start.
