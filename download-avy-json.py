@@ -4,8 +4,10 @@ import time
 import requests
 from requests.exceptions import HTTPError
 
-# delete all DEM files in order to start fresh
 dir = "avalanche-reports-raw"
+os.mkdir(dir)
+
+# delete all DEM files in order to start fresh
 for f in os.listdir(dir):
     os.remove(os.path.join(dir, f))
 
