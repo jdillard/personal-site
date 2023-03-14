@@ -287,7 +287,8 @@ with open("avalanche-reports-raw/map-layer.json") as fp:
 
 # loop through all the zones in the avalanche.org map layer
 states = []
-os.remove("user.toml")
+if os.path.isfile("user.toml"):
+    os.remove("user.toml")
 toml = open("user.toml", "a")
 for item in map_layer["features"]:
     # calculate center of each zone
