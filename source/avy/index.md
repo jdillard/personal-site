@@ -58,9 +58,9 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li><div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-bridgeport-winter-recreation-area">Bridgeport Winter Recreation Area</a></li>
         
-        <li><div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-eastside-region">Eastside Region</a></li>
+        <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-eastside-region">Eastside Region</a></li>
         
-        <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-mount-shasta">Mount Shasta</a></li>
+        <li><div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-mount-shasta">Mount Shasta</a></li>
         
         <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-central-sierra-nevada">Central Sierra Nevada</a></li>
         
@@ -133,13 +133,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li><div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-southern-madison-range">Southern Madison Range</a></li>
         
-        <li><div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-kootenai">Kootenai</a></li>
+        <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-kootenai">Kootenai</a></li>
         
-        <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-bitterroot">Bitterroot</a></li>
+        <li><div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-bitterroot">Bitterroot</a></li>
         
-        <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-rattlesnake">Rattlesnake</a></li>
+        <li><div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-rattlesnake">Rattlesnake</a></li>
         
-        <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-seeley-lake">Seeley Lake</a></li>
+        <li><div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-seeley-lake">Seeley Lake</a></li>
         
     </ul>
     
@@ -150,15 +150,15 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li><div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-selkirks-cabinets">Selkirks & Cabinets</a></li>
         
-        <li><div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-st-regis-silver-valley">St. Regis & Silver Valley</a></li>
+        <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-st-regis-silver-valley">St. Regis & Silver Valley</a></li>
         
-        <li><div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-pac-advisory-area">PAC Advisory Area</a></li>
+        <li><div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-pac-advisory-area">PAC Advisory Area</a></li>
         
         <li><div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-banner-summit">Banner Summit</a></li>
         
-        <li><div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-galena-summit-eastern-mtns">Galena Summit & Eastern Mtns</a></li>
+        <li><div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-galena-summit-eastern-mtns">Galena Summit & Eastern Mtns</a></li>
         
-        <li><div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-sawtooth-western-smoky-mtns">Sawtooth & Western Smoky Mtns</a></li>
+        <li><div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-sawtooth-western-smoky-mtns">Sawtooth & Western Smoky Mtns</a></li>
         
         <li><div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-soldier-wood-river-valley-mtns">Soldier & Wood River Valley Mtns</a></li>
         
@@ -169,7 +169,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <h3>Arizona</h3>
     <ul class="list pl3 f6 mt2">
         
-        <li><div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/az.html#zone-san-francisco-peaks-kachina-peaks-wilderness">San Francisco Peaks / Kachina Peaks Wilderness</a></li>
+        <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/az.html#zone-san-francisco-peaks-kachina-peaks-wilderness">San Francisco Peaks / Kachina Peaks Wilderness</a></li>
         
     </ul>
     
@@ -178,7 +178,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <h3>New Hampshire</h3>
     <ul class="list pl3 f6 mt2">
         
-        <li><div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/nh.html#zone-presidential-range">Presidential Range</a></li>
+        <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/nh.html#zone-presidential-range">Presidential Range</a></li>
         
     </ul>
     
