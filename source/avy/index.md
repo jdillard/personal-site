@@ -193,7 +193,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-east-slopes-south">East Slopes South</a></li>
         
-        <li><div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-olympics">Olympics</a></li>
+        <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-olympics">Olympics</a></li>
         
         <li><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-snoqualmie-pass">Snoqualmie Pass</a></li>
         
