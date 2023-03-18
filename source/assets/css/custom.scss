@@ -283,6 +283,15 @@ svg .precip-axis > g > line {
     max-width: 40rem;
 }
 
+@media screen and (min-width: 30em) {
+    .w-55-ns {
+        width: 55%;
+    }
+    .w-45-ns {
+        width: 45%;
+    }
+}
+
 .hero__no-cover {
     clip-path: polygon(0 0%, 100% 100%, 100% 100%, 0 100%);
     -webkit-clip-path: polygon(0 0%, 100% 100%, 100% 100%, 0 100%);

@@ -4,7 +4,7 @@
     {{/each}}
 </div>
 {{#if trip_info}}
-    <div style="width: 45%;" class="fl w-40">
+    <div class="fl w-45-ns w-100">
         <ul class="list pl0 mb4">
             {{#each trips}}
                 <li data-trip="{{this.title}}" class="related-side-nav pointer pv2 ph2 {{this.text_color}} hover-light-red bl b--{{this.border_color}} hover-b--light-red bw2 f5">
@@ -16,8 +16,7 @@
             <a href="/trips" class="b mid-gray">Read More Trip Reports</a>
         </div>
     </div>
-    <div>
-    <div style="width: 55%" class="fr ph2 pv3">
+    <div class="w-55-ns w-100 fr ph2 pv3">
         <div class="ph3 ph0-l flex">
             <a href="{{trip_info.url}}">
                 <img src="{{trip_info.image}}" class="fl grow db shadow-4" alt="{{ trip_info.title }}" loading="lazy">
@@ -45,5 +44,4 @@
 {{else}}
     <div class="pa4 tc silver ma3 ba b--light-gray">No Related Trips. Try A Different Category.</div>
 {{/if}}
-    </div>
     <div class="cb"></div>
