@@ -357,7 +357,7 @@ for state in states:
                 with open(f"avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json") as fp:
                     data = json.load(fp)
 
-                published_date_time_obj = datetime.strptime(data["published_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=8, minutes=0)
+                published_date_time_obj = datetime.strptime(data["published_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=7, minutes=0)
                 tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
 
                 published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
