@@ -2,24 +2,17 @@ import azely
 from datetime import datetime, timedelta
 from jinja2 import Environment, FileSystemLoader
 import json
-from shapely.geometry import MultiPolygon, Polygon
+from shapely.geometry import MultiPolygon, Point, Polygon
 from slugify import slugify
 import os
 import urllib.parse
 import uuid
 from datetime import datetime
 
-import time
-import requests
-from requests.exceptions import HTTPError
-
-#TODO combine with other NWAC script to reduce server load
-#       - https://github.com/jdillard/personal-site/blob/059d7a18f40a729626026ea6ec9185c1a3b92f52/.github/workflows/build-avalanche-reports.yml
-#       - script to grab all json, but don't save them. avalanche.py uses local json. caltopo-layers.py uses local json.
-#TODO support search by lat/long (for CO/BC)
+#TODO support search by lat/long (mainly for CO/BC) (lambda function?)
 #TODO expired reports?
-#TODO update copy
-#TODO update url hash without modifying history
+#TODO update copy?
+#TODO get pull rebase on action to prevent conflicts while the script is running?
 
 # load jinja templates
 environment = Environment(loader=FileSystemLoader("templates/"))
@@ -290,10 +283,13 @@ states = []
 if os.path.isfile("user.toml"):
     os.remove("user.toml")
 toml = open("user.toml", "a")
+#TODO support search by lat/long
+# search_point = Point((-122.27173, 41.34706))
 for item in map_layer["features"]:
     # calculate center of each zone
     if item["geometry"]["type"] == "Polygon":
         centroid = Polygon(item["geometry"]["coordinates"][0]).centroid
+        # print(search_point.within(Polygon(item["geometry"]["coordinates"][0]))) # check if a point is in the polygon
         lat_long = [centroid.x, centroid.y]
     elif item["geometry"]["type"] == "MultiPolygon":
         polygons = []

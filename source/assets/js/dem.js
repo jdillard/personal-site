@@ -32,8 +32,7 @@ function showZone(zone_id) {
   report.classList.remove('dn');
   title.classList.remove('dn');
   shade.classList.remove('dn');
-  //TODO update published date (done?)
-  //TODO replace hash without changing history
+  location.replace("#zone-" + zone_id);
 }
 
 // grab url hash if it exists
