@@ -15,9 +15,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     {% for state in states %}
     {% if state.active %}
     <h3>{{ state.name }}</h3>
-    <ul class="list pl3 f6 mt2">
+    <ul class="list pl3 f5 mt2">
         {% for zone in state.zones %}
-        <li><div style="clear: both;background-color: {{ zone.color }}" class="fl mr2 h1 w1"></div> <a class="no-underline fancy-link relative black-70 hover-light-red" href="{{ state.page }}.html#zone-{{ zone.slug }}">{{ zone.name }}</a></li>
+        <li>
+            <div style="clear: both;background-color: {{ zone.color }}" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="{{ state.page }}.html#zone-{{ zone.slug }}">{{ zone.name }}</a>
+            {% if zone.published and zone.color != "#939598" %}<span class="gray f7">{{ zone.published }}</span>{% endif %}
+        </li>
         {% endfor %}
     </ul>
     {% endif %}
