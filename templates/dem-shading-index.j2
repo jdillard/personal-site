@@ -14,7 +14,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <h2 class="bb b--moon-gray">Zones by Region</h2>
     {% for state in states %}
     {% if state.active %}
-    <h3>{{ state.name }}</h3>
+    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="{{ state.page }}.html">{{ state.name }}</a></h3>
     <ul class="list pl3 f5 mt2">
         {% for zone in state.zones %}
         <li>
