@@ -127,21 +127,21 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </li>
         
         <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-eastside-region">Eastside Region</a>
-            <span class="gray f7">Sunday, March 19, 2023 7:00AM</span>
+            <span class="gray f7">Monday, March 20, 2023 7:00AM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-mount-shasta">Mount Shasta</a>
-            <span class="gray f7">Sunday, March 19, 2023 6:21AM</span>
+            <span class="gray f7">Monday, March 20, 2023 6:17AM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-central-sierra-nevada">Central Sierra Nevada</a>
-            <span class="gray f7">Sunday, March 19, 2023 7:00AM</span>
+            <span class="gray f7">Monday, March 20, 2023 7:00AM</span>
         </li>
         
     </ul>
@@ -154,19 +154,19 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-greys-river">Greys River</a>
-            <span class="gray f7">Sunday, March 19, 2023 5:25AM</span>
+            <span class="gray f7">Monday, March 20, 2023 5:48AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-tetons">Tetons</a>
-            <span class="gray f7">Sunday, March 19, 2023 5:06AM</span>
+            <span class="gray f7">Monday, March 20, 2023 5:41AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-togwotee-pass">Togwotee Pass</a>
-            <span class="gray f7">Sunday, March 19, 2023 5:29AM</span>
+            <span class="gray f7">Monday, March 20, 2023 6:03AM</span>
         </li>
         
         <li>
@@ -197,7 +197,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-central-cascades">Central Cascades</a>
-            <span class="gray f7">Saturday, March 18, 2023 9:26PM</span>
+            <span class="gray f7">Sunday, March 19, 2023 9:09PM</span>
         </li>
         
         <li>
@@ -213,27 +213,27 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-blues">Blues</a>
-            <span class="gray f7">Sunday, March 19, 2023 7:00AM</span>
+            
         </li>
         
         <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-elkhorns">Elkhorns</a>
-            <span class="gray f7">Sunday, March 19, 2023 7:00AM</span>
+            
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-northern-wallowas">Northern Wallowas</a>
-            <span class="gray f7">Sunday, March 19, 2023 7:00AM</span>
+            
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-southern-wallowas">Southern Wallowas</a>
-            <span class="gray f7">Sunday, March 19, 2023 7:09AM</span>
+            
         </li>
         
     </ul>
@@ -244,21 +244,21 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-flathead-range-glacier-np">Flathead Range & Glacier NP</a>
-            <span class="gray f7">Sunday, March 19, 2023 6:00AM</span>
+            <span class="gray f7">Monday, March 20, 2023 5:48AM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-swan-range">Swan Range</a>
-            <span class="gray f7">Sunday, March 19, 2023 6:00AM</span>
+            <span class="gray f7">Monday, March 20, 2023 5:48AM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-whitefish-range">Whitefish Range</a>
-            <span class="gray f7">Sunday, March 19, 2023 6:00AM</span>
+            <span class="gray f7">Monday, March 20, 2023 5:48AM</span>
         </li>
         
         <li>
@@ -361,19 +361,19 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-banner-summit">Banner Summit</a>
-            <span class="gray f7">Sunday, March 19, 2023 6:14AM</span>
+            <span class="gray f7">Monday, March 20, 2023 6:12AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-galena-summit-eastern-mtns">Galena Summit & Eastern Mtns</a>
-            <span class="gray f7">Sunday, March 19, 2023 6:13AM</span>
+            <span class="gray f7">Monday, March 20, 2023 6:11AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-sawtooth-western-smoky-mtns">Sawtooth & Western Smoky Mtns</a>
-            <span class="gray f7">Sunday, March 19, 2023 6:13AM</span>
+            <span class="gray f7">Monday, March 20, 2023 6:12AM</span>
         </li>
         
         <li>
@@ -392,7 +392,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/az.html#zone-san-francisco-peaks-kachina-peaks-wilderness">San Francisco Peaks / Kachina Peaks Wilderness</a>
-            <span class="gray f7">Sunday, March 19, 2023 6:37AM</span>
+            <span class="gray f7">Monday, March 20, 2023 6:40AM</span>
         </li>
         
     </ul>
@@ -405,7 +405,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/nh.html#zone-presidential-range">Presidential Range</a>
-            <span class="gray f7">Sunday, March 19, 2023 4:00AM</span>
+            <span class="gray f7">Monday, March 20, 2023 4:01AM</span>
         </li>
         
     </ul>
@@ -477,9 +477,9 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/nm.html#zone-northern-new-mexico">Northern New Mexico</a>
-            <span class="gray f7">Sunday, March 19, 2023 6:24AM</span>
+            <span class="gray f7">Monday, March 20, 2023 6:47AM</span>
         </li>
         
     </ul>
