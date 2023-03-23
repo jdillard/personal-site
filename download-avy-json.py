@@ -31,7 +31,7 @@ with open("avalanche-reports-raw/map-layer.json") as fp:
 
 # loop through each zone and download it's report if it exists
 for item in map_layer["features"]:
-    time.sleep(5.5)
+    time.sleep(2)
     center_id = item['properties']['center_id']
     zone_id = item['id']
     print(center_id, zone_id)
