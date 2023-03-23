@@ -5,7 +5,8 @@ import requests
 from requests.exceptions import HTTPError
 
 dir = "avalanche-reports-raw"
-os.mkdir(dir)
+if not os.path.exists(dir):
+    os.mkdir(dir)
 
 # delete all DEM files in order to start fresh
 for f in os.listdir(dir):

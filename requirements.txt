@@ -4,3 +4,4 @@ requests
 python-frontmatter
 python-slugify
 shapely
+tzwhere

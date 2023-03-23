@@ -8,6 +8,9 @@ import os
 import urllib.parse
 import uuid
 from datetime import datetime
+from dateutil import tz
+from tzwhere import tzwhere
+import toml
 
 #TODO support search by lat/long (mainly for CO/BC) (lambda function?)
 #TODO expired reports?
@@ -19,6 +22,8 @@ environment = Environment(loader=FileSystemLoader("templates/"))
 index_template = environment.get_template("dem-shading-index.j2")
 region_template = environment.get_template("dem-shading-region.j2")
 layers_template = environment.get_template("dem-shading-layers.j2")
+
+tzwhere = tzwhere.tzwhere()
 
 # lower and upper degrees for each cardinal direction
 aspect = {
@@ -280,9 +285,7 @@ with open("avalanche-reports-raw/map-layer.json") as fp:
 
 # loop through all the zones in the avalanche.org map layer
 states = []
-if os.path.isfile("user.toml"):
-    os.remove("user.toml")
-toml = open("user.toml", "a")
+toml_data = {}
 #TODO support search by lat/long
 # search_point = Point((-122.27173, 41.34706))
 for item in map_layer["features"]:
@@ -301,10 +304,11 @@ for item in map_layer["features"]:
         print('Unknown geometry type...')
 
     # add each zone location to user.toml
-    toml.write(f"[{item['properties']['center_id']}-{item['id']}]\n")
-    toml.write(f"name = \"{item['properties']['name']}\"\n")
-    toml.write(f"longitude = \"{lat_long[0]}\"\n")
-    toml.write(f"latitude = \"{lat_long[1]}\"\n\n")
+    toml_data[f"{item['properties']['center_id']}-{item['id']}"] = {
+        "name": item['properties']['name'],
+        "longitude": lat_long[0],
+        "latitude": lat_long[1],
+    }
 
     # gather zone info
     zone_info = {
@@ -335,7 +339,9 @@ for item in map_layer["features"]:
             "name": next(active["name"] for active in state_info if active["abbr"] == item["properties"]["state"]),
             "elevations": next(active["elevations"] for active in state_info if active["abbr"] == item["properties"]["state"]),
         })
-toml.close()
+
+with open("user.toml", "w") as toml_file:
+    toml.dump(toml_data, toml_file)
 
 # delete all DEM files in order to start fresh
 dir = "source/avy"
@@ -353,7 +359,14 @@ for state in states:
                 with open(f"avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json") as fp:
                     data = json.load(fp)
 
-                published_date_time_obj = datetime.strptime(data["published_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=7, minutes=0)
+                # timezone calculations
+                from_zone = tz.gettz('UTC')
+                timezone_str = tzwhere.tzNameAt(zone["geo"][1],zone["geo"][0])
+                to_zone = tz.gettz(timezone_str)
+                utc = datetime.strptime(data["published_time"], '%Y-%m-%dT%H:%M:%S+00:00')
+                utc = utc.replace(tzinfo=from_zone)
+
+                published_date_time_obj = utc.astimezone(to_zone)
                 tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
 
                 published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
