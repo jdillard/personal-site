@@ -75,8 +75,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <a onclick="clickFunc('url', 'zone-url'); return false;" onmouseout="outFunc('zone-url')" href="#"><span class="tooltiptext" id="zone-url">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a>
     </div>
     {% for zone in zones %}
-    <div id="{{ zone.slug }}-title" class="avy-zone mb2 tc{% if not loop.first %} dn{% endif %}">
-        <h2 class="mb4">{{ zone.name }} <a target="_blank" href="{{ zone.url }}"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h2>
+    <div id="{{ zone.slug }}-title" class="avy-zone mt4 mb3 tc{% if not loop.first %} dn{% endif %}">
         <a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Pre-populated CalTopo Map</a>
     </div>
     {% endfor %}
@@ -84,9 +83,9 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 
 <div class="flex flex-column flex-row-ns">
     <div class="ph3 w-100 w-50-ns">
-        <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
         {% for zone in zones %}
         <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-published="{{ zone.published }}">
+        <h3 class="tc bb b--moon-gray">{{ zone.name }}<br />Avalanche Report <a target="_blank" href="{{ zone.url }}"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             {% if zone.danger %}
             <dl class="f6">
                 <dt><strong>{{ sun_day }} Avalanche Danger</strong></dt>
@@ -134,29 +133,31 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         {% endfor %}
     </div>
     <div class="ph3 w-100 w-50-ns">
-        <h3 class="tc bb b--moon-gray">Sunlight Angles</h3>
         {% for zone in zones %}
-        <table id="{{ zone.slug }}-shade" class="avy-zone{% if not loop.first %} dn{% endif %} f6">
-            <thead>
+        <div id="{{ zone.slug }}-shade" class="avy-zone{% if not loop.first %} dn{% endif %}">
+            <h3 class="tc bb b--moon-gray">{% if zone.name|length > 34 %}<br />{% endif %}<br />Sunlight Angles</h3>
+            <table class="f6">
+                <thead>
+                    <tr>
+                        <th class="pa2">Time of day</th>
+                        <th class="pa2">Lighting (Az/Z)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for hill in zone.hillshading %}
                 <tr>
-                    <th class="pa2">Time of day</th>
-                    <th class="pa2">Lighting (Az/Z)</th>
+                    <th class="pv2 ph1">
+                        {{ hill.time }}
+                    </th>
+                    <td class="pv2 ph1">
+                        <code id="shade-{{ loop.index }}-layer-{{ zone.zone_id }}" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">{{ hill.lighting }}</code>
+                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-{{ loop.index }}-layer-{{ zone.zone_id }}', 'shade-{{ loop.index }}-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('shade-{{ loop.index }}-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="shade-{{ loop.index }}-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </td>
                 </tr>
-            </thead>
-            <tbody>
-            {% for hill in zone.hillshading %}
-            <tr>
-                <th class="pv2 ph1">
-                    {{ hill.time }}
-                </th>
-                <td class="pv2 ph1">
-                    <code id="shade-{{ loop.index }}-layer-{{ zone.zone_id }}" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">{{ hill.lighting }}</code>
-                    <div class="tooltip dib v-top"><a onclick="clickFunc('shade-{{ loop.index }}-layer-{{ zone.zone_id }}', 'shade-{{ loop.index }}-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('shade-{{ loop.index }}-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="shade-{{ loop.index }}-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </td>
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
         {% endfor %}
     </div>
 </div>
