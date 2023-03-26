@@ -1,7 +1,9 @@
 name: Build Avalanche Reports
 on:
   # Run at 06:33 and 18:33 PT daily
-  schedule: [{cron: "03 3,15 * * *"}]
+  schedule:
+    - cron: '03 02,14 * * *'
+    - cron: '33 01,14 * * *'
   # (optional) Run workflow manually
   workflow_dispatch:
 jobs: 
