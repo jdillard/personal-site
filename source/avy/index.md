@@ -477,9 +477,9 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/nm.html#zone-northern-new-mexico">Northern New Mexico</a>
-            <span class="gray f7">Sunday, March 26, 2023 7:20AM</span>
+            
         </li>
         
     </ul>
