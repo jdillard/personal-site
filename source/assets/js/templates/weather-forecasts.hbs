@@ -16,10 +16,10 @@
         <div class="f6 b mb1">{{temperature}}&deg;F</div>
         <div class="relative w-60-ns w-30 center">
           {{#if icon_split}}
-          <img class="relative top-0 left-0" src="/assets/images/svg/{{icon_left}}.svg#left" />
-          <img class="absolute top-0 left-0" src="/assets/images/svg/{{icon_right}}.svg#right" />
+          <embed class="relative w3 top-0 left-0" src="/assets/images/svg/{{icon_left}}.svg#left" />
+          <embed class="absolute w3 top-0 left-0" src="/assets/images/svg/{{icon_right}}.svg#right" />
           {{else}}
-          <img class="relative top-0 left-0" alt="{{shortForecast}}" title="{{shortForecast}}" src="/assets/images/svg/{{icon_left}}.svg#full" />
+          <embed class="relative w3 top-0 left-0" alt="{{shortForecast}}" title="{{shortForecast}}" src="/assets/images/svg/{{icon_left}}.svg#full" />
           {{/if}}
         </div>
         <div class="pv2-ns f7">
@@ -31,10 +31,10 @@
         <div class="f6 b mb1">{{night_temperature}}&deg;F</div>
         <div class="relative w-60-ns w-30 center">
           {{#if night_icon_split}}
-          <img class="relative top-0 left-0" src="/assets/images/svg/{{night_icon_left}}.svg#left" />
-          <img class="absolute top-0 left-0" src="/assets/images/svg/{{night_icon_right}}.svg#right" />
+          <embed class="relative w3 top-0 left-0" src="/assets/images/svg/{{night_icon_left}}.svg#left" />
+          <embed class="absolute w3 top-0 left-0" src="/assets/images/svg/{{night_icon_right}}.svg#right" />
           {{else}}
-          <img class="relative top-0 left-0" alt="{{shortForecast}}" title="{{shortForecast}}" src="/assets/images/svg/{{night_icon_left}}.svg#full" />
+          <embed class="relative w3 top-0 left-0" alt="{{shortForecast}}" title="{{shortForecast}}" src="/assets/images/svg/{{night_icon_left}}.svg#full" />
           {{/if}}
         </div>
         <div class="pv2-ns f7">
@@ -43,7 +43,7 @@
         {{else}}
         <div class="f6 b mb1">&dash;</div>
         <div class="relative w-60-ns w-30 center">
-          <img class="relative top-0 left-0" src="/assets/images/svg/night_na.svg#full" />
+          <embed class="relative w3 top-0 left-0" src="/assets/images/svg/night_na.svg#full" />
         </div>
         <div class="pv2-ns f7">&nbsp;</div>
         {{/if}}
