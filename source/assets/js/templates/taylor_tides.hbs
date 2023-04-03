@@ -2,12 +2,14 @@
     <h2 class="tc">This Week</h2>
     {{#each thisweek}}
     <div class="pv3 mw5 center">
-        <div class="w-40 b tc fl">
+        <div class="pv3 w-40 b tc fl">
             <div class="f2">{{this.weekday}}</div>
             <div class="f3">{{this.date}}</div>
         </div>
         <div class="w-60 pv3 f4 b fr">
-            <div class="bg-lightest-blue pa1 mv1 tc">{{this.lowtide}}</div>
+            {{#each lowtides}}
+            <div class="bg-lightest-blue pa1 mv1 tc">{{this.streak}}</div>
+            {{/each}}
         </div>
         <div class="cb"></div>
     </div>
@@ -17,12 +19,14 @@
     <h2 class="tc">Next Week</h2>
     {{#each nextweek}}
     <div class="mv4 mw5 center">
-        <div class="w-40 b tc fl">
+        <div class="pv3 w-40 b tc fl">
             <div class="f2">{{this.weekday}}</div>
             <div class="f3">{{this.date}}</div>
         </div>
         <div class="w-60 pv3 f4 b fr">
-            <div class="bg-lightest-blue pa1 mv1 tc">{{this.lowtide}}</div>
+            {{#each lowtides}}
+            <div class="bg-lightest-blue pa1 mv1 tc">{{this.streak}}</div>
+            {{/each}}
         </div>
         <div class="cb"></div>
     </div>

@@ -22,7 +22,7 @@ function getIssues() {
   }
 
 function convertTZ(date, tzString) {
-    return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString}));   
+    return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString}));
 }
 
 // calculate start and end dates
@@ -49,25 +49,26 @@ const lastdaystring = [lastday.getFullYear(),
 axios.get('https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=NOS.COOPS.TAC.WL&begin_date='+todaystring+'&end_date='+lastdaystring+'&datum=MLLW&station=9449424&time_zone=GMT&units=english&interval=h&format=json')
   .then(function (response) {
     const lowTide = []
-    const streaks = []
+    const days = []
     const predictions = response.data.predictions
     var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric' };
 
     //TODO change to filter?
-    //TODO push gmtdate all the way through to the end (instead of the t value)
     for (let c in predictions) {
         const RegExpNumberedCaptureGroups = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/
         const matchObj = RegExpNumberedCaptureGroups.exec(predictions[c].t)
         let gmtdate = new Date(Date.UTC(matchObj[1], matchObj[2]-1, matchObj[3], matchObj[4], matchObj[5]))
 
         let thisdate = convertTZ(gmtdate, "America/Los_Angeles")
-        if(predictions[c].v < 4 && thisdate.getHours() > 7 && thisdate.getHours() < 22) {
-            lowTide.push(predictions[c])
+        //TODO calculate sunset/sunrise
+        if(predictions[c].v < 4 && thisdate.getHours() > 5 && thisdate.getHours() < 22) {
+            lowTide.push({"t": thisdate, "v": predictions[c].v})
         }
     }
 
-    //TODO calculate streaks
+    // calculate low tide streaks
     let day = 1
+    let current_streak = {}
     for (let c in lowTide) {
         let thisdate = new Date(lowTide[c].t)
         let nextdate = false
@@ -75,39 +76,60 @@ axios.get('https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=pre
             nextdate = new Date(lowTide[parseInt(c)+1].t)
         }
         if(nextdate && thisdate.getDate() == nextdate.getDate() && nextdate.getHours() - thisdate.getHours() == 1) {
-            if(streaks[thisdate.toLocaleDateString("en-US")]) {
-                streaks[thisdate.toLocaleDateString("en-US")].end = thisdate;
+            if(Object.keys(current_streak).length > 0) {
+                current_streak.end = thisdate;
             } else {
-                streaks[thisdate.toLocaleDateString("en-US")] = {};
-                streaks[thisdate.toLocaleDateString("en-US")].start = thisdate;
-                streaks[thisdate.toLocaleDateString("en-US")].day = day++;
+                current_streak.start = thisdate;
             }
+        } else {
+            // fix edge cases
+            if(Object.keys(current_streak).length == 0) {
+                current_streak.start = thisdate;
+                current_streak.end = thisdate;
+            } else if(Object.keys(current_streak).length == 1) {
+                current_streak.end = thisdate;
+            }
+            // append current streak
+            if(days[thisdate.toLocaleDateString("en-US")]) {
+                days[thisdate.toLocaleDateString("en-US")].push(current_streak)
+            } else {
+                days[thisdate.toLocaleDateString("en-US")] = [current_streak]
+            }
+            current_streak = {};
         }
     }
 
     //TODO filter streaks?
-    //TODO split in to two columns (handlebars?)
+    // split days into two columns, one per week
     const dates = []
           dates["thisweek"] = []
           dates["nextweek"] = []
-
-    for (let s in streaks) {
-            let starttime = new Date(streaks[s].start)
-            let lowtide = "N/A"
-            if(streaks[s].start && streaks[s].end) {
-                let endtime = new Date(streaks[s].end)
-                lowtide = starttime.toLocaleString('en-US', { hour: 'numeric', hour12: true }) + ' - ' +  endtime.toLocaleString('en-US', { hour: 'numeric', hour12: true })
+    let nextweek = new Date(Object.values(days)[0][0].start)
+    nextweek.setHours(0)
+    nextweek.setDate(nextweek.getDate() + 7);
+    for (let day in days) {
+            // loop through each day's streaks
+            const lowtides = []
+            for (let streak in days[day]) {
+                let starttime = new Date(days[day][streak].start)
+                let lowtide = "N/A"
+                if(days[day][streak].start && days[day][streak].end) {
+                    let endtime = new Date(days[day][streak].end)
+                    lowtide = starttime.toLocaleString('en-US', { hour: 'numeric', hour12: true }) + ' - ' +  endtime.toLocaleString('en-US', { hour: 'numeric', hour12: true })
+                    lowtides.push({"streak": lowtide})
+                }
             }
-            if(streaks[s].day < 8) {
+            let currentday = new Date(days[day][0].start)
+            if(currentday < nextweek) {
                 dates['thisweek'].push({
-                    "weekday": starttime.toLocaleString('en-US', { weekday: 'short' }).toUpperCase(),
-                    "date": (starttime.getMonth()+1)+'/'+starttime.getDate(),
-                    "lowtide": lowtide})
+                    "weekday": currentday.toLocaleString('en-US', { weekday: 'short' }).toUpperCase(),
+                    "date": (currentday.getMonth()+1)+'/'+currentday.getDate(),
+                    "lowtides": lowtides})
             } else {
                 dates['nextweek'].push({
-                    "weekday": starttime.toLocaleString('en-US', { weekday: 'short' }).toUpperCase(),
-                    "date": (starttime.getMonth()+1)+'/'+starttime.getDate(),
-                    "lowtide": lowtide})
+                    "weekday": currentday.toLocaleString('en-US', { weekday: 'short' }).toUpperCase(),
+                    "date": (currentday.getMonth()+1)+'/'+currentday.getDate(),
+                    "lowtides": lowtides})
             }
     }
 
