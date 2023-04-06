@@ -424,13 +424,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-east-slopes-north">East Slopes North</a>
-            <span class="gray f7">Tuesday, April 04, 2023 6:32PM</span>
+            <span class="gray f7">Wednesday, April 05, 2023 6:30PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-east-slopes-south">East Slopes South</a>
-            <span class="gray f7">Tuesday, April 04, 2023 6:30PM</span>
+            <span class="gray f7">Wednesday, April 05, 2023 6:30PM</span>
         </li>
         
         <li>
@@ -442,31 +442,31 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-snoqualmie-pass">Snoqualmie Pass</a>
-            <span class="gray f7">Tuesday, April 04, 2023 6:30PM</span>
+            <span class="gray f7">Wednesday, April 05, 2023 6:30PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-stevens-pass">Stevens Pass</a>
-            <span class="gray f7">Tuesday, April 04, 2023 6:30PM</span>
+            <span class="gray f7">Wednesday, April 05, 2023 6:30PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-west-slopes-central">West Slopes Central</a>
-            <span class="gray f7">Tuesday, April 04, 2023 6:30PM</span>
+            <span class="gray f7">Wednesday, April 05, 2023 6:30PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-west-slopes-north">West Slopes North</a>
-            <span class="gray f7">Tuesday, April 04, 2023 6:30PM</span>
+            <span class="gray f7">Wednesday, April 05, 2023 6:43PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-west-slopes-south">West Slopes South</a>
-            <span class="gray f7">Tuesday, April 04, 2023 6:30PM</span>
+            <span class="gray f7">Wednesday, April 05, 2023 6:31PM</span>
         </li>
         
     </ul>
