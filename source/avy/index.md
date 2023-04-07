@@ -390,9 +390,9 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/az.html#zone-san-francisco-peaks-kachina-peaks-wilderness">San Francisco Peaks / Kachina Peaks Wilderness</a>
-            
+            <span class="gray f7">Friday, April 07, 2023 7:19AM</span>
         </li>
         
     </ul>
@@ -458,9 +458,9 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </li>
         
         <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-west-slopes-north">West Slopes North</a>
-            <span class="gray f7">Thursday, April 06, 2023 6:30PM</span>
+            <span class="gray f7">Friday, April 07, 2023 7:05AM</span>
         </li>
         
         <li>
