@@ -207,9 +207,9 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-mt-hood">Mt Hood</a>
-            <span class="gray f7">Tuesday, April 11, 2023 6:30PM</span>
+            <span class="gray f7">Wednesday, April 12, 2023 7:20AM</span>
         </li>
         
         <li>
