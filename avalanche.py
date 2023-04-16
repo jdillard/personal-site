@@ -67,6 +67,13 @@ for file in os.listdir("source/_trips"):
 
             danger_dates = {"current": tomorrow, "tomorrow": outlook}
 
+            today_lower = jsonResponse["danger"][0]["lower"] or 0
+            today_middle = jsonResponse["danger"][0]["middle"] or 0
+            today_upper = jsonResponse["danger"][0]["upper"] or 0
+            tomorrow_lower = jsonResponse["danger"][1]["lower"] or 0
+            tomorrow_middle = jsonResponse["danger"][1]["middle"] or 0
+            tomorrow_upper = jsonResponse["danger"][1]["upper"] or 0
+
             data = {
                 "published": published,
                 "expires": expires,
@@ -75,21 +82,21 @@ for file in os.listdir("source/_trips"):
                 "danger": [
                     {
                         "valid_day": danger_dates[jsonResponse["danger"][0]["valid_day"]],
-                        "lower_num": jsonResponse["danger"][0]["lower"],
-                        "lower_name": danger_levels[jsonResponse["danger"][0]["lower"]],
-                        "middle_num": jsonResponse["danger"][0]["middle"],
-                        "middle_name": danger_levels[jsonResponse["danger"][0]["middle"]],
-                        "upper_num": jsonResponse["danger"][0]["upper"],
-                        "upper_name": danger_levels[jsonResponse["danger"][0]["upper"]],
+                        "lower_num": today_lower,
+                        "lower_name": danger_levels[today_lower],
+                        "middle_num": today_middle,
+                        "middle_name": danger_levels[today_middle],
+                        "upper_num": today_upper,
+                        "upper_name": danger_levels[today_upper],
                     },
                     {
                         "valid_day": danger_dates[jsonResponse["danger"][1]["valid_day"]],
-                        "lower_num": jsonResponse["danger"][1]["lower"],
-                        "lower_name": danger_levels[jsonResponse["danger"][1]["lower"]],
-                        "middle_num": jsonResponse["danger"][1]["middle"],
-                        "middle_name": danger_levels[jsonResponse["danger"][1]["middle"]],
-                        "upper_num": jsonResponse["danger"][1]["upper"],
-                        "upper_name": danger_levels[jsonResponse["danger"][1]["upper"]],
+                        "lower_num": tomorrow_lower,
+                        "lower_name": danger_levels[tomorrow_lower],
+                        "middle_num": tomorrow_middle,
+                        "middle_name": danger_levels[tomorrow_middle],
+                        "upper_num": tomorrow_upper,
+                        "upper_name": danger_levels[tomorrow_upper],
                     },
                 ]
             }
