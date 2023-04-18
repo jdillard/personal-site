@@ -54,52 +54,58 @@ for file in os.listdir("source/_trips"):
             with open(f"avalanche-reports-raw/{center_id}-{zone_id}.json") as fp:
                     jsonResponse = json.load(fp)
 
-            published_date_time_obj = datetime.strptime(jsonResponse["published_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=8, minutes=0)
-            expires_date_time_obj = datetime.strptime(jsonResponse["expires_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=8, minutes=0)
-            tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
-            outlook_date_time_obj = published_date_time_obj + timedelta(hours=48, minutes=0)
+            if jsonResponse["danger"]:
+                published_date_time_obj = datetime.strptime(jsonResponse["published_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=8, minutes=0)
+                expires_date_time_obj = datetime.strptime(jsonResponse["expires_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=8, minutes=0)
+                tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
+                outlook_date_time_obj = published_date_time_obj + timedelta(hours=48, minutes=0)
 
-            published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
-            expires = expires_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
-            tomorrow = tomorrow_date_time_obj.strftime("%A, %B %d, %Y")
-            outlook = outlook_date_time_obj.strftime("%A, %B %d, %Y")
-            url = jsonResponse["forecast_zone"][0]["url"]
+                published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+                expires = expires_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+                tomorrow = tomorrow_date_time_obj.strftime("%A, %B %d, %Y")
+                outlook = outlook_date_time_obj.strftime("%A, %B %d, %Y")
+                url = jsonResponse["forecast_zone"][0]["url"]
 
-            danger_dates = {"current": tomorrow, "tomorrow": outlook}
+                danger_dates = {"current": tomorrow, "tomorrow": outlook}
 
-            today_lower = jsonResponse["danger"][0]["lower"] or 0
-            today_middle = jsonResponse["danger"][0]["middle"] or 0
-            today_upper = jsonResponse["danger"][0]["upper"] or 0
-            tomorrow_lower = jsonResponse["danger"][1]["lower"] or 0
-            tomorrow_middle = jsonResponse["danger"][1]["middle"] or 0
-            tomorrow_upper = jsonResponse["danger"][1]["upper"] or 0
+                today_lower = jsonResponse["danger"][0]["lower"] or 0
+                today_middle = jsonResponse["danger"][0]["middle"] or 0
+                today_upper = jsonResponse["danger"][0]["upper"] or 0
+                tomorrow_lower = jsonResponse["danger"][1]["lower"] or 0
+                tomorrow_middle = jsonResponse["danger"][1]["middle"] or 0
+                tomorrow_upper = jsonResponse["danger"][1]["upper"] or 0
 
-            data = {
-                "published": published,
-                "expires": expires,
-                "url": url,
-                "name": center_id,
-                "danger": [
-                    {
-                        "valid_day": danger_dates[jsonResponse["danger"][0]["valid_day"]],
-                        "lower_num": today_lower,
-                        "lower_name": danger_levels[today_lower],
-                        "middle_num": today_middle,
-                        "middle_name": danger_levels[today_middle],
-                        "upper_num": today_upper,
-                        "upper_name": danger_levels[today_upper],
-                    },
-                    {
-                        "valid_day": danger_dates[jsonResponse["danger"][1]["valid_day"]],
-                        "lower_num": tomorrow_lower,
-                        "lower_name": danger_levels[tomorrow_lower],
-                        "middle_num": tomorrow_middle,
-                        "middle_name": danger_levels[tomorrow_middle],
-                        "upper_num": tomorrow_upper,
-                        "upper_name": danger_levels[tomorrow_upper],
-                    },
-                ]
-            }
+                data = {
+                    "published": published,
+                    "expires": expires,
+                    "url": url,
+                    "name": center_id,
+                    "offSeason": False,
+                    "danger": [
+                        {
+                            "valid_day": danger_dates[jsonResponse["danger"][0]["valid_day"]],
+                            "lower_num": today_lower,
+                            "lower_name": danger_levels[today_lower],
+                            "middle_num": today_middle,
+                            "middle_name": danger_levels[today_middle],
+                            "upper_num": today_upper,
+                            "upper_name": danger_levels[today_upper],
+                        },
+                        {
+                            "valid_day": danger_dates[jsonResponse["danger"][1]["valid_day"]],
+                            "lower_num": tomorrow_lower,
+                            "lower_name": danger_levels[tomorrow_lower],
+                            "middle_num": tomorrow_middle,
+                            "middle_name": danger_levels[tomorrow_middle],
+                            "upper_num": tomorrow_upper,
+                            "upper_name": danger_levels[tomorrow_upper],
+                        },
+                    ]
+                }
+            else:
+                data = {
+                    "offSeason": True,
+                }
 
             with open(f'{dir}/{center_id}-{zone_id}.json','w') as out:
                 out.write(json.dumps(data))
