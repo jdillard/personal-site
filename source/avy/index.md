@@ -129,7 +129,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-eastside-region">Eastside Region</a>
-            <span class="gray f7">Wednesday, April 19, 2023 7:00AM</span>
+            <span class="gray f7">Thursday, April 20, 2023 7:00AM</span>
         </li>
         
         <li>
@@ -141,7 +141,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-central-sierra-nevada">Central Sierra Nevada</a>
-            <span class="gray f7">Wednesday, April 19, 2023 6:30AM</span>
+            <span class="gray f7">Thursday, April 20, 2023 6:30AM</span>
         </li>
         
     </ul>
@@ -154,19 +154,19 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-greys-river">Greys River</a>
-            <span class="gray f7">Wednesday, April 19, 2023 6:54AM</span>
+            <span class="gray f7">Thursday, April 20, 2023 6:47AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-tetons">Tetons</a>
-            <span class="gray f7">Wednesday, April 19, 2023 6:52AM</span>
+            <span class="gray f7">Thursday, April 20, 2023 6:44AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-togwotee-pass">Togwotee Pass</a>
-            <span class="gray f7">Wednesday, April 19, 2023 7:00AM</span>
+            <span class="gray f7">Thursday, April 20, 2023 6:54AM</span>
         </li>
         
         <li>
@@ -197,7 +197,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-central-cascades">Central Cascades</a>
-            <span class="gray f7">Tuesday, April 18, 2023 9:48PM</span>
+            <span class="gray f7">Wednesday, April 19, 2023 8:47PM</span>
         </li>
         
         <li>
