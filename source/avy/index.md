@@ -121,15 +121,15 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-bridgeport-winter-recreation-area">Bridgeport Winter Recreation Area</a>
-            <span class="gray f7">Tuesday, April 18, 2023 7:00AM</span>
+            
         </li>
         
         <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-eastside-region">Eastside Region</a>
-            <span class="gray f7">Friday, April 21, 2023 7:00AM</span>
+            <span class="gray f7">Saturday, April 22, 2023 7:00AM</span>
         </li>
         
         <li>
@@ -141,7 +141,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-central-sierra-nevada">Central Sierra Nevada</a>
-            <span class="gray f7">Friday, April 21, 2023 6:30AM</span>
+            <span class="gray f7">Saturday, April 22, 2023 6:45AM</span>
         </li>
         
     </ul>
@@ -195,9 +195,9 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-central-cascades">Central Cascades</a>
-            <span class="gray f7">Thursday, April 20, 2023 8:30PM</span>
+            <span class="gray f7">Friday, April 21, 2023 8:30PM</span>
         </li>
         
         <li>
