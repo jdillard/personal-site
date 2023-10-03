@@ -5,4 +5,4 @@ python-frontmatter
 python-slugify
 shapely
 tzwhere
-numpy==1.21.6
+numpy==1.22.0
