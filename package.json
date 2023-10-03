@@ -11,7 +11,7 @@
     "handlebars": "^4.7.7",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.40",
-    "postcss": "^8.4.20",
+    "postcss": "^8.4.31",
     "suncalc": "^1.9.0",
     "terser-webpack-plugin": "^5.3.6",
     "tippy.js": "^6.3.7",
