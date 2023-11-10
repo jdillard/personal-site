@@ -6,3 +6,4 @@ python-slugify
 shapely
 tzwhere
 numpy==1.22.0
+python-dateutil
