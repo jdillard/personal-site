@@ -553,6 +553,29 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     
     
     
+    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html">Colorado</a></h3>
+    <ul class="list pl3 f5 mt2">
+        
+        <li>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-caic-zone">CAIC zone</a>
+            <span class="gray f7">Thursday, November 09, 2023 4:45PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-caic-zone">CAIC zone</a>
+            <span class="gray f7">Thursday, November 09, 2023 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-caic-zone">CAIC zone</a>
+            <span class="gray f7">Thursday, November 09, 2023 4:31PM</span>
+        </li>
+        
+    </ul>
+    
     
 </section>
 
