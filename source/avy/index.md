@@ -117,6 +117,19 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     
     
     
+    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/az.html">Arizona</a></h3>
+    <ul class="list pl3 f5 mt2">
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/az.html#zone-san-francisco-peaks-kachina-peaks-wilderness">San Francisco Peaks / Kachina Peaks Wilderness</a>
+            
+        </li>
+        
+    </ul>
+    
+    
+    
     <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html">California</a></h3>
     <ul class="list pl3 f5 mt2">
         
@@ -148,97 +161,73 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     
     
     
-    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html">Wyoming</a></h3>
+    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html">Colorado</a></h3>
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-greys-river">Greys River</a>
-            
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-caic-zone">CAIC zone</a>
+            <span class="gray f7">Thursday, November 09, 2023 4:45PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-tetons">Tetons</a>
-            
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-caic-zone">CAIC zone</a>
+            <span class="gray f7">Thursday, November 09, 2023 4:30PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-togwotee-pass">Togwotee Pass</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-big-horns">Big Horns</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-sierra-madre">Sierra Madre</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-snowy-range">Snowy Range</a>
-            
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-caic-zone">CAIC zone</a>
+            <span class="gray f7">Thursday, November 09, 2023 4:31PM</span>
         </li>
         
     </ul>
     
     
     
-    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html">Oregon</a></h3>
+    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html">Idaho</a></h3>
     <ul class="list pl3 f5 mt2">
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-central-cascades">Central Cascades</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-selkirks-cabinets">Selkirks & Cabinets</a>
             
         </li>
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-newberry">Newberry</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-st-regis-silver-valley">St. Regis & Silver Valley</a>
             
         </li>
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-mt-hood">Mt Hood</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-pac-advisory-area">PAC Advisory Area</a>
             
         </li>
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-southern-oregon">Southern Oregon</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-banner-summit">Banner Summit</a>
             
         </li>
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-blues">Blues</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-galena-summit-eastern-mtns">Galena Summit & Eastern Mtns</a>
             
         </li>
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-elkhorns">Elkhorns</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-sawtooth-western-smoky-mtns">Sawtooth & Western Smoky Mtns</a>
             
         </li>
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-northern-wallowas">Northern Wallowas</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-southern-wallowas">Southern Wallowas</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-soldier-wood-river-valley-mtns">Soldier & Wood River Valley Mtns</a>
             
         </li>
         
@@ -343,68 +332,6 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     
     
     
-    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html">Idaho</a></h3>
-    <ul class="list pl3 f5 mt2">
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-selkirks-cabinets">Selkirks & Cabinets</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-st-regis-silver-valley">St. Regis & Silver Valley</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-pac-advisory-area">PAC Advisory Area</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-banner-summit">Banner Summit</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-galena-summit-eastern-mtns">Galena Summit & Eastern Mtns</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-sawtooth-western-smoky-mtns">Sawtooth & Western Smoky Mtns</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-soldier-wood-river-valley-mtns">Soldier & Wood River Valley Mtns</a>
-            
-        </li>
-        
-    </ul>
-    
-    
-    
-    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/az.html">Arizona</a></h3>
-    <ul class="list pl3 f5 mt2">
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/az.html#zone-san-francisco-peaks-kachina-peaks-wilderness">San Francisco Peaks / Kachina Peaks Wilderness</a>
-            
-        </li>
-        
-    </ul>
-    
-    
-    
     <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/nh.html">New Hampshire</a></h3>
     <ul class="list pl3 f5 mt2">
         
@@ -418,60 +345,12 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     
     
     
-    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html">Washington</a></h3>
+    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/nm.html">New Mexico</a></h3>
     <ul class="list pl3 f5 mt2">
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-east-slopes-central">East Slopes Central</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-east-slopes-north">East Slopes North</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-east-slopes-south">East Slopes South</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-olympics">Olympics</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-snoqualmie-pass">Snoqualmie Pass</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-stevens-pass">Stevens Pass</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-west-slopes-central">West Slopes Central</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-west-slopes-north">West Slopes North</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-west-slopes-south">West Slopes South</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/nm.html#zone-northern-new-mexico">Northern New Mexico</a>
             
         </li>
         
@@ -479,12 +358,54 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     
     
     
-    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/nm.html">New Mexico</a></h3>
+    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html">Oregon</a></h3>
     <ul class="list pl3 f5 mt2">
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/nm.html#zone-northern-new-mexico">Northern New Mexico</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-central-cascades">Central Cascades</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-newberry">Newberry</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-mt-hood">Mt Hood</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-southern-oregon">Southern Oregon</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-blues">Blues</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-elkhorns">Elkhorns</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-northern-wallowas">Northern Wallowas</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-southern-wallowas">Southern Wallowas</a>
             
         </li>
         
@@ -553,25 +474,104 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     
     
     
-    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html">Colorado</a></h3>
+    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html">Washington</a></h3>
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-caic-zone">CAIC zone</a>
-            <span class="gray f7">Thursday, November 09, 2023 4:45PM</span>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-east-slopes-central">East Slopes Central</a>
+            
         </li>
         
         <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-caic-zone">CAIC zone</a>
-            <span class="gray f7">Thursday, November 09, 2023 4:30PM</span>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-east-slopes-north">East Slopes North</a>
+            
         </li>
         
         <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-caic-zone">CAIC zone</a>
-            <span class="gray f7">Thursday, November 09, 2023 4:31PM</span>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-east-slopes-south">East Slopes South</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-olympics">Olympics</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-snoqualmie-pass">Snoqualmie Pass</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-stevens-pass">Stevens Pass</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-west-slopes-central">West Slopes Central</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-west-slopes-north">West Slopes North</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-west-slopes-south">West Slopes South</a>
+            
+        </li>
+        
+    </ul>
+    
+    
+    
+    <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html">Wyoming</a></h3>
+    <ul class="list pl3 f5 mt2">
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-greys-river">Greys River</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-tetons">Tetons</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-togwotee-pass">Togwotee Pass</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-big-horns">Big Horns</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-sierra-madre">Sierra Madre</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-snowy-range">Snowy Range</a>
+            
         </li>
         
     </ul>
