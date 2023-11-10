@@ -122,7 +122,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-bridgeport-winter-recreation-area">Bridgeport Winter Recreation Area</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-bridgeport-avalanche-center">Bridgeport Avalanche Center</a>
             
         </li>
         
@@ -209,6 +209,12 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-mt-hood">Mt Hood</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-southern-oregon">Southern Oregon</a>
             
         </li>
         
