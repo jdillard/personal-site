@@ -527,5 +527,5 @@ for state in states:
 
 # create index DEM page
 with open('source/avy/index.md', mode="w", encoding="utf-8") as message:
-        message.write(index_template.render(states=states))
+        message.write(index_template.render(states=sorted(states, key=lambda d: d['name'])))
         print(f"... wrote source/avy/index.md")
