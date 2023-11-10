@@ -1,4 +1,5 @@
-from datetime import datetime, timedelta
+from datetime import timedelta
+import dateutil.parser
 import frontmatter
 import json
 import requests
@@ -55,8 +56,8 @@ for file in os.listdir("source/_trips"):
                     jsonResponse = json.load(fp)
 
             if jsonResponse["danger"]:
-                published_date_time_obj = datetime.strptime(jsonResponse["published_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=8, minutes=0)
-                expires_date_time_obj = datetime.strptime(jsonResponse["expires_time"], '%Y-%m-%dT%H:%M:%S+00:00') - timedelta(hours=8, minutes=0)
+                published_date_time_obj = dateutil.parser.parse(jsonResponse["published_time"]) - timedelta(hours=8, minutes=0)
+                expires_date_time_obj = dateutil.parser.parse(jsonResponse["expires_time"]) - timedelta(hours=8, minutes=0)
                 tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
                 outlook_date_time_obj = published_date_time_obj + timedelta(hours=48, minutes=0)
 
@@ -124,8 +125,8 @@ for file in os.listdir("source/_trips"):
                 print(f'Other error occurred: {err}')
                 exit()
 
-            published_date_time_obj = datetime.strptime(jsonResponse["report"]["dateIssued"], '%Y-%m-%dT%H:%M:%SZ') - timedelta(hours=8, minutes=0)
-            expires_date_time_obj = datetime.strptime(jsonResponse["report"]["validUntil"], '%Y-%m-%dT%H:%M:%SZ') - timedelta(hours=8, minutes=0)
+            published_date_time_obj = dateutil.parser.parse(jsonResponse["report"]["dateIssued"]) - timedelta(hours=8, minutes=0)
+            expires_date_time_obj = dateutil.parser.parse(jsonResponse["report"]["validUntil"]) - timedelta(hours=8, minutes=0)
 
             published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
             expires = expires_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
