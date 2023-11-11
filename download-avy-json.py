@@ -73,7 +73,7 @@ for item in map_layer["features"]:
         response = requests.get(f'https://api.avalanche.org/v2/public/product?type=forecast&center_id={center_id}&zone_id={zone_id}')
         response.raise_for_status()
         jsonResponse = response.json()
-        with open(f'{output_dir}/{center_id}-{zone_id}.json','w') as out:
+        with open(f'{source_dir}/{center_id}-{zone_id}.json','w') as out:
             out.write(json.dumps(jsonResponse))
     except HTTPError as http_err:
         print(f'HTTP error occurred: {http_err}')
