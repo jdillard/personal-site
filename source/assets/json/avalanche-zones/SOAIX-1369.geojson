@@ -1,0 +1,25 @@
+{
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [[[[-122.3289, 43.7169], [-122.4168, 43.3455], [-122.5995, 43.2196], [-122.675, 42.8758], [-122.4543, 42.0095], [-121.7271, 42.0034], [-121.5208, 42.4802], [-121.5791, 42.8634], [-121.9746, 43.571], [-122.1284, 43.6147], [-122.3289, 43.7169]]]],
+          "type": "Polygon"
+        },
+        "id": "15f3e70f-dbd5-477f-968a-274da3edceae",
+        "type": "Feature",
+        "properties": {
+          "stroke-opacity": 1,
+          "creator": "8BQK70",
+          "description": "",
+          "stroke-width": 2,
+          "title": "Southern Oregon",
+          "fill": "#FF0000",
+          "stroke": "#FF0000",
+          "fill-opacity": 0.1,
+          "class": "Shape",
+          "updated": 1699597377876
+        }
+      }
+    ],
+    "type": "FeatureCollection"
+}

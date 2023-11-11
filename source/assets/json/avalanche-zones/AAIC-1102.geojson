@@ -1,0 +1,25 @@
+{
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [[[-146.1169, 61.0144], [-145.9674, 60.9646], [-145.8335, 61.0299], [-145.8973, 61.0664], [-145.8741, 61.1115], [-146.0489, 61.1505], [-146.1433, 61.1351], [-146.2169, 61.1785], [-146.4255, 61.1634], [-146.3441, 61.0827], [-146.3341, 61.0133], [-146.1169, 61.0144]]],
+          "type": "Polygon"
+        },
+        "id": "15f3e70f-dbd5-477f-968a-274da3edceae",
+        "type": "Feature",
+        "properties": {
+          "stroke-opacity": 1,
+          "creator": "8BQK70",
+          "description": "",
+          "stroke-width": 2,
+          "title": "Valdez Maritime",
+          "fill": "#FF0000",
+          "stroke": "#FF0000",
+          "fill-opacity": 0.1,
+          "class": "Shape",
+          "updated": 1699597377876
+        }
+      }
+    ],
+    "type": "FeatureCollection"
+}

@@ -1,0 +1,25 @@
+{
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [[[-134.4426, 58.3103], [-134.4323, 58.3053], [-134.4271, 58.3096], [-134.418, 58.3051], [-134.4127, 58.3066], [-134.4181, 58.3179], [-134.4427, 58.3213], [-134.4523, 58.3183], [-134.4426, 58.3103]]],
+          "type": "Polygon"
+        },
+        "id": "15f3e70f-dbd5-477f-968a-274da3edceae",
+        "type": "Feature",
+        "properties": {
+          "stroke-opacity": 1,
+          "creator": "8BQK70",
+          "description": "",
+          "stroke-width": 2,
+          "title": "Juneau",
+          "fill": "#FF0000",
+          "stroke": "#FF0000",
+          "fill-opacity": 0.1,
+          "class": "Shape",
+          "updated": 1699597377876
+        }
+      }
+    ],
+    "type": "FeatureCollection"
+}

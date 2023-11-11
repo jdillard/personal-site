@@ -1,0 +1,25 @@
+{
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [[[-118.321, 45.4858], [-118.211, 45.4327], [-118.0952, 45.4311], [-118.0986, 45.4838], [-118.015, 45.6159], [-117.9207, 45.6975], [-117.8373, 45.7805], [-117.7502, 45.9789], [-118.0036, 45.9872], [-118.321, 45.4858]]],
+          "type": "Polygon"
+        },
+        "id": "15f3e70f-dbd5-477f-968a-274da3edceae",
+        "type": "Feature",
+        "properties": {
+          "stroke-opacity": 1,
+          "creator": "8BQK70",
+          "description": "",
+          "stroke-width": 2,
+          "title": "Blues",
+          "fill": "#FF0000",
+          "stroke": "#FF0000",
+          "fill-opacity": 0.1,
+          "class": "Shape",
+          "updated": 1699597377876
+        }
+      }
+    ],
+    "type": "FeatureCollection"
+}

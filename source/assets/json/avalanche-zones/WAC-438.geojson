@@ -1,0 +1,25 @@
+{
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [[[-117.5364, 45.1411], [-117.4357, 45.0522], [-117.342, 44.9993], [-117.2394, 44.9749], [-117.1702, 45.0182], [-117.1232, 45.1166], [-117.1168, 45.1733], [-117.5364, 45.1411]]],
+          "type": "Polygon"
+        },
+        "id": "15f3e70f-dbd5-477f-968a-274da3edceae",
+        "type": "Feature",
+        "properties": {
+          "stroke-opacity": 1,
+          "creator": "8BQK70",
+          "description": "",
+          "stroke-width": 2,
+          "title": "Southern Wallowas",
+          "fill": "#FF0000",
+          "stroke": "#FF0000",
+          "fill-opacity": 0.1,
+          "class": "Shape",
+          "updated": 1699597377876
+        }
+      }
+    ],
+    "type": "FeatureCollection"
+}

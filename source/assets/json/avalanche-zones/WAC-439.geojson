@@ -1,0 +1,25 @@
+{
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [[[-118.2608, 44.974], [-118.3054, 44.9218], [-118.2698, 44.8661], [-118.1968, 44.8304], [-118.1285, 44.8028], [-118.0643, 44.7578], [-118.0201, 44.739], [-117.9936, 44.7468], [-118.0402, 44.8258], [-118.0461, 44.8662], [-118.1073, 44.9259], [-118.1769, 44.9693], [-118.2608, 44.974]]],
+          "type": "Polygon"
+        },
+        "id": "15f3e70f-dbd5-477f-968a-274da3edceae",
+        "type": "Feature",
+        "properties": {
+          "stroke-opacity": 1,
+          "creator": "8BQK70",
+          "description": "",
+          "stroke-width": 2,
+          "title": "Elkhorns",
+          "fill": "#FF0000",
+          "stroke": "#FF0000",
+          "fill-opacity": 0.1,
+          "class": "Shape",
+          "updated": 1699597377876
+        }
+      }
+    ],
+    "type": "FeatureCollection"
+}
