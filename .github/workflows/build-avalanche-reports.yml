@@ -36,6 +36,7 @@ jobs:
 
     - name: Run node scripts
       run: |
+        npm install geojson2svg
         node geojson-to-svg.js
 
     - name: Commit changes
