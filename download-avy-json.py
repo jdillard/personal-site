@@ -4,20 +4,25 @@ import time
 import requests
 from requests.exceptions import HTTPError
 
-dir = "avalanche-reports-raw"
-if not os.path.exists(dir):
-    os.mkdir(dir)
+def prep_dir(dir):
+    # create directory if it doesn't exist
+    if not os.path.exists(dir):
+        os.makedirs(dir)
 
-# delete all DEM files in order to start fresh
-for f in os.listdir(dir):
-    os.remove(os.path.join(dir, f))
+    # delete all files in order to start fresh
+    for f in os.listdir(dir):
+        os.remove(os.path.join(dir, f))
+source_dir = "avalanche-reports-raw"
+output_dir = "source/assets/json/avalanche-zones"
+prep_dir(source_dir)
+prep_dir(output_dir)
 
 # grab map layer that contains all zones
 try:
     response = requests.get(f'https://api.avalanche.org/v2/public/products/map-layer')
     response.raise_for_status()
     jsonResponse = response.json()
-    with open(f'{dir}/map-layer.json','w') as out:
+    with open(f'{source_dir}/map-layer.json','w') as out:
         out.write(json.dumps(jsonResponse))
     for feature in jsonResponse['features']:
         geoJsonOutput = f"""\
@@ -46,7 +51,7 @@ try:
     ],
     "type": "FeatureCollection"
 }}"""
-        with open(f"{dir}/{feature['properties']['center_id']}-{feature['id']}.geojson",'w') as out:
+        with open(f"{output_dir}/{feature['properties']['center_id']}-{feature['id']}.geojson",'w') as out:
             out.write(geoJsonOutput)
 except HTTPError as http_err:
     print(f'HTTP error occurred: {http_err}')
@@ -68,7 +73,7 @@ for item in map_layer["features"]:
         response = requests.get(f'https://api.avalanche.org/v2/public/product?type=forecast&center_id={center_id}&zone_id={zone_id}')
         response.raise_for_status()
         jsonResponse = response.json()
-        with open(f'avalanche-reports-raw/{center_id}-{zone_id}.json','w') as out:
+        with open(f'{output_dir}/{center_id}-{zone_id}.json','w') as out:
             out.write(json.dumps(jsonResponse))
     except HTTPError as http_err:
         print(f'HTTP error occurred: {http_err}')
