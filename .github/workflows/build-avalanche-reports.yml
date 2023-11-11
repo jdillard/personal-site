@@ -44,6 +44,6 @@ jobs:
       with:
         default_author: github_actions
         message: "Update built avalanche data"
-        add: '["source/assets/json/avalanche-reports", "source/avy"]' 
+        add: '["source/assets/json/avalanche-reports", "source/avy", "source/assets/json/avalanche-zones", "source/assets/images/svg/avalanche-zones"]' 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
