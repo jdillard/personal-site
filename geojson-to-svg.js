@@ -2,8 +2,8 @@ const {GeoJSON2SVG} = require('geojson2svg');
 var fs = require('fs');
 const path = require('path')
 
-function generateSVG(dirpath, filename) {
-  const inputGeoJSON = `${dirpath}/${filename}.geojson`;
+function generateSVG(sourcePath, outputPath, filename) {
+  const inputGeoJSON = `${sourcePath}/${filename}.geojson`;
   const dataJSONSource = fs.readFileSync(inputGeoJSON, {
     encoding: "utf8",
     flag: "r",
@@ -58,15 +58,41 @@ function generateSVG(dirpath, filename) {
   `;
   }
 
-  fs.writeFileSync(`${dirpath}/${filename}.svg`, svg);
+  fs.writeFileSync(`${outputPath}/${filename}.svg`, svg);
 }
 
-//TODO dynamic input filename
-const dirpath = path.join(__dirname, './avalanche-reports-raw')
+// delete all files in the directory to start fresh
+function deleteFilesInDirectory(outputPath) {
+  fs.readdir(outputPath, (err, files) => {
+    if (err) {
+        console.error('Error reading directory:', err);
+        return;
+    }
 
-fs.readdir(dirpath, function(err, files) {
-  const geosonFiles = files.filter(file => path.extname(file) === '.geojson').map(file => path.parse(file).name);
-  geosonFiles.forEach(function (filename) {
-    generateSVG(dirpath, filename);
+    files.forEach(file => {
+        const filePath = `${directoryPath}/${file}`;
+        fs.unlinkSync(filePath); // Delete the file
+    });
   });
-})
+}
+
+const outputPath = path.join(__dirname, './source/assets/images/svg/avalanche-zones')
+createDirectoryRecursively(outputPath);
+
+function createDirectoryRecursively(outputPath) {
+  fs.mkdir(outputPath, { recursive: true }, (err) => {
+    if (err) {
+        console.log('Error creating directory:', err);
+    } else {
+        deleteFilesInDirectory(outputPath);
+
+        const sourcePath = path.join(__dirname, './source/assets/json/avalanche-zones')
+        fs.readdir(sourcePath, function(err, files) {
+          const geosonFiles = files.filter(file => path.extname(file) === '.geojson').map(file => path.parse(file).name);
+          geosonFiles.forEach(function (filename) {
+            generateSVG(sourcePath, outputPath, filename);
+          });
+        })
+    }
+  });
+}
