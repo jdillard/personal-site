@@ -17,8 +17,37 @@ try:
     response = requests.get(f'https://api.avalanche.org/v2/public/products/map-layer')
     response.raise_for_status()
     jsonResponse = response.json()
-    with open(f'avalanche-reports-raw/map-layer.json','w') as out:
+    with open(f'{dir}/map-layer.json','w') as out:
         out.write(json.dumps(jsonResponse))
+    for feature in jsonResponse['features']:
+        geoJsonOutput = f"""\
+{{
+    "features": [
+      {{
+        "geometry": {{
+          "coordinates": {feature['geometry']['coordinates']},
+          "type": "Polygon"
+        }},
+        "id": "15f3e70f-dbd5-477f-968a-274da3edceae",
+        "type": "Feature",
+        "properties": {{
+          "stroke-opacity": 1,
+          "creator": "8BQK70",
+          "description": "",
+          "stroke-width": 2,
+          "title": "{feature['properties']['name']}",
+          "fill": "#FF0000",
+          "stroke": "#FF0000",
+          "fill-opacity": 0.1,
+          "class": "Shape",
+          "updated": 1699597377876
+        }}
+      }}
+    ],
+    "type": "FeatureCollection"
+}}"""
+        with open(f"{dir}/{feature['properties']['center_id']}-{feature['id']}.geojson",'w') as out:
+            out.write(geoJsonOutput)
 except HTTPError as http_err:
     print(f'HTTP error occurred: {http_err}')
     exit()
