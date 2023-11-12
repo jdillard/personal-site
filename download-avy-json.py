@@ -28,10 +28,15 @@ try:
     for feature in jsonResponse['features']:
         shapes = []
         for coord_set in feature['geometry']['coordinates']:
+            if len(coord_set) > 5:
+                coord_set_normalized = []
+                coord_set_normalized.append(coord_set)
+            else:
+                coord_set_normalized = coord_set
             shapes.append(f"""\
         {{
             "geometry": {{
-                "coordinates": {coord_set},
+                "coordinates": {coord_set_normalized},
                 "type": "Polygon"
             }},
             "type": "Feature",
