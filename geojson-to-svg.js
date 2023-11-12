@@ -70,7 +70,7 @@ function deleteFilesInDirectory(outputPath) {
     }
 
     files.forEach(file => {
-        const filePath = `${directoryPath}/${file}`;
+        const filePath = `${outputPath}/${file}`;
         fs.unlinkSync(filePath); // Delete the file
     });
   });
