@@ -40,14 +40,14 @@ function generateSVG(sourcePath, outputPath, filename) {
   >
   <style>
   g.comuni {
-      fill: lightyellow;
-      stroke-width: 3.5;
+      fill: lightgray;
+      stroke-width: 2;
       stroke-linecap: square;
       stroke-linejoin: bevel;
       stroke-miterlimit: 3;
-      stroke-opacity: 1;
+      stroke-opacity: 0.8;
       stroke: black;
-      fill-opacity: 0;
+      fill-opacity: 0.3;
   }
   </style>
   <g inkscape:groupmode="layer" id="layer1" inkscape:label="Base"/>
