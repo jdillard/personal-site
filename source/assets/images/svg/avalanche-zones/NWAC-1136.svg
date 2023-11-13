@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  >
+  <style>
+  g.comuni {
+      fill: lightgray;
+      stroke-width: 2;
+      stroke-linecap: square;
+      stroke-linejoin: bevel;
+      stroke-miterlimit: 3;
+      stroke-opacity: 0.8;
+      stroke: black;
+      fill-opacity: 0.3;
+  }
+  </style>
+  <g inkscape:groupmode="layer" id="layer1" inkscape:label="Base"/>
+  <g inkscape:groupmode="layer" id="layer2" inkscape:label="Comuni">
+  <g class="comuni" id="comuni">
+<path d="M111.44526684846099,131.09154655239212 9.075185040907353,97.58317101674781 0,35.253603428123476 82.77366575769153,0 93.19516945851534,0.8476821192050868 178.2126996493939,19.94546162835936 227.37826256330308,49.96338137904174 237.65017530190926,64.47370471367333 237.79976626411982,83.77093883911074 235.75535644721595,98.73003506038114 242.78613167121233,114.88585897935035 256,138.5212310089583 254.00545383716158,150.7876899103993 243.43435917413427,165.04869497467521 219.44994156602908,178.41215426567703 111.44526684846099,131.09154655239212Z"/></g>
+  </g>
+  </svg>
+  
