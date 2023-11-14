@@ -37,6 +37,7 @@ jobs:
     - name: Run node scripts
       run: |
         npm install geojson2svg
+        npm install svg-path-bbox
         node geojson-to-svg.js
 
     - name: Commit changes
