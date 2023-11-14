@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <svg
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-  >
+<svg viewBox="0 0 256 192.94419499678915" xmlns="http://www.w3.org/2000/svg">
   <style>
-  g.comuni {
+    g.zone {
       fill: lightgray;
       stroke-width: 2;
       stroke-linecap: square;
@@ -17,12 +10,9 @@
       stroke-opacity: 0.8;
       stroke: black;
       fill-opacity: 0.3;
-  }
+    }
   </style>
-  <g inkscape:groupmode="layer" id="layer1" inkscape:label="Base"/>
-  <g inkscape:groupmode="layer" id="layer2" inkscape:label="Comuni">
-  <g class="comuni" id="comuni">
-<path d="M36.61834509300989,0 0,42.858242463115964 29.228992944196396,88.59012187298883 89.16484926235422,117.90121872995255 145.24182168056484,140.56189865297944 197.95253367543214,177.5086593970411 234.24246311738443,192.94419499678915 256,186.54008980114844 217.7395766517021,121.67799871712079 212.89544579859376,88.50801796022735 162.6478511866643,39.49198203976681 105.5035279025019,3.8588838999355493 36.61834509300989,0Z"/></g>
+  <g class="zone" id="zone">
+    <path d="M36.61834509300989,0 0,42.858242463115964 29.228992944196396,88.59012187298883 89.16484926235422,117.90121872995255 145.24182168056484,140.56189865297944 197.95253367543214,177.5086593970411 234.24246311738443,192.94419499678915 256,186.54008980114844 217.7395766517021,121.67799871712079 212.89544579859376,88.50801796022735 162.6478511866643,39.49198203976681 105.5035279025019,3.8588838999355493 36.61834509300989,0Z"/>
   </g>
-  </svg>
-  
+</svg>
