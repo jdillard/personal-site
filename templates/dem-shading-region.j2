@@ -84,7 +84,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             {% endfor %}
         </div>
     </div>
-    <div class="ph3 w-100 w-50-ns">
+    <div class="ph3 w-100 w-50-ns" style="max-height:180px;">
         {% for zone in zones %}
         <img id="{{ zone.slug }}-shape" class="{% if not loop.first %}dn{% endif %}" src="/assets/images/svg/avalanche-zones/{{ zone.center_id }}-{{ zone.zone_id }}.svg" alt="{{ zone.name }} shape" height="100%" width="100%" />
         {% endfor %}
