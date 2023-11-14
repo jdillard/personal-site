@@ -64,7 +64,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     </div>
 </section>
 
-<div class="flex flex-column flex-row-ns">
+<div class="flex flex-column flex-row-ns mb">
     <div class="ph3 w-100 w-50-ns">
         <div class="mt4 ph2 tc">
             <strong class="f6">Select A Zone:</strong>
@@ -84,10 +84,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             {% endfor %}
         </div>
     </div>
-    <div class="ph3 w-100 w-50-ns" style="max-height:180px;">
-        {% for zone in zones %}
-        <img id="{{ zone.slug }}-shape" class="{% if not loop.first %}dn{% endif %}" src="/assets/images/svg/avalanche-zones/{{ zone.center_id }}-{{ zone.zone_id }}.svg" alt="{{ zone.name }} shape" height="100%" width="100%" />
-        {% endfor %}
+    <div class="ph3 w-100 w-50-ns" style="display: flex;flex-direction: column;">
+        <div style="flex: 1;max-height: 130px;">
+          {% for zone in zones %}
+          <img id="{{ zone.slug }}-shape" class="{% if not loop.first %}dn{% endif %}" src="/assets/images/svg/avalanche-zones/{{ zone.center_id }}-{{ zone.zone_id }}.svg" alt="{{ zone.name }} shape" height="100%" width="100%" />
+          {% endfor %}
+        </div>
+        <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/{{ zone.center_id }}-{{ zone.zone_id }}.geojson" download="">Download Zone Shape</a></div>
     </div>
 </div>
 
