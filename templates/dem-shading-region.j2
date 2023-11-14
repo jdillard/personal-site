@@ -79,18 +79,19 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             {% for zone in zones %}
             <div id="{{ zone.slug }}-title" class="avy-zone mt4 mb3 tc{% if not loop.first %} dn{% endif %}">
                 <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Pre-populated CalTopo Map</a></div>
-                <div class="mt3"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/{{ zone.center_id }}-{{ zone.zone_id }}.geojson" download="">Download Zone Shape</a></div>
             </div>
             {% endfor %}
         </div>
     </div>
     <div class="ph3 w-100 w-50-ns" style="display: flex;flex-direction: column;">
-        <div style="flex: 1;max-height: 130px;">
-          {% for zone in zones %}
-          <img id="{{ zone.slug }}-shape" class="{% if not loop.first %}dn{% endif %}" src="/assets/images/svg/avalanche-zones/{{ zone.center_id }}-{{ zone.zone_id }}.svg" alt="{{ zone.name }} shape" height="100%" width="100%" />
-          {% endfor %}
+        {% for zone in zones %}
+        <div id="{{ zone.slug }}-shape" class="{% if not loop.first %}dn{% endif %}">
+          <div style="flex: 1;max-height: 130px;">
+             <img src="/assets/images/svg/avalanche-zones/{{ zone.center_id }}-{{ zone.zone_id }}.svg" alt="{{ zone.name }} shape" height="100%" width="100%" />
+          </div>
+          <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/{{ zone.center_id }}-{{ zone.zone_id }}.geojson" download="">Download Zone Shape</a></div>
         </div>
-        <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/{{ zone.center_id }}-{{ zone.zone_id }}.geojson" download="">Download Zone Shape</a></div>
+        {% endfor %}
     </div>
 </div>
 
