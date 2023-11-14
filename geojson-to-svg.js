@@ -1,6 +1,7 @@
 const {GeoJSON2SVG} = require('geojson2svg');
 var fs = require('fs');
 const path = require('path')
+const svgPathBbox = require("svg-path-bbox");
 
 function generateSVG(sourcePath, outputPath, filename) {
   const inputGeoJSON = `${sourcePath}/${filename}.geojson`;
@@ -11,35 +12,46 @@ function generateSVG(sourcePath, outputPath, filename) {
 
   const dataJSON = JSON.parse(dataJSONSource);
 
-  const attributes = [
-    "properties.PRO_COM_T",
-    "properties.COMUNE",
-    "properties.COD_REG",
-    "properties.COD_PROV",
-  ];
-
-  const converter = new GeoJSON2SVG({
-    attributes: attributes,
-  });
+  const converter = new GeoJSON2SVG();
 
   const svgStr = converter.convert(dataJSON);
+
+  // calculate the SVG viewBox
+  let lowestX = 1000;
+  let lowestY = 1000;
+  let highestW = 0;
+  let highestH = 0;
+  for (let path in svgStr) {
+    let pathBox = svgPathBbox(svgStr[path].slice(9, -3));
+
+    if (pathBox[0] < lowestX) {
+      lowestX = pathBox[0];
+    }
+
+    if (pathBox[1] < lowestY) {
+      lowestY = pathBox[1];
+    }
+
+    if ((pathBox[2]) > highestW) {
+      highestW = (pathBox[2]);
+    }
+
+    if ((pathBox[3]) > highestH) {
+      highestH = (pathBox[3]);
+    }
+  }
+
+  viewBox = [lowestX,lowestY,highestW,highestH]
 
   const svg = parseSVG(svgStr);
 
   function parseSVG(str) {
-    const paths = `<g class="comuni" id="comuni">\r\n${str.join("\r\n")}</g>`;
+    const paths = `<g class="zone" id="zone">\r\n    ${str.join("\r\n    ")}\r\n  </g>`;
 
     return `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    <svg
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-  >
+<svg viewBox="${viewBox.join(" ")}" xmlns="http://www.w3.org/2000/svg">
   <style>
-  g.comuni {
+    g.zone {
       fill: lightgray;
       stroke-width: 2;
       stroke-linecap: square;
@@ -48,14 +60,10 @@ function generateSVG(sourcePath, outputPath, filename) {
       stroke-opacity: 0.8;
       stroke: black;
       fill-opacity: 0.3;
-  }
+    }
   </style>
-  <g inkscape:groupmode="layer" id="layer1" inkscape:label="Base"/>
-  <g inkscape:groupmode="layer" id="layer2" inkscape:label="Comuni">
   ${paths}
-  </g>
-  </svg>
-  `;
+</svg>`;
   }
 
   fs.writeFileSync(`${outputPath}/${filename}.svg`, svg);
