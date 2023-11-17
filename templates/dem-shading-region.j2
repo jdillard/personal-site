@@ -65,7 +65,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 </section>
 
 <div class="flex flex-column flex-row-ns mb">
-    <div class="ph3 w-100 w-50-ns">
+    <div class="ph3 w-100 w-60-ns">
         <div class="mt4 ph2 tc">
             <strong class="f6">Select A Zone:</strong>
             <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
@@ -83,7 +83,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             {% endfor %}
         </div>
     </div>
-    <div class="ph3 w-100 w-50-ns" style="display: flex;flex-direction: column;">
+    <div class="ph3 w-100 w-40-ns" style="display: flex;flex-direction: column;">
         {% for zone in zones %}
         <div id="{{ zone.slug }}-shape" class="avy-zone {% if not loop.first %}dn{% endif %}">
           <div class="tc" style="flex: 1;height: 130px;">
