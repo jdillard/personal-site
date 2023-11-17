@@ -85,7 +85,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     </div>
     <div class="ph3 w-100 w-50-ns" style="display: flex;flex-direction: column;">
         {% for zone in zones %}
-        <div id="{{ zone.slug }}-shape" class="{% if not loop.first %}dn{% endif %}">
+        <div id="{{ zone.slug }}-shape" class="avy-zone {% if not loop.first %}dn{% endif %}">
           <div class="tc" style="flex: 1;height: 130px;">
              <img src="/assets/images/svg/avalanche-zones/{{ zone.center_id }}-{{ zone.zone_id }}.svg" alt="{{ zone.name }} shape" height="100%"/>
           </div>
