@@ -311,10 +311,11 @@ for item in map_layer["features"]:
     }
 
     # gather zone info
+    #TODO get rid of slug and just use the id instead?
     zone_info = {
         "zone_id": item["id"],
         "name": item["properties"]["name"],
-        "slug": slugify(item["properties"]["name"]),
+        "slug": item["id"],
         "url": item["properties"]["link"],
         "center_id": item["properties"]["center_id"],
         "geo": lat_long,
