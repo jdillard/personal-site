@@ -183,9 +183,15 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-999">CAIC zone</a>
-            <span class="gray f7">Friday, November 24, 2023 4:30PM</span>
+            <span class="gray f7">Saturday, November 25, 2023 5:15AM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-999">CAIC zone</a>
+            <span class="gray f7">Saturday, November 25, 2023 5:15AM</span>
         </li>
         
         <li>
@@ -214,8 +220,26 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-999">CAIC zone</a>
+            <span class="gray f7">Saturday, November 25, 2023 5:15AM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-993">CAIC zone</a>
-            <span class="gray f7">Friday, November 24, 2023 4:30PM</span>
+            <span class="gray f7">Saturday, November 25, 2023 5:15AM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-999">CAIC zone</a>
+            <span class="gray f7">Saturday, November 25, 2023 5:15AM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-993">CAIC zone</a>
+            <span class="gray f7">Saturday, November 25, 2023 5:15AM</span>
         </li>
         
     </ul>
