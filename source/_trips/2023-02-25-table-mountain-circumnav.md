@@ -4,7 +4,7 @@ title: 'Trip Report: Table Mountain Circumnav'
 date: 2023-02-25
 state: Washington
 avy_center_id: NWAC
-avy_zone_id: 1129
+avy_zone_id: 1577
 area: Baker
 type: skiing
 published: true
