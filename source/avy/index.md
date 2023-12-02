@@ -406,7 +406,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-468">Central Cascades</a>
-            <span class="gray f7">Thursday, November 30, 2023 8:00PM</span>
+            <span class="gray f7">Friday, December 01, 2023 8:00PM</span>
         </li>
         
         <li>
@@ -520,9 +520,9 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1586">East Slopes Central</a>
-            <span class="gray f7">Thursday, November 30, 2023 6:15PM</span>
+            <span class="gray f7">Friday, December 01, 2023 6:49PM</span>
         </li>
         
         <li>
@@ -534,7 +534,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1587">East Slopes South</a>
-            <span class="gray f7">Friday, December 01, 2023 6:11PM</span>
+            <span class="gray f7">Friday, December 01, 2023 6:00PM</span>
         </li>
         
         <li>
@@ -550,9 +550,9 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1580">Stevens Pass</a>
-            <span class="gray f7">Thursday, November 30, 2023 6:20PM</span>
+            <span class="gray f7">Friday, December 01, 2023 6:36PM</span>
         </li>
         
         <li>
@@ -587,15 +587,27 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </li>
         
         <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-1329">Tetons</a>
-            
+            <span class="gray f7">Saturday, December 02, 2023 7:00AM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-1329">Tetons</a>
+            <span class="gray f7">Saturday, December 02, 2023 7:00AM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-1331">Togwotee Pass</a>
-            
+            <span class="gray f7">Saturday, December 02, 2023 6:49AM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-1331">Togwotee Pass</a>
+            <span class="gray f7">Saturday, December 02, 2023 6:49AM</span>
         </li>
         
         <li>
