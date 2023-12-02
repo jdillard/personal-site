@@ -84,19 +84,19 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             </div>
             
             <div id="1350-title" class="avy-zone mt4 mb3 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=38.255937034317895,-119.45133809748589&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%220f4a4430-6e97-4e36-ac01-b8b5213d2909%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-11-20%2008%3A30AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m133z16%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22e971d3ca-1320-43e8-9c88-a6b7f06e3150%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-11-20%2010%3A00AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m153z27%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%2232925266-78f0-4f85-b3ac-cec54e96c4ea%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-11-20%2001%3A00PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m201z29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=38.255937034317895,-119.45133809748589&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22ff44990f-d482-44e4-830c-f5678aa960c6%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-11-20%2008%3A30AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m133z16%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%2293ac267f-4f8d-49b6-af1d-c3e170f7eebe%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-11-20%2010%3A00AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m153z27%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%229750c473-af11-4199-a413-4c8ba6350fb0%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-11-20%2001%3A00PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m201z29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             
             <div id="128-title" class="avy-zone mt4 mb3 tc dn">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=37.55590082928883,-118.85604963726709&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%220a5dd466-71ab-44d2-a981-6f545a4e6c53%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-11-25%2008%3A30AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m134z16%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%2231a94f4a-10c3-403f-9d41-e4af8e3acc09%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-11-25%2010%3A00AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m153z27%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%226876ead9-e479-487b-9af7-76bb4eb0af49%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-11-25%2001%3A00PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m201z29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=37.55590082928883,-118.85604963726709&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22237f443e-9d75-43d8-815f-61e9c8d6f9d5%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-02%2008%3A30AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m134z15%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%2286b5a616-6190-4cfd-aaff-f09b4d062cd9%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-02%2010%3A00AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m153z26%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%2281d0aaf4-3cb7-4bfe-9153-e056763c8668%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-02%2001%3A00PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m200z28%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             
             <div id="1432-title" class="avy-zone mt4 mb3 tc dn">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=41.37657087742405,-122.23619103538732&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%222c83b94f-fbce-4635-b080-16de61de7f18%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-11-30%2009%3A00AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m138z15%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%222d41294a-47a5-4c79-a860-290f25bba866%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-11-30%2010%3A30AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m158z24%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%223cd3670e-5678-40b6-bed1-b00be96d9c51%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-11-30%2001%3A30PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m203z23%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=41.37657087742405,-122.23619103538732&z=10&b=mbt&a=sc_a0-0e0-6200fc50b848pa0-0e6201-8700fc50b848pa0-0e8701-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22517a21e1-4515-45f3-9540-b1ce3fc8f6bb%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-02%2009%3A00AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m138z14%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22a171337c-14de-4f1a-a328-24d908f5bc6a%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-02%2010%3A30AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m158z23%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22c7f38dff-fc99-4378-99dd-7649ca4f6931%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-02%2001%3A30PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m203z23%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-02%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6200fc50b848pa0-0e6201-8700fc50b848pa0-0e8701-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             
             <div id="1605-title" class="avy-zone mt4 mb3 tc dn">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.0956315357288,-120.118373536066&z=10&b=mbt&a=sc_a0-0e0-6200fc50b848pa0-0e6201-8700fc50b848pa0-0e8701-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%2281482ce2-9f67-4d21-943d-d7c1b9b02452%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-01%2008%3A40AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m135z15%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%222f656adf-19f1-4c7e-a2a7-56e9c4fb91c4%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-01%2010%3A10AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m155z25%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%226f62cdcf-11e6-40d3-9623-7a9513b6c53c%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-01%2001%3A10PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m201z26%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-01%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6200fc50b848pa0-0e6201-8700fc50b848pa0-0e8701-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.0956315357288,-120.118373536066&z=10&b=mbt&a=sc_a0-0e0-6200fc50b848pa0-0e6201-8700fcfff200pa0-0e8701-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%220ce05c5b-0f4c-41d6-a834-dc32919abe66%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-02%2008%3A40AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m135z15%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22220e718c-cf84-4a4c-bed8-7fefb5e83332%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-02%2010%3A10AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m155z25%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%229719b0de-0509-4f5c-b1be-46adfc308256%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-02%2001%3A10PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m201z26%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-02%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6200fc50b848pa0-0e6201-8700fcfff200pa0-0e8701-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%223614d247-7404-4e77-a819-111c699f606e%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-12-02%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e6201-8700fcA200FFpa293-158e8701-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             
         </div>
@@ -152,7 +152,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="128-report" class="avy-zone dn" data-published="Friday, November 24, 2023 5:06PM">
+        <div id="128-report" class="avy-zone dn" data-published="Friday, December 01, 2023 5:00PM">
         <h3 class="tc bb b--moon-gray">Eastside Region<br />Avalanche Report <a target="_blank" href="https://www.esavalanche.org/forecasts#/eastside-region"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.esavalanche.org/forecasts#/eastside-region">ESAC</a> for more information.</div>
@@ -161,32 +161,17 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, November 24, 2023 5:06PM<br />
+                <strong>Issued at:</strong> Friday, December 01, 2023 5:00PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.esavalanche.org/forecasts#/eastside-region">ESAC</a>
             </p>
             
         </div>
         
-        <div id="1432-report" class="avy-zone dn" data-published="Wednesday, November 29, 2023 4:04PM">
+        <div id="1432-report" class="avy-zone dn" data-published="Friday, December 01, 2023 6:40AM">
         <h3 class="tc bb b--moon-gray">Mount Shasta<br />Avalanche Report <a target="_blank" href="http://www.shastaavalanche.org"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.shastaavalanche.org">MSAC</a> for more information.</div>
-            
-
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, November 29, 2023 4:04PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="http://www.shastaavalanche.org">MSAC</a>
-            </p>
-            
-        </div>
-        
-        <div id="1605-report" class="avy-zone dn" data-published="Thursday, November 30, 2023 6:43AM">
-        <h3 class="tc bb b--moon-gray">Central Sierra Nevada<br />Avalanche Report <a target="_blank" href="https://www.sierraavalanchecenter.org/forecasts/#/central-sierra-nevada"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
             <dl class="f6">
-                <dt><strong>2023-12-01 Avalanche Danger</strong></dt>
+                <dt><strong>2023-12-02 Avalanche Danger</strong></dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7">
                     
@@ -197,11 +182,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
                         <li class="pv1"><div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div> Low danger (below 6200')</li>
                     
                      </ul>
-<pre id="danger-layer-1605" class="dib pa1 b--silver bw1 ba mv2">
+<pre id="danger-layer-1432" class="dib pa1 b--silver bw1 ba mv2">
 a0-0e8701-20310f 50b848
 a0-0e6201-8700f 50b848
 a0-0e0-6200f 50b848
-</pre> <div class="tooltip dib v-top pt3"><a onclick="clickFunc('danger-layer-1605', 'danger-tooltip-1605'); return false;" onmouseout="outFunc('danger-tooltip-1605')" href="#"><span class="tooltiptext" id="danger-tooltip-1605">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+</pre> <div class="tooltip dib v-top pt3"><a onclick="clickFunc('danger-layer-1432', 'danger-tooltip-1432'); return false;" onmouseout="outFunc('danger-tooltip-1432')" href="#"><span class="tooltiptext" id="danger-tooltip-1432">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dd>
             </dl>
             
@@ -209,7 +194,59 @@ a0-0e0-6200f 50b848
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Thursday, November 30, 2023 6:43AM<br />
+                <strong>Issued at:</strong> Friday, December 01, 2023 6:40AM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="http://www.shastaavalanche.org">MSAC</a>
+            </p>
+            
+        </div>
+        
+        <div id="1605-report" class="avy-zone dn" data-published="Friday, December 01, 2023 6:49AM">
+        <h3 class="tc bb b--moon-gray">Central Sierra Nevada<br />Avalanche Report <a target="_blank" href="https://www.sierraavalanchecenter.org/forecasts/#/central-sierra-nevada"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <dl class="f6">
+                <dt><strong>2023-12-02 Avalanche Danger</strong></dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1"><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> Moderate danger (above 8701')</li>
+                    
+                        <li class="pv1"><div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div> Moderate danger (6201' to 8700')</li>
+                    
+                        <li class="pv1"><div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div> Low danger (below 6200')</li>
+                    
+                     </ul>
+<pre id="danger-layer-1605" class="dib pa1 b--silver bw1 ba mv2">
+a0-0e8701-20310f fff200
+a0-0e6201-8700f fff200
+a0-0e0-6200f 50b848
+</pre> <div class="tooltip dib v-top pt3"><a onclick="clickFunc('danger-layer-1605', 'danger-tooltip-1605'); return false;" onmouseout="outFunc('danger-tooltip-1605')" href="#"><span class="tooltiptext" id="danger-tooltip-1605">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt><strong>2023-12-02 Wind Slab</strong></dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to SE aspects (above 8701')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to SE aspects (6201' to 8700')</li>
+                        
+                        </ul>
+<pre id="problem-1-layer-1605" class="dib pa1 b--silver bw1 ba mv2">
+a293-158e8701-20310f A200FF
+a293-158e6201-8700f A200FF
+</pre> <div class="tooltip dib v-top pt3"><a onclick="clickFunc('problem-1-layer-1605', 'problem-1-tooltip-1605'); return false;" onmouseout="outFunc('problem-1-tooltip-1605')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1605">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Friday, December 01, 2023 6:49AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.sierraavalanchecenter.org/forecasts/#/central-sierra-nevada">SAC</a>
             </p>
             
@@ -316,70 +353,70 @@ a0-0e0-6200f 50b848
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-25 07:00AM Shade
+                        2023-12-02 07:00AM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-1-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">118 by 2</code>
+                        <code id="shade-1-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">119 by 1</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-1-layer-128', 'shade-1-tooltip-128'); return false;" onmouseout="outFunc('shade-1-tooltip-128')" href="#"><span class="tooltiptext" id="shade-1-tooltip-128">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-25 08:30AM Shade
+                        2023-12-02 08:30AM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-2-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">134 by 16</code>
+                        <code id="shade-2-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">134 by 15</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-2-layer-128', 'shade-2-tooltip-128'); return false;" onmouseout="outFunc('shade-2-tooltip-128')" href="#"><span class="tooltiptext" id="shade-2-tooltip-128">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-25 10:00AM Shade
+                        2023-12-02 10:00AM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-3-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">153 by 27</code>
+                        <code id="shade-3-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">153 by 26</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-3-layer-128', 'shade-3-tooltip-128'); return false;" onmouseout="outFunc('shade-3-tooltip-128')" href="#"><span class="tooltiptext" id="shade-3-tooltip-128">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-25 11:30AM Shade
+                        2023-12-02 11:30AM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-4-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">177 by 32</code>
+                        <code id="shade-4-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">176 by 30</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-4-layer-128', 'shade-4-tooltip-128'); return false;" onmouseout="outFunc('shade-4-tooltip-128')" href="#"><span class="tooltiptext" id="shade-4-tooltip-128">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-25 01:00PM Shade
+                        2023-12-02 01:00PM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-5-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">201 by 29</code>
+                        <code id="shade-5-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">200 by 28</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-5-layer-128', 'shade-5-tooltip-128'); return false;" onmouseout="outFunc('shade-5-tooltip-128')" href="#"><span class="tooltiptext" id="shade-5-tooltip-128">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-25 02:30PM Shade
+                        2023-12-02 02:30PM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-6-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">221 by 20</code>
+                        <code id="shade-6-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">220 by 19</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-6-layer-128', 'shade-6-tooltip-128'); return false;" onmouseout="outFunc('shade-6-tooltip-128')" href="#"><span class="tooltiptext" id="shade-6-tooltip-128">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-25 04:00PM Shade
+                        2023-12-02 04:00PM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-7-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">238 by 6</code>
+                        <code id="shade-7-layer-128" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">237 by 6</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-7-layer-128', 'shade-7-tooltip-128'); return false;" onmouseout="outFunc('shade-7-tooltip-128')" href="#"><span class="tooltiptext" id="shade-7-tooltip-128">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>
@@ -401,47 +438,47 @@ a0-0e0-6200f 50b848
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-30 07:30AM Shade
+                        2023-12-02 07:30AM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-1-layer-1432" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">121 by 2</code>
+                        <code id="shade-1-layer-1432" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">121 by 1</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-1-layer-1432', 'shade-1-tooltip-1432'); return false;" onmouseout="outFunc('shade-1-tooltip-1432')" href="#"><span class="tooltiptext" id="shade-1-tooltip-1432">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-30 09:00AM Shade
+                        2023-12-02 09:00AM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-2-layer-1432" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">138 by 15</code>
+                        <code id="shade-2-layer-1432" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">138 by 14</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-2-layer-1432', 'shade-2-tooltip-1432'); return false;" onmouseout="outFunc('shade-2-tooltip-1432')" href="#"><span class="tooltiptext" id="shade-2-tooltip-1432">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-30 10:30AM Shade
+                        2023-12-02 10:30AM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-3-layer-1432" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">158 by 24</code>
+                        <code id="shade-3-layer-1432" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">158 by 23</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-3-layer-1432', 'shade-3-tooltip-1432'); return false;" onmouseout="outFunc('shade-3-tooltip-1432')" href="#"><span class="tooltiptext" id="shade-3-tooltip-1432">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-30 12:00PM Shade
+                        2023-12-02 12:00PM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-4-layer-1432" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">181 by 27</code>
+                        <code id="shade-4-layer-1432" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">180 by 27</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-4-layer-1432', 'shade-4-tooltip-1432'); return false;" onmouseout="outFunc('shade-4-tooltip-1432')" href="#"><span class="tooltiptext" id="shade-4-tooltip-1432">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-30 01:30PM Shade
+                        2023-12-02 01:30PM Shade
                     </th>
                     <td class="pv2 ph1">
                         <code id="shade-5-layer-1432" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">203 by 23</code>
@@ -451,7 +488,7 @@ a0-0e0-6200f 50b848
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-30 03:00PM Shade
+                        2023-12-02 03:00PM Shade
                     </th>
                     <td class="pv2 ph1">
                         <code id="shade-6-layer-1432" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">223 by 14</code>
@@ -461,10 +498,10 @@ a0-0e0-6200f 50b848
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-11-30 04:30PM Shade
+                        2023-12-02 04:30PM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-7-layer-1432" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">240 by 1</code>
+                        <code id="shade-7-layer-1432" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">239 by 1</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-7-layer-1432', 'shade-7-tooltip-1432'); return false;" onmouseout="outFunc('shade-7-tooltip-1432')" href="#"><span class="tooltiptext" id="shade-7-tooltip-1432">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>
@@ -486,7 +523,7 @@ a0-0e0-6200f 50b848
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-12-01 07:10AM Shade
+                        2023-12-02 07:10AM Shade
                     </th>
                     <td class="pv2 ph1">
                         <code id="shade-1-layer-1605" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">119 by 1</code>
@@ -496,7 +533,7 @@ a0-0e0-6200f 50b848
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-12-01 08:40AM Shade
+                        2023-12-02 08:40AM Shade
                     </th>
                     <td class="pv2 ph1">
                         <code id="shade-2-layer-1605" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">135 by 15</code>
@@ -506,7 +543,7 @@ a0-0e0-6200f 50b848
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-12-01 10:10AM Shade
+                        2023-12-02 10:10AM Shade
                     </th>
                     <td class="pv2 ph1">
                         <code id="shade-3-layer-1605" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">155 by 25</code>
@@ -516,7 +553,7 @@ a0-0e0-6200f 50b848
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-12-01 11:40AM Shade
+                        2023-12-02 11:40AM Shade
                     </th>
                     <td class="pv2 ph1">
                         <code id="shade-4-layer-1605" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">177 by 29</code>
@@ -526,7 +563,7 @@ a0-0e0-6200f 50b848
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-12-01 01:10PM Shade
+                        2023-12-02 01:10PM Shade
                     </th>
                     <td class="pv2 ph1">
                         <code id="shade-5-layer-1605" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">201 by 26</code>
@@ -536,7 +573,7 @@ a0-0e0-6200f 50b848
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-12-01 02:40PM Shade
+                        2023-12-02 02:40PM Shade
                     </th>
                     <td class="pv2 ph1">
                         <code id="shade-6-layer-1605" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">221 by 17</code>
@@ -546,10 +583,10 @@ a0-0e0-6200f 50b848
                 
                 <tr>
                     <th class="pv2 ph1">
-                        2023-12-01 04:10PM Shade
+                        2023-12-02 04:10PM Shade
                     </th>
                     <td class="pv2 ph1">
-                        <code id="shade-7-layer-1605" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">238 by 4</code>
+                        <code id="shade-7-layer-1605" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">237 by 4</code>
                         <div class="tooltip dib v-top"><a onclick="clickFunc('shade-7-layer-1605', 'shade-7-tooltip-1605'); return false;" onmouseout="outFunc('shade-7-tooltip-1605')" href="#"><span class="tooltiptext" id="shade-7-tooltip-1605">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </td>
                 </tr>

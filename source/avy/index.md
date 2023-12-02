@@ -146,15 +146,15 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </li>
         
         <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-1432">Mount Shasta</a>
-            
+            <span class="gray f7">Friday, December 01, 2023 6:40AM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-1605">Central Sierra Nevada</a>
-            <span class="gray f7">Thursday, November 30, 2023 6:43AM</span>
+            <span class="gray f7">Friday, December 01, 2023 6:49AM</span>
         </li>
         
     </ul>
@@ -165,57 +165,63 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-1012">CAIC zone</a>
-            <span class="gray f7">Thursday, November 30, 2023 4:30PM</span>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-975">CAIC zone</a>
+            <span class="gray f7">Friday, December 01, 2023 4:30PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-1008">CAIC zone</a>
-            <span class="gray f7">Thursday, November 30, 2023 4:30PM</span>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-1012">CAIC zone</a>
+            <span class="gray f7">Friday, December 01, 2023 4:30PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-1013">CAIC zone</a>
-            <span class="gray f7">Thursday, November 30, 2023 4:30PM</span>
+            <span class="gray f7">Friday, December 01, 2023 4:30PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-1006">CAIC zone</a>
-            <span class="gray f7">Thursday, November 30, 2023 4:30PM</span>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-1008">CAIC zone</a>
+            <span class="gray f7">Friday, December 01, 2023 4:30PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-1010">CAIC zone</a>
+            <span class="gray f7">Friday, December 01, 2023 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-932">CAIC zone</a>
-            <span class="gray f7">Thursday, November 30, 2023 4:30PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-999">CAIC zone</a>
-            <span class="gray f7">Thursday, November 30, 2023 4:30PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-953">CAIC zone</a>
-            <span class="gray f7">Thursday, November 30, 2023 4:30PM</span>
+            <span class="gray f7">Friday, December 01, 2023 4:30PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-1014">CAIC zone</a>
-            <span class="gray f7">Thursday, November 30, 2023 4:30PM</span>
+            <span class="gray f7">Friday, December 01, 2023 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-999">CAIC zone</a>
+            <span class="gray f7">Friday, December 01, 2023 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-953">CAIC zone</a>
+            <span class="gray f7">Friday, December 01, 2023 4:30PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-1016">CAIC zone</a>
-            <span class="gray f7">Thursday, November 30, 2023 4:30PM</span>
+            <span class="gray f7">Friday, December 01, 2023 4:30PM</span>
         </li>
         
     </ul>
