@@ -424,7 +424,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-1588">Mt Hood</a>
-            <span class="gray f7">Friday, December 01, 2023 6:00PM</span>
+            <span class="gray f7">Saturday, December 02, 2023 6:15PM</span>
         </li>
         
         <li>
@@ -528,43 +528,43 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1586">East Slopes Central</a>
-            <span class="gray f7">Friday, December 01, 2023 6:49PM</span>
+            <span class="gray f7">Saturday, December 02, 2023 6:00PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1585">East Slopes North</a>
-            <span class="gray f7">Friday, December 01, 2023 6:00PM</span>
+            <span class="gray f7">Saturday, December 02, 2023 6:09PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1587">East Slopes South</a>
-            <span class="gray f7">Friday, December 01, 2023 6:00PM</span>
+            <span class="gray f7">Saturday, December 02, 2023 6:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1576">Olympics</a>
-            <span class="gray f7">Saturday, December 02, 2023 7:30AM</span>
+            <span class="gray f7">Saturday, December 02, 2023 6:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1584">Snoqualmie Pass</a>
-            <span class="gray f7">Friday, December 01, 2023 6:00PM</span>
+            <span class="gray f7">Saturday, December 02, 2023 6:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1580">Stevens Pass</a>
-            <span class="gray f7">Friday, December 01, 2023 6:36PM</span>
+            <span class="gray f7">Saturday, December 02, 2023 6:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1578">West Slopes Central</a>
-            <span class="gray f7">Friday, December 01, 2023 6:06PM</span>
+            <span class="gray f7">Saturday, December 02, 2023 6:10PM</span>
         </li>
         
         <li>
@@ -576,7 +576,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1579">West Slopes South</a>
-            <span class="gray f7">Friday, December 01, 2023 6:00PM</span>
+            <span class="gray f7">Saturday, December 02, 2023 6:00PM</span>
         </li>
         
     </ul>
