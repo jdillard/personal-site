@@ -412,7 +412,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-1588">Mt Hood</a>
-            <span class="gray f7">Saturday, December 02, 2023 6:15PM</span>
+            <span class="gray f7">Sunday, December 03, 2023 6:00PM</span>
         </li>
         
         <li>
@@ -514,15 +514,15 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1586">East Slopes Central</a>
-            <span class="gray f7">Saturday, December 02, 2023 6:00PM</span>
+            <span class="gray f7">Sunday, December 03, 2023 6:03PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1585">East Slopes North</a>
-            <span class="gray f7">Saturday, December 02, 2023 6:09PM</span>
+            <span class="gray f7">Sunday, December 03, 2023 6:00PM</span>
         </li>
         
         <li>
@@ -532,39 +532,39 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </li>
         
         <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1576">Olympics</a>
-            <span class="gray f7">Saturday, December 02, 2023 6:00PM</span>
+            
         </li>
         
         <li>
             <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1584">Snoqualmie Pass</a>
-            <span class="gray f7">Saturday, December 02, 2023 6:00PM</span>
+            <span class="gray f7">Sunday, December 03, 2023 6:00PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1580">Stevens Pass</a>
-            <span class="gray f7">Saturday, December 02, 2023 6:00PM</span>
+            <span class="gray f7">Sunday, December 03, 2023 6:01PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1578">West Slopes Central</a>
-            <span class="gray f7">Saturday, December 02, 2023 6:10PM</span>
+            <span class="gray f7">Sunday, December 03, 2023 6:00PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1577">West Slopes North</a>
-            <span class="gray f7">Saturday, December 02, 2023 6:28PM</span>
+            <span class="gray f7">Sunday, December 03, 2023 6:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-1579">West Slopes South</a>
-            <span class="gray f7">Saturday, December 02, 2023 6:00PM</span>
+            <span class="gray f7">Sunday, December 03, 2023 6:00PM</span>
         </li>
         
     </ul>
