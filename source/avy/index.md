@@ -136,7 +136,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-1432">Mount Shasta</a>
-            <span class="gray f7">Monday, December 04, 2023 6:37AM</span>
+            <span class="gray f7">Tuesday, December 05, 2023 6:36AM</span>
         </li>
         
         <li>
@@ -277,7 +277,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-449">Swan Range</a>
-            <span class="gray f7">Tuesday, December 05, 2023 7:10AM</span>
+            <span class="gray f7">Tuesday, December 05, 2023 7:11AM</span>
         </li>
         
         <li>
