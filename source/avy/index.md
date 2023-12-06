@@ -239,6 +239,18 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-1359">Banner Summit</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-1356">Galena Summit & Eastern Mtns</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-1356">Galena Summit & Eastern Mtns</a>
             
         </li>
@@ -246,6 +258,18 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-1358">Sawtooth & Western Smoky Mtns</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-1358">Sawtooth & Western Smoky Mtns</a>
+            
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-1357">Soldier & Wood River Valley Mtns</a>
             
         </li>
         
@@ -263,21 +287,21 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-1644">Flathead Range & Glacier NP</a>
-            <span class="gray f7">Tuesday, December 05, 2023 7:07AM</span>
+            <span class="gray f7">Wednesday, December 06, 2023 7:01AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-1643">Swan Range</a>
-            <span class="gray f7">Tuesday, December 05, 2023 7:11AM</span>
+            <span class="gray f7">Wednesday, December 06, 2023 7:01AM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-1642">Whitefish Range</a>
-            <span class="gray f7">Tuesday, December 05, 2023 7:07AM</span>
+            <span class="gray f7">Wednesday, December 06, 2023 7:01AM</span>
         </li>
         
         <li>
@@ -388,7 +412,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-1619">Central Cascades</a>
-            <span class="gray f7">Monday, December 04, 2023 8:58PM</span>
+            <span class="gray f7">Tuesday, December 05, 2023 9:27PM</span>
         </li>
         
         <li>
@@ -565,19 +589,19 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-1330">Greys River</a>
-            <span class="gray f7">Tuesday, December 05, 2023 7:06AM</span>
+            <span class="gray f7">Wednesday, December 06, 2023 7:03AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-1329">Tetons</a>
-            <span class="gray f7">Tuesday, December 05, 2023 7:06AM</span>
+            <span class="gray f7">Wednesday, December 06, 2023 7:03AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wy.html#zone-1331">Togwotee Pass</a>
-            <span class="gray f7">Tuesday, December 05, 2023 7:05AM</span>
+            <span class="gray f7">Wednesday, December 06, 2023 6:51AM</span>
         </li>
         
         <li>
