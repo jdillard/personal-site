@@ -66,7 +66,12 @@ function generateSVG(sourcePath, outputPath, filename) {
 </svg>`;
   }
 
-  fs.writeFileSync(`${outputPath}/${filename}.svg`, svg);
+  try {
+    fs.writeFileSync(`${outputPath}/${filename}.svg`, svg);
+    console.log(`${outputPath}/${filename}.svg created`);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 // delete all files in the directory to start fresh
@@ -90,7 +95,7 @@ createDirectoryRecursively(outputPath);
 function createDirectoryRecursively(outputPath) {
   fs.mkdir(outputPath, { recursive: true }, (err) => {
     if (err) {
-        console.log('Error creating directory:', err);
+        console.error('Error creating directory:', err);
     } else {
         deleteFilesInDirectory(outputPath);
 
