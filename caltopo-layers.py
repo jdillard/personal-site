@@ -57,6 +57,8 @@ danger_levels = {
     "noforecast": {"scale": 0, "color": "939598", "desc": "No forecast"},
     "low": {"scale": 1, "color": "50b848", "desc": "Low danger"},
     "moderate": {"scale": 2, "color": "fff200", "desc": "Moderate danger"},
+    "considerable": {"scale": 3, "color": "f7941e", "desc": "Considerable danger"},
+    "high": {"scale": 4, "color": "ed1c24", "desc": "High danger"},
     0: {"scale": 0, "color": "939598", "desc": "No rating"},
     1: {"scale": 1, "color": "50b848", "desc": "Low danger"},
     2: {"scale": 2, "color": "fff200", "desc": "Moderate danger"},
