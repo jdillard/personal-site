@@ -10,8 +10,8 @@ updates:
     schedule:
       interval: "monthly"
     groups:
-     # Name for the group, which will be used in PR titles and branch names
-     all-github-actions:
+      # Name for the group, which will be used in PR titles and branch names
+      all-github-actions:
         # Group all updates together
         patterns:
           - "*"
