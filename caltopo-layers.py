@@ -810,14 +810,14 @@ for state in states:
                                     rules.append({
                                         "layer": layer,
                                         "desc": f"{desc} (below {zone['elevations'].get('lower')[1]}')",
-                                        "color": f"#{problem_color.get(index)}",
+                                        "color": f"#{problem_color.get(i)}",
                                     })
                                 elif index == 1:
                                     layer = f'a{start}-{end}e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {problem_color.get(i)}'
                                     rules.append({
                                         "layer": layer,
                                         "desc": f"{desc} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
-                                        "color": f"#{problem_color.get(index)}",
+                                        "color": f"#{problem_color.get(i)}",
                                     })
                                 else:
                                     layer = f'a{start}-{end}e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {problem_color.get(i)}'
@@ -829,7 +829,7 @@ for state in states:
                                     rules.append({
                                         "layer": layer,
                                         "desc": f"{desc} ({elv_range})",
-                                        "color": f"#{problem_color.get(index)}",
+                                        "color": f"#{problem_color.get(i)}",
                                     })
 
                         problems.append({
