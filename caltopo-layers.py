@@ -41,10 +41,9 @@ aspect = {
     2: (68, 113),
     3: (113, 158),
     4: (158, 203),
-    5: (158, 203),
-    6: (203, 248),
-    7: (248, 293),
-    8: (293, 339),
+    5: (203, 248),
+    6: (248, 293),
+    7: (293, 339),
 }
 
 # abbreviation for each cardinal direction
@@ -803,9 +802,8 @@ for state in states:
                         for index, chunk in enumerate(chunked_list):
                             chunk_rose = find_aspect_values(chunk, 16, aspect)
                             if chunk_rose:
-                                #TODO verify inputs and outputs
                                 start, end, desc = sort_directions(chunk_rose)
-                                if index == 0:
+                                if index == 2:
                                     layer = f'a{start}-{end}e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {problem_color.get(i)}'
                                     rules.append({
                                         "layer": layer,
