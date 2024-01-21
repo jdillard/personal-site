@@ -588,8 +588,8 @@ for product in ca_metadata:
 content = region_template.render(
     page="Canada",
     sun_day=tomorrow,
-    zones=areas, #TODO get accurate collection
-    states=states, #TODO figure out what this is for
+    zones=areas,
+    states=states,
 )
 
 # create Canada DEM page
