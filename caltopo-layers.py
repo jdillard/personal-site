@@ -330,6 +330,13 @@ def find_aspect_values(list, value, aspect):
     return aspect_values
 
 
+def find_object_by_key_value(objects_list, key, value):
+    for obj in objects_list:
+        if obj.get(key) == value:
+            return obj
+    return None  # Return None if no match is found
+
+
 # calculate geo center of CA areas
 with open("avalanche-reports-raw/ca-areas.json") as fp:
     ca_areas = json.load(fp)
@@ -413,15 +420,10 @@ dir = "source/avy"
 for f in os.listdir(dir):
     os.remove(os.path.join(dir, f))
 
-#TODO loop through CA areas and create DEM pages
+# load Canada metadata
 with open("avalanche-reports-raw/ca-metadata.json") as fp:
     ca_metadata = json.load(fp)
 
-def find_object_by_key_value(objects_list, key, value):
-    for obj in objects_list:
-        if obj.get(key) == value:
-            return obj
-    return None  # Return None if no match is found
 areas = []
 for product in ca_metadata:
     published = False
@@ -677,17 +679,7 @@ for state in states:
                         else:
                             # multi color
 
-                            #TODO add styling for multi-color-boxes
-                            # .test-color-box::before {
-                            #     content: '';
-                            #     position: absolute;
-                            #     width: 1rem;
-                            #     height: 1rem;
-                            #     background-color: blue;
-                            #     clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
-                            #     z-index: 1;
-                            # }
-
+                            #TODO add support for multi-color-boxes ([]/[]/[])
                             #TODO instead of using danger_index, figure out danger_indexes (multiple per chunk)
                             #TODO split chunk into different colors
                             #TODO needs rose array calculator
@@ -950,7 +942,6 @@ for state in states:
                 print(f"... wrote source{state['page']}.md")
 
 # create index DEM page
-#TODO add Canada
 with open('source/avy/index.md', mode="w", encoding="utf-8") as message:
         message.write(index_template.render(states=sorted(states, key=lambda d: d['name']), areas=areas))
         print(f"... wrote source/avy/index.md")
