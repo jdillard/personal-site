@@ -30,7 +30,7 @@ Some considerations we took were:
 - Weekdays and non-optimal conditions are going to provide shorter lines.
 
 {: {{site.data.css.info-box}} }
-> **Note:** Since _Franz's Chair_ is supposedly only open when the alpine lifts are closed, it is worth researching if there is ever a short window where it is possible to do both the alpine lifts, including _Glacier T-bar_, before they close and _Franz's Chair_ after it opens.
+> **Note:** Since _Franz's Chair_ is supposedly only open when the alpine lifts are closed, it is worth researching if there is ever a short window where it is possible to do both _Franz's Chair_ after it opens and all the alpine lifts, including _Glacier T-bar_, before they close.
 > Thus making is possible to get all 23 lifts.
 
 ## Whistler Mountain
@@ -39,7 +39,7 @@ We were able to start loading at 8:15am on the _Fritz Simmons Express_ **[1]** t
 
 Next, we took _Emerald Express_ **[3]** up, and after reading the lift status, realized we made a mistake and that _Peak Express_ wasn't going to run until 9:30am, in another 40 minutes.
 We were hoping to earn "style points" by working in the longest runs, from top to bottom, on both the Whistler and Blackcomb sides, so we gave up on the Whistler side to ensure we had enough time.
-In hindsight, we could have done _Olympic Chair_ and _Whistler Village Gondola_ next giving _Peak Express_ time to open, thus being able to do the **Peak to Creek**.
+In hindsight, we could have done _Olympic Chair_ and _Whistler Village Gondola_ next giving _Peak Express_ time to open, thus being able to do the full **Peak to Creek**.
 
 From there, we skied down via **Lower Pony Trail** _(green)_ to **Little Red Run** _(blue)_ to **Upper Franz's** _(blue)_ to **Highway 86** _(blue)_ to **Upper Pony Trail** _(green)_ to **Upper Expressway** _(green)_ to **Fallaway Bypass** _(green)_ to **Lower Dave Murray Downhill** _(black)_.
 Given the Spring like conditions, the lower down we got the icier the conditions were, making it clear we were operating on principle instead of logic.
@@ -60,7 +60,7 @@ Which lead us to the _Olympic Chair_ **[10]**, a slow fixed chair for beginners,
 
 To finish off the Whistler side, we took the _Whistler Village Gondola_ **[11]** and decided we were making such good time that we would take the time to stop and get a burger at Roundhouse for some extra "style points".
 
-## Blackcomb Montain
+## Blackcomb Mountain
 
 Once we finished, we took _Peak 2 Peak Gondola_ **[12]** over to the Blackcomb side and skied down **Wishbone** _(blue)_ to **Jersey Cream** (blue).
 
@@ -83,7 +83,7 @@ We then rode _Excalibur Gondola_ **[19]** and skied down **Green line** _(green)
 After a "quick" ride on _Magic Chair_ **[20]**, another slow fixed lift for beginners, we skied down **Merlin's** _(blue)_.
 
 Bringing us to the final lift, the _Blackcomb Gondola_ **[21]**.
-We stopped for a victory hot chocolate at the top before finishing by skiing down Upper Honeycomb (blue) to **Grub Stake** _(blue)_ to **Greenline** _(green)_ to **Village Run** _(green)_.
+We opted to stop for a victory hot chocolate at the top versus getting more bonus laps in for extra "style points". We hit over 36k feet, but 40k and more is possible for those seeking a vert challenge as well.
 
 <div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="10967819878" data-style="standard"></div><script src="https://strava-embeds.com/embed.js"></script>
 
