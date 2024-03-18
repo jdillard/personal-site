@@ -9,7 +9,7 @@ published: true
 popularity: 3
 categories:
   - skiing
-  - british columbia
+  - british-columbia
 image:
   path: /assets/images/trips/2024-03-15-wbiad/wbiad-thumb.png
   width: 175
