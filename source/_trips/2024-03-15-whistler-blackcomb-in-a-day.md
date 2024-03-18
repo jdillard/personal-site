@@ -5,7 +5,7 @@ date: 2024-03-15
 state: British Columbia
 area: Whistler
 type: skiing
-published: false
+published: true
 popularity: 3
 categories:
   - skiing
