@@ -62,9 +62,9 @@ And take the _Excelerator Express_ **[15]**, with a short ski down **Wishbone** 
 
 Then up _Jersey Cream Express_ **[16]** to ski down **Catskinner** _(black)_ to **Upper Easy Out** _(green)_.
 
-And _Catskinner Express_ **[17]** with a ski across **Expressway** _(green)_.
+And _Catskinner Express_ **[17]** with a ski across **Expressway** _(green)_ towards _7th Heaven Express_.
 
-While in line for _7th Heaven Express_ **[18]**, we dedided to get a bonus ski run through the trees back down to 7th Heaven, ideally we would have timed this run a little earlier as the snow had started turning to mashed potatoes.
+While in line for _7th Heaven Express_ **[18]**, we decided to get a bonus ski run through the trees back down to 7th Heaven, ideally we would have timed this run a little earlier as the snow had started turning to mashed potatoes.
 We waited in line about 20 minutes, as they had to skip loading every forth chair due to the engines overheating, which ended up being our only real wait of the day.
 After we took _7th Heaven Express_ the second time, we skied down via **Upper Greenline** _(green)_ to **Upper Springboard** (blue) to **Stoker** _(blue)_ to **Grub Stake** _(blue)_ to Greenline (green) to **Village Run** _(green)_.
 
