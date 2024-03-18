@@ -17,7 +17,7 @@ image:
 cover: wbiad
 ---
 
-I went up to Whistler with James after he had recently made an (almost) succesful attempt, accidently missing only one beginner chair, at doing every running lift at Vail in a day, and he thought we could do the same thing at Whistler Blackcomb.
+I went up to Whistler with James after he had recently made an (almost) succesful attempt at doing every running lift at Vail in a day, accidently missing only one beginner chair, and he thought we could do the same thing at Whistler Blackcomb.
 
 Some considerations we took were:
 
