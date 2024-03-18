@@ -10,6 +10,7 @@ popularity: 3
 categories:
   - skiing
   - british-columbia
+  - whistler
 image:
   path: /assets/images/trips/2024-03-15-wbiad/wbiad-thumb.png
   width: 175
