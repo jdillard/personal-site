@@ -612,38 +612,8 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">Canada zone</a>
-            <span class="gray f7">Saturday, April 06, 2024 2:45PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762">Canada zone</a>
-            <span class="gray f7">Friday, April 05, 2024 6:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">Canada zone</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-6193f393b1a2dac45e49d85fc00d667f02dd41a92c24f0913d21ff4c1f20bce1">Canada zone</a>
             <span class="gray f7">Saturday, April 06, 2024 5:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">Canada zone</a>
-            <span class="gray f7">Saturday, April 06, 2024 5:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16">Canada zone</a>
-            <span class="gray f7">Saturday, April 06, 2024 5:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da">Canada zone</a>
-            <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
         </li>
         
         <li>
@@ -654,14 +624,14 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-ad93b5e279aa2ffa7a0fac1a4f593a58dd731750d85dc770be6017e490582ff0">Canada zone</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-f7155d87fb3ce665c8de30aea09bc7fcde333b15f097f25be98eb411b10c87e9">Canada zone</a>
             <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-bcf3fda6d0b6de617ac52f724b590b5511ed61a8cd92e193499b287895fbb724">Canada zone</a>
-            <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-1cdfa45ce31fc1e4a3ba6570012f5f03decffffd815434dbeb9b598511215eb6">Canada zone</a>
+            <span class="gray f7">Thursday, April 04, 2024 3:00PM</span>
         </li>
         
         <li>
@@ -677,20 +647,8 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </li>
         
         <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d">Canada zone</a>
-            <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
-        </li>
-        
-        <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-bcd7009174a5bdd54074c5008cf3892e7b0393db558e2aba1dcda5725865e310">Canada zone</a>
-            <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-f88bb4126b4ed477f7c4e9b2f2bc3275170e881924475c26096bc692261d5d4d">Canada zone</a>
             <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
         </li>
         
@@ -702,13 +660,31 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-6193f393b1a2dac45e49d85fc00d667f02dd41a92c24f0913d21ff4c1f20bce1">Canada zone</a>
-            <span class="gray f7">Saturday, April 06, 2024 5:00PM</span>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-ad93b5e279aa2ffa7a0fac1a4f593a58dd731750d85dc770be6017e490582ff0">Canada zone</a>
+            <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891">Canada zone</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-b22fdb4c7c7efca4cbeacccbf7a084105d84ae3bd4670c5c80c2772a153f627f">Canada zone</a>
+            <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-f88bb4126b4ed477f7c4e9b2f2bc3275170e881924475c26096bc692261d5d4d">Canada zone</a>
+            <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16">Canada zone</a>
+            <span class="gray f7">Saturday, April 06, 2024 5:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da">Canada zone</a>
             <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
         </li>
         
@@ -720,8 +696,26 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-ad956fafa466572e249b6cd7c5e596ce3172b7e4ce0f3bbf0cf042d40a7203be">Canada zone</a>
+            <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-204dd862eae626a198ba61a83d3db20dbf7dd6f0ced7baa43fff08fef0ab62f5">Canada zone</a>
             <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d">Canada zone</a>
+            <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">Canada zone</a>
+            <span class="gray f7">Saturday, April 06, 2024 5:00PM</span>
         </li>
         
         <li>
@@ -731,27 +725,33 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </li>
         
         <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-bcf3fda6d0b6de617ac52f724b590b5511ed61a8cd92e193499b287895fbb724">Canada zone</a>
+            <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">Canada zone</a>
+            <span class="gray f7">Saturday, April 06, 2024 2:45PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762">Canada zone</a>
+            <span class="gray f7">Friday, April 05, 2024 6:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">Canada zone</a>
+            <span class="gray f7">Saturday, April 06, 2024 5:00PM</span>
+        </li>
+        
+        <li>
             <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-b22fdb4c7c7efca4cbeacccbf7a084105d84ae3bd4670c5c80c2772a153f627f">Canada zone</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891">Canada zone</a>
             <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-ad956fafa466572e249b6cd7c5e596ce3172b7e4ce0f3bbf0cf042d40a7203be">Canada zone</a>
-            <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-f7155d87fb3ce665c8de30aea09bc7fcde333b15f097f25be98eb411b10c87e9">Canada zone</a>
-            <span class="gray f7">Saturday, April 06, 2024 4:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-1cdfa45ce31fc1e4a3ba6570012f5f03decffffd815434dbeb9b598511215eb6">Canada zone</a>
-            <span class="gray f7">Thursday, April 04, 2024 3:00PM</span>
         </li>
         
     </ul>
