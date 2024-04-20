@@ -1,1 +1,1 @@
-{"published": "Sunday, April 07, 2024 5:30PM", "expires": "Monday, April 08, 2024 5:30PM", "url": "http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass", "name": "NWAC", "offSeason": false, "danger": [{"valid_day": "Monday, April 08, 2024", "lower_num": 2, "lower_name": "Moderate", "middle_num": 2, "middle_name": "Moderate", "upper_num": 2, "upper_name": "Moderate"}, {"valid_day": "Tuesday, April 09, 2024", "lower_num": 2, "lower_name": "Moderate", "middle_num": 3, "middle_name": "Considerable", "upper_num": 3, "upper_name": "Considerable"}]}
+{"offSeason": true}
