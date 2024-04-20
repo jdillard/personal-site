@@ -76,7 +76,8 @@ And _Catskinner Express_ **[17]** with a ski across **Expressway** _(green)_ tow
 
 While in line for _7th Heaven Express_ **[18]**, we decided to get a bonus ski run down **Everglades** _(black)_ through the trees back down to 7th Heaven, ideally we would have timed this run a little earlier as the snow had started turning to mashed potatoes.
 We waited in line about 20 minutes, as they had to skip loading every forth chair due to the engines overheating, which ended up being our only real wait of the day.
-After we took _7th Heaven Express_ the second time, we skied down via **Upper Greenline** _(green)_ to **Upper Springboard** (blue) to **Stoker** _(blue)_ to **Grub Stake** _(blue)_ to Greenline (green) to **Village Run** _(green)_.
+
+After that, we took _7th Heaven Express_ the second time, and skied down via **Upper Greenline** _(green)_ to **Upper Springboard** (blue) to **Stoker** _(blue)_ to **Grub Stake** _(blue)_ to Greenline (green) to **Village Run** _(green)_, getting our longest Blackcomb top to bottom "style points".
 
 We then rode _Excalibur Gondola_ **[19]** and skied down **Green line** _(green)_ to **Yellow Brick Road** _(green)_.
 
