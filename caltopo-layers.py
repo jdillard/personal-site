@@ -53,6 +53,7 @@ aspect_abbr = {
 # danger level color codes
 danger_levels = {
     "earlyseason": {"scale": 0, "color": "939598", "desc": "Early season"},
+    "spring": {"scale": 0, "color": "939598", "desc": "Spring Conditions"},
     "norating": {"scale": 0, "color": "939598", "desc": "No rating"},
     "noforecast": {"scale": 0, "color": "939598", "desc": "No forecast"},
     "low": {"scale": 1, "color": "50b848", "desc": "Low danger"},
