@@ -19,6 +19,7 @@ danger_levels = {
     4: "High",
     5: "Extreme",
     "earlyseason": 0,
+    "spring": 0,
     "no report": 0,
     "low": 1,
     "moderate": 2,
