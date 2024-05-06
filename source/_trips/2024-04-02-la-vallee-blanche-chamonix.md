@@ -24,7 +24,7 @@ Pierre asks if we have powder skis
 
 We went to get a burrito across from the Augille du Midi.
 
-![Iceberg Lake](/assets/images/trips/2024-04-02-la-valee-blanche/aguille-du-midi-cable-car.png "Aguille du Midi cable car"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Aguille du Midi cable car</i></small>
+![Aguille du Midi cable car](/assets/images/trips/2024-04-02-la-valee-blanche/aguille-du-midi-cable-car.png "Aguille du Midi cable car"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Waiting for the first Aguille du Midi cable car.</i></small>
 
 Meet Pierre and he says there is a chance the conditions aren't good enough. We overhear a couple of guys from SLC talking to their guide and it turns out they had already had to reschedule once and this was the last chance they had. It appeared they wanted a high chance of success and the guide wasn't willing to provide that and backed out.
 
@@ -40,13 +40,13 @@ We rope up and michael goes first plunging waist deep into the softest snow we'v
 
 We put on our skis and float. The guide trying to not be impatient.
 
-![Iceberg Lake](/assets/images/trips/2024-04-02-la-valee-blanche/first-push.png "First push"){: .shadow-5.oversized}{: loading="lazy"} <small><i>First push.</i></small>
+![First push](/assets/images/trips/2024-04-02-la-valee-blanche/first-push.png "First push"){: .shadow-5.oversized}{: loading="lazy"} <small><i>First push through soft snow and low visibility.</i></small>
 
 Due to low visibility, we decide to hug the rock to keep a reference point. Rolling down hills of powder trying to keep up with the guide.
 
 Stopping for the occasional picture, soaking in the sweeping terrain and to allow our legs to catch their breath.
 
-![Iceberg Lake](/assets/images/trips/2024-04-02-la-valee-blanche/front-of-the-pack.png "Front of the pack"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Front of the pack.</i></small>
+![Front of the pack](/assets/images/trips/2024-04-02-la-valee-blanche/front-of-the-pack.png "Front of the pack"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Maintaining fresh lines at the front of the pack.</i></small>
 
 Pierre's persistence payed off as we stayed towards the front of the pack, sometimes taking lead.
 
@@ -66,7 +66,7 @@ At one point Pierre asks if we have wives or girlfriends and we say no, not sure
 
 We essentially cross country ski for what feels like a mile before hitting the hard pack, shark infested finish.
 
-![Iceberg Lake](/assets/images/trips/2024-04-02-la-valee-blanche/last-push.png "Last push"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Last push.</i></small>
+![Last push](/assets/images/trips/2024-04-02-la-valee-blanche/last-push.png "Last push"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The start of the last push out off the Mer de Glace.</i></small>
 
 At the end the guides talked amongst themselves how it was the best day of the season and up there in comparison to other seasons.
 
