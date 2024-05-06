@@ -53,10 +53,10 @@ Pierre's persistence payed off as we stayed towards the front of the pack, somet
 We navigated the glacier field with ease before ending up in the flat section and a quick break to eat in the sun and take more videos.
 
 <div class="video oversized landscape pv2">
-  <div class="fl-ns w-50-ns w-100">
+  <div class="fl-ns w-50-ns w-100 pl5-ns">
     <iframe title="vimeo-player" src="https://player.vimeo.com/video/940324966?h=15ca0bf42a" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
   </div>
-  <div class="fr-ns w-50-ns w-100">
+  <div class="fr-ns w-50-ns w-100 pr5-ns">
     <iframe title="vimeo-player" src="https://player.vimeo.com/video/940326759?h=9348e00819" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
   </div>
   <div class="cb"></div>
