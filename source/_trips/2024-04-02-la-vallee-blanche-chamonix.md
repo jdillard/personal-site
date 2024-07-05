@@ -18,29 +18,23 @@ image:
 cover: la-valee-blanche
 ---
 
-After several stormy days, leading to 150km winds in the valley, the storm slowed bringing cold snow and calmer winds.
+We arrived in Chamonix and just happened to miss several stormy days, including 150km winds through the valley. When the storm finally slowed, it brought cold snow up high with calmer winds the night before we were to do La Valee Blanche.
 
-Pierre asks if we have powder skis
+Since it was our first time in Chamonix, we decided to hire a guide, Pierre, through [Compagnie des guides de Chamonix](www.chamonix-guides.com) who called the day before to align things up. He asked if we had powder skis, partly to make sure we were prepared for the conditions, but mostly with a tone that hinted he was hoping to get after it the next day.
 
-We went to get a burrito across from the Augille du Midi.
+We met Pierre at the base of the Aguille du Midi cable cars the morning of and he explained there is a chance the conditions aren't safe enough due to the amount of snow/wind and lack of visibility, but we wouldn't know until we got up there. Even though the French side was sunny, the Italian side often stayed foggier.
+
+While we waited for the them to clear the cable car lines from ice, we overhear a couple of guys from Salt Lake City talking to their guide and it turns out they had already had to reschedule doing La Valee Blanche once and this was the last chance they had at doing it before returning to the States. After some deliberation, it appeared they wanted too high chance of success and the guide wasn't willing to provide that and backed out and they all went their seperate ways.
 
 ![Aguille du Midi cable car](/assets/images/trips/2024-04-02-la-valee-blanche/aguille-du-midi-cable-car.png "Aguille du Midi cable car"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Waiting for the first Aguille du Midi cable car.</i></small>
 
-Meet Pierre and he says there is a chance the conditions aren't good enough. We overhear a couple of guys from SLC talking to their guide and it turns out they had already had to reschedule once and this was the last chance they had. It appeared they wanted a high chance of success and the guide wasn't willing to provide that and backed out.
+The lines finally get cleared and they load the first cable car and it is absolutely packed. At the mid station, workers were unloading equipment from the other cable car that came from the top while everyone tried to glean what the conditions might be from their faces. After we shuffled over, they gave a loud "Yew!" right as the doors were closing and a wave of stoke rippled throughout the car.
 
-We decide to wait it out. The first gondola was delayed while they cleared the lines from ice and we wouldn't know for sure until we got up there to get eyes on things.
+Once at the top, Pierre gave us a tour of the Midi, possibly buying time for others to go first and suss out the conditions. After a quick bathroom break, we put on our crampons and prepare to walk the snowy ridge, carrying our packs horizontally to get through the tightly constructed tunnels towards the exit.
 
-Besides the quality of the snow, due to unknown winds, the main risk with the conditions was visibility. Even though the French side was sunny, the Italian side often stayed foggier.
+We rope up outside, reality starting to sink in, and Michael goes first plunging waist deep into the softest powder, _la peuf_, we've ever experienced. Once we reached a fairly flat spot in a saddle we put on our skis and floated down the first decent.
 
-The load thed first cable car and it is absolutely packed. At the mid station the workers unload equipment from the other car before we can load it and give a Hollar as the doors close. The stoke rippled through the car.
-
-Pierre gives us a tour of the Midi, possibly buying time for others to go first. We put on our crampons and prepare to walk the ridge, carrying our packs horizontally to get through the tight tunnels to the exit.
-
-We rope up and michael goes first plunging waist deep into the softest snow we've ever experienced (la peuf). Plunge stepping down the ridge in unison we reached a fairly flat spot in a saddle.
-
-We put on our skis and float. The guide trying to not be impatient.
-
-![First push](/assets/images/trips/2024-04-02-la-valee-blanche/first-push.png "First push"){: .shadow-5.oversized}{: loading="lazy"} <small><i>First push through soft snow and low visibility.</i></small>
+![First push](/assets/images/trips/2024-04-02-la-valee-blanche/first-push.png "First push"){: .shadow-5.oversized}{: loading="lazy"} <small><i>First push through the soft snow and low visibility.</i></small>
 
 Due to low visibility, we decide to hug the rock to keep a reference point. Rolling down hills of powder trying to keep up with the guide.
 
@@ -71,8 +65,4 @@ We essentially cross country ski for what feels like a mile before hitting the h
 At the end the guides talked amongst themselves how it was the best day of the season and up there in comparison to other seasons.
 
 All pack in the train and head down to grab a beer.
-
-{: {{site.data.css.info-box}} }
-> **Note:** Since _Franz's Chair_ is supposedly only open when the alpine lifts are closed, it is worth researching if there is ever a short window where it is possible to do both _Franz's Chair_ after it opens and all the alpine lifts, including _Glacier T-bar_, before they close.
-> Thus making is possible to get all 23 lifts.
 
