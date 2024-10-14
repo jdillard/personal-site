@@ -18,7 +18,7 @@ image:
 cover: la-valee-blanche
 ---
 
-We arrived in Chamonix and having just missed several days of stormy weather, which included 150km winds through the valley floor. The storm finally slowed the night besfore were were to do La Valee Blanche, bringing cold snow up high along with calmer winds setting up what could be the perfect powder conditions.
+We arrived in Chamonix and having just missed several days of stormy weather, which included 150km winds through the valley floor. The storm finally slowed the night before we were to do La Valee Blanche, bringing cold snow up high along with calmer winds setting up what could be the perfect powder conditions.
 
 Since it was our first time in Chamonix, we decided to hire a guide, Pierre, through [Compagnie des guides de Chamonix](www.chamonix-guides.com) who called us the day before to line things up. At one point he asked if we had powder skis, and judging from his tone he partly did it to make sure we were prepared for the conditions, but mostly hinting he was hoping we were on the same page about getting after it the next day.
 
