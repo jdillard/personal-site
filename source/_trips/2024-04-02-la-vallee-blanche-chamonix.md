@@ -5,7 +5,7 @@ date: 2024-04-02
 state: France
 area: Chamonix
 type: skiing
-published: false
+published: true
 popularity: 3
 categories:
   - skiing
