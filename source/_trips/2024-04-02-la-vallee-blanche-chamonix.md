@@ -18,13 +18,13 @@ image:
 cover: la-valee-blanche
 ---
 
-We arrived in Chamonix and having just missed several days of stormy weather, which included 150km winds through the valley floor. The storm finally slowed the night before we were to do La Valee Blanche, bringing cold snow up high along with calmer winds setting up what could be the perfect powder conditions.
+We arrived in Chamonix and having just missed several days of stormy weather, which included 150km winds through the valley floor. The storm finally slowed the night before we were to do La Vallee Blanche, bringing cold snow up high along with calmer winds setting up what could be the perfect powder conditions.
 
 Since it was our first time in Chamonix, we decided to hire a guide, Pierre, through [Compagnie des guides de Chamonix](www.chamonix-guides.com) who called us the day before to line things up. At one point he asked if we had powder skis, and judging from his tone he partly did it to make sure we were prepared for the conditions, but mostly hinting he was hoping we were on the same page about getting after it the next day.
 
 The morning of we met Pierre at the base of the Aguille du Midi cable cars and he explained there is a chance the conditions wouldn't be safe enough due to the amount of the recent snow/wind and current lack of visibility, but we wouldn't know for sure until we got up there. Even though the French side of the Alps was sunny, the Italian side had a habit of staying foggier.
 
-While we were waited for the the cable car workers to clear the lines from ice, we overheard a couple of guys from Salt Lake City talking to their guide. It turns out they already had to reschedule doing La Valee Blanche once and this was the last chance they had at doing it before returning to the States. After some deliberation, it appeared they wanted too high chance of success before the went up and the guide wasn't willing to provide that and backed out and they all went their seperate ways.
+While we were waited for the the cable car workers to clear the lines from ice, we overheard a couple of guys from Salt Lake City talking to their guide. It turns out they already had to reschedule doing La Vallee Blanche once and this was the last chance they had at doing it before returning to the States. After some deliberation, it appeared they wanted too high chance of success before the went up and the guide wasn't willing to provide that and backed out and they all went their seperate ways.
 
 ![Aguille du Midi cable car](/assets/images/trips/2024-04-02-la-valee-blanche/aguille-du-midi-cable-car.png "Aguille du Midi cable car"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Waiting for the first Aguille du Midi cable car.</i></small>
 
