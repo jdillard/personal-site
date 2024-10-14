@@ -36,15 +36,11 @@ When we roped up outside it gave a chance for reality to sink in. Michael went f
 
 ![First push](/assets/images/trips/2024-04-02-la-valee-blanche/first-push.png "First push"){: .shadow-5.oversized}{: loading="lazy"} <small><i>First push through the soft snow and low visibility.</i></small>
 
-Due to low visibility, we decide to hug the rock to keep a reference point. Rolling down hills of powder trying to keep up with the guide.
-
-Stopping for the occasional picture, soaking in the sweeping terrain and to allow our legs to catch their breath.
+After discussing the low visibility, we decided the best option was to hug the rock so that we could maintain a reference point for the glaciers. Around the corner we reached rolling hills of powder as tryed our best to keep up with Pierre, each person getting fresh tracks the whole way down. Only stopping briefly for the occasional picture, we soaked in the sweeping terrain and allowed our legs to catch their breath.
 
 ![Front of the pack](/assets/images/trips/2024-04-02-la-valee-blanche/front-of-the-pack.png "Front of the pack"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Maintaining fresh lines at the front of the pack.</i></small>
 
-Pierre's persistence payed off as we stayed towards the front of the pack, sometimes taking lead.
-
-We navigated the glacier field with ease before ending up in the flat section and a quick break to eat in the sun and take more videos.
+Pierre's persistence continues to pay off as we stay towards the front of the pack, sometimes even taking the lead. Due to all the recent snow, we navigate the glacier field with ease before finally reaching the flat section past the toe of the glacier. The perfeect location for a quick lunch.
 
 <div class="video oversized landscape pv2">
   <div class="fl-ns w-50-ns w-100 pl5-ns">
@@ -56,13 +52,11 @@ We navigated the glacier field with ease before ending up in the flat section an
   <div class="cb"></div>
 </div>
 
-At one point Pierre asks if we have wives or girlfriends and we say no, not sure what he is getting at. Then follows by saying that sometimes when you get this lucky with the snow you have to wonder if your partner is getting lucky too.
+At one point Pierre asks if we have wives or girlfriends and we say no, not sure where this is going. Then follows with grin by saying _"Sometimes when you get this lucky with the snow you have to wonder if your partner is getting lucky back home as well"_.
 
-We essentially cross country ski for what feels like a mile before hitting the hard pack, shark infested finish.
+From here we essentially cross country ski for what feels like a mile before hitting the hard pack, shark infested exit.
 
 ![Last push](/assets/images/trips/2024-04-02-la-valee-blanche/last-push.png "Last push"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The start of the last push out off the Mer de Glace.</i></small>
 
-At the end the guides talked amongst themselves how it was the best day of the season and up there in comparison to other seasons.
-
-All pack in the train and head down to grab a beer.
+While waiting for the train, the guides talked amongst themselves how it was one of the best days of the season, and even up on the list for other seasons. The reward for taking the risk that morning had paid off.
 
