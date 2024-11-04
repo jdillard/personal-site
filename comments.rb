@@ -138,7 +138,7 @@ else
 
   # Loop through blog posts and grab front matter
   Dir.glob("source/_posts/*.md") do |blog_post|
-    front_matter = YAML.load_file(blog_post)
+    front_matter = YAML.load_file(blog_post, permitted_classes: [Date, Time])
     # Get page.comments listed in front matter if published is true
     if front_matter["published"] === true && front_matter["comment_issue_id"]
       create_comments(client, repo, front_matter["comment_issue_id"])
