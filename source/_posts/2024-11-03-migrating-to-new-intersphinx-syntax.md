@@ -11,7 +11,7 @@ categories:
   - intersphinx
 ---
 
-In [Sphinx 4.4](https://www.sphinx-doc.org/en/master/changes/4.4.html) a new `external` role was added for use with the intersphinx references. As covered in the [intersphinx](https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html) docs, using this new role forces the reference lookup to external projects only. 
+In [Sphinx 4.4](https://www.sphinx-doc.org/en/master/changes/4.4.html) a new `external` role was added for use with the intersphinx references. As covered in the [intersphinx](https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#role-external) docs, using this new role forces the reference lookup to external projects only.
 
 This is comparison the previous behavior where Sphinx would look through all internal references before attempting to find external references, sometimes creating issues in the process.
 
@@ -28,7 +28,7 @@ So if you don't use domains in your Sphinx projects, you may not run into any is
 
 ## Switching over to the new syntax
 
-To make it easier to switch to the new syntax, it is possible to use a couple find and replace regexes, one for when a title is specified and one where it isn't, these can be used in VS Code's `Replace in Files` and selecting the regex option.
+To make it easier to switch to the new syntax, it is possible to use a couple find and replace regexes, one for when a title is specified and one where it isn't, these can be used in VS Code's **Replace in Files** and selecting the regex option.
 
 Here the find/replace pair for external references without a title (test on [regex101](https://regex101.com/r/naJzo0/3)):
 
