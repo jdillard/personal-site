@@ -1,7 +1,7 @@
 const {GeoJSON2SVG} = require('geojson2svg');
 var fs = require('fs');
 const path = require('path')
-const svgPathBbox = require("svg-path-bbox");
+const {svgPathBbox} = require("svg-path-bbox");
 
 function generateSVG(sourcePath, outputPath, filename) {
   const inputGeoJSON = `${sourcePath}/${filename}.geojson`;
