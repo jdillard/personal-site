@@ -39,9 +39,10 @@ So if you don't use domains in your Sphinx projects, you may not run into any is
 
 ## Switching over to the new syntax
 
-To make it easier to switch to the new syntax, it is possible to use a couple find and replace regexes, one for when a title is specified and one where it isn't, these can be used in VS Code's **Replace in Files** and selecting the regex option.
+To make it easier to switch to the new syntax use a couple find and replace regexes, one for when a title is specified and one where it isn't.
+These can be used in VS Code's **Replace in Files** with the regex option selected.
 
-Here the find/replace pair for external references without a title (test on [regex101](https://regex101.com/r/naJzo0/3)):
+Here is the find/replace pair for external references without a title (test on [regex101](https://regex101.com/r/naJzo0/3)):
 
 ```
 // find regex for external references without a title
