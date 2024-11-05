@@ -11,9 +11,20 @@ categories:
   - intersphinx
 ---
 
-In [Sphinx 4.4](https://www.sphinx-doc.org/en/master/changes/4.4.html) a new `external` role was added for use with the intersphinx references. As covered in the [intersphinx](https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#role-external) docs, using this new role forces the reference lookup to external projects only.
+In [Sphinx 4.4](https://www.sphinx-doc.org/en/master/changes/4.4.html) a new `external` role was added for use with the intersphinx references, which changes
+the syntax of intersphinx references. The old format of a basic reference was:
 
-This is comparison the previous behavior where Sphinx would look through all internal references before attempting to find external references, sometimes creating issues in the process.
+```
+:ref:`invname:target`
+```
+
+And the new format is:
+
+```
+:external+invname:ref:`target`
+```
+
+As covered in the [intersphinx](https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#role-external) docs, using this new role forces the reference lookup to external projects only. This is in comparison to the previous behavior where Sphinx would look through all internal references before attempting to find external references, sometimes creating issues in the process.
 
 ## Reasoning behind the change
 
