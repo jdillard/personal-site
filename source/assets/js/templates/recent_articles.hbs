@@ -2,6 +2,7 @@
     {{#each types}}
         <span data-type="{{this.type}}" class="related-top-nav f6 link dim br2 pv1 ph2 mb2 mh1 dib white bg-{{this.color}} pointer">{{this.type}}</span>
     {{/each}}
+    <a href="/blog" class="related-top-nav f6 link dim br2 pv1 ph2 mb2 mh1 dib white bg-silver pointer">all articles</a>
 </div>
 {{#if item_info}}
     <ul style="width: 45%;" class="fl w-40 list pl0">
@@ -17,10 +18,6 @@
             <p>{{item_info.summary}}</p>
         </section>
         <footer class="tc gray f6 fw1-ns fw4">
-            {{#each item_info.categories}}
-            <a class="f6 link dim br2 pv1 ph2 mv2 dib white bg-silver" href="/blog/archive.html#{{this}}">{{this}}</a>
-            {{/each}}
-            <br />
             <!--show Read More link/button on parent hover-->
             <a class="br-pill b light-red hover-white hover-bg-light-red no-underline ba grow pv1 ph3 dib inline-flex items-center child mv3" href="{{item_info.url}}">
                 Read More
@@ -34,6 +31,4 @@
 {{else}}
     <div class="pa4 tc silver ma3 ba b--light-gray">No Related Articles. Try A Different Category.</div>
 {{/if}}
-<div class="cb pa3 tc ba b--light-gray black-70 bg-near-white shadow-5 mb3">
-  <a href="/blog" class="b mid-gray">Read More Articles</a>
-</div>
+<div class="cb"></div>

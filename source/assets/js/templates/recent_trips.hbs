@@ -2,6 +2,7 @@
     {{#each types}}
         <span data-type="{{this.type}}" class="related-top-nav f6 link dim br2 pv1 ph2 mb2 mh1 dib white bg-{{this.color}} pointer">{{this.type}}</span>
     {{/each}}
+    <a href="/trips" class="related-top-nav f6 link dim br2 pv1 ph2 mb2 mh1 dib white bg-silver pointer">all trips</a>
 </div>
 {{#if trip_info}}
     <div class="fl w-45-ns w-100">
@@ -12,9 +13,6 @@
             </li>
             {{/each}}
         </ul>
-        <div class="cb mh3 pa3 tc ba b--light-gray black-70 bg-near-white shadow-5 mb3">
-            <a href="/trips" class="b mid-gray">Read More Trip Reports</a>
-        </div>
     </div>
     <div class="w-55-ns w-100 fr ph2 pv3">
         <div class="ph3 ph0-l flex">

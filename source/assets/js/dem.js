@@ -5,7 +5,7 @@ const zoneSel = document.getElementById("zoneSel");
 const regionSel = document.getElementById("regionSel");
 
 function getIssues() {
-  axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=dem&state=open')
+  axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=avy&state=open')
     .then(function (response) {
       if(response.data.length) {
           for (let c in response.data) {
