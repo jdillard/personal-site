@@ -405,7 +405,6 @@ for product in ca_metadata:
         tz_name = tf.timezone_at(lat=found_value.get('properties')["centroid"][1], lng=found_value.get('properties')["centroid"][0])
         utc = dateutil.parser.parse(data["report"]["dateIssued"])
         utc = utc.replace(tzinfo=ZoneInfo('UTC'))
-        print(utc)
 
         published_date_time_obj = utc.astimezone(ZoneInfo(tz_name))
         tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
