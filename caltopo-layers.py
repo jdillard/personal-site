@@ -11,13 +11,8 @@ import dateutil.parser
 from zoneinfo import ZoneInfo
 from timezonefinder import TimezoneFinder
 import toml
-<<<<<<< Updated upstream
-=======
-from astropy.time import Time
-from astropy.coordinates import get_sun, AltAz, EarthLocation
-import astropy.units as u
 import caltopo_config as config
->>>>>>> Stashed changes
+
 
 #TODO support search by lat/long (mainly for CO/BC) (lambda function?)
 #TODO expired reports?
