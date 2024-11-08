@@ -12,6 +12,9 @@ import dateutil.parser
 from zoneinfo import ZoneInfo
 from timezonefinder import TimezoneFinder
 import toml
+from astropy.time import Time
+from astropy.coordinates import get_sun, AltAz, EarthLocation
+import astropy.units as u
 
 #TODO support search by lat/long (mainly for CO/BC) (lambda function?)
 #TODO expired reports?
@@ -512,6 +515,39 @@ for product in ca_metadata:
     area["slug"] = data['area']['id']
     area["center_id"] = "Avalanche Canada"
     area["url"] = f"https://avalanche.ca/forecasts/{product['product']['id']}"
+
+    # Define the observer's location (latitude, longitude, and elevation)
+    location = EarthLocation(lat=51.3825 * u.deg, lon=-116.15982 * u.deg, height=2000 * u.m)
+
+    # Define the date and initial time
+    tz_name = tf.timezone_at(lat=51.3825, lng=-116.15982)
+    local_tz = timezone(tz_name)
+    local_time = datetime.now(local_tz)
+    interval_hours = 1.5  # hours
+
+     # Step 3: Convert local time to UTC for astropy
+    utc_time = local_time.astimezone(timezone('UTC'))
+    astropy_time = Time(utc_time)
+
+    # Parse the start time into a datetime object
+    # start_datetime = datetime.strptime(f"{date} {start_time}", '%Y-%m-%d %H:%M:%S')
+    start_datetime = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
+
+    # Generate time steps for the day
+    num_steps = 6  # adjust based on desired times
+    times = [Time(astropy_time + timedelta(hours=i * interval_hours)) for i in range(num_steps)]
+
+    # Define AltAz frame with location and each observation time
+    altaz_frames = [AltAz(obstime=time, location=location) for time in times]
+
+    # Calculate and display azimuth and zenith angle for each time
+    print(f"{'Time':<20} {'Azimuth':<8} {'Zenith':<8}")
+    for time, altaz_frame in zip(times, altaz_frames):
+        sun_altaz = get_sun(time).transform_to(altaz_frame)
+        azimuth = sun_altaz.az.deg
+        zenith = 90 - sun_altaz.alt.deg  # zenith = 90 - altitude
+
+        print(f"{time.datetime.strftime('%Y-%m-%d %I:%M%p'):20} {azimuth:<8.1f} {zenith:<8.1f}")
 
     # calculate sunlight angles
     if not tomorrow:
