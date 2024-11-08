@@ -364,9 +364,9 @@ for item in map_layer["features"]:
             "elevations": next(active["elevations"] for active in state_info if active["abbr"] == item["properties"]["state"]),
         })
 
+combined_data = {**toml_data, **toml_data_ca}
 with open("user.toml", "w") as toml_file:
-    toml.dump(toml_data, toml_file)
-    toml.dump(toml_data_ca, toml_file)
+    toml.dump(combined_data, toml_file)
 
 # delete all DEM files in order to start fresh
 dir = "source/avy"
