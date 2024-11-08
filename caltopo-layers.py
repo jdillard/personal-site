@@ -7,7 +7,6 @@ from slugify import slugify
 import os
 import urllib.parse
 import uuid
-from dateutil import tz
 import dateutil.parser
 from zoneinfo import ZoneInfo
 from timezonefinder import TimezoneFinder
@@ -521,12 +520,11 @@ for product in ca_metadata:
 
     # Define the date and initial time
     tz_name = tf.timezone_at(lat=51.3825, lng=-116.15982)
-    local_tz = timezone(tz_name)
-    local_time = datetime.now(local_tz)
+    local_time = datetime.now(ZoneInfo(tz_name))
     interval_hours = 1.5  # hours
 
      # Step 3: Convert local time to UTC for astropy
-    utc_time = local_time.astimezone(timezone('UTC'))
+    utc_time = local_time.astimezone(ZoneInfo('UTC'))
     astropy_time = Time(utc_time)
 
     # Parse the start time into a datetime object
