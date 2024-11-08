@@ -337,15 +337,12 @@ for item in map_layer["features"]:
     }
 
     # gather zone info
-    if "CAIC" in item["properties"]["center_id"]:
-        url = f"{item["properties"]["link"]}?lat={centroid.y}&lng={centroid.x}"
-    else:
-        url = item["properties"]["link"]
+    #TODO get rid of slug and just use the id instead?
     zone_info = {
         "zone_id": item["id"],
         "name": item["properties"]["name"],
-        "slug": f"{item['properties']['center_id']}-{item['id']}", #TODO get rid of slug and just use the id instead?
-        "url": url,
+        "slug": f"{item['properties']['center_id']}-{item['id']}",
+        "url": item["properties"]["link"],
         "center_id": item["properties"]["center_id"],
         "geo": lat_long,
         "published": False,
