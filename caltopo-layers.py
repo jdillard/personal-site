@@ -335,7 +335,7 @@ for item in map_layer["features"]:
 
     # gather zone info
     if "CAIC" in item["properties"]["center_id"]:
-        url = f"{item["properties"]["link"]}?lat={centroid.y}&lng={centroid.x}"
+        url = f"{item['properties']['link']}?lat={centroid.y}&lng={centroid.x}"
     else:
         url = item["properties"]["link"]
     zone_info = {
