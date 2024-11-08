@@ -9,7 +9,7 @@ import urllib.parse
 import uuid
 from dateutil import tz
 import dateutil.parser
-from tzwhere import tzwhere
+from timezonefinder import TimezoneFinder
 import toml
 
 #TODO support search by lat/long (mainly for CO/BC) (lambda function?)
@@ -23,7 +23,7 @@ index_template = environment.get_template("dem-shading-index.j2")
 region_template = environment.get_template("dem-shading-region.j2")
 layers_template = environment.get_template("dem-shading-layers.j2")
 
-tzwhere = tzwhere.tzwhere()
+tf = TimezoneFinder()
 
 # lower and upper degrees for each cardinal direction
 aspect = {
@@ -402,7 +402,7 @@ for product in ca_metadata:
         found_value = find_object_by_key_value(ca_areas["features"], "id", data['area']['id'])
         if not found_value:
             continue #TODO figure out why the id different than the filename and hopefully remove
-        timezone_str = tzwhere.tzNameAt(found_value.get('properties')["centroid"][1],found_value.get('properties')["centroid"][0]) #TODO make sure correct order
+        timezone_str = tf.timezone_at(lat=found_value.get('properties')["centroid"][1], lng=found_value.get('properties')["centroid"][0])
         to_zone = tz.gettz(timezone_str)
         utc = dateutil.parser.parse(data["report"]["dateIssued"])
         utc = utc.replace(tzinfo=from_zone)
@@ -568,7 +568,7 @@ for state in states:
 
                 # timezone calculations
                 from_zone = tz.gettz('UTC')
-                timezone_str = tzwhere.tzNameAt(zone["geo"][1],zone["geo"][0])
+                timezone_str = tf.timezone_at(lat=zone["geo"][1], lng=zone["geo"][0])
                 to_zone = tz.gettz(timezone_str)
                 utc = dateutil.parser.parse(data["published_time"])
                 utc = utc.replace(tzinfo=from_zone)

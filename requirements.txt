@@ -4,6 +4,6 @@ requests
 python-frontmatter
 python-slugify
 shapely
-tzwhere
 numpy==1.22.0
+timezonefinder
 python-dateutil
