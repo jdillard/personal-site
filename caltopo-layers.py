@@ -607,13 +607,11 @@ for state in states:
                     data = json.load(fp)
 
                 # timezone calculations
-                from_zone = tz.gettz('UTC')
-                timezone_str = tf.timezone_at(lat=zone["geo"][1], lng=zone["geo"][0])
-                to_zone = tz.gettz(timezone_str)
+                tz_name = tf.timezone_at(lat=zone["geo"][1], lng=zone["geo"][0])
                 utc = dateutil.parser.parse(data["published_time"])
-                utc = utc.replace(tzinfo=from_zone)
+                utc = utc.replace(tzinfo=ZoneInfo('UTC'))
 
-                published_date_time_obj = utc.astimezone(to_zone)
+                published_date_time_obj = utc.astimezone(ZoneInfo(tz_name))
                 tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
 
                 published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
