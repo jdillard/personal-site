@@ -9,6 +9,7 @@ import urllib.parse
 import uuid
 from dateutil import tz
 import dateutil.parser
+from zoneinfo import ZoneInfo
 from timezonefinder import TimezoneFinder
 import toml
 
@@ -399,18 +400,18 @@ for product in ca_metadata:
         #TODO move duplicate code as US to functions
 
         # timezone calculations
-        from_zone = tz.gettz('UTC')
+
         # lookup area id in ca_areas
         # found_value = next((d for d in ca_areas["features"] if d.get("id") == data['area']['id']), None)
         found_value = find_object_by_key_value(ca_areas["features"], "id", data['area']['id'])
         if not found_value:
             continue #TODO figure out why the id different than the filename and hopefully remove
-        timezone_str = tf.timezone_at(lat=found_value.get('properties')["centroid"][1], lng=found_value.get('properties')["centroid"][0])
-        to_zone = tz.gettz(timezone_str)
+        tz_name = tf.timezone_at(lat=found_value.get('properties')["centroid"][1], lng=found_value.get('properties')["centroid"][0])
         utc = dateutil.parser.parse(data["report"]["dateIssued"])
-        utc = utc.replace(tzinfo=from_zone)
+        utc = utc.replace(tzinfo=ZoneInfo('UTC'))
+        print(utc)
 
-        published_date_time_obj = utc.astimezone(to_zone)
+        published_date_time_obj = utc.astimezone(ZoneInfo(tz_name))
         tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
 
         published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
