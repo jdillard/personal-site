@@ -1,4 +1,3 @@
-import azely
 from datetime import datetime, timedelta
 from jinja2 import Environment, FileSystemLoader
 import json
@@ -511,27 +510,9 @@ for product in ca_metadata:
     area["center_id"] = "Avalanche Canada"
     area["url"] = f"https://avalanche.ca/forecasts/{product['product']['id']}"
 
-    # calculate sunlight angles
-    if not tomorrow:
-        tomorrow = datetime.today().strftime('%Y-%m-%d')
-    location = f"user:{data['area']['id']}"
-    df = azely.compute('Sun', location, tomorrow)
-    df1=df.query("el > 0.5") # only when the sun is above the horizon
-
-    # format sun angle table
-    area["hillshading"] = []
-    for index, row in df1.iloc[::9, :2].iterrows(): # grab every 9th row and the first two columns
-        area["hillshading"].append({
-            "time": f"{tomorrow} {index.strftime('%I:%M%p')} Shade",
-            "lighting": f"{round(row['az'])} by {round(row['el'])}",
-            "layer": f"rb_m{round(row['az'])}z{round(row['el'])}",
-            "uuid": str(uuid.uuid4()),
-        })
-
     layer_info = layers_template.render(
             sun_day=tomorrow,
             danger_layer=danger_layer,
-            shade_layers=[area["hillshading"][1],area["hillshading"][int(len(area["hillshading"])/2)-1],area["hillshading"][-3]],
             problem_layers=area["problems"],
         )
 
@@ -683,27 +664,9 @@ for state in states:
             zone["problems"] = problems
             zone["color"] = f"#{danger_levels[zone_color]['color']}"
 
-            # calculate sunlight angles
-            if not tomorrow:
-                tomorrow = datetime.today().strftime('%Y-%m-%d')
-            location = f"user:{zone['center_id']}-{zone['zone_id']}"
-            df = azely.compute('Sun', location, tomorrow)
-            df1=df.query("el > 0.5") # only when the sun is above the horizon
-
-            # format sun angle table
-            zone["hillshading"] = []
-            for index, row in df1.iloc[::9, :2].iterrows(): # grab every 9th row and the first two columns
-                zone["hillshading"].append({
-                    "time": f"{tomorrow} {index.strftime('%I:%M%p')} Shade",
-                    "lighting": f"{round(row['az'])} by {round(row['el'])}",
-                    "layer": f"rb_m{round(row['az'])}z{round(row['el'])}",
-                    "uuid": str(uuid.uuid4()),
-                })
-
             layer_info = layers_template.render(
                     sun_day=tomorrow,
                     danger_layer=danger_layer,
-                    shade_layers=[zone["hillshading"][1],zone["hillshading"][int(len(zone["hillshading"])/2)-1],zone["hillshading"][-3]],
                     problem_layers=zone["problems"],
                 )
 
