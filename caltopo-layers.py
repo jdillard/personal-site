@@ -1,4 +1,3 @@
-import azely
 from datetime import datetime, timedelta
 from jinja2 import Environment, FileSystemLoader
 import json
@@ -10,7 +9,6 @@ import uuid
 import dateutil.parser
 from zoneinfo import ZoneInfo
 from timezonefinder import TimezoneFinder
-import toml
 import caltopo_config as config
 
 
@@ -67,22 +65,12 @@ def sort_directions(subset):
 with open("avalanche-reports-raw/ca-areas.json") as fp:
     ca_areas = json.load(fp)
 
-toml_data_ca = {}
-for area in ca_areas["features"]:
-    # add each zone location to user.toml
-    toml_data_ca[area['id']] = {
-        "name": area['id'],
-        "longitude": area['properties']['centroid'][0], #TODO confirm correct order
-        "latitude": area['properties']['centroid'][1],
-    }
-
 # dynamically group US zones by state
 with open("avalanche-reports-raw/map-layer.json") as fp:
     map_layer = json.load(fp)
 
 # loop through all the zones in the avalanche.org map layer
 states = []
-toml_data = {}
 #TODO support search by lat/long
 # search_point = Point((-122.27173, 41.34706))
 for item in map_layer["features"]:
@@ -99,13 +87,6 @@ for item in map_layer["features"]:
         lat_long = [centroid.x, centroid.y]
     else:
         print('Unknown geometry type...')
-
-    # add each zone location to user.toml
-    toml_data[f"{item['properties']['center_id']}-{item['id']}"] = {
-        "name": item['properties']['name'],
-        "longitude": lat_long[0],
-        "latitude": lat_long[1],
-    }
 
     # gather zone info
     if "CAIC" in item["properties"]["center_id"]:
@@ -140,10 +121,6 @@ for item in map_layer["features"]:
             "name": next(active["name"] for active in state_info if active["abbr"] == item["properties"]["state"]),
             "elevations": next(active["elevations"] for active in state_info if active["abbr"] == item["properties"]["state"]),
         })
-
-combined_data = {**toml_data, **toml_data_ca}
-with open("user.toml", "w") as toml_file:
-    toml.dump(combined_data, toml_file)
 
 # delete all DEM files in order to start fresh
 dir = "source/avy"
@@ -285,27 +262,9 @@ for product in ca_metadata:
     area["center_id"] = "Avalanche Canada"
     area["url"] = f"https://avalanche.ca/forecasts/{product['product']['id']}"
 
-    # calculate sunlight angles
-    if not tomorrow:
-        tomorrow = datetime.today().strftime('%Y-%m-%d')
-    location = f"user:{data['area']['id']}"
-    df = azely.compute('Sun', location, tomorrow)
-    df1=df.query("el > 0.5") # only when the sun is above the horizon
-
-    # format sun angle table
-    area["hillshading"] = []
-    for index, row in df1.iloc[::9, :2].iterrows(): # grab every 9th row and the first two columns
-        area["hillshading"].append({
-            "time": f"{tomorrow} {index.strftime('%I:%M%p')} Shade",
-            "lighting": f"{round(row['az'])} by {round(row['el'])}",
-            "layer": f"rb_m{round(row['az'])}z{round(row['el'])}",
-            "uuid": str(uuid.uuid4()),
-        })
-
     layer_info = layers_template.render(
             sun_day=tomorrow,
             danger_layer=danger_layer,
-            shade_layers=[area["hillshading"][1],area["hillshading"][int(len(area["hillshading"])/2)-1],area["hillshading"][-3]],
             problem_layers=area["problems"],
         )
 
@@ -457,27 +416,9 @@ for state in states:
             zone["problems"] = problems
             zone["color"] = f"#{danger_levels[zone_color]['color']}"
 
-            # calculate sunlight angles
-            if not tomorrow:
-                tomorrow = datetime.today().strftime('%Y-%m-%d')
-            location = f"user:{zone['center_id']}-{zone['zone_id']}"
-            df = azely.compute('Sun', location, tomorrow)
-            df1=df.query("el > 0.5") # only when the sun is above the horizon
-
-            # format sun angle table
-            zone["hillshading"] = []
-            for index, row in df1.iloc[::9, :2].iterrows(): # grab every 9th row and the first two columns
-                zone["hillshading"].append({
-                    "time": f"{tomorrow} {index.strftime('%I:%M%p')} Shade",
-                    "lighting": f"{round(row['az'])} by {round(row['el'])}",
-                    "layer": f"rb_m{round(row['az'])}z{round(row['el'])}",
-                    "uuid": str(uuid.uuid4()),
-                })
-
             layer_info = layers_template.render(
                     sun_day=tomorrow,
                     danger_layer=danger_layer,
-                    shade_layers=[zone["hillshading"][1],zone["hillshading"][int(len(zone["hillshading"])/2)-1],zone["hillshading"][-3]],
                     problem_layers=zone["problems"],
                 )
 

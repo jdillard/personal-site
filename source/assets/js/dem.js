@@ -25,14 +25,12 @@ function getIssues() {
 function showZone(zone_id) {
   const report = document.getElementById(`${zone_id}-report`);
   const title = document.getElementById(`${zone_id}-title`);
-  const shade = document.getElementById(`${zone_id}-shade`);
   const shape = document.getElementById(`${zone_id}-shape`);
   document.querySelectorAll('.avy-zone').forEach(function(div) {
     div.classList.add('dn');
   });
   report.classList.remove('dn');
   title.classList.remove('dn');
-  shade.classList.remove('dn');
   shape.classList.remove('dn');
   location.replace("#zone-" + zone_id);
 }
