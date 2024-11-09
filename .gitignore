@@ -2,8 +2,13 @@ _site
 .DS_Store
 *.swp
 .sass-cache
+
+# javascript related
 node_modules
+
+# python related
 .venv
+__pycache__
 
 # Local Netlify folder
 .netlify
