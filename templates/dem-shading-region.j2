@@ -64,32 +64,20 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     </div>
 </section>
 
-<div class="flex flex-column flex-row-ns mb">
-    <div class="ph3 w-100 w-60-ns">
-        <div class="mt4 ph2 tc">
-            <strong class="f6">Select A Zone:</strong>
-            <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
-                {% for zone in zones %}
-                <option value="{{ zone.slug }}" {% if loop.first %}selected=""{% endif %}>{{ zone.name }}</option>
-                {% endfor %}
-            </select>
-            <div class="tooltip dib v-top pt3">
-                <a onclick="clickFunc('url', 'zone-url'); return false;" onmouseout="outFunc('zone-url')" href="#"><span class="tooltiptext" id="zone-url">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a>
-            </div>
+<div>
+    <div class="mt4 ph2 tc">
+        <strong class="f6">Select A Zone:</strong>
+        <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             {% for zone in zones %}
-            <div id="{{ zone.slug }}-title" class="avy-zone mt4 mb3 tc{% if not loop.first %} dn{% endif %}">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Pre-populated CalTopo Map</a></div>
-            </div>
+            <option value="{{ zone.slug }}" {% if loop.first %}selected=""{% endif %}>{{ zone.name }}</option>
             {% endfor %}
+        </select>
+        <div class="tooltip dib v-top pt3">
+            <a onclick="clickFunc('url', 'zone-url'); return false;" onmouseout="outFunc('zone-url')" href="#"><span class="tooltiptext" id="zone-url">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a>
         </div>
-    </div>
-    <div class="ph3 w-100 w-40-ns" style="display: flex;flex-direction: column;">
         {% for zone in zones %}
-        <div id="{{ zone.slug }}-shape" class="avy-zone {% if not loop.first %}dn{% endif %}">
-          <div class="tc" style="flex: 1;height: 130px;">
-             <img src="/assets/images/svg/avalanche-zones/{{ zone.slug }}.svg" alt="{{ zone.name }} shape" height="100%"/>
-          </div>
-          <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/{{ zone.slug }}.geojson" download="">Download Zone Shape</a></div>
+        <div id="{{ zone.slug }}-title" class="avy-zone mt4 mb3 tc{% if not loop.first %} dn{% endif %}">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Pre-populated CalTopo Map</a></div>
         </div>
         {% endfor %}
     </div>
@@ -148,29 +136,12 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     </div>
     <div class="ph3 w-100 w-50-ns">
         {% for zone in zones %}
-        <div id="{{ zone.slug }}-shade" class="avy-zone{% if not loop.first %} dn{% endif %}">
-            <h3 class="tc bb b--moon-gray">{% if zone.name|length > 34 %}<br />{% endif %}<br />Sunlight Angles</h3>
-            <table class="f6">
-                <thead>
-                    <tr>
-                        <th class="pa2">Time of day</th>
-                        <th class="pa2">Lighting (Az/Z)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                {% for hill in zone.hillshading %}
-                <tr>
-                    <th class="pv2 ph1">
-                        {{ hill.time }}
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-{{ loop.index }}-layer-{{ zone.zone_id }}" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">{{ hill.lighting }}</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-{{ loop.index }}-layer-{{ zone.zone_id }}', 'shade-{{ loop.index }}-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('shade-{{ loop.index }}-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="shade-{{ loop.index }}-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+        <div id="{{ zone.slug }}-shape" class="avy-zone{% if not loop.first %} dn{% endif %}">
+            <h3 class="tc bb b--moon-gray">{% if zone.name|length > 34 %}<br />{% endif %}<br />Zone Shape</h3>
+            <div class="tc" style="flex: 1;height: 130px;">
+                <img src="/assets/images/svg/avalanche-zones/{{ zone.slug }}.svg" alt="{{ zone.name }} shape" height="100%"/>
+            </div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/{{ zone.slug }}.geojson" download="">Download</a></div>
         </div>
         {% endfor %}
     </div>

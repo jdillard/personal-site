@@ -1,4 +1,3 @@
-azely
 jinja2
 requests
 python-frontmatter

@@ -1,35 +1,25 @@
 {
     "cfglayers": [
-        {% for shade in shade_layers %}
+        {% if danger_layer %}
         {
-        "type": "Feature",
-        "id": "{{ shade.uuid }}",
-        "geometry": null,
-        "properties": {
-            "title": "{{ shade.time }}",
-            "alias": "{{ shade.layer }}",
-            "class": "ConfiguredLayer"
-        }
-        }{% if not loop.last %},{% endif %}{% endfor %}{% if danger_layer %},
-        {
-        "type": "Feature",
-        "id": "fbfd2235-dc90-4f6f-bead-4826d4983f82",
-        "geometry": null,
-        "properties": {
-            "title": "{{ sun_day }} Avalanche Danger",
-            "alias": "{{ danger_layer }}",
-            "class": "ConfiguredLayer"
-        }
+            "type": "Feature",
+            "id": "fbfd2235-dc90-4f6f-bead-4826d4983f82",
+            "geometry": null,
+            "properties": {
+                "title": "{{ sun_day }} Avalanche Danger",
+                "alias": "{{ danger_layer }}",
+                "class": "ConfiguredLayer"
+            }
         }{% endif %}{% if problem_layers %},{% endif %}{% for problem in problem_layers %}
         {
-        "type": "Feature",
-        "id": "{{ problem.uuid }}",
-        "geometry": null,
-        "properties": {
-            "title": "{{ problem.name }}",
-            "alias": "{{ problem.layers }}",
-            "class": "ConfiguredLayer"
-        }
+            "type": "Feature",
+            "id": "{{ problem.uuid }}",
+            "geometry": null,
+            "properties": {
+                "title": "{{ problem.name }}",
+                "alias": "{{ problem.layers }}",
+                "class": "ConfiguredLayer"
+            }
         }{% if not loop.last %},{% endif %}{% endfor %}
     ]
 }
