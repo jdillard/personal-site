@@ -1,4 +1,3 @@
-import azely
 from datetime import datetime, timedelta
 from jinja2 import Environment, FileSystemLoader
 import json
@@ -11,9 +10,6 @@ import dateutil.parser
 from zoneinfo import ZoneInfo
 from timezonefinder import TimezoneFinder
 import toml
-from astropy.time import Time
-from astropy.coordinates import get_sun, AltAz, EarthLocation
-import astropy.units as u
 
 #TODO support search by lat/long (mainly for CO/BC) (lambda function?)
 #TODO expired reports?
@@ -514,66 +510,9 @@ for product in ca_metadata:
     area["center_id"] = "Avalanche Canada"
     area["url"] = f"https://avalanche.ca/forecasts/{product['product']['id']}"
 
-###===
-
-    #TODO use real lat/long/elevation
-    # Define the observer's location (latitude, longitude, and elevation)
-    location = EarthLocation(lat=51.3825 * u.deg, lon=-116.15982 * u.deg, height=2000 * u.m)
-
-    #TODO use real lat/long/elevation
-    # Define the date and initial time
-    tz_name = tf.timezone_at(lat=51.3825, lng=-116.15982)
-    local_time = datetime.now(ZoneInfo(tz_name))
-
-     # Step 3: Convert local time to UTC for astropy
-    utc_time = local_time.astimezone(ZoneInfo('UTC'))
-    astropy_time = Time(utc_time)
-
-    #TODO get real date
-    # Parse the start time into a datetime object
-    start_datetime = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
-
-    #TODO change to dawn/afternoon/dusk
-    # Generate time steps for the day
-    interval_hours = 1.5
-    num_steps = 6
-    times = [Time(astropy_time + timedelta(hours=i * interval_hours)) for i in range(num_steps)]
-
-    # Define AltAz frame with location and each observation time
-    altaz_frames = [AltAz(obstime=time, location=location) for time in times]
-
-    #TODO turn into list of angles
-    # Calculate and display azimuth and zenith angle for each time
-    for time, altaz_frame in zip(times, altaz_frames):
-        sun_altaz = get_sun(time).transform_to(altaz_frame)
-        azimuth = sun_altaz.az.deg
-        zenith = 90 - sun_altaz.alt.deg  # zenith = 90 - altitude
-
-        print(f"{time.datetime.strftime('%Y-%m-%d %I:%M%p'):20} {azimuth:<8.1f} {zenith:<8.1f}")
-
-###===
-
-    # calculate sunlight angles
-    if not tomorrow:
-        tomorrow = datetime.today().strftime('%Y-%m-%d')
-    location = f"user:{data['area']['id']}"
-    df = azely.compute('Sun', location, tomorrow)
-    df1=df.query("el > 0.5") # only when the sun is above the horizon
-
-    # format sun angle table
-    area["hillshading"] = []
-    for index, row in df1.iloc[::9, :2].iterrows(): # grab every 9th row and the first two columns
-        area["hillshading"].append({
-            "time": f"{tomorrow} {index.strftime('%I:%M%p')} Shade",
-            "lighting": f"{round(row['az'])} by {round(row['el'])}",
-            "layer": f"rb_m{round(row['az'])}z{round(row['el'])}",
-            "uuid": str(uuid.uuid4()),
-        })
-
     layer_info = layers_template.render(
             sun_day=tomorrow,
             danger_layer=danger_layer,
-            shade_layers=[area["hillshading"][1],area["hillshading"][int(len(area["hillshading"])/2)-1],area["hillshading"][-3]],
             problem_layers=area["problems"],
         )
 
@@ -725,27 +664,9 @@ for state in states:
             zone["problems"] = problems
             zone["color"] = f"#{danger_levels[zone_color]['color']}"
 
-            # calculate sunlight angles
-            if not tomorrow:
-                tomorrow = datetime.today().strftime('%Y-%m-%d')
-            location = f"user:{zone['center_id']}-{zone['zone_id']}"
-            df = azely.compute('Sun', location, tomorrow)
-            df1=df.query("el > 0.5") # only when the sun is above the horizon
-
-            # format sun angle table
-            zone["hillshading"] = []
-            for index, row in df1.iloc[::9, :2].iterrows(): # grab every 9th row and the first two columns
-                zone["hillshading"].append({
-                    "time": f"{tomorrow} {index.strftime('%I:%M%p')} Shade",
-                    "lighting": f"{round(row['az'])} by {round(row['el'])}",
-                    "layer": f"rb_m{round(row['az'])}z{round(row['el'])}",
-                    "uuid": str(uuid.uuid4()),
-                })
-
             layer_info = layers_template.render(
                     sun_day=tomorrow,
                     danger_layer=danger_layer,
-                    shade_layers=[zone["hillshading"][1],zone["hillshading"][int(len(zone["hillshading"])/2)-1],zone["hillshading"][-3]],
                     problem_layers=zone["problems"],
                 )
 

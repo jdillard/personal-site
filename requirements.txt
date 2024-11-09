@@ -1,4 +1,3 @@
-astropy
 jinja2
 requests
 python-frontmatter
