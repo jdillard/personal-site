@@ -9,7 +9,6 @@ import uuid
 import dateutil.parser
 from zoneinfo import ZoneInfo
 from timezonefinder import TimezoneFinder
-import toml
 
 #TODO support search by lat/long (mainly for CO/BC) (lambda function?)
 #TODO expired reports?
@@ -292,22 +291,12 @@ def sort_directions(subset):
 with open("avalanche-reports-raw/ca-areas.json") as fp:
     ca_areas = json.load(fp)
 
-toml_data_ca = {}
-for area in ca_areas["features"]:
-    # add each zone location to user.toml
-    toml_data_ca[area['id']] = {
-        "name": area['id'],
-        "longitude": area['properties']['centroid'][0], #TODO confirm correct order
-        "latitude": area['properties']['centroid'][1],
-    }
-
 # dynamically group US zones by state
 with open("avalanche-reports-raw/map-layer.json") as fp:
     map_layer = json.load(fp)
 
 # loop through all the zones in the avalanche.org map layer
 states = []
-toml_data = {}
 #TODO support search by lat/long
 # search_point = Point((-122.27173, 41.34706))
 for item in map_layer["features"]:
@@ -324,13 +313,6 @@ for item in map_layer["features"]:
         lat_long = [centroid.x, centroid.y]
     else:
         print('Unknown geometry type...')
-
-    # add each zone location to user.toml
-    toml_data[f"{item['properties']['center_id']}-{item['id']}"] = {
-        "name": item['properties']['name'],
-        "longitude": lat_long[0],
-        "latitude": lat_long[1],
-    }
 
     # gather zone info
     if "CAIC" in item["properties"]["center_id"]:
@@ -365,10 +347,6 @@ for item in map_layer["features"]:
             "name": next(active["name"] for active in state_info if active["abbr"] == item["properties"]["state"]),
             "elevations": next(active["elevations"] for active in state_info if active["abbr"] == item["properties"]["state"]),
         })
-
-combined_data = {**toml_data, **toml_data_ca}
-with open("user.toml", "w") as toml_file:
-    toml.dump(combined_data, toml_file)
 
 # delete all DEM files in order to start fresh
 dir = "source/avy"
