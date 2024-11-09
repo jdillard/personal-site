@@ -137,16 +137,12 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     </div>
     <div class="ph3 w-100 w-50-ns">
         {% for zone in zones %}
-        <div id="{{ zone.slug }}-shade" class="avy-zone{% if not loop.first %} dn{% endif %}">
-            <h3 class="tc bb b--moon-gray">{% if zone.name|length > 34 %}<br />{% endif %}<br />Sunlight Angles</h3>
-            {% for zone in zones %}
-            <div id="{{ zone.slug }}-shape" class="avy-zone {% if not loop.first %}dn{% endif %}">
+        <div id="{{ zone.slug }}-shape" class="avy-zone{% if not loop.first %} dn{% endif %}">
+            <h3 class="tc bb b--moon-gray">{% if zone.name|length > 34 %}<br />{% endif %}<br />Zone Shape</h3>
             <div class="tc" style="flex: 1;height: 130px;">
                 <img src="/assets/images/svg/avalanche-zones/{{ zone.slug }}.svg" alt="{{ zone.name }} shape" height="100%"/>
             </div>
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/{{ zone.slug }}.geojson" download="">Download Zone Shape</a></div>
-            </div>
-            {% endfor %}
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/{{ zone.slug }}.geojson" download="">Download</a></div>
         </div>
         {% endfor %}
     </div>
