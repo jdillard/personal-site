@@ -90,17 +90,16 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <h3 class="tc bb b--moon-gray">{{ zone.name }}<br />Avalanche Report <a target="_blank" href="{{ zone.url }}"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             {% if zone.danger %}
             <dl class="f6">
-                <dt><strong>{{ sun_day }} Avalanche Danger</strong></dt>
+                <dt>
+                    <strong>{{ sun_day }} Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a onclick="clickFunc('danger-layer-{{ zone.zone_id }}', 'danger-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('danger-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="danger-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7">
                     {% for rule in zone.danger|reverse %}
                         <li class="pv1"><div style="clear: both;background-color: {{ rule.color }}" class="fl mr2 h1 w1"></div> {{ rule.desc }}</li>
                     {% endfor %}
-                     </ul>
-<pre id="danger-layer-{{ zone.zone_id }}" class="dib pa1 b--silver bw1 ba mv2">
-{% for rule in zone.danger|reverse %}
-{{- rule.layer}}
-{% endfor %}</pre> <div class="tooltip dib v-top pt3"><a onclick="clickFunc('danger-layer-{{ zone.zone_id }}', 'danger-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('danger-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="danger-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </ul>
                 </dd>
             </dl>
             {% else %}
@@ -110,17 +109,16 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             {% if zone.problems %}
             <dl class="f6">
                 {% for problem in zone.problems %}
-                    <dt><strong>{{ problem.name }}</strong></dt>
+                    <dt>
+                        <strong>{{ problem.name }}</strong>
+                        <div class="tooltip dib v-top pl2"><a onclick="clickFunc('problem-{{ loop.index }}-layer-{{ zone.zone_id }}', 'problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7">
                         {% for rule in problem.rules|reverse %}
                             <li class="pv1"><div style="clear: both;background-color: {{ rule.color }}" class="fl mr2 h1 w1"></div> {{ rule.desc }}</li>
                         {% endfor %}
                         </ul>
-<pre id="problem-{{ loop.index }}-layer-{{ zone.zone_id }}" class="dib pa1 b--silver bw1 ba mv2">
-{% for rule in problem.rules|reverse %}
-{{- rule.layer}}
-{% endfor %}</pre> <div class="tooltip dib v-top pt3"><a onclick="clickFunc('problem-{{ loop.index }}-layer-{{ zone.zone_id }}', 'problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dd>
                 {% endfor %}
             </dl>
