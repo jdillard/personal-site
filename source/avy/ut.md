@@ -179,7 +179,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="UAC-1737-report" class="avy-zone dn" data-published="Friday, November 08, 2024 5:51PM">
+        <div id="UAC-1737-report" class="avy-zone dn" data-published="Sunday, November 10, 2024 9:23AM">
         <h3 class="tc bb b--moon-gray">Ogden<br />Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/ogden"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/ogden">UAC</a> for more information.</div>
@@ -188,13 +188,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, November 08, 2024 5:51PM<br />
+                <strong>Issued at:</strong> Sunday, November 10, 2024 9:23AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/ogden">UAC</a>
             </p>
             
         </div>
         
-        <div id="UAC-1739-report" class="avy-zone dn" data-published="Friday, November 08, 2024 5:58PM">
+        <div id="UAC-1739-report" class="avy-zone dn" data-published="Sunday, November 10, 2024 9:30AM">
         <h3 class="tc bb b--moon-gray">Provo<br />Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/provo"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/provo">UAC</a> for more information.</div>
@@ -203,13 +203,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, November 08, 2024 5:58PM<br />
+                <strong>Issued at:</strong> Sunday, November 10, 2024 9:30AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/provo">UAC</a>
             </p>
             
         </div>
         
-        <div id="UAC-1738-report" class="avy-zone dn" data-published="Friday, November 08, 2024 5:41PM">
+        <div id="UAC-1738-report" class="avy-zone dn" data-published="Sunday, November 10, 2024 8:45AM">
         <h3 class="tc bb b--moon-gray">Salt Lake<br />Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/salt-lake"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/salt-lake">UAC</a> for more information.</div>
@@ -218,7 +218,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, November 08, 2024 5:41PM<br />
+                <strong>Issued at:</strong> Sunday, November 10, 2024 8:45AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/salt-lake">UAC</a>
             </p>
             
