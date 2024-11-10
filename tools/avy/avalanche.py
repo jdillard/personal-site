@@ -6,27 +6,15 @@ import requests
 from requests.exceptions import HTTPError
 import os
 import time
+import avy_config as config
 
 
 #TODO only run during certain months when NWAC is open
 #TODO create alternative message when NWAC is closed
 
-danger_levels = {
-    0: "No Report",
-    1: "Low",
-    2: "Moderate",
-    3: "Considerable",
-    4: "High",
-    5: "Extreme",
-    "earlyseason": 0,
-    "spring": 0,
-    "no report": 0,
-    "low": 1,
-    "moderate": 2,
-    "considerable": 3,
-    "high": 4,
-    "extreme": 5,
-}
+#TODO use config.danger_levels
+danger_levels = config.avy_danger_levels
+
 
 # delete all json files
 dir = "source/assets/json/avalanche-reports"
@@ -54,7 +42,7 @@ for file in os.listdir("source/_trips"):
 
         # create USA based avalanche reports
         if center_id and zone_id and not os.path.exists(f"{dir}/{center_id}-{zone_id}.json"):
-            with open(f"avalanche-reports-raw/{center_id}-{zone_id}.json") as fp:
+            with open(f"tools/avy/avalanche-reports-raw/{center_id}-{zone_id}.json") as fp:
                     jsonResponse = json.load(fp)
 
             if jsonResponse["danger"]:
