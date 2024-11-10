@@ -30,17 +30,37 @@ danger_levels = {
     "earlyseason": {"scale": 0, "color": "939598", "desc": "Early season"},
     "spring": {"scale": 0, "color": "939598", "desc": "Spring Conditions"},
     "norating": {"scale": 0, "color": "939598", "desc": "No rating"},
+    "no report": {"scale": 0, "color": "939598", "desc": "No report"},
     "noforecast": {"scale": 0, "color": "939598", "desc": "No forecast"},
     "low": {"scale": 1, "color": "50b848", "desc": "Low danger"},
     "moderate": {"scale": 2, "color": "fff200", "desc": "Moderate danger"},
     "considerable": {"scale": 3, "color": "f7941e", "desc": "Considerable danger"},
     "high": {"scale": 4, "color": "ed1c24", "desc": "High danger"},
+    "extreme": {"scale": 5, "color": "231f20", "desc": "Extreme danger"},
     0: {"scale": 0, "color": "939598", "desc": "No rating"},
     1: {"scale": 1, "color": "50b848", "desc": "Low danger"},
     2: {"scale": 2, "color": "fff200", "desc": "Moderate danger"},
     3: {"scale": 3, "color": "f7941e", "desc": "Considerable danger"},
     4: {"scale": 4, "color": "ed1c24", "desc": "High danger"},
     5: {"scale": 5, "color": "231f20", "desc": "Extreme danger"},
+}
+
+#TODO use danger_levels instead
+avy_danger_levels = {
+    0: "No Report",
+    1: "Low",
+    2: "Moderate",
+    3: "Considerable",
+    4: "High",
+    5: "Extreme",
+    "earlyseason": 0,
+    "spring": 0,
+    "no report": 0,
+    "low": 1,
+    "moderate": 2,
+    "considerable": 3,
+    "high": 4,
+    "extreme": 5,
 }
 
 # problems color codes
@@ -51,5 +71,5 @@ problem_color = {
 }
 
 # limit the states that are published (active True/False)
-with open("state_info.yaml", "r") as file:
+with open("tools/avy/state_info.yaml", "r") as file:
     state_info = yaml.safe_load(file)

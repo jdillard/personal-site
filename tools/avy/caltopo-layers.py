@@ -9,7 +9,7 @@ import uuid
 import dateutil.parser
 from zoneinfo import ZoneInfo
 from timezonefinder import TimezoneFinder
-import caltopo_config as config
+import avy_config as config
 
 
 #TODO support search by lat/long (mainly for CO/BC) (lambda function?)
@@ -18,7 +18,7 @@ import caltopo_config as config
 #TODO git pull rebase on action to prevent conflicts while the script is running?
 
 # load jinja templates
-environment = Environment(loader=FileSystemLoader("templates/"))
+environment = Environment(loader=FileSystemLoader("tools/avy/templates/"))
 index_template = environment.get_template("dem-shading-index.j2")
 region_template = environment.get_template("dem-shading-region.j2")
 layers_template = environment.get_template("dem-shading-layers.j2")
@@ -62,11 +62,11 @@ def sort_directions(subset):
 
 
 # calculate geo center of CA areas
-with open("avalanche-reports-raw/ca-areas.json") as fp:
+with open("tools/avy/avalanche-reports-raw/ca-areas.json") as fp:
     ca_areas = json.load(fp)
 
 # dynamically group US zones by state
-with open("avalanche-reports-raw/map-layer.json") as fp:
+with open("tools/avy/avalanche-reports-raw/map-layer.json") as fp:
     map_layer = json.load(fp)
 
 # loop through all the zones in the avalanche.org map layer
@@ -128,7 +128,7 @@ for f in os.listdir(dir):
     os.remove(os.path.join(dir, f))
 
 #TODO loop through CA areas and create DEM pages
-with open("avalanche-reports-raw/ca-metadata.json") as fp:
+with open("tools/avy/avalanche-reports-raw/ca-metadata.json") as fp:
     ca_metadata = json.load(fp)
 
 def find_object_by_key_value(objects_list, key, value):
@@ -142,8 +142,8 @@ for product in ca_metadata:
     tomorrow = False
     data = {}
     area = {}
-    if os.path.isfile(f"avalanche-reports-raw/{product['product']['id']}.json"):
-        with open(f"avalanche-reports-raw/{product['product']['id']}.json") as fp:
+    if os.path.isfile(f"tools/avy/avalanche-reports-raw/{product['product']['id']}.json"):
+        with open(f"tools/avy/avalanche-reports-raw/{product['product']['id']}.json") as fp:
             data = json.load(fp)
             print(product['product']['id'])
 
@@ -297,8 +297,8 @@ for state in states:
             published = False
             tomorrow = False
             data = {}
-            if os.path.isfile(f"avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json"):
-                with open(f"avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json") as fp:
+            if os.path.isfile(f"tools/avy/avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json"):
+                with open(f"tools/avy/avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json") as fp:
                     data = json.load(fp)
 
                 # timezone calculations

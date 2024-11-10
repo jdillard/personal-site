@@ -89,7 +89,7 @@ function deleteFilesInDirectory(outputPath) {
   });
 }
 
-const outputPath = path.join(__dirname, './source/assets/images/svg/avalanche-zones')
+const outputPath = path.join(__dirname, '../../source/assets/images/svg/avalanche-zones')
 createDirectoryRecursively(outputPath);
 
 function createDirectoryRecursively(outputPath) {
@@ -99,7 +99,7 @@ function createDirectoryRecursively(outputPath) {
     } else {
         deleteFilesInDirectory(outputPath);
 
-        const sourcePath = path.join(__dirname, './source/assets/json/avalanche-zones')
+        const sourcePath = path.join(__dirname, '../../source/assets/json/avalanche-zones')
         fs.readdir(sourcePath, function(err, files) {
           const geosonFiles = files.filter(file => path.extname(file) === '.geojson').map(file => path.parse(file).name);
           geosonFiles.forEach(function (filename) {

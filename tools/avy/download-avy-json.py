@@ -13,7 +13,7 @@ def prep_dir(dir):
     for f in os.listdir(dir):
         os.remove(os.path.join(dir, f))
 
-source_dir = "avalanche-reports-raw"
+source_dir = "tools/avy/avalanche-reports-raw"
 output_dir = "source/assets/json/avalanche-zones"
 prep_dir(source_dir)
 prep_dir(output_dir)
@@ -89,10 +89,10 @@ except Exception as err:
     print(f'Other error occurred: {err}')
     exit()
 
-with open("avalanche-reports-raw/ca-areas.json") as fp:
+with open(f"{source_dir}/ca-areas.json") as fp:
     ca_areas = json.load(fp)
 
-with open("avalanche-reports-raw/ca-metadata.json") as fp:
+with open(f"{source_dir}/ca-metadata.json") as fp:
     ca_metadata = json.load(fp)
 
 # loop through each CA zone and download it's report if it exists
@@ -167,7 +167,7 @@ except Exception as err:
     print(f'Other error occurred: {err}')
     exit()
 
-with open("avalanche-reports-raw/map-layer.json") as fp:
+with open(f"{source_dir}/map-layer.json") as fp:
     map_layer = json.load(fp)
 
 # loop through each US zone and download it's report if it exists
