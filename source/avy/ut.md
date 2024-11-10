@@ -64,136 +64,68 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     </div>
 </section>
 
-<div class="flex flex-column flex-row-ns mb">
-    <div class="ph3 w-100 w-60-ns">
-        <div class="mt4 ph2 tc">
-            <strong class="f6">Select A Zone:</strong>
-            <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
-                
-                <option value="UAC-1744" selected="">Abajos</option>
-                
-                <option value="UAC-1736" >Logan</option>
-                
-                <option value="UAC-1742" >Moab</option>
-                
-                <option value="UAC-1737" >Ogden</option>
-                
-                <option value="UAC-1739" >Provo</option>
-                
-                <option value="UAC-1738" >Salt Lake</option>
-                
-                <option value="UAC-1741" >Skyline</option>
-                
-                <option value="UAC-1743" >Southwest</option>
-                
-                <option value="UAC-1740" >Uintas</option>
-                
-            </select>
-            <div class="tooltip dib v-top pt3">
-                <a onclick="clickFunc('url', 'zone-url'); return false;" onmouseout="outFunc('zone-url')" href="#"><span class="tooltiptext" id="zone-url">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a>
-            </div>
+<div>
+    <div class="mt4 ph2 tc">
+        <strong class="f6">Select A Zone:</strong>
+        <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <div id="UAC-1744-title" class="avy-zone mt4 mb3 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=37.82310078211996,-109.6442559218305&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22d3bf8d32-a20f-4566-b55f-44676840eb30%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-09-19%2008%3A50AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m105z20%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22547decdd-48b2-4c5c-a28e-c22bec407483%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-09-19%2011%3A50AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m148z49%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22f68efc59-9482-49c7-8712-c362f8cf3a04%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-09-19%2002%3A50PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m217z47%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
+            <option value="UAC-1744" selected="">Abajos</option>
             
-            <div id="UAC-1736-title" class="avy-zone mt4 mb3 tc dn">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=41.8768523523424,-111.64493959961774&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22e886d104-d74d-4d72-b685-60c538db85fc%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-10-18%2009%3A30AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m122z18%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%227f4d3f8f-b60f-46c1-8433-d68f761ee97c%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-10-18%2012%3A30PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m167z37%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22ac8860d4-1871-4cc0-970f-6777aef2ec1e%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-10-18%2003%3A30PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m220z29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
+            <option value="UAC-1736" >Logan</option>
             
-            <div id="UAC-1742-title" class="avy-zone mt4 mb3 tc dn">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=38.51542221644972,-109.21894580583272&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%2202b7262d-3773-4420-905f-7a4d6a744a8c%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-07%2008%3A30AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m128z16%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22a7902662-14e3-4cec-98cd-f969578777a2%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-07%2010%3A00AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m147z28%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22e8fd18e1-2674-4a24-941b-22b5e981991c%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-07%2001%3A00PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m197z33%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
+            <option value="UAC-1742" >Moab</option>
             
-            <div id="UAC-1737-title" class="avy-zone mt4 mb3 tc dn">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=41.25225195963746,-111.68645503841628&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22a746e51e-bdac-450b-8345-6ceb627245ca%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-09%2008%3A50AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m130z15%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22748dca88-4ed7-406e-8666-d6ff918be027%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-09%2010%3A20AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m150z26%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22e8ae4aec-685c-41bc-9799-55d38a207edc%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-09%2001%3A20PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m199z29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
+            <option value="UAC-1737" >Ogden</option>
             
-            <div id="UAC-1739-title" class="avy-zone mt4 mb3 tc dn">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=40.32457735522175,-111.5594396812617&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22037a8b51-be02-4fe5-9f2f-587677cc526c%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-09%2008%3A50AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m130z16%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%221918e32c-903f-4923-b58c-eabb5f2234af%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-09%2010%3A20AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m150z27%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%2259550950-51ae-4c50-ab42-9139b898b060%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-09%2001%3A20PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m199z30%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
+            <option value="UAC-1739" >Provo</option>
             
-            <div id="UAC-1738-title" class="avy-zone mt4 mb3 tc dn">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=40.76554671886903,-111.67870263736773&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22ba163832-ccf0-4947-835a-b1db7af4fdd2%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-09%2008%3A50AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m130z16%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%223c5c8712-2cf4-4659-b671-f3e70f095dd0%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-09%2010%3A20AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m150z27%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22d29f57f3-6a37-470e-be96-84dc6a5006f6%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-09%2001%3A20PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m199z30%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
+            <option value="UAC-1738" >Salt Lake</option>
             
-            <div id="UAC-1741-title" class="avy-zone mt4 mb3 tc dn">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.32528915696709,-111.32836950588472&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%222dfa385d-fd87-40ea-9eb7-6909180e4e59%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-10-29%2009%3A30AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m124z16%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22e8df6e0d-c4ce-4da3-8906-529d823975de%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-10-29%2011%3A00AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m144z29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22f2d3ec88-1e9a-40e2-b076-8a03ed030af9%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-10-29%2002%3A00PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m195z36%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
+            <option value="UAC-1741" >Skyline</option>
             
-            <div id="UAC-1743-title" class="avy-zone mt4 mb3 tc dn">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=38.67476868227733,-111.62187215683886&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%2233aab478-596f-4b48-aa59-4f886b90ac75%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-02-10%2009%3A10AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m126z18%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%2268cca079-7b33-4183-9568-2e42157cd8c0%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-02-10%2010%3A40AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m146z30%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22ff378907-1ee8-4928-a7e8-fe8c33cb54a4%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-02-10%2001%3A40PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m198z35%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
+            <option value="UAC-1743" >Southwest</option>
             
-            <div id="UAC-1740-title" class="avy-zone mt4 mb3 tc dn">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=40.63080940777544,-111.03097528189053&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%224065bf42-e418-464e-9623-be0a13a61806%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-09%2008%3A50AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m131z16%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%223371018c-55d6-4e92-9f3d-877dedaf063d%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-09%2010%3A20AM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m151z27%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%22id%22%3A%20%22084dda48-c695-40e7-8755-321c6c078e93%22%2C%0A%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-11-09%2001%3A20PM%20Shade%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22rb_m200z30%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
+            <option value="UAC-1740" >Uintas</option>
             
-        </div>
-    </div>
-    <div class="ph3 w-100 w-40-ns" style="display: flex;flex-direction: column;">
-        
-        <div id="UAC-1744-shape" class="avy-zone ">
-          <div class="tc" style="flex: 1;height: 130px;">
-             <img src="/assets/images/svg/avalanche-zones/UAC-1744.svg" alt="Abajos shape" height="100%"/>
-          </div>
-          <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1744.geojson" download="">Download Zone Shape</a></div>
+        </select>
+        <div class="tooltip dib v-top pt3">
+            <a onclick="clickFunc('url', 'zone-url'); return false;" onmouseout="outFunc('zone-url')" href="#"><span class="tooltiptext" id="zone-url">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a>
         </div>
         
-        <div id="UAC-1736-shape" class="avy-zone dn">
-          <div class="tc" style="flex: 1;height: 130px;">
-             <img src="/assets/images/svg/avalanche-zones/UAC-1736.svg" alt="Logan shape" height="100%"/>
-          </div>
-          <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1736.geojson" download="">Download Zone Shape</a></div>
+        <div id="UAC-1744-title" class="avy-zone mt4 mb3 tc">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=37.82310078211996,-109.6442559218305&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
         </div>
         
-        <div id="UAC-1742-shape" class="avy-zone dn">
-          <div class="tc" style="flex: 1;height: 130px;">
-             <img src="/assets/images/svg/avalanche-zones/UAC-1742.svg" alt="Moab shape" height="100%"/>
-          </div>
-          <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1742.geojson" download="">Download Zone Shape</a></div>
+        <div id="UAC-1736-title" class="avy-zone mt4 mb3 tc dn">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=41.8768523523424,-111.64493959961774&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
         </div>
         
-        <div id="UAC-1737-shape" class="avy-zone dn">
-          <div class="tc" style="flex: 1;height: 130px;">
-             <img src="/assets/images/svg/avalanche-zones/UAC-1737.svg" alt="Ogden shape" height="100%"/>
-          </div>
-          <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1737.geojson" download="">Download Zone Shape</a></div>
+        <div id="UAC-1742-title" class="avy-zone mt4 mb3 tc dn">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=38.51542221644972,-109.21894580583272&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
         </div>
         
-        <div id="UAC-1739-shape" class="avy-zone dn">
-          <div class="tc" style="flex: 1;height: 130px;">
-             <img src="/assets/images/svg/avalanche-zones/UAC-1739.svg" alt="Provo shape" height="100%"/>
-          </div>
-          <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1739.geojson" download="">Download Zone Shape</a></div>
+        <div id="UAC-1737-title" class="avy-zone mt4 mb3 tc dn">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=41.25225195963746,-111.68645503841628&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
         </div>
         
-        <div id="UAC-1738-shape" class="avy-zone dn">
-          <div class="tc" style="flex: 1;height: 130px;">
-             <img src="/assets/images/svg/avalanche-zones/UAC-1738.svg" alt="Salt Lake shape" height="100%"/>
-          </div>
-          <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1738.geojson" download="">Download Zone Shape</a></div>
+        <div id="UAC-1739-title" class="avy-zone mt4 mb3 tc dn">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=40.32457735522175,-111.5594396812617&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
         </div>
         
-        <div id="UAC-1741-shape" class="avy-zone dn">
-          <div class="tc" style="flex: 1;height: 130px;">
-             <img src="/assets/images/svg/avalanche-zones/UAC-1741.svg" alt="Skyline shape" height="100%"/>
-          </div>
-          <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1741.geojson" download="">Download Zone Shape</a></div>
+        <div id="UAC-1738-title" class="avy-zone mt4 mb3 tc dn">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=40.76554671886903,-111.67870263736773&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
         </div>
         
-        <div id="UAC-1743-shape" class="avy-zone dn">
-          <div class="tc" style="flex: 1;height: 130px;">
-             <img src="/assets/images/svg/avalanche-zones/UAC-1743.svg" alt="Southwest shape" height="100%"/>
-          </div>
-          <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1743.geojson" download="">Download Zone Shape</a></div>
+        <div id="UAC-1741-title" class="avy-zone mt4 mb3 tc dn">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.32528915696709,-111.32836950588472&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
         </div>
         
-        <div id="UAC-1740-shape" class="avy-zone dn">
-          <div class="tc" style="flex: 1;height: 130px;">
-             <img src="/assets/images/svg/avalanche-zones/UAC-1740.svg" alt="Uintas shape" height="100%"/>
-          </div>
-          <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1740.geojson" download="">Download Zone Shape</a></div>
+        <div id="UAC-1743-title" class="avy-zone mt4 mb3 tc dn">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=38.67476868227733,-111.62187215683886&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+        </div>
+        
+        <div id="UAC-1740-title" class="avy-zone mt4 mb3 tc dn">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=40.63080940777544,-111.03097528189053&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
         </div>
         
     </div>
@@ -340,789 +272,76 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     </div>
     <div class="ph3 w-100 w-50-ns">
         
-        <div id="UAC-1744-shade" class="avy-zone">
-            <h3 class="tc bb b--moon-gray"><br />Sunlight Angles</h3>
-            <table class="f6">
-                <thead>
-                    <tr>
-                        <th class="pa2">Time of day</th>
-                        <th class="pa2">Lighting (Az/Z)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-09-19 07:20AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-1-layer-1744" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">90 by 2</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-1-layer-1744', 'shade-1-tooltip-1744'); return false;" onmouseout="outFunc('shade-1-tooltip-1744')" href="#"><span class="tooltiptext" id="shade-1-tooltip-1744">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-09-19 08:50AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-2-layer-1744" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">105 by 20</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-2-layer-1744', 'shade-2-tooltip-1744'); return false;" onmouseout="outFunc('shade-2-tooltip-1744')" href="#"><span class="tooltiptext" id="shade-2-tooltip-1744">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-09-19 10:20AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-3-layer-1744" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">122 by 36</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-3-layer-1744', 'shade-3-tooltip-1744'); return false;" onmouseout="outFunc('shade-3-tooltip-1744')" href="#"><span class="tooltiptext" id="shade-3-tooltip-1744">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-09-19 11:50AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-4-layer-1744" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">148 by 49</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-4-layer-1744', 'shade-4-tooltip-1744'); return false;" onmouseout="outFunc('shade-4-tooltip-1744')" href="#"><span class="tooltiptext" id="shade-4-tooltip-1744">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-09-19 01:20PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-5-layer-1744" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">183 by 53</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-5-layer-1744', 'shade-5-tooltip-1744'); return false;" onmouseout="outFunc('shade-5-tooltip-1744')" href="#"><span class="tooltiptext" id="shade-5-tooltip-1744">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-09-19 02:50PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-6-layer-1744" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">217 by 47</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-6-layer-1744', 'shade-6-tooltip-1744'); return false;" onmouseout="outFunc('shade-6-tooltip-1744')" href="#"><span class="tooltiptext" id="shade-6-tooltip-1744">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-09-19 04:20PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-7-layer-1744" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">241 by 33</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-7-layer-1744', 'shade-7-tooltip-1744'); return false;" onmouseout="outFunc('shade-7-tooltip-1744')" href="#"><span class="tooltiptext" id="shade-7-tooltip-1744">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-09-19 05:50PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-8-layer-1744" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">258 by 17</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-8-layer-1744', 'shade-8-tooltip-1744'); return false;" onmouseout="outFunc('shade-8-tooltip-1744')" href="#"><span class="tooltiptext" id="shade-8-tooltip-1744">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                </tbody>
-            </table>
+        <div id="UAC-1744-shape" class="avy-zone">
+            <h3 class="tc bb b--moon-gray"><br />Zone Shape</h3>
+            <div class="tc" style="flex: 1;height: 130px;">
+                <img src="/assets/images/svg/avalanche-zones/UAC-1744.svg" alt="Abajos shape" height="100%"/>
+            </div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1744.geojson" download="">Download</a></div>
         </div>
         
-        <div id="UAC-1736-shade" class="avy-zone dn">
-            <h3 class="tc bb b--moon-gray"><br />Sunlight Angles</h3>
-            <table class="f6">
-                <thead>
-                    <tr>
-                        <th class="pa2">Time of day</th>
-                        <th class="pa2">Lighting (Az/Z)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-18 08:00AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-1-layer-1736" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">105 by 2</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-1-layer-1736', 'shade-1-tooltip-1736'); return false;" onmouseout="outFunc('shade-1-tooltip-1736')" href="#"><span class="tooltiptext" id="shade-1-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-18 09:30AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-2-layer-1736" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">122 by 18</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-2-layer-1736', 'shade-2-tooltip-1736'); return false;" onmouseout="outFunc('shade-2-tooltip-1736')" href="#"><span class="tooltiptext" id="shade-2-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-18 11:00AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-3-layer-1736" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">142 by 30</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-3-layer-1736', 'shade-3-tooltip-1736'); return false;" onmouseout="outFunc('shade-3-tooltip-1736')" href="#"><span class="tooltiptext" id="shade-3-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-18 12:30PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-4-layer-1736" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">167 by 37</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-4-layer-1736', 'shade-4-tooltip-1736'); return false;" onmouseout="outFunc('shade-4-tooltip-1736')" href="#"><span class="tooltiptext" id="shade-4-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-18 02:00PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-5-layer-1736" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">195 by 37</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-5-layer-1736', 'shade-5-tooltip-1736'); return false;" onmouseout="outFunc('shade-5-tooltip-1736')" href="#"><span class="tooltiptext" id="shade-5-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-18 03:30PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-6-layer-1736" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">220 by 29</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-6-layer-1736', 'shade-6-tooltip-1736'); return false;" onmouseout="outFunc('shade-6-tooltip-1736')" href="#"><span class="tooltiptext" id="shade-6-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-18 05:00PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-7-layer-1736" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">240 by 16</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-7-layer-1736', 'shade-7-tooltip-1736'); return false;" onmouseout="outFunc('shade-7-tooltip-1736')" href="#"><span class="tooltiptext" id="shade-7-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-18 06:30PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-8-layer-1736" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">256 by 1</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-8-layer-1736', 'shade-8-tooltip-1736'); return false;" onmouseout="outFunc('shade-8-tooltip-1736')" href="#"><span class="tooltiptext" id="shade-8-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                </tbody>
-            </table>
+        <div id="UAC-1736-shape" class="avy-zone dn">
+            <h3 class="tc bb b--moon-gray"><br />Zone Shape</h3>
+            <div class="tc" style="flex: 1;height: 130px;">
+                <img src="/assets/images/svg/avalanche-zones/UAC-1736.svg" alt="Logan shape" height="100%"/>
+            </div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1736.geojson" download="">Download</a></div>
         </div>
         
-        <div id="UAC-1742-shade" class="avy-zone dn">
-            <h3 class="tc bb b--moon-gray"><br />Sunlight Angles</h3>
-            <table class="f6">
-                <thead>
-                    <tr>
-                        <th class="pa2">Time of day</th>
-                        <th class="pa2">Lighting (Az/Z)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-07 07:00AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-1-layer-1742" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">112 by 1</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-1-layer-1742', 'shade-1-tooltip-1742'); return false;" onmouseout="outFunc('shade-1-tooltip-1742')" href="#"><span class="tooltiptext" id="shade-1-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-07 08:30AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-2-layer-1742" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">128 by 16</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-2-layer-1742', 'shade-2-tooltip-1742'); return false;" onmouseout="outFunc('shade-2-tooltip-1742')" href="#"><span class="tooltiptext" id="shade-2-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-07 10:00AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-3-layer-1742" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">147 by 28</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-3-layer-1742', 'shade-3-tooltip-1742'); return false;" onmouseout="outFunc('shade-3-tooltip-1742')" href="#"><span class="tooltiptext" id="shade-3-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-07 11:30AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-4-layer-1742" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">171 by 34</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-4-layer-1742', 'shade-4-tooltip-1742'); return false;" onmouseout="outFunc('shade-4-tooltip-1742')" href="#"><span class="tooltiptext" id="shade-4-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-07 01:00PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-5-layer-1742" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">197 by 33</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-5-layer-1742', 'shade-5-tooltip-1742'); return false;" onmouseout="outFunc('shade-5-tooltip-1742')" href="#"><span class="tooltiptext" id="shade-5-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-07 02:30PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-6-layer-1742" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">220 by 25</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-6-layer-1742', 'shade-6-tooltip-1742'); return false;" onmouseout="outFunc('shade-6-tooltip-1742')" href="#"><span class="tooltiptext" id="shade-6-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-07 04:00PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-7-layer-1742" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">238 by 11</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-7-layer-1742', 'shade-7-tooltip-1742'); return false;" onmouseout="outFunc('shade-7-tooltip-1742')" href="#"><span class="tooltiptext" id="shade-7-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                </tbody>
-            </table>
+        <div id="UAC-1742-shape" class="avy-zone dn">
+            <h3 class="tc bb b--moon-gray"><br />Zone Shape</h3>
+            <div class="tc" style="flex: 1;height: 130px;">
+                <img src="/assets/images/svg/avalanche-zones/UAC-1742.svg" alt="Moab shape" height="100%"/>
+            </div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1742.geojson" download="">Download</a></div>
         </div>
         
-        <div id="UAC-1737-shade" class="avy-zone dn">
-            <h3 class="tc bb b--moon-gray"><br />Sunlight Angles</h3>
-            <table class="f6">
-                <thead>
-                    <tr>
-                        <th class="pa2">Time of day</th>
-                        <th class="pa2">Lighting (Az/Z)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 07:20AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-1-layer-1737" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">114 by 1</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-1-layer-1737', 'shade-1-tooltip-1737'); return false;" onmouseout="outFunc('shade-1-tooltip-1737')" href="#"><span class="tooltiptext" id="shade-1-tooltip-1737">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 08:50AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-2-layer-1737" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">130 by 15</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-2-layer-1737', 'shade-2-tooltip-1737'); return false;" onmouseout="outFunc('shade-2-tooltip-1737')" href="#"><span class="tooltiptext" id="shade-2-tooltip-1737">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 10:20AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-3-layer-1737" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">150 by 26</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-3-layer-1737', 'shade-3-tooltip-1737'); return false;" onmouseout="outFunc('shade-3-tooltip-1737')" href="#"><span class="tooltiptext" id="shade-3-tooltip-1737">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 11:50AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-4-layer-1737" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">174 by 31</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-4-layer-1737', 'shade-4-tooltip-1737'); return false;" onmouseout="outFunc('shade-4-tooltip-1737')" href="#"><span class="tooltiptext" id="shade-4-tooltip-1737">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 01:20PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-5-layer-1737" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">199 by 29</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-5-layer-1737', 'shade-5-tooltip-1737'); return false;" onmouseout="outFunc('shade-5-tooltip-1737')" href="#"><span class="tooltiptext" id="shade-5-tooltip-1737">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 02:50PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-6-layer-1737" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">221 by 21</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-6-layer-1737', 'shade-6-tooltip-1737'); return false;" onmouseout="outFunc('shade-6-tooltip-1737')" href="#"><span class="tooltiptext" id="shade-6-tooltip-1737">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 04:20PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-7-layer-1737" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">239 by 8</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-7-layer-1737', 'shade-7-tooltip-1737'); return false;" onmouseout="outFunc('shade-7-tooltip-1737')" href="#"><span class="tooltiptext" id="shade-7-tooltip-1737">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                </tbody>
-            </table>
+        <div id="UAC-1737-shape" class="avy-zone dn">
+            <h3 class="tc bb b--moon-gray"><br />Zone Shape</h3>
+            <div class="tc" style="flex: 1;height: 130px;">
+                <img src="/assets/images/svg/avalanche-zones/UAC-1737.svg" alt="Ogden shape" height="100%"/>
+            </div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1737.geojson" download="">Download</a></div>
         </div>
         
-        <div id="UAC-1739-shade" class="avy-zone dn">
-            <h3 class="tc bb b--moon-gray"><br />Sunlight Angles</h3>
-            <table class="f6">
-                <thead>
-                    <tr>
-                        <th class="pa2">Time of day</th>
-                        <th class="pa2">Lighting (Az/Z)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 07:20AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-1-layer-1739" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">114 by 2</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-1-layer-1739', 'shade-1-tooltip-1739'); return false;" onmouseout="outFunc('shade-1-tooltip-1739')" href="#"><span class="tooltiptext" id="shade-1-tooltip-1739">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 08:50AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-2-layer-1739" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">130 by 16</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-2-layer-1739', 'shade-2-tooltip-1739'); return false;" onmouseout="outFunc('shade-2-tooltip-1739')" href="#"><span class="tooltiptext" id="shade-2-tooltip-1739">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 10:20AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-3-layer-1739" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">150 by 27</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-3-layer-1739', 'shade-3-tooltip-1739'); return false;" onmouseout="outFunc('shade-3-tooltip-1739')" href="#"><span class="tooltiptext" id="shade-3-tooltip-1739">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 11:50AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-4-layer-1739" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">174 by 32</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-4-layer-1739', 'shade-4-tooltip-1739'); return false;" onmouseout="outFunc('shade-4-tooltip-1739')" href="#"><span class="tooltiptext" id="shade-4-tooltip-1739">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 01:20PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-5-layer-1739" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">199 by 30</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-5-layer-1739', 'shade-5-tooltip-1739'); return false;" onmouseout="outFunc('shade-5-tooltip-1739')" href="#"><span class="tooltiptext" id="shade-5-tooltip-1739">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 02:50PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-6-layer-1739" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">221 by 22</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-6-layer-1739', 'shade-6-tooltip-1739'); return false;" onmouseout="outFunc('shade-6-tooltip-1739')" href="#"><span class="tooltiptext" id="shade-6-tooltip-1739">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 04:20PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-7-layer-1739" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">239 by 8</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-7-layer-1739', 'shade-7-tooltip-1739'); return false;" onmouseout="outFunc('shade-7-tooltip-1739')" href="#"><span class="tooltiptext" id="shade-7-tooltip-1739">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                </tbody>
-            </table>
+        <div id="UAC-1739-shape" class="avy-zone dn">
+            <h3 class="tc bb b--moon-gray"><br />Zone Shape</h3>
+            <div class="tc" style="flex: 1;height: 130px;">
+                <img src="/assets/images/svg/avalanche-zones/UAC-1739.svg" alt="Provo shape" height="100%"/>
+            </div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1739.geojson" download="">Download</a></div>
         </div>
         
-        <div id="UAC-1738-shade" class="avy-zone dn">
-            <h3 class="tc bb b--moon-gray"><br />Sunlight Angles</h3>
-            <table class="f6">
-                <thead>
-                    <tr>
-                        <th class="pa2">Time of day</th>
-                        <th class="pa2">Lighting (Az/Z)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 07:20AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-1-layer-1738" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">114 by 1</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-1-layer-1738', 'shade-1-tooltip-1738'); return false;" onmouseout="outFunc('shade-1-tooltip-1738')" href="#"><span class="tooltiptext" id="shade-1-tooltip-1738">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 08:50AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-2-layer-1738" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">130 by 16</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-2-layer-1738', 'shade-2-tooltip-1738'); return false;" onmouseout="outFunc('shade-2-tooltip-1738')" href="#"><span class="tooltiptext" id="shade-2-tooltip-1738">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 10:20AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-3-layer-1738" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">150 by 27</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-3-layer-1738', 'shade-3-tooltip-1738'); return false;" onmouseout="outFunc('shade-3-tooltip-1738')" href="#"><span class="tooltiptext" id="shade-3-tooltip-1738">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 11:50AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-4-layer-1738" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">174 by 32</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-4-layer-1738', 'shade-4-tooltip-1738'); return false;" onmouseout="outFunc('shade-4-tooltip-1738')" href="#"><span class="tooltiptext" id="shade-4-tooltip-1738">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 01:20PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-5-layer-1738" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">199 by 30</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-5-layer-1738', 'shade-5-tooltip-1738'); return false;" onmouseout="outFunc('shade-5-tooltip-1738')" href="#"><span class="tooltiptext" id="shade-5-tooltip-1738">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 02:50PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-6-layer-1738" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">221 by 21</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-6-layer-1738', 'shade-6-tooltip-1738'); return false;" onmouseout="outFunc('shade-6-tooltip-1738')" href="#"><span class="tooltiptext" id="shade-6-tooltip-1738">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 04:20PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-7-layer-1738" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">239 by 8</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-7-layer-1738', 'shade-7-tooltip-1738'); return false;" onmouseout="outFunc('shade-7-tooltip-1738')" href="#"><span class="tooltiptext" id="shade-7-tooltip-1738">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                </tbody>
-            </table>
+        <div id="UAC-1738-shape" class="avy-zone dn">
+            <h3 class="tc bb b--moon-gray"><br />Zone Shape</h3>
+            <div class="tc" style="flex: 1;height: 130px;">
+                <img src="/assets/images/svg/avalanche-zones/UAC-1738.svg" alt="Salt Lake shape" height="100%"/>
+            </div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1738.geojson" download="">Download</a></div>
         </div>
         
-        <div id="UAC-1741-shade" class="avy-zone dn">
-            <h3 class="tc bb b--moon-gray"><br />Sunlight Angles</h3>
-            <table class="f6">
-                <thead>
-                    <tr>
-                        <th class="pa2">Time of day</th>
-                        <th class="pa2">Lighting (Az/Z)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-29 08:00AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-1-layer-1741" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">109 by 1</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-1-layer-1741', 'shade-1-tooltip-1741'); return false;" onmouseout="outFunc('shade-1-tooltip-1741')" href="#"><span class="tooltiptext" id="shade-1-tooltip-1741">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-29 09:30AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-2-layer-1741" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">124 by 16</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-2-layer-1741', 'shade-2-tooltip-1741'); return false;" onmouseout="outFunc('shade-2-tooltip-1741')" href="#"><span class="tooltiptext" id="shade-2-tooltip-1741">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-29 11:00AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-3-layer-1741" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">144 by 29</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-3-layer-1741', 'shade-3-tooltip-1741'); return false;" onmouseout="outFunc('shade-3-tooltip-1741')" href="#"><span class="tooltiptext" id="shade-3-tooltip-1741">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-29 12:30PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-4-layer-1741" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">168 by 36</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-4-layer-1741', 'shade-4-tooltip-1741'); return false;" onmouseout="outFunc('shade-4-tooltip-1741')" href="#"><span class="tooltiptext" id="shade-4-tooltip-1741">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-29 02:00PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-5-layer-1741" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">195 by 36</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-5-layer-1741', 'shade-5-tooltip-1741'); return false;" onmouseout="outFunc('shade-5-tooltip-1741')" href="#"><span class="tooltiptext" id="shade-5-tooltip-1741">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-29 03:30PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-6-layer-1741" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">219 by 28</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-6-layer-1741', 'shade-6-tooltip-1741'); return false;" onmouseout="outFunc('shade-6-tooltip-1741')" href="#"><span class="tooltiptext" id="shade-6-tooltip-1741">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-10-29 05:00PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-7-layer-1741" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">238 by 14</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-7-layer-1741', 'shade-7-tooltip-1741'); return false;" onmouseout="outFunc('shade-7-tooltip-1741')" href="#"><span class="tooltiptext" id="shade-7-tooltip-1741">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                </tbody>
-            </table>
+        <div id="UAC-1741-shape" class="avy-zone dn">
+            <h3 class="tc bb b--moon-gray"><br />Zone Shape</h3>
+            <div class="tc" style="flex: 1;height: 130px;">
+                <img src="/assets/images/svg/avalanche-zones/UAC-1741.svg" alt="Skyline shape" height="100%"/>
+            </div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1741.geojson" download="">Download</a></div>
         </div>
         
-        <div id="UAC-1743-shade" class="avy-zone dn">
-            <h3 class="tc bb b--moon-gray"><br />Sunlight Angles</h3>
-            <table class="f6">
-                <thead>
-                    <tr>
-                        <th class="pa2">Time of day</th>
-                        <th class="pa2">Lighting (Az/Z)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-02-10 07:40AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-1-layer-1743" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">110 by 2</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-1-layer-1743', 'shade-1-tooltip-1743'); return false;" onmouseout="outFunc('shade-1-tooltip-1743')" href="#"><span class="tooltiptext" id="shade-1-tooltip-1743">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-02-10 09:10AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-2-layer-1743" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">126 by 18</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-2-layer-1743', 'shade-2-tooltip-1743'); return false;" onmouseout="outFunc('shade-2-tooltip-1743')" href="#"><span class="tooltiptext" id="shade-2-tooltip-1743">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-02-10 10:40AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-3-layer-1743" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">146 by 30</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-3-layer-1743', 'shade-3-tooltip-1743'); return false;" onmouseout="outFunc('shade-3-tooltip-1743')" href="#"><span class="tooltiptext" id="shade-3-tooltip-1743">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-02-10 12:10PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-4-layer-1743" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">171 by 37</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-4-layer-1743', 'shade-4-tooltip-1743'); return false;" onmouseout="outFunc('shade-4-tooltip-1743')" href="#"><span class="tooltiptext" id="shade-4-tooltip-1743">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-02-10 01:40PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-5-layer-1743" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">198 by 35</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-5-layer-1743', 'shade-5-tooltip-1743'); return false;" onmouseout="outFunc('shade-5-tooltip-1743')" href="#"><span class="tooltiptext" id="shade-5-tooltip-1743">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-02-10 03:10PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-6-layer-1743" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">221 by 27</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-6-layer-1743', 'shade-6-tooltip-1743'); return false;" onmouseout="outFunc('shade-6-tooltip-1743')" href="#"><span class="tooltiptext" id="shade-6-tooltip-1743">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-02-10 04:40PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-7-layer-1743" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">239 by 13</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-7-layer-1743', 'shade-7-tooltip-1743'); return false;" onmouseout="outFunc('shade-7-tooltip-1743')" href="#"><span class="tooltiptext" id="shade-7-tooltip-1743">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                </tbody>
-            </table>
+        <div id="UAC-1743-shape" class="avy-zone dn">
+            <h3 class="tc bb b--moon-gray"><br />Zone Shape</h3>
+            <div class="tc" style="flex: 1;height: 130px;">
+                <img src="/assets/images/svg/avalanche-zones/UAC-1743.svg" alt="Southwest shape" height="100%"/>
+            </div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1743.geojson" download="">Download</a></div>
         </div>
         
-        <div id="UAC-1740-shade" class="avy-zone dn">
-            <h3 class="tc bb b--moon-gray"><br />Sunlight Angles</h3>
-            <table class="f6">
-                <thead>
-                    <tr>
-                        <th class="pa2">Time of day</th>
-                        <th class="pa2">Lighting (Az/Z)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 07:20AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-1-layer-1740" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">115 by 2</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-1-layer-1740', 'shade-1-tooltip-1740'); return false;" onmouseout="outFunc('shade-1-tooltip-1740')" href="#"><span class="tooltiptext" id="shade-1-tooltip-1740">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 08:50AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-2-layer-1740" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">131 by 16</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-2-layer-1740', 'shade-2-tooltip-1740'); return false;" onmouseout="outFunc('shade-2-tooltip-1740')" href="#"><span class="tooltiptext" id="shade-2-tooltip-1740">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 10:20AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-3-layer-1740" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">151 by 27</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-3-layer-1740', 'shade-3-tooltip-1740'); return false;" onmouseout="outFunc('shade-3-tooltip-1740')" href="#"><span class="tooltiptext" id="shade-3-tooltip-1740">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 11:50AM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-4-layer-1740" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">175 by 32</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-4-layer-1740', 'shade-4-tooltip-1740'); return false;" onmouseout="outFunc('shade-4-tooltip-1740')" href="#"><span class="tooltiptext" id="shade-4-tooltip-1740">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 01:20PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-5-layer-1740" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">200 by 30</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-5-layer-1740', 'shade-5-tooltip-1740'); return false;" onmouseout="outFunc('shade-5-tooltip-1740')" href="#"><span class="tooltiptext" id="shade-5-tooltip-1740">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 02:50PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-6-layer-1740" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">222 by 21</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-6-layer-1740', 'shade-6-tooltip-1740'); return false;" onmouseout="outFunc('shade-6-tooltip-1740')" href="#"><span class="tooltiptext" id="shade-6-tooltip-1740">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                <tr>
-                    <th class="pv2 ph1">
-                        2024-11-09 04:20PM Shade
-                    </th>
-                    <td class="pv2 ph1">
-                        <code id="shade-7-layer-1740" class="pa1 b--silver bw1 ba language-plaintext highlighter-rouge">239 by 8</code>
-                        <div class="tooltip dib v-top"><a onclick="clickFunc('shade-7-layer-1740', 'shade-7-tooltip-1740'); return false;" onmouseout="outFunc('shade-7-tooltip-1740')" href="#"><span class="tooltiptext" id="shade-7-tooltip-1740">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </td>
-                </tr>
-                
-                </tbody>
-            </table>
+        <div id="UAC-1740-shape" class="avy-zone dn">
+            <h3 class="tc bb b--moon-gray"><br />Zone Shape</h3>
+            <div class="tc" style="flex: 1;height: 130px;">
+                <img src="/assets/images/svg/avalanche-zones/UAC-1740.svg" alt="Uintas shape" height="100%"/>
+            </div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1740.geojson" download="">Download</a></div>
         </div>
         
     </div>
