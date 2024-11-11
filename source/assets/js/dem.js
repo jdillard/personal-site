@@ -50,6 +50,19 @@ regionSel.onchange = function () {
   window.location.assign(this.value);
 }
 
+window.clickFunc = function(element, tooltip) {
+  const text = element.getAttribute("data-clipboard-text");
+  navigator.clipboard.writeText(text);
+
+  var tooltip = document.getElementById(tooltip);
+  tooltip.innerHTML = "Ruleset Copied!";
+}
+
+window.outFunc = function(tooltip) {
+  var tooltip = document.getElementById(tooltip);
+  tooltip.innerHTML = "Copy ruleset";
+}
+
 u("#settings-toggle").on( "click", function() {
   if(u("#settings").hasClass('open')) {
     u("#settings").removeClass('open');
