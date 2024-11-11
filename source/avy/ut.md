@@ -128,7 +128,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="UAC-1737-report" class="avy-zone dn" data-published="Friday, November 08, 2024 5:51PM">
+        <div id="UAC-1737-report" class="avy-zone dn" data-published="Sunday, November 10, 2024 9:23AM">
         <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/ogden"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
         <div id="UAC-1737-title" class="avy-zone mv4 tc dn">
             <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=41.25225195963746,-111.68645503841628&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
@@ -140,13 +140,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, November 08, 2024 5:51PM<br />
+                <strong>Issued at:</strong> Sunday, November 10, 2024 9:23AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/ogden">UAC</a>
             </p>
             
         </div>
         
-        <div id="UAC-1739-report" class="avy-zone dn" data-published="Friday, November 08, 2024 5:58PM">
+        <div id="UAC-1739-report" class="avy-zone dn" data-published="Sunday, November 10, 2024 9:30AM">
         <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/provo"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
         <div id="UAC-1739-title" class="avy-zone mv4 tc dn">
             <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=40.32457735522175,-111.5594396812617&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
@@ -158,13 +158,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, November 08, 2024 5:58PM<br />
+                <strong>Issued at:</strong> Sunday, November 10, 2024 9:30AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/provo">UAC</a>
             </p>
             
         </div>
         
-        <div id="UAC-1738-report" class="avy-zone dn" data-published="Friday, November 08, 2024 5:41PM">
+        <div id="UAC-1738-report" class="avy-zone dn" data-published="Sunday, November 10, 2024 8:45AM">
         <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/salt-lake"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
         <div id="UAC-1738-title" class="avy-zone mv4 tc dn">
             <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=40.76554671886903,-111.67870263736773&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
@@ -176,7 +176,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, November 08, 2024 5:41PM<br />
+                <strong>Issued at:</strong> Sunday, November 10, 2024 8:45AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/salt-lake">UAC</a>
             </p>
             
