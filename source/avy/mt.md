@@ -89,10 +89,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <div class="ph3 w-100 w-50-ns">
         
         <div id="FAC-1735-report" class="avy-zone" data-published="Friday, November 08, 2024 5:10PM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://flatheadavalanche.com/avalanche-forecast#/flathead-range-&-glacier-np"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="FAC-1735-title" class="avy-zone mv4 tc">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=48.277763159224335,-113.6340572114151&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://flatheadavalanche.com/avalanche-forecast#/flathead-range-&-glacier-np"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://flatheadavalanche.com/avalanche-forecast#/flathead-range-&-glacier-np">FAC</a> for more information.</div>
             
@@ -107,10 +104,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="FAC-1734-report" class="avy-zone dn" data-published="Friday, November 08, 2024 5:10PM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://flatheadavalanche.com/avalanche-forecast#/swan-range"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="FAC-1734-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=48.09405718369808,-113.85120906345988&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://flatheadavalanche.com/avalanche-forecast#/swan-range"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://flatheadavalanche.com/avalanche-forecast#/swan-range">FAC</a> for more information.</div>
             
@@ -125,10 +119,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="FAC-1733-report" class="avy-zone dn" data-published="Friday, November 08, 2024 5:10PM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://flatheadavalanche.com/avalanche-forecast#/whitefish-range"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="FAC-1733-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=48.74593559178554,-114.51812960765844&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://flatheadavalanche.com/avalanche-forecast#/whitefish-range"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://flatheadavalanche.com/avalanche-forecast#/whitefish-range">FAC</a> for more information.</div>
             
@@ -143,10 +134,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="GNFAC-1908-report" class="avy-zone dn" data-published="False">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="GNFAC-1908-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=45.83990204227291,-110.96437641919682&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
             
@@ -156,10 +144,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="GNFAC-1911-report" class="avy-zone dn" data-published="Wednesday, November 06, 2024 6:52AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="GNFAC-1911-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=45.06747099194554,-109.94692556413088&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
             
@@ -174,10 +159,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="GNFAC-1915-report" class="avy-zone dn" data-published="Wednesday, November 06, 2024 6:52AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="GNFAC-1915-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=44.5402962182844,-111.56288277702149&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
             
@@ -192,10 +174,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="GNFAC-1910-report" class="avy-zone dn" data-published="Wednesday, November 06, 2024 6:52AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="GNFAC-1910-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=44.773118643722974,-111.34501705150073&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
             
@@ -210,10 +189,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="GNFAC-1909-report" class="avy-zone dn" data-published="Wednesday, November 06, 2024 6:52AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="GNFAC-1909-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=45.39883650788542,-110.99964481575067&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
             
@@ -228,10 +204,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="GNFAC-1912-report" class="avy-zone dn" data-published="Wednesday, November 06, 2024 6:52AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="GNFAC-1912-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=45.31405357766282,-111.36137907750056&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
             
@@ -246,10 +219,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="GNFAC-1914-report" class="avy-zone dn" data-published="Wednesday, November 06, 2024 6:52AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="GNFAC-1914-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=45.01315636953988,-110.95955466767808&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
             
@@ -264,10 +234,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="GNFAC-1913-report" class="avy-zone dn" data-published="Wednesday, November 06, 2024 6:52AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="GNFAC-1913-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=44.9747281319347,-111.27846539597998&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
             
@@ -282,10 +249,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="IPAC-1901-report" class="avy-zone dn" data-published="Friday, November 08, 2024 2:08PM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="IPAC-1901-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=48.14263430722801,-115.66821300195508&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/">IPAC</a> for more information.</div>
             
@@ -300,10 +264,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="IPAC-1903-report" class="avy-zone dn" data-published="Friday, November 08, 2024 2:08PM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="IPAC-1903-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=48.76629398211173,-115.76965251047501&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/">IPAC</a> for more information.</div>
             
@@ -318,10 +279,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="WCMAC-1724-report" class="avy-zone dn" data-published="Monday, April 01, 2024 1:00AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://missoulaavalanche.org/forecasts/#/Bitterroot"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="WCMAC-1724-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=46.27917448748157,-114.32445763025258&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://missoulaavalanche.org/forecasts/#/Bitterroot"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/Bitterroot">WCMAC</a> for more information.</div>
             
@@ -336,10 +294,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="WCMAC-1723-report" class="avy-zone dn" data-published="Monday, April 01, 2024 1:00AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://missoulaavalanche.org/forecasts/#/rattlesnake"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="WCMAC-1723-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=46.99286488119276,-113.85667254399304&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://missoulaavalanche.org/forecasts/#/rattlesnake"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/rattlesnake">WCMAC</a> for more information.</div>
             
@@ -354,10 +309,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="WCMAC-1722-report" class="avy-zone dn" data-published="Monday, April 01, 2024 1:00AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.missoulaavalanche.org/forecasts/#/seeley-lake"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="WCMAC-1722-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=47.25958351230649,-113.49483025938947&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.missoulaavalanche.org/forecasts/#/seeley-lake"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.missoulaavalanche.org/forecasts/#/seeley-lake">WCMAC</a> for more information.</div>
             
@@ -377,67 +329,67 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <div style="height: 300px;" id="map"></div>
         
         <div id="FAC-1735-shape" data-geojson="/assets/json/avalanche-zones/FAC-1735.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/FAC-1735.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/FAC-1735.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="FAC-1734-shape" data-geojson="/assets/json/avalanche-zones/FAC-1734.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/FAC-1734.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/FAC-1734.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="FAC-1733-shape" data-geojson="/assets/json/avalanche-zones/FAC-1733.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/FAC-1733.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/FAC-1733.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="GNFAC-1908-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-1908.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1908.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1908.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="GNFAC-1911-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-1911.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1911.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1911.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="GNFAC-1915-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-1915.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1915.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1915.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="GNFAC-1910-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-1910.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1910.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1910.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="GNFAC-1909-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-1909.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1909.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1909.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="GNFAC-1912-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-1912.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1912.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1912.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="GNFAC-1914-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-1914.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1914.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1914.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="GNFAC-1913-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-1913.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1913.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-1913.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="IPAC-1901-shape" data-geojson="/assets/json/avalanche-zones/IPAC-1901.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/IPAC-1901.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/IPAC-1901.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="IPAC-1903-shape" data-geojson="/assets/json/avalanche-zones/IPAC-1903.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/IPAC-1903.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/IPAC-1903.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="WCMAC-1724-shape" data-geojson="/assets/json/avalanche-zones/WCMAC-1724.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WCMAC-1724.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WCMAC-1724.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="WCMAC-1723-shape" data-geojson="/assets/json/avalanche-zones/WCMAC-1723.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WCMAC-1723.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WCMAC-1723.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="WCMAC-1722-shape" data-geojson="/assets/json/avalanche-zones/WCMAC-1722.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WCMAC-1722.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WCMAC-1722.geojson" download="">Download GeoJSON</a></div>
         </div>
         
     </div>

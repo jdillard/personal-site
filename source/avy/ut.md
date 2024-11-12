@@ -75,10 +75,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <div class="ph3 w-100 w-50-ns">
         
         <div id="UAC-1744-report" class="avy-zone" data-published="Monday, November 11, 2024 8:46AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/abajos"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="UAC-1744-title" class="avy-zone mv4 tc">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=37.82310078211996,-109.6442559218305&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/abajos"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/abajos">UAC</a> for more information.</div>
             
@@ -93,10 +90,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="UAC-1736-report" class="avy-zone dn" data-published="Thursday, October 17, 2024 2:49PM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/logan"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="UAC-1736-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=41.8768523523424,-111.64493959961774&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/logan"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/logan">UAC</a> for more information.</div>
             
@@ -111,10 +105,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="UAC-1742-report" class="avy-zone dn" data-published="Monday, November 11, 2024 8:13AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/moab"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="UAC-1742-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=38.51542221644972,-109.21894580583272&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/moab"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/moab">UAC</a> for more information.</div>
             
@@ -129,10 +120,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="UAC-1737-report" class="avy-zone dn" data-published="Sunday, November 10, 2024 9:23AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/ogden"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="UAC-1737-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=41.25225195963746,-111.68645503841628&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/ogden"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/ogden">UAC</a> for more information.</div>
             
@@ -147,10 +135,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="UAC-1739-report" class="avy-zone dn" data-published="Sunday, November 10, 2024 9:30AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/provo"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="UAC-1739-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=40.32457735522175,-111.5594396812617&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/provo"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/provo">UAC</a> for more information.</div>
             
@@ -165,10 +150,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="UAC-1738-report" class="avy-zone dn" data-published="Sunday, November 10, 2024 8:45AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/salt-lake"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="UAC-1738-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=40.76554671886903,-111.67870263736773&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/salt-lake"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/salt-lake">UAC</a> for more information.</div>
             
@@ -183,10 +165,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="UAC-1741-report" class="avy-zone dn" data-published="Monday, October 28, 2024 10:41AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/skyline"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="UAC-1741-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.32528915696709,-111.32836950588472&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/skyline"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/skyline">UAC</a> for more information.</div>
             
@@ -201,10 +180,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="UAC-1743-report" class="avy-zone dn" data-published="Friday, February 09, 2024 7:14AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/southwest"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="UAC-1743-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=38.67476868227733,-111.62187215683886&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/southwest"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/southwest">UAC</a> for more information.</div>
             
@@ -219,10 +195,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </div>
         
         <div id="UAC-1740-report" class="avy-zone dn" data-published="Friday, November 08, 2024 3:04AM">
-        <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/uintas"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="UAC-1740-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=40.63080940777544,-111.03097528189053&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-        </div>
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/uintas"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/uintas">UAC</a> for more information.</div>
             
@@ -242,39 +215,39 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <div style="height: 300px;" id="map"></div>
         
         <div id="UAC-1744-shape" data-geojson="/assets/json/avalanche-zones/UAC-1744.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1744.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1744.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="UAC-1736-shape" data-geojson="/assets/json/avalanche-zones/UAC-1736.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1736.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1736.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="UAC-1742-shape" data-geojson="/assets/json/avalanche-zones/UAC-1742.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1742.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1742.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="UAC-1737-shape" data-geojson="/assets/json/avalanche-zones/UAC-1737.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1737.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1737.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="UAC-1739-shape" data-geojson="/assets/json/avalanche-zones/UAC-1739.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1739.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1739.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="UAC-1738-shape" data-geojson="/assets/json/avalanche-zones/UAC-1738.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1738.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1738.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="UAC-1741-shape" data-geojson="/assets/json/avalanche-zones/UAC-1741.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1741.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1741.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="UAC-1743-shape" data-geojson="/assets/json/avalanche-zones/UAC-1743.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1743.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1743.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="UAC-1740-shape" data-geojson="/assets/json/avalanche-zones/UAC-1740.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1740.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1740.geojson" download="">Download GeoJSON</a></div>
         </div>
         
     </div>
