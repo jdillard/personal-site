@@ -84,7 +84,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             {% if zone.problems %}
             <dl class="f6">
                 {% for problem in zone.problems %}
-                    <dt>
+                    <dt class="mt3">
                         <strong>{{ problem.name }}</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ problem.rules | map(attribute='layer') | reverse | join('&#10;') }}" onclick="clickFunc(this, 'problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
