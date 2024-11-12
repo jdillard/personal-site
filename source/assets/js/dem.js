@@ -37,20 +37,7 @@ function showZone(zone_id) {
   shape.classList.remove('dn');
 
   location.replace("#zone-" + zone_id);
-
-  loadGeoJSON(geojson)
 }
-
-// load default map on index pages
-document.addEventListener('DOMContentLoaded', function () {
-  if (!window.location.hash) {
-    var selectElement = document.getElementById("zoneSel");
-    var selectedValue = selectElement.value;
-    const shape = document.getElementById(`${selectedValue}-shape`);
-    const geojson = shape.getAttribute("data-geojson");
-    loadGeoJSON(geojson);
-  }
-});
 
 // grab url hash if it exists
 const hash = window.location.hash.slice(1)
@@ -85,23 +72,73 @@ var map = L.map('map').setView([51.505, -0.09], 13);
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(map);
 
+let layers = {};  // all layers with filenames as keys
+let currentLayer = null; //filename as key
 
-let geoJsonLayer = null;
+// load a GeoJSON file and add to the map in given color
+function addLayer(filePath, color) {
+    fetch(`/assets/json/avalanche-zones/${filePath}.geojson`)
+        .then(response => response.json())
+        .then(data => {
+            const layer = L.geoJSON(data, {
+              style: {
+                color: color
+              },
+              onEachFeature: function(feature, layer) {
+                layer.on('click', function() {
+                    window.location.hash = `zone-${filePath}`;
+                });
+            }
+            }).addTo(map);
+            layers[filePath] = layer;
 
-function loadGeoJSON(filePath) {
-  if (geoJsonLayer) {
-    map.removeLayer(geoJsonLayer);
+            //TODO change to calling highlightLayer(currentLayer) after all layers are loaded
+            // Check if the layer corresponds to the selected option and fit bounds
+            const options = document.getElementById("zoneSel").options;
+            for (let i = 0; i < options.length; i++) {
+                if (options[i].selected && options[i].value === filePath) {
+                    map.fitBounds(layer.getBounds());
+                    break;
+                }
+            }
+        })
+        .catch(error => console.error("Error loading GeoJSON:", error));
+}
+
+// highlight the selected layer in blue and revert others to gray
+function highlightLayer(filePath) {
+  // Revert the previous layer to gray
+  if (currentLayer && layers[currentLayer]) {
+    layers[currentLayer].setStyle({ color: "#AAAAAA" });
   }
 
-  fetch(filePath)
-    .then(response => response.json())
-    .then(data => {
-        geoJsonLayer = L.geoJSON(data);
-        geoJsonLayer.addTo(map);
-        map.fitBounds(geoJsonLayer.getBounds());
-    })
-    .catch(error => console.log('Error loading GeoJSON:', error));
+  // set the new layer to blue
+  if (layers[filePath]) {
+    layers[filePath].setStyle({ color: "#357EDD" });
+    map.fitBounds(layers[filePath].getBounds());
+    currentLayer = filePath;
+  }
 }
+
+// load all GeoJSON layers initially
+const options = document.getElementById("zoneSel").options;
+for (let i = 0; i < options.length; i++) {
+  let color = "#AAAAAA";
+  if (options[i].selected) {
+    color = "#357EDD";
+  }
+  addLayer(options[i].value, color);
+}
+
+// event listener for changing the layer highlight
+document.getElementById("zoneSel").addEventListener("change", function(event) {
+  highlightLayer(event.target.value);
+});
+
+// reload page when the hash changes (a layer is selected on the map)
+window.addEventListener('hashchange', () => {
+  location.reload();
+});
 
 u("#settings-toggle").on( "click", function() {
   if(u("#settings").hasClass('open')) {
