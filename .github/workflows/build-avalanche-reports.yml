@@ -34,12 +34,6 @@ jobs:
       with:
         node-version: '16'
 
-    - name: Run node scripts
-      run: |
-        npm install geojson2svg
-        npm install svg-path-bbox
-        node tools/avy/geojson-to-svg.js
-
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
       with:
