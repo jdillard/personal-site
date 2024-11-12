@@ -108,7 +108,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         {% endfor %}
     </div>
     <div class="ph3 w-100 w-50-ns">
-        <h3 class="tc bb b--moon-gray">Zone Shape</h3>
+        <h3 class="tc bb b--moon-gray">Zone</h3>
         <div style="height: 300px;" id="map"></div>
         {% for zone in zones %}
         <div id="{{ zone.slug }}-shape" data-geojson="/assets/json/avalanche-zones/{{ zone.slug }}.geojson" class="avy-zone{% if not loop.first %} dn{% endif %}">
