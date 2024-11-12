@@ -112,7 +112,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <div style="height: 300px;" id="map"></div>
         {% for zone in zones %}
         <div id="{{ zone.slug }}-shape" data-geojson="/assets/json/avalanche-zones/{{ zone.slug }}.geojson" class="avy-zone{% if not loop.first %} dn{% endif %}">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/{{ zone.slug }}.geojson" download="">Download Shape</a></div>
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/{{ zone.slug }}.geojson" download="">Download GeoJSON</a></div>
         </div>
         {% endfor %}
     </div>
