@@ -49,13 +49,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="CNFAIC-1907" selected="">Chugach State Park</option>
+            <option value="CNFAIC-1923" selected="">Chugach State Park</option>
             
-            <option value="CNFAIC-1905" >Seward and Lost Lake</option>
+            <option value="CNFAIC-1922" >Seward and Lost Lake</option>
             
-            <option value="CNFAIC-1906" >Summit Lake</option>
+            <option value="CNFAIC-1921" >Summit Lake</option>
             
-            <option value="CNFAIC-1904" >Turnagain Pass</option>
+            <option value="CNFAIC-1920" >Turnagain Pass</option>
             
             <option value="CAAC-301" >Juneau</option>
             
@@ -84,10 +84,10 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 <div class="flex flex-column flex-row-ns">
     <div class="ph3 w-100 w-50-ns">
         
-        <div id="CNFAIC-1907-report" class="avy-zone" data-published="Friday, November 01, 2024 10:59AM">
+        <div id="CNFAIC-1923-report" class="avy-zone" data-published="Friday, November 01, 2024 10:59AM">
         <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.cnfaic.org/forecast/#/chugach-state-park/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="CNFAIC-1907-title" class="avy-zone mv4 tc">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=61.13603373391207,-149.5252664973195&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+        <div id="CNFAIC-1923-title" class="avy-zone mv4 tc">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=61.136033733912036,-149.52526649731948&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
         </div>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/chugach-state-park/">CNFAIC</a> for more information.</div>
@@ -102,10 +102,10 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="CNFAIC-1905-report" class="avy-zone dn" data-published="Thursday, November 07, 2024 7:00AM">
+        <div id="CNFAIC-1922-report" class="avy-zone dn" data-published="Thursday, November 07, 2024 7:00AM">
         <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.cnfaic.org/forecast/#/seward-and-lost-lake/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="CNFAIC-1905-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=60.35282713590717,-149.53198974717915&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+        <div id="CNFAIC-1922-title" class="avy-zone mv4 tc dn">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=60.26274663127447,-149.4928836410654&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
         </div>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/seward-and-lost-lake/">CNFAIC</a> for more information.</div>
@@ -120,10 +120,10 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="CNFAIC-1906-report" class="avy-zone dn" data-published="Thursday, November 07, 2024 7:00AM">
+        <div id="CNFAIC-1921-report" class="avy-zone dn" data-published="Thursday, November 07, 2024 7:00AM">
         <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.cnfaic.org/forecast/#/summit-lake/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="CNFAIC-1906-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=60.64653829135082,-149.47592812542362&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+        <div id="CNFAIC-1921-title" class="avy-zone mv4 tc dn">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=60.55407677458613,-149.44049497277172&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
         </div>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/summit-lake/">CNFAIC</a> for more information.</div>
@@ -138,10 +138,10 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="CNFAIC-1904-report" class="avy-zone dn" data-published="Thursday, November 07, 2024 7:00AM">
+        <div id="CNFAIC-1920-report" class="avy-zone dn" data-published="Thursday, November 07, 2024 7:00AM">
         <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.cnfaic.org/forecast/#/turnagain-pass/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-        <div id="CNFAIC-1904-title" class="avy-zone mv4 tc dn">
-            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=60.817135070622435,-149.10398861493601&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+        <div id="CNFAIC-1920-title" class="avy-zone mv4 tc dn">
+            <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=60.80710020128214,-149.08385950280046&z=10&b=mbt&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
         </div>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/turnagain-pass/">CNFAIC</a> for more information.</div>
@@ -326,20 +326,20 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <h3 class="tc bb b--moon-gray">Zone Shape</h3>
         <div style="height: 300px;" id="map"></div>
         
-        <div id="CNFAIC-1907-shape" data-geojson="/assets/json/avalanche-zones/CNFAIC-1907.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CNFAIC-1907.geojson" download="">Download Shape</a></div>
+        <div id="CNFAIC-1923-shape" data-geojson="/assets/json/avalanche-zones/CNFAIC-1923.geojson" class="avy-zone">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CNFAIC-1923.geojson" download="">Download Shape</a></div>
         </div>
         
-        <div id="CNFAIC-1905-shape" data-geojson="/assets/json/avalanche-zones/CNFAIC-1905.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CNFAIC-1905.geojson" download="">Download Shape</a></div>
+        <div id="CNFAIC-1922-shape" data-geojson="/assets/json/avalanche-zones/CNFAIC-1922.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CNFAIC-1922.geojson" download="">Download Shape</a></div>
         </div>
         
-        <div id="CNFAIC-1906-shape" data-geojson="/assets/json/avalanche-zones/CNFAIC-1906.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CNFAIC-1906.geojson" download="">Download Shape</a></div>
+        <div id="CNFAIC-1921-shape" data-geojson="/assets/json/avalanche-zones/CNFAIC-1921.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CNFAIC-1921.geojson" download="">Download Shape</a></div>
         </div>
         
-        <div id="CNFAIC-1904-shape" data-geojson="/assets/json/avalanche-zones/CNFAIC-1904.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CNFAIC-1904.geojson" download="">Download Shape</a></div>
+        <div id="CNFAIC-1920-shape" data-geojson="/assets/json/avalanche-zones/CNFAIC-1920.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CNFAIC-1920.geojson" download="">Download Shape</a></div>
         </div>
         
         <div id="CAAC-301-shape" data-geojson="/assets/json/avalanche-zones/CAAC-301.geojson" class="avy-zone dn">
