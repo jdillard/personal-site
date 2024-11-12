@@ -75,7 +75,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
     </div>
     <div class="ph3 w-100 w-50-ns">
-        <h3 class="tc bb b--moon-gray">Zone Shape</h3>
+        <h3 class="tc bb b--moon-gray">Zone</h3>
         <div style="height: 300px;" id="map"></div>
         
         <div id="MWAC-1307-shape" data-geojson="/assets/json/avalanche-zones/MWAC-1307.geojson" class="avy-zone">
