@@ -24,7 +24,6 @@ function getIssues() {
 
 function showZone(zone_id) {
   const report = document.getElementById(`${zone_id}-report`);
-  const title = document.getElementById(`${zone_id}-title`);
   const shape = document.getElementById(`${zone_id}-shape`);
   const geojson = shape.getAttribute("data-geojson");
 
@@ -33,7 +32,6 @@ function showZone(zone_id) {
   });
 
   report.classList.remove('dn');
-  title.classList.remove('dn');
   shape.classList.remove('dn');
 
   location.replace("#zone-" + zone_id);
