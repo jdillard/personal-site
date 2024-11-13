@@ -99,7 +99,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="CNFAIC-1922-report" class="avy-zone dn" data-published="Thursday, November 07, 2024 7:00AM">
+        <div id="CNFAIC-1922-report" class="avy-zone dn" data-published="Tuesday, November 12, 2024 7:00AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.cnfaic.org/forecast/#/seward-and-lost-lake/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/seward-and-lost-lake/">CNFAIC</a> for more information.</div>
@@ -108,13 +108,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Thursday, November 07, 2024 7:00AM<br />
+                <strong>Issued at:</strong> Tuesday, November 12, 2024 7:00AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/seward-and-lost-lake/">CNFAIC</a>
             </p>
             
         </div>
         
-        <div id="CNFAIC-1921-report" class="avy-zone dn" data-published="Thursday, November 07, 2024 7:00AM">
+        <div id="CNFAIC-1921-report" class="avy-zone dn" data-published="Tuesday, November 12, 2024 7:00AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.cnfaic.org/forecast/#/summit-lake/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/summit-lake/">CNFAIC</a> for more information.</div>
@@ -123,13 +123,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Thursday, November 07, 2024 7:00AM<br />
+                <strong>Issued at:</strong> Tuesday, November 12, 2024 7:00AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/summit-lake/">CNFAIC</a>
             </p>
             
         </div>
         
-        <div id="CNFAIC-1920-report" class="avy-zone dn" data-published="Thursday, November 07, 2024 7:00AM">
+        <div id="CNFAIC-1920-report" class="avy-zone dn" data-published="Tuesday, November 12, 2024 7:00AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.cnfaic.org/forecast/#/turnagain-pass/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/turnagain-pass/">CNFAIC</a> for more information.</div>
@@ -138,7 +138,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Thursday, November 07, 2024 7:00AM<br />
+                <strong>Issued at:</strong> Tuesday, November 12, 2024 7:00AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/turnagain-pass/">CNFAIC</a>
             </p>
             
