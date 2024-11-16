@@ -95,6 +95,10 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         
         
+        <option value="/avy/id.html">Idaho</option>
+        
+        
+        
         <option value="/avy/wy.html">Wyoming</option>
         
         
@@ -108,10 +112,6 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         
         <option value="/avy/mt.html">Montana</option>
-        
-        
-        
-        <option value="/avy/id.html">Idaho</option>
         
         
         

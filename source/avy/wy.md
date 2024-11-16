@@ -49,11 +49,23 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="BTAC-1330" selected="">Greys River</option>
+            <option value="BTAC-2108" selected="">Gros Ventre</option>
             
-            <option value="BTAC-1329" >Tetons</option>
+            <option value="BTAC-2098" >Salt River and Wyoming Ranges</option>
             
-            <option value="BTAC-1331" >Togwotee Pass</option>
+            <option value="BTAC-2098" >Salt River and Wyoming Ranges</option>
+            
+            <option value="BTAC-2106" >Snake River Range</option>
+            
+            <option value="BTAC-2109" >Southern Wyoming Range</option>
+            
+            <option value="BTAC-2097" >Tetons</option>
+            
+            <option value="BTAC-2097" >Tetons</option>
+            
+            <option value="BTAC-2099" >Togwotee Pass</option>
+            
+            <option value="BTAC-2099" >Togwotee Pass</option>
             
             <option value="EWYAIX-1343" >Big Horns</option>
             
@@ -68,22 +80,82 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 <div class="flex flex-column flex-row-ns">
     <div class="ph3 w-100 w-50-ns">
         
-        <div id="BTAC-1330-report" class="avy-zone" data-published="Thursday, November 14, 2024 4:40PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/greys-river"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="BTAC-2108-report" class="avy-zone" data-published="Friday, November 15, 2024 3:06PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/gros-ventre/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/greys-river">BTAC</a> for more information.</div>
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/gros-ventre/">BTAC</a> for more information.</div>
             
 
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Thursday, November 14, 2024 4:40PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/greys-river">BTAC</a>
+                <strong>Issued at:</strong> Friday, November 15, 2024 3:06PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/gros-ventre/">BTAC</a>
             </p>
             
         </div>
         
-        <div id="BTAC-1329-report" class="avy-zone dn" data-published="Thursday, November 14, 2024 4:40PM">
+        <div id="BTAC-2098-report" class="avy-zone dn" data-published="Friday, November 15, 2024 3:12PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/">BTAC</a> for more information.</div>
+            
+
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Friday, November 15, 2024 3:12PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/">BTAC</a>
+            </p>
+            
+        </div>
+        
+        <div id="BTAC-2098-report" class="avy-zone dn" data-published="Friday, November 15, 2024 3:12PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/">BTAC</a> for more information.</div>
+            
+
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Friday, November 15, 2024 3:12PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/">BTAC</a>
+            </p>
+            
+        </div>
+        
+        <div id="BTAC-2106-report" class="avy-zone dn" data-published="Friday, November 15, 2024 3:12PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/snake-river-range"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/snake-river-range">BTAC</a> for more information.</div>
+            
+
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Friday, November 15, 2024 3:12PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/snake-river-range">BTAC</a>
+            </p>
+            
+        </div>
+        
+        <div id="BTAC-2109-report" class="avy-zone dn" data-published="Friday, November 15, 2024 3:06PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/southern-wyoming-range/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/southern-wyoming-range/">BTAC</a> for more information.</div>
+            
+
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Friday, November 15, 2024 3:06PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/southern-wyoming-range/">BTAC</a>
+            </p>
+            
+        </div>
+        
+        <div id="BTAC-2097-report" class="avy-zone dn" data-published="Friday, November 15, 2024 3:12PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">BTAC</a> for more information.</div>
@@ -92,13 +164,28 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Thursday, November 14, 2024 4:40PM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 3:12PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">BTAC</a>
             </p>
             
         </div>
         
-        <div id="BTAC-1331-report" class="avy-zone dn" data-published="Thursday, November 14, 2024 4:40PM">
+        <div id="BTAC-2097-report" class="avy-zone dn" data-published="Friday, November 15, 2024 3:12PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">BTAC</a> for more information.</div>
+            
+
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Friday, November 15, 2024 3:12PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">BTAC</a>
+            </p>
+            
+        </div>
+        
+        <div id="BTAC-2099-report" class="avy-zone dn" data-published="Friday, November 15, 2024 3:12PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass">BTAC</a> for more information.</div>
@@ -107,7 +194,22 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Thursday, November 14, 2024 4:40PM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 3:12PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass">BTAC</a>
+            </p>
+            
+        </div>
+        
+        <div id="BTAC-2099-report" class="avy-zone dn" data-published="Friday, November 15, 2024 3:12PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass">BTAC</a> for more information.</div>
+            
+
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Friday, November 15, 2024 3:12PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass">BTAC</a>
             </p>
             
@@ -148,16 +250,40 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <h3 class="tc bb b--moon-gray">Zone</h3>
         <div style="height: 300px;" id="map"></div>
         
-        <div id="BTAC-1330-shape" data-geojson="/assets/json/avalanche-zones/BTAC-1330.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-1330.geojson" download="">Download GeoJSON</a></div>
+        <div id="BTAC-2108-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2108.geojson" class="avy-zone">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2108.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="BTAC-1329-shape" data-geojson="/assets/json/avalanche-zones/BTAC-1329.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-1329.geojson" download="">Download GeoJSON</a></div>
+        <div id="BTAC-2098-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2098.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2098.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="BTAC-1331-shape" data-geojson="/assets/json/avalanche-zones/BTAC-1331.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-1331.geojson" download="">Download GeoJSON</a></div>
+        <div id="BTAC-2098-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2098.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2098.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="BTAC-2106-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2106.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2106.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="BTAC-2109-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2109.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2109.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="BTAC-2097-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2097.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2097.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="BTAC-2097-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2097.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2097.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="BTAC-2099-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2099.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2099.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="BTAC-2099-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2099.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2099.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="EWYAIX-1343-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-1343.geojson" class="avy-zone dn">
@@ -185,6 +311,10 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         
         
+        <option value="/avy/id.html">Idaho</option>
+        
+        
+        
         <option value="/avy/wy.html" selected="">Wyoming</option>
         
         
@@ -198,10 +328,6 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         
         <option value="/avy/mt.html">Montana</option>
-        
-        
-        
-        <option value="/avy/id.html">Idaho</option>
         
         
         

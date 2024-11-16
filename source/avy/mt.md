@@ -88,7 +88,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 <div class="flex flex-column flex-row-ns">
     <div class="ph3 w-100 w-50-ns">
         
-        <div id="FAC-1735-report" class="avy-zone" data-published="Tuesday, November 12, 2024 3:33PM">
+        <div id="FAC-1735-report" class="avy-zone" data-published="Friday, November 15, 2024 5:33PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://flatheadavalanche.com/avalanche-forecast#/flathead-range-&-glacier-np"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://flatheadavalanche.com/avalanche-forecast#/flathead-range-&-glacier-np">FAC</a> for more information.</div>
@@ -97,13 +97,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, November 12, 2024 3:33PM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 5:33PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://flatheadavalanche.com/avalanche-forecast#/flathead-range-&-glacier-np">FAC</a>
             </p>
             
         </div>
         
-        <div id="FAC-1734-report" class="avy-zone dn" data-published="Tuesday, November 12, 2024 3:33PM">
+        <div id="FAC-1734-report" class="avy-zone dn" data-published="Friday, November 15, 2024 5:33PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://flatheadavalanche.com/avalanche-forecast#/swan-range"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://flatheadavalanche.com/avalanche-forecast#/swan-range">FAC</a> for more information.</div>
@@ -112,13 +112,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, November 12, 2024 3:33PM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 5:33PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://flatheadavalanche.com/avalanche-forecast#/swan-range">FAC</a>
             </p>
             
         </div>
         
-        <div id="FAC-1733-report" class="avy-zone dn" data-published="Tuesday, November 12, 2024 3:33PM">
+        <div id="FAC-1733-report" class="avy-zone dn" data-published="Friday, November 15, 2024 5:33PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://flatheadavalanche.com/avalanche-forecast#/whitefish-range"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://flatheadavalanche.com/avalanche-forecast#/whitefish-range">FAC</a> for more information.</div>
@@ -127,7 +127,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, November 12, 2024 3:33PM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 5:33PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://flatheadavalanche.com/avalanche-forecast#/whitefish-range">FAC</a>
             </p>
             
@@ -143,7 +143,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="GNFAC-1911-report" class="avy-zone dn" data-published="Wednesday, November 13, 2024 11:30AM">
+        <div id="GNFAC-1911-report" class="avy-zone dn" data-published="Friday, November 15, 2024 5:01PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
@@ -152,13 +152,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, November 13, 2024 11:30AM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 5:01PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a>
             </p>
             
         </div>
         
-        <div id="GNFAC-1915-report" class="avy-zone dn" data-published="Wednesday, November 13, 2024 11:30AM">
+        <div id="GNFAC-1915-report" class="avy-zone dn" data-published="Friday, November 15, 2024 5:01PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
@@ -167,13 +167,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, November 13, 2024 11:30AM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 5:01PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a>
             </p>
             
         </div>
         
-        <div id="GNFAC-1910-report" class="avy-zone dn" data-published="Wednesday, November 13, 2024 11:30AM">
+        <div id="GNFAC-1910-report" class="avy-zone dn" data-published="Friday, November 15, 2024 5:01PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
@@ -182,13 +182,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, November 13, 2024 11:30AM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 5:01PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a>
             </p>
             
         </div>
         
-        <div id="GNFAC-1909-report" class="avy-zone dn" data-published="Wednesday, November 13, 2024 11:30AM">
+        <div id="GNFAC-1909-report" class="avy-zone dn" data-published="Friday, November 15, 2024 5:01PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
@@ -197,13 +197,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, November 13, 2024 11:30AM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 5:01PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a>
             </p>
             
         </div>
         
-        <div id="GNFAC-1912-report" class="avy-zone dn" data-published="Wednesday, November 13, 2024 11:30AM">
+        <div id="GNFAC-1912-report" class="avy-zone dn" data-published="Friday, November 15, 2024 5:01PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
@@ -212,13 +212,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, November 13, 2024 11:30AM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 5:01PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a>
             </p>
             
         </div>
         
-        <div id="GNFAC-1914-report" class="avy-zone dn" data-published="Wednesday, November 13, 2024 11:30AM">
+        <div id="GNFAC-1914-report" class="avy-zone dn" data-published="Friday, November 15, 2024 5:01PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
@@ -227,13 +227,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, November 13, 2024 11:30AM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 5:01PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a>
             </p>
             
         </div>
         
-        <div id="GNFAC-1913-report" class="avy-zone dn" data-published="Wednesday, November 13, 2024 11:30AM">
+        <div id="GNFAC-1913-report" class="avy-zone dn" data-published="Friday, November 15, 2024 5:01PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/forecast"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a> for more information.</div>
@@ -242,13 +242,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, November 13, 2024 11:30AM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 5:01PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/forecast">GNFAC</a>
             </p>
             
         </div>
         
-        <div id="IPAC-1901-report" class="avy-zone dn" data-published="Tuesday, November 12, 2024 12:20PM">
+        <div id="IPAC-1901-report" class="avy-zone dn" data-published="Friday, November 15, 2024 4:30PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/">IPAC</a> for more information.</div>
@@ -257,13 +257,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, November 12, 2024 12:20PM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 4:30PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/">IPAC</a>
             </p>
             
         </div>
         
-        <div id="IPAC-1903-report" class="avy-zone dn" data-published="Tuesday, November 12, 2024 12:20PM">
+        <div id="IPAC-1903-report" class="avy-zone dn" data-published="Friday, November 15, 2024 4:30PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/">IPAC</a> for more information.</div>
@@ -272,7 +272,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, November 12, 2024 12:20PM<br />
+                <strong>Issued at:</strong> Friday, November 15, 2024 4:30PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/">IPAC</a>
             </p>
             
@@ -405,6 +405,10 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         
         
+        <option value="/avy/id.html">Idaho</option>
+        
+        
+        
         <option value="/avy/wy.html">Wyoming</option>
         
         
@@ -418,10 +422,6 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         
         <option value="/avy/mt.html" selected="">Montana</option>
-        
-        
-        
-        <option value="/avy/id.html">Idaho</option>
         
         
         
