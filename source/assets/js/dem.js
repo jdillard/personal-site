@@ -80,7 +80,10 @@ function addLayer(filePath, color) {
         .then(data => {
             const layer = L.geoJSON(data, {
               style: {
-                color: color
+                color: "#777777", // border color
+                fillColor: color,
+                weight: 1,
+                fillOpacity: 0.4,
               },
               onEachFeature: function(feature, layer) {
                 layer.on('click', function() {
@@ -107,12 +110,12 @@ function addLayer(filePath, color) {
 function highlightLayer(filePath) {
   // Revert the previous layer to gray
   if (currentLayer && layers[currentLayer]) {
-    layers[currentLayer].setStyle({ color: "#AAAAAA" });
+    layers[currentLayer].setStyle({ fillColor: "#AAAAAA" });
   }
 
   // set the new layer to blue
   if (layers[filePath]) {
-    layers[filePath].setStyle({ color: "#357EDD" });
+    layers[filePath].setStyle({ fillColor: "#357EDD" });
     map.fitBounds(layers[filePath].getBounds());
     currentLayer = filePath;
   }
