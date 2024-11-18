@@ -49,7 +49,7 @@ module.exports = {
     index: "./source/assets/js/index.js",
     post: "./source/assets/js/post.js",
     commons: "./source/assets/js/commons.js",
-    dem: "./source/assets/js/dem.js",
+    avy: "./source/assets/js/avy.js",
     library: "./source/assets/js/library.js",
     logBook: "./source/assets/js/logBook.js",
     getInvolved: "./source/assets/js/get-involved.js",
