@@ -94,7 +94,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="MSAC-1833-report" class="avy-zone dn" data-published="Wednesday, October 09, 2024 2:27PM">
+        <div id="MSAC-1833-report" class="avy-zone dn" data-published="Monday, November 18, 2024 8:44PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.shastaavalanche.org/advisories/avalanche-advisory/#/mount-shasta"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.shastaavalanche.org/advisories/avalanche-advisory/#/mount-shasta">MSAC</a> for more information.</div>
@@ -103,7 +103,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, October 09, 2024 2:27PM<br />
+                <strong>Issued at:</strong> Monday, November 18, 2024 8:44PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.shastaavalanche.org/advisories/avalanche-advisory/#/mount-shasta">MSAC</a>
             </p>
             
