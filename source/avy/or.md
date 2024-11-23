@@ -102,7 +102,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="NWAC-1657-report" class="avy-zone dn" data-published="Wednesday, November 20, 2024 6:00PM">
+        <div id="NWAC-1657-report" class="avy-zone dn" data-published="Friday, November 22, 2024 6:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/mt-hood"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/mt-hood">NWAC</a> for more information.</div>
@@ -111,7 +111,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, November 20, 2024 6:00PM<br />
+                <strong>Issued at:</strong> Friday, November 22, 2024 6:00PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/mt-hood">NWAC</a>
             </p>
             

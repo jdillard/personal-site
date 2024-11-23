@@ -74,13 +74,18 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 <div class="flex flex-column flex-row-ns">
     <div class="ph3 w-100 w-50-ns">
         
-        <div id="BTAC-2107-report" class="avy-zone" data-published="False">
+        <div id="BTAC-2107-report" class="avy-zone" data-published="Friday, November 22, 2024 5:30PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/big-holes/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/big-holes/">BTAC</a> for more information.</div>
             
 
             
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Friday, November 22, 2024 5:30PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/big-holes/">BTAC</a>
+            </p>
             
         </div>
         
