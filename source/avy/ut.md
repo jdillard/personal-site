@@ -164,7 +164,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="UAC-1741-report" class="avy-zone dn" data-published="Monday, October 28, 2024 10:41AM">
+        <div id="UAC-1741-report" class="avy-zone dn" data-published="Monday, November 25, 2024 7:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/skyline"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/skyline">UAC</a> for more information.</div>
@@ -173,7 +173,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Monday, October 28, 2024 10:41AM<br />
+                <strong>Issued at:</strong> Monday, November 25, 2024 7:09AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/skyline">UAC</a>
             </p>
             
