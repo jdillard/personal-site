@@ -319,22 +319,20 @@ for state in states:
             tomorrow = False
             data = {}
             if state["state"] == "UT":
-                if os.path.isfile(f"avalanche-reports-raw/{slugify(zone['name'])}.json"):
-                    with open(f"avalanche-reports-raw/{slugify(zone['name'])}.json") as fp:
+                if os.path.isfile(f"tools/avy/avalanche-reports-raw/{slugify(zone['name'])}.json"):
+                    with open(f"tools/avy/avalanche-reports-raw/{slugify(zone['name'])}.json") as fp:
                         data = json.load(fp)
 
                     #TODO reduce redundant code
                     #TODO figure out what exactly [advisories] is
                     data = data["advisories"][0]["advisory"]
-                    # timezone calculations
-                    # TODO use new format (like below)
-                    from_zone = tz.gettz('UTC')
-                    timezone_str = tzwhere.tzNameAt(zone["geo"][1],zone["geo"][0])
-                    to_zone = tz.gettz(timezone_str) #TODO is timezone set correctly for UT?
-                    utc = datetime.fromtimestamp(int(data["date_issued_timestamp"]))
-                    utc = utc.replace(tzinfo=from_zone)
 
-                    published_date_time_obj = utc.astimezone(to_zone)
+                    # timezone calculations
+                    tz_name = tf.timezone_at(lat=zone["geo"][1], lng=zone["geo"][0])
+                    utc = datetime.fromtimestamp(int(data["date_issued_timestamp"]))
+                    utc = utc.replace(tzinfo=ZoneInfo('UTC'))
+
+                    published_date_time_obj = utc.astimezone(ZoneInfo(tz_name))
                     tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
 
                     published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
