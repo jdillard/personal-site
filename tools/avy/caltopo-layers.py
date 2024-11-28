@@ -61,6 +61,30 @@ def sort_directions(subset):
     return (subset_sorted[0][0],subset_sorted[-1][1], desc)
 
 
+def split_elv_bands(danger_rose):
+    chunked_list = list()
+    chunk_size = 8
+    danger_rose_int = [int(x) for x in danger_rose.split(',')]
+
+    for i in range(0, len(danger_rose_int), chunk_size):
+        chunked_list.append(danger_rose_int[i:i+chunk_size])
+
+    return chunked_list
+
+
+def find_aspect_values(list, value, aspect):
+    indices = [index for index, element in enumerate(list) if element == value]
+    aspect_values = [aspect[index] for index in indices]
+    return aspect_values
+
+
+def find_object_by_key_value(objects_list, key, value):
+    for obj in objects_list:
+        if obj.get(key) == value:
+            return obj
+    return None  # Return None if no match is found
+
+
 # calculate geo center of CA areas
 with open("tools/avy/avalanche-reports-raw/ca-areas.json") as fp:
     ca_areas = json.load(fp)
@@ -131,21 +155,17 @@ for f in os.listdir(dir):
 with open("tools/avy/avalanche-reports-raw/ca-metadata.json") as fp:
     ca_metadata = json.load(fp)
 
-def find_object_by_key_value(objects_list, key, value):
-    for obj in objects_list:
-        if obj.get(key) == value:
-            return obj
-    return None  # Return None if no match is found
 areas = []
 for product in ca_metadata:
     published = False
     tomorrow = False
     data = {}
     area = {}
+
     if os.path.isfile(f"tools/avy/avalanche-reports-raw/{product['product']['id']}.json"):
         with open(f"tools/avy/avalanche-reports-raw/{product['product']['id']}.json") as fp:
             data = json.load(fp)
-            print(product['product']['id'])
+            # print(product['product']['id'])
 
         #TODO move duplicate code as US to functions
 
@@ -281,8 +301,8 @@ for product in ca_metadata:
 content = region_template.render(
     page="Canada",
     sun_day=tomorrow,
-    zones=areas, #TODO get accurate collection
-    states=states, #TODO figure out what this is for
+    zones=areas,
+    states=states,
 )
 
 # create Canada DEM page
@@ -293,24 +313,47 @@ with open(f"source/avy/canada.md", mode="w", encoding="utf-8") as message:
 # loop through states and create DEM state pages
 for state in states:
     if state["active"]:
+        #TODO handle Utah
         for zone in state["zones"]:
             published = False
             tomorrow = False
             data = {}
-            if os.path.isfile(f"tools/avy/avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json"):
-                with open(f"tools/avy/avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json") as fp:
-                    data = json.load(fp)
+            if state["state"] == "UT":
+                if os.path.isfile(f"avalanche-reports-raw/{slugify(zone['name'])}.json"):
+                    with open(f"avalanche-reports-raw/{slugify(zone['name'])}.json") as fp:
+                        data = json.load(fp)
 
-                # timezone calculations
-                tz_name = tf.timezone_at(lat=zone["geo"][1], lng=zone["geo"][0])
-                utc = dateutil.parser.parse(data["published_time"])
-                utc = utc.replace(tzinfo=ZoneInfo('UTC'))
+                    #TODO reduce redundant code
+                    #TODO figure out what exactly [advisories] is
+                    data = data["advisories"][0]["advisory"]
+                    # timezone calculations
+                    # TODO use new format (like below)
+                    from_zone = tz.gettz('UTC')
+                    timezone_str = tzwhere.tzNameAt(zone["geo"][1],zone["geo"][0])
+                    to_zone = tz.gettz(timezone_str) #TODO is timezone set correctly for UT?
+                    utc = datetime.fromtimestamp(int(data["date_issued_timestamp"]))
+                    utc = utc.replace(tzinfo=from_zone)
 
-                published_date_time_obj = utc.astimezone(ZoneInfo(tz_name))
-                tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
+                    published_date_time_obj = utc.astimezone(to_zone)
+                    tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
 
-                published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
-                tomorrow = tomorrow_date_time_obj.strftime("%Y-%m-%d")
+                    published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+                    tomorrow = tomorrow_date_time_obj.strftime("%Y-%m-%d")
+            else:
+                if os.path.isfile(f"avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json"):
+                    with open(f"avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json") as fp:
+                        data = json.load(fp)
+
+                    # timezone calculations
+                    tz_name = tf.timezone_at(lat=zone["geo"][1], lng=zone["geo"][0])
+                    utc = dateutil.parser.parse(data["published_time"])
+                    utc = utc.replace(tzinfo=ZoneInfo('UTC'))
+
+                    published_date_time_obj = utc.astimezone(ZoneInfo(tz_name))
+                    tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
+
+                    published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+                    tomorrow = tomorrow_date_time_obj.strftime("%Y-%m-%d")
 
             # use zone elevation profile if exists, else use the state level elevation profile
             zone["elevations"] = state["elevations"].get(zone["zone_id"], state["elevations"].get(0))
@@ -319,97 +362,241 @@ for state in states:
             danger_rules = []
             danger_layer = ""
             zone_color = 0
-            if data and data["danger"] and (data["danger"][0]["lower"] or data["danger"][0]["middle"] or data["danger"][0]["upper"]) and zone["elevations"]:
-                #TODO clean up handling of nulls
-                if data["danger"][0]["lower"] is None:
-                    data["danger"][0]["lower"] = 0
-                if data["danger"][0]["middle"] is None:
-                    data["danger"][0]["middle"] = 0
-                if data["danger"][0]["upper"] is None:
-                    data["danger"][0]["upper"] = 0
-                lower = f'a0-0e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {danger_levels.get(data["danger"][0]["lower"])["color"]}'
-                middle = f'a0-0e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {danger_levels.get(data["danger"][0]["middle"])["color"]}'
-                upper = f'a0-0e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {danger_levels.get(data["danger"][0]["upper"])["color"]}'
-                danger_rules.append({
-                    "layer": lower,
-                    "desc": f"{danger_levels.get(data['danger'][0]['lower'])['desc']} (below {zone['elevations'].get('lower')[1]}')",
-                    "color": f"#{danger_levels.get(data['danger'][0]['lower'])['color']}"
-                })
-                danger_rules.append({
-                    "layer": middle,
-                    "desc": f"{danger_levels.get(data['danger'][0]['middle'])['desc']} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
-                    "color": f"#{danger_levels.get(data['danger'][0]['middle'])['color']}"
-                })
-                # only show (above x') if == 20310
-                if zone['elevations'].get('upper')[1] == 20310:
-                    elv_range = f"above {zone['elevations'].get('upper')[0]}'"
-                else:
-                    elv_range =  f"{zone['elevations'].get('upper')[0]}' to {zone['elevations'].get('upper')[1]}'"
-                danger_rules.append({
-                    "layer": upper,
-                    "desc": f"{danger_levels.get(data['danger'][0]['upper'])['desc']} ({elv_range})",
-                    "color": f"#{danger_levels.get(data['danger'][0]['upper'])['color']}"
-                })
-                danger_layer = f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in danger_rules)}"
-                zone_color = max(data["danger"][0]["lower"], data["danger"][0]["middle"], data["danger"][0]["upper"])
+            if state["state"] == "UT":
+                # Each element of the rose array corresponds to a position on the rose,
+                # starting from the highest elevation, northern aspect and proceeds clockwise.
+                # The first position of the array, array[0] is the inner-most (highest) elevation segment on the N aspect.
+                # The next position, array[1] is NE and so on.
+                # Ex. the position for S aspect at the lowest elevation is array[20].
+                # https://utahavalanchecenter.org/docs/api/forecast
+
+                if data and data["overall_danger_rating"] != "None" and zone["elevations"]:
+                    #TODO make a layer for each color at each elevation band
+                    chunked_list = split_elv_bands(data["overall_danger_rose"])
+
+                    for index, chunk in enumerate(chunked_list):
+                        multi_layers = [False, False, False]
+                        danger_index = f"utah{chunk[0]}"
+                        are_all_same = all(x == chunk[0] for x in chunk)
+
+                        if are_all_same:
+                            # single color
+                            if index == 0:
+                                lower = f'a0-0e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {danger_levels.get(danger_index)["color"]}'
+                            elif index == 1:
+                                middle = f'a0-0e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {danger_levels.get(danger_index)["color"]}'
+                            else:
+                                upper = f'a0-0e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {danger_levels.get(danger_index)["color"]}'
+                        else:
+                            # multi color
+
+                            #TODO add support for multi-color-boxes ([]/[]/[])
+                            #TODO instead of using danger_index, figure out danger_indexes (multiple per chunk)
+                            #TODO split chunk into different colors
+                            #TODO needs rose array calculator
+
+                            multi_layers[index] = True
+                            if index == 0:
+                                lower = f'a0-0e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {danger_levels.get(danger_index)["color"]}'
+                            if index == 1:
+                                middle = f'a0-0e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {danger_levels.get(danger_index)["color"]}'
+                            else:
+                                upper = f'a0-0e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {danger_levels.get(danger_index)["color"]}'
+
+                    danger_index = f"utah{chunked_list[0][0]}" #TODO turn this section into a loop?
+                    if multi_layers[0]:
+                        #TODO multi-layer
+                        danger_rules.append({
+                            "layer": lower,
+                            "desc": f"{danger_levels.get(danger_index)['desc']} (below {zone['elevations'].get('lower')[1]}')",
+                            "color": f"#{danger_levels.get(danger_index)['color']}"
+                        })
+                    else:
+                        danger_index = f"utah{chunked_list[0][0]}"
+                        danger_rules.append({
+                            "layer": lower,
+                            "desc": f"{danger_levels.get(danger_index)['desc']} (below {zone['elevations'].get('lower')[1]}')",
+                            "color": f"#{danger_levels.get(danger_index)['color']}"
+                        })
+
+                    danger_index = f"utah{chunked_list[1][0]}"
+                    if multi_layers[1]:
+                        #TODO multi-layer
+                        danger_rules.append({
+                            "layer": middle,
+                            "desc": f"{danger_levels.get(danger_index)['desc']} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
+                            "color": f"#{danger_levels.get(danger_index)['color']}"
+                        })
+                    else:
+                        danger_rules.append({
+                            "layer": middle,
+                            "desc": f"{danger_levels.get(danger_index)['desc']} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
+                            "color": f"#{danger_levels.get(danger_index)['color']}"
+                        })
+
+                    # only show (above x') if == 20310
+                    if zone['elevations'].get('upper')[1] == 20310:
+                        elv_range = f"above {zone['elevations'].get('upper')[0]}'"
+                    else:
+                        elv_range =  f"{zone['elevations'].get('upper')[0]}' to {zone['elevations'].get('upper')[1]}'"
+
+                    danger_index = f"utah{chunked_list[2][0]}"
+                    if multi_layers[1]:
+                        #TODO multi-layer
+                        danger_rules.append({
+                            "layer": upper,
+                            "desc": f"{danger_levels.get(danger_index)['desc']} ({elv_range})",
+                            "color": f"#{danger_levels.get(danger_index)['color']}"
+                        })
+                    else:
+                        danger_rules.append({
+                            "layer": upper,
+                            "desc": f"{danger_levels.get(danger_index)['desc']} ({elv_range})",
+                            "color": f"#{danger_levels.get(danger_index)['color']}"
+                        })
+                    danger_layer = f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in danger_rules)}"
+                    #TODO figure out what to do for multi-layers
+                    zone_color = f'utah{max(chunked_list[0][0], chunked_list[1][0], chunked_list[2][0])}'
+            else:
+                if data and data["danger"] and (data["danger"][0]["lower"] or data["danger"][0]["middle"] or data["danger"][0]["upper"]) and zone["elevations"]:
+                    #TODO clean up handling of nulls
+                    if data["danger"][0]["lower"] is None:
+                        data["danger"][0]["lower"] = 0
+                    if data["danger"][0]["middle"] is None:
+                        data["danger"][0]["middle"] = 0
+                    if data["danger"][0]["upper"] is None:
+                        data["danger"][0]["upper"] = 0
+                    lower = f'a0-0e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {danger_levels.get(data["danger"][0]["lower"])["color"]}'
+                    middle = f'a0-0e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {danger_levels.get(data["danger"][0]["middle"])["color"]}'
+                    upper = f'a0-0e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {danger_levels.get(data["danger"][0]["upper"])["color"]}'
+                    danger_rules.append({
+                        "layer": lower,
+                        "desc": f"{danger_levels.get(data['danger'][0]['lower'])['desc']} (below {zone['elevations'].get('lower')[1]}')",
+                        "color": f"#{danger_levels.get(data['danger'][0]['lower'])['color']}"
+                    })
+                    danger_rules.append({
+                        "layer": middle,
+                        "desc": f"{danger_levels.get(data['danger'][0]['middle'])['desc']} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
+                        "color": f"#{danger_levels.get(data['danger'][0]['middle'])['color']}"
+                    })
+                    # only show (above x') if == 20310
+                    if zone['elevations'].get('upper')[1] == 20310:
+                        elv_range = f"above {zone['elevations'].get('upper')[0]}'"
+                    else:
+                        elv_range =  f"{zone['elevations'].get('upper')[0]}' to {zone['elevations'].get('upper')[1]}'"
+                    danger_rules.append({
+                        "layer": upper,
+                        "desc": f"{danger_levels.get(data['danger'][0]['upper'])['desc']} ({elv_range})",
+                        "color": f"#{danger_levels.get(data['danger'][0]['upper'])['color']}"
+                    })
+                    danger_layer = f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in danger_rules)}"
+                    zone_color = max(data["danger"][0]["lower"], data["danger"][0]["middle"], data["danger"][0]["upper"])
 
             # avy problems
             problems = []
-            if data and zone["elevations"]:
-                for i, problem in enumerate(data["forecast_avalanche_problems"]):
-                    lower = []
-                    middle = []
-                    upper = []
+            if state["state"] == "UT":
+                for i in range(3):
+                    if f"avalanche_problem_{i}" in data:
+                        problem_rose = []
+                        rules = []
 
-                    for direction in problem["location"]:
-                        # split to upper/middle/lower
-                        if direction.split()[1] == "lower":
-                                lower.append(aspect[direction.split()[0]])
-                        elif direction.split()[1] == "middle":
-                                middle.append(aspect[direction.split()[0]])
-                        elif direction.split()[1] == "upper":
-                                upper.append(aspect[direction.split()[0]])
+                        chunked_list = split_elv_bands(data[f"danger_rose_{i}"])
+                        problem_name = data[f"avalanche_problem_{i}"]
+                        for index, chunk in enumerate(chunked_list):
+                            chunk_rose = find_aspect_values(chunk, 16, aspect)
+                            if chunk_rose:
+                                start, end, desc = sort_directions(chunk_rose)
+                                if index == 2:
+                                    layer = f'a{start}-{end}e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {problem_color.get(i)}'
+                                    rules.append({
+                                        "layer": layer,
+                                        "desc": f"{desc} (below {zone['elevations'].get('lower')[1]}')",
+                                        "color": f"#{problem_color.get(i)}",
+                                    })
+                                elif index == 1:
+                                    layer = f'a{start}-{end}e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {problem_color.get(i)}'
+                                    rules.append({
+                                        "layer": layer,
+                                        "desc": f"{desc} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
+                                        "color": f"#{problem_color.get(i)}",
+                                    })
+                                else:
+                                    layer = f'a{start}-{end}e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {problem_color.get(i)}'
+                                    # only show (above x') if == 20310
+                                    if zone['elevations'].get('upper')[1] == 20310:
+                                        elv_range = f"above {zone['elevations'].get('upper')[0]}'"
+                                    else:
+                                        elv_range = f"{zone['elevations'].get('upper')[0]}' to {zone['elevations'].get('upper')[1]}'"
+                                    rules.append({
+                                        "layer": layer,
+                                        "desc": f"{desc} ({elv_range})",
+                                        "color": f"#{problem_color.get(i)}",
+                                    })
 
-                    # calculate start and stop
-                    rules = []
-                    if lower:
-                        start, end, desc = sort_directions(lower)
-                        lower_layer = f'a{start}-{end}e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {problem_color.get(i)}'
-                        rules.append({
-                            "layer": lower_layer,
-                            "desc": f"{desc} (below {zone['elevations'].get('lower')[1]}')",
+                        problems.append({
+                            "name": f"{tomorrow} {problem_name}",
+                            "desc": f"Problem #{i+1}",
                             "color": f"#{problem_color.get(i)}",
+                            "rules": rules,
+                            "layers": f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in rules)}",
+                            "uuid": str(uuid.uuid4()),
                         })
-                    if middle:
-                        start, end, desc = sort_directions(middle)
-                        middle_layer = f'a{start}-{end}e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {problem_color.get(i)}'
-                        rules.append({
-                            "layer": middle_layer,
-                            "desc": f"{desc} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
-                            "color": f"#{problem_color.get(i)}",
-                        })
-                    if upper:
-                        start, end, desc = sort_directions(upper)
-                        upper_layer = f'a{start}-{end}e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {problem_color.get(i)}'
-                        # only show (above x') if == 20310
-                        if zone['elevations'].get('upper')[1] == 20310:
-                            elv_range = f"above {zone['elevations'].get('upper')[0]}'"
-                        else:
-                            elv_range = f"{zone['elevations'].get('upper')[0]}' to {zone['elevations'].get('upper')[1]}'"
-                        rules.append({
-                            "layer": upper_layer,
-                            "desc": f"{desc} ({elv_range})",
-                            "color": f"#{problem_color.get(i)}",
-                        })
+            else:
+                if data and zone["elevations"]:
+                    for i, problem in enumerate(data["forecast_avalanche_problems"]):
+                        lower = []
+                        middle = []
+                        upper = []
 
-                    problems.append({
-                        "name": f"{tomorrow} {problem['name']}",
-                        "desc": f"Problem #{i+1}",
-                        "color": f"#{problem_color.get(i)}",
-                        "rules": rules,
-                        "layers": f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in rules)}",
-                        "uuid": str(uuid.uuid4()),
-                    })
+                        for direction in problem["location"]:
+                            # split to upper/middle/lower
+                            if direction.split()[1] == "lower":
+                                    lower.append(aspect[direction.split()[0]])
+                            elif direction.split()[1] == "middle":
+                                    middle.append(aspect[direction.split()[0]])
+                            elif direction.split()[1] == "upper":
+                                    upper.append(aspect[direction.split()[0]])
+
+                        # calculate start and stop
+                        rules = []
+                        if lower:
+                            start, end, desc = sort_directions(lower)
+                            lower_layer = f'a{start}-{end}e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {problem_color.get(i)}'
+                            rules.append({
+                                "layer": lower_layer,
+                                "desc": f"{desc} (below {zone['elevations'].get('lower')[1]}')",
+                                "color": f"#{problem_color.get(i)}",
+                            })
+                        if middle:
+                            start, end, desc = sort_directions(middle)
+                            middle_layer = f'a{start}-{end}e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {problem_color.get(i)}'
+                            rules.append({
+                                "layer": middle_layer,
+                                "desc": f"{desc} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
+                                "color": f"#{problem_color.get(i)}",
+                            })
+                        if upper:
+                            start, end, desc = sort_directions(upper)
+                            upper_layer = f'a{start}-{end}e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {problem_color.get(i)}'
+                            # only show (above x') if == 20310
+                            if zone['elevations'].get('upper')[1] == 20310:
+                                elv_range = f"above {zone['elevations'].get('upper')[0]}'"
+                            else:
+                                elv_range = f"{zone['elevations'].get('upper')[0]}' to {zone['elevations'].get('upper')[1]}'"
+                            rules.append({
+                                "layer": upper_layer,
+                                "desc": f"{desc} ({elv_range})",
+                                "color": f"#{problem_color.get(i)}",
+                            })
+
+                        problems.append({
+                            "name": f"{tomorrow} {problem['name']}",
+                            "desc": f"Problem #{i+1}",
+                            "color": f"#{problem_color.get(i)}",
+                            "rules": rules,
+                            "layers": f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in rules)}",
+                            "uuid": str(uuid.uuid4()),
+                        })
 
             zone["published"] = published
             zone["danger"] = danger_rules
@@ -427,7 +614,7 @@ for state in states:
                 zone["message"] = ""
             else:
                 zone["layers"] = f"cl={urllib.parse.quote(layer_info)}"
-                if data and data["danger"]:
+                if data and (("danger" in data and data["danger"]) or ("overall_danger_rating" in data and data["overall_danger_rating"] != "None")):
                     if state["elevations"]:
                         zone["message"] = f'Report not available. See <a class="no-underline fancy-link relative light-red" href="{zone["url"]}">{zone["center_id"]}</a> for more information.'
                     else:
@@ -448,7 +635,6 @@ for state in states:
                 print(f"... wrote source{state['page']}.md")
 
 # create index DEM page
-#TODO add Canada
 with open('source/avy/index.md', mode="w", encoding="utf-8") as message:
         message.write(index_template.render(states=sorted(states, key=lambda d: d['name']), areas=areas))
         print(f"... wrote source/avy/index.md")

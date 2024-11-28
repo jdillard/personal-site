@@ -11,6 +11,14 @@ aspect = {
     "southwest": (203, 248),
     "west": (248, 293),
     "northwest": (293, 339),
+    0: (339, 23),
+    1: (23, 68),
+    2: (68, 113),
+    3: (113, 158),
+    4: (158, 203),
+    5: (203, 248),
+    6: (248, 293),
+    7: (293, 339),
 }
 
 # abbreviation for each cardinal direction
@@ -43,6 +51,17 @@ danger_levels = {
     3: {"scale": 3, "color": "f7941e", "desc": "Considerable danger"},
     4: {"scale": 4, "color": "ed1c24", "desc": "High danger"},
     5: {"scale": 5, "color": "231f20", "desc": "Extreme danger"},
+    "utah0" : {"scale": 0, "color": "939598", "shortdesc": "No", "desc": "No rating"},
+    "utah1" : {"scale": 1, "color": "50b848", "shortdesc": "Low", "desc": "Low danger"},
+    "utah2" : {"scale": 1, "color": "50b848", "shortdesc": "Low", "desc": "Low danger"},
+    "utah3" : {"scale": 2, "color": "fff200", "shortdesc": "Moderate", "desc": "Moderate danger"},
+    "utah4" : {"scale": 2, "color": "fff200", "shortdesc": "Moderate", "desc": "Moderate danger"},
+    "utah5" : {"scale": 3, "color": "f7941e", "shortdesc": "Considerable", "desc": "Considerable danger"},
+    "utah6" : {"scale": 3, "color": "f7941e", "shortdesc": "Considerable", "desc": "Considerable danger"},
+    "utah7" : {"scale": 4, "color": "ed1c24", "shortdesc": "High", "desc": "High danger"},
+    "utah8" : {"scale": 4, "color": "ed1c24", "shortdesc": "High", "desc": "High danger"},
+    "utah9" : {"scale": 5, "color": "231f20", "shortdesc": "Extreme", "desc": "Extreme danger"},
+    "utah10" : {"scale": 5, "color": "231f20", "shortdesc": "Extreme", "desc": "Extreme danger"},
 }
 
 #TODO use danger_levels instead
