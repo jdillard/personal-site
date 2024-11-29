@@ -338,8 +338,8 @@ for state in states:
                     published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
                     tomorrow = tomorrow_date_time_obj.strftime("%Y-%m-%d")
             else:
-                if os.path.isfile(f"avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json"):
-                    with open(f"avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json") as fp:
+                if os.path.isfile(f"tools/avy/avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json"):
+                    with open(f"tools/avy/avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json") as fp:
                         data = json.load(fp)
 
                     # timezone calculations
@@ -407,14 +407,14 @@ for state in states:
                         danger_rules.append({
                             "layer": lower,
                             "desc": f"{danger_levels.get(danger_index)['desc']} (below {zone['elevations'].get('lower')[1]}')",
-                            "color": f"#{danger_levels.get(danger_index)['color']}"
+                            "colors": [f"#{danger_levels.get(danger_index)['color']}"]
                         })
                     else:
                         danger_index = f"utah{chunked_list[0][0]}"
                         danger_rules.append({
                             "layer": lower,
                             "desc": f"{danger_levels.get(danger_index)['desc']} (below {zone['elevations'].get('lower')[1]}')",
-                            "color": f"#{danger_levels.get(danger_index)['color']}"
+                            "colors": [f"#{danger_levels.get(danger_index)['color']}"]
                         })
 
                     danger_index = f"utah{chunked_list[1][0]}"
@@ -423,13 +423,13 @@ for state in states:
                         danger_rules.append({
                             "layer": middle,
                             "desc": f"{danger_levels.get(danger_index)['desc']} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
-                            "color": f"#{danger_levels.get(danger_index)['color']}"
+                            "colors": [f"#{danger_levels.get(danger_index)['color']}"]
                         })
                     else:
                         danger_rules.append({
                             "layer": middle,
                             "desc": f"{danger_levels.get(danger_index)['desc']} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
-                            "color": f"#{danger_levels.get(danger_index)['color']}"
+                            "colors": [f"#{danger_levels.get(danger_index)['color']}"]
                         })
 
                     # only show (above x') if == 20310
@@ -444,13 +444,13 @@ for state in states:
                         danger_rules.append({
                             "layer": upper,
                             "desc": f"{danger_levels.get(danger_index)['desc']} ({elv_range})",
-                            "color": f"#{danger_levels.get(danger_index)['color']}"
+                            "colors": [f"#{danger_levels.get(danger_index)['color']}"]
                         })
                     else:
                         danger_rules.append({
                             "layer": upper,
                             "desc": f"{danger_levels.get(danger_index)['desc']} ({elv_range})",
-                            "color": f"#{danger_levels.get(danger_index)['color']}"
+                            "colors": [f"#{danger_levels.get(danger_index)['color']}"]
                         })
                     danger_layer = f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in danger_rules)}"
                     #TODO figure out what to do for multi-layers
@@ -470,12 +470,12 @@ for state in states:
                     danger_rules.append({
                         "layer": lower,
                         "desc": f"{danger_levels.get(data['danger'][0]['lower'])['desc']} (below {zone['elevations'].get('lower')[1]}')",
-                        "color": f"#{danger_levels.get(data['danger'][0]['lower'])['color']}"
+                        "colors": [f"#{danger_levels.get(data['danger'][0]['lower'])['color']}"]
                     })
                     danger_rules.append({
                         "layer": middle,
                         "desc": f"{danger_levels.get(data['danger'][0]['middle'])['desc']} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
-                        "color": f"#{danger_levels.get(data['danger'][0]['middle'])['color']}"
+                        "colors": [f"#{danger_levels.get(data['danger'][0]['middle'])['color']}"]
                     })
                     # only show (above x') if == 20310
                     if zone['elevations'].get('upper')[1] == 20310:
@@ -485,7 +485,7 @@ for state in states:
                     danger_rules.append({
                         "layer": upper,
                         "desc": f"{danger_levels.get(data['danger'][0]['upper'])['desc']} ({elv_range})",
-                        "color": f"#{danger_levels.get(data['danger'][0]['upper'])['color']}"
+                        "colors": [f"#{danger_levels.get(data['danger'][0]['upper'])['color']}"]
                     })
                     danger_layer = f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in danger_rules)}"
                     zone_color = max(data["danger"][0]["lower"], data["danger"][0]["middle"], data["danger"][0]["upper"])

@@ -72,7 +72,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7">
                     {% for rule in zone.danger|reverse %}
-                        <li class="pv1"><div style="clear: both;background-color: {{ rule.color }}" class="fl mr2 h1 w1"></div> {{ rule.desc }}</li>
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            {% for color in rule.colors %}
+                                data-color{{ loop.index }}="{{ color }}"
+                            {% endfor %}
+                            ></div> {{ rule.desc }}
+                        </li>
                     {% endfor %}
                     </ul>
                 </dd>
