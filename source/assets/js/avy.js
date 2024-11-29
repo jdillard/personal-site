@@ -65,6 +65,34 @@ window.outFunc = function(tooltip) {
   tooltip.innerHTML = "Copy ruleset";
 }
 
+// style danger layer colors
+document.querySelectorAll('.dynamic-color').forEach(el => {
+  const color1 = el.getAttribute('data-color1');
+  const color2 = el.getAttribute('data-color2');
+  const color3 = el.getAttribute('data-color3');
+
+  if (color1 && color2 && color3) {
+      el.style.background = `
+          linear-gradient(
+              to bottom right,
+              ${color1} 33%,
+              ${color2} 33% 66%,
+              ${color3} 66%
+          )
+      `;
+  } else if (color1 && color2) {
+      el.style.background = `
+          linear-gradient(
+              to bottom right,
+              ${color1} 50%,
+              ${color2} 50%
+          )
+      `;
+  } else {
+      el.style.background = color1;
+  }
+});
+
 // Initialize the map
 var map = L.map('map').setView([51.505, -0.09], 13);
 
