@@ -72,6 +72,7 @@ def split_elv_bands(danger_rose):
     return chunked_list
 
 
+#TODO better variable names
 def find_aspect_values(list, value, aspect):
     indices = [index for index, element in enumerate(list) if element == value]
     aspect_values = [aspect[index] for index in indices]
@@ -386,35 +387,46 @@ for state in states:
                             danger_index = f"utah{chunk[0]}"
                             layer_colors = [f"#{danger_levels.get(danger_index)['color']}"]
                             if index == 0:
-                                layer_rules = f'a0-0e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {danger_levels.get(danger_index)["color"]}'
+                                layer_rules = [f'a0-0e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {danger_levels.get(danger_index)["color"]}']
                                 layer_desc = f"{danger_levels.get(danger_index)['desc']} (below {zone['elevations'].get('lower')[1]}')"
                             elif index == 1:
-                                layer_rules = f'a0-0e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {danger_levels.get(danger_index)["color"]}'
+                                layer_rules = [f'a0-0e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {danger_levels.get(danger_index)["color"]}']
                                 layer_desc = f"{danger_levels.get(danger_index)['desc']} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')"
                             else:
-                                layer_rules = f'a0-0e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {danger_levels.get(danger_index)["color"]}'
+                                layer_rules = [f'a0-0e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {danger_levels.get(danger_index)["color"]}']
                                 layer_desc = f"{danger_levels.get(danger_index)['desc']} ({elv_range})"
                         else: # multi color danger rose
                             layer_color_indexes = sorted(set(chunk))
                             min_danger_index = f"utah{layer_color_indexes[0]}"
                             max_danger_index = f"utah{layer_color_indexes[-1]}"
                             layer_colors = []
+                            layer_rules = []
                             for color in layer_color_indexes:
                                 layer_colors.append(f"#{danger_levels.get(f"utah{color}")['color']}")
 
-                            #TODO make a layer rule for each color at each elevation band (layer_rules = [])
-                            #       - make compatible with danger_layer below (should make that support layer_rules = [] first)
-                            #       - needs rose array calculator to determine aspects of each color
-                            #       - instead of using danger_index, figure out danger_indexes (multiple per chunk)
-                            danger_index = f"utah{chunk[0]}"
                             if index == 0:
-                                layer_rules = f'a0-0e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {danger_levels.get(danger_index)["color"]}'
+                                # split chunk per color to calculate aspect values for each
+                                for danger_index in layer_color_indexes:
+                                    split_list = [danger_index if item == danger_index else 0 for item in chunk]
+                                    chunk_rose = find_aspect_values(chunk, danger_index, aspect)
+                                    start, end, desc = sort_directions(chunk_rose)
+                                    layer_rules.append(f'a{start}-{end}e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {danger_levels.get(f"utah{danger_index}")["color"]}')
                                 layer_desc = f"{danger_levels.get(min_danger_index)['shortdesc']} to {danger_levels.get(max_danger_index)['shortdesc']} danger (below {zone['elevations'].get('lower')[1]}')"
                             if index == 1:
-                                layer_rules = f'a0-0e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {danger_levels.get(danger_index)["color"]}'
+                                # split chunk per color to calculate aspect values for each
+                                for danger_index in layer_color_indexes:
+                                    split_list = [danger_index if item == danger_index else 0 for item in chunk]
+                                    chunk_rose = find_aspect_values(chunk, danger_index, aspect)
+                                    start, end, desc = sort_directions(chunk_rose)
+                                    layer_rules.append(f'a{start}-{end}e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {danger_levels.get(f"utah{danger_index}")["color"]}')
                                 layer_desc = f"{danger_levels.get(min_danger_index)['shortdesc']} to {danger_levels.get(max_danger_index)['shortdesc']} danger ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')"
                             else:
-                                layer_rules = f'a0-0e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {danger_levels.get(danger_index)["color"]}'
+                                # split chunk per color to calculate aspect values for each
+                                for danger_index in layer_color_indexes:
+                                    split_list = [danger_index if item == danger_index else 0 for item in chunk]
+                                    chunk_rose = find_aspect_values(chunk, danger_index, aspect)
+                                    start, end, desc = sort_directions(chunk_rose)
+                                    layer_rules.append(f'a{start}-{end}e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {danger_levels.get(f"utah{danger_index}")["color"]}')
                                 layer_desc = f"{danger_levels.get(min_danger_index)['shortdesc']} to {danger_levels.get(max_danger_index)['shortdesc']} danger ({elv_range})"
 
                         danger_rules.append({
@@ -423,7 +435,7 @@ for state in states:
                             "colors": layer_colors
                         })
 
-                    danger_layer = f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in danger_rules)}" #TODO figure out what to do for multi-layers (multiple layer_rules)
+                    danger_layer = f"sc_{'p'.join('p'.join(layer.replace(' ', 'c') for layer in x['layer']) for x in danger_rules)}"
                     #TODO figure out what to do for multi-layers
                     zone_color = f'utah{max(chunked_list[0][0], chunked_list[1][0], chunked_list[2][0])}'
             else:
