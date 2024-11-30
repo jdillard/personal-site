@@ -395,7 +395,6 @@ for state in states:
                                 layer_rules = f'a0-0e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {danger_levels.get(danger_index)["color"]}'
                                 layer_desc = f"{danger_levels.get(danger_index)['desc']} ({elv_range})"
                         else: # multi color danger rose
-                            #TODO split chunk into different colors (not sure what this is for anymore...)
                             layer_color_indexes = sorted(set(chunk))
                             min_danger_index = f"utah{layer_color_indexes[0]}"
                             max_danger_index = f"utah{layer_color_indexes[-1]}"
