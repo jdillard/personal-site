@@ -75,9 +75,9 @@ document.querySelectorAll('.dynamic-color').forEach(el => {
       el.style.background = `
           linear-gradient(
               to bottom right,
-              ${color1} 33%,
-              ${color2} 33% 66%,
-              ${color3} 66%
+              ${color1} 35%,
+              ${color2} 35% 64%,
+              ${color3} 64%
           )
       `;
   } else if (color1 && color2) {
