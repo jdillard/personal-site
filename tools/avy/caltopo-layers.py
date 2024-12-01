@@ -412,7 +412,7 @@ for state in states:
                                     start, end, desc = sort_directions(chunk_rose)
                                     layer_rules.append(f'a{start}-{end}e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {danger_levels.get(f"utah{danger_index}")["color"]}')
                                 layer_desc = f"{danger_levels.get(min_danger_index)['shortdesc']} to {danger_levels.get(max_danger_index)['shortdesc']} danger (below {zone['elevations'].get('lower')[1]}')"
-                            if index == 1:
+                            elif index == 1:
                                 # split chunk per color to calculate aspect values for each
                                 for danger_index in layer_color_indexes:
                                     split_list = [danger_index if item == danger_index else 0 for item in chunk]
