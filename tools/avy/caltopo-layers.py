@@ -434,8 +434,7 @@ for state in states:
                         })
 
                     danger_layer = f"sc_{'p'.join('p'.join(layer.replace(' ', 'c') for layer in x['layer']) for x in danger_rules)}"
-                    #TODO figure out what to do for multi-layers
-                    zone_color = f'utah{max(chunked_list[0][0], chunked_list[1][0], chunked_list[2][0])}'
+                    zone_color = f"utah{max(max(sublist) for sublist in chunked_list)}"
             else:
                 if data and data["danger"] and (data["danger"][0]["lower"] or data["danger"][0]["middle"] or data["danger"][0]["upper"]) and zone["elevations"]:
                     #TODO clean up handling of nulls
