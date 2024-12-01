@@ -3,6 +3,7 @@ import os
 import time
 import requests
 from requests.exceptions import HTTPError
+from slugify import slugify
 
 def prep_dir(dir):
     # create directory if it doesn't exist
@@ -172,17 +173,32 @@ with open(f"{source_dir}/map-layer.json") as fp:
 
 # loop through each US zone and download it's report if it exists
 for item in map_layer["features"]:
-    time.sleep(1.5)
+    time.sleep(1)
     center_id = item['properties']['center_id']
     zone_id = item['id']
-    print(center_id, zone_id)
-    try:
-        response = requests.get(f'https://api.avalanche.org/v2/public/product?type=forecast&center_id={center_id}&zone_id={zone_id}')
-        response.raise_for_status()
-        jsonResponse = response.json()
-        with open(f'{source_dir}/{center_id}-{zone_id}.json','w') as out:
-            out.write(json.dumps(jsonResponse))
-    except HTTPError as http_err:
-        print(f'HTTP error occurred: {http_err}')
-    except Exception as err:
-        print(f'Other error occurred: {err}')
+
+    if item['properties']['state'] == "UT":
+        zone_name = slugify(item['properties']['name'])
+        print(zone_name)
+        try:
+            response = requests.get(f'https://utahavalanchecenter.org/forecast/{zone_name}/json')
+            response.raise_for_status()
+            jsonResponse = response.json()
+            with open(f'{source_dir}/{zone_name}.json','w') as out:
+                out.write(json.dumps(jsonResponse))
+        except HTTPError as http_err:
+            print(f'HTTP error occurred: {http_err}')
+        except Exception as err:
+            print(f'Other error occurred: {err}')
+    else:
+        print(center_id, zone_id)
+        try:
+            response = requests.get(f'https://api.avalanche.org/v2/public/product?type=forecast&center_id={center_id}&zone_id={zone_id}')
+            response.raise_for_status()
+            jsonResponse = response.json()
+            with open(f'{source_dir}/{center_id}-{zone_id}.json','w') as out:
+                out.write(json.dumps(jsonResponse))
+        except HTTPError as http_err:
+            print(f'HTTP error occurred: {http_err}')
+        except Exception as err:
+            print(f'Other error occurred: {err}')
