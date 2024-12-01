@@ -105,9 +105,9 @@
   name: "Utah"
   elevations:
     0: #TODO fix elevations
-      lower: [0, 4000]
-      middle: [4001, 5000]
-      upper: [5001, 20310]
+      lower: [0, 7000]
+      middle: [7001, 9000]
+      upper: [9001, 20310]
   active: true
 
 - abbr: "WA"
