@@ -51,6 +51,10 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             <option value="COAA-1619" selected="">Central Cascades</option>
             
+            <option value="COAA-1619" >Central Cascades</option>
+            
+            <option value="COAA-1620" >Newberry</option>
+            
             <option value="COAA-1620" >Newberry</option>
             
             <option value="NWAC-1657" >Mt Hood</option>
@@ -72,22 +76,75 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 <div class="flex flex-column flex-row-ns">
     <div class="ph3 w-100 w-50-ns">
         
-        <div id="COAA-1619-report" class="avy-zone" data-published="Tuesday, November 19, 2024 12:38PM">
+        <div id="COAA-1619-report" class="avy-zone" data-published="Saturday, November 30, 2024 7:04PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.coavalanche.org/forecasts/#/central-cascades"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.coavalanche.org/forecasts/#/central-cascades">COAA</a> for more information.</div>
+            <div id="COAA-1619-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=44.16219135119608,-121.76091711919292&z=10&b=mbt&a=sc_a0-0e0-4000fc50b848pa0-0e4001-5000fc50b848pa0-0e5001-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-01%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4000fc50b848pa0-0e4001-5000fc50b848pa0-0e5001-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2024-11-27 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e5001-20310f 50b848&#10;a0-0e4001-5000f 50b848&#10;a0-0e0-4000f 50b848" onclick="clickFunc(this, 'danger-tooltip-1619'); return false;" onmouseout="outFunc('danger-tooltip-1619')" href="#"><span class="tooltiptext" id="danger-tooltip-1619">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1"><div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div> Low danger (above 5001')</li>
+                    
+                        <li class="pv1"><div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div> Low danger (4001' to 5000')</li>
+                    
+                        <li class="pv1"><div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div> Low danger (below 4000')</li>
+                    
+                    </ul>
+                </dd>
+            </dl>
             
 
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, November 19, 2024 12:38PM<br />
+                <strong>Issued at:</strong> Saturday, November 30, 2024 7:04PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.coavalanche.org/forecasts/#/central-cascades">COAA</a>
             </p>
             
         </div>
         
-        <div id="COAA-1620-report" class="avy-zone dn" data-published="Tuesday, November 19, 2024 12:38PM">
+        <div id="COAA-1619-report" class="avy-zone dn" data-published="Saturday, November 30, 2024 7:04PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.coavalanche.org/forecasts/#/central-cascades"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="COAA-1619-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=44.16219135119608,-121.76091711919292&z=10&b=mbt&a=sc_a0-0e0-4000fc50b848pa0-0e4001-5000fc50b848pa0-0e5001-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-01%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4000fc50b848pa0-0e4001-5000fc50b848pa0-0e5001-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2024-11-27 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e5001-20310f 50b848&#10;a0-0e4001-5000f 50b848&#10;a0-0e0-4000f 50b848" onclick="clickFunc(this, 'danger-tooltip-1619'); return false;" onmouseout="outFunc('danger-tooltip-1619')" href="#"><span class="tooltiptext" id="danger-tooltip-1619">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1"><div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div> Low danger (above 5001')</li>
+                    
+                        <li class="pv1"><div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div> Low danger (4001' to 5000')</li>
+                    
+                        <li class="pv1"><div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div> Low danger (below 4000')</li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, November 30, 2024 7:04PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.coavalanche.org/forecasts/#/central-cascades">COAA</a>
+            </p>
+            
+        </div>
+        
+        <div id="COAA-1620-report" class="avy-zone dn" data-published="Saturday, November 30, 2024 8:17PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.coavalanche.org/forecasts/#/newberry"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.coavalanche.org/forecasts/#/newberry">COAA</a> for more information.</div>
@@ -96,7 +153,22 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, November 19, 2024 12:38PM<br />
+                <strong>Issued at:</strong> Saturday, November 30, 2024 8:17PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.coavalanche.org/forecasts/#/newberry">COAA</a>
+            </p>
+            
+        </div>
+        
+        <div id="COAA-1620-report" class="avy-zone dn" data-published="Saturday, November 30, 2024 8:17PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.coavalanche.org/forecasts/#/newberry"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.coavalanche.org/forecasts/#/newberry">COAA</a> for more information.</div>
+            
+
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, November 30, 2024 8:17PM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://www.coavalanche.org/forecasts/#/newberry">COAA</a>
             </p>
             
@@ -106,7 +178,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/mt-hood"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="NWAC-1657-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=45.338950825584575,-121.68910714804214&z=10&b=mbt&a=sc_a0-0e0-4000fcfff200pa0-0e4001-5000fcfff200pa0-0e5001-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-01%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4000fcfff200pa0-0e4001-5000fcfff200pa0-0e5001-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22647278cd-3523-4ff2-9c6e-f65193b0e3f5%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-01%20Wet%20Loose%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e0-4000fcA200FFpa113-248e4001-5000fcA200FFpa113-248e5001-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=45.338950825584575,-121.68910714804214&z=10&b=mbt&a=sc_a0-0e0-4000fcfff200pa0-0e4001-5000fcfff200pa0-0e5001-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-01%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4000fcfff200pa0-0e4001-5000fcfff200pa0-0e5001-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fe359920-a260-4015-9867-9554880fdb73%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-01%20Wet%20Loose%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e0-4000fcA200FFpa113-248e4001-5000fcA200FFpa113-248e5001-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
@@ -233,6 +305,14 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <div id="COAA-1619-shape" data-geojson="/assets/json/avalanche-zones/COAA-1619.geojson" class="avy-zone">
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/COAA-1619.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="COAA-1619-shape" data-geojson="/assets/json/avalanche-zones/COAA-1619.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/COAA-1619.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="COAA-1620-shape" data-geojson="/assets/json/avalanche-zones/COAA-1620.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/COAA-1620.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="COAA-1620-shape" data-geojson="/assets/json/avalanche-zones/COAA-1620.geojson" class="avy-zone dn">
