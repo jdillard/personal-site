@@ -400,7 +400,7 @@ for state in states:
                             layer_colors = []
                             layer_rules = []
                             for color in layer_color_indexes:
-                                layer_colors.append(f"#{danger_levels.get(f"utah{color}")['color']}")
+                                layer_colors.append(f"#{danger_levels.get(f'utah{color}')['color']}")
 
                             if index == 0:
                                 # split chunk per color to calculate aspect values for each
