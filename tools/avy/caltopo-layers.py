@@ -518,7 +518,7 @@ for state in states:
                             "name": f"{tomorrow} {problem_name}",
                             "desc": f"Problem #{i+1}",
                             "color": f"#{problem_color.get(i)}",
-                            "rules": rules,
+                            "rules": rules[::-1],
                             "layers": f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in rules)}",
                             "uuid": str(uuid.uuid4()),
                         })
