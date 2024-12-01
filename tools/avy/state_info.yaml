@@ -104,7 +104,7 @@
 - abbr: "UT"
   name: "Utah"
   elevations:
-    0: #TODO fix elevations
+    0:
       lower: [0, 7000]
       middle: [7001, 9000]
       upper: [9001, 20310]

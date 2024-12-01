@@ -206,12 +206,12 @@ for product in ca_metadata:
         danger_rules.append({
             "layer": lower,
             "desc": f"{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['btl']['rating']['value'])['desc']} (below {area['elevations'].get('lower')[1]}')",
-            "color": f"#{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['btl']['rating']['value'])['color']}"
+            "colors": [f"#{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['btl']['rating']['value'])['color']}"]
         })
         danger_rules.append({
             "layer": middle,
             "desc": f"{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['tln']['rating']['value'])['desc']} ({area['elevations'].get('middle')[0]}' to {area['elevations'].get('middle')[1]}')",
-            "color": f"#{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['tln']['rating']['value'])['color']}"
+            "colors": [f"#{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['tln']['rating']['value'])['color']}"]
         })
         # only show (above x') if == 20310
         if area['elevations'].get('upper')[1] == 20310:
@@ -221,7 +221,7 @@ for product in ca_metadata:
         danger_rules.append({
             "layer": upper,
             "desc": f"{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['alp']['rating']['value'])['desc']} ({elv_range})",
-            "color": f"#{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['alp']['rating']['value'])['color']}"
+            "colors": [f"#{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['alp']['rating']['value'])['color']}"]
         })
         danger_layer = f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in danger_rules)}"
         zone_color = max(danger_levels.get(data["report"]["dangerRatings"][0]["ratings"]["btl"]["rating"]["value"])["scale"], danger_levels.get(data["report"]["dangerRatings"][0]["ratings"]["tln"]["rating"]["value"])["scale"], danger_levels.get(data["report"]["dangerRatings"][0]["ratings"]["alp"]["rating"]["value"])["scale"])
@@ -314,7 +314,6 @@ with open(f"source/avy/canada.md", mode="w", encoding="utf-8") as message:
 # loop through states and create DEM state pages
 for state in states:
     if state["active"]:
-        #TODO handle Utah
         for zone in state["zones"]:
             published = False
             tomorrow = False
@@ -324,7 +323,6 @@ for state in states:
                     with open(f"tools/avy/avalanche-reports-raw/{slugify(zone['name'])}.json") as fp:
                         data = json.load(fp)
 
-                    #TODO reduce redundant code
                     #TODO figure out what exactly [advisories] is
                     data = data["advisories"][0]["advisory"]
 

@@ -10,7 +10,7 @@ import avy_config as config
 
 
 #TODO only run during certain months when NWAC is open
-#TODO create alternative message when NWAC is closed
+#TODO create alternative message when NWAC is closed (can be a manual run)
 
 #TODO use config.danger_levels
 danger_levels = config.avy_danger_levels
