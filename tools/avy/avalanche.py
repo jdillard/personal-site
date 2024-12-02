@@ -130,7 +130,7 @@ for file in os.listdir("source/_trips"):
                     "lower_name": rating["ratings"]["btl"]["rating"]["value"].title(),
                     "middle_num": danger_levels[rating["ratings"]["tln"]["rating"]["value"]],
                     "middle_name":rating["ratings"]["tln"]["rating"]["value"].title(),
-                    "upper_num": danger_levels[rating["ratings"]["btl"]["rating"]["value"]],
+                    "upper_num": danger_levels[rating["ratings"]["alp"]["rating"]["value"]],
                     "upper_name": rating["ratings"]["alp"]["rating"]["value"].title(),
                 })
 
