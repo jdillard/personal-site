@@ -279,7 +279,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="WCMAC-1724-report" class="avy-zone dn" data-published="Wednesday, November 27, 2024 6:00AM">
+        <div id="WCMAC-1724-report" class="avy-zone dn" data-published="Monday, December 02, 2024 6:30AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://missoulaavalanche.org/forecasts/#/Bitterroot"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/Bitterroot">WCMAC</a> for more information.</div>
@@ -288,13 +288,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, November 27, 2024 6:00AM<br />
+                <strong>Issued at:</strong> Monday, December 02, 2024 6:30AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/Bitterroot">WCMAC</a>
             </p>
             
         </div>
         
-        <div id="WCMAC-1723-report" class="avy-zone dn" data-published="Wednesday, November 27, 2024 6:00AM">
+        <div id="WCMAC-1723-report" class="avy-zone dn" data-published="Monday, December 02, 2024 6:30AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://missoulaavalanche.org/forecasts/#/rattlesnake"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/rattlesnake">WCMAC</a> for more information.</div>
@@ -303,13 +303,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, November 27, 2024 6:00AM<br />
+                <strong>Issued at:</strong> Monday, December 02, 2024 6:30AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/rattlesnake">WCMAC</a>
             </p>
             
         </div>
         
-        <div id="WCMAC-1722-report" class="avy-zone dn" data-published="Wednesday, November 27, 2024 6:00AM">
+        <div id="WCMAC-1722-report" class="avy-zone dn" data-published="Monday, December 02, 2024 6:30AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.missoulaavalanche.org/forecasts/#/seeley-lake"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.missoulaavalanche.org/forecasts/#/seeley-lake">WCMAC</a> for more information.</div>
@@ -318,7 +318,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Wednesday, November 27, 2024 6:00AM<br />
+                <strong>Issued at:</strong> Monday, December 02, 2024 6:30AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="http://www.missoulaavalanche.org/forecasts/#/seeley-lake">WCMAC</a>
             </p>
             
