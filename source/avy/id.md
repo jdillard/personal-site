@@ -50,7 +50,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="BTAC-2107" selected="">Big Holes</option>
+            <option value="BTAC-2130" selected="">Big Holes</option>
             
             <option value="IPAC-1899" >Selkirk Mountains</option>
             
@@ -75,7 +75,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 <div class="flex flex-column flex-row-ns">
     <div class="ph3 w-100 w-50-ns">
         
-        <div id="BTAC-2107-report" class="avy-zone" data-published="Friday, November 22, 2024 5:30PM">
+        <div id="BTAC-2130-report" class="avy-zone" data-published="Friday, November 22, 2024 5:30PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/big-holes/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/big-holes/">BTAC</a> for more information.</div>
@@ -215,8 +215,8 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <h3 class="tc bb b--moon-gray">Zone</h3>
         <div style="height: 300px;" id="map"></div>
         
-        <div id="BTAC-2107-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2107.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2107.geojson" download="">Download GeoJSON</a></div>
+        <div id="BTAC-2130-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2130.geojson" class="avy-zone">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2130.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="IPAC-1899-shape" data-geojson="/assets/json/avalanche-zones/IPAC-1899.geojson" class="avy-zone dn">
