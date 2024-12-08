@@ -33,13 +33,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ak.html#zone-CNFAIC-1921">Summit Lake</a>
-            <span class="gray f7">Friday, December 06, 2024 7:00AM</span>
+            <span class="gray f7">Saturday, December 07, 2024 7:00AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ak.html#zone-CNFAIC-1920">Turnagain Pass</a>
-            <span class="gray f7">Friday, December 06, 2024 7:00AM</span>
+            <span class="gray f7">Saturday, December 07, 2024 7:00AM</span>
         </li>
         
         <li>
@@ -81,25 +81,25 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ak.html#zone-HPAC-1863">Hatcher Pass</a>
-            <span class="gray f7">Thursday, December 05, 2024 10:19AM</span>
+            <span class="gray f7">Saturday, December 07, 2024 7:00AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ak.html#zone-VAC-1611">Continental</a>
-            <span class="gray f7">Friday, December 06, 2024 7:29AM</span>
+            <span class="gray f7">Saturday, December 07, 2024 8:07AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ak.html#zone-VAC-1610">Intermountain</a>
-            <span class="gray f7">Friday, December 06, 2024 7:29AM</span>
+            <span class="gray f7">Saturday, December 07, 2024 8:07AM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ak.html#zone-VAC-1609">Maritime</a>
-            <span class="gray f7">Friday, December 06, 2024 7:23AM</span>
+            <span class="gray f7">Saturday, December 07, 2024 8:02AM</span>
         </li>
         
     </ul>
@@ -131,7 +131,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-ESAC-128">Eastside Region</a>
-            <span class="gray f7">Friday, December 06, 2024 7:00AM</span>
+            <span class="gray f7">Saturday, December 07, 2024 7:00AM</span>
         </li>
         
         <li>
@@ -154,81 +154,81 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <ul class="list pl3 f5 mt2">
         
         <li>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-996">CAIC zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
+        </li>
+        
+        <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-997">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-983">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-1014">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-1016">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-953">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-973">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-979">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-1009">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-975">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-943">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-939">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-956">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-943">CAIC zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-996">CAIC zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:30PM</span>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-979">CAIC zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-1016">CAIC zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-973">CAIC zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-953">CAIC zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-975">CAIC zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-939">CAIC zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-1009">CAIC zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-983">CAIC zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-1014">CAIC zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:30PM</span>
         </li>
         
     </ul>
@@ -443,7 +443,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-NWAC-1657">Mt Hood</a>
-            <span class="gray f7">Friday, December 06, 2024 6:00PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 6:00PM</span>
         </li>
         
         <li>
@@ -459,21 +459,21 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         </li>
         
         <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-WAC-1693">Elkhorns</a>
-            
+            <span class="gray f7">Saturday, December 07, 2024 7:02AM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-WAC-1691">Northern Wallowas</a>
-            <span class="gray f7">Friday, December 06, 2024 7:00AM</span>
+            <span class="gray f7">Saturday, December 07, 2024 7:00AM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-WAC-1692">Southern Wallowas</a>
-            <span class="gray f7">Friday, December 06, 2024 7:00AM</span>
+            <span class="gray f7">Saturday, December 07, 2024 7:00AM</span>
         </li>
         
     </ul>
@@ -547,55 +547,55 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1655">East Slopes Central</a>
-            <span class="gray f7">Friday, December 06, 2024 6:00PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 6:10PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1654">East Slopes North</a>
-            <span class="gray f7">Friday, December 06, 2024 6:04PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 6:00PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1656">East Slopes South</a>
-            <span class="gray f7">Friday, December 06, 2024 6:00PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 6:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1645">Olympics</a>
-            <span class="gray f7">Friday, December 06, 2024 6:00PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 6:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1653">Snoqualmie Pass</a>
-            <span class="gray f7">Friday, December 06, 2024 6:00PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 6:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1649">Stevens Pass</a>
-            <span class="gray f7">Friday, December 06, 2024 6:00PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 6:00PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1647">West Slopes Central</a>
-            <span class="gray f7">Friday, December 06, 2024 6:00PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 6:00PM</span>
         </li>
         
         <li>
-            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1646">West Slopes North</a>
-            <span class="gray f7">Friday, December 06, 2024 6:00PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 6:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1648">West Slopes South</a>
-            <span class="gray f7">Friday, December 06, 2024 6:00PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 6:00PM</span>
         </li>
         
     </ul>
@@ -666,32 +666,38 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
     <ul class="list pl3 f5 mt2">
         
         <li>
-            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d0fef08c4bb35a1e5008571b56f95a0e405febb88e11e63a976b8e66f734458e">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:00PM</span>
+            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d">Canada zone</a>
+            
         </li>
         
         <li>
-            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 5:00PM</span>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-a08196f09da34b67ac2608bbe279897819d15983d5bd9792421f974a0a84fe48">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 5:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762">Canada zone</a>
+            <span class="gray f7">Friday, December 06, 2024 6:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 5:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 3:45PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 5:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0">Canada zone</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2">Canada zone</a>
             
         </li>
         
@@ -703,86 +709,74 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 5:00PM</span>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 5:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-a73f27a33da175bbb0ca9c1b8caf3a10a5be615b1fce537cfc2195b00523e1b5">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-5357057635012bef7526d334fd91b3c4c89f356e920e1ada7898b21958684595">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:00PM</span>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 5:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2">Canada zone</a>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0">Canada zone</a>
             
         </li>
         
         <li>
-            <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 6:00PM</span>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-eefb330847fa0e43f1d46efc0d748f0ceb5c8d771ba6d3c0623e3460f549a5f7">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-3872df964f70d663798d846d0c5378bf61ac01fe9003c1b67df56f484f15940f">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-1eb69218facb820be2513af48bffb04b8de8c4082d59e3820dd8c4f9ad5f2255">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 3:45PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 5:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-95804b9c87948d4fe9fa2d5b50f76791bc35594abd4498afb402a3bfa566f9c2">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
             <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 5:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d">Canada zone</a>
-            
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-95804b9c87948d4fe9fa2d5b50f76791bc35594abd4498afb402a3bfa566f9c2">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-66a01f4698a66438c83a70f166419f2a7234bab0c3bc7a46fb82bf1a30bf7f19">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-5e9054de479bcb87cadc5b37046f7957f36e03328e47070f751cb2a97b001545">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-b5547cbf2c102338e8e483e93a7845c46c7df13b12e670f6abf51cb9edad2b60">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 5:00PM</span>
-        </li>
-        
-        <li>
-            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 5:00PM</span>
+            <span class="gray f7">Saturday, December 07, 2024 4:00PM</span>
         </li>
         
         <li>
@@ -793,20 +787,32 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-f183ba0b9b0cf39368f6b0c7d2e7592d44e3f7b2730566030f1fea8d3f82e2cf">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:00PM</span>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-5e9054de479bcb87cadc5b37046f7957f36e03328e47070f751cb2a97b001545">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:00PM</span>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:00PM</span>
         </li>
         
         <li>
             <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-1eb69218facb820be2513af48bffb04b8de8c4082d59e3820dd8c4f9ad5f2255">Canada zone</a>
-            <span class="gray f7">Friday, December 06, 2024 4:00PM</span>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 5:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d0fef08c4bb35a1e5008571b56f95a0e405febb88e11e63a976b8e66f734458e">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:00PM</span>
+        </li>
+        
+        <li>
+            <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+            <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-8af67c1ddd90ac99bd27a1fad4b7277fe2fde6bfe69cb3e8aa601743379887b9">Canada zone</a>
+            <span class="gray f7">Saturday, December 07, 2024 4:00PM</span>
         </li>
         
     </ul>
