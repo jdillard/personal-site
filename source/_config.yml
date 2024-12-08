@@ -20,20 +20,19 @@ social:
   links:
     - https://www.linkedin.com/in/jareddillard
     - https://github.com/jdillard
-    - https://www.instagram.com/farmerofbits/
 
-permalink: /blog/:title.html
+permalink: /blog/:title
 
 collections:
   library:
     output: true
-    permalink: /library/:title:output_ext
+    permalink: /library/:title
   crags:
     output: true
-    permalink: /crags/:title:output_ext
+    permalink: /crags/:title
   trips:
     output: true
-    permalink: /trips/:title:output_ext
+    permalink: /trips/:title
 
 sass:
     style: compressed
