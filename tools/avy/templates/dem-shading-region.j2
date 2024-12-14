@@ -105,7 +105,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
                 {% endfor %}
             </dl>
             {% endif %}
-            {% if zone.published %}
+            {% if zone.danger and zone.published %}
             <p class="tc f6">
                 <strong>Issued at:</strong> {{ zone.published }}<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="{{ zone.url }}">{{ zone.center_id }}</a>
