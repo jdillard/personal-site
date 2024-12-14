@@ -6,8 +6,8 @@ highlighter: rouge
 logo: false
 paginate: 15
 baseurl: ""
-domain_name: 'https://jareddillard.com'
-url: 'https://jareddillard.com'
+domain_name: 'https://www.jareddillard.com'
+url: 'https://www.jareddillard.com'
 author: 'Jared Dillard'
 google_analytics: 'UA-7883601-2'
 repository: jdillard/personal-site
