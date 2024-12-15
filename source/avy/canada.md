@@ -50,59 +50,55 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="3ccedc1a503a3c9b7a30b8448782c8e7fc088b6d6533ddc7e6ecdbead9355e41" selected="">Canada zone</option>
+            <option value="dfbbd8fb5f47ab32e9b880ad011a79763d4d930f3b1e311b5b285ce3bf28aed9" selected="">Canada zone</option>
             
-            <option value="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" >Canada zone</option>
-            
-            <option value="6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf" >Canada zone</option>
-            
-            <option value="3819ed9cb000979807e6a39d3aa6a615f71008490ad541aaee37cd4b4c75ad14" >Canada zone</option>
-            
-            <option value="88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18" >Canada zone</option>
-            
-            <option value="a2d07f19573f750dc48fe7735c0fe0a53cdf13f352b6e05e2a7a21a6294d508f" >Canada zone</option>
-            
-            <option value="9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f" >Canada zone</option>
-            
-            <option value="0c6f98fa389f308faa838e1c5098709c57c9bc5acdfd172d0b7a23492fe197c0" >Canada zone</option>
+            <option value="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" >Canada zone</option>
             
             <option value="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4" >Canada zone</option>
             
-            <option value="444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2" >Canada zone</option>
-            
-            <option value="7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3" >Canada zone</option>
-            
-            <option value="045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5" >Canada zone</option>
-            
-            <option value="7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2" >Canada zone</option>
-            
-            <option value="aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0" >Canada zone</option>
-            
-            <option value="de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83" >Canada zone</option>
-            
-            <option value="971b729aeb5bc2799f0e8f409959da205674207151322f8dda492732a22a34f1" >Canada zone</option>
-            
-            <option value="4f21be7d5490a0d1c8c8caa642f7cb6961508c18b4a287036cac762506987466" >Canada zone</option>
-            
-            <option value="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" >Canada zone</option>
-            
-            <option value="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" >Canada zone</option>
+            <option value="04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1" >Canada zone</option>
             
             <option value="14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da" >Canada zone</option>
-            
-            <option value="04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1" >Canada zone</option>
             
             <option value="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" >Canada zone</option>
             
             <option value="03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" >Canada zone</option>
             
-            <option value="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" >Canada zone</option>
-            
-            <option value="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" >Canada zone</option>
+            <option value="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" >Canada zone</option>
             
             <option value="ff27f89a78600ce8622e02e807bc89b31d7f1876832b9dc0ceab5b43cab072e5" >Canada zone</option>
             
+            <option value="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" >Canada zone</option>
+            
             <option value="a6f9f3988aaa288a68a87e4cb6843e647b24ccb811a667afad387e33fb51a305" >Canada zone</option>
+            
+            <option value="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" >Canada zone</option>
+            
+            <option value="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" >Canada zone</option>
+            
+            <option value="16a962c6b1fc14f325a46d8d43c070c818417f637bb572c878bd0134068fb4d6" >Canada zone</option>
+            
+            <option value="444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2" >Canada zone</option>
+            
+            <option value="7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3" >Canada zone</option>
+            
+            <option value="7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2" >Canada zone</option>
+            
+            <option value="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" >Canada zone</option>
+            
+            <option value="de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83" >Canada zone</option>
+            
+            <option value="88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18" >Canada zone</option>
+            
+            <option value="95c48d6f8bbfc16ce4f27cb7c6e1d9ae269adcf5657980aa4128cba7272647eb" >Canada zone</option>
+            
+            <option value="9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f" >Canada zone</option>
+            
+            <option value="045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5" >Canada zone</option>
+            
+            <option value="6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf" >Canada zone</option>
+            
+            <option value="aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0" >Canada zone</option>
             
         </select>
     </div>
@@ -111,521 +107,15 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 <div class="flex flex-column flex-row-ns">
     <div class="ph3 w-100 w-50-ns">
         
-        <div id="3ccedc1a503a3c9b7a30b8448782c8e7fc088b6d6533ddc7e6ecdbead9355e41-report" class="avy-zone" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/8c4f6ea5-8d99-4355-bd47-ad01879d3439_3ccedc1a503a3c9b7a30b8448782c8e7fc088b6d6533ddc7e6ecdbead9355e41"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="dfbbd8fb5f47ab32e9b880ad011a79763d4d930f3b1e311b5b285ce3bf28aed9-report" class="avy-zone" data-published="Saturday, December 14, 2024 4:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/f73cad15-dfce-43bc-801a-4b2b9408b4b4_dfbbd8fb5f47ab32e9b880ad011a79763d4d930f3b1e311b5b285ce3bf28aed9"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div id="3ccedc1a503a3c9b7a30b8448782c8e7fc088b6d6533ddc7e6ecdbead9355e41-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=55.430163976300506,-129.90593244801195&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22d7748f96-2cba-4129-9df0-4efedcbfa0ee%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-10500fcA200FFpa248-113e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            <div id="dfbbd8fb5f47ab32e9b880ad011a79763d4d930f3b1e311b5b285ce3bf28aed9-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=55.25953379519151,-127.63951280007251&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22a55d8183-2740-46d9-b183-379ab4c78f99%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-68e9001-10500fcA200FFpa68-68e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Wind slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-113e7501-9000f A200FF&#10;a248-113e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> W to E aspects (7501' to 9000')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> W to E aspects (9001' to 10500')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/8c4f6ea5-8d99-4355-bd47-ad01879d3439_3ccedc1a503a3c9b7a30b8448782c8e7fc088b6d6533ddc7e6ecdbead9355e41">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf-report" class="avy-zone dn" data-published="Friday, December 13, 2024 5:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/6d8375b6-4ee9-4f30-abab-3b39f3f90522_afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=51.382373463285056,-116.16044043836781&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%221d292f12-cfc2-4cfe-9801-378d250c43a0%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Deep%20persistent%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a23-23e7501-9000fcA200FFpa23-23e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22558876e2-e797-46db-8a81-2dbce123c3bf%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-10500fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Deep persistent slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a23-23e9001-10500f A200FF&#10;a23-23e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
-                        
-                        </ul>
-                    </dd>
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Wind slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-158e9001-10500f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> NW to SE aspects (9001' to 10500')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 5:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/6d8375b6-4ee9-4f30-abab-3b39f3f90522_afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf-report" class="avy-zone dn" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/f9b7b38f-8b90-4c44-981b-835cb2884c4e_6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.87395314414621,-118.49930092134225&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%225b896940-0580-4931-aa72-49e887080890%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-339e6000-7500fcA200FFpa339-339e7501-9000fcA200FFpa339-339e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Storm slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-339e9001-10500f A200FF&#10;a339-339e7501-9000f A200FF&#10;a339-339e6000-7500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (below 7500')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/f9b7b38f-8b90-4c44-981b-835cb2884c4e_6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="3819ed9cb000979807e6a39d3aa6a615f71008490ad541aaee37cd4b4c75ad14-report" class="avy-zone dn" data-published="Friday, December 13, 2024 5:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/54dcb41d-fa48-4885-8b4b-cfe44cce552d_3819ed9cb000979807e6a39d3aa6a615f71008490ad541aaee37cd4b4c75ad14"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="3819ed9cb000979807e6a39d3aa6a615f71008490ad541aaee37cd4b4c75ad14-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=55.34592414340383,-122.68693269925386&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%222413bea2-e06e-42b8-b6c6-02684894b67c%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-68e7501-9000fcA200FFpa293-68e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Wind slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-68e9001-10500f A200FF&#10;a293-68e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to NE aspects (9001' to 10500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to NE aspects (7501' to 9000')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 5:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/54dcb41d-fa48-4885-8b4b-cfe44cce552d_3819ed9cb000979807e6a39d3aa6a615f71008490ad541aaee37cd4b4c75ad14">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18-report" class="avy-zone dn" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/3e52c28d-6bd4-47c0-85e9-457f3fd1ceb0_88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=51.00367634103802,-117.98026275174436&z=10&b=mbt&a=sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22b6b99954-863a-45d6-92ef-ec290e0c4df6%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-293e6000-7500fcA200FFpa293-293e7501-9000fcA200FFpa293-293e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f f7941e&#10;a0-0e7501-9000f f7941e&#10;a0-0e6000-7500f fff200" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> Considerable danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> Considerable danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Storm slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-293e9001-10500f A200FF&#10;a293-293e7501-9000f A200FF&#10;a293-293e6000-7500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (below 7500')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/3e52c28d-6bd4-47c0-85e9-457f3fd1ceb0_88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="a2d07f19573f750dc48fe7735c0fe0a53cdf13f352b6e05e2a7a21a6294d508f-report" class="avy-zone dn" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/417f1ffb-e56d-4b4e-8484-066fad77c20e_a2d07f19573f750dc48fe7735c0fe0a53cdf13f352b6e05e2a7a21a6294d508f"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="a2d07f19573f750dc48fe7735c0fe0a53cdf13f352b6e05e2a7a21a6294d508f-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=54.38309076389421,-121.10122268043412&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2266a74d15-4b7f-44f8-9cfa-49f4b0e78f41%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-113e9001-10500fcA200FFpa339-113e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f 50b848&#10;a0-0e7501-9000f 50b848&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Wind slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-113e7501-9000f A200FF&#10;a339-113e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to E aspects (7501' to 9000')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to E aspects (9001' to 10500')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/417f1ffb-e56d-4b4e-8484-066fad77c20e_a2d07f19573f750dc48fe7735c0fe0a53cdf13f352b6e05e2a7a21a6294d508f">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f-report" class="avy-zone dn" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/1198d421-3dfe-42d5-bca1-816a461bf88b_9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=50.50950004840206,-123.64491496924533&z=10&b=mbt&a=sc_a0-0e6000-7500fcf7941epa0-0e7501-9000fced1c24pa0-0e9001-10500fced1c24&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcf7941epa0-0e7501-9000fced1c24pa0-0e9001-10500fced1c24%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%228cf7d9e8-e6a1-4566-ad97-a4a35b911d65%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a23-23e7501-9000fcA200FFpa23-23e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f ed1c24&#10;a0-0e7501-9000f ed1c24&#10;a0-0e6000-7500f f7941e" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#ed1c24"
-                            
-                            ></div> High danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#ed1c24"
-                            
-                            ></div> High danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> Considerable danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Storm slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a23-23e9001-10500f A200FF&#10;a23-23e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/1198d421-3dfe-42d5-bca1-816a461bf88b_9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="0c6f98fa389f308faa838e1c5098709c57c9bc5acdfd172d0b7a23492fe197c0-report" class="avy-zone dn" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/d3f09993-a233-4345-8231-4d1ecfd66b0e_0c6f98fa389f308faa838e1c5098709c57c9bc5acdfd172d0b7a23492fe197c0"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="0c6f98fa389f308faa838e1c5098709c57c9bc5acdfd172d0b7a23492fe197c0-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=56.079803887287,-128.48098518399811&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22e6c2e413-3c1f-4485-bc70-9880759eedbc%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-68e9001-10500fcA200FFpa203-68e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
+                    <strong>2023-03-20 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f 50b848&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
@@ -664,15 +154,15 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2024-12-14 Wind slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a203-68e7501-9000f A200FF&#10;a203-68e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a68-68e7501-9000f A200FF&#10;a68-68e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7">
                         
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> SW to NE aspects (7501' to 9000')</li>
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
                         
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> SW to NE aspects (9001' to 10500')</li>
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
                         
                         </ul>
                     </dd>
@@ -681,21 +171,91 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/d3f09993-a233-4345-8231-4d1ecfd66b0e_0c6f98fa389f308faa838e1c5098709c57c9bc5acdfd172d0b7a23492fe197c0">Avalanche Canada</a>
+                <strong>Issued at:</strong> Saturday, December 14, 2024 4:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/f73cad15-dfce-43bc-801a-4b2b9408b4b4_dfbbd8fb5f47ab32e9b880ad011a79763d4d930f3b1e311b5b285ce3bf28aed9">Avalanche Canada</a>
             </p>
             
         </div>
         
-        <div id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4-report" class="avy-zone dn" data-published="Friday, December 13, 2024 5:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/c2bcff11-700b-42e6-884b-e44f57fdb4ba_2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 5:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/50a80457-77f5-4268-bae3-d06e5dc1a0c4_010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=60.00417780780808,-135.1428861670814&z=10&b=mbt&a=sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc50b848pa0-0e9001-10500fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc50b848pa0-0e9001-10500fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            <div id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.08129207544112,-113.93284710370706&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22c4c9df35-4d47-4932-b53d-f0cf5683994e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e7501-9000fcA200FFpa293-158e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f 50b848&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-158e9001-10500f A200FF&#10;a293-158e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to SE aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to SE aspects (7501' to 9000')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 5:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/50a80457-77f5-4268-bae3-d06e5dc1a0c4_010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 5:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/249bb412-f2e2-478b-8eb6-8f9716918d72_2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=60.00417780780808,-135.1428861670814&z=10&b=mbt&a=sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc50b848pa0-0e9001-10500fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc50b848pa0-0e9001-10500fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f 50b848&#10;a0-0e7501-9000f 50b848&#10;a0-0e6000-7500f 939598" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
@@ -733,741 +293,21 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 5:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/c2bcff11-700b-42e6-884b-e44f57fdb4ba_2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4">Avalanche Canada</a>
+                <strong>Issued at:</strong> Saturday, December 14, 2024 5:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/249bb412-f2e2-478b-8eb6-8f9716918d72_2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4">Avalanche Canada</a>
             </p>
             
         </div>
         
-        <div id="444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2-report" class="avy-zone dn" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/c42be0fa-7962-4b8b-85f8-358ef4cddada_444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.39276950774393,-121.05812227913674&z=10&b=mbt&a=sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%220024aaa1-f9dd-470d-a6cb-f0a8ad659993%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-339e7501-9000fcA200FFpa339-339e9001-10500fcA200FFpa339-339e6000-7500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f f7941e&#10;a0-0e7501-9000f f7941e&#10;a0-0e6000-7500f fff200" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> Considerable danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> Considerable danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Storm slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-339e6000-7500f A200FF&#10;a339-339e9001-10500f A200FF&#10;a339-339e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (below 7500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/c42be0fa-7962-4b8b-85f8-358ef4cddada_444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3-report" class="avy-zone dn" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/a02215cc-dc63-4b4a-b0e1-f71d7098379f_7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.83412126924611,-123.2327325732041&z=10&b=mbt&a=sc_a0-0e6000-7500fced1c24pa0-0e7501-9000fced1c24pa0-0e9001-10500fced1c24&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fced1c24pa0-0e7501-9000fced1c24pa0-0e9001-10500fced1c24%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%227f39a1da-a1ef-4f17-8137-145deed68189%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-339e9001-10500fcA200FFpa339-339e6000-7500fcA200FFpa339-339e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f ed1c24&#10;a0-0e7501-9000f ed1c24&#10;a0-0e6000-7500f ed1c24" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#ed1c24"
-                            
-                            ></div> High danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#ed1c24"
-                            
-                            ></div> High danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#ed1c24"
-                            
-                            ></div> High danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Storm slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-339e7501-9000f A200FF&#10;a339-339e6000-7500f A200FF&#10;a339-339e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (below 7500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/a02215cc-dc63-4b4a-b0e1-f71d7098379f_7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5-report" class="avy-zone dn" data-published="Friday, December 13, 2024 5:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/ec680d6d-d620-4191-817b-7c51ab61b4df_045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.38263589959235,-115.67498131500773&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2240af429b-2903-4529-8be1-dac383dfac5f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e7501-9000fcA200FFpa293-113e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Wind slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-113e9001-10500f A200FF&#10;a293-113e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to E aspects (9001' to 10500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to E aspects (7501' to 9000')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 5:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/ec680d6d-d620-4191-817b-7c51ab61b4df_045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2-report" class="avy-zone dn" data-published="Sunday, March 19, 2023 6:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/f5b21f5a-68bd-4eac-9472-6a2f5f262f0d_7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.19807082581306,-65.88110428582182&z=10&b=mbt&a=sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc939598pa0-0e9001-10500fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-03-20%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc939598pa0-0e9001-10500fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f 939598&#10;a0-0e7501-9000f 939598&#10;a0-0e6000-7500f 939598" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> No forecast (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> No forecast (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> No forecast (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Sunday, March 19, 2023 6:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/f5b21f5a-68bd-4eac-9472-6a2f5f262f0d_7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0-report" class="avy-zone dn" data-published="Sunday, March 19, 2023 6:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/fe98a9ff-9789-494f-99a7-d0a7514adecc_aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=48.966733042676864,-65.52023174252349&z=10&b=mbt&a=sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc939598pa0-0e9001-10500fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-03-20%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc939598pa0-0e9001-10500fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f 939598&#10;a0-0e7501-9000f 939598&#10;a0-0e6000-7500f 939598" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> No forecast (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> No forecast (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> No forecast (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Sunday, March 19, 2023 6:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/fe98a9ff-9789-494f-99a7-d0a7514adecc_aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83-report" class="avy-zone dn" data-published="Friday, December 13, 2024 5:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/7422017a-45e3-4c04-9e53-dad33bad0783_de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.802271465561596,-114.87501915613356&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f 50b848&#10;a0-0e7501-9000f 50b848&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 5:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/7422017a-45e3-4c04-9e53-dad33bad0783_de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="971b729aeb5bc2799f0e8f409959da205674207151322f8dda492732a22a34f1-report" class="avy-zone dn" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/55916ced-7152-44dc-aa6f-55e82424d81f_971b729aeb5bc2799f0e8f409959da205674207151322f8dda492732a22a34f1"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="971b729aeb5bc2799f0e8f409959da205674207151322f8dda492732a22a34f1-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=50.133671879432576,-126.53636048066575&z=10&b=mbt&a=sc_a0-0e6000-7500fcf7941epa0-0e7501-9000fcf7941epa0-0e9001-10500fced1c24&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcf7941epa0-0e7501-9000fcf7941epa0-0e9001-10500fced1c24%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22d62ffb17-4510-4868-a64d-ade110de40b8%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e6000-7500fcA200FFpa158-158e7501-9000fcA200FFpa158-158e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f ed1c24&#10;a0-0e7501-9000f f7941e&#10;a0-0e6000-7500f f7941e" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#ed1c24"
-                            
-                            ></div> High danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> Considerable danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> Considerable danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Storm slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a158-158e9001-10500f A200FF&#10;a158-158e7501-9000f A200FF&#10;a158-158e6000-7500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (below 7500')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/55916ced-7152-44dc-aa6f-55e82424d81f_971b729aeb5bc2799f0e8f409959da205674207151322f8dda492732a22a34f1">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="4f21be7d5490a0d1c8c8caa642f7cb6961508c18b4a287036cac762506987466-report" class="avy-zone dn" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/769e70a0-f204-42f4-9ff7-a12967fcb3ef_4f21be7d5490a0d1c8c8caa642f7cb6961508c18b4a287036cac762506987466"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="4f21be7d5490a0d1c8c8caa642f7cb6961508c18b4a287036cac762506987466-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.41120207383412,-125.31264503195459&z=10&b=mbt&a=sc_a0-0e6000-7500fced1c24pa0-0e7501-9000fced1c24pa0-0e9001-10500fced1c24&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fced1c24pa0-0e7501-9000fced1c24pa0-0e9001-10500fced1c24%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%227234d65b-b04e-476b-bb89-0f8464e452e4%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-293e7501-9000fcA200FFpa293-293e9001-10500fcA200FFpa293-293e6000-7500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f ed1c24&#10;a0-0e7501-9000f ed1c24&#10;a0-0e6000-7500f ed1c24" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#ed1c24"
-                            
-                            ></div> High danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#ed1c24"
-                            
-                            ></div> High danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#ed1c24"
-                            
-                            ></div> High danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Storm slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-293e6000-7500f A200FF&#10;a293-293e9001-10500f A200FF&#10;a293-293e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (below 7500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/769e70a0-f204-42f4-9ff7-a12967fcb3ef_4f21be7d5490a0d1c8c8caa642f7cb6961508c18b4a287036cac762506987466">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a-report" class="avy-zone dn" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/58be9c4c-65e5-4d32-af8f-2a1059669b88_b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=51.26859075131051,-117.52435368057834&z=10&b=mbt&a=sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22a0334d72-a7fc-4ff1-9d02-ded2a9e0bc31%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-68e7501-9000fcA200FFpa68-68e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%229aa2474d-9396-4f0a-89ce-387d2c3e06ed%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Persistent%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-113e7501-9000fc0000FFpa113-113e9001-10500fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f f7941e&#10;a0-0e7501-9000f f7941e&#10;a0-0e6000-7500f fff200" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> Considerable danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> Considerable danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Wind slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a68-68e9001-10500f A200FF&#10;a68-68e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
-                        
-                        </ul>
-                    </dd>
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Persistent slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a113-113e9001-10500f 0000FF&#10;a113-113e7501-9000f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/58be9c4c-65e5-4d32-af8f-2a1059669b88_b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d-report" class="avy-zone dn" data-published="Tuesday, October 01, 2024 2:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/9b8fc604-cf34-420c-9868-dbdcfcd5d0c3_2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.827739704176054,-57.33055405402596&z=10&b=mbt&a=sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc939598pa0-0e9001-10500fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-10-02%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc939598pa0-0e9001-10500fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f 939598&#10;a0-0e7501-9000f 939598&#10;a0-0e6000-7500f 939598" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> Early season (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> Early season (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> Early season (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, October 01, 2024 2:30PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/9b8fc604-cf34-420c-9868-dbdcfcd5d0c3_2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da-report" class="avy-zone dn" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/05bf7ed6-fce5-47ec-aeed-aecd1e17ddc5_14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=50.72333375827345,-122.79132066685739&z=10&b=mbt&a=sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcfff200pa0-0e9001-10500fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcfff200pa0-0e9001-10500fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%227a93e6c3-8c30-48b1-8108-e8a55ca2b6d0%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a23-23e9001-10500fcA200FFpa23-23e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f f7941e&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f fff200" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> Considerable danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-14 Storm slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a23-23e7501-9000f A200FF&#10;a23-23e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/05bf7ed6-fce5-47ec-aeed-aecd1e17ddc5_14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1-report" class="avy-zone dn" data-published="Friday, December 13, 2024 5:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/9ca1d142-d336-46a9-b878-524cffc0704e_04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 5:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/5a669058-cf8c-48af-853e-9a7e5f1acbc0_04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=50.407645789158174,-116.25085384538421&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22907b0468-c4f6-4f08-8ad3-b39d9220c6ba%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-158e7501-9000fcA200FFpa339-158e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%228a24a80f-f1be-4798-afd0-a7d4ea42dd10%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Deep%20persistent%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e7501-9000fc0000FFpa293-113e9001-10500fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=50.407645789158174,-116.25085384538421&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22b27ac18f-680c-4d92-9d09-7d1dc65803e1%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-158e9001-10500fcA200FFpa339-158e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22ea3f54e7-9018-46fa-8f6d-703215119989%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Deep%20persistent%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e7501-9000fc0000FFpa293-113e9001-10500fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
+                    <strong>2023-03-20 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
@@ -1506,21 +346,21 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2024-12-14 Wind slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-158e9001-10500f A200FF&#10;a339-158e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-158e7501-9000f A200FF&#10;a339-158e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (9001' to 10500')</li>
                         
                             <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (7501' to 9000')</li>
                         
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (9001' to 10500')</li>
+                        
                         </ul>
                     </dd>
                 
                     <dt class="mt3">
-                        <strong>2024-12-14 Deep persistent slab</strong>
+                        <strong>2024-12-15 Deep persistent slab</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-113e9001-10500f 0000FF&#10;a293-113e7501-9000f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
@@ -1537,21 +377,107 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 5:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/9ca1d142-d336-46a9-b878-524cffc0704e_04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1">Avalanche Canada</a>
+                <strong>Issued at:</strong> Saturday, December 14, 2024 5:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/5a669058-cf8c-48af-853e-9a7e5f1acbc0_04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1">Avalanche Canada</a>
             </p>
             
         </div>
         
-        <div id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea-report" class="avy-zone dn" data-published="Friday, December 13, 2024 3:15PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/65a679a8-c8e4-48e5-8c9b-f0bccffd3a3c_d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 4:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/20a56815-9588-4eb2-aad2-8d54edbc2371_14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=50.78856882104437,-115.1958225555043&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%227520f862-2ed1-443a-b868-1bd0d19614a0%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-203e9001-10500fcA200FFpa339-203e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2298d97972-2839-4325-897f-51e13a730dcd%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Persistent%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-68e9001-10500fc0000FFpa68-68e7501-9000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            <div id="14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=50.72333375827345,-122.79132066685739&z=10&b=mbt&a=sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22962db3fc-c7fd-4e4a-864e-45198b1cf429%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-158e6000-7500fcA200FFpa339-158e7501-9000fcA200FFpa339-158e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%228f645bdd-a02c-4178-b43d-b3effb0e1efd%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-339e9001-10500fc0000FFpa339-339e7501-9000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f f7941e&#10;a0-0e7501-9000f f7941e&#10;a0-0e6000-7500f fff200" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-158e9001-10500f A200FF&#10;a339-158e7501-9000f A200FF&#10;a339-158e6000-7500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (7501' to 9000')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (below 7500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Storm slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-339e7501-9000f 0000FF&#10;a339-339e9001-10500f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 4:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/20a56815-9588-4eb2-aad2-8d54edbc2371_14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 3:15PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/f81c8785-8036-457c-a79a-59fe6924eb11_d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=50.78856882104437,-115.1958225555043&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2229864148-005d-4b17-b928-81589640168c%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-203e9001-10500fcA200FFpa339-203e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2243d9d441-ddfc-4a64-b42a-a4d0160d7ab1%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Persistent%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-293e9001-10500fc0000FFpa293-293e7501-9000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f 50b848&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
@@ -1590,7 +516,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2024-12-14 Wind slab</strong>
+                        <strong>2024-12-15 Wind slab</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-203e7501-9000f A200FF&#10;a339-203e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
@@ -1604,8 +530,8 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
                     </dd>
                 
                     <dt class="mt3">
-                        <strong>2024-12-14 Persistent slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a68-68e7501-9000f 0000FF&#10;a68-68e9001-10500f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                        <strong>2024-12-15 Persistent slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-293e7501-9000f 0000FF&#10;a293-293e9001-10500f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7">
@@ -1621,8 +547,8 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 3:15PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/65a679a8-c8e4-48e5-8c9b-f0bccffd3a3c_d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">Avalanche Canada</a>
+                <strong>Issued at:</strong> Saturday, December 14, 2024 3:15PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/f81c8785-8036-457c-a79a-59fe6924eb11_d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">Avalanche Canada</a>
             </p>
             
         </div>
@@ -1635,7 +561,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
+                    <strong>2023-03-20 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f 939598&#10;a0-0e7501-9000f 939598&#10;a0-0e6000-7500f 939598" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
@@ -1679,16 +605,16 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e-report" class="avy-zone dn" data-published="Friday, December 13, 2024 5:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/86d38b27-f6ee-4e3c-b8da-aa0991f68327_426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 4:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/f307d832-af4d-4d3b-94c5-31a30808ed36_b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=52.55611523237941,-117.62626152142234&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2247eb9ba7-c64d-4f95-a0da-8f4460b1ecf6%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Deep%20persistent%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-293e7501-9000fcA200FFpa293-293e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22755daf3d-a158-4f07-ab78-0c70927dee58%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-10500fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            <div id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=51.26859075131051,-117.52435368057834&z=10&b=mbt&a=sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%221cd3cdf8-2bbc-44ee-a079-a1a0e7d39332%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-339e7501-9000fcA200FFpa339-339e9001-10500fcA200FFpa339-339e6000-7500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%223f87fb16-ddd4-4d0a-9833-6514435bda58%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Persistent%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-203e7501-9000fc0000FFpa203-203e9001-10500fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f f7941e&#10;a0-0e7501-9000f f7941e&#10;a0-0e6000-7500f fff200" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7">
@@ -1696,9 +622,17 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
                         <li class="pv1">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
-                                data-color1="#fff200"
+                                data-color1="#f7941e"
                             
-                            ></div> Moderate danger (9001' to 10500')
+                            ></div> Considerable danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (7501' to 9000')
                         </li>
                     
                         <li class="pv1">
@@ -1706,15 +640,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
                             
                                 data-color1="#fff200"
                             
-                            ></div> Moderate danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (below 7500')
+                            ></div> Moderate danger (below 7500')
                         </li>
                     
                     </ul>
@@ -1726,11 +652,13 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2024-12-14 Deep persistent slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-293e9001-10500f A200FF&#10;a293-293e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                        <strong>2024-12-15 Storm slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-339e6000-7500f A200FF&#10;a339-339e9001-10500f A200FF&#10;a339-339e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (below 7500')</li>
                         
                             <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
                         
@@ -1740,13 +668,15 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
                     </dd>
                 
                     <dt class="mt3">
-                        <strong>2024-12-14 Wind slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-158e9001-10500f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                        <strong>2024-12-15 Persistent slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a203-203e9001-10500f 0000FF&#10;a203-203e7501-9000f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7">
                         
-                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> NW to SE aspects (9001' to 10500')</li>
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
                         
                         </ul>
                     </dd>
@@ -1755,78 +685,8 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 5:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/86d38b27-f6ee-4e3c-b8da-aa0991f68327_426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">Avalanche Canada</a>
-            </p>
-            
-        </div>
-        
-        <div id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85-report" class="avy-zone dn" data-published="Thursday, December 12, 2024 5:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/fad6fdc5-a3b0-4a39-aa8e-2245a574d80d_010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.08129207544112,-113.93284710370706&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-13%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%224eed0ee3-2e75-4233-9b5f-172c186ff4ea%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-13%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e7501-9000fcA200FFpa293-158e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f 50b848&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7">
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> Moderate danger (9001' to 10500')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (7501' to 9000')
-                        </li>
-                    
-                        <li class="pv1">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> Low danger (below 7500')
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2024-12-13 Wind slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-158e9001-10500f A200FF&#10;a293-158e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7">
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to SE aspects (9001' to 10500')</li>
-                        
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to SE aspects (7501' to 9000')</li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Thursday, December 12, 2024 5:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/fad6fdc5-a3b0-4a39-aa8e-2245a574d80d_010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85">Avalanche Canada</a>
+                <strong>Issued at:</strong> Saturday, December 14, 2024 4:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/f307d832-af4d-4d3b-94c5-31a30808ed36_b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">Avalanche Canada</a>
             </p>
             
         </div>
@@ -1839,7 +699,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
+                    <strong>2023-03-20 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f 939598&#10;a0-0e7501-9000f 939598&#10;a0-0e6000-7500f 939598" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
@@ -1883,15 +743,87 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
-        <div id="a6f9f3988aaa288a68a87e4cb6843e647b24ccb811a667afad387e33fb51a305-report" class="avy-zone dn" data-published="Friday, December 13, 2024 4:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/d5ba1886-49e1-4af9-9a1f-cb1716d0082b_a6f9f3988aaa288a68a87e4cb6843e647b24ccb811a667afad387e33fb51a305"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 4:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/042feaf3-797a-432f-b357-3e24ff6b5554_76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div id="a6f9f3988aaa288a68a87e4cb6843e647b24ccb811a667afad387e33fb51a305-title" class="mv4 tc">
-                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=52.51528490517724,-120.37308207610951&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2232eb78bf-80da-4b70-85b9-08e6f9bacd76%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-14%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-158e9001-10500fcA200FFpa248-158e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            <div id="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.66861554427248,-125.7486505757722&z=10&b=mbt&a=sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22a5d01039-b227-4084-9873-1fdeb5270f2f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-248e6000-7500fcA200FFpa248-248e7501-9000fcA200FFpa248-248e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2024-12-14 Avalanche Danger</strong>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f f7941e&#10;a0-0e7501-9000f f7941e&#10;a0-0e6000-7500f fff200" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Storm slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-248e9001-10500f A200FF&#10;a248-248e7501-9000f A200FF&#10;a248-248e6000-7500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (below 7500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 4:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/042feaf3-797a-432f-b357-3e24ff6b5554_76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="a6f9f3988aaa288a68a87e4cb6843e647b24ccb811a667afad387e33fb51a305-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 4:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/0e91c5fd-5bee-4ab2-b5d3-902041cdb9db_a6f9f3988aaa288a68a87e4cb6843e647b24ccb811a667afad387e33fb51a305"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="a6f9f3988aaa288a68a87e4cb6843e647b24ccb811a667afad387e33fb51a305-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=52.51528490517724,-120.37308207610951&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2243a80b57-d738-4e4b-9418-984233b93684%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-10500fcA200FFpa293-158e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
@@ -1930,15 +862,15 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2024-12-14 Wind slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-158e7501-9000f A200FF&#10;a248-158e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-158e7501-9000f A200FF&#10;a293-158e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7">
                         
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> W to SE aspects (7501' to 9000')</li>
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to SE aspects (7501' to 9000')</li>
                         
-                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> W to SE aspects (9001' to 10500')</li>
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to SE aspects (9001' to 10500')</li>
                         
                         </ul>
                     </dd>
@@ -1947,8 +879,1016 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 4:00PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/d5ba1886-49e1-4af9-9a1f-cb1716d0082b_a6f9f3988aaa288a68a87e4cb6843e647b24ccb811a667afad387e33fb51a305">Avalanche Canada</a>
+                <strong>Issued at:</strong> Saturday, December 14, 2024 4:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/0e91c5fd-5bee-4ab2-b5d3-902041cdb9db_a6f9f3988aaa288a68a87e4cb6843e647b24ccb811a667afad387e33fb51a305">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 5:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/c49c343b-c03a-4357-af6d-1b30a434a655_afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=51.382373463285056,-116.16044043836781&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2275b3c5dc-edb5-4aa8-b5c2-fe5b6e857b78%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Deep%20persistent%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e7501-9000fcA200FFpa158-158e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2238c073c1-e815-4c1e-bd6d-4d0d0cf83c18%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-10500fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Deep persistent slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a158-158e9001-10500f A200FF&#10;a158-158e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
+                        
+                        </ul>
+                    </dd>
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-158e9001-10500f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> NW to SE aspects (9001' to 10500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 5:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/c49c343b-c03a-4357-af6d-1b30a434a655_afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d-report" class="avy-zone dn" data-published="Tuesday, October 01, 2024 2:30PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/9b8fc604-cf34-420c-9868-dbdcfcd5d0c3_2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.827739704176054,-57.33055405402596&z=10&b=mbt&a=sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc939598pa0-0e9001-10500fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-10-02%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc939598pa0-0e9001-10500fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f 939598&#10;a0-0e7501-9000f 939598&#10;a0-0e6000-7500f 939598" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> Early season (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> Early season (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> Early season (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Tuesday, October 01, 2024 2:30PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/9b8fc604-cf34-420c-9868-dbdcfcd5d0c3_2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="16a962c6b1fc14f325a46d8d43c070c818417f637bb572c878bd0134068fb4d6-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 4:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/cd083f0b-c3c8-441f-9c2c-3e6b3ddb5ea9_16a962c6b1fc14f325a46d8d43c070c818417f637bb572c878bd0134068fb4d6"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="16a962c6b1fc14f325a46d8d43c070c818417f637bb572c878bd0134068fb4d6-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=56.21029574457641,-129.75409484185863&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22c867a5aa-65aa-4d2d-a3d1-67936f07e090%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a23-23e9001-10500fcA200FFpa23-23e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f 50b848&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a23-23e7501-9000f A200FF&#10;a23-23e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 4:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/cd083f0b-c3c8-441f-9c2c-3e6b3ddb5ea9_16a962c6b1fc14f325a46d8d43c070c818417f637bb572c878bd0134068fb4d6">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 4:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/34e0e6ec-2345-47e0-abf8-4014892baa6f_444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.39276950774393,-121.05812227913674&z=10&b=mbt&a=sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22f8bc6b62-9ad5-40c6-bf55-4c6e9e2b2f4b%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-158e9001-10500fcA200FFpa339-158e7501-9000fcA200FFpa339-158e6000-7500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2241a0ca86-2c1f-481a-af93-31404030e85b%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-113e7501-9000fc0000FFpa113-113e9001-10500fc0000FFpa113-113e6000-7500fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f f7941e&#10;a0-0e7501-9000f f7941e&#10;a0-0e6000-7500f fff200" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-158e6000-7500f A200FF&#10;a339-158e7501-9000f A200FF&#10;a339-158e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (below 7500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (7501' to 9000')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (9001' to 10500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Storm slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a113-113e6000-7500f 0000FF&#10;a113-113e9001-10500f 0000FF&#10;a113-113e7501-9000f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (below 7500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 4:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/34e0e6ec-2345-47e0-abf8-4014892baa6f_444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 4:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/2438748f-743c-4623-85c2-de2420cb19dc_7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.83412126924611,-123.2327325732041&z=10&b=mbt&a=sc_a0-0e6000-7500fcf7941epa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcf7941epa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226e2e49cb-e23b-403a-8e19-9a982b6f5d33%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-158e6000-7500fcA200FFpa339-158e9001-10500fcA200FFpa339-158e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22e0ca70d2-af6f-4433-8bd2-0b6e8b6cb782%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-68e9001-10500fc0000FFpa68-68e6000-7500fc0000FFpa68-68e7501-9000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f f7941e&#10;a0-0e7501-9000f f7941e&#10;a0-0e6000-7500f f7941e" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-158e7501-9000f A200FF&#10;a339-158e9001-10500f A200FF&#10;a339-158e6000-7500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (7501' to 9000')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (below 7500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Storm slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a68-68e7501-9000f 0000FF&#10;a68-68e6000-7500f 0000FF&#10;a68-68e9001-10500f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (below 7500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 4:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/2438748f-743c-4623-85c2-de2420cb19dc_7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2-report" class="avy-zone dn" data-published="Sunday, March 19, 2023 6:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/f5b21f5a-68bd-4eac-9472-6a2f5f262f0d_7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.19807082581306,-65.88110428582182&z=10&b=mbt&a=sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc939598pa0-0e9001-10500fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-03-20%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc939598pa0-0e9001-10500fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f 939598&#10;a0-0e7501-9000f 939598&#10;a0-0e6000-7500f 939598" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> No forecast (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> No forecast (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> No forecast (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Sunday, March 19, 2023 6:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/f5b21f5a-68bd-4eac-9472-6a2f5f262f0d_7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 5:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/22f3257a-4eca-4944-a594-adb712440476_426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=52.55611523237941,-117.62626152142234&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22bdefbacf-3799-4b5e-a052-d1f79aa090a0%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Deep%20persistent%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-248e7501-9000fcA200FFpa248-248e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22937c6a2c-14fe-4373-940d-c48522c461e1%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-10500fc0000FFpa293-158e7501-9000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f f7941e&#10;a0-0e7501-9000f f7941e&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Deep persistent slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-248e9001-10500f A200FF&#10;a248-248e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
+                        
+                        </ul>
+                    </dd>
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-158e7501-9000f 0000FF&#10;a293-158e9001-10500f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> NW to SE aspects (7501' to 9000')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> NW to SE aspects (9001' to 10500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 5:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/22f3257a-4eca-4944-a594-adb712440476_426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 5:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/24911360-9cae-4e88-9399-d4836ab9a282_de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.802271465561596,-114.87501915613356&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22bed89f61-aac1-4f8e-a8b1-6c1fd49546e9%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-10500fcA200FFpa293-158e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f 50b848&#10;a0-0e7501-9000f 50b848&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-158e7501-9000f A200FF&#10;a293-158e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to SE aspects (7501' to 9000')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to SE aspects (9001' to 10500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 5:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/24911360-9cae-4e88-9399-d4836ab9a282_de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 4:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/0efa9668-dcd9-4a6b-b5fb-1fd27303bcd2_88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=51.00367634103802,-117.98026275174436&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22e7baf305-0c11-448b-b4a7-7d9b26875610%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-203e6000-7500fcA200FFpa203-203e7501-9000fcA200FFpa203-203e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f f7941e&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a203-203e9001-10500f A200FF&#10;a203-203e7501-9000f A200FF&#10;a203-203e6000-7500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (below 7500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 4:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/0efa9668-dcd9-4a6b-b5fb-1fd27303bcd2_88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="95c48d6f8bbfc16ce4f27cb7c6e1d9ae269adcf5657980aa4128cba7272647eb-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 5:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/d3930b1b-4d87-4ca5-b4ac-b9c0c94ec32d_95c48d6f8bbfc16ce4f27cb7c6e1d9ae269adcf5657980aa4128cba7272647eb"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="95c48d6f8bbfc16ce4f27cb7c6e1d9ae269adcf5657980aa4128cba7272647eb-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=54.611995462326526,-121.47821051798076&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fc50b848pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226d7fee5b-564f-4a15-8457-cf2dd1f74114%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e7501-9000fcA200FFpa293-113e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f 50b848&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-113e9001-10500f A200FF&#10;a293-113e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to E aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to E aspects (7501' to 9000')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 5:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/d3930b1b-4d87-4ca5-b4ac-b9c0c94ec32d_95c48d6f8bbfc16ce4f27cb7c6e1d9ae269adcf5657980aa4128cba7272647eb">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 4:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/b80f6861-54c2-4018-b349-fba25879e531_9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=50.50950004840206,-123.64491496924533&z=10&b=mbt&a=sc_a0-0e6000-7500fcf7941epa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcf7941epa0-0e7501-9000fcf7941epa0-0e9001-10500fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fb315559-53e5-4155-801e-3899c159019e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-158e6000-7500fcA200FFpa339-158e7501-9000fcA200FFpa339-158e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%227dc1f04c-ed82-4233-bbc1-6b9f463101be%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a23-23e7501-9000fc0000FFpa23-23e9001-10500fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f f7941e&#10;a0-0e7501-9000f f7941e&#10;a0-0e6000-7500f f7941e" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> Considerable danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-158e9001-10500f A200FF&#10;a339-158e7501-9000f A200FF&#10;a339-158e6000-7500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (7501' to 9000')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> N to SE aspects (below 7500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Storm slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a23-23e9001-10500f 0000FF&#10;a23-23e7501-9000f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-'); return false;" onmouseout="outFunc('problem-2-tooltip-')" href="#"><span class="tooltiptext" id="problem-2-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 4:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/b80f6861-54c2-4018-b349-fba25879e531_9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 5:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/fdf4d6c0-a736-43db-887e-aa36659be8a4_045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.38263589959235,-115.67498131500773&z=10&b=mbt&a=sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc50b848pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%221f1b0482-c19f-4a5a-88f6-e522a0d12ce1%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Wind%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e7501-9000fcA200FFpa293-113e9001-10500fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f 50b848" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> Low danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Wind slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-113e9001-10500f A200FF&#10;a293-113e7501-9000f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to E aspects (9001' to 10500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> NW to E aspects (7501' to 9000')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 5:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/fdf4d6c0-a736-43db-887e-aa36659be8a4_045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf-report" class="avy-zone dn" data-published="Saturday, December 14, 2024 4:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/f9c64acf-ba5a-4731-85ac-1cc4bacf34ac_6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=49.87395314414621,-118.49930092134225&z=10&b=mbt&a=sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fcfff200pa0-0e7501-9000fcfff200pa0-0e9001-10500fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%229b0860fc-4430-46f4-a1dd-383f686d56a3%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222024-12-15%20Storm%20slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-339e9001-10500fcA200FFpa339-339e6000-7500fcA200FFpa339-339e7501-9000fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f fff200&#10;a0-0e7501-9000f fff200&#10;a0-0e6000-7500f fff200" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> Moderate danger (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2024-12-15 Storm slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a339-339e7501-9000f A200FF&#10;a339-339e6000-7500f A200FF&#10;a339-339e9001-10500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-'); return false;" onmouseout="outFunc('problem-1-tooltip-')" href="#"><span class="tooltiptext" id="problem-1-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7">
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (7501' to 9000')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (below 7500')</li>
+                        
+                            <li class="pv1"><div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> All aspects (9001' to 10500')</li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Saturday, December 14, 2024 4:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/f9c64acf-ba5a-4731-85ac-1cc4bacf34ac_6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf">Avalanche Canada</a>
+            </p>
+            
+        </div>
+        
+        <div id="aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0-report" class="avy-zone dn" data-published="Sunday, March 19, 2023 6:00PM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/forecasts/fe98a9ff-9789-494f-99a7-d0a7514adecc_aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0-title" class="mv4 tc">
+                <div><a class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=48.966733042676864,-65.52023174252349&z=10&b=mbt&a=sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc939598pa0-0e9001-10500fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222023-03-20%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e6000-7500fc939598pa0-0e7501-9000fc939598pa0-0e9001-10500fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2023-03-20 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e9001-10500f 939598&#10;a0-0e7501-9000f 939598&#10;a0-0e6000-7500f 939598" onclick="clickFunc(this, 'danger-tooltip-'); return false;" onmouseout="outFunc('danger-tooltip-')" href="#"><span class="tooltiptext" id="danger-tooltip-">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> No forecast (9001' to 10500')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> No forecast (7501' to 9000')
+                        </li>
+                    
+                        <li class="pv1">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> No forecast (below 7500')
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Sunday, March 19, 2023 6:00PM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/forecasts/fe98a9ff-9789-494f-99a7-d0a7514adecc_aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0">Avalanche Canada</a>
             </p>
             
         </div>
@@ -1958,88 +1898,24 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
         <h3 class="tc bb b--moon-gray">Zone</h3>
         <div style="height: 300px;" id="map"></div>
         
-        <div id="3ccedc1a503a3c9b7a30b8448782c8e7fc088b6d6533ddc7e6ecdbead9355e41-shape" data-geojson="/assets/json/avalanche-zones/3ccedc1a503a3c9b7a30b8448782c8e7fc088b6d6533ddc7e6ecdbead9355e41.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/3ccedc1a503a3c9b7a30b8448782c8e7fc088b6d6533ddc7e6ecdbead9355e41.geojson" download="">Download GeoJSON</a></div>
+        <div id="dfbbd8fb5f47ab32e9b880ad011a79763d4d930f3b1e311b5b285ce3bf28aed9-shape" data-geojson="/assets/json/avalanche-zones/dfbbd8fb5f47ab32e9b880ad011a79763d4d930f3b1e311b5b285ce3bf28aed9.geojson" class="avy-zone">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/dfbbd8fb5f47ab32e9b880ad011a79763d4d930f3b1e311b5b285ce3bf28aed9.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf-shape" data-geojson="/assets/json/avalanche-zones/afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf-shape" data-geojson="/assets/json/avalanche-zones/6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="3819ed9cb000979807e6a39d3aa6a615f71008490ad541aaee37cd4b4c75ad14-shape" data-geojson="/assets/json/avalanche-zones/3819ed9cb000979807e6a39d3aa6a615f71008490ad541aaee37cd4b4c75ad14.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/3819ed9cb000979807e6a39d3aa6a615f71008490ad541aaee37cd4b4c75ad14.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18-shape" data-geojson="/assets/json/avalanche-zones/88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="a2d07f19573f750dc48fe7735c0fe0a53cdf13f352b6e05e2a7a21a6294d508f-shape" data-geojson="/assets/json/avalanche-zones/a2d07f19573f750dc48fe7735c0fe0a53cdf13f352b6e05e2a7a21a6294d508f.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/a2d07f19573f750dc48fe7735c0fe0a53cdf13f352b6e05e2a7a21a6294d508f.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f-shape" data-geojson="/assets/json/avalanche-zones/9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="0c6f98fa389f308faa838e1c5098709c57c9bc5acdfd172d0b7a23492fe197c0-shape" data-geojson="/assets/json/avalanche-zones/0c6f98fa389f308faa838e1c5098709c57c9bc5acdfd172d0b7a23492fe197c0.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/0c6f98fa389f308faa838e1c5098709c57c9bc5acdfd172d0b7a23492fe197c0.geojson" download="">Download GeoJSON</a></div>
+        <div id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85-shape" data-geojson="/assets/json/avalanche-zones/010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4-shape" data-geojson="/assets/json/avalanche-zones/2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4.geojson" class="avy-zone dn">
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2-shape" data-geojson="/assets/json/avalanche-zones/444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3-shape" data-geojson="/assets/json/avalanche-zones/7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5-shape" data-geojson="/assets/json/avalanche-zones/045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2-shape" data-geojson="/assets/json/avalanche-zones/7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0-shape" data-geojson="/assets/json/avalanche-zones/aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83-shape" data-geojson="/assets/json/avalanche-zones/de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="971b729aeb5bc2799f0e8f409959da205674207151322f8dda492732a22a34f1-shape" data-geojson="/assets/json/avalanche-zones/971b729aeb5bc2799f0e8f409959da205674207151322f8dda492732a22a34f1.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/971b729aeb5bc2799f0e8f409959da205674207151322f8dda492732a22a34f1.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="4f21be7d5490a0d1c8c8caa642f7cb6961508c18b4a287036cac762506987466-shape" data-geojson="/assets/json/avalanche-zones/4f21be7d5490a0d1c8c8caa642f7cb6961508c18b4a287036cac762506987466.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/4f21be7d5490a0d1c8c8caa642f7cb6961508c18b4a287036cac762506987466.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a-shape" data-geojson="/assets/json/avalanche-zones/b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d-shape" data-geojson="/assets/json/avalanche-zones/2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d.geojson" download="">Download GeoJSON</a></div>
+        <div id="04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1-shape" data-geojson="/assets/json/avalanche-zones/04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da-shape" data-geojson="/assets/json/avalanche-zones/14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da.geojson" class="avy-zone dn">
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1-shape" data-geojson="/assets/json/avalanche-zones/04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/04266849b34e8ba4d97326e4487ce591047d143ffc2ff5c544ab97f16189baf1.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea-shape" data-geojson="/assets/json/avalanche-zones/d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea.geojson" class="avy-zone dn">
@@ -2050,20 +1926,76 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e-shape" data-geojson="/assets/json/avalanche-zones/426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85-shape" data-geojson="/assets/json/avalanche-zones/010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85.geojson" download="">Download GeoJSON</a></div>
+        <div id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a-shape" data-geojson="/assets/json/avalanche-zones/b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="ff27f89a78600ce8622e02e807bc89b31d7f1876832b9dc0ceab5b43cab072e5-shape" data-geojson="/assets/json/avalanche-zones/ff27f89a78600ce8622e02e807bc89b31d7f1876832b9dc0ceab5b43cab072e5.geojson" class="avy-zone dn">
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/ff27f89a78600ce8622e02e807bc89b31d7f1876832b9dc0ceab5b43cab072e5.geojson" download="">Download GeoJSON</a></div>
         </div>
         
+        <div id="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891-shape" data-geojson="/assets/json/avalanche-zones/76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
         <div id="a6f9f3988aaa288a68a87e4cb6843e647b24ccb811a667afad387e33fb51a305-shape" data-geojson="/assets/json/avalanche-zones/a6f9f3988aaa288a68a87e4cb6843e647b24ccb811a667afad387e33fb51a305.geojson" class="avy-zone dn">
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/a6f9f3988aaa288a68a87e4cb6843e647b24ccb811a667afad387e33fb51a305.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf-shape" data-geojson="/assets/json/avalanche-zones/afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d-shape" data-geojson="/assets/json/avalanche-zones/2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="16a962c6b1fc14f325a46d8d43c070c818417f637bb572c878bd0134068fb4d6-shape" data-geojson="/assets/json/avalanche-zones/16a962c6b1fc14f325a46d8d43c070c818417f637bb572c878bd0134068fb4d6.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/16a962c6b1fc14f325a46d8d43c070c818417f637bb572c878bd0134068fb4d6.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2-shape" data-geojson="/assets/json/avalanche-zones/444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/444d537740666f94d10de48b3976fb22375d5ade4f243e8194f2a499410ce9c2.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3-shape" data-geojson="/assets/json/avalanche-zones/7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/7eebe8f938690796c4c7e38672b85e3ce7b49d9481d4e80e4686bd7e89bf3ba3.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2-shape" data-geojson="/assets/json/avalanche-zones/7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/7e9ccb004ccbcd25d5e85737e853da9d2d47850f806c65a8bf117bc40f28bfc2.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e-shape" data-geojson="/assets/json/avalanche-zones/426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83-shape" data-geojson="/assets/json/avalanche-zones/de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/de5c7cdbcfd6416b67c8940083bd64dcfb53ff4b7af6c650f5903d469cc79c83.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18-shape" data-geojson="/assets/json/avalanche-zones/88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/88bcadb4cd2e5bab70a601cf22680689097a9cb784cf42c6fad3bcd20a9b1d18.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="95c48d6f8bbfc16ce4f27cb7c6e1d9ae269adcf5657980aa4128cba7272647eb-shape" data-geojson="/assets/json/avalanche-zones/95c48d6f8bbfc16ce4f27cb7c6e1d9ae269adcf5657980aa4128cba7272647eb.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/95c48d6f8bbfc16ce4f27cb7c6e1d9ae269adcf5657980aa4128cba7272647eb.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f-shape" data-geojson="/assets/json/avalanche-zones/9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/9f6d67ad8e38dcb49f1e987ebe9f6f6451658cec252e8b6d9d9e096ba9689d1f.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5-shape" data-geojson="/assets/json/avalanche-zones/045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/045b2e949b6db721dc0a7260567efbac9a0aaae18047c56e0292164ea8d8cdb5.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf-shape" data-geojson="/assets/json/avalanche-zones/6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/6fcc83c65a5f289d6e99a0fcc8ae5bd91a604b284a2b48d6f018098c55c38edf.geojson" download="">Download GeoJSON</a></div>
+        </div>
+        
+        <div id="aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0-shape" data-geojson="/assets/json/avalanche-zones/aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/aacb08567814cb788f3c53f708f8bca069ee286f3726b3819c198727c6da80c0.geojson" download="">Download GeoJSON</a></div>
         </div>
         
     </div>
