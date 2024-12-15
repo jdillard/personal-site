@@ -67,11 +67,6 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 
             
             
-            <p class="tc f6">
-                <strong>Issued at:</strong> Monday, December 09, 2024 4:30PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://taosavalanchecenter.org/forecasts/#/northern-new-mexico">TAC</a>
-            </p>
-            
         </div>
         
     </div>

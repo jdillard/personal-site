@@ -83,11 +83,6 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 
             
             
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, November 22, 2024 5:30PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/gros-ventre/">BTAC</a>
-            </p>
-            
         </div>
         
         <div id="BTAC-2121-report" class="avy-zone dn" data-published="Friday, December 13, 2024 8:58AM">
@@ -97,11 +92,6 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
 
             
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 8:58AM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/">BTAC</a>
-            </p>
             
         </div>
         
@@ -113,11 +103,6 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 
             
             
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 8:58AM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/snake-river-range">BTAC</a>
-            </p>
-            
         </div>
         
         <div id="BTAC-2132-report" class="avy-zone dn" data-published="Friday, November 22, 2024 5:30PM">
@@ -127,11 +112,6 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
 
             
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, November 22, 2024 5:30PM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/southern-wyoming-range/">BTAC</a>
-            </p>
             
         </div>
         
@@ -143,11 +123,6 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 
             
             
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 8:58AM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">BTAC</a>
-            </p>
-            
         </div>
         
         <div id="BTAC-2122-report" class="avy-zone dn" data-published="Friday, December 13, 2024 8:58AM">
@@ -157,11 +132,6 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
 
             
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 8:58AM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass">BTAC</a>
-            </p>
             
         </div>
         

@@ -67,11 +67,6 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 
             
             
-            <p class="tc f6">
-                <strong>Issued at:</strong> Friday, December 13, 2024 8:35AM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://mountwashingtonavalanchecenter.org/forecast/#/presidential-range">MWAC</a>
-            </p>
-            
         </div>
         
     </div>
