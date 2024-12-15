@@ -1,6 +1,7 @@
 import u from 'umbrellajs';
 import axios from 'axios';
 
+const indexSel = document.getElementById("indexSel");
 const zoneSel = document.getElementById("zoneSel");
 const regionSel = document.getElementById("regionSel");
 
@@ -22,6 +23,18 @@ function getIssues() {
   });
 }
 
+function showRegion(region_id) {
+  const region = document.getElementById(`${region_id}-region`);
+
+  document.querySelectorAll('.avy-region').forEach(function(div) {
+    div.classList.add('dn');
+  });
+
+  region.classList.remove('dn');
+
+  location.replace("#region-" + region_id);
+}
+
 function showZone(zone_id) {
   const report = document.getElementById(`${zone_id}-report`);
   const shape = document.getElementById(`${zone_id}-shape`);
@@ -40,16 +53,31 @@ function showZone(zone_id) {
 // grab url hash if it exists
 const hash = window.location.hash.slice(1)
 if(hash) {
-  showZone(hash.slice(5));
-  zoneSel.value = hash.slice(5)
+  if(hash.startsWith("zone")) {
+    showZone(hash.slice(5));
+    zoneSel.value = hash.slice(5)
+  } else if(hash.startsWith("region")){
+      showRegion(hash.slice(7));
+      indexSel.value = hash.slice(7)
+  }
 }
 
-zoneSel.onchange = function () {
-  showZone(this.value);
+if(indexSel) {
+  indexSel.onchange = function () {
+    showRegion(this.value);
+  }
 }
 
-regionSel.onchange = function () {
-  window.location.assign(this.value);
+if(zoneSel) {
+  zoneSel.onchange = function () {
+    showZone(this.value);
+  }
+}
+
+if(regionSel) {
+  regionSel.onchange = function () {
+    window.location.assign(this.value);
+  }
 }
 
 window.clickFunc = function(element, tooltip) {
@@ -100,10 +128,11 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo
 
 let layers = {};  // all layers with filenames as keys
 let currentLayer = null; //filename as key
+const bounds = L.latLngBounds();
 
 // load a GeoJSON file and add to the map in given color
-function addLayer(filePath, color) {
-    fetch(`/assets/json/avalanche-zones/${filePath}.geojson`)
+async function addLayer(filePath, color, type) {
+    await fetch(`/assets/json/avalanche-zones/${filePath}.geojson`)
         .then(response => response.json())
         .then(data => {
             const layer = L.geoJSON(data, {
@@ -115,20 +144,28 @@ function addLayer(filePath, color) {
               },
               onEachFeature: function(feature, layer) {
                 layer.on('click', function() {
-                    window.location.hash = `zone-${filePath}`;
+                    if(type == "zone") {
+                      window.location.hash = `zone-${filePath}`;
+                    } else if(type == "region") {
+                      window.location.assign(`${indexSel.value}.html#zone-${filePath}`);
+                    }
                 });
             }
             }).addTo(map);
             layers[filePath] = layer;
 
-            //TODO change to calling highlightLayer(currentLayer) after all layers are loaded
-            // Check if the layer corresponds to the selected option and fit bounds
-            const options = document.getElementById("zoneSel").options;
-            for (let i = 0; i < options.length; i++) {
-                if (options[i].selected && options[i].value === filePath) {
-                    map.fitBounds(layer.getBounds());
-                    break;
-                }
+            if(type == "zone") {
+              //TODO change to calling highlightLayer(currentLayer) after all layers are loaded
+              // Check if the layer corresponds to the selected option and fit bounds
+              const zones = getZones();
+              for (let i = 0; i < zones.options.length; i++) {
+                  if (zones.options[i].selected && zones.options[i].value === filePath) {
+                      map.fitBounds(layer.getBounds());
+                      break;
+                  }
+              }
+            } else {
+              bounds.extend(layer.getBounds());
             }
         })
         .catch(error => console.error("Error loading GeoJSON:", error));
@@ -149,20 +186,52 @@ function highlightLayer(filePath) {
   }
 }
 
+function getZones() {
+  let options = []
+  let type = 'zone';
+  if(zoneSel) {
+    options = document.getElementById("zoneSel").options;
+  }
+  else if(indexSel) {
+    const region = indexSel.value;
+    const ulElement = document.getElementById(`${region}-zones`);
+    const liElements = ulElement.querySelectorAll('li');
+    options = Array.from(liElements).map(li => ({
+      value: li.getAttribute('data-zone'),
+      selected: false
+    }));
+    type = 'region';
+  }
+  return {options, type};
+}
+
 // load all GeoJSON layers initially
-const options = document.getElementById("zoneSel").options;
-for (let i = 0; i < options.length; i++) {
+const zones = getZones()
+const promises = [];
+for (let i = 0; i < zones.options.length; i++) {
   let color = "#AAAAAA";
-  if (options[i].selected) {
+  if (zones.options[i].selected) {
     color = "#357EDD";
   }
-  addLayer(options[i].value, color);
+  promises.push(addLayer(zones.options[i].value, color, zones.type));
+}
+if(zones.type == "region") {
+  // Wait for all addLayer calls to complete
+  Promise.all(promises).then(() => {
+    for (let key in layers) {
+      bounds.extend(layers[key].getBounds());
+    }
+
+    map.fitBounds(bounds);
+  });
 }
 
 // event listener for changing the layer highlight
-document.getElementById("zoneSel").addEventListener("change", function(event) {
-  highlightLayer(event.target.value);
-});
+if(zoneSel) {
+  document.getElementById("zoneSel").addEventListener("change", function(event) {
+    highlightLayer(event.target.value);
+  });
+}
 
 // reload page when the hash changes (a layer is selected on the map)
 window.addEventListener('hashchange', () => {
