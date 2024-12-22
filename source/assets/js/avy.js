@@ -184,32 +184,36 @@ function updateDisplay() {
     url.setAttribute('href', output);
 }
 
-xSlider.addEventListener('input', (e) => {
-    const x = parseInt(e.target.value);
-    const y = parseInt(ySlider.value);
+if(xSlider && ySlider) {
+  xSlider.addEventListener('input', (e) => {
+      const x = parseInt(e.target.value);
+      const y = parseInt(ySlider.value);
 
-    // ensure X doesn't exceed Y-1
-    if (x >= y) {
-        xSlider.value = y - 1;
-    }
+      // ensure X doesn't exceed Y-1
+      if (x >= y) {
+          xSlider.value = y - 1;
+      }
 
-    updateDisplay();
-});
+      updateDisplay();
+  });
 
-ySlider.addEventListener('input', (e) => {
-    const x = parseInt(xSlider.value);
-    const y = parseInt(e.target.value);
+  ySlider.addEventListener('input', (e) => {
+      const x = parseInt(xSlider.value);
+      const y = parseInt(e.target.value);
 
-    // ensure Y isn't less than X+1
-    if (y <= x) {
-        ySlider.value = x + 1;
-    }
+      // ensure Y isn't less than X+1
+      if (y <= x) {
+          ySlider.value = x + 1;
+      }
 
-    updateDisplay();
-});
+      updateDisplay();
+  });
 
-// initial display
-updateDisplay();
+  // initial display
+  updateDisplay();
+}
+
+
 
 // style danger layer colors
 document.querySelectorAll('.dynamic-color').forEach(el => {
