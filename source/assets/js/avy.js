@@ -109,6 +109,18 @@ window.outFunc = function(tooltip) {
 //TODO better function name
 //TODO better variable names
 function updateDisplay() {
+    const avyZones = document.querySelectorAll('.avy-zone');
+    const currentZone = Array.from(avyZones).find(el => !el.classList.contains('dn'));
+    const url = document.getElementById(`${currentZone.dataset.id}-url`);
+    const sliders = document.getElementById("band-sliders");
+
+    if(!url) {
+      sliders.classList.add('dn');
+      return;
+    } else {
+      sliders.classList.remove('dn');
+    }
+
     const x = parseInt(xSlider.value);
     const y = parseInt(ySlider.value);
 
@@ -117,13 +129,9 @@ function updateDisplay() {
     range2.innerHTML = `<b>NTL</b>: ${x + 1} to ${y} ft`;
     range3.innerHTML = `<b>BTL</b>: Below ${x} ft`;
 
-    const avyZones = document.querySelectorAll('.avy-zone');
-    const currentZone = Array.from(avyZones).find(el => !el.classList.contains('dn'));
-    const rules = document.querySelectorAll(`.rules-${currentZone.dataset.id}`);
-
     const report = document.getElementById(`${currentZone.dataset.id}-report`);
-    const url = document.getElementById(`${currentZone.dataset.id}-url`);
     const oldUrl = url.getAttribute("data-url")
+    const rules = document.querySelectorAll(`.rules-${currentZone.dataset.id}`);
     const btl = parseInt(report.getAttribute("data-btl"), 10);
     const atl = parseInt(report.getAttribute("data-atl"), 10);
 

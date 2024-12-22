@@ -407,6 +407,7 @@ for state in states:
                                 layer_colors.append(f"#{danger_levels.get(f'utah{color}')['color']}")
 
                             if index == 0:
+                                elv_band = "btl"
                                 # split chunk per color to calculate aspect values for each
                                 for danger_index in layer_color_indexes:
                                     split_list = [danger_index if item == danger_index else 0 for item in chunk]
@@ -415,6 +416,7 @@ for state in states:
                                     layer_rules.append(f'a{start}-{end}e{zone["elevations"].get("btl")[0]}-{zone["elevations"].get("btl")[1]}f {danger_levels.get(f"utah{danger_index}")["color"]}')
                                 layer_desc = f"{danger_levels.get(min_danger_index)['shortdesc']} to {danger_levels.get(max_danger_index)['shortdesc']} danger (below {zone['elevations'].get('btl')[1]}')"
                             elif index == 1:
+                                elv_band = "ntl"
                                 # split chunk per color to calculate aspect values for each
                                 for danger_index in layer_color_indexes:
                                     split_list = [danger_index if item == danger_index else 0 for item in chunk]
@@ -423,6 +425,7 @@ for state in states:
                                     layer_rules.append(f'a{start}-{end}e{zone["elevations"].get("ntl")[0]}-{zone["elevations"].get("ntl")[1]}f {danger_levels.get(f"utah{danger_index}")["color"]}')
                                 layer_desc = f"{danger_levels.get(min_danger_index)['shortdesc']} to {danger_levels.get(max_danger_index)['shortdesc']} danger ({zone['elevations'].get('ntl')[0]}' to {zone['elevations'].get('ntl')[1]}')"
                             else:
+                                elv_band = "atl"
                                 # split chunk per color to calculate aspect values for each
                                 for danger_index in layer_color_indexes:
                                     split_list = [danger_index if item == danger_index else 0 for item in chunk]
@@ -432,6 +435,7 @@ for state in states:
                                 layer_desc = f"{danger_levels.get(min_danger_index)['shortdesc']} to {danger_levels.get(max_danger_index)['shortdesc']} danger ({elv_range})"
 
                         danger_rules.append({
+                            "id": elv_band,
                             "layer": layer_rules,
                             "desc": layer_desc,
                             "colors": layer_colors
