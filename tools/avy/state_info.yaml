@@ -65,8 +65,11 @@
 - abbr: "ID"
   name: "Idaho"
   elevations:
-    0: {}
-    149: {} # TODO: fill in
+    0:
+      lower: [0, 6500]
+      middle: [6501, 7500]
+      upper: [7501, 20310]
+    # 149: {} # TODO: fill in
     272:
       lower: [0, 4500]
       middle: [4501, 5500]
@@ -146,7 +149,10 @@
 - abbr: "WY"
   name: "Wyoming"
   elevations:
-    0: {}
+    0:
+      lower: [6000, 7500]
+      middle: [7501, 9000]
+      upper: [9001, 20310]
     1331:
       lower: [0, 7501]
       middle: [7501, 8500]
