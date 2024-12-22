@@ -72,6 +72,19 @@ if(hash) {
       showRegion(hash.slice(7));
       indexSel.value = hash.slice(7)
   }
+} else {
+  const avyZones = document.querySelectorAll('.avy-zone');
+  if(avyZones.length > 0) {
+    const currentZone = Array.from(avyZones).find(el => !el.classList.contains('dn'));
+    const url = document.getElementById(`${currentZone.dataset.id}-url`);
+
+    const report = document.getElementById(`${currentZone.dataset.id}-report`);
+    const btl = report.getAttribute("data-btl");
+    const atl = report.getAttribute("data-atl");
+
+    xSlider.value = btl;
+    ySlider.value = atl;
+  }
 }
 
 if(indexSel) {
