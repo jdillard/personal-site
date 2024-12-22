@@ -5,6 +5,13 @@ const indexSel = document.getElementById("indexSel");
 const zoneSel = document.getElementById("zoneSel");
 const regionSel = document.getElementById("regionSel");
 
+//TODO better variable names
+const xSlider = document.getElementById('xSlider');
+const ySlider = document.getElementById('ySlider');
+const range1 = document.getElementById('range1');
+const range2 = document.getElementById('range2');
+const range3 = document.getElementById('range3');
+
 function getIssues() {
   axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=avy&state=open')
     .then(function (response) {
@@ -39,6 +46,8 @@ function showZone(zone_id) {
   const report = document.getElementById(`${zone_id}-report`);
   const shape = document.getElementById(`${zone_id}-shape`);
   const geojson = shape.getAttribute("data-geojson");
+  const btl = report.getAttribute("data-btl");
+  const atl = report.getAttribute("data-atl");
 
   document.querySelectorAll('.avy-zone').forEach(function(div) {
     div.classList.add('dn');
@@ -48,6 +57,9 @@ function showZone(zone_id) {
   shape.classList.remove('dn');
 
   location.replace("#zone-" + zone_id);
+
+  xSlider.value = btl;
+  ySlider.value = atl;
 }
 
 // grab url hash if it exists
@@ -92,6 +104,104 @@ window.outFunc = function(tooltip) {
   var tooltip = document.getElementById(tooltip);
   tooltip.innerHTML = "Copy ruleset";
 }
+
+// set elevation ranges
+//TODO better function name
+//TODO better variable names
+function updateDisplay() {
+    const x = parseInt(xSlider.value);
+    const y = parseInt(ySlider.value);
+
+    // update range displays
+    range1.innerHTML = `<b>ATL</b>: Above ${y + 1} ft`;
+    range2.innerHTML = `<b>NTL</b>: ${x + 1} to ${y} ft`;
+    range3.innerHTML = `<b>BTL</b>: Below ${x} ft`;
+
+    const avyZones = document.querySelectorAll('.avy-zone');
+    const currentZone = Array.from(avyZones).find(el => !el.classList.contains('dn'));
+    const rules = document.querySelectorAll(`.${currentZone.dataset.id}-rules`);
+
+    const report = document.getElementById(`${currentZone.dataset.id}-report`);
+    const url = document.getElementById(`${currentZone.dataset.id}-url`);
+    const oldUrl = url.getAttribute("data-url")
+    const btl = parseInt(report.getAttribute("data-btl"), 10);
+    const atl = parseInt(report.getAttribute("data-atl"), 10);
+
+    const replacements = {
+      btl: `below ${x}'`,
+      ntl: `${x + 1}' to ${y}'`,
+      atl: `above ${y + 1}'`
+    };
+
+    const ranges = [
+      { match: `e0-${btl}f`, replaceWith: `e0-${x}f` },
+      { match: `e${btl + 1}-${atl}f`, replaceWith: `e${x + 1}-${y}f` },
+      { match: `e${atl + 1}-20310f`, replaceWith: `e${y + 1}-20310f` }
+    ];
+
+    rules.forEach(ul => {
+      // check if the <ul> contains any <li> with the target classes
+      // if no relevant <li> exists, skip this <ul>
+      const hasRelevantLi = Array.from(ul.querySelectorAll("li")).some(li =>
+        Object.keys(replacements).some(className => li.classList.contains(className))
+      );
+      if (!hasRelevantLi) return;
+
+      const listItems = ul.querySelectorAll("li");
+
+      listItems.forEach(li => {
+        // check the class name of the <li> and get the corresponding replacement
+        for (const [className, replacement] of Object.entries(replacements)) {
+          if (li.classList.contains(className)) {
+            const descSpan = li.querySelector(".desc");
+            if (descSpan) {
+              // replace the text inside parentheses using a regex
+              descSpan.innerHTML = descSpan.innerHTML.replace(/\(.*?\)/, `(${replacement})`);
+            }
+            break;
+          }
+        }
+      });
+    });
+
+    // Create a regex pattern from the ranges dynamically
+    const regex = new RegExp(ranges.map(r => r.match).join("|"), "g");
+
+    // Replace dynamically using a function
+    const output = oldUrl.replace(regex, (matched) => {
+      const range = ranges.find(r => r.match === matched);
+      return range ? range.replaceWith : matched;
+    });
+
+    url.setAttribute('href', output);
+}
+
+xSlider.addEventListener('input', (e) => {
+    const x = parseInt(e.target.value);
+    const y = parseInt(ySlider.value);
+
+    // ensure X doesn't exceed Y-1
+    if (x >= y) {
+        xSlider.value = y - 1;
+    }
+
+    updateDisplay();
+});
+
+ySlider.addEventListener('input', (e) => {
+    const x = parseInt(xSlider.value);
+    const y = parseInt(e.target.value);
+
+    // ensure Y isn't less than X+1
+    if (y <= x) {
+        ySlider.value = x + 1;
+    }
+
+    updateDisplay();
+});
+
+// initial display
+updateDisplay();
 
 // style danger layer colors
 document.querySelectorAll('.dynamic-color').forEach(el => {

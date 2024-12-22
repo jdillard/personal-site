@@ -448,11 +448,13 @@ for state in states:
                     middle = f'a0-0e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {danger_levels.get(data["danger"][0]["middle"])["color"]}'
                     upper = f'a0-0e{zone["elevations"].get("upper")[0]}-{zone["elevations"].get("upper")[1]}f {danger_levels.get(data["danger"][0]["upper"])["color"]}'
                     danger_rules.append({
+                        "id": "btl",
                         "layer": lower,
                         "desc": f"{danger_levels.get(data['danger'][0]['lower'])['desc']} (below {zone['elevations'].get('lower')[1]}')",
                         "colors": [f"#{danger_levels.get(data['danger'][0]['lower'])['color']}"]
                     })
                     danger_rules.append({
+                        "id": "ntl",
                         "layer": middle,
                         "desc": f"{danger_levels.get(data['danger'][0]['middle'])['desc']} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
                         "colors": [f"#{danger_levels.get(data['danger'][0]['middle'])['color']}"]
@@ -463,6 +465,7 @@ for state in states:
                     else:
                         elv_range =  f"{zone['elevations'].get('upper')[0]}' to {zone['elevations'].get('upper')[1]}'"
                     danger_rules.append({
+                        "id": "atl",
                         "layer": upper,
                         "desc": f"{danger_levels.get(data['danger'][0]['upper'])['desc']} ({elv_range})",
                         "colors": [f"#{danger_levels.get(data['danger'][0]['upper'])['color']}"]
@@ -487,6 +490,7 @@ for state in states:
                                 if index == 2:
                                     layer = f'a{start}-{end}e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {problem_color.get(i)}'
                                     rules.append({
+                                        "id": "btl",
                                         "layer": layer,
                                         "desc": f"{desc} (below {zone['elevations'].get('lower')[1]}')",
                                         "color": f"#{problem_color.get(i)}",
@@ -494,6 +498,7 @@ for state in states:
                                 elif index == 1:
                                     layer = f'a{start}-{end}e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {problem_color.get(i)}'
                                     rules.append({
+                                        "id": "ntl",
                                         "layer": layer,
                                         "desc": f"{desc} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
                                         "color": f"#{problem_color.get(i)}",
@@ -506,6 +511,7 @@ for state in states:
                                     else:
                                         elv_range = f"{zone['elevations'].get('upper')[0]}' to {zone['elevations'].get('upper')[1]}'"
                                     rules.append({
+                                        "id": "atl",
                                         "layer": layer,
                                         "desc": f"{desc} ({elv_range})",
                                         "color": f"#{problem_color.get(i)}",
@@ -541,6 +547,7 @@ for state in states:
                             start, end, desc = sort_directions(lower)
                             lower_layer = f'a{start}-{end}e{zone["elevations"].get("lower")[0]}-{zone["elevations"].get("lower")[1]}f {problem_color.get(i)}'
                             rules.append({
+                                "id": "btl",
                                 "layer": lower_layer,
                                 "desc": f"{desc} (below {zone['elevations'].get('lower')[1]}')",
                                 "color": f"#{problem_color.get(i)}",
@@ -549,6 +556,7 @@ for state in states:
                             start, end, desc = sort_directions(middle)
                             middle_layer = f'a{start}-{end}e{zone["elevations"].get("middle")[0]}-{zone["elevations"].get("middle")[1]}f {problem_color.get(i)}'
                             rules.append({
+                                "id": "ntl",
                                 "layer": middle_layer,
                                 "desc": f"{desc} ({zone['elevations'].get('middle')[0]}' to {zone['elevations'].get('middle')[1]}')",
                                 "color": f"#{problem_color.get(i)}",
@@ -562,6 +570,7 @@ for state in states:
                             else:
                                 elv_range = f"{zone['elevations'].get('upper')[0]}' to {zone['elevations'].get('upper')[1]}'"
                             rules.append({
+                                "id": "atl",
                                 "layer": upper_layer,
                                 "desc": f"{desc} ({elv_range})",
                                 "color": f"#{problem_color.get(i)}",
