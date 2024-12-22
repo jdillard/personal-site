@@ -88,7 +88,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 <div class="flex flex-column flex-row-ns">
     <div class="ph3 w-100 w-50-ns">
         {% for zone in zones %}
-        <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}" data-btl="{{ zone.elevations['lower'][1] }}" data-atl="{{ zone.elevations['middle'][1] }}" data-published="{{ zone.published }}">
+        <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}" data-btl="{{ zone.elevations['btl'][1] }}" data-atl="{{ zone.elevations['ntl'][1] }}" data-published="{{ zone.published }}">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="{{ zone.url }}"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             {% if zone.danger %}
             <div id="{{ zone.slug }}-title" class="mv4 tc">
@@ -100,7 +100,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ zone.danger | map(attribute='layer') | reverse | join('&#10;') }}" onclick="clickFunc(this, 'danger-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('danger-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="danger-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7 {{ zone.slug }}-rules">
+                    <ul class="list pl0 mt1 mb0 code f7 rules-{{ zone.slug }}">
                     {% for rule in zone.danger|reverse %}
                         <li class="pv1 {{ rule.id }}">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
@@ -125,7 +125,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ problem.rules | map(attribute='layer') | reverse | join('&#10;') }}" onclick="clickFunc(this, 'problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7 {{ zone.slug }}-rules">
+                        <ul class="list pl0 mt1 mb0 code f7 rules-{{ zone.slug }}">
                         {% for rule in problem.rules|reverse %}
                             <li class="pv1 {{ rule.id }}">
                                 <div style="clear: both;background-color: {{ rule.color }}" class="fl mr2 h1 w1"></div> <span class="desc">{{ rule.desc }}</span>

@@ -119,7 +119,7 @@ function updateDisplay() {
 
     const avyZones = document.querySelectorAll('.avy-zone');
     const currentZone = Array.from(avyZones).find(el => !el.classList.contains('dn'));
-    const rules = document.querySelectorAll(`.${currentZone.dataset.id}-rules`);
+    const rules = document.querySelectorAll(`.rules-${currentZone.dataset.id}`);
 
     const report = document.getElementById(`${currentZone.dataset.id}-report`);
     const url = document.getElementById(`${currentZone.dataset.id}-url`);
