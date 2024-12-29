@@ -5,6 +5,12 @@ const indexSel = document.getElementById("indexSel");
 const zoneSel = document.getElementById("zoneSel");
 const regionSel = document.getElementById("regionSel");
 
+const btlSlider = document.getElementById('btlSlider');
+const atlSlider = document.getElementById('atlSlider');
+const atlBand = document.getElementById('atl-band');
+const ntlBand = document.getElementById('ntl-band');
+const btlBand = document.getElementById('btl-band');
+
 function getIssues() {
   axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=avy&state=open')
     .then(function (response) {
@@ -35,10 +41,13 @@ function showRegion(region_id) {
   location.replace("#region-" + region_id);
 }
 
+// show zone details (report/map)
 function showZone(zone_id) {
   const report = document.getElementById(`${zone_id}-report`);
   const shape = document.getElementById(`${zone_id}-shape`);
   const geojson = shape.getAttribute("data-geojson");
+  const btl = report.getAttribute("data-btl");
+  const atl = report.getAttribute("data-atl");
 
   document.querySelectorAll('.avy-zone').forEach(function(div) {
     div.classList.add('dn');
@@ -48,6 +57,9 @@ function showZone(zone_id) {
   shape.classList.remove('dn');
 
   location.replace("#zone-" + zone_id);
+
+  btlSlider.value = btl;
+  atlSlider.value = atl;
 }
 
 // grab url hash if it exists
@@ -59,6 +71,18 @@ if(hash) {
   } else if(hash.startsWith("region")){
       showRegion(hash.slice(7));
       indexSel.value = hash.slice(7)
+  }
+} else {
+  const avyZones = document.querySelectorAll('.avy-zone');
+  if(avyZones.length > 0) {
+    const currentZone = Array.from(avyZones).find(el => !el.classList.contains('dn'));
+
+    const report = document.getElementById(`${currentZone.dataset.id}-report`);
+    const btl = report.getAttribute("data-btl");
+    const atl = report.getAttribute("data-atl");
+
+    btlSlider.value = btl;
+    atlSlider.value = atl;
   }
 }
 
@@ -93,6 +117,114 @@ window.outFunc = function(tooltip) {
   tooltip.innerHTML = "Copy ruleset";
 }
 
+// set elevation ranges
+function updateRangeValues() {
+    const avyZones = document.querySelectorAll('.avy-zone');
+    const currentZone = Array.from(avyZones).find(el => !el.classList.contains('dn'));
+    const url = document.getElementById(`${currentZone.dataset.id}-url`);
+    const sliders = document.getElementById("band-sliders");
+
+    // if caltopo link exists for current zone
+    if(!url) {
+      // hide sliders and exit
+      sliders.classList.add('dn');
+      return;
+    } else {
+      // make sure sliders are visible
+      sliders.classList.remove('dn');
+    }
+
+    const atl = parseInt(btlSlider.value);
+    const btl = parseInt(atlSlider.value);
+
+    // update range displays
+    atlBand.innerHTML = `<b>ATL</b>: Above ${btl + 1} ft`;
+    ntlBand.innerHTML = `<b>NTL</b>: ${atl + 1} to ${btl} ft`;
+    btlBand.innerHTML = `<b>BTL</b>: Below ${atl} ft`;
+
+    const oldUrl = url.getAttribute("data-url")
+    const rules = document.querySelectorAll(`.rules-${currentZone.dataset.id}`);
+
+    const report = document.getElementById(`${currentZone.dataset.id}-report`);
+    const oldBtl = parseInt(report.getAttribute("data-btl"), 10);
+    const oldAtl = parseInt(report.getAttribute("data-atl"), 10);
+
+    const replacements = {
+      btl: `below ${atl}'`,
+      ntl: `${atl + 1}' to ${btl}'`,
+      atl: `above ${btl + 1}'`
+    };
+
+    const ranges = [
+      { match: `e0-${oldBtl}f`, replaceWith: `e0-${atl}f` },
+      { match: `e${oldBtl + 1}-${oldAtl}f`, replaceWith: `e${atl + 1}-${btl}f` },
+      { match: `e${oldAtl + 1}-20310f`, replaceWith: `e${btl + 1}-20310f` }
+    ];
+
+    rules.forEach(ul => {
+      // check if the <ul> contains any <li> with the target classes
+      // if no relevant <li> exists, skip this <ul>
+      const hasRelevantLi = Array.from(ul.querySelectorAll("li")).some(li =>
+        Object.keys(replacements).some(className => li.classList.contains(className))
+      );
+      if (!hasRelevantLi) return;
+
+      const listItems = ul.querySelectorAll("li");
+
+      listItems.forEach(li => {
+        // check the class name of the <li> and get the corresponding replacement
+        for (const [className, replacement] of Object.entries(replacements)) {
+          if (li.classList.contains(className)) {
+            const descSpan = li.querySelector(".desc");
+            if (descSpan) {
+              // replace the text inside parentheses using a regex
+              descSpan.innerHTML = descSpan.innerHTML.replace(/\(.*?\)/, `(${replacement})`);
+            }
+            break;
+          }
+        }
+      });
+    });
+
+    // replace elevation band patterns in caltopo url with slider values
+    const regex = new RegExp(ranges.map(r => r.match).join("|"), "g");
+    const output = oldUrl.replace(regex, (matched) => {
+      const range = ranges.find(r => r.match === matched);
+      return range ? range.replaceWith : matched;
+    });
+
+    url.setAttribute('href', output);
+}
+
+if(btlSlider && atlSlider) {
+  btlSlider.addEventListener('input', (e) => {
+      const btl = parseInt(e.target.value);
+      const atl = parseInt(atlSlider.value);
+
+      // ensure btl doesn't exceed atl-1
+      if (btl >= atl) {
+          btlSlider.value = atl - 1;
+      }
+
+      updateRangeValues();
+  });
+
+  atlSlider.addEventListener('input', (e) => {
+      const btl = parseInt(btlSlider.value);
+      const atl = parseInt(e.target.value);
+
+      // ensure atl isn't less than btl+1
+      if (atl <= btl) {
+          atlSlider.value = btl + 1;
+      }
+
+      updateRangeValues();
+  });
+
+  // initial display
+  updateRangeValues();
+}
+
 // style danger layer colors
 document.querySelectorAll('.dynamic-color').forEach(el => {
   const color1 = el.getAttribute('data-color1');
@@ -121,7 +253,7 @@ document.querySelectorAll('.dynamic-color').forEach(el => {
   }
 });
 
-// Initialize the map
+// initialize the zones map
 var map = L.map('map').setView([51.505, -0.09], 13);
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(map);
