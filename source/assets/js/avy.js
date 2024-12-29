@@ -5,12 +5,11 @@ const indexSel = document.getElementById("indexSel");
 const zoneSel = document.getElementById("zoneSel");
 const regionSel = document.getElementById("regionSel");
 
-//TODO better variable names
-const xSlider = document.getElementById('xSlider');
-const ySlider = document.getElementById('ySlider');
-const range1 = document.getElementById('range1');
-const range2 = document.getElementById('range2');
-const range3 = document.getElementById('range3');
+const btlSlider = document.getElementById('btlSlider');
+const atlSlider = document.getElementById('atlSlider');
+const atlBand = document.getElementById('atl-band');
+const ntlBand = document.getElementById('ntl-band');
+const btlBand = document.getElementById('btl-band');
 
 function getIssues() {
   axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=avy&state=open')
@@ -42,6 +41,7 @@ function showRegion(region_id) {
   location.replace("#region-" + region_id);
 }
 
+// show zone details (report/map)
 function showZone(zone_id) {
   const report = document.getElementById(`${zone_id}-report`);
   const shape = document.getElementById(`${zone_id}-shape`);
@@ -58,8 +58,8 @@ function showZone(zone_id) {
 
   location.replace("#zone-" + zone_id);
 
-  xSlider.value = btl;
-  ySlider.value = atl;
+  btlSlider.value = btl;
+  atlSlider.value = atl;
 }
 
 // grab url hash if it exists
@@ -76,14 +76,13 @@ if(hash) {
   const avyZones = document.querySelectorAll('.avy-zone');
   if(avyZones.length > 0) {
     const currentZone = Array.from(avyZones).find(el => !el.classList.contains('dn'));
-    const url = document.getElementById(`${currentZone.dataset.id}-url`);
 
     const report = document.getElementById(`${currentZone.dataset.id}-report`);
     const btl = report.getAttribute("data-btl");
     const atl = report.getAttribute("data-atl");
 
-    xSlider.value = btl;
-    ySlider.value = atl;
+    btlSlider.value = btl;
+    atlSlider.value = atl;
   }
 }
 
@@ -119,45 +118,47 @@ window.outFunc = function(tooltip) {
 }
 
 // set elevation ranges
-//TODO better function name
-//TODO better variable names
-function updateDisplay() {
+function updateRangeValues() {
     const avyZones = document.querySelectorAll('.avy-zone');
     const currentZone = Array.from(avyZones).find(el => !el.classList.contains('dn'));
     const url = document.getElementById(`${currentZone.dataset.id}-url`);
     const sliders = document.getElementById("band-sliders");
 
+    // if caltopo link exists for current zone
     if(!url) {
+      // hide sliders and exit
       sliders.classList.add('dn');
       return;
     } else {
+      // make sure sliders are visible
       sliders.classList.remove('dn');
     }
 
-    const x = parseInt(xSlider.value);
-    const y = parseInt(ySlider.value);
+    const atl = parseInt(btlSlider.value);
+    const btl = parseInt(atlSlider.value);
 
     // update range displays
-    range1.innerHTML = `<b>ATL</b>: Above ${y + 1} ft`;
-    range2.innerHTML = `<b>NTL</b>: ${x + 1} to ${y} ft`;
-    range3.innerHTML = `<b>BTL</b>: Below ${x} ft`;
+    atlBand.innerHTML = `<b>ATL</b>: Above ${btl + 1} ft`;
+    ntlBand.innerHTML = `<b>NTL</b>: ${atl + 1} to ${btl} ft`;
+    btlBand.innerHTML = `<b>BTL</b>: Below ${atl} ft`;
 
-    const report = document.getElementById(`${currentZone.dataset.id}-report`);
     const oldUrl = url.getAttribute("data-url")
     const rules = document.querySelectorAll(`.rules-${currentZone.dataset.id}`);
-    const btl = parseInt(report.getAttribute("data-btl"), 10);
-    const atl = parseInt(report.getAttribute("data-atl"), 10);
+
+    const report = document.getElementById(`${currentZone.dataset.id}-report`);
+    const oldBtl = parseInt(report.getAttribute("data-btl"), 10);
+    const oldAtl = parseInt(report.getAttribute("data-atl"), 10);
 
     const replacements = {
-      btl: `below ${x}'`,
-      ntl: `${x + 1}' to ${y}'`,
-      atl: `above ${y + 1}'`
+      btl: `below ${atl}'`,
+      ntl: `${atl + 1}' to ${btl}'`,
+      atl: `above ${btl + 1}'`
     };
 
     const ranges = [
-      { match: `e0-${btl}f`, replaceWith: `e0-${x}f` },
-      { match: `e${btl + 1}-${atl}f`, replaceWith: `e${x + 1}-${y}f` },
-      { match: `e${atl + 1}-20310f`, replaceWith: `e${y + 1}-20310f` }
+      { match: `e0-${oldBtl}f`, replaceWith: `e0-${atl}f` },
+      { match: `e${oldBtl + 1}-${oldAtl}f`, replaceWith: `e${atl + 1}-${btl}f` },
+      { match: `e${oldAtl + 1}-20310f`, replaceWith: `e${btl + 1}-20310f` }
     ];
 
     rules.forEach(ul => {
@@ -185,10 +186,8 @@ function updateDisplay() {
       });
     });
 
-    // Create a regex pattern from the ranges dynamically
+    // replace elevation band patterns in caltopo url with slider values
     const regex = new RegExp(ranges.map(r => r.match).join("|"), "g");
-
-    // Replace dynamically using a function
     const output = oldUrl.replace(regex, (matched) => {
       const range = ranges.find(r => r.match === matched);
       return range ? range.replaceWith : matched;
@@ -197,36 +196,34 @@ function updateDisplay() {
     url.setAttribute('href', output);
 }
 
-if(xSlider && ySlider) {
-  xSlider.addEventListener('input', (e) => {
-      const x = parseInt(e.target.value);
-      const y = parseInt(ySlider.value);
+if(btlSlider && atlSlider) {
+  btlSlider.addEventListener('input', (e) => {
+      const btl = parseInt(e.target.value);
+      const atl = parseInt(atlSlider.value);
 
-      // ensure X doesn't exceed Y-1
-      if (x >= y) {
-          xSlider.value = y - 1;
+      // ensure btl doesn't exceed atl-1
+      if (btl >= atl) {
+          btlSlider.value = atl - 1;
       }
 
-      updateDisplay();
+      updateRangeValues();
   });
 
-  ySlider.addEventListener('input', (e) => {
-      const x = parseInt(xSlider.value);
-      const y = parseInt(e.target.value);
+  atlSlider.addEventListener('input', (e) => {
+      const btl = parseInt(btlSlider.value);
+      const atl = parseInt(e.target.value);
 
-      // ensure Y isn't less than X+1
-      if (y <= x) {
-          ySlider.value = x + 1;
+      // ensure atl isn't less than btl+1
+      if (atl <= btl) {
+          atlSlider.value = btl + 1;
       }
 
-      updateDisplay();
+      updateRangeValues();
   });
 
   // initial display
-  updateDisplay();
+  updateRangeValues();
 }
-
-
 
 // style danger layer colors
 document.querySelectorAll('.dynamic-color').forEach(el => {
@@ -256,7 +253,7 @@ document.querySelectorAll('.dynamic-color').forEach(el => {
   }
 });
 
-// Initialize the map
+// initialize the zones map
 var map = L.map('map').setView([51.505, -0.09], 13);
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(map);
