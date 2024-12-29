@@ -116,7 +116,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
+<<<<<<< HEAD
         <div id="BTAC-2121-report" class="avy-zone dn" data-id="BTAC-2121" data-btl="7500" data-atl="9000" data-published="Sunday, December 29, 2024 6:58AM">
+=======
+        <div id="BTAC-2121-report" class="avy-zone dn" data-published="Sunday, December 29, 2024 6:58AM">
+>>>>>>> master
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="BTAC-2121-title" class="mv4 tc">
@@ -212,7 +216,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
+<<<<<<< HEAD
         <div id="BTAC-2129-report" class="avy-zone dn" data-id="BTAC-2129" data-btl="7500" data-atl="9000" data-published="Sunday, December 29, 2024 7:00AM">
+=======
+        <div id="BTAC-2129-report" class="avy-zone dn" data-published="Sunday, December 29, 2024 7:00AM">
+>>>>>>> master
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/snake-river-range"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="BTAC-2129-title" class="mv4 tc">
@@ -318,7 +326,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
+<<<<<<< HEAD
         <div id="BTAC-2120-report" class="avy-zone dn" data-id="BTAC-2120" data-btl="7500" data-atl="9000" data-published="Sunday, December 29, 2024 6:59AM">
+=======
+        <div id="BTAC-2120-report" class="avy-zone dn" data-published="Sunday, December 29, 2024 6:59AM">
+>>>>>>> master
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="BTAC-2120-title" class="mv4 tc">
@@ -414,7 +426,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
+<<<<<<< HEAD
         <div id="BTAC-2122-report" class="avy-zone dn" data-id="BTAC-2122" data-btl="7500" data-atl="9000" data-published="Sunday, December 29, 2024 6:59AM">
+=======
+        <div id="BTAC-2122-report" class="avy-zone dn" data-published="Sunday, December 29, 2024 6:59AM">
+>>>>>>> master
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="BTAC-2122-title" class="mv4 tc">

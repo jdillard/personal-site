@@ -116,7 +116,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
+<<<<<<< HEAD
         <div id="IPAC-1899-report" class="avy-zone dn" data-id="IPAC-1899" data-btl="6500" data-atl="7500" data-published="Sunday, December 29, 2024 7:25AM">
+=======
+        <div id="IPAC-1899-report" class="avy-zone dn" data-published="Sunday, December 29, 2024 7:25AM">
+>>>>>>> master
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/selkirk-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="IPAC-1899-title" class="mv4 tc">
@@ -212,7 +216,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
+<<<<<<< HEAD
         <div id="IPAC-1902-report" class="avy-zone dn" data-id="IPAC-1902" data-btl="6500" data-atl="7500" data-published="Sunday, December 29, 2024 7:17AM">
+=======
+        <div id="IPAC-1902-report" class="avy-zone dn" data-published="Sunday, December 29, 2024 7:17AM">
+>>>>>>> master
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/silver-valley-&-bitterroot-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="IPAC-1902-title" class="mv4 tc">
@@ -308,7 +316,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
+<<<<<<< HEAD
         <div id="IPAC-1900-report" class="avy-zone dn" data-id="IPAC-1900" data-btl="6500" data-atl="7500" data-published="Sunday, December 29, 2024 7:25AM">
+=======
+        <div id="IPAC-1900-report" class="avy-zone dn" data-published="Sunday, December 29, 2024 7:25AM">
+>>>>>>> master
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/west-cabinet-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="IPAC-1900-title" class="mv4 tc">
@@ -404,7 +416,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
+<<<<<<< HEAD
         <div id="PAC-153-report" class="avy-zone dn" data-id="PAC-153" data-btl="6500" data-atl="7500" data-published="Sunday, December 29, 2024 5:00AM">
+=======
+        <div id="PAC-153-report" class="avy-zone dn" data-published="Sunday, December 29, 2024 5:00AM">
+>>>>>>> master
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://payetteavalanche.org/forecasts/#/pac-advisory-area"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/#/pac-advisory-area">PAC</a> for more information.</div>
@@ -414,7 +430,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
+<<<<<<< HEAD
         <div id="SNFAC-1359-report" class="avy-zone dn" data-id="SNFAC-1359" data-btl="6500" data-atl="7500" data-published="Sunday, December 29, 2024 6:43AM">
+=======
+        <div id="SNFAC-1359-report" class="avy-zone dn" data-published="Sunday, December 29, 2024 6:43AM">
+>>>>>>> master
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sawtoothavalanche.com/forecasts/#/banner-summit"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="SNFAC-1359-title" class="mv4 tc">
@@ -514,7 +534,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
+<<<<<<< HEAD
         <div id="SNFAC-1356-report" class="avy-zone dn" data-id="SNFAC-1356" data-btl="6500" data-atl="7500" data-published="Sunday, December 29, 2024 6:42AM">
+=======
+        <div id="SNFAC-1356-report" class="avy-zone dn" data-published="Sunday, December 29, 2024 6:42AM">
+>>>>>>> master
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sawtoothavalanche.com/forecasts/#/galena-summit-&-eastern-mtns"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="SNFAC-1356-title" class="mv4 tc">
@@ -614,7 +638,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
+<<<<<<< HEAD
         <div id="SNFAC-1358-report" class="avy-zone dn" data-id="SNFAC-1358" data-btl="6500" data-atl="7500" data-published="Sunday, December 29, 2024 6:42AM">
+=======
+        <div id="SNFAC-1358-report" class="avy-zone dn" data-published="Sunday, December 29, 2024 6:42AM">
+>>>>>>> master
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sawtoothavalanche.com/forecasts/#/sawtooth-&-western-smoky-mtns"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="SNFAC-1358-title" class="mv4 tc">
@@ -714,7 +742,11 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
             
         </div>
         
+<<<<<<< HEAD
         <div id="SNFAC-1357-report" class="avy-zone dn" data-id="SNFAC-1357" data-btl="6500" data-atl="7500" data-published="Sunday, December 29, 2024 6:42AM">
+=======
+        <div id="SNFAC-1357-report" class="avy-zone dn" data-published="Sunday, December 29, 2024 6:42AM">
+>>>>>>> master
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sawtoothavalanche.com/forecasts/#/soldier-&-wood-river-valley-mtns"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="SNFAC-1357-title" class="mv4 tc">
