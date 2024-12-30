@@ -1,7 +1,7 @@
 - abbr: "AK"
   name: "Alaska"
   elevations:
-    0:
+    0: # default
       btl: [0, 4400]
       ntl: [4401, 6100]
       atl: [6101, 20310]
@@ -34,7 +34,7 @@
 - abbr: "AZ"
   name: "Arizona"
   elevations:
-    0:
+    0: # default
       btl: [0, 9700]
       ntl: [9701, 11500]
       atl: [11501, 20310]
@@ -43,7 +43,7 @@
 - abbr: "CA"
   name: "California"
   elevations:
-    0:
+    0: # default
       btl: [0, 6200]
       ntl: [6201, 8700]
       atl: [8701, 20310]
@@ -56,7 +56,7 @@
 - abbr: "CO"
   name: "Colorado"
   elevations:
-    0:
+    0: # default
       btl: [0, 9500]
       ntl: [9501, 11500]
       atl: [11501, 20310]
@@ -95,7 +95,7 @@
 - abbr: "MT"
   name: "Montana"
   elevations:
-    0:
+    0: # default
       btl: [0, 4400]
       ntl: [4401, 6100]
       atl: [6101, 20310]
@@ -104,7 +104,7 @@
 - abbr: "NH"
   name: "New Hampshire"
   elevations:
-    0:
+    0: # default
       btl: [0, 3000]
       ntl: [3001, 5100]
       atl: [5101, 20310]
@@ -113,7 +113,7 @@
 - abbr: "NM"
   name: "New Mexico"
   elevations:
-    0:
+    0: # default
       btl: [0, 9500]
       ntl: [9501, 11500]
       atl: [11501, 20310]
@@ -122,7 +122,7 @@
 - abbr: "OR"
   name: "Oregon"
   elevations:
-    0:
+    0: # default
       btl: [0, 4000]
       ntl: [4001, 5000]
       atl: [5001, 20310]
@@ -131,7 +131,7 @@
 - abbr: "UT"
   name: "Utah"
   elevations:
-    0:
+    0: # default
       btl: [0, 7000]
       ntl: [7001, 9000]
       atl: [9001, 20310]
@@ -140,10 +140,46 @@
 - abbr: "WA"
   name: "Washington"
   elevations:
-    0:
-      btl: [0, 3900]
-      ntl: [3901, 4850]
-      atl: [4851, 20310]
+    0: # default
+      btl: [0, 4499]
+      ntl: [4500, 5499]
+      atl: [5500, 20310]
+    1645: # olympics
+      btl: [0, 4499]
+      ntl: [4500, 5499]
+      atl: [5500, 20310]
+    1646: # west-slopes-north
+      btl: [0, 4499]
+      ntl: [4500, 5499]
+      atl: [5500, 20310]
+    1647: # west-slopes-central
+      btl: [0, 4499]
+      ntl: [4500, 5499]
+      atl: [5500, 20310]
+    1648: # west-slopes-south
+      btl: [0, 5499]
+      ntl: [5500, 6499]
+      atl: [6500, 20310]
+    1649: # stevens-pass
+      btl: [0, 4999]
+      ntl: [5000, 5999]
+      atl: [6000, 20310]
+    1653: # snoqualmie-pass
+      btl: [0, 3999]
+      ntl: [4000, 5499]
+      atl: [5500, 20310]
+    1654: # east-slopes-north
+      btl: [0, 4999]
+      ntl: [5000, 6499]
+      atl: [6500, 20310]
+    1655: # east-slopes-central
+      btl: [0, 4999]
+      ntl: [5000, 5999]
+      atl: [6000, 20310]
+    1656: # east-slopes-south
+      btl: [0, 4999]
+      ntl: [5000, 5999]
+      atl: [6000, 20310]
   active: true
 
 - abbr: "WY"
