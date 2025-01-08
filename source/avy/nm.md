@@ -90,7 +90,7 @@ Reports sourced from <a class="no-underline fancy-link relative light-red" targe
 <div class="flex flex-column flex-row-ns">
     <div class="ph3 w-100 w-50-ns">
         
-        <div id="TAC-490-report" class="avy-zone" data-id="TAC-490" data-btl="9500" data-atl="11500" data-published="Sunday, January 05, 2025 9:51PM">
+        <div id="TAC-490-report" class="avy-zone" data-id="TAC-490" data-btl="9500" data-atl="11500" data-published="Wednesday, January 08, 2025 7:05AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://taosavalanchecenter.org/forecasts/#/northern-new-mexico"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://taosavalanchecenter.org/forecasts/#/northern-new-mexico">TAC</a> for more information.</div>
