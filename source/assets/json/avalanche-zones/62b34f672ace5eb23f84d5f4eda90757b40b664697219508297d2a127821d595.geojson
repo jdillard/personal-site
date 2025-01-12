@@ -11,7 +11,7 @@
                 "creator": "8BQK70",
                 "description": "",
                 "stroke-width": 2,
-                "title": "e96ca7bcd9f60bc47285b1dc35ffcd6a8da996266e3f091f8b365bfe8d61874c",
+                "title": "62b34f672ace5eb23f84d5f4eda90757b40b664697219508297d2a127821d595",
                 "fill": "#FF0000",
                 "stroke": "#FF0000",
                 "fill-opacity": 0.1,
@@ -30,7 +30,7 @@
                 "creator": "8BQK70",
                 "description": "",
                 "stroke-width": 2,
-                "title": "e96ca7bcd9f60bc47285b1dc35ffcd6a8da996266e3f091f8b365bfe8d61874c",
+                "title": "62b34f672ace5eb23f84d5f4eda90757b40b664697219508297d2a127821d595",
                 "fill": "#FF0000",
                 "stroke": "#FF0000",
                 "fill-opacity": 0.1,
@@ -49,26 +49,7 @@
                 "creator": "8BQK70",
                 "description": "",
                 "stroke-width": 2,
-                "title": "e96ca7bcd9f60bc47285b1dc35ffcd6a8da996266e3f091f8b365bfe8d61874c",
-                "fill": "#FF0000",
-                "stroke": "#FF0000",
-                "fill-opacity": 0.1,
-                "class": "Shape",
-                "updated": 1699597377876
-            }
-        }
-,        {
-            "geometry": {
-                "coordinates": [[[-122.1563, 49.0025], [-121.0782, 49.0003], [-121.0777, 49.0279], [-121.1669, 49.1341], [-121.0797, 49.1908], [-121.0776, 49.2118], [-121.1086, 49.23], [-121.1686, 49.2454], [-121.247, 49.282], [-121.2794, 49.3195], [-121.3214, 49.3499], [-121.3459, 49.3627], [-121.3645, 49.3619], [-121.441, 49.3734], [-121.4543, 49.3656], [-121.5485, 49.3641], [-121.5763, 49.3564], [-121.6588, 49.292], [-121.678, 49.2598], [-121.6799, 49.2361], [-121.6911, 49.2162], [-121.8415, 49.1405], [-122.0398, 49.0815], [-122.1211, 49.0245], [-122.1563, 49.0025]]],
-                "type": "Polygon"
-            },
-            "type": "Feature",
-            "properties": {
-                "stroke-opacity": 1,
-                "creator": "8BQK70",
-                "description": "",
-                "stroke-width": 2,
-                "title": "e96ca7bcd9f60bc47285b1dc35ffcd6a8da996266e3f091f8b365bfe8d61874c",
+                "title": "62b34f672ace5eb23f84d5f4eda90757b40b664697219508297d2a127821d595",
                 "fill": "#FF0000",
                 "stroke": "#FF0000",
                 "fill-opacity": 0.1,
