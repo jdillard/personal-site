@@ -1,0 +1,63 @@
+{
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [[[-134.192, 58.204], [-134.192, 58.2046], [-134.1881, 58.2044], [-134.1882, 58.2043], [-134.192, 58.204]]],
+                "type": "Polygon"
+            },
+            "type": "Feature",
+            "properties": {
+                "stroke-opacity": 1,
+                "creator": "8BQK70",
+                "description": "",
+                "stroke-width": 2,
+                "title": "Juneau",
+                "fill": "#FF0000",
+                "stroke": "#FF0000",
+                "fill-opacity": 0.1,
+                "class": "Shape",
+                "updated": 1699597377876
+            }
+        }
+,        {
+            "geometry": {
+                "coordinates": [[[-134.1881, 58.2044], [-134.1867, 58.2051], [-134.1845, 58.2053], [-134.187, 58.2043], [-134.1881, 58.2044]]],
+                "type": "Polygon"
+            },
+            "type": "Feature",
+            "properties": {
+                "stroke-opacity": 1,
+                "creator": "8BQK70",
+                "description": "",
+                "stroke-width": 2,
+                "title": "Juneau",
+                "fill": "#FF0000",
+                "stroke": "#FF0000",
+                "fill-opacity": 0.1,
+                "class": "Shape",
+                "updated": 1699597377876
+            }
+        }
+,        {
+            "geometry": {
+                "coordinates": [[[-134.4388, 58.3054], [-134.5142, 58.3538], [-134.7707, 58.3768], [-134.8068, 58.4781], [-134.9784, 58.6612], [-134.9198, 58.7693], [-134.8531, 58.7598], [-134.6876, 58.6128], [-134.4888, 58.4511], [-134.1401, 58.1976], [-134.1822, 58.2079], [-134.1867, 58.2051], [-134.2157, 58.2027], [-134.4388, 58.3054]]],
+                "type": "Polygon"
+            },
+            "type": "Feature",
+            "properties": {
+                "stroke-opacity": 1,
+                "creator": "8BQK70",
+                "description": "",
+                "stroke-width": 2,
+                "title": "Juneau",
+                "fill": "#FF0000",
+                "stroke": "#FF0000",
+                "fill-opacity": 0.1,
+                "class": "Shape",
+                "updated": 1699597377876
+            }
+        }
+
+    ],
+    "type": "FeatureCollection"
+}
