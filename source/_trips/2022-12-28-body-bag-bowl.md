@@ -8,7 +8,7 @@ avy_long: -122.870875
 area: Blackcomb
 type: skiing
 published: True
-popularity: 7
+popularity: 37
 categories:
   - skiing
   - british-columbia

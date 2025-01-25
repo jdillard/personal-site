@@ -8,7 +8,7 @@ avy_zone_id: 1646
 area: Baker
 type: skiing
 published: true
-popularity: 3
+popularity: 30
 categories:
   - skiing
   - washington

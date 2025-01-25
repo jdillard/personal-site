@@ -8,7 +8,7 @@ avy_zone_id: 1653
 area: Snoqualmie
 type: skiing
 published: true
-popularity: 3
+popularity: 35
 categories:
   - skiing
   - washington

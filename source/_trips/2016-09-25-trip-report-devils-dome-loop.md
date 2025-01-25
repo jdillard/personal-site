@@ -5,7 +5,7 @@ date: 2016-09-25 00:00:00
 state: Washington
 type: hiking
 published: true
-popularity: 36
+popularity: 6
 categories:
   - backpacking
   - washington
