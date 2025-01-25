@@ -3,6 +3,7 @@ layout: trip
 title: 'Trip Report: Kendall Knob Ski Tour'
 date: 2022-02-20
 state: Washington
+avy_region: wa
 avy_center_id: NWAC
 avy_zone_id: 1653
 area: Snoqualmie

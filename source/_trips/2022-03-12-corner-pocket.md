@@ -3,6 +3,7 @@ layout: trip
 title: 'Trip Report: Corner Pocket Ski Tour'
 date: 2022-03-12
 state: Washington
+avy_region: wa
 avy_center_id: NWAC
 avy_zone_id: 1646
 area: Baker

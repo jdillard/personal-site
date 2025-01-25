@@ -1,11 +1,11 @@
-{{#ifEquals offSeason false}}
+{{#ifEquals data.offSeason false}}
 <hr class="mw6-ns mw5 mv0 p0 b0 bt bw1 b--light-red light-red bg-light-red">
-<div class="mt3 mb4 b f3-ns tc f4 black-70">Avalanche Danger <a href="{{ url }}"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"/></a></div>
+<div class="mt3 mb4 b f3-ns tc f4 black-70">Avalanche Danger <a href="{{ data.url }}"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"/></a></div>
 <table class="f5-ns f6 collapse black-70 w-80-ns center">
     <thead class="tc">
         <tr>
             <td></td>
-            {{#each danger}}
+            {{#each data.danger}}
             <td>{{ valid_day }}</td>
             {{/each}}
         </tr>
@@ -13,35 +13,35 @@
     <tbody>
         <tr class="bg-near-white">
             <td class="b bw2 ba b--white pv3 ph2 tc">Above Treeline</td>
-            {{#each danger}}
+            {{#each data.danger}}
             <td class="tc bw2 ba b--white pv3 ph3">
                 {{upper_name}}
-                <a href="{{ @root.url }}"><img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ upper_num }}.svg" /></a>
+                <a href="{{ @root.data.url }}"><img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ upper_num }}.svg" /></a>
             </td>
             {{/each}}
         </tr>
         <tr class="bg-light-gray">
             <td class="b bw2 ba b--white pv3 ph2 tc">Near Treeline</td>
-            {{#each danger}}
+            {{#each data.danger}}
             <td class="tc bw2 ba b--white pv3 ph3">
                 {{ middle_name }}
-                <a href="{{ @root.url }}"><img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ middle_num }}.svg" /></a>
+                <a href="{{ @root.data.url }}"><img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ middle_num }}.svg" /></a>
             </td>
             {{/each}}
         </tr>
         <tr class="bg-moon-gray">
             <td class="b bw2 ba b--white pv3 ph2 tc">Below Treeline</td>
-            {{#each danger}}
+            {{#each data.danger}}
             <td class="tc bw2 ba b--white pv3 ph3">
                 {{ lower_name }}
-                <a href="{{ @root.url }}"><img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ lower_num }}.svg" /></a>
+                <a href="{{ @root.data.url }}"><img class="v-mid" src="/assets/images/svg/avalanche-ratings/NAPADS_{{ lower_num }}.svg" /></a>
             </td>
             {{/each}}
         </tr>
     </tbody>
 </table>
-<p class="black-70 f6 tc"><strong>Issued:</strong> {{ published }} <strong>Expires:</strong> {{ expires }} <strong>Provided By:</strong> <a class="no-underline fancy-link relative light-red hover-light-red" href="{{ url }}">{{ name }}</a></p>
+<p class="black-70 f6 tc"><strong>Issued:</strong> {{ data.published }} <strong>Expires:</strong> {{ data.expires }} <strong>Provided By:</strong> <a class="no-underline fancy-link relative light-red hover-light-red" href="{{ data.url }}">{{ data.name }}</a></p>
 <div class="pa3 tc mw6 center ba b--light-gray black-70 bg-near-white shadow-5 mt4">
-  <a href="/avy" class="b mid-gray">Get Avalanche Map Layers</a>
+  <a href="{{ map_url }}" class="b mid-gray">Get Avalanche Map Layers</a>
 </div>
 {{/ifEquals}}

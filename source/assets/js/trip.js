@@ -37,16 +37,19 @@ const report_element = document.getElementById("avalanche-report")
 if(report_element) {
   let left = ""
   let right = ""
+  let avyMapUrl = ""
   if (report_element.dataset.center != "") {
     left = report_element.dataset.center
     right = report_element.dataset.zone
+    avyMapUrl = `/avy/${report_element.dataset.region}.html#zone-${left}-${right}`
   } else {
     left = report_element.dataset.lat
     right = report_element.dataset.long
+    avyMapUrl = "/avy"
   }
   axios.get(`/assets/json/avalanche-reports/${left}-${right}.json` )
   .then(function (response) {
-    report_element.innerHTML = report_template(response.data);
+    report_element.innerHTML = report_template({"map_url": avyMapUrl, "data": response.data});
   })
   .catch(function (error) {
     // call local file on 403

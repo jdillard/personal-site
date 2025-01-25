@@ -3,6 +3,7 @@ layout: trip
 title: 'Trip Report: Nisqually Bridge Ski Tour'
 date: 2022-04-23
 state: Washington
+avy_region: wa
 avy_center_id: NWAC
 avy_zone_id: 1648
 area: Rainier

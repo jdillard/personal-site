@@ -3,6 +3,7 @@ layout: trip
 title: 'Trip Report: Excelsior Peak Ski Tour'
 date: 2022-04-02
 state: Washington
+avy_region: wa
 avy_center_id: NWAC
 avy_zone_id: 1646
 area: Baker

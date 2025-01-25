@@ -3,6 +3,7 @@ layout: trip
 title: 'Trip Report: Paradise Glacier Ski Tour'
 date: 2022-03-25
 state: Washington
+avy_region: wa
 avy_center_id: NWAC
 avy_zone_id: 1648
 area: Rainier

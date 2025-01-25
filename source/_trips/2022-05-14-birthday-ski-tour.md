@@ -3,6 +3,7 @@ layout: trip
 title: 'Trip Report: Birthday Tour, WA Pass'
 date: 2022-05-14
 state: Washington
+avy_region: wa
 avy_center_id: NWAC
 avy_zone_id: 1654
 area: Washington Pass
