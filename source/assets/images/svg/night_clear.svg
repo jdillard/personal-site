@@ -5,27 +5,34 @@
             .sprite:target { display: inline; }
         ]]></style>
         <clipPath id="left-side">
-           <polygon points="0,0 206,0 206,512 0,512"></polygon>
+           <polygon points="0,0 512,0 50,462 0,512"></polygon>
         </clipPath>
         <clipPath id="right-side">
-            <polygon points="206,0 512,0 512,512 206,512"></polygon>
+            <polygon points="462,50 512,0 512,512 0,512"></polygon>
         </clipPath>
     </defs>
+    
     <g class="sprite" id="full">
         <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M248.082,263.932c-31.52-31.542-39.979-77.105-26.02-116.542
             c-15.25,5.395-29.668,13.833-41.854,26.02c-43.751,43.75-43.751,114.667,0,158.395c43.729,43.73,114.625,43.752,158.374,0
             c12.229-12.186,20.646-26.604,26.021-41.854C325.188,303.91,279.604,295.451,248.082,263.932z"/>
     </g>
-    <g class="sprite" id="left">
-        <line x1="206" y1="20" x2="206" y2="492" stroke-linecap="round" stroke="#ffffff" stroke-width="30" />
-        <path fill-rule="evenodd" clip-rule="evenodd" clip-path="url(#left-side)" fill="#ffffff" d="M248.082,263.932c-31.52-31.542-39.979-77.105-26.02-116.542
-            c-15.25,5.395-29.668,13.833-41.854,26.02c-43.751,43.75-43.751,114.667,0,158.395c43.729,43.73,114.625,43.752,158.374,0
-            c12.229-12.186,20.646-26.604,26.021-41.854C325.188,303.91,279.604,295.451,248.082,263.932z"/>
+    
+    <g class="sprite" id="left" clip-path="url(#left-side)">
+        <line x1="462" y1="50" x2="50" y2="462" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+        <g transform="translate(-25,-25) scale(0.67)">
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M248.082,263.932c-31.52-31.542-39.979-77.105-26.02-116.542
+                c-15.25,5.395-29.668,13.833-41.854,26.02c-43.751,43.75-43.751,114.667,0,158.395c43.729,43.73,114.625,43.752,158.374,0
+                c12.229-12.186,20.646-26.604,26.021-41.854C325.188,303.91,279.604,295.451,248.082,263.932z"/>
+        </g>
     </g>
-    <g class="sprite" id="right">
-        <line x1="206" y1="20" x2="206" y2="492" stroke-linecap="round" stroke="#ffffff" stroke-width="30" />
-        <path fill-rule="evenodd" clip-rule="evenodd" clip-path="url(#right-side)" fill="#ffffff" d="M248.082,263.932c-31.52-31.542-39.979-77.105-26.02-116.542
-            c-15.25,5.395-29.668,13.833-41.854,26.02c-43.751,43.75-43.751,114.667,0,158.395c43.729,43.73,114.625,43.752,158.374,0
-            c12.229-12.186,20.646-26.604,26.021-41.854C325.188,303.91,279.604,295.451,248.082,263.932z"/>
+    
+    <g class="sprite" id="right" clip-path="url(#right-side)">
+        <line x1="462" y1="50" x2="50" y2="462" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+        <g transform="translate(255,255) scale(0.67)">
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M248.082,263.932c-31.52-31.542-39.979-77.105-26.02-116.542
+                c-15.25,5.395-29.668,13.833-41.854,26.02c-43.751,43.75-43.751,114.667,0,158.395c43.729,43.73,114.625,43.752,158.374,0
+                c12.229-12.186,20.646-26.604,26.021-41.854C325.188,303.91,279.604,295.451,248.082,263.932z"/>
+        </g>
     </g>
 </svg>
