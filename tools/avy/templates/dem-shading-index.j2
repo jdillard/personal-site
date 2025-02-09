@@ -52,7 +52,7 @@ css_includes:
             <h3 class="f4"><a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html">Canada</a></h3>
             <ul id="canada-zones" class="list pl3 f5 mt2">
                 {% for area in areas %}
-                <li data-zone="{{ area.slug }}" class="pv1">
+                <li data-zone="{{ area.slug }}" data-color="{{ area.color }}" class="pv1">
                     <div style="clear: both;background-color: {{ area.color }}" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-{{ area.slug }}">{{ area.name }}</a>
                     {% if area.published and area.color != "#939598" %}<span class="gray f7">{{ area.published }}</span>{% endif %}
