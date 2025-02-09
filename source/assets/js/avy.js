@@ -330,6 +330,7 @@ function getZones() {
     const liElements = ulElement.querySelectorAll('li');
     options = Array.from(liElements).map(li => ({
       value: li.getAttribute('data-zone'),
+      color: li.getAttribute('data-color'),
       selected: false
     }));
     type = 'region';
@@ -342,7 +343,9 @@ const zones = getZones()
 const promises = [];
 for (let i = 0; i < zones.options.length; i++) {
   let color = "#AAAAAA";
-  if (zones.options[i].selected) {
+  if(zones.type == "region") {
+    color = zones.options[i].color;
+  } else if(zones.options[i].selected) {
     color = "#357EDD";
   }
   promises.push(addLayer(zones.options[i].value, color, zones.type));

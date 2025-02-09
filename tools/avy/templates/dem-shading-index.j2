@@ -38,7 +38,7 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="{{ state.page }}.html">{{ state.name }}</a></h3>
             <ul id="{{ state.state | lower }}-zones" class="list pl3 f5 mt2">
                 {% for zone in state.zones %}
-                <li data-zone="{{ zone.slug }}" class="pv1">
+                <li data-zone="{{ zone.slug }}" data-color="{{ zone.color }}" class="pv1">
                     <div style="clear: both;background-color: {{ zone.color }}" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="{{ state.page }}.html#zone-{{ zone.slug }}">{{ zone.name }}</a>
                     {% if zone.published and zone.color != "#939598" %}<span class="gray f7">{{ zone.published }}</span>{% endif %}
