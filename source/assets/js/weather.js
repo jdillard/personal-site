@@ -44,7 +44,7 @@ function getCrags(location) {
     localStorage.setItem("crag-"+slugify(crags_config[c].name), JSON.stringify(crags_config[c]));
     crags.push(crags_config[c]);
   }
-  storage_keys = Object.keys(localStorage);
+  storage_keys = Object.keys(localStorage).filter(word => word.startsWith("crag-"));
   populate(crags);
 }
 
