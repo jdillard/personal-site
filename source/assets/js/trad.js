@@ -2,18 +2,51 @@ import * as d3 from 'd3';
 import u from 'umbrellajs';
 import axios from 'axios';
 
+
 function create_timeline(domElement, min, max, totalItems, totalBrands, metric=true) {
+
+    /***
+    A timeline can have the following components:
+
+        // Defines an area for timeline items. Multiple bands are
+        // allowed.
+        .band(bandName)
+            bandName - string; the name of the band for references.
+
+        // Defines an xAxis for a band.
+        .xAxis(bandName)
+            bandName - string; the name of the band the xAxis will  be
+                attached to.
+
+        // Shows the start and end of the range of the band.
+        .labels(bandName)
+            bandName - string; the name of the band the labels will be
+                attached to.
+
+        // Shows tooltips for the selected interval of the band.
+        .tooltips(bandName)
+            bandName - string; the name of the band the labels will be
+                attached to.
+
+        // Controls the time interval of the targetBand.
+        .brush(parentBand, targetBands]
+            parentBand - string; the band that the brush will be
+                attached to.
+            targetBands - array; the bands that are controlled by the
+                brush.
+    ***/
 
     //--------------------------------------------------------------------------
     // chart
 
     // chart geometry
-    const margin = {top: 10, right: 10, bottom: 10, left: 10},
-        outerWidth = 750,
-        outerHeight = totalItems*10 + totalBrands*14,
-        width = outerWidth - margin.left - margin.right,
-        height = outerHeight - margin.top - margin.bottom,
-        units = metric ? "mm" : "in";
+    const margin = {top: 10, right: 10, bottom: 10, left: 10};
+    const containerWidth = d3.select(domElement).node().getBoundingClientRect().width;
+    const outerWidth = Math.min(containerWidth, 750); // Use container width but cap at 750px
+    const outerHeight = totalItems*10 + totalBrands*14;
+    const width = outerWidth - margin.left - margin.right;
+    const height = outerHeight - margin.top - margin.bottom;
+    const units = metric ? "mm" : "in";
 
     // global timeline variables
     const timeline = {};   // The timeline
@@ -65,16 +98,6 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
 
         data.items = items;
 
-        // function showItems(n) {
-        //     let count = 0, n = n || 10;
-        //     console.log("\n");
-        //     items.forEach(function (d) {
-        //         count++;
-        //         if (count > n) return;
-        //         //console.log(+d.start + " - " + +d.end + ": " + d.model);
-        //     });
-        // }
-
         function compareAscending(item1, item2) {
             let result = +item1.start - +item2.start;
             // earlier first
@@ -112,7 +135,6 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
 
     //----------------------------------------------------------------------
     // band
-
 
     timeline.band = function (bandNames) {
 
@@ -167,8 +189,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                 .tickFormat("")
                 .tickSize(band.h)
                 .scale(band.xScale)
-                .ticks(40);
-
+                .ticks(Math.max(2, Math.floor(band.w / 50))); // Adjust number of gridlines based on width
 
             band.g.append("g").lower()
                 .attr("class", "gridlines")
@@ -228,9 +249,10 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
             .data(labelDefs)
             .enter().append("g")
             .on("mouseover", function(event, d) {
+                const [mx, my] = d3.pointer(event, document.body);
                 tooltip.html(d[5])
-                    .style("top", `${d[7]}px`)
-                    .style("left", `${d[6]}px`)
+                    .style("top", `${my}px`)
+                    .style("left", `${mx}px`)
                     .style("visibility", "visible");
                 })
             .on("mouseout", function(event, d){
@@ -315,14 +337,6 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                 ["mouseover", showTooltip],
                 ["mouseout", hideTooltip]
             ]);
-
-            // And update the definition of addActions
-            band.addActions = function(actions) {
-                // actions - array: [[trigger, function], ...]
-                actions.forEach(function (action) {
-                    items.on(action[0], action[1]);
-                });
-            };
 
             function getHtml(element, d) {
                 return element.manufacturer + '<br>' + element.model + ' #' + element.size + "<br>" + convertToInches(element.start, metric) + units + " - " + convertToInches(element.end, metric) + units;
@@ -413,6 +427,41 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
     return timeline;
 }
 
+// redraw the chart when window is resized
+function setupResizeHandler(domElement) {
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            // Clear the existing timeline
+            d3.select(domElement).selectAll("*").remove();
+
+            // Re-fetch data and rebuild timeline
+            loadTimelineData(domElement);
+        }, 250); // Debounce resize events
+    });
+}
+
+// load data and initialize timeline
+function loadTimelineData(domElement) {
+    d3.csv("/assets/csv/cams-by-size.csv")
+        .then(function(dataset) {
+            const max = dataset.reduce((max, p) => +p.end > max ? +p.end : max, +dataset[0].end);
+            const filteredData = dataset.filter(function(d){
+                return d.start >= 0 && d.end <= max;
+            });
+            const filteredBrands = [...new Set(filteredData.map(item => item.manufacturer))];
+            const filteredMax = filteredData.reduce((max, p) => +p.end > max ? +p.end : max, +filteredData[0].end);
+
+            create_timeline(domElement, 0, filteredMax, filteredData.length, filteredBrands.length)
+                .data(filteredData)
+                .band(filteredBrands, 1)
+                .tooltips(filteredBrands)
+                .xAxis(filteredBrands[filteredBrands.length - 1])
+                .redraw();
+        });
+}
+
 function getIssues() {
     axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=trad&state=open')
       .then(function (response) {
@@ -424,68 +473,24 @@ function getIssues() {
       .catch(function (error) {
         console.log(error);
     });
-  }
+}
 
-/***
-A timeline can have the following components:
+// initialize timeline and set up resize handling
+document.addEventListener('DOMContentLoaded', function() {
+    const timelineElement = "#timeline";
+    loadTimelineData(timelineElement);
+    setupResizeHandler(timelineElement);
 
-    // Defines an area for timeline items. Multiple bands are
-    // allowed.
-    .band(bandName)
-        bandName - string; the name of the band for references.
-
-    // Defines an xAxis for a band.
-    .xAxis(bandName)
-        bandName - string; the name of the band the xAxis will  be
-            attached to.
-
-    // Shows the start and end of the range of the band.
-    .labels(bandName)
-        bandName - string; the name of the band the labels will be
-            attached to.
-
-    // Shows tooltips for the selected interval of the band.
-    .tooltips(bandName)
-        bandName - string; the name of the band the labels will be
-            attached to.
-
-    // Controls the time interval of the targetBand.
-    .brush(parentBand, targetBands]
-        parentBand - string; the band that the brush will be
-            attached to.
-        targetBands - array; the bands that are controlled by the
-            brush.
-***/
-
-d3.csv("/assets/csv/cams-by-size.csv")
-    .then(function(dataset) {
-        //const brands = [...new Set(dataset.map(item => item.manufacturer))];
-        //const brandIds = brands.map(item => item.replace(/\s+/g, ''));
-        //TODO if grouping is true use brands, else use one large band
-        const max = dataset.reduce((max, p) => +p.end > max ? +p.end : max, +dataset[0].end);
-        const filteredData = dataset.filter(function(d){
-            return d.start >= 0 && d.end <= max;
-        });
-        const filteredBrands = [...new Set(filteredData.map(item => item.manufacturer))];
-        const filteredMax = filteredData.reduce((max, p) => +p.end > max ? +p.end : max, +filteredData[0].end);
-
-        create_timeline("#timeline", 0, filteredMax, filteredData.length, filteredBrands.length)
-            .data(filteredData)
-            .band(filteredBrands, 1)
-            .tooltips(filteredBrands)
-            .xAxis(filteredBrands[filteredBrands.length - 1])
-            //.labels(filteredBrands[filteredBrands.length - 1])
-            .redraw();
+    // Setup issues toggle
+    u("#issues-toggle").on('click', function(event, d) {
+        if(u("#issues").hasClass('open')) {
+            u("#issues").removeClass('open');
+            u("#issues-toggle").text('Show Known Issues');
+            document.getElementById("issues").innerHTML = "";
+        } else {
+            u("#issues").addClass('open');
+            u("#issues-toggle").text('Hide Known Issues');
+            getIssues();
+        }
     });
-
-u("#issues-toggle").on('click', function(event, d) {
-    if(u("#issues").hasClass('open')) {
-        u("#issues").removeClass('open');
-        u("#issues-toggle").text('Show Known Issues');
-        document.getElementById("issues").innerHTML = "";
-    } else {
-        u("#issues").addClass('open');
-        u("#issues-toggle").text('Hide Known Issues');
-        getIssues();
-    }
-    });
+});
