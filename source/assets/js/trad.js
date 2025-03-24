@@ -148,7 +148,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
             // Items
             const items = band.g.selectAll("g")
                 .data(filtered)
-                .join("svg")
+                .enter().append("svg")
                 .attr("y", function (d, i) { return band.yScale(i); })
                 .attr("height", band.itemHeight)
                 .attr("class", function (d, i) { return "part interval " + d.color + " item" + i;});
@@ -229,8 +229,8 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
             .enter().append("g")
             .on("mouseover", function(event, d) {
                 tooltip.html(d[5])
-                    .style("top", d[7] + "px")
-                    .style("left", d[6] + "px")
+                    .style("top", `${d[7]}px`)
+                    .style("left", `${d[6]}px`)
                     .style("visibility", "visible");
                 })
             .on("mouseout", function(event, d){
@@ -294,8 +294,8 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                 .enter().append("g")
                 .on("mouseover", function(event, d) {
                     tooltip.html(d[5])
-                        .style("top", d[7] + "px")
-                        .style("left", d[6] + "px")
+                        .style("top", `${d[7]}px`)
+                        .style("left", `${d[6]}px`)
                         .style("visibility", "visible");
                     })
                 .on("mouseout", function(event, d){
@@ -340,16 +340,12 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
             }
 
             function showTooltip (event, d) {
-                const x = event.pageX < band.x + band.w / 2
-                        ? event.pageX + 10
-                        : event.pageX - 110,
-                    y = event.pageY < band.y + band.h / 2
-                        ? event.pageY + 30
-                        : event.pageY - 30;
+                const [mx, my] = d3.pointer(event, document.body);
+
                 tooltip
-                    .html(getHtml(d3.select(this).datum(), d))
-                    .style("top", y + "px")
-                    .style("left", x + "px")
+                    .html(getHtml(d, d))
+                    .style("top", `${my + 15}px`)
+                    .style("left", `${mx + 15}px`)
                     .style("visibility", "visible");
             }
 
