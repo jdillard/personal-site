@@ -269,12 +269,11 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
 
     timeline.tooltips = function (bandNames) {
 
-        /* manufacturer label */
-
         bandNames.forEach(function(bandName) {
+            const band = bands[bandName];
 
-            const band = bands[bandName],
-                labelWidth = 46,
+            /* manufacturer label */
+            const labelWidth = 46,
                 labelHeight = 20,
                 labelTop = band.y + band.h - 10,
                 y = band.y + band.h + 1,
@@ -291,16 +290,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                 .attr("transform", "translate(0," + (band.y + band.h + 1) +  ")")
                 .selectAll("#" + bandName.replace(/\s+/g, '') + "Labels")
                 .data(labelDefs)
-                .enter().append("g")
-                .on("mouseover", function(event, d) {
-                    tooltip.html(d[5])
-                        .style("top", `${d[7]}px`)
-                        .style("left", `${d[6]}px`)
-                        .style("visibility", "visible");
-                    })
-                .on("mouseout", function(event, d){
-                    tooltip.style("visibility", "hidden");
-                });
+                .enter().append("g");
 
             const labels = bandLabels.append("text")
                 .attr("class", d => d[1])
@@ -320,7 +310,6 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
             components.push(labels);
 
             /* tooltips */
-
             band.addActions([
                 // trigger, function
                 ["mouseover", showTooltip],
