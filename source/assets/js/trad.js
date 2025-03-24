@@ -306,14 +306,6 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                 ["mouseout", hideTooltip]
             ]);
 
-            // And update the definition of addActions
-            band.addActions = function(actions) {
-                // actions - array: [[trigger, function], ...]
-                actions.forEach(function (action) {
-                    items.on(action[0], action[1]);
-                });
-            };
-
             function getHtml(element, d) {
                 return element.manufacturer + '<br>' + element.model + ' #' + element.size + "<br>" + convertToInches(element.start, metric) + units + " - " + convertToInches(element.end, metric) + units;
             }
