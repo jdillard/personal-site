@@ -148,7 +148,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
             // Items
             var items = band.g.selectAll("g")
                 .data(filtered)
-                .enter().append("svg")
+                .join("svg")
                 .attr("y", function (d, i) { return band.yScale(i); })
                 .attr("height", band.itemHeight)
                 .attr("class", function (d, i) { return "part interval " + d.color + " item" + i;});
@@ -227,13 +227,13 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
             .selectAll("#" + bandName + "Labels")
             .data(labelDefs)
             .enter().append("g")
-            .on("mouseover", function(d) {
+            .on("mouseover", function(event, d) {
                 tooltip.html(d[5])
                     .style("top", d[7] + "px")
                     .style("left", d[6] + "px")
                     .style("visibility", "visible");
                 })
-            .on("mouseout", function(){
+            .on("mouseout", function(event, d){
                 tooltip.style("visibility", "hidden");
             });
 
@@ -245,11 +245,11 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
             .style("opacity", 1);
 
         var labels = bandLabels.append("text")
-            .attr("class", function(d) { return d[1];})
-            .attr("id", function(d) { return d[0];})
-            .attr("x", function(d) { return d[3];})
+            .attr("class", d => d[1])
+            .attr("id", d => d[0])
+            .attr("x", d => d[3])
             .attr("y", yText)
-            .attr("text-anchor", function(d) { return d[0];});
+            .attr("text-anchor", d => d[0]);
 
         labels.redraw = function () {
             var min = band.xScale.domain()[0],
@@ -292,22 +292,22 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                 .selectAll("#" + bandName.replace(/\s+/g, '') + "Labels")
                 .data(labelDefs)
                 .enter().append("g")
-                .on("mouseover", function(d) {
+                .on("mouseover", function(event, d) {
                     tooltip.html(d[5])
                         .style("top", d[7] + "px")
                         .style("left", d[6] + "px")
                         .style("visibility", "visible");
                     })
-                .on("mouseout", function(){
+                .on("mouseout", function(event, d){
                     tooltip.style("visibility", "hidden");
                 });
 
             var labels = bandLabels.append("text")
-                .attr("class", function(d) { return d[1];})
-                .attr("id", function(d) { return d[0];})
-                .attr("x", function(d) { return d[3];})
+                .attr("class", d => d[1])
+                .attr("id", d => d[0])
+                .attr("x", d => d[3])
                 .attr("y", yText)
-                .attr("text-anchor", function(d) { return d[0];});
+                .attr("text-anchor", d => d[0]);
 
             labels.redraw = function () {
                 var min = band.xScale.domain()[0],
@@ -327,11 +327,19 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                 ["mouseout", hideTooltip]
             ]);
 
+            // And update the definition of addActions
+            band.addActions = function(actions) {
+                // actions - array: [[trigger, function], ...]
+                actions.forEach(function (action) {
+                    items.on(action[0], action[1]);
+                });
+            };
+
             function getHtml(element, d) {
                 return element.manufacturer + '<br>' + element.model + ' #' + element.size + "<br>" + convertToInches(element.start, metric) + units + " - " + convertToInches(element.end, metric) + units;
             }
 
-            function showTooltip (d) {
+            function showTooltip (event, d) {
                 var x = event.pageX < band.x + band.w / 2
                         ? event.pageX + 10
                         : event.pageX - 110,
@@ -345,7 +353,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                     .style("visibility", "visible");
             }
 
-            function hideTooltip () {
+            function hideTooltip (event, d) {
                 tooltip.style("visibility", "hidden");
             }
         });
@@ -361,7 +369,8 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
         var band = bands[bandName];
 
         var axis = d3.axisBottom(band.xScale)
-            .tickSize(6, 0)
+            .tickSizeInner(6)
+            .tickSizeOuter(0)
             .tickFormat(function (d) { return d; })
             .ticks(20);
 
@@ -386,15 +395,15 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
 
         var band = bands[bandName];
 
-        var brush = d3.svg.brush()
-            .x(band.xScale.range([0, band.w]))
-            .on("brush", function() {
-                var domain = brush.empty()
+        var brush = d3.brushX()
+            .extent([[0, 0], [band.w, band.h]])
+            .on("brush", function(event, d) {
+                var domain = event.selection === null
                     ? band.xScale.domain()
-                    : brush.extent();
-                targetNames.forEach(function(d) {
-                    bands[d].xScale.domain(domain);
-                    bands[d].redraw();
+                    : event.selection.map(band.xScale.invert);
+                targetNames.forEach(function(targetName) {
+                    bands[targetName].xScale.domain(domain);
+                    bands[targetName].redraw();
                 });
             });
 
@@ -486,7 +495,7 @@ d3.csv("/assets/csv/cams-by-size.csv")
             .redraw();
     });
 
-u("#issues-toggle").on('click', function() {
+u("#issues-toggle").on('click', function(event, d) {
     if(u("#issues").hasClass('open')) {
         u("#issues").removeClass('open');
         u("#issues-toggle").text('Show Known Issues');
