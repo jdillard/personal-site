@@ -65,16 +65,6 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
 
         data.items = items;
 
-        // function showItems(n) {
-        //     let count = 0, n = n || 10;
-        //     console.log("\n");
-        //     items.forEach(function (d) {
-        //         count++;
-        //         if (count > n) return;
-        //         //console.log(+d.start + " - " + +d.end + ": " + d.model);
-        //     });
-        // }
-
         function compareAscending(item1, item2) {
             let result = +item1.start - +item2.start;
             // earlier first
