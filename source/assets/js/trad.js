@@ -4,6 +4,37 @@ import axios from 'axios';
 
 function create_timeline(domElement, min, max, totalItems, totalBrands, metric=true) {
 
+    /***
+    A timeline can have the following components:
+
+        // Defines an area for timeline items. Multiple bands are
+        // allowed.
+        .band(bandName)
+            bandName - string; the name of the band for references.
+
+        // Defines an xAxis for a band.
+        .xAxis(bandName)
+            bandName - string; the name of the band the xAxis will  be
+                attached to.
+
+        // Shows the start and end of the range of the band.
+        .labels(bandName)
+            bandName - string; the name of the band the labels will be
+                attached to.
+
+        // Shows tooltips for the selected interval of the band.
+        .tooltips(bandName)
+            bandName - string; the name of the band the labels will be
+                attached to.
+
+        // Controls the time interval of the targetBand.
+        .brush(parentBand, targetBands]
+            parentBand - string; the band that the brush will be
+                attached to.
+            targetBands - array; the bands that are controlled by the
+                brush.
+    ***/
+
     //--------------------------------------------------------------------------
     // chart
 
@@ -407,38 +438,6 @@ function getIssues() {
         console.log(error);
     });
   }
-
-/***
-A timeline can have the following components:
-
-    // Defines an area for timeline items. Multiple bands are
-    // allowed.
-    .band(bandName)
-        bandName - string; the name of the band for references.
-
-    // Defines an xAxis for a band.
-    .xAxis(bandName)
-        bandName - string; the name of the band the xAxis will  be
-            attached to.
-
-    // Shows the start and end of the range of the band.
-    .labels(bandName)
-        bandName - string; the name of the band the labels will be
-            attached to.
-
-    // Shows tooltips for the selected interval of the band.
-    .tooltips(bandName)
-        bandName - string; the name of the band the labels will be
-            attached to.
-
-    // Controls the time interval of the targetBand.
-    .brush(parentBand, targetBands]
-        parentBand - string; the band that the brush will be
-            attached to.
-        targetBands - array; the bands that are controlled by the
-            brush.
-***/
-
 d3.csv("/assets/csv/cams-by-size.csv")
     .then(function(dataset) {
         //const brands = [...new Set(dataset.map(item => item.manufacturer))];
