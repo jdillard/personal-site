@@ -146,9 +146,9 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                 .attr("transform", "translate(0," + band.y +  ")");
 
             // Items
-            const items = band.g.selectAll("g")
+            const items = band.g.selectAll("svg.interval")
                 .data(filtered)
-                .enter().append("svg")
+                .join("svg")
                 .attr("y", function (d, i) { return band.yScale(i); })
                 .attr("height", band.itemHeight)
                 .attr("class", function (d, i) { return "part interval " + d.color + " item" + i;});
@@ -365,18 +365,16 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
         const band = bands[bandName];
 
         const axis = d3.axisBottom(band.xScale)
-            .tickSizeInner(6)
+            .tickSize(6)
             .tickSizeOuter(0)
-            .tickFormat(function (d) { return d; })
-            .ticks(20);
+            .tickFormat(d => d + units)
+            .ticks(Math.max(2, Math.floor(band.w / 100)));
 
         const xAxis = chart.append("g")
             .attr("class", "axis")
             .attr("transform", "translate(0," + (band.y + band.h)  + ")");
 
-        xAxis.redraw = function () {
-            xAxis.call(axis);
-        };
+        xAxis.redraw = () => xAxis.call(axis);
 
         band.parts.push(xAxis); // for brush.redraw
         components.push(xAxis); // for timeline.redraw
