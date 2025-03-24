@@ -8,7 +8,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
     // chart
 
     // chart geometry
-    var margin = {top: 10, right: 10, bottom: 10, left: 10},
+    const margin = {top: 10, right: 10, bottom: 10, left: 10},
         outerWidth = 750,
         outerHeight = totalItems*10 + totalBrands*14,
         width = outerWidth - margin.left - margin.right,
@@ -16,16 +16,16 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
         units = metric ? "mm" : "in";
 
     // global timeline variables
-    var timeline = {},   // The timeline
-        data = {},       // Container for the data
-        components = [], // All the components of the timeline for redrawing
-        bandGap = 3,    // Gap between to consecutive bands
-        bands = {},      // Registry for all the bands in the timeline
-        bandY = 0,       // Y-Position of the next band
-        bandNum = 0;     // Count of bands for ids
+    const timeline = {};   // The timeline
+    const data = {};       // Container for the data
+    const components = []; // All the components of the timeline for redrawing
+    const bandGap = 3;    // Gap between to consecutive bands
+    const bands = {};      // Registry for all the bands in the timeline
+    let bandY = 0;       // Y-Position of the next band
+    let bandNum = 0;     // Count of bands for ids
 
     // Create svg element
-    var svg = d3.select(domElement).append("svg")
+    const svg = d3.select(domElement).append("svg")
         .attr("class", "svg")
         .attr("id", "svg")
         .attr("width", outerWidth)
@@ -39,11 +39,11 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
         .attr("width", width)
         .attr("height", height);
 
-    var chart = svg.append("g")
+    const chart = svg.append("g")
             .attr("class", "chart")
             .attr("clip-path", "url(#chart-area)" );
 
-    var tooltip = d3.select("body")
+    const tooltip = d3.select("body")
         .append("div")
         .attr("class", "tooltip")
         .style("visibility", "visible");
@@ -61,22 +61,22 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
 
     timeline.data = function(items) {
 
-        var tracks = [];
+        const tracks = [];
 
         data.items = items;
 
-        function showItems(n) {
-            var count = 0, n = n || 10;
-            console.log("\n");
-            items.forEach(function (d) {
-                count++;
-                if (count > n) return;
-                //console.log(+d.start + " - " + +d.end + ": " + d.model);
-            });
-        }
+        // function showItems(n) {
+        //     let count = 0, n = n || 10;
+        //     console.log("\n");
+        //     items.forEach(function (d) {
+        //         count++;
+        //         if (count > n) return;
+        //         //console.log(+d.start + " - " + +d.end + ": " + d.model);
+        //     });
+        // }
 
         function compareAscending(item1, item2) {
-            var result = +item1.start - +item2.start;
+            let result = +item1.start - +item2.start;
             // earlier first
             if (result < 0) { return -1; }
             if (result > 0) { return 1; }
@@ -88,7 +88,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
         }
 
         function calculateTracks(items) {
-            var track = 0;
+            let track = 0;
 
             function sortForward() {
                 items.forEach(function (item) {
@@ -124,7 +124,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                     return d.manufacturer === bandName;
                 });
             }
-            var band = {};
+            const band = {};
             band.id = "band" + bandNum;
             band.x = 0;
             band.y = bandY;
@@ -146,14 +146,14 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                 .attr("transform", "translate(0," + band.y +  ")");
 
             // Items
-            var items = band.g.selectAll("g")
+            const items = band.g.selectAll("g")
                 .data(filtered)
                 .join("svg")
                 .attr("y", function (d, i) { return band.yScale(i); })
                 .attr("height", band.itemHeight)
                 .attr("class", function (d, i) { return "part interval " + d.color + " item" + i;});
 
-            var intervals = d3.select("#band" + bandNum).selectAll(".interval");
+            const intervals = d3.select("#band" + bandNum).selectAll(".interval");
             intervals.append("rect")
                 .attr("width", "100%")
                 .attr("height", "100%");
@@ -163,7 +163,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                 .attr("y", 10);
 
             // Gridline
-            var gridlines = d3.axisTop()
+            const gridlines = d3.axisTop()
                 .tickFormat("")
                 .tickSize(band.h)
                 .scale(band.xScale)
@@ -205,14 +205,14 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
 
     timeline.labels = function (bandName) {
 
-        var band = bands[bandName],
+        const band = bands[bandName],
             labelWidth = 46,
             labelHeight = 20,
             labelTop = band.y + band.h - 10,
             y = band.y + band.h + 1,
             yText = 15;
 
-        var labelDefs = [
+        const labelDefs = [
                 ["start", "bandMinMaxLabel", 0, 4,
                     function(min, max) { return min.toFixed(2) + units; },
                     "Start of the selected interval", band.x + 30, labelTop],
@@ -221,7 +221,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                     "End of the selected interval", band.x + band.w - 152, labelTop]
             ];
 
-        var bandLabels = chart.append("g")
+        const bandLabels = chart.append("g")
             .attr("id", bandName + "Labels")
             .attr("transform", "translate(0," + (band.y + band.h + 1) +  ")")
             .selectAll("#" + bandName + "Labels")
@@ -244,7 +244,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
             .attr("height", labelHeight)
             .style("opacity", 1);
 
-        var labels = bandLabels.append("text")
+        const labels = bandLabels.append("text")
             .attr("class", d => d[1])
             .attr("id", d => d[0])
             .attr("x", d => d[3])
@@ -252,7 +252,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
             .attr("text-anchor", d => d[0]);
 
         labels.redraw = function () {
-            var min = band.xScale.domain()[0],
+            const min = band.xScale.domain()[0],
                 max = band.xScale.domain()[1];
 
             labels.text(function (d) { return d[4](min, max); });
@@ -273,20 +273,20 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
 
         bandNames.forEach(function(bandName) {
 
-            var band = bands[bandName],
+            const band = bands[bandName],
                 labelWidth = 46,
                 labelHeight = 20,
                 labelTop = band.y + band.h - 10,
                 y = band.y + band.h + 1,
                 yText = -10;
 
-            var labelDefs = [
+            const labelDefs = [
                     [bandName+"Title", "bandTitle", 0, 10,
                         function(min, max) { return bandName; },
                         bandName, band.x + 30, labelTop]
                 ];
 
-            var bandLabels = chart.append("g")
+            const bandLabels = chart.append("g")
                 .attr("id", bandName.replace(/\s+/g, '') + "Labels")
                 .attr("transform", "translate(0," + (band.y + band.h + 1) +  ")")
                 .selectAll("#" + bandName.replace(/\s+/g, '') + "Labels")
@@ -302,7 +302,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                     tooltip.style("visibility", "hidden");
                 });
 
-            var labels = bandLabels.append("text")
+            const labels = bandLabels.append("text")
                 .attr("class", d => d[1])
                 .attr("id", d => d[0])
                 .attr("x", d => d[3])
@@ -310,7 +310,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                 .attr("text-anchor", d => d[0]);
 
             labels.redraw = function () {
-                var min = band.xScale.domain()[0],
+                const min = band.xScale.domain()[0],
                     max = band.xScale.domain()[1];
 
                 labels.text(function (d) { return d[4](min, max); });
@@ -340,7 +340,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
             }
 
             function showTooltip (event, d) {
-                var x = event.pageX < band.x + band.w / 2
+                const x = event.pageX < band.x + band.w / 2
                         ? event.pageX + 10
                         : event.pageX - 110,
                     y = event.pageY < band.y + band.h / 2
@@ -366,15 +366,15 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
 
     timeline.xAxis = function (bandName) {
 
-        var band = bands[bandName];
+        const band = bands[bandName];
 
-        var axis = d3.axisBottom(band.xScale)
+        const axis = d3.axisBottom(band.xScale)
             .tickSizeInner(6)
             .tickSizeOuter(0)
             .tickFormat(function (d) { return d; })
             .ticks(20);
 
-        var xAxis = chart.append("g")
+        const xAxis = chart.append("g")
             .attr("class", "axis")
             .attr("transform", "translate(0," + (band.y + band.h)  + ")");
 
@@ -393,12 +393,12 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
 
     timeline.brush = function (bandName, targetNames) {
 
-        var band = bands[bandName];
+        const band = bands[bandName];
 
-        var brush = d3.brushX()
+        const brush = d3.brushX()
             .extent([[0, 0], [band.w, band.h]])
             .on("brush", function(event, d) {
-                var domain = event.selection === null
+                const domain = event.selection === null
                     ? band.xScale.domain()
                     : event.selection.map(band.xScale.invert);
                 targetNames.forEach(function(targetName) {
@@ -407,7 +407,7 @@ function create_timeline(domElement, min, max, totalItems, totalBrands, metric=t
                 });
             });
 
-        var xBrush = band.g.append("svg")
+        const xBrush = band.g.append("svg")
             .attr("class", "x brush")
             .call(brush);
 
