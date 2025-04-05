@@ -29,7 +29,7 @@ def create_crag_page(crags)
     state_locals[crag[:state]].add(crag[:name])
   end
 
-  File.open("source/crags.html","w") do |f|
+  File.open("../../source/crags.html","w") do |f|
     f << "---\n"
     f << "### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###\n"
     f << "layout: page\n"
@@ -156,7 +156,7 @@ def create_crags(crags)
 
   crags.each do |crag|
     slug = crag[:name].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase + "-" + crag[:state].gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
-    File.open("source/_crags/" + slug + "-weather.md","w") do |f|
+    File.open("../../source/_crags/" + slug + "-weather.md","w") do |f|
       f << "---\n"
       f << "### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###\n"
       f << "layout: page\n"
@@ -291,7 +291,7 @@ def create_metros(crags)
 
   metros.each do |metro|
     slug = metro.gsub(' ', '-').gsub(/[^\w-]/, '').gsub(/(-){2,}/, '-').downcase
-    File.open("source/_crags/" + slug + "-weather.md","w") do |f|
+    File.open("../../source/_crags/" + slug + "-weather.md","w") do |f|
       f << "---\n"
       f << "### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###\n"
       f << "layout: page\n"
@@ -378,8 +378,8 @@ end
 crags = CSV.read("crags.csv", {:headers => true, :header_converters => :symbol})
 
 # clear the old crags markdown files
-Dir.foreach('source/_crags') do |f|
-  fn = File.join('source/_crags', f)
+Dir.foreach('../../source/_crags') do |f|
+  fn = File.join('../../source/_crags', f)
   File.delete(fn) if f != '.' && f != '..'
 end
 
