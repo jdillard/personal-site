@@ -375,7 +375,7 @@ def create_metros(crags)
   end
 end
 
-crags = CSV.read("crags.csv", {:headers => true, :header_converters => :symbol})
+crags = CSV.read(File.join(__dir__, "crags.csv"), {:headers => true, :header_converters => :symbol})
 
 # clear the old crags markdown files
 Dir.foreach('../../source/_crags') do |f|
