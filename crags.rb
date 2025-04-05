@@ -41,7 +41,7 @@ def create_crag_page(crags)
     f << 'precipitation-focused reports of current, past, and future climbing weather for crags located in the United States, sourced'+"\n"
     f << 'from <a class="no-underline fancy-link relative light-red" target="_blank" href="https://www.weather.gov/documentation/services-web-api">weather.gov</a>.'+"\n"
     f << "</section>\n\n"
-    f << '<section class="measure center lh-copy f5-ns f6 ph2 mv4" style="text-align: justify;">'+"\n"
+    f << '<section class="measure center lh-copy f5-ns f6 ph2 mv3" style="text-align: justify;">'+"\n"
     f << '<h2 class="bb b--moon-gray">Crags by Nearest Metro</h2>'+"\n"
     f << '<ul class="list pl3 f6 mt2">'+"\n"
     metros.each do |metro|
@@ -161,7 +161,7 @@ def create_crags(crags)
       f << "### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###\n"
       f << "layout: page\n"
       f << "title: " + crag[:name] + ", " + crag[:state] + " Climbing Weather - Current, Past, and Forecasted\n"
-      f << "title_override: " + crag[:name] + "<br /><small>Climbing Weather</small>\n"
+      f << "title_override: " + crag[:name] + "<br /><small class=\"f2\">Climbing Weather</small>\n"
       f << "description: A lightweight weather report for " + crag[:name] + ', ' + crag[:state] + ". Optimized for slow internet connections.\n"
       # f << "state: Washington\n"
       # f << "type: climbing\n"
