@@ -2,7 +2,7 @@
 ### THIS FILE IS AUTO-GENERATED - DO NOT EDIT ###
 layout: page
 title: Last Chance Canyon, New Mexico Climbing Weather - Current, Past, and Forecasted
-title_override: Last Chance Canyon<br /><small class="f2">Climbing Weather</small>
+title_override: Last Chance Canyon<br /><small>Climbing Weather</small>
 description: A lightweight weather report for Last Chance Canyon, New Mexico. Optimized for slow internet connections.
 js_includes:
   - weather.js
