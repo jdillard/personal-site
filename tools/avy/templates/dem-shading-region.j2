@@ -91,9 +91,9 @@ css_includes:
 </div>
 
 <div class="flex flex-column flex-row-ns">
-    <div class="ph3 w-100 w-50-ns">
+    <div id="regional_zones" class="ph3 w-100 w-50-ns">
         {% for zone in zones %}
-        <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}" data-min="{{ zone.elevations['btl'][0] }}"  data-max="{{ zone.elevations['atl'][1] }}" data-btl="{{ zone.elevations['btl'][1] }}" data-atl="{{ zone.elevations['ntl'][1] }}" data-published="{{ zone.published }}">
+        <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}" data-color="{{ zone.color }}" data-min="{{ zone.elevations['btl'][0] }}"  data-max="{{ zone.elevations['atl'][1] }}" data-btl="{{ zone.elevations['btl'][1] }}" data-atl="{{ zone.elevations['ntl'][1] }}" data-published="{{ zone.published }}">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="{{ zone.url }}"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             {% if zone.danger %}
             <div id="{{ zone.slug }}-title" class="mv4 tc">
