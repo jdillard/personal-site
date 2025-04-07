@@ -24,9 +24,10 @@ css_includes:
     <div class="mt4 ph2 tc">
         <strong class="f6">Select A Region:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="indexSel">
+            <option value="all" selected="">All Regions</option>
             {% for state in states %}
             {% if state.active %}
-            <option value="{{ state.state | lower }}" {% if loop.first %}selected=""{% endif %}>{{ state.name }}</option>
+            <option value="{{ state.state | lower }}">{{ state.name }}</option>
             {% endif %}
             {% endfor %}
             <option value="canada">Canada</option>
@@ -38,7 +39,7 @@ css_includes:
     <div class="ph3 w-100 w-50-ns">
     {% for state in states %}
     {% if state.active %}
-        <div id="{{ state.state | lower }}-region" class="avy-region{% if not loop.first %} dn{% endif %}">
+        <div id="{{ state.state | lower }}-region" class="avy-region">
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="{{ state.page }}.html">{{ state.name }}</a></h3>
             <ul id="{{ state.state | lower }}-zones" class="list pl3 f5 mt2">
                 {% for zone in state.zones %}
