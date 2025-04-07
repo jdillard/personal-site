@@ -283,7 +283,7 @@ function assignHoverColors(geojsonData, color) {
 }
 
 // load a GeoJSON file and add to the map in given color
-async function addLayer(filePath, color, hoverColor, type) {
+async function addLayer(filePath, color, hoverColor, type, region) {
     await fetch(`/assets/json/avalanche-zones/${filePath}.geojson`)
         .then(response => response.json())
         .then(data => {
@@ -299,7 +299,7 @@ async function addLayer(filePath, color, hoverColor, type) {
                     if(type == "zone") {
                       window.location.hash = `zone-${filePath}`;
                     } else if(type == "region") {
-                      window.location.assign(`${indexSel.value}.html#zone-${filePath}`);
+                      window.location.assign(`${region}.html#zone-${filePath}`);
                     }
                 });
 
@@ -367,7 +367,8 @@ function getZones() {
         options.push({
           value: zone,
           selected: allZones[i].selected,
-          color: element.getAttribute("data-color")
+          color: element.getAttribute("data-color"),
+          region: null //TODO get region?
         });
       }
     }
@@ -376,11 +377,14 @@ function getZones() {
     const region = indexSel.value;
     if(region == "all") {
       const ulElements = document.querySelectorAll('[id$="-zones"]');
-      const liElements = Array.from(ulElements).flatMap(ul => Array.from(ul.querySelectorAll('li')));
-      options = Array.from(liElements).map(li => ({
+      const liElements = Array.from(ulElements).flatMap(ul =>
+        Array.from(ul.querySelectorAll('li')).map(li => ({ li, ul }))
+      );
+      options = liElements.map(({ li, ul }) => ({
         value: li.getAttribute('data-zone'),
         color: li.getAttribute('data-color'),
-        selected: false
+        selected: false,
+        region: ul.id.replace(/-zones$/, '')
       }));
     } else {
       const ulElement = document.getElementById(`${region}-zones`);
@@ -388,7 +392,8 @@ function getZones() {
       options = Array.from(liElements).map(li => ({
         value: li.getAttribute('data-zone'),
         color: li.getAttribute('data-color'),
-        selected: false
+        selected: false,
+        region: region
       }));
     }
     type = 'region';
@@ -405,7 +410,7 @@ for (let i = 0; i < zones.options.length; i++) {
   if(zones.type == "region" || zones.options[i].selected) {
     color = zones.options[i].color;
   }
-  promises.push(addLayer(zones.options[i].value, color, hoverColor, zones.type));
+  promises.push(addLayer(zones.options[i].value, color, hoverColor, zones.type, zones.options[i].region));
 }
 if(zones.type == "region") {
   // Wait for all addLayer calls to complete
