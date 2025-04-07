@@ -271,12 +271,23 @@ let layers = {};  // all layers with filenames as keys
 let currentLayer = null; //filename as key
 const bounds = L.latLngBounds();
 
+// assign hover colors to geojson files
+function assignHoverColors(geojsonData, color) {
+  geojsonData.features.forEach((feature, index) => {
+    feature.properties = feature.properties || {};
+
+    feature.properties.hoverColor = color;
+  });
+
+  return geojsonData;
+}
+
 // load a GeoJSON file and add to the map in given color
-async function addLayer(filePath, color, type) {
+async function addLayer(filePath, color, hoverColor, type) {
     await fetch(`/assets/json/avalanche-zones/${filePath}.geojson`)
         .then(response => response.json())
         .then(data => {
-            const layer = L.geoJSON(data, {
+            const layer = L.geoJSON(assignHoverColors(data, hoverColor), {
               style: {
                 color: "#777777", // border color
                 fillColor: color,
@@ -290,6 +301,21 @@ async function addLayer(filePath, color, type) {
                     } else if(type == "region") {
                       window.location.assign(`${indexSel.value}.html#zone-${filePath}`);
                     }
+                });
+
+                layer.on('mouseover', function(e) {
+                  const hoverColor = feature.properties.hoverColor || '#AAAAAA';
+                  e.target.setStyle({ fillColor: hoverColor });
+                  e.target.bringToFront();
+                });
+
+                layer.on('mouseout', function(e) {
+                  layer.setStyle({
+                    color: "#777777",
+                    fillColor: color,
+                    weight: 1,
+                    fillOpacity: 0.4,
+                  });
                 });
             }
             }).addTo(map);
@@ -331,7 +357,20 @@ function getZones() {
   let options = []
   let type = 'zone';
   if(zoneSel) {
-    options = document.getElementById("zoneSel").options;
+    const allZones = document.getElementById("zoneSel").options;
+
+    for (let i = 0; i < allZones.length; i++) {
+      const zone = allZones[i].value;
+      const element = document.getElementById(`${zone}-report`);
+
+      if (element) {
+        options.push({
+          value: zone,
+          selected: allZones[i].selected,
+          color: element.getAttribute("data-color")
+        });
+      }
+    }
   }
   else if(indexSel) {
     const region = indexSel.value;
@@ -362,12 +401,11 @@ const zones = getZones()
 const promises = [];
 for (let i = 0; i < zones.options.length; i++) {
   let color = "#AAAAAA";
-  if(zones.type == "region") {
+  let hoverColor = zones.options[i].color;
+  if(zones.type == "region" || zones.options[i].selected) {
     color = zones.options[i].color;
-  } else if(zones.options[i].selected) {
-    color = "#357EDD";
   }
-  promises.push(addLayer(zones.options[i].value, color, zones.type));
+  promises.push(addLayer(zones.options[i].value, color, hoverColor, zones.type));
 }
 if(zones.type == "region") {
   // Wait for all addLayer calls to complete

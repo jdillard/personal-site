@@ -18,7 +18,7 @@ jobs:
         ruby-version: '2.7.2'
     
     - name: Run script
-      run: ruby crags.rb
+      run: ruby tools/crags/crags.rb
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
