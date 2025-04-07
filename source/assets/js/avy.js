@@ -30,15 +30,23 @@ function getIssues() {
 }
 
 function showRegion(region_id) {
-  const region = document.getElementById(`${region_id}-region`);
+  if(region_id == "all") {
+    document.querySelectorAll('.avy-region').forEach(function(div) {
+      div.classList.remove('dn');
+    });
 
-  document.querySelectorAll('.avy-region').forEach(function(div) {
-    div.classList.add('dn');
-  });
+    location.replace(window.location.origin + window.location.pathname + window.location.search);
+  } else {
+    const region = document.getElementById(`${region_id}-region`);
 
-  region.classList.remove('dn');
+    document.querySelectorAll('.avy-region').forEach(function(div) {
+      div.classList.add('dn');
+    });
 
-  location.replace("#region-" + region_id);
+    region.classList.remove('dn');
+
+    location.replace("#region-" + region_id);
+  }
 }
 
 // show zone details (report/map)
@@ -74,6 +82,7 @@ if(hash) {
   }
 } else {
   const avyZones = document.querySelectorAll('.avy-zone');
+  // if a regional page
   if(avyZones.length > 0) {
     const currentZone = Array.from(avyZones).find(el => !el.classList.contains('dn'));
 
@@ -365,13 +374,23 @@ function getZones() {
   }
   else if(indexSel) {
     const region = indexSel.value;
-    const ulElement = document.getElementById(`${region}-zones`);
-    const liElements = ulElement.querySelectorAll('li');
-    options = Array.from(liElements).map(li => ({
-      value: li.getAttribute('data-zone'),
-      color: li.getAttribute('data-color'),
-      selected: false
-    }));
+    if(region == "all") {
+      const ulElements = document.querySelectorAll('[id$="-zones"]');
+      const liElements = Array.from(ulElements).flatMap(ul => Array.from(ul.querySelectorAll('li')));
+      options = Array.from(liElements).map(li => ({
+        value: li.getAttribute('data-zone'),
+        color: li.getAttribute('data-color'),
+        selected: false
+      }));
+    } else {
+      const ulElement = document.getElementById(`${region}-zones`);
+      const liElements = ulElement.querySelectorAll('li');
+      options = Array.from(liElements).map(li => ({
+        value: li.getAttribute('data-zone'),
+        color: li.getAttribute('data-color'),
+        selected: false
+      }));
+    }
     type = 'region';
   }
   return {options, type};
