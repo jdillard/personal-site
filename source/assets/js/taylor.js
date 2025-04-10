@@ -1,7 +1,6 @@
 import u from 'umbrellajs';
 import axios from 'axios';
-
-const template_tide_predictions = require("./templates/taylor_tides.hbs");
+import template_tide_predictions from './templates/taylor_tides.hbs';
 
 function getIssues() {
     axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=taylor&state=open')
