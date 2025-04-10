@@ -16,7 +16,11 @@ async function getIssues() {
 
         if(response.data.length) {
         for (let c in response.data) {
-            let temp_html = '<div class="mv2"><a class="no-underline relative f6 black-70 hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
+            let temp_html = `<div class="mv2">
+                <a class="no-underline relative f6 black-70 hover-light-red" href="${response.data[c].html_url}">
+                ${response.data[c].title}
+                </a>
+            </div>`;
             document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
         }
         } else {
@@ -38,21 +42,9 @@ async function fetchTidePredictions() {
     const today = new Date();
     const lastday = new Date();
     lastday.setDate(today.getDate() + 13);
-    var mm1 = today.getMonth() + 1; // getMonth() is zero-based
-    var dd1 = today.getDate();
 
-    var mm2 = lastday.getMonth() + 1; // getMonth() is zero-based
-    var dd2 = lastday.getDate();
-
-    const todaystring = [today.getFullYear(),
-        (mm1>9 ? '' : '0') + mm1,
-        (dd1>9 ? '' : '0') + dd1
-        ].join('');
-
-    const lastdaystring = [lastday.getFullYear(),
-            (mm2>9 ? '' : '0') + mm2,
-            (dd2>9 ? '' : '0') + dd2
-            ].join('');
+    const todaystring = `${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, '0')}${String(today.getDate()).padStart(2, '0')}`;
+    const lastdaystring = `${lastday.getFullYear()}${String(lastday.getMonth() + 1).padStart(2, '0')}${String(lastday.getDate()).padStart(2, '0')}`;
 
     try {
         const response = await axios.get(
