@@ -14,18 +14,20 @@ async function getIssues() {
         }
         );
 
+        const issuesContainer = document.getElementById("issues");
+
         if(response.data.length) {
-        for (let c in response.data) {
-            let temp_html = `<div class="mv2">
-                <a class="no-underline relative f6 black-70 hover-light-red" href="${response.data[c].html_url}">
-                ${response.data[c].title}
-                </a>
-            </div>`;
-            document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
-        }
+            const issuesHTML = response.data.map(issue =>
+                `<div class="mv2">
+                  <a class="no-underline relative f6 black-70 hover-light-red" href="${issue.html_url}">
+                    ${issue.title}
+                  </a>
+                </div>`
+            ).join('');
+
+            issuesContainer.innerHTML = issuesHTML;
         } else {
-            let temp_html = '<div class="pa4 tc silver ma3 ba b--light-gray">No Issues Found.</div>';
-            document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
+            issuesContainer.innerHTML = '<div class="pa4 tc silver ma3 ba b--light-gray">No Issues Found.</div>';
         }
     } catch (error) {
         console.log(error);
@@ -65,23 +67,40 @@ async function fetchTidePredictions() {
         }
         );
 
-        const lowTide = []
         const days = []
         const predictions = response.data.predictions
         var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric' };
 
-        //TODO change to filter?
-        for (let c in predictions) {
-            const RegExpNumberedCaptureGroups = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/
-            const matchObj = RegExpNumberedCaptureGroups.exec(predictions[c].t)
-            let gmtdate = new Date(Date.UTC(matchObj[1], matchObj[2]-1, matchObj[3], matchObj[4], matchObj[5]))
+        const lowTide = predictions
+            .map(prediction => {
+                const regexMatch = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/.exec(prediction.t);
 
-            let thisdate = convertTZ(gmtdate, "America/Los_Angeles")
-            //TODO calculate sunset/sunrise
-            if(predictions[c].v < 4 && thisdate.getHours() > 5 && thisdate.getHours() < 22) {
-                lowTide.push({"t": thisdate, "v": predictions[c].v})
-            }
-        }
+                if (!regexMatch) return null;
+
+                const [_, year, month, day, hour, minute] = regexMatch;
+
+                const gmtDate = new Date(Date.UTC(
+                    parseInt(year),
+                    parseInt(month) - 1,
+                    parseInt(day),
+                    parseInt(hour),
+                    parseInt(minute)
+                ));
+
+                const localDate = convertTZ(gmtDate, "America/Los_Angeles");
+
+                return {
+                    t: localDate,
+                    v: parseFloat(prediction.v),
+                    hour: localDate.getHours()
+                };
+            })
+            .filter(item =>
+                item !== null &&
+                item.v < 4 &&
+                item.hour > 5 &&
+                item.hour < 22
+            );
 
         // calculate low tide streaks
         let day = 1
