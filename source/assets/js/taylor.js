@@ -30,7 +30,10 @@ async function getIssues() {
             issuesContainer.innerHTML = '<div class="pa4 tc silver ma3 ba b--light-gray">No Issues Found.</div>';
         }
     } catch (error) {
-        console.log(error);
+        console.error('Error fetching GitHub issues:', error);
+
+        document.getElementById("issues").innerHTML =
+        '<div class="pa4 tc silver ma3 ba b--light-gray">Unable to load issues. Please try again later.</div>';
     }
 }
 
@@ -172,7 +175,10 @@ async function fetchTidePredictions() {
         document.getElementById("dates").innerHTML = template_tide_predictions(dates);
 
     } catch (error) {
-        console.log(error);
+        console.error('Error fetching tide predictions:', error);
+
+        document.getElementById("dates").innerHTML =
+        '<div class="pa4 tc silver ma3 ba b--light-gray">Unable to load tide data. Please try again later.</div>';
     }
 }
 
