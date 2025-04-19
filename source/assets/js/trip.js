@@ -9,17 +9,17 @@ const trips_template = require("./templates/recent_trips.hbs");
 const parallaxImage = document.getElementById('ParallaxImage');
 let windowScrolled;
 
-window.addEventListener('scroll', function windowScroll() {
+window.addEventListener('scroll', () => {
   windowScrolled = window.pageYOffset || document.documentElement.scrollTop;
   parallaxImage.style.transform = 'translate3d(0, ' + windowScrolled / 4 + 'px, 0)';
 });
 
 /* Populate Get Involved section */
 axios.get('/assets/json/get-involved.json')
-  .then(function (response) {
+  .then(response => {
     resources(response.data);
   })
-  .catch(function (error) {
+  .catch(error => {
     // call local file on 403
     console.log(error);
   });
@@ -28,7 +28,7 @@ function resources(data=[]) {
   const resource_element = document.getElementById("resources");
   const resource_list = data
           .filter(resource => (resource.states.includes(resource_element.dataset.state) || resource.states.includes('All')) && (resource.types.includes(resource_element.dataset.type)))
-          .map(function(r) { return {'title': r.name, 'url': r.url, 'desc': r.desc.split(" ").slice(0,8).join(" ") }; });
+          .map(r => ({ 'title': r.name, 'url': r.url, 'desc': r.desc.split(" ").slice(0,8).join(" ") }));
   resource_element.innerHTML = resources_template(resource_list);
 }
 
@@ -48,10 +48,10 @@ if(report_element) {
     avyMapUrl = "/avy"
   }
   axios.get(`/assets/json/avalanche-reports/${left}-${right}.json` )
-  .then(function (response) {
+  .then(response => {
     report_element.innerHTML = report_template({"map_url": avyMapUrl, "data": response.data});
   })
-  .catch(function (error) {
+  .catch(error => {
     // call local file on 403
     console.log(error);
   });
@@ -59,18 +59,18 @@ if(report_element) {
 
 /* Populate Recent Trips */
 axios.get('/assets/json/trips.json')
-  .then(function (response) {
+  .then(response => {
     const trips_element = document.getElementById("trips");
     trips(response.data, trips_element.dataset.trip, false, trips_element.dataset.type);
   })
-  .catch(function (error) {
+  .catch(error => {
     // call local file on 403
     console.log(error);
   });
 
 function trips(trips=[], current_trip, active_trip, active_type) {
   const types = [];
-  trips.data.forEach(function(trip) {
+  trips.data.forEach(trip => {
     const found = types.some(el => el.type === trip.type);
     if(!found) {
       if(trip.type === active_type) {
@@ -80,7 +80,7 @@ function trips(trips=[], current_trip, active_trip, active_type) {
       }
     }
   });
-  const related_trips = trips.data.reduce(function(res, trip) {
+  const related_trips = trips.data.reduce((res, trip) => {
     if(trip.type == active_type && trip.title != current_trip) {
       if((active_trip && active_trip == trip.title) || (!active_trip && res.length == 0)) {
         trip['border_color'] = 'light-red';
@@ -107,25 +107,25 @@ function trips(trips=[], current_trip, active_trip, active_type) {
 }
 
 /* recent trips nav */
-u("#trips").on('click', '.related-top-nav', function(node) {
+u("#trips").on('click', '.related-top-nav', node => {
   axios.get('/assets/json/trips.json')
-    .then(function (response) {
+    .then(response => {
       const trips_element = document.getElementById("trips");
       trips_element.dataset.type = u(node.target).data('type');
       trips(response.data, trips_element.dataset.trip, false, u(node.target).data('type'));
     })
-    .catch(function (error) {
+    .catch(error => {
       // call local file on 403
       console.log(error);
     });
 })
-u("#trips").on('click', '.related-side-nav', function(node) {
+u("#trips").on('click', '.related-side-nav', node => {
   axios.get('/assets/json/trips.json')
-    .then(function (response) {
+    .then(response => {
       const trips_element = document.getElementById("trips");
       trips(response.data, trips_element.dataset.trip, u(node.target).data('trip'), trips_element.dataset.type);
     })
-    .catch(function (error) {
+    .catch(error => {
       // call local file on 403
       console.log(error);
     });
