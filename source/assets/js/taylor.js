@@ -1,7 +1,20 @@
+/**
+ * @fileoverview Taylor's Tides application
+ *
+ * This module handles tide predictions for Taylor Dock, displaying low tide times
+ * that occur during daylight hours. It also provides a way to view GitHub issues
+ * related to the application.
+ *
+ */
+
 import u from 'umbrellajs';
 import axios from 'axios';
 import template_tide_predictions from './templates/taylor_tides.hbs';
 
+/**
+ * Fetches GitHub issues with the 'taylor' label and displays them on the page
+ * @async
+ */
 async function getIssues() {
     try {
         const response = await axios.get(
@@ -49,12 +62,19 @@ function formatDateYYYYMMDD(date) {
     return `${year}${month}${day}`;
 }
 
+/**
+ * Converts a date to the specified timezone
+ * @param {Date|string} date - The date to convert
+ * @param {string} tzString - The timezone string (e.g., 'America/Los_Angeles')
+ * @returns {Date} - The date in the specified timezone
+ */
 function convertTZ(date, tzString) {
     return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString}));
 }
 
 /**
  * Fetches tide predictions from the NOAA API
+ * @async
  */
 async function fetchTidePredictions() {
     try {
