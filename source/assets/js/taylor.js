@@ -1,143 +1,255 @@
+/**
+ * @fileoverview Taylor's Tides application
+ *
+ * This module handles tide predictions for Taylor Dock, displaying low tide times
+ * that occur during daylight hours. It also provides a way to view GitHub issues
+ * related to the application.
+ */
+
 import u from 'umbrellajs';
 import axios from 'axios';
+import template_tide_predictions from './templates/taylor_tides.hbs';
 
-const template_tide_predictions = require("./templates/taylor_tides.hbs");
-
-function getIssues() {
-    axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=taylor&state=open')
-      .then(function (response) {
-        if(response.data.length) {
-            for (let c in response.data) {
-            let temp_html = '<div class="mv2"><a class="no-underline relative f6 black-70 hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
-            document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
+/**
+ * Fetches GitHub issues with the 'taylor' label and displays them on the page
+ * @async
+ */
+async function getIssues() {
+    try {
+        const response = await axios.get(
+        'https://api.github.com/repos/jdillard/personal-site/issues',
+        {
+            params: {
+                labels: 'taylor',
+                state: 'open'
             }
-        } else {
-            let temp_html = '<div class="pa4 tc silver ma3 ba b--light-gray">No Issues Found.</div>';
-            document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
         }
-      })
-      .catch(function (error) {
-        console.log(error);
-    });
-  }
+        );
 
+        const issuesContainer = document.getElementById("issues");
+
+        if(response.data.length) {
+            const issuesHTML = response.data.map(issue =>
+                `<div class="mv2">
+                  <a class="no-underline relative f6 black-70 hover-light-red" href="${issue.html_url}">
+                    ${issue.title}
+                  </a>
+                </div>`
+            ).join('');
+
+            issuesContainer.innerHTML = issuesHTML;
+        } else {
+            issuesContainer.innerHTML = '<div class="pa4 tc silver ma3 ba b--light-gray">No Issues Found.</div>';
+        }
+    } catch (error) {
+        console.error('Error fetching GitHub issues:', error);
+
+        document.getElementById("issues").innerHTML =
+        '<div class="pa4 tc silver ma3 ba b--light-gray">Unable to load issues. Please try again later.</div>';
+    }
+}
+
+/**
+ * Formats a date as YYYYMMDD
+ * @param {Date} date - The date to format
+ * @returns {string} - Formatted date string
+ */
+function formatDateYYYYMMDD(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}${month}${day}`;
+}
+
+/**
+ * Converts a date to the specified timezone
+ * @param {Date|string} date - The date to convert
+ * @param {string} tzString - The timezone string (e.g., 'America/Los_Angeles')
+ * @returns {Date} - The date in the specified timezone
+ */
 function convertTZ(date, tzString) {
     return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString}));
 }
 
-// calculate start and end dates
-// TODO using prototype
-const today = new Date();
-const lastday = new Date();
-lastday.setDate(today.getDate() + 13);
-var mm1 = today.getMonth() + 1; // getMonth() is zero-based
-var dd1 = today.getDate();
+/**
+ * Fetches tide predictions from the NOAA API
+ * @async
+ */
+async function fetchTidePredictions() {
+    try {
+      // Calculate date range
+      const today = new Date();
+      const lastday = new Date(today);
+      lastday.setDate(today.getDate() + 13);
 
-var mm2 = lastday.getMonth() + 1; // getMonth() is zero-based
-var dd2 = lastday.getDate();
+      const todayString = formatDateYYYYMMDD(today);
+      const lastdayString = formatDateYYYYMMDD(lastday);
 
-const todaystring = [today.getFullYear(),
-            (mm1>9 ? '' : '0') + mm1,
-            (dd1>9 ? '' : '0') + dd1
-            ].join('');
-
-const lastdaystring = [lastday.getFullYear(),
-            (mm2>9 ? '' : '0') + mm2,
-            (dd2>9 ? '' : '0') + dd2
-            ].join('');
-
-axios.get('https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=NOS.COOPS.TAC.WL&begin_date='+todaystring+'&end_date='+lastdaystring+'&datum=MLLW&station=9449424&time_zone=GMT&units=english&interval=h&format=json')
-  .then(function (response) {
-    const lowTide = []
-    const days = []
-    const predictions = response.data.predictions
-    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric' };
-
-    //TODO change to filter?
-    for (let c in predictions) {
-        const RegExpNumberedCaptureGroups = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/
-        const matchObj = RegExpNumberedCaptureGroups.exec(predictions[c].t)
-        let gmtdate = new Date(Date.UTC(matchObj[1], matchObj[2]-1, matchObj[3], matchObj[4], matchObj[5]))
-
-        let thisdate = convertTZ(gmtdate, "America/Los_Angeles")
-        //TODO calculate sunset/sunrise
-        if(predictions[c].v < 4 && thisdate.getHours() > 5 && thisdate.getHours() < 22) {
-            lowTide.push({"t": thisdate, "v": predictions[c].v})
-        }
-    }
-
-    // calculate low tide streaks
-    let day = 1
-    let current_streak = {}
-    for (let c in lowTide) {
-        let thisdate = new Date(lowTide[c].t)
-        let nextdate = false
-        if(parseInt(c) < lowTide.length - 1) {
-            nextdate = new Date(lowTide[parseInt(c)+1].t)
-        }
-        if(nextdate && thisdate.getDate() == nextdate.getDate() && nextdate.getHours() - thisdate.getHours() == 1) {
-            if(Object.keys(current_streak).length > 0) {
-                current_streak.end = thisdate;
-            } else {
-                current_streak.start = thisdate;
+      const response = await axios.get(
+        'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter',
+        {
+            params: {
+                product: 'predictions',
+                application: 'NOS.COOPS.TAC.WL',
+                begin_date: todayString,
+                end_date: lastdayString,
+                datum: 'MLLW',
+                station: '9449424',
+                time_zone: 'GMT',
+                units: 'english',
+                interval: 'h',
+                format: 'json'
             }
+        }
+      );
+
+      const predictions = response.data.predictions;
+      if (!predictions || !Array.isArray(predictions)) {
+        throw new Error('Invalid predictions data');
+      }
+
+      const lowTides = filterLowTides(predictions);
+      const dayGroups = calculateTideStreaks(lowTides);
+      const formattedData = organizeTideData(dayGroups);
+
+      document.getElementById("dates").innerHTML = template_tide_predictions(formattedData);
+    } catch (error) {
+      console.error('Error fetching tide predictions:', error);
+
+      document.getElementById("dates").innerHTML =
+        '<div class="pa4 tc silver ma3 ba b--light-gray">Error loading tide data.</div>';
+    }
+}
+
+/**
+ * Filters low tides during daylight hours
+ * @param {Array} predictions - Raw tide predictions
+ * @returns {Array} - Filtered low tides
+ */
+function filterLowTides(predictions) {
+    return predictions
+      .map(prediction => {
+        const regexMatch = /(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/.exec(prediction.t);
+
+        if (!regexMatch) return null;
+
+        const [_, year, month, day, hour, minute] = regexMatch;
+
+        const gmtDate = new Date(Date.UTC(
+            parseInt(year),
+            parseInt(month) - 1,
+            parseInt(day),
+            parseInt(hour),
+            parseInt(minute)
+        ));
+
+        const localDate = convertTZ(gmtDate, "America/Los_Angeles");
+
+        return {
+            t: localDate,
+            v: parseFloat(prediction.v)
+        };
+      })
+      .filter(item =>
+        item !== null &&
+        item.v < 4 &&
+        item.t.getHours() > 5 &&
+        item.t.getHours() < 22
+      );
+}
+
+/**
+ * Calculates low tide streaks grouped by day
+ * @param {Array} lowTides - Filtered low tides
+ * @returns {Object} - Object with days as keys and arrays of tide streaks as values
+ */
+function calculateTideStreaks(lowTides) {
+    const days = {};
+    let currentStreak = {};
+
+    lowTides.forEach((tide, index) => {
+      const thisDate = new Date(tide.t);
+      const nextTide = index < lowTides.length - 1 ? lowTides[index + 1] : null;
+      const nextDate = nextTide ? new Date(nextTide.t) : null;
+
+      // Check if consecutive on same day
+      const isConsecutive = nextDate &&
+        thisDate.getDate() === nextDate.getDate() &&
+        nextDate.getHours() - thisDate.getHours() === 1;
+
+      if (isConsecutive) {
+        if (Object.keys(currentStreak).length > 0) {
+          currentStreak.end = thisDate;
         } else {
-            // fix edge cases
-            if(Object.keys(current_streak).length == 0) {
-                current_streak.start = thisdate;
-                current_streak.end = thisdate;
-            } else if(Object.keys(current_streak).length == 1) {
-                current_streak.end = thisdate;
-            }
-            // append current streak
-            if(days[thisdate.toLocaleDateString("en-US")]) {
-                days[thisdate.toLocaleDateString("en-US")].push(current_streak)
-            } else {
-                days[thisdate.toLocaleDateString("en-US")] = [current_streak]
-            }
-            current_streak = {};
+          currentStreak.start = thisDate;
         }
-    }
+      } else {
+        // handle edge cases
+        if (Object.keys(currentStreak).length === 0) {
+          currentStreak.start = thisDate;
+          currentStreak.end = thisDate;
+        } else if (!currentStreak.end) {
+          currentStreak.end = thisDate;
+        }
 
-    //TODO filter streaks?
-    // split days into two columns, one per week
-    const dates = []
-          dates["thisweek"] = []
-          dates["nextweek"] = []
-    let nextweek = new Date(Object.values(days)[0][0].start)
-    nextweek.setHours(0)
-    nextweek.setDate(nextweek.getDate() + 7);
-    for (let day in days) {
-            // loop through each day's streaks
-            const lowtides = []
-            for (let streak in days[day]) {
-                let starttime = new Date(days[day][streak].start)
-                let lowtide = "N/A"
-                if(days[day][streak].start && days[day][streak].end) {
-                    let endtime = new Date(days[day][streak].end)
-                    lowtide = starttime.toLocaleString('en-US', { hour: 'numeric', hour12: true }) + ' - ' +  endtime.toLocaleString('en-US', { hour: 'numeric', hour12: true })
-                    lowtides.push({"streak": lowtide})
-                }
-            }
-            let currentday = new Date(days[day][0].start)
-            if(currentday < nextweek) {
-                dates['thisweek'].push({
-                    "weekday": currentday.toLocaleString('en-US', { weekday: 'short' }).toUpperCase(),
-                    "date": (currentday.getMonth()+1)+'/'+currentday.getDate(),
-                    "lowtides": lowtides})
-            } else {
-                dates['nextweek'].push({
-                    "weekday": currentday.toLocaleString('en-US', { weekday: 'short' }).toUpperCase(),
-                    "date": (currentday.getMonth()+1)+'/'+currentday.getDate(),
-                    "lowtides": lowtides})
-            }
-    }
+        const dateKey = thisDate.toLocaleDateString("en-US");
+        days[dateKey] = days[dateKey] || [];
+        days[dateKey].push({...currentStreak});
 
-    document.getElementById("dates").innerHTML = template_tide_predictions(dates);
-  })
-  .catch(function (error) {
-    console.log(error);
-});
+        currentStreak = {};
+      }
+    });
+
+    return days;
+}
+
+/**
+ * Organizes tide data for display
+ * @param {Object} dayGroups - Object with days as keys and arrays of tide streaks as values
+ * @returns {Object} - Organized data for template rendering
+ */
+function organizeTideData(dayGroups) {
+    const dates = {
+      thisweek: [],
+      nextweek: []
+    };
+
+    const firstDate = Object.values(dayGroups)[0]?.[0]?.start;
+    if (!firstDate) return dates;
+
+    const nextWeekStart = new Date(firstDate);
+    nextWeekStart.setHours(0);
+    nextWeekStart.setDate(nextWeekStart.getDate() + 7);
+
+    Object.entries(dayGroups).forEach(([dayKey, streaks]) => {
+      if (!streaks.length) return;
+
+      const lowtides = streaks.map(streak => {
+        if (!streak.start || !streak.end) return null;
+
+        const startTime = new Date(streak.start);
+        const endTime = new Date(streak.end);
+
+        return {
+          streak: `${startTime.toLocaleString('en-US', { hour: 'numeric', hour12: true })} - ${endTime.toLocaleString('en-US', { hour: 'numeric', hour12: true })}`
+        };
+      }).filter(Boolean);
+
+      const currentDay = new Date(streaks[0].start);
+      const weekGroup = currentDay < nextWeekStart ? 'thisweek' : 'nextweek';
+
+      dates[weekGroup].push({
+        weekday: currentDay.toLocaleString('en-US', { weekday: 'short' }).toUpperCase(),
+        date: `${currentDay.getMonth() + 1}/${currentDay.getDate()}`,
+        lowtides
+      });
+    });
+
+    return dates;
+}
+
+// Initialize tide predictions on page load
+document.addEventListener('DOMContentLoaded', fetchTidePredictions);
 
 u("#issues-toggle").on('click', function() {
     if(u("#issues").hasClass('open')) {
