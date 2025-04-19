@@ -4,7 +4,6 @@
  * This module handles tide predictions for Taylor Dock, displaying low tide times
  * that occur during daylight hours. It also provides a way to view GitHub issues
  * related to the application.
- *
  */
 
 import u from 'umbrellajs';
@@ -106,7 +105,7 @@ async function fetchTidePredictions() {
 
       const predictions = response.data.predictions;
       if (!predictions || !Array.isArray(predictions)) {
-        throw new Error('Invalid predictions data'); //TODO double check
+        throw new Error('Invalid predictions data');
       }
 
       const lowTides = filterLowTides(predictions);
