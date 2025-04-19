@@ -234,46 +234,58 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html">Colorado</a></h3>
             <ul id="co-zones" class="list pl3 f5 mt2">
                 
-                <li data-zone="CAIC-975" data-color="#fff200" class="pv1">
+                <li data-zone="CAIC-1014" data-color="#fff200" class="pv1">
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-975">CAIC zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:30PM</span>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-1014">CAIC zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-985" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-985">CAIC zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:30PM</span>
                 </li>
                 
                 <li data-zone="CAIC-973" data-color="#fff200" class="pv1">
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-973">CAIC zone</a>
-                    <span class="gray f7">Friday, April 18, 2025 4:30AM</span>
+                    <span class="gray f7">Friday, April 18, 2025 4:30PM</span>
                 </li>
                 
                 <li data-zone="CAIC-981" data-color="#fff200" class="pv1">
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-981">CAIC zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:30PM</span>
+                    <span class="gray f7">Friday, April 18, 2025 4:30PM</span>
                 </li>
                 
-                <li data-zone="CAIC-1014" data-color="#fff200" class="pv1">
+                <li data-zone="CAIC-943" data-color="#fff200" class="pv1">
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-1014">CAIC zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:30PM</span>
-                </li>
-                
-                <li data-zone="CAIC-943" data-color="#50b848" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-943">CAIC zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:30PM</span>
+                    <span class="gray f7">Friday, April 18, 2025 4:30PM</span>
                 </li>
                 
-                <li data-zone="CAIC-996" data-color="#50b848" class="pv1">
+                <li data-zone="CAIC-955" data-color="#50b848" class="pv1">
                     <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-996">CAIC zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:30PM</span>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-955">CAIC zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-1001" data-color="#f7941e" class="pv1">
+                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-1001">CAIC zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:30PM</span>
                 </li>
                 
                 <li data-zone="CAIC-1016" data-color="#fff200" class="pv1">
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-1016">CAIC zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:30PM</span>
+                    <span class="gray f7">Friday, April 18, 2025 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-975" data-color="#f7941e" class="pv1">
+                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-975">CAIC zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:30PM</span>
                 </li>
                 
             </ul>
@@ -728,28 +740,10 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html">Canada</a></h3>
             <ul id="canada-zones" class="list pl3 f5 mt2">
                 
-                <li data-zone="131df6726b183b57eadaa686dc23a56b9ae9892fd4ba42df99cfbf53f2ef7f27" data-color="#fff200" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-131df6726b183b57eadaa686dc23a56b9ae9892fd4ba42df99cfbf53f2ef7f27">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:00PM</span>
-                </li>
-                
-                <li data-zone="03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" data-color="#f7941e" class="pv1">
-                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 5:00PM</span>
-                </li>
-                
-                <li data-zone="db6cfad1495e5bed6da05c6931880dc387cea4a7919bb3b8bd0ce85c64dc2f16" data-color="#f7941e" class="pv1">
-                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-db6cfad1495e5bed6da05c6931880dc387cea4a7919bb3b8bd0ce85c64dc2f16">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 5:00PM</span>
-                </li>
-                
-                <li data-zone="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" data-color="#fff200" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:00PM</span>
+                <li data-zone="cf15fd018505093b8821c96de39fe46abb310c400ee3ffa3ed41fa871a2ff767" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-cf15fd018505093b8821c96de39fe46abb310c400ee3ffa3ed41fa871a2ff767">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:00PM</span>
                 </li>
                 
                 <li data-zone="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" data-color="#f7941e" class="pv1">
@@ -758,40 +752,34 @@ css_includes:
                     <span class="gray f7">Thursday, April 17, 2025 5:00PM</span>
                 </li>
                 
-                <li data-zone="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d">Canada zone</a>
-                    
+                <li data-zone="db6cfad1495e5bed6da05c6931880dc387cea4a7919bb3b8bd0ce85c64dc2f16" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-db6cfad1495e5bed6da05c6931880dc387cea4a7919bb3b8bd0ce85c64dc2f16">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 5:00PM</span>
                 </li>
                 
-                <li data-zone="e48759918f65c70070cfa27b3e625c1a18bd14344d67bb511929179db7425e5c" data-color="#fff200" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-e48759918f65c70070cfa27b3e625c1a18bd14344d67bb511929179db7425e5c">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 5:00PM</span>
+                <li data-zone="44a04ef92ab4c74a4ba559d035a82c34e63b75684a7714de4f198c5c7b558945" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-44a04ef92ab4c74a4ba559d035a82c34e63b75684a7714de4f198c5c7b558945">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:00PM</span>
                 </li>
                 
-                <li data-zone="a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62" data-color="#fff200" class="pv1">
+                <li data-zone="c1b76bbde8b6c39ff0ce5e94d22bfe03c8e20eb3a8070484d52303b77b828c6c" data-color="#fff200" class="pv1">
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:00PM</span>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-c1b76bbde8b6c39ff0ce5e94d22bfe03c8e20eb3a8070484d52303b77b828c6c">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:00PM</span>
                 </li>
                 
                 <li data-zone="b450f1aaff76c378144996afb601d564d656b37fcbe02538a1a2e13492d4ac40" data-color="#fff200" class="pv1">
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-b450f1aaff76c378144996afb601d564d656b37fcbe02538a1a2e13492d4ac40">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:00PM</span>
+                    <span class="gray f7">Friday, April 18, 2025 4:00PM</span>
                 </li>
                 
-                <li data-zone="3fcf0b9d2d6ab8d47b2cbf6474b3322623f14e46a39626428e9625be14ee580e" data-color="#f7941e" class="pv1">
-                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-3fcf0b9d2d6ab8d47b2cbf6474b3322623f14e46a39626428e9625be14ee580e">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:00PM</span>
-                </li>
-                
-                <li data-zone="a557786812a8ecf9157bfabb04d3f4d8af8f1ff4a81bc2ded5c33f24957d6d45" data-color="#f7941e" class="pv1">
-                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-a557786812a8ecf9157bfabb04d3f4d8af8f1ff4a81bc2ded5c33f24957d6d45">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 5:00PM</span>
+                <li data-zone="fee77f2210eda82f75c8879055ce580db07b51f576bd6d3b48b8dcc693744c0e" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-fee77f2210eda82f75c8879055ce580db07b51f576bd6d3b48b8dcc693744c0e">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:00PM</span>
                 </li>
                 
                 <li data-zone="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#fff200" class="pv1">
@@ -800,58 +788,82 @@ css_includes:
                     <span class="gray f7">Thursday, April 17, 2025 2:00PM</span>
                 </li>
                 
-                <li data-zone="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" data-color="#fff200" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85">Canada zone</a>
-                    <span class="gray f7">Wednesday, April 16, 2025 11:00PM</span>
-                </li>
-                
-                <li data-zone="85be29f68c23bec089e7a519b159f7032a807c5bbfbf000759d7d40662b5b9de" data-color="#f7941e" class="pv1">
+                <li data-zone="03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" data-color="#f7941e" class="pv1">
                     <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-85be29f68c23bec089e7a519b159f7032a807c5bbfbf000759d7d40662b5b9de">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:00PM</span>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 5:00PM</span>
                 </li>
                 
-                <li data-zone="f0716471776bd7a02ea7759ef29687df92547c13ba28a420bb43835282b54f39" data-color="#fff200" class="pv1">
+                <li data-zone="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" data-color="#fff200" class="pv1">
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:00PM</span>
+                </li>
+                
+                <li data-zone="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d">Canada zone</a>
+                    
+                </li>
+                
+                <li data-zone="204dd862eae626a198ba61a83d3db20dbf7dd6f0ced7baa43fff08fef0ab62f5" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-204dd862eae626a198ba61a83d3db20dbf7dd6f0ced7baa43fff08fef0ab62f5">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:00PM</span>
+                </li>
+                
+                <li data-zone="131df6726b183b57eadaa686dc23a56b9ae9892fd4ba42df99cfbf53f2ef7f27" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-131df6726b183b57eadaa686dc23a56b9ae9892fd4ba42df99cfbf53f2ef7f27">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:00PM</span>
+                </li>
+                
+                <li data-zone="a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:00PM</span>
+                </li>
+                
+                <li data-zone="2dd7106a265568c8f5afd80626a75990fe0d9a265f7542f45e36cca06cb7e9bc" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2dd7106a265568c8f5afd80626a75990fe0d9a265f7542f45e36cca06cb7e9bc">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 4:00PM</span>
+                </li>
+                
+                <li data-zone="f0716471776bd7a02ea7759ef29687df92547c13ba28a420bb43835282b54f39" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-f0716471776bd7a02ea7759ef29687df92547c13ba28a420bb43835282b54f39">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 5:00PM</span>
+                    <span class="gray f7">Friday, April 18, 2025 5:00PM</span>
+                </li>
+                
+                <li data-zone="ffceed9d8b55157f535f0d7a2b24738b3e9c58f7c554b33370f97730c4f11c93" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-ffceed9d8b55157f535f0d7a2b24738b3e9c58f7c554b33370f97730c4f11c93">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 5:00PM</span>
+                </li>
+                
+                <li data-zone="a557786812a8ecf9157bfabb04d3f4d8af8f1ff4a81bc2ded5c33f24957d6d45" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-a557786812a8ecf9157bfabb04d3f4d8af8f1ff4a81bc2ded5c33f24957d6d45">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 5:00PM</span>
+                </li>
+                
+                <li data-zone="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85">Canada zone</a>
+                    <span class="gray f7">Friday, April 18, 2025 5:00PM</span>
                 </li>
                 
                 <li data-zone="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" data-color="#50b848" class="pv1">
                     <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:00PM</span>
+                    <span class="gray f7">Friday, April 18, 2025 4:00PM</span>
                 </li>
                 
-                <li data-zone="204dd862eae626a198ba61a83d3db20dbf7dd6f0ced7baa43fff08fef0ab62f5" data-color="#f7941e" class="pv1">
-                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-204dd862eae626a198ba61a83d3db20dbf7dd6f0ced7baa43fff08fef0ab62f5">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:00PM</span>
-                </li>
-                
-                <li data-zone="b48e6464a4aca7bb43c16c4b8483984adaeda8833403095c59702c32670e6388" data-color="#50b848" class="pv1">
+                <li data-zone="461a68cc96baa57fe649e8f3923f0e5403abebfb9e1e24b798f634f5c3fbc726" data-color="#50b848" class="pv1">
                     <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-b48e6464a4aca7bb43c16c4b8483984adaeda8833403095c59702c32670e6388">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:00PM</span>
-                </li>
-                
-                <li data-zone="fee77f2210eda82f75c8879055ce580db07b51f576bd6d3b48b8dcc693744c0e" data-color="#fff200" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-fee77f2210eda82f75c8879055ce580db07b51f576bd6d3b48b8dcc693744c0e">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:00PM</span>
-                </li>
-                
-                <li data-zone="461a68cc96baa57fe649e8f3923f0e5403abebfb9e1e24b798f634f5c3fbc726" data-color="#fff200" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-461a68cc96baa57fe649e8f3923f0e5403abebfb9e1e24b798f634f5c3fbc726">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:00PM</span>
-                </li>
-                
-                <li data-zone="44a04ef92ab4c74a4ba559d035a82c34e63b75684a7714de4f198c5c7b558945" data-color="#f7941e" class="pv1">
-                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-44a04ef92ab4c74a4ba559d035a82c34e63b75684a7714de4f198c5c7b558945">Canada zone</a>
-                    <span class="gray f7">Thursday, April 17, 2025 4:00PM</span>
+                    <span class="gray f7">Friday, April 18, 2025 4:00PM</span>
                 </li>
                 
             </ul>
