@@ -6,8 +6,8 @@ const resources_template = require("./templates/resources-simple.hbs");
 const trips_template = require("./templates/recent_trips.hbs");
 
 /* parallax on blog posts with cover image */
-var parallaxImage = document.getElementById('ParallaxImage');
-var windowScrolled;
+const parallaxImage = document.getElementById('ParallaxImage');
+let windowScrolled;
 
 window.addEventListener('scroll', function windowScroll() {
   windowScrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -69,9 +69,9 @@ axios.get('/assets/json/trips.json')
   });
 
 function trips(trips=[], current_trip, active_trip, active_type) {
-  var types = [];
+  const types = [];
   trips.data.forEach(function(trip) {
-    var found = types.some(el => el.type === trip.type);
+    const found = types.some(el => el.type === trip.type);
     if(!found) {
       if(trip.type === active_type) {
         types.push({"color": "light-red", "type": trip.type});
@@ -80,7 +80,7 @@ function trips(trips=[], current_trip, active_trip, active_type) {
       }
     }
   });
-  var related_trips = trips.data.reduce(function(res, trip) {
+  const related_trips = trips.data.reduce(function(res, trip) {
     if(trip.type == active_type && trip.title != current_trip) {
       if((active_trip && active_trip == trip.title) || (!active_trip && res.length == 0)) {
         trip['border_color'] = 'light-red';
@@ -95,12 +95,13 @@ function trips(trips=[], current_trip, active_trip, active_type) {
     }
     return res;
   }, []);
+  let trip_info;
   if(active_trip) {
-    var trip_info = related_trips.find(o => o.title === active_trip);;
+    trip_info = related_trips.find(o => o.title === active_trip);
   } else {
-    var trip_info = related_trips[0];
+    trip_info = related_trips[0];
   }
-  var trips_list = {"types": types, "trips": related_trips.slice(0, 5), "trip_info": trip_info};
+  const trips_list = {"types": types, "trips": related_trips.slice(0, 5), "trip_info": trip_info};
   const trips_element = document.getElementById("trips");
   trips_element.innerHTML = trips_template(trips_list);
 }
@@ -131,15 +132,15 @@ u("#trips").on('click', '.related-side-nav', function(node) {
 })
 
 /* If title breaks, break it in half */
-var title = document.querySelector("h1");
-var copy = title.cloneNode(true);
+const title = document.querySelector("h1");
+const copy = title.cloneNode(true);
     copy.innerHTML = 'A';
     title.after(copy)
 
 if (copy.clientHeight < title.clientHeight) {
-    var words = title.innerHTML.split(' ');
-    var firstLine = words.slice(0,Math.round(words.length/2))
-    var secondLine = words.slice(Math.round(words.length/2))
+    const words = title.innerHTML.split(' ');
+    const firstLine = words.slice(0,Math.round(words.length/2))
+    const secondLine = words.slice(Math.round(words.length/2))
     title.innerHTML = firstLine.join(' ') + '<br />' + secondLine.join(' ');
 }
 copy.remove();
