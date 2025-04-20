@@ -15,14 +15,15 @@ window.addEventListener('scroll', () => {
 });
 
 /* Populate Get Involved section */
-axios.get('/assets/json/get-involved.json')
-  .then(response => {
+(async () => {
+  try {
+    const response = await axios.get('/assets/json/get-involved.json');
     resources(response.data);
-  })
-  .catch(error => {
+  } catch (error) {
     // call local file on 403
     console.log(error);
-  });
+  }
+})();
 
 function resources(data=[]) {
   const resource_element = document.getElementById("resources");
@@ -47,26 +48,29 @@ if(report_element) {
     right = report_element.dataset.long
     avyMapUrl = "/avy"
   }
-  axios.get(`/assets/json/avalanche-reports/${left}-${right}.json` )
-  .then(response => {
-    report_element.innerHTML = report_template({"map_url": avyMapUrl, "data": response.data});
-  })
-  .catch(error => {
-    // call local file on 403
-    console.log(error);
-  });
+
+  (async () => {
+    try {
+      const response = await axios.get(`/assets/json/avalanche-reports/${left}-${right}.json`);
+      report_element.innerHTML = report_template({"map_url": avyMapUrl, "data": response.data});
+    } catch (error) {
+      // call local file on 403
+      console.log(error);
+    }
+  })();
 }
 
 /* Populate Recent Trips */
-axios.get('/assets/json/trips.json')
-  .then(response => {
+(async () => {
+  try {
+    const response = await axios.get('/assets/json/trips.json');
     const trips_element = document.getElementById("trips");
     trips(response.data, trips_element.dataset.trip, false, trips_element.dataset.type);
-  })
-  .catch(error => {
+  } catch (error) {
     // call local file on 403
     console.log(error);
-  });
+  }
+})();
 
 function trips(trips=[], current_trip, active_trip, active_type) {
   const types = [];
@@ -106,29 +110,38 @@ function trips(trips=[], current_trip, active_trip, active_type) {
   trips_element.innerHTML = trips_template(trips_list);
 }
 
+/* fetch trips data */
+const fetchTripsData = async () => {
+  try {
+    return await axios.get('/assets/json/trips.json');
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
 /* recent trips nav */
-u("#trips").on('click', '.related-top-nav', node => {
-  axios.get('/assets/json/trips.json')
-    .then(response => {
-      const trips_element = document.getElementById("trips");
-      trips_element.dataset.type = u(node.target).data('type');
-      trips(response.data, trips_element.dataset.trip, false, u(node.target).data('type'));
-    })
-    .catch(error => {
-      // call local file on 403
-      console.log(error);
-    });
+u("#trips").on('click', '.related-top-nav', async node => {
+  try {
+    const response = await fetchTripsData();
+    const trips_element = document.getElementById("trips");
+    trips_element.dataset.type = u(node.target).data('type');
+    trips(response.data, trips_element.dataset.trip, false, u(node.target).data('type'));
+  } catch (error) {
+    // call local file on 403
+    console.log(error);
+  }
 })
-u("#trips").on('click', '.related-side-nav', node => {
-  axios.get('/assets/json/trips.json')
-    .then(response => {
-      const trips_element = document.getElementById("trips");
-      trips(response.data, trips_element.dataset.trip, u(node.target).data('trip'), trips_element.dataset.type);
-    })
-    .catch(error => {
-      // call local file on 403
-      console.log(error);
-    });
+
+u("#trips").on('click', '.related-side-nav', async node => {
+  try {
+    const response = await fetchTripsData();
+    const trips_element = document.getElementById("trips");
+    trips(response.data, trips_element.dataset.trip, u(node.target).data('trip'), trips_element.dataset.type);
+  } catch (error) {
+    // call local file on 403
+    console.log(error);
+  }
 })
 
 /* If title breaks, break it in half */
