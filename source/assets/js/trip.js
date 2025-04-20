@@ -6,29 +6,30 @@ const resources_template = require("./templates/resources-simple.hbs");
 const trips_template = require("./templates/recent_trips.hbs");
 
 /* parallax on blog posts with cover image */
-var parallaxImage = document.getElementById('ParallaxImage');
-var windowScrolled;
+const parallaxImage = document.getElementById('ParallaxImage');
+let windowScrolled;
 
-window.addEventListener('scroll', function windowScroll() {
+window.addEventListener('scroll', () => {
   windowScrolled = window.pageYOffset || document.documentElement.scrollTop;
   parallaxImage.style.transform = 'translate3d(0, ' + windowScrolled / 4 + 'px, 0)';
 });
 
 /* Populate Get Involved section */
-axios.get('/assets/json/get-involved.json')
-  .then(function (response) {
+(async () => {
+  try {
+    const response = await axios.get('/assets/json/get-involved.json');
     resources(response.data);
-  })
-  .catch(function (error) {
+  } catch (error) {
     // call local file on 403
     console.log(error);
-  });
+  }
+})();
 
 function resources(data=[]) {
   const resource_element = document.getElementById("resources");
   const resource_list = data
           .filter(resource => (resource.states.includes(resource_element.dataset.state) || resource.states.includes('All')) && (resource.types.includes(resource_element.dataset.type)))
-          .map(function(r) { return {'title': r.name, 'url': r.url, 'desc': r.desc.split(" ").slice(0,8).join(" ") }; });
+          .map(r => ({ 'title': r.name, 'url': r.url, 'desc': r.desc.split(" ").slice(0,8).join(" ") }));
   resource_element.innerHTML = resources_template(resource_list);
 }
 
@@ -47,31 +48,34 @@ if(report_element) {
     right = report_element.dataset.long
     avyMapUrl = "/avy"
   }
-  axios.get(`/assets/json/avalanche-reports/${left}-${right}.json` )
-  .then(function (response) {
-    report_element.innerHTML = report_template({"map_url": avyMapUrl, "data": response.data});
-  })
-  .catch(function (error) {
-    // call local file on 403
-    console.log(error);
-  });
+
+  (async () => {
+    try {
+      const response = await axios.get(`/assets/json/avalanche-reports/${left}-${right}.json`);
+      report_element.innerHTML = report_template({"map_url": avyMapUrl, "data": response.data});
+    } catch (error) {
+      // call local file on 403
+      console.log(error);
+    }
+  })();
 }
 
 /* Populate Recent Trips */
-axios.get('/assets/json/trips.json')
-  .then(function (response) {
+(async () => {
+  try {
+    const response = await axios.get('/assets/json/trips.json');
     const trips_element = document.getElementById("trips");
     trips(response.data, trips_element.dataset.trip, false, trips_element.dataset.type);
-  })
-  .catch(function (error) {
+  } catch (error) {
     // call local file on 403
     console.log(error);
-  });
+  }
+})();
 
 function trips(trips=[], current_trip, active_trip, active_type) {
-  var types = [];
-  trips.data.forEach(function(trip) {
-    var found = types.some(el => el.type === trip.type);
+  const types = [];
+  trips.data.forEach(trip => {
+    const found = types.some(el => el.type === trip.type);
     if(!found) {
       if(trip.type === active_type) {
         types.push({"color": "light-red", "type": trip.type});
@@ -80,7 +84,7 @@ function trips(trips=[], current_trip, active_trip, active_type) {
       }
     }
   });
-  var related_trips = trips.data.reduce(function(res, trip) {
+  const related_trips = trips.data.reduce((res, trip) => {
     if(trip.type == active_type && trip.title != current_trip) {
       if((active_trip && active_trip == trip.title) || (!active_trip && res.length == 0)) {
         trip['border_color'] = 'light-red';
@@ -95,51 +99,61 @@ function trips(trips=[], current_trip, active_trip, active_type) {
     }
     return res;
   }, []);
+  let trip_info;
   if(active_trip) {
-    var trip_info = related_trips.find(o => o.title === active_trip);;
+    trip_info = related_trips.find(o => o.title === active_trip);
   } else {
-    var trip_info = related_trips[0];
+    trip_info = related_trips[0];
   }
-  var trips_list = {"types": types, "trips": related_trips.slice(0, 5), "trip_info": trip_info};
+  const trips_list = {"types": types, "trips": related_trips.slice(0, 5), "trip_info": trip_info};
   const trips_element = document.getElementById("trips");
   trips_element.innerHTML = trips_template(trips_list);
 }
 
+/* fetch trips data */
+const fetchTripsData = async () => {
+  try {
+    return await axios.get('/assets/json/trips.json');
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
 /* recent trips nav */
-u("#trips").on('click', '.related-top-nav', function(node) {
-  axios.get('/assets/json/trips.json')
-    .then(function (response) {
-      const trips_element = document.getElementById("trips");
-      trips_element.dataset.type = u(node.target).data('type');
-      trips(response.data, trips_element.dataset.trip, false, u(node.target).data('type'));
-    })
-    .catch(function (error) {
-      // call local file on 403
-      console.log(error);
-    });
+u("#trips").on('click', '.related-top-nav', async node => {
+  try {
+    const response = await fetchTripsData();
+    const trips_element = document.getElementById("trips");
+    trips_element.dataset.type = u(node.target).data('type');
+    trips(response.data, trips_element.dataset.trip, false, u(node.target).data('type'));
+  } catch (error) {
+    // call local file on 403
+    console.log(error);
+  }
 })
-u("#trips").on('click', '.related-side-nav', function(node) {
-  axios.get('/assets/json/trips.json')
-    .then(function (response) {
-      const trips_element = document.getElementById("trips");
-      trips(response.data, trips_element.dataset.trip, u(node.target).data('trip'), trips_element.dataset.type);
-    })
-    .catch(function (error) {
-      // call local file on 403
-      console.log(error);
-    });
+
+u("#trips").on('click', '.related-side-nav', async node => {
+  try {
+    const response = await fetchTripsData();
+    const trips_element = document.getElementById("trips");
+    trips(response.data, trips_element.dataset.trip, u(node.target).data('trip'), trips_element.dataset.type);
+  } catch (error) {
+    // call local file on 403
+    console.log(error);
+  }
 })
 
 /* If title breaks, break it in half */
-var title = document.querySelector("h1");
-var copy = title.cloneNode(true);
+const title = document.querySelector("h1");
+const copy = title.cloneNode(true);
     copy.innerHTML = 'A';
     title.after(copy)
 
 if (copy.clientHeight < title.clientHeight) {
-    var words = title.innerHTML.split(' ');
-    var firstLine = words.slice(0,Math.round(words.length/2))
-    var secondLine = words.slice(Math.round(words.length/2))
+    const words = title.innerHTML.split(' ');
+    const firstLine = words.slice(0,Math.round(words.length/2))
+    const secondLine = words.slice(Math.round(words.length/2))
     title.innerHTML = firstLine.join(' ') + '<br />' + secondLine.join(' ');
 }
 copy.remove();
