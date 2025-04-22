@@ -153,7 +153,7 @@ css_includes:
             
         </div>
         
-        <div id="UAC-1742-report" class="avy-zone dn" data-id="UAC-1742" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Friday, April 18, 2025 7:25AM">
+        <div id="UAC-1742-report" class="avy-zone dn" data-id="UAC-1742" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Monday, April 21, 2025 12:22PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/moab"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/moab">UAC</a> for more information.</div>
@@ -163,7 +163,7 @@ css_includes:
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2025-04-19 Normal Caution</strong>
+                        <strong>2025-04-22 Normal Caution</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="a158-158e9001-20310f 0000FF&#10;a158-158e7001-9000f 0000FF&#10;a158-158e0-7000f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1742'); return false;" onmouseout="outFunc('problem-1-tooltip-1742')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
@@ -341,7 +341,7 @@ css_includes:
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1743">
                     
-                        <li class="pv1 atl">
+                        <li class="pv1 ntl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
                                 data-color1="#939598"
@@ -349,7 +349,7 @@ css_includes:
                             ></div> <span class="desc">No rating (above 9001')</span>
                         </li>
                     
-                        <li class="pv1 atl">
+                        <li class="pv1 ntl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
                                 data-color1="#939598"
@@ -357,7 +357,7 @@ css_includes:
                             ></div> <span class="desc">No rating (7001' to 9000')</span>
                         </li>
                     
-                        <li class="pv1 atl">
+                        <li class="pv1 ntl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
                                 data-color1="#939598"
