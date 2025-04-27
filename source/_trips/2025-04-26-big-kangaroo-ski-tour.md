@@ -3,9 +3,12 @@ layout: trip
 title: 'Big Kangaroo Ski Tour'
 date: 2025-04-26
 state: Washington
-area: Washing Pass
+avy_region: wa
+avy_center_id: NWAC
+avy_zone_id: 1654
+area: Washington Pass
 type: skiing
-published: false
+published: true
 popularity: 3
 categories:
   - skiing
@@ -34,3 +37,11 @@ At one point Pierre asks if we have wives or girlfriends and we say no, not sure
 
 While waiting for the train, the guides talked amongst themselves how it was one of the best days of the season, and even up on the list for other seasons. The reward for taking the risk that morning had paid off.
 
+![Soft couloir](/assets/images/trips/2025-04-26-big-kangaroo/soft-couloir.jpg  "Soft couloir"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Booting up the soft couloir.</i></small>
+
+While waiting for the train, the guides talked amongst themselves how it was one of the best days of the season, and even up on the list for other seasons. The reward for taking the risk that morning had paid off.
+
+
+![Final descent](/assets/images/trips/2025-04-26-big-kangaroo/final-descent.jpg  "Final descent"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Final descent.</i></small>
+
+While waiting for the train, the guides talked amongst themselves how it was one of the best days of the season, and even up on the list for other seasons. The reward for taking the risk that morning had paid off.
