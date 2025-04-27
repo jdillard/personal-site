@@ -3,9 +3,12 @@ layout: trip
 title: 'Vesper Peak Ski Tour'
 date: 2025-04-24
 state: Washington
+avy_region: wa
+avy_center_id: NWAC
+avy_zone_id: 1647
 area: Mountain Loop Highway
 type: skiing
-published: false
+published: true
 popularity: 3
 categories:
   - skiing
