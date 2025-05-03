@@ -40,3 +40,7 @@ While waiting for the train, the guides talked amongst themselves how it was one
 
 While waiting for the train, the guides talked amongst themselves how it was one of the best days of the season, and even up on the list for other seasons. The reward for taking the risk that morning had paid off.
 
+![Vesper Peak summit](/assets/images/trips/2025-04-24-vesper-peak/vesper-summit.jpg "Vesper Peak summit"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Vesper Peak summit.</i></small>
+
+While waiting for the train, the guides talked amongst themselves how it was one of the best days of the season, and even up on the list for other seasons. The reward for taking the risk that morning had paid off.
+
