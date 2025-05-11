@@ -26,17 +26,18 @@ https://docs.example.com/{group}/{ref}/{project}
 
 Let’s dissect the parts of this schema:
 
-* **`{group}`** — A collection of related documentation projects. For example, **packages** might group together multiple Python libraries
+* **`{group}`** — A collection of related documentation projects. For example, **modules** might group together multiple tightly-coupled modules that are always versioned and released together as part of a single system update.
+  * In a different example, **team1** might group together several related projects they maintain. This makes it easier for them to add/maintain new documentation projects.
 * **`{ref}`** — A reference to a version of the documentation. This could be a **git hash**, **branch name**, or **release tag**
-* **`{project}`** — The documentation project. For example, **package1** would refer to a specific library’s docs
+* **`{project}`** — The documentation project. For example, **module1** would refer to a specific library’s docs
 
 {: {{site.data.css.info-box}} }
 > **Note:** Groups offer two key advantages: they allow multiple documentation projects to be deployed together for a single commit, keeping everything in sync for a release; and they help reduce technical debt by making it easy to add new projects. It's recommended to build the group in parallel to streamline this process.
 
-For example, a URL that always serves the latest version of **package1** on the **develop** branch:
+For example, a URL that always serves the latest version of **module1** on the **develop** branch:
 
 ```
-https://docs.example.com/packages/develop/head/package1
+https://docs.example.com/modules/develop/head/module1
 ```
 
 ## File server directory layout
@@ -45,7 +46,7 @@ This scheme maps directly to a static file structure:
 
 ```
 .
-└── packages/
+└── modules/
     ├── develop/
     │   ├── githash1/
     │   ├── githash2/
@@ -80,31 +81,31 @@ For tagged builds:
    1. Build the docs
    2. Deploy to **/{group}/tags/{tag}/**
 
-Here is an example of deployments for the **packages** group showing, **githash1** and **githash2** on **develop** and then **githash3** on **pull/1234**:
+Here is an example of deployments for the **modules** group showing, **githash1** and **githash2** on **develop** and then **githash3** on **pull/1234**:
 
 <div class="video oversized landscape mv2">
-    <iframe src="https://player.vimeo.com/video/1083238093?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Git Tree And Directory Tree Deploy Demo"></iframe>
+    <iframe src="https://player.vimeo.com/video/1083238093?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Git Tree And Directory Tree Deploy Demo"></iframe>
 </div><small><i style="margin-top: -15px;"> Fun fact: This diagram is [video-as-code](https://github.com/jdillard/manimations/blob/main/docs-deploy/main.py) using [manim](https://github.com/jdillard/personal-site/).</i></small>
 
 ## How the `HEAD` file works
 
 In this setup, documentation files are stored in an **S3 bucket** with an **EC2 instance running Nginx** acting as a reverse proxy that handles the routing to the bucket.
 
-Each branch directory (e.g., **packages/develop/**) contains a plain text file named `HEAD` that sits along side the previously deployed git hashes. This file stores the latest deployed git hash for that branch.
+Each branch directory (e.g., **modules/develop/**) contains a plain text file named `HEAD` that sits along side the previously deployed git hashes. This file stores the latest deployed git hash for that branch.
 
 When a request comes in like:
 
 ```
-https://docs.example.com/packages/develop/head/package1/index.html
+https://docs.example.com/modules/develop/head/module1/index.html
 ```
 
 the EC2 instance:
 
-1. Detects `/head/` in the URL and reads the `HEAD` file for the branch: **https://docs.example.com/packages/develop/HEAD**
+1. Detects `/head/` in the URL and reads the `HEAD` file for the branch: **https://docs.example.com/modules/develop/HEAD**
 2. Resolves the git hash listed in that file (e.g., **githash3**)
-3. Internally rewrites the request to serve: **https://docs.example.com/packages/develop/githash3/package1/index.html** while keeping the URL unchanged in the browser
+3. Internally rewrites the request to serve: **https://docs.example.com/modules/develop/githash3/module1/index.html** while keeping the URL unchanged in the browser
 
-This allows for a stable, human-friendly URL (**.../packages/develop/head/...**) that always points to the latest deployed docs for that branch. Alternatively, since tags are fixed, they have no need for a `HEAD` file.
+This allows for a stable, human-friendly URL (**.../modules/develop/head/...**) that always points to the latest deployed docs for that branch. Alternatively, since tags are fixed, they have no need for a `HEAD` file.
 
 {: {{site.data.css.info-box}} }
 > **Note:** You can rename head anything you like—for example, latest. Just be aware that whatever name you choose effectively becomes a reserved keyword in all served URLs.
@@ -124,7 +125,7 @@ This allows you to consolidate all of the developer branches for that group down
 
 ### Separate storage bucket for developer branches
 
-Instead of deploying to the same **s3://docs-bucket/packages/** location, use a separate dedicated S3 bucket that has a single clean up rule for all files. For example, **s3://docs-preview-bucket/packages/pull/1234/** vs **s3://docs-bucket/packages/develop/**.
+Instead of deploying to the same **s3://docs-bucket/modules/** location, use a separate dedicated S3 bucket that has a single clean up rule for all files. For example, **s3://docs-preview-bucket/modules/pull/1234/** vs **s3://docs-bucket/modules/develop/**.
 
 This avoids the need to maintain individual cleanup rules for each group, reducing the risk of costly mistakes.
 
