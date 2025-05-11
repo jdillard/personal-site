@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Versioned Documentation at Scale: A Flexible Docs-as-Code Deploy Strategy"
-date: 2025-05-03
+date: 2025-05-011
 published: true
 popularity: 17
 comment_issue_id: 10
@@ -85,7 +85,7 @@ Here is an example of deployments for the **modules** group showing, **githash1*
 
 <div class="video oversized landscape mv2">
     <iframe src="https://player.vimeo.com/video/1083238093?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Git Tree And Directory Tree Deploy Demo"></iframe>
-</div><small><i style="margin-top: -15px;"> Fun fact: This diagram is [video-as-code](https://github.com/jdillard/manimations/blob/main/docs-deploy/main.py) using [manim](https://github.com/jdillard/personal-site/).</i></small>
+</div><small><i style="margin-top: -15px;"> <b>Fun fact:</b> This diagram follows the [video-as-code](https://github.com/jdillard/manimations/blob/main/docs-deploy/main.py) paradigm, built with [manim](https://github.com/jdillard/personal-site/).</i></small>
 
 ## How the `HEAD` file works
 
