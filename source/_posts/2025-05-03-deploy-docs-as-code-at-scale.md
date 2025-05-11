@@ -77,29 +77,11 @@ For tagged builds:
    * Build the docs
    * Deploy to **/{group}/tags/{tag}/**
    
-Here is an example of deployments for the **packages** group showing just `githash3` on **develop** and `v1.0.0`, but the other hashes and tags would look similar:
+Here is an example of deployments for the **packages** group showing, **githash1** and **githash2** on **develop** and then **githash3** on **pull/1234**:
 
-```
-.
-└── packages/
-    ├── develop/
-    |   ├── githash3/
-    |   |   ├── package1/
-    |   |   │   ├── index.html
-    |   |   |   └── changelog.html
-    |   |   └── package2/
-    |   |       ├── index.html
-    |   |       └── changelog.html
-    |   └── HEAD  # plain text file containing the latest deployed git hash (githash3)
-    └── tags/
-        └── v1.0.0/
-            ├── package1/
-            │   ├── index.html
-            |   └── changelog.html
-            └── package2/
-                ├── index.html
-                └── changelog.html
-```
+<div class="video oversized landscape mv2">
+    <iframe src="https://player.vimeo.com/video/1083238093?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" width="1920" height="1080" title="Git Tree And Directory Tree Deploy Demo"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+</div>
 
 ## How the `HEAD` file works
 
