@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Versioned Documentation at Scale: A Flexible Docs-as-Code Deploy Strategy"
-date: 2025-05-011
+date: 2025-05-11
 published: true
 popularity: 17
-comment_issue_id: 10
+comment_issue_id: 11
 type: ssg
 categories:
   - docs-as-code
