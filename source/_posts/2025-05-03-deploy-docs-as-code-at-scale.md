@@ -66,19 +66,19 @@ Each **githash** and **tag** directory contains static builds of documentation f
 
 On every relevant push:
 
-   * Build the docs
-   * Deploy them to **/{group}/{branch}/{githash}/**
-   * After the deploy is successful, update the git hash that is stored in the `HEAD` file located at **/{group}/{branch}/HEAD**
+   1. Build the docs
+   2. Deploy them to **/{group}/{branch}/{githash}/**
+   3. After the deploy is successful, update the git hash that is stored in the `HEAD` file located at **/{group}/{branch}/HEAD**
 
 {: {{site.data.css.info-box}} }
-> **Note:** This deployment strategy has the advantage of an instant switch over of the content to the laster version, with the added safety on waiting until the full deploy is completed successfully before switching over to it.
+> **Note:** This deployment strategy offers two main benefits: an instant switchover to the latest content, and a safety mechanism that ensures the transition only happens after a successful deployment.
 >
-> It also allows users to reference a specific git hash, which can cbe useful if the latest version of the docs breaks and a previous version needs to be available in the interim, a user needs to confirm something in the docs for a specific hash for any reason (a nightly build for example), or to help troubleshooting an issue with the docs platform itself. Each having their own values that change over time and between projects.
+> Additionally, it allows users to reference documentation tied to a specific Git hash. This is useful in cases where the latest version is broken and a previous one needs to remain accessible, when users want to verify behavior for a particular commit (such as a nightly build), or when diagnosing issues with the documentation platform itself.
 
 For tagged builds:
 
-   * Build the docs
-   * Deploy to **/{group}/tags/{tag}/**
+   1. Build the docs
+   2. Deploy to **/{group}/tags/{tag}/**
    
 Here is an example of deployments for the **packages** group showing, **githash1** and **githash2** on **develop** and then **githash3** on **pull/1234**:
 
@@ -107,7 +107,7 @@ the EC2 instance:
 This allows for a stable, human-friendly URL (**.../packages/develop/head/...**) that always points to the latest deployed docs for that branch. Alternatively, since tags are fixed, they have no need for a `HEAD` file.
 
 {: {{site.data.css.info-box}} }
-> **Note:** You can use any name for **head** that you want, for example **latest**. Just note, this essentially becomes a reserved word in all served URLs.
+> **Note:** You can rename head anything you like—for example, latest. Just be aware that whatever name you choose effectively becomes a reserved keyword in all served URLs.
 
 ## Added flexibility
 
