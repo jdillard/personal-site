@@ -427,8 +427,18 @@ header.post-cover {
         margin: 1.75em -3em 1.75em -3em;
     }
     .post-content .video.oversized.landscape {
-        width: 168%;
-        margin: 0 -58%;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+    .post-content .video.oversized.landscape iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
     }
 }
 
