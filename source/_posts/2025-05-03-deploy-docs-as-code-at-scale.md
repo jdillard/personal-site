@@ -30,6 +30,9 @@ Let’s dissect the parts of this schema:
 * **`{ref}`** — A reference to a version of the documentation. This could be a **git hash**, **branch name**, or **release tag**
 * **`{project}`** — The documentation project. For example, **package1** would refer to a specific library’s docs
 
+{: {{site.data.css.info-box}} }
+> **Note:** Groups offer two key advantages: they allow multiple documentation projects to be deployed together for a single commit, keeping everything in sync for a release; and they help reduce technical debt by making it easy to add new projects. It's recommended to build the group in parallel to streamline this process.
+
 For example, a URL that always serves the latest version of **package1** on the **develop** branch:
 
 ```
@@ -80,8 +83,8 @@ For tagged builds:
 Here is an example of deployments for the **packages** group showing, **githash1** and **githash2** on **develop** and then **githash3** on **pull/1234**:
 
 <div class="video oversized landscape mv2">
-    <iframe src="https://player.vimeo.com/video/1083238093?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" width="1920" height="1080" title="Git Tree And Directory Tree Deploy Demo"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
-</div>
+    <iframe src="https://player.vimeo.com/video/1083238093?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Git Tree And Directory Tree Deploy Demo"></iframe>
+</div><small><i style="margin-top: -15px;"> Fun fact: This diagram is video-as-code using [manim](https://github.com/jdillard/personal-site/).</i></small>
 
 ## How the `HEAD` file works
 
