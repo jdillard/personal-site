@@ -5,14 +5,16 @@ date: 2025-05-03
 published: true
 popularity: 17
 comment_issue_id: 10
-type: sphinx
+type: ssg
 categories:
   - docs-as-code
 ---
 
-In a world where code and documentation are increasingly intertwined, docs-as-code workflows empower teams to treat documentation with the same rigor as source code. One important piece of this approach is deploying versioned documentation in a way that’s both developer-friendly as well as easy to automate and maintain.
+In a world where code and documentation are increasingly intertwined, docs-as-code workflows empower multiple teams to treat documentation with the same rigor as source code. One important piece of this approach is deploying versioned documentation in a way that’s both developer-friendly as well as easy to automate, adapt, and maintain.
 
-In this post, I’ll walk through a URL schema that is the foundation of a file layout strategy to deploy docs-as-code websites in a scalable, organized, and git-aware way.
+In this post, I’ll walk through a URL schema that lays the foundation for a file layout strategy to deploy docs-as-code websites in a scalable, organized, and git-aware way.
+
+With a single customized theme across all projects, it is possible to provide a seamless documentation experience involving several teams and projects.
 
 ## Breaking down the URL schema
 
@@ -24,9 +26,9 @@ https://docs.example.com/{group}/{ref}/{project}
 
 Let’s dissect the parts of this schema:
 
-* **`{group}`** — A collection of related documentation projects. For example, **packages** might group together multiple Python libraries.
-* **`{ref}`** — A reference to a version of the documentation. This can be a **git hash**, **branch name**, or **release tag**.
-* **`{project}`** — The actual documentation project. For instance, **package1** would refer to a specific library’s docs.
+* **`{group}`** — A collection of related documentation projects. For example, **packages** might group together multiple Python libraries
+* **`{ref}`** — A reference to a version of the documentation. This could be a **git hash**, **branch name**, or **release tag**
+* **`{project}`** — The documentation project. For example, **package1** would refer to a specific library’s docs
 
 For example, a URL that always serves the latest version of **package1** on the **develop** branch:
 
@@ -63,7 +65,12 @@ On every relevant push:
 
    * Build the docs
    * Deploy them to **/{group}/{branch}/{githash}/**
-   * Update the `HEAD` file in **/{group}/{branch}/HEAD**
+   * After the deploy is successful, update the git hash that is stored in the `HEAD` file located at **/{group}/{branch}/HEAD**
+
+{: {{site.data.css.info-box}} }
+> **Note:** This deployment strategy has the advantage of an instant switch over of the content to the laster version, with the added safety on waiting until the full deploy is completed successfully before switching over to it.
+>
+> It also allows users to reference a specific git hash, which can cbe useful if the latest version of the docs breaks and a previous version needs to be available in the interim, a user needs to confirm something in the docs for a specific hash for any reason (a nightly build for example), or to help troubleshooting an issue with the docs platform itself. Each having their own values that change over time and between projects.
 
 For tagged builds:
 
@@ -80,10 +87,7 @@ Here is an example of deployments for the **packages** group showing just `githa
     |   |   ├── package1/
     |   |   │   ├── index.html
     |   |   |   └── changelog.html
-    |   |   ├──package2/
-    |   |   |   ├── index.html
-    |   |   |   └── changelog.html
-    |   |   └── package3/
+    |   |   └── package2/
     |   |       ├── index.html
     |   |       └── changelog.html
     |   └── HEAD  # plain text file containing the latest deployed git hash (githash3)
@@ -92,19 +96,16 @@ Here is an example of deployments for the **packages** group showing just `githa
             ├── package1/
             │   ├── index.html
             |   └── changelog.html
-            ├──package2/
-            |   ├── index.html
-            |   └── changelog.html
-            └── package3/
+            └── package2/
                 ├── index.html
                 └── changelog.html
 ```
 
-## How the `HEAD` redirect works
+## How the `HEAD` file works
 
-In this setup, documentation files are stored in an **S3 bucket** and an **EC2 instance running Nginx** acts as a reverse proxy that handles the routing to the bucket.
+In this setup, documentation files are stored in an **S3 bucket** with an **EC2 instance running Nginx** acting as a reverse proxy that handles the routing to the bucket.
 
-Each branch directory (e.g., **packages/develop/**) contains a plain text file named `HEAD`. This file stores the latest deployed **git hash** for that branch.
+Each branch directory (e.g., **packages/develop/**) contains a plain text file named `HEAD` that sits along side the previously deployed git hashes. This file stores the latest deployed git hash for that branch.
 
 When a request comes in like:
 
@@ -114,34 +115,40 @@ https://docs.example.com/packages/develop/head/package1/index.html
 
 the EC2 instance:
 
-1. Detects `/head/` in the URL and reads the `HEAD` file for the **develop** branch
+1. Detects `/head/` in the URL and reads the `HEAD` file for the branch: **https://docs.example.com/packages/develop/HEAD**
 2. Resolves the git hash listed in that file (e.g., **githash3**)
-3. Internally rewrites the request to serve: **https://docs.example.com//packages/develop/githash3/package1/index.html** while keeping the URL unchanged in the browser
+3. Internally rewrites the request to serve: **https://docs.example.com/packages/develop/githash3/package1/index.html** while keeping the URL unchanged in the browser
 
-This allows for a stable, human-friendly URL (**[...]/develop/head/[...]**) that always points to the latest deployed docs for that branch. Since tags are fixed, they have no need for a `HEAD` file.
+This allows for a stable, human-friendly URL (**.../packages/develop/head/...**) that always points to the latest deployed docs for that branch. Alternatively, since tags are fixed, they have no need for a `HEAD` file.
 
-## Adding flexibility
+{: {{site.data.css.info-box}} }
+> **Note:** You can use any name for **head** that you want, for example **latest**. Just note, this essentially becomes a reserved word in all served URLs.
+
+## Added flexibility
 
 This deployment architecture supports several flexible patterns, enabling teams to choose the right tradeoff between resource usage, visibility, and complexity.
 
 ### Pull refs vs branch names for developer branches
 
-For developer branches, which often need ephimeral preview builds for review purposes, you can choose to deploy based on the pull request reference, typically **pull/{pr_number}**, or the branch name, **feature/new-thing**.
+For developer branches that need ephemeral preview builds—such as during code reviews—you can deploy using either the pull request reference (e.g. **pull/\<pr_number>**) or the branch name (e.g. **feature/new-thing**).
 
-This allows you to consolidate all of the developer branches for that group to a single directory (typically **pull/**), making it easier to create clean up rules for each group. Although, this comes at the expense of losing the branch name/prefix, meaning you lose some context if you need different deploy logic for different types of developer branches, **feature/** vs **review/** for example.
+This allows you to consolidate all of the developer branches for that group down to a single directory (**pull/**), making it easier to create clean up rules for each group.
+
+{: {{site.data.css.info-box}} }
+> **Note:** This comes at the expense of losing the branch name/prefix, meaning you lose some context if you need deploy logic per developer branch type, **feature/** vs **review/** for example.
 
 ### Separate storage bucket for developer branches
 
-Instead of deploying to the same **packages/** tree, use a dedicated S3 bucket that has a single clean up rule for all files. For example, **s3://docs-preview-bucket/packages/pull/1234/{githash}**.
+Instead of deploying to the same **s3://docs-bucket/packages/** location, use a separate dedicated S3 bucket that has a single clean up rule for all files. For example, **s3://docs-preview-bucket/packages/pull/1234/** vs **s3://docs-bucket/packages/develop/**.
 
-This allows you to not have to maintain individual clean up rules for each group, preventing a potentially costly mistake.
+This avoids the need to maintain individual cleanup rules for each group, reducing the risk of costly mistakes.
 
-{: {{site.data.css.info-box}} }
-> **Note:** The same approach could be applied to release tags if you wanted to store them in a bucket with a different storage type.
+{: {{site.data.css.tip-box}} }
+> **Tip:** The same approach can also be applied to release tags if you wanted to store them in a separate auto-archiving bucket.
 
 ### Auto trimming `HEAD` file
 
-Instead of storing a single git hash in the `HEAD` file, you can store a stack of N hashes using a "push/pop" method. When an old hash gets "popped" off the stack, the publising script deletes the corresponding **githash** directory. This is especially helpful with **release/** branches or other long lasting branches.
+Instead of storing just a single git hash in the `HEAD` file, you can store a stack of N hashes using a "push/pop" method. When an old hash gets "popped" off the stack, the publishing script deletes the corresponding **githash** directory. This is especially helpful with **release/** branches or other long lasting branches.
 
 ## Wrapping up
 
