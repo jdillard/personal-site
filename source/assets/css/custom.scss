@@ -252,6 +252,15 @@ ul.list li:hover a span, .rslide:hover {
     background-color: #F6F6F6;
 }
 
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+}
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
 svg .precip-axis > g > text {
     fill: #777777;
 }
