@@ -63,7 +63,7 @@ The bulk of the deploy strategy is carried out by the logic in the publishing sc
 
    1. Build the docs
    2. Deploy them to **/{group}/{branch}/{githash}/**
-   3. After the deploy is successful, update the git hash that is stored in the `HEAD` file located at **/{group}/{branch}/HEAD**
+   3. After the deploy is successful, update the git hash that is stored in the **HEAD** file located at **/{group}/{branch}/HEAD**
 
 {: {{site.data.css.info-box}} }
 > **Note:** This deployment strategy offers two main benefits: an instant switchover to the latest content, and a safety mechanism that ensures the transition only happens after a successful deployment.
@@ -74,7 +74,7 @@ For every tagged build:
 
    1. Build the docs
    2. Deploy to **/{group}/tags/{tag}/**
-      - Since tags are fixed, they have no need for a `HEAD` file
+      - Since tags are fixed, they have no need for a **HEAD** file
 
 Here is an example of deployments for the **modules** group as commits and tags are made on multiple branches:
 
@@ -86,7 +86,7 @@ Here is an example of deployments for the **modules** group as commits and tags 
 
 In this setup, documentation files are stored in an **S3 bucket** with an **EC2 instance running Nginx** acting as a reverse proxy that handles the routing to the bucket.
 
-Each branch directory (e.g., **modules/develop/**) contains a plain text file named `HEAD` that sits along side the previously deployed git hashes. This file stores the latest deployed git hash for that branch.
+Each branch directory (e.g., **modules/develop/**) contains a plain text file named **HEAD** that sits along side the previously deployed git hashes. This file stores the latest deployed git hash for that branch.
 
 When a request comes in like:
 
@@ -96,7 +96,7 @@ https://docs.example.com/modules/develop/head/module1/index.html
 
 the EC2 instance:
 
-1. Detects `/head/` in the URL and reads the `HEAD` file for the branch
+1. Detects **/head/** in the URL and reads the **HEAD** file for the branch
 2. Resolves the git hash listed in that file (e.g., **githash3**)
 3. Internally rewrites the request to serve the **develop/githash3** directory while keeping the URL unchanged in the browser
 
@@ -118,10 +118,7 @@ This deployment architecture supports several flexible patterns, enabling teams 
 
 For developer branches that need ephemeral preview builds—such as during code reviews—you can deploy using either the pull request reference (e.g. **pull/\<pr_number>**) or the branch name (e.g. **feature/new-thing**).
 
-This allows you to consolidate all of the developer branches for that group down to a single directory (**pull/**), making it easier to create clean up rules for each group.
-
-{: {{site.data.css.info-box}} }
-> **Note:** This comes at the expense of losing the branch name/prefix, meaning you lose some context if you need deploy logic per developer branch type, **feature/** vs **review/** for example.
+Pull refs allow you to consolidate all of the developer branches for that group down to a single directory (**pull/**), making it easier to create clean up rules for each group. Although, this comes at the expense of losing the context of the branch name, if you need unique deploy logic per developer branch type, **feature/** vs **review/** for example.
 
 ### Separate storage bucket for developer branches
 
@@ -132,7 +129,7 @@ Instead of deploying to the same production docs S3 bucket for developer branche
 
 ### Auto trimming `HEAD` file
 
-Instead of storing just a single git hash in the `HEAD` file, you can store a stack of **N** hashes using a "push/pop" method. When an old hash gets "popped" off the stack, the publishing script deletes the corresponding **githash** directory. This is especially helpful with **release/** branches or other long lasting branches.
+Instead of storing just a single git hash in the **HEAD** file, you can store a stack of **N** hashes using a "push/pop" method. When an old hash gets "popped" off the stack, the publishing script deletes the corresponding **githash** directory. This is especially helpful with **release/** branches or other long lasting branches.
 
 ## Wrapping up
 
