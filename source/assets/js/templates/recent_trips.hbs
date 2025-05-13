@@ -19,11 +19,8 @@
             <a href="{{trip_info.url}}">
                 <img src="{{trip_info.image}}" class="fl grow db shadow-4" alt="{{ trip_info.title }}" loading="lazy">
             </a>
-            <footer class="gray f6 fw1-ns w-60 tc fw4 pa3">
-                <time class="mv2" datetime="2022-04-16">{{trip_info.date_published}}</time><br />
-                {{#each trip_info.categories}}
-                <a class="f6 link dim br2 pv1 ph2 mv2 dib white bg-silver" href="/trips/archive.html#{{this}}">{{this}}</a>
-                {{/each}}
+            <footer class="gray f6 fw1-ns w-60 tc fw4 ph3 pv4">
+                <time class="mv2" datetime="2022-04-16">{{trip_info.date_published}}</time>
                 <br />
                 <!--show Read More link/button on parent hover-->
                 <a class="br-pill b light-red hover-white hover-bg-light-red no-underline ba grow pv1 ph3 dib inline-flex items-center child mv3" href="{{trip_info.url}}">
@@ -36,7 +33,7 @@
             </footer>
         </div>
         <section class="cb f5 fw3 mb3 lh-copy mid-gray">
-            <p>{{trip_info.summary}}</p>
+            <p>{{ limitWords trip_info.summary 20 }}</p>
         </section>
     </div>
 {{else}}
