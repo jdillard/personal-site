@@ -33,7 +33,7 @@
             </footer>
         </div>
         <section class="cb f5 fw3 mb3 lh-copy mid-gray">
-            <p>{{ limitWords trip_info.summary 20 }}</p>
+            <p>{{ limitChars trip_info.summary 120 }}</p>
         </section>
     </div>
 {{else}}
