@@ -7,16 +7,16 @@ cover: false
 
 {% for post in site.posts %}
 
-<article class="sans-serif center mw6-5 f5 lh-copy ph3 mv3 pt3-ns pt2 pb3 hide-child hover-bg-near-white bl bw2 b--white hover-b--light-red">
+<article class="sans-serif center mw7 f5 lh-copy ph3 mv3 pt3-ns pt2 pb3 hide-child hover-bg-near-white bl bw2 b--white hover-b--light-red">
     <header>
-        <h2 class="f2-ns f3 lh-title mb3 mt2 sans-serif"><a class="black-70 hover-light-red no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h2 class="f2-ns f3 lh-title mb3 mh3-ns mt2 sans-serif"><a class="black-70 hover-light-red no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
     </header>
-    <section class="tj f5-ns f6 fw3 mb3 lh-copy mid-gray">
+    <section class="tj f5-ns f6 fw3 mb3 mh5-ns lh-copy mid-gray">
         <p>
             {{ post.excerpt | strip_html }}
         </p>
     </section>
-    <footer class="gray f7 fw1-ns fw4 flex items-center justify-between">
+    <footer class="gray f7 fw1-ns fw4 mh5-ns flex items-center justify-between">
         <div>
             <time class="mr2" datetime="{{ post.date | date: "%Y-%m-%d" }}">
             {{ post.date | date: "%B %d, %Y" }}
