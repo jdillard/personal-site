@@ -90,7 +90,7 @@ css_includes:
             
             <option value="MSAC-1833" >Mount Shasta</option>
             
-            <option value="SAC-1605" >Central Sierra Nevada</option>
+            <option value="SAC-2458" >Central Sierra Nevada</option>
             
         </select>
     </div>
@@ -119,7 +119,7 @@ css_includes:
             
         </div>
         
-        <div id="MSAC-1833-report" class="avy-zone dn" data-id="MSAC-1833" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Sunday, April 13, 2025 6:30AM">
+        <div id="MSAC-1833-report" class="avy-zone dn" data-id="MSAC-1833" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Monday, October 27, 2025 8:49AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.shastaavalanche.org/advisories/avalanche-advisory/#/mount-shasta"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.shastaavalanche.org/advisories/avalanche-advisory/#/mount-shasta">MSAC</a> for more information.</div>
@@ -129,10 +129,10 @@ css_includes:
             
         </div>
         
-        <div id="SAC-1605-report" class="avy-zone dn" data-id="SAC-1605" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Saturday, April 19, 2025 8:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sierraavalanchecenter.org/forecasts/#/central-sierra-nevada"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="SAC-2458-report" class="avy-zone dn" data-id="SAC-2458" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Wednesday, November 05, 2025 6:34AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sierraavalanchecenter.org/forecasts/avalanche/central-sierra-nevada#/central-sierra-nevada/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sierraavalanchecenter.org/forecasts/#/central-sierra-nevada">SAC</a> for more information.</div>
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sierraavalanchecenter.org/forecasts/avalanche/central-sierra-nevada#/central-sierra-nevada/">SAC</a> for more information.</div>
             
 
             
@@ -156,8 +156,8 @@ css_includes:
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/MSAC-1833.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="SAC-1605-shape" data-geojson="/assets/json/avalanche-zones/SAC-1605.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/SAC-1605.geojson" download="">Download GeoJSON</a></div>
+        <div id="SAC-2458-shape" data-geojson="/assets/json/avalanche-zones/SAC-2458.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/SAC-2458.geojson" download="">Download GeoJSON</a></div>
         </div>
         
     </div>

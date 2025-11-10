@@ -84,7 +84,7 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="BTAC-2130" selected="">Big Holes</option>
+            <option value="BTAC-2812" selected="">Big Holes</option>
             
             <option value="IPAC-1899" >Selkirk Mountains</option>
             
@@ -92,7 +92,7 @@ css_includes:
             
             <option value="IPAC-1900" >West Cabinet Mountains</option>
             
-            <option value="PAC-153" >PAC Advisory Area</option>
+            <option value="PAC-2494" >PAC Advisory Area</option>
             
             <option value="SNFAC-1359" >Banner Summit</option>
             
@@ -109,7 +109,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="BTAC-2130-report" class="avy-zone" data-id="BTAC-2130" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 22, 2024 5:30PM">
+        <div id="BTAC-2812-report" class="avy-zone" data-id="BTAC-2812" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 22, 2024 5:30PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/big-holes/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/big-holes/">BTAC</a> for more information.</div>
@@ -119,7 +119,7 @@ css_includes:
             
         </div>
         
-        <div id="IPAC-1899-report" class="avy-zone dn" data-id="IPAC-1899" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Wednesday, April 30, 2025 12:00PM">
+        <div id="IPAC-1899-report" class="avy-zone dn" data-id="IPAC-1899" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 07, 2025 11:00AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/selkirk-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/selkirk-mountains/">IPAC</a> for more information.</div>
@@ -129,7 +129,7 @@ css_includes:
             
         </div>
         
-        <div id="IPAC-1902-report" class="avy-zone dn" data-id="IPAC-1902" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Wednesday, April 30, 2025 12:00PM">
+        <div id="IPAC-1902-report" class="avy-zone dn" data-id="IPAC-1902" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 07, 2025 11:00AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/silver-valley-&-bitterroot-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/silver-valley-&-bitterroot-mountains/">IPAC</a> for more information.</div>
@@ -139,7 +139,7 @@ css_includes:
             
         </div>
         
-        <div id="IPAC-1900-report" class="avy-zone dn" data-id="IPAC-1900" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Wednesday, April 30, 2025 12:00PM">
+        <div id="IPAC-1900-report" class="avy-zone dn" data-id="IPAC-1900" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 07, 2025 11:00AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/west-cabinet-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/west-cabinet-mountains/">IPAC</a> for more information.</div>
@@ -149,7 +149,7 @@ css_includes:
             
         </div>
         
-        <div id="PAC-153-report" class="avy-zone dn" data-id="PAC-153" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Sunday, April 13, 2025 4:00AM">
+        <div id="PAC-2494-report" class="avy-zone dn" data-id="PAC-2494" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, November 03, 2025 4:56PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://payetteavalanche.org/forecasts/#/pac-advisory-area"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/#/pac-advisory-area">PAC</a> for more information.</div>
@@ -159,7 +159,7 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-1359-report" class="avy-zone dn" data-id="SNFAC-1359" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, May 05, 2025 11:19AM">
+        <div id="SNFAC-1359-report" class="avy-zone dn" data-id="SNFAC-1359" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Thursday, November 06, 2025 2:21PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sawtoothavalanche.com/forecasts/#/banner-summit"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/#/banner-summit">SNFAC</a> for more information.</div>
@@ -169,7 +169,7 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-1356-report" class="avy-zone dn" data-id="SNFAC-1356" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, May 05, 2025 11:19AM">
+        <div id="SNFAC-1356-report" class="avy-zone dn" data-id="SNFAC-1356" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Thursday, November 06, 2025 2:21PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sawtoothavalanche.com/forecasts/#/galena-summit-&-eastern-mtns"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/#/galena-summit-&-eastern-mtns">SNFAC</a> for more information.</div>
@@ -179,7 +179,7 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-1358-report" class="avy-zone dn" data-id="SNFAC-1358" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, May 05, 2025 11:19AM">
+        <div id="SNFAC-1358-report" class="avy-zone dn" data-id="SNFAC-1358" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Thursday, November 06, 2025 2:21PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sawtoothavalanche.com/forecasts/#/sawtooth-&-western-smoky-mtns"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/#/sawtooth-&-western-smoky-mtns">SNFAC</a> for more information.</div>
@@ -189,7 +189,7 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-1357-report" class="avy-zone dn" data-id="SNFAC-1357" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, May 05, 2025 11:19AM">
+        <div id="SNFAC-1357-report" class="avy-zone dn" data-id="SNFAC-1357" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Thursday, November 06, 2025 2:21PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sawtoothavalanche.com/forecasts/#/soldier-&-wood-river-valley-mtns"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/#/soldier-&-wood-river-valley-mtns">SNFAC</a> for more information.</div>
@@ -204,8 +204,8 @@ css_includes:
         <h3 class="tc bb b--moon-gray">Zone</h3>
         <div style="height: 300px;" id="map"></div>
         
-        <div id="BTAC-2130-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2130.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2130.geojson" download="">Download GeoJSON</a></div>
+        <div id="BTAC-2812-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2812.geojson" class="avy-zone">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2812.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="IPAC-1899-shape" data-geojson="/assets/json/avalanche-zones/IPAC-1899.geojson" class="avy-zone dn">
@@ -220,8 +220,8 @@ css_includes:
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/IPAC-1900.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="PAC-153-shape" data-geojson="/assets/json/avalanche-zones/PAC-153.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/PAC-153.geojson" download="">Download GeoJSON</a></div>
+        <div id="PAC-2494-shape" data-geojson="/assets/json/avalanche-zones/PAC-2494.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/PAC-2494.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="SNFAC-1359-shape" data-geojson="/assets/json/avalanche-zones/SNFAC-1359.geojson" class="avy-zone dn">

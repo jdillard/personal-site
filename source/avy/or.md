@@ -84,9 +84,9 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="COAA-1619" selected="">Central Cascades</option>
+            <option value="COAA-2470" selected="">Central Cascades</option>
             
-            <option value="COAA-1620" >Newberry</option>
+            <option value="COAA-2471" >Newberry</option>
             
             <option value="NWAC-1657" >Mt Hood</option>
             
@@ -107,27 +107,27 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="COAA-1619-report" class="avy-zone" data-id="COAA-1619" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Thursday, May 01, 2025 9:52AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.coavalanche.org/forecasts/#/central-cascades"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="COAA-2470-report" class="avy-zone" data-id="COAA-2470" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Saturday, October 25, 2025 3:36AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://coavalanche.org/pages/forecasts/#/central-cascades"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.coavalanche.org/forecasts/#/central-cascades">COAA</a> for more information.</div>
-            
-
-            
-            
-        </div>
-        
-        <div id="COAA-1620-report" class="avy-zone dn" data-id="COAA-1620" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Sunday, April 27, 2025 9:31PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.coavalanche.org/forecasts/#/newberry"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.coavalanche.org/forecasts/#/newberry">COAA</a> for more information.</div>
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/central-cascades">COAA</a> for more information.</div>
             
 
             
             
         </div>
         
-        <div id="NWAC-1657-report" class="avy-zone dn" data-id="NWAC-1657" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Sunday, April 13, 2025 6:30PM">
+        <div id="COAA-2471-report" class="avy-zone dn" data-id="COAA-2471" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Saturday, October 25, 2025 3:36AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://coavalanche.org/pages/forecasts/#/newberry"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/newberry">COAA</a> for more information.</div>
+            
+
+            
+            
+        </div>
+        
+        <div id="NWAC-1657-report" class="avy-zone dn" data-id="NWAC-1657" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Tuesday, September 30, 2025 2:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/mt-hood"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/mt-hood">NWAC</a> for more information.</div>
@@ -192,12 +192,12 @@ css_includes:
         <h3 class="tc bb b--moon-gray">Zone</h3>
         <div style="height: 300px;" id="map"></div>
         
-        <div id="COAA-1619-shape" data-geojson="/assets/json/avalanche-zones/COAA-1619.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/COAA-1619.geojson" download="">Download GeoJSON</a></div>
+        <div id="COAA-2470-shape" data-geojson="/assets/json/avalanche-zones/COAA-2470.geojson" class="avy-zone">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/COAA-2470.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="COAA-1620-shape" data-geojson="/assets/json/avalanche-zones/COAA-1620.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/COAA-1620.geojson" download="">Download GeoJSON</a></div>
+        <div id="COAA-2471-shape" data-geojson="/assets/json/avalanche-zones/COAA-2471.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/COAA-2471.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="NWAC-1657-shape" data-geojson="/assets/json/avalanche-zones/NWAC-1657.geojson" class="avy-zone dn">
