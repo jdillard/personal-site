@@ -119,7 +119,7 @@ css_includes:
             
         </div>
         
-        <div id="IPAC-1899-report" class="avy-zone dn" data-id="IPAC-1899" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 07, 2025 11:00AM">
+        <div id="IPAC-1899-report" class="avy-zone dn" data-id="IPAC-1899" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Tuesday, November 11, 2025 11:45AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/selkirk-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/selkirk-mountains/">IPAC</a> for more information.</div>
@@ -129,7 +129,7 @@ css_includes:
             
         </div>
         
-        <div id="IPAC-1902-report" class="avy-zone dn" data-id="IPAC-1902" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 07, 2025 11:00AM">
+        <div id="IPAC-1902-report" class="avy-zone dn" data-id="IPAC-1902" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Tuesday, November 11, 2025 11:45AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/silver-valley-&-bitterroot-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/silver-valley-&-bitterroot-mountains/">IPAC</a> for more information.</div>
@@ -139,7 +139,7 @@ css_includes:
             
         </div>
         
-        <div id="IPAC-1900-report" class="avy-zone dn" data-id="IPAC-1900" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 07, 2025 11:00AM">
+        <div id="IPAC-1900-report" class="avy-zone dn" data-id="IPAC-1900" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Tuesday, November 11, 2025 11:45AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/west-cabinet-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/west-cabinet-mountains/">IPAC</a> for more information.</div>
