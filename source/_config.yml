@@ -9,7 +9,6 @@ baseurl: ""
 domain_name: 'https://www.jareddillard.com'
 url: 'https://www.jareddillard.com'
 author: 'Jared Dillard'
-google_analytics: 'UA-7883601-2'
 repository: jdillard/personal-site
 
 include: ["_headers", "_redirects", ".well-known"]
