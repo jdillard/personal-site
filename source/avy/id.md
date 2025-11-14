@@ -149,7 +149,7 @@ css_includes:
             
         </div>
         
-        <div id="PAC-2494-report" class="avy-zone dn" data-id="PAC-2494" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, November 03, 2025 4:56PM">
+        <div id="PAC-2494-report" class="avy-zone dn" data-id="PAC-2494" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Thursday, November 13, 2025 4:12PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://payetteavalanche.org/forecasts/#/pac-advisory-area"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/#/pac-advisory-area">PAC</a> for more information.</div>
