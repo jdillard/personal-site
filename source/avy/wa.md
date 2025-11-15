@@ -109,7 +109,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="NWAC-1655-report" class="avy-zone" data-id="NWAC-1655" data-color="#939598" data-min="0"  data-max="20310" data-btl="4999" data-atl="5999" data-published="Tuesday, September 30, 2025 2:00PM">
+        <div id="NWAC-1655-report" class="avy-zone" data-id="NWAC-1655" data-color="#939598" data-min="0"  data-max="20310" data-btl="4999" data-atl="5999" data-published="Friday, November 14, 2025 6:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/east-slopes-central"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/east-slopes-central">NWAC</a> for more information.</div>
@@ -119,7 +119,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-1654-report" class="avy-zone dn" data-id="NWAC-1654" data-color="#939598" data-min="0"  data-max="20310" data-btl="4999" data-atl="6499" data-published="Tuesday, September 30, 2025 2:00PM">
+        <div id="NWAC-1654-report" class="avy-zone dn" data-id="NWAC-1654" data-color="#939598" data-min="0"  data-max="20310" data-btl="4999" data-atl="6499" data-published="Friday, November 14, 2025 6:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/east-slopes-north"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/east-slopes-north">NWAC</a> for more information.</div>
@@ -129,7 +129,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-1656-report" class="avy-zone dn" data-id="NWAC-1656" data-color="#939598" data-min="0"  data-max="20310" data-btl="4999" data-atl="5999" data-published="Tuesday, September 30, 2025 2:00PM">
+        <div id="NWAC-1656-report" class="avy-zone dn" data-id="NWAC-1656" data-color="#939598" data-min="0"  data-max="20310" data-btl="4999" data-atl="5999" data-published="Friday, November 14, 2025 6:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/east-slopes-south"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/east-slopes-south">NWAC</a> for more information.</div>
@@ -139,7 +139,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-1645-report" class="avy-zone dn" data-id="NWAC-1645" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 30, 2025 2:00PM">
+        <div id="NWAC-1645-report" class="avy-zone dn" data-id="NWAC-1645" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Friday, November 14, 2025 6:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/olympics"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/olympics">NWAC</a> for more information.</div>
@@ -149,7 +149,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-1653-report" class="avy-zone dn" data-id="NWAC-1653" data-color="#939598" data-min="0"  data-max="20310" data-btl="3999" data-atl="5499" data-published="Tuesday, September 30, 2025 2:00PM">
+        <div id="NWAC-1653-report" class="avy-zone dn" data-id="NWAC-1653" data-color="#939598" data-min="0"  data-max="20310" data-btl="3999" data-atl="5499" data-published="Friday, November 14, 2025 6:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass">NWAC</a> for more information.</div>
@@ -159,7 +159,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-1649-report" class="avy-zone dn" data-id="NWAC-1649" data-color="#939598" data-min="0"  data-max="20310" data-btl="4999" data-atl="5999" data-published="Tuesday, September 30, 2025 2:00PM">
+        <div id="NWAC-1649-report" class="avy-zone dn" data-id="NWAC-1649" data-color="#939598" data-min="0"  data-max="20310" data-btl="4999" data-atl="5999" data-published="Friday, November 14, 2025 6:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/stevens-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/stevens-pass">NWAC</a> for more information.</div>
@@ -169,7 +169,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-1647-report" class="avy-zone dn" data-id="NWAC-1647" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 30, 2025 2:00PM">
+        <div id="NWAC-1647-report" class="avy-zone dn" data-id="NWAC-1647" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Friday, November 14, 2025 6:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/west-slopes-central"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/west-slopes-central">NWAC</a> for more information.</div>
@@ -179,7 +179,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-1646-report" class="avy-zone dn" data-id="NWAC-1646" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 30, 2025 2:00PM">
+        <div id="NWAC-1646-report" class="avy-zone dn" data-id="NWAC-1646" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Friday, November 14, 2025 6:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/west-slopes-north"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/west-slopes-north">NWAC</a> for more information.</div>
@@ -189,7 +189,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-1648-report" class="avy-zone dn" data-id="NWAC-1648" data-color="#939598" data-min="0"  data-max="20310" data-btl="5499" data-atl="6499" data-published="Tuesday, September 30, 2025 2:00PM">
+        <div id="NWAC-1648-report" class="avy-zone dn" data-id="NWAC-1648" data-color="#939598" data-min="0"  data-max="20310" data-btl="5499" data-atl="6499" data-published="Friday, November 14, 2025 6:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/west-slopes-south"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/west-slopes-south">NWAC</a> for more information.</div>

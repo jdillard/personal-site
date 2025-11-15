@@ -99,7 +99,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="BAC-1350-report" class="avy-zone" data-id="BAC-1350" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Friday, April 11, 2025 7:00AM">
+        <div id="BAC-1350-report" class="avy-zone" data-id="BAC-1350" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Friday, November 14, 2025 7:00AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgeportavalanchecenter.org/avalanche-forecast/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgeportavalanchecenter.org/avalanche-forecast/">BAC</a> for more information.</div>

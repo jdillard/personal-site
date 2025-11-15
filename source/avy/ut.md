@@ -139,7 +139,7 @@ css_includes:
             
         </div>
         
-        <div id="UAC-1737-report" class="avy-zone dn" data-id="UAC-1737" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Sunday, November 02, 2025 9:21PM">
+        <div id="UAC-1737-report" class="avy-zone dn" data-id="UAC-1737" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Friday, November 14, 2025 12:25PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/ogden"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/ogden">UAC</a> for more information.</div>
@@ -149,7 +149,7 @@ css_includes:
             
         </div>
         
-        <div id="UAC-1739-report" class="avy-zone dn" data-id="UAC-1739" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Sunday, November 02, 2025 9:21PM">
+        <div id="UAC-1739-report" class="avy-zone dn" data-id="UAC-1739" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Friday, November 14, 2025 12:50PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/provo"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/provo">UAC</a> for more information.</div>
@@ -159,7 +159,7 @@ css_includes:
             
         </div>
         
-        <div id="UAC-1738-report" class="avy-zone dn" data-id="UAC-1738" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Sunday, November 02, 2025 9:20PM">
+        <div id="UAC-1738-report" class="avy-zone dn" data-id="UAC-1738" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Friday, November 14, 2025 10:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/salt-lake"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/salt-lake">UAC</a> for more information.</div>
