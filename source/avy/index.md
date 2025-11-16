@@ -692,12 +692,6 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html">Canada</a></h3>
             <ul id="canada-zones" class="list pl3 f5 mt2">
                 
-                <li data-zone="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" data-color="#fff200" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">Canada zone</a>
-                    <span class="gray f7">Saturday, November 15, 2025 5:00PM</span>
-                </li>
-                
                 <li data-zone="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85">Canada zone</a>
@@ -738,6 +732,12 @@ css_includes:
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">Canada zone</a>
                     <span class="gray f7">Saturday, November 15, 2025 4:00PM</span>
+                </li>
+                
+                <li data-zone="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">Canada zone</a>
+                    <span class="gray f7">Saturday, November 15, 2025 5:00PM</span>
                 </li>
                 
             </ul>
