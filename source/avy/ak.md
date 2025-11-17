@@ -472,10 +472,6 @@ css_includes:
         <option value="/avy/ut.html">Utah</option>
         
         
-        
-        <option value="/avy/co.html">Colorado</option>
-        
-        
         <option value="/avy/canada.html">Canada</option>
     </select>
 </section>
