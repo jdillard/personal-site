@@ -311,51 +311,51 @@ css_includes:
                     
                 </li>
                 
-                <li data-zone="GNFAC-2771" data-color="#939598" class="pv1">
+                <li data-zone="GNFAC-2819" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2771">Bridger Range</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2819">Bridger Range</a>
                     
                 </li>
                 
-                <li data-zone="GNFAC-2769" data-color="#939598" class="pv1">
+                <li data-zone="GNFAC-2827" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2769">Cooke City</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2827">Cooke City</a>
                     
                 </li>
                 
-                <li data-zone="GNFAC-2768" data-color="#939598" class="pv1">
+                <li data-zone="GNFAC-2826" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2768">Island Park</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2826">Island Park</a>
                     
                 </li>
                 
-                <li data-zone="GNFAC-2767" data-color="#939598" class="pv1">
+                <li data-zone="GNFAC-2825" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2767">Lionhead Area</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2825">Lionhead Area</a>
                     
                 </li>
                 
-                <li data-zone="GNFAC-2763" data-color="#939598" class="pv1">
+                <li data-zone="GNFAC-2821" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2763">Northern Gallatin Range</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2821">Northern Gallatin Range</a>
                     
                 </li>
                 
-                <li data-zone="GNFAC-2764" data-color="#939598" class="pv1">
+                <li data-zone="GNFAC-2822" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2764">Northern Madison Range</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2822">Northern Madison Range</a>
                     
                 </li>
                 
-                <li data-zone="GNFAC-2766" data-color="#939598" class="pv1">
+                <li data-zone="GNFAC-2824" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2766">Southern Gallatin Range</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2824">Southern Gallatin Range</a>
                     
                 </li>
                 
-                <li data-zone="GNFAC-2765" data-color="#939598" class="pv1">
+                <li data-zone="GNFAC-2823" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2765">Southern Madison Range</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-GNFAC-2823">Southern Madison Range</a>
                     
                 </li>
                 
@@ -673,6 +673,12 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html">Canada</a></h3>
             <ul id="canada-zones" class="list pl3 f5 mt2">
                 
+                <li data-zone="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">Canada zone</a>
+                    <span class="gray f7">Monday, November 17, 2025 5:00PM</span>
+                </li>
+                
                 <li data-zone="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85">Canada zone</a>
@@ -691,10 +697,10 @@ css_includes:
                     
                 </li>
                 
-                <li data-zone="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#fff200" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                <li data-zone="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">Canada zone</a>
-                    <span class="gray f7">Saturday, November 15, 2025 3:00PM</span>
+                    <span class="gray f7">Monday, November 17, 2025 3:00PM</span>
                 </li>
                 
                 <li data-zone="03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" data-color="#939598" class="pv1">
@@ -703,22 +709,16 @@ css_includes:
                     
                 </li>
                 
-                <li data-zone="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" data-color="#fff200" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                <li data-zone="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">Canada zone</a>
-                    <span class="gray f7">Sunday, November 16, 2025 5:00PM</span>
+                    <span class="gray f7">Monday, November 17, 2025 5:00PM</span>
                 </li>
                 
                 <li data-zone="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" data-color="#fff200" class="pv1">
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">Canada zone</a>
-                    <span class="gray f7">Sunday, November 16, 2025 4:00PM</span>
-                </li>
-                
-                <li data-zone="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" data-color="#fff200" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">Canada zone</a>
-                    <span class="gray f7">Sunday, November 16, 2025 5:00PM</span>
+                    <span class="gray f7">Monday, November 17, 2025 4:00PM</span>
                 </li>
                 
             </ul>

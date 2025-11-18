@@ -90,21 +90,21 @@ css_includes:
             
             <option value="FAC-1733" >Whitefish Range</option>
             
-            <option value="GNFAC-2771" >Bridger Range</option>
+            <option value="GNFAC-2819" >Bridger Range</option>
             
-            <option value="GNFAC-2769" >Cooke City</option>
+            <option value="GNFAC-2827" >Cooke City</option>
             
-            <option value="GNFAC-2768" >Island Park</option>
+            <option value="GNFAC-2826" >Island Park</option>
             
-            <option value="GNFAC-2767" >Lionhead Area</option>
+            <option value="GNFAC-2825" >Lionhead Area</option>
             
-            <option value="GNFAC-2763" >Northern Gallatin Range</option>
+            <option value="GNFAC-2821" >Northern Gallatin Range</option>
             
-            <option value="GNFAC-2764" >Northern Madison Range</option>
+            <option value="GNFAC-2822" >Northern Madison Range</option>
             
-            <option value="GNFAC-2766" >Southern Gallatin Range</option>
+            <option value="GNFAC-2824" >Southern Gallatin Range</option>
             
-            <option value="GNFAC-2765" >Southern Madison Range</option>
+            <option value="GNFAC-2823" >Southern Madison Range</option>
             
             <option value="IPAC-1901" >East Cabinet Mountains</option>
             
@@ -153,7 +153,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2771-report" class="avy-zone dn" data-id="GNFAC-2771" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Saturday, November 08, 2025 11:03AM">
+        <div id="GNFAC-2819-report" class="avy-zone dn" data-id="GNFAC-2819" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 17, 2025 5:53PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/bridger-range/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/bridger-range/">GNFAC</a> for more information.</div>
@@ -163,7 +163,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2769-report" class="avy-zone dn" data-id="GNFAC-2769" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Saturday, November 08, 2025 11:03AM">
+        <div id="GNFAC-2827-report" class="avy-zone dn" data-id="GNFAC-2827" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 17, 2025 5:53PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/cooke-city/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/cooke-city/">GNFAC</a> for more information.</div>
@@ -173,7 +173,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2768-report" class="avy-zone dn" data-id="GNFAC-2768" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Saturday, November 08, 2025 11:03AM">
+        <div id="GNFAC-2826-report" class="avy-zone dn" data-id="GNFAC-2826" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 17, 2025 5:53PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/island-park/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/island-park/">GNFAC</a> for more information.</div>
@@ -183,7 +183,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2767-report" class="avy-zone dn" data-id="GNFAC-2767" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Saturday, November 08, 2025 11:03AM">
+        <div id="GNFAC-2825-report" class="avy-zone dn" data-id="GNFAC-2825" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 17, 2025 5:53PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/lionhead-area/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/lionhead-area/">GNFAC</a> for more information.</div>
@@ -193,7 +193,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2763-report" class="avy-zone dn" data-id="GNFAC-2763" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Saturday, November 08, 2025 11:03AM">
+        <div id="GNFAC-2821-report" class="avy-zone dn" data-id="GNFAC-2821" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 17, 2025 5:53PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/northern-gallatin-range/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-gallatin-range/">GNFAC</a> for more information.</div>
@@ -203,7 +203,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2764-report" class="avy-zone dn" data-id="GNFAC-2764" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Saturday, November 08, 2025 11:03AM">
+        <div id="GNFAC-2822-report" class="avy-zone dn" data-id="GNFAC-2822" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 17, 2025 5:53PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/northern-madison-range/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-madison-range/">GNFAC</a> for more information.</div>
@@ -213,7 +213,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2766-report" class="avy-zone dn" data-id="GNFAC-2766" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Saturday, November 08, 2025 11:03AM">
+        <div id="GNFAC-2824-report" class="avy-zone dn" data-id="GNFAC-2824" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 17, 2025 5:53PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/southern-gallatin-range/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-gallatin-range/">GNFAC</a> for more information.</div>
@@ -223,7 +223,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2765-report" class="avy-zone dn" data-id="GNFAC-2765" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Saturday, November 08, 2025 11:03AM">
+        <div id="GNFAC-2823-report" class="avy-zone dn" data-id="GNFAC-2823" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 17, 2025 5:53PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/southern-madison-range/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-madison-range/">GNFAC</a> for more information.</div>
@@ -300,36 +300,36 @@ css_includes:
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/FAC-1733.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="GNFAC-2771-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2771.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2771.geojson" download="">Download GeoJSON</a></div>
+        <div id="GNFAC-2819-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2819.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2819.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="GNFAC-2769-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2769.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2769.geojson" download="">Download GeoJSON</a></div>
+        <div id="GNFAC-2827-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2827.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2827.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="GNFAC-2768-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2768.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2768.geojson" download="">Download GeoJSON</a></div>
+        <div id="GNFAC-2826-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2826.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2826.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="GNFAC-2767-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2767.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2767.geojson" download="">Download GeoJSON</a></div>
+        <div id="GNFAC-2825-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2825.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2825.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="GNFAC-2763-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2763.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2763.geojson" download="">Download GeoJSON</a></div>
+        <div id="GNFAC-2821-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2821.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2821.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="GNFAC-2764-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2764.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2764.geojson" download="">Download GeoJSON</a></div>
+        <div id="GNFAC-2822-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2822.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2822.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="GNFAC-2766-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2766.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2766.geojson" download="">Download GeoJSON</a></div>
+        <div id="GNFAC-2824-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2824.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2824.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="GNFAC-2765-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2765.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2765.geojson" download="">Download GeoJSON</a></div>
+        <div id="GNFAC-2823-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2823.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2823.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="IPAC-1901-shape" data-geojson="/assets/json/avalanche-zones/IPAC-1901.geojson" class="avy-zone dn">

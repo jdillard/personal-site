@@ -109,7 +109,7 @@ css_includes:
             
         </div>
         
-        <div id="ESAC-128-report" class="avy-zone dn" data-id="ESAC-128" data-color="#939598" data-min="0"  data-max="20310" data-btl="7800" data-atl="10000" data-published="Tuesday, November 11, 2025 11:11AM">
+        <div id="ESAC-128-report" class="avy-zone dn" data-id="ESAC-128" data-color="#939598" data-min="0"  data-max="20310" data-btl="7800" data-atl="10000" data-published="Monday, November 17, 2025 8:13AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.esavalanche.org/forecasts#/eastside-region"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.esavalanche.org/forecasts#/eastside-region">ESAC</a> for more information.</div>
@@ -119,7 +119,7 @@ css_includes:
             
         </div>
         
-        <div id="MSAC-1833-report" class="avy-zone dn" data-id="MSAC-1833" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Monday, October 27, 2025 8:49AM">
+        <div id="MSAC-1833-report" class="avy-zone dn" data-id="MSAC-1833" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Monday, November 17, 2025 4:14PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.shastaavalanche.org/advisories/avalanche-advisory/#/mount-shasta"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.shastaavalanche.org/advisories/avalanche-advisory/#/mount-shasta">MSAC</a> for more information.</div>

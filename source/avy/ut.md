@@ -169,7 +169,7 @@ css_includes:
             
         </div>
         
-        <div id="UAC-1741-report" class="avy-zone dn" data-id="UAC-1741" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Tuesday, November 04, 2025 10:07AM">
+        <div id="UAC-1741-report" class="avy-zone dn" data-id="UAC-1741" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Monday, November 17, 2025 7:49AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/skyline"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/skyline">UAC</a> for more information.</div>
@@ -187,7 +187,7 @@ css_includes:
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2025-11-14 Avalanche Danger</strong>
+                    <strong>2025-11-18 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a0-0e9001-20310f 939598']&#10;['a0-0e7001-9000f 939598']&#10;['a0-0e0-7000f 939598']" onclick="clickFunc(this, 'danger-tooltip-1743'); return false;" onmouseout="outFunc('danger-tooltip-1743')" href="#"><span class="tooltiptext" id="danger-tooltip-1743">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
@@ -231,7 +231,7 @@ css_includes:
             
         </div>
         
-        <div id="UAC-1740-report" class="avy-zone dn" data-id="UAC-1740" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Thursday, November 13, 2025 2:26PM">
+        <div id="UAC-1740-report" class="avy-zone dn" data-id="UAC-1740" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Monday, November 17, 2025 4:50PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/uintas"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/uintas">UAC</a> for more information.</div>
