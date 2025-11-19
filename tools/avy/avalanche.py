@@ -7,6 +7,7 @@ from requests.exceptions import HTTPError
 import os
 import time
 import avy_config as config
+from utils import convert_to_local_time
 
 
 #TODO only run during certain months when NWAC is open
@@ -46,15 +47,33 @@ for file in os.listdir("source/_trips"):
                     jsonResponse = json.load(fp)
 
             if jsonResponse["danger"]:
-                published_date_time_obj = dateutil.parser.parse(jsonResponse["published_time"]) - timedelta(hours=8, minutes=0)
-                expires_date_time_obj = dateutil.parser.parse(jsonResponse["expires_time"]) - timedelta(hours=8, minutes=0)
-                tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
-                outlook_date_time_obj = published_date_time_obj + timedelta(hours=48, minutes=0)
+                # Use convert_to_local_time if we have coordinates, otherwise fall back to naive timezone
+                if avy_lat and avy_long:
+                    published_date_time_obj, tomorrow_date_time_obj, published_str, _ = convert_to_local_time(
+                        jsonResponse["published_time"],
+                        avy_lat,
+                        avy_long
+                    )
+                    expires_date_time_obj, _, expires, _ = convert_to_local_time(
+                        jsonResponse["expires_time"],
+                        avy_lat,
+                        avy_long
+                    )
+                    outlook_date_time_obj = published_date_time_obj + timedelta(hours=48, minutes=0)
+                    published = published_str
+                    tomorrow = tomorrow_date_time_obj.strftime("%A, %B %d, %Y")
+                    outlook = outlook_date_time_obj.strftime("%A, %B %d, %Y")
+                else:
+                    # Fallback to naive timezone conversion (legacy behavior)
+                    published_date_time_obj = dateutil.parser.parse(jsonResponse["published_time"]) - timedelta(hours=8, minutes=0)
+                    expires_date_time_obj = dateutil.parser.parse(jsonResponse["expires_time"]) - timedelta(hours=8, minutes=0)
+                    tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
+                    outlook_date_time_obj = published_date_time_obj + timedelta(hours=48, minutes=0)
 
-                published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
-                expires = expires_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
-                tomorrow = tomorrow_date_time_obj.strftime("%A, %B %d, %Y")
-                outlook = outlook_date_time_obj.strftime("%A, %B %d, %Y")
+                    published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+                    expires = expires_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+                    tomorrow = tomorrow_date_time_obj.strftime("%A, %B %d, %Y")
+                    outlook = outlook_date_time_obj.strftime("%A, %B %d, %Y")
                 url = jsonResponse["forecast_zone"][0]["url"]
 
                 danger_dates = {"current": tomorrow, "tomorrow": outlook}
@@ -116,11 +135,25 @@ for file in os.listdir("source/_trips"):
                 print(f'Other error occurred: {err}')
                 exit()
 
-            published_date_time_obj = dateutil.parser.parse(jsonResponse["report"]["dateIssued"]) - timedelta(hours=8, minutes=0)
-            expires_date_time_obj = dateutil.parser.parse(jsonResponse["report"]["validUntil"]) - timedelta(hours=8, minutes=0)
+            # Use convert_to_local_time if we have coordinates, otherwise fall back to naive timezone
+            if avy_lat and avy_long:
+                published_date_time_obj, _, published, _ = convert_to_local_time(
+                    jsonResponse["report"]["dateIssued"],
+                    avy_lat,
+                    avy_long
+                )
+                expires_date_time_obj, _, expires, _ = convert_to_local_time(
+                    jsonResponse["report"]["validUntil"],
+                    avy_lat,
+                    avy_long
+                )
+            else:
+                # Fallback to naive timezone conversion (legacy behavior)
+                published_date_time_obj = dateutil.parser.parse(jsonResponse["report"]["dateIssued"]) - timedelta(hours=8, minutes=0)
+                expires_date_time_obj = dateutil.parser.parse(jsonResponse["report"]["validUntil"]) - timedelta(hours=8, minutes=0)
 
-            published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
-            expires = expires_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+                published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+                expires = expires_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
             url = jsonResponse["url"]
             danger_ratings = []
 
