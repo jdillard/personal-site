@@ -7,7 +7,7 @@ import os
 import urllib.parse
 import uuid
 import avy_config as config
-from utils import convert_to_local_time
+from utils import convert_to_local_time, format_elevation_range
 
 
 #TODO support search by lat/long (mainly for CO/BC) (lambda function?)
@@ -208,11 +208,7 @@ for product in ca_metadata:
             "desc": f"{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['tln']['rating']['value'])['desc']} ({area['elevations'].get('ntl')[0]}' to {area['elevations'].get('ntl')[1]}')",
             "colors": [f"#{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['tln']['rating']['value'])['color']}"]
         })
-        # only show (above x') if == 20310
-        if area['elevations'].get('atl')[1] == 20310:
-            elv_range = f"above {area['elevations'].get('atl')[0]}'"
-        else:
-            elv_range =  f"{area['elevations'].get('atl')[0]}' to {area['elevations'].get('atl')[1]}'"
+        elv_range = format_elevation_range(area['elevations'].get('atl'))
         danger_rules.append({
             "id": "atl",
             "layer": upper,
@@ -244,12 +240,8 @@ for product in ca_metadata:
                     elv_band = "ntl"
                     full_desc = f"{desc} ({area['elevations'].get(elv_band)[0]}' to {area['elevations'].get(elv_band)[1]}')"
                 elif elevation["value"] == "alp":
-                    # only show (above x') if == 20310
                     elv_band = "atl"
-                    if area['elevations'].get(elv_band)[1] == 20310:
-                        elv_range = f"above {area['elevations'].get(elv_band)[0]}'"
-                    else:
-                        elv_range = f"{area['elevations'].get(elv_band)[0]}' to {area['elevations'].get(elv_band)[1]}'"
+                    elv_range = format_elevation_range(area['elevations'].get(elv_band))
                     full_desc = f"{desc} ({elv_range})"
                 else:
                     continue
@@ -360,11 +352,7 @@ for state in states:
                 if data and data["overall_danger_rating"] != "None" and zone["elevations"]:
                     chunked_list = split_elv_bands(data["overall_danger_rose"]) #TODO better variable name than chunk?
 
-                    # only show (above x') if == 20310
-                    if zone['elevations'].get('atl')[1] == 20310:
-                        elv_range = f"above {zone['elevations'].get('atl')[0]}'"
-                    else:
-                        elv_range =  f"{zone['elevations'].get('atl')[0]}' to {zone['elevations'].get('atl')[1]}'"
+                    elv_range = format_elevation_range(zone['elevations'].get('atl'))
 
                     # handle each elevation bands danger rose
                     for index, chunk in enumerate(chunked_list):
@@ -453,11 +441,7 @@ for state in states:
                         "desc": f"{danger_levels.get(data['danger'][0]['middle'])['desc']} ({zone['elevations'].get('ntl')[0]}' to {zone['elevations'].get('ntl')[1]}')",
                         "colors": [f"#{danger_levels.get(data['danger'][0]['middle'])['color']}"]
                     })
-                    # only show (above x') if == 20310
-                    if zone['elevations'].get('atl')[1] == 20310:
-                        elv_range = f"above {zone['elevations'].get('atl')[0]}'"
-                    else:
-                        elv_range =  f"{zone['elevations'].get('atl')[0]}' to {zone['elevations'].get('atl')[1]}'"
+                    elv_range = format_elevation_range(zone['elevations'].get('atl'))
                     danger_rules.append({
                         "id": "atl",
                         "layer": upper,
@@ -499,11 +483,7 @@ for state in states:
                                     })
                                 else:
                                     layer = f'a{start}-{end}e{zone["elevations"].get("atl")[0]}-{zone["elevations"].get("atl")[1]}f {problem_color.get(i)}'
-                                    # only show (above x') if == 20310
-                                    if zone['elevations'].get('atl')[1] == 20310:
-                                        elv_range = f"above {zone['elevations'].get('atl')[0]}'"
-                                    else:
-                                        elv_range = f"{zone['elevations'].get('atl')[0]}' to {zone['elevations'].get('atl')[1]}'"
+                                    elv_range = format_elevation_range(zone['elevations'].get('atl'))
                                     rules.append({
                                         "id": "atl",
                                         "layer": layer,
@@ -558,11 +538,7 @@ for state in states:
                         if upper:
                             start, end, desc = sort_directions(upper)
                             upper_layer = f'a{start}-{end}e{zone["elevations"].get("atl")[0]}-{zone["elevations"].get("atl")[1]}f {problem_color.get(i)}'
-                            # only show (above x') if == 20310
-                            if zone['elevations'].get('atl')[1] == 20310:
-                                elv_range = f"above {zone['elevations'].get('atl')[0]}'"
-                            else:
-                                elv_range = f"{zone['elevations'].get('atl')[0]}' to {zone['elevations'].get('atl')[1]}'"
+                            elv_range = format_elevation_range(zone['elevations'].get('atl'))
                             rules.append({
                                 "id": "atl",
                                 "layer": upper_layer,

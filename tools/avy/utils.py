@@ -106,3 +106,31 @@ def fetch_json_with_retry(url, output_path=None, retries=3, raise_on_error=True)
                 return None
 
     return None
+
+
+def format_elevation_range(elevation_tuple, max_elevation=20310):
+    """
+    Format an elevation range tuple into a human-readable string.
+
+    If the upper bound equals max_elevation (default 20310), format as "above X'"
+    Otherwise format as "X' to Y'"
+
+    Args:
+        elevation_tuple: Tuple of (lower_bound, upper_bound) in feet
+        max_elevation: Maximum elevation value that triggers "above" formatting (default: 20310)
+
+    Returns:
+        str: Formatted elevation range string
+
+    Examples:
+        >>> format_elevation_range((9001, 20310))
+        "above 9001'"
+        >>> format_elevation_range((6000, 7500))
+        "6000' to 7500'"
+    """
+    lower, upper = elevation_tuple
+
+    if upper == max_elevation:
+        return f"above {lower}'"
+    else:
+        return f"{lower}' to {upper}'"
