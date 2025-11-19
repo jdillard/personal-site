@@ -5,6 +5,9 @@ from datetime import timedelta
 from zoneinfo import ZoneInfo
 from timezonefinder import TimezoneFinder
 import dateutil.parser
+import requests
+from requests.exceptions import HTTPError
+import json
 
 
 tf = TimezoneFinder()
@@ -46,3 +49,60 @@ def convert_to_local_time(utc_timestamp, lat, lon):
     tomorrow = tomorrow_date_time_obj.strftime("%Y-%m-%d")
 
     return published_date_time_obj, tomorrow_date_time_obj, published, tomorrow
+
+
+def fetch_json_with_retry(url, output_path=None, retries=3, raise_on_error=True):
+    """
+    Fetch JSON data from a URL with error handling and optional file output.
+
+    Args:
+        url: URL to fetch JSON data from
+        output_path: Optional file path to save the JSON response
+        retries: Number of retry attempts (default: 3)
+        raise_on_error: If True, raise exceptions on error. If False, print error and return None (default: True)
+
+    Returns:
+        dict: Parsed JSON response, or None if request fails and raise_on_error=False
+
+    Raises:
+        HTTPError: If HTTP error occurs and raise_on_error=True
+        Exception: If other error occurs and raise_on_error=True
+    """
+    last_exception = None
+
+    for attempt in range(retries):
+        try:
+            response = requests.get(url)
+            response.raise_for_status()
+            json_response = response.json()
+
+            # Optionally save to file
+            if output_path:
+                with open(output_path, 'w') as out:
+                    out.write(json.dumps(json_response))
+
+            return json_response
+
+        except HTTPError as http_err:
+            last_exception = http_err
+            if attempt < retries - 1:
+                continue  # Retry
+            # Last attempt failed
+            if raise_on_error:
+                raise
+            else:
+                print(f'HTTP error occurred: {http_err}')
+                return None
+
+        except Exception as err:
+            last_exception = err
+            if attempt < retries - 1:
+                continue  # Retry
+            # Last attempt failed
+            if raise_on_error:
+                raise
+            else:
+                print(f'Other error occurred: {err}')
+                return None
+
+    return None
