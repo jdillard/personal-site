@@ -84,23 +84,19 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="BTAC-2813" selected="">Gros Ventre</option>
+            <option value="BTAC-2829" selected="">Salt River and Wyoming Ranges</option>
             
-            <option value="BTAC-2803" >Salt River and Wyoming Ranges</option>
+            <option value="BTAC-2837" >Snake River Range</option>
             
-            <option value="BTAC-2811" >Snake River Range</option>
+            <option value="BTAC-2828" >Tetons</option>
             
-            <option value="BTAC-2814" >Southern Wyoming Range</option>
+            <option value="BTAC-2830" >Togwotee Pass</option>
             
-            <option value="BTAC-2802" >Tetons</option>
+            <option value="EWYAIX-2841" >Big Horns</option>
             
-            <option value="BTAC-2804" >Togwotee Pass</option>
+            <option value="EWYAIX-2843" >Sierra Madre</option>
             
-            <option value="EWYAIX-1343" >Big Horns</option>
-            
-            <option value="EWYAIX-1344" >Sierra Madre</option>
-            
-            <option value="EWYAIX-1345" >Snowy Range</option>
+            <option value="EWYAIX-2842" >Snowy Range</option>
             
         </select>
     </div>
@@ -109,17 +105,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="BTAC-2813-report" class="avy-zone" data-id="BTAC-2813" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Friday, November 22, 2024 5:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/gros-ventre/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/gros-ventre/">BTAC</a> for more information.</div>
-            
-
-            
-            
-        </div>
-        
-        <div id="BTAC-2803-report" class="avy-zone dn" data-id="BTAC-2803" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Friday, November 14, 2025 11:55AM">
+        <div id="BTAC-2829-report" class="avy-zone" data-id="BTAC-2829" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Friday, November 14, 2025 11:55AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/">BTAC</a> for more information.</div>
@@ -129,7 +115,7 @@ css_includes:
             
         </div>
         
-        <div id="BTAC-2811-report" class="avy-zone dn" data-id="BTAC-2811" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Friday, November 14, 2025 11:55AM">
+        <div id="BTAC-2837-report" class="avy-zone dn" data-id="BTAC-2837" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Friday, November 14, 2025 11:55AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/snake-river-range"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/snake-river-range">BTAC</a> for more information.</div>
@@ -139,17 +125,7 @@ css_includes:
             
         </div>
         
-        <div id="BTAC-2814-report" class="avy-zone dn" data-id="BTAC-2814" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Friday, November 22, 2024 5:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/southern-wyoming-range/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/southern-wyoming-range/">BTAC</a> for more information.</div>
-            
-
-            
-            
-        </div>
-        
-        <div id="BTAC-2802-report" class="avy-zone dn" data-id="BTAC-2802" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Friday, November 14, 2025 11:55AM">
+        <div id="BTAC-2828-report" class="avy-zone dn" data-id="BTAC-2828" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Friday, November 14, 2025 11:55AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">BTAC</a> for more information.</div>
@@ -159,7 +135,7 @@ css_includes:
             
         </div>
         
-        <div id="BTAC-2804-report" class="avy-zone dn" data-id="BTAC-2804" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Friday, November 14, 2025 11:55AM">
+        <div id="BTAC-2830-report" class="avy-zone dn" data-id="BTAC-2830" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Friday, November 14, 2025 11:55AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass">BTAC</a> for more information.</div>
@@ -169,7 +145,7 @@ css_includes:
             
         </div>
         
-        <div id="EWYAIX-1343-report" class="avy-zone dn" data-id="EWYAIX-1343" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
+        <div id="EWYAIX-2841-report" class="avy-zone dn" data-id="EWYAIX-2841" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://ewyoavalanche.org"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">EWYAIX</a> for more information.</div>
@@ -179,7 +155,7 @@ css_includes:
             
         </div>
         
-        <div id="EWYAIX-1344-report" class="avy-zone dn" data-id="EWYAIX-1344" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
+        <div id="EWYAIX-2843-report" class="avy-zone dn" data-id="EWYAIX-2843" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://ewyoavalanche.org"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">EWYAIX</a> for more information.</div>
@@ -189,7 +165,7 @@ css_includes:
             
         </div>
         
-        <div id="EWYAIX-1345-report" class="avy-zone dn" data-id="EWYAIX-1345" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
+        <div id="EWYAIX-2842-report" class="avy-zone dn" data-id="EWYAIX-2842" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://ewyoavalanche.org"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">EWYAIX</a> for more information.</div>
@@ -204,40 +180,32 @@ css_includes:
         <h3 class="tc bb b--moon-gray">Zone</h3>
         <div style="height: 300px;" id="map"></div>
         
-        <div id="BTAC-2813-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2813.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2813.geojson" download="">Download GeoJSON</a></div>
+        <div id="BTAC-2829-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2829.geojson" class="avy-zone">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2829.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="BTAC-2803-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2803.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2803.geojson" download="">Download GeoJSON</a></div>
+        <div id="BTAC-2837-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2837.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2837.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="BTAC-2811-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2811.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2811.geojson" download="">Download GeoJSON</a></div>
+        <div id="BTAC-2828-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2828.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2828.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="BTAC-2814-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2814.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2814.geojson" download="">Download GeoJSON</a></div>
+        <div id="BTAC-2830-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2830.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2830.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="BTAC-2802-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2802.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2802.geojson" download="">Download GeoJSON</a></div>
+        <div id="EWYAIX-2841-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-2841.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-2841.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="BTAC-2804-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2804.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2804.geojson" download="">Download GeoJSON</a></div>
+        <div id="EWYAIX-2843-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-2843.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-2843.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="EWYAIX-1343-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-1343.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-1343.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="EWYAIX-1344-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-1344.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-1344.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="EWYAIX-1345-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-1345.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-1345.geojson" download="">Download GeoJSON</a></div>
+        <div id="EWYAIX-2842-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-2842.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-2842.geojson" download="">Download GeoJSON</a></div>
         </div>
         
     </div>
@@ -250,10 +218,6 @@ css_includes:
         
         
         <option value="/avy/ca.html">California</option>
-        
-        
-        
-        <option value="/avy/id.html">Idaho</option>
         
         
         
@@ -270,6 +234,10 @@ css_includes:
         
         
         <option value="/avy/mt.html">Montana</option>
+        
+        
+        
+        <option value="/avy/id.html">Idaho</option>
         
         
         
@@ -290,6 +258,10 @@ css_includes:
         
         
         <option value="/avy/ut.html">Utah</option>
+        
+        
+        
+        <option value="/avy/co.html">Colorado</option>
         
         
         <option value="/avy/canada.html">Canada</option>

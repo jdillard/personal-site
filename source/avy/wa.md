@@ -253,10 +253,6 @@ css_includes:
         
         
         
-        <option value="/avy/id.html">Idaho</option>
-        
-        
-        
         <option value="/avy/wy.html">Wyoming</option>
         
         
@@ -270,6 +266,10 @@ css_includes:
         
         
         <option value="/avy/mt.html">Montana</option>
+        
+        
+        
+        <option value="/avy/id.html">Idaho</option>
         
         
         
@@ -290,6 +290,10 @@ css_includes:
         
         
         <option value="/avy/ut.html">Utah</option>
+        
+        
+        
+        <option value="/avy/co.html">Colorado</option>
         
         
         <option value="/avy/canada.html">Canada</option>
