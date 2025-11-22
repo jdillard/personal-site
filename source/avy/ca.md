@@ -109,7 +109,7 @@ css_includes:
             
         </div>
         
-        <div id="ESAC-128-report" class="avy-zone dn" data-id="ESAC-128" data-color="#939598" data-min="0"  data-max="20310" data-btl="7800" data-atl="10000" data-published="Monday, November 17, 2025 8:13AM">
+        <div id="ESAC-128-report" class="avy-zone dn" data-id="ESAC-128" data-color="#939598" data-min="0"  data-max="20310" data-btl="7800" data-atl="10000" data-published="Friday, November 21, 2025 8:11AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.esavalanche.org/forecasts#/eastside-region"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.esavalanche.org/forecasts#/eastside-region">ESAC</a> for more information.</div>
@@ -129,7 +129,7 @@ css_includes:
             
         </div>
         
-        <div id="SAC-2458-report" class="avy-zone dn" data-id="SAC-2458" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Monday, November 17, 2025 6:24AM">
+        <div id="SAC-2458-report" class="avy-zone dn" data-id="SAC-2458" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Friday, November 21, 2025 3:21PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sierraavalanchecenter.org/forecasts/avalanche/central-sierra-nevada#/central-sierra-nevada/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sierraavalanchecenter.org/forecasts/avalanche/central-sierra-nevada#/central-sierra-nevada/">SAC</a> for more information.</div>
