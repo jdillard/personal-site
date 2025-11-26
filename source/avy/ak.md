@@ -243,7 +243,7 @@ css_includes:
             
         </div>
         
-        <div id="HAC-2363-report" class="avy-zone dn" data-id="HAC-2363" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Saturday, March 29, 2025 11:25AM">
+        <div id="HAC-2363-report" class="avy-zone dn" data-id="HAC-2363" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Tuesday, November 25, 2025 8:46AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/map?lat=59.920896&lng=-136.696299"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/map?lat=59.920896&lng=-136.696299">HAC</a> for more information.</div>
@@ -253,7 +253,7 @@ css_includes:
             
         </div>
         
-        <div id="HAC-2361-report" class="avy-zone dn" data-id="HAC-2361" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, April 23, 2025 6:00AM">
+        <div id="HAC-2361-report" class="avy-zone dn" data-id="HAC-2361" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Tuesday, November 25, 2025 7:46AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/haines-forecast/#/lutak"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/lutak">HAC</a> for more information.</div>
@@ -263,7 +263,7 @@ css_includes:
             
         </div>
         
-        <div id="HAC-2362-report" class="avy-zone dn" data-id="HAC-2362" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, April 23, 2025 6:00AM">
+        <div id="HAC-2362-report" class="avy-zone dn" data-id="HAC-2362" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Tuesday, November 25, 2025 7:46AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/haines-forecast/#/transitional"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/transitional">HAC</a> for more information.</div>
