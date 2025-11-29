@@ -244,7 +244,7 @@ function activity(activities = []) {
           b.link = "https://github.com/" + b.repo.name;
           break;
         case "PushEvent":
-          b.words = b.payload.commits.length;
+          b.words = b.payload.commits?.length || 0;
           b.link = "https://github.com/" + b.repo.name + "/commits?author=" + b.actor.display_login;
           break;
         case "IssueCommentEvent":
@@ -289,9 +289,11 @@ function activity(activities = []) {
         case "MemberEvent":
           b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1);
           b.link = "https://github.com/" + b.repo.name;
+          break;
         case "ReleaseEvent":
-          b.words = '<strong>' + b.payload.release.name + '</strong>';
-          b.link = b.payload.release.html_url
+          b.words = '<strong>' + (b.payload.release?.name || 'a release') + '</strong>';
+          b.link = b.payload.release?.html_url || "https://github.com/" + b.repo.name;
+          break;
       }
       if(b.created_at != prev_date) {
         let dates = [];
