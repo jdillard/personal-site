@@ -11,5 +11,8 @@
   "trad.js": "js/trad.2a55acee0ee605f73cf5.js",
   "trip.js": "js/trip.cf2b3b50512e9c829385.js",
   "tripArchive.js": "js/tripArchive.4ee099448d728b352acf.js",
-  "weather.js": "js/weather.46bdd0b52deb68e84e4d.js"
+  "weather.js": "js/weather.46bdd0b52deb68e84e4d.js",
+  "tailwind.js": "js/tailwind.0db7df394cb98cf99d47.js",
+  "styles.js": "js/styles.859460b66be496c87b8c.js",
+  "styles.css": "css/styles.34cc401a86ea61c27e67.css"
 }
