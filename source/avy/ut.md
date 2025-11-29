@@ -119,7 +119,7 @@ css_includes:
             
         </div>
         
-        <div id="UAC-1736-report" class="avy-zone dn" data-id="UAC-1736" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Wednesday, November 26, 2025 7:24AM">
+        <div id="UAC-1736-report" class="avy-zone dn" data-id="UAC-1736" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Friday, November 28, 2025 9:12AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/logan"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/logan">UAC</a> for more information.</div>
@@ -129,11 +129,15 @@ css_includes:
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2025-11-27 Normal Caution</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="" onclick="clickFunc(this, 'problem-1-tooltip-1736'); return false;" onmouseout="outFunc('problem-1-tooltip-1736')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                        <strong>2025-11-29 Normal Caution</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a158-158e9001-20310f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1736'); return false;" onmouseout="outFunc('problem-1-tooltip-1736')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1736">
+                        
+                            <li class="pv1 atl">
+                                <div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> <span class="desc">All aspects (above 9001')</span>
+                            </li>
                         
                         </ul>
                     </dd>

@@ -123,7 +123,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="FAC-1735-report" class="avy-zone" data-id="FAC-1735" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Tuesday, November 25, 2025 5:01PM">
+        <div id="FAC-1735-report" class="avy-zone" data-id="FAC-1735" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 5:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://flatheadavalanche.com/avalanche-forecast#/flathead-range-&-glacier-np"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://flatheadavalanche.com/avalanche-forecast#/flathead-range-&-glacier-np">FAC</a> for more information.</div>
@@ -133,7 +133,7 @@ css_includes:
             
         </div>
         
-        <div id="FAC-1734-report" class="avy-zone dn" data-id="FAC-1734" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Tuesday, November 25, 2025 5:01PM">
+        <div id="FAC-1734-report" class="avy-zone dn" data-id="FAC-1734" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 5:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://flatheadavalanche.com/avalanche-forecast#/swan-range"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://flatheadavalanche.com/avalanche-forecast#/swan-range">FAC</a> for more information.</div>
@@ -143,7 +143,7 @@ css_includes:
             
         </div>
         
-        <div id="FAC-1733-report" class="avy-zone dn" data-id="FAC-1733" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Tuesday, November 25, 2025 5:01PM">
+        <div id="FAC-1733-report" class="avy-zone dn" data-id="FAC-1733" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 5:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://flatheadavalanche.com/avalanche-forecast#/whitefish-range"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://flatheadavalanche.com/avalanche-forecast#/whitefish-range">FAC</a> for more information.</div>
@@ -153,7 +153,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2819-report" class="avy-zone dn" data-id="GNFAC-2819" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 26, 2025 8:42AM">
+        <div id="GNFAC-2819-report" class="avy-zone dn" data-id="GNFAC-2819" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 3:57PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/bridger-range/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/bridger-range/">GNFAC</a> for more information.</div>
@@ -163,7 +163,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2827-report" class="avy-zone dn" data-id="GNFAC-2827" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 26, 2025 8:42AM">
+        <div id="GNFAC-2827-report" class="avy-zone dn" data-id="GNFAC-2827" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 3:57PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/cooke-city/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/cooke-city/">GNFAC</a> for more information.</div>
@@ -173,7 +173,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2826-report" class="avy-zone dn" data-id="GNFAC-2826" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 26, 2025 8:42AM">
+        <div id="GNFAC-2826-report" class="avy-zone dn" data-id="GNFAC-2826" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 3:57PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/island-park/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/island-park/">GNFAC</a> for more information.</div>
@@ -183,7 +183,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2825-report" class="avy-zone dn" data-id="GNFAC-2825" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 26, 2025 8:42AM">
+        <div id="GNFAC-2825-report" class="avy-zone dn" data-id="GNFAC-2825" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 3:57PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/lionhead-area/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/lionhead-area/">GNFAC</a> for more information.</div>
@@ -193,7 +193,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2821-report" class="avy-zone dn" data-id="GNFAC-2821" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 26, 2025 8:42AM">
+        <div id="GNFAC-2821-report" class="avy-zone dn" data-id="GNFAC-2821" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 3:57PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/northern-gallatin-range/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-gallatin-range/">GNFAC</a> for more information.</div>
@@ -203,7 +203,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2822-report" class="avy-zone dn" data-id="GNFAC-2822" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 26, 2025 8:42AM">
+        <div id="GNFAC-2822-report" class="avy-zone dn" data-id="GNFAC-2822" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 3:57PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/northern-madison-range/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-madison-range/">GNFAC</a> for more information.</div>
@@ -213,7 +213,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2824-report" class="avy-zone dn" data-id="GNFAC-2824" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 26, 2025 8:42AM">
+        <div id="GNFAC-2824-report" class="avy-zone dn" data-id="GNFAC-2824" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 3:57PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/southern-gallatin-range/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-gallatin-range/">GNFAC</a> for more information.</div>
@@ -223,7 +223,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2823-report" class="avy-zone dn" data-id="GNFAC-2823" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 26, 2025 8:42AM">
+        <div id="GNFAC-2823-report" class="avy-zone dn" data-id="GNFAC-2823" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 3:57PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.mtavalanche.com/avalanche-forecast#/southern-madison-range/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-madison-range/">GNFAC</a> for more information.</div>
@@ -233,7 +233,7 @@ css_includes:
             
         </div>
         
-        <div id="IPAC-1901-report" class="avy-zone dn" data-id="IPAC-1901" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Tuesday, November 25, 2025 1:41PM">
+        <div id="IPAC-1901-report" class="avy-zone dn" data-id="IPAC-1901" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 8:30AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/">IPAC</a> for more information.</div>
@@ -243,7 +243,7 @@ css_includes:
             
         </div>
         
-        <div id="IPAC-1903-report" class="avy-zone dn" data-id="IPAC-1903" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Tuesday, November 25, 2025 1:41PM">
+        <div id="IPAC-1903-report" class="avy-zone dn" data-id="IPAC-1903" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 28, 2025 8:30AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/">IPAC</a> for more information.</div>
