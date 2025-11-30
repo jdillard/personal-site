@@ -64,7 +64,8 @@ module.exports = {
         'baskerville': ['Baskerville', 'serif'],
       },
       maxWidth: {
-        '6-5': '40rem',  // Custom mw6-5 from Tachyons customizations
+        '6-5': '40rem',  // Custom mw6-5 from Tachyons (640px) - original content width
+        '7': '44rem',    // 704px - between 6-5 and 3xl
       },
     },
   },

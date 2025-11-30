@@ -7,28 +7,28 @@ cover: false
 
 {% for post in site.posts %}
 
-<article class="sans-serif center mw7 f5 lh-copy ph3 mv3 pt3-ns pt2 pb3 hide-child hover-bg-near-white bl bw2 b--white hover-b--light-red">
+<article class="hide-child hover-b--light-red tw-font-sans tw-mx-auto tw-max-w-4xl tw-text-base tw-leading-normal tw-px-3 tw-my-3 ns:tw-pt-3 tw-pt-2 tw-pb-3 hover:tw-bg-near-white tw-border-l-4 tw-border-solid tw-border-white">
     <header>
-        <h2 class="f2-ns f3 lh-title mb3 mh3-ns mt2 sans-serif"><a class="black-70 hover-light-red no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h2 class="ns:tw-text-3xl tw-text-xl tw-leading-tight tw-mb-3 ns:tw-mx-3 tw-mt-2 tw-font-sans"><a class="tw-text-black/70 hover:tw-text-light-red tw-no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
     </header>
-    <section class="tj f5-ns f6 fw3 mb3 mh5-ns lh-copy mid-gray">
+    <section class="tw-text-justify ns:tw-text-base tw-text-sm tw-font-light tw-mb-3 ns:tw-mx-5 tw-leading-normal tw-text-mid-gray">
         <p>
             {{ post.excerpt | strip_html }}
         </p>
     </section>
-    <footer class="gray f7 fw1-ns fw4 mh5-ns flex items-center justify-between">
+    <footer class="tw-text-gray tw-text-xs ns:tw-font-thin tw-font-normal ns:tw-mx-5 tw-flex tw-items-center tw-justify-between">
         <div>
-            <time class="mr2" datetime="{{ post.date | date: "%Y-%m-%d" }}">
+            <time class="tw-mr-2" datetime="{{ post.date | date: "%Y-%m-%d" }}">
             {{ post.date | date: "%B %d, %Y" }}
             </time>
             {% for category in post.categories %}
-            <a class="f7 link dim br2 ph2 mb2 dib white bg-silver" href="/blog/archive.html#{{ category }}">{{ category }}</a>
+            <a class="link dim tw-text-xs tw-rounded tw-px-2 tw-mb-2 tw-inline-block tw-text-white tw-bg-silver" href="/blog/archive.html#{{ category }}">{{ category }}</a>
             {% endfor %}
         </div>
         <!--show Read More link/button on parent hover-->
-        <a class="br-pill b light-red hover-white hover-bg-light-red no-underline ba grow pv1 ph3 dib inline-flex items-center child mr3" href="{{ post.url }}">
+        <a class="child grow tw-rounded-full tw-font-bold tw-text-light-red hover:tw-text-white hover:tw-bg-light-red tw-no-underline tw-border tw-border-solid tw-border-current tw-py-1 tw-px-3 tw-inline-flex tw-items-center tw-mr-3" href="{{ post.url }}">
             Read More
-            <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+            <svg class="tw-w-4" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
                 <title>chevronRight icon</title>
                 <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
             </svg>
@@ -37,6 +37,6 @@ cover: false
 </article>
 {% endfor %}
 
-<p class="center tc">
-    <a class="f6 link dim ph4-ns ph3 pv3-ns pv2 mb2 dib white bg-light-red" href="/blog/archive.html">View Archive</a>
+<p class="tw-mx-auto tw-text-center">
+    <a class="link dim tw-text-sm ns:tw-px-4 tw-px-3 ns:tw-py-3 tw-py-2 tw-mb-2 tw-inline-block tw-text-white tw-bg-light-red" href="/blog/archive.html">View Archive</a>
 </p>
