@@ -57,7 +57,8 @@ module.exports = {
     trad: "./source/assets/js/trad.js",
     trip: "./source/assets/js/trip.js",
     tripArchive: "./source/assets/js/trip-archive.js",
-    weather: "./source/assets/js/weather.js"
+    weather: "./source/assets/js/weather.js",
+    tailwind: "./source/assets/css/tailwind.css"
   },
   output: {
     path: path.resolve(__dirname, 'source/assets/dist'),
@@ -84,6 +85,14 @@ module.exports = {
             presets: ['@babel/preset-env'],
           },
         },
+      },
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+        ],
       }
     ]
   }
