@@ -107,7 +107,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="COAA-2470-report" class="avy-zone" data-id="COAA-2470" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Saturday, October 25, 2025 3:36AM">
+        <div id="COAA-2470-report" class="avy-zone" data-id="COAA-2470" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Sunday, November 30, 2025 3:55PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://coavalanche.org/pages/forecasts/#/central-cascades"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/central-cascades">COAA</a> for more information.</div>
@@ -117,7 +117,7 @@ css_includes:
             
         </div>
         
-        <div id="COAA-2471-report" class="avy-zone dn" data-id="COAA-2471" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Saturday, October 25, 2025 3:36AM">
+        <div id="COAA-2471-report" class="avy-zone dn" data-id="COAA-2471" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Sunday, November 30, 2025 3:55PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://coavalanche.org/pages/forecasts/#/newberry"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/newberry">COAA</a> for more information.</div>
