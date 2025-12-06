@@ -7,16 +7,16 @@ cover: false
 
 {% for post in site.posts %}
 
-<article class="hide-child hover-b--light-red tw-font-sans tw-mx-auto tw-max-w-4xl tw-text-base tw-leading-normal tw-px-3 tw-my-3 ns:tw-pt-3 tw-pt-2 tw-pb-3 hover:tw-bg-near-white tw-border-l-4 tw-border-solid tw-border-white">
+<article class="hide-child tw-font-sans tw-mx-auto tw-max-w-4xl tw-text-base tw-leading-normal tw-px-3 tw-my-3 ns:tw-pt-3 tw-pt-2 tw-pb-3 hover:tw-bg-near-white tw-border-l-4 tw-border-solid tw-border-white hover:tw-border-l-light-red">
     <header>
-        <h2 class="ns:tw-text-3xl tw-text-xl tw-leading-tight tw-mb-3 ns:tw-mx-3 tw-mt-2 tw-font-sans"><a class="tw-text-black/70 hover:tw-text-light-red tw-no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h2 class="ns:tw-text-4xl tw-text-2xl tw-leading-tight tw-mb-3 ns:tw-mx-3 tw-mt-2 tw-font-sans"><a class="tw-text-black/70 hover:tw-text-light-red tw-no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
     </header>
     <section class="tw-text-justify ns:tw-text-base tw-text-sm tw-font-light tw-mb-3 ns:tw-mx-5 tw-leading-normal tw-text-mid-gray">
         <p>
             {{ post.excerpt | strip_html }}
         </p>
     </section>
-    <footer class="tw-text-gray tw-text-xs ns:tw-font-thin tw-font-normal ns:tw-mx-5 tw-flex tw-items-center tw-justify-between">
+    <footer class="tw-text-gray tw-text-xs tw-font-normal ns:tw-mx-5 tw-flex tw-items-center tw-justify-between">
         <div>
             <time class="tw-mr-2" datetime="{{ post.date | date: "%Y-%m-%d" }}">
             {{ post.date | date: "%B %d, %Y" }}
