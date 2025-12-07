@@ -6,44 +6,44 @@ js_includes:
 ---
 
 <main {% if page.cover %}class="post-cover"{% endif %}>
-    <article style="box-shadow: 0px 15px 17px rgb(50 50 50 / 26%);" class="avenir pa2 center mw8 bg-white black-70 br bl b--near-white">
+    <article style="box-shadow: 0px 15px 17px rgb(50 50 50 / 26%);" class="avenir tw-p-2 tw-mx-auto tw-max-w-5xl tw-bg-white tw-text-black/70 tw-border-solid tw-border-x tw-border-y-0 tw-border-near-white">
         <header>
-            <h1 class="f1-ns f3 center tc mw8 mt5-ns mt4 mb4 black-70 athelas lh-title avenir">{{ page.title }}</h1>
-            <div class="f5-ns f7 center mw6-5 mh1 ph2 pv1 tr sans-serif lh-copy gray">
-                <a class="fl no-underline fancy-link relative gray hover-light-red" href="https://github.com/jdillard/personal-site/commits/master/source/{{ page.path }}" target="_blank" rel="noopener"><time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time></a>
+            <h1 class="ns:tw-text-5xl tw-text-2xl tw-mx-auto tw-text-center tw-max-w-5xl ns:tw-mt-20 tw-mt-8 tw-mb-8 tw-text-black/70 tw-font-athelas !tw-leading-snug avenir">{{ page.title }}</h1>
+            <div class="ns:tw-text-base tw-text-xs tw-mx-auto tw-max-w-6-5 tw-mx-1 tw-px-2 tw-py-1 tw-text-right tw-font-sans tw-leading-normal tw-text-gray">
+                <a class="tw-float-left tw-no-underline fancy-link tw-relative tw-text-gray hover:tw-text-light-red" href="https://github.com/jdillard/personal-site/commits/master/source/{{ page.path }}" target="_blank" rel="noopener"><time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time></a>
                 {% if page.categories.size > 0 %}
                     {% for category in page.categories %}
-                        <a data-proofer-ignore class="no-underline fancy-link relative gray hover-light-red" href="/trips/archive.html#{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %} / {% endunless %}
+                        <a data-proofer-ignore class="tw-no-underline fancy-link tw-relative tw-text-gray hover:tw-text-light-red" href="/trips/archive.html#{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %} / {% endunless %}
                     {% endfor %}
                 {% endif %}
             </div>
         </header>
-        <section style="font-size: 1.05em;" class="post-content center mw7 lh-copy mt3 pv2 bt-ns b--light-gray">
+        <section style="font-size: 1.05em;" class="post-content tw-mx-auto tw-max-w-7 tw-leading-normal tw-mt-4 tw-py-2 tw-border-0 ns:tw-border-t tw-border-solid tw-border-light-gray">
             {{content}}
         </section>
     </article>
     {% if page.avy_zone_id or page.avy_lat %}
-    <section style="box-shadow: 0px 15px 17px rgb(50 50 50 / 26%);" class="center mw8 bg-white ph2 pb4 br bl b--near-white">
+    <section style="box-shadow: 0px 15px 17px rgb(50 50 50 / 26%);" class="tw-mx-auto tw-max-w-5xl tw-bg-white tw-px-2 tw-pb-8 tw-border-solid tw-border-x tw-border-y-0 tw-border-near-white">
         <div id="avalanche-report" data-lat="{{ page.avy_lat }}" data-long="{{ page.avy_long }}" data-region="{{ page.avy_region }}" data-center="{{ page.avy_center_id }}" data-zone="{{ page.avy_zone_id }}"></div>
     </section>
     {% endif %}
-    <section style="box-shadow: 0px 15px 17px rgb(50 50 50 / 26%);" class="center mw8 bg-white ph2 pb4 br bl b--near-white">
-        <hr class="mw6-ns mw5 mv0 p0 b0 bt bw1 b--light-red light-red bg-light-red">
-        <div class="center pv3 ph4 br3 bg-light-gray shadow-5" style="margin: 2rem -40px 0px -40px">
-            <div class="mt3 b f3-ns f4-ns f5 black-70">Ways to Get Involved In This Area</div>
-            <p class="lh-copy f6 black-70">
+    <section style="box-shadow: 0px 15px 17px rgb(50 50 50 / 26%);" class="tw-mx-auto tw-max-w-5xl tw-bg-white tw-px-2 tw-pb-8 tw-border-solid tw-border-x tw-border-y-0 tw-border-near-white">
+        <hr class="ns:tw-max-w-2xl tw-max-w-xl tw-my-0 tw-p-0 tw-border-0 tw-border-t tw-border-solid tw-border-light-red tw-text-light-red tw-bg-light-red">
+        <div class="tw-mx-auto tw-py-4 tw-px-8 tw-rounded-lg tw-bg-light-gray tw-shadow-lg" style="margin: 2rem -40px 0px -40px">
+            <div class="tw-mt-4 tw-font-bold ns:tw-text-2xl tw-text-base tw-text-black/70">Ways to Get Involved In This Area</div>
+            <p class="tw-leading-normal tw-text-sm tw-text-black/70">
                 Here are organizations that need help to make sure the beauty and
                 abundance is still there the next time you visit. For more information,
-                see the <a class="no-underline fancy-link relative light-red
-                hover-light-red" href="/get-involved"> Get Involved</a> section.
+                see the <a class="tw-no-underline fancy-link tw-relative tw-text-light-red
+                hover:tw-text-light-red" href="/get-involved"> Get Involved</a> section.
             </p>
             <div id="resources" data-state="{{ page.state }}" data-type="{{ page.type }}"></div>
         </div>
     </section>
-    <section style="box-shadow: 0px 15px 17px rgb(50 50 50 / 26%);" class="center mw8 bg-white ph2 br bl b--near-white">
-        <hr class="mw6-ns mw5 mv0 p0 b0 bt bw1 b--light-red light-red bg-light-red">
-        <div style="max-width: 56rem;" class="center pv3 ph2">
-            <div class="mt3 b tc f2-ns f4 black-70">Related Trips</div>
+    <section style="box-shadow: 0px 15px 17px rgb(50 50 50 / 26%);" class="tw-mx-auto tw-max-w-5xl tw-bg-white tw-px-2 tw-border-solid tw-border-x tw-border-y-0 tw-border-near-white">
+        <hr class="ns:tw-max-w-2xl tw-max-w-xl tw-my-0 tw-p-0 tw-border-0 tw-border-t tw-border-solid tw-border-light-red tw-text-light-red tw-bg-light-red">
+        <div style="max-width: 56rem;" class="tw-mx-auto tw-py-4 tw-px-2">
+            <div class="tw-mt-4 tw-font-bold tw-text-center ns:tw-text-4xl tw-text-xl tw-text-black/70">Related Trips</div>
             <div id="trips" data-trip="{{ page.title }}" data-type="{{ page.type }}"></div>
         </div>
     </section>

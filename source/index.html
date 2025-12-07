@@ -6,105 +6,102 @@ js_includes:
 - index.js
 ---
 
-<main class="flex-ns" style="align-items: stretch;justify-content: space-around">
-  <div class="fn fl-ns w-50-l w-100 pt2 pb5-ns pb4 pr4-l" style="background-image: url(/assets/images/svg/circuit-board.svg);">
-    <div class="cf ph3 ph5-ns">
-      <h2 class="f1-ns f2 center lh-title tc mw7 mt3-ns mt2 mb3 black-70 athelas lh-title avenir">Articles</h2>
-      <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
-      <div id="articles-nav" class="mw7 center black-70">
-        <div data-name="recent" class="nav-item b fl w-50 tr b--black-70 hover-light-red pointer br bw1 ph4 pv1 mt3 mb2 light-red">
-          <span class="relative fancy-link">Recent</span>
+<main class="ns:tw-flex tw-items-stretch tw-justify-around">
+  <div class="ns:tw-float-left lg:tw-w-1/2 tw-w-full tw-pt-2 ns:tw-pb-5 tw-pb-4 lg:tw-pr-4" style="background-image: url(/assets/images/svg/circuit-board.svg);">
+    <div class="tw-overflow-hidden tw-px-3 ns:tw-px-5">
+      <h2 class="ns:tw-text-5xl tw-text-4xl tw-text-center tw-max-w-3xl tw-leading-tight ns:tw-mt-4 tw-mt-3 tw-mb-4 tw-text-black/70 tw-font-serif tw-mx-auto">Articles</h2>
+      <hr class="tw-max-w-12 tw-p-0 tw-border-0 tw-border-t tw-border-2 tw-border-light-red tw-bg-light-red tw-mx-auto">
+      <div id="articles-nav" class="tw-max-w-3xl tw-mx-auto tw-flex tw-justify-center tw-mt-3 tw-mb-2 tw-divide-x-4 tw-divide-black/70 tw-text-black/70">
+        <div data-name="recent" class="nav-item tw-font-bold tw-text-center hover:tw-text-light-red tw-cursor-pointer tw-px-4 tw-py-1 tw-my-2 tw-text-light-red">
+          <span class="tw-relative fancy-link">Recent</span>
         </div>
-        <div data-name="popular" class="nav-item b fr w-50 tl b--black-70 hover-light-red pointer bl bw1 ph4 pv1 mt3 mb2">
-          <span class="relative fancy-link">Popular</span>
+        <div data-name="popular" class="nav-item tw-font-bold tw-text-center hover:tw-text-light-red tw-cursor-pointer tw-px-4 tw-py-1 tw-my-2">
+          <span class="tw-relative fancy-link">Popular</span>
         </div>
-        <div class="cb"></div>
       </div>
-      <section id="latest-articles" class="mw7 mt3 ph3-l ph2 center"></section>
+      <section id="latest-articles" class="tw-max-w-3xl tw-mt-3 lg:tw-px-3 tw-px-2 tw-mx-auto"></section>
     </div>
-    <div class="cf ph3 ph5-ns">
-      <h2 class="f1-ns f2 center lh-title tc mw7 mt3-ns mt2 mb3 black-70 athelas lh-title avenir">GitHub</h2>
-      <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
-      <div id="github-nav" class= "mw7 center black-70">
-        <div data-name="activity" class="nav-item b fl w-50 tr b--black-70 hover-light-red pointer br bw1 ph4 pv1 mt3 mb2">
-          <span class="relative fancy-link">Activity</span>
+    <div class="tw-overflow-hidden tw-px-3 ns:tw-px-5 tw-mt-6">
+      <h2 class="ns:tw-text-5xl tw-text-4xl tw-text-center tw-max-w-3xl tw-leading-tight ns:tw-mt-4 tw-mt-3 tw-mb-4 tw-text-black/70 tw-font-serif tw-mx-auto">GitHub</h2>
+      <hr class="tw-max-w-12 tw-p-0 tw-border-0 tw-border-t tw-border-2 tw-border-light-red tw-bg-light-red tw-mx-auto">
+      <div id="github-nav" class="tw-max-w-3xl tw-mx-auto tw-flex tw-justify-center tw-mt-3 tw-mb-2 tw-divide-x-4 tw-divide-black/70 tw-text-black/70">
+        <div data-name="activity" class="nav-item tw-font-bold tw-text-center hover:tw-text-light-red tw-cursor-pointer tw-px-4 tw-py-1 tw-my-2">
+          <span class="tw-relative fancy-link">Activity</span>
         </div>
-        <div data-name="projects" class="nav-item b fr w-50 tl b--black-70 hover-light-red pointer bl bw1 ph4 pv1 mt3 mb2">
-          <span class="relative fancy-link">Projects</span>
+        <div data-name="projects" class="nav-item tw-font-bold tw-text-center hover:tw-text-light-red tw-cursor-pointer tw-px-4 tw-py-1 tw-my-2">
+          <span class="tw-relative fancy-link">Projects</span>
         </div>
-        <div class="cb"></div>
       </div>
-      <section id="github" class="mw7 mt3 ph3-ns ph2 center"></section>
+      <section id="github" class="tw-max-w-3xl tw-mt-3 ns:tw-px-3 tw-px-2 tw-mx-auto"></section>
     </div>
   </div>
-  <div class="fn fl-ns w-50-l w-100 pt2 pb5-ns pb4 pr4-l" style="background-image: url(/assets/images/svg/topography.svg);">
-    <div class="cf ph3 ph5-ns">
-      <h2 class="f1-ns f2 center lh-title tc mw7 mt3-ns mt2 mb3 black-70 athelas lh-title avenir">Trips</h2>
-      <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
-      <div id="trips-nav" class="mw7 center black-70">
-        <div data-name="recent" class="nav-item b fl w-50 tr b--black-70 hover-light-red pointer br bw1 ph4 pv1 mt3 mb2 light-red">
-          <span class="relative fancy-link">Recent</span>
+  <div class="ns:tw-float-left lg:tw-w-1/2 tw-w-full tw-pt-2 ns:tw-pb-5 tw-pb-4 lg:tw-pr-4" style="background-image: url(/assets/images/svg/topography.svg);">
+    <div class="tw-overflow-hidden tw-px-3 ns:tw-px-5">
+      <h2 class="ns:tw-text-5xl tw-text-4xl tw-text-center tw-max-w-3xl tw-leading-tight ns:tw-mt-4 tw-mt-3 tw-mb-4 tw-text-black/70 tw-font-serif tw-mx-auto">Trips</h2>
+      <hr class="tw-max-w-12 tw-p-0 tw-border-0 tw-border-t tw-border-2 tw-border-light-red tw-bg-light-red tw-mx-auto">
+      <div id="trips-nav" class="tw-max-w-3xl tw-mx-auto tw-flex tw-justify-center tw-mt-3 tw-mb-2 tw-divide-x-4 tw-divide-black/70 tw-text-black/70">
+        <div data-name="recent" class="nav-item tw-font-bold tw-text-center hover:tw-text-light-red tw-cursor-pointer tw-px-4 tw-py-1 tw-my-2 tw-text-light-red">
+          <span class="tw-relative fancy-link">Recent</span>
         </div>
-        <div data-name="popular" class="nav-item b fr w-50 tl b--black-70 hover-light-red pointer bl bw1 ph4 pv1 mt3 mb2">
-          <span class="relative fancy-link">Popular</span>
+        <div data-name="popular" class="nav-item tw-font-bold tw-text-center hover:tw-text-light-red tw-cursor-pointer tw-px-4 tw-py-1 tw-my-2">
+          <span class="tw-relative fancy-link">Popular</span>
         </div>
-        <div class="cb"></div>
       </div>
-      <section id="latest-trips" class="mw7 mt3 ph3-l ph2 center"></section>
+      <section id="latest-trips" class="tw-max-w-3xl tw-mt-3 lg:tw-px-3 tw-px-2 tw-mx-auto"></section>
     </div>
-    <div class="cf ph3 ph5-ns">
-      <h2 class="f1-ns f2 center lh-title tc mw7 mt3-ns mt2 mb3 black-70 athelas lh-title avenir">Tools</h2>
-      <hr class="mw3 p0 b0 bt bw1 b--light-red light-red bg-light-red">
-      <section id="tools" class="mw7 mt4-ns mt3 ph3-ns ph2 center">
-        <div class="mv4 shadow-5 mh2-ns mh0 pa3 ba bg-white b--light-gray br3" style="transform: translateZ(0);">
-          <a class="fl w-20 dn db-ns black-70 hover-light-red ph3 no-underline" href="/crags" rel="noopener">{% include svgs/crags.svg width='100' height='100' %}</a>
-          <div class="fr w-80-ns">
-            <a class="link fancy-link black-70 hover-light-red" href="/crags">
-              <span class="pv0-ns pv1 b f4-ns f5 lh-copy">Crag Weather</span>
+    <div class="tw-overflow-hidden tw-px-3 ns:tw-px-5 tw-mt-6">
+      <h2 class="ns:tw-text-5xl tw-text-4xl tw-text-center tw-max-w-3xl tw-leading-tight ns:tw-mt-4 tw-mt-3 tw-mb-4 tw-text-black/70 tw-font-serif tw-mx-auto">Tools</h2>
+      <hr class="tw-max-w-12 tw-p-0 tw-border-0 tw-border-t tw-border-2 tw-border-light-red tw-bg-light-red tw-mx-auto">
+      <section id="tools" class="tw-max-w-3xl ns:tw-mt-4 tw-mt-3 ns:tw-px-3 tw-px-2 tw-mx-auto">
+        <div class="tw-my-4 tw-shadow-lg ns:tw-mx-2 tw-mx-0 tw-p-3 tw-border tw-bg-white tw-border-light-gray tw-rounded-lg" style="transform: translateZ(0);">
+          <a class="tw-float-left tw-w-1/5 tw-hidden ns:tw-block tw-text-black/70 hover:tw-text-light-red tw-px-3 tw-no-underline" href="/crags" rel="noopener">{% include svgs/crags.svg width='100' height='100' %}</a>
+          <div class="tw-float-right ns:tw-w-4/5">
+            <a class="tw-text-black/70 hover:tw-text-light-red tw-no-underline" href="/crags">
+              <span class="tw-font-bold ns:tw-text-xl tw-text-lg tw-leading-tight">Crag Weather</span>
             </a>
-            <p class="lh-copy mt2 mb3 f5 mid-gray">Real-time, precipitation-focused reports of current, past, and future climbing weather for crags located in the United States, sourced from weather.gov.</p>
+            <p class="tw-leading-normal tw-mt-2 tw-mb-3 tw-text-base tw-text-mid-gray">Real-time, precipitation-focused reports of current, past, and future climbing weather for crags located in the United States, sourced from weather.gov.</p>
           </div>
-          <div class="cb"></div>
+          <div class="tw-clear-both"></div>
         </div>
-        <div class="mv4 shadow-5 mh2-ns mh0 pa3 ba bg-white b--light-gray br3" style="transform: translateZ(0);">
-          <a class="fl w-20 dn db-ns black-70 hover-light-red ph3 no-underline" href="/avy" rel="noopener">{% include svgs/layers.svg width='100' height='100' %}</a>
-          <div class="fr w-80-ns">
-            <a class="link fancy-link black-70 hover-light-red" href="/avy">
-              <span class="pv0-ns pv1 b f4-ns f5 lh-copy">Avalanche Maps</span>
+        <div class="tw-my-4 tw-shadow-lg ns:tw-mx-2 tw-mx-0 tw-p-3 tw-border tw-bg-white tw-border-light-gray tw-rounded-lg" style="transform: translateZ(0);">
+          <a class="tw-float-left tw-w-1/5 tw-hidden ns:tw-block tw-text-black/70 hover:tw-text-light-red tw-px-3 tw-no-underline" href="/avy" rel="noopener">{% include svgs/layers.svg width='100' height='100' %}</a>
+          <div class="tw-float-right ns:tw-w-4/5">
+            <a class="tw-text-black/70 hover:tw-text-light-red tw-no-underline" href="/avy">
+              <span class="tw-font-bold ns:tw-text-xl tw-text-lg tw-leading-tight">Avalanche Maps</span>
             </a>
-            <p class="lh-copy mt2 mb3 f5 mid-gray">Autogenerated DEM Shading rules for each advisory zone for quickly adding avalanche danger and problem layers in CalTopo.</p>
+            <p class="tw-leading-normal tw-mt-2 tw-mb-3 tw-text-base tw-text-mid-gray">Autogenerated DEM Shading rules for each advisory zone for quickly adding avalanche danger and problem layers in CalTopo.</p>
           </div>
-          <div class="cb"></div>
+          <div class="tw-clear-both"></div>
         </div>
-        <div class="mv4 shadow-5 mh2-ns mh0 pa3 ba bg-white b--light-gray br3" style="transform: translateZ(0);">
-          <a class="fl w-20 dn db-ns black-70 hover-light-red ph3 no-underline" href="/logbook" rel="noopener">{% include svgs/logbook.svg width='100' height='100' %}</a>
-          <div class="fr w-80-ns">
-            <a class="no-underline fancy-link black-70 hover-light-red" href="/logbook">
-              <span class="pv0-ns pv1 b f4-ns f5 lh-copy">Climbing Log Book</span>
+        <div class="tw-my-4 tw-shadow-lg ns:tw-mx-2 tw-mx-0 tw-p-3 tw-border tw-bg-white tw-border-light-gray tw-rounded-lg" style="transform: translateZ(0);">
+          <a class="tw-float-left tw-w-1/5 tw-hidden ns:tw-block tw-text-black/70 hover:tw-text-light-red tw-px-3 tw-no-underline" href="/logbook" rel="noopener">{% include svgs/logbook.svg width='100' height='100' %}</a>
+          <div class="tw-float-right ns:tw-w-4/5">
+            <a class="tw-text-black/70 hover:tw-text-light-red tw-no-underline" href="/logbook">
+              <span class="tw-font-bold ns:tw-text-xl tw-text-lg tw-leading-tight">Climbing Log Book</span>
             </a>
-            <p class="lh-copy mt2 mb3 f5 mid-gray">Generate a Route Pyramid based on your Mountain Project tick list.</p>
+            <p class="tw-leading-normal tw-mt-2 tw-mb-3 tw-text-base tw-text-mid-gray">Generate a Route Pyramid based on your Mountain Project tick list.</p>
           </div>
-          <div class="cb"></div>
+          <div class="tw-clear-both"></div>
         </div>
-        <div class="mv4 shadow-5 mh2-ns mh0 pa3 ba bg-white b--light-gray br3" style="transform: translateZ(0);">
-          <a class="fl w-20 dn db-ns black-70 hover-light-red ph3 no-underline" href="/trad" rel="noopener">{% include svgs/trad.svg width='100' height='100' %}</a>
-          <div class="fr w-80-ns">
-            <a class="no-underline fancy-link black-70 hover-light-red" href="/trad">
-              <span class="pv0-ns pv1 b f4-ns f5 lh-copy">Cam Comparison</span>
+        <div class="tw-my-4 tw-shadow-lg ns:tw-mx-2 tw-mx-0 tw-p-3 tw-border tw-bg-white tw-border-light-gray tw-rounded-lg" style="transform: translateZ(0);">
+          <a class="tw-float-left tw-w-1/5 tw-hidden ns:tw-block tw-text-black/70 hover:tw-text-light-red tw-px-3 tw-no-underline" href="/trad" rel="noopener">{% include svgs/trad.svg width='100' height='100' %}</a>
+          <div class="tw-float-right ns:tw-w-4/5">
+            <a class="tw-text-black/70 hover:tw-text-light-red tw-no-underline" href="/trad">
+              <span class="tw-font-bold ns:tw-text-xl tw-text-lg tw-leading-tight">Cam Comparison</span>
             </a>
-            <p class="lh-copy mt2 mb3 f5 mid-gray">Searching for new cams or piecing together a rack with a new climbing partner can feel like an overwhelming task at times, this comparison chart aims to make that easier.</p>
+            <p class="tw-leading-normal tw-mt-2 tw-mb-3 tw-text-base tw-text-mid-gray">Searching for new cams or piecing together a rack with a new climbing partner can feel like an overwhelming task at times, this comparison chart aims to make that easier.</p>
           </div>
-          <div class="cb"></div>
+          <div class="tw-clear-both"></div>
         </div>
-        <div class="mv4 shadow-5 mh2-ns mh0 pa3 ba bg-white b--light-gray br3" style="transform: translateZ(0);">
-          <a class="fl w-20 dn db-ns black-70 hover-light-red ph3 no-underline" href="/taylor" rel="noopener">{% include svgs/slackline.svg width='100' height='100' %}</a>
-          <div class="fr w-80-ns">
-            <a class="no-underline fancy-link black-70 hover-light-red" href="/taylor">
-              <span class="pv0-ns pv1 b f4-ns f5 lh-copy">Taylor Dock Tides</span>
+        <div class="tw-my-4 tw-shadow-lg ns:tw-mx-2 tw-mx-0 tw-p-3 tw-border tw-bg-white tw-border-light-gray tw-rounded-lg" style="transform: translateZ(0);">
+          <a class="tw-float-left tw-w-1/5 tw-hidden ns:tw-block tw-text-black/70 hover:tw-text-light-red tw-px-3 tw-no-underline" href="/taylor" rel="noopener">{% include svgs/slackline.svg width='100' height='100' %}</a>
+          <div class="tw-float-right ns:tw-w-4/5">
+            <a class="tw-text-black/70 hover:tw-text-light-red tw-no-underline" href="/taylor">
+              <span class="tw-font-bold ns:tw-text-xl tw-text-lg tw-leading-tight">Taylor Dock Tides</span>
             </a>
-            <p class="lh-copy mt2 mb3 f5 mid-gray">Slacklinking at Taylor Dock is best done at low tide. Here are the times during the next two weeks where the tide is low enough to stay dry. Data sourced from NOAA Tides & Currents.</p>
+            <p class="tw-leading-normal tw-mt-2 tw-mb-3 tw-text-base tw-text-mid-gray">Slacklinking at Taylor Dock is best done at low tide. Here are the times during the next two weeks where the tide is low enough to stay dry. Data sourced from NOAA Tides & Currents.</p>
           </div>
-          <div class="cb"></div>
+          <div class="tw-clear-both"></div>
         </div>
       </section>
     </div>

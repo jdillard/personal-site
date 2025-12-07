@@ -1,38 +1,38 @@
-<div id="sm-nav-container" class="z-5 absolute dn w-100 h-100">
-  <nav id="sm-nav-bg" class="w-100 h-100 bg-white">
-      <div id="closeNav" class="toggle tr db pa3 light-red" >
+<div id="sm-nav-container" class="tw-z-50 tw-absolute tw-hidden tw-w-full tw-h-full">
+  <nav id="sm-nav-bg" class="tw-w-full tw-h-full tw-bg-white">
+      <div id="closeNav" class="toggle tw-text-right tw-block tw-p-4 tw-text-light-red" >
         {% include svgs/close.svg width='25' height='25' %}
       </div>
-      <div class="f2 center ttu tracked b lh-title tc mw7 mv3 black-70 athelas">Menu</div>
-      <hr class="mw3 p0 mb3 b0 bt bw1 b--light-red light-red bg-light-red">
-      <a class="tc db pa3 link black-70 ttu tracked f3 b hover-light-red" href=/blog>Articles</a>
-      <a class="tc db pa3 link black-70 ttu tracked f3 b hover-light-red" href=/trips>Trips</a>
-      <a class="tc db pa3 link black-70 ttu tracked f3 b hover-light-red" href=/crags.html>Weather</a>
-      <a class="tc db pa3 link black-70 ttu tracked f3 b hover-light-red" href=/avy/index.html>Avy Maps</a>
-      <a class="tc db pa3 link black-70 ttu tracked f3 b hover-light-red" href=/about.html>About</a>
+      <div class="tw-text-4xl tw-mx-auto tw-uppercase tw-tracking-wide tw-font-bold tw-leading-tight tw-text-center tw-max-w-4xl tw-my-4 tw-text-black/70 tw-font-athelas">Menu</div>
+      <hr class="tw-max-w-xs tw-p-0 tw-mb-4 tw-border-0 tw-border-t tw-border-solid tw-border-light-red tw-text-light-red tw-bg-light-red">
+      <a class="tw-text-center tw-block tw-p-4 link tw-text-black/70 tw-uppercase tw-tracking-wide tw-text-2xl tw-font-bold hover:tw-text-light-red" href=/blog>Articles</a>
+      <a class="tw-text-center tw-block tw-p-4 link tw-text-black/70 tw-uppercase tw-tracking-wide tw-text-2xl tw-font-bold hover:tw-text-light-red" href=/trips>Trips</a>
+      <a class="tw-text-center tw-block tw-p-4 link tw-text-black/70 tw-uppercase tw-tracking-wide tw-text-2xl tw-font-bold hover:tw-text-light-red" href=/crags.html>Weather</a>
+      <a class="tw-text-center tw-block tw-p-4 link tw-text-black/70 tw-uppercase tw-tracking-wide tw-text-2xl tw-font-bold hover:tw-text-light-red" href=/avy/index.html>Avy Maps</a>
+      <a class="tw-text-center tw-block tw-p-4 link tw-text-black/70 tw-uppercase tw-tracking-wide tw-text-2xl tw-font-bold hover:tw-text-light-red" href=/about.html>About</a>
   </nav>
 </div>
 
-<div class="flex relative overflow-hidden top-nav {% if page.cover %}h6-ns h3 nav-cover"{% else %}h3"{% endif %}">
-    <div class="w-100 flex h3 z-4 justify-between bg-white">
-      <nav class="flex">
-        <a id="logo" class="link flex items-center justify-center self-stretch tc w5 f5-ns f6 baskerville tracked b black-90 no-underline" href="/">
+<div class="tw-flex tw-relative tw-overflow-hidden top-nav {% if page.cover %}ns:tw-h-96 tw-h-16 nav-cover"{% else %}tw-h-16"{% endif %}">
+    <div class="tw-w-full tw-flex tw-h-16 tw-z-40 tw-justify-between tw-bg-white">
+      <nav class="tw-flex">
+        <a id="logo" class="link tw-flex tw-items-center tw-justify-center tw-self-stretch tw-text-center tw-w-64 ns:tw-text-base tw-text-sm tw-font-baskerville tw-tracking-widest tw-font-bold tw-text-black/90 tw-no-underline" href="/">
             Jared Dillard
         </a>
-        <a class="f6 link flex-ns dn items-center self-stretch mid-gray hover-bg-light-red hover-white ph3 bl br bw1 b--near-white" href="/about.html">about</a>
-        <a class="f6 link flex-ns dn items-center self-stretch mid-gray hover-bg-light-red hover-white ph3 br bw1 b--near-white" href="/blog">articles</a>
-        <a class="f6 link flex-ns dn items-center self-stretch mid-gray hover-bg-light-red hover-white ph3 br bw1 b--near-white" href="/trips">trips</a>
+        <a class="tw-text-sm link ns:tw-flex tw-hidden tw-items-center tw-self-stretch tw-text-mid-gray hover:tw-bg-light-red hover:tw-text-white tw-px-4 tw-border-0 tw-border-l tw-border-solid tw-border-near-white" href="/about.html">about</a>
+        <a class="tw-text-sm link ns:tw-flex tw-hidden tw-items-center tw-self-stretch tw-text-mid-gray hover:tw-bg-light-red hover:tw-text-white tw-px-4 tw-border-0 tw-border-l tw-border-solid tw-border-near-white" href="/blog">articles</a>
+        <a class="tw-text-sm link ns:tw-flex tw-hidden tw-items-center tw-self-stretch tw-text-mid-gray hover:tw-bg-light-red hover:tw-text-white tw-px-4 tw-border-y-0 tw-border-x tw-border-solid tw-border-near-white" href="/trips">trips</a>
       </nav>
-      <div class="flex-ns items-stretch dn">
-          <a class="f6 link flex items-center black-70 hover-bg-light-red hover-white ph3 bl bw1 b--near-white" href="/crags">{% include svgs/crags.svg width='40' height='40' %}</a>
-          <a class="f6 link flex items-center black-70 hover-bg-light-red hover-white ph3 bl bw1 b--near-white" href="/avy">{% include svgs/layers.svg width='30' height='30' %}</a>
+      <div class="ns:tw-flex tw-items-stretch tw-hidden">
+          <a class="tw-text-sm link tw-flex tw-items-center tw-text-black/70 hover:tw-bg-light-red hover:tw-text-white tw-px-4 tw-border-0 tw-border-l tw-border-solid tw-border-near-white" href="/crags">{% include svgs/crags.svg width='40' height='40' %}</a>
+          <a class="tw-text-sm link tw-flex tw-items-center tw-text-black/70 hover:tw-bg-light-red hover:tw-text-white tw-px-4 tw-border-0 tw-border-l tw-border-solid tw-border-near-white" href="/avy">{% include svgs/layers.svg width='30' height='30' %}</a>
       </div>
-      <div id="openNav" class="toggle dn-ns dtc w-75 v-mid tr pr3 pt3" >
+      <div id="openNav" class="toggle ns:tw-hidden tw-table-cell tw-w-3/4 tw-align-middle tw-text-right tw-pr-4 tw-pt-4" >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.42 26.18" style="width: 2rem;"><line x1="1" y1="1" x2="25.42" y2="1" style="fill:none;stroke:#424242;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/><line x1="1" y1="7.6" x2="25.42" y2="7.6" style="fill:none;stroke:#424242;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/><line x1="1" y1="14.19" x2="25.42" y2="14.19" style="fill:none;stroke:#424242;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/><path d="M3.62,26.13,2,21H2q.09,1.58.09,2.11v3.07H.83v-6.6h1.9l1.56,5h0l1.66-5h1.9v6.6H6.58V23q0-.22,0-.51T6.65,21h0L4.9,26.13Z" transform="translate(-0.47 -0.04)" style="fill:#424242"/><path d="M13,26.13H9.17v-6.6H13v1.15h-2.4v1.45H12.8v1.15H10.57V25H13Z" transform="translate(-0.47 -0.04)" style="fill:#424242"/><path d="M20,26.13H18.24l-2.87-5h0q.09,1.32.09,1.89v3.1H14.16v-6.6h1.76l2.86,4.94h0q-.07-1.29-.07-1.82V19.54H20Z" transform="translate(-0.47 -0.04)" style="fill:#424242"/><path d="M26.86,19.54v4.27a2.46,2.46,0,0,1-.33,1.28,2.13,2.13,0,0,1-.95.84,3.38,3.38,0,0,1-1.46.29,2.8,2.8,0,0,1-2-.65,2.31,2.31,0,0,1-.7-1.78V19.54h1.39v4a1.69,1.69,0,0,0,.31,1.12,1.27,1.27,0,0,0,1,.36,1.25,1.25,0,0,0,1-.36,1.7,1.7,0,0,0,.31-1.13v-4Z" transform="translate(-0.47 -0.04)" style="fill:#424242"/></svg>
       </div>
     </div>
   {% if page.cover %}
-    <div class="hero__image clip-svg cover bg-center absolute top-0 left-0 right-0 bottom-0 {{ page.cover }}-cover" id="ParallaxImage"></div>
+    <div class="hero__image clip-svg tw-bg-cover tw-bg-center tw-absolute tw-top-0 tw-left-0 tw-right-0 tw-bottom-0 {{ page.cover }}-cover" id="ParallaxImage"></div>
   {% else %}
     <div id="ParallaxImage"></div>
   {% endif %}

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fix for divide utilities when Preflight is disabled */
+.tw-divide-x > :not([hidden]) ~ :not([hidden]),
+.tw-divide-x-2 > :not([hidden]) ~ :not([hidden]),
+.tw-divide-x-4 > :not([hidden]) ~ :not([hidden]) {
+  border-left-style: solid;
+}
+.tw-divide-y > :not([hidden]) ~ :not([hidden]),
+.tw-divide-y-2 > :not([hidden]) ~ :not([hidden]),
+.tw-divide-y-4 > :not([hidden]) ~ :not([hidden]) {
+  border-top-style: solid;
+}
