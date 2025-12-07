@@ -93,7 +93,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="MWAC-2355-report" class="avy-zone" data-id="MWAC-2355" data-color="#939598" data-min="0"  data-max="20310" data-btl="3000" data-atl="5100" data-published="Tuesday, November 11, 2025 8:25AM">
+        <div id="MWAC-2355-report" class="avy-zone" data-id="MWAC-2355" data-color="#939598" data-min="0"  data-max="20310" data-btl="3000" data-atl="5100" data-published="Thursday, December 04, 2025 6:49AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://mountwashingtonavalanchecenter.org/forecasts/#/presidential-range "><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://mountwashingtonavalanchecenter.org/forecasts/#/presidential-range ">MWAC</a> for more information.</div>
