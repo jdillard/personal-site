@@ -86,8 +86,6 @@ After a "quick" ride on _Magic Chair_ **[20]**, another slow fixed lift for begi
 Bringing us to the final lift, the _Blackcomb Gondola_ **[21]**.
 We opted to stop for a victory hot chocolate at the top versus getting more bonus laps in for extra "style points". We hit over 36k feet, but 40k and more is possible for those seeking a vert challenge as well.
 
-<div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="10967819878" data-style="standard"></div><script src="https://strava-embeds.com/embed.js"></script>
-
 ## Conclusion
 
 All in all, it was the perfect activity for a weekday and we likely would have had to ride groomers most of the day reguardless.
