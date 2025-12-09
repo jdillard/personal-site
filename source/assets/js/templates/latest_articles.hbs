@@ -1,27 +1,13 @@
 <div class="entry">
     {{#each this}}
     <div class="mb4 shadow-5 mh2-ns mh0 pa3 ba bg-white b--light-gray br3">
-      <a class="f3 b flex-ns items-center no-underline black-70 hover-light-red" href="{{this.url}}">
+      <a class="f4 b flex-ns items-center no-underline black-70 hover-light-red" href="{{this.url}}">
         <span class="pv0-ns pv1 lh-copy db">{{this.title}}</span>
       </a>
-      <section class="tj f6 fw3 pv1 pl3 pr4 mb2 lh-copy mid-gray">
-        <p>{{this.summary}}...</p>
-      </section>
-      <footer class="gray f7 fw1-ns fw4 flex items-center justify-between">
-           <div>
-             <time class="mr2" datetime="2022-04-16">{{this.date_published}}</time>
-               {{#each this.categories}}
-               <a class="f7 link dim br2 ph2 mb2 dib white bg-silver" href="/blog/archive.html#{{this}}">{{this}}</a>
-               {{/each}}
-           </div>
-           <!--show Read More link/button on parent hover-->
-           <a class="br-pill b light-red hover-white hover-bg-light-red no-underline ba grow pv1 ph3 dib inline-flex items-center child mr3" href="{{this.url}}">
-               Read More
-               <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
-                   <title>chevronRight icon</title>
-                   <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
-               </svg>
-           </a>
+      <footer class="gray f7 fw1-ns fw4">
+           {{#each this.categories}}
+           <a class="f7 link dim br2 ph2 mb2 dib white bg-silver" href="/blog/archive.html#{{this}}">{{this}}</a>
+           {{/each}}
        </footer>
     </div>
     {{/each}}

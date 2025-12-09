@@ -8,7 +8,7 @@ import { toggleActiveNav, setupNavListeners } from './utils/nav.js';
 const template = require('../templates/latest_articles.hbs');
 
 const ARTICLES_URL = '/assets/json/articles.json';
-const DISPLAY_COUNT = 3;
+const DISPLAY_COUNT = 6;
 const SUMMARY_WORD_LIMIT = 40;
 
 /**
