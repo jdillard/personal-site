@@ -1,17 +1,17 @@
 <div class="entry">
     {{#each this}}
-    <div class="mb4 shadow-5 mh2-ns mh0 pa3 ba bg-white b--light-gray br3">
-      <a class="f4 b flex-ns items-center no-underline black-70 hover-light-red" href="{{this.url}}">
-        <span class="pv0-ns pv1 lh-copy db">{{this.title}}</span>
+    <div class="tw-mb-4 tw-shadow-[4px_4px_8px_0_rgba(0,0,0,0.2)] ns:tw-mx-2 tw-mx-0 tw-p-3 tw-border tw-border-l-4 tw-border-solid tw-bg-white tw-border-light-gray hover:tw-border-l-light-red tw-rounded-lg">
+      <a class="ns:tw-text-xl tw-text-lg tw-font-bold ns:tw-flex tw-items-center tw-no-underline tw-text-black/70 hover:tw-text-light-red" href="{{this.url}}">
+        <span class="ns:tw-py-0 tw-py-1 tw-leading-normal tw-block">{{this.title}}</span>
       </a>
-      <footer class="gray f7 fw1-ns fw4">
+      <footer class="tw-text-gray-500 tw-text-xs ns:tw-font-thin tw-font-normal">
            {{#each this.categories}}
-           <a class="f7 link dim br2 ph2 mb2 dib white bg-silver" href="/blog/archive.html#{{this}}">{{this}}</a>
+           <a class="tw-text-xs tw-no-underline hover:tw-opacity-50 tw-rounded tw-px-2 tw-py-0.5 tw-mb-2 tw-inline-block tw-text-white tw-bg-silver" href="/blog/archive.html#{{this}}">{{this}}</a>
            {{/each}}
        </footer>
     </div>
     {{/each}}
 </div>
-<div class="pa3 tc ba b--light-gray black-70 bg-near-white shadow-5 mb3">
-  <a href="/blog" class="b mid-gray">Read More Articles</a>
+<div class="tw-p-3 tw-text-center tw-border tw-border-light-gray tw-text-black/70 tw-bg-near-white tw-shadow-lg tw-mb-3">
+  <a href="/blog" class="tw-font-bold tw-text-mid-gray">Read More Articles</a>
 </div>
