@@ -1,41 +1,13 @@
-<div class="entry">
+<div class="tw-grid tw-grid-cols-3 tw-gap-y-6 tw-justify-items-center tw-mt-8">
     {{#each this}}
-    <article class="shadow-5 bg-white bl bw2 b--moon-gray hover-b--light-red pv3 mb4 br3">
-        <div class="ph3 ph0-l flex flex-column flex-row-ns">
-            <div class="pr3-ns db-ns grow dn mb4 mb0-ns w-100 w-30-ns" style="margin-left: -20px;">
-                <a href="{{this.url}}">
-                    <img src="{{this.image}}" class="db shadow-4 br3" alt="{{ this.title }}" loading="lazy">
-                </a>
-            </div>
-            <div class="w-100 w-70-ns pl2-ns">
-                <a class="f3 b flex-ns items-center no-underline black-70 hover-light-red" href="{{this.url}}">
-                    <span class="pv0-ns pv1 db lh-copy">{{this.title}}</span>
-                </a>
-                <section class="tj f6 fw3 mb3 lh-copy mid-gray">
-                    <p>{{this.summary}}</p>
-                </section>
-                <footer class="gray f7 fw1-ns fw4 flex items-center justify-between">
-                    <div>
-                        <time class="mr2" datetime="2022-04-16">{{this.date_published}}</time>
-                        {{#each this.categories}}
-                        <a class="f7 link dim br2 ph2 mb2 dib white bg-silver" href="/trips/archive.html#{{this}}">{{this}}</a>
-                        {{/each}}
-                    </div>
-                    <!--show Read More link/button on parent hover-->
-                    <a class="br-pill b light-red hover-white hover-bg-light-red no-underline ba grow pv1 ph3 dib inline-flex items-center child mr3" href="{{this.url}}">
-                        Read More
-                        <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
-                            <title>chevronRight icon</title>
-                            <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
-                        </svg>
-                    </a>
-                </footer>
-            </div>
+    <a href="{{this.url}}" class="tw-relative tw-inline-block tw-overflow-hidden tw-rounded-lg tw-shadow-[4px_4px_8px_0_rgba(0,0,0,0.2)] tw-group">
+        <img src="{{this.image}}" class="tw-block tw-p-1 tw-border tw-border-solid tw-border-black/10 tw-transition-all tw-duration-300 group-hover:tw-brightness-50" alt="{{ this.title }}" loading="lazy">
+        <div class="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-p-2 tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-duration-300">
+            <span class="tw-text-white tw-text-center tw-font-bold tw-text-md tw-leading-tight tw-px-2">{{this.title}}</span>
         </div>
-        </a>
-    </article>
+    </a>
     {{/each}}
 </div>
-<div class="pa3 tc ba b--light-gray black-70 bg-near-white shadow-5 mb3">
-  <a href="/trips" class="b mid-gray">Read More Trip Reports</a>
+<div class="tw-py-5 tw-px-3 tw-text-center tw-border tw-border-light-gray tw-text-black/70 tw-bg-near-white tw-shadow-[4px_4px_8px_0_rgba(0,0,0,0.2)] tw-mt-6 tw-mb-3 ns:tw-mx-2 tw-mx-0">
+  <a href="/trips" class="tw-font-bold tw-text-mid-gray">Read More Trip Reports</a>
 </div>

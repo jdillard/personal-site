@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Versioned Documentation at Scale: A Flexible Docs-as-Code Deploy Strategy"
+title: "Versioned Documentation at Scale: A Flexible Docs-as-Code Strategy"
 date: 2025-05-11
 published: true
 popularity: 17
