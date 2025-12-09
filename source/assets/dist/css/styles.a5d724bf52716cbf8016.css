@@ -363,9 +363,6 @@ select {
 .tw-mr-8 {
   margin-right: 2rem;
 }
-.tw-mt-12 {
-  margin-top: 3rem;
-}
 .tw-mt-2 {
   margin-top: 0.5rem;
 }
@@ -650,10 +647,6 @@ select {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.tw-py-0\.5 {
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
-}
 .tw-py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -669,6 +662,10 @@ select {
 .tw-py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.tw-py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .tw-pb-3 {
   padding-bottom: 0.75rem;
@@ -876,9 +873,6 @@ select {
 .hover\:tw-text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-.hover\:tw-opacity-50:hover {
-  opacity: 0.5;
 }
 .tw-group:hover .group-hover\:tw-opacity-100 {
   opacity: 1;
