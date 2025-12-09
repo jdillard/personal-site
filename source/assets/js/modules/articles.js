@@ -3,26 +3,22 @@
  */
 import axios from 'axios';
 import moment from 'moment';
-import { toggleActiveNav, setupNavListeners } from './utils/nav.js';
 
 const template = require('../templates/latest_articles.hbs');
 
 const ARTICLES_URL = '/assets/json/articles.json';
-const DISPLAY_COUNT = 6;
+const DISPLAY_COUNT = 5;
 const SUMMARY_WORD_LIMIT = 40;
 
 /**
- * Display articles sorted by the specified criteria
+ * Display articles sorted by most recent
  * @param {Object} articles - Articles data object
- * @param {string} sortBy - Sort type: 'recent' or 'popular'
  */
-function displayArticles(articles, sortBy) {
+function displayArticles(articles) {
   const archive = document.getElementById('latest-articles');
 
   const sorted = [...articles.data].sort((a, b) =>
-    sortBy === 'recent'
-      ? new Date(b.date_published) - new Date(a.date_published)
-      : b.popularity - a.popularity
+    new Date(b.date_published) - new Date(a.date_published)
   );
 
   sorted.forEach(article => {
@@ -34,24 +30,10 @@ function displayArticles(articles, sortBy) {
 }
 
 /**
- * Load and display articles
- * @param {HTMLCollection} navItems - Navigation items for state updates
- * @param {string} type - 'recent' or 'popular'
- */
-function loadArticles(navItems, type) {
-  toggleActiveNav(navItems, type);
-
-  axios.get(ARTICLES_URL)
-    .then(response => displayArticles(response.data, type))
-    .catch(error => console.log(error));
-}
-
-/**
  * Initialize the articles section
  */
 export function init() {
-  const navItems = document.getElementById('articles-nav').getElementsByClassName('nav-item');
-
-  loadArticles(navItems, 'recent');
-  setupNavListeners(navItems, type => loadArticles(navItems, type));
+  axios.get(ARTICLES_URL)
+    .then(response => displayArticles(response.data))
+    .catch(error => console.log(error));
 }
