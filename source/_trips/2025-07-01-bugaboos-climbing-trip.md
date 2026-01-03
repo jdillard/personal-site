@@ -1,6 +1,6 @@
 ---
 layout: trip
-title: 'Bugaboos Climbing Trip'
+title: 'Climbing in the Bugaboos'
 date: 2025-07-01
 state: Washington
 area: Mountain Loop Highway
@@ -17,41 +17,37 @@ image:
 cover: bugaboos
 ---
 
-We drove in from the West and stayed at some cabins in Golden, which seemed to have more mosquitoes inside than out.
+We drove in from the West, arriving late at some cabins in Golden for the night, which seemed to have more mosquitoes inside than out.
 
 The road conditions were manageable, but it seems like they have to do routine maintaince as someone was working on a section. We dragged the trailer hitch a few times. Windows of peaks poking through.
 
-![Parking Lot](/assets/images/trips/2025-07-01-bugaboos/parking-lot.jpg "Parking Lot"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Approaching Wertz Basin, just after the snow line started.</i></small>
+![Parking Lot](/assets/images/trips/2025-07-01-bugaboos/parking-lot.jpg "Parking Lot"){: .shadow-5.oversized}{: loading="lazy"} <small><i>All loaded up and ready to hit the [trail](https://caltopo.com/m/KF4GF9V).</i></small>
 
-We put the wire on the car, zip tying pool noodles along the top to prevent scratching in the newer car. Some people opted to not use wire, but the majority did.
+We wrapped the car in chicken wire, zip tying pool noodles along the top to prevent scratches on the new car. Most people wrapped their cars, but some people opted to not use wire and seemed to make it out fine.
 
-## Approach
-
-- https://caltopo.com/m/KF4GF9V
+## The Approach
 
 The packs were heavy from the start, but the true weight wouldn't be realized until the first steep section, only a small taste of the overall elevation left to gain.
 
 It ended up being a warm day, with full sun for long sections of time.
 
-![Approach](/assets/images/trips/2025-07-01-bugaboos/approach.jpg "Approach"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Approaching Wertz Basin, just after the snow line started.</i></small>
+![Approach](/assets/images/trips/2025-07-01-bugaboos/approach.jpg "Approach"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Breaking out into the open fields with views of Hounds Tooth on the left and Snowpatch Spire on the right.</i></small>
  
 The views were breathtaking, but also a good excuse to catch our breathe as we took in the sights and tried to identify peaks and routes to get our bearings.
 
-## Camp
+## Arriving at Camp
 
 We stopped by the hut to rest before the final push up to camp, getting to meet mostly hikers and people just wanting to stay in the hut.
  
 At Applebee camp there were hangers to keep the packs up and away from the small critters. They filled up fast, so it was a bit of a learning curve on when it was best to have your pack up and when to take it down to arrange gear.
 
-![Applebee Camp](/assets/images/trips/2025-07-01-bugaboos/applebee-camp.jpg "Applebee Camp"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Approaching Wertz Basin, just after the snow line started.</i></small>
+![Applebee Camp](/assets/images/trips/2025-07-01-bugaboos/applebee-camp.jpg "Applebee Camp"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Settling down after setting up camp and discussing the next day's objective.</i></small>
 
 The toilet was surprisingly nice, with one of the best views I've ever had. If only there wasn't a stream of melting snow you had to stand by while waiting in line to pee.
 
-## Lion's Way
+## Climbing Lion's Way
 
-- https://www.mountainproject.com/route/105902686/lions-way
-
-We had talk to some people that tried Lion's Way the day before and got off route into some nasty sounding kitty litter, but luckily they gave us some tips to find the start and at least avoid what they did.
+We had talk to some people that tried [Lion's Way](https://www.mountainproject.com/route/105902686/lions-way) the day before and got off route into some nasty sounding kitty litter, but luckily they gave us some tips to find the start and at least avoid what they did.
 
 We hiked around the lake, taking in the views, getting to the start fairly easily with the beta we got. I took the first two pitches, and after a little faffing back an forth trying to decipher the topo, I finally committed to the linking the second pitch. It ended up using all the rope to get to where i could set up an anchor so we had to simul a little, but it wasn't really an issue.
 
@@ -75,25 +71,23 @@ We arrived back at camp just in time for the wind to kick up, so we scurried to 
 
 We watched lightning in the distance and it didn't take long for hail to start falling. I was so worn out I slept through some of it.
 
-## Pigeon Spire
-
-- https://www.mountainproject.com/route/105869393/west-ridge
+## West Ridge of Pigeon Spire
 
 We started a little later then normal to give some time for the morning light to soften the col. It looked intemidating from a distance, but wasn't bad.
 
-The weather wasn't great this day either, with high winds and cold temps. We pushed through and made it to the start of the West Ridge, getting a break from the wind while we geared up.
+The weather wasn't great this day either, with high winds and cold temps. We pushed through and made it to the start of the [West Ridge](https://www.mountainproject.com/route/105869393/west-ridge), getting a break from the wind while we geared up.
 
 We attempted to simul climb as much as we could, but made slower times than expected. We made it to the first sub peak and discussed if we should go further considering the weather was only getting worse.
 
-![Pigeon Spire](/assets/images/trips/2025-07-01-bugaboos/pigeon-west-ridge.jpg "Pigeon Spire"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Approaching Wertz Basin, just after the snow line started.</i></small>
+![Pigeon Spire](/assets/images/trips/2025-07-01-bugaboos/pigeon-west-ridge.jpg "Pigeon Spire"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Two climbers that quickly soloed to the summit of Pigeon Spire.</i></small>
 
 We decided to call it and head back down, knowing the chances of being benighted were pretty high given our current speed.
 
 ## Decent
 
-- https://www.mountainproject.com/route/112840439/applebee-crack
+For the last day we packed up and decided to hit up [Applebee Crack](https://www.mountainproject.com/route/112840439/applebee-crack) on the way out as a little consolation prize. It looks burlier than it actually is and was a fun last climb.
 
-For the last day we packed up and decided to hit up Applebee Crack on the way out as a little consolation prize. It looks burlier than it actually is and was a fun last climb.
+![Applebee Crack](/assets/images/trips/2025-07-01-bugaboos/applebee-crack.jpg "Applebee Crack"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Finishing up on Applebee Crack before heading back down from camp.</i></small>
 
 Since we decided to leave early due to the weather window our packs didn't get much lighter.
 
