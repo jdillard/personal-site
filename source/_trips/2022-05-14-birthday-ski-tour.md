@@ -78,7 +78,7 @@ an alternate saddle that was left of Copper col.
 On the way we saw two guys going for the couloir over Copper Pass, inspiration
 for next season.
 
-![Looking out from the saddle below Pica Peak](/assets/images/trips/birthday-tour-second-col.jpg "Looking out from the saddle below Pica Peak"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Looking at Kangaroo from the saddle below Pica Peak.</i></small>
+![Looking out from the saddle below Pica Peak](/assets/images/trips/birthday-tour-second-col.jpg "Looking out from the saddle below Pica Peak"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Looking at [Big Kangaroo](/trips/big-kangaroo-ski-tour) from the saddle below Pica Peak.</i></small>
 
 The views of Kangaroo and Wallaby from the top of the saddle were amazing,
 providing an excellent view of future missions.
