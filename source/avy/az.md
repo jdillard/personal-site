@@ -93,7 +93,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="KPAC-2911-report" class="avy-zone" data-id="KPAC-2911" data-color="#939598" data-min="0"  data-max="20310" data-btl="9700" data-atl="11500" data-published="Friday, January 02, 2026 7:27AM">
+        <div id="KPAC-2911-report" class="avy-zone" data-id="KPAC-2911" data-color="#939598" data-min="0"  data-max="20310" data-btl="9700" data-atl="11500" data-published="Friday, January 09, 2026 7:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://kachinapeaks.org/Forecast/#/san-francisco-peaks-%2F-kachina-peaks-wilderness"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://kachinapeaks.org/Forecast/#/san-francisco-peaks-%2F-kachina-peaks-wilderness">KPAC</a> for more information.</div>
