@@ -44,7 +44,7 @@ This was more apparent above tree line where wind transport had occurred.
 ![Liberty Bell Group](/assets/images/trips/2025-10-30-cutthroat/liberty-bell-group.jpg "Liberty Bell Group"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Looking back at the Liberty Group from near the top of the shoulder, [Big Kangaroo](/trips/big-kangaroo-ski-tour) to the left and the start of [Birthday Tour](/trips/birthday-ski-tour) to the right.</i></small>
 
 We reached to top before where the cliff band started below just as another group caught up to us.
-They were clearly better skiers than us as they all had bushy mustashes.
+They were clearly better skiers than us as they all had bushy mustaches.
 
 We discussed what are plans were for the descent and while we decided to go down the same way we came up for familiarity, they decided to take the open run down the other side of the shoulder, a better run but with an unclear exit.
 
@@ -59,6 +59,6 @@ Making it all the way back across the creek before transitioning again.
 Since it was out of season for Washington Pass, it seemed nothing on the East side was open, some places shut down early since it was so sleepy.
 Something we didn't really plan for.
 
-We stopped at the [Mazama Public House](https://oldschoolhousebrewery.com/visit/mazama-public-house/) and ran into the other skiiers that caught up to us and shared stories.
+We stopped at the [Mazama Public House](https://oldschoolhousebrewery.com/visit/mazama-public-house/) and ran into the other skiers that caught up to us and shared stories.
 It sounded like the way they went involved a lot more rocky navigation, so we were happy we went the way we did.
- 
+
