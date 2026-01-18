@@ -86,6 +86,8 @@ After a "quick" ride on _Magic Chair_ **[20]**, another slow fixed lift for begi
 Bringing us to the final lift, the _Blackcomb Gondola_ **[21]**.
 We opted to stop for a victory hot chocolate at the top versus getting more bonus laps in for extra "style points". We hit over 36k feet, but 40k and more is possible for those seeking a vert challenge as well.
 
+![Whistler Blackcomb in a Day](/assets/images/trips/wbiad.png "Whistler Blackcomb in a Day"){: .shadow-5.oversized}{: loading="lazy"} <small><i>What our track looked like doing Whistler Blackcomb in a Day.</i></small>
+
 ## Conclusion
 
 All in all, it was the perfect activity for a weekday and we likely would have had to ride groomers most of the day reguardless.
