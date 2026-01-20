@@ -84,7 +84,7 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="KPAC-2911" selected="">San Francisco Peaks / Kachina Peaks Wilderness</option>
+            <option value="KPAC-2990" selected="">San Francisco Peaks / Kachina Peaks Wilderness</option>
             
         </select>
     </div>
@@ -93,7 +93,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="KPAC-2911-report" class="avy-zone" data-id="KPAC-2911" data-color="#939598" data-min="0"  data-max="20310" data-btl="9700" data-atl="11500" data-published="Friday, January 16, 2026 7:00AM">
+        <div id="KPAC-2990-report" class="avy-zone" data-id="KPAC-2990" data-color="#939598" data-min="0"  data-max="20310" data-btl="9700" data-atl="11500" data-published="Friday, January 16, 2026 7:00AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://kachinapeaks.org/Forecast/#/san-francisco-peaks-%2F-kachina-peaks-wilderness"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://kachinapeaks.org/Forecast/#/san-francisco-peaks-%2F-kachina-peaks-wilderness">KPAC</a> for more information.</div>
@@ -108,8 +108,8 @@ css_includes:
         <h3 class="tc bb b--moon-gray">Zone</h3>
         <div style="height: 300px;" id="map"></div>
         
-        <div id="KPAC-2911-shape" data-geojson="/assets/json/avalanche-zones/KPAC-2911.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/KPAC-2911.geojson" download="">Download GeoJSON</a></div>
+        <div id="KPAC-2990-shape" data-geojson="/assets/json/avalanche-zones/KPAC-2990.geojson" class="avy-zone">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/KPAC-2990.geojson" download="">Download GeoJSON</a></div>
         </div>
         
     </div>
