@@ -14,7 +14,7 @@ cover: false
             <img src="{{ post.image.path }}" class="tw-block tw-shadow-lg tw-rounded-lg" alt="{{ post.title }}" loading="lazy">
         </a>
     </div>
-    <div class="tw-float-right ns:tw-w-4/5">
+    <div class="tw-float-right ns:tw-w-4/5 tw-px-3 ns:tw-px-0">
         <header>
             <h2 class="ns:tw-text-3xl tw-text-xl tw-leading-tight tw-mb-3 tw-mt-2 tw-font-sans"><a class="tw-text-black/70 hover:tw-text-light-red tw-no-underline" href="{{ post.url }}">{{ post.title }}</a></h2>
         </header>
@@ -27,7 +27,7 @@ cover: false
                     {{ post.date | date: "%B %d, %Y" }}
                 </time>
                 {% for category in post.categories %}
-                <a class="link dim tw-text-xs tw-rounded tw-px-2 tw-mb-2 tw-inline-block tw-text-white tw-bg-silver" href="/trips/archive.html#{{ category }}">{{ category }}</a>
+                <a class="link dim tw-text-xs tw-rounded tw-px-2 tw-mb-2 tw-hidden ns:tw-inline-block tw-text-white tw-bg-silver" href="/trips/archive.html#{{ category }}">{{ category }}</a>
                 {% endfor %}
             </div>
             <!--show Read More link/button on parent hover-->
