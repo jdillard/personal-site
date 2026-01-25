@@ -96,18 +96,8 @@ We opted to stop for a victory hot chocolate at the top versus getting more bonu
   <div id="gpx-map" data-track="/assets/gpx/wbiad.gpx"
        class="tw-w-full tw-rounded-lg tw-shadow-lg" style="height: 450px;"></div>
   <div id="gpx-slider-container" class="tw-mt-4 tw-px-4 tw-max-w-xl tw-mx-auto">
-    <div class="tw-flex tw-justify-between tw-text-sm tw-mb-2" style="color: #777;">
-      <span id="distance-current">0 km</span>
-      <span id="distance-total">-- km</span>
-    </div>
     <input type="range" id="gpx-distance-slider" class="tw-w-full tw-cursor-pointer"
            min="0" max="100" value="100" step="0.1" disabled>
-    <div class="tw-text-center tw-mt-3">
-      <button id="gpx-animate-btn" class="tw-px-4 tw-py-2 tw-rounded tw-text-sm tw-cursor-pointer"
-              style="background: #e7040f; color: white; border: none;" disabled>
-        Animate Track
-      </button>
-    </div>
   </div>
 </div>
 <small><i>Interactive map of our track. Use the slider to explore the route progressively.</i></small>

@@ -46,13 +46,6 @@
 
   // UI elements
   const slider = document.getElementById('gpx-distance-slider');
-  const distanceCurrent = document.getElementById('distance-current');
-  const distanceTotal = document.getElementById('distance-total');
-  const animateBtn = document.getElementById('gpx-animate-btn');
-
-  // Animation state
-  let animationId = null;
-  let isAnimating = false;
 
   /**
    * Calculate distance between two points using Haversine formula
@@ -138,10 +131,6 @@
       const lastPoint = points[points.length - 1];
       endMarker.setLatLng([lastPoint.lat, lastPoint.lng]);
     }
-
-    // Update distance display
-    const km = (distanceMeters / 1000).toFixed(1);
-    distanceCurrent.textContent = km + ' km';
   }
 
   /**
@@ -151,64 +140,6 @@
     const percent = parseFloat(slider.value);
     const distanceMeters = (percent / 100) * totalDistance;
     updateTrack(distanceMeters);
-  }
-
-  /**
-   * Animate the track from start to finish
-   */
-  function animateTrack() {
-    if (isAnimating) {
-      stopAnimation();
-      return;
-    }
-
-    isAnimating = true;
-    animateBtn.textContent = 'Stop';
-
-    const duration = 15000; // 15 seconds
-    const startTime = performance.now();
-    const startValue = 0;
-    const endValue = 100;
-
-    // Reset to start
-    slider.value = startValue;
-    updateTrack(0);
-
-    function step(currentTime) {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-
-      // Ease-in-out curve
-      const eased = progress < 0.5
-        ? 2 * progress * progress
-        : 1 - Math.pow(-2 * progress + 2, 2) / 2;
-
-      const value = startValue + (endValue - startValue) * eased;
-      slider.value = value;
-
-      const distanceMeters = (value / 100) * totalDistance;
-      updateTrack(distanceMeters);
-
-      if (progress < 1) {
-        animationId = requestAnimationFrame(step);
-      } else {
-        stopAnimation();
-      }
-    }
-
-    animationId = requestAnimationFrame(step);
-  }
-
-  /**
-   * Stop the animation
-   */
-  function stopAnimation() {
-    if (animationId) {
-      cancelAnimationFrame(animationId);
-      animationId = null;
-    }
-    isAnimating = false;
-    animateBtn.textContent = 'Animate Track';
   }
 
   // Custom marker icons
@@ -272,10 +203,6 @@
     cumulativeDistances = result.distances;
     totalDistance = result.total;
 
-    // Update total distance display
-    const totalKm = (totalDistance / 1000).toFixed(1);
-    distanceTotal.textContent = totalKm + ' km';
-
     // Create ghost track (full track, faded)
     ghostTrack = L.polyline(trackCoords, {
       color: '#666666',
@@ -308,15 +235,10 @@
 
     // Set slider to 100% (full track visible)
     slider.value = 100;
-    distanceCurrent.textContent = totalKm + ' km';
 
-    // Enable slider and button
+    // Enable slider
     slider.disabled = false;
-    animateBtn.disabled = false;
-
-    // Attach event listeners
     slider.addEventListener('input', onSliderInput);
-    animateBtn.addEventListener('click', animateTrack);
 
   }).on('error', function (e) {
     console.error('GPX map: Failed to load GPX file', e);
