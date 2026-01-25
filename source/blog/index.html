@@ -22,7 +22,7 @@ cover: false
             {{ post.date | date: "%B %d, %Y" }}
             </time>
             {% for category in post.categories %}
-            <a class="link dim tw-text-xs tw-rounded tw-px-2 tw-mb-2 tw-inline-block tw-text-white tw-bg-silver" href="/blog/archive.html#{{ category }}">{{ category }}</a>
+            <a class="link dim tw-text-xs tw-rounded tw-px-2 tw-mb-2 tw-hidden ns:tw-inline-block tw-text-white tw-bg-silver" href="/blog/archive.html#{{ category }}">{{ category }}</a>
             {% endfor %}
         </div>
         <!--show Read More link/button on parent hover-->
