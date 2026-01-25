@@ -111,7 +111,7 @@
     width: 152%;
     max-width: none;
     margin: 0 -26%;
-    display: inline;
+    display: block;
 }
 
 .post-content .video.oversized {
@@ -447,6 +447,7 @@ header.post-cover {
     }
     .post-content img.oversized {
         width: 122%;
+        margin: 0 -11%;
     }
     .post-content div.highlighter-rouge {
         margin: 1.75em -3em 1.75em -3em;
