@@ -56,6 +56,7 @@ module.exports = {
     taylor: "./source/assets/js/taylor.js",
     trad: "./source/assets/js/trad.js",
     trip: "./source/assets/js/trip.js",
+    gpxMap: "./source/assets/js/gpx-map.js",
     tripArchive: "./source/assets/js/trip-archive.js",
     weather: "./source/assets/js/weather.js",
     tailwind: "./source/assets/css/tailwind.css"
