@@ -327,92 +327,140 @@ header.post-cover {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
+.hero__image {
+    background-color: #d1d5db;
+}
+
 .cutthroat-cover {
-    background-image: url(/assets/images/covers/cutthroat.jpg);
+    background-image: url(/assets/images/covers/cutthroat.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .bugaboos-cover {
-    background-image: url(/assets/images/covers/bugaboos.jpg);
+    background-image: url(/assets/images/covers/bugaboos.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .big-kangaroo-cover {
-    background-image: url(/assets/images/covers/big-kangaroo.jpg);
+    background-image: url(/assets/images/covers/big-kangaroo.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .vesper-peak-cover {
-    background-image: url(/assets/images/covers/vesper-peak.jpg);
+    background-image: url(/assets/images/covers/vesper-peak.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .la-valee-blanche-cover {
-    background-image: url(/assets/images/covers/la-valee-blanche.jpg);
+    background-image: url(/assets/images/covers/la-valee-blanche.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .wbiad-cover {
-    background-image: url(/assets/images/covers/wbiad.jpg);
+    background-image: url(/assets/images/covers/wbiad.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .table-mountain-circumnav-cover {
-    background-image: url(/assets/images/covers/table-mountain-circumnav.jpg);
+    background-image: url(/assets/images/covers/table-mountain-circumnav.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .body-bag-bowl-cover {
-    background-image: url(/assets/images/covers/circle-lake.jpg);
+    background-image: url(/assets/images/covers/circle-lake.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .easy-getaway-cover {
-    background-image: url(/assets/images/covers/easy-getaway.jpg);
+    background-image: url(/assets/images/covers/easy-getaway.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .kendall-knob-cover {
-    background-image: url(/assets/images/covers/kendall-knob.jpg);
+    background-image: url(/assets/images/covers/kendall-knob.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .paradise-glacier-cover {
-    background-image: url(/assets/images/covers/paradise-glacier.jpg);
+    background-image: url(/assets/images/covers/paradise-glacier.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .birthday-ski-tour-cover {
-    background-image: url(/assets/images/covers/birthday-ski-tour.jpg);
+    background-image: url(/assets/images/covers/birthday-ski-tour.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .nisqually-chute-cover {
-    background-image: url(/assets/images/covers/nisqually-chute.jpg);
+    background-image: url(/assets/images/covers/nisqually-chute.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .video-peak-cover {
-    background-image: url(/assets/images/covers/video-peak.jpg);
+    background-image: url(/assets/images/covers/video-peak.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .corner-pocket-cover {
-    background-image: url(/assets/images/covers/corner-pocket.jpg);
+    background-image: url(/assets/images/covers/corner-pocket.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .sea-kayaking-san-juan-islands-cover {
-    background-image: url(/assets/images/covers/sea-kayaking-san-juan-islands.jpg);
+    background-image: url(/assets/images/covers/sea-kayaking-san-juan-islands.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .excelsior-in-winter-cover {
-    background-image: url(/assets/images/covers/excelsior-in-winter.jpg);
+    background-image: url(/assets/images/covers/excelsior-in-winter.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .the-castle-tour-cover {
-    background-image: url(/assets/images/covers/the-castle-tour.jpg);
+    background-image: url(/assets/images/covers/the-castle-tour.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .coastal-kayaking-cover {
-    background-image: url(/assets/images/covers/coastal-kayaking.jpg);
+    background-image: url(/assets/images/covers/coastal-kayaking.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .devils-dome-cover {
-    background-image: url(/assets/images/covers/crater-mountain.jpg);
+    background-image: url(/assets/images/covers/crater-mountain.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .rock-warrior-cover {
-    background-image: url(/assets/images/covers/rock-warrior.jpg);
+    background-image: url(/assets/images/covers/rock-warrior.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 .farmer-of-bits-cover {
-    background-image: url(/assets/images/covers/mullen-garden.jpg);
+    background-image: url(/assets/images/covers/mullen-garden.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
 }
 
 @media screen and (min-width: 30em) {
