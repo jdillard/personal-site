@@ -22,14 +22,8 @@
     scrollWheelZoom: false
   });
 
-  // OpenTopoMap tiles (good for terrain/ski tracks)
-  L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-    maxZoom: 17,
-    attribution: 'Map data: &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-      '<a href="http://viewfinderpanoramas.org">SRTM</a> | ' +
-      'Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> ' +
-      '(<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
-  }).addTo(map);
+  // CartoDB light tiles (same as /avy pages)
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(map);
 
   // Track data
   let trackCoords = [];
@@ -152,7 +146,7 @@
 
   const endIcon = L.divIcon({
     className: 'gpx-marker-end',
-    html: '<div style="background:#e7040f;width:14px;height:14px;border-radius:50%;border:2px solid white;box-shadow:0 2px 4px rgba(0,0,0,0.3);"></div>',
+    html: '<div style="background:#FF725C;width:14px;height:14px;border-radius:50%;border:2px solid white;box-shadow:0 2px 4px rgba(0,0,0,0.3);"></div>',
     iconSize: [14, 14],
     iconAnchor: [7, 7]
   });
@@ -212,7 +206,7 @@
 
     // Create visible track (will be updated by slider)
     visibleTrack = L.polyline(trackCoords, {
-      color: '#e7040f',
+      color: '#FF725C',
       weight: 4,
       opacity: 0.9
     }).addTo(map);
