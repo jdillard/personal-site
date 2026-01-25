@@ -318,6 +318,10 @@ select {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
+.tw-mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
 .tw-mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -341,6 +345,10 @@ select {
 .tw-my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+.tw-my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .tw-mb-2 {
   margin-bottom: 0.5rem;
@@ -897,6 +905,10 @@ select {
   .ns\:tw-float-left {
     float: left;
   }
+  .ns\:tw--mx-10 {
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+  }
   .ns\:tw-mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -923,6 +935,9 @@ select {
   }
   .ns\:tw-block {
     display: block;
+  }
+  .ns\:tw-inline-block {
+    display: inline-block;
   }
   .ns\:tw-flex {
     display: flex;
@@ -956,6 +971,10 @@ select {
   }
   .ns\:tw-border-t {
     border-top-width: 1px;
+  }
+  .ns\:tw-px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .ns\:tw-px-16 {
     padding-left: 4rem;
