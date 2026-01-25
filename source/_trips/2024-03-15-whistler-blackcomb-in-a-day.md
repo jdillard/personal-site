@@ -16,6 +16,12 @@ image:
   width: 175
   height: 131
 cover: wbiad
+js_includes:
+  - https://unpkg.com/leaflet/dist/leaflet.js
+  - https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js
+  - gpxMap.js
+css_includes:
+  - https://unpkg.com/leaflet/dist/leaflet.css
 ---
 
 I went up to Whistler with James after he had recently made an (almost) succesful attempt at doing every running lift at Vail in a day, accidently missing only one beginner chair, and he thought we could do the same thing at Whistler Blackcomb.
@@ -86,7 +92,20 @@ After a "quick" ride on _Magic Chair_ **[20]**, another slow fixed lift for begi
 Bringing us to the final lift, the _Blackcomb Gondola_ **[21]**.
 We opted to stop for a victory hot chocolate at the top versus getting more bonus laps in for extra "style points". We hit over 36k feet, but 40k and more is possible for those seeking a vert challenge as well.
 
-![Whistler Blackcomb in a Day](/assets/images/trips/wbiad.png "Whistler Blackcomb in a Day"){: .shadow-5.oversized}{: loading="lazy"} <small><i>What our track looked like doing Whistler Blackcomb in a Day.</i></small>
+<div id="gpx-map-container" class="tw-my-8">
+  <div id="gpx-map" data-track="/assets/gpx/wbiad.gpx"
+       class="tw-w-full tw-rounded-lg tw-shadow-lg" style="height: 450px;"></div>
+  <div id="gpx-slider-container" class="tw-mt-4 tw-px-4 tw-max-w-xl tw-mx-auto">
+    <input type="range" id="gpx-distance-slider" class="tw-w-full tw-cursor-pointer"
+           min="0" max="100" value="100" step="0.1" disabled>
+  </div>
+</div>
+<small><i>Interactive map of our track. Use the slider to explore the route progressively.</i></small>
+
+<noscript>
+![Whistler Blackcomb in a Day](/assets/images/trips/wbiad.png "Whistler Blackcomb in a Day"){: .shadow-5.oversized}{: loading="lazy"}
+<small><i>What our track looked like doing Whistler Blackcomb in a Day.</i></small>
+</noscript>
 
 ## Conclusion
 
