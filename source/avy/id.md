@@ -441,7 +441,7 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-2905-report" class="avy-zone dn" data-id="SNFAC-2905" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, January 26, 2026 6:36AM">
+        <div id="SNFAC-2905-report" class="avy-zone dn" data-id="SNFAC-2905" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, January 26, 2026 7:00AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sawtoothavalanche.com/forecasts/avalanche/soldier-&-wood-river-valley-mtns"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/soldier-&-wood-river-valley-mtns">SNFAC</a> for more information.</div>
