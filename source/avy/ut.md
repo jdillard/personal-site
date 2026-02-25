@@ -119,16 +119,16 @@ css_includes:
             
         </div>
         
-        <div id="UAC-1736-report" class="avy-zone dn" data-id="UAC-1736" data-color="#f7941e" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Tuesday, February 24, 2026 7:23AM">
+        <div id="UAC-1736-report" class="avy-zone dn" data-id="UAC-1736" data-color="#ed1c24" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Wednesday, February 25, 2026 7:08AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/logan"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="UAC-1736-title" class="mv4 tc">
-                <div><a id="UAC-1736-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=41.87685001619265,-111.64492853834412&z=10&b=mbt&a=sc_a0-0e0-7000fcf7941epa0-0e7001-9000fcf7941epa113-248e9001-20310fc939598pa248-113e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-7000fcf7941epa0-0e7001-9000fcf7941epa113-248e9001-20310fc939598pa248-113e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22d041fac6-74a0-47ff-802e-4820ed58d997%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-158e9001-20310fc0000FFpa248-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22d848cda9-d4ba-4e56-b484-aacbbbc9086e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Wind%20Drifted%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-158e9001-20310fc009AFFpa293-113e7001-9000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=41.87685001619265,-111.64492853834412&z=10&b=mbt&a=sc_a0-0e0-7000fcf7941epa0-0e7001-9000fcf7941epa113-248e9001-20310fc939598pa248-113e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-7000fcf7941epa0-0e7001-9000fcf7941epa113-248e9001-20310fc939598pa248-113e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22d041fac6-74a0-47ff-802e-4820ed58d997%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-158e9001-20310fc0000FFpa248-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22d848cda9-d4ba-4e56-b484-aacbbbc9086e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Wind%20Drifted%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-158e9001-20310fc009AFFpa293-113e7001-9000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="UAC-1736-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=41.87685001619265,-111.64492853834412&z=10&b=mbt&a=sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-248e7001-9000fcfff200pa248-113e7001-9000fced1c24pa113-248e9001-20310fc939598pa248-113e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-248e7001-9000fcfff200pa248-113e7001-9000fced1c24pa113-248e9001-20310fc939598pa248-113e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22a7a563d8-6999-4c5e-b739-2f66feeb66db%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-158e9001-20310fc0000FFpa248-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22804a6725-4ffd-40a7-a5f0-a02e5a66150b%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Wind%20Drifted%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e9001-20310fc009AFFpa293-158e7001-9000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=41.87685001619265,-111.64492853834412&z=10&b=mbt&a=sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-248e7001-9000fcfff200pa248-113e7001-9000fced1c24pa113-248e9001-20310fc939598pa248-113e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-248e7001-9000fcfff200pa248-113e7001-9000fced1c24pa113-248e9001-20310fc939598pa248-113e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22a7a563d8-6999-4c5e-b739-2f66feeb66db%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-158e9001-20310fc0000FFpa248-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22804a6725-4ffd-40a7-a5f0-a02e5a66150b%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Wind%20Drifted%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e9001-20310fc009AFFpa293-158e7001-9000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2026-02-25 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a113-248e9001-20310f 939598', 'a248-113e9001-20310f f7941e']&#10;['a0-0e7001-9000f f7941e']&#10;['a0-0e0-7000f f7941e']" onclick="clickFunc(this, 'danger-tooltip-1736'); return false;" onmouseout="outFunc('danger-tooltip-1736')" href="#"><span class="tooltiptext" id="danger-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    <strong>2026-02-26 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a113-248e9001-20310f 939598', 'a248-113e9001-20310f f7941e']&#10;['a113-248e7001-9000f fff200', 'a248-113e7001-9000f ed1c24']&#10;['a113-248e0-7000f f7941e', 'a248-113e0-7000f ed1c24']" onclick="clickFunc(this, 'danger-tooltip-1736'); return false;" onmouseout="outFunc('danger-tooltip-1736')" href="#"><span class="tooltiptext" id="danger-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1736">
@@ -146,17 +146,21 @@ css_includes:
                         <li class="pv1 ntl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
-                                data-color1="#f7941e"
+                                data-color1="#fff200"
                             
-                            ></div> <span class="desc">Considerable danger (7001' to 9000')</span>
+                                data-color2="#ed1c24"
+                            
+                            ></div> <span class="desc">Moderate to High danger (7001' to 9000')</span>
                         </li>
                     
-                        <li class="pv1 ntl">
+                        <li class="pv1 btl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
                                 data-color1="#f7941e"
                             
-                            ></div> <span class="desc">Considerable danger (below 7000')</span>
+                                data-color2="#ed1c24"
+                            
+                            ></div> <span class="desc">Considerable to High danger (below 7000')</span>
                         </li>
                     
                     </ul>
@@ -168,7 +172,7 @@ css_includes:
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2026-02-25 Persistent Weak Layer</strong>
+                        <strong>2026-02-26 Persistent Weak Layer</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-158e9001-20310f 0000FF&#10;a248-113e7001-9000f 0000FF&#10;a293-68e0-7000f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1736'); return false;" onmouseout="outFunc('problem-1-tooltip-1736')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
@@ -190,18 +194,18 @@ css_includes:
                     </dd>
                 
                     <dt class="mt3">
-                        <strong>2026-02-25 Wind Drifted Snow</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-158e9001-20310f 009AFF&#10;a293-113e7001-9000f 009AFF" onclick="clickFunc(this, 'problem-2-tooltip-1736'); return false;" onmouseout="outFunc('problem-2-tooltip-1736')" href="#"><span class="tooltiptext" id="problem-2-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                        <strong>2026-02-26 Wind Drifted Snow</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a158-158e9001-20310f 009AFF&#10;a293-158e7001-9000f 009AFF" onclick="clickFunc(this, 'problem-2-tooltip-1736'); return false;" onmouseout="outFunc('problem-2-tooltip-1736')" href="#"><span class="tooltiptext" id="problem-2-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1736">
                         
                             <li class="pv1 atl">
-                                <div style="clear: both;background-color: #009AFF" class="fl mr2 h1 w1"></div> <span class="desc">W to SE aspects (above 9001')</span>
+                                <div style="clear: both;background-color: #009AFF" class="fl mr2 h1 w1"></div> <span class="desc">All aspects (above 9001')</span>
                             </li>
                         
                             <li class="pv1 ntl">
-                                <div style="clear: both;background-color: #009AFF" class="fl mr2 h1 w1"></div> <span class="desc">NW to E aspects (7001' to 9000')</span>
+                                <div style="clear: both;background-color: #009AFF" class="fl mr2 h1 w1"></div> <span class="desc">NW to SE aspects (7001' to 9000')</span>
                             </li>
                         
                         </ul>
@@ -211,111 +215,25 @@ css_includes:
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, February 24, 2026 7:23AM<br />
+                <strong>Issued at:</strong> Wednesday, February 25, 2026 7:08AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/logan">UAC</a>
             </p>
             
         </div>
         
-        <div id="UAC-1742-report" class="avy-zone dn" data-id="UAC-1742" data-color="#f7941e" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Tuesday, February 24, 2026 6:46AM">
+        <div id="UAC-1742-report" class="avy-zone dn" data-id="UAC-1742" data-color="#f7941e" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Wednesday, February 25, 2026 5:37AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/moab"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="UAC-1742-title" class="mv4 tc">
-                <div><a id="UAC-1742-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=38.515416518441576,-109.21894618880113&z=10&b=mbt&a=sc_a158-248e0-7000fc50b848pa113-158e0-7000fcfff200pa248-113e0-7000fcf7941epa113-248e7001-9000fc50b848pa248-113e7001-9000fcf7941epa113-248e9001-20310fc50b848pa248-113e9001-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-248e0-7000fc50b848pa113-158e0-7000fcfff200pa248-113e0-7000fcf7941epa113-248e7001-9000fc50b848pa248-113e7001-9000fcf7941epa113-248e9001-20310fc50b848pa248-113e9001-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%223510948b-a174-4927-a5cb-c6741e1264c9%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-158e9001-20310fc0000FFpa248-113e7001-9000fc0000FFpa248-113e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=38.515416518441576,-109.21894618880113&z=10&b=mbt&a=sc_a158-248e0-7000fc50b848pa113-158e0-7000fcfff200pa248-113e0-7000fcf7941epa113-248e7001-9000fc50b848pa248-113e7001-9000fcf7941epa113-248e9001-20310fc50b848pa248-113e9001-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-248e0-7000fc50b848pa113-158e0-7000fcfff200pa248-113e0-7000fcf7941epa113-248e7001-9000fc50b848pa248-113e7001-9000fcf7941epa113-248e9001-20310fc50b848pa248-113e9001-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%223510948b-a174-4927-a5cb-c6741e1264c9%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-158e9001-20310fc0000FFpa248-113e7001-9000fc0000FFpa248-113e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="UAC-1742-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=38.515416518441576,-109.21894618880113&z=10&b=mbt&a=sc_a113-248e0-7000fcfff200pa248-113e0-7000fcf7941epa113-248e7001-9000fcfff200pa248-113e7001-9000fcf7941epa0-0e9001-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcfff200pa248-113e0-7000fcf7941epa113-248e7001-9000fcfff200pa248-113e7001-9000fcf7941epa0-0e9001-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%228c0fef86-a6e3-4305-9f3b-fee0426c7ffb%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-158e9001-20310fc0000FFpa248-113e7001-9000fc0000FFpa248-113e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22ee42f7a5-7a8d-4ff0-ab19-325a52ea645d%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e9001-20310fc009AFFpa113-248e7001-9000fc009AFFpa113-248e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=38.515416518441576,-109.21894618880113&z=10&b=mbt&a=sc_a113-248e0-7000fcfff200pa248-113e0-7000fcf7941epa113-248e7001-9000fcfff200pa248-113e7001-9000fcf7941epa0-0e9001-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcfff200pa248-113e0-7000fcf7941epa113-248e7001-9000fcfff200pa248-113e7001-9000fcf7941epa0-0e9001-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%228c0fef86-a6e3-4305-9f3b-fee0426c7ffb%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-158e9001-20310fc0000FFpa248-113e7001-9000fc0000FFpa248-113e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22ee42f7a5-7a8d-4ff0-ab19-325a52ea645d%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e9001-20310fc009AFFpa113-248e7001-9000fc009AFFpa113-248e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2026-02-25 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a113-248e9001-20310f 50b848', 'a248-113e9001-20310f fff200']&#10;['a113-248e7001-9000f 50b848', 'a248-113e7001-9000f f7941e']&#10;['a158-248e0-7000f 50b848', 'a113-158e0-7000f fff200', 'a248-113e0-7000f f7941e']" onclick="clickFunc(this, 'danger-tooltip-1742'); return false;" onmouseout="outFunc('danger-tooltip-1742')" href="#"><span class="tooltiptext" id="danger-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    <strong>2026-02-26 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a0-0e9001-20310f fff200']&#10;['a113-248e7001-9000f fff200', 'a248-113e7001-9000f f7941e']&#10;['a113-248e0-7000f fff200', 'a248-113e0-7000f f7941e']" onclick="clickFunc(this, 'danger-tooltip-1742'); return false;" onmouseout="outFunc('danger-tooltip-1742')" href="#"><span class="tooltiptext" id="danger-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1742">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                                data-color2="#fff200"
-                            
-                            ></div> <span class="desc">Low to Moderate danger (above 9001')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                                data-color2="#f7941e"
-                            
-                            ></div> <span class="desc">Low to Considerable danger (7001' to 9000')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                                data-color2="#fff200"
-                            
-                                data-color3="#f7941e"
-                            
-                            ></div> <span class="desc">Low to Considerable danger (below 7000')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2026-02-25 Persistent Weak Layer</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-158e9001-20310f 0000FF&#10;a248-113e7001-9000f 0000FF&#10;a248-113e0-7000f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1742'); return false;" onmouseout="outFunc('problem-1-tooltip-1742')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1742">
-                        
-                            <li class="pv1 atl">
-                                <div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> <span class="desc">W to SE aspects (above 9001')</span>
-                            </li>
-                        
-                            <li class="pv1 ntl">
-                                <div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> <span class="desc">W to E aspects (7001' to 9000')</span>
-                            </li>
-                        
-                            <li class="pv1 btl">
-                                <div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> <span class="desc">W to E aspects (below 7000')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-            
-            <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, February 24, 2026 6:46AM<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/moab">UAC</a>
-            </p>
-            
-        </div>
-        
-        <div id="UAC-1737-report" class="avy-zone dn" data-id="UAC-1737" data-color="#f7941e" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Tuesday, February 24, 2026 7:11AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/ogden"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div id="UAC-1737-title" class="mv4 tc">
-                <div><a id="UAC-1737-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=41.252264400608006,-111.68646369143319&z=10&b=mbt&a=sc_a113-293e0-7000fcfff200pa293-113e0-7000fcf7941epa113-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa0-0e9001-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-293e0-7000fcfff200pa293-113e0-7000fcf7941epa113-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa0-0e9001-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22f7dd7bcc-b79e-45ba-b272-5445ded208cd%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa248-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%223cd00796-2c7b-4f3b-8c4a-fc0d731b444e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e9001-20310fc009AFFpa158-158e7001-9000fc009AFFpa158-158e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=41.252264400608006,-111.68646369143319&z=10&b=mbt&a=sc_a113-293e0-7000fcfff200pa293-113e0-7000fcf7941epa113-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa0-0e9001-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-293e0-7000fcfff200pa293-113e0-7000fcf7941epa113-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa0-0e9001-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22f7dd7bcc-b79e-45ba-b272-5445ded208cd%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa248-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%223cd00796-2c7b-4f3b-8c4a-fc0d731b444e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e9001-20310fc009AFFpa158-158e7001-9000fc009AFFpa158-158e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
-            </div>
-            <dl class="f6">
-                <dt>
-                    <strong>2026-02-25 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a0-0e9001-20310f fff200']&#10;['a113-293e7001-9000f fff200', 'a293-113e7001-9000f f7941e']&#10;['a113-293e0-7000f fff200', 'a293-113e0-7000f f7941e']" onclick="clickFunc(this, 'danger-tooltip-1737'); return false;" onmouseout="outFunc('danger-tooltip-1737')" href="#"><span class="tooltiptext" id="danger-tooltip-1737">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1737">
                     
                         <li class="pv1 ntl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
@@ -354,8 +272,112 @@ css_includes:
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2026-02-25 Persistent Weak Layer</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-113e9001-20310f 0000FF&#10;a248-113e7001-9000f 0000FF&#10;a293-68e0-7000f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1737'); return false;" onmouseout="outFunc('problem-1-tooltip-1737')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1737">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                        <strong>2026-02-26 Persistent Weak Layer</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-158e9001-20310f 0000FF&#10;a248-113e7001-9000f 0000FF&#10;a248-113e0-7000f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1742'); return false;" onmouseout="outFunc('problem-1-tooltip-1742')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1742">
+                        
+                            <li class="pv1 atl">
+                                <div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> <span class="desc">W to SE aspects (above 9001')</span>
+                            </li>
+                        
+                            <li class="pv1 ntl">
+                                <div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> <span class="desc">W to E aspects (7001' to 9000')</span>
+                            </li>
+                        
+                            <li class="pv1 btl">
+                                <div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> <span class="desc">W to E aspects (below 7000')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                
+                    <dt class="mt3">
+                        <strong>2026-02-26 Wet Snow</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a113-248e9001-20310f 009AFF&#10;a113-248e7001-9000f 009AFF&#10;a113-248e0-7000f 009AFF" onclick="clickFunc(this, 'problem-2-tooltip-1742'); return false;" onmouseout="outFunc('problem-2-tooltip-1742')" href="#"><span class="tooltiptext" id="problem-2-tooltip-1742">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1742">
+                        
+                            <li class="pv1 atl">
+                                <div style="clear: both;background-color: #009AFF" class="fl mr2 h1 w1"></div> <span class="desc">SE to SW aspects (above 9001')</span>
+                            </li>
+                        
+                            <li class="pv1 ntl">
+                                <div style="clear: both;background-color: #009AFF" class="fl mr2 h1 w1"></div> <span class="desc">SE to SW aspects (7001' to 9000')</span>
+                            </li>
+                        
+                            <li class="pv1 btl">
+                                <div style="clear: both;background-color: #009AFF" class="fl mr2 h1 w1"></div> <span class="desc">SE to SW aspects (below 7000')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+            
+            <p class="tc f6">
+                <strong>Issued at:</strong> Wednesday, February 25, 2026 5:37AM<br />
+                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/moab">UAC</a>
+            </p>
+            
+        </div>
+        
+        <div id="UAC-1737-report" class="avy-zone dn" data-id="UAC-1737" data-color="#ed1c24" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Wednesday, February 25, 2026 6:26AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/ogden"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div id="UAC-1737-title" class="mv4 tc">
+                <div><a id="UAC-1737-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=41.252264400608006,-111.68646369143319&z=10&b=mbt&a=sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-293e7001-9000fcf7941epa293-113e7001-9000fced1c24pa0-0e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-293e7001-9000fcf7941epa293-113e7001-9000fced1c24pa0-0e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22c7bf9263-5c0b-42a9-a852-a0cd61a8a20b%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%229ab703b7-fe68-4619-872a-00914934064b%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e9001-20310fc009AFFpa158-158e7001-9000fc009AFFpa158-158e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=41.252264400608006,-111.68646369143319&z=10&b=mbt&a=sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-293e7001-9000fcf7941epa293-113e7001-9000fced1c24pa0-0e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-293e7001-9000fcf7941epa293-113e7001-9000fced1c24pa0-0e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22c7bf9263-5c0b-42a9-a852-a0cd61a8a20b%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%229ab703b7-fe68-4619-872a-00914934064b%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e9001-20310fc009AFFpa158-158e7001-9000fc009AFFpa158-158e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+            </div>
+            <dl class="f6">
+                <dt>
+                    <strong>2026-02-26 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a0-0e9001-20310f f7941e']&#10;['a113-293e7001-9000f f7941e', 'a293-113e7001-9000f ed1c24']&#10;['a113-248e0-7000f f7941e', 'a248-113e0-7000f ed1c24']" onclick="clickFunc(this, 'danger-tooltip-1737'); return false;" onmouseout="outFunc('danger-tooltip-1737')" href="#"><span class="tooltiptext" id="danger-tooltip-1737">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1737">
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> <span class="desc">Considerable danger (above 9001')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                                data-color2="#ed1c24"
+                            
+                            ></div> <span class="desc">Considerable to High danger (7001' to 9000')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                                data-color2="#ed1c24"
+                            
+                            ></div> <span class="desc">Considerable to High danger (below 7000')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2026-02-26 Persistent Weak Layer</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-113e9001-20310f 0000FF&#10;a293-113e7001-9000f 0000FF&#10;a293-68e0-7000f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1737'); return false;" onmouseout="outFunc('problem-1-tooltip-1737')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1737">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1737">
@@ -365,7 +387,7 @@ css_includes:
                             </li>
                         
                             <li class="pv1 ntl">
-                                <div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> <span class="desc">W to E aspects (7001' to 9000')</span>
+                                <div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> <span class="desc">NW to E aspects (7001' to 9000')</span>
                             </li>
                         
                             <li class="pv1 btl">
@@ -376,7 +398,7 @@ css_includes:
                     </dd>
                 
                     <dt class="mt3">
-                        <strong>2026-02-25 Wet Snow</strong>
+                        <strong>2026-02-26 Wet Snow</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="a68-293e9001-20310f 009AFF&#10;a158-158e7001-9000f 009AFF&#10;a158-158e0-7000f 009AFF" onclick="clickFunc(this, 'problem-2-tooltip-1737'); return false;" onmouseout="outFunc('problem-2-tooltip-1737')" href="#"><span class="tooltiptext" id="problem-2-tooltip-1737">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
@@ -401,54 +423,52 @@ css_includes:
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, February 24, 2026 7:11AM<br />
+                <strong>Issued at:</strong> Wednesday, February 25, 2026 6:26AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/ogden">UAC</a>
             </p>
             
         </div>
         
-        <div id="UAC-1739-report" class="avy-zone dn" data-id="UAC-1739" data-color="#f7941e" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Tuesday, February 24, 2026 7:17AM">
+        <div id="UAC-1739-report" class="avy-zone dn" data-id="UAC-1739" data-color="#ed1c24" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Wednesday, February 25, 2026 6:39AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/provo"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="UAC-1739-title" class="mv4 tc">
-                <div><a id="UAC-1739-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=40.32457859613346,-111.55943333168655&z=10&b=mbt&a=sc_a113-248e0-7000fcfff200pa248-113e0-7000fcf7941epa113-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa68-293e9001-20310fcfff200pa293-68e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcfff200pa248-113e0-7000fcf7941epa113-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa68-293e9001-20310fcfff200pa293-68e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22da337701-d6b4-4264-a036-76da9603ab74%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22ddcf1948-c5b7-4237-8be5-4399842bb96e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e9001-20310fc009AFFpa158-158e7001-9000fc009AFFpa158-158e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=40.32457859613346,-111.55943333168655&z=10&b=mbt&a=sc_a113-248e0-7000fcfff200pa248-113e0-7000fcf7941epa113-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa68-293e9001-20310fcfff200pa293-68e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcfff200pa248-113e0-7000fcf7941epa113-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa68-293e9001-20310fcfff200pa293-68e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22da337701-d6b4-4264-a036-76da9603ab74%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22ddcf1948-c5b7-4237-8be5-4399842bb96e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e9001-20310fc009AFFpa158-158e7001-9000fc009AFFpa158-158e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="UAC-1739-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=40.32457859613346,-111.55943333168655&z=10&b=mbt&a=sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-293e7001-9000fcf7941epa293-113e7001-9000fced1c24pa0-0e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-293e7001-9000fcf7941epa293-113e7001-9000fced1c24pa0-0e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226d7bea8a-e331-49af-b8fe-8e3aa94221cf%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%227c16c70e-a009-4b97-b837-c0058b472fd0%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e9001-20310fc009AFFpa158-158e7001-9000fc009AFFpa158-158e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=40.32457859613346,-111.55943333168655&z=10&b=mbt&a=sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-293e7001-9000fcf7941epa293-113e7001-9000fced1c24pa0-0e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-293e7001-9000fcf7941epa293-113e7001-9000fced1c24pa0-0e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226d7bea8a-e331-49af-b8fe-8e3aa94221cf%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%227c16c70e-a009-4b97-b837-c0058b472fd0%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e9001-20310fc009AFFpa158-158e7001-9000fc009AFFpa158-158e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2026-02-25 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a68-293e9001-20310f fff200', 'a293-68e9001-20310f f7941e']&#10;['a113-293e7001-9000f fff200', 'a293-113e7001-9000f f7941e']&#10;['a113-248e0-7000f fff200', 'a248-113e0-7000f f7941e']" onclick="clickFunc(this, 'danger-tooltip-1739'); return false;" onmouseout="outFunc('danger-tooltip-1739')" href="#"><span class="tooltiptext" id="danger-tooltip-1739">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    <strong>2026-02-26 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a0-0e9001-20310f f7941e']&#10;['a113-293e7001-9000f f7941e', 'a293-113e7001-9000f ed1c24']&#10;['a113-248e0-7000f f7941e', 'a248-113e0-7000f ed1c24']" onclick="clickFunc(this, 'danger-tooltip-1739'); return false;" onmouseout="outFunc('danger-tooltip-1739')" href="#"><span class="tooltiptext" id="danger-tooltip-1739">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1739">
                     
-                        <li class="pv1 atl">
+                        <li class="pv1 ntl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
-                                data-color1="#fff200"
+                                data-color1="#f7941e"
                             
-                                data-color2="#f7941e"
-                            
-                            ></div> <span class="desc">Moderate to Considerable danger (above 9001')</span>
+                            ></div> <span class="desc">Considerable danger (above 9001')</span>
                         </li>
                     
                         <li class="pv1 ntl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
-                                data-color1="#fff200"
+                                data-color1="#f7941e"
                             
-                                data-color2="#f7941e"
+                                data-color2="#ed1c24"
                             
-                            ></div> <span class="desc">Moderate to Considerable danger (7001' to 9000')</span>
+                            ></div> <span class="desc">Considerable to High danger (7001' to 9000')</span>
                         </li>
                     
                         <li class="pv1 btl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
-                                data-color1="#fff200"
+                                data-color1="#f7941e"
                             
-                                data-color2="#f7941e"
+                                data-color2="#ed1c24"
                             
-                            ></div> <span class="desc">Moderate to Considerable danger (below 7000')</span>
+                            ></div> <span class="desc">Considerable to High danger (below 7000')</span>
                         </li>
                     
                     </ul>
@@ -460,7 +480,7 @@ css_includes:
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2026-02-25 Persistent Weak Layer</strong>
+                        <strong>2026-02-26 Persistent Weak Layer</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-113e9001-20310f 0000FF&#10;a293-113e7001-9000f 0000FF&#10;a293-68e0-7000f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1739'); return false;" onmouseout="outFunc('problem-1-tooltip-1739')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1739">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
@@ -482,7 +502,7 @@ css_includes:
                     </dd>
                 
                     <dt class="mt3">
-                        <strong>2026-02-25 Wet Snow</strong>
+                        <strong>2026-02-26 Wet Snow</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="a68-293e9001-20310f 009AFF&#10;a158-158e7001-9000f 009AFF&#10;a158-158e0-7000f 009AFF" onclick="clickFunc(this, 'problem-2-tooltip-1739'); return false;" onmouseout="outFunc('problem-2-tooltip-1739')" href="#"><span class="tooltiptext" id="problem-2-tooltip-1739">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
@@ -507,54 +527,52 @@ css_includes:
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, February 24, 2026 7:17AM<br />
+                <strong>Issued at:</strong> Wednesday, February 25, 2026 6:39AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/provo">UAC</a>
             </p>
             
         </div>
         
-        <div id="UAC-1738-report" class="avy-zone dn" data-id="UAC-1738" data-color="#f7941e" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Tuesday, February 24, 2026 7:05AM">
+        <div id="UAC-1738-report" class="avy-zone dn" data-id="UAC-1738" data-color="#ed1c24" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Wednesday, February 25, 2026 6:13AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/salt-lake"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="UAC-1738-title" class="mv4 tc">
-                <div><a id="UAC-1738-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=40.76553939900973,-111.67869958406847&z=10&b=mbt&a=sc_a113-248e0-7000fcfff200pa248-113e0-7000fcf7941epa113-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa68-293e9001-20310fcfff200pa293-68e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcfff200pa248-113e0-7000fcf7941epa113-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa68-293e9001-20310fcfff200pa293-68e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2248ff7f37-1d4f-4a04-a22a-53a8f776de79%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%223ac4969e-0727-41e2-8f20-f97755ef7d80%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e9001-20310fc009AFFpa158-158e7001-9000fc009AFFpa158-158e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=40.76553939900973,-111.67869958406847&z=10&b=mbt&a=sc_a113-248e0-7000fcfff200pa248-113e0-7000fcf7941epa113-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa68-293e9001-20310fcfff200pa293-68e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcfff200pa248-113e0-7000fcf7941epa113-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa68-293e9001-20310fcfff200pa293-68e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2248ff7f37-1d4f-4a04-a22a-53a8f776de79%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%223ac4969e-0727-41e2-8f20-f97755ef7d80%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e9001-20310fc009AFFpa158-158e7001-9000fc009AFFpa158-158e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="UAC-1738-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=40.76553939900973,-111.67869958406847&z=10&b=mbt&a=sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-293e7001-9000fcf7941epa293-113e7001-9000fced1c24pa0-0e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-293e7001-9000fcf7941epa293-113e7001-9000fced1c24pa0-0e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22f650f266-00c2-4d17-99de-9114ebebdde3%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22e75854bf-263f-408a-9352-bda44900f6eb%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e9001-20310fc009AFFpa158-158e7001-9000fc009AFFpa158-158e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=40.76553939900973,-111.67869958406847&z=10&b=mbt&a=sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-293e7001-9000fcf7941epa293-113e7001-9000fced1c24pa0-0e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-248e0-7000fcf7941epa248-113e0-7000fced1c24pa113-293e7001-9000fcf7941epa293-113e7001-9000fced1c24pa0-0e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22f650f266-00c2-4d17-99de-9114ebebdde3%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-68e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22e75854bf-263f-408a-9352-bda44900f6eb%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Wet%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-293e9001-20310fc009AFFpa158-158e7001-9000fc009AFFpa158-158e0-7000fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2026-02-25 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a68-293e9001-20310f fff200', 'a293-68e9001-20310f f7941e']&#10;['a113-293e7001-9000f fff200', 'a293-113e7001-9000f f7941e']&#10;['a113-248e0-7000f fff200', 'a248-113e0-7000f f7941e']" onclick="clickFunc(this, 'danger-tooltip-1738'); return false;" onmouseout="outFunc('danger-tooltip-1738')" href="#"><span class="tooltiptext" id="danger-tooltip-1738">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    <strong>2026-02-26 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a0-0e9001-20310f f7941e']&#10;['a113-293e7001-9000f f7941e', 'a293-113e7001-9000f ed1c24']&#10;['a113-248e0-7000f f7941e', 'a248-113e0-7000f ed1c24']" onclick="clickFunc(this, 'danger-tooltip-1738'); return false;" onmouseout="outFunc('danger-tooltip-1738')" href="#"><span class="tooltiptext" id="danger-tooltip-1738">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1738">
                     
-                        <li class="pv1 atl">
+                        <li class="pv1 ntl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
-                                data-color1="#fff200"
+                                data-color1="#f7941e"
                             
-                                data-color2="#f7941e"
-                            
-                            ></div> <span class="desc">Moderate to Considerable danger (above 9001')</span>
+                            ></div> <span class="desc">Considerable danger (above 9001')</span>
                         </li>
                     
                         <li class="pv1 ntl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
-                                data-color1="#fff200"
+                                data-color1="#f7941e"
                             
-                                data-color2="#f7941e"
+                                data-color2="#ed1c24"
                             
-                            ></div> <span class="desc">Moderate to Considerable danger (7001' to 9000')</span>
+                            ></div> <span class="desc">Considerable to High danger (7001' to 9000')</span>
                         </li>
                     
                         <li class="pv1 btl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
-                                data-color1="#fff200"
+                                data-color1="#f7941e"
                             
-                                data-color2="#f7941e"
+                                data-color2="#ed1c24"
                             
-                            ></div> <span class="desc">Moderate to Considerable danger (below 7000')</span>
+                            ></div> <span class="desc">Considerable to High danger (below 7000')</span>
                         </li>
                     
                     </ul>
@@ -566,7 +584,7 @@ css_includes:
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2026-02-25 Persistent Weak Layer</strong>
+                        <strong>2026-02-26 Persistent Weak Layer</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-113e9001-20310f 0000FF&#10;a293-113e7001-9000f 0000FF&#10;a293-68e0-7000f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1738'); return false;" onmouseout="outFunc('problem-1-tooltip-1738')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1738">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
@@ -588,7 +606,7 @@ css_includes:
                     </dd>
                 
                     <dt class="mt3">
-                        <strong>2026-02-25 Wet Snow</strong>
+                        <strong>2026-02-26 Wet Snow</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="a68-293e9001-20310f 009AFF&#10;a158-158e7001-9000f 009AFF&#10;a158-158e0-7000f 009AFF" onclick="clickFunc(this, 'problem-2-tooltip-1738'); return false;" onmouseout="outFunc('problem-2-tooltip-1738')" href="#"><span class="tooltiptext" id="problem-2-tooltip-1738">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
@@ -613,21 +631,21 @@ css_includes:
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, February 24, 2026 7:05AM<br />
+                <strong>Issued at:</strong> Wednesday, February 25, 2026 6:13AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/salt-lake">UAC</a>
             </p>
             
         </div>
         
-        <div id="UAC-1741-report" class="avy-zone dn" data-id="UAC-1741" data-color="#f7941e" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Tuesday, February 24, 2026 6:44AM">
+        <div id="UAC-1741-report" class="avy-zone dn" data-id="UAC-1741" data-color="#f7941e" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Wednesday, February 25, 2026 7:06AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/skyline"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="UAC-1741-title" class="mv4 tc">
-                <div><a id="UAC-1741-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=39.32528697296124,-111.32837329907979&z=10&b=mbt&a=sc_a158-248e0-7000fc50b848pa248-293e0-7000fcfff200pa293-113e0-7000fcf7941epa158-248e7001-9000fc50b848pa248-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa0-0e9001-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-248e0-7000fc50b848pa248-293e0-7000fcfff200pa293-113e0-7000fcf7941epa158-248e7001-9000fc50b848pa248-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa0-0e9001-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22333cda56-f05a-470d-b3eb-94f2c7e6fdfa%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa248-113e7001-9000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=39.32528697296124,-111.32837329907979&z=10&b=mbt&a=sc_a158-248e0-7000fc50b848pa248-293e0-7000fcfff200pa293-113e0-7000fcf7941epa158-248e7001-9000fc50b848pa248-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa0-0e9001-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-248e0-7000fc50b848pa248-293e0-7000fcfff200pa293-113e0-7000fcf7941epa158-248e7001-9000fc50b848pa248-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa0-0e9001-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22333cda56-f05a-470d-b3eb-94f2c7e6fdfa%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa248-113e7001-9000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="UAC-1741-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=39.32528697296124,-111.32837329907979&z=10&b=mbt&a=sc_a158-248e0-7000fc50b848pa248-293e0-7000fcfff200pa293-113e0-7000fcf7941epa158-248e7001-9000fc50b848pa248-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa0-0e9001-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-248e0-7000fc50b848pa248-293e0-7000fcfff200pa293-113e0-7000fcf7941epa158-248e7001-9000fc50b848pa248-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa0-0e9001-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22be3d213d-2cb9-4a65-b436-f9d1a2acd03d%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa248-113e7001-9000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=39.32528697296124,-111.32837329907979&z=10&b=mbt&a=sc_a158-248e0-7000fc50b848pa248-293e0-7000fcfff200pa293-113e0-7000fcf7941epa158-248e7001-9000fc50b848pa248-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa0-0e9001-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-248e0-7000fc50b848pa248-293e0-7000fcfff200pa293-113e0-7000fcf7941epa158-248e7001-9000fc50b848pa248-293e7001-9000fcfff200pa293-113e7001-9000fcf7941epa0-0e9001-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22be3d213d-2cb9-4a65-b436-f9d1a2acd03d%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9001-20310fc0000FFpa248-113e7001-9000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2026-02-25 Avalanche Danger</strong>
+                    <strong>2026-02-26 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a0-0e9001-20310f 50b848']&#10;['a158-248e7001-9000f 50b848', 'a248-293e7001-9000f fff200', 'a293-113e7001-9000f f7941e']&#10;['a158-248e0-7000f 50b848', 'a248-293e0-7000f fff200', 'a293-113e0-7000f f7941e']" onclick="clickFunc(this, 'danger-tooltip-1741'); return false;" onmouseout="outFunc('danger-tooltip-1741')" href="#"><span class="tooltiptext" id="danger-tooltip-1741">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
@@ -674,7 +692,7 @@ css_includes:
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2026-02-25 Persistent Weak Layer</strong>
+                        <strong>2026-02-26 Persistent Weak Layer</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-113e9001-20310f 0000FF&#10;a248-113e7001-9000f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1741'); return false;" onmouseout="outFunc('problem-1-tooltip-1741')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1741">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
@@ -695,7 +713,7 @@ css_includes:
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, February 24, 2026 6:44AM<br />
+                <strong>Issued at:</strong> Wednesday, February 25, 2026 7:06AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/skyline">UAC</a>
             </p>
             
@@ -709,7 +727,7 @@ css_includes:
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2026-02-25 Avalanche Danger</strong>
+                    <strong>2026-02-26 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a0-0e9001-20310f 939598']&#10;['a0-0e7001-9000f 939598']&#10;['a0-0e0-7000f 939598']" onclick="clickFunc(this, 'danger-tooltip-1743'); return false;" onmouseout="outFunc('danger-tooltip-1743')" href="#"><span class="tooltiptext" id="danger-tooltip-1743">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
@@ -753,16 +771,16 @@ css_includes:
             
         </div>
         
-        <div id="UAC-1740-report" class="avy-zone dn" data-id="UAC-1740" data-color="#f7941e" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Tuesday, February 24, 2026 4:31AM">
+        <div id="UAC-1740-report" class="avy-zone dn" data-id="UAC-1740" data-color="#ed1c24" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Wednesday, February 25, 2026 4:40AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/uintas"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div id="UAC-1740-title" class="mv4 tc">
-                <div><a id="UAC-1740-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=40.63079543759668,-111.03097794652884&z=10&b=mbt&a=sc_a113-293e0-7000fcfff200pa293-113e0-7000fcf7941epa113-293e7001-9000fc50b848pa293-113e7001-9000fcf7941epa113-293e9001-20310fc50b848pa293-113e9001-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-293e0-7000fcfff200pa293-113e0-7000fcf7941epa113-293e7001-9000fc50b848pa293-113e7001-9000fcf7941epa113-293e9001-20310fc50b848pa293-113e9001-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%221c9211f7-41fe-4e25-8a0b-772a34f060c9%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-113e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2260138760-7913-4135-a995-9056a3c7c1a1%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Wind%20Drifted%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-20310fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=40.63079543759668,-111.03097794652884&z=10&b=mbt&a=sc_a113-293e0-7000fcfff200pa293-113e0-7000fcf7941epa113-293e7001-9000fc50b848pa293-113e7001-9000fcf7941epa113-293e9001-20310fc50b848pa293-113e9001-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-293e0-7000fcfff200pa293-113e0-7000fcf7941epa113-293e7001-9000fc50b848pa293-113e7001-9000fcf7941epa113-293e9001-20310fc50b848pa293-113e9001-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%221c9211f7-41fe-4e25-8a0b-772a34f060c9%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-113e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2260138760-7913-4135-a995-9056a3c7c1a1%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-25%20Wind%20Drifted%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-20310fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="UAC-1740-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll=40.63079543759668,-111.03097794652884&z=10&b=mbt&a=sc_a158-293e0-7000fcfff200pa113-158e0-7000fcf7941epa293-113e0-7000fced1c24pa158-293e7001-9000fc50b848pa113-158e7001-9000fcfff200pa293-113e7001-9000fced1c24pa113-293e9001-20310fc50b848pa293-113e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-293e0-7000fcfff200pa113-158e0-7000fcf7941epa293-113e0-7000fced1c24pa158-293e7001-9000fc50b848pa113-158e7001-9000fcfff200pa293-113e7001-9000fced1c24pa113-293e9001-20310fc50b848pa293-113e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%223c87b312-99a9-438e-83a8-e4afa9d4d8f6%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-113e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22c95a689f-51e8-4bef-bf6c-f584aca7cc7d%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Wind%20Drifted%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-20310fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D" href="https://caltopo.com/map.html#ll=40.63079543759668,-111.03097794652884&z=10&b=mbt&a=sc_a158-293e0-7000fcfff200pa113-158e0-7000fcf7941epa293-113e0-7000fced1c24pa158-293e7001-9000fc50b848pa113-158e7001-9000fcfff200pa293-113e7001-9000fced1c24pa113-293e9001-20310fc50b848pa293-113e9001-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-293e0-7000fcfff200pa113-158e0-7000fcf7941epa293-113e0-7000fced1c24pa158-293e7001-9000fc50b848pa113-158e7001-9000fcfff200pa293-113e7001-9000fced1c24pa113-293e9001-20310fc50b848pa293-113e9001-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%223c87b312-99a9-438e-83a8-e4afa9d4d8f6%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Persistent%20Weak%20Layer%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-20310fc0000FFpa293-113e7001-9000fc0000FFpa293-113e0-7000fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22c95a689f-51e8-4bef-bf6c-f584aca7cc7d%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-02-26%20Wind%20Drifted%20Snow%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e9001-20310fc009AFF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
-                    <strong>2026-02-25 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a113-293e9001-20310f 50b848', 'a293-113e9001-20310f fff200']&#10;['a113-293e7001-9000f 50b848', 'a293-113e7001-9000f f7941e']&#10;['a113-293e0-7000f fff200', 'a293-113e0-7000f f7941e']" onclick="clickFunc(this, 'danger-tooltip-1740'); return false;" onmouseout="outFunc('danger-tooltip-1740')" href="#"><span class="tooltiptext" id="danger-tooltip-1740">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    <strong>2026-02-26 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="['a113-293e9001-20310f 50b848', 'a293-113e9001-20310f f7941e']&#10;['a158-293e7001-9000f 50b848', 'a113-158e7001-9000f fff200', 'a293-113e7001-9000f ed1c24']&#10;['a158-293e0-7000f fff200', 'a113-158e0-7000f f7941e', 'a293-113e0-7000f ed1c24']" onclick="clickFunc(this, 'danger-tooltip-1740'); return false;" onmouseout="outFunc('danger-tooltip-1740')" href="#"><span class="tooltiptext" id="danger-tooltip-1740">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1740">
@@ -772,9 +790,9 @@ css_includes:
                             
                                 data-color1="#50b848"
                             
-                                data-color2="#fff200"
+                                data-color2="#f7941e"
                             
-                            ></div> <span class="desc">Low to Moderate danger (above 9001')</span>
+                            ></div> <span class="desc">Low to Considerable danger (above 9001')</span>
                         </li>
                     
                         <li class="pv1 ntl">
@@ -782,9 +800,11 @@ css_includes:
                             
                                 data-color1="#50b848"
                             
-                                data-color2="#f7941e"
+                                data-color2="#fff200"
                             
-                            ></div> <span class="desc">Low to Considerable danger (7001' to 9000')</span>
+                                data-color3="#ed1c24"
+                            
+                            ></div> <span class="desc">Low to High danger (7001' to 9000')</span>
                         </li>
                     
                         <li class="pv1 btl">
@@ -794,7 +814,9 @@ css_includes:
                             
                                 data-color2="#f7941e"
                             
-                            ></div> <span class="desc">Moderate to Considerable danger (below 7000')</span>
+                                data-color3="#ed1c24"
+                            
+                            ></div> <span class="desc">Moderate to High danger (below 7000')</span>
                         </li>
                     
                     </ul>
@@ -806,7 +828,7 @@ css_includes:
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2026-02-25 Persistent Weak Layer</strong>
+                        <strong>2026-02-26 Persistent Weak Layer</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-158e9001-20310f 0000FF&#10;a293-113e7001-9000f 0000FF&#10;a293-113e0-7000f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1740'); return false;" onmouseout="outFunc('problem-1-tooltip-1740')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1740">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
@@ -828,7 +850,7 @@ css_includes:
                     </dd>
                 
                     <dt class="mt3">
-                        <strong>2026-02-25 Wind Drifted Snow</strong>
+                        <strong>2026-02-26 Wind Drifted Snow</strong>
                         <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-158e9001-20310f 009AFF" onclick="clickFunc(this, 'problem-2-tooltip-1740'); return false;" onmouseout="outFunc('problem-2-tooltip-1740')" href="#"><span class="tooltiptext" id="problem-2-tooltip-1740">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
@@ -845,7 +867,7 @@ css_includes:
             
             
             <p class="tc f6">
-                <strong>Issued at:</strong> Tuesday, February 24, 2026 4:31AM<br />
+                <strong>Issued at:</strong> Wednesday, February 25, 2026 4:40AM<br />
                 <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/uintas">UAC</a>
             </p>
             
