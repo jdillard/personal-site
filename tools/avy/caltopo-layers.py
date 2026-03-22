@@ -346,15 +346,16 @@ for state in states:
                         data = json.load(fp)
 
                     # timezone calculations
-                    tz_name = tf.timezone_at(lat=zone["geo"][1], lng=zone["geo"][0])
-                    utc = dateutil.parser.parse(data["published_time"])
-                    utc = utc.replace(tzinfo=ZoneInfo('UTC'))
+                    if data.get("published_time"):
+                        tz_name = tf.timezone_at(lat=zone["geo"][1], lng=zone["geo"][0])
+                        utc = dateutil.parser.parse(data["published_time"])
+                        utc = utc.replace(tzinfo=ZoneInfo('UTC'))
 
-                    published_date_time_obj = utc.astimezone(ZoneInfo(tz_name))
-                    tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
+                        published_date_time_obj = utc.astimezone(ZoneInfo(tz_name))
+                        tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
 
-                    published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
-                    tomorrow = tomorrow_date_time_obj.strftime("%Y-%m-%d")
+                        published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+                        tomorrow = tomorrow_date_time_obj.strftime("%Y-%m-%d")
 
             # use zone elevation profile if exists, else use the state level elevation profile
             zone["elevations"] = state["elevations"].get(zone["zone_id"], state["elevations"].get(0))
