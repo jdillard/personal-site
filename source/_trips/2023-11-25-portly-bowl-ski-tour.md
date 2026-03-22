@@ -21,18 +21,36 @@ image:
 cover: portly-bowl
 ---
 
-Washington received an atmospheric river in late October that stretched all the way to Washington Pass, where by then it had cooled into a healthy dose of snow.
-Since not much of a base had formed yet, there wasn't much avalanche danger and therefore the pass remained open.
+## Arrival
 
-I had wanted to explore the Cutthroat Peak area area in winter, especially after climbing the [South Buttress](https://www.mountainproject.com/route/109326651/south-buttress) that summer, and this seemed like the perfect opportunity.
-Since avalanche forecasts weren't being performed yet, we wanted to play it conservative and this also seemed like a safe line.
+- pass stayed open for thanksgiving break
+  - https://wsdot.wa.gov/travel/roads-bridges/mountain-pass-closure-and-opening-dates
+- low coverage, excuse to explore
 
-On the way out that morning we saw a few car's worth of people at Rainy pass, but no one was parked at Cutthroat, we had the whole place to ourselves.
+## Approach
 
-![Portly Bowl](/assets/images/trips/2023-11-25-portly-bowl/portly-bowl.jpg "Portly Bowl"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The start of the approach, before crossing the creek, the shoulder we're going to ski visible on the right.</i></small>
+- tracks from the day before
+- made it easy to follow, but not that tricky working through the cliff bands
+- saw tracks in the gut, kinda spooked to go further
+- first tour of the season
 
-![Cutthroat](/assets/images/trips/2023-11-25-portly-bowl/cutthroat.jpg "Cutthroat"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The start of the approach, before crossing the creek, the shoulder we're going to ski visible on the right.</i></small>
+## Ski
 
-![Frost Hoar](/assets/images/trips/2023-11-25-portly-bowl/frost-hoar.jpg "Frost Hoar"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The start of the approach, before crossing the creek, the shoulder we're going to ski visible on the right.</i></small>
+- Transition at top with awesome view
+- See Cutthroat across the way (link to post)
+- Surprisingly good soft snow, the snow stays a little more protected on the left side of portly bowl
+- Tricky getting down with the snow warming up and low coverage
+  - Ski stuck under log
+- Frost hoar
 
-![Fireworks](/assets/images/trips/2023-11-25-portly-bowl/fireworks.jpg "Fireworks"){: .shadow-5.oversized}{: loading="lazy"} <small><i>The start of the approach, before crossing the creek, the shoulder we're going to ski visible on the right.</i></small>
+## Post
+
+- Fireworks for [Christmas at the end of the road](https://winthropwashington.com/christmas-at-the-end-of-the-road/) on the first Saturday after Thanksgiving.
+
+![Portly Bowl](/assets/images/trips/2023-11-25-portly-bowl/portly-bowl.jpg "Portly Bowl"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Approaching Portly Bowl, the previous day's tracks visible.</i></small>
+
+![Cutthroat](/assets/images/trips/2023-11-25-portly-bowl/cutthroat.jpg "Cutthroat"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Looking across at Cutthroat Peak, the shoulder visible on the left.</i></small>
+
+![Hoarfrost](/assets/images/trips/2023-11-25-portly-bowl/frost-hoar.jpg "Hoarfrost"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Some of the biggest hoarfrost I've ever seen.</i></small>
+
+![Fireworks](/assets/images/trips/2023-11-25-portly-bowl/fireworks.jpg "Fireworks"){: .shadow-5.oversized}{: loading="lazy"} <small><i>Surprise fireworks show in Winthrop.</i></small>
