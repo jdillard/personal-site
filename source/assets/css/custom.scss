@@ -331,6 +331,21 @@ header.post-cover {
     background-color: #d1d5db;
 }
 
+<<<<<<< Updated upstream
+=======
+.japan-cover {
+    background-image: url(/assets/images/covers/japan.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
+}
+
+.portly-bowl-cover {
+    background-image: url(/assets/images/covers/portly-bowl.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
+}
+
+>>>>>>> Stashed changes
 .cutthroat-cover {
     background-image: url(/assets/images/covers/cutthroat.jpg), url(/assets/images/svg/topography.svg);
     background-size: cover, auto;
