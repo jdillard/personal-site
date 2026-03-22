@@ -22,8 +22,10 @@
     scrollWheelZoom: false
   });
 
-  // CartoDB light tiles (same as /avy pages)
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(map);
+  // OpenSnowMap pistes tiles
+  L.tileLayer('https://tiles.opensnowmap.org/pistes/{z}/{x}/{y}.png', {
+    maxZoom: 18
+  }).addTo(map);
 
   // Track data
   let trackCoords = [];
