@@ -27,7 +27,7 @@ Our original plan was a 3 day trip that started on Lopez Island, used [Jones
 Island State Park](https://parks.state.wa.us/525/Jones-Island) as a base camp,
 and ended back on Lopez Island.
 
-![Salish Sea Itinerary](/assets/images/trips/kayaking-san-juans-itinerary.jpg "Salish Sea Itinerary"){: .shadow-5.oversized}{: loading="lazy"}<small><i>The original route we had mapped out based on [Steph Abegg's trip report](https://sites.google.com/stephabegg.com/washington/tripreports/sanjuans).</i></small>
+![Salish Sea Itinerary](/assets/images/trips/kayaking-san-juans-itinerary.jpg "Salish Sea Itinerary"){: .shadow-5.oversized}{: loading="lazy"}<small><i>The original route we had mapped out based on [Steph Abegg's trip report](https://stephabegg.com/trip-reports/washington/san-juans-kayak/).</i></small>
 
 For reasons I'll cover later, we ended up using [Turn Island Marine State Park](https://parks.state.wa.us/295/Turn-Island)
 as a base camp instead. Even though we didn't stick to the planned itinerary it
@@ -75,7 +75,8 @@ made it over to shore to gather ourselves. It turns out there is a small island
 that shows up at low tide that Turn Rock Light sits on just off of Turn Island
 that funnels the tide and causes the currents to be quite a bit faster. Another
 dose of reality, having learned the hard way the limits of the tide charts we
-had read online.
+had read online. This [tidal model of the San Juan Islands](https://www.youtube.com/watch?v=QWIyVEkS6j4)
+shows just how varied the tides can be based on geography.
 
 {: {{site.data.css.info-box}} }
 > **Note:** The [interactive CalTopo map](https://caltopo.com/m/0L17) of our
