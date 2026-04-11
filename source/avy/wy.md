@@ -90,10 +90,6 @@ css_includes:
             
             <option value="BTAC-2855" >Tetons</option>
             
-            <option value="BTAC-2855" >Tetons</option>
-            
-            <option value="BTAC-2852" >Togwotee Pass</option>
-            
             <option value="BTAC-2852" >Togwotee Pass</option>
             
             <option value="EWYAIX-2841" >Big Horns</option>
@@ -133,26 +129,6 @@ css_includes:
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">BTAC</a> for more information.</div>
-            
-
-            
-            
-        </div>
-        
-        <div id="BTAC-2855-report" class="avy-zone dn" data-id="BTAC-2855" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Friday, April 10, 2026 5:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">BTAC</a> for more information.</div>
-            
-
-            
-            
-        </div>
-        
-        <div id="BTAC-2852-report" class="avy-zone dn" data-id="BTAC-2852" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Friday, April 10, 2026 5:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass">BTAC</a> for more information.</div>
             
 
             
@@ -214,14 +190,6 @@ css_includes:
         
         <div id="BTAC-2855-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2855.geojson" class="avy-zone dn">
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2855.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="BTAC-2855-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2855.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2855.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="BTAC-2852-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2852.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2852.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="BTAC-2852-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2852.geojson" class="avy-zone dn">
