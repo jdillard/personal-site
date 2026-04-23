@@ -119,7 +119,7 @@ css_includes:
             
         </div>
         
-        <div id="UAC-1736-report" class="avy-zone dn" data-id="UAC-1736" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Friday, April 10, 2026 8:21AM">
+        <div id="UAC-1736-report" class="avy-zone dn" data-id="UAC-1736" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="9000" data-published="Thursday, April 23, 2026 7:25AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://utahavalanchecenter.org/forecast/logan"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/logan">UAC</a> for more information.</div>
@@ -129,8 +129,8 @@ css_includes:
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2026-04-11 Wet Snow</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a158-158e9001-20310f 0000FF&#10;a248-113e7001-9000f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1736'); return false;" onmouseout="outFunc('problem-1-tooltip-1736')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                        <strong>2026-04-24 New Snow</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a158-158e9001-20310f 0000FF&#10;a293-113e7001-9000f 0000FF" onclick="clickFunc(this, 'problem-1-tooltip-1736'); return false;" onmouseout="outFunc('problem-1-tooltip-1736')" href="#"><span class="tooltiptext" id="problem-1-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1736">
@@ -140,7 +140,25 @@ css_includes:
                             </li>
                         
                             <li class="pv1 ntl">
-                                <div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> <span class="desc">W to E aspects (7001' to 9000')</span>
+                                <div style="clear: both;background-color: #0000FF" class="fl mr2 h1 w1"></div> <span class="desc">NW to E aspects (7001' to 9000')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                
+                    <dt class="mt3">
+                        <strong>2026-04-24 Wet Snow</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a158-158e9001-20310f 009AFF&#10;a248-113e7001-9000f 009AFF" onclick="clickFunc(this, 'problem-2-tooltip-1736'); return false;" onmouseout="outFunc('problem-2-tooltip-1736')" href="#"><span class="tooltiptext" id="problem-2-tooltip-1736">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7 rules-UAC-1736">
+                        
+                            <li class="pv1 atl">
+                                <div style="clear: both;background-color: #009AFF" class="fl mr2 h1 w1"></div> <span class="desc">All aspects (above 9001')</span>
+                            </li>
+                        
+                            <li class="pv1 ntl">
+                                <div style="clear: both;background-color: #009AFF" class="fl mr2 h1 w1"></div> <span class="desc">W to E aspects (7001' to 9000')</span>
                             </li>
                         
                         </ul>
