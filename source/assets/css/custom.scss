@@ -331,6 +331,12 @@ header.post-cover {
     background-color: #d1d5db;
 }
 
+.japan-cover {
+    background-image: url(/assets/images/covers/japan.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
+}
+
 .cutthroat-cover {
     background-image: url(/assets/images/covers/cutthroat.jpg), url(/assets/images/svg/topography.svg);
     background-size: cover, auto;
