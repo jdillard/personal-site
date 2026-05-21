@@ -79,6 +79,13 @@ function displayActivity(activities = []) {
   const activityElement = document.getElementById("github");
   let prev_date = "";
 
+  // events API gives PullRequestEvent label actions an unreliable
+  // `created_at`, so they can't be shown accurately
+  activities = activities.filter(b =>
+    !(b.type === "PullRequestEvent" &&
+      (b.payload?.action === "labeled" || b.payload?.action === "unlabeled"))
+  );
+
   const activityList = activities.reduce((a, b, i) => {
     b.created_at = moment(b.created_at).format('MMM DD, YYYY');
 
@@ -103,7 +110,7 @@ function displayActivity(activities = []) {
       case "PullRequestEvent":
         if (b.payload.action === "closed" && b.payload.merged_at != "") { b.payload.action = "merged"; }
         b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1) + " <strong>pull request #" + b.payload.pull_request.number + "</strong>";
-        b.link = b.payload.pull_request.html_url;
+        b.link = "https://github.com/" + b.repo.name + "/pull/" + b.payload.pull_request.number;
         break;
       case "IssuesEvent":
         b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1) + " <strong>issue #" + b.payload.issue.number + "</strong>";
