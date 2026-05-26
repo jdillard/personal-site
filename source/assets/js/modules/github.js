@@ -29,6 +29,8 @@ function summarizeAction(type, words) {
       return "Made a " + words + " of";
     case "PullRequestEvent":
       return words + " on";
+    case "PullRequestReviewEvent":
+      return words + " on";
     case "IssuesEvent":
       return words + " on";
     case "CreateEvent":
@@ -112,6 +114,16 @@ function displayActivity(activities = []) {
         b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1) + " <strong>pull request #" + b.payload.pull_request.number + "</strong>";
         b.link = "https://github.com/" + b.repo.name + "/pull/" + b.payload.pull_request.number;
         break;
+      case "PullRequestReviewEvent": {
+        const state = b.payload.review?.state;
+        let verb;
+        if (state === "approved") verb = "Approved";
+        else if (state === "changes_requested") verb = "Requested changes to";
+        else verb = "Reviewed";
+        b.words = verb + " <strong>pull request #" + b.payload.pull_request.number + "</strong>";
+        b.link = b.payload.review?.html_url || ("https://github.com/" + b.repo.name + "/pull/" + b.payload.pull_request.number);
+        break;
+      }
       case "IssuesEvent":
         b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1) + " <strong>issue #" + b.payload.issue.number + "</strong>";
         b.link = b.payload.issue.html_url;
