@@ -33,6 +33,10 @@ function summarizeAction(type, words) {
       return words + " on";
     case "IssuesEvent":
       return words + " on";
+    case "DiscussionEvent":
+      return words + " on";
+    case "DiscussionCommentEvent":
+      return words + " on";
     case "CreateEvent":
       return "Created " + words + " on";
     case "PullRequestReviewCommentEvent":
@@ -127,6 +131,14 @@ function displayActivity(activities = []) {
       case "IssuesEvent":
         b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1) + " <strong>issue #" + b.payload.issue.number + "</strong>";
         b.link = b.payload.issue.html_url;
+        break;
+      case "DiscussionEvent":
+        b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1) + " <strong>discussion #" + b.payload.discussion.number + "</strong>";
+        b.link = b.payload.discussion.html_url;
+        break;
+      case "DiscussionCommentEvent":
+        b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1) + " a comment on <strong>discussion #" + b.payload.discussion.number + "</strong>";
+        b.link = b.payload.comment?.html_url || b.payload.discussion.html_url;
         break;
       case "CreateEvent":
         if (b.payload.ref_type === "repository") {
