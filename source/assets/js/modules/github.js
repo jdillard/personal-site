@@ -114,7 +114,6 @@ function displayActivity(activities = []) {
         b.link = "https://github.com/" + b.repo.name;
         break;
       case "PullRequestEvent":
-        if (b.payload.action === "closed" && b.payload.merged_at != "") { b.payload.action = "merged"; }
         b.words = b.payload.action.charAt(0).toUpperCase() + b.payload.action.slice(1) + " <strong>pull request #" + b.payload.pull_request.number + "</strong>";
         b.link = "https://github.com/" + b.repo.name + "/pull/" + b.payload.pull_request.number;
         break;
