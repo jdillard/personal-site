@@ -331,6 +331,12 @@ header.post-cover {
     background-color: #d1d5db;
 }
 
+.portly-bowl-cover {
+    background-image: url(/assets/images/covers/portly-bowl.jpg), url(/assets/images/svg/topography.svg);
+    background-size: cover, auto;
+    background-position: center, top left;
+}
+
 .cutthroat-cover {
     background-image: url(/assets/images/covers/cutthroat.jpg), url(/assets/images/svg/topography.svg);
     background-size: cover, auto;
