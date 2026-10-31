@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
     - name: Checkout repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -30,9 +30,9 @@ jobs:
         python tools/avy/avalanche.py
 
     - name: Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v5
       with:
-        node-version: '16'
+        node-version: '22'
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
