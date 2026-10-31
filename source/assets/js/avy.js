@@ -265,7 +265,7 @@ document.querySelectorAll('.dynamic-color').forEach(el => {
 // initialize the zones map
 var map = L.map('map').setView([51.505, -0.09], 13);
 
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(map);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=cb1_489n_1_38909aed6058ce0068372c23').addTo(map);
 
 let layers = {};  // all layers with filenames as keys
 let currentLayer = null; //filename as key
