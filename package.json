@@ -58,5 +58,8 @@
   "bugs": {
     "url": "https://github.com/jdillard/personal-site/issues"
   },
-  "homepage": "https://github.com/jdillard/personal-site#readme"
+  "homepage": "https://github.com/jdillard/personal-site#readme",
+  "overrides": {
+    "postcss-selector-parser": "^6.1.5"
+  }
 }
