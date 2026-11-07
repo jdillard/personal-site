@@ -147,7 +147,7 @@ css_includes:
             
         </div>
         
-        <div id="WAC-2985-report" class="avy-zone dn" data-id="WAC-2985" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Monday, April 06, 2026 7:00AM">
+        <div id="WAC-2985-report" class="avy-zone dn" data-id="WAC-2985" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.wallowaavalanchecenter.org/forecasts/#/blues"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.wallowaavalanchecenter.org/forecasts/#/blues">WAC</a> for more information.</div>
@@ -157,7 +157,7 @@ css_includes:
             
         </div>
         
-        <div id="WAC-2984-report" class="avy-zone dn" data-id="WAC-2984" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Monday, April 06, 2026 7:00AM">
+        <div id="WAC-2984-report" class="avy-zone dn" data-id="WAC-2984" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.wallowaavalanchecenter.org/forecasts/#/elkhorns"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.wallowaavalanchecenter.org/forecasts/#/elkhorns">WAC</a> for more information.</div>
@@ -167,7 +167,7 @@ css_includes:
             
         </div>
         
-        <div id="WAC-2982-report" class="avy-zone dn" data-id="WAC-2982" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Monday, April 06, 2026 7:00AM">
+        <div id="WAC-2982-report" class="avy-zone dn" data-id="WAC-2982" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://wallowaavalanchecenter.org/forecasts/#/northern-wallowas"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://wallowaavalanchecenter.org/forecasts/#/northern-wallowas">WAC</a> for more information.</div>
@@ -177,7 +177,7 @@ css_includes:
             
         </div>
         
-        <div id="WAC-2983-report" class="avy-zone dn" data-id="WAC-2983" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Monday, April 06, 2026 7:00AM">
+        <div id="WAC-2983-report" class="avy-zone dn" data-id="WAC-2983" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://wallowaavalanchecenter.org/forecasts/#/southern-wallowas"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://wallowaavalanchecenter.org/forecasts/#/southern-wallowas">WAC</a> for more information.</div>

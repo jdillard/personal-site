@@ -115,10 +115,10 @@ css_includes:
                     
                 </li>
                 
-                <li data-zone="CAAC-2165" data-color="#50b848" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                <li data-zone="CAAC-2165" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ak.html#zone-CAAC-2165">Douglas Island</a>
-                    <span class="gray f7">Saturday, May 09, 2026 7:20AM</span>
+                    
                 </li>
                 
                 <li data-zone="CAAC-2164" data-color="#939598" class="pv1">
@@ -735,12 +735,6 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html">Canada</a></h3>
             <ul id="canada-zones" class="list pl3 f5 mt2">
                 
-                <li data-zone="53bb614cadbd487077d867dec6007dfed090d20fbc0cbfe941451b6af2df33ed" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-53bb614cadbd487077d867dec6007dfed090d20fbc0cbfe941451b6af2df33ed">Canada zone</a>
-                    
-                </li>
-                
                 <li data-zone="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">Canada zone</a>
@@ -780,6 +774,12 @@ css_includes:
                 <li data-zone="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d">Canada zone</a>
+                    
+                </li>
+                
+                <li data-zone="53bb614cadbd487077d867dec6007dfed090d20fbc0cbfe941451b6af2df33ed" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-53bb614cadbd487077d867dec6007dfed090d20fbc0cbfe941451b6af2df33ed">Canada zone</a>
                     
                 </li>
                 

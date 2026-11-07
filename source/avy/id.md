@@ -139,7 +139,7 @@ css_includes:
             
         </div>
         
-        <div id="PAC-3014-report" class="avy-zone dn" data-id="PAC-3014" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, April 24, 2026 12:47PM">
+        <div id="PAC-3014-report" class="avy-zone dn" data-id="PAC-3014" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://payetteavalanche.org/forecasts/avalanche/salmon-river-mountains"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/avalanche/salmon-river-mountains">PAC</a> for more information.</div>
@@ -149,7 +149,7 @@ css_includes:
             
         </div>
         
-        <div id="PAC-3015-report" class="avy-zone dn" data-id="PAC-3015" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, April 24, 2026 12:47PM">
+        <div id="PAC-3015-report" class="avy-zone dn" data-id="PAC-3015" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://payetteavalanche.org/forecasts/avalanche/west-mountains"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/avalanche/west-mountains">PAC</a> for more information.</div>
