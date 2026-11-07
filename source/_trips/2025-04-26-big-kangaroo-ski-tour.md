@@ -5,7 +5,7 @@ date: 2025-04-26
 state: Washington
 avy_region: wa
 avy_center_id: NWAC
-avy_zone_id: 1654
+avy_zone_id: 3029
 area: Washington Pass
 type: skiing
 published: true

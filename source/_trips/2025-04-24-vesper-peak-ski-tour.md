@@ -5,7 +5,7 @@ date: 2025-04-24
 state: Washington
 avy_region: wa
 avy_center_id: NWAC
-avy_zone_id: 1647
+avy_zone_id: 3021
 area: Mountain Loop Highway
 type: skiing
 published: true

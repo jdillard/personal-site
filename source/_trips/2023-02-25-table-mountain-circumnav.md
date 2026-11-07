@@ -5,7 +5,7 @@ date: 2023-02-25
 state: Washington
 avy_region: wa
 avy_center_id: NWAC
-avy_zone_id: 1646
+avy_zone_id: 3021
 area: Baker
 type: skiing
 published: true

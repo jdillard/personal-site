@@ -5,7 +5,7 @@ date: 2022-02-05
 state: Washington
 avy_region: wa
 avy_center_id: NWAC
-avy_zone_id: 1648
+avy_zone_id: 3022
 area: Rainier
 type: skiing
 published: true
