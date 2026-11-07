@@ -59,6 +59,10 @@ css_includes:
             
             
             
+            <option value="ny">New York</option>
+            
+            
+            
             <option value="or">Oregon</option>
             
             
@@ -240,10 +244,34 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html">Colorado</a></h3>
             <ul id="co-zones" class="list pl3 f5 mt2">
                 
-                <li data-zone="CAIC-2755" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                <li data-zone="CAIC-2755" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2755">CAIC zone</a>
-                    
+                    <span class="gray f7">Friday, November 06, 2026 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-2747" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2747">CAIC zone</a>
+                    <span class="gray f7">Friday, November 06, 2026 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-2651" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2651">CAIC zone</a>
+                    <span class="gray f7">Friday, November 06, 2026 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-2660" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2660">CAIC zone</a>
+                    <span class="gray f7">Friday, November 06, 2026 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-2752" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2752">CAIC zone</a>
+                    <span class="gray f7">Friday, November 06, 2026 4:30PM</span>
                 </li>
                 
             </ul>
@@ -255,9 +283,9 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html">Idaho</a></h3>
             <ul id="id-zones" class="list pl3 f5 mt2">
                 
-                <li data-zone="IPAC-1899" data-color="#939598" class="pv1">
+                <li data-zone="IPAC-3018" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-IPAC-1899">Selkirk Mountains</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-IPAC-3018">Selkirk Mountains</a>
                     
                 </li>
                 
@@ -273,15 +301,15 @@ css_includes:
                     
                 </li>
                 
-                <li data-zone="PAC-2897" data-color="#939598" class="pv1">
+                <li data-zone="PAC-3014" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-PAC-2897">Salmon River Mountains</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-PAC-3014">Salmon River Mountains</a>
                     
                 </li>
                 
-                <li data-zone="PAC-2898" data-color="#939598" class="pv1">
+                <li data-zone="PAC-3015" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-PAC-2898">West Mountains</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/id.html#zone-PAC-3015">West Mountains</a>
                     
                 </li>
                 
@@ -318,21 +346,27 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html">Montana</a></h3>
             <ul id="mt-zones" class="list pl3 f5 mt2">
                 
-                <li data-zone="FAC-1735" data-color="#939598" class="pv1">
+                <li data-zone="FAC-3043" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-FAC-1735">Flathead Range & Glacier NP</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-FAC-3043">Flathead Range & Glacier NP</a>
                     
                 </li>
                 
-                <li data-zone="FAC-1734" data-color="#939598" class="pv1">
+                <li data-zone="FAC-3040" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-FAC-1734">Swan Range</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-FAC-3040">Northern Whitefish Range</a>
                     
                 </li>
                 
-                <li data-zone="FAC-1733" data-color="#939598" class="pv1">
+                <li data-zone="FAC-3041" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-FAC-1733">Whitefish Range</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-FAC-3041">Southern Whitefish Range</a>
+                    
+                </li>
+                
+                <li data-zone="FAC-3042" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-FAC-3042">Swan Range</a>
                     
                 </li>
                 
@@ -390,9 +424,9 @@ css_includes:
                     
                 </li>
                 
-                <li data-zone="IPAC-1903" data-color="#939598" class="pv1">
+                <li data-zone="IPAC-3019" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-IPAC-1903">Purcell Mountains</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/mt.html#zone-IPAC-3019">Purcell Mountains</a>
                     
                 </li>
                 
@@ -449,6 +483,21 @@ css_includes:
     
     
     
+        <div id="ny-region" class="avy-region">
+            <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ny.html">New York</a></h3>
+            <ul id="ny-zones" class="list pl3 f5 mt2">
+                
+                <li data-zone="NYSAC-3017" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ny.html#zone-NYSAC-3017">Adirondack Park</a>
+                    
+                </li>
+                
+            </ul>
+        </div>
+    
+    
+    
         <div id="or-region" class="avy-region">
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html">Oregon</a></h3>
             <ul id="or-zones" class="list pl3 f5 mt2">
@@ -465,9 +514,9 @@ css_includes:
                     
                 </li>
                 
-                <li data-zone="NWAC-1657" data-color="#939598" class="pv1">
+                <li data-zone="NWAC-3032" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-NWAC-1657">Mt Hood</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/or.html#zone-NWAC-3032">Mt Hood</a>
                     
                 </li>
                 
@@ -573,57 +622,57 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html">Washington</a></h3>
             <ul id="wa-zones" class="list pl3 f5 mt2">
                 
-                <li data-zone="NWAC-1655" data-color="#939598" class="pv1">
+                <li data-zone="NWAC-3030" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1655">East Slopes Central</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-3030">East Slopes Central</a>
                     
                 </li>
                 
-                <li data-zone="NWAC-1654" data-color="#939598" class="pv1">
+                <li data-zone="NWAC-3029" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1654">East Slopes North</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-3029">East Slopes North</a>
                     
                 </li>
                 
-                <li data-zone="NWAC-1656" data-color="#939598" class="pv1">
+                <li data-zone="NWAC-3031" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1656">East Slopes South</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-3031">East Slopes South</a>
                     
                 </li>
                 
-                <li data-zone="NWAC-1645" data-color="#939598" class="pv1">
+                <li data-zone="NWAC-3020" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1645">Olympics</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-3020">Olympics</a>
                     
                 </li>
                 
-                <li data-zone="NWAC-1653" data-color="#939598" class="pv1">
+                <li data-zone="NWAC-3028" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1653">Snoqualmie Pass</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-3028">Snoqualmie Pass</a>
                     
                 </li>
                 
-                <li data-zone="NWAC-1649" data-color="#939598" class="pv1">
+                <li data-zone="NWAC-3024" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1649">Stevens Pass</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-3024">Stevens Pass</a>
                     
                 </li>
                 
-                <li data-zone="NWAC-1647" data-color="#939598" class="pv1">
+                <li data-zone="NWAC-3022" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1647">West Slopes Central</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-3022">West Slopes Central</a>
                     
                 </li>
                 
-                <li data-zone="NWAC-1646" data-color="#939598" class="pv1">
+                <li data-zone="NWAC-3021" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1646">West Slopes North</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-3021">West Slopes North</a>
                     
                 </li>
                 
-                <li data-zone="NWAC-1648" data-color="#939598" class="pv1">
+                <li data-zone="NWAC-3023" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-1648">West Slopes South</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/wa.html#zone-NWAC-3023">West Slopes South</a>
                     
                 </li>
                 
@@ -686,21 +735,15 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html">Canada</a></h3>
             <ul id="canada-zones" class="list pl3 f5 mt2">
                 
+                <li data-zone="53bb614cadbd487077d867dec6007dfed090d20fbc0cbfe941451b6af2df33ed" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-53bb614cadbd487077d867dec6007dfed090d20fbc0cbfe941451b6af2df33ed">Canada zone</a>
+                    
+                </li>
+                
                 <li data-zone="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">Canada zone</a>
-                    
-                </li>
-                
-                <li data-zone="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85">Canada zone</a>
-                    
-                </li>
-                
-                <li data-zone="f5e1dd46952f8736251efd4edbcaf95cbfaab70d328bf10d32f9adb5673952ac" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-f5e1dd46952f8736251efd4edbcaf95cbfaab70d328bf10d32f9adb5673952ac">Canada zone</a>
                     
                 </li>
                 
@@ -728,27 +771,15 @@ css_includes:
                     
                 </li>
                 
+                <li data-zone="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85">Canada zone</a>
+                    
+                </li>
+                
                 <li data-zone="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d">Canada zone</a>
-                    
-                </li>
-                
-                <li data-zone="5106c1eff6ef7098f65d544e8f0bbf15200dfd7d9aeca993741b639b3c78cad2" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-5106c1eff6ef7098f65d544e8f0bbf15200dfd7d9aeca993741b639b3c78cad2">Canada zone</a>
-                    
-                </li>
-                
-                <li data-zone="204dd862eae626a198ba61a83d3db20dbf7dd6f0ced7baa43fff08fef0ab62f5" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-204dd862eae626a198ba61a83d3db20dbf7dd6f0ced7baa43fff08fef0ab62f5">Canada zone</a>
-                    
-                </li>
-                
-                <li data-zone="e743e05cba0807b9cc3bdeda2dd122e53efa61e8933c545cd85ec9de107d9e70" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-e743e05cba0807b9cc3bdeda2dd122e53efa61e8933c545cd85ec9de107d9e70">Canada zone</a>
                     
                 </li>
                 

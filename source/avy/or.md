@@ -88,7 +88,7 @@ css_includes:
             
             <option value="COAA-2471" >Newberry</option>
             
-            <option value="NWAC-1657" >Mt Hood</option>
+            <option value="NWAC-3032" >Mt Hood</option>
             
             <option value="SOAIX-1369" >Southern Oregon</option>
             
@@ -107,7 +107,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="COAA-2470-report" class="avy-zone" data-id="COAA-2470" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Thursday, April 30, 2026 8:00PM">
+        <div id="COAA-2470-report" class="avy-zone" data-id="COAA-2470" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Tuesday, November 03, 2026 10:25AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://coavalanche.org/pages/forecasts/#/central-cascades"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/central-cascades">COAA</a> for more information.</div>
@@ -117,7 +117,7 @@ css_includes:
             
         </div>
         
-        <div id="COAA-2471-report" class="avy-zone dn" data-id="COAA-2471" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Sunday, March 29, 2026 5:23PM">
+        <div id="COAA-2471-report" class="avy-zone dn" data-id="COAA-2471" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Tuesday, November 03, 2026 10:39AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://coavalanche.org/pages/forecasts/#/newberry"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/newberry">COAA</a> for more information.</div>
@@ -127,10 +127,10 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-1657-report" class="avy-zone dn" data-id="NWAC-1657" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Sunday, April 19, 2026 6:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/mt-hood"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="NWAC-3032-report" class="avy-zone dn" data-id="NWAC-3032" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Tuesday, September 15, 2026 7:35AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/mt-hood"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/mt-hood">NWAC</a> for more information.</div>
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/mt-hood">NWAC</a> for more information.</div>
             
 
             
@@ -200,8 +200,8 @@ css_includes:
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/COAA-2471.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="NWAC-1657-shape" data-geojson="/assets/json/avalanche-zones/NWAC-1657.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-1657.geojson" download="">Download GeoJSON</a></div>
+        <div id="NWAC-3032-shape" data-geojson="/assets/json/avalanche-zones/NWAC-3032.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-3032.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="SOAIX-1369-shape" data-geojson="/assets/json/avalanche-zones/SOAIX-1369.geojson" class="avy-zone dn">
@@ -246,6 +246,10 @@ css_includes:
         
         
         <option value="/avy/ak.html">Alaska</option>
+        
+        
+        
+        <option value="/avy/ny.html">New York</option>
         
         
         

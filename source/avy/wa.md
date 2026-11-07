@@ -84,23 +84,23 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="NWAC-1655" selected="">East Slopes Central</option>
+            <option value="NWAC-3030" selected="">East Slopes Central</option>
             
-            <option value="NWAC-1654" >East Slopes North</option>
+            <option value="NWAC-3029" >East Slopes North</option>
             
-            <option value="NWAC-1656" >East Slopes South</option>
+            <option value="NWAC-3031" >East Slopes South</option>
             
-            <option value="NWAC-1645" >Olympics</option>
+            <option value="NWAC-3020" >Olympics</option>
             
-            <option value="NWAC-1653" >Snoqualmie Pass</option>
+            <option value="NWAC-3028" >Snoqualmie Pass</option>
             
-            <option value="NWAC-1649" >Stevens Pass</option>
+            <option value="NWAC-3024" >Stevens Pass</option>
             
-            <option value="NWAC-1647" >West Slopes Central</option>
+            <option value="NWAC-3022" >West Slopes Central</option>
             
-            <option value="NWAC-1646" >West Slopes North</option>
+            <option value="NWAC-3021" >West Slopes North</option>
             
-            <option value="NWAC-1648" >West Slopes South</option>
+            <option value="NWAC-3023" >West Slopes South</option>
             
         </select>
     </div>
@@ -109,90 +109,90 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="NWAC-1655-report" class="avy-zone" data-id="NWAC-1655" data-color="#939598" data-min="0"  data-max="20310" data-btl="4999" data-atl="5999" data-published="Sunday, April 19, 2026 6:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/east-slopes-central"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="NWAC-3030-report" class="avy-zone" data-id="NWAC-3030" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/east-slopes-central"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/east-slopes-central">NWAC</a> for more information.</div>
-            
-
-            
-            
-        </div>
-        
-        <div id="NWAC-1654-report" class="avy-zone dn" data-id="NWAC-1654" data-color="#939598" data-min="0"  data-max="20310" data-btl="4999" data-atl="6499" data-published="Sunday, April 19, 2026 6:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/east-slopes-north"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/east-slopes-north">NWAC</a> for more information.</div>
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-central">NWAC</a> for more information.</div>
             
 
             
             
         </div>
         
-        <div id="NWAC-1656-report" class="avy-zone dn" data-id="NWAC-1656" data-color="#939598" data-min="0"  data-max="20310" data-btl="4999" data-atl="5999" data-published="Sunday, April 19, 2026 6:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/east-slopes-south"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="NWAC-3029-report" class="avy-zone dn" data-id="NWAC-3029" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/east-slopes-north"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/east-slopes-south">NWAC</a> for more information.</div>
-            
-
-            
-            
-        </div>
-        
-        <div id="NWAC-1645-report" class="avy-zone dn" data-id="NWAC-1645" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Sunday, April 19, 2026 6:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/olympics"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/olympics">NWAC</a> for more information.</div>
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-north">NWAC</a> for more information.</div>
             
 
             
             
         </div>
         
-        <div id="NWAC-1653-report" class="avy-zone dn" data-id="NWAC-1653" data-color="#939598" data-min="0"  data-max="20310" data-btl="3999" data-atl="5499" data-published="Sunday, April 19, 2026 6:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="NWAC-3031-report" class="avy-zone dn" data-id="NWAC-3031" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/east-slopes-south"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass">NWAC</a> for more information.</div>
-            
-
-            
-            
-        </div>
-        
-        <div id="NWAC-1649-report" class="avy-zone dn" data-id="NWAC-1649" data-color="#939598" data-min="0"  data-max="20310" data-btl="4999" data-atl="5999" data-published="Sunday, April 19, 2026 6:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/stevens-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/stevens-pass">NWAC</a> for more information.</div>
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-south">NWAC</a> for more information.</div>
             
 
             
             
         </div>
         
-        <div id="NWAC-1647-report" class="avy-zone dn" data-id="NWAC-1647" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Sunday, April 19, 2026 6:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/west-slopes-central"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="NWAC-3020-report" class="avy-zone dn" data-id="NWAC-3020" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/olympics"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/west-slopes-central">NWAC</a> for more information.</div>
-            
-
-            
-            
-        </div>
-        
-        <div id="NWAC-1646-report" class="avy-zone dn" data-id="NWAC-1646" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Sunday, April 19, 2026 6:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/west-slopes-north"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
-            
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/west-slopes-north">NWAC</a> for more information.</div>
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/olympics">NWAC</a> for more information.</div>
             
 
             
             
         </div>
         
-        <div id="NWAC-1648-report" class="avy-zone dn" data-id="NWAC-1648" data-color="#939598" data-min="0"  data-max="20310" data-btl="5499" data-atl="6499" data-published="Sunday, April 19, 2026 6:30PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="http://www.nwac.us/avalanche-forecast/#/west-slopes-south"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="NWAC-3028-report" class="avy-zone dn" data-id="NWAC-3028" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/snoqualmie-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.nwac.us/avalanche-forecast/#/west-slopes-south">NWAC</a> for more information.</div>
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/snoqualmie-pass">NWAC</a> for more information.</div>
+            
+
+            
+            
+        </div>
+        
+        <div id="NWAC-3024-report" class="avy-zone dn" data-id="NWAC-3024" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/stevens-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/stevens-pass">NWAC</a> for more information.</div>
+            
+
+            
+            
+        </div>
+        
+        <div id="NWAC-3022-report" class="avy-zone dn" data-id="NWAC-3022" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/west-slopes-central"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-central">NWAC</a> for more information.</div>
+            
+
+            
+            
+        </div>
+        
+        <div id="NWAC-3021-report" class="avy-zone dn" data-id="NWAC-3021" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/west-slopes-north"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-north">NWAC</a> for more information.</div>
+            
+
+            
+            
+        </div>
+        
+        <div id="NWAC-3023-report" class="avy-zone dn" data-id="NWAC-3023" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/west-slopes-south"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-south">NWAC</a> for more information.</div>
             
 
             
@@ -204,40 +204,40 @@ css_includes:
         <h3 class="tc bb b--moon-gray">Zone</h3>
         <div style="height: 300px;" id="map"></div>
         
-        <div id="NWAC-1655-shape" data-geojson="/assets/json/avalanche-zones/NWAC-1655.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-1655.geojson" download="">Download GeoJSON</a></div>
+        <div id="NWAC-3030-shape" data-geojson="/assets/json/avalanche-zones/NWAC-3030.geojson" class="avy-zone">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-3030.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="NWAC-1654-shape" data-geojson="/assets/json/avalanche-zones/NWAC-1654.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-1654.geojson" download="">Download GeoJSON</a></div>
+        <div id="NWAC-3029-shape" data-geojson="/assets/json/avalanche-zones/NWAC-3029.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-3029.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="NWAC-1656-shape" data-geojson="/assets/json/avalanche-zones/NWAC-1656.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-1656.geojson" download="">Download GeoJSON</a></div>
+        <div id="NWAC-3031-shape" data-geojson="/assets/json/avalanche-zones/NWAC-3031.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-3031.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="NWAC-1645-shape" data-geojson="/assets/json/avalanche-zones/NWAC-1645.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-1645.geojson" download="">Download GeoJSON</a></div>
+        <div id="NWAC-3020-shape" data-geojson="/assets/json/avalanche-zones/NWAC-3020.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-3020.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="NWAC-1653-shape" data-geojson="/assets/json/avalanche-zones/NWAC-1653.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-1653.geojson" download="">Download GeoJSON</a></div>
+        <div id="NWAC-3028-shape" data-geojson="/assets/json/avalanche-zones/NWAC-3028.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-3028.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="NWAC-1649-shape" data-geojson="/assets/json/avalanche-zones/NWAC-1649.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-1649.geojson" download="">Download GeoJSON</a></div>
+        <div id="NWAC-3024-shape" data-geojson="/assets/json/avalanche-zones/NWAC-3024.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-3024.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="NWAC-1647-shape" data-geojson="/assets/json/avalanche-zones/NWAC-1647.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-1647.geojson" download="">Download GeoJSON</a></div>
+        <div id="NWAC-3022-shape" data-geojson="/assets/json/avalanche-zones/NWAC-3022.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-3022.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="NWAC-1646-shape" data-geojson="/assets/json/avalanche-zones/NWAC-1646.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-1646.geojson" download="">Download GeoJSON</a></div>
+        <div id="NWAC-3021-shape" data-geojson="/assets/json/avalanche-zones/NWAC-3021.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-3021.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="NWAC-1648-shape" data-geojson="/assets/json/avalanche-zones/NWAC-1648.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-1648.geojson" download="">Download GeoJSON</a></div>
+        <div id="NWAC-3023-shape" data-geojson="/assets/json/avalanche-zones/NWAC-3023.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-3023.geojson" download="">Download GeoJSON</a></div>
         </div>
         
     </div>
@@ -262,6 +262,10 @@ css_includes:
         
         
         <option value="/avy/ak.html">Alaska</option>
+        
+        
+        
+        <option value="/avy/ny.html">New York</option>
         
         
         
