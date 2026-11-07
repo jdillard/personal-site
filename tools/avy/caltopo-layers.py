@@ -186,7 +186,13 @@ for product in ca_metadata:
 
         published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
         tomorrow = tomorrow_date_time_obj.strftime("%Y-%m-%d")
-
+        # treat expired reports as unavailable so stale danger ratings are not shown
+        if data.get("report", {}).get("expires_time") and dateutil.parser.parse(data["report"]["expires_time"]) <= datetime.now(tz=ZoneInfo('UTC')):
+            data["report"] = {} # keep area metadata, but drop expired report details
+            published = False
+        area_slug_id = data['area']['id']
+    else:
+        area_slug_id = product['product']['id']
     # TODO set elevations levels
     area["elevations"] = {
             "btl": (6000, 7500),
@@ -198,7 +204,7 @@ for product in ca_metadata:
     danger_rules = []
     danger_layer = ""
     area_color = 0
-    if data and data["report"]["dangerRatings"] and (data["report"]["dangerRatings"][0]["ratings"]["btl"] or data["report"]["dangerRatings"][0]["ratings"]["tln"] or data["report"]["dangerRatings"][0]["ratings"]["alp"]) and area["elevations"]:
+    if data.get("report", {}).get("dangerRatings") and (data["report"]["dangerRatings"][0]["ratings"]["btl"] or data["report"]["dangerRatings"][0]["ratings"]["tln"] or data["report"]["dangerRatings"][0]["ratings"]["alp"]) and area["elevations"]:
         # print(data["report"]["dangerRatings"][0]["ratings"]["btl"]["rating"]["value"],data["report"]["dangerRatings"][0]["ratings"]["tln"]["rating"]["value"],data["report"]["dangerRatings"][0]["ratings"]["alp"]["rating"]["value"])
         lower = f'a0-0e{area["elevations"].get("btl")[0]}-{area["elevations"].get("btl")[1]}f {danger_levels.get(data["report"]["dangerRatings"][0]["ratings"]["btl"]["rating"]["value"])["color"]}'
         middle = f'a0-0e{area["elevations"].get("ntl")[0]}-{area["elevations"].get("ntl")[1]}f {danger_levels.get(data["report"]["dangerRatings"][0]["ratings"]["tln"]["rating"]["value"])["color"]}'
@@ -231,7 +237,7 @@ for product in ca_metadata:
 
     # avy problems
     problems = []
-    if data["report"]["problems"] and area["elevations"]:
+    if data.get("report", {}).get("problems") and area["elevations"]:
         for i, problem in enumerate(data["report"]["problems"]):
             lower = []
             middle = []
@@ -283,7 +289,7 @@ for product in ca_metadata:
     area["color"] = f"#{danger_levels[zone_color]['color']}"
     area["geo"] = found_value['properties']['centroid']
     area["name"] = "Canada zone"
-    area["slug"] = data['area']['id']
+    area["slug"] = area_slug_id
     area["center_id"] = "Avalanche Canada"
     area["url"] = f"https://avalanche.ca/forecasts/{product['product']['id']}"
 
@@ -298,8 +304,7 @@ for product in ca_metadata:
         area["message"] = ""
     else:
         area["layers"] = f"cl={urllib.parse.quote(layer_info)}"
-        if not data and not data["danger"]:
-            area["message"] = f'Report not available. See <a class="no-underline fancy-link relative light-red" href="{area["url"]}">{area["center_id"]}</a> for more information.'
+        area["message"] = f'Report not available. See <a class="no-underline fancy-link relative light-red" href="{area["url"]}">{area["center_id"]}</a> for more information.'
 
     areas.append(area)
 
@@ -356,7 +361,10 @@ for state in states:
 
                         published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
                         tomorrow = tomorrow_date_time_obj.strftime("%Y-%m-%d")
-
+                        # treat expired reports as unavailable so stale danger ratings are not shown
+                        if data.get("expires_time") and dateutil.parser.parse(data["expires_time"]) <= datetime.now(tz=ZoneInfo('UTC')):
+                            data = {}
+                            published = False
             # use zone elevation profile if exists, else use the state level elevation profile
             zone["elevations"] = state["elevations"].get(zone["zone_id"], state["elevations"].get(0))
 
