@@ -31,6 +31,19 @@
       atl: [2501, 20310]
   active: true
 
+- abbr: "NY"
+  name: "New York"
+  elevations:
+    0: # default
+      btl: [0, 2500]
+      ntl: [2501, 4000]
+      atl: [4001, 20310]
+    3017:
+      btl: [0, 2500]
+      ntl: [2501, 4000]
+      atl: [4001, 20310]
+  active: true
+
 - abbr: "AZ"
   name: "Arizona"
   elevations:
