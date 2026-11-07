@@ -37,6 +37,7 @@ aspect_abbr = {
 danger_levels = {
     "earlyseason": {"scale": 0, "color": "939598", "desc": "Early season"},
     "spring": {"scale": 0, "color": "939598", "desc": "Spring Conditions"},
+    "offseason": {"scale": 0, "color": "939598", "desc": "Off season"},
     "norating": {"scale": 0, "color": "939598", "desc": "No rating"},
     "no report": {"scale": 0, "color": "939598", "desc": "No report"},
     "noforecast": {"scale": 0, "color": "939598", "desc": "No forecast"},
