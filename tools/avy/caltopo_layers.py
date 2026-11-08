@@ -27,6 +27,8 @@ state_info = config.state_info
 
 def sort_directions(subset):
     """Sort random set of cardinal directions and return smallest and largest degree"""
+
+    subset = list(subset)
     subset_sorted = [subset.pop()]
 
     match = True

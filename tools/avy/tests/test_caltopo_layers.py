@@ -179,14 +179,14 @@ class TestSortDirections:
         assert end == 203
         assert "S to S" in desc
 
-    def test_mutates_input_list(self):
-        """Function mutates the input list (empties it)"""
+    def test_does_not_mutate_input_list(self):
+        """Function leaves the input list unmodified"""
         subset = [(339, 23), (23, 68)]
-        original_len = len(subset)
+        original = list(subset)
         sort_directions(subset)
 
-        # The function pops elements, so input list should be empty
-        assert len(subset) < original_len
+        # Function works on a copy, so the input list is unchanged
+        assert subset == original
 
     def test_southern_aspects(self):
         """Works with southern aspects"""
