@@ -119,36 +119,36 @@ def main():
                     raise_on_error=True,
                 )
 
-            published_date_time_obj, _, published, _ = convert_to_local_time(
-                jsonResponse["report"]["dateIssued"], avy_lat, avy_long
-            )
-            _, _, expires, _ = convert_to_local_time(
-                jsonResponse["report"]["validUntil"], avy_lat, avy_long
-            )
-            url = jsonResponse["url"]
-            danger_ratings = []
+                published_date_time_obj, _, published, _ = convert_to_local_time(
+                    jsonResponse["report"]["dateIssued"], avy_lat, avy_long
+                )
+                _, _, expires, _ = convert_to_local_time(
+                    jsonResponse["report"]["validUntil"], avy_lat, avy_long
+                )
+                url = jsonResponse["url"]
+                danger_ratings = []
 
-            for rating in jsonResponse["report"]["dangerRatings"]:
-                danger_ratings.append({
-                    "valid_day": rating["date"]["display"],
-                    "lower_num": danger_levels[rating["ratings"]["btl"]["rating"]["value"]],
-                    "lower_name": rating["ratings"]["btl"]["rating"]["value"].title(),
-                    "middle_num": danger_levels[rating["ratings"]["tln"]["rating"]["value"]],
-                    "middle_name":rating["ratings"]["tln"]["rating"]["value"].title(),
-                    "upper_num": danger_levels[rating["ratings"]["alp"]["rating"]["value"]],
-                    "upper_name": rating["ratings"]["alp"]["rating"]["value"].title(),
-                })
+                for rating in jsonResponse["report"]["dangerRatings"]:
+                    danger_ratings.append({
+                        "valid_day": rating["date"]["display"],
+                        "lower_num": danger_levels[rating["ratings"]["btl"]["rating"]["value"]],
+                        "lower_name": rating["ratings"]["btl"]["rating"]["value"].title(),
+                        "middle_num": danger_levels[rating["ratings"]["tln"]["rating"]["value"]],
+                        "middle_name":rating["ratings"]["tln"]["rating"]["value"].title(),
+                        "upper_num": danger_levels[rating["ratings"]["alp"]["rating"]["value"]],
+                        "upper_name": rating["ratings"]["alp"]["rating"]["value"].title(),
+                    })
 
-            data = {
-                "published": published,
-                "expires": expires,
-                "url": url,
-                "name": "Avalanche Canada",
-                "danger": danger_ratings
-            }
+                data = {
+                    "published": published,
+                    "expires": expires,
+                    "url": url,
+                    "name": "Avalanche Canada",
+                    "danger": danger_ratings
+                }
 
-            with open(f'{dir}/{avy_lat}-{avy_long}.json','w') as out:
-                out.write(json.dumps(data))
+                with open(f'{dir}/{avy_lat}-{avy_long}.json','w') as out:
+                    out.write(json.dumps(data))
 
 
 if __name__ == "__main__":
