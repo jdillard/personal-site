@@ -3,6 +3,7 @@ from datetime import datetime
 from unittest.mock import patch, Mock
 from zoneinfo import ZoneInfo
 
+import utils
 from utils import convert_to_local_time, fetch_json_with_retry, format_elevation_range
 
 
@@ -122,7 +123,9 @@ class TestFetchJsonWithRetry:
         result = fetch_json_with_retry("https://example.com/api")
 
         assert result == {"key": "value"}
-        mock_get.assert_called_once_with("https://example.com/api")
+        mock_get.assert_called_once_with(
+            "https://example.com/api", headers={"User-Agent": utils.USER_AGENT}
+        )
 
     @patch("utils.requests.get")
     def test_retries_on_failure(self, mock_get):

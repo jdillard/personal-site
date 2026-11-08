@@ -8,6 +8,11 @@ import dateutil.parser
 import requests
 from timezonefinder import TimezoneFinder
 
+# Descriptive User-Agent so avalanche forecast providers can identify this
+# traffic and reach out instead of blocking us (UAC explicitly requests one
+# with a contact email address and/or a URL back to the site).
+USER_AGENT = "jareddillard-avy/1.0 (+https://www.jareddillard.com; jared.dillard@gmail.com)"
+
 # CalTopo treats 20310 ft as "no upper bound" (the DEM max); ranges ending
 # there are described as "above X'" rather than "X' to 20310'".
 MAX_ELEVATION = 20310
@@ -69,9 +74,10 @@ def fetch_json_with_retry(
     Writes the parsed JSON to output_path if given. Returns the parsed JSON
     on success, or None if all retries fail and raise_on_error is False.
     """
+    headers = {"User-Agent": USER_AGENT}
     for attempt in range(retries):
         try:
-            response = requests.get(url, **kwargs)
+            response = requests.get(url, headers=headers, **kwargs)
             response.raise_for_status()
             json_response = response.json()
             if output_path:
