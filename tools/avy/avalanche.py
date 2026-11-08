@@ -2,12 +2,10 @@ from datetime import timedelta
 import dateutil.parser
 import frontmatter
 import json
-import requests
-from requests.exceptions import HTTPError
 import os
 import time
 import avy_config as config
-from utils import convert_to_local_time, load_zone_tz_names
+from utils import convert_to_local_time, load_zone_tz_names, fetch_json_with_retry
 
 # Fallback timezone used when a zone can't be resolved in the map layer;
 # preserves the previous behavior, which assumed Pacific time.
@@ -116,16 +114,10 @@ def main():
             # create Canada based avalanche reports
             if avy_lat and avy_long and not os.path.exists(f"{dir}/{avy_lat}-{avy_long}.json"):
                 time.sleep(5.5)
-                try:
-                    response = requests.get(f'https://api.avalanche.ca/forecasts/:lang/products/point?lat={avy_lat}&long={avy_long}')
-                    response.raise_for_status()
-                    jsonResponse = response.json()
-                except HTTPError as http_err:
-                    print(f'HTTP error occurred: {http_err}')
-                    exit()
-                except Exception as err:
-                    print(f'Other error occurred: {err}')
-                    exit()
+                jsonResponse = fetch_json_with_retry(
+                    f'https://api.avalanche.ca/forecasts/:lang/products/point?lat={avy_lat}&long={avy_long}',
+                    raise_on_error=True,
+                )
 
             published_date_time_obj, _, published, _ = convert_to_local_time(
                 jsonResponse["report"]["dateIssued"], avy_lat, avy_long

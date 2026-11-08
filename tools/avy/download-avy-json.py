@@ -1,9 +1,8 @@
 import json
 import os
 import time
-import requests
-from requests.exceptions import HTTPError
 from slugify import slugify
+from utils import fetch_json_with_retry
 
 def prep_dir(dir):
     # create directory if it doesn't exist
@@ -20,14 +19,13 @@ prep_dir(source_dir)
 prep_dir(output_dir)
 
 # grab CA map layer that contains all zones
-try:
-    response = requests.get(f'https://api.avalanche.ca/forecasts/en/areas')
-    response.raise_for_status()
-    jsonResponse = response.json()
+jsonResponse = fetch_json_with_retry(
+    'https://api.avalanche.ca/forecasts/en/areas',
+    output_path=f'{source_dir}/ca-areas.json',
+    raise_on_error=True,
+)
 
-    with open(f'{source_dir}/ca-areas.json','w') as out:
-        out.write(json.dumps(jsonResponse))
-
+if jsonResponse:
     # create geojson files for each zone
     for feature in jsonResponse['features']:
         shapes = []
@@ -68,27 +66,13 @@ try:
 
         with open(f"{output_dir}/{feature['id']}.geojson",'w') as out:
             out.write(geoJsonOutput)
-except HTTPError as http_err:
-    print(f'HTTP error occurred: {http_err}')
-    exit()
-except Exception as err:
-    print(f'Other error occurred: {err}')
-    exit()
 
 # grab CA zones metadata
-try:
-    response = requests.get(f'https://api.avalanche.ca/forecasts/en/metadata')
-    response.raise_for_status()
-    jsonResponse = response.json()
-
-    with open(f'{source_dir}/ca-metadata.json','w') as out:
-        out.write(json.dumps(jsonResponse))
-except HTTPError as http_err:
-    print(f'HTTP error occurred: {http_err}')
-    exit()
-except Exception as err:
-    print(f'Other error occurred: {err}')
-    exit()
+jsonResponse = fetch_json_with_retry(
+    'https://api.avalanche.ca/forecasts/en/metadata',
+    output_path=f'{source_dir}/ca-metadata.json',
+    raise_on_error=True,
+)
 
 with open(f"{source_dir}/ca-areas.json") as fp:
     ca_areas = json.load(fp)
@@ -101,28 +85,20 @@ for product in ca_metadata:
     time.sleep(1.5)
     product_id = product['product']['id']
 
-    try:
-        response = requests.get(f'https://api.avalanche.ca/forecasts/en/products/{product_id}')
-        response.raise_for_status()
-        jsonResponse = response.json()
-        with open(f'{source_dir}/{product_id}.json','w') as out:
-            out.write(json.dumps(jsonResponse))
-    except HTTPError as http_err:
-        print(f'HTTP error occurred: {http_err}')
-    except Exception as err:
-        print(f'Other error occurred: {err}')
+    fetch_json_with_retry(
+        f'https://api.avalanche.ca/forecasts/en/products/{product_id}',
+        output_path=f'{source_dir}/{product_id}.json',
+    )
 
 # grab US map layer that contains all zones
-try:
-    response = requests.get(f'https://api.avalanche.org/v2/public/products/map-layer')
-    response.raise_for_status()
-    jsonResponse = response.json()
+jsonResponse = fetch_json_with_retry(
+    'https://api.avalanche.org/v2/public/products/map-layer',
+    output_path=f'{source_dir}/map-layer.json',
+    raise_on_error=True,
+)
 
-    with open(f'{source_dir}/map-layer.json','w') as out:
-        out.write(json.dumps(jsonResponse))
-
-    # create geojson files for each zone
-    for feature in jsonResponse['features']:
+# create geojson files for each zone
+for feature in jsonResponse['features']:
         shapes = []
         for coord_set in feature['geometry']['coordinates']:
             if len(coord_set) > 5:
@@ -161,12 +137,6 @@ try:
 
         with open(f"{output_dir}/{feature['properties']['center_id']}-{feature['id']}.geojson",'w') as out:
             out.write(geoJsonOutput)
-except HTTPError as http_err:
-    print(f'HTTP error occurred: {http_err}')
-    exit()
-except Exception as err:
-    print(f'Other error occurred: {err}')
-    exit()
 
 with open(f"{source_dir}/map-layer.json") as fp:
     map_layer = json.load(fp)
@@ -180,25 +150,13 @@ for item in map_layer["features"]:
     if item['properties']['state'] == "UT":
         zone_name = slugify(item['properties']['name'])
         print(zone_name)
-        try:
-            response = requests.get(f'https://utahavalanchecenter.org/forecast/{zone_name}/json')
-            response.raise_for_status()
-            jsonResponse = response.json()
-            with open(f'{source_dir}/{zone_name}.json','w') as out:
-                out.write(json.dumps(jsonResponse))
-        except HTTPError as http_err:
-            print(f'HTTP error occurred: {http_err}')
-        except Exception as err:
-            print(f'Other error occurred: {err}')
+        fetch_json_with_retry(
+            f'https://utahavalanchecenter.org/forecast/{zone_name}/json',
+            output_path=f'{source_dir}/{zone_name}.json',
+        )
     else:
         print(center_id, zone_id)
-        try:
-            response = requests.get(f'https://api.avalanche.org/v2/public/product?type=forecast&center_id={center_id}&zone_id={zone_id}')
-            response.raise_for_status()
-            jsonResponse = response.json()
-            with open(f'{source_dir}/{center_id}-{zone_id}.json','w') as out:
-                out.write(json.dumps(jsonResponse))
-        except HTTPError as http_err:
-            print(f'HTTP error occurred: {http_err}')
-        except Exception as err:
-            print(f'Other error occurred: {err}')
+        fetch_json_with_retry(
+            f'https://api.avalanche.org/v2/public/product?type=forecast&center_id={center_id}&zone_id={zone_id}',
+            output_path=f'{source_dir}/{center_id}-{zone_id}.json',
+        )
