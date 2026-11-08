@@ -21,7 +21,7 @@ jobs:
       run: ruby tools/crags/crags.rb
 
     - name: Commit changes
-      uses: EndBug/add-and-commit@v9
+      uses: EndBug/add-and-commit@v11
       with:
         default_author: github_actions
         message: "Update built crag data"
