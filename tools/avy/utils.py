@@ -1,6 +1,7 @@
 """Shared helpers for the avalanche report tools."""
 
 import json
+import time
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -66,30 +67,81 @@ def convert_to_local_time(utc_issued, lat, lon, tz_name=None):
     return published_dt, tomorrow_dt, published_str, tomorrow_str
 
 
+class ResponseStatusError(Exception):
+    """Retryable HTTP status (429/5xx) with the Retry-After header, if any."""
+
+    def __init__(self, status_code, retry_after=None):
+        self.status_code = status_code
+        self.retry_after = retry_after
+        super().__init__(f"HTTP {status_code}")
+
+
+def _parse_retry_after(retry_after):
+    """Parse a Retry-After header as seconds; only the delay-seconds form."""
+    try:
+        return max(float(retry_after), 0)
+    except (TypeError, ValueError):
+        return 0
+
+
 def fetch_json_with_retry(
-    url, retries=3, output_path=None, raise_on_error=False, **kwargs
+    url, retries=3, output_path=None, raise_on_error=False, timeout=30, **kwargs
 ):
     """Fetch a URL and parse the JSON response, retrying on failure.
 
+    Retries request/network errors and 429/5xx responses with exponential
+    backoff, honoring Retry-After when provided. Other 4xx errors mean the
+    request itself is wrong and won't succeed on retry, so they fail fast.
     Writes the parsed JSON to output_path if given. Returns the parsed JSON
     on success, or None if all retries fail and raise_on_error is False.
     """
     headers = {"User-Agent": USER_AGENT}
+    backoff = 2
+    last_error = None
     for attempt in range(retries):
         try:
-            response = requests.get(url, headers=headers, **kwargs)
+            response = requests.get(url, headers=headers, timeout=timeout, **kwargs)
+            status_code = getattr(response, "status_code", None)
+            if status_code == 429 or (
+                isinstance(status_code, int) and status_code >= 500
+            ):
+                raise ResponseStatusError(
+                    response.status_code, response.headers.get("Retry-After")
+                )
             response.raise_for_status()
             json_response = response.json()
             if output_path:
                 with open(output_path, "w") as out:
                     out.write(json.dumps(json_response))
             return json_response
-        except Exception as err:
+        except requests.HTTPError as err:
+            status_code = getattr(getattr(err, "response", None), "status_code", None)
+            if status_code is None or status_code == 429 or status_code >= 500:
+                raise
+            if raise_on_error:
+                raise
+            print(f"Failed fetching {url} (HTTP {status_code}, not retried): {err}")
+            return None
+        except ResponseStatusError as err:
+            last_error = err
+            if attempt == retries - 1:
+                break
+            sleep_for = _parse_retry_after(err.retry_after)
+            time.sleep(max(sleep_for, backoff))
+            backoff *= 2
+        except (requests.RequestException, ValueError) as err:
             if attempt == retries - 1:
                 if raise_on_error:
                     raise
                 print(f"Failed fetching {url} after {retries} attempts: {err}")
                 return None
+            last_error = err
+            time.sleep(backoff)
+            backoff *= 2
+    if raise_on_error:
+        raise last_error
+    print(f"Failed fetching {url} after {retries} attempts: {last_error}")
+    return None
 
 
 def find_object_by_key_value(objects_list, key, value):

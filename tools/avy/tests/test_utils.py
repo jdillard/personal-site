@@ -4,7 +4,12 @@ from unittest.mock import patch, Mock
 from zoneinfo import ZoneInfo
 
 import utils
-from utils import convert_to_local_time, fetch_json_with_retry, format_elevation_range
+from utils import (
+    ResponseStatusError,
+    convert_to_local_time,
+    fetch_json_with_retry,
+    format_elevation_range,
+)
 
 
 class TestFormatElevationRange:
@@ -124,16 +129,21 @@ class TestFetchJsonWithRetry:
 
         assert result == {"key": "value"}
         mock_get.assert_called_once_with(
-            "https://example.com/api", headers={"User-Agent": utils.USER_AGENT}
+            "https://example.com/api",
+            headers={"User-Agent": utils.USER_AGENT},
+            timeout=30,
         )
 
     @patch("utils.requests.get")
-    def test_retries_on_failure(self, mock_get):
+    @patch("utils.time.sleep")
+    def test_retries_on_failure(self, mock_sleep, mock_get):
         """Retries on failure before succeeding"""
         from requests.exceptions import HTTPError
 
         # First two calls fail, third succeeds
         mock_fail = Mock()
+        mock_fail.status_code = 500
+        mock_fail.headers = {}
         mock_fail.raise_for_status.side_effect = HTTPError("500 Server Error")
 
         mock_success = Mock()
@@ -148,25 +158,32 @@ class TestFetchJsonWithRetry:
         assert mock_get.call_count == 3
 
     @patch("utils.requests.get")
-    def test_raises_on_error_when_true(self, mock_get):
+    @patch("utils.time.sleep")
+    def test_raises_on_error_when_true(self, mock_sleep, mock_get):
         """Raises exception when raise_on_error=True and all retries fail"""
         from requests.exceptions import HTTPError
 
         mock_response = Mock()
+        mock_response.status_code = 500
+        mock_response.headers = {}
         mock_response.raise_for_status.side_effect = HTTPError("500 Server Error")
         mock_get.return_value = mock_response
 
-        with pytest.raises(HTTPError):
+        with pytest.raises(ResponseStatusError) as exc_info:
             fetch_json_with_retry(
                 "https://example.com/api", retries=2, raise_on_error=True
             )
+        assert exc_info.value.status_code == 500
 
     @patch("utils.requests.get")
-    def test_returns_none_when_raise_on_error_false(self, mock_get):
+    @patch("utils.time.sleep")
+    def test_returns_none_when_raise_on_error_false(self, mock_sleep, mock_get):
         """Returns None when raise_on_error=False and all retries fail"""
         from requests.exceptions import HTTPError
 
         mock_response = Mock()
+        mock_response.status_code = 500
+        mock_response.headers = {}
         mock_response.raise_for_status.side_effect = HTTPError("500 Server Error")
         mock_get.return_value = mock_response
 
