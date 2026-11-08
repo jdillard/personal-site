@@ -74,6 +74,9 @@ def main():
                     data = {
                         "published": published,
                         "expires": expires,
+                        "expires_at": dateutil.parser.parse(
+                            jsonResponse["expires_time"]
+                        ).isoformat(),
                         "url": url,
                         "name": center_id,
                         "offSeason": False,
@@ -101,6 +104,8 @@ def main():
                 else:
                     data = {
                         "offSeason": True,
+                        "name": center_id,
+                        "url": f"https://avalanche.org",
                     }
 
                 with open(f'{dir}/{center_id}-{zone_id}.json','w') as out:
@@ -138,6 +143,9 @@ def main():
                 data = {
                     "published": published,
                     "expires": expires,
+                    "expires_at": dateutil.parser.parse(
+                        jsonResponse["report"]["validUntil"]
+                    ).isoformat(),
                     "url": url,
                     "name": "Avalanche Canada",
                     "danger": danger_ratings

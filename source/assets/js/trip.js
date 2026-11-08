@@ -52,7 +52,14 @@ if(report_element) {
   (async () => {
     try {
       const response = await axios.get(`/assets/json/avalanche-reports/${left}-${right}.json`);
-      report_element.innerHTML = report_template({"map_url": avyMapUrl, "data": response.data});
+      const data = response.data;
+      // avalanche.org asks that danger ratings be expired accordingly;
+      // if the forecast has passed its expiration time, say so instead of
+      // presenting stale ratings as current.
+      if (data && data.expires_at) {
+        data.expired = new Date(data.expires_at) <= new Date();
+      }
+      report_element.innerHTML = report_template({"map_url": avyMapUrl, "data": data});
     } catch (error) {
       // call local file on 403
       console.log(error);
