@@ -118,18 +118,18 @@
   name: "New Hampshire"
   elevations:
     0: # default
-      btl: [0, 3000]
-      ntl: [3001, 5100]
-      atl: [5101, 20310]
+      btl: [0, 3500]
+      ntl: [3501, 4500]
+      atl: [4501, 20310]
   active: true
 
 - abbr: "NM"
   name: "New Mexico"
   elevations:
     0: # default
-      btl: [0, 9500]
-      ntl: [9501, 11500]
-      atl: [11501, 20310]
+      btl: [0, 10500]
+      ntl: [10501, 12000]
+      atl: [12001, 20310]
   active: true
 
 - abbr: "OR"
@@ -145,9 +145,9 @@
   name: "Utah"
   elevations:
     0: # default
-      btl: [0, 7000]
-      ntl: [7001, 9000]
-      atl: [9001, 20310]
+      btl: [0, 7500]
+      ntl: [7501, 9500]
+      atl: [9501, 20310]
   active: true
 
 - abbr: "WA"
