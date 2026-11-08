@@ -1,4 +1,4 @@
-/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */
 
 //!           Burak Yiğit Kaya: https://github.com/BYK
 
@@ -8,7 +8,7 @@
 
 //! Author : Menelion Elensúle : https://github.com/Oire
 
-//! Copyright (c) JS Foundation and other contributors
+//! Author : Oleksandr Trukhnii : https://github.com/JohnJunior
 
 //! author : Abdel Said : https://github.com/abdelsaid
 
@@ -94,6 +94,8 @@
 
 //! author : Gaspard Bucher : https://github.com/gaspard
 
+//! author : Hanif Hefaz : https://github.com/hanifhefaz
+
 //! author : Harpreet Singh : https://github.com/harpreetkhalsagtbit
 
 //! author : Harshad Kale : https://github.com/kalehv
@@ -170,6 +172,8 @@
 
 //! author : Luke McGregor : https://github.com/lukemcgregor
 
+//! author : Majd Al-Shihabi : https://github.com/majdal
+
 //! author : Martin Groller : https://github.com/MadMG
 
 //! author : Martin Minka : https://github.com/k2s
@@ -224,6 +228,8 @@
 
 //! author : Rajeev Naik : https://github.com/rajeevnaikte
 
+//! author : Rasid Redzic : https://github.com/rasidre
+
 //! author : Rasulbek Mirzayev : github.com/Rasulbeeek
 
 //! author : Robert Allen : https://github.com/robgallen
@@ -259,6 +265,8 @@
 //! author : Tan Yuanhong : https://github.com/le0tan
 
 //! author : Tarmo Aidantausta : https://github.com/bleadof
+
+//! author : Tekle Ayele : https://github.com/tekleayele
 
 //! author : The Discoverer : https://github.com/WikiDiscoverer
 
@@ -332,6 +340,8 @@
 
 //! authors : Espen Hovlandsdal : https://github.com/rexxars
 
+//! authors : Mazlum Özdogan : https://github.com/mergehez
+
 //! authors : Nurlan Rakhimzhanov : https://github.com/nurlan
 
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
@@ -346,8 +356,6 @@
 
 //! comment : miestasmia corrected the translation by colindean
 
-//! github.com/moment/moment-timezone
-
 //! improvements : Illimar Tambek : https://github.com/ragulka
 
 //! license : MIT
@@ -358,6 +366,8 @@
 
 //! locale : Albanian [sq]
 
+//! locale : Amharic (Ethiopia) [am-et]
+
 //! locale : Arabic (Algeria) [ar-dz]
 
 //! locale : Arabic (Kuwait) [ar-kw]
@@ -365,6 +375,8 @@
 //! locale : Arabic (Libya) [ar-ly]
 
 //! locale : Arabic (Morocco) [ar-ma]
+
+//! locale : Arabic (Palestine) [ar-ps]
 
 //! locale : Arabic (Saudi Arabia) [ar-sa]
 
@@ -534,6 +546,8 @@
 
 //! locale : Nepalese [ne]
 
+//! locale : Northern Kurdish [ku-kmr]
+
 //! locale : Northern Sami [se]
 
 //! locale : Norwegian Bokmål [nb]
@@ -541,6 +555,8 @@
 //! locale : Nynorsk [nn]
 
 //! locale : Occitan, lengadocian dialecte [oc-lnc]
+
+//! locale : Pashto [ps]
 
 //! locale : Persian [fa]
 
@@ -622,8 +638,6 @@
 
 //! locale : siSwati [ss]
 
-//! moment-timezone.js
-
 //! moment.js
 
 //! moment.js locale configuration
@@ -636,6 +650,4 @@
 
 //! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 
-//! version : 0.5.40
-
-//! version : 2.29.4
+//! version : 2.31.0
