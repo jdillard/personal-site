@@ -8,8 +8,8 @@ import urllib.parse
 import uuid
 import dateutil.parser
 from zoneinfo import ZoneInfo
-from timezonefinder import TimezoneFinder
 import avy_config as config
+from utils import convert_to_local_time, format_elevation_range, find_object_by_key_value
 
 
 #TODO support search by lat/long (mainly for CO/BC) (lambda function?)
@@ -23,8 +23,6 @@ aspect_abbr = config.aspect_abbr
 danger_levels = config.danger_levels
 problem_color = config.problem_color
 state_info = config.state_info
-
-tf = TimezoneFinder()
 
 
 def sort_directions(subset):
@@ -71,13 +69,6 @@ def find_aspect_values(list, value, aspect):
     indices = [index for index, element in enumerate(list) if element == value]
     aspect_values = [aspect[index] for index in indices]
     return aspect_values
-
-
-def find_object_by_key_value(objects_list, key, value):
-    for obj in objects_list:
-        if obj.get(key) == value:
-            return obj
-    return None  # Return None if no match is found
 
 
 def main():
@@ -178,15 +169,11 @@ def main():
             found_value = find_object_by_key_value(ca_areas["features"], "id", data['area']['id'])
             if not found_value:
                 continue #TODO figure out why the id different than the filename and hopefully remove
-            tz_name = tf.timezone_at(lat=found_value.get('properties')["centroid"][1], lng=found_value.get('properties')["centroid"][0])
-            utc = dateutil.parser.parse(data["report"]["dateIssued"])
-            utc = utc.replace(tzinfo=ZoneInfo('UTC'))
-
-            published_date_time_obj = utc.astimezone(ZoneInfo(tz_name))
-            tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
-
-            published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
-            tomorrow = tomorrow_date_time_obj.strftime("%Y-%m-%d")
+            published_date_time_obj, tomorrow_date_time_obj, published, tomorrow = convert_to_local_time(
+                data["report"]["dateIssued"],
+                found_value.get('properties')["centroid"][1],
+                found_value.get('properties')["centroid"][0],
+            )
             # treat expired reports as unavailable so stale danger ratings are not shown
             if data.get("report", {}).get("expires_time") and dateutil.parser.parse(data["report"]["expires_time"]) <= datetime.now(tz=ZoneInfo('UTC')):
                 data["report"] = {} # keep area metadata, but drop expired report details
@@ -222,11 +209,7 @@ def main():
                 "desc": f"{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['tln']['rating']['value'])['desc']} ({area['elevations'].get('ntl')[0]}' to {area['elevations'].get('ntl')[1]}')",
                 "colors": [f"#{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['tln']['rating']['value'])['color']}"]
             })
-            # only show (above x') if == 20310
-            if area['elevations'].get('atl')[1] == 20310:
-                elv_range = f"above {area['elevations'].get('atl')[0]}'"
-            else:
-                elv_range =  f"{area['elevations'].get('atl')[0]}' to {area['elevations'].get('atl')[1]}'"
+            elv_range = format_elevation_range(area['elevations'].get('atl'))
             danger_rules.append({
                 "id": "atl",
                 "layer": upper,
@@ -256,15 +239,10 @@ def main():
                         full_desc = f"{desc} (below {area['elevations'].get(elv_band)[1]}')"
                     elif elevation["value"] == "tln":
                         elv_band = "ntl"
-                        full_desc = f"{desc} ({area['elevations'].get(elv_band)[0]}' to {area['elevations'].get(elv_band)[1]}')"
+                        full_desc = f"{desc} ({format_elevation_range(area['elevations'].get(elv_band))})"
                     elif elevation["value"] == "alp":
-                        # only show (above x') if == 20310
                         elv_band = "atl"
-                        if area['elevations'].get(elv_band)[1] == 20310:
-                            elv_range = f"above {area['elevations'].get(elv_band)[0]}'"
-                        else:
-                            elv_range = f"{area['elevations'].get(elv_band)[0]}' to {area['elevations'].get(elv_band)[1]}'"
-                        full_desc = f"{desc} ({elv_range})"
+                        full_desc = f"{desc} ({format_elevation_range(area['elevations'].get(elv_band))})"
                     else:
                         continue
 
@@ -337,15 +315,11 @@ def main():
                         data = data["advisories"][0]["advisory"]
 
                         # timezone calculations
-                        tz_name = tf.timezone_at(lat=zone["geo"][1], lng=zone["geo"][0])
-                        utc = datetime.fromtimestamp(int(data["date_issued_timestamp"]))
-                        utc = utc.replace(tzinfo=ZoneInfo('UTC'))
-
-                        published_date_time_obj = utc.astimezone(ZoneInfo(tz_name))
-                        tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
-
-                        published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
-                        tomorrow = tomorrow_date_time_obj.strftime("%Y-%m-%d")
+                    _, _, published, tomorrow = convert_to_local_time(
+                        datetime.fromtimestamp(int(data["date_issued_timestamp"])),
+                        zone["geo"][1],
+                        zone["geo"][0],
+                    )
                 else:
                     if os.path.isfile(f"tools/avy/avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json"):
                         with open(f"tools/avy/avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json") as fp:
@@ -353,15 +327,11 @@ def main():
 
                         # timezone calculations
                         if data.get("published_time"):
-                            tz_name = tf.timezone_at(lat=zone["geo"][1], lng=zone["geo"][0])
-                            utc = dateutil.parser.parse(data["published_time"])
-                            utc = utc.replace(tzinfo=ZoneInfo('UTC'))
-
-                            published_date_time_obj = utc.astimezone(ZoneInfo(tz_name))
-                            tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
-
-                            published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
-                            tomorrow = tomorrow_date_time_obj.strftime("%Y-%m-%d")
+                            _, _, published, tomorrow = convert_to_local_time(
+                                data["published_time"],
+                                zone["geo"][1],
+                                zone["geo"][0],
+                            )
                             # treat expired reports as unavailable so stale danger ratings are not shown
                             if data.get("expires_time") and dateutil.parser.parse(data["expires_time"]) <= datetime.now(tz=ZoneInfo('UTC')):
                                 data = {}
@@ -384,19 +354,11 @@ def main():
                     if data and data["overall_danger_rating"] != "None" and zone["elevations"]:
                         chunked_list = split_elv_bands(data["overall_danger_rose"]) #TODO better variable name than chunk?
 
-                        # only show (above x') if == 20310
-                        if zone['elevations'].get('atl')[1] == 20310:
-                            elv_range = f"above {zone['elevations'].get('atl')[0]}'"
-                        else:
-                            elv_range =  f"{zone['elevations'].get('atl')[0]}' to {zone['elevations'].get('atl')[1]}'"
-
                         def band_desc(elv_band):
                             low, high = zone["elevations"].get(elv_band)
                             if elv_band == "btl":
                                 return f"below {high}"
-                            if elv_band == "atl":
-                                return elv_range
-                            return f"{low}' to {high}'"
+                            return format_elevation_range((low, high))
 
                         # handle each elevation bands danger rose
                         for index, chunk in enumerate(chunked_list):
@@ -453,14 +415,10 @@ def main():
                         danger_rules.append({
                             "id": "ntl",
                             "layer": middle,
-                            "desc": f"{danger_levels.get(data['danger'][0]['middle'])['desc']} ({zone['elevations'].get('ntl')[0]}' to {zone['elevations'].get('ntl')[1]}')",
+                            "desc": f"{danger_levels.get(data['danger'][0]['middle'])['desc']} ({format_elevation_range(zone['elevations'].get('ntl'))})",
                             "colors": [f"#{danger_levels.get(data['danger'][0]['middle'])['color']}"]
                         })
-                        # only show (above x') if == 20310
-                        if zone['elevations'].get('atl')[1] == 20310:
-                            elv_range = f"above {zone['elevations'].get('atl')[0]}'"
-                        else:
-                            elv_range =  f"{zone['elevations'].get('atl')[0]}' to {zone['elevations'].get('atl')[1]}'"
+                        elv_range = format_elevation_range(zone['elevations'].get('atl'))
                         danger_rules.append({
                             "id": "atl",
                             "layer": upper,
@@ -497,20 +455,15 @@ def main():
                                         rules.append({
                                             "id": "ntl",
                                             "layer": layer,
-                                            "desc": f"{desc} ({zone['elevations'].get('ntl')[0]}' to {zone['elevations'].get('ntl')[1]}')",
+                                            "desc": f"{desc} ({format_elevation_range(zone['elevations'].get('ntl'))})",
                                             "color": f"#{problem_color.get(i)}",
                                         })
                                     else:
                                         layer = f'a{start}-{end}e{zone["elevations"].get("atl")[0]}-{zone["elevations"].get("atl")[1]}f {problem_color.get(i)}'
-                                        # only show (above x') if == 20310
-                                        if zone['elevations'].get('atl')[1] == 20310:
-                                            elv_range = f"above {zone['elevations'].get('atl')[0]}'"
-                                        else:
-                                            elv_range = f"{zone['elevations'].get('atl')[0]}' to {zone['elevations'].get('atl')[1]}'"
                                         rules.append({
                                             "id": "atl",
                                             "layer": layer,
-                                            "desc": f"{desc} ({elv_range})",
+                                            "desc": f"{desc} ({format_elevation_range(zone['elevations'].get('atl'))})",
                                             "color": f"#{problem_color.get(i)}",
                                         })
 
@@ -555,21 +508,16 @@ def main():
                                 rules.append({
                                     "id": "ntl",
                                     "layer": middle_layer,
-                                    "desc": f"{desc} ({zone['elevations'].get('ntl')[0]}' to {zone['elevations'].get('ntl')[1]}')",
+                                    "desc": f"{desc} ({format_elevation_range(zone['elevations'].get('ntl'))})",
                                     "color": f"#{problem_color.get(i)}",
                             })
                             if upper:
                                 start, end, desc = sort_directions(upper)
                                 upper_layer = f'a{start}-{end}e{zone["elevations"].get("atl")[0]}-{zone["elevations"].get("atl")[1]}f {problem_color.get(i)}'
-                                # only show (above x') if == 20310
-                                if zone['elevations'].get('atl')[1] == 20310:
-                                    elv_range = f"above {zone['elevations'].get('atl')[0]}'"
-                                else:
-                                    elv_range = f"{zone['elevations'].get('atl')[0]}' to {zone['elevations'].get('atl')[1]}'"
                                 rules.append({
                                     "id": "atl",
                                     "layer": upper_layer,
-                                    "desc": f"{desc} ({elv_range})",
+                                    "desc": f"{desc} ({format_elevation_range(zone['elevations'].get('atl'))})",
                                     "color": f"#{problem_color.get(i)}",
                             })
 
