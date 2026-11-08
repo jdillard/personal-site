@@ -7,7 +7,11 @@ from requests.exceptions import HTTPError
 import os
 import time
 import avy_config as config
-from utils import convert_to_local_time
+from utils import convert_to_local_time, load_zone_tz_names
+
+# Fallback timezone used when a zone can't be resolved in the map layer;
+# preserves the previous behavior, which assumed Pacific time.
+DEFAULT_TZ = "America/Los_Angeles"
 
 
 #TODO only run during certain months when NWAC is open
@@ -22,6 +26,9 @@ def main():
     dir = "source/assets/json/avalanche-reports"
     for f in os.listdir(dir):
         os.remove(os.path.join(dir, f))
+
+    # (center_id, zone_id) -> local timezone name, for US report times
+    zone_tz_names = load_zone_tz_names()
 
     for file in os.listdir("source/_trips"):
         if file.endswith(".md"):
@@ -48,13 +55,15 @@ def main():
                         jsonResponse = json.load(fp)
 
                 if jsonResponse["danger"]:
-                    published_date_time_obj = dateutil.parser.parse(jsonResponse["published_time"]) - timedelta(hours=8, minutes=0)
-                    expires_date_time_obj = dateutil.parser.parse(jsonResponse["expires_time"]) - timedelta(hours=8, minutes=0)
-                    tomorrow_date_time_obj = published_date_time_obj + timedelta(hours=24, minutes=0)
-                    outlook_date_time_obj = published_date_time_obj + timedelta(hours=48, minutes=0)
-
-                    published = published_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
-                    expires = expires_date_time_obj.strftime("%A, %B %d, %Y %-I:%M%p")
+                    tz_name = zone_tz_names.get((center_id, zone_id), DEFAULT_TZ)
+                    published_date_time_obj, tomorrow_date_time_obj, published, _ = convert_to_local_time(
+                        jsonResponse["published_time"], None, None, tz_name=tz_name
+                    )
+                    _, _, expires, _ = convert_to_local_time(
+                        jsonResponse["expires_time"], None, None, tz_name=tz_name
+                    )
+                    outlook_date_time_obj = tomorrow_date_time_obj + timedelta(hours=24, minutes=0)
+                    # date-only strings for the danger rating days
                     tomorrow = tomorrow_date_time_obj.strftime("%A, %B %d, %Y")
                     outlook = outlook_date_time_obj.strftime("%A, %B %d, %Y")
                     url = jsonResponse["forecast_zone"][0]["url"]

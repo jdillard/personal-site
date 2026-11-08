@@ -12,6 +12,10 @@ from timezonefinder import TimezoneFinder
 # there are described as "above X'" rather than "X' to 20310'".
 MAX_ELEVATION = 20310
 
+# Fallback timezone when a zone centroid can't be resolved (preserves the
+# original implementation's Pacific-time assumption).
+DEFAULT_TZ = "America/Los_Angeles"
+
 _tf = TimezoneFinder()
 
 
@@ -27,14 +31,15 @@ def format_elevation_range(elv_range, max_elevation=MAX_ELEVATION):
     return f"{low}' to {high}'"
 
 
-def convert_to_local_time(utc_issued, lat, lon):
+def convert_to_local_time(utc_issued, lat, lon, tz_name=None):
     """Convert a UTC publish time to the local timezone at the given point.
 
     Accepts an ISO 8601 string or datetime. Assumes naive datetimes are UTC.
-    Returns (published_dt, tomorrow_dt, published_str, tomorrow_str) where
-    tomorrow is 24 hours after publication, published_str is formatted like
-    "Monday, January 15, 2025 9:00AM" in the local timezone and tomorrow_str
-    is the local date "YYYY-MM-DD".
+    A tz_name may be passed to skip the lat/lon timezone lookup (lat/lon are
+    then unused). Returns (published_dt, tomorrow_dt, published_str,
+    tomorrow_str) where tomorrow is 24 hours after publication, published_str
+    is formatted like "Monday, January 15, 2025 9:00AM" in the local timezone
+    and tomorrow_str is the local date "YYYY-MM-DD".
     """
     if isinstance(utc_issued, str):
         utc = dateutil.parser.parse(utc_issued)
@@ -45,7 +50,8 @@ def convert_to_local_time(utc_issued, lat, lon):
     else:
         utc = utc.astimezone(ZoneInfo("UTC"))
 
-    tz_name = _tf.timezone_at(lat=lat, lng=lon)
+    if tz_name is None:
+        tz_name = _tf.timezone_at(lat=lat, lng=lon)
     published_dt = utc.astimezone(ZoneInfo(tz_name))
     tomorrow_dt = published_dt + timedelta(hours=24)
 
@@ -86,3 +92,35 @@ def find_object_by_key_value(objects_list, key, value):
         if obj.get(key) == value:
             return obj
     return None
+
+
+def load_zone_tz_names(map_layer_path="tools/avy/avalanche-reports-raw/map-layer.json"):
+    """Map (center_id, zone_id) to local timezone name from the map layer.
+
+    Computes each zone's centroid with shapely and looks up the timezone at
+    that point. Zones that are missing or have unusable geometry fall back
+    to DEFAULT_TZ (Pacific), matching the previous hardcoded behavior.
+    """
+    from shapely.geometry import MultiPolygon, Polygon
+
+    with open(map_layer_path) as fp:
+        map_layer = json.load(fp)
+
+    tz_names = {}
+    for item in map_layer.get("features", []):
+        geometry = item.get("geometry") or {}
+        if geometry.get("type") == "Polygon":
+            centroid = Polygon(geometry["coordinates"][0]).centroid
+        elif geometry.get("type") == "MultiPolygon":
+            polygons = [Polygon(shape) for shape in geometry["coordinates"][0]]
+            centroid = MultiPolygon(polygons).centroid
+        else:
+            centroid = None
+
+        if centroid is not None:
+            tz_name = _tf.timezone_at(lat=centroid.y, lng=centroid.x) or DEFAULT_TZ
+        else:
+            tz_name = DEFAULT_TZ
+        tz_names[(item["properties"]["center_id"], item["id"])] = tz_name
+
+    return tz_names
