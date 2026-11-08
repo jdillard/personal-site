@@ -5,11 +5,7 @@ import json
 import os
 import time
 import avy_config as config
-from utils import convert_to_local_time, load_zone_tz_names, fetch_json_with_retry
-
-# Fallback timezone used when a zone can't be resolved in the map layer;
-# preserves the previous behavior, which assumed Pacific time.
-DEFAULT_TZ = "America/Los_Angeles"
+from utils import DEFAULT_TZ, convert_to_local_time, load_zone_tz_names, fetch_json_with_retry
 
 
 #TODO only run during certain months when NWAC is open
