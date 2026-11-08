@@ -359,7 +359,7 @@ def main():
                         def band_desc(elv_band):
                             low, high = zone["elevations"].get(elv_band)
                             if elv_band == "btl":
-                                return f"below {high}"
+                                return f"below {high}'"
                             return format_elevation_range((low, high))
 
                         # handle each elevation bands danger rose
