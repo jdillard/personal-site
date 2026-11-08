@@ -317,11 +317,11 @@ def main():
                         data = data["advisories"][0]["advisory"]
 
                         # timezone calculations
-                    _, _, published, tomorrow = convert_to_local_time(
-                        datetime.fromtimestamp(int(data["date_issued_timestamp"])),
-                        zone["geo"][1],
-                        zone["geo"][0],
-                    )
+                        _, _, published, tomorrow = convert_to_local_time(
+                            datetime.fromtimestamp(int(data["date_issued_timestamp"]), tz=ZoneInfo("UTC")),
+                            zone["geo"][1],
+                            zone["geo"][0],
+                        )
                 else:
                     if os.path.isfile(f"tools/avy/avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json"):
                         with open(f"tools/avy/avalanche-reports-raw/{zone['center_id']}-{zone['zone_id']}.json") as fp:
