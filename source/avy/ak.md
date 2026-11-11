@@ -253,7 +253,7 @@ css_includes:
             
         </div>
         
-        <div id="VAC-1611-report" class="avy-zone dn" data-id="VAC-1611" data-color="#939598" data-min="0"  data-max="20310" data-btl="1999" data-atl="4000" data-published="False">
+        <div id="VAC-1611-report" class="avy-zone dn" data-id="VAC-1611" data-color="#939598" data-min="0"  data-max="20310" data-btl="1999" data-atl="4000" data-published="Tuesday, November 10, 2026 8:47AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/valdez-forecast/#/continental/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/continental/">VAC</a> for more information.</div>
@@ -263,7 +263,7 @@ css_includes:
             
         </div>
         
-        <div id="VAC-1610-report" class="avy-zone dn" data-id="VAC-1610" data-color="#939598" data-min="0"  data-max="20310" data-btl="1999" data-atl="4000" data-published="False">
+        <div id="VAC-1610-report" class="avy-zone dn" data-id="VAC-1610" data-color="#939598" data-min="0"  data-max="20310" data-btl="1999" data-atl="4000" data-published="Tuesday, November 10, 2026 8:47AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/valdez-forecast/#/intermountain/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/intermountain/">VAC</a> for more information.</div>
@@ -273,7 +273,7 @@ css_includes:
             
         </div>
         
-        <div id="VAC-1609-report" class="avy-zone dn" data-id="VAC-1609" data-color="#939598" data-min="0"  data-max="20310" data-btl="1499" data-atl="3000" data-published="False">
+        <div id="VAC-1609-report" class="avy-zone dn" data-id="VAC-1609" data-color="#939598" data-min="0"  data-max="20310" data-btl="1499" data-atl="3000" data-published="Tuesday, November 10, 2026 8:47AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/valdez-forecast/#/maritime/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/maritime/">VAC</a> for more information.</div>
