@@ -88,7 +88,7 @@ css_includes:
             
             <option value="ESAC-128" >Eastside Region</option>
             
-            <option value="MSAC-1833" >Mount Shasta</option>
+            <option value="MSAC-3044" >Mount Shasta</option>
             
             <option value="SAC-2458" >Central Sierra Nevada</option>
             
@@ -119,10 +119,10 @@ css_includes:
             
         </div>
         
-        <div id="MSAC-1833-report" class="avy-zone dn" data-id="MSAC-1833" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.shastaavalanche.org/advisories/avalanche-advisory/#/mount-shasta"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+        <div id="MSAC-3044-report" class="avy-zone dn" data-id="MSAC-3044" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Thursday, November 12, 2026 10:46AM">
+            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.shastaavalanche.org/forecasts/avalanche/mount-shasta"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.shastaavalanche.org/advisories/avalanche-advisory/#/mount-shasta">MSAC</a> for more information.</div>
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.shastaavalanche.org/forecasts/avalanche/mount-shasta">MSAC</a> for more information.</div>
             
 
             
@@ -152,8 +152,8 @@ css_includes:
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/ESAC-128.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="MSAC-1833-shape" data-geojson="/assets/json/avalanche-zones/MSAC-1833.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/MSAC-1833.geojson" download="">Download GeoJSON</a></div>
+        <div id="MSAC-3044-shape" data-geojson="/assets/json/avalanche-zones/MSAC-3044.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/MSAC-3044.geojson" download="">Download GeoJSON</a></div>
         </div>
         
         <div id="SAC-2458-shape" data-geojson="/assets/json/avalanche-zones/SAC-2458.geojson" class="avy-zone dn">
