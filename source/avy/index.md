@@ -244,46 +244,46 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html">Colorado</a></h3>
             <ul id="co-zones" class="list pl3 f5 mt2">
                 
-                <li data-zone="CAIC-2658" data-color="#50b848" class="pv1">
+                <li data-zone="CAIC-2755" data-color="#50b848" class="pv1">
                     <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2658">CAIC zone</a>
-                    <span class="gray f7">Thursday, November 12, 2026 4:30PM</span>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2755">CAIC zone</a>
+                    <span class="gray f7">Friday, November 13, 2026 4:30PM</span>
                 </li>
                 
                 <li data-zone="CAIC-2745" data-color="#50b848" class="pv1">
                     <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2745">CAIC zone</a>
-                    <span class="gray f7">Thursday, November 12, 2026 4:30PM</span>
-                </li>
-                
-                <li data-zone="CAIC-2747" data-color="#50b848" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2747">CAIC zone</a>
-                    <span class="gray f7">Thursday, November 12, 2026 4:30PM</span>
-                </li>
-                
-                <li data-zone="CAIC-2755" data-color="#50b848" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2755">CAIC zone</a>
-                    <span class="gray f7">Thursday, November 12, 2026 4:30PM</span>
-                </li>
-                
-                <li data-zone="CAIC-2660" data-color="#50b848" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2660">CAIC zone</a>
-                    <span class="gray f7">Thursday, November 12, 2026 4:30PM</span>
-                </li>
-                
-                <li data-zone="CAIC-2751" data-color="#50b848" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2751">CAIC zone</a>
-                    <span class="gray f7">Thursday, November 12, 2026 4:30PM</span>
+                    <span class="gray f7">Friday, November 13, 2026 4:30PM</span>
                 </li>
                 
                 <li data-zone="CAIC-2651" data-color="#50b848" class="pv1">
                     <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2651">CAIC zone</a>
-                    <span class="gray f7">Thursday, November 12, 2026 4:30PM</span>
+                    <span class="gray f7">Friday, November 13, 2026 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-2747" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2747">CAIC zone</a>
+                    <span class="gray f7">Friday, November 13, 2026 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-2658" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2658">CAIC zone</a>
+                    <span class="gray f7">Friday, November 13, 2026 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-2751" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2751">CAIC zone</a>
+                    <span class="gray f7">Friday, November 13, 2026 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-2660" data-color="#f7941e" class="pv1">
+                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2660">CAIC zone</a>
+                    <span class="gray f7">Friday, November 13, 2026 4:30PM</span>
                 </li>
                 
             </ul>
