@@ -102,7 +102,12 @@ css_includes:
             <dl class="f6">
                 <dt>
                     <strong>{{ sun_day }} Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ zone.danger | map(attribute='layer') | reverse | join('&#10;') }}" onclick="clickFunc(this, 'danger-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('danger-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="danger-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    {#- UT stores each band's layer as a list of rules, other centers as one string #}
+                    {%- set ns = namespace(lines=[]) %}
+                    {%- for rule in zone.danger | reverse %}
+                    {%- set ns.lines = ns.lines + ([rule.layer] if rule.layer is string else rule.layer | list) %}
+                    {%- endfor %}
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ ns.lines | join('&#10;') }}" onclick="clickFunc(this, 'danger-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('danger-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="danger-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-{{ zone.slug }}">
