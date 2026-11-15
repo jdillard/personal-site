@@ -198,7 +198,7 @@ def main():
             area_slug_id = product['product']['id']
         # TODO set elevations levels
         area["elevations"] = {
-                "btl": (6000, 7500),
+                "btl": (0, 7500),
                 "ntl": (7501, 9000),
                 "atl": (9001, 20310),
             }
