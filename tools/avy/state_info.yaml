@@ -148,6 +148,32 @@
       btl: [0, 7500]
       ntl: [7501, 9500]
       atl: [9501, 20310]
+    # per-zone bands from the labels on UAC's danger rose images
+    # (Moab, Abajos and Uintas only label treeline, so they use the default)
+    1736: # logan
+      btl: [0, 7000]
+      ntl: [7001, 8500]
+      atl: [8501, 20310]
+    1737: # ogden
+      btl: [0, 7000]
+      ntl: [7001, 8500]
+      atl: [8501, 20310]
+    1738: # salt lake
+      btl: [0, 8000]
+      ntl: [8001, 9500]
+      atl: [9501, 20310]
+    1739: # provo
+      btl: [0, 8000]
+      ntl: [8001, 9500]
+      atl: [9501, 20310]
+    1741: # skyline
+      btl: [0, 8000]
+      ntl: [8001, 9500]
+      atl: [9501, 20310]
+    1743: # southwest
+      btl: [0, 8000]
+      ntl: [8001, 9500]
+      atl: [9501, 20310]
   active: true
 
 - abbr: "WA"
