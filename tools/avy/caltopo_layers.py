@@ -190,7 +190,7 @@ def main():
                 found_value.get('properties')["centroid"][0],
             )
             # treat expired reports as unavailable so stale danger ratings are not shown
-            if data.get("report", {}).get("expires_time") and dateutil.parser.parse(data["report"]["expires_time"]) <= datetime.now(tz=ZoneInfo('UTC')):
+            if data.get("report", {}).get("validUntil") and dateutil.parser.parse(data["report"]["validUntil"]) <= datetime.now(tz=ZoneInfo('UTC')):
                 data["report"] = {} # keep area metadata, but drop expired report details
                 published = False
             area_slug_id = data['area']['id']
