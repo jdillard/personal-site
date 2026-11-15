@@ -2,6 +2,7 @@ import pytest
 
 from caltopo_layers import (
     split_elv_bands,
+    uac_rose_by_band,
     find_aspect_values,
     find_object_by_key_value,
     sort_directions,
@@ -214,3 +215,20 @@ class TestSortDirections:
         assert start == 293  # Start of NW
         assert end == 68  # End of NE
         assert "NW to NE" in desc
+
+
+class TestUacRoseByBand:
+    """Tests for uac_rose_by_band()"""
+
+    def test_highest_ring_maps_to_atl(self):
+        """UAC lists the highest ring first; it must land on ATL, not BTL."""
+        # Logan 2024-12-29: High up high, Moderate/Considerable down low
+        rose = "8,8,8,8,8,8,8,8,8,8,8,6,6,6,6,8,6,6,6,4,4,4,4,6"
+        bands = dict(uac_rose_by_band(rose))
+        assert bands["atl"] == [8, 8, 8, 8, 8, 8, 8, 8]
+        assert bands["ntl"] == [8, 8, 8, 6, 6, 6, 6, 8]
+        assert bands["btl"] == [6, 6, 6, 4, 4, 4, 4, 6]
+
+    def test_returns_bands_lowest_first(self):
+        rose = ",".join(["3"] * 8 + ["2"] * 8 + ["1"] * 8)
+        assert [band for band, _ in uac_rose_by_band(rose)] == ["btl", "ntl", "atl"]

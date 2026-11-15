@@ -66,6 +66,17 @@ def split_elv_bands(danger_rose):
     return chunked_list
 
 
+def uac_rose_by_band(danger_rose):
+    """Pair each UAC danger rose ring with its elevation band, lowest first.
+
+    UAC roses list the highest elevation ring first (array[0] is the top
+    band on the N aspect), so the rings are reversed to line up with
+    ("btl", "ntl", "atl"), the order the other centers use.
+    https://utahavalanchecenter.org/docs/api/forecast
+    """
+    return list(zip(("btl", "ntl", "atl"), reversed(split_elv_bands(danger_rose))))
+
+
 #TODO better variable names
 def find_aspect_values(list, value, aspect):
     indices = [index for index, element in enumerate(list) if element == value]
@@ -367,8 +378,7 @@ def main():
                             return format_elevation_range((low, high))
 
                         # handle each elevation bands danger rose
-                        for index, chunk in enumerate(chunked_list):
-                            elv_band = ("btl", "ntl", "atl")[index]
+                        for elv_band, chunk in uac_rose_by_band(data["overall_danger_rose"]):
                             low, high = zone["elevations"].get(elv_band)
                             desc_range = band_desc(elv_band)
 
