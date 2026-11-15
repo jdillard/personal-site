@@ -94,7 +94,7 @@ css_includes:
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         {% for zone in zones %}
         <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}" data-color="{{ zone.color }}" data-min="{{ zone.elevations['btl'][0] }}"  data-max="{{ zone.elevations['atl'][1] }}" data-btl="{{ zone.elevations['btl'][1] }}" data-atl="{{ zone.elevations['ntl'][1] }}" data-published="{{ zone.published }}">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="{{ zone.url }}"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             {% if zone.danger %}
             <div id="{{ zone.slug }}-title" class="mv4 tc">
                 <div><a id="{{ zone.slug }}-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Pre-populated CalTopo Map</a></div>
@@ -143,10 +143,12 @@ css_includes:
             {% endif %}
             {% if zone.danger and zone.published %}
             <p class="tc f6">
-                <strong>Issued at:</strong> {{ zone.published }}<br />
-                <strong>Issued by:</strong> <a class="no-underline fancy-link relative light-red" href="{{ zone.url }}">{{ zone.center_id }}</a>
+                <strong>Issued at:</strong> {{ zone.published }}
             </p>
             {% endif %}
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="{{ zone.center_link }}">{{ zone.center_name }}</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="{{ zone.url }}">full forecast</a> before heading out.
+            </p>
         </div>
         {% endfor %}
     </div>

@@ -118,6 +118,8 @@ def main():
             "slug": f"{item['properties']['center_id']}-{item['id']}", #TODO get rid of slug and just use the id instead?
             "url": url,
             "center_id": item["properties"]["center_id"],
+            "center_name": item["properties"]["center"],
+            "center_link": item["properties"]["center_link"],
             "geo": lat_long,
             "published": False,
             "danger": [],
@@ -272,6 +274,8 @@ def main():
         area["name"] = "Canada zone"
         area["slug"] = area_slug_id
         area["center_id"] = "Avalanche Canada"
+        area["center_name"] = "Avalanche Canada"
+        area["center_link"] = "https://avalanche.ca/"
         area["url"] = f"https://avalanche.ca/forecasts/{product['product']['id']}"
 
         layer_info = layers_template.render(
