@@ -206,7 +206,7 @@ def main():
         # avy danger
         danger_rules = []
         danger_layer = ""
-        area_color = 0
+        zone_color = 0
         if data.get("report", {}).get("dangerRatings") and (data["report"]["dangerRatings"][0]["ratings"]["btl"] or data["report"]["dangerRatings"][0]["ratings"]["tln"] or data["report"]["dangerRatings"][0]["ratings"]["alp"]) and area["elevations"]:
             # print(data["report"]["dangerRatings"][0]["ratings"]["btl"]["rating"]["value"],data["report"]["dangerRatings"][0]["ratings"]["tln"]["rating"]["value"],data["report"]["dangerRatings"][0]["ratings"]["alp"]["rating"]["value"])
             lower = f'a0-0e{area["elevations"].get("btl")[0]}-{area["elevations"].get("btl")[1]}f {danger_levels.get(data["report"]["dangerRatings"][0]["ratings"]["btl"]["rating"]["value"])["color"]}'
