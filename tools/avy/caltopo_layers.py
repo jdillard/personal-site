@@ -447,13 +447,15 @@ def main():
                 # avy problems
                 problems = []
                 if state["state"] == "UT":
+                    # UAC numbers problems 1-3; i stays 0-based for problem_color
                     for i in range(3):
-                        if f"avalanche_problem_{i}" in data:
+                        n = i + 1
+                        if data.get(f"avalanche_problem_{n}") and data.get(f"danger_rose_{n}"):
                             problem_rose = []
                             rules = []
 
-                            chunked_list = split_elv_bands(data[f"danger_rose_{i}"])
-                            problem_name = data[f"avalanche_problem_{i}"]
+                            chunked_list = split_elv_bands(data[f"danger_rose_{n}"])
+                            problem_name = data[f"avalanche_problem_{n}"]
                             for index, chunk in enumerate(chunked_list):
                                 chunk_rose = find_aspect_values(chunk, 16, aspect)
                                 if chunk_rose:
