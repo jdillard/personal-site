@@ -124,163 +124,211 @@ css_includes:
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="CNFAIC-2818-report" class="avy-zone" data-id="CNFAIC-2818" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Thursday, November 12, 2026 7:58PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.cnfaic.org/forecast/#/chugach-state-park/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/chugach-state-park/">CNFAIC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.cnfaic.org/">Chugach National Forest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/chugach-state-park/">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="CNFAIC-2817-report" class="avy-zone dn" data-id="CNFAIC-2817" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Thursday, November 12, 2026 7:58PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.cnfaic.org/forecast/#/seward-and-lost-lake/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/seward-and-lost-lake/">CNFAIC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.cnfaic.org/">Chugach National Forest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/seward-and-lost-lake/">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="CNFAIC-2816-report" class="avy-zone dn" data-id="CNFAIC-2816" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Thursday, November 12, 2026 7:58PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.cnfaic.org/forecast/#/summit-lake/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/summit-lake/">CNFAIC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.cnfaic.org/">Chugach National Forest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/summit-lake/">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="CNFAIC-2815-report" class="avy-zone dn" data-id="CNFAIC-2815" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Thursday, November 12, 2026 7:58PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.cnfaic.org/forecast/#/turnagain-pass-and-girdwood/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/turnagain-pass-and-girdwood/">CNFAIC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.cnfaic.org/">Chugach National Forest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/turnagain-pass-and-girdwood/">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="CAAC-2165-report" class="avy-zone dn" data-id="CAAC-2165" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.coastalakavalanche.org/forecast/#/douglas-island/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.coastalakavalanche.org/forecast/#/douglas-island/">CAAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.coastalakavalanche.org/">Coastal Alaska Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.coastalakavalanche.org/forecast/#/douglas-island/">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="CAAC-2164-report" class="avy-zone dn" data-id="CAAC-2164" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.coastalakavalanche.org/forecast/#/juneau-mainland/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.coastalakavalanche.org/forecast/#/juneau-mainland/">CAAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.coastalakavalanche.org/">Coastal Alaska Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.coastalakavalanche.org/forecast/#/juneau-mainland/">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="CAC-1421-report" class="avy-zone dn" data-id="CAC-1421" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/cordova/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/cordova/">CAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/cordova/">Cordova Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/cordova/">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="EARAC-3002-report" class="avy-zone dn" data-id="EARAC-3002" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/eastern-ak-range/#/view/observations"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">EARAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">Eastern Alaska Range Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="EARAC-3003-report" class="avy-zone dn" data-id="EARAC-3003" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/eastern-ak-range/#/view/observations"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">EARAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">Eastern Alaska Range Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="HAC-3007-report" class="avy-zone dn" data-id="HAC-3007" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://avalanche.ca/map?lat=59.558223&lng=-136.395711"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/map?lat=59.558223&lng=-136.395711">HAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-hac/">Haines Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/map?lat=59.558223&lng=-136.395711">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="HAC-3005-report" class="avy-zone dn" data-id="HAC-3005" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/haines-forecast/#/lutak"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/lutak">HAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-hac/">Haines Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/lutak">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="HAC-3006-report" class="avy-zone dn" data-id="HAC-3006" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/haines-forecast/#/transitional"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/transitional">HAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-hac/">Haines Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/transitional">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="HPAC-2152-report" class="avy-zone dn" data-id="HPAC-2152" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 13, 2026 7:00AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://hpavalanche.org/forecast/#/hatcher-pass/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://hpavalanche.org/forecast/#/hatcher-pass/">HPAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://hpavalanche.org">Hatcher Pass Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://hpavalanche.org/forecast/#/hatcher-pass/">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="VAC-1611-report" class="avy-zone dn" data-id="VAC-1611" data-color="#939598" data-min="0"  data-max="20310" data-btl="1999" data-atl="4000" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/valdez-forecast/#/continental/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/continental/">VAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez/">Valdez Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/continental/">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="VAC-1610-report" class="avy-zone dn" data-id="VAC-1610" data-color="#939598" data-min="0"  data-max="20310" data-btl="1999" data-atl="4000" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/valdez-forecast/#/intermountain/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/intermountain/">VAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez/">Valdez Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/intermountain/">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="VAC-1609-report" class="avy-zone dn" data-id="VAC-1609" data-color="#939598" data-min="0"  data-max="20310" data-btl="1499" data-atl="3000" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://alaskasnow.org/valdez-forecast/#/maritime/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/maritime/">VAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez/">Valdez Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/maritime/">full forecast</a> before heading out.
+            </p>
         </div>
         
     </div>

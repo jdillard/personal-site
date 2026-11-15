@@ -100,43 +100,55 @@ css_includes:
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="BAC-3004-report" class="avy-zone" data-id="BAC-3004" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://bridgeportavalanchecenter.org/avalanche-forecast/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgeportavalanchecenter.org/avalanche-forecast/">BAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://bridgeportavalanchecenter.org/">Bridgeport Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://bridgeportavalanchecenter.org/avalanche-forecast/">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="ESAC-128-report" class="avy-zone dn" data-id="ESAC-128" data-color="#939598" data-min="0"  data-max="20310" data-btl="7800" data-atl="10000" data-published="Friday, November 13, 2026 7:10AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.esavalanche.org/forecasts#/eastside-region"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.esavalanche.org/forecasts#/eastside-region">ESAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.esavalanche.org/">Eastern Sierra Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.esavalanche.org/forecasts#/eastside-region">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="MSAC-3044-report" class="avy-zone dn" data-id="MSAC-3044" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Thursday, November 12, 2026 10:46AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.shastaavalanche.org/forecasts/avalanche/mount-shasta"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.shastaavalanche.org/forecasts/avalanche/mount-shasta">MSAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://shastaavalanche.org/">Mount Shasta Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.shastaavalanche.org/forecasts/avalanche/mount-shasta">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="SAC-2458-report" class="avy-zone dn" data-id="SAC-2458" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Friday, November 13, 2026 6:41AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.sierraavalanchecenter.org/forecasts/avalanche/central-sierra-nevada#/central-sierra-nevada/"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sierraavalanchecenter.org/forecasts/avalanche/central-sierra-nevada#/central-sierra-nevada/">SAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.sierraavalanchecenter.org/">Sierra Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.sierraavalanchecenter.org/forecasts/avalanche/central-sierra-nevada#/central-sierra-nevada/">full forecast</a> before heading out.
+            </p>
         </div>
         
     </div>

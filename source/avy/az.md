@@ -94,13 +94,16 @@ css_includes:
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="KPAC-2990-report" class="avy-zone" data-id="KPAC-2990" data-color="#939598" data-min="0"  data-max="20310" data-btl="9700" data-atl="11500" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://kachinapeaks.org/Forecast/#/san-francisco-peaks-%2F-kachina-peaks-wilderness"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://kachinapeaks.org/Forecast/#/san-francisco-peaks-%2F-kachina-peaks-wilderness">KPAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://kachinapeaks.org/Forecast/#/san-francisco-peaks-%2F-kachina-peaks-wilderness">Kachina Peaks Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://kachinapeaks.org/Forecast/#/san-francisco-peaks-%2F-kachina-peaks-wilderness">full forecast</a> before heading out.
+            </p>
         </div>
         
     </div>

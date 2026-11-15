@@ -108,83 +108,107 @@ css_includes:
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="COAA-2470-report" class="avy-zone" data-id="COAA-2470" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Tuesday, November 03, 2026 10:25AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://coavalanche.org/pages/forecasts/#/central-cascades"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/central-cascades">COAA</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.coavalanche.org/">Central Oregon Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/central-cascades">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="COAA-2471-report" class="avy-zone dn" data-id="COAA-2471" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Tuesday, November 03, 2026 10:39AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://coavalanche.org/pages/forecasts/#/newberry"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/newberry">COAA</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.coavalanche.org/">Central Oregon Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/newberry">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="NWAC-3032-report" class="avy-zone dn" data-id="NWAC-3032" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Tuesday, September 15, 2026 7:35AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/mt-hood"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/mt-hood">NWAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/mt-hood">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="SOAIX-1369-report" class="avy-zone dn" data-id="SOAIX-1369" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.oregonsnow.org/observations/#/view/observations"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.oregonsnow.org/observations/#/view/observations">SOAIX</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.oregonsnow.org/observations/#/">Southern Oregon Avalanche Info Exchange</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.oregonsnow.org/observations/#/view/observations">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="WAC-2985-report" class="avy-zone dn" data-id="WAC-2985" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.wallowaavalanchecenter.org/forecasts/#/blues"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.wallowaavalanchecenter.org/forecasts/#/blues">WAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://wallowaavalanchecenter.org/">Wallowa Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.wallowaavalanchecenter.org/forecasts/#/blues">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="WAC-2984-report" class="avy-zone dn" data-id="WAC-2984" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://www.wallowaavalanchecenter.org/forecasts/#/elkhorns"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.wallowaavalanchecenter.org/forecasts/#/elkhorns">WAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://wallowaavalanchecenter.org/">Wallowa Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.wallowaavalanchecenter.org/forecasts/#/elkhorns">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="WAC-2982-report" class="avy-zone dn" data-id="WAC-2982" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://wallowaavalanchecenter.org/forecasts/#/northern-wallowas"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://wallowaavalanchecenter.org/forecasts/#/northern-wallowas">WAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://wallowaavalanchecenter.org/">Wallowa Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://wallowaavalanchecenter.org/forecasts/#/northern-wallowas">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="WAC-2983-report" class="avy-zone dn" data-id="WAC-2983" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://wallowaavalanchecenter.org/forecasts/#/southern-wallowas"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://wallowaavalanchecenter.org/forecasts/#/southern-wallowas">WAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://wallowaavalanchecenter.org/">Wallowa Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://wallowaavalanchecenter.org/forecasts/#/southern-wallowas">full forecast</a> before heading out.
+            </p>
         </div>
         
     </div>

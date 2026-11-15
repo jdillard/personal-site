@@ -110,93 +110,120 @@ css_includes:
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="NWAC-3030-report" class="avy-zone" data-id="NWAC-3030" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/east-slopes-central"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-central">NWAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-central">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="NWAC-3029-report" class="avy-zone dn" data-id="NWAC-3029" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/east-slopes-north"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-north">NWAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-north">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="NWAC-3031-report" class="avy-zone dn" data-id="NWAC-3031" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/east-slopes-south"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-south">NWAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-south">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="NWAC-3020-report" class="avy-zone dn" data-id="NWAC-3020" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/olympics"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/olympics">NWAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/olympics">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="NWAC-3028-report" class="avy-zone dn" data-id="NWAC-3028" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/snoqualmie-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/snoqualmie-pass">NWAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/snoqualmie-pass">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="NWAC-3024-report" class="avy-zone dn" data-id="NWAC-3024" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/stevens-pass"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/stevens-pass">NWAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/stevens-pass">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="NWAC-3022-report" class="avy-zone dn" data-id="NWAC-3022" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/west-slopes-central"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-central">NWAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-central">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="NWAC-3021-report" class="avy-zone dn" data-id="NWAC-3021" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/west-slopes-north"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-north">NWAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-north">full forecast</a> before heading out.
+            </p>
         </div>
         
         <div id="NWAC-3023-report" class="avy-zone dn" data-id="NWAC-3023" data-color="#939598" data-min="0"  data-max="20310" data-btl="4499" data-atl="5499" data-published="Tuesday, September 15, 2026 7:35AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://nwac.us/forecasts/avalanche/west-slopes-south"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-south">NWAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-south">full forecast</a> before heading out.
+            </p>
         </div>
         
     </div>

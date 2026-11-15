@@ -94,13 +94,16 @@ css_includes:
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="NYSAC-3017-report" class="avy-zone" data-id="NYSAC-3017" data-color="#939598" data-min="0"  data-max="20310" data-btl="2500" data-atl="4000" data-published="Friday, October 30, 2026 9:33AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report <a target="_blank" href="https://dec.ny.gov/things-to-do/hiking/adirondack-backcountry/backcountry-information-for-adirondack-park"><img style="width: 15px;" src="/assets/images/svg/info-icon.svg"></a></h3>
+            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://dec.ny.gov/things-to-do/hiking/adirondack-backcountry/backcountry-information-for-adirondack-park">NYSAC</a> for more information.</div>
             
 
             
             
+            <p class="tc f7 black-60 measure center">
+                Forecast data from <a class="no-underline fancy-link relative light-red" href="None">Department of Environmental Conservation Avalanche Forecast</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://dec.ny.gov/things-to-do/hiking/adirondack-backcountry/backcountry-information-for-adirondack-park">full forecast</a> before heading out.
+            </p>
         </div>
         
     </div>
