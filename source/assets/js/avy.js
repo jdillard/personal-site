@@ -260,7 +260,11 @@ const map = L.map('map');
 let mapPositioned = false;
 map.whenReady(() => { mapPositioned = true; });
 
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=cb1_489n_1_38909aed6058ce0068372c23').addTo(map);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_489n_1_38909aed6058ce0068372c23', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  subdomains: 'abcd',
+  maxZoom: 20
+}).addTo(map);
 
 const GRAY = "#AAAAAA";
 const layers = {};        // loaded layers, filename as key
