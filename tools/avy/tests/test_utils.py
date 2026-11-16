@@ -1,3 +1,4 @@
+import json
 import pytest
 from datetime import datetime
 from unittest.mock import patch, Mock
@@ -9,6 +10,7 @@ from utils import (
     convert_to_local_time,
     fetch_json_with_retry,
     format_elevation_range,
+    zone_geojson,
 )
 
 
@@ -209,3 +211,40 @@ class TestFetchJsonWithRetry:
         assert result == {"data": "test"}
         assert output_file.exists()
         assert '"data": "test"' in output_file.read_text()
+
+
+class TestZoneGeojson:
+    """Tests for zone_geojson()"""
+
+    OUTER = [[0, 0], [10, 0], [10, 10], [0, 10], [0, 0]]
+    # 4-point (triangle) ring: the case the old len(ring) > 5 heuristic broke
+    SMALL = [[1, 1], [2, 1], [1, 2], [1, 1]]
+
+    def test_polygon_keeps_all_rings_in_one_feature(self):
+        """Polygon with a small hole stays one valid Polygon feature"""
+        result = zone_geojson({"type": "Polygon", "coordinates": [self.OUTER, self.SMALL]}, "Zone")
+        assert len(result["features"]) == 1
+        assert result["features"][0]["geometry"] == {
+            "type": "Polygon",
+            "coordinates": [self.OUTER, self.SMALL],
+        }
+
+    def test_small_polygon_is_wrapped(self):
+        """A Polygon whose only ring has <= 5 points is still valid"""
+        result = zone_geojson({"type": "Polygon", "coordinates": [self.SMALL]}, "Zone")
+        assert result["features"][0]["geometry"]["coordinates"] == [self.SMALL]
+
+    def test_multipolygon_split_into_polygons(self):
+        """Each polygon of a MultiPolygon becomes its own feature"""
+        geometry = {"type": "MultiPolygon", "coordinates": [[self.OUTER], [self.SMALL]]}
+        result = zone_geojson(geometry, "Zone")
+        assert [f["geometry"]["coordinates"] for f in result["features"]] == [[self.OUTER], [self.SMALL]]
+
+    def test_title_with_quotes_is_valid_json(self):
+        """Titles containing quotes round-trip through JSON"""
+        result = zone_geojson({"type": "Polygon", "coordinates": [self.OUTER]}, 'The "Bowl"')
+        assert json.loads(json.dumps(result))["features"][0]["properties"]["title"] == 'The "Bowl"'
+
+    def test_unsupported_geometry_raises(self):
+        with pytest.raises(ValueError):
+            zone_geojson({"type": "Point", "coordinates": [0, 0]}, "Zone")

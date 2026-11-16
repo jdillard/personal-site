@@ -144,6 +144,54 @@ def fetch_json_with_retry(
     return None
 
 
+# Per-shape properties CalTopo recognizes when the GeoJSON is imported
+_CALTOPO_SHAPE_PROPERTIES = {
+    "stroke-opacity": 1,
+    "creator": "8BQK70",
+    "description": "",
+    "stroke-width": 2,
+    "fill": "#FF0000",
+    "stroke": "#FF0000",
+    "fill-opacity": 0.1,
+    "class": "Shape",
+    "updated": 1699597377876,
+}
+
+
+def zone_geojson(geometry, title):
+    """Build a FeatureCollection with one Polygon feature per polygon in geometry.
+
+    Accepts a GeoJSON Polygon or MultiPolygon geometry. Polygons keep all of
+    their rings (outer boundary plus holes). MultiPolygons are split into
+    separate Polygon features for CalTopo import.
+    """
+    geom_type = geometry.get("type")
+    if geom_type == "Polygon":
+        polygons = [geometry["coordinates"]]
+    elif geom_type == "MultiPolygon":
+        polygons = geometry["coordinates"]
+    else:
+        raise ValueError(f"Unsupported geometry type for {title!r}: {geom_type}")
+
+    return {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {"type": "Polygon", "coordinates": rings},
+                "properties": {**_CALTOPO_SHAPE_PROPERTIES, "title": str(title)},
+            }
+            for rings in polygons
+        ],
+    }
+
+
+def write_zone_geojson(path, geometry, title):
+    """Write zone_geojson(geometry, title) to path as JSON."""
+    with open(path, "w") as out:
+        json.dump(zone_geojson(geometry, title), out)
+
+
 def find_object_by_key_value(objects_list, key, value):
     """Return the first dict in the list whose key matches value, else None."""
     for obj in objects_list:

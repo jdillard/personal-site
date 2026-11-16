@@ -2,7 +2,7 @@ import json
 import os
 import time
 from slugify import slugify
-from utils import fetch_json_with_retry
+from utils import fetch_json_with_retry, write_zone_geojson
 
 def prep_dir(dir):
     # create directory if it doesn't exist
@@ -25,47 +25,13 @@ jsonResponse = fetch_json_with_retry(
     raise_on_error=True,
 )
 
-if jsonResponse:
-    # create geojson files for each zone
-    for feature in jsonResponse['features']:
-        shapes = []
-        for coord_set in feature['geometry']['coordinates']:
-            if len(coord_set) > 5:
-                coord_set_normalized = []
-                coord_set_normalized.append(coord_set)
-            else:
-                coord_set_normalized = coord_set
-            shapes.append(f"""\
-        {{
-            "geometry": {{
-                "coordinates": {coord_set_normalized},
-                "type": "Polygon"
-            }},
-            "type": "Feature",
-            "properties": {{
-                "stroke-opacity": 1,
-                "creator": "8BQK70",
-                "description": "",
-                "stroke-width": 2,
-                "title": "{feature['properties']['id']}",
-                "fill": "#FF0000",
-                "stroke": "#FF0000",
-                "fill-opacity": 0.1,
-                "class": "Shape",
-                "updated": 1699597377876
-            }}
-        }}
-""")
-        geoJsonOutput = """\
-{{
-    "features": [
-{shapes}
-    ],
-    "type": "FeatureCollection"
-}}""".format(shapes=','.join(shapes))
-
-        with open(f"{output_dir}/{feature['id']}.geojson",'w') as out:
-            out.write(geoJsonOutput)
+# create geojson files for each zone
+for feature in jsonResponse['features']:
+    write_zone_geojson(
+        f"{output_dir}/{feature['id']}.geojson",
+        feature['geometry'],
+        feature['properties']['id'],
+    )
 
 # grab CA zones metadata
 jsonResponse = fetch_json_with_retry(
@@ -99,44 +65,11 @@ jsonResponse = fetch_json_with_retry(
 
 # create geojson files for each zone
 for feature in jsonResponse['features']:
-        shapes = []
-        for coord_set in feature['geometry']['coordinates']:
-            if len(coord_set) > 5:
-                coord_set_normalized = []
-                coord_set_normalized.append(coord_set)
-            else:
-                coord_set_normalized = coord_set
-            shapes.append(f"""\
-        {{
-            "geometry": {{
-                "coordinates": {coord_set_normalized},
-                "type": "Polygon"
-            }},
-            "type": "Feature",
-            "properties": {{
-                "stroke-opacity": 1,
-                "creator": "8BQK70",
-                "description": "",
-                "stroke-width": 2,
-                "title": "{feature['properties']['name']}",
-                "fill": "#FF0000",
-                "stroke": "#FF0000",
-                "fill-opacity": 0.1,
-                "class": "Shape",
-                "updated": 1699597377876
-            }}
-        }}
-""")
-        geoJsonOutput = """\
-{{
-    "features": [
-{shapes}
-    ],
-    "type": "FeatureCollection"
-}}""".format(shapes=','.join(shapes))
-
-        with open(f"{output_dir}/{feature['properties']['center_id']}-{feature['id']}.geojson",'w') as out:
-            out.write(geoJsonOutput)
+    write_zone_geojson(
+        f"{output_dir}/{feature['properties']['center_id']}-{feature['id']}.geojson",
+        feature['geometry'],
+        feature['properties']['name'],
+    )
 
 with open(f"{source_dir}/map-layer.json") as fp:
     map_layer = json.load(fp)
