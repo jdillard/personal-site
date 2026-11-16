@@ -96,7 +96,10 @@ css_includes:
         <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}" data-color="{{ zone.color }}" data-min="{{ zone.elevations['btl'][0] }}"  data-max="{{ zone.elevations['atl'][1] }}" data-btl="{{ zone.elevations['btl'][1] }}" data-atl="{{ zone.elevations['ntl'][1] }}" data-published="{{ zone.published }}">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             {% if zone.short_name and zone.short_name != zone.name %}
-            <p class="tc f6 black-70 mt0">{{ zone.name }}</p>
+            <details class="tc f6 black-70 mt0 mb3">
+                <summary class="pointer" title="Show all areas">{{ zone.short_name }}</summary>
+                <p class="mt2 mb0 lh-copy">{{ zone.name }}</p>
+            </details>
             {% endif %}
             {% if zone.danger %}
             <div id="{{ zone.slug }}-title" class="mv4 tc">
