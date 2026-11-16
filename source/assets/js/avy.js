@@ -264,7 +264,11 @@ document.querySelectorAll('.dynamic-color').forEach(el => {
 });
 
 // initialize the zones map
-var map = L.map('map').setView([51.505, -0.09], 13);
+// no initial view: Leaflet queues layers until the first fitBounds positions the map,
+// which avoids a visible jump from a placeholder location
+var map = L.map('map');
+let mapPositioned = false;
+map.whenReady(() => { mapPositioned = true; });
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=cb1_489n_1_38909aed6058ce0068372c23').addTo(map);
 
@@ -413,16 +417,23 @@ for (let i = 0; i < zones.options.length; i++) {
   }
   promises.push(addLayer(zones.options[i].value, color, hoverColor, zones.type, zones.options[i].region));
 }
-if(zones.type == "region") {
-  // Wait for all addLayer calls to complete
-  Promise.all(promises).then(() => {
+// Wait for all addLayer calls to complete (addLayer catches its own errors)
+Promise.all(promises).then(() => {
+  if(zones.type == "region") {
     for (let key in layers) {
       bounds.extend(layers[key].getBounds());
     }
 
-    map.fitBounds(bounds);
-  });
-}
+    if(bounds.isValid()) {
+      map.fitBounds(bounds);
+    }
+  }
+
+  // fallback if no zone shape could be loaded: show western North America
+  if(!mapPositioned) {
+    map.setView([45, -115], 4);
+  }
+});
 
 // event listener for changing the layer highlight
 if(zoneSel) {
