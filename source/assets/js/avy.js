@@ -29,13 +29,18 @@ function getIssues() {
   });
 }
 
-function showRegion(region_id) {
+// update the url hash without triggering a navigation or hashchange event
+function setHash(hash) {
+  const base = window.location.pathname + window.location.search;
+  history.replaceState(null, "", hash ? `${base}#${hash}` : base);
+}
+
+// index page: show one region's zone list (or all) and its shapes on the map
+function showRegion(region_id, updateHash = true) {
   if(region_id == "all") {
     document.querySelectorAll('.avy-region').forEach(function(div) {
       div.classList.remove('dn');
     });
-
-    location.replace(window.location.origin + window.location.pathname + window.location.search);
   } else {
     const region = document.getElementById(`${region_id}-region`);
     if (!region) return false;
@@ -45,20 +50,19 @@ function showRegion(region_id) {
     });
 
     region.classList.remove('dn');
-
-    location.replace("#region-" + region_id);
   }
+
+  if(updateHash) setHash(region_id == "all" ? "" : `region-${region_id}`);
+  if(indexSel) indexSel.value = region_id;
+  showRegionLayers(region_id);
   return true;
 }
 
-// show zone details (report/map)
-function showZone(zone_id) {
+// region page: show zone details (report/map)
+function showZone(zone_id, updateHash = true) {
   const report = document.getElementById(`${zone_id}-report`);
   const shape = document.getElementById(`${zone_id}-shape`);
   if (!report || !shape) return false;
-
-  const btl = report.getAttribute("data-btl");
-  const atl = report.getAttribute("data-atl");
 
   document.querySelectorAll('.avy-zone').forEach(function(div) {
     div.classList.add('dn');
@@ -67,33 +71,17 @@ function showZone(zone_id) {
   report.classList.remove('dn');
   shape.classList.remove('dn');
 
-  location.replace("#zone-" + zone_id);
+  if(updateHash) setHash(`zone-${zone_id}`);
+  if(zoneSel) zoneSel.value = zone_id;
 
-  btlSlider.value = btl;
-  atlSlider.value = atl;
-  return true;
-}
-
-// grab url hash if it exists; unknown ids are ignored so the page keeps its default view
-const hash = window.location.hash.slice(1)
-let zoneShown = false;
-if(hash.startsWith("zone-") && zoneSel) {
-  const zoneId = hash.slice(5);
-  zoneShown = showZone(zoneId);
-  if(zoneShown) zoneSel.value = zoneId;
-} else if(hash.startsWith("region-") && indexSel) {
-  const regionId = hash.slice(7);
-  if(showRegion(regionId)) indexSel.value = regionId;
-}
-
-// regional page without a valid zone hash: init sliders from the default (visible) zone
-if(!zoneShown) {
-  const currentZone = Array.from(document.querySelectorAll('.avy-zone')).find(el => !el.classList.contains('dn'));
-  if(currentZone && btlSlider && atlSlider) {
-    const report = document.getElementById(`${currentZone.dataset.id}-report`);
+  if(btlSlider && atlSlider) {
     btlSlider.value = report.getAttribute("data-btl");
     atlSlider.value = report.getAttribute("data-atl");
+    updateRangeValues();
   }
+
+  highlightLayer(zone_id);
+  return true;
 }
 
 if(indexSel) {
@@ -235,9 +223,6 @@ if(btlSlider && atlSlider) {
 
       updateRangeValues();
   });
-
-  // initial display
-  updateRangeValues();
 }
 
 // style danger layer colors
@@ -271,179 +256,176 @@ document.querySelectorAll('.dynamic-color').forEach(el => {
 // initialize the zones map
 // no initial view: Leaflet queues layers until the first fitBounds positions the map,
 // which avoids a visible jump from a placeholder location
-var map = L.map('map');
+const map = L.map('map');
 let mapPositioned = false;
 map.whenReady(() => { mapPositioned = true; });
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=cb1_489n_1_38909aed6058ce0068372c23').addTo(map);
 
-let layers = {};  // all layers with filenames as keys
-let currentLayer = null; //filename as key
-const bounds = L.latLngBounds();
+const GRAY = "#AAAAAA";
+const layers = {};        // loaded layers, filename as key
+const layerLoads = {};    // in-flight/finished loads, filename as key (each file fetched once)
+const baseColors = {};    // resting fill color per layer, restored on mouseout
+let currentLayer = null;  // selected zone on region pages, filename as key
+let regionRequest = 0;    // guards against out-of-order region renders on the index page
 
-// assign hover colors to geojson files
-function assignHoverColors(geojsonData, color) {
-  geojsonData.features.forEach((feature, index) => {
-    feature.properties = feature.properties || {};
-
-    feature.properties.hoverColor = color;
-  });
-
-  return geojsonData;
+function layerStyle(fillColor) {
+  return { color: "#777777", fillColor: fillColor, weight: 1, fillOpacity: 0.4 };
 }
 
-// load a GeoJSON file and add to the map in given color
-async function addLayer(filePath, color, hoverColor, type, region, selected) {
-    await fetch(`/assets/json/avalanche-zones/${filePath}.geojson`)
-        .then(response => response.json())
-        .then(data => {
-            const layer = L.geoJSON(assignHoverColors(data, hoverColor), {
-              style: {
-                color: "#777777", // border color
-                fillColor: color,
-                weight: 1,
-                fillOpacity: 0.4,
-              },
-              onEachFeature: function(feature, layer) {
-                layer.on('click', function() {
-                    if(type == "zone") {
-                      window.location.hash = `zone-${filePath}`;
-                    } else if(type == "region") {
-                      window.location.assign(`${region}.html#zone-${filePath}`);
-                    }
-                });
+// load a GeoJSON file once and build its layer (not added to the map)
+// zone: {value, color, region}; type: "zone" (region page) or "region" (index page)
+function loadLayer(zone, type) {
+  const filePath = zone.value;
+  if (!layerLoads[filePath]) {
+    layerLoads[filePath] = fetch(`/assets/json/avalanche-zones/${filePath}.geojson`)
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP ${response.status} for ${filePath}`);
+        return response.json();
+      })
+      .then(data => {
+        const layer = L.geoJSON(data, {
+          style: () => layerStyle(baseColors[filePath] || GRAY),
+          onEachFeature: function(feature, featureLayer) {
+            featureLayer.on('click', function() {
+              if(type == "zone") {
+                showZone(filePath);
+              } else {
+                window.location.assign(`${zone.region}.html#zone-${filePath}`);
+              }
+            });
 
-                layer.on('mouseover', function(e) {
-                  const hoverColor = feature.properties.hoverColor || '#AAAAAA';
-                  e.target.setStyle({ fillColor: hoverColor });
-                  e.target.bringToFront();
-                });
+            featureLayer.on('mouseover', function(e) {
+              e.target.setStyle({ fillColor: zone.color || GRAY });
+              e.target.bringToFront();
+            });
 
-                layer.on('mouseout', function(e) {
-                  layer.setStyle({
-                    color: "#777777",
-                    fillColor: color,
-                    weight: 1,
-                    fillOpacity: 0.4,
-                  });
-                });
-            }
-            }).addTo(map);
-            layers[filePath] = layer;
-
-            if(type == "zone") {
-              // zoom to the selected zone
-              if(selected) map.fitBounds(layer.getBounds());
-            } else {
-              bounds.extend(layer.getBounds());
-            }
-        })
-        .catch(error => console.error("Error loading GeoJSON:", error));
-}
-
-// highlight the selected layer in blue and revert others to gray
-function highlightLayer(filePath) {
-  // Revert the previous layer to gray
-  if (currentLayer && layers[currentLayer]) {
-    layers[currentLayer].setStyle({ fillColor: "#AAAAAA" });
-  }
-
-  // set the new layer to blue
-  if (layers[filePath]) {
-    layers[filePath].setStyle({ fillColor: "#357EDD" });
-    map.fitBounds(layers[filePath].getBounds());
-    currentLayer = filePath;
-  }
-}
-
-function getZones() {
-  let options = []
-  let type = 'zone';
-  if(zoneSel) {
-    const allZones = document.getElementById("zoneSel").options;
-
-    for (let i = 0; i < allZones.length; i++) {
-      const zone = allZones[i].value;
-      const element = document.getElementById(`${zone}-report`);
-
-      if (element) {
-        options.push({
-          value: zone,
-          selected: allZones[i].selected,
-          color: element.getAttribute("data-color"),
-          region: null //TODO get region?
+            featureLayer.on('mouseout', function(e) {
+              e.target.setStyle(layerStyle(baseColors[filePath] || GRAY));
+            });
+          }
         });
+        layers[filePath] = layer;
+        return layer;
+      })
+      .catch(error => {
+        console.error("Error loading GeoJSON:", error);
+        return null;
+      });
+  }
+  return layerLoads[filePath];
+}
+
+// fallback if no zone shape could be loaded: show western North America
+function ensureMapPositioned() {
+  if(!mapPositioned) map.setView([45, -115], 4);
+}
+
+// region page: color the selected zone with its danger color, gray out the previous one
+function highlightLayer(filePath) {
+  if (currentLayer && currentLayer !== filePath) {
+    baseColors[currentLayer] = GRAY;
+    if (layers[currentLayer]) layers[currentLayer].setStyle({ fillColor: GRAY });
+  }
+
+  const report = document.getElementById(`${filePath}-report`);
+  baseColors[filePath] = (report && report.getAttribute("data-color")) || GRAY;
+  currentLayer = filePath;
+
+  // if the layer is still loading, loadZoneLayers zooms to it once it arrives
+  if (layers[filePath]) {
+    layers[filePath].setStyle({ fillColor: baseColors[filePath] });
+    layers[filePath].bringToFront();
+    map.fitBounds(layers[filePath].getBounds());
+  }
+}
+
+// region page: load every zone in the dropdown, zooming to the selected one
+function loadZoneLayers() {
+  const zones = Array.from(zoneSel.options)
+    .map(option => document.getElementById(`${option.value}-report`))
+    .filter(Boolean)
+    .map(report => ({ value: report.dataset.id, color: report.getAttribute("data-color") }));
+
+  Promise.all(zones.map(zone =>
+    loadLayer(zone, "zone").then(layer => {
+      if (!layer) return;
+      layer.addTo(map);
+      if (zone.value === currentLayer) {
+        layer.bringToFront();
+        map.fitBounds(layer.getBounds());
       }
-    }
-  }
-  else if(indexSel) {
-    const region = indexSel.value;
-    if(region == "all") {
-      const ulElements = document.querySelectorAll('[id$="-zones"]');
-      const liElements = Array.from(ulElements).flatMap(ul =>
-        Array.from(ul.querySelectorAll('li')).map(li => ({ li, ul }))
-      );
-      options = liElements.map(({ li, ul }) => ({
-        value: li.getAttribute('data-zone'),
-        color: li.getAttribute('data-color'),
-        selected: false,
-        region: ul.id.replace(/-zones$/, '')
-      }));
-    } else {
-      const ulElement = document.getElementById(`${region}-zones`);
-      const liElements = ulElement.querySelectorAll('li');
-      options = Array.from(liElements).map(li => ({
-        value: li.getAttribute('data-zone'),
-        color: li.getAttribute('data-color'),
-        selected: false,
-        region: region
-      }));
-    }
-    type = 'region';
-  }
-  return {options, type};
+    })
+  )).then(ensureMapPositioned);
 }
 
-// load all GeoJSON layers initially
-const zones = getZones()
-const promises = [];
-for (let i = 0; i < zones.options.length; i++) {
-  let color = "#AAAAAA";
-  let hoverColor = zones.options[i].color;
-  if(zones.type == "region" || zones.options[i].selected) {
-    color = zones.options[i].color;
-  }
-  promises.push(addLayer(zones.options[i].value, color, hoverColor, zones.type, zones.options[i].region, zones.options[i].selected));
+// index page: zones listed for a region ("all" for every region)
+function regionZones(region) {
+  const lists = region == "all"
+    ? document.querySelectorAll('[id$="-zones"]')
+    : [document.getElementById(`${region}-zones`)].filter(Boolean);
+
+  return Array.from(lists).flatMap(ul =>
+    Array.from(ul.querySelectorAll('li')).map(li => ({
+      value: li.getAttribute('data-zone'),
+      color: li.getAttribute('data-color'),
+      region: ul.id.replace(/-zones$/, '')
+    }))
+  );
 }
-// Wait for all addLayer calls to complete (addLayer catches its own errors)
-Promise.all(promises).then(() => {
-  if(zones.type == "region") {
-    for (let key in layers) {
-      bounds.extend(layers[key].getBounds());
-    }
 
-    if(bounds.isValid()) {
-      map.fitBounds(bounds);
-    }
+// index page: show only the region's zones on the map and fit to them
+function showRegionLayers(region) {
+  if (!indexSel) return;
+  const request = ++regionRequest;
+  const zones = regionZones(region);
+  const wanted = new Set(zones.map(zone => zone.value));
+
+  for (const key in layers) {
+    if (!wanted.has(key)) map.removeLayer(layers[key]);
   }
 
-  // fallback if no zone shape could be loaded: show western North America
-  if(!mapPositioned) {
-    map.setView([45, -115], 4);
-  }
-});
+  zones.forEach(zone => { baseColors[zone.value] = zone.color; });
 
-// event listener for changing the layer highlight
-if(zoneSel) {
-  document.getElementById("zoneSel").addEventListener("change", function(event) {
-    highlightLayer(event.target.value);
+  Promise.all(zones.map(zone => loadLayer(zone, "region"))).then(loaded => {
+    if (request !== regionRequest) return; // a newer region was selected meanwhile
+
+    const bounds = L.latLngBounds();
+    loaded.filter(Boolean).forEach(layer => {
+      layer.addTo(map);
+      bounds.extend(layer.getBounds());
+    });
+
+    if (bounds.isValid()) map.fitBounds(bounds);
+    ensureMapPositioned();
   });
 }
 
-// reload page when the hash changes (a layer is selected on the map)
-window.addEventListener('hashchange', () => {
-  location.reload();
-});
+// apply the url hash; unknown ids fall back to the page's default view
+function applyHash(updateHash) {
+  const hash = window.location.hash.slice(1);
+
+  if (zoneSel) {
+    const zoneId = hash.startsWith("zone-") ? hash.slice(5) : "";
+    if (!zoneId || !showZone(zoneId, updateHash)) {
+      // default (first) zone, leaving the url alone
+      const defaultZone = zoneSel.options[0];
+      if (defaultZone) showZone(defaultZone.value, false);
+    }
+  } else if (indexSel) {
+    const regionId = hash.startsWith("region-") ? hash.slice(7) : "";
+    if (!regionId || !showRegion(regionId, updateHash)) {
+      showRegion("all", false);
+    }
+  }
+}
+
+// initial view, then load the map shapes
+applyHash(false);
+if (zoneSel) loadZoneLayers();
+
+// in-page hash changes (e.g. links to another zone on the same page, back/forward)
+window.addEventListener('hashchange', () => applyHash(false));
 
 // toggles are <p role="button">: activate with Enter/Space too, and keep aria-expanded in sync
 function onToggle(selector, handler) {
