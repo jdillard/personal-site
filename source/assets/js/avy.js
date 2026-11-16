@@ -143,31 +143,32 @@ function updateRangeValues() {
       sliders.classList.remove('dn');
     }
 
-    const atl = parseInt(btlSlider.value);
-    const btl = parseInt(atlSlider.value);
+    // btlSlider sets the top of BTL, atlSlider sets the top of NTL (ATL starts above it)
+    const btlTop = parseInt(btlSlider.value);
+    const ntlTop = parseInt(atlSlider.value);
 
     // update range displays
-    atlBand.innerHTML = `<b>ATL</b>: Above ${btl + 1} ft`;
-    ntlBand.innerHTML = `<b>NTL</b>: ${atl + 1} to ${btl} ft`;
-    btlBand.innerHTML = `<b>BTL</b>: Below ${atl} ft`;
+    atlBand.innerHTML = `<b>ATL</b>: Above ${ntlTop + 1} ft`;
+    ntlBand.innerHTML = `<b>NTL</b>: ${btlTop + 1} to ${ntlTop} ft`;
+    btlBand.innerHTML = `<b>BTL</b>: Below ${btlTop} ft`;
 
     const oldUrl = url.getAttribute("data-url")
     const rules = document.querySelectorAll(`.rules-${currentZone.dataset.id}`);
 
     const report = document.getElementById(`${currentZone.dataset.id}-report`);
-    const oldBtl = parseInt(report.getAttribute("data-btl"), 10);
-    const oldAtl = parseInt(report.getAttribute("data-atl"), 10);
+    const oldBtlTop = parseInt(report.getAttribute("data-btl"), 10);
+    const oldNtlTop = parseInt(report.getAttribute("data-atl"), 10);
 
     const replacements = {
-      btl: `below ${atl}'`,
-      ntl: `${atl + 1}' to ${btl}'`,
-      atl: `above ${btl + 1}'`
+      btl: `below ${btlTop}'`,
+      ntl: `${btlTop + 1}' to ${ntlTop}'`,
+      atl: `above ${ntlTop + 1}'`
     };
 
     const ranges = [
-      { match: `e0-${oldBtl}f`, replaceWith: `e0-${atl}f` },
-      { match: `e${oldBtl + 1}-${oldAtl}f`, replaceWith: `e${atl + 1}-${btl}f` },
-      { match: `e${oldAtl + 1}-20310f`, replaceWith: `e${btl + 1}-20310f` }
+      { match: `e0-${oldBtlTop}f`, replaceWith: `e0-${btlTop}f` },
+      { match: `e${oldBtlTop + 1}-${oldNtlTop}f`, replaceWith: `e${btlTop + 1}-${ntlTop}f` },
+      { match: `e${oldNtlTop + 1}-20310f`, replaceWith: `e${ntlTop + 1}-20310f` }
     ];
 
     rules.forEach(ul => {
