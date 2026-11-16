@@ -6,6 +6,8 @@ from caltopo_layers import (
     find_aspect_values,
     find_object_by_key_value,
     sort_directions,
+    split_area_name,
+    short_area_name,
 )
 
 
@@ -232,3 +234,35 @@ class TestUacRoseByBand:
     def test_returns_bands_lowest_first(self):
         rose = ",".join(["3"] * 8 + ["2"] * 8 + ["1"] * 8)
         assert [band for band, _ in uac_rose_by_band(rose)] == ["btl", "ntl", "atl"]
+
+
+class TestSplitAreaName:
+    """Tests for split_area_name()"""
+
+    def test_single_subregion(self):
+        assert split_area_name("Haines Pass") == ["Haines Pass"]
+
+    def test_splits_on_hyphens(self):
+        assert split_area_name("Coquihalla-Manning-Skagit") == ["Coquihalla", "Manning", "Skagit"]
+
+    def test_keeps_spaced_dash_together(self):
+        assert split_area_name("North 40-Spray - KLakes") == ["North 40", "Spray - KLakes"]
+
+    def test_keeps_known_hyphenated_name(self):
+        assert split_area_name("Chic-Chocs") == ["Chic-Chocs"]
+
+    def test_empty(self):
+        assert split_area_name("") == []
+
+
+class TestShortAreaName:
+    """Tests for short_area_name()"""
+
+    def test_short_list_shown_in_full(self):
+        assert short_area_name(["Coquihalla", "Manning", "Skagit"]) == "Coquihalla, Manning, Skagit"
+
+    def test_long_list_truncated_with_count(self):
+        assert short_area_name(["A", "B", "C", "D", "E"]) == "A, B +3 more"
+
+    def test_empty(self):
+        assert short_area_name([]) == ""

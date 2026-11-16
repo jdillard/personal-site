@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 from jinja2 import Environment, FileSystemLoader
 import json
+import re
 from shapely.geometry import MultiPolygon, Point, Polygon
 from slugify import slugify
 import os
@@ -77,16 +78,30 @@ def uac_rose_by_band(danger_rose):
     return list(zip(("btl", "ntl", "atl"), reversed(split_elv_bands(danger_rose))))
 
 
-def short_area_name(name, max_parts=3):
-    """Shorten Avalanche Canada's joined subregion names for the zone dropdown.
+# subregion names that contain a bare hyphen and must not be split
+HYPHENATED_SUBREGIONS = ("Chic-Chocs",)
 
-    Dynamic areas are named by joining their subregions with "-",
-    e.g. "Coquihalla-Manning-Skagit-...".
+
+def split_area_name(name):
+    """Split an Avalanche Canada area name into its subregions.
+
+    Dynamic areas are named by joining subregions with "-",
+    e.g. "Coquihalla-Manning-Skagit". Spaced dashes ("Spray - KLakes") and
+    known hyphenated names ("Chic-Chocs") belong to a single subregion.
     """
-    parts = [part.strip() for part in name.split("-")]
-    if len(parts) <= max_parts:
-        return name
-    return f"{'-'.join(parts[:max_parts])}…"
+    placeholder = "\0"
+    for subregion in HYPHENATED_SUBREGIONS:
+        name = name.replace(subregion, subregion.replace("-", placeholder))
+    parts = re.split(r"(?<! )-(?! )", name)
+    return [part.replace(placeholder, "-").strip() for part in parts if part.strip()]
+
+
+def short_area_name(subregions, max_shown=3):
+    """Readable short name for an area, e.g. "Blue River, Clearwater +8 more"."""
+    if len(subregions) <= max_shown:
+        return ", ".join(subregions)
+    shown = max_shown - 1
+    return f"{', '.join(subregions[:shown])} +{len(subregions) - shown} more"
 
 
 #TODO better variable names
@@ -291,8 +306,9 @@ def main():
         area["problems"] = problems
         area["color"] = f"#{danger_levels[zone_color]['color']}"
         area["geo"] = found_value['properties']['centroid']
-        area["name"] = product["product"].get("title") or "Canada zone"
-        area["short_name"] = short_area_name(area["name"])
+        subregions = split_area_name(product["product"].get("title") or "")
+        area["name"] = ", ".join(subregions) or "Canada zone"
+        area["short_name"] = short_area_name(subregions) or "Canada zone"
         area["slug"] = area_slug_id
         area["center_id"] = "Avalanche Canada"
         area["center_name"] = "Avalanche Canada"
