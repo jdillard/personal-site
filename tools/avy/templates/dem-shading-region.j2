@@ -84,7 +84,7 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             {% for zone in zones %}
-            <option value="{{ zone.slug }}" {% if loop.first %}selected=""{% endif %}>{{ zone.name }}</option>
+            <option value="{{ zone.slug }}" title="{{ zone.name }}" {% if loop.first %}selected=""{% endif %}>{{ zone.short_name | default(zone.name) }}</option>
             {% endfor %}
         </select>
     </div>
@@ -95,6 +95,9 @@ css_includes:
         {% for zone in zones %}
         <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}" data-color="{{ zone.color }}" data-min="{{ zone.elevations['btl'][0] }}"  data-max="{{ zone.elevations['atl'][1] }}" data-btl="{{ zone.elevations['btl'][1] }}" data-atl="{{ zone.elevations['ntl'][1] }}" data-published="{{ zone.published }}">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            {% if zone.short_name and zone.short_name != zone.name %}
+            <p class="tc f6 black-70 mt0">{{ zone.name }}</p>
+            {% endif %}
             {% if zone.danger %}
             <div id="{{ zone.slug }}-title" class="mv4 tc">
                 <div><a id="{{ zone.slug }}-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Pre-populated CalTopo Map</a></div>

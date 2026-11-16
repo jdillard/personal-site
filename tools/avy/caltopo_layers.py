@@ -77,6 +77,18 @@ def uac_rose_by_band(danger_rose):
     return list(zip(("btl", "ntl", "atl"), reversed(split_elv_bands(danger_rose))))
 
 
+def short_area_name(name, max_parts=3):
+    """Shorten Avalanche Canada's joined subregion names for the zone dropdown.
+
+    Dynamic areas are named by joining their subregions with "-",
+    e.g. "Coquihalla-Manning-Skagit-...".
+    """
+    parts = [part.strip() for part in name.split("-")]
+    if len(parts) <= max_parts:
+        return name
+    return f"{'-'.join(parts[:max_parts])}…"
+
+
 #TODO better variable names
 def find_aspect_values(list, value, aspect):
     indices = [index for index, element in enumerate(list) if element == value]
@@ -282,7 +294,8 @@ def main():
         area["problems"] = problems
         area["color"] = f"#{danger_levels[zone_color]['color']}"
         area["geo"] = found_value['properties']['centroid']
-        area["name"] = "Canada zone"
+        area["name"] = product["product"].get("title") or "Canada zone"
+        area["short_name"] = short_area_name(area["name"])
         area["slug"] = area_slug_id
         area["center_id"] = "Avalanche Canada"
         area["center_name"] = "Avalanche Canada"
