@@ -452,28 +452,51 @@ window.addEventListener('hashchange', () => {
   location.reload();
 });
 
-u("#settings-toggle").on( "click", function() {
+// toggles are <p role="button">: activate with Enter/Space too, and keep aria-expanded in sync
+function onToggle(selector, handler) {
+  const toggle = document.querySelector(selector);
+  if (!toggle) return;
+
+  const run = () => {
+    const expanded = handler();
+    toggle.setAttribute("aria-expanded", String(expanded));
+  };
+
+  toggle.addEventListener("click", run);
+  toggle.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      run();
+    }
+  });
+}
+
+onToggle("#settings-toggle", function() {
   if(u("#settings").hasClass('open')) {
     u("#settings").removeClass('open');
     const toggled_text = u("#settings-toggle").text().replace("Hide", "Show");
     u("#settings-toggle").text(toggled_text);
     document.getElementById("settings").style.display = "none";
+    return false;
   } else {
     u("#settings").addClass('open');
     const toggled_text = u("#settings-toggle").text().replace("Show", "Hide");
     u("#settings-toggle").text(toggled_text);
     document.getElementById("settings").style.display = "block";
+    return true;
   }
 });
 
-u("#issues-toggle").on( "click", function() {
+onToggle("#issues-toggle", function() {
   if(u("#issues").hasClass('open')) {
     u("#issues").removeClass('open');
     u("#issues-toggle").text('Show Known Issues');
     document.getElementById("issues").innerHTML = "";
+    return false;
   } else {
     u("#issues").addClass('open');
     u("#issues-toggle").text('Hide Known Issues');
     getIssues();
+    return true;
   }
 });

@@ -41,7 +41,8 @@
   border-color: #555 transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext,
+.tooltip:focus-within .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
