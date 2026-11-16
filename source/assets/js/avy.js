@@ -38,6 +38,7 @@ function showRegion(region_id) {
     location.replace(window.location.origin + window.location.pathname + window.location.search);
   } else {
     const region = document.getElementById(`${region_id}-region`);
+    if (!region) return false;
 
     document.querySelectorAll('.avy-region').forEach(function(div) {
       div.classList.add('dn');
@@ -47,13 +48,15 @@ function showRegion(region_id) {
 
     location.replace("#region-" + region_id);
   }
+  return true;
 }
 
 // show zone details (report/map)
 function showZone(zone_id) {
   const report = document.getElementById(`${zone_id}-report`);
   const shape = document.getElementById(`${zone_id}-shape`);
-  const geojson = shape.getAttribute("data-geojson");
+  if (!report || !shape) return false;
+
   const btl = report.getAttribute("data-btl");
   const atl = report.getAttribute("data-atl");
 
@@ -68,30 +71,28 @@ function showZone(zone_id) {
 
   btlSlider.value = btl;
   atlSlider.value = atl;
+  return true;
 }
 
-// grab url hash if it exists
+// grab url hash if it exists; unknown ids are ignored so the page keeps its default view
 const hash = window.location.hash.slice(1)
-if(hash) {
-  if(hash.startsWith("zone")) {
-    showZone(hash.slice(5));
-    zoneSel.value = hash.slice(5)
-  } else if(hash.startsWith("region")){
-      showRegion(hash.slice(7));
-      indexSel.value = hash.slice(7)
-  }
-} else {
-  const avyZones = document.querySelectorAll('.avy-zone');
-  // if a regional page
-  if(avyZones.length > 0) {
-    const currentZone = Array.from(avyZones).find(el => !el.classList.contains('dn'));
+let zoneShown = false;
+if(hash.startsWith("zone-") && zoneSel) {
+  const zoneId = hash.slice(5);
+  zoneShown = showZone(zoneId);
+  if(zoneShown) zoneSel.value = zoneId;
+} else if(hash.startsWith("region-") && indexSel) {
+  const regionId = hash.slice(7);
+  if(showRegion(regionId)) indexSel.value = regionId;
+}
 
+// regional page without a valid zone hash: init sliders from the default (visible) zone
+if(!zoneShown) {
+  const currentZone = Array.from(document.querySelectorAll('.avy-zone')).find(el => !el.classList.contains('dn'));
+  if(currentZone && btlSlider && atlSlider) {
     const report = document.getElementById(`${currentZone.dataset.id}-report`);
-    const btl = report.getAttribute("data-btl");
-    const atl = report.getAttribute("data-atl");
-
-    btlSlider.value = btl;
-    atlSlider.value = atl;
+    btlSlider.value = report.getAttribute("data-btl");
+    atlSlider.value = report.getAttribute("data-atl");
   }
 }
 
