@@ -1,8 +1,8 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 import json
 import re
-from shapely.geometry import MultiPolygon, Point, Polygon
+from shapely.geometry import MultiPolygon, Polygon
 from slugify import slugify
 import os
 import urllib.parse
@@ -14,16 +14,25 @@ from utils import convert_to_local_time, format_elevation_range, find_object_by_
 
 
 #TODO support search by lat/long (mainly for CO/BC) (lambda function?)
-#TODO expired reports?
 #TODO update copy?
 #TODO git pull rebase on action to prevent conflicts while the script is running?
 
-#TODO find/replace
 aspect = config.aspect
 aspect_abbr = config.aspect_abbr
 danger_levels = config.danger_levels
 problem_color = config.problem_color
 state_info = config.state_info
+
+# elevation bands, lowest first
+BANDS = ("btl", "ntl", "atl")
+# Avalanche Canada danger rating keys by band
+CA_DANGER_KEYS = {"btl": "btl", "ntl": "tln", "atl": "alp"}
+# Avalanche Canada problem elevation values to bands
+CA_PROBLEM_BANDS = {"btl": "btl", "tln": "ntl", "alp": "atl"}
+# avalanche.org danger keys by band
+US_DANGER_KEYS = {"btl": "lower", "ntl": "middle", "atl": "upper"}
+# avalanche.org problem location levels to bands
+US_PROBLEM_BANDS = {"lower": "btl", "middle": "ntl", "upper": "atl"}
 
 
 def sort_directions(subset):
@@ -75,7 +84,7 @@ def uac_rose_by_band(danger_rose):
     ("btl", "ntl", "atl"), the order the other centers use.
     https://utahavalanchecenter.org/docs/api/forecast
     """
-    return list(zip(("btl", "ntl", "atl"), reversed(split_elv_bands(danger_rose))))
+    return list(zip(BANDS, reversed(split_elv_bands(danger_rose))))
 
 
 # subregion names that contain a bare hyphen and must not be split
@@ -111,6 +120,130 @@ def find_aspect_values(list, value, aspect):
     return aspect_values
 
 
+def band_desc(elevations, band):
+    """Human readable elevation range for a band, e.g. "below 7500'"."""
+    low, high = elevations[band]
+    if band == "btl":
+        return f"below {high}'"
+    return format_elevation_range((low, high))
+
+
+def shading_rule(elevations, band, color, start=0, end=0):
+    """CalTopo DEM shading rule for an aspect range (0-0 is all aspects) within a band."""
+    low, high = elevations[band]
+    return f"a{start}-{end}e{low}-{high}f {color}"
+
+
+def layer_param(rules):
+    """Join shading rules into a CalTopo layer parameter."""
+    return f"sc_{'p'.join(rule.replace(' ', 'c') for rule in rules)}"
+
+
+def danger_rule(elevations, band, level):
+    """Single color danger rule covering every aspect in a band."""
+    return {
+        "id": band,
+        "layer": shading_rule(elevations, band, level["color"]),
+        "desc": f"{level['desc']} ({band_desc(elevations, band)})",
+        "colors": [f"#{level['color']}"],
+    }
+
+
+def problem_rule(elevations, band, aspects, i):
+    """Problem rule for the given aspects in a band, colored by problem number."""
+    start, end, desc = sort_directions(aspects)
+    return {
+        "id": band,
+        "layer": shading_rule(elevations, band, problem_color.get(i), start, end),
+        "desc": f"{desc} ({band_desc(elevations, band)})",
+        "color": f"#{problem_color.get(i)}",
+    }
+
+
+def make_problem(i, name, rules, tomorrow, layer_rules=None):
+    """Problem entry for the template; layer_rules sets the CalTopo layer order if it differs."""
+    return {
+        "name": f"{tomorrow} {name}",
+        "desc": f"Problem #{i+1}",
+        "color": f"#{problem_color.get(i)}",
+        "rules": rules,
+        "layers": layer_param(rule["layer"] for rule in (layer_rules or rules)),
+        "uuid": str(uuid.uuid4()),
+    }
+
+
+def caltopo_layers(layers_template, tomorrow, danger_layer, problems):
+    """CalTopo URL layer parameters for the danger layer (if any) and problem layers."""
+    layer_info = urllib.parse.quote(layers_template.render(
+        sun_day=tomorrow,
+        danger_layer=danger_layer,
+        problem_layers=problems,
+    ))
+    if danger_layer:
+        return f"a={danger_layer}&cl={layer_info}"
+    return f"cl={layer_info}"
+
+
+def center_message(prefix, zone):
+    return f'{prefix} See <a class="no-underline fancy-link relative light-red" href="{zone["url"]}">{zone["center_id"]}</a> for more information.'
+
+
+def is_expired(expires):
+    return bool(expires) and dateutil.parser.parse(expires) <= datetime.now(tz=ZoneInfo('UTC'))
+
+
+def utah_danger(rose, elevations):
+    """Danger rules from a UAC danger rose, where a band can have several colors."""
+    # Each element of the rose array corresponds to a position on the rose,
+    # starting from the highest elevation, northern aspect and proceeds clockwise.
+    # https://utahavalanchecenter.org/docs/api/forecast
+    danger_rules = []
+    for band, chunk in uac_rose_by_band(rose):
+        indexes = sorted(set(chunk))
+        if len(indexes) == 1: # single color danger rose
+            rule = danger_rule(elevations, band, danger_levels.get(f"utah{indexes[0]}"))
+            rule["layer"] = [rule["layer"]] # UT layers are lists of rules
+            danger_rules.append(rule)
+            continue
+
+        # multi color danger rose
+        layer_colors = []
+        layer_rules = []
+        for danger_index in indexes:
+            level = danger_levels.get(f"utah{danger_index}")
+            layer_colors.append(f"#{level['color']}")
+            start, end, _ = sort_directions(find_aspect_values(chunk, danger_index, aspect))
+            layer_rules.append(shading_rule(elevations, band, level["color"], start, end))
+        low_desc = danger_levels.get(f"utah{indexes[0]}")["shortdesc"]
+        high_desc = danger_levels.get(f"utah{indexes[-1]}")["shortdesc"]
+        danger_rules.append({
+            "id": band,
+            "layer": layer_rules,
+            "desc": f"{low_desc} to {high_desc} danger ({band_desc(elevations, band)})",
+            "colors": layer_colors,
+        })
+
+    danger_layer = layer_param(rule for x in danger_rules for rule in x["layer"])
+    zone_color = f"utah{max(max(chunk) for chunk in split_elv_bands(rose))}"
+    return danger_rules, danger_layer, zone_color
+
+
+def utah_problems(data, elevations, tomorrow):
+    problems = []
+    # UAC numbers problems 1-3; i stays 0-based for problem_color
+    for i in range(3):
+        n = i + 1
+        if data.get(f"avalanche_problem_{n}") and data.get(f"danger_rose_{n}"):
+            rules = []
+            for band, chunk in uac_rose_by_band(data[f"danger_rose_{n}"]):
+                # 16 marks the aspects where the problem exists
+                problem_aspects = find_aspect_values(chunk, 16, aspect)
+                if problem_aspects:
+                    rules.append(problem_rule(elevations, band, problem_aspects, i))
+            problems.append(make_problem(i, data[f"avalanche_problem_{n}"], rules, tomorrow, layer_rules=rules[::-1]))
+    return problems
+
+
 def main():
     # load jinja templates
     environment = Environment(loader=FileSystemLoader("tools/avy/templates/"))
@@ -128,13 +261,10 @@ def main():
 
     # loop through all the zones in the avalanche.org map layer
     states = []
-    #TODO support search by lat/long
-    # search_point = Point((-122.27173, 41.34706))
     for item in map_layer["features"]:
         # calculate center of each zone
         if item["geometry"]["type"] == "Polygon":
             centroid = Polygon(item["geometry"]["coordinates"][0]).centroid
-            # print(search_point.within(Polygon(item["geometry"]["coordinates"][0]))) # check if a point is in the polygon
             lat_long = [centroid.x, centroid.y]
         elif item["geometry"]["type"] == "MultiPolygon":
             polygons = []
@@ -172,13 +302,14 @@ def main():
                 found = True
                 break
         if not found:
+            info = next(info for info in state_info if info["abbr"] == item["properties"]["state"])
             states.append({
                 "state": item["properties"]["state"],
                 "page": f"/avy/{item['properties']['state'].lower()}",
                 "zones": [zone_info],
-                "active": next(active["active"] for active in state_info if active["abbr"] == item["properties"]["state"]),
-                "name": next(active["name"] for active in state_info if active["abbr"] == item["properties"]["state"]),
-                "elevations": next(active["elevations"] for active in state_info if active["abbr"] == item["properties"]["state"]),
+                "active": info["active"],
+                "name": info["name"],
+                "elevations": info["elevations"],
             })
 
     # delete all DEM files in order to start fresh
@@ -186,7 +317,6 @@ def main():
     for f in os.listdir(dir):
         os.remove(os.path.join(dir, f))
 
-    #TODO loop through CA areas and create DEM pages
     with open("tools/avy/avalanche-reports-raw/ca-metadata.json") as fp:
         ca_metadata = json.load(fp)
 
@@ -208,18 +338,18 @@ def main():
             with open(f"tools/avy/avalanche-reports-raw/{product['product']['id']}.json") as fp:
                 data = json.load(fp)
 
-            #TODO move duplicate code as US to functions
-
             # timezone calculations
-            published_date_time_obj, tomorrow_date_time_obj, published, tomorrow = convert_to_local_time(
+            _, _, published, tomorrow = convert_to_local_time(
                 data["report"]["dateIssued"],
                 found_value.get('properties')["centroid"][1],
                 found_value.get('properties')["centroid"][0],
             )
             # treat expired reports as unavailable so stale danger ratings are not shown
-            if data.get("report", {}).get("validUntil") and dateutil.parser.parse(data["report"]["validUntil"]) <= datetime.now(tz=ZoneInfo('UTC')):
+            if is_expired(data.get("report", {}).get("validUntil")):
                 data["report"] = {} # keep area metadata, but drop expired report details
                 published = False
+        report = data.get("report", {})
+
         # TODO set elevations levels
         area["elevations"] = {
                 "btl": (0, 7500),
@@ -231,75 +361,24 @@ def main():
         danger_rules = []
         danger_layer = ""
         zone_color = 0
-        if data.get("report", {}).get("dangerRatings") and (data["report"]["dangerRatings"][0]["ratings"]["btl"] or data["report"]["dangerRatings"][0]["ratings"]["tln"] or data["report"]["dangerRatings"][0]["ratings"]["alp"]) and area["elevations"]:
-            # print(data["report"]["dangerRatings"][0]["ratings"]["btl"]["rating"]["value"],data["report"]["dangerRatings"][0]["ratings"]["tln"]["rating"]["value"],data["report"]["dangerRatings"][0]["ratings"]["alp"]["rating"]["value"])
-            lower = f'a0-0e{area["elevations"].get("btl")[0]}-{area["elevations"].get("btl")[1]}f {danger_levels.get(data["report"]["dangerRatings"][0]["ratings"]["btl"]["rating"]["value"])["color"]}'
-            middle = f'a0-0e{area["elevations"].get("ntl")[0]}-{area["elevations"].get("ntl")[1]}f {danger_levels.get(data["report"]["dangerRatings"][0]["ratings"]["tln"]["rating"]["value"])["color"]}'
-            upper = f'a0-0e{area["elevations"].get("atl")[0]}-{area["elevations"].get("atl")[1]}f {danger_levels.get(data["report"]["dangerRatings"][0]["ratings"]["alp"]["rating"]["value"])["color"]}'
-            danger_rules.append({
-                "id": "btl",
-                "layer": lower,
-                "desc": f"{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['btl']['rating']['value'])['desc']} (below {area['elevations'].get('btl')[1]}')",
-                "colors": [f"#{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['btl']['rating']['value'])['color']}"]
-            })
-            danger_rules.append({
-                "id": "ntl",
-                "layer": middle,
-                "desc": f"{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['tln']['rating']['value'])['desc']} ({area['elevations'].get('ntl')[0]}' to {area['elevations'].get('ntl')[1]}')",
-                "colors": [f"#{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['tln']['rating']['value'])['color']}"]
-            })
-            elv_range = format_elevation_range(area['elevations'].get('atl'))
-            danger_rules.append({
-                "id": "atl",
-                "layer": upper,
-                "desc": f"{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['alp']['rating']['value'])['desc']} ({elv_range})",
-                "colors": [f"#{danger_levels.get(data['report']['dangerRatings'][0]['ratings']['alp']['rating']['value'])['color']}"]
-            })
-            danger_layer = f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in danger_rules)}"
-            zone_color = max(danger_levels.get(data["report"]["dangerRatings"][0]["ratings"]["btl"]["rating"]["value"])["scale"], danger_levels.get(data["report"]["dangerRatings"][0]["ratings"]["tln"]["rating"]["value"])["scale"], danger_levels.get(data["report"]["dangerRatings"][0]["ratings"]["alp"]["rating"]["value"])["scale"])
+        ratings = report["dangerRatings"][0]["ratings"] if report.get("dangerRatings") else {}
+        if any(ratings.get(key) for key in CA_DANGER_KEYS.values()) and area["elevations"]:
+            levels = {band: danger_levels.get(ratings[key]["rating"]["value"]) for band, key in CA_DANGER_KEYS.items()}
+            danger_rules = [danger_rule(area["elevations"], band, levels[band]) for band in BANDS]
+            danger_layer = layer_param(rule["layer"] for rule in danger_rules)
+            zone_color = max(level["scale"] for level in levels.values())
 
         # avy problems
         problems = []
-        if data.get("report", {}).get("problems") and area["elevations"]:
-            for i, problem in enumerate(data["report"]["problems"]):
-                lower = []
-                middle = []
-                upper = []
-                rules = []
-
-                for elevation in problem["data"]["elevations"]:
-                    # calculate start and stop
-                    for direction in problem["data"]["aspects"]:
-                        lower.append(aspect[direction["display"].lower()])
-                    start, end, desc = sort_directions(lower)
-
-                    if elevation["value"] == "btl":
-                        elv_band = "btl"
-                        full_desc = f"{desc} (below {area['elevations'].get(elv_band)[1]}')"
-                    elif elevation["value"] == "tln":
-                        elv_band = "ntl"
-                        full_desc = f"{desc} ({format_elevation_range(area['elevations'].get(elv_band))})"
-                    elif elevation["value"] == "alp":
-                        elv_band = "atl"
-                        full_desc = f"{desc} ({format_elevation_range(area['elevations'].get(elv_band))})"
-                    else:
-                        continue
-
-                    rules.append({
-                        "id": elv_band,
-                        "layer": f'a{start}-{end}e{area["elevations"].get(elv_band)[0]}-{area["elevations"].get(elv_band)[1]}f {problem_color.get(i)}',
-                        "desc": full_desc,
-                        "color": f"#{problem_color.get(i)}",
-                    })
-
-                problems.append({
-                    "name": f"{tomorrow} {problem['type']['display']}",
-                    "desc": f"Problem #{i+1}",
-                    "color": f"#{problem_color.get(i)}",
-                    "rules": rules,
-                    "layers": f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in rules)}",
-                    "uuid": str(uuid.uuid4()),
-                })
+        if report.get("problems") and area["elevations"]:
+            for i, problem in enumerate(report["problems"]):
+                problem_aspects = [aspect[direction["display"].lower()] for direction in problem["data"]["aspects"]]
+                rules = [
+                    problem_rule(area["elevations"], CA_PROBLEM_BANDS[elevation["value"]], problem_aspects, i)
+                    for elevation in problem["data"]["elevations"]
+                    if elevation["value"] in CA_PROBLEM_BANDS
+                ]
+                problems.append(make_problem(i, problem["type"]["display"], rules, tomorrow))
 
         area["published"] = published
         area["danger"] = danger_rules
@@ -314,19 +393,8 @@ def main():
         area["center_name"] = "Avalanche Canada"
         area["center_link"] = "https://avalanche.ca/"
         area["url"] = f"https://avalanche.ca/forecasts/{product['product']['id']}"
-
-        layer_info = layers_template.render(
-                sun_day=tomorrow,
-                danger_layer=danger_layer,
-                problem_layers=area["problems"],
-            )
-
-        if danger_rules:
-            area["layers"] = f"a={danger_layer}&cl={urllib.parse.quote(layer_info)}"
-            area["message"] = ""
-        else:
-            area["layers"] = f"cl={urllib.parse.quote(layer_info)}"
-            area["message"] = f'Report not available. See <a class="no-underline fancy-link relative light-red" href="{area["url"]}">{area["center_id"]}</a> for more information.'
+        area["layers"] = caltopo_layers(layers_template, tomorrow, danger_layer, problems)
+        area["message"] = "" if danger_rules else center_message("Report not available.", area)
 
         areas.append(area)
 
@@ -376,227 +444,60 @@ def main():
                                 zone["geo"][0],
                             )
                             # treat expired reports as unavailable so stale danger ratings are not shown
-                            if data.get("expires_time") and dateutil.parser.parse(data["expires_time"]) <= datetime.now(tz=ZoneInfo('UTC')):
+                            if is_expired(data.get("expires_time")):
                                 data = {}
                                 published = False
                 # use zone elevation profile if exists, else use the state level elevation profile
-                zone["elevations"] = state["elevations"].get(zone["zone_id"], state["elevations"].get(0))
+                elevations = state["elevations"].get(zone["zone_id"], state["elevations"].get(0))
+                zone["elevations"] = elevations
 
                 # avy danger
                 danger_rules = []
                 danger_layer = ""
                 zone_color = 0
                 if state["state"] == "UT":
-                    # Each element of the rose array corresponds to a position on the rose,
-                    # starting from the highest elevation, northern aspect and proceeds clockwise.
-                    # The first position of the array, array[0] is the inner-most (highest) elevation segment on the N aspect.
-                    # The next position, array[1] is NE and so on.
-                    # Ex. the position for S aspect at the lowest elevation is array[20].
-                    # https://utahavalanchecenter.org/docs/api/forecast
-
-                    if data and data["overall_danger_rating"] != "None" and zone["elevations"]:
-                        chunked_list = split_elv_bands(data["overall_danger_rose"]) #TODO better variable name than chunk?
-
-                        def band_desc(elv_band):
-                            low, high = zone["elevations"].get(elv_band)
-                            if elv_band == "btl":
-                                return f"below {high}'"
-                            return format_elevation_range((low, high))
-
-                        # handle each elevation bands danger rose
-                        for elv_band, chunk in uac_rose_by_band(data["overall_danger_rose"]):
-                            low, high = zone["elevations"].get(elv_band)
-                            desc_range = band_desc(elv_band)
-
-                            if all(x == chunk[0] for x in chunk): # single color danger rose
-                                level = danger_levels.get(f"utah{chunk[0]}")
-                                layer_colors = [f"#{level['color']}"]
-                                layer_rules = [f'a0-0e{low}-{high}f {level["color"]}']
-                                layer_desc = f"{level['desc']} ({desc_range})"
-                            else: # multi color danger rose
-                                layer_color_indexes = sorted(set(chunk))
-                                min_danger_index = f"utah{layer_color_indexes[0]}"
-                                max_danger_index = f"utah{layer_color_indexes[-1]}"
-                                layer_colors = []
-                                layer_rules = []
-                                for danger_index in layer_color_indexes:
-                                    level = danger_levels.get(f"utah{danger_index}")
-                                    layer_colors.append(f"#{level['color']}")
-                                    chunk_rose = find_aspect_values(chunk, danger_index, aspect)
-                                    start, end, desc = sort_directions(chunk_rose)
-                                    layer_rules.append(f'a{start}-{end}e{low}-{high}f {level["color"]}')
-                                layer_desc = f"{danger_levels.get(min_danger_index)['shortdesc']} to {danger_levels.get(max_danger_index)['shortdesc']} danger ({desc_range})"
-
-                            danger_rules.append({
-                                "id": elv_band,
-                                "layer": layer_rules,
-                                "desc": layer_desc,
-                                "colors": layer_colors
-                            })
-
-                        danger_layer = f"sc_{'p'.join('p'.join(layer.replace(' ', 'c') for layer in x['layer']) for x in danger_rules)}"
-                        zone_color = f"utah{max(max(sublist) for sublist in chunked_list)}"
+                    if data and data["overall_danger_rating"] != "None" and elevations:
+                        danger_rules, danger_layer, zone_color = utah_danger(data["overall_danger_rose"], elevations)
                 else:
-                    if data and data["danger"] and (data["danger"][0]["lower"] or data["danger"][0]["middle"] or data["danger"][0]["upper"]) and zone["elevations"]:
-                        #TODO clean up handling of nulls
-                        if data["danger"][0]["lower"] is None:
-                            data["danger"][0]["lower"] = 0
-                        if data["danger"][0]["middle"] is None:
-                            data["danger"][0]["middle"] = 0
-                        if data["danger"][0]["upper"] is None:
-                            data["danger"][0]["upper"] = 0
-                        lower = f'a0-0e{zone["elevations"].get("btl")[0]}-{zone["elevations"].get("btl")[1]}f {danger_levels.get(data["danger"][0]["lower"])["color"]}'
-                        middle = f'a0-0e{zone["elevations"].get("ntl")[0]}-{zone["elevations"].get("ntl")[1]}f {danger_levels.get(data["danger"][0]["middle"])["color"]}'
-                        upper = f'a0-0e{zone["elevations"].get("atl")[0]}-{zone["elevations"].get("atl")[1]}f {danger_levels.get(data["danger"][0]["upper"])["color"]}'
-                        danger_rules.append({
-                            "id": "btl",
-                            "layer": lower,
-                            "desc": f"{danger_levels.get(data['danger'][0]['lower'])['desc']} (below {zone['elevations'].get('btl')[1]}')",
-                            "colors": [f"#{danger_levels.get(data['danger'][0]['lower'])['color']}"]
-                        })
-                        danger_rules.append({
-                            "id": "ntl",
-                            "layer": middle,
-                            "desc": f"{danger_levels.get(data['danger'][0]['middle'])['desc']} ({format_elevation_range(zone['elevations'].get('ntl'))})",
-                            "colors": [f"#{danger_levels.get(data['danger'][0]['middle'])['color']}"]
-                        })
-                        elv_range = format_elevation_range(zone['elevations'].get('atl'))
-                        danger_rules.append({
-                            "id": "atl",
-                            "layer": upper,
-                            "desc": f"{danger_levels.get(data['danger'][0]['upper'])['desc']} ({elv_range})",
-                            "colors": [f"#{danger_levels.get(data['danger'][0]['upper'])['color']}"]
-                        })
-                        danger_layer = f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in danger_rules)}"
-                        zone_color = max(data["danger"][0]["lower"], data["danger"][0]["middle"], data["danger"][0]["upper"])
+                    danger = data.get("danger")
+                    if danger and any(danger[0][key] for key in US_DANGER_KEYS.values()) and elevations:
+                        values = {band: danger[0][key] or 0 for band, key in US_DANGER_KEYS.items()}
+                        danger_rules = [danger_rule(elevations, band, danger_levels.get(values[band])) for band in BANDS]
+                        danger_layer = layer_param(rule["layer"] for rule in danger_rules)
+                        zone_color = max(values.values())
 
                 # avy problems
                 problems = []
                 if state["state"] == "UT":
-                    # UAC numbers problems 1-3; i stays 0-based for problem_color
-                    for i in range(3):
-                        n = i + 1
-                        if data.get(f"avalanche_problem_{n}") and data.get(f"danger_rose_{n}"):
-                            problem_rose = []
-                            rules = []
-
-                            chunked_list = split_elv_bands(data[f"danger_rose_{n}"])
-                            problem_name = data[f"avalanche_problem_{n}"]
-                            for index, chunk in enumerate(chunked_list):
-                                chunk_rose = find_aspect_values(chunk, 16, aspect)
-                                if chunk_rose:
-                                    start, end, desc = sort_directions(chunk_rose)
-                                    if index == 2:
-                                        layer = f'a{start}-{end}e{zone["elevations"].get("btl")[0]}-{zone["elevations"].get("btl")[1]}f {problem_color.get(i)}'
-                                        rules.append({
-                                            "id": "btl",
-                                            "layer": layer,
-                                            "desc": f"{desc} (below {zone['elevations'].get('btl')[1]}')",
-                                            "color": f"#{problem_color.get(i)}",
-                                        })
-                                    elif index == 1:
-                                        layer = f'a{start}-{end}e{zone["elevations"].get("ntl")[0]}-{zone["elevations"].get("ntl")[1]}f {problem_color.get(i)}'
-                                        rules.append({
-                                            "id": "ntl",
-                                            "layer": layer,
-                                            "desc": f"{desc} ({format_elevation_range(zone['elevations'].get('ntl'))})",
-                                            "color": f"#{problem_color.get(i)}",
-                                        })
-                                    else:
-                                        layer = f'a{start}-{end}e{zone["elevations"].get("atl")[0]}-{zone["elevations"].get("atl")[1]}f {problem_color.get(i)}'
-                                        rules.append({
-                                            "id": "atl",
-                                            "layer": layer,
-                                            "desc": f"{desc} ({format_elevation_range(zone['elevations'].get('atl'))})",
-                                            "color": f"#{problem_color.get(i)}",
-                                        })
-
-                            problems.append({
-                                "name": f"{tomorrow} {problem_name}",
-                                "desc": f"Problem #{i+1}",
-                                "color": f"#{problem_color.get(i)}",
-                                "rules": rules[::-1],
-                                "layers": f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in rules)}",
-                                "uuid": str(uuid.uuid4()),
-                            })
-                else:
-                    if data and zone["elevations"]:
-                        for i, problem in enumerate(data["forecast_avalanche_problems"]):
-                            lower = []
-                            middle = []
-                            upper = []
-
-                            for direction in problem["location"]:
-                                # split to upper/middle/lower
-                                if direction.split()[1] == "lower":
-                                        lower.append(aspect[direction.split()[0]])
-                                elif direction.split()[1] == "middle":
-                                        middle.append(aspect[direction.split()[0]])
-                                elif direction.split()[1] == "upper":
-                                        upper.append(aspect[direction.split()[0]])
-
-                            # calculate start and stop
-                            rules = []
-                            if lower:
-                                start, end, desc = sort_directions(lower)
-                                lower_layer = f'a{start}-{end}e{zone["elevations"].get("btl")[0]}-{zone["elevations"].get("btl")[1]}f {problem_color.get(i)}'
-                                rules.append({
-                                    "id": "btl",
-                                    "layer": lower_layer,
-                                    "desc": f"{desc} (below {zone['elevations'].get('btl')[1]}')",
-                                    "color": f"#{problem_color.get(i)}",
-                            })
-                            if middle:
-                                start, end, desc = sort_directions(middle)
-                                middle_layer = f'a{start}-{end}e{zone["elevations"].get("ntl")[0]}-{zone["elevations"].get("ntl")[1]}f {problem_color.get(i)}'
-                                rules.append({
-                                    "id": "ntl",
-                                    "layer": middle_layer,
-                                    "desc": f"{desc} ({format_elevation_range(zone['elevations'].get('ntl'))})",
-                                    "color": f"#{problem_color.get(i)}",
-                            })
-                            if upper:
-                                start, end, desc = sort_directions(upper)
-                                upper_layer = f'a{start}-{end}e{zone["elevations"].get("atl")[0]}-{zone["elevations"].get("atl")[1]}f {problem_color.get(i)}'
-                                rules.append({
-                                    "id": "atl",
-                                    "layer": upper_layer,
-                                    "desc": f"{desc} ({format_elevation_range(zone['elevations'].get('atl'))})",
-                                    "color": f"#{problem_color.get(i)}",
-                            })
-
-                            problems.append({
-                                "name": f"{tomorrow} {problem['name']}",
-                                "desc": f"Problem #{i+1}",
-                                "color": f"#{problem_color.get(i)}",
-                                "rules": rules,
-                                "layers": f"sc_{'p'.join(x['layer'].replace(' ', 'c') for x in rules)}",
-                                "uuid": str(uuid.uuid4()),
-                            })
+                    problems = utah_problems(data, elevations, tomorrow)
+                elif data and elevations:
+                    for i, problem in enumerate(data["forecast_avalanche_problems"]):
+                        # locations look like "north upper"
+                        aspects_by_band = {band: [] for band in BANDS}
+                        for location in problem["location"]:
+                            direction, level = location.split()[:2]
+                            if level in US_PROBLEM_BANDS:
+                                aspects_by_band[US_PROBLEM_BANDS[level]].append(aspect[direction])
+                        rules = [
+                            problem_rule(elevations, band, aspects_by_band[band], i)
+                            for band in BANDS
+                            if aspects_by_band[band]
+                        ]
+                        problems.append(make_problem(i, problem["name"], rules, tomorrow))
 
                 zone["published"] = published
                 zone["danger"] = danger_rules
                 zone["problems"] = problems
                 zone["color"] = f"#{danger_levels[zone_color]['color']}"
+                zone["layers"] = caltopo_layers(layers_template, tomorrow, danger_layer, problems)
 
-                layer_info = layers_template.render(
-                        sun_day=tomorrow,
-                        danger_layer=danger_layer,
-                        problem_layers=zone["problems"],
-                    )
-
+                has_report = data and (data.get("danger") or data.get("overall_danger_rating", "None") != "None")
                 if danger_rules:
-                    zone["layers"] = f"a={danger_layer}&cl={urllib.parse.quote(layer_info)}"
                     zone["message"] = ""
+                elif has_report and not state["elevations"]:
+                    zone["message"] = center_message("Coming soon.", zone)
                 else:
-                    zone["layers"] = f"cl={urllib.parse.quote(layer_info)}"
-                    if data and (("danger" in data and data["danger"]) or ("overall_danger_rating" in data and data["overall_danger_rating"] != "None")):
-                        if state["elevations"]:
-                            zone["message"] = f'Report not available. See <a class="no-underline fancy-link relative light-red" href="{zone["url"]}">{zone["center_id"]}</a> for more information.'
-                        else:
-                            zone["message"] = f'Coming soon. See <a class="no-underline fancy-link relative light-red" href="{zone["url"]}">{zone["center_id"]}</a> for more information.'
-                    else:
-                        zone["message"] = f'Report not available. See <a class="no-underline fancy-link relative light-red" href="{zone["url"]}">{zone["center_id"]}</a> for more information.'
+                    zone["message"] = center_message("Report not available.", zone)
 
             content = region_template.render(
                     page=state["name"],
