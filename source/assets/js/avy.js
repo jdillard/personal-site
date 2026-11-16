@@ -293,7 +293,7 @@ function assignHoverColors(geojsonData, color) {
 }
 
 // load a GeoJSON file and add to the map in given color
-async function addLayer(filePath, color, hoverColor, type, region) {
+async function addLayer(filePath, color, hoverColor, type, region, selected) {
     await fetch(`/assets/json/avalanche-zones/${filePath}.geojson`)
         .then(response => response.json())
         .then(data => {
@@ -332,15 +332,8 @@ async function addLayer(filePath, color, hoverColor, type, region) {
             layers[filePath] = layer;
 
             if(type == "zone") {
-              //TODO change to calling highlightLayer(currentLayer) after all layers are loaded
-              // Check if the layer corresponds to the selected option and fit bounds
-              const zones = getZones();
-              for (let i = 0; i < zones.options.length; i++) {
-                  if (zones.options[i].selected && zones.options[i].value === filePath) {
-                      map.fitBounds(layer.getBounds());
-                      break;
-                  }
-              }
+              // zoom to the selected zone
+              if(selected) map.fitBounds(layer.getBounds());
             } else {
               bounds.extend(layer.getBounds());
             }
@@ -420,7 +413,7 @@ for (let i = 0; i < zones.options.length; i++) {
   if(zones.type == "region" || zones.options[i].selected) {
     color = zones.options[i].color;
   }
-  promises.push(addLayer(zones.options[i].value, color, hoverColor, zones.type, zones.options[i].region));
+  promises.push(addLayer(zones.options[i].value, color, hoverColor, zones.type, zones.options[i].region, zones.options[i].selected));
 }
 // Wait for all addLayer calls to complete (addLayer catches its own errors)
 Promise.all(promises).then(() => {
