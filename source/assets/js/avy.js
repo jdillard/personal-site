@@ -118,12 +118,12 @@ window.clickFunc = function(element, tooltip) {
   navigator.clipboard.writeText(text);
 
   var tooltip = document.getElementById(tooltip);
-  tooltip.innerHTML = "Ruleset Copied!";
+  tooltip.innerHTML = "Copied!";
 }
 
 window.outFunc = function(tooltip) {
   var tooltip = document.getElementById(tooltip);
-  tooltip.innerHTML = "Copy ruleset";
+  tooltip.innerHTML = "Copy rules";
 }
 
 // set elevation ranges

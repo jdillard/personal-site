@@ -110,7 +110,7 @@ css_includes:
                     {%- for rule in zone.danger | reverse %}
                     {%- set ns.lines = ns.lines + ([rule.layer] if rule.layer is string else rule.layer | list) %}
                     {%- endfor %}
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ ns.lines | join('&#10;') }}" onclick="clickFunc(this, 'danger-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('danger-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="danger-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ ns.lines | join('&#10;') }}" onclick="clickFunc(this, 'danger-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('danger-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="danger-tooltip-{{ zone.zone_id }}">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-{{ zone.slug }}">
@@ -135,7 +135,7 @@ css_includes:
                 {% for problem in zone.problems %}
                     <dt class="mt3">
                         <strong>{{ problem.name }}</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ problem.rules | map(attribute='layer') | reverse | join('&#10;') }}" onclick="clickFunc(this, 'problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}">Copy to clipboard</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ problem.rules | map(attribute='layer') | reverse | join('&#10;') }}" onclick="clickFunc(this, 'problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}')" href="#"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.zone_id }}">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg"></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7 rules-{{ zone.slug }}">
