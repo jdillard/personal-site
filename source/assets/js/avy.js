@@ -113,17 +113,21 @@ if(regionSel) {
   }
 }
 
-window.clickFunc = function(element, tooltip) {
+window.clickFunc = async function(element, tooltipId) {
   const text = element.getAttribute("data-clipboard-text");
-  navigator.clipboard.writeText(text);
+  const tooltip = document.getElementById(tooltipId);
 
-  var tooltip = document.getElementById(tooltip);
-  tooltip.innerHTML = "Copied!";
+  try {
+    await navigator.clipboard.writeText(text);
+    tooltip.textContent = "Copied!";
+  } catch (error) {
+    console.error("Copy failed:", error);
+    tooltip.textContent = "Copy failed";
+  }
 }
 
-window.outFunc = function(tooltip) {
-  var tooltip = document.getElementById(tooltip);
-  tooltip.innerHTML = "Copy rules";
+window.outFunc = function(tooltipId) {
+  document.getElementById(tooltipId).textContent = "Copy rules";
 }
 
 // set elevation ranges
