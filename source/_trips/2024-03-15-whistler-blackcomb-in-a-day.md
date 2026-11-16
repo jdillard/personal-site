@@ -17,11 +17,11 @@ image:
   height: 131
 cover: wbiad
 js_includes:
-  - https://unpkg.com/leaflet/dist/leaflet.js
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js
   - gpxMap.js
 css_includes:
-  - https://unpkg.com/leaflet/dist/leaflet.css
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 ---
 
 I went up to Whistler with James after he had recently made an (almost) succesful attempt at doing every running lift at Vail in a day, accidently missing only one beginner chair, and he thought we could do the same thing at Whistler Blackcomb.

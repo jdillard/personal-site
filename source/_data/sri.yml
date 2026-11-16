@@ -1,0 +1,5 @@
+# Subresource Integrity hashes for third-party files in css_includes/js_includes.
+# Key: exact URL as written in front matter. Update the hash when bumping a version.
+# Leaflet hashes match https://leafletjs.com/download.html
+"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js": "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css": "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
