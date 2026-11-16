@@ -182,20 +182,20 @@ def main():
         data = {}
         area = {}
 
+        # look up the area's geometry
+        area_slug_id = product["area"]["id"]
+        found_value = find_object_by_key_value(ca_areas["features"], "id", area_slug_id)
+        if not found_value:
+            print(f"Skipping Canada area {area_slug_id}: not found in ca-areas.json")
+            continue
+
         if os.path.isfile(f"tools/avy/avalanche-reports-raw/{product['product']['id']}.json"):
             with open(f"tools/avy/avalanche-reports-raw/{product['product']['id']}.json") as fp:
                 data = json.load(fp)
-                # print(product['product']['id'])
 
             #TODO move duplicate code as US to functions
 
             # timezone calculations
-
-            # lookup area id in ca_areas
-            # found_value = next((d for d in ca_areas["features"] if d.get("id") == data['area']['id']), None)
-            found_value = find_object_by_key_value(ca_areas["features"], "id", data['area']['id'])
-            if not found_value:
-                continue #TODO figure out why the id different than the filename and hopefully remove
             published_date_time_obj, tomorrow_date_time_obj, published, tomorrow = convert_to_local_time(
                 data["report"]["dateIssued"],
                 found_value.get('properties')["centroid"][1],
@@ -205,9 +205,6 @@ def main():
             if data.get("report", {}).get("validUntil") and dateutil.parser.parse(data["report"]["validUntil"]) <= datetime.now(tz=ZoneInfo('UTC')):
                 data["report"] = {} # keep area metadata, but drop expired report details
                 published = False
-            area_slug_id = data['area']['id']
-        else:
-            area_slug_id = product['product']['id']
         # TODO set elevations levels
         area["elevations"] = {
                 "btl": (0, 7500),
