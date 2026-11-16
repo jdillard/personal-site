@@ -8,10 +8,10 @@ image:
   width: 175
   height: 131
 js_includes:
-  - https://unpkg.com/leaflet/dist/leaflet.js
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - avy.js
 css_includes:
- - https://unpkg.com/leaflet/dist/leaflet.css
+ - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 ---
 
 <!-- Looking out for you... -->
@@ -84,37 +84,37 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="CNFAIC-2818" selected="">Chugach State Park</option>
+            <option value="CNFAIC-2818" title="Chugach State Park" selected="">Chugach State Park</option>
             
-            <option value="CNFAIC-2817" >Seward and Lost Lake</option>
+            <option value="CNFAIC-2817" title="Seward and Lost Lake" >Seward and Lost Lake</option>
             
-            <option value="CNFAIC-2816" >Summit Lake</option>
+            <option value="CNFAIC-2816" title="Summit Lake" >Summit Lake</option>
             
-            <option value="CNFAIC-2815" >Turnagain Pass and Girdwood</option>
+            <option value="CNFAIC-2815" title="Turnagain Pass and Girdwood" >Turnagain Pass and Girdwood</option>
             
-            <option value="CAAC-2165" >Douglas Island</option>
+            <option value="CAAC-2165" title="Douglas Island" >Douglas Island</option>
             
-            <option value="CAAC-2164" >Juneau</option>
+            <option value="CAAC-2164" title="Juneau" >Juneau</option>
             
-            <option value="CAC-1421" >Cordova</option>
+            <option value="CAC-1421" title="Cordova" >Cordova</option>
             
-            <option value="EARAC-3002" >North (Castner-Canwell) Eastern Alaska Range</option>
+            <option value="EARAC-3002" title="North (Castner-Canwell) Eastern Alaska Range" >North (Castner-Canwell) Eastern Alaska Range</option>
             
-            <option value="EARAC-3003" >South (Summit) Eastern Alaska Range</option>
+            <option value="EARAC-3003" title="South (Summit) Eastern Alaska Range" >South (Summit) Eastern Alaska Range</option>
             
-            <option value="HAC-3007" >Chilkat Pass</option>
+            <option value="HAC-3007" title="Chilkat Pass" >Chilkat Pass</option>
             
-            <option value="HAC-3005" >Lutak</option>
+            <option value="HAC-3005" title="Lutak" >Lutak</option>
             
-            <option value="HAC-3006" >Transitional</option>
+            <option value="HAC-3006" title="Transitional" >Transitional</option>
             
-            <option value="HPAC-2152" >Hatcher Pass</option>
+            <option value="HPAC-2152" title="Hatcher Pass" >Hatcher Pass</option>
             
-            <option value="VAC-1611" >Continental</option>
+            <option value="VAC-1611" title="Continental" >Continental</option>
             
-            <option value="VAC-1610" >Intermountain</option>
+            <option value="VAC-1610" title="Intermountain" >Intermountain</option>
             
-            <option value="VAC-1609" >Maritime</option>
+            <option value="VAC-1609" title="Maritime" >Maritime</option>
             
         </select>
     </div>
@@ -125,6 +125,7 @@ css_includes:
         
         <div id="CNFAIC-2818-report" class="avy-zone" data-id="CNFAIC-2818" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Thursday, November 12, 2026 7:58PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/chugach-state-park/">CNFAIC</a> for more information.</div>
             
@@ -139,6 +140,7 @@ css_includes:
         <div id="CNFAIC-2817-report" class="avy-zone dn" data-id="CNFAIC-2817" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Thursday, November 12, 2026 7:58PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/seward-and-lost-lake/">CNFAIC</a> for more information.</div>
             
 
@@ -151,6 +153,7 @@ css_includes:
         
         <div id="CNFAIC-2816-report" class="avy-zone dn" data-id="CNFAIC-2816" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Thursday, November 12, 2026 7:58PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/summit-lake/">CNFAIC</a> for more information.</div>
             
@@ -165,6 +168,7 @@ css_includes:
         <div id="CNFAIC-2815-report" class="avy-zone dn" data-id="CNFAIC-2815" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Thursday, November 12, 2026 7:58PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/turnagain-pass-and-girdwood/">CNFAIC</a> for more information.</div>
             
 
@@ -177,6 +181,7 @@ css_includes:
         
         <div id="CAAC-2165-report" class="avy-zone dn" data-id="CAAC-2165" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.coastalakavalanche.org/forecast/#/douglas-island/">CAAC</a> for more information.</div>
             
@@ -191,6 +196,7 @@ css_includes:
         <div id="CAAC-2164-report" class="avy-zone dn" data-id="CAAC-2164" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.coastalakavalanche.org/forecast/#/juneau-mainland/">CAAC</a> for more information.</div>
             
 
@@ -203,6 +209,7 @@ css_includes:
         
         <div id="CAC-1421-report" class="avy-zone dn" data-id="CAC-1421" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/cordova/">CAC</a> for more information.</div>
             
@@ -217,6 +224,7 @@ css_includes:
         <div id="EARAC-3002-report" class="avy-zone dn" data-id="EARAC-3002" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">EARAC</a> for more information.</div>
             
 
@@ -229,6 +237,7 @@ css_includes:
         
         <div id="EARAC-3003-report" class="avy-zone dn" data-id="EARAC-3003" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">EARAC</a> for more information.</div>
             
@@ -243,6 +252,7 @@ css_includes:
         <div id="HAC-3007-report" class="avy-zone dn" data-id="HAC-3007" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/map?lat=59.558223&lng=-136.395711">HAC</a> for more information.</div>
             
 
@@ -255,6 +265,7 @@ css_includes:
         
         <div id="HAC-3005-report" class="avy-zone dn" data-id="HAC-3005" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/lutak">HAC</a> for more information.</div>
             
@@ -269,6 +280,7 @@ css_includes:
         <div id="HAC-3006-report" class="avy-zone dn" data-id="HAC-3006" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/transitional">HAC</a> for more information.</div>
             
 
@@ -281,6 +293,7 @@ css_includes:
         
         <div id="HPAC-2152-report" class="avy-zone dn" data-id="HPAC-2152" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 13, 2026 7:00AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://hpavalanche.org/forecast/#/hatcher-pass/">HPAC</a> for more information.</div>
             
@@ -295,6 +308,7 @@ css_includes:
         <div id="VAC-1611-report" class="avy-zone dn" data-id="VAC-1611" data-color="#939598" data-min="0"  data-max="20310" data-btl="1999" data-atl="4000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/continental/">VAC</a> for more information.</div>
             
 
@@ -308,6 +322,7 @@ css_includes:
         <div id="VAC-1610-report" class="avy-zone dn" data-id="VAC-1610" data-color="#939598" data-min="0"  data-max="20310" data-btl="1999" data-atl="4000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/intermountain/">VAC</a> for more information.</div>
             
 
@@ -320,6 +335,7 @@ css_includes:
         
         <div id="VAC-1609-report" class="avy-zone dn" data-id="VAC-1609" data-color="#939598" data-min="0"  data-max="20310" data-btl="1499" data-atl="3000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/maritime/">VAC</a> for more information.</div>
             

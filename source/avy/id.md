@@ -8,10 +8,10 @@ image:
   width: 175
   height: 131
 js_includes:
-  - https://unpkg.com/leaflet/dist/leaflet.js
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - avy.js
 css_includes:
- - https://unpkg.com/leaflet/dist/leaflet.css
+ - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 ---
 
 <!-- Looking out for you... -->
@@ -84,23 +84,23 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="IPAC-3018" selected="">Selkirk Mountains</option>
+            <option value="IPAC-3018" title="Selkirk Mountains" selected="">Selkirk Mountains</option>
             
-            <option value="IPAC-1902" >Silver Valley & Bitterroot Mountains</option>
+            <option value="IPAC-1902" title="Silver Valley & Bitterroot Mountains" >Silver Valley & Bitterroot Mountains</option>
             
-            <option value="IPAC-1900" >West Cabinet Mountains</option>
+            <option value="IPAC-1900" title="West Cabinet Mountains" >West Cabinet Mountains</option>
             
-            <option value="PAC-3014" >Salmon River Mountains</option>
+            <option value="PAC-3014" title="Salmon River Mountains" >Salmon River Mountains</option>
             
-            <option value="PAC-3015" >West Mountains</option>
+            <option value="PAC-3015" title="West Mountains" >West Mountains</option>
             
-            <option value="SNFAC-2907" >Banner Summit</option>
+            <option value="SNFAC-2907" title="Banner Summit" >Banner Summit</option>
             
-            <option value="SNFAC-2904" >Galena Summit & Eastern Mtns</option>
+            <option value="SNFAC-2904" title="Galena Summit & Eastern Mtns" >Galena Summit & Eastern Mtns</option>
             
-            <option value="SNFAC-2906" >Sawtooth & Western Smoky Mtns</option>
+            <option value="SNFAC-2906" title="Sawtooth & Western Smoky Mtns" >Sawtooth & Western Smoky Mtns</option>
             
-            <option value="SNFAC-2905" >Soldier & Wood River Valley Mtns</option>
+            <option value="SNFAC-2905" title="Soldier & Wood River Valley Mtns" >Soldier & Wood River Valley Mtns</option>
             
         </select>
     </div>
@@ -111,6 +111,7 @@ css_includes:
         
         <div id="IPAC-3018-report" class="avy-zone" data-id="IPAC-3018" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 13, 2026 11:15AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/selkirk-mountains/">IPAC</a> for more information.</div>
             
@@ -125,6 +126,7 @@ css_includes:
         <div id="IPAC-1902-report" class="avy-zone dn" data-id="IPAC-1902" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 13, 2026 11:15AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/silver-valley-&-bitterroot-mountains/">IPAC</a> for more information.</div>
             
 
@@ -137,6 +139,7 @@ css_includes:
         
         <div id="IPAC-1900-report" class="avy-zone dn" data-id="IPAC-1900" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 13, 2026 11:15AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/west-cabinet-mountains/">IPAC</a> for more information.</div>
             
@@ -151,6 +154,7 @@ css_includes:
         <div id="PAC-3014-report" class="avy-zone dn" data-id="PAC-3014" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Tuesday, November 10, 2026 11:29AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/avalanche/salmon-river-mountains">PAC</a> for more information.</div>
             
 
@@ -163,6 +167,7 @@ css_includes:
         
         <div id="PAC-3015-report" class="avy-zone dn" data-id="PAC-3015" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Tuesday, November 10, 2026 11:29AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/avalanche/west-mountains">PAC</a> for more information.</div>
             
@@ -177,6 +182,7 @@ css_includes:
         <div id="SNFAC-2907-report" class="avy-zone dn" data-id="SNFAC-2907" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Thursday, November 12, 2026 3:43PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/banner-summit">SNFAC</a> for more information.</div>
             
 
@@ -189,6 +195,7 @@ css_includes:
         
         <div id="SNFAC-2904-report" class="avy-zone dn" data-id="SNFAC-2904" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Thursday, November 12, 2026 3:43PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/galena-summit-&-eastern-mtns">SNFAC</a> for more information.</div>
             
@@ -203,6 +210,7 @@ css_includes:
         <div id="SNFAC-2906-report" class="avy-zone dn" data-id="SNFAC-2906" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Thursday, November 12, 2026 3:43PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/sawtooth-&-western-smoky-mtns">SNFAC</a> for more information.</div>
             
 
@@ -215,6 +223,7 @@ css_includes:
         
         <div id="SNFAC-2905-report" class="avy-zone dn" data-id="SNFAC-2905" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Thursday, November 12, 2026 3:43PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/soldier-&-wood-river-valley-mtns">SNFAC</a> for more information.</div>
             

@@ -8,10 +8,10 @@ image:
   width: 175
   height: 131
 js_includes:
-  - https://unpkg.com/leaflet/dist/leaflet.js
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - avy.js
 css_includes:
- - https://unpkg.com/leaflet/dist/leaflet.css
+ - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 ---
 
 <!-- Looking out for you... -->
@@ -84,21 +84,21 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="COAA-2470" selected="">Central Cascades</option>
+            <option value="COAA-2470" title="Central Cascades" selected="">Central Cascades</option>
             
-            <option value="COAA-2471" >Newberry</option>
+            <option value="COAA-2471" title="Newberry" >Newberry</option>
             
-            <option value="NWAC-3032" >Mt Hood</option>
+            <option value="NWAC-3032" title="Mt Hood" >Mt Hood</option>
             
-            <option value="SOAIX-1369" >Southern Oregon</option>
+            <option value="SOAIX-1369" title="Southern Oregon" >Southern Oregon</option>
             
-            <option value="WAC-2985" >Blues</option>
+            <option value="WAC-2985" title="Blues" >Blues</option>
             
-            <option value="WAC-2984" >Elkhorns</option>
+            <option value="WAC-2984" title="Elkhorns" >Elkhorns</option>
             
-            <option value="WAC-2982" >Northern Wallowas</option>
+            <option value="WAC-2982" title="Northern Wallowas" >Northern Wallowas</option>
             
-            <option value="WAC-2983" >Southern Wallowas</option>
+            <option value="WAC-2983" title="Southern Wallowas" >Southern Wallowas</option>
             
         </select>
     </div>
@@ -109,6 +109,7 @@ css_includes:
         
         <div id="COAA-2470-report" class="avy-zone" data-id="COAA-2470" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Tuesday, November 03, 2026 10:25AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/central-cascades">COAA</a> for more information.</div>
             
@@ -123,6 +124,7 @@ css_includes:
         <div id="COAA-2471-report" class="avy-zone dn" data-id="COAA-2471" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Tuesday, November 03, 2026 10:39AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/newberry">COAA</a> for more information.</div>
             
 
@@ -135,6 +137,7 @@ css_includes:
         
         <div id="NWAC-3032-report" class="avy-zone dn" data-id="NWAC-3032" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="Tuesday, September 15, 2026 7:35AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/mt-hood">NWAC</a> for more information.</div>
             
@@ -149,6 +152,7 @@ css_includes:
         <div id="SOAIX-1369-report" class="avy-zone dn" data-id="SOAIX-1369" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.oregonsnow.org/observations/#/view/observations">SOAIX</a> for more information.</div>
             
 
@@ -161,6 +165,7 @@ css_includes:
         
         <div id="WAC-2985-report" class="avy-zone dn" data-id="WAC-2985" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.wallowaavalanchecenter.org/forecasts/#/blues">WAC</a> for more information.</div>
             
@@ -175,6 +180,7 @@ css_includes:
         <div id="WAC-2984-report" class="avy-zone dn" data-id="WAC-2984" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.wallowaavalanchecenter.org/forecasts/#/elkhorns">WAC</a> for more information.</div>
             
 
@@ -188,6 +194,7 @@ css_includes:
         <div id="WAC-2982-report" class="avy-zone dn" data-id="WAC-2982" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://wallowaavalanchecenter.org/forecasts/#/northern-wallowas">WAC</a> for more information.</div>
             
 
@@ -200,6 +207,7 @@ css_includes:
         
         <div id="WAC-2983-report" class="avy-zone dn" data-id="WAC-2983" data-color="#939598" data-min="0"  data-max="20310" data-btl="4000" data-atl="5000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://wallowaavalanchecenter.org/forecasts/#/southern-wallowas">WAC</a> for more information.</div>
             

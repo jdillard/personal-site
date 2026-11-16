@@ -8,10 +8,10 @@ image:
   width: 175
   height: 131
 js_includes:
-  - https://unpkg.com/leaflet/dist/leaflet.js
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - avy.js
 css_includes:
- - https://unpkg.com/leaflet/dist/leaflet.css
+ - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 ---
 
 <!-- Looking out for you... -->
@@ -84,7 +84,7 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="TAC-490" selected="">Northern New Mexico</option>
+            <option value="TAC-490" title="Northern New Mexico" selected="">Northern New Mexico</option>
             
         </select>
     </div>
@@ -95,6 +95,7 @@ css_includes:
         
         <div id="TAC-490-report" class="avy-zone" data-id="TAC-490" data-color="#939598" data-min="0"  data-max="20310" data-btl="10500" data-atl="12000" data-published="Saturday, November 14, 2026 7:40AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://taosavalanchecenter.org/forecasts/#/northern-new-mexico">TAC</a> for more information.</div>
             

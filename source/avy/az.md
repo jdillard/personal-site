@@ -8,10 +8,10 @@ image:
   width: 175
   height: 131
 js_includes:
-  - https://unpkg.com/leaflet/dist/leaflet.js
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - avy.js
 css_includes:
- - https://unpkg.com/leaflet/dist/leaflet.css
+ - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 ---
 
 <!-- Looking out for you... -->
@@ -84,7 +84,7 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="KPAC-2990" selected="">San Francisco Peaks / Kachina Peaks Wilderness</option>
+            <option value="KPAC-2990" title="San Francisco Peaks / Kachina Peaks Wilderness" selected="">San Francisco Peaks / Kachina Peaks Wilderness</option>
             
         </select>
     </div>
@@ -95,6 +95,7 @@ css_includes:
         
         <div id="KPAC-2990-report" class="avy-zone" data-id="KPAC-2990" data-color="#939598" data-min="0"  data-max="20310" data-btl="9700" data-atl="11500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://kachinapeaks.org/Forecast/#/san-francisco-peaks-%2F-kachina-peaks-wilderness">KPAC</a> for more information.</div>
             

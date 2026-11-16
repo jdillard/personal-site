@@ -8,10 +8,10 @@ image:
   width: 175
   height: 131
 js_includes:
-  - https://unpkg.com/leaflet/dist/leaflet.js
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - avy.js
 css_includes:
- - https://unpkg.com/leaflet/dist/leaflet.css
+ - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 ---
 
 <!-- Looking out for you... -->
@@ -84,19 +84,19 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="BTAC-2856" selected="">Salt River and Wyoming Ranges</option>
+            <option value="BTAC-2856" title="Salt River and Wyoming Ranges" selected="">Salt River and Wyoming Ranges</option>
             
-            <option value="BTAC-2860" >Snake River Range</option>
+            <option value="BTAC-2860" title="Snake River Range" >Snake River Range</option>
             
-            <option value="BTAC-2855" >Tetons</option>
+            <option value="BTAC-2855" title="Tetons" >Tetons</option>
             
-            <option value="BTAC-2852" >Togwotee Pass</option>
+            <option value="BTAC-2852" title="Togwotee Pass" >Togwotee Pass</option>
             
-            <option value="EWYAIX-2841" >Big Horns</option>
+            <option value="EWYAIX-2841" title="Big Horns" >Big Horns</option>
             
-            <option value="EWYAIX-2843" >Sierra Madre</option>
+            <option value="EWYAIX-2843" title="Sierra Madre" >Sierra Madre</option>
             
-            <option value="EWYAIX-2842" >Snowy Range</option>
+            <option value="EWYAIX-2842" title="Snowy Range" >Snowy Range</option>
             
         </select>
     </div>
@@ -107,6 +107,7 @@ css_includes:
         
         <div id="BTAC-2856-report" class="avy-zone" data-id="BTAC-2856" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Monday, November 09, 2026 11:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/">BTAC</a> for more information.</div>
             
@@ -121,6 +122,7 @@ css_includes:
         <div id="BTAC-2860-report" class="avy-zone dn" data-id="BTAC-2860" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Monday, November 09, 2026 11:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/snake-river-range">BTAC</a> for more information.</div>
             
 
@@ -133,6 +135,7 @@ css_includes:
         
         <div id="BTAC-2855-report" class="avy-zone dn" data-id="BTAC-2855" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Monday, November 09, 2026 11:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">BTAC</a> for more information.</div>
             
@@ -147,6 +150,7 @@ css_includes:
         <div id="BTAC-2852-report" class="avy-zone dn" data-id="BTAC-2852" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Monday, November 09, 2026 11:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass">BTAC</a> for more information.</div>
             
 
@@ -159,6 +163,7 @@ css_includes:
         
         <div id="EWYAIX-2841-report" class="avy-zone dn" data-id="EWYAIX-2841" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">EWYAIX</a> for more information.</div>
             
@@ -173,6 +178,7 @@ css_includes:
         <div id="EWYAIX-2843-report" class="avy-zone dn" data-id="EWYAIX-2843" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">EWYAIX</a> for more information.</div>
             
 
@@ -185,6 +191,7 @@ css_includes:
         
         <div id="EWYAIX-2842-report" class="avy-zone dn" data-id="EWYAIX-2842" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">EWYAIX</a> for more information.</div>
             

@@ -8,10 +8,10 @@ image:
   width: 175
   height: 131
 js_includes:
-  - https://unpkg.com/leaflet/dist/leaflet.js
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - avy.js
 css_includes:
- - https://unpkg.com/leaflet/dist/leaflet.css
+ - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 ---
 
 <!-- Looking out for you... -->
@@ -84,23 +84,23 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="UAC-1744" selected="">Abajos</option>
+            <option value="UAC-1744" title="Abajos" selected="">Abajos</option>
             
-            <option value="UAC-1736" >Logan</option>
+            <option value="UAC-1736" title="Logan" >Logan</option>
             
-            <option value="UAC-1742" >Moab</option>
+            <option value="UAC-1742" title="Moab" >Moab</option>
             
-            <option value="UAC-1737" >Ogden</option>
+            <option value="UAC-1737" title="Ogden" >Ogden</option>
             
-            <option value="UAC-1739" >Provo</option>
+            <option value="UAC-1739" title="Provo" >Provo</option>
             
-            <option value="UAC-1738" >Salt Lake</option>
+            <option value="UAC-1738" title="Salt Lake" >Salt Lake</option>
             
-            <option value="UAC-1741" >Skyline</option>
+            <option value="UAC-1741" title="Skyline" >Skyline</option>
             
-            <option value="UAC-1743" >Southwest</option>
+            <option value="UAC-1743" title="Southwest" >Southwest</option>
             
-            <option value="UAC-1740" >Uintas</option>
+            <option value="UAC-1740" title="Uintas" >Uintas</option>
             
         </select>
     </div>
@@ -111,6 +111,7 @@ css_includes:
         
         <div id="UAC-1744-report" class="avy-zone" data-id="UAC-1744" data-color="#939598" data-min="0"  data-max="20310" data-btl="7500" data-atl="9500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/abajos">UAC</a> for more information.</div>
             
@@ -125,6 +126,7 @@ css_includes:
         <div id="UAC-1736-report" class="avy-zone dn" data-id="UAC-1736" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="8500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/logan">UAC</a> for more information.</div>
             
 
@@ -137,6 +139,7 @@ css_includes:
         
         <div id="UAC-1742-report" class="avy-zone dn" data-id="UAC-1742" data-color="#939598" data-min="0"  data-max="20310" data-btl="7500" data-atl="9500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/moab">UAC</a> for more information.</div>
             
@@ -151,6 +154,7 @@ css_includes:
         <div id="UAC-1737-report" class="avy-zone dn" data-id="UAC-1737" data-color="#939598" data-min="0"  data-max="20310" data-btl="7000" data-atl="8500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/ogden">UAC</a> for more information.</div>
             
 
@@ -163,6 +167,7 @@ css_includes:
         
         <div id="UAC-1739-report" class="avy-zone dn" data-id="UAC-1739" data-color="#939598" data-min="0"  data-max="20310" data-btl="8000" data-atl="9500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/provo">UAC</a> for more information.</div>
             
@@ -177,6 +182,7 @@ css_includes:
         <div id="UAC-1738-report" class="avy-zone dn" data-id="UAC-1738" data-color="#939598" data-min="0"  data-max="20310" data-btl="8000" data-atl="9500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/salt-lake">UAC</a> for more information.</div>
             
 
@@ -189,6 +195,7 @@ css_includes:
         
         <div id="UAC-1741-report" class="avy-zone dn" data-id="UAC-1741" data-color="#939598" data-min="0"  data-max="20310" data-btl="8000" data-atl="9500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/skyline">UAC</a> for more information.</div>
             
@@ -203,6 +210,7 @@ css_includes:
         <div id="UAC-1743-report" class="avy-zone dn" data-id="UAC-1743" data-color="#939598" data-min="0"  data-max="20310" data-btl="8000" data-atl="9500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/southwest">UAC</a> for more information.</div>
             
 
@@ -215,6 +223,7 @@ css_includes:
         
         <div id="UAC-1740-report" class="avy-zone dn" data-id="UAC-1740" data-color="#939598" data-min="0"  data-max="20310" data-btl="7500" data-atl="9500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://utahavalanchecenter.org/forecast/uintas">UAC</a> for more information.</div>
             

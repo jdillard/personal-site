@@ -8,10 +8,10 @@ image:
   width: 175
   height: 131
 js_includes:
-  - https://unpkg.com/leaflet/dist/leaflet.js
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - avy.js
 css_includes:
- - https://unpkg.com/leaflet/dist/leaflet.css
+ - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 ---
 
 <!-- Looking out for you... -->
@@ -84,13 +84,13 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="BAC-3004" selected="">Bridgeport Avalanche Center</option>
+            <option value="BAC-3004" title="Bridgeport Avalanche Center" selected="">Bridgeport Avalanche Center</option>
             
-            <option value="ESAC-128" >Eastside Region</option>
+            <option value="ESAC-128" title="Eastside Region" >Eastside Region</option>
             
-            <option value="MSAC-3044" >Mount Shasta</option>
+            <option value="MSAC-3044" title="Mount Shasta" >Mount Shasta</option>
             
-            <option value="SAC-2458" >Central Sierra Nevada</option>
+            <option value="SAC-2458" title="Central Sierra Nevada" >Central Sierra Nevada</option>
             
         </select>
     </div>
@@ -101,6 +101,7 @@ css_includes:
         
         <div id="BAC-3004-report" class="avy-zone" data-id="BAC-3004" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgeportavalanchecenter.org/avalanche-forecast/">BAC</a> for more information.</div>
             
@@ -115,6 +116,7 @@ css_includes:
         <div id="ESAC-128-report" class="avy-zone dn" data-id="ESAC-128" data-color="#939598" data-min="0"  data-max="20310" data-btl="7800" data-atl="10000" data-published="Friday, November 13, 2026 7:10AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.esavalanche.org/forecasts#/eastside-region">ESAC</a> for more information.</div>
             
 
@@ -128,6 +130,7 @@ css_includes:
         <div id="MSAC-3044-report" class="avy-zone dn" data-id="MSAC-3044" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Thursday, November 12, 2026 10:46AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.shastaavalanche.org/forecasts/avalanche/mount-shasta">MSAC</a> for more information.</div>
             
 
@@ -140,6 +143,7 @@ css_includes:
         
         <div id="SAC-2458-report" class="avy-zone dn" data-id="SAC-2458" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Friday, November 13, 2026 6:41AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sierraavalanchecenter.org/forecasts/avalanche/central-sierra-nevada#/central-sierra-nevada/">SAC</a> for more information.</div>
             

@@ -8,10 +8,10 @@ image:
   width: 175
   height: 131
 js_includes:
-  - https://unpkg.com/leaflet/dist/leaflet.js
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - avy.js
 css_includes:
- - https://unpkg.com/leaflet/dist/leaflet.css
+ - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 ---
 
 <!-- Looking out for you... -->
@@ -84,7 +84,7 @@ css_includes:
         <strong class="f6">Select A Zone:</strong>
         <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
             
-            <option value="MWAC-2355" selected="">Presidential Range</option>
+            <option value="MWAC-2355" title="Presidential Range" selected="">Presidential Range</option>
             
         </select>
     </div>
@@ -95,6 +95,7 @@ css_includes:
         
         <div id="MWAC-2355-report" class="avy-zone" data-id="MWAC-2355" data-color="#939598" data-min="0"  data-max="20310" data-btl="3500" data-atl="4500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://mountwashingtonavalanchecenter.org/forecasts/#/presidential-range ">MWAC</a> for more information.</div>
             
