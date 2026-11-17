@@ -127,7 +127,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="MSAC-3044-report" class="avy-zone dn" data-id="MSAC-3044" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Thursday, November 12, 2026 10:46AM">
+        <div id="MSAC-3044-report" class="avy-zone dn" data-id="MSAC-3044" data-color="#939598" data-min="0"  data-max="20310" data-btl="6200" data-atl="8700" data-published="Monday, November 16, 2026 10:46AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
