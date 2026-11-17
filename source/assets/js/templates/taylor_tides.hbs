@@ -1,35 +1,23 @@
+{{#*inline "day"}}
+<div class="flex flex-column flex-row-ns items-center pv3 mw5 center">
+    <div class="w-40 b tc fl">
+        <div class="f2">{{weekday}}</div>
+        <div class="f3">{{date}}</div>
+    </div>
+    <div class="w-60 f4 b fr">
+        {{#each lowtides}}
+        <div class="bg-lightest-blue pa1 mv1 tc">{{streak}}</div>
+        {{/each}}
+    </div>
+    <div class="cb"></div>
+</div>
+{{/inline}}
 <div class="w-100 w-50-ns fl">
     <h2 class="tc">This Week</h2>
-    {{#each thisweek}}
-    <div class="flex flex-column flex-row-ns items-center pv3 mw5 center">
-        <div class="w-40 b tc fl">
-            <div class="f2">{{this.weekday}}</div>
-            <div class="f3">{{this.date}}</div>
-        </div>
-        <div class="w-60 f4 b fr">
-            {{#each lowtides}}
-            <div class="bg-lightest-blue pa1 mv1 tc">{{this.streak}}</div>
-            {{/each}}
-        </div>
-        <div class="cb"></div>
-    </div>
-    {{/each}}
+    {{#each thisweek}}{{> day}}{{/each}}
 </div>
 <div class="w-100 w-50-ns fr">
     <h2 class="tc">Next Week</h2>
-    {{#each nextweek}}
-    <div class="flex flex-column flex-row-ns items-center mv4 mw5 center">
-        <div class="w-40 b tc fl">
-            <div class="f2">{{this.weekday}}</div>
-            <div class="f3">{{this.date}}</div>
-        </div>
-        <div class="w-60 f4 b fr">
-            {{#each lowtides}}
-            <div class="bg-lightest-blue pa1 mv1 tc">{{this.streak}}</div>
-            {{/each}}
-        </div>
-        <div class="cb"></div>
-    </div>
-    {{/each}}
+    {{#each nextweek}}{{> day}}{{/each}}
 </div>
 <div class="cb"></div>

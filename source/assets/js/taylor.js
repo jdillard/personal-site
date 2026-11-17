@@ -10,6 +10,12 @@ import u from 'umbrellajs';
 import axios from 'axios';
 import template_tide_predictions from './templates/taylor_tides.hbs';
 
+// Max tide height (ft, MLLW) that keeps the slackline dry
+const MAX_TIDE_FT = 4;
+// Only show low tides from FIRST_HOUR through LAST_HOUR (local, 24h)
+const FIRST_HOUR = 6;
+const LAST_HOUR = 21;
+
 /**
  * Fetches GitHub issues with the 'taylor' label and displays them on the page
  * @async
@@ -62,16 +68,6 @@ function formatDateYYYYMMDD(date) {
 }
 
 /**
- * Converts a date to the specified timezone
- * @param {Date|string} date - The date to convert
- * @param {string} tzString - The timezone string (e.g., 'America/Los_Angeles')
- * @returns {Date} - The date in the specified timezone
- */
-function convertTZ(date, tzString) {
-    return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString}));
-}
-
-/**
  * Fetches tide predictions from the NOAA API
  * @async
  */
@@ -95,7 +91,7 @@ async function fetchTidePredictions() {
                 end_date: lastdayString,
                 datum: 'MLLW',
                 station: '9449424',
-                time_zone: 'GMT',
+                time_zone: 'lst_ldt', // station local time (Pacific)
                 units: 'english',
                 interval: 'h',
                 format: 'json'
@@ -135,15 +131,14 @@ function filterLowTides(predictions) {
 
         const [_, year, month, day, hour, minute] = regexMatch;
 
-        const gmtDate = new Date(Date.UTC(
+        // Station-local wall-clock time; only used for display/grouping
+        const localDate = new Date(
             parseInt(year),
             parseInt(month) - 1,
             parseInt(day),
             parseInt(hour),
             parseInt(minute)
-        ));
-
-        const localDate = convertTZ(gmtDate, "America/Los_Angeles");
+        );
 
         return {
             t: localDate,
@@ -152,9 +147,9 @@ function filterLowTides(predictions) {
       })
       .filter(item =>
         item !== null &&
-        item.v < 4 &&
-        item.t.getHours() > 5 &&
-        item.t.getHours() < 22
+        item.v < MAX_TIDE_FT &&
+        item.t.getHours() >= FIRST_HOUR &&
+        item.t.getHours() <= LAST_HOUR
       );
 }
 
