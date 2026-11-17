@@ -104,6 +104,88 @@ js_includes:
     .gridlines line, path.domain {
         stroke: #E0E0E080;
     }
+    .compareHighlight {
+        fill: #FF725C; /* light-red */
+        fill-opacity: .12;
+        stroke: #FF725C;
+        stroke-opacity: .5;
+        stroke-dasharray: 3 2;
+        pointer-events: none;
+    }
+    .interval { cursor: pointer; }
+    .interval.selected rect {
+        stroke: black;
+        stroke-width: 2;
+    }
+    .compare-table td { vertical-align: middle; }
+    .swatch {
+        display: inline-block;
+        width: 1.5em;
+        height: .6em;
+    }
+    .swatch.black { background: #333333; }
+    .swatch.blue { background: #357EDD; }
+    .swatch.gray { background: #777777; }
+    .swatch.green { background: #19A974; }
+    .swatch.maroon { background: maroon; }
+    .swatch.orange { background: #FF6300; }
+    .swatch.purple { background: #A463F2; }
+    .swatch.red { background: #FF725C; }
+    .swatch.yellow { background: #FFD700; }
+    .type-toggle {
+        background: #FFFFFF;
+        border: 1px solid #DDDDDD;
+        color: #555555;
+        cursor: pointer;
+    }
+    .type-toggle.selected {
+        background: #555555; /* mid-gray */
+        border-color: #555555;
+        color: #FFFFFF;
+    }
+    /* brand headers: click to show / hide */
+    .bandHeader {
+        cursor: pointer;
+    }
+    .bandHeaderBg {
+        fill: transparent;
+    }
+    .bandHeader line {
+        stroke: #E5E5E5;
+    }
+    .bandHeader text {
+        font: 13px sans-serif;
+    }
+    .bandCaret, .bandCount {
+        fill: #999999;
+    }
+    .bandName {
+        fill: #333333;
+        font-weight: bold;
+    }
+    .bandHeader:hover .bandName {
+        fill: #000000;
+    }
+    .bandHeader.collapsed .bandName {
+        fill: #999999;
+        font-weight: normal;
+    }
+    /* two-option toggles drawn as one joined control */
+    .segmented {
+        display: inline-flex;
+    }
+    .segmented .type-toggle {
+        border-radius: 0;
+    }
+    .segmented .type-toggle:first-child {
+        border-radius: .25rem 0 0 .25rem;
+    }
+    .segmented .type-toggle:last-child {
+        border-radius: 0 .25rem .25rem 0;
+    }
+    .segmented .type-toggle + .type-toggle {
+        border-left-color: #DDDDDD; /* divider, visible even when both are selected */
+    }
     .tooltip {
         width: auto;
         position: absolute;
@@ -130,7 +212,39 @@ js_includes:
     </p>
 </section>
 
+<div class="tc mb3 f6">
+    <span class="dib nowrap mh2 mv1">
+        <span class="black-60 mr2">Show:</span>
+        <button class="type-toggle selected pv1 ph3 br2" data-type="active" aria-pressed="true">Active</button>
+        <button class="type-toggle selected pv1 ph3 br2 ml1" data-type="passive" aria-pressed="true">Passive</button>
+    </span>
+    <span class="dib nowrap mh2 mv1">
+        <span class="black-60 mr2">Scale:</span>
+        <span class="segmented">
+            <button class="type-toggle scale-toggle selected pv1 ph3" data-scale="log" aria-pressed="true">Log</button>
+            <button class="type-toggle scale-toggle pv1 ph3" data-scale="linear" aria-pressed="false">Linear</button>
+        </span>
+    </span>
+    <span class="dib nowrap mh2 mv1">
+        <span class="black-60 mr2">Units:</span>
+        <span class="segmented">
+            <button class="type-toggle units-toggle selected pv1 ph3" data-units="metric" aria-pressed="true">mm</button>
+            <button class="type-toggle units-toggle pv1 ph3" data-units="imperial" aria-pressed="false">in</button>
+        </span>
+    </span>
+    <span class="dib nowrap mh2 mv1">
+        <span class="black-60 mr2">Brands:</span>
+        <span class="segmented">
+            <button class="type-toggle brand-all selected pv1 ph3" data-show="true" aria-pressed="true">Show all</button>
+            <button class="type-toggle brand-all pv1 ph3" data-show="false" aria-pressed="false">Hide all</button>
+        </span>
+    </span>
+</div>
+
+
 <div id="timeline"></div>
+
+<section id="compare-results" class="measure center mv3 ph2"></section>
 
 {% include feedback.html %}
 
