@@ -93,7 +93,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="NYSAC-3017-report" class="avy-zone" data-id="NYSAC-3017" data-color="#939598" data-min="0"  data-max="20310" data-btl="2500" data-atl="4000" data-published="Friday, October 30, 2026 9:33AM">
+        <div id="NYSAC-3017-report" class="avy-zone" data-id="NYSAC-3017" data-color="#939598" data-min="0"  data-max="20310" data-btl="2500" data-atl="4000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
