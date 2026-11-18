@@ -181,7 +181,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="GNFAC-2819-report" class="avy-zone dn" data-id="GNFAC-2819" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 13, 2026 7:56AM">
+        <div id="GNFAC-2819-report" class="avy-zone dn" data-id="GNFAC-2819" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 18, 2026 7:32AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -195,7 +195,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="GNFAC-2827-report" class="avy-zone dn" data-id="GNFAC-2827" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 13, 2026 7:56AM">
+        <div id="GNFAC-2827-report" class="avy-zone dn" data-id="GNFAC-2827" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 18, 2026 7:32AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -209,7 +209,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="GNFAC-2826-report" class="avy-zone dn" data-id="GNFAC-2826" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 13, 2026 7:56AM">
+        <div id="GNFAC-2826-report" class="avy-zone dn" data-id="GNFAC-2826" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 18, 2026 7:32AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -223,7 +223,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="GNFAC-2825-report" class="avy-zone dn" data-id="GNFAC-2825" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 13, 2026 7:56AM">
+        <div id="GNFAC-2825-report" class="avy-zone dn" data-id="GNFAC-2825" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 18, 2026 7:32AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -237,7 +237,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="GNFAC-2821-report" class="avy-zone dn" data-id="GNFAC-2821" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 13, 2026 7:56AM">
+        <div id="GNFAC-2821-report" class="avy-zone dn" data-id="GNFAC-2821" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 18, 2026 7:32AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -251,7 +251,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="GNFAC-2822-report" class="avy-zone dn" data-id="GNFAC-2822" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 13, 2026 7:56AM">
+        <div id="GNFAC-2822-report" class="avy-zone dn" data-id="GNFAC-2822" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 18, 2026 7:32AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -265,7 +265,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="GNFAC-2824-report" class="avy-zone dn" data-id="GNFAC-2824" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 13, 2026 7:56AM">
+        <div id="GNFAC-2824-report" class="avy-zone dn" data-id="GNFAC-2824" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 18, 2026 7:32AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -279,7 +279,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="GNFAC-2823-report" class="avy-zone dn" data-id="GNFAC-2823" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 13, 2026 7:56AM">
+        <div id="GNFAC-2823-report" class="avy-zone dn" data-id="GNFAC-2823" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Wednesday, November 18, 2026 7:32AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
