@@ -305,7 +305,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="VAC-1611-report" class="avy-zone dn" data-id="VAC-1611" data-color="#939598" data-min="0"  data-max="20310" data-btl="1999" data-atl="4000" data-published="False">
+        <div id="VAC-1611-report" class="avy-zone dn" data-id="VAC-1611" data-color="#939598" data-min="0"  data-max="20310" data-btl="1999" data-atl="4000" data-published="Wednesday, November 18, 2026 1:56PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -319,7 +319,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="VAC-1610-report" class="avy-zone dn" data-id="VAC-1610" data-color="#939598" data-min="0"  data-max="20310" data-btl="1999" data-atl="4000" data-published="False">
+        <div id="VAC-1610-report" class="avy-zone dn" data-id="VAC-1610" data-color="#939598" data-min="0"  data-max="20310" data-btl="1999" data-atl="4000" data-published="Wednesday, November 18, 2026 1:56PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -333,7 +333,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="VAC-1609-report" class="avy-zone dn" data-id="VAC-1609" data-color="#939598" data-min="0"  data-max="20310" data-btl="1499" data-atl="3000" data-published="False">
+        <div id="VAC-1609-report" class="avy-zone dn" data-id="VAC-1609" data-color="#939598" data-min="0"  data-max="20310" data-btl="1499" data-atl="3000" data-published="Wednesday, November 18, 2026 1:56PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             

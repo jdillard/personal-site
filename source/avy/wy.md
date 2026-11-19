@@ -94,9 +94,9 @@ css_includes:
             
             <option value="EWYAIX-2841" title="Big Horns" >Big Horns</option>
             
-            <option value="EWYAIX-2843" title="Sierra Madre" >Sierra Madre</option>
+            <option value="EWYAIX-3045" title="Sierra Madre" >Sierra Madre</option>
             
-            <option value="EWYAIX-2842" title="Snowy Range" >Snowy Range</option>
+            <option value="EWYAIX-3046" title="Snowy Range" >Snowy Range</option>
             
         </select>
     </div>
@@ -175,7 +175,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="EWYAIX-2843-report" class="avy-zone dn" data-id="EWYAIX-2843" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
+        <div id="EWYAIX-3045-report" class="avy-zone dn" data-id="EWYAIX-3045" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -189,7 +189,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="EWYAIX-2842-report" class="avy-zone dn" data-id="EWYAIX-2842" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
+        <div id="EWYAIX-3046-report" class="avy-zone dn" data-id="EWYAIX-3046" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -228,12 +228,12 @@ css_includes:
             <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-2841.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="EWYAIX-2843-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-2843.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-2843.geojson" download="">Download GeoJSON</a></div>
+        <div id="EWYAIX-3045-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-3045.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-3045.geojson" download="">Download GeoJSON</a></div>
         </div>
         
-        <div id="EWYAIX-2842-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-2842.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-2842.geojson" download="">Download GeoJSON</a></div>
+        <div id="EWYAIX-3046-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-3046.geojson" class="avy-zone dn">
+            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-3046.geojson" download="">Download GeoJSON</a></div>
         </div>
         
     </div>
