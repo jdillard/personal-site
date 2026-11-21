@@ -163,10 +163,10 @@ css_includes:
                     
                 </li>
                 
-                <li data-zone="HPAC-2152" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                <li data-zone="HPAC-2152" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ak.html#zone-HPAC-2152">Hatcher Pass</a>
-                    
+                    <span class="gray f7">Friday, November 20, 2026 7:00AM</span>
                 </li>
                 
                 <li data-zone="VAC-1611" data-color="#939598" class="pv1">
@@ -211,16 +211,16 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html">California</a></h3>
             <ul id="ca-zones" class="list pl3 f5 mt2">
                 
-                <li data-zone="BAC-3004" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                <li data-zone="BAC-3004" data-color="#f7941e" class="pv1">
+                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-BAC-3004">Bridgeport Avalanche Center</a>
-                    
+                    <span class="gray f7">Friday, November 20, 2026 7:00AM</span>
                 </li>
                 
-                <li data-zone="ESAC-128" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                <li data-zone="ESAC-128" data-color="#f7941e" class="pv1">
+                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-ESAC-128">Eastside Region</a>
-                    
+                    <span class="gray f7">Friday, November 20, 2026 7:00AM</span>
                 </li>
                 
                 <li data-zone="MSAC-3044" data-color="#939598" class="pv1">
@@ -229,10 +229,10 @@ css_includes:
                     
                 </li>
                 
-                <li data-zone="SAC-2458" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                <li data-zone="SAC-2458" data-color="#f7941e" class="pv1">
+                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-SAC-2458">Central Sierra Nevada</a>
-                    
+                    <span class="gray f7">Friday, November 20, 2026 6:50AM</span>
                 </li>
                 
             </ul>
@@ -247,31 +247,25 @@ css_includes:
                 <li data-zone="CAIC-2755" data-color="#50b848" class="pv1">
                     <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2755">CAIC zone</a>
-                    <span class="gray f7">Thursday, November 19, 2026 4:30PM</span>
+                    <span class="gray f7">Friday, November 20, 2026 4:30PM</span>
                 </li>
                 
                 <li data-zone="CAIC-2745" data-color="#50b848" class="pv1">
                     <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2745">CAIC zone</a>
-                    <span class="gray f7">Thursday, November 19, 2026 4:30PM</span>
-                </li>
-                
-                <li data-zone="CAIC-2751" data-color="#fff200" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2751">CAIC zone</a>
-                    <span class="gray f7">Thursday, November 19, 2026 4:30PM</span>
-                </li>
-                
-                <li data-zone="CAIC-2697" data-color="#fff200" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2697">CAIC zone</a>
-                    <span class="gray f7">Thursday, November 19, 2026 4:30PM</span>
+                    <span class="gray f7">Friday, November 20, 2026 4:30PM</span>
                 </li>
                 
                 <li data-zone="CAIC-2660" data-color="#fff200" class="pv1">
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2660">CAIC zone</a>
-                    <span class="gray f7">Thursday, November 19, 2026 4:30PM</span>
+                    <span class="gray f7">Friday, November 20, 2026 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-2751" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2751">CAIC zone</a>
+                    <span class="gray f7">Friday, November 20, 2026 4:30PM</span>
                 </li>
                 
             </ul>

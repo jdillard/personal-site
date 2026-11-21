@@ -109,7 +109,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="IPAC-3018-report" class="avy-zone" data-id="IPAC-3018" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 13, 2026 11:15AM">
+        <div id="IPAC-3018-report" class="avy-zone" data-id="IPAC-3018" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 20, 2026 10:15AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -123,7 +123,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="IPAC-1902-report" class="avy-zone dn" data-id="IPAC-1902" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 13, 2026 11:15AM">
+        <div id="IPAC-1902-report" class="avy-zone dn" data-id="IPAC-1902" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 20, 2026 10:15AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -137,7 +137,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="IPAC-1900-report" class="avy-zone dn" data-id="IPAC-1900" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 13, 2026 11:15AM">
+        <div id="IPAC-1900-report" class="avy-zone dn" data-id="IPAC-1900" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Friday, November 20, 2026 10:15AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
