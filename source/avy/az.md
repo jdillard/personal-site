@@ -93,7 +93,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="KPAC-2990-report" class="avy-zone" data-id="KPAC-2990" data-color="#939598" data-min="0"  data-max="20310" data-btl="9700" data-atl="11500" data-published="Friday, November 20, 2026 1:32PM">
+        <div id="KPAC-2990-report" class="avy-zone" data-id="KPAC-2990" data-color="#939598" data-min="0"  data-max="20310" data-btl="9700" data-atl="11500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
