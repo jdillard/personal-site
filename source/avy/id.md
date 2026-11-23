@@ -179,7 +179,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="SNFAC-2907-report" class="avy-zone dn" data-id="SNFAC-2907" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, November 16, 2026 2:00PM">
+        <div id="SNFAC-2907-report" class="avy-zone dn" data-id="SNFAC-2907" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -193,7 +193,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="SNFAC-2904-report" class="avy-zone dn" data-id="SNFAC-2904" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, November 16, 2026 2:00PM">
+        <div id="SNFAC-2904-report" class="avy-zone dn" data-id="SNFAC-2904" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -207,7 +207,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="SNFAC-2906-report" class="avy-zone dn" data-id="SNFAC-2906" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, November 16, 2026 2:00PM">
+        <div id="SNFAC-2906-report" class="avy-zone dn" data-id="SNFAC-2906" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -221,7 +221,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="SNFAC-2905-report" class="avy-zone dn" data-id="SNFAC-2905" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, November 16, 2026 2:00PM">
+        <div id="SNFAC-2905-report" class="avy-zone dn" data-id="SNFAC-2905" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
