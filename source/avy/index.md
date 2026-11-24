@@ -163,10 +163,10 @@ css_includes:
                     
                 </li>
                 
-                <li data-zone="HPAC-2152" data-color="#50b848" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                <li data-zone="HPAC-2152" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ak.html#zone-HPAC-2152">Hatcher Pass</a>
-                    <span class="gray f7">Sunday, November 22, 2026 7:00AM</span>
+                    
                 </li>
                 
                 <li data-zone="VAC-1611" data-color="#939598" class="pv1">
@@ -220,7 +220,7 @@ css_includes:
                 <li data-zone="ESAC-128" data-color="#fff200" class="pv1">
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-ESAC-128">Eastside Region</a>
-                    <span class="gray f7">Sunday, November 22, 2026 7:00AM</span>
+                    <span class="gray f7">Monday, November 23, 2026 7:00AM</span>
                 </li>
                 
                 <li data-zone="MSAC-3044" data-color="#939598" class="pv1">
@@ -229,10 +229,10 @@ css_includes:
                     
                 </li>
                 
-                <li data-zone="SAC-2458" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                <li data-zone="SAC-2458" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/ca.html#zone-SAC-2458">Central Sierra Nevada</a>
-                    
+                    <span class="gray f7">Monday, November 23, 2026 6:44AM</span>
                 </li>
                 
             </ul>
@@ -244,46 +244,40 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html">Colorado</a></h3>
             <ul id="co-zones" class="list pl3 f5 mt2">
                 
-                <li data-zone="CAIC-2754" data-color="#50b848" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2754">CAIC zone</a>
-                    <span class="gray f7">Sunday, November 22, 2026 4:30PM</span>
-                </li>
-                
-                <li data-zone="CAIC-2755" data-color="#50b848" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2755">CAIC zone</a>
-                    <span class="gray f7">Sunday, November 22, 2026 4:30PM</span>
-                </li>
-                
                 <li data-zone="CAIC-2747" data-color="#50b848" class="pv1">
                     <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2747">CAIC zone</a>
-                    <span class="gray f7">Sunday, November 22, 2026 4:30PM</span>
+                    <span class="gray f7">Monday, November 23, 2026 4:30PM</span>
                 </li>
                 
                 <li data-zone="CAIC-2745" data-color="#50b848" class="pv1">
                     <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2745">CAIC zone</a>
-                    <span class="gray f7">Sunday, November 22, 2026 4:30PM</span>
+                    <span class="gray f7">Monday, November 23, 2026 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-2754" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2754">CAIC zone</a>
+                    <span class="gray f7">Monday, November 23, 2026 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-2755" data-color="#50b848" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2755">CAIC zone</a>
+                    <span class="gray f7">Monday, November 23, 2026 4:30PM</span>
+                </li>
+                
+                <li data-zone="CAIC-2660" data-color="#fff200" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2660">CAIC zone</a>
+                    <span class="gray f7">Monday, November 23, 2026 4:30PM</span>
                 </li>
                 
                 <li data-zone="CAIC-2753" data-color="#fff200" class="pv1">
                     <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2753">CAIC zone</a>
-                    <span class="gray f7">Sunday, November 22, 2026 4:30PM</span>
-                </li>
-                
-                <li data-zone="CAIC-2750" data-color="#f7941e" class="pv1">
-                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2750">CAIC zone</a>
-                    <span class="gray f7">Sunday, November 22, 2026 4:30PM</span>
-                </li>
-                
-                <li data-zone="CAIC-2660" data-color="#f7941e" class="pv1">
-                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="/avy/co.html#zone-CAIC-2660">CAIC zone</a>
-                    <span class="gray f7">Sunday, November 22, 2026 4:30PM</span>
+                    <span class="gray f7">Monday, November 23, 2026 4:30PM</span>
                 </li>
                 
             </ul>
@@ -747,6 +741,12 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html">Canada</a></h3>
             <ul id="canada-zones" class="list pl3 f5 mt2">
                 
+                <li data-zone="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" title="Bow Valley, Highwood Pass, North 40, Spray - KLakes">Bow Valley, Highwood Pass +2 more</a>
+                    
+                </li>
+                
                 <li data-zone="03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" title="Chic-Chocs">Chic-Chocs</a>
@@ -786,12 +786,6 @@ css_includes:
                 <li data-zone="53bb614cadbd487077d867dec6007dfed090d20fbc0cbfe941451b6af2df33ed" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-53bb614cadbd487077d867dec6007dfed090d20fbc0cbfe941451b6af2df33ed" title="Akamina, Badshot, Battle, Birkenhead, Blue River, Bonnington, Boundary, Brandywine, Bull, Central Selkirk, Clearwater, Clemina, Coquihalla, Crawford, Crowsnest North, Crowsnest South, Dogtooth, Duffey, East Island, East Kakwa, East Purcell, Elkford East, Elkford West, Esplanade, Flathead, Garibaldi, Goat, Gold, Grohman, Haines Pass, Harrison, Fraser, Homathko, Howson, Jordan, Kakwa, Kispiox, Kitimat, Kokanee, Kootenay Pass, Lizard, Manning, McBride, McGregor, Microwave, Sinclair, Moyie, Nass, Ningunsaw, Norns, North Bulkley, North Island, North Monashee, North Okanagan, North Selkirk, North Shore, Pine Pass, Powell River, Premier, Quesnel, Renshaw, Retallack, Robson, Rossland, Rupert, Sasquatch, Seven Sisters, Shames, Shuswap, Skagit, Sky Pilot, South Bulkley, South Chilcotin, South Island, South Okanagan, Spearhead, Stein, Stewart, St. Mary, Sugarbowl, Tantalus, Taseko, Telkwa, Tetrahedron, Tumbler, Tutshi, Valhalla, West Island, West Purcell, Whatshan, Wheaton, White Pass East, White Pass West, Ymir">Akamina, Badshot +92 more</a>
-                    
-                </li>
-                
-                <li data-zone="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" title="Bow Valley, Highwood Pass, North 40, Spray - KLakes">Bow Valley, Highwood Pass +2 more</a>
                     
                 </li>
                 
