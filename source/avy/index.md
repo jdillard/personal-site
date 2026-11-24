@@ -741,6 +741,24 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html">Canada</a></h3>
             <ul id="canada-zones" class="list pl3 f5 mt2">
                 
+                <li data-zone="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" title="Corner Brook, Gros Morne, Northern Peninsula">Corner Brook, Gros Morne, Northern Peninsula</a>
+                    
+                </li>
+                
+                <li data-zone="53bb614cadbd487077d867dec6007dfed090d20fbc0cbfe941451b6af2df33ed" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-53bb614cadbd487077d867dec6007dfed090d20fbc0cbfe941451b6af2df33ed" title="Akamina, Badshot, Battle, Birkenhead, Blue River, Bonnington, Boundary, Brandywine, Bull, Central Selkirk, Clearwater, Clemina, Coquihalla, Crawford, Crowsnest North, Crowsnest South, Dogtooth, Duffey, East Island, East Kakwa, East Purcell, Elkford East, Elkford West, Esplanade, Flathead, Garibaldi, Goat, Gold, Grohman, Haines Pass, Harrison, Fraser, Homathko, Howson, Jordan, Kakwa, Kispiox, Kitimat, Kokanee, Kootenay Pass, Lizard, Manning, McBride, McGregor, Microwave, Sinclair, Moyie, Nass, Ningunsaw, Norns, North Bulkley, North Island, North Monashee, North Okanagan, North Selkirk, North Shore, Pine Pass, Powell River, Premier, Quesnel, Renshaw, Retallack, Robson, Rossland, Rupert, Sasquatch, Seven Sisters, Shames, Shuswap, Skagit, Sky Pilot, South Bulkley, South Chilcotin, South Island, South Okanagan, Spearhead, Stein, Stewart, St. Mary, Sugarbowl, Tantalus, Taseko, Telkwa, Tetrahedron, Tumbler, Tutshi, Valhalla, West Island, West Purcell, Whatshan, Wheaton, White Pass East, White Pass West, Ymir">Akamina, Badshot +92 more</a>
+                    
+                </li>
+                
+                <li data-zone="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" title="Bow Valley, Highwood Pass, North 40, Spray - KLakes">Bow Valley, Highwood Pass +2 more</a>
+                    
+                </li>
+                
                 <li data-zone="03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" title="Chic-Chocs">Chic-Chocs</a>
@@ -768,24 +786,6 @@ css_includes:
                 <li data-zone="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" title="Waterton">Waterton</a>
-                    
-                </li>
-                
-                <li data-zone="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" title="Corner Brook, Gros Morne, Northern Peninsula">Corner Brook, Gros Morne, Northern Peninsula</a>
-                    
-                </li>
-                
-                <li data-zone="53bb614cadbd487077d867dec6007dfed090d20fbc0cbfe941451b6af2df33ed" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-53bb614cadbd487077d867dec6007dfed090d20fbc0cbfe941451b6af2df33ed" title="Akamina, Badshot, Battle, Birkenhead, Blue River, Bonnington, Boundary, Brandywine, Bull, Central Selkirk, Clearwater, Clemina, Coquihalla, Crawford, Crowsnest North, Crowsnest South, Dogtooth, Duffey, East Island, East Kakwa, East Purcell, Elkford East, Elkford West, Esplanade, Flathead, Garibaldi, Goat, Gold, Grohman, Haines Pass, Harrison, Fraser, Homathko, Howson, Jordan, Kakwa, Kispiox, Kitimat, Kokanee, Kootenay Pass, Lizard, Manning, McBride, McGregor, Microwave, Sinclair, Moyie, Nass, Ningunsaw, Norns, North Bulkley, North Island, North Monashee, North Okanagan, North Selkirk, North Shore, Pine Pass, Powell River, Premier, Quesnel, Renshaw, Retallack, Robson, Rossland, Rupert, Sasquatch, Seven Sisters, Shames, Shuswap, Skagit, Sky Pilot, South Bulkley, South Chilcotin, South Island, South Okanagan, Spearhead, Stein, Stewart, St. Mary, Sugarbowl, Tantalus, Taseko, Telkwa, Tetrahedron, Tumbler, Tutshi, Valhalla, West Island, West Purcell, Whatshan, Wheaton, White Pass East, White Pass West, Ymir">Akamina, Badshot +92 more</a>
-                    
-                </li>
-                
-                <li data-zone="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" title="Bow Valley, Highwood Pass, North 40, Spray - KLakes">Bow Valley, Highwood Pass +2 more</a>
                     
                 </li>
                 
