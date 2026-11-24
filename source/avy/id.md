@@ -151,7 +151,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="PAC-3014-report" class="avy-zone dn" data-id="PAC-3014" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="False">
+        <div id="PAC-3014-report" class="avy-zone dn" data-id="PAC-3014" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, November 23, 2026 7:20PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -165,7 +165,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="PAC-3015-report" class="avy-zone dn" data-id="PAC-3015" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="False">
+        <div id="PAC-3015-report" class="avy-zone dn" data-id="PAC-3015" data-color="#939598" data-min="0"  data-max="20310" data-btl="6500" data-atl="7500" data-published="Monday, November 23, 2026 7:20PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             

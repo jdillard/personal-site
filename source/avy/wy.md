@@ -105,7 +105,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="BTAC-2856-report" class="avy-zone" data-id="BTAC-2856" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
+        <div id="BTAC-2856-report" class="avy-zone" data-id="BTAC-2856" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Tuesday, November 24, 2026 6:56AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -119,7 +119,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="BTAC-2860-report" class="avy-zone dn" data-id="BTAC-2860" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
+        <div id="BTAC-2860-report" class="avy-zone dn" data-id="BTAC-2860" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Tuesday, November 24, 2026 6:56AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -133,7 +133,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="BTAC-2855-report" class="avy-zone dn" data-id="BTAC-2855" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
+        <div id="BTAC-2855-report" class="avy-zone dn" data-id="BTAC-2855" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Tuesday, November 24, 2026 6:56AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -147,7 +147,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="BTAC-2852-report" class="avy-zone dn" data-id="BTAC-2852" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="False">
+        <div id="BTAC-2852-report" class="avy-zone dn" data-id="BTAC-2852" data-color="#939598" data-min="6000"  data-max="20310" data-btl="7500" data-atl="9000" data-published="Tuesday, November 24, 2026 6:56AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             

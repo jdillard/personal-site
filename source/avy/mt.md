@@ -125,7 +125,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="FAC-3043-report" class="avy-zone" data-id="FAC-3043" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 20, 2026 1:29PM">
+        <div id="FAC-3043-report" class="avy-zone" data-id="FAC-3043" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -139,7 +139,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="FAC-3040-report" class="avy-zone dn" data-id="FAC-3040" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 20, 2026 1:29PM">
+        <div id="FAC-3040-report" class="avy-zone dn" data-id="FAC-3040" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -153,7 +153,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="FAC-3041-report" class="avy-zone dn" data-id="FAC-3041" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 20, 2026 1:29PM">
+        <div id="FAC-3041-report" class="avy-zone dn" data-id="FAC-3041" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -167,7 +167,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="FAC-3042-report" class="avy-zone dn" data-id="FAC-3042" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 20, 2026 1:29PM">
+        <div id="FAC-3042-report" class="avy-zone dn" data-id="FAC-3042" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
