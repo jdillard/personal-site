@@ -234,7 +234,7 @@ def grm_elevation_segments(elevations, blur=None):
     "exactly 9,500'" is never drawn: the transition segment takes the worse
     of the two bands it straddles. Returns (low, high, bands) tuples, lowest first.
     """
-    blur = config.grm_elevation_blur if blur is None else blur
+    blur = config.elevation_blur if blur is None else blur
     bottom, btl_top = elevations["btl"]
     ntl_top = elevations["ntl"][1]
     top = elevations["atl"][1]
@@ -664,7 +664,7 @@ def main():
     content = region_template.render(
         page="Canada",
         grm_colors=config.grm_colors,
-        grm_elevation_blur=config.grm_elevation_blur,
+        elevation_blur=config.elevation_blur,
         sun_day=tomorrow,
         zones=areas,
         states=states,
@@ -783,7 +783,7 @@ def main():
             content = region_template.render(
                     page=state["name"],
                     grm_colors=config.grm_colors,
-                    grm_elevation_blur=config.grm_elevation_blur,
+                    elevation_blur=config.elevation_blur,
                     sun_day=tomorrow,
                     zones=state["zones"],
                     states=states,
