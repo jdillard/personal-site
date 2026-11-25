@@ -364,13 +364,13 @@ def grm_layer(octant_levels_by_band, elevations):
     if not rules:
         return None
 
-    today = {lvl for levels in octant_levels_by_band.values() for lvl in levels}
+    forecast = {lvl for levels in octant_levels_by_band.values() for lvl in levels}
     legend = [
         {
             "level": danger_levels[lvl]["desc"].replace(" danger", ""),
             "caution": thresholds[0],
             "avoid": thresholds[1],
-            "today": lvl in today,
+            "forecast": lvl in forecast,
         }
         for lvl, thresholds in config.grm_slope_thresholds.items()
         if thresholds
