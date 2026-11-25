@@ -1,3 +1,9 @@
+# Elevation bands (feet) per state, keyed by avalanche.org zone id; key 0 is the
+# state default for zones without their own entry.
+#
+# Optional per entry: `confidence` (medium = derived from past forecasts, low = rough
+# estimate), shown on the zone's page as a generic note; say why in a comment. Omit it
+# for bands the center publishes (high). Zones on a US state default are shown as low.
 - abbr: "AK"
   name: "Alaska"
   elevations:
@@ -5,30 +11,91 @@
       btl: [0, 4400]
       ntl: [4401, 6100]
       atl: [6101, 20310]
-    1609:
-      btl: [0, 1499]
-      ntl: [1500, 3000]
-      atl: [3001, 20310]
-    1610:
-      btl: [0, 1999]
-      ntl: [2000, 4000]
-      atl: [4001, 20310]
-    1611:
-      btl: [0, 1999]
-      ntl: [2000, 4000]
-      atl: [4001, 20310]
-    1863:
-      btl: [0, 2499]
-      ntl: [2500, 3500]
+    # CAAC: ESTIMATED, NOT PUBLISHED. CAAC publishes no numeric bands and its archive has
+    # no band-labelled elevations; from general treeline mentions: on Mt Roberts you "reach
+    # the tree line" at the Mountain House (1,760-1,800 ft) and true alpine starts ~300 ft
+    # higher. Applied to Douglas Island too (same latitude and maritime climate).
+    # https://api.avalanche.org/v2/public/avalanche-center/CAAC
+    # https://alaska.org/guide/mount-roberts-tramway-points
+    # https://www.alaska.org/detail/mount-roberts-trail
+    2164: # juneau
+      confidence: low
+      btl: [0, 1500]
+      ntl: [1501, 2200]
+      atl: [2201, 20310]
+    2165: # douglas island
+      confidence: low
+      btl: [0, 1500]
+      ntl: [1501, 2200]
+      atl: [2201, 20310]
+    # CAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/CAC
+    1421: # cordova
+      btl: [0, 1000]
+      ntl: [1001, 2000]
+      atl: [2001, 20310]
+    # CNFAIC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/CNFAIC
+    2815: # turnagain pass and girdwood
+      btl: [0, 1000]
+      ntl: [1001, 2500]
+      atl: [2501, 20310]
+    2816: # summit lake
+      btl: [0, 1000]
+      ntl: [1001, 2500]
+      atl: [2501, 20310]
+    2817: # seward and lost lake
+      btl: [0, 1000]
+      ntl: [1001, 2500]
+      atl: [2501, 20310]
+    2818: # chugach state park
+      btl: [0, 1000]
+      ntl: [1001, 2500]
+      atl: [2501, 20310]
+    # EARAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/EARAC
+    3002: # north (castner-canwell)
+      btl: [0, 3400]
+      ntl: [3401, 5000]
+      atl: [5001, 20310]
+    3003: # south (summit)
+      btl: [0, 3600]
+      ntl: [3601, 5500]
+      atl: [5501, 20310]
+    # HAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/HAC
+    3005: # lutak
+      btl: [0, 1500]
+      ntl: [1501, 2500]
+      atl: [2501, 20310]
+    3006: # transitional
+      btl: [0, 1500]
+      ntl: [1501, 2500]
+      atl: [2501, 20310]
+    3007: # chilkat pass
+      btl: [0, 1500]
+      ntl: [1501, 2500]
+      atl: [2501, 20310]
+    # HPAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/HPAC
+    2152: # hatcher pass
+      btl: [0, 2500]
+      ntl: [2501, 3500]
       atl: [3501, 20310]
-    1920:
-      btl: [0, 999]
-      ntl: [1000, 2500]
-      atl: [2501, 20310]
-    1921:
-      btl: [0, 999]
-      ntl: [1000, 2500]
-      atl: [2501, 20310]
+    # VAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/VAC
+    1609: # maritime
+      btl: [0, 1500]
+      ntl: [1501, 3000]
+      atl: [3001, 20310]
+    1610: # intermountain
+      btl: [0, 2000]
+      ntl: [2001, 4000]
+      atl: [4001, 20310]
+    1611: # continental
+      btl: [0, 2000]
+      ntl: [2001, 4000]
+      atl: [4001, 20310]
   active: true
 
 - abbr: "NY"
@@ -38,10 +105,15 @@
       btl: [0, 2500]
       ntl: [2501, 4000]
       atl: [4001, 20310]
-    3017:
-      btl: [0, 2500]
-      ntl: [2501, 4000]
-      atl: [4001, 20310]
+    # NYSAC: ESTIMATED, NOT PUBLISHED. NYSAC publishes no numeric bands (widget labels
+    # empty); from a study of Adirondack alpine tundra: treeline is "notably low (~1300 m)"
+    # (~4,265 ft) and tundra patches are "rare below an elevation of 1350 m" (~4,430 ft).
+    # https://bioone.org/journals/Arctic-Antarctic-and-Alpine-Research/volume-43/issue-3/1938-4246-43.3.331/Distribution-of-Alpine-Tundra-in-the-Adirondack-Mountains-of-New/10.1657/1938-4246-43.3.331.pdf
+    3017: # adirondack park
+      confidence: low
+      btl: [0, 3900]
+      ntl: [3901, 4400]
+      atl: [4401, 20310]
   active: true
 
 - abbr: "AZ"
@@ -51,24 +123,73 @@
       btl: [0, 9700]
       ntl: [9701, 11500]
       atl: [11501, 20310]
+    # KPAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/KPAC
+    2990: # san francisco peaks
+      btl: [0, 10500]
+      ntl: [10501, 11500]
+      atl: [11501, 20310]
   active: true
 
 - abbr: "CA"
   name: "California"
   elevations:
+    # TODO: unsourced; BAC publishes no numeric bands (widget: Below/Near/Above Treeline)
+    # and its forecast archive has too few band-labelled elevations to derive them, so
+    # this zone falls back to the default below
+    # 3004: {} # bridgeport TODO: fill in
     0: # default
       btl: [0, 6200]
       ntl: [6201, 8700]
       atl: [8701, 20310]
-    128:
+    # SAC: DERIVED, NOT PUBLISHED. SAC publishes no numeric bands; derived from the
+    # elevations SAC forecasters give with a band label in 2023-24 to 2025-26 forecasts
+    # (mostly photo captions, e.g. "NNE aspect NTL terrain at 9,080'"), 28 observations:
+    # BTL 7000-9100' (median 8070), NTL 7600-9180' (median 8500), ATL 8100-9600'.
+    # Bands overlap (terrain-defined; zone spans north Tahoe to Carson Pass), so NTL is
+    # roughly the middle 80% of NTL observations.
+    # https://api.avalanche.org/v2/public/products?avalanche_center_id=SAC
+    2458: # central sierra nevada
+      confidence: medium
       btl: [0, 7800]
-      ntl: [7801, 10000]
-      atl: [10001, 20310]
+      ntl: [7801, 9200]
+      atl: [9201, 20310]
+    # ESAC: DERIVED, NOT PUBLISHED. ESAC says bands are "not an exact elevation" and
+    # publishes no numbers; derived from the elevations ESAC forecasters give with a band
+    # label in 2023-24 to 2025-26 forecasts, 59 observations: BTL 8200-9900' (median 9200),
+    # NTL 8800-10500' (middle 80%, median 9800), ATL mostly 10300-12800' (median 11100).
+    # Boundaries are roughly midway between neighbouring band medians.
+    # https://www.esavalanche.org/avalanche-forecast-tutorial/
+    # https://api.avalanche.org/v2/public/products?avalanche_center_id=ESAC
+    128: # eastside region
+      confidence: medium
+      btl: [0, 9500]
+      ntl: [9501, 10500]
+      atl: [10501, 20310]
+    # MSAC: DERIVED, NOT PUBLISHED. MSAC publishes no numeric bands (widget: Below/Near/
+    # Above Treeline); derived from the elevations MSAC forecasters give with a band label
+    # in 2023-24 to 2025-26 forecasts, ~12 observations (excluding "Shasta Alpine Hut",
+    # a place name): BTL 7000-8000', NTL 8000-8500', ATL 8900'+ (e.g. "above treeline at
+    # 9,200"). Few observations, so boundaries are rough.
+    # https://api.avalanche.org/v2/public/products?avalanche_center_id=MSAC
+    3044: # mount shasta
+      confidence: medium
+      btl: [0, 7600]
+      ntl: [7601, 8700]
+      atl: [8701, 20310]
   active: true
 
 - abbr: "CO"
   name: "Colorado"
   elevations:
+    # CAIC publishes no numeric bands (forecast widget and site only say BTL/NTL/ATL)
+    # TODO: unsourced; same set used for every CO zone
+    # 2660: {} # la plata mountains TODO: fill in
+    # 2745: {} # front range TODO: fill in
+    # 2747: {} # grand mesa TODO: fill in
+    # 2753: {} # elk mountains TODO: fill in
+    # 2754: {} # sawatch mountains TODO: fill in
+    # 2755: {} # mosquito range TODO: fill in
     0: # default
       btl: [0, 9500]
       ntl: [9501, 11500]
@@ -82,36 +203,135 @@
       btl: [0, 6500]
       ntl: [6501, 7500]
       atl: [7501, 20310]
-    # 149: {} # TODO: fill in
-    272:
-      btl: [0, 4500]
-      ntl: [4501, 5500]
-      atl: [5501, 20310]
-    153:
+    # IPAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/IPAC
+    1900: # west cabinet mountains
+      btl: [0, 5500]
+      ntl: [5501, 6500]
+      atl: [6501, 20310]
+    1902: # silver valley & bitterroot mountains
+      btl: [0, 5500]
+      ntl: [5501, 6500]
+      atl: [6501, 20310]
+    3018: # selkirk mountains
+      btl: [0, 5500]
+      ntl: [5501, 6500]
+      atl: [6501, 20310]
+    # PAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/PAC
+    3014: # salmon river mountains
       btl: [0, 6500]
       ntl: [6501, 7500]
       atl: [7501, 20310]
-    717:
-      btl: [0, 7500]
-      ntl: [7501, 8500]
-      atl: [8501, 20310]
-    714:
+    3015: # west mountains
+      btl: [0, 6500]
+      ntl: [6501, 7500]
+      atl: [7501, 20310]
+    # SNFAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/SNFAC
+    2904: # galena summit & eastern mtns
       btl: [0, 7500]
       ntl: [7501, 9500]
       atl: [9501, 20310]
-    716:
+    2905: # soldier & wood river valley mtns
       btl: [0, 6500]
       ntl: [6501, 8500]
+      atl: [8501, 20310]
+    2906: # sawtooth & western smoky mtns
+      btl: [0, 7500]
+      ntl: [7501, 9000]
+      atl: [9001, 20310]
+    2907: # banner summit
+      btl: [0, 7500]
+      ntl: [7501, 8500]
       atl: [8501, 20310]
   active: true
 
 - abbr: "MT"
   name: "Montana"
   elevations:
+    # fallback only (every current MT zone has its own entry below);
+    # https://api.avalanche.org/v2/public/avalanche-center/WCMAC
     0: # default
-      btl: [0, 4400]
-      ntl: [4401, 6100]
-      atl: [6101, 20310]
+      btl: [0, 5500]
+      ntl: [5501, 7000]
+      atl: [7001, 20310]
+    # FAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/FAC
+    3040: # northern whitefish range
+      btl: [0, 5000]
+      ntl: [5001, 6500]
+      atl: [6501, 20310]
+    3041: # southern whitefish range
+      btl: [0, 5000]
+      ntl: [5001, 6500]
+      atl: [6501, 20310]
+    3042: # swan range
+      btl: [0, 5000]
+      ntl: [5001, 6500]
+      atl: [6501, 20310]
+    3043: # flathead range & glacier np
+      btl: [0, 5000]
+      ntl: [5001, 6500]
+      atl: [6501, 20310]
+    # GNFAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/GNFAC
+    2819: # bridger range
+      btl: [0, 7500]
+      ntl: [7501, 8500]
+      atl: [8501, 20310]
+    2821: # northern gallatin range
+      btl: [0, 8000]
+      ntl: [8001, 9500]
+      atl: [9501, 20310]
+    2822: # northern madison range
+      btl: [0, 8000]
+      ntl: [8001, 9500]
+      atl: [9501, 20310]
+    2823: # southern madison range
+      btl: [0, 8000]
+      ntl: [8001, 9500]
+      atl: [9501, 20310]
+    2824: # southern gallatin range
+      btl: [0, 8000]
+      ntl: [8001, 9500]
+      atl: [9501, 20310]
+    2825: # lionhead area
+      btl: [0, 8000]
+      ntl: [8001, 9500]
+      atl: [9501, 20310]
+    2826: # island park
+      btl: [0, 8000]
+      ntl: [8001, 9500]
+      atl: [9501, 20310]
+    2827: # cooke city
+      btl: [0, 9000]
+      ntl: [9001, 10000]
+      atl: [10001, 20310]
+    # IPAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/IPAC
+    1901: # east cabinet mountains
+      btl: [0, 5500]
+      ntl: [5501, 6500]
+      atl: [6501, 20310]
+    3019: # purcell mountains
+      btl: [0, 5500]
+      ntl: [5501, 6500]
+      atl: [6501, 20310]
+    # WCMAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/WCMAC
+    1722: # seeley lake
+      btl: [0, 5500]
+      ntl: [5501, 7000]
+      atl: [7001, 20310]
+    1723: # rattlesnake
+      btl: [0, 5500]
+      ntl: [5501, 7000]
+      atl: [7001, 20310]
+    1724: # bitterroot
+      btl: [0, 5500]
+      ntl: [5501, 7000]
+      atl: [7001, 20310]
   active: true
 
 - abbr: "NH"
@@ -121,11 +341,26 @@
       btl: [0, 3500]
       ntl: [3501, 4500]
       atl: [4501, 20310]
+    # MWAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/MWAC
+    2355: # presidential range
+      btl: [0, 3000]
+      ntl: [3001, 5000]
+      atl: [5001, 20310]
   active: true
 
 - abbr: "NM"
   name: "New Mexico"
   elevations:
+    # TAC: ESTIMATED, NOT PUBLISHED. TAC publishes no numeric bands (widget: Below/Near/
+    # Above Treeline) and its archive has too few band-labelled elevations; from general
+    # treeline mentions: Wheeler Peak treeline "approximately 11,000 to 11,600 ft".
+    # https://www.summitpost.org/wheeler-peak-nm/150429
+    490: # northern new mexico
+      confidence: low
+      btl: [0, 10900]
+      ntl: [10901, 11700]
+      atl: [11701, 20310]
     0: # default
       btl: [0, 10500]
       ntl: [10501, 12000]
@@ -135,7 +370,45 @@
 - abbr: "OR"
   name: "Oregon"
   elevations:
+    # TODO: unsourced; COAA (Newberry) and SOAIX publish no numeric bands and have no
+    # band-labelled elevations in their archives, so these zones fall back to the default below
+    # 2471: {} # newberry TODO: fill in
+    # 1369: {} # southern oregon TODO: fill in
     0: # default
+      btl: [0, 4000]
+      ntl: [4001, 5000]
+      atl: [5001, 20310]
+    # COAA: DERIVED, NOT PUBLISHED. COAA publishes no numeric bands; taken from its 2023-24
+    # to 2025-26 Central Cascades forecasts: "near-treeline elevations (around 7,000-8,000
+    # feet)", "near-treeline and alpine elevations (above 7,800 feet or so)", NTL avalanches
+    # at 7400-7800'.
+    # https://api.avalanche.org/v2/public/products?avalanche_center_id=COAA
+    2470: # central cascades
+      confidence: medium
+      btl: [0, 7000]
+      ntl: [7001, 8000]
+      atl: [8001, 20310]
+    # NWAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/NWAC
+    3032: # mt hood
+      btl: [0, 5500]
+      ntl: [5501, 6500]
+      atl: [6501, 20310]
+    # WAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/WAC
+    2982: # northern wallowas
+      btl: [0, 6500]
+      ntl: [6501, 8000]
+      atl: [8001, 20310]
+    2983: # southern wallowas
+      btl: [0, 6500]
+      ntl: [6501, 8000]
+      atl: [8001, 20310]
+    2984: # elkhorns
+      btl: [0, 6500]
+      ntl: [6501, 8000]
+      atl: [8001, 20310]
+    2985: # blues
       btl: [0, 4000]
       ntl: [4001, 5000]
       atl: [5001, 20310]
@@ -153,6 +426,9 @@
       atl: [9501, 20310]
     # per-zone bands from the labels on UAC's danger rose images
     # (Moab, Abajos and Uintas only label treeline, so they use the default)
+    # 1740: {} # uintas TODO: fill in
+    # 1742: {} # moab TODO: fill in
+    # 1744: {} # abajos TODO: fill in
     1736: # logan
       btl: [0, 7000]
       ntl: [7001, 8500]
@@ -186,61 +462,175 @@
       btl: [0, 4499]
       ntl: [4500, 5499]
       atl: [5500, 20310]
-    1645: # olympics
-      btl: [0, 4499]
-      ntl: [4500, 5499]
-      atl: [5500, 20310]
-    1646: # west-slopes-north
-      btl: [0, 4499]
-      ntl: [4500, 5499]
-      atl: [5500, 20310]
-    1647: # west-slopes-central
-      btl: [0, 4499]
-      ntl: [4500, 5499]
-      atl: [5500, 20310]
-    1648: # west-slopes-south
-      btl: [0, 5499]
-      ntl: [5500, 6499]
-      atl: [6500, 20310]
-    1649: # stevens-pass
-      btl: [0, 4999]
-      ntl: [5000, 5999]
-      atl: [6000, 20310]
-    1653: # snoqualmie-pass
-      btl: [0, 3999]
-      ntl: [4000, 5499]
-      atl: [5500, 20310]
-    1654: # east-slopes-north
-      btl: [0, 4999]
-      ntl: [5000, 6499]
-      atl: [6500, 20310]
-    1655: # east-slopes-central
-      btl: [0, 4999]
-      ntl: [5000, 5999]
-      atl: [6000, 20310]
-    1656: # east-slopes-south
-      btl: [0, 4999]
-      ntl: [5000, 5999]
-      atl: [6000, 20310]
+    # NWAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/NWAC
+    3020: # olympics
+      btl: [0, 4500]
+      ntl: [4501, 5500]
+      atl: [5501, 20310]
+    3021: # west slopes north
+      btl: [0, 4500]
+      ntl: [4501, 5500]
+      atl: [5501, 20310]
+    3022: # west slopes central
+      btl: [0, 4500]
+      ntl: [4501, 5500]
+      atl: [5501, 20310]
+    3023: # west slopes south
+      btl: [0, 5500]
+      ntl: [5501, 6500]
+      atl: [6501, 20310]
+    3024: # stevens pass
+      btl: [0, 5000]
+      ntl: [5001, 6000]
+      atl: [6001, 20310]
+    3028: # snoqualmie pass
+      btl: [0, 4000]
+      ntl: [4001, 5500]
+      atl: [5501, 20310]
+    3029: # east slopes north
+      btl: [0, 5000]
+      ntl: [5001, 6500]
+      atl: [6501, 20310]
+    3030: # east slopes central
+      btl: [0, 5000]
+      ntl: [5001, 6000]
+      atl: [6001, 20310]
+    3031: # east slopes south
+      btl: [0, 5000]
+      ntl: [5001, 6000]
+      atl: [6001, 20310]
   active: true
 
 - abbr: "WY"
   name: "Wyoming"
   elevations:
+    # TODO: unsourced; used by BTAC Togwotee (widget: "Above 9,000' / Below 9,000' / Limited avalanche
+    # terrain", no NTL floor) and EWYAIX zones (no numbers published)
+    # 2852: {} # togwotee pass TODO: fill in
+    # 2841: {} # big horns TODO: fill in
+    # 3045: {} # sierra madre TODO: fill in
+    # 3046: {} # snowy range TODO: fill in
     0:
       btl: [6000, 7500]
       ntl: [7501, 9000]
       atl: [9001, 20310]
-    1331:
-      btl: [0, 7501]
-      ntl: [7501, 8500]
-      atl: [8501, 20310]
-    1329:
-      btl: [6000, 7500]
+    # BTAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
+    # https://api.avalanche.org/v2/public/avalanche-center/BTAC
+    2855: # tetons
+      btl: [0, 7500]
       ntl: [7501, 9000]
       atl: [9001, 20310]
-    1330:
-      btl: [6000, 7500]
+    2856: # salt river and wyoming ranges
+      btl: [0, 7500]
       ntl: [7501, 9000]
-      atl: [9001, 10500]
+      atl: [9001, 20310]
+    2860: # snake river range
+      btl: [0, 7500]
+      ntl: [7501, 9000]
+      atl: [9001, 20310]
   active: true
+
+# Avalanche Canada areas (not avalanche.org zones, so never looked up by a map-layer
+# state); always built, so there is no `active` flag
+- abbr: "CAN"
+  name: "Canada"
+  # Avalanche Canada defines bands by terrain, not elevation, and publishes no numbers.
+  # Areas are regrouped from subregions daily, so bands are keyed by the `mountain_range`
+  # (or `polygon_name`, which wins) in tools/avy/data/canadian_subregions.geojson. An
+  # area uses the bands more than half of its subregions map to, else the default.
+  #
+  # DERIVED, NOT PUBLISHED: rough treeline by range from general knowledge, rounded to
+  # 100 ft. Spot-checked against treeline/alpine elevations in the 2023-24 to 2025-26
+  # forecast archives (https://api.avalanche.ca/forecasts/en/products?date=<ISO datetime>,
+  # every 2 days); only 14 usable mentions, which agree with these bands for the
+  # Central Rockies (treeline 2200-2300 m), South Coast (1740-1800 m), Purcells (1900 m)
+  # and North Rockies (alpine above 2000 m). No data for the Cariboos, Monashees,
+  # Selkirks, South Rockies or East Coast.
+  # TODO: replace with Avalanche Canada's numbers if they share them
+  elevations:
+    # fallback for mixed-range areas (e.g. early-season all-of-BC); Columbia
+    # Mountains values, roughly mid-range between the Coast and Rockies
+    0: # default
+      confidence: low
+      btl: [0, 5600]
+      ntl: [5601, 6900]
+      atl: [6901, 20310]
+    # ~1500 / 1900 m
+    "South Coast":
+      confidence: medium
+      btl: [0, 4900]
+      ntl: [4901, 6200]
+      atl: [6201, 20310]
+    # ~1300 / 1700 m; raised from 1000 / 1400 m after Terrace-area forecasts (2026):
+    # "at treeline around 1600 m", "Below treeline: ... crust up to roughly 1500 m".
+    # Stewart / Haines Pass likely sit lower.
+    "North Coast":
+      confidence: medium
+      btl: [0, 4300]
+      ntl: [4301, 5600]
+      atl: [5601, 20310]
+    # ~1500 / 2000 m
+    "Cariboos":
+      confidence: low
+      btl: [0, 4900]
+      ntl: [4901, 6600]
+      atl: [6601, 20310]
+    # ~1500 / 2000 m
+    "Monashees":
+      confidence: low
+      btl: [0, 4900]
+      ntl: [4901, 6600]
+      atl: [6601, 20310]
+    # ~1700 / 2100 m
+    "Selkirks":
+      confidence: low
+      btl: [0, 5600]
+      ntl: [5601, 6900]
+      atl: [6901, 20310]
+    # ~1700 / 2100 m
+    "Purcells":
+      confidence: medium
+      btl: [0, 5600]
+      ntl: [5601, 6900]
+      atl: [6901, 20310]
+    # ~1500 / 2000 m
+    "North Rockies":
+      confidence: medium
+      btl: [0, 4900]
+      ntl: [4901, 6600]
+      atl: [6601, 20310]
+    # ~2000 / 2300 m
+    "Central Rockies":
+      confidence: medium
+      btl: [0, 6600]
+      ntl: [6601, 7500]
+      atl: [7501, 20310]
+    # ~1900 / 2200 m
+    "South Rockies":
+      confidence: low
+      btl: [0, 6200]
+      ntl: [6201, 7200]
+      atl: [7201, 20310]
+    # ~800 / 1000 m (Chic-Chocs)
+    "East Coast":
+      confidence: low
+      btl: [0, 2600]
+      ntl: [2601, 3300]
+      atl: [3301, 20310]
+    # Newfoundland subregions sit well below the Chic-Chocs: ~400 / 600 m
+    "Corner Brook":
+      confidence: low
+      btl: [0, 1300]
+      ntl: [1301, 2000]
+      atl: [2001, 20310]
+    "Gros Morne":
+      confidence: low
+      btl: [0, 1300]
+      ntl: [1301, 2000]
+      atl: [2001, 20310]
+    "Northern Peninsula":
+      confidence: low
+      btl: [0, 1300]
+      ntl: [1301, 2000]
+      atl: [2001, 20310]

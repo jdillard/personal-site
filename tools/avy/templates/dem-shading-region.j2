@@ -40,37 +40,6 @@ css_includes:
             <p class="measure lh-copy center">
                 The lowest band, <b>BTL</b> (<i>Below Tree Line</i>), typically extends from valley floors or snowline to near treeline.
             </p>
-            <div id="band-sliders">
-                <p class="measure lh-copy center"><b>Adjusting bands</b></p>
-                <p class="measure lh-copy center">
-                    The default elevation bands may not be accurate for the current zone, you can adjust the bands by dragging the sliders.
-                </p>
-                <div class="ranges-display center mw5 mt3">
-                    <div class="range-item range-1 bg-lightest-blue br2 pa2 mb2" id="atl-band"></div>
-                    <div class="slider-container center mw5 mb2">
-                        <input
-                            class="mv2 w-100"
-                            type="range"
-                            id="atlSlider"
-                            min="1"
-                            max="20310"
-                            value="5500"
-                        >
-                    </div>
-                    <div class="range-item range-2 bg-light-blue br2 pa2 mb2" id="ntl-band"></div>
-                    <div class="slider-container center mw5 mb2">
-                        <input
-                            class="mv2 w-100"
-                            type="range"
-                            id="btlSlider"
-                            min="0"
-                            max="20310"
-                            value="1999"
-                        >
-                    </div>
-                    <div class="range-item range-3 bg-blue br2 pa2 mb3" id="btl-band"></div>
-                </div>
-            </div>
             <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
             <p class="measure lh-copy center"><b>Usage</b></p>
             <p class="measure lh-copy center">
@@ -94,7 +63,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         {% for zone in zones %}
-        <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}" data-color="{{ zone.color }}"{% if zone.has_subregions %} data-subregions="true"{% endif %} data-min="{{ zone.elevations['btl'][0] }}"  data-max="{{ zone.elevations['atl'][1] }}" data-btl="{{ zone.elevations['btl'][1] }}" data-atl="{{ zone.elevations['ntl'][1] }}" data-published="{{ zone.published }}">
+        <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}" data-color="{{ zone.color }}"{% if zone.has_subregions %} data-subregions="true"{% endif %} data-published="{{ zone.published }}">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             {% if zone.short_name and zone.short_name != zone.name %}
             <details class="tc f6 black-70 mt0 mb3">
@@ -104,7 +73,7 @@ css_includes:
             {% endif %}
             {% if zone.danger %}
             <div id="{{ zone.slug }}-title" class="mv4 tc">
-                <div><a id="{{ zone.slug }}-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" data-url="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Pre-populated CalTopo Map</a></div>
+                <div><a id="{{ zone.slug }}-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
@@ -140,6 +109,18 @@ css_includes:
             {% else %}
             <div class="pv4 ph2 tc ba b--moon-gray">{{ zone.message }}</div>
             {% endif %}
+            {% endif %}
+
+            {% if (zone.danger or zone.problems) and zone.confidence in ("medium", "low") %}
+            <div class="f6 black-70 bl bw2 {{ 'b--gold bg-washed-yellow' if zone.confidence == 'medium' else 'b--light-red bg-washed-red' }} pa2 br2 mv3 lh-copy" role="note">
+                <b>{{ zone.confidence | title }} confidence elevation bands.</b>
+                {% if zone.confidence == "medium" -%}
+                {{ zone.center_name }} doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
+                {%- else -%}
+                No published elevation bands were found for this zone, so these are a rough estimate.
+                {%- endif %}
+                Adjust them in CalTopo by editing the layer.
+            </div>
             {% endif %}
 
             {% if zone.problems %}

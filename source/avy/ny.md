@@ -25,6 +25,7 @@ css_includes:
     <div class="mv2 ph2 center">
         <div class="fn f6 tc">
             <p class="measure lh-copy center"><a class="no-underline fancy-link relative light-red" href="https://training.caltopo.com/all_users/base-layers/custom2#dem">Digital Elevation Model (DEM)</a> shading lets you create custom shading schemes based on elevation, slope, aspect and tree cover.</p>
+            <p class="measure lh-copy center">These layers are built on relatively low resolution elevation data, so small terrain features and exact slope angles won't always show up. For higher definition terrain analysis (lidar-based), check out <a class="no-underline fancy-link relative light-red" href="https://www.aspectavy.com/">AspectAvy</a> (not affiliated).</p>
             <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
             <p class="measure lh-copy center"><strong>Avalanche Report</strong></p>
             <p class="measure lh-copy center">
@@ -39,37 +40,6 @@ css_includes:
             <p class="measure lh-copy center">
                 The lowest band, <b>BTL</b> (<i>Below Tree Line</i>), typically extends from valley floors or snowline to near treeline.
             </p>
-            <div id="band-sliders">
-                <p class="measure lh-copy center"><b>Adjusting bands</b></p>
-                <p class="measure lh-copy center">
-                    The default elevation bands may not be accurate for the current zone, you can adjust the bands by dragging the sliders.
-                </p>
-                <div class="ranges-display center mw5 mt3">
-                    <div class="range-item range-1 bg-lightest-blue br2 pa2 mb2" id="atl-band"></div>
-                    <div class="slider-container center mw5 mb2">
-                        <input
-                            class="mv2 w-100"
-                            type="range"
-                            id="atlSlider"
-                            min="1"
-                            max="20310"
-                            value="5500"
-                        >
-                    </div>
-                    <div class="range-item range-2 bg-light-blue br2 pa2 mb2" id="ntl-band"></div>
-                    <div class="slider-container center mw5 mb2">
-                        <input
-                            class="mv2 w-100"
-                            type="range"
-                            id="btlSlider"
-                            min="0"
-                            max="20310"
-                            value="1999"
-                        >
-                    </div>
-                    <div class="range-item range-3 bg-blue br2 pa2 mb3" id="btl-band"></div>
-                </div>
-            </div>
             <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
             <p class="measure lh-copy center"><b>Usage</b></p>
             <p class="measure lh-copy center">
@@ -93,18 +63,24 @@ css_includes:
 <div class="flex flex-column flex-row-ns">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="NYSAC-3017-report" class="avy-zone" data-id="NYSAC-3017" data-color="#939598" data-min="0"  data-max="20310" data-btl="2500" data-atl="4000" data-published="False">
+        <div id="NYSAC-3017-report" class="avy-zone" data-id="NYSAC-3017" data-color="#939598" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
+            
             
             
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://dec.ny.gov/things-to-do/hiking/adirondack-backcountry/backcountry-information-for-adirondack-park">NYSAC</a> for more information.</div>
             
+            
 
+            
+
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="None">Department of Environmental Conservation Avalanche Forecast</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://dec.ny.gov/things-to-do/hiking/adirondack-backcountry/backcountry-information-for-adirondack-park">full forecast</a> before heading out.
             </p>
+            
         </div>
         
     </div>

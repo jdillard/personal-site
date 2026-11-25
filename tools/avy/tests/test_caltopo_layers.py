@@ -9,6 +9,8 @@ from caltopo_layers import (
     split_area_name,
     subregions_geojson,
     short_area_name,
+    canada_area_elevations,
+    band_confidence,
 )
 
 
@@ -294,3 +296,46 @@ class TestSubregionsGeojson:
 
     def test_no_known_shapes_returns_none(self):
         assert subregions_geojson(["X", "Y"], {}) is None
+
+
+class TestCanadaAreaElevations:
+    """Tests for canada_area_elevations()"""
+
+    ELEVATIONS = {0: "default", "Selkirks": "selkirks", "South Coast": "coast", "Glacier": "glacier"}
+    RANGES = {"Glacier": "Selkirks", "Central Selkirk": "Selkirks", "Duffey": "South Coast",
+              "Garibaldi": "South Coast", "Tumbler": "North Rockies"}
+
+    def test_uses_majority_range(self):
+        result = canada_area_elevations(["Duffey", "Garibaldi", "Central Selkirk"], self.RANGES, self.ELEVATIONS)
+        assert result == "coast"
+
+    def test_subregion_entry_wins_over_its_range(self):
+        assert canada_area_elevations(["Glacier"], self.RANGES, self.ELEVATIONS) == "glacier"
+
+    def test_equal_band_sets_count_together(self):
+        elevations = {0: "default", "A": {"btl": [0, 1]}, "B": {"btl": [0, 1]}, "Selkirks": {"btl": [0, 5]}}
+        result = canada_area_elevations(["A", "B", "Central Selkirk"], self.RANGES, elevations)
+        assert result == {"btl": [0, 1]}
+
+    def test_no_majority_falls_back_to_default(self):
+        result = canada_area_elevations(["Central Selkirk", "Duffey"], self.RANGES, self.ELEVATIONS)
+        assert result == "default"
+        result = canada_area_elevations(["Duffey", "Garibaldi", "Central Selkirk", "Tumbler"], self.RANGES, self.ELEVATIONS)
+        assert result == "default"
+
+    def test_unmapped_range_and_unknown_names_fall_back_to_default(self):
+        assert canada_area_elevations(["Tumbler", "Nowhere"], self.RANGES, self.ELEVATIONS) == "default"
+        assert canada_area_elevations([], self.RANGES, self.ELEVATIONS) == "default"
+
+
+class TestBandConfidence:
+    BANDS = {"btl": [0, 1], "ntl": [2, 3], "atl": [4, 5]}
+
+    def test_published_bands_are_high(self):
+        assert band_confidence(self.BANDS) == "high"
+
+    def test_entry_confidence(self):
+        assert band_confidence({**self.BANDS, "confidence": "medium"}) == "medium"
+
+    def test_state_default_fallback_is_low(self):
+        assert band_confidence(self.BANDS, fallback=True) == "low"
