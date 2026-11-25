@@ -10,7 +10,7 @@
                 "alias": "{{ danger_layer }}",
                 "class": "ConfiguredLayer"
             }
-        }{% endif %}{% if problem_layers %},{% endif %}{% for problem in problem_layers %}
+        }{% if problem_layers %},{% endif %}{% endif %}{% for problem in problem_layers %}
         {
             "type": "Feature",
             "id": "{{ problem.uuid }}",
