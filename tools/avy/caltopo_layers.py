@@ -470,9 +470,8 @@ def utah_danger(rose, elevations):
             "colors": layer_colors,
         })
 
-    danger_layer = layer_param(rule for x in danger_rules for rule in x["layer"])
     zone_color = f"utah{max(max(chunk) for chunk in split_elv_bands(rose))}"
-    return danger_rules, danger_layer, zone_color
+    return danger_rules, zone_color
 
 
 def utah_problems(data, elevations, tomorrow):
@@ -731,7 +730,7 @@ def main():
                 grm = None
                 if state["state"] == "UT":
                     if data and data["overall_danger_rating"] != "None" and elevations:
-                        danger_rules, _, zone_color = utah_danger(data["overall_danger_rose"], elevations)
+                        danger_rules, zone_color = utah_danger(data["overall_danger_rose"], elevations)
                         band_levels = utah_band_levels(data["overall_danger_rose"])
                         danger_layer_rules = blurred_danger_rules(band_levels, elevations)
                         danger_layer = layer_param(danger_layer_rules)
