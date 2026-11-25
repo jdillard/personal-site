@@ -66,3 +66,10 @@ def test_canada_keys_exist_in_subregions(state_info):
     canada = next(state for state in state_info if state["abbr"] == "CAN")
     unknown = [key for key in canada["elevations"] if key != 0 and key not in known]
     assert not unknown, f"Canada band keys not in canadian_subregions.geojson: {unknown}"
+
+
+def test_confidence_values(state_info):
+    for state in state_info:
+        for zone_id, bands in state["elevations"].items():
+            confidence = bands.get("confidence", "high")
+            assert confidence in ("high", "medium", "low"), f"{state['abbr']} {zone_id}: unknown confidence {confidence!r}"

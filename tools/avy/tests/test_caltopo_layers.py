@@ -10,6 +10,7 @@ from caltopo_layers import (
     subregions_geojson,
     short_area_name,
     canada_area_elevations,
+    band_confidence,
 )
 
 
@@ -325,3 +326,16 @@ class TestCanadaAreaElevations:
     def test_unmapped_range_and_unknown_names_fall_back_to_default(self):
         assert canada_area_elevations(["Tumbler", "Nowhere"], self.RANGES, self.ELEVATIONS) == "default"
         assert canada_area_elevations([], self.RANGES, self.ELEVATIONS) == "default"
+
+
+class TestBandConfidence:
+    BANDS = {"btl": [0, 1], "ntl": [2, 3], "atl": [4, 5]}
+
+    def test_published_bands_are_high(self):
+        assert band_confidence(self.BANDS) == "high"
+
+    def test_entry_confidence(self):
+        assert band_confidence({**self.BANDS, "confidence": "medium"}) == "medium"
+
+    def test_state_default_fallback_is_low(self):
+        assert band_confidence(self.BANDS, fallback=True) == "low"

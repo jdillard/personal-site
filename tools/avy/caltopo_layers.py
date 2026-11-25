@@ -250,6 +250,13 @@ def caltopo_layers(layers_template, tomorrow, danger_layer, problems):
     return f"cl={layer_info}"
 
 
+def band_confidence(elevations, fallback=False):
+    """Confidence of a bands entry; fallback means a zone using its state's default."""
+    if fallback:
+        return "low"
+    return elevations.get("confidence", "high")
+
+
 def center_message(prefix, zone):
     return f'{prefix} See <a class="no-underline fancy-link relative light-red" href="{zone["url"]}">{zone["center_id"]}</a> for more information.'
 
@@ -429,6 +436,7 @@ def main():
 
         subregions = split_area_name(product["product"].get("title") or "")
         area["elevations"] = canada_area_elevations(subregions, subregion_ranges, canada_elevations)
+        area["confidence"] = band_confidence(area["elevations"])
 
         # avy danger
         danger_rules = []
@@ -527,8 +535,10 @@ def main():
                                 data = {}
                                 published = False
                 # use zone elevation profile if exists, else use the state level elevation profile
+                fallback = zone["zone_id"] not in state["elevations"]
                 elevations = state["elevations"].get(zone["zone_id"], state["elevations"].get(0))
                 zone["elevations"] = elevations
+                zone["confidence"] = band_confidence(elevations, fallback)
 
                 # avy danger
                 danger_rules = []
