@@ -311,6 +311,12 @@ svg .precip-axis > g > line {
     .w-45-ns {
         width: 45%;
     }
+    /* center the avy no-access note against the 300px zone map */
+    .avy-note-wrap {
+        display: flex;
+        align-items: center;
+        min-height: 300px;
+    }
 }
 
 .hero__no-cover {

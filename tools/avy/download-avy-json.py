@@ -1,6 +1,7 @@
 import json
 import os
 import time
+import yaml
 from slugify import slugify
 from utils import fetch_json_with_retry, write_zone_geojson
 
@@ -12,6 +13,10 @@ def prep_dir(dir):
     # delete all files in order to start fresh
     for f in os.listdir(dir):
         os.remove(os.path.join(dir, f))
+
+# states whose forecast data we don't have access to (zone shapes are still built)
+with open("tools/avy/state_info.yaml") as fp:
+    no_report_states = {s["abbr"] for s in yaml.safe_load(fp) if not s.get("report_access", True)}
 
 source_dir = "tools/avy/avalanche-reports-raw"
 output_dir = "source/assets/json/avalanche-zones"
@@ -76,6 +81,8 @@ with open(f"{source_dir}/map-layer.json") as fp:
 
 # loop through each US zone and download it's report if it exists
 for item in map_layer["features"]:
+    if item['properties']['state'] in no_report_states:
+        continue
     time.sleep(1)
     center_id = item['properties']['center_id']
     zone_id = item['id']
