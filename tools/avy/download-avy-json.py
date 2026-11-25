@@ -18,6 +18,9 @@ def prep_dir(dir):
 with open("tools/avy/state_info.yaml") as fp:
     no_report_states = {s["abbr"] for s in yaml.safe_load(fp) if not s.get("report_access", True)}
 
+# https://github.com/avalanche-canada/forecast-polygons
+CA_SUBREGIONS_COMMIT = "cd06df93b6b52888b908af1829ed415d469d761c"
+
 source_dir = "tools/avy/avalanche-reports-raw"
 output_dir = "source/assets/json/avalanche-zones"
 prep_dir(source_dir)
@@ -43,6 +46,13 @@ jsonResponse = fetch_json_with_retry(
     'https://api.avalanche.ca/forecasts/en/metadata',
     output_path=f'{source_dir}/ca-metadata.json',
     raise_on_error=True,
+)
+
+# grab CA subregion shapes (the building blocks forecasters group into daily areas)
+# pinned to a commit so upstream changes don't silently alter the map
+fetch_json_with_retry(
+    f'https://raw.githubusercontent.com/avalanche-canada/forecast-polygons/{CA_SUBREGIONS_COMMIT}/canadian_subregions.geojson',
+    output_path=f'{source_dir}/ca-subregions.json',
 )
 
 with open(f"{source_dir}/ca-areas.json") as fp:
