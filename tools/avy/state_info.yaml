@@ -474,11 +474,12 @@
   # area uses the bands more than half of its subregions map to, else the default.
   #
   # DERIVED, NOT PUBLISHED: rough treeline by range from general knowledge, rounded to
-  # 100 ft. Spot-checked against elevations in the 2025-26 forecast archive
-  # (https://api.avalanche.ca/forecasts/en/products?date=<ISO datetime>), which only
-  # covered a few ranges: Central Rockies treeline ~2150 m (n=22), North Rockies alpine
-  # ~2000 m (n=5), Cariboos treeline ~1400 m (n=5). No data for the Coast, Selkirks,
-  # Purcells, South Rockies or East Coast.
+  # 100 ft. Spot-checked against treeline/alpine elevations in the 2023-24 to 2025-26
+  # forecast archives (https://api.avalanche.ca/forecasts/en/products?date=<ISO datetime>,
+  # every 2 days); only 14 usable mentions, which agree with these bands for the
+  # Central Rockies (treeline 2200-2300 m), South Coast (1740-1800 m), Purcells (1900 m)
+  # and North Rockies (alpine above 2000 m). No data for the Cariboos, Monashees,
+  # Selkirks, South Rockies or East Coast.
   # TODO: replace with Avalanche Canada's numbers if they share them
   elevations:
     # fallback for mixed-range areas (e.g. early-season all-of-BC); Columbia
@@ -492,11 +493,13 @@
       btl: [0, 4900]
       ntl: [4901, 6200]
       atl: [6201, 20310]
-    # ~1000 / 1400 m
+    # ~1300 / 1700 m; raised from 1000 / 1400 m after Terrace-area forecasts (2026):
+    # "at treeline around 1600 m", "Below treeline: ... crust up to roughly 1500 m".
+    # Stewart / Haines Pass likely sit lower.
     "North Coast":
-      btl: [0, 3300]
-      ntl: [3301, 4600]
-      atl: [4601, 20310]
+      btl: [0, 4300]
+      ntl: [4301, 5600]
+      atl: [5601, 20310]
     # ~1500 / 2000 m
     "Cariboos":
       btl: [0, 4900]
