@@ -25,6 +25,7 @@ css_includes:
     <div class="mv2 ph2 center">
         <div class="fn f6 tc">
             <p class="measure lh-copy center"><a class="no-underline fancy-link relative light-red" href="https://training.caltopo.com/all_users/base-layers/custom2#dem">Digital Elevation Model (DEM)</a> shading lets you create custom shading schemes based on elevation, slope, aspect and tree cover.</p>
+            <p class="measure lh-copy center">These layers are built on relatively low resolution elevation data, so small terrain features and exact slope angles won't always show up. For higher definition terrain analysis (lidar-based), check out <a class="no-underline fancy-link relative light-red" href="https://www.aspectavy.com/">AspectAvy</a> (not affiliated).</p>
             <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
             <p class="measure lh-copy center"><strong>Avalanche Report</strong></p>
             <p class="measure lh-copy center">
@@ -129,238 +130,306 @@ css_includes:
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/flathead-range-&-glacier-np">FAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/flathead-range-&-glacier-np">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="FAC-3040-report" class="avy-zone dn" data-id="FAC-3040" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Tuesday, November 24, 2026 3:23PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/northern-whitefish-range">FAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/northern-whitefish-range">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="FAC-3041-report" class="avy-zone dn" data-id="FAC-3041" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Tuesday, November 24, 2026 3:23PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/southern-whitefish-range">FAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/southern-whitefish-range">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="FAC-3042-report" class="avy-zone dn" data-id="FAC-3042" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Tuesday, November 24, 2026 3:23PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/swan-range">FAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/swan-range">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="GNFAC-2819-report" class="avy-zone dn" data-id="GNFAC-2819" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 23, 2026 7:11AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/bridger-range/">GNFAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/bridger-range/">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="GNFAC-2827-report" class="avy-zone dn" data-id="GNFAC-2827" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 23, 2026 7:11AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/cooke-city/">GNFAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/cooke-city/">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="GNFAC-2826-report" class="avy-zone dn" data-id="GNFAC-2826" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 23, 2026 7:11AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/island-park/">GNFAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/island-park/">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="GNFAC-2825-report" class="avy-zone dn" data-id="GNFAC-2825" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 23, 2026 7:11AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/lionhead-area/">GNFAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/lionhead-area/">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="GNFAC-2821-report" class="avy-zone dn" data-id="GNFAC-2821" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 23, 2026 7:11AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-gallatin-range/">GNFAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-gallatin-range/">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="GNFAC-2822-report" class="avy-zone dn" data-id="GNFAC-2822" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 23, 2026 7:11AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-madison-range/">GNFAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-madison-range/">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="GNFAC-2824-report" class="avy-zone dn" data-id="GNFAC-2824" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 23, 2026 7:11AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-gallatin-range/">GNFAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-gallatin-range/">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="GNFAC-2823-report" class="avy-zone dn" data-id="GNFAC-2823" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Monday, November 23, 2026 7:11AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-madison-range/">GNFAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-madison-range/">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="IPAC-1901-report" class="avy-zone dn" data-id="IPAC-1901" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 20, 2026 11:15AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/">IPAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="IPAC-3019-report" class="avy-zone dn" data-id="IPAC-3019" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Friday, November 20, 2026 11:15AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/">IPAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="WCMAC-1724-report" class="avy-zone dn" data-id="WCMAC-1724" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/Bitterroot">WCMAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/">West Central Montana Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/Bitterroot">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="WCMAC-1723-report" class="avy-zone dn" data-id="WCMAC-1723" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/rattlesnake">WCMAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/">West Central Montana Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/rattlesnake">full forecast</a> before heading out.
             </p>
+            
         </div>
         
         <div id="WCMAC-1722-report" class="avy-zone dn" data-id="WCMAC-1722" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.missoulaavalanche.org/forecasts/#/seeley-lake">WCMAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/">West Central Montana Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="http://www.missoulaavalanche.org/forecasts/#/seeley-lake">full forecast</a> before heading out.
             </p>
+            
         </div>
         
     </div>

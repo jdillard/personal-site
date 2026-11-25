@@ -25,6 +25,7 @@ css_includes:
     <div class="mv2 ph2 center">
         <div class="fn f6 tc">
             <p class="measure lh-copy center"><a class="no-underline fancy-link relative light-red" href="https://training.caltopo.com/all_users/base-layers/custom2#dem">Digital Elevation Model (DEM)</a> shading lets you create custom shading schemes based on elevation, slope, aspect and tree cover.</p>
+            <p class="measure lh-copy center">These layers are built on relatively low resolution elevation data, so small terrain features and exact slope angles won't always show up. For higher definition terrain analysis (lidar-based), check out <a class="no-underline fancy-link relative light-red" href="https://www.aspectavy.com/">AspectAvy</a> (not affiliated).</p>
             <hr class="mw5 p0 mv2 o-60 b0 bt b--light-red light-red bg-light-red">
             <p class="measure lh-copy center"><strong>Avalanche Report</strong></p>
             <p class="measure lh-copy center">
@@ -97,14 +98,18 @@ css_includes:
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://mountwashingtonavalanchecenter.org/forecasts/#/presidential-range ">MWAC</a> for more information.</div>
             
+            
 
+            
             
             
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mountwashingtonavalanchecenter.org/">Mount Washington Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://mountwashingtonavalanchecenter.org/forecasts/#/presidential-range ">full forecast</a> before heading out.
             </p>
+            
         </div>
         
     </div>
