@@ -121,8 +121,8 @@ class TestBlurredDangerRules:
 
 class TestUtahForecast:
     # UAC roses list the upper band first, N clockwise. Upper: considerable
-    # (utah5) on N and NE, moderate (utah3) elsewhere; middle moderate; lower low.
-    ROSE = ",".join(["5", "5"] + ["3"] * 6 + ["3"] * 8 + ["1"] * 8)
+    # (utah6) on N and NE, moderate (utah4) elsewhere; middle moderate; lower low.
+    ROSE = ",".join(["6", "6"] + ["4"] * 6 + ["4"] * 8 + ["2"] * 8)
 
     def test_band_levels_from_rose(self):
         levels = utah_band_levels(self.ROSE)
@@ -137,7 +137,7 @@ class TestUtahForecast:
             "Moderate danger",
             "Moderate to Considerable danger",
         ]
-        assert zone_color == "utah5"
+        assert zone_color == "utah6"
 
     def test_danger_layer_blurs_rose(self):
         rules = blurred_danger_rules(utah_band_levels(self.ROSE), ELEVATIONS)
