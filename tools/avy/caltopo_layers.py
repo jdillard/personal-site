@@ -2,7 +2,7 @@ from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 import json
 import re
-from shapely.geometry import MultiPolygon, Polygon
+from shapely.geometry import MultiPolygon, Polygon, mapping, shape
 from slugify import slugify
 import os
 import urllib.parse
@@ -88,7 +88,13 @@ def uac_rose_by_band(danger_rose):
 
 
 # subregion names that contain a bare hyphen and must not be split
-HYPHENATED_SUBREGIONS = ("Chic-Chocs",)
+HYPHENATED_SUBREGIONS = (
+    "Badshot-Battle",
+    "Chic-Chocs",
+    "Cirrus-Wilson",
+    "Harrison-Fraser",
+    "Microwave-Sinclair",
+)
 
 
 def split_area_name(name):
@@ -103,6 +109,42 @@ def split_area_name(name):
         name = name.replace(subregion, subregion.replace("-", placeholder))
     parts = re.split(r"(?<! )-(?! )", name)
     return [part.replace(placeholder, "-").strip() for part in parts if part.strip()]
+
+
+def _round_coords(coords, digits=4):
+    if isinstance(coords[0], (int, float)):
+        return [round(c, digits) for c in coords]
+    return [_round_coords(c, digits) for c in coords]
+
+
+def _simplify(geometry, tolerance=0.0005):
+    """Simplify a GeoJSON geometry (~50m tolerance) to keep the overlay files small."""
+    return mapping(shape(geometry).simplify(tolerance, preserve_topology=True))
+
+
+def subregions_geojson(subregions, shapes):
+    """FeatureCollection of the named subregions' shapes for the map overlay.
+
+    shapes maps subregion name to GeoJSON geometry. Returns None for areas
+    with fewer than two subregions, since there is nothing to subdivide.
+    Names without a known shape are skipped.
+    """
+    if len(subregions) < 2:
+        return None
+    features = []
+    for name in subregions:
+        geometry = shapes.get(name)
+        if not geometry:
+            print(f"No subregion shape for {name!r}")
+            continue
+        features.append({
+            "type": "Feature",
+            "geometry": {"type": geometry["type"], "coordinates": _round_coords(_simplify(geometry)["coordinates"])},
+            "properties": {"name": name},
+        })
+    if not features:
+        return None
+    return {"type": "FeatureCollection", "features": features}
 
 
 def short_area_name(subregions, max_shown=3):
@@ -321,6 +363,14 @@ def main():
     with open("tools/avy/avalanche-reports-raw/ca-metadata.json") as fp:
         ca_metadata = json.load(fp)
 
+    # subregion shapes by name, vendored from avalanche-canada/forecast-polygons
+    # at the commit in canadian_subregions.commit (the build workflow warns when upstream moves)
+    with open("tools/avy/data/canadian_subregions.geojson") as fp:
+        subregion_shapes = {
+            feature["properties"]["polygon_name"]: feature["geometry"]
+            for feature in json.load(fp)["features"]
+        }
+
     areas = []
     for product in ca_metadata:
         published = False
@@ -389,6 +439,11 @@ def main():
         subregions = split_area_name(product["product"].get("title") or "")
         area["name"] = ", ".join(subregions) or "Canada zone"
         area["short_name"] = short_area_name(subregions) or "Canada zone"
+        subregion_layer = subregions_geojson(subregions, subregion_shapes)
+        area["has_subregions"] = bool(subregion_layer)
+        if subregion_layer:
+            with open(f"source/assets/json/avalanche-zones/{area_slug_id}-subregions.geojson", "w") as out:
+                json.dump(subregion_layer, out, separators=(",", ":"))
         area["slug"] = area_slug_id
         area["center_id"] = "Avalanche Canada"
         area["center_name"] = "Avalanche Canada"

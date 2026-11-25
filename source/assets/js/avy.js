@@ -277,31 +277,84 @@ function layerStyle(fillColor) {
   return { color: "#777777", fillColor: fillColor, weight: 1, fillOpacity: 0.4 };
 }
 
+// subregion outlines (Canada areas grouped from several subregions), filename as key
+// hidden until the area is hovered, then the hovered subregion is outlined and named
+const subLayers = {};
+const SUB_REST = { color: "#555555", weight: 1, opacity: 0, fill: true, fillOpacity: 0, dashArray: "4 3" };
+const SUB_AREA_HOVER = { opacity: 0.7, weight: 1, dashArray: "4 3" };
+const SUB_HOVER = { opacity: 1, weight: 2, dashArray: null };
+
+// raise a zone and its subregion outlines above other zones
+function raiseLayer(filePath) {
+  if (layers[filePath]) layers[filePath].bringToFront();
+  if (subLayers[filePath]) subLayers[filePath].bringToFront();
+}
+
+function fetchGeoJSON(path) {
+  return fetch(`/assets/json/avalanche-zones/${path}.geojson`).then(response => {
+    if (!response.ok) throw new Error(`HTTP ${response.status} for ${path}`);
+    return response.json();
+  });
+}
+
+// load the subregion outlines for an area and keep them on the map whenever the area is
+function loadSubregions(zone, layer, onClick) {
+  const filePath = zone.value;
+  fetchGeoJSON(`${filePath}-subregions`)
+    .then(data => {
+      const subLayer = L.geoJSON(data, {
+        style: () => SUB_REST,
+        onEachFeature: function(feature, featureLayer) {
+          featureLayer.bindTooltip(feature.properties.name, { sticky: true, direction: "top", offset: [0, -8] });
+          featureLayer.on('click', onClick);
+
+          featureLayer.on('mouseover', function(e) {
+            layer.setStyle({ fillColor: zone.color || GRAY });
+            subLayer.setStyle(SUB_AREA_HOVER);
+            e.target.setStyle(SUB_HOVER);
+          });
+
+          featureLayer.on('mouseout', function() {
+            layer.setStyle(layerStyle(baseColors[filePath] || GRAY));
+            subLayer.setStyle(SUB_REST);
+          });
+        }
+      });
+      subLayers[filePath] = subLayer;
+      layer.on('add', () => { subLayer.addTo(map); subLayer.bringToFront(); });
+      layer.on('remove', () => map.removeLayer(subLayer));
+      if (map.hasLayer(layer)) layer.fire('add');
+    })
+    .catch(error => console.error("Error loading subregions:", error));
+}
+
 // load a GeoJSON file once and build its layer (not added to the map)
-// zone: {value, color, region}; type: "zone" (region page) or "region" (index page)
+// zone: {value, name, color, region, subregions}; type: "zone" (region page) or "region" (index page)
 function loadLayer(zone, type) {
   const filePath = zone.value;
   if (!layerLoads[filePath]) {
-    layerLoads[filePath] = fetch(`/assets/json/avalanche-zones/${filePath}.geojson`)
-      .then(response => {
-        if (!response.ok) throw new Error(`HTTP ${response.status} for ${filePath}`);
-        return response.json();
-      })
+    const onClick = function() {
+      if(type == "zone") {
+        showZone(filePath);
+      } else {
+        window.location.assign(`${zone.region}.html#zone-${filePath}`);
+      }
+    };
+
+    layerLoads[filePath] = fetchGeoJSON(filePath)
       .then(data => {
         const layer = L.geoJSON(data, {
           style: () => layerStyle(baseColors[filePath] || GRAY),
           onEachFeature: function(feature, featureLayer) {
-            featureLayer.on('click', function() {
-              if(type == "zone") {
-                showZone(filePath);
-              } else {
-                window.location.assign(`${zone.region}.html#zone-${filePath}`);
-              }
-            });
+            featureLayer.on('click', onClick);
+            // areas split into subregions get their names from the subregion outlines
+            if (zone.name && !zone.subregions) {
+              featureLayer.bindTooltip(zone.name, { sticky: true, direction: "top", offset: [0, -8] });
+            }
 
             featureLayer.on('mouseover', function(e) {
               e.target.setStyle({ fillColor: zone.color || GRAY });
-              e.target.bringToFront();
+              raiseLayer(filePath);
             });
 
             featureLayer.on('mouseout', function(e) {
@@ -310,6 +363,7 @@ function loadLayer(zone, type) {
           }
         });
         layers[filePath] = layer;
+        if (zone.subregions) loadSubregions(zone, layer, onClick);
         return layer;
       })
       .catch(error => {
@@ -339,7 +393,7 @@ function highlightLayer(filePath) {
   // if the layer is still loading, loadZoneLayers zooms to it once it arrives
   if (layers[filePath]) {
     layers[filePath].setStyle({ fillColor: baseColors[filePath] });
-    layers[filePath].bringToFront();
+    raiseLayer(filePath);
     map.fitBounds(layers[filePath].getBounds());
   }
 }
@@ -347,16 +401,21 @@ function highlightLayer(filePath) {
 // region page: load every zone in the dropdown, zooming to the selected one
 function loadZoneLayers() {
   const zones = Array.from(zoneSel.options)
-    .map(option => document.getElementById(`${option.value}-report`))
-    .filter(Boolean)
-    .map(report => ({ value: report.dataset.id, color: report.getAttribute("data-color") }));
+    .map(option => ({ option, report: document.getElementById(`${option.value}-report`) }))
+    .filter(({ report }) => report)
+    .map(({ option, report }) => ({
+      value: report.dataset.id,
+      name: option.textContent.trim(),
+      color: report.getAttribute("data-color"),
+      subregions: report.hasAttribute("data-subregions")
+    }));
 
   Promise.all(zones.map(zone =>
     loadLayer(zone, "zone").then(layer => {
       if (!layer) return;
       layer.addTo(map);
       if (zone.value === currentLayer) {
-        layer.bringToFront();
+        raiseLayer(zone.value);
         map.fitBounds(layer.getBounds());
       }
     })
@@ -372,7 +431,9 @@ function regionZones(region) {
   return Array.from(lists).flatMap(ul =>
     Array.from(ul.querySelectorAll('li')).map(li => ({
       value: li.getAttribute('data-zone'),
+      name: (li.querySelector('a') || li).textContent.trim(),
       color: li.getAttribute('data-color'),
+      subregions: li.hasAttribute('data-subregions'),
       region: ul.id.replace(/-zones$/, '')
     }))
   );

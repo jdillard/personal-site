@@ -7,6 +7,7 @@ from caltopo_layers import (
     find_object_by_key_value,
     sort_directions,
     split_area_name,
+    subregions_geojson,
     short_area_name,
 )
 
@@ -251,6 +252,12 @@ class TestSplitAreaName:
     def test_keeps_known_hyphenated_name(self):
         assert split_area_name("Chic-Chocs") == ["Chic-Chocs"]
 
+    def test_keeps_hyphenated_name_within_combined_area(self):
+        assert split_area_name("Brazeau-Churchill-Cirrus-Wilson-Fryatt") == [
+            "Brazeau", "Churchill", "Cirrus-Wilson", "Fryatt"
+        ]
+        assert split_area_name("Badshot-Battle-Central Selkirk") == ["Badshot-Battle", "Central Selkirk"]
+
     def test_empty(self):
         assert split_area_name("") == []
 
@@ -266,3 +273,24 @@ class TestShortAreaName:
 
     def test_empty(self):
         assert short_area_name([]) == ""
+
+
+class TestSubregionsGeojson:
+    """Tests for subregions_geojson()"""
+
+    SQUARE = {"type": "Polygon", "coordinates": [[[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]]}
+
+    def test_single_subregion_returns_none(self):
+        assert subregions_geojson(["A"], {"A": self.SQUARE}) is None
+
+    def test_builds_named_features(self):
+        result = subregions_geojson(["A", "B"], {"A": self.SQUARE, "B": self.SQUARE})
+        assert [f["properties"]["name"] for f in result["features"]] == ["A", "B"]
+        assert result["features"][0]["geometry"]["type"] == "Polygon"
+
+    def test_skips_unknown_names(self):
+        result = subregions_geojson(["A", "Missing"], {"A": self.SQUARE})
+        assert [f["properties"]["name"] for f in result["features"]] == ["A"]
+
+    def test_no_known_shapes_returns_none(self):
+        assert subregions_geojson(["X", "Y"], {}) is None
