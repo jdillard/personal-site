@@ -1,8 +1,8 @@
 from caltopo_layers import (
-    grm_aspect_runs,
-    grm_elevation_segments,
+    aspect_runs,
+    elevation_segments,
     grm_layer,
-    grm_sector_levels,
+    sector_levels,
     uniform_band_levels,
     utah_band_levels,
 )
@@ -11,9 +11,9 @@ from caltopo_layers import (
 ELEVATIONS = {"btl": (0, 7500), "ntl": (7501, 9000), "atl": (9001, 20310)}
 
 
-class TestGrmElevationSegments:
+class TestElevationSegments:
     def test_blurs_band_edges(self):
-        segments = grm_elevation_segments(ELEVATIONS, blur=500)
+        segments = elevation_segments(ELEVATIONS, blur=500)
         assert segments == [
             (0, 6999, ("btl",)),
             (7000, 8000, ("btl", "ntl")),
@@ -24,28 +24,28 @@ class TestGrmElevationSegments:
 
     def test_narrow_ntl_has_no_core_segment(self):
         elevations = {"btl": (0, 7500), "ntl": (7501, 7800), "atl": (7801, 20310)}
-        segments = grm_elevation_segments(elevations, blur=500)
+        segments = elevation_segments(elevations, blur=500)
         assert [s[2] for s in segments] == [("btl",), ("btl", "ntl"), ("ntl", "atl"), ("atl",)]
         # contiguous, no gaps or overlaps
         for prev, cur in zip(segments, segments[1:]):
             assert cur[0] == prev[1] + 1
 
 
-class TestGrmSectorLevels:
+class TestSectorLevels:
     def test_takes_worse_neighbor(self):
         # only south (octant 4) is 3
-        levels = grm_sector_levels([2, 2, 2, 2, 3, 2, 2, 2])
+        levels = sector_levels([2, 2, 2, 2, 3, 2, 2, 2])
         # sectors 7 (SE upper half), 8, 9 (south), 10 (SW lower half) are 3
         assert [k for k, lvl in enumerate(levels) if lvl == 3] == [7, 8, 9, 10]
 
 
-class TestGrmAspectRuns:
+class TestAspectRuns:
     def test_uniform_is_all_aspects(self):
-        assert grm_aspect_runs([2] * 16) == [(0, 0, 2)]
+        assert aspect_runs([2] * 16) == [(0, 0, 2)]
 
     def test_merges_runs(self):
-        levels = grm_sector_levels([2, 2, 2, 2, 3, 2, 2, 2])
-        runs = grm_aspect_runs(levels)
+        levels = sector_levels([2, 2, 2, 2, 3, 2, 2, 2])
+        runs = aspect_runs(levels)
         assert (135, 225, 3) in runs
         assert (225, 135, 2) in runs
         assert len(runs) == 2

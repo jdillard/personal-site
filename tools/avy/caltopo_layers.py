@@ -227,8 +227,8 @@ def problem_rule(elevations, band, aspects, i):
     }
 
 
-def grm_elevation_segments(elevations, blur=None):
-    """Split the bands into core and transition segments for the GRM layer.
+def elevation_segments(elevations, blur=None):
+    """Split the bands into core and transition segments for the blurred layers.
 
     Band edges are blurred by `blur` feet on each side, and each transition
     segment covers both bands it straddles. Returns (low, high, bands) tuples,
@@ -255,7 +255,7 @@ def grm_elevation_segments(elevations, blur=None):
     return [s for s in segments if s[0] <= s[1]]
 
 
-def grm_sector_levels(octant_levels):
+def sector_levels(octant_levels):
     """Level for each of 16 22.5 degree sectors (sector 0 starts at 337.5).
 
     Each sector is half an octant and takes the worse of its octant and the
@@ -272,7 +272,7 @@ def grm_sector_levels(octant_levels):
     return levels
 
 
-def grm_aspect_runs(sector_levels):
+def aspect_runs(sector_levels):
     """Merge adjacent sectors with the same level into (start, end, level) aspect ranges."""
     if len(set(sector_levels)) == 1:
         return [(0, 0, sector_levels[0])]  # 0-0 is all aspects
@@ -296,9 +296,9 @@ def blurred_segments(octant_levels_by_band, elevations):
     out the same are merged.
     """
     segments = []
-    for low, high, bands in grm_elevation_segments(elevations):
+    for low, high, bands in elevation_segments(elevations):
         octant_levels = [max(octant_levels_by_band[band][i] for band in bands) for i in range(8)]
-        runs = grm_aspect_runs(grm_sector_levels(octant_levels))
+        runs = aspect_runs(sector_levels(octant_levels))
         if segments and segments[-1][2] == runs:
             segments[-1][1] = high
         else:

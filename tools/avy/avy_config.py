@@ -88,8 +88,9 @@ avy_danger_levels = {
 # shaded orange, at or above avoid_from red. Approximates the Swiss rule of
 # thumb (Moderate: avoid >40, Considerable: >35, High: >30). At Low the chart
 # only turns red in the steepest corner of the column, i.e. Swiss "Low+". NA
-# ratings have no +/=/- sub-levels, so Low gets caution (40+) only. None = no shading;
-# a caution of None skips the caution band, an avoid of None the avoid band.
+# ratings have no +/=/- sub-levels, so Low gets caution (40+) only. None = no
+# shading; a caution of None skips the caution band, an avoid of None the
+# avoid band.
 grm_slope_thresholds = {
     0: None,
     1: (40, None),
