@@ -10,6 +10,9 @@ jobs:
   avalanche:
     name: Build Avalanche data
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # commit built data
+      issues: write    # open an issue when the Canada subregions change upstream
     steps: 
     - name: Checkout repo
       uses: actions/checkout@v5
@@ -22,7 +25,16 @@ jobs:
         pinned=$(cat tools/avy/data/canadian_subregions.commit)
         latest=$(gh api repos/avalanche-canada/forecast-polygons/commits/main --jq .sha)
         if [ "$pinned" != "$latest" ]; then
-          echo "::warning title=Canada subregions changed upstream::avalanche-canada/forecast-polygons main is at ${latest::7}, vendored copy is ${pinned::7}. Compare: https://github.com/avalanche-canada/forecast-polygons/compare/${pinned}...${latest}"
+          title="Avalanche Canada subregions changed upstream"
+          # one open issue at a time; it stays open until the vendored copy is updated
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "\"$title\" in:title" --json number --jq 'length')
+          if [ "$existing" = "0" ]; then
+            gh issue create --repo "$GITHUB_REPOSITORY" --assignee "$GITHUB_REPOSITORY_OWNER" --title "$title" --body "avalanche-canada/forecast-polygons \`main\` is at \`${latest::7}\`; the vendored copy is \`${pinned::7}\`.
+
+        Changes: https://github.com/avalanche-canada/forecast-polygons/compare/${pinned}...${latest}
+
+        To update, replace \`tools/avy/data/canadian_subregions.geojson\` with the file from that commit and write its SHA to \`tools/avy/data/canadian_subregions.commit\`."
+          fi
         fi
 
     - name: Set up Python
