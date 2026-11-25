@@ -165,7 +165,7 @@ css_includes:
             </p>
         </div>
         
-        <div id="CNFAIC-2815-report" class="avy-zone dn" data-id="CNFAIC-2815" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="False">
+        <div id="CNFAIC-2815-report" class="avy-zone dn" data-id="CNFAIC-2815" data-color="#939598" data-min="0"  data-max="20310" data-btl="4400" data-atl="6100" data-published="Tuesday, November 24, 2026 3:00PM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
