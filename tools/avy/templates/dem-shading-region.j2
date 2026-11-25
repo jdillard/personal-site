@@ -78,7 +78,7 @@ css_includes:
             {% if zone.grm %}
             <dl class="f6">
                 <dt>
-                    <strong>{{ sun_day }} Steep Terrain To Avoid (GRM)</strong>
+                    <strong>{{ sun_day }} Steep Terrain (GRM)</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ zone.grm[0] | join('&#10;') }}" onclick="clickFunc(this, 'grm-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('grm-tooltip-{{ zone.slug }}')" onblur="outFunc('grm-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy GRM rules"><span class="tooltiptext" id="grm-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
                 <dd class="ml3">
