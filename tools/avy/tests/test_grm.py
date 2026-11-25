@@ -1,5 +1,8 @@
+from avy_config import aspect
 from caltopo_layers import (
     aspect_runs,
+    blurred_danger_rules,
+    blurred_problem_rules,
     elevation_segments,
     grm_layer,
     sector_levels,
@@ -57,7 +60,7 @@ class TestGrmLayer:
         assert "s30-35a0-0e0-20310f FF9900" in rules
         assert "s35-90a0-0e0-20310f E00000" in rules
         assert layer.startswith("sc_")
-        assert [row["level"] for row in legend if row["today"]] == ["Considerable"]
+        assert [row["level"] for row in legend if row["forecast"]] == ["Considerable"]
         assert len(legend) == 5
 
     def test_transition_uses_worse_band(self):
@@ -93,35 +96,29 @@ class TestGrmLayer:
 
 class TestBlurredProblemRules:
     def rule(self, band, *names):
-        from avy_config import aspect
         return {"id": band, "aspects": [aspect[n] for n in names]}
 
     def test_north_upper_spreads_to_neighbors_and_down(self):
-        from caltopo_layers import blurred_problem_rules
         rules = blurred_problem_rules([self.rule("atl", "north")], ELEVATIONS, "A200FF")
         # N octant blurred +/-22.5 deg into NW and NE, and down into the NTL/ATL transition
         assert rules == ["a315-45e8350-20310f A200FF"]
 
     def test_all_aspects_all_bands(self):
-        from caltopo_layers import blurred_problem_rules
         names = ["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest"]
         rules = blurred_problem_rules([self.rule(b, *names) for b in ("btl", "ntl", "atl")], ELEVATIONS, "A200FF")
         assert rules == ["a0-0e0-20310f A200FF"]
 
     def test_no_aspects_no_rules(self):
-        from caltopo_layers import blurred_problem_rules
         assert blurred_problem_rules([], ELEVATIONS, "A200FF") == []
 
 
 class TestBlurredDangerRules:
     def test_band_edge_takes_worse_rating(self):
-        from caltopo_layers import blurred_danger_rules
         rules = blurred_danger_rules(uniform_band_levels({"btl": 1, "ntl": 2, "atl": 2}), ELEVATIONS)
         # highest first; moderate reaches 650' below the BTL/NTL edge
         assert rules == ["a0-0e6850-20310f fff200", "a0-0e0-6849f 50b848"]
 
     def test_utah_aspects_blur(self):
-        from caltopo_layers import blurred_danger_rules
         levels = {band: [2] * 8 for band in ("btl", "ntl", "atl")}
         levels["atl"][0] = 3  # considerable on north, upper
         rules = blurred_danger_rules(levels, ELEVATIONS)
