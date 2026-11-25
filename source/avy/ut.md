@@ -96,7 +96,6 @@ css_includes:
 
             
             
-            
         </div>
         
         <div id="UAC-1736-report" class="avy-zone dn" data-id="UAC-1736" data-color="#939598" data-published="False">
@@ -114,7 +113,6 @@ css_includes:
 
             
 
-            
             
             
         </div>
@@ -136,7 +134,6 @@ css_includes:
 
             
             
-            
         </div>
         
         <div id="UAC-1737-report" class="avy-zone dn" data-id="UAC-1737" data-color="#939598" data-published="False">
@@ -154,7 +151,6 @@ css_includes:
 
             
 
-            
             
             
         </div>
@@ -176,7 +172,6 @@ css_includes:
 
             
             
-            
         </div>
         
         <div id="UAC-1738-report" class="avy-zone dn" data-id="UAC-1738" data-color="#939598" data-published="False">
@@ -194,7 +189,6 @@ css_includes:
 
             
 
-            
             
             
         </div>
@@ -216,7 +210,6 @@ css_includes:
 
             
             
-            
         </div>
         
         <div id="UAC-1743-report" class="avy-zone dn" data-id="UAC-1743" data-color="#939598" data-published="False">
@@ -236,7 +229,6 @@ css_includes:
 
             
             
-            
         </div>
         
         <div id="UAC-1740-report" class="avy-zone dn" data-id="UAC-1740" data-color="#939598" data-published="False">
@@ -254,7 +246,6 @@ css_includes:
 
             
 
-            
             
             
         </div>

@@ -57,7 +57,8 @@ class TestGrmLayer:
         assert "s30-35a0-0e0-20310f FF9900" in rules
         assert "s35-90a0-0e0-20310f E00000" in rules
         assert layer.startswith("sc_")
-        assert [row["level"] for row in legend] == ["Considerable"]
+        assert [row["level"] for row in legend if row["today"]] == ["Considerable"]
+        assert len(legend) == 5
 
     def test_transition_uses_worse_band(self):
         rules, _, _ = grm_layer(uniform_band_levels({"btl": 2, "ntl": 3, "atl": 3}), ELEVATIONS)

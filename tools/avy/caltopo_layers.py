@@ -314,16 +314,17 @@ def grm_layer(octant_levels_by_band, elevations):
     if not rules:
         return None
 
-    present = sorted({lvl for levels in octant_levels_by_band.values() for lvl in levels if config.grm_slope_thresholds.get(lvl)})
-    legend = []
-    for lvl in present:
-        caution, avoid = config.grm_slope_thresholds[lvl]
-        legend.append({
+    today = {lvl for levels in octant_levels_by_band.values() for lvl in levels}
+    legend = [
+        {
             "level": danger_levels[lvl]["desc"].replace(" danger", ""),
-            "color": f"#{danger_levels[lvl]['color']}",
-            "caution": caution,
-            "avoid": avoid,
-        })
+            "caution": thresholds[0],
+            "avoid": thresholds[1],
+            "today": lvl in today,
+        }
+        for lvl, thresholds in config.grm_slope_thresholds.items()
+        if thresholds
+    ]
     return rules, layer_param(rules), legend
 
 
