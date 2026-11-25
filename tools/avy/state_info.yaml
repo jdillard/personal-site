@@ -143,6 +143,9 @@
 
 - abbr: "UT"
   name: "Utah"
+  # no access to UAC forecast data: still build the page and zone shapes,
+  # but skip fetching reports and show a note pointing to UAC instead
+  report_access: false
   elevations:
     0: # default
       btl: [0, 7500]

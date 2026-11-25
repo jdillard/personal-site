@@ -130,7 +130,15 @@ css_includes:
                 </dd>
             </dl>
             {% else %}
+            {% if zone.report_access is sameas false %}
+            <div class="avy-note-wrap">
+                <div class="shadow-5 dark-blue bg-lightest-blue bl bw3 b--dark-blue mv3 tl lh-copy" style="border-radius: 5px; font-size: 1.05em; padding: .1em 1.75em;" role="note">
+                    <p class="i" style="margin: .8em 0;"><b>Note:</b> Danger and problem layers aren't available here, as this site doesn't have access to the {{ zone.center_name }}'s forecast data. Please visit the <a class="no-underline fancy-link relative dark-blue b" href="{{ zone.url }}">{{ zone.center_name }}</a> for the latest forecast.</p>
+                </div>
+            </div>
+            {% else %}
             <div class="pv4 ph2 tc ba b--moon-gray">{{ zone.message }}</div>
+            {% endif %}
             {% endif %}
 
             {% if zone.problems %}
@@ -157,9 +165,11 @@ css_includes:
                 <strong>Issued at:</strong> {{ zone.published }}
             </p>
             {% endif %}
+            {% if zone.report_access is not sameas false %}
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="{{ zone.center_link }}">{{ zone.center_name }}</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="{{ zone.url }}">full forecast</a> before heading out.
             </p>
+            {% endif %}
         </div>
         {% endfor %}
     </div>

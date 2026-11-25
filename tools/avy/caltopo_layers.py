@@ -310,6 +310,7 @@ def main():
                 "active": info["active"],
                 "name": info["name"],
                 "elevations": info["elevations"],
+                "report_access": info.get("report_access", True),
             })
 
     # delete all DEM files in order to start fresh
@@ -417,7 +418,9 @@ def main():
                 published = False
                 tomorrow = False
                 data = {}
-                if state["state"] == "UT":
+                if not state["report_access"]:
+                    pass
+                elif state["state"] == "UT":
                     if os.path.isfile(f"tools/avy/avalanche-reports-raw/{slugify(zone['name'])}.json"):
                         with open(f"tools/avy/avalanche-reports-raw/{slugify(zone['name'])}.json") as fp:
                             data = json.load(fp)
@@ -486,13 +489,14 @@ def main():
                         problems.append(make_problem(i, problem["name"], rules, tomorrow))
 
                 zone["published"] = published
+                zone["report_access"] = state["report_access"]
                 zone["danger"] = danger_rules
                 zone["problems"] = problems
                 zone["color"] = f"#{danger_levels[zone_color]['color']}"
                 zone["layers"] = caltopo_layers(layers_template, tomorrow, danger_layer, problems)
 
                 has_report = data and (data.get("danger") or data.get("overall_danger_rating", "None") != "None")
-                if danger_rules:
+                if danger_rules or not state["report_access"]:
                     zone["message"] = ""
                 elif has_report and not state["elevations"]:
                     zone["message"] = center_message("Coming soon.", zone)
