@@ -77,6 +77,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mountwashingtonavalanchecenter.org/">Mount Washington Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://mountwashingtonavalanchecenter.org/forecasts/#/presidential-range ">full forecast</a> before heading out.
             </p>

@@ -93,6 +93,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-central">full forecast</a> before heading out.
             </p>
@@ -110,6 +111,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -133,6 +135,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-south">full forecast</a> before heading out.
             </p>
@@ -150,6 +153,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -173,6 +177,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/snoqualmie-pass">full forecast</a> before heading out.
             </p>
@@ -190,6 +195,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -213,6 +219,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-central">full forecast</a> before heading out.
             </p>
@@ -233,6 +240,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-north">full forecast</a> before heading out.
             </p>
@@ -250,6 +258,7 @@ css_includes:
 
             
 
+            
             
             
             

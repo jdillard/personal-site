@@ -89,6 +89,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://bridgertetonavalanchecenter.org/">Bridger-Teton Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/">full forecast</a> before heading out.
             </p>
@@ -106,6 +107,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -129,6 +131,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://bridgertetonavalanchecenter.org/">Bridger-Teton Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">full forecast</a> before heading out.
             </p>
@@ -146,6 +149,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -169,6 +173,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">Eastern Wyoming Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">full forecast</a> before heading out.
             </p>
@@ -189,6 +194,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">Eastern Wyoming Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">full forecast</a> before heading out.
             </p>
@@ -206,6 +212,7 @@ css_includes:
 
             
 
+            
             
             
             

@@ -93,6 +93,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/selkirk-mountains/">full forecast</a> before heading out.
             </p>
@@ -110,6 +111,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -133,6 +135,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/west-cabinet-mountains/">full forecast</a> before heading out.
             </p>
@@ -150,6 +153,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -173,6 +177,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/">Payette Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/avalanche/west-mountains">full forecast</a> before heading out.
             </p>
@@ -190,6 +195,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -213,6 +219,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/">Sawtooth Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/galena-summit-&-eastern-mtns">full forecast</a> before heading out.
             </p>
@@ -233,6 +240,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/">Sawtooth Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/sawtooth-&-western-smoky-mtns">full forecast</a> before heading out.
             </p>
@@ -250,6 +258,7 @@ css_includes:
 
             
 
+            
             
             
             

@@ -77,6 +77,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://taosavalanchecenter.org/">Taos Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://taosavalanchecenter.org/forecasts/#/northern-new-mexico">full forecast</a> before heading out.
             </p>

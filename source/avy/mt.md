@@ -109,6 +109,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/flathead-range-&-glacier-np">full forecast</a> before heading out.
             </p>
@@ -126,6 +127,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -149,6 +151,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/southern-whitefish-range">full forecast</a> before heading out.
             </p>
@@ -166,6 +169,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -189,6 +193,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/bridger-range/">full forecast</a> before heading out.
             </p>
@@ -206,6 +211,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -229,6 +235,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/island-park/">full forecast</a> before heading out.
             </p>
@@ -246,6 +253,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -269,6 +277,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-gallatin-range/">full forecast</a> before heading out.
             </p>
@@ -286,6 +295,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -309,6 +319,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-gallatin-range/">full forecast</a> before heading out.
             </p>
@@ -326,6 +337,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -349,6 +361,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/">full forecast</a> before heading out.
             </p>
@@ -366,6 +379,7 @@ css_includes:
 
             
 
+            
             
             
             
@@ -389,6 +403,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/">West Central Montana Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/Bitterroot">full forecast</a> before heading out.
             </p>
@@ -409,6 +424,7 @@ css_includes:
             
             
             
+            
             <p class="tc f7 black-60 measure center">
                 Forecast data from <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/">West Central Montana Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/rattlesnake">full forecast</a> before heading out.
             </p>
@@ -426,6 +442,7 @@ css_includes:
 
             
 
+            
             
             
             

@@ -226,6 +226,117 @@ def problem_rule(elevations, band, aspects, i):
     }
 
 
+def grm_elevation_segments(elevations, blur=None):
+    """Split the bands into core and transition segments for the GRM layer.
+
+    Band edges are blurred by `blur` feet on each side so a hard line like
+    "exactly 9,500'" is never drawn: the transition segment takes the worse
+    of the two bands it straddles. Returns (low, high, bands) tuples, lowest first.
+    """
+    blur = config.grm_elevation_blur if blur is None else blur
+    bottom, btl_top = elevations["btl"]
+    ntl_top = elevations["ntl"][1]
+    top = elevations["atl"][1]
+
+    t1 = [max(bottom, btl_top - blur), btl_top + blur]
+    t2 = [ntl_top - blur, min(top, ntl_top + blur)]
+    if t1[1] >= t2[0]:  # narrow NTL: split the overlap at its midpoint
+        t1[1] = (btl_top + ntl_top) // 2
+        t2[0] = t1[1] + 1
+
+    segments = [
+        (bottom, t1[0] - 1, ("btl",)),
+        (t1[0], t1[1], ("btl", "ntl")),
+        (t1[1] + 1, t2[0] - 1, ("ntl",)),
+        (t2[0], t2[1], ("ntl", "atl")),
+        (t2[1] + 1, top, ("atl",)),
+    ]
+    return [s for s in segments if s[0] <= s[1]]
+
+
+def grm_sector_levels(octant_levels):
+    """Level for each of 16 22.5 degree sectors (sector 0 starts at 337.5).
+
+    Each sector is half an octant and takes the worse of its octant and the
+    neighboring octant on that side, blurring aspect edges by ~22.5 degrees.
+    """
+    levels = []
+    for k in range(16):
+        octant = k // 2
+        neighbor = (octant - 1) % 8 if k % 2 == 0 else (octant + 1) % 8
+        levels.append(max(octant_levels[octant], octant_levels[neighbor]))
+    return levels
+
+
+def grm_aspect_runs(sector_levels):
+    """Merge adjacent sectors with the same level into (start, end, level) aspect ranges."""
+    if len(set(sector_levels)) == 1:
+        return [(0, 0, sector_levels[0])]  # 0-0 is all aspects
+    # rotate so the first sector begins a new run
+    first = next(k for k in range(16) if sector_levels[k] != sector_levels[k - 1])
+    runs = []
+    for k in [(first + i) % 16 for i in range(16)]:
+        if runs and runs[-1][2] == sector_levels[k]:
+            runs[-1][1] = k
+        else:
+            runs.append([k, k, sector_levels[k]])
+    deg = lambda k: round((k * 22.5 - 22.5) % 360)
+    return [(deg(start), deg(end + 1), level) for start, end, level in runs]
+
+
+def grm_layer(octant_levels_by_band, elevations):
+    """Slope steepness to avoid per the Graphical Reduction Method.
+
+    octant_levels_by_band maps each band to 8 danger scales (N clockwise).
+    Rather than coloring terrain by danger level, shade only slopes steep
+    enough to be a concern at that level: orange for caution, red for avoid.
+    Returns (rules, layer, legend) or None if nothing would be shaded.
+    """
+    # aspect runs per segment, merging adjacent segments that come out the same
+    segments = []
+    for low, high, bands in grm_elevation_segments(elevations):
+        octant_levels = [max(octant_levels_by_band[band][i] for band in bands) for i in range(8)]
+        runs = grm_aspect_runs(grm_sector_levels(octant_levels))
+        if segments and segments[-1][2] == runs:
+            segments[-1][1] = high
+        else:
+            segments.append([low, high, runs])
+
+    rules = []
+    for low, high, runs in segments:
+        for start, end, level in runs:
+            thresholds = config.grm_slope_thresholds.get(level)
+            if not thresholds:
+                continue
+            caution, avoid = thresholds
+            rules.append(f"s{caution}-{avoid}a{start}-{end}e{low}-{high}f {config.grm_colors['caution']}")
+            rules.append(f"s{avoid}-90a{start}-{end}e{low}-{high}f {config.grm_colors['avoid']}")
+    if not rules:
+        return None
+
+    present = sorted({lvl for levels in octant_levels_by_band.values() for lvl in levels if config.grm_slope_thresholds.get(lvl)})
+    legend = []
+    for lvl in present:
+        caution, avoid = config.grm_slope_thresholds[lvl]
+        legend.append({
+            "level": danger_levels[lvl]["desc"].replace(" danger", ""),
+            "color": f"#{danger_levels[lvl]['color']}",
+            "caution": caution,
+            "avoid": avoid,
+        })
+    return rules, layer_param(rules), legend
+
+
+def uniform_band_levels(levels):
+    """Expand one danger scale per band to the 8 aspects of each band."""
+    return {band: [levels[band]] * 8 for band in BANDS}
+
+
+def utah_band_levels(rose):
+    """Danger scale per aspect per band from a UAC danger rose."""
+    return {band: [danger_levels[f"utah{n}"]["scale"] for n in chunk] for band, chunk in uac_rose_by_band(rose)}
+
+
 def make_problem(i, name, rules, tomorrow, layer_rules=None):
     """Problem entry for the template; layer_rules sets the CalTopo layer order if it differs."""
     return {
@@ -238,15 +349,21 @@ def make_problem(i, name, rules, tomorrow, layer_rules=None):
     }
 
 
-def caltopo_layers(layers_template, tomorrow, danger_layer, problems):
-    """CalTopo URL layer parameters for the danger layer (if any) and problem layers."""
+def caltopo_layers(layers_template, tomorrow, danger_layer, problems, grm=None):
+    """CalTopo URL layer parameters for the GRM, danger and problem layers.
+
+    The GRM layer, when present, is the one shown on load.
+    """
+    grm_layer_param = grm[1] if grm else ""
     layer_info = urllib.parse.quote(layers_template.render(
         sun_day=tomorrow,
+        grm_layer=grm_layer_param,
         danger_layer=danger_layer,
         problem_layers=problems,
     ))
-    if danger_layer:
-        return f"a={danger_layer}&cl={layer_info}"
+    active = grm_layer_param or danger_layer
+    if active:
+        return f"a={active}&cl={layer_info}"
     return f"cl={layer_info}"
 
 
@@ -442,12 +559,14 @@ def main():
         danger_rules = []
         danger_layer = ""
         zone_color = 0
+        grm = None
         ratings = report["dangerRatings"][0]["ratings"] if report.get("dangerRatings") else {}
         if any(ratings.get(key) for key in CA_DANGER_KEYS.values()) and area["elevations"]:
             levels = {band: danger_levels.get(ratings[key]["rating"]["value"]) for band, key in CA_DANGER_KEYS.items()}
             danger_rules = [danger_rule(area["elevations"], band, levels[band]) for band in BANDS]
             danger_layer = layer_param(rule["layer"] for rule in danger_rules)
             zone_color = max(level["scale"] for level in levels.values())
+            grm = grm_layer(uniform_band_levels({band: level["scale"] for band, level in levels.items()}), area["elevations"])
 
         # avy problems
         problems = []
@@ -478,7 +597,8 @@ def main():
         area["center_name"] = "Avalanche Canada"
         area["center_link"] = "https://avalanche.ca/"
         area["url"] = f"https://avalanche.ca/forecasts/{product['product']['id']}"
-        area["layers"] = caltopo_layers(layers_template, tomorrow, danger_layer, problems)
+        area["grm"] = grm
+        area["layers"] = caltopo_layers(layers_template, tomorrow, danger_layer, problems, grm)
         area["message"] = "" if danger_rules else center_message("Report not available.", area)
 
         areas.append(area)
@@ -544,9 +664,11 @@ def main():
                 danger_rules = []
                 danger_layer = ""
                 zone_color = 0
+                grm = None
                 if state["state"] == "UT":
                     if data and data["overall_danger_rating"] != "None" and elevations:
                         danger_rules, danger_layer, zone_color = utah_danger(data["overall_danger_rose"], elevations)
+                        grm = grm_layer(utah_band_levels(data["overall_danger_rose"]), elevations)
                 else:
                     danger = data.get("danger")
                     if danger and any(danger[0][key] for key in US_DANGER_KEYS.values()) and elevations:
@@ -554,6 +676,7 @@ def main():
                         danger_rules = [danger_rule(elevations, band, danger_levels.get(values[band])) for band in BANDS]
                         danger_layer = layer_param(rule["layer"] for rule in danger_rules)
                         zone_color = max(values.values())
+                        grm = grm_layer(uniform_band_levels(values), elevations)
 
                 # avy problems
                 problems = []
@@ -579,7 +702,8 @@ def main():
                 zone["danger"] = danger_rules
                 zone["problems"] = problems
                 zone["color"] = f"#{danger_levels[zone_color]['color']}"
-                zone["layers"] = caltopo_layers(layers_template, tomorrow, danger_layer, problems)
+                zone["grm"] = grm
+                zone["layers"] = caltopo_layers(layers_template, tomorrow, danger_layer, problems, grm)
 
                 has_report = data and (data.get("danger") or data.get("overall_danger_rating", "None") != "None")
                 if danger_rules or not state["report_access"]:

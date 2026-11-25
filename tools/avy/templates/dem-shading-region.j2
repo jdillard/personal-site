@@ -75,6 +75,22 @@ css_includes:
             <div id="{{ zone.slug }}-title" class="mv4 tc">
                 <div><a id="{{ zone.slug }}-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Pre-populated CalTopo Map</a></div>
             </div>
+            {% if zone.grm %}
+            <dl class="f6">
+                <dt>
+                    <strong>{{ sun_day }} Steep Terrain To Avoid (GRM)</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ zone.grm[0] | join('&#10;') }}" onclick="clickFunc(this, 'grm-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('grm-tooltip-{{ zone.slug }}')" onblur="outFunc('grm-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy GRM rules"><span class="tooltiptext" id="grm-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                    {% for row in zone.grm[2] %}
+                        <li class="pv1"><div style="clear: both;background-color: {{ row.color }}" class="fl mr2 h1 w1"></div> {{ row.level }}: caution {{ row.caution }}&deg;+, avoid {{ row.avoid }}&deg;+</li>
+                    {% endfor %}
+                    </ul>
+                    <p class="f7 black-60 lh-copy mt2 mb0">Slope angle limits from the <a class="no-underline fancy-link relative light-red" href="https://whiterisk.ch/info/en/help/tour-planning/cruxes">Graphical Reduction Method</a>, applied to the regional forecast. Band edges are blurred &plusmn;500' and aspects &plusmn;22.5&deg;, taking the worse rating. This is not slope-scale danger: it doesn't account for spatial variability, connected terrain or runouts. Check the terrain above and below you.</p>
+                </dd>
+            </dl>
+            {% endif %}
             <dl class="f6">
                 <dt>
                     <strong>{{ sun_day }} Avalanche Danger</strong>
