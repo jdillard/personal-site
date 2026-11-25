@@ -87,7 +87,7 @@ css_includes:
                         <li class="pv1"><div style="clear: both;background-color: {{ row.color }}" class="fl mr2 h1 w1"></div> {{ row.level }}: caution {{ row.caution }}&deg;+, avoid {{ row.avoid }}&deg;+</li>
                     {% endfor %}
                     </ul>
-                    <p class="f7 black-60 lh-copy mt2 mb0">Slope angle limits from the <a class="no-underline fancy-link relative light-red" href="https://whiterisk.ch/info/en/help/tour-planning/cruxes">Graphical Reduction Method</a>, applied to the regional forecast. Band edges are blurred &plusmn;500' and aspects &plusmn;22.5&deg;, taking the worse rating. This is not slope-scale danger: it doesn't account for spatial variability, connected terrain or runouts. Check the terrain above and below you.</p>
+                    <p class="f7 black-60 lh-copy mt2 mb0">This layer shows how steep is too steep for the forecast danger level. It uses the <a class="no-underline fancy-link relative light-red" href="https://whiterisk.ch/info/en/help/tour-planning/cruxes">Graphical Reduction Method</a> (GRM), a Swiss planning rule of thumb: the higher the danger, the gentler the terrain you should stick to. Orange slopes are steep enough to need extra caution at the rating for that elevation and aspect. Red slopes are steep enough that the method says to avoid them. Unshaded doesn't mean safe. Judge a slope by its steepest part, not its average angle.</p><p class="f7 black-60 lh-copy mt2 mb0">It's a filter for planning which terrain to consider, not a measure of the danger on any slope. It uses the regional rating, so it doesn't account for spatial variability, connected terrain or runouts. Check the terrain above and below you.</p><p class="f7 black-60 lh-copy mt2 mb0">Band edges are blurred &plusmn;500' and aspects &plusmn;22.5&deg;, taking the worse rating.</p>
                 </dd>
             </dl>
             {% endif %}
@@ -113,7 +113,7 @@ css_includes:
                         </li>
                     {% endfor %}
                     </ul>
-                    <p class="f7 black-60 lh-copy mt2 mb0">Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Band edges are drawn here at fixed elevations, but treeline shifts with aspect, terrain and local weather. A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p>
+                    <p class="f7 black-60 lh-copy mt2 mb0">Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Band edges are drawn here at fixed elevations, but treeline shifts with aspect, terrain and local weather.</p><p class="f7 black-60 lh-copy mt2 mb0">A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p>
                 </dd>
             </dl>
             {% else %}
@@ -146,7 +146,7 @@ css_includes:
                     </dd>
                 {% endfor %}
             </dl>
-            <p class="f7 black-60 lh-copy mt2">Problem aspects and elevations show where the forecaster expects each problem to be most widespread or most sensitive, not hard boundaries. A problem can also exist on neighboring aspects and elevations, and unshaded slopes aren't free of it. The shading cuts off at exact compass degrees, but gullies, ridges and convex rolls face many directions within one slope. A slope outside the shading can still be threatened by a shaded slope above it. Read the forecast's problem description for likelihood, size and distribution.</p>
+            <p class="f7 black-60 lh-copy mt2">Problem aspects and elevations show where the forecaster expects each problem to be most widespread or most sensitive, not hard boundaries. A problem can also exist on neighboring aspects and elevations, and unshaded slopes aren't free of it.</p><p class="f7 black-60 lh-copy mt2">The shading cuts off at exact compass degrees, but gullies, ridges and convex rolls face many directions within one slope. A slope outside the shading can still be threatened by a shaded slope above it. Read the forecast's problem description for likelihood, size and distribution.</p>
             {% endif %}
 
             {% if (zone.danger or zone.problems) and zone.confidence in ("medium", "low") %}
