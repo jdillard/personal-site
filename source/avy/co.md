@@ -78,12 +78,27 @@ css_includes:
             
             
             <div id="CAIC-2747-title" class="mv4 tc">
-                <div><a id="CAIC-2747-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.181875505109026,-107.76300339810068&z=10&b=mbt&a=sc_a0-0e0-9500fc50b848pa0-0e9501-11500fc50b848pa0-0e11501-20310fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-9500fc50b848pa0-0e9501-11500fc50b848pa0-0e11501-20310fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="CAIC-2747-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.181875505109026,-107.76300339810068&z=10&b=mbt&a=sc_s40-90a0-0e0-12150fcFF9900&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226a1f3c2e-5b7d-4e8a-9c0f-2d4b6e8a1c3f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Steep%20Terrain%20To%20Avoid%20%28GRM%29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_s40-90a0-0e0-12150fcFF9900%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e12151-20310fc939598pa0-0e0-12150fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
+            
             <dl class="f6">
                 <dt>
+                    <strong>2026-11-25 Steep Terrain To Avoid (GRM)</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="s40-90a0-0e0-12150f FF9900" onclick="clickFunc(this, 'grm-tooltip-CAIC-2747'); return false;" onmouseout="outFunc('grm-tooltip-CAIC-2747')" onblur="outFunc('grm-tooltip-CAIC-2747')" href="#" role="button" aria-label="Copy GRM rules"><span class="tooltiptext" id="grm-tooltip-CAIC-2747" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span><b>Caution</b>: steep for today's rating</li>
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span><b>Avoid</b>: too steep for today's rating</li>
+                    </ul>
+                </dd>
+            </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read the GRM layer (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">This layer shows how steep is too steep for the forecast danger level. It uses the <a class="no-underline fancy-link relative dark-gray b" href="https://www.wsl.ch/en/publications/caution-avalanches/">Graphical Reduction Method</a> (GRM), a Swiss planning rule of thumb: the higher the danger, the gentler the terrain you should stick to.</p><p style="margin: .8em 0;">Orange slopes are steep enough to need extra caution at the rating for that elevation and aspect, and riders with limited experience should stay off them. Red slopes are steep enough that the method says to avoid them. Unshaded doesn't mean safe. Judge a slope by its steepest part, not its average angle.</p><table class="f6 mv2" style="border-collapse: collapse;"><thead><tr><th class="tl pr3 pb1 bb b--light-silver">Level</th><th class="tl pr3 pb1 bb b--light-silver"><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span>Caution</th><th class="tl pr3 pb1 bb b--light-silver"><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span>Avoid</th></tr></thead><tbody><tr class="b"><td class="pr3 pv1">Low (today)</td><td class="pr3 pv1">40&deg;+</td><td class="pv1">&ndash;</td></tr><tr><td class="pr3 pv1">Moderate</td><td class="pr3 pv1">35&ndash;40&deg;</td><td class="pv1">40&deg;+</td></tr><tr><td class="pr3 pv1">Considerable</td><td class="pr3 pv1">30&ndash;35&deg;</td><td class="pv1">35&deg;+</td></tr><tr><td class="pr3 pv1">High</td><td class="pr3 pv1">25&ndash;30&deg;</td><td class="pv1">30&deg;+</td></tr><tr><td class="pr3 pv1">Extreme</td><td class="pr3 pv1">&ndash;</td><td class="pv1">All slopes</td></tr></tbody></table><p style="margin: .8em 0;">Use this layer to narrow down which terrain to consider while planning, not to judge the danger on any one slope. It's based on the regional rating, so it doesn't account for spatial variability, connected terrain or runouts. Check the terrain above and below you.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line, so the shading blurs band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
+            
+            <dl class="f6 bt bw1 b--light-gray pt3 mt3">
+                <dt>
                     <strong>2026-11-25 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11501-20310f 939598&#10;a0-0e9501-11500f 50b848&#10;a0-0e0-9500f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2747'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2747')" onblur="outFunc('danger-tooltip-CAIC-2747')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2747" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e12151-20310f 939598&#10;a0-0e0-12150f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2747'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2747')" onblur="outFunc('danger-tooltip-CAIC-2747')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2747" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2747">
@@ -115,6 +130,7 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read danger ratings (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Treeline shifts with aspect, terrain and local weather, so band edges aren't lines.</p><p style="margin: .8em 0;">A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the ratings as forecast, but the map layer and copied rules blur band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
             
 
             
@@ -127,14 +143,18 @@ css_includes:
             </div>
             
             
-            <p class="tc f6">
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f7 mv1">
                 <strong>Issued at:</strong> Tuesday, November 24, 2026 4:30PM
             </p>
             
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://avalanche.state.co.us/?lat=39.181875505109026&lng=-107.76300339810068">full forecast</a> before heading out.
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/?lat=39.181875505109026&lng=-107.76300339810068">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -143,12 +163,27 @@ css_includes:
             
             
             <div id="CAIC-2755-title" class="mv4 tc">
-                <div><a id="CAIC-2755-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.3761357430507,-106.45063911138564&z=10&b=mbt&a=sc_a0-0e0-9500fc50b848pa0-0e9501-11500fc50b848pa0-0e11501-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-9500fc50b848pa0-0e9501-11500fc50b848pa0-0e11501-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%222d267415-4595-434f-8a36-7e4e93a34962%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e11501-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="CAIC-2755-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.3761357430507,-106.45063911138564&z=10&b=mbt&a=sc_s40-90a0-0e0-20310fcFF9900&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226a1f3c2e-5b7d-4e8a-9c0f-2d4b6e8a1c3f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Steep%20Terrain%20To%20Avoid%20%28GRM%29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_s40-90a0-0e0-20310fcFF9900%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2263ef4fa1-2945-477c-baa1-7eb7875bc5cf%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a270-135e10850-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
+            
             <dl class="f6">
                 <dt>
+                    <strong>2026-11-25 Steep Terrain To Avoid (GRM)</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="s40-90a0-0e0-20310f FF9900" onclick="clickFunc(this, 'grm-tooltip-CAIC-2755'); return false;" onmouseout="outFunc('grm-tooltip-CAIC-2755')" onblur="outFunc('grm-tooltip-CAIC-2755')" href="#" role="button" aria-label="Copy GRM rules"><span class="tooltiptext" id="grm-tooltip-CAIC-2755" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span><b>Caution</b>: steep for today's rating</li>
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span><b>Avoid</b>: too steep for today's rating</li>
+                    </ul>
+                </dd>
+            </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read the GRM layer (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">This layer shows how steep is too steep for the forecast danger level. It uses the <a class="no-underline fancy-link relative dark-gray b" href="https://www.wsl.ch/en/publications/caution-avalanches/">Graphical Reduction Method</a> (GRM), a Swiss planning rule of thumb: the higher the danger, the gentler the terrain you should stick to.</p><p style="margin: .8em 0;">Orange slopes are steep enough to need extra caution at the rating for that elevation and aspect, and riders with limited experience should stay off them. Red slopes are steep enough that the method says to avoid them. Unshaded doesn't mean safe. Judge a slope by its steepest part, not its average angle.</p><table class="f6 mv2" style="border-collapse: collapse;"><thead><tr><th class="tl pr3 pb1 bb b--light-silver">Level</th><th class="tl pr3 pb1 bb b--light-silver"><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span>Caution</th><th class="tl pr3 pb1 bb b--light-silver"><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span>Avoid</th></tr></thead><tbody><tr class="b"><td class="pr3 pv1">Low (today)</td><td class="pr3 pv1">40&deg;+</td><td class="pv1">&ndash;</td></tr><tr><td class="pr3 pv1">Moderate</td><td class="pr3 pv1">35&ndash;40&deg;</td><td class="pv1">40&deg;+</td></tr><tr><td class="pr3 pv1">Considerable</td><td class="pr3 pv1">30&ndash;35&deg;</td><td class="pv1">35&deg;+</td></tr><tr><td class="pr3 pv1">High</td><td class="pr3 pv1">25&ndash;30&deg;</td><td class="pv1">30&deg;+</td></tr><tr><td class="pr3 pv1">Extreme</td><td class="pr3 pv1">&ndash;</td><td class="pv1">All slopes</td></tr></tbody></table><p style="margin: .8em 0;">Use this layer to narrow down which terrain to consider while planning, not to judge the danger on any one slope. It's based on the regional rating, so it doesn't account for spatial variability, connected terrain or runouts. Check the terrain above and below you.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line, so the shading blurs band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
+            
+            <dl class="f6 bt bw1 b--light-gray pt3 mt3">
+                <dt>
                     <strong>2026-11-25 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11501-20310f 50b848&#10;a0-0e9501-11500f 50b848&#10;a0-0e0-9500f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2755'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2755')" onblur="outFunc('danger-tooltip-CAIC-2755')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2755" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e0-20310f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2755'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2755')" onblur="outFunc('danger-tooltip-CAIC-2755')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2755" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2755">
@@ -180,14 +215,15 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read danger ratings (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Treeline shifts with aspect, terrain and local weather, so band edges aren't lines.</p><p style="margin: .8em 0;">A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the ratings as forecast, but the map layer and copied rules blur band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
             
 
             
-            <dl class="f6">
+            <dl class="f6 bt bw1 b--light-gray pt3 mt3">
                 
-                    <dt class="mt3">
+                    <dt>
                         <strong>2026-11-25 Persistent Slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-113e11501-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2755'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2755')" onblur="outFunc('problem-1-tooltip-CAIC-2755')" href="#" role="button" aria-label="Copy 2026-11-25 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2755" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a270-135e10850-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2755'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2755')" onblur="outFunc('problem-1-tooltip-CAIC-2755')" href="#" role="button" aria-label="Copy 2026-11-25 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2755" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2755">
@@ -200,6 +236,7 @@ css_includes:
                     </dd>
                 
             </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read problem layers (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">Problem aspects and elevations show where the forecaster expects each problem to be most widespread or most sensitive, not hard boundaries. A problem can also exist on neighboring aspects and elevations, and unshaded slopes aren't free of it.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the problem's aspects and elevations as forecast, but the map layer and copied rules blur band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, so the shaded area is larger than the list.</p><p style="margin: .8em 0;">The shading cuts off at exact compass degrees, but gullies, ridges and convex rolls face many directions within one slope. A slope outside the shading can still be threatened by a shaded slope above it. Read the forecast's problem description for likelihood, size and distribution.</p></div></details>
             
 
             
@@ -210,14 +247,18 @@ css_includes:
             </div>
             
             
-            <p class="tc f6">
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f7 mv1">
                 <strong>Issued at:</strong> Tuesday, November 24, 2026 4:30PM
             </p>
             
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://avalanche.state.co.us/?lat=39.3761357430507&lng=-106.45063911138564">full forecast</a> before heading out.
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/?lat=39.3761357430507&lng=-106.45063911138564">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -226,12 +267,27 @@ css_includes:
             
             
             <div id="CAIC-2754-title" class="mv4 tc">
-                <div><a id="CAIC-2754-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=38.31745249796981,-106.52463801609142&z=10&b=mbt&a=sc_a0-0e0-9500fc50b848pa0-0e9501-11500fc50b848pa0-0e11501-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-9500fc50b848pa0-0e9501-11500fc50b848pa0-0e11501-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="CAIC-2754-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=38.31745249796981,-106.52463801609142&z=10&b=mbt&a=sc_s40-90a0-0e0-20310fcFF9900&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226a1f3c2e-5b7d-4e8a-9c0f-2d4b6e8a1c3f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Steep%20Terrain%20To%20Avoid%20%28GRM%29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_s40-90a0-0e0-20310fcFF9900%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
+            
             <dl class="f6">
                 <dt>
+                    <strong>2026-11-25 Steep Terrain To Avoid (GRM)</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="s40-90a0-0e0-20310f FF9900" onclick="clickFunc(this, 'grm-tooltip-CAIC-2754'); return false;" onmouseout="outFunc('grm-tooltip-CAIC-2754')" onblur="outFunc('grm-tooltip-CAIC-2754')" href="#" role="button" aria-label="Copy GRM rules"><span class="tooltiptext" id="grm-tooltip-CAIC-2754" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span><b>Caution</b>: steep for today's rating</li>
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span><b>Avoid</b>: too steep for today's rating</li>
+                    </ul>
+                </dd>
+            </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read the GRM layer (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">This layer shows how steep is too steep for the forecast danger level. It uses the <a class="no-underline fancy-link relative dark-gray b" href="https://www.wsl.ch/en/publications/caution-avalanches/">Graphical Reduction Method</a> (GRM), a Swiss planning rule of thumb: the higher the danger, the gentler the terrain you should stick to.</p><p style="margin: .8em 0;">Orange slopes are steep enough to need extra caution at the rating for that elevation and aspect, and riders with limited experience should stay off them. Red slopes are steep enough that the method says to avoid them. Unshaded doesn't mean safe. Judge a slope by its steepest part, not its average angle.</p><table class="f6 mv2" style="border-collapse: collapse;"><thead><tr><th class="tl pr3 pb1 bb b--light-silver">Level</th><th class="tl pr3 pb1 bb b--light-silver"><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span>Caution</th><th class="tl pr3 pb1 bb b--light-silver"><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span>Avoid</th></tr></thead><tbody><tr class="b"><td class="pr3 pv1">Low (today)</td><td class="pr3 pv1">40&deg;+</td><td class="pv1">&ndash;</td></tr><tr><td class="pr3 pv1">Moderate</td><td class="pr3 pv1">35&ndash;40&deg;</td><td class="pv1">40&deg;+</td></tr><tr><td class="pr3 pv1">Considerable</td><td class="pr3 pv1">30&ndash;35&deg;</td><td class="pv1">35&deg;+</td></tr><tr><td class="pr3 pv1">High</td><td class="pr3 pv1">25&ndash;30&deg;</td><td class="pv1">30&deg;+</td></tr><tr><td class="pr3 pv1">Extreme</td><td class="pr3 pv1">&ndash;</td><td class="pv1">All slopes</td></tr></tbody></table><p style="margin: .8em 0;">Use this layer to narrow down which terrain to consider while planning, not to judge the danger on any one slope. It's based on the regional rating, so it doesn't account for spatial variability, connected terrain or runouts. Check the terrain above and below you.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line, so the shading blurs band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
+            
+            <dl class="f6 bt bw1 b--light-gray pt3 mt3">
+                <dt>
                     <strong>2026-11-25 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11501-20310f 50b848&#10;a0-0e9501-11500f 50b848&#10;a0-0e0-9500f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2754'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2754')" onblur="outFunc('danger-tooltip-CAIC-2754')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2754" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e0-20310f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2754'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2754')" onblur="outFunc('danger-tooltip-CAIC-2754')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2754" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2754">
@@ -263,6 +319,7 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read danger ratings (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Treeline shifts with aspect, terrain and local weather, so band edges aren't lines.</p><p style="margin: .8em 0;">A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the ratings as forecast, but the map layer and copied rules blur band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
             
 
             
@@ -275,14 +332,18 @@ css_includes:
             </div>
             
             
-            <p class="tc f6">
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f7 mv1">
                 <strong>Issued at:</strong> Tuesday, November 24, 2026 4:30PM
             </p>
             
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://avalanche.state.co.us/?lat=38.31745249796981&lng=-106.52463801609142">full forecast</a> before heading out.
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/?lat=38.31745249796981&lng=-106.52463801609142">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -291,12 +352,27 @@ css_includes:
             
             
             <div id="CAIC-2745-title" class="mv4 tc">
-                <div><a id="CAIC-2745-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.92844051885815,-107.36418509984604&z=10&b=mbt&a=sc_a0-0e0-9500fc50b848pa0-0e9501-11500fc50b848pa0-0e11501-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-9500fc50b848pa0-0e9501-11500fc50b848pa0-0e11501-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="CAIC-2745-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.92844051885815,-107.36418509984604&z=10&b=mbt&a=sc_s40-90a0-0e0-20310fcFF9900&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226a1f3c2e-5b7d-4e8a-9c0f-2d4b6e8a1c3f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Steep%20Terrain%20To%20Avoid%20%28GRM%29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_s40-90a0-0e0-20310fcFF9900%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
+            
             <dl class="f6">
                 <dt>
+                    <strong>2026-11-25 Steep Terrain To Avoid (GRM)</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="s40-90a0-0e0-20310f FF9900" onclick="clickFunc(this, 'grm-tooltip-CAIC-2745'); return false;" onmouseout="outFunc('grm-tooltip-CAIC-2745')" onblur="outFunc('grm-tooltip-CAIC-2745')" href="#" role="button" aria-label="Copy GRM rules"><span class="tooltiptext" id="grm-tooltip-CAIC-2745" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span><b>Caution</b>: steep for today's rating</li>
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span><b>Avoid</b>: too steep for today's rating</li>
+                    </ul>
+                </dd>
+            </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read the GRM layer (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">This layer shows how steep is too steep for the forecast danger level. It uses the <a class="no-underline fancy-link relative dark-gray b" href="https://www.wsl.ch/en/publications/caution-avalanches/">Graphical Reduction Method</a> (GRM), a Swiss planning rule of thumb: the higher the danger, the gentler the terrain you should stick to.</p><p style="margin: .8em 0;">Orange slopes are steep enough to need extra caution at the rating for that elevation and aspect, and riders with limited experience should stay off them. Red slopes are steep enough that the method says to avoid them. Unshaded doesn't mean safe. Judge a slope by its steepest part, not its average angle.</p><table class="f6 mv2" style="border-collapse: collapse;"><thead><tr><th class="tl pr3 pb1 bb b--light-silver">Level</th><th class="tl pr3 pb1 bb b--light-silver"><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span>Caution</th><th class="tl pr3 pb1 bb b--light-silver"><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span>Avoid</th></tr></thead><tbody><tr class="b"><td class="pr3 pv1">Low (today)</td><td class="pr3 pv1">40&deg;+</td><td class="pv1">&ndash;</td></tr><tr><td class="pr3 pv1">Moderate</td><td class="pr3 pv1">35&ndash;40&deg;</td><td class="pv1">40&deg;+</td></tr><tr><td class="pr3 pv1">Considerable</td><td class="pr3 pv1">30&ndash;35&deg;</td><td class="pv1">35&deg;+</td></tr><tr><td class="pr3 pv1">High</td><td class="pr3 pv1">25&ndash;30&deg;</td><td class="pv1">30&deg;+</td></tr><tr><td class="pr3 pv1">Extreme</td><td class="pr3 pv1">&ndash;</td><td class="pv1">All slopes</td></tr></tbody></table><p style="margin: .8em 0;">Use this layer to narrow down which terrain to consider while planning, not to judge the danger on any one slope. It's based on the regional rating, so it doesn't account for spatial variability, connected terrain or runouts. Check the terrain above and below you.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line, so the shading blurs band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
+            
+            <dl class="f6 bt bw1 b--light-gray pt3 mt3">
+                <dt>
                     <strong>2026-11-25 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11501-20310f 50b848&#10;a0-0e9501-11500f 50b848&#10;a0-0e0-9500f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2745'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2745')" onblur="outFunc('danger-tooltip-CAIC-2745')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2745" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e0-20310f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2745'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2745')" onblur="outFunc('danger-tooltip-CAIC-2745')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2745" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2745">
@@ -328,6 +404,7 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read danger ratings (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Treeline shifts with aspect, terrain and local weather, so band edges aren't lines.</p><p style="margin: .8em 0;">A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the ratings as forecast, but the map layer and copied rules blur band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
             
 
             
@@ -340,14 +417,18 @@ css_includes:
             </div>
             
             
-            <p class="tc f6">
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f7 mv1">
                 <strong>Issued at:</strong> Tuesday, November 24, 2026 4:30PM
             </p>
             
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://avalanche.state.co.us/?lat=39.92844051885815&lng=-107.36418509984604">full forecast</a> before heading out.
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/?lat=39.92844051885815&lng=-107.36418509984604">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -356,12 +437,27 @@ css_includes:
             
             
             <div id="CAIC-2753-title" class="mv4 tc">
-                <div><a id="CAIC-2753-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=38.95535671864757,-106.9511441987443&z=10&b=mbt&a=sc_a0-0e0-9500fc50b848pa0-0e9501-11500fcfff200pa0-0e11501-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-9500fc50b848pa0-0e9501-11500fcfff200pa0-0e11501-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22cdb31ae8-3890-43fe-ae85-aece53cedead%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e9501-11500fcA200FFpa293-113e11501-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="CAIC-2753-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=38.95535671864757,-106.9511441987443&z=10&b=mbt&a=sc_s40-90a0-0e0-8849fcFF9900ps35-40a0-0e8850-20310fcFF9900ps40-90a0-0e8850-20310fcE00000&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226a1f3c2e-5b7d-4e8a-9c0f-2d4b6e8a1c3f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Steep%20Terrain%20To%20Avoid%20%28GRM%29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_s40-90a0-0e0-8849fcFF9900ps35-40a0-0e8850-20310fcFF9900ps40-90a0-0e8850-20310fcE00000%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e8850-20310fcfff200pa0-0e0-8849fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22b8fbc992-629d-419f-bced-2ffb470fb1aa%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a270-135e8850-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
+            
             <dl class="f6">
                 <dt>
+                    <strong>2026-11-25 Steep Terrain To Avoid (GRM)</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="s40-90a0-0e0-8849f FF9900&#10;s35-40a0-0e8850-20310f FF9900&#10;s40-90a0-0e8850-20310f E00000" onclick="clickFunc(this, 'grm-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('grm-tooltip-CAIC-2753')" onblur="outFunc('grm-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy GRM rules"><span class="tooltiptext" id="grm-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span><b>Caution</b>: steep for today's rating</li>
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span><b>Avoid</b>: too steep for today's rating</li>
+                    </ul>
+                </dd>
+            </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read the GRM layer (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">This layer shows how steep is too steep for the forecast danger level. It uses the <a class="no-underline fancy-link relative dark-gray b" href="https://www.wsl.ch/en/publications/caution-avalanches/">Graphical Reduction Method</a> (GRM), a Swiss planning rule of thumb: the higher the danger, the gentler the terrain you should stick to.</p><p style="margin: .8em 0;">Orange slopes are steep enough to need extra caution at the rating for that elevation and aspect, and riders with limited experience should stay off them. Red slopes are steep enough that the method says to avoid them. Unshaded doesn't mean safe. Judge a slope by its steepest part, not its average angle.</p><table class="f6 mv2" style="border-collapse: collapse;"><thead><tr><th class="tl pr3 pb1 bb b--light-silver">Level</th><th class="tl pr3 pb1 bb b--light-silver"><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span>Caution</th><th class="tl pr3 pb1 bb b--light-silver"><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span>Avoid</th></tr></thead><tbody><tr class="b"><td class="pr3 pv1">Low (today)</td><td class="pr3 pv1">40&deg;+</td><td class="pv1">&ndash;</td></tr><tr class="b"><td class="pr3 pv1">Moderate (today)</td><td class="pr3 pv1">35&ndash;40&deg;</td><td class="pv1">40&deg;+</td></tr><tr><td class="pr3 pv1">Considerable</td><td class="pr3 pv1">30&ndash;35&deg;</td><td class="pv1">35&deg;+</td></tr><tr><td class="pr3 pv1">High</td><td class="pr3 pv1">25&ndash;30&deg;</td><td class="pv1">30&deg;+</td></tr><tr><td class="pr3 pv1">Extreme</td><td class="pr3 pv1">&ndash;</td><td class="pv1">All slopes</td></tr></tbody></table><p style="margin: .8em 0;">Use this layer to narrow down which terrain to consider while planning, not to judge the danger on any one slope. It's based on the regional rating, so it doesn't account for spatial variability, connected terrain or runouts. Check the terrain above and below you.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line, so the shading blurs band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
+            
+            <dl class="f6 bt bw1 b--light-gray pt3 mt3">
+                <dt>
                     <strong>2026-11-25 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11501-20310f fff200&#10;a0-0e9501-11500f fff200&#10;a0-0e0-9500f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2753')" onblur="outFunc('danger-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e8850-20310f fff200&#10;a0-0e0-8849f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2753')" onblur="outFunc('danger-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2753">
@@ -393,14 +489,15 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read danger ratings (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Treeline shifts with aspect, terrain and local weather, so band edges aren't lines.</p><p style="margin: .8em 0;">A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the ratings as forecast, but the map layer and copied rules blur band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
             
 
             
-            <dl class="f6">
+            <dl class="f6 bt bw1 b--light-gray pt3 mt3">
                 
-                    <dt class="mt3">
+                    <dt>
                         <strong>2026-11-25 Persistent Slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-113e11501-20310f A200FF&#10;a293-113e9501-11500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2753')" onblur="outFunc('problem-1-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy 2026-11-25 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a270-135e8850-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2753')" onblur="outFunc('problem-1-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy 2026-11-25 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2753">
@@ -417,6 +514,7 @@ css_includes:
                     </dd>
                 
             </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read problem layers (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">Problem aspects and elevations show where the forecaster expects each problem to be most widespread or most sensitive, not hard boundaries. A problem can also exist on neighboring aspects and elevations, and unshaded slopes aren't free of it.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the problem's aspects and elevations as forecast, but the map layer and copied rules blur band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, so the shaded area is larger than the list.</p><p style="margin: .8em 0;">The shading cuts off at exact compass degrees, but gullies, ridges and convex rolls face many directions within one slope. A slope outside the shading can still be threatened by a shaded slope above it. Read the forecast's problem description for likelihood, size and distribution.</p></div></details>
             
 
             
@@ -427,14 +525,18 @@ css_includes:
             </div>
             
             
-            <p class="tc f6">
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f7 mv1">
                 <strong>Issued at:</strong> Tuesday, November 24, 2026 4:30PM
             </p>
             
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://avalanche.state.co.us/?lat=38.95535671864757&lng=-106.9511441987443">full forecast</a> before heading out.
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/?lat=38.95535671864757&lng=-106.9511441987443">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -443,12 +545,27 @@ css_includes:
             
             
             <div id="CAIC-2660-title" class="mv4 tc">
-                <div><a id="CAIC-2660-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=37.636766674935274,-107.33232497014352&z=10&b=mbt&a=sc_a0-0e0-9500fc50b848pa0-0e9501-11500fcfff200pa0-0e11501-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-9500fc50b848pa0-0e9501-11500fcfff200pa0-0e11501-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22de81ab31-4bc8-4a41-922a-bbaf0676c598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e9501-11500fcA200FFpa248-113e11501-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="CAIC-2660-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=37.636766674935274,-107.33232497014352&z=10&b=mbt&a=sc_s40-90a0-0e0-8849fcFF9900ps35-40a0-0e8850-20310fcFF9900ps40-90a0-0e8850-20310fcE00000&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226a1f3c2e-5b7d-4e8a-9c0f-2d4b6e8a1c3f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Steep%20Terrain%20To%20Avoid%20%28GRM%29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_s40-90a0-0e0-8849fcFF9900ps35-40a0-0e8850-20310fcFF9900ps40-90a0-0e8850-20310fcE00000%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e8850-20310fcfff200pa0-0e0-8849fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%227bef62ee-b53e-4767-84c2-3ce7625def16%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-25%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a225-135e8850-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
+            
             <dl class="f6">
                 <dt>
+                    <strong>2026-11-25 Steep Terrain To Avoid (GRM)</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="s40-90a0-0e0-8849f FF9900&#10;s35-40a0-0e8850-20310f FF9900&#10;s40-90a0-0e8850-20310f E00000" onclick="clickFunc(this, 'grm-tooltip-CAIC-2660'); return false;" onmouseout="outFunc('grm-tooltip-CAIC-2660')" onblur="outFunc('grm-tooltip-CAIC-2660')" href="#" role="button" aria-label="Copy GRM rules"><span class="tooltiptext" id="grm-tooltip-CAIC-2660" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7">
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span><b>Caution</b>: steep for today's rating</li>
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span><b>Avoid</b>: too steep for today's rating</li>
+                    </ul>
+                </dd>
+            </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read the GRM layer (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">This layer shows how steep is too steep for the forecast danger level. It uses the <a class="no-underline fancy-link relative dark-gray b" href="https://www.wsl.ch/en/publications/caution-avalanches/">Graphical Reduction Method</a> (GRM), a Swiss planning rule of thumb: the higher the danger, the gentler the terrain you should stick to.</p><p style="margin: .8em 0;">Orange slopes are steep enough to need extra caution at the rating for that elevation and aspect, and riders with limited experience should stay off them. Red slopes are steep enough that the method says to avoid them. Unshaded doesn't mean safe. Judge a slope by its steepest part, not its average angle.</p><table class="f6 mv2" style="border-collapse: collapse;"><thead><tr><th class="tl pr3 pb1 bb b--light-silver">Level</th><th class="tl pr3 pb1 bb b--light-silver"><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span>Caution</th><th class="tl pr3 pb1 bb b--light-silver"><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span>Avoid</th></tr></thead><tbody><tr class="b"><td class="pr3 pv1">Low (today)</td><td class="pr3 pv1">40&deg;+</td><td class="pv1">&ndash;</td></tr><tr class="b"><td class="pr3 pv1">Moderate (today)</td><td class="pr3 pv1">35&ndash;40&deg;</td><td class="pv1">40&deg;+</td></tr><tr><td class="pr3 pv1">Considerable</td><td class="pr3 pv1">30&ndash;35&deg;</td><td class="pv1">35&deg;+</td></tr><tr><td class="pr3 pv1">High</td><td class="pr3 pv1">25&ndash;30&deg;</td><td class="pv1">30&deg;+</td></tr><tr><td class="pr3 pv1">Extreme</td><td class="pr3 pv1">&ndash;</td><td class="pv1">All slopes</td></tr></tbody></table><p style="margin: .8em 0;">Use this layer to narrow down which terrain to consider while planning, not to judge the danger on any one slope. It's based on the regional rating, so it doesn't account for spatial variability, connected terrain or runouts. Check the terrain above and below you.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line, so the shading blurs band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
+            
+            <dl class="f6 bt bw1 b--light-gray pt3 mt3">
+                <dt>
                     <strong>2026-11-25 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11501-20310f fff200&#10;a0-0e9501-11500f fff200&#10;a0-0e0-9500f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2660'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2660')" onblur="outFunc('danger-tooltip-CAIC-2660')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2660" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e8850-20310f fff200&#10;a0-0e0-8849f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2660'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2660')" onblur="outFunc('danger-tooltip-CAIC-2660')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2660" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
                 <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2660">
@@ -480,14 +597,15 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read danger ratings (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Treeline shifts with aspect, terrain and local weather, so band edges aren't lines.</p><p style="margin: .8em 0;">A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the ratings as forecast, but the map layer and copied rules blur band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
             
 
             
-            <dl class="f6">
+            <dl class="f6 bt bw1 b--light-gray pt3 mt3">
                 
-                    <dt class="mt3">
+                    <dt>
                         <strong>2026-11-25 Persistent Slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-113e11501-20310f A200FF&#10;a248-113e9501-11500f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2660'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2660')" onblur="outFunc('problem-1-tooltip-CAIC-2660')" href="#" role="button" aria-label="Copy 2026-11-25 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2660" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a225-135e8850-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2660'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2660')" onblur="outFunc('problem-1-tooltip-CAIC-2660')" href="#" role="button" aria-label="Copy 2026-11-25 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2660" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2660">
@@ -504,6 +622,7 @@ css_includes:
                     </dd>
                 
             </dl>
+            <details class="mv3 f6"><summary class="pointer b">How to read problem layers (read before using)</summary><div class="shadow-5 bg-near-white bl bw3 b--light-silver mt2 tl lh-copy" style="border-radius: 5px; padding: .1em 1.25em;"><p style="margin: .8em 0;">Problem aspects and elevations show where the forecaster expects each problem to be most widespread or most sensitive, not hard boundaries. A problem can also exist on neighboring aspects and elevations, and unshaded slopes aren't free of it.</p><p style="margin: .8em 0;">Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the problem's aspects and elevations as forecast, but the map layer and copied rules blur band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, so the shaded area is larger than the list.</p><p style="margin: .8em 0;">The shading cuts off at exact compass degrees, but gullies, ridges and convex rolls face many directions within one slope. A slope outside the shading can still be threatened by a shaded slope above it. Read the forecast's problem description for likelihood, size and distribution.</p></div></details>
             
 
             
@@ -514,14 +633,18 @@ css_includes:
             </div>
             
             
-            <p class="tc f6">
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f7 mv1">
                 <strong>Issued at:</strong> Tuesday, November 24, 2026 4:30PM
             </p>
             
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://avalanche.state.co.us/?lat=37.636766674935274&lng=-107.33232497014352">full forecast</a> before heading out.
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/?lat=37.636766674935274&lng=-107.33232497014352">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         

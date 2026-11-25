@@ -204,7 +204,7 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-2907-report" class="avy-zone dn" data-id="SNFAC-2907" data-color="#939598" data-published="Monday, November 23, 2026 10:19AM">
+        <div id="SNFAC-2907-report" class="avy-zone dn" data-id="SNFAC-2907" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -229,7 +229,7 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-2904-report" class="avy-zone dn" data-id="SNFAC-2904" data-color="#939598" data-published="Monday, November 23, 2026 10:19AM">
+        <div id="SNFAC-2904-report" class="avy-zone dn" data-id="SNFAC-2904" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -254,7 +254,7 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-2906-report" class="avy-zone dn" data-id="SNFAC-2906" data-color="#939598" data-published="Monday, November 23, 2026 10:19AM">
+        <div id="SNFAC-2906-report" class="avy-zone dn" data-id="SNFAC-2906" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -279,7 +279,7 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-2905-report" class="avy-zone dn" data-id="SNFAC-2905" data-color="#939598" data-published="Monday, November 23, 2026 10:19AM">
+        <div id="SNFAC-2905-report" class="avy-zone dn" data-id="SNFAC-2905" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
