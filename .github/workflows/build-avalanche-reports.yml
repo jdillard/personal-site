@@ -14,6 +14,17 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v5
 
+    - name: Check for Avalanche Canada subregion updates
+      continue-on-error: true
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        pinned=$(cat tools/avy/data/canadian_subregions.commit)
+        latest=$(gh api repos/avalanche-canada/forecast-polygons/commits/main --jq .sha)
+        if [ "$pinned" != "$latest" ]; then
+          echo "::warning title=Canada subregions changed upstream::avalanche-canada/forecast-polygons main is at ${latest::7}, vendored copy is ${pinned::7}. Compare: https://github.com/avalanche-canada/forecast-polygons/compare/${pinned}...${latest}"
+        fi
+
     - name: Set up Python
       uses: actions/setup-python@v7
       with:

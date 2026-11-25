@@ -363,14 +363,13 @@ def main():
     with open("tools/avy/avalanche-reports-raw/ca-metadata.json") as fp:
         ca_metadata = json.load(fp)
 
-    # subregion shapes by name (optional: the map just skips them if missing)
-    subregion_shapes = {}
-    if os.path.isfile("tools/avy/avalanche-reports-raw/ca-subregions.json"):
-        with open("tools/avy/avalanche-reports-raw/ca-subregions.json") as fp:
-            subregion_shapes = {
-                feature["properties"]["polygon_name"]: feature["geometry"]
-                for feature in json.load(fp)["features"]
-            }
+    # subregion shapes by name, vendored from avalanche-canada/forecast-polygons
+    # at the commit in canadian_subregions.commit (the build workflow warns when upstream moves)
+    with open("tools/avy/data/canadian_subregions.geojson") as fp:
+        subregion_shapes = {
+            feature["properties"]["polygon_name"]: feature["geometry"]
+            for feature in json.load(fp)["features"]
+        }
 
     areas = []
     for product in ca_metadata:
