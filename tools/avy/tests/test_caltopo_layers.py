@@ -251,6 +251,12 @@ class TestSplitAreaName:
     def test_keeps_known_hyphenated_name(self):
         assert split_area_name("Chic-Chocs") == ["Chic-Chocs"]
 
+    def test_keeps_hyphenated_name_within_combined_area(self):
+        assert split_area_name("Brazeau-Churchill-Cirrus-Wilson-Fryatt") == [
+            "Brazeau", "Churchill", "Cirrus-Wilson", "Fryatt"
+        ]
+        assert split_area_name("Badshot-Battle-Central Selkirk") == ["Badshot-Battle", "Central Selkirk"]
+
     def test_empty(self):
         assert split_area_name("") == []
 

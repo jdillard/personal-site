@@ -88,7 +88,13 @@ def uac_rose_by_band(danger_rose):
 
 
 # subregion names that contain a bare hyphen and must not be split
-HYPHENATED_SUBREGIONS = ("Chic-Chocs",)
+HYPHENATED_SUBREGIONS = (
+    "Badshot-Battle",
+    "Chic-Chocs",
+    "Cirrus-Wilson",
+    "Harrison-Fraser",
+    "Microwave-Sinclair",
+)
 
 
 def split_area_name(name):
