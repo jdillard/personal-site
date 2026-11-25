@@ -230,9 +230,9 @@ def problem_rule(elevations, band, aspects, i):
 def grm_elevation_segments(elevations, blur=None):
     """Split the bands into core and transition segments for the GRM layer.
 
-    Band edges are blurred by `blur` feet on each side so a hard line like
-    "exactly 9,500'" is never drawn: the transition segment takes the worse
-    of the two bands it straddles. Returns (low, high, bands) tuples, lowest first.
+    Band edges are blurred by `blur` feet on each side, and each transition
+    segment covers both bands it straddles. Returns (low, high, bands) tuples,
+    lowest first.
     """
     blur = config.elevation_blur if blur is None else blur
     bottom, btl_top = elevations["btl"]
