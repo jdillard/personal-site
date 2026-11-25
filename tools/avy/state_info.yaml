@@ -468,11 +468,85 @@
 # state); always built, so there is no `active` flag
 - abbr: "CAN"
   name: "Canada"
+  # Avalanche Canada defines bands by terrain, not elevation, and publishes no numbers.
+  # Areas are regrouped from subregions daily, so bands are keyed by the `mountain_range`
+  # (or `polygon_name`, which wins) in tools/avy/data/canadian_subregions.geojson. An
+  # area uses the bands more than half of its subregions map to, else the default.
+  #
+  # DERIVED, NOT PUBLISHED: rough treeline by range from general knowledge, rounded to
+  # 100 ft. Spot-checked against elevations in the 2025-26 forecast archive
+  # (https://api.avalanche.ca/forecasts/en/products?date=<ISO datetime>), which only
+  # covered a few ranges: Central Rockies treeline ~2150 m (n=22), North Rockies alpine
+  # ~2000 m (n=5), Cariboos treeline ~1400 m (n=5). No data for the Coast, Selkirks,
+  # Purcells, South Rockies or East Coast.
+  # TODO: replace with Avalanche Canada's numbers if they share them
   elevations:
-    # TODO: unsourced placeholder used for every area. Avalanche Canada defines bands by
-    # terrain, not elevation, and publishes no numbers; likely far too high for the
-    # Coast (~1500-1800 m treeline) and Columbias (~1800-2000 m)
+    # fallback for mixed-range areas (e.g. early-season all-of-BC); Columbia
+    # Mountains values, roughly mid-range between the Coast and Rockies
     0: # default
-      btl: [0, 7500]
-      ntl: [7501, 9000]
-      atl: [9001, 20310]
+      btl: [0, 5600]
+      ntl: [5601, 6900]
+      atl: [6901, 20310]
+    # ~1500 / 1900 m
+    "South Coast":
+      btl: [0, 4900]
+      ntl: [4901, 6200]
+      atl: [6201, 20310]
+    # ~1000 / 1400 m
+    "North Coast":
+      btl: [0, 3300]
+      ntl: [3301, 4600]
+      atl: [4601, 20310]
+    # ~1500 / 2000 m
+    "Cariboos":
+      btl: [0, 4900]
+      ntl: [4901, 6600]
+      atl: [6601, 20310]
+    # ~1500 / 2000 m
+    "Monashees":
+      btl: [0, 4900]
+      ntl: [4901, 6600]
+      atl: [6601, 20310]
+    # ~1700 / 2100 m
+    "Selkirks":
+      btl: [0, 5600]
+      ntl: [5601, 6900]
+      atl: [6901, 20310]
+    # ~1700 / 2100 m
+    "Purcells":
+      btl: [0, 5600]
+      ntl: [5601, 6900]
+      atl: [6901, 20310]
+    # ~1500 / 2000 m
+    "North Rockies":
+      btl: [0, 4900]
+      ntl: [4901, 6600]
+      atl: [6601, 20310]
+    # ~2000 / 2300 m
+    "Central Rockies":
+      btl: [0, 6600]
+      ntl: [6601, 7500]
+      atl: [7501, 20310]
+    # ~1900 / 2200 m
+    "South Rockies":
+      btl: [0, 6200]
+      ntl: [6201, 7200]
+      atl: [7201, 20310]
+    # ~800 / 1000 m (Chic-Chocs)
+    "East Coast":
+      btl: [0, 2600]
+      ntl: [2601, 3300]
+      atl: [3301, 20310]
+    # Newfoundland subregions sit well below the Chic-Chocs: ~400 / 600 m
+    "Corner Brook":
+      btl: [0, 1300]
+      ntl: [1301, 2000]
+      atl: [2001, 20310]
+    "Gros Morne":
+      btl: [0, 1300]
+      ntl: [1301, 2000]
+      atl: [2001, 20310]
+    "Northern Peninsula":
+      btl: [0, 1300]
+      ntl: [1301, 2000]
+      atl: [2001, 20310]

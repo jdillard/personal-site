@@ -1,3 +1,4 @@
+from collections import Counter
 from datetime import datetime
 from jinja2 import Environment, FileSystemLoader
 import json
@@ -145,6 +146,29 @@ def subregions_geojson(subregions, shapes):
     if not features:
         return None
     return {"type": "FeatureCollection", "features": features}
+
+
+def canada_area_elevations(subregions, subregion_ranges, elevations):
+    """Elevation bands for a dynamic Avalanche Canada area.
+
+    Each subregion maps to its own entry in elevations if there is one, else to
+    its mountain range's entry (subregion_ranges maps subregion name to range).
+    The area uses the entry more than half of its subregions map to, else the
+    default (key 0), e.g. an early-season area spanning all of BC.
+    """
+    keys = []
+    for name in subregions:
+        if name in elevations:
+            keys.append(name)
+        elif subregion_ranges.get(name) in elevations:
+            keys.append(subregion_ranges[name])
+    # count identical band sets together (e.g. several subregions with their own equal entries)
+    by_bands = Counter(json.dumps(elevations[key], sort_keys=True) for key in keys)
+    if by_bands:
+        bands, count = by_bands.most_common(1)[0]
+        if count * 2 > len(subregions):
+            return next(elevations[key] for key in keys if json.dumps(elevations[key], sort_keys=True) == bands)
+    return elevations[0]
 
 
 def short_area_name(subregions, max_shown=3):
@@ -366,13 +390,12 @@ def main():
     # subregion shapes by name, vendored from avalanche-canada/forecast-polygons
     # at the commit in canadian_subregions.commit (the build workflow warns when upstream moves)
     with open("tools/avy/data/canadian_subregions.geojson") as fp:
-        subregion_shapes = {
-            feature["properties"]["polygon_name"]: feature["geometry"]
-            for feature in json.load(fp)["features"]
-        }
+        subregion_features = json.load(fp)["features"]
+    subregion_shapes = {f["properties"]["polygon_name"]: f["geometry"] for f in subregion_features}
+    subregion_ranges = {f["properties"]["polygon_name"]: f["properties"]["mountain_range"] for f in subregion_features}
 
-    # one band set for every area for now (see the CAN entry in state_info.yaml)
-    canada_elevations = next(info for info in state_info if info["abbr"] == "CAN")["elevations"][0]
+    # bands by mountain range or subregion (see the CAN entry in state_info.yaml)
+    canada_elevations = next(info for info in state_info if info["abbr"] == "CAN")["elevations"]
 
     areas = []
     for product in ca_metadata:
@@ -404,7 +427,8 @@ def main():
                 published = False
         report = data.get("report", {})
 
-        area["elevations"] = canada_elevations
+        subregions = split_area_name(product["product"].get("title") or "")
+        area["elevations"] = canada_area_elevations(subregions, subregion_ranges, canada_elevations)
 
         # avy danger
         danger_rules = []
@@ -434,7 +458,6 @@ def main():
         area["problems"] = problems
         area["color"] = f"#{danger_levels[zone_color]['color']}"
         area["geo"] = found_value['properties']['centroid']
-        subregions = split_area_name(product["product"].get("title") or "")
         area["name"] = ", ".join(subregions) or "Canada zone"
         area["short_name"] = short_area_name(subregions) or "Canada zone"
         subregion_layer = subregions_geojson(subregions, subregion_shapes)

@@ -7,6 +7,7 @@ import yaml
 AVY_DIR = Path(__file__).parent.parent
 STATE_INFO = AVY_DIR / "state_info.yaml"
 MAP_LAYER = AVY_DIR / "avalanche-reports-raw" / "map-layer.json"
+CANADA_SUBREGIONS = AVY_DIR / "data" / "canadian_subregions.geojson"
 
 
 @pytest.fixture(scope="module")
@@ -50,7 +51,18 @@ def test_zone_ids_exist_in_map_layer(state_info, map_layer_zones):
     stale = [
         f"{state['abbr']} {zone_id}"
         for state in state_info
+        if state["abbr"] != "CAN"
         for zone_id in state["elevations"]
         if zone_id != 0 and zone_id not in map_layer_zones.get(state["abbr"], set())
     ]
     assert not stale, f"zone ids not in map-layer.json (re-keyed upstream?): {', '.join(stale)}"
+
+
+def test_canada_keys_exist_in_subregions(state_info):
+    """Canada bands are keyed by mountain_range or polygon_name from the vendored subregions."""
+    with open(CANADA_SUBREGIONS) as fp:
+        props = [f["properties"] for f in json.load(fp)["features"]]
+    known = {p["mountain_range"] for p in props} | {p["polygon_name"] for p in props}
+    canada = next(state for state in state_info if state["abbr"] == "CAN")
+    unknown = [key for key in canada["elevations"] if key != 0 and key not in known]
+    assert not unknown, f"Canada band keys not in canadian_subregions.geojson: {unknown}"
