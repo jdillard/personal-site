@@ -111,18 +111,6 @@ css_includes:
             {% endif %}
             {% endif %}
 
-            {% if (zone.danger or zone.problems) and zone.confidence in ("medium", "low") %}
-            <div class="f6 black-70 bl bw2 {{ 'b--gold bg-washed-yellow' if zone.confidence == 'medium' else 'b--light-red bg-washed-red' }} pa2 br2 mv3 lh-copy" role="note">
-                <b>{{ zone.confidence | title }} confidence elevation bands.</b>
-                {% if zone.confidence == "medium" -%}
-                {{ zone.center_name }} doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
-                {%- else -%}
-                No published elevation bands were found for this zone, so these are a rough estimate.
-                {%- endif %}
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            {% endif %}
-
             {% if zone.problems %}
             <dl class="f6">
                 {% for problem in zone.problems %}
@@ -141,6 +129,18 @@ css_includes:
                     </dd>
                 {% endfor %}
             </dl>
+            {% endif %}
+
+            {% if (zone.danger or zone.problems) and zone.confidence in ("medium", "low") %}
+            <div class="f6 black-70 bl bw2 {{ 'b--gold bg-washed-yellow' if zone.confidence == 'medium' else 'b--light-red bg-washed-red' }} pa2 br2 mv3 lh-copy" role="note">
+                <b>{{ zone.confidence | title }} confidence elevation bands.</b>
+                {% if zone.confidence == "medium" -%}
+                {{ zone.center_name }} doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
+                {%- else -%}
+                No published elevation bands were found for this zone, so these are a rough estimate.
+                {%- endif %}
+                Adjust them in CalTopo by editing the layer.
+            </div>
             {% endif %}
             {% if zone.danger and zone.published %}
             <p class="tc f6">
