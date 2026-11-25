@@ -113,6 +113,7 @@ css_includes:
                         </li>
                     {% endfor %}
                     </ul>
+                    <p class="f7 black-60 lh-copy mt2 mb0">Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Band edges are drawn here at fixed elevations, but treeline shifts with aspect, terrain and local weather. A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p>
                 </dd>
             </dl>
             {% else %}
@@ -145,6 +146,7 @@ css_includes:
                     </dd>
                 {% endfor %}
             </dl>
+            <p class="f7 black-60 lh-copy mt2">Problem aspects and elevations show where the forecaster expects each problem to be most widespread or most sensitive, not hard boundaries. A problem can also exist on neighboring aspects and elevations, and unshaded slopes aren't free of it. The shading cuts off at exact compass degrees, but gullies, ridges and convex rolls face many directions within one slope. A slope outside the shading can still be threatened by a shaded slope above it. Read the forecast's problem description for likelihood, size and distribution.</p>
             {% endif %}
 
             {% if (zone.danger or zone.problems) and zone.confidence in ("medium", "low") %}
