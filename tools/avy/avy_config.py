@@ -100,8 +100,8 @@ grm_slope_thresholds = {
 }
 grm_colors = {"caution": "FF9900", "avoid": "E00000"}
 # feet of elevation band edge blur (each side) for the GRM, danger and problem
-# layers; the SLF
-# interpretation guide treats altitudes as "often about 200 m up or down"
+# layers; the SLF interpretation guide treats altitudes as "often about 200 m
+# up or down"
 elevation_blur = 650
 
 # problems color codes
