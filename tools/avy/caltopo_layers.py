@@ -310,8 +310,10 @@ def grm_layer(octant_levels_by_band, elevations):
                 continue
             caution, avoid = thresholds
             if caution is not None:
-                rules.append(f"s{caution}-{avoid}a{start}-{end}e{low}-{high}f {config.grm_colors['caution']}")
-            rules.append(f"s{avoid}-90a{start}-{end}e{low}-{high}f {config.grm_colors['avoid']}")
+                top = 90 if avoid is None else avoid
+                rules.append(f"s{caution}-{top}a{start}-{end}e{low}-{high}f {config.grm_colors['caution']}")
+            if avoid is not None:
+                rules.append(f"s{avoid}-90a{start}-{end}e{low}-{high}f {config.grm_colors['avoid']}")
     if not rules:
         return None
 
