@@ -260,6 +260,9 @@ def grm_sector_levels(octant_levels):
 
     Each sector is half an octant and takes the worse of its octant and the
     neighboring octant on that side, blurring aspect edges by ~22.5 degrees.
+    The SLF interpretation guide treats "a segment of about one eighth of the
+    compass" around an aspect boundary as marginal, i.e. 45 degrees straddling
+    the boundary, so 22.5 on each side.
     """
     levels = []
     for k in range(16):
