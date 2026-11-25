@@ -127,13 +127,13 @@ css_includes:
             
 
             
+
+            
             <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
                 <b>Medium confidence elevation bands.</b>
                 Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
                 Adjust them in CalTopo by editing the layer.
             </div>
-            
-
             
             
             <p class="tc f6">
@@ -192,13 +192,13 @@ css_includes:
             
 
             
+
+            
             <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
                 <b>Low confidence elevation bands.</b>
                 No published elevation bands were found for this zone, so these are a rough estimate.
                 Adjust them in CalTopo by editing the layer.
             </div>
-            
-
             
             
             <p class="tc f6">
@@ -257,13 +257,13 @@ css_includes:
             
 
             
+
+            
             <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
                 <b>Low confidence elevation bands.</b>
                 No published elevation bands were found for this zone, so these are a rough estimate.
                 Adjust them in CalTopo by editing the layer.
             </div>
-            
-
             
             
             <p class="tc f6">
@@ -327,13 +327,13 @@ css_includes:
             
 
             
+
+            
             <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
                 <b>Low confidence elevation bands.</b>
                 No published elevation bands were found for this zone, so these are a rough estimate.
                 Adjust them in CalTopo by editing the layer.
             </div>
-            
-
             
             
             <p class="tc f6">
@@ -397,13 +397,13 @@ css_includes:
             
 
             
+
+            
             <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
                 <b>Medium confidence elevation bands.</b>
                 Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
                 Adjust them in CalTopo by editing the layer.
             </div>
-            
-
             
             
             <p class="tc f6">
@@ -462,13 +462,13 @@ css_includes:
             
 
             
+
+            
             <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
                 <b>Low confidence elevation bands.</b>
                 No published elevation bands were found for this zone, so these are a rough estimate.
                 Adjust them in CalTopo by editing the layer.
             </div>
-            
-
             
             
             <p class="tc f6">
@@ -532,13 +532,13 @@ css_includes:
             
 
             
+
+            
             <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
                 <b>Medium confidence elevation bands.</b>
                 Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
                 Adjust them in CalTopo by editing the layer.
             </div>
-            
-
             
             
             <p class="tc f6">
@@ -597,13 +597,13 @@ css_includes:
             
 
             
+
+            
             <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
                 <b>Low confidence elevation bands.</b>
                 No published elevation bands were found for this zone, so these are a rough estimate.
                 Adjust them in CalTopo by editing the layer.
             </div>
-            
-
             
             
             <p class="tc f6">
