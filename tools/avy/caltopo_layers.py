@@ -608,6 +608,7 @@ def main():
     content = region_template.render(
         page="Canada",
         grm_colors=config.grm_colors,
+        grm_elevation_blur=config.grm_elevation_blur,
         sun_day=tomorrow,
         zones=areas,
         states=states,
@@ -719,6 +720,7 @@ def main():
             content = region_template.render(
                     page=state["name"],
                     grm_colors=config.grm_colors,
+                    grm_elevation_blur=config.grm_elevation_blur,
                     sun_day=tomorrow,
                     zones=state["zones"],
                     states=states,

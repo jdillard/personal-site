@@ -62,8 +62,8 @@ class TestGrmLayer:
 
     def test_transition_uses_worse_band(self):
         rules, _, _ = grm_layer(uniform_band_levels({"btl": 2, "ntl": 3, "atl": 3}), ELEVATIONS)
-        assert "s30-35a0-0e7000-20310f FF9900" in rules
-        assert "s35-40a0-0e0-6999f FF9900" in rules
+        assert "s30-35a0-0e6850-20310f FF9900" in rules
+        assert "s35-40a0-0e0-6849f FF9900" in rules
 
     def test_no_rating_returns_none(self):
         assert grm_layer(uniform_band_levels({"btl": 0, "ntl": 0, "atl": 0}), ELEVATIONS) is None
