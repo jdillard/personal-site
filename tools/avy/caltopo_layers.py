@@ -322,6 +322,20 @@ def blurred_problem_rules(rules, elevations, color):
     ]
 
 
+def blurred_danger_rules(octant_levels_by_band, elevations):
+    """Danger shading rules with band and aspect edges blurred, highest first.
+
+    Marginal aspects and elevations take the worse of the ratings they
+    straddle, as with the GRM layer.
+    """
+    rules = [
+        f"a{start}-{end}e{low}-{high}f {danger_levels[level]['color']}"
+        for low, high, runs in blurred_segments(octant_levels_by_band, elevations)
+        for start, end, level in runs
+    ]
+    return rules[::-1]
+
+
 def grm_layer(octant_levels_by_band, elevations):
     """Slope steepness to avoid per the Graphical Reduction Method.
 
@@ -597,6 +611,7 @@ def main():
 
         # avy danger
         danger_rules = []
+        danger_layer_rules = []
         danger_layer = ""
         zone_color = 0
         grm = None
@@ -604,9 +619,11 @@ def main():
         if any(ratings.get(key) for key in CA_DANGER_KEYS.values()) and area["elevations"]:
             levels = {band: danger_levels.get(ratings[key]["rating"]["value"]) for band, key in CA_DANGER_KEYS.items()}
             danger_rules = [danger_rule(area["elevations"], band, levels[band]) for band in BANDS]
-            danger_layer = layer_param(rule["layer"] for rule in danger_rules)
+            band_levels = uniform_band_levels({band: level["scale"] for band, level in levels.items()})
+            danger_layer_rules = blurred_danger_rules(band_levels, area["elevations"])
+            danger_layer = layer_param(danger_layer_rules)
             zone_color = max(level["scale"] for level in levels.values())
-            grm = grm_layer(uniform_band_levels({band: level["scale"] for band, level in levels.items()}), area["elevations"])
+            grm = grm_layer(band_levels, area["elevations"])
 
         # avy problems
         problems = []
@@ -622,6 +639,7 @@ def main():
 
         area["published"] = published
         area["danger"] = danger_rules
+        area["danger_layer_rules"] = danger_layer_rules
         area["problems"] = problems
         area["color"] = f"#{danger_levels[zone_color]['color']}"
         area["geo"] = found_value['properties']['centroid']
@@ -704,21 +722,27 @@ def main():
 
                 # avy danger
                 danger_rules = []
+                danger_layer_rules = []
                 danger_layer = ""
                 zone_color = 0
                 grm = None
                 if state["state"] == "UT":
                     if data and data["overall_danger_rating"] != "None" and elevations:
-                        danger_rules, danger_layer, zone_color = utah_danger(data["overall_danger_rose"], elevations)
-                        grm = grm_layer(utah_band_levels(data["overall_danger_rose"]), elevations)
+                        danger_rules, _, zone_color = utah_danger(data["overall_danger_rose"], elevations)
+                        band_levels = utah_band_levels(data["overall_danger_rose"])
+                        danger_layer_rules = blurred_danger_rules(band_levels, elevations)
+                        danger_layer = layer_param(danger_layer_rules)
+                        grm = grm_layer(band_levels, elevations)
                 else:
                     danger = data.get("danger")
                     if danger and any(danger[0][key] for key in US_DANGER_KEYS.values()) and elevations:
                         values = {band: danger[0][key] or 0 for band, key in US_DANGER_KEYS.items()}
                         danger_rules = [danger_rule(elevations, band, danger_levels.get(values[band])) for band in BANDS]
-                        danger_layer = layer_param(rule["layer"] for rule in danger_rules)
+                        band_levels = uniform_band_levels(values)
+                        danger_layer_rules = blurred_danger_rules(band_levels, elevations)
+                        danger_layer = layer_param(danger_layer_rules)
                         zone_color = max(values.values())
-                        grm = grm_layer(uniform_band_levels(values), elevations)
+                        grm = grm_layer(band_levels, elevations)
 
                 # avy problems
                 problems = []
@@ -742,6 +766,7 @@ def main():
                 zone["published"] = published
                 zone["report_access"] = state["report_access"]
                 zone["danger"] = danger_rules
+                zone["danger_layer_rules"] = danger_layer_rules
                 zone["problems"] = problems
                 zone["color"] = f"#{danger_levels[zone_color]['color']}"
                 zone["grm"] = grm
