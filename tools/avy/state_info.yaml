@@ -463,3 +463,16 @@
       ntl: [7501, 9000]
       atl: [9001, 20310]
   active: true
+
+# Avalanche Canada areas (not avalanche.org zones, so never looked up by a map-layer
+# state); always built, so there is no `active` flag
+- abbr: "CAN"
+  name: "Canada"
+  elevations:
+    # TODO: unsourced placeholder used for every area. Avalanche Canada defines bands by
+    # terrain, not elevation, and publishes no numbers; likely far too high for the
+    # Coast (~1500-1800 m treeline) and Columbias (~1800-2000 m)
+    0: # default
+      btl: [0, 7500]
+      ntl: [7501, 9000]
+      atl: [9001, 20310]

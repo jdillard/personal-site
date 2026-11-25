@@ -371,6 +371,9 @@ def main():
             for feature in json.load(fp)["features"]
         }
 
+    # one band set for every area for now (see the CAN entry in state_info.yaml)
+    canada_elevations = next(info for info in state_info if info["abbr"] == "CAN")["elevations"][0]
+
     areas = []
     for product in ca_metadata:
         published = False
@@ -401,12 +404,7 @@ def main():
                 published = False
         report = data.get("report", {})
 
-        # TODO set elevations levels
-        area["elevations"] = {
-                "btl": (0, 7500),
-                "ntl": (7501, 9000),
-                "atl": (9001, 20310),
-            }
+        area["elevations"] = canada_elevations
 
         # avy danger
         danger_rules = []
