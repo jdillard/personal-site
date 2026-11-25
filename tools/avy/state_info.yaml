@@ -11,9 +11,23 @@
       btl: [0, 4400]
       ntl: [4401, 6100]
       atl: [6101, 20310]
+    # CAAC: ESTIMATED, NOT PUBLISHED. CAAC publishes no numeric bands and its archive has
+    # no band-labelled elevations; from general treeline mentions: on Mt Roberts you "reach
+    # the tree line" at the Mountain House (1,760-1,800 ft) and true alpine starts ~300 ft
+    # higher. Applied to Douglas Island too (same latitude and maritime climate).
     # https://api.avalanche.org/v2/public/avalanche-center/CAAC
-    # 2164: {} # juneau TODO: fill in
-    # 2165: {} # douglas island TODO: fill in
+    # https://alaska.org/guide/mount-roberts-tramway-points
+    # https://www.alaska.org/detail/mount-roberts-trail
+    2164: # juneau
+      confidence: low
+      btl: [0, 1500]
+      ntl: [1501, 2200]
+      atl: [2201, 20310]
+    2165: # douglas island
+      confidence: low
+      btl: [0, 1500]
+      ntl: [1501, 2200]
+      atl: [2201, 20310]
     # CAC: band labels from the center's forecast widget config (zones[].config.elevation_band_names)
     # https://api.avalanche.org/v2/public/avalanche-center/CAC
     1421: # cordova
@@ -91,12 +105,15 @@
       btl: [0, 2500]
       ntl: [2501, 4000]
       atl: [4001, 20310]
-    # TODO: unsourced; NYSAC publishes no numeric bands (widget labels empty)
+    # NYSAC: ESTIMATED, NOT PUBLISHED. NYSAC publishes no numeric bands (widget labels
+    # empty); from a study of Adirondack alpine tundra: treeline is "notably low (~1300 m)"
+    # (~4,265 ft) and tundra patches are "rare below an elevation of 1350 m" (~4,430 ft).
+    # https://bioone.org/journals/Arctic-Antarctic-and-Alpine-Research/volume-43/issue-3/1938-4246-43.3.331/Distribution-of-Alpine-Tundra-in-the-Adirondack-Mountains-of-New/10.1657/1938-4246-43.3.331.pdf
     3017: # adirondack park
       confidence: low
-      btl: [0, 2500]
-      ntl: [2501, 4000]
-      atl: [4001, 20310]
+      btl: [0, 3900]
+      ntl: [3901, 4400]
+      atl: [4401, 20310]
   active: true
 
 - abbr: "AZ"
@@ -335,9 +352,15 @@
 - abbr: "NM"
   name: "New Mexico"
   elevations:
-    # TODO: unsourced; TAC publishes no numeric bands (widget: Below/Near/Above Treeline),
-    # so this zone falls back to the default below
-    # 490: {} # northern new mexico TODO: fill in
+    # TAC: ESTIMATED, NOT PUBLISHED. TAC publishes no numeric bands (widget: Below/Near/
+    # Above Treeline) and its archive has too few band-labelled elevations; from general
+    # treeline mentions: Wheeler Peak treeline "approximately 11,000 to 11,600 ft".
+    # https://www.summitpost.org/wheeler-peak-nm/150429
+    490: # northern new mexico
+      confidence: low
+      btl: [0, 10900]
+      ntl: [10901, 11700]
+      atl: [11701, 20310]
     0: # default
       btl: [0, 10500]
       ntl: [10501, 12000]
