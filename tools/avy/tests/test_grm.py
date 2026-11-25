@@ -8,6 +8,8 @@ from caltopo_layers import (
     sector_levels,
     uniform_band_levels,
     utah_band_levels,
+    utah_danger,
+    utah_problems,
 )
 
 
@@ -123,3 +125,45 @@ class TestBlurredDangerRules:
         levels["atl"][0] = 3  # considerable on north, upper
         rules = blurred_danger_rules(levels, ELEVATIONS)
         assert "a315-45e8350-20310f f7941e" in rules
+
+
+class TestUtahForecast:
+    # UAC roses list the upper band first, N clockwise. Upper: considerable
+    # (utah5) on N and NE, moderate (utah3) elsewhere; middle moderate; lower low.
+    ROSE = ",".join(["5", "5"] + ["3"] * 6 + ["3"] * 8 + ["1"] * 8)
+
+    def test_list_shows_forecast_as_written(self):
+        rules, zone_color = utah_danger(self.ROSE, ELEVATIONS)
+        assert [rule["desc"].split(" (")[0] for rule in rules] == [
+            "Low danger",
+            "Moderate danger",
+            "Moderate to Considerable danger",
+        ]
+        assert zone_color == "utah5"
+
+    def test_danger_layer_blurs_rose(self):
+        rules = blurred_danger_rules(utah_band_levels(self.ROSE), ELEVATIONS)
+        assert rules == [
+            "a315-90e8350-20310f f7941e",
+            "a90-315e8350-20310f fff200",
+            "a0-0e6850-8349f fff200",
+            "a0-0e0-6849f 50b848",
+        ]
+
+    def test_grm_uses_per_aspect_rating(self):
+        rules, _, legend = grm_layer(utah_band_levels(self.ROSE), ELEVATIONS)
+        assert "s30-35a315-90e8350-20310f FF9900" in rules
+        assert "s35-90a315-90e8350-20310f E00000" in rules
+        assert "s35-40a90-315e8350-20310f FF9900" in rules
+        assert [row["level"] for row in legend if row["forecast"]] == ["Low", "Moderate", "Considerable"]
+
+    def test_problem_layer_blurs_rose(self):
+        # 16 marks the problem's aspects; north, upper band only
+        data = {
+            "avalanche_problem_1": "Wind Drifted Snow",
+            "danger_rose_1": ",".join(["16"] + ["0"] * 23),
+        }
+        (problem,) = utah_problems(data, ELEVATIONS, "Thursday")
+        assert problem["name"] == "Thursday Wind Drifted Snow"
+        assert [rule["id"] for rule in problem["rules"]] == ["atl"]
+        assert problem["layer_rules"] == ["a315-45e8350-20310f A200FF"]
