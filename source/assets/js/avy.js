@@ -329,7 +329,7 @@ function loadSubregions(zone, layer, onClick) {
 }
 
 // load a GeoJSON file once and build its layer (not added to the map)
-// zone: {value, color, region, subregions}; type: "zone" (region page) or "region" (index page)
+// zone: {value, name, color, region, subregions}; type: "zone" (region page) or "region" (index page)
 function loadLayer(zone, type) {
   const filePath = zone.value;
   if (!layerLoads[filePath]) {
@@ -347,6 +347,10 @@ function loadLayer(zone, type) {
           style: () => layerStyle(baseColors[filePath] || GRAY),
           onEachFeature: function(feature, featureLayer) {
             featureLayer.on('click', onClick);
+            // areas split into subregions get their names from the subregion outlines
+            if (zone.name && !zone.subregions) {
+              featureLayer.bindTooltip(zone.name, { sticky: true, direction: "top", offset: [0, -8] });
+            }
 
             featureLayer.on('mouseover', function(e) {
               e.target.setStyle({ fillColor: zone.color || GRAY });
@@ -397,10 +401,11 @@ function highlightLayer(filePath) {
 // region page: load every zone in the dropdown, zooming to the selected one
 function loadZoneLayers() {
   const zones = Array.from(zoneSel.options)
-    .map(option => document.getElementById(`${option.value}-report`))
-    .filter(Boolean)
-    .map(report => ({
+    .map(option => ({ option, report: document.getElementById(`${option.value}-report`) }))
+    .filter(({ report }) => report)
+    .map(({ option, report }) => ({
       value: report.dataset.id,
+      name: option.textContent.trim(),
       color: report.getAttribute("data-color"),
       subregions: report.hasAttribute("data-subregions")
     }));
@@ -426,6 +431,7 @@ function regionZones(region) {
   return Array.from(lists).flatMap(ul =>
     Array.from(ul.querySelectorAll('li')).map(li => ({
       value: li.getAttribute('data-zone'),
+      name: (li.querySelector('a') || li).textContent.trim(),
       color: li.getAttribute('data-color'),
       subregions: li.hasAttribute('data-subregions'),
       region: ul.id.replace(/-zones$/, '')
