@@ -89,3 +89,25 @@ class TestGrmLayer:
         rules, _, legend = grm_layer(uniform_band_levels({"btl": 5, "ntl": 5, "atl": 5}), ELEVATIONS)
         assert rules == ["s0-90a0-0e0-20310f E00000"]
         assert legend[-1]["caution"] is None and legend[-1]["avoid"] == 0
+
+
+class TestBlurredProblemRules:
+    def rule(self, band, *names):
+        from avy_config import aspect
+        return {"id": band, "aspects": [aspect[n] for n in names]}
+
+    def test_north_upper_spreads_to_neighbors_and_down(self):
+        from caltopo_layers import blurred_problem_rules
+        rules = blurred_problem_rules([self.rule("atl", "north")], ELEVATIONS, "A200FF")
+        # N octant blurred +/-22.5 deg into NW and NE, and down into the NTL/ATL transition
+        assert rules == ["a315-45e8350-20310f A200FF"]
+
+    def test_all_aspects_all_bands(self):
+        from caltopo_layers import blurred_problem_rules
+        names = ["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest"]
+        rules = blurred_problem_rules([self.rule(b, *names) for b in ("btl", "ntl", "atl")], ELEVATIONS, "A200FF")
+        assert rules == ["a0-0e0-20310f A200FF"]
+
+    def test_no_aspects_no_rules(self):
+        from caltopo_layers import blurred_problem_rules
+        assert blurred_problem_rules([], ELEVATIONS, "A200FF") == []

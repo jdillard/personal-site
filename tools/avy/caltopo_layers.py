@@ -223,6 +223,7 @@ def problem_rule(elevations, band, aspects, i):
         "layer": shading_rule(elevations, band, problem_color.get(i), start, end),
         "desc": f"{desc} ({band_desc(elevations, band)})",
         "color": f"#{problem_color.get(i)}",
+        "aspects": list(aspects),
     }
 
 
@@ -284,15 +285,13 @@ def grm_aspect_runs(sector_levels):
     return [(deg(start), deg(end + 1), level) for start, end, level in runs]
 
 
-def grm_layer(octant_levels_by_band, elevations):
-    """Slope steepness to avoid per the Graphical Reduction Method.
+def blurred_segments(octant_levels_by_band, elevations):
+    """Blurred (low, high, aspect runs) segments, lowest first.
 
-    octant_levels_by_band maps each band to 8 danger scales (N clockwise).
-    Rather than coloring terrain by danger level, shade only slopes steep
-    enough to be a concern at that level: orange for caution, red for avoid.
-    Returns (rules, layer, legend) or None if nothing would be shaded.
+    Elevation band edges and aspect edges are blurred, each transition taking
+    the worse (max) of the levels it straddles. Adjacent segments that come
+    out the same are merged.
     """
-    # aspect runs per segment, merging adjacent segments that come out the same
     segments = []
     for low, high, bands in grm_elevation_segments(elevations):
         octant_levels = [max(octant_levels_by_band[band][i] for band in bands) for i in range(8)]
@@ -301,6 +300,37 @@ def grm_layer(octant_levels_by_band, elevations):
             segments[-1][1] = high
         else:
             segments.append([low, high, runs])
+    return segments
+
+
+def blurred_problem_rules(rules, elevations, color):
+    """Problem shading rules with band and aspect edges blurred outward.
+
+    A problem is present or not, so the blur only grows the shaded area: a
+    marginal aspect or elevation is shaded if either side of it has the problem.
+    """
+    presence = {band: [0] * 8 for band in BANDS}
+    for rule in rules:
+        for octant in range(8):
+            if aspect[octant] in rule["aspects"]:
+                presence[rule["id"]][octant] = 1
+    return [
+        f"a{start}-{end}e{low}-{high}f {color}"
+        for low, high, runs in blurred_segments(presence, elevations)
+        for start, end, present in runs
+        if present
+    ]
+
+
+def grm_layer(octant_levels_by_band, elevations):
+    """Slope steepness to avoid per the Graphical Reduction Method.
+
+    octant_levels_by_band maps each band to 8 danger scales (N clockwise).
+    Rather than coloring terrain by danger level, shade only slopes steep
+    enough to be a concern at that level: orange for caution, red for avoid.
+    Returns (rules, layer, legend) or None if nothing would be shaded.
+    """
+    segments = blurred_segments(octant_levels_by_band, elevations)
 
     rules = []
     for low, high, runs in segments:
@@ -341,14 +371,20 @@ def utah_band_levels(rose):
     return {band: [danger_levels[f"utah{n}"]["scale"] for n in chunk] for band, chunk in uac_rose_by_band(rose)}
 
 
-def make_problem(i, name, rules, tomorrow, layer_rules=None):
-    """Problem entry for the template; layer_rules sets the CalTopo layer order if it differs."""
+def make_problem(i, name, rules, tomorrow, elevations):
+    """Problem entry for the template.
+
+    rules list the forecast's aspects and bands as written; the CalTopo layer
+    and copied rules use the blurred version (see blurred_problem_rules).
+    """
+    layer_rules = blurred_problem_rules(rules, elevations, problem_color.get(i))
     return {
         "name": f"{tomorrow} {name}",
         "desc": f"Problem #{i+1}",
         "color": f"#{problem_color.get(i)}",
         "rules": rules,
-        "layers": layer_param(rule["layer"] for rule in (layer_rules or rules)),
+        "layer_rules": layer_rules,
+        "layers": layer_param(layer_rules),
         "uuid": str(uuid.uuid4()),
     }
 
@@ -434,7 +470,7 @@ def utah_problems(data, elevations, tomorrow):
                 problem_aspects = find_aspect_values(chunk, 16, aspect)
                 if problem_aspects:
                     rules.append(problem_rule(elevations, band, problem_aspects, i))
-            problems.append(make_problem(i, data[f"avalanche_problem_{n}"], rules, tomorrow, layer_rules=rules[::-1]))
+            problems.append(make_problem(i, data[f"avalanche_problem_{n}"], rules, tomorrow, elevations))
     return problems
 
 
@@ -582,7 +618,7 @@ def main():
                     for elevation in problem["data"]["elevations"]
                     if elevation["value"] in CA_PROBLEM_BANDS
                 ]
-                problems.append(make_problem(i, problem["type"]["display"], rules, tomorrow))
+                problems.append(make_problem(i, problem["type"]["display"], rules, tomorrow, area["elevations"]))
 
         area["published"] = published
         area["danger"] = danger_rules
@@ -701,7 +737,7 @@ def main():
                             for band in BANDS
                             if aspects_by_band[band]
                         ]
-                        problems.append(make_problem(i, problem["name"], rules, tomorrow))
+                        problems.append(make_problem(i, problem["name"], rules, tomorrow, elevations))
 
                 zone["published"] = published
                 zone["report_access"] = state["report_access"]
