@@ -194,12 +194,6 @@ def band_desc(elevations, band):
     return format_elevation_range((low, high))
 
 
-def shading_rule(elevations, band, color, start=0, end=0):
-    """CalTopo DEM shading rule for an aspect range (0-0 is all aspects) within a band."""
-    low, high = elevations[band]
-    return f"a{start}-{end}e{low}-{high}f {color}"
-
-
 def layer_param(rules):
     """Join shading rules into a CalTopo layer parameter."""
     return f"sc_{'p'.join(rule.replace(' ', 'c') for rule in rules)}"
@@ -209,7 +203,6 @@ def danger_rule(elevations, band, level):
     """Single color danger rule covering every aspect in a band."""
     return {
         "id": band,
-        "layer": shading_rule(elevations, band, level["color"]),
         "desc": f"{level['desc']} ({band_desc(elevations, band)})",
         "colors": [f"#{level['color']}"],
     }
@@ -217,10 +210,9 @@ def danger_rule(elevations, band, level):
 
 def problem_rule(elevations, band, aspects, i):
     """Problem rule for the given aspects in a band, colored by problem number."""
-    start, end, desc = sort_directions(aspects)
+    _, _, desc = sort_directions(aspects)
     return {
         "id": band,
-        "layer": shading_rule(elevations, band, problem_color.get(i), start, end),
         "desc": f"{desc} ({band_desc(elevations, band)})",
         "color": f"#{problem_color.get(i)}",
         "aspects": list(aspects),
@@ -448,24 +440,15 @@ def utah_danger(rose, elevations):
     for band, chunk in uac_rose_by_band(rose):
         indexes = sorted(set(chunk))
         if len(indexes) == 1: # single color danger rose
-            rule = danger_rule(elevations, band, danger_levels.get(f"utah{indexes[0]}"))
-            rule["layer"] = [rule["layer"]] # UT layers are lists of rules
-            danger_rules.append(rule)
+            danger_rules.append(danger_rule(elevations, band, danger_levels.get(f"utah{indexes[0]}")))
             continue
 
         # multi color danger rose
-        layer_colors = []
-        layer_rules = []
-        for danger_index in indexes:
-            level = danger_levels.get(f"utah{danger_index}")
-            layer_colors.append(f"#{level['color']}")
-            start, end, _ = sort_directions(find_aspect_values(chunk, danger_index, aspect))
-            layer_rules.append(shading_rule(elevations, band, level["color"], start, end))
+        layer_colors = [f"#{danger_levels.get(f'utah{danger_index}')['color']}" for danger_index in indexes]
         low_desc = danger_levels.get(f"utah{indexes[0]}")["shortdesc"]
         high_desc = danger_levels.get(f"utah{indexes[-1]}")["shortdesc"]
         danger_rules.append({
             "id": band,
-            "layer": layer_rules,
             "desc": f"{low_desc} to {high_desc} danger ({band_desc(elevations, band)})",
             "colors": layer_colors,
         })
