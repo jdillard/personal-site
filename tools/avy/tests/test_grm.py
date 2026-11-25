@@ -73,14 +73,6 @@ class TestGrmLayer:
     def test_no_rating_returns_none(self):
         assert grm_layer(uniform_band_levels({"btl": 0, "ntl": 0, "atl": 0}), ELEVATIONS) is None
 
-    def test_utah_rose(self):
-        # UAC lists the upper band first; utah5/6 = considerable, utah3/4 = moderate
-        rose = ",".join(["5"] * 8 + ["3"] * 8 + ["1"] * 8)
-        levels = utah_band_levels(rose)
-        assert levels["atl"] == [3] * 8
-        assert levels["ntl"] == [2] * 8
-        assert levels["btl"] == [1] * 8
-
     def test_merges_identical_segments(self):
         rules, _, _ = grm_layer(uniform_band_levels({"btl": 1, "ntl": 1, "atl": 1}), ELEVATIONS)
         assert rules == ["s40-90a0-0e0-20310f FF9900"]
@@ -131,6 +123,12 @@ class TestUtahForecast:
     # UAC roses list the upper band first, N clockwise. Upper: considerable
     # (utah5) on N and NE, moderate (utah3) elsewhere; middle moderate; lower low.
     ROSE = ",".join(["5", "5"] + ["3"] * 6 + ["3"] * 8 + ["1"] * 8)
+
+    def test_band_levels_from_rose(self):
+        levels = utah_band_levels(self.ROSE)
+        assert levels["atl"] == [3, 3] + [2] * 6
+        assert levels["ntl"] == [2] * 8
+        assert levels["btl"] == [1] * 8
 
     def test_list_shows_forecast_as_written(self):
         rules, zone_color = utah_danger(self.ROSE, ELEVATIONS)
