@@ -86,14 +86,15 @@ avy_danger_levels = {
 # Graphical Reduction Method (GRM) style slope thresholds by danger scale.
 # (caution_from, avoid_from) in degrees: slopes at or above caution_from are
 # shaded orange, at or above avoid_from red. Approximates the Swiss rule of
-# thumb (Moderate: avoid >40, Considerable: >35, High: >30). None = no shading.
+# thumb (Moderate: avoid >40, Considerable: >35, High: >30). None = no shading;
+# a caution of None skips the caution band.
 grm_slope_thresholds = {
     0: None,
     1: (40, 45),
     2: (35, 40),
     3: (30, 35),
     4: (25, 30),
-    5: (20, 25),
+    5: (None, 0),  # off-limits: shade every slope
 }
 grm_colors = {"caution": "FF9900", "avoid": "E00000"}
 # feet of elevation band edge blur (each side) for the GRM layer

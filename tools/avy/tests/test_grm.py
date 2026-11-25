@@ -79,3 +79,8 @@ class TestGrmLayer:
     def test_merges_identical_segments(self):
         rules, _, _ = grm_layer(uniform_band_levels({"btl": 1, "ntl": 1, "atl": 1}), ELEVATIONS)
         assert rules == ["s40-45a0-0e0-20310f FF9900", "s45-90a0-0e0-20310f E00000"]
+
+    def test_extreme_shades_all_slopes_red(self):
+        rules, _, legend = grm_layer(uniform_band_levels({"btl": 5, "ntl": 5, "atl": 5}), ELEVATIONS)
+        assert rules == ["s0-90a0-0e0-20310f E00000"]
+        assert legend[-1]["caution"] is None and legend[-1]["avoid"] == 0
