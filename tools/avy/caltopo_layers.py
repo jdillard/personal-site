@@ -264,6 +264,11 @@ def sector_levels(octant_levels):
     return levels
 
 
+def sector_start(k):
+    """Start bearing of sector k. Runs only break at octant centers (odd k), a multiple of 45."""
+    return (k - 1) // 2 * 45 % 360
+
+
 def aspect_runs(sector_levels):
     """Merge adjacent sectors with the same level into (start, end, level) aspect ranges."""
     if len(set(sector_levels)) == 1:
@@ -276,8 +281,7 @@ def aspect_runs(sector_levels):
             runs[-1][1] = k
         else:
             runs.append([k, k, sector_levels[k]])
-    deg = lambda k: round((k * 22.5 - 22.5) % 360)
-    return [(deg(start), deg(end + 1), level) for start, end, level in runs]
+    return [(sector_start(start), sector_start(end + 1), level) for start, end, level in runs]
 
 
 def blurred_segments(octant_levels_by_band, elevations):
