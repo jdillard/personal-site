@@ -665,6 +665,15 @@ $avy-gray: #666;
     @media screen and (min-width: 30em) {
         height: min(380px, 50vh);
     }
+
+    // tapped zones take focus; hide the browser's focus/tap box around the shape
+    .leaflet-interactive {
+        -webkit-tap-highlight-color: transparent;
+
+        &:focus {
+            outline: none;
+        }
+    }
 }
 
 .avy-regions {
