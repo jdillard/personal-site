@@ -66,12 +66,12 @@ css_includes:
                 <optgroup label="US">
                     {% for state in states | sort(attribute="name") %}
                     {% if state.active %}
-                    <option value="{{ state.page }}.html"{% if state.name == page %} selected=""{% endif %}>{{ state.name }}</option>
+                    <option value="/avy/#region-{{ state.state | lower }}"{% if state.name == page %} selected=""{% endif %}>{{ state.name }}</option>
                     {% endif %}
                     {% endfor %}
                 </optgroup>
                 <optgroup label="Canada">
-                    <option value="/avy/canada.html"{% if page == "Canada" %} selected=""{% endif %}>Canada</option>
+                    <option value="/avy/#region-canada"{% if page == "Canada" %} selected=""{% endif %}>Canada</option>
                 </optgroup>
             </select>
         </span>

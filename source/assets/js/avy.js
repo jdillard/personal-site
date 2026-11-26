@@ -46,6 +46,13 @@ function showRegion(region_id, updateHash = true) {
     region.classList.remove('dn');
   }
 
+  // single region: list beside the map; all: full-width map with lists below
+  const layout = document.getElementById('avy-layout');
+  if (layout) {
+    layout.classList.toggle('avy-single', region_id != "all");
+    map.invalidateSize();
+  }
+
   if(updateHash) setHash(region_id == "all" ? "" : `region-${region_id}`);
   if(indexSel) indexSel.value = region_id;
   showRegionLayers(region_id);
