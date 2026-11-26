@@ -8,6 +8,7 @@ AVY_DIR = Path(__file__).parent.parent
 STATE_INFO = AVY_DIR / "state_info.yaml"
 MAP_LAYER = AVY_DIR / "avalanche-reports-raw" / "map-layer.json"
 CANADA_SUBREGIONS = AVY_DIR / "data" / "canadian_subregions.geojson"
+RAW_REPORTS = AVY_DIR / "avalanche-reports-raw"
 
 
 @pytest.fixture(scope="module")
@@ -67,6 +68,24 @@ def test_canada_keys_exist_in_subregions(state_info):
     canada = next(state for state in state_info if state["abbr"] == "CAN")
     unknown = [key for key in canada["elevations"] if key != 0 and key not in known]
     assert not unknown, f"Canada band keys not in canadian_subregions.geojson: {unknown}"
+
+
+def test_colorado_range_keys_exist_in_caic_reports(state_info):
+    """CO bands keyed by range name must match a subzone range in the CAIC reports.
+
+    Every subzone is in some forecast, so all downloaded reports together list every
+    range; a misspelled or renamed key would silently stop counting toward the majority.
+    """
+    reports = sorted(RAW_REPORTS.glob("CAIC-*.json"))
+    if not reports:
+        pytest.skip("no CAIC reports downloaded; run tools/avy/download-avy-json.py")
+    known = set()
+    for path in reports:
+        with open(path) as fp:
+            known |= {z["name"] for z in json.load(fp).get("forecast_zone") or [] if z.get("name")}
+    colorado = next(state for state in state_info if state["abbr"] == "CO")
+    unknown = [key for key in colorado["elevations"] if isinstance(key, str) and key not in known]
+    assert not unknown, f"CO range keys not in CAIC forecast_zone names: {unknown}"
 
 
 def test_confidence_values(state_info):
