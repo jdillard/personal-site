@@ -92,10 +92,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/selkirk-mountains/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.idahopanhandleavalanche.org/forecasts/#/selkirk-mountains/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -112,10 +116,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/silver-valley-&-bitterroot-mountains/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.idahopanhandleavalanche.org/forecasts/#/silver-valley-&-bitterroot-mountains/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -132,10 +140,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/west-cabinet-mountains/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.idahopanhandleavalanche.org/forecasts/#/west-cabinet-mountains/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -152,10 +164,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/">Payette Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/avalanche/salmon-river-mountains">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://payetteavalanche.org/">Payette Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://payetteavalanche.org/forecasts/avalanche/salmon-river-mountains">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -172,14 +188,18 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/">Payette Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/avalanche/west-mountains">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://payetteavalanche.org/">Payette Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://payetteavalanche.org/forecasts/avalanche/west-mountains">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
-        <div id="SNFAC-2907-report" class="avy-zone dn" data-id="SNFAC-2907" data-color="#939598" data-published="Monday, November 23, 2026 10:19AM">
+        <div id="SNFAC-2907-report" class="avy-zone dn" data-id="SNFAC-2907" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -192,14 +212,18 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/">Sawtooth Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/banner-summit">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://www.sawtoothavalanche.com/">Sawtooth Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.sawtoothavalanche.com/forecasts/avalanche/banner-summit">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
-        <div id="SNFAC-2904-report" class="avy-zone dn" data-id="SNFAC-2904" data-color="#939598" data-published="Monday, November 23, 2026 10:19AM">
+        <div id="SNFAC-2904-report" class="avy-zone dn" data-id="SNFAC-2904" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -212,14 +236,18 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/">Sawtooth Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/galena-summit-&-eastern-mtns">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://www.sawtoothavalanche.com/">Sawtooth Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.sawtoothavalanche.com/forecasts/avalanche/galena-summit-&-eastern-mtns">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
-        <div id="SNFAC-2906-report" class="avy-zone dn" data-id="SNFAC-2906" data-color="#939598" data-published="Monday, November 23, 2026 10:19AM">
+        <div id="SNFAC-2906-report" class="avy-zone dn" data-id="SNFAC-2906" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -232,14 +260,18 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/">Sawtooth Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/sawtooth-&-western-smoky-mtns">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://www.sawtoothavalanche.com/">Sawtooth Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.sawtoothavalanche.com/forecasts/avalanche/sawtooth-&-western-smoky-mtns">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
-        <div id="SNFAC-2905-report" class="avy-zone dn" data-id="SNFAC-2905" data-color="#939598" data-published="Monday, November 23, 2026 10:19AM">
+        <div id="SNFAC-2905-report" class="avy-zone dn" data-id="SNFAC-2905" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
             <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
@@ -252,10 +284,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/">Sawtooth Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/soldier-&-wood-river-valley-mtns">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://www.sawtoothavalanche.com/">Sawtooth Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.sawtoothavalanche.com/forecasts/avalanche/soldier-&-wood-river-valley-mtns">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -307,60 +343,65 @@ css_includes:
 <section class="tc lh-copy">
     <label for="regionSel" class="f6 b">Change Regions:</label>
     <select class="f6 ma1 bg-near-white pa2" id="regionSel">
-        
-        
-        <option value="/avy/ca.html">California</option>
-        
-        
-        
-        <option value="/avy/wy.html">Wyoming</option>
-        
-        
-        
-        <option value="/avy/or.html">Oregon</option>
-        
-        
-        
-        <option value="/avy/ak.html">Alaska</option>
-        
-        
-        
-        <option value="/avy/ny.html">New York</option>
-        
-        
-        
-        <option value="/avy/mt.html">Montana</option>
-        
-        
-        
-        <option value="/avy/id.html" selected="">Idaho</option>
-        
-        
-        
-        <option value="/avy/az.html">Arizona</option>
-        
-        
-        
-        <option value="/avy/nh.html">New Hampshire</option>
-        
-        
-        
-        <option value="/avy/wa.html">Washington</option>
-        
-        
-        
-        <option value="/avy/nm.html">New Mexico</option>
-        
-        
-        
-        <option value="/avy/ut.html">Utah</option>
-        
-        
-        
-        <option value="/avy/co.html">Colorado</option>
-        
-        
-        <option value="/avy/canada.html">Canada</option>
+        <option value="/avy/">All Regions</option>
+        <optgroup label="US">
+            
+            
+            <option value="/avy/ak.html">Alaska</option>
+            
+            
+            
+            <option value="/avy/az.html">Arizona</option>
+            
+            
+            
+            <option value="/avy/ca.html">California</option>
+            
+            
+            
+            <option value="/avy/co.html">Colorado</option>
+            
+            
+            
+            <option value="/avy/id.html" selected="">Idaho</option>
+            
+            
+            
+            <option value="/avy/mt.html">Montana</option>
+            
+            
+            
+            <option value="/avy/nh.html">New Hampshire</option>
+            
+            
+            
+            <option value="/avy/nm.html">New Mexico</option>
+            
+            
+            
+            <option value="/avy/ny.html">New York</option>
+            
+            
+            
+            <option value="/avy/or.html">Oregon</option>
+            
+            
+            
+            <option value="/avy/ut.html">Utah</option>
+            
+            
+            
+            <option value="/avy/wa.html">Washington</option>
+            
+            
+            
+            <option value="/avy/wy.html">Wyoming</option>
+            
+            
+        </optgroup>
+        <optgroup label="Canada">
+            <option value="/avy/canada.html">Canada</option>
+        </optgroup>
     </select>
 </section>
 

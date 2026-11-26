@@ -88,10 +88,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://bridgertetonavalanchecenter.org/">Bridger-Teton Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://bridgertetonavalanchecenter.org/">Bridger-Teton Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -108,10 +112,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://bridgertetonavalanchecenter.org/">Bridger-Teton Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/snake-river-range">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://bridgertetonavalanchecenter.org/">Bridger-Teton Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://bridgertetonavalanchecenter.org/forecasts/#/snake-river-range">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -128,10 +136,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://bridgertetonavalanchecenter.org/">Bridger-Teton Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://bridgertetonavalanchecenter.org/">Bridger-Teton Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -148,10 +160,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://bridgertetonavalanchecenter.org/">Bridger-Teton Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://bridgertetonavalanchecenter.org/">Bridger-Teton Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -168,10 +184,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">Eastern Wyoming Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://ewyoavalanche.org">Eastern Wyoming Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://ewyoavalanche.org">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -188,10 +208,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">Eastern Wyoming Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://ewyoavalanche.org">Eastern Wyoming Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://ewyoavalanche.org">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -208,10 +232,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">Eastern Wyoming Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://ewyoavalanche.org">Eastern Wyoming Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://ewyoavalanche.org">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -255,60 +283,65 @@ css_includes:
 <section class="tc lh-copy">
     <label for="regionSel" class="f6 b">Change Regions:</label>
     <select class="f6 ma1 bg-near-white pa2" id="regionSel">
-        
-        
-        <option value="/avy/ca.html">California</option>
-        
-        
-        
-        <option value="/avy/wy.html" selected="">Wyoming</option>
-        
-        
-        
-        <option value="/avy/or.html">Oregon</option>
-        
-        
-        
-        <option value="/avy/ak.html">Alaska</option>
-        
-        
-        
-        <option value="/avy/ny.html">New York</option>
-        
-        
-        
-        <option value="/avy/mt.html">Montana</option>
-        
-        
-        
-        <option value="/avy/id.html">Idaho</option>
-        
-        
-        
-        <option value="/avy/az.html">Arizona</option>
-        
-        
-        
-        <option value="/avy/nh.html">New Hampshire</option>
-        
-        
-        
-        <option value="/avy/wa.html">Washington</option>
-        
-        
-        
-        <option value="/avy/nm.html">New Mexico</option>
-        
-        
-        
-        <option value="/avy/ut.html">Utah</option>
-        
-        
-        
-        <option value="/avy/co.html">Colorado</option>
-        
-        
-        <option value="/avy/canada.html">Canada</option>
+        <option value="/avy/">All Regions</option>
+        <optgroup label="US">
+            
+            
+            <option value="/avy/ak.html">Alaska</option>
+            
+            
+            
+            <option value="/avy/az.html">Arizona</option>
+            
+            
+            
+            <option value="/avy/ca.html">California</option>
+            
+            
+            
+            <option value="/avy/co.html">Colorado</option>
+            
+            
+            
+            <option value="/avy/id.html">Idaho</option>
+            
+            
+            
+            <option value="/avy/mt.html">Montana</option>
+            
+            
+            
+            <option value="/avy/nh.html">New Hampshire</option>
+            
+            
+            
+            <option value="/avy/nm.html">New Mexico</option>
+            
+            
+            
+            <option value="/avy/ny.html">New York</option>
+            
+            
+            
+            <option value="/avy/or.html">Oregon</option>
+            
+            
+            
+            <option value="/avy/ut.html">Utah</option>
+            
+            
+            
+            <option value="/avy/wa.html">Washington</option>
+            
+            
+            
+            <option value="/avy/wy.html" selected="">Wyoming</option>
+            
+            
+        </optgroup>
+        <optgroup label="Canada">
+            <option value="/avy/canada.html">Canada</option>
+        </optgroup>
     </select>
 </section>
 

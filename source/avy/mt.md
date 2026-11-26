@@ -108,10 +108,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/flathead-range-&-glacier-np">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.flatheadavalanche.org/avalanche-forecast/#/flathead-range-&-glacier-np">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -128,10 +132,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/northern-whitefish-range">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.flatheadavalanche.org/avalanche-forecast/#/northern-whitefish-range">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -148,10 +156,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/southern-whitefish-range">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.flatheadavalanche.org/avalanche-forecast/#/southern-whitefish-range">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -168,10 +180,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/swan-range">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.flatheadavalanche.org/">Flathead Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.flatheadavalanche.org/avalanche-forecast/#/swan-range">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -188,10 +204,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/bridger-range/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.mtavalanche.com/avalanche-forecast#/bridger-range/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -208,10 +228,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/cooke-city/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.mtavalanche.com/avalanche-forecast#/cooke-city/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -228,10 +252,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/island-park/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.mtavalanche.com/avalanche-forecast#/island-park/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -248,10 +276,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/lionhead-area/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.mtavalanche.com/avalanche-forecast#/lionhead-area/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -268,10 +300,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-gallatin-range/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.mtavalanche.com/avalanche-forecast#/northern-gallatin-range/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -288,10 +324,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-madison-range/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.mtavalanche.com/avalanche-forecast#/northern-madison-range/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -308,10 +348,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-gallatin-range/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.mtavalanche.com/avalanche-forecast#/southern-gallatin-range/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -328,10 +372,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-madison-range/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.mtavalanche.com">Gallatin NF Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.mtavalanche.com/avalanche-forecast#/southern-madison-range/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -348,10 +396,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -368,10 +420,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.idahopanhandleavalanche.org/">Idaho Panhandle Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -388,10 +444,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/">West Central Montana Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/Bitterroot">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://missoulaavalanche.org/">West Central Montana Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://missoulaavalanche.org/forecasts/#/Bitterroot">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -408,10 +468,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/">West Central Montana Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/rattlesnake">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://missoulaavalanche.org/">West Central Montana Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://missoulaavalanche.org/forecasts/#/rattlesnake">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -428,10 +492,14 @@ css_includes:
 
             
             
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
-            <p class="tc f7 black-60 measure center">
-                Forecast data from <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/">West Central Montana Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative light-red" href="http://www.missoulaavalanche.org/forecasts/#/seeley-lake">full forecast</a> before heading out.
+            
+            <p class="f7 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://missoulaavalanche.org/">West Central Montana Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="http://www.missoulaavalanche.org/forecasts/#/seeley-lake">full forecast</a> before heading out.
             </p>
+            
+            </div>
             
         </div>
         
@@ -515,60 +583,65 @@ css_includes:
 <section class="tc lh-copy">
     <label for="regionSel" class="f6 b">Change Regions:</label>
     <select class="f6 ma1 bg-near-white pa2" id="regionSel">
-        
-        
-        <option value="/avy/ca.html">California</option>
-        
-        
-        
-        <option value="/avy/wy.html">Wyoming</option>
-        
-        
-        
-        <option value="/avy/or.html">Oregon</option>
-        
-        
-        
-        <option value="/avy/ak.html">Alaska</option>
-        
-        
-        
-        <option value="/avy/ny.html">New York</option>
-        
-        
-        
-        <option value="/avy/mt.html" selected="">Montana</option>
-        
-        
-        
-        <option value="/avy/id.html">Idaho</option>
-        
-        
-        
-        <option value="/avy/az.html">Arizona</option>
-        
-        
-        
-        <option value="/avy/nh.html">New Hampshire</option>
-        
-        
-        
-        <option value="/avy/wa.html">Washington</option>
-        
-        
-        
-        <option value="/avy/nm.html">New Mexico</option>
-        
-        
-        
-        <option value="/avy/ut.html">Utah</option>
-        
-        
-        
-        <option value="/avy/co.html">Colorado</option>
-        
-        
-        <option value="/avy/canada.html">Canada</option>
+        <option value="/avy/">All Regions</option>
+        <optgroup label="US">
+            
+            
+            <option value="/avy/ak.html">Alaska</option>
+            
+            
+            
+            <option value="/avy/az.html">Arizona</option>
+            
+            
+            
+            <option value="/avy/ca.html">California</option>
+            
+            
+            
+            <option value="/avy/co.html">Colorado</option>
+            
+            
+            
+            <option value="/avy/id.html">Idaho</option>
+            
+            
+            
+            <option value="/avy/mt.html" selected="">Montana</option>
+            
+            
+            
+            <option value="/avy/nh.html">New Hampshire</option>
+            
+            
+            
+            <option value="/avy/nm.html">New Mexico</option>
+            
+            
+            
+            <option value="/avy/ny.html">New York</option>
+            
+            
+            
+            <option value="/avy/or.html">Oregon</option>
+            
+            
+            
+            <option value="/avy/ut.html">Utah</option>
+            
+            
+            
+            <option value="/avy/wa.html">Washington</option>
+            
+            
+            
+            <option value="/avy/wy.html">Wyoming</option>
+            
+            
+        </optgroup>
+        <optgroup label="Canada">
+            <option value="/avy/canada.html">Canada</option>
+        </optgroup>
     </select>
 </section>
 
