@@ -186,6 +186,18 @@ def short_area_name(subregions, max_chars=36):
     return ", ".join(shown) + (f" +{remaining} more" if remaining else "")
 
 
+def forecast_zone_names(report, zone_id):
+    """Distinct range names a forecast covers, from its forecast_zone list.
+
+    Centers like CAIC merge many small zones into one forecast, and the
+    map layer names them all generically ("CAIC zone"). The zone's own
+    entry comes first, then the rest in order of appearance.
+    """
+    zones = report.get("forecast_zone") or []
+    ordered = [z for z in zones if z.get("id") == zone_id] + [z for z in zones if z.get("id") != zone_id]
+    return list(dict.fromkeys(z["name"] for z in ordered if z.get("name")))
+
+
 #TODO better variable names
 def find_aspect_values(list, value, aspect):
     indices = [index for index, element in enumerate(list) if element == value]
@@ -373,6 +385,15 @@ def main():
             "danger": [],
             "problems": [],
         }
+
+        # CAIC zones are all named "CAIC zone" in the map layer; name them by the ranges their forecast covers
+        report_path = f"tools/avy/avalanche-reports-raw/{zone_info['slug']}.json"
+        if "CAIC" in zone_info["center_id"] and os.path.isfile(report_path):
+            with open(report_path) as fp:
+                ranges = forecast_zone_names(json.load(fp), item["id"])
+            if ranges:
+                zone_info["name"] = ", ".join(ranges)
+                zone_info["short_name"] = short_area_name(ranges)
 
         # check if the zone's state already exists and append to it if so
         found = False

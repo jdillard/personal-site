@@ -9,6 +9,7 @@ from caltopo_layers import (
     split_area_name,
     subregions_geojson,
     short_area_name,
+    forecast_zone_names,
     canada_area_elevations,
     band_confidence,
 )
@@ -345,3 +346,20 @@ class TestBandConfidence:
 
     def test_state_default_fallback_is_low(self):
         assert band_confidence(self.BANDS, fallback=True) == "low"
+
+
+class TestForecastZoneNames:
+    """Tests for forecast_zone_names()"""
+
+    def test_own_zone_first_then_distinct(self):
+        report = {"forecast_zone": [
+            {"id": 2720, "name": "Battlement Mesa"},
+            {"id": 2747, "name": "Grand Mesa"},
+            {"id": 2719, "name": "Battlement Mesa"},
+            {"id": 2744, "name": "Grand Mesa"},
+        ]}
+        assert forecast_zone_names(report, 2747) == ["Grand Mesa", "Battlement Mesa"]
+
+    def test_missing_or_empty(self):
+        assert forecast_zone_names({}, 1) == []
+        assert forecast_zone_names({"forecast_zone": None}, 1) == []
