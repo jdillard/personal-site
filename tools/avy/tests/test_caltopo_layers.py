@@ -271,7 +271,13 @@ class TestShortAreaName:
         assert short_area_name(["Coquihalla", "Manning", "Skagit"]) == "Coquihalla, Manning, Skagit"
 
     def test_long_list_truncated_with_count(self):
-        assert short_area_name(["A", "B", "C", "D", "E"]) == "A, B +3 more"
+        assert short_area_name(["A", "B", "C", "D", "E"], max_chars=4) == "A, B +3 more"
+
+    def test_name_crossing_limit_collapses(self):
+        assert short_area_name(["Corner Brook", "Gros Morne", "Northern Peninsula"]) == "Corner Brook, Gros Morne +1 more"
+
+    def test_first_name_always_shown(self):
+        assert short_area_name(["A" * 40, "B"]) == "A" * 40 + " +1 more"
 
     def test_empty(self):
         assert short_area_name([]) == ""

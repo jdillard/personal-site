@@ -171,12 +171,19 @@ def canada_area_elevations(subregions, subregion_ranges, elevations):
     return elevations[0]
 
 
-def short_area_name(subregions, max_shown=3):
-    """Readable short name for an area, e.g. "Blue River, Clearwater +8 more"."""
-    if len(subregions) <= max_shown:
-        return ", ".join(subregions)
-    shown = max_shown - 1
-    return f"{', '.join(subregions[:shown])} +{len(subregions) - shown} more"
+def short_area_name(subregions, max_chars=36):
+    """Readable short name for an area, e.g. "Blue River, Clearwater +8 more".
+
+    Names are added whole until the next one would push the joined names past
+    max_chars; the rest collapse into "+N more". At least one name is shown.
+    """
+    shown = []
+    for name in subregions:
+        if shown and len(", ".join(shown + [name])) > max_chars:
+            break
+        shown.append(name)
+    remaining = len(subregions) - len(shown)
+    return ", ".join(shown) + (f" +{remaining} more" if remaining else "")
 
 
 #TODO better variable names
