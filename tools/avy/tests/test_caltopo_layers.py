@@ -11,6 +11,7 @@ from caltopo_layers import (
     short_area_name,
     forecast_zone_names,
     canada_area_elevations,
+    zone_elevations,
     band_confidence,
 )
 
@@ -340,6 +341,26 @@ class TestCanadaAreaElevations:
     def test_unmapped_range_and_unknown_names_fall_back_to_default(self):
         assert canada_area_elevations(["Tumbler", "Nowhere"], self.RANGES, self.ELEVATIONS) == "default"
         assert canada_area_elevations([], self.RANGES, self.ELEVATIONS) == "default"
+
+
+class TestZoneElevations:
+    """Tests for zone_elevations()"""
+
+    ELEVATIONS = {0: "default", 2747: "mesa-zone", "Front Range": "central", "Gore Range": "central",
+                  "Park Range": "north"}
+
+    def test_zone_entry_wins(self):
+        assert zone_elevations(2747, ["Park Range"], self.ELEVATIONS) == ("mesa-zone", False)
+
+    def test_majority_of_subzones(self):
+        ranges = ["Front Range", "Gore Range", "Park Range", "Park Range"]
+        assert zone_elevations(1, ranges, {**self.ELEVATIONS, "Gore Range": "gore"}) == ("default", True)
+        ranges = ["Front Range", "Gore Range", "Park Range"]
+        assert zone_elevations(1, ranges, self.ELEVATIONS) == ("central", False)
+
+    def test_falls_back_to_default(self):
+        assert zone_elevations(1, [], self.ELEVATIONS) == ("default", True)
+        assert zone_elevations(1, ["Unknown", "Park Range"], self.ELEVATIONS) == ("default", True)
 
 
 class TestBandConfidence:

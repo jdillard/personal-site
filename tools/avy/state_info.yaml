@@ -182,18 +182,70 @@
 - abbr: "CO"
   name: "Colorado"
   elevations:
-    # CAIC publishes no numeric bands (forecast widget and site only say BTL/NTL/ATL)
-    # TODO: unsourced; same set used for every CO zone
-    # 2660: {} # la plata mountains TODO: fill in
-    # 2745: {} # front range TODO: fill in
-    # 2747: {} # grand mesa TODO: fill in
-    # 2753: {} # elk mountains TODO: fill in
-    # 2754: {} # sawatch mountains TODO: fill in
-    # 2755: {} # mosquito range TODO: fill in
+    # CAIC publishes no numeric bands (forecast widget and site only say BTL/NTL/ATL).
+    # CAIC merges many subzones into each forecast and regroups them, so like Canada,
+    # bands are keyed by range name (the subzones' `forecast_zone[].name` in the CAIC
+    # report). A zone uses the bands more than half of its subzones map to, else the
+    # default. Zone id keys (ints) still win over ranges.
+    #
+    # DERIVED, NOT PUBLISHED: rough treeline by range from general knowledge, rounded to
+    # 100 ft. Treeline rises north to south, ~11,000' in the Park Range to ~12,000' in
+    # the San Juans. NTL is ~500' below to ~500' above treeline.
+    # Spot-checked against the 2023-24 to 2025-26 forecast archives
+    # (https://api.avalanche.org/v2/public/products?avalanche_center_id=CAIC&date_start=..&date_end=..,
+    # every 3 days, 1617 forecasts); CAIC rarely gives numbers: 13 unique mentions, only one
+    # tied to treeline ("near and above treeline, generally above 10,000 feet", Flat Tops /
+    # Grand Mesa, 2026-03-04). The rest loosely agree: wind slabs "just below ridgelines"
+    # at 11,000-12,500' in the Elks and Sawatch, "upper elevations above 10,500'" on Grand Mesa.
+    # Not enough to raise confidence.
     0: # default
       btl: [0, 9500]
       ntl: [9501, 11500]
       atl: [11501, 20310]
+    # northern ranges, treeline ~10,800'
+    "Park Range": &co_north
+      confidence: low
+      btl: [0, 10300]
+      ntl: [10301, 11300]
+      atl: [11301, 20310]
+    "Rabbit Ears Mountains": *co_north
+    "Elkhead Mountains": *co_north
+    "Medicine Bow Mountains": *co_north
+    "Never Summer Mountains": *co_north
+    "Flat Top Mountains": *co_north
+    # central ranges, treeline ~11,300'
+    "Front Range": &co_central
+      confidence: low
+      btl: [0, 10800]
+      ntl: [10801, 11800]
+      atl: [11801, 20310]
+    "Pikes Peak Massif": *co_central
+    "Gore Range": *co_central
+    "Ten Mile Range": *co_central
+    "Mosquito Range": *co_central
+    "Sawatch Mountains": *co_central
+    "Red Table and Hardscrabble": *co_central
+    "Elk Mountains": *co_central
+    "West Elk Mountains": *co_central
+    # southern ranges, treeline ~11,700'
+    "Northern San Juan Mountains": &co_south
+      confidence: low
+      btl: [0, 11200]
+      ntl: [11201, 12200]
+      atl: [12201, 20310]
+    "Southern San Juan Mountains": *co_south
+    "La Plata Mountains": *co_south
+    "Rico Mountains": *co_south
+    "La Garita Mountains": *co_south
+    "Cochetopa Hills": *co_south
+    "Sangre de Cristo Mountains": *co_south
+    # forested mesa tops, ~10,000-11,300'; little true alpine
+    "Grand Mesa": &co_mesa
+      confidence: low
+      btl: [0, 10000]
+      ntl: [10001, 10800]
+      atl: [10801, 20310]
+    "Battlement Mesa": *co_mesa
   active: true
 
 - abbr: "ID"

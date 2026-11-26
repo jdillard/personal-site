@@ -53,7 +53,8 @@ def test_zone_ids_exist_in_map_layer(state_info, map_layer_zones):
         for state in state_info
         if state["abbr"] != "CAN"
         for zone_id in state["elevations"]
-        if zone_id != 0 and zone_id not in map_layer_zones.get(state["abbr"], set())
+        # string keys are range names (CO), not zone ids
+        if isinstance(zone_id, int) and zone_id != 0 and zone_id not in map_layer_zones.get(state["abbr"], set())
     ]
     assert not stale, f"zone ids not in map-layer.json (re-keyed upstream?): {', '.join(stale)}"
 

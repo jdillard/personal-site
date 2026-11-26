@@ -162,13 +162,37 @@ def canada_area_elevations(subregions, subregion_ranges, elevations):
             keys.append(name)
         elif subregion_ranges.get(name) in elevations:
             keys.append(subregion_ranges[name])
-    # count identical band sets together (e.g. several subregions with their own equal entries)
+    return majority_elevations(keys, len(subregions), elevations) or elevations[0]
+
+
+def majority_elevations(keys, total, elevations):
+    """Bands that more than half of total parts map to, else None.
+
+    keys holds the elevations key of each part that has one. Identical band
+    sets count together (e.g. several ranges sharing the same entry).
+    """
     by_bands = Counter(json.dumps(elevations[key], sort_keys=True) for key in keys)
     if by_bands:
         bands, count = by_bands.most_common(1)[0]
-        if count * 2 > len(subregions):
+        if count * 2 > total:
             return next(elevations[key] for key in keys if json.dumps(elevations[key], sort_keys=True) == bands)
-    return elevations[0]
+    return None
+
+
+def zone_elevations(zone_id, ranges, elevations):
+    """Elevation bands for a US zone and whether they are the state default.
+
+    The zone's own entry wins. Else, for centers like CAIC that merge many
+    subzones into one forecast, ranges lists each subzone's range name and
+    the zone uses the range bands more than half of its subzones map to.
+    Else the state default (key 0).
+    """
+    if zone_id in elevations:
+        return elevations[zone_id], False
+    bands = majority_elevations([r for r in ranges if r in elevations], len(ranges), elevations)
+    if bands:
+        return bands, False
+    return elevations.get(0), True
 
 
 def short_area_name(subregions, max_chars=28):
@@ -390,7 +414,10 @@ def main():
         report_path = f"tools/avy/avalanche-reports-raw/{zone_info['slug']}.json"
         if "CAIC" in zone_info["center_id"] and os.path.isfile(report_path):
             with open(report_path) as fp:
-                ranges = forecast_zone_names(json.load(fp), item["id"])
+                report = json.load(fp)
+            ranges = forecast_zone_names(report, item["id"])
+            # one range name per subzone, for picking elevation bands by majority
+            zone_info["ranges"] = [z["name"] for z in report.get("forecast_zone") or [] if z.get("name")]
             if ranges:
                 zone_info["name"] = ", ".join(ranges)
                 zone_info["short_name"] = short_area_name(ranges)
@@ -562,9 +589,8 @@ def main():
                             if is_expired(data.get("expires_time")):
                                 data = {}
                                 published = False
-                # use zone elevation profile if exists, else use the state level elevation profile
-                fallback = zone["zone_id"] not in state["elevations"]
-                elevations = state["elevations"].get(zone["zone_id"], state["elevations"].get(0))
+                # zone bands, else its subzones' majority range bands, else the state default
+                elevations, fallback = zone_elevations(zone["zone_id"], zone.get("ranges", []), state["elevations"])
                 zone["elevations"] = elevations
                 zone["confidence"] = band_confidence(elevations, fallback)
 
