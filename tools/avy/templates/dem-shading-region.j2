@@ -179,7 +179,7 @@ css_includes:
         <option value="{{ state.page }}.html"{% if state.name == page %} selected=""{% endif %}>{{ state.name }}</option>
         {% endif %}
         {% endfor %}
-        <option value="/avy/canada.html">Canada</option>
+        <option value="/avy/canada.html"{% if page == "Canada" %} selected=""{% endif %}>Canada</option>
     </select>
 </section>
 

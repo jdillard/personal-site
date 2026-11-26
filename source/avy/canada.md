@@ -714,7 +714,7 @@ css_includes:
         <option value="/avy/co.html">Colorado</option>
         
         
-        <option value="/avy/canada.html">Canada</option>
+        <option value="/avy/canada.html" selected="">Canada</option>
     </select>
 </section>
 
