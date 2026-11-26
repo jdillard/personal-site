@@ -26,60 +26,64 @@ css_includes:
             <label for="indexSel">Region</label>
             <select class="avy-select" id="indexSel">
                 <option value="all" selected="">All Regions</option>
-                
-                
-                <option value="ak">Alaska</option>
-                
-                
-                
-                <option value="az">Arizona</option>
-                
-                
-                
-                <option value="ca">California</option>
-                
-                
-                
-                <option value="co">Colorado</option>
-                
-                
-                
-                <option value="id">Idaho</option>
-                
-                
-                
-                <option value="mt">Montana</option>
-                
-                
-                
-                <option value="nh">New Hampshire</option>
-                
-                
-                
-                <option value="nm">New Mexico</option>
-                
-                
-                
-                <option value="ny">New York</option>
-                
-                
-                
-                <option value="or">Oregon</option>
-                
-                
-                
-                <option value="ut">Utah</option>
-                
-                
-                
-                <option value="wa">Washington</option>
-                
-                
-                
-                <option value="wy">Wyoming</option>
-                
-                
-                <option value="canada">Canada</option>
+                <optgroup label="US">
+                    
+                    
+                    <option value="ak">Alaska</option>
+                    
+                    
+                    
+                    <option value="az">Arizona</option>
+                    
+                    
+                    
+                    <option value="ca">California</option>
+                    
+                    
+                    
+                    <option value="co">Colorado</option>
+                    
+                    
+                    
+                    <option value="id">Idaho</option>
+                    
+                    
+                    
+                    <option value="mt">Montana</option>
+                    
+                    
+                    
+                    <option value="nh">New Hampshire</option>
+                    
+                    
+                    
+                    <option value="nm">New Mexico</option>
+                    
+                    
+                    
+                    <option value="ny">New York</option>
+                    
+                    
+                    
+                    <option value="or">Oregon</option>
+                    
+                    
+                    
+                    <option value="ut">Utah</option>
+                    
+                    
+                    
+                    <option value="wa">Washington</option>
+                    
+                    
+                    
+                    <option value="wy">Wyoming</option>
+                    
+                    
+                </optgroup>
+                <optgroup label="Canada">
+                    <option value="canada">Canada</option>
+                </optgroup>
             </select>
         </span>
     </div>
@@ -737,57 +741,15 @@ css_includes:
             <h3 class="tc bb b--moon-gray"><a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html">Canada</a></h3>
             <ul id="canada-zones" class="list pl3 f5 mt2">
                 
-                <li data-zone="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" data-color="#fff200" data-subregions="true" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" title="East Island, North Island, South Island, West Island">East Island, North Island +2 more</a>
-                    <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
-                </li>
-                
-                <li data-zone="ff27f89a78600ce8622e02e807bc89b31d7f1876832b9dc0ceab5b43cab072e5" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-ff27f89a78600ce8622e02e807bc89b31d7f1876832b9dc0ceab5b43cab072e5" title="Haines Pass">Haines Pass</a>
-                    
-                </li>
-                
-                <li data-zone="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" title="Glacier">Glacier</a>
-                    
-                </li>
-                
                 <li data-zone="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" data-color="#939598" data-subregions="true" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" title="Corner Brook, Gros Morne, Northern Peninsula">Corner Brook, Gros Morne, Northern Peninsula</a>
                     
                 </li>
                 
-                <li data-zone="8bbff7545c284dfbd7711c42e5134d2d733a983276cf96da67f380a1a011780b" data-color="#f7941e" data-subregions="true" class="pv1">
-                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-8bbff7545c284dfbd7711c42e5134d2d733a983276cf96da67f380a1a011780b" title="Birkenhead, Coquihalla, Duffey, Harrison-Fraser, Manning, Skagit, South Chilcotin, Stein, Taseko">Birkenhead, Coquihalla +7 more</a>
-                    <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
-                </li>
-                
-                <li data-zone="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#50b848" data-subregions="true" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" title="Bow Valley, Highwood Pass, North 40, Spray - KLakes">Bow Valley, Highwood Pass +2 more</a>
-                    <span class="gray f7">Wednesday, November 25, 2026 5:30PM</span>
-                </li>
-                
-                <li data-zone="03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" title="Chic-Chocs">Chic-Chocs</a>
-                    
-                </li>
-                
-                <li data-zone="fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553" data-color="#50b848" data-subregions="true" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553" title="Clearwater, North Okanagan, Quesnel, Shuswap">Clearwater, North Okanagan +2 more</a>
-                    <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
-                </li>
-                
-                <li data-zone="a6b42d5cb67ca4e9548983bb081ab7d6995578f1e6b1d2e7241cbb41a763e8bb" data-color="#f7941e" data-subregions="true" class="pv1">
-                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-a6b42d5cb67ca4e9548983bb081ab7d6995578f1e6b1d2e7241cbb41a763e8bb" title="Kitimat, Nass, Rupert, Shames, Stewart">Kitimat, Nass +3 more</a>
+                <li data-zone="4b0950a4734fee48d9453ba598216653bb0cad96375323722dc009b2eb4db2f0" data-color="#fff200" data-subregions="true" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-4b0950a4734fee48d9453ba598216653bb0cad96375323722dc009b2eb4db2f0" title="Howson, Kispiox, Microwave-Sinclair, North Bulkley, Seven Sisters, South Bulkley, Telkwa">Howson, Kispiox +5 more</a>
                     <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
                 </li>
                 
@@ -803,57 +765,27 @@ css_includes:
                     <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
                 </li>
                 
-                <li data-zone="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" data-color="#fff200" data-subregions="true" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" title="Banff, East Side 93N, Field, Kootenay, Lake Louise, Little Yoho, LLSA, Sunshine, West Side 93N">Banff, East Side 93N +7 more</a>
-                    <span class="gray f7">Wednesday, November 25, 2026 5:00PM</span>
-                </li>
-                
-                <li data-zone="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" data-color="#939598" class="pv1">
-                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" title="Waterton">Waterton</a>
-                    
-                </li>
-                
-                <li data-zone="f88bb4126b4ed477f7c4e9b2f2bc3275170e881924475c26096bc692261d5d4d" data-color="#ed1c24" data-subregions="true" class="pv1">
-                    <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-f88bb4126b4ed477f7c4e9b2f2bc3275170e881924475c26096bc692261d5d4d" title="Brandywine, Garibaldi, Homathko, Powell River, Sky Pilot, Spearhead, Tantalus">Brandywine, Garibaldi +5 more</a>
-                    <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
-                </li>
-                
-                <li data-zone="0f23c8baa694da6047b905917ff75428ec8d4422697c6a7d6c297ac5ddeb4e60" data-color="#50b848" data-subregions="true" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-0f23c8baa694da6047b905917ff75428ec8d4422697c6a7d6c297ac5ddeb4e60" title="Bonnington, Grohman, Kokanee, Kootenay Pass, Norns, Retallack, Rossland, South Okanagan, Valhalla, Whatshan, Ymir">Bonnington, Grohman +9 more</a>
-                    <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
-                </li>
-                
-                <li data-zone="22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16" data-color="#50b848" data-subregions="true" class="pv1">
-                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16" title="Akamina, Bull, Crowsnest North, Crowsnest South, Elkford East, Elkford West, Flathead, Lizard">Akamina, Bull +6 more</a>
-                    <span class="gray f7">Wednesday, November 25, 2026 5:00PM</span>
-                </li>
-                
-                <li data-zone="cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f" data-color="#fff200" data-subregions="true" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f" title="Badshot-Battle, Blue River, Central Selkirk, Clemina, Esplanade, Goat, Gold, Jordan, North Monashee, North Selkirk, Premier, Robson">Badshot-Battle, Blue River +10 more</a>
-                    <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
-                </li>
-                
                 <li data-zone="5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e" data-color="#50b848" data-subregions="true" class="pv1">
                     <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e" title="Crawford, Dogtooth, East Purcell, Moyie, St. Mary, West Purcell">Crawford, Dogtooth +4 more</a>
                     <span class="gray f7">Wednesday, November 25, 2026 5:00PM</span>
                 </li>
                 
-                <li data-zone="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" data-color="#939598" data-subregions="true" class="pv1">
+                <li data-zone="ff27f89a78600ce8622e02e807bc89b31d7f1876832b9dc0ceab5b43cab072e5" data-color="#939598" class="pv1">
                     <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" title="Brazeau, Churchill, Cirrus-Wilson, Fryatt, Icefields, Maligne, Marmot, Miette Lake, Pyramid">Brazeau, Churchill +7 more</a>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-ff27f89a78600ce8622e02e807bc89b31d7f1876832b9dc0ceab5b43cab072e5" title="Haines Pass">Haines Pass</a>
                     
                 </li>
                 
-                <li data-zone="4b0950a4734fee48d9453ba598216653bb0cad96375323722dc009b2eb4db2f0" data-color="#fff200" data-subregions="true" class="pv1">
-                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
-                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-4b0950a4734fee48d9453ba598216653bb0cad96375323722dc009b2eb4db2f0" title="Howson, Kispiox, Microwave-Sinclair, North Bulkley, Seven Sisters, South Bulkley, Telkwa">Howson, Kispiox +5 more</a>
+                <li data-zone="03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" title="Chic-Chocs">Chic-Chocs</a>
+                    
+                </li>
+                
+                <li data-zone="fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553" data-color="#50b848" data-subregions="true" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553" title="Clearwater, North Okanagan, Quesnel, Shuswap">Clearwater, North Okanagan +2 more</a>
                     <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
                 </li>
                 
@@ -863,10 +795,82 @@ css_includes:
                     <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
                 </li>
                 
+                <li data-zone="0f23c8baa694da6047b905917ff75428ec8d4422697c6a7d6c297ac5ddeb4e60" data-color="#50b848" data-subregions="true" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-0f23c8baa694da6047b905917ff75428ec8d4422697c6a7d6c297ac5ddeb4e60" title="Bonnington, Grohman, Kokanee, Kootenay Pass, Norns, Retallack, Rossland, South Okanagan, Valhalla, Whatshan, Ymir">Bonnington, Grohman +9 more</a>
+                    <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
+                </li>
+                
+                <li data-zone="8bbff7545c284dfbd7711c42e5134d2d733a983276cf96da67f380a1a011780b" data-color="#f7941e" data-subregions="true" class="pv1">
+                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-8bbff7545c284dfbd7711c42e5134d2d733a983276cf96da67f380a1a011780b" title="Birkenhead, Coquihalla, Duffey, Harrison-Fraser, Manning, Skagit, South Chilcotin, Stein, Taseko">Birkenhead, Coquihalla +7 more</a>
+                    <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
+                </li>
+                
+                <li data-zone="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" title="Glacier">Glacier</a>
+                    
+                </li>
+                
+                <li data-zone="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" data-color="#939598" data-subregions="true" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" title="Brazeau, Churchill, Cirrus-Wilson, Fryatt, Icefields, Maligne, Marmot, Miette Lake, Pyramid">Brazeau, Churchill +7 more</a>
+                    
+                </li>
+                
+                <li data-zone="f88bb4126b4ed477f7c4e9b2f2bc3275170e881924475c26096bc692261d5d4d" data-color="#ed1c24" data-subregions="true" class="pv1">
+                    <div style="clear: both;background-color: #ed1c24" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-f88bb4126b4ed477f7c4e9b2f2bc3275170e881924475c26096bc692261d5d4d" title="Brandywine, Garibaldi, Homathko, Powell River, Sky Pilot, Spearhead, Tantalus">Brandywine, Garibaldi +5 more</a>
+                    <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
+                </li>
+                
+                <li data-zone="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" data-color="#fff200" data-subregions="true" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" title="East Island, North Island, South Island, West Island">East Island, North Island +2 more</a>
+                    <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
+                </li>
+                
+                <li data-zone="22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16" data-color="#50b848" data-subregions="true" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16" title="Akamina, Bull, Crowsnest North, Crowsnest South, Elkford East, Elkford West, Flathead, Lizard">Akamina, Bull +6 more</a>
+                    <span class="gray f7">Wednesday, November 25, 2026 5:00PM</span>
+                </li>
+                
+                <li data-zone="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#50b848" data-subregions="true" class="pv1">
+                    <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" title="Bow Valley, Highwood Pass, North 40, Spray - KLakes">Bow Valley, Highwood Pass +2 more</a>
+                    <span class="gray f7">Wednesday, November 25, 2026 5:30PM</span>
+                </li>
+                
+                <li data-zone="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" data-color="#939598" class="pv1">
+                    <div style="clear: both;background-color: #939598" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" title="Waterton">Waterton</a>
+                    
+                </li>
+                
+                <li data-zone="a6b42d5cb67ca4e9548983bb081ab7d6995578f1e6b1d2e7241cbb41a763e8bb" data-color="#f7941e" data-subregions="true" class="pv1">
+                    <div style="clear: both;background-color: #f7941e" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-a6b42d5cb67ca4e9548983bb081ab7d6995578f1e6b1d2e7241cbb41a763e8bb" title="Kitimat, Nass, Rupert, Shames, Stewart">Kitimat, Nass +3 more</a>
+                    <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
+                </li>
+                
                 <li data-zone="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4" data-color="#50b848" data-subregions="true" class="pv1">
                     <div style="clear: both;background-color: #50b848" class="fl mr2 h1 w1"></div>
                     <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4" title="Tutshi, Wheaton, White Pass East, White Pass West">Tutshi, Wheaton +2 more</a>
                     <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
+                </li>
+                
+                <li data-zone="cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f" data-color="#fff200" data-subregions="true" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f" title="Badshot-Battle, Blue River, Central Selkirk, Clemina, Esplanade, Goat, Gold, Jordan, North Monashee, North Selkirk, Premier, Robson">Badshot-Battle, Blue River +10 more</a>
+                    <span class="gray f7">Wednesday, November 25, 2026 4:00PM</span>
+                </li>
+                
+                <li data-zone="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" data-color="#fff200" data-subregions="true" class="pv1">
+                    <div style="clear: both;background-color: #fff200" class="fl mr2 h1 w1"></div>
+                    <a class="no-underline fancy-link relative black-70 hover-light-red" href="canada.html#zone-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" title="Banff, East Side 93N, Field, Kootenay, Lake Louise, Little Yoho, LLSA, Sunshine, West Side 93N">Banff, East Side 93N +7 more</a>
+                    <span class="gray f7">Wednesday, November 25, 2026 5:00PM</span>
                 </li>
                 
             </ul>
@@ -874,7 +878,7 @@ css_includes:
     </div>
     <div class="ph3 w-100 w-50-ns">
         <h3 class="tc bb b--moon-gray">Zones</h3>
-        <div style="height: 300px;" id="map"></div>
+        <div class="avy-map" id="map"></div>
     </div>
 </div>
 

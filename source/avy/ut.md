@@ -142,11 +142,10 @@ css_includes:
     </div>
 </div>
 
-<div class="flex flex-column flex-row-ns">
+<div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="UAC-1744-report" class="avy-zone" data-id="UAC-1744" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -165,7 +164,6 @@ css_includes:
         </div>
         
         <div id="UAC-1736-report" class="avy-zone dn" data-id="UAC-1736" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -184,7 +182,6 @@ css_includes:
         </div>
         
         <div id="UAC-1742-report" class="avy-zone dn" data-id="UAC-1742" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -203,7 +200,6 @@ css_includes:
         </div>
         
         <div id="UAC-1737-report" class="avy-zone dn" data-id="UAC-1737" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -222,7 +218,6 @@ css_includes:
         </div>
         
         <div id="UAC-1739-report" class="avy-zone dn" data-id="UAC-1739" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -241,7 +236,6 @@ css_includes:
         </div>
         
         <div id="UAC-1738-report" class="avy-zone dn" data-id="UAC-1738" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -260,7 +254,6 @@ css_includes:
         </div>
         
         <div id="UAC-1741-report" class="avy-zone dn" data-id="UAC-1741" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -279,7 +272,6 @@ css_includes:
         </div>
         
         <div id="UAC-1743-report" class="avy-zone dn" data-id="UAC-1743" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -298,7 +290,6 @@ css_includes:
         </div>
         
         <div id="UAC-1740-report" class="avy-zone dn" data-id="UAC-1740" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -318,8 +309,8 @@ css_includes:
         
     </div>
     <div class="ph3 w-100 w-50-ns">
-        <h3 class="tc bb b--moon-gray">Zone</h3>
-        <div class="avy-region-map" id="map"></div>
+        <div class="avy-map" id="map"></div>
+        <p id="zone-areas" class="f6 black-70 lh-copy tc mt3 dn"><b>This zone covers:</b> <span id="zone-areas-list"></span></p>
     </div>
 </div>
 

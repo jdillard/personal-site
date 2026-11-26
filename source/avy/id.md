@@ -142,11 +142,10 @@ css_includes:
     </div>
 </div>
 
-<div class="flex flex-column flex-row-ns">
+<div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="IPAC-3018-report" class="avy-zone" data-id="IPAC-3018" data-color="#939598" data-published="Friday, November 20, 2026 10:15AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -170,7 +169,6 @@ css_includes:
         </div>
         
         <div id="IPAC-1902-report" class="avy-zone dn" data-id="IPAC-1902" data-color="#939598" data-published="Friday, November 20, 2026 10:15AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -194,7 +192,6 @@ css_includes:
         </div>
         
         <div id="IPAC-1900-report" class="avy-zone dn" data-id="IPAC-1900" data-color="#939598" data-published="Friday, November 20, 2026 10:15AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -218,7 +215,6 @@ css_includes:
         </div>
         
         <div id="PAC-3014-report" class="avy-zone dn" data-id="PAC-3014" data-color="#939598" data-published="Monday, November 23, 2026 7:20PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -242,7 +238,6 @@ css_includes:
         </div>
         
         <div id="PAC-3015-report" class="avy-zone dn" data-id="PAC-3015" data-color="#939598" data-published="Monday, November 23, 2026 7:20PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -266,7 +261,6 @@ css_includes:
         </div>
         
         <div id="SNFAC-2907-report" class="avy-zone dn" data-id="SNFAC-2907" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -290,7 +284,6 @@ css_includes:
         </div>
         
         <div id="SNFAC-2904-report" class="avy-zone dn" data-id="SNFAC-2904" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -314,7 +307,6 @@ css_includes:
         </div>
         
         <div id="SNFAC-2906-report" class="avy-zone dn" data-id="SNFAC-2906" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -338,7 +330,6 @@ css_includes:
         </div>
         
         <div id="SNFAC-2905-report" class="avy-zone dn" data-id="SNFAC-2905" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -363,8 +354,8 @@ css_includes:
         
     </div>
     <div class="ph3 w-100 w-50-ns">
-        <h3 class="tc bb b--moon-gray">Zone</h3>
-        <div class="avy-region-map" id="map"></div>
+        <div class="avy-map" id="map"></div>
+        <p id="zone-areas" class="f6 black-70 lh-copy tc mt3 dn"><b>This zone covers:</b> <span id="zone-areas-list"></span></p>
     </div>
 </div>
 
