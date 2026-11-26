@@ -51,12 +51,30 @@ css_includes:
 
 <div>
     <div class="mt4 ph2 tc">
-        <label for="zoneSel" class="f6 b">Select A Zone:</label>
-        <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
-            {% for zone in zones %}
-            <option value="{{ zone.slug }}" title="{{ zone.name }}" {% if loop.first %}selected=""{% endif %}>{{ zone.short_name | default(zone.name) }}</option>
-            {% endfor %}
-        </select>
+        <span class="dib">
+            <label for="zoneSel" class="f6 b">Select A Zone:</label>
+            <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
+                {% for zone in zones %}
+                <option value="{{ zone.slug }}" title="{{ zone.name }}" {% if loop.first %}selected=""{% endif %}>{{ zone.short_name | default(zone.name) }}</option>
+                {% endfor %}
+            </select>
+        </span>
+        <span class="dib ml3-ns">
+            <label for="regionSel" class="f6 b">Region:</label>
+            <select class="f6 ma1 bg-near-white pa2" id="regionSel">
+                <option value="/avy/">All Regions</option>
+                <optgroup label="US">
+                    {% for state in states | sort(attribute="name") %}
+                    {% if state.active %}
+                    <option value="{{ state.page }}.html"{% if state.name == page %} selected=""{% endif %}>{{ state.name }}</option>
+                    {% endif %}
+                    {% endfor %}
+                </optgroup>
+                <optgroup label="Canada">
+                    <option value="/avy/canada.html"{% if page == "Canada" %} selected=""{% endif %}>Canada</option>
+                </optgroup>
+            </select>
+        </span>
     </div>
 </div>
 
@@ -171,22 +189,6 @@ css_includes:
 </div>
 
 <hr id="hr-0" class="mw5 p0 mv4 o-70 b0 bt b--light-red light-red bg-light-red">
-<section class="tc lh-copy">
-    <label for="regionSel" class="f6 b">Change Regions:</label>
-    <select class="f6 ma1 bg-near-white pa2" id="regionSel">
-        <option value="/avy/">All Regions</option>
-        <optgroup label="US">
-            {% for state in states | sort(attribute="name") %}
-            {% if state.active %}
-            <option value="{{ state.page }}.html"{% if state.name == page %} selected=""{% endif %}>{{ state.name }}</option>
-            {% endif %}
-            {% endfor %}
-        </optgroup>
-        <optgroup label="Canada">
-            <option value="/avy/canada.html"{% if page == "Canada" %} selected=""{% endif %}>Canada</option>
-        </optgroup>
-    </select>
-</section>
 
 {% raw %}
 {% include feedback.html %}
