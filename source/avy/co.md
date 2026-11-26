@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Colorado Avalanche Forecast Layers for CalTopo
-description: The latest Colorado avalanche forecasts as CalTopo map layers, with danger rating and avalanche problem shading for each advisory zone.
+description: The latest avalanche forecasts for Colorado as CalTopo map layers, with danger rating and avalanche problem shading for each advisory zone.
 tool: avy
 image:
   path: /assets/images/avy-layers.png

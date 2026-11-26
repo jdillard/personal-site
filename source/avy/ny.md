@@ -1,7 +1,7 @@
 ---
 layout: page
 title: New York Avalanche Forecast Layers for CalTopo
-description: The latest New York avalanche forecasts as CalTopo map layers, with danger rating and avalanche problem shading for each advisory zone.
+description: The latest avalanche forecasts for New York as CalTopo map layers, with danger rating and avalanche problem shading for each advisory zone.
 tool: avy
 image:
   path: /assets/images/avy-layers.png

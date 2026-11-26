@@ -1,7 +1,7 @@
 ---
 layout: page
 title: New Hampshire Avalanche Forecast Layers for CalTopo
-description: The latest New Hampshire avalanche forecasts as CalTopo map layers, with danger rating and avalanche problem shading for each advisory zone.
+description: The latest avalanche forecasts for New Hampshire as CalTopo map layers, with danger rating and avalanche problem shading for each advisory zone.
 tool: avy
 image:
   path: /assets/images/avy-layers.png

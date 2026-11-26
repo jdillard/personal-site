@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Idaho Avalanche Forecast Layers for CalTopo
-description: The latest Idaho avalanche forecasts as CalTopo map layers, with danger rating and avalanche problem shading for each advisory zone.
+description: The latest avalanche forecasts for Idaho as CalTopo map layers, with danger rating and avalanche problem shading for each advisory zone.
 tool: avy
 image:
   path: /assets/images/avy-layers.png
