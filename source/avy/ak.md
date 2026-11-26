@@ -73,11 +73,11 @@ css_includes:
                 
                 <option value="EARAC-3003" title="South (Summit) Eastern Alaska Range" >South (Summit) Eastern Alaska Range</option>
                 
-                <option value="HAC-3007" title="Chilkat Pass" >Chilkat Pass</option>
+                <option value="HAC-3049" title="Chilkat Pass" >Chilkat Pass</option>
                 
-                <option value="HAC-3005" title="Lutak" >Lutak</option>
+                <option value="HAC-3047" title="Lutak" >Lutak</option>
                 
-                <option value="HAC-3006" title="Transitional" >Transitional</option>
+                <option value="HAC-3048" title="Transitional" >Transitional</option>
                 
                 <option value="HPAC-2152" title="Hatcher Pass" >Hatcher Pass</option>
                 
@@ -366,11 +366,11 @@ css_includes:
             
         </div>
         
-        <div id="HAC-3007-report" class="avy-zone dn" data-id="HAC-3007" data-color="#939598" data-published="False">
+        <div id="HAC-3049-report" class="avy-zone dn" data-id="HAC-3049" data-color="#939598" data-published="Wednesday, November 25, 2026 9:29PM">
             
             
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://avalanche.ca/map?lat=59.558223&lng=-136.395711">HAC</a> for more information.</div>
+            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/chilkat-pass">HAC</a> for more information.</div>
             
             
 
@@ -382,14 +382,14 @@ css_includes:
             
             
             <p class="f7 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/haines-hac/">Haines Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/map?lat=59.558223&lng=-136.395711">full forecast</a> before heading out.
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/haines-hac/">Haines Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/haines-forecast/#/chilkat-pass">full forecast</a> before heading out.
             </p>
             
             </div>
             
         </div>
         
-        <div id="HAC-3005-report" class="avy-zone dn" data-id="HAC-3005" data-color="#939598" data-published="False">
+        <div id="HAC-3047-report" class="avy-zone dn" data-id="HAC-3047" data-color="#939598" data-published="Wednesday, November 25, 2026 7:29PM">
             
             
             
@@ -412,7 +412,7 @@ css_includes:
             
         </div>
         
-        <div id="HAC-3006-report" class="avy-zone dn" data-id="HAC-3006" data-color="#939598" data-published="False">
+        <div id="HAC-3048-report" class="avy-zone dn" data-id="HAC-3048" data-color="#939598" data-published="Wednesday, November 25, 2026 7:29PM">
             
             
             
