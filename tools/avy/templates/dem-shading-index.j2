@@ -22,16 +22,18 @@ css_includes:
 
 <div>
     <div class="mt4 ph2 tc">
-        <label for="indexSel" class="f6 b">Select A Region:</label>
-        <select class="f6 ma1 bg-near-white pa2" id="indexSel">
-            <option value="all" selected="">All Regions</option>
-            {% for state in states %}
-            {% if state.active %}
-            <option value="{{ state.state | lower }}">{{ state.name }}</option>
-            {% endif %}
-            {% endfor %}
-            <option value="canada">Canada</option>
-        </select>
+        <span class="avy-picker">
+            <label for="indexSel">Region</label>
+            <select class="avy-select" id="indexSel">
+                <option value="all" selected="">All Regions</option>
+                {% for state in states %}
+                {% if state.active %}
+                <option value="{{ state.state | lower }}">{{ state.name }}</option>
+                {% endif %}
+                {% endfor %}
+                <option value="canada">Canada</option>
+            </select>
+        </span>
     </div>
 </div>
 

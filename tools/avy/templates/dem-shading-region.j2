@@ -51,17 +51,17 @@ css_includes:
 
 <div>
     <div class="mt4 ph2 tc">
-        <span class="dib">
-            <label for="zoneSel" class="f6 b">Select A Zone:</label>
-            <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
+        <span class="avy-picker">
+            <label for="zoneSel">Zone</label>
+            <select class="avy-select" id="zoneSel">
                 {% for zone in zones %}
                 <option value="{{ zone.slug }}" title="{{ zone.name }}" {% if loop.first %}selected=""{% endif %}>{{ zone.short_name | default(zone.name) }}</option>
                 {% endfor %}
             </select>
         </span>
-        <span class="dib ml3-ns">
-            <label for="regionSel" class="f6 b">Region:</label>
-            <select class="f6 ma1 bg-near-white pa2" id="regionSel">
+        <span class="avy-picker">
+            <label for="regionSel">Region</label>
+            <select class="avy-select" id="regionSel">
                 <option value="/avy/">All Regions</option>
                 <optgroup label="US">
                     {% for state in states | sort(attribute="name") %}
