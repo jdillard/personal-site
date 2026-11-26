@@ -51,18 +51,84 @@ css_includes:
 
 <div>
     <div class="mt4 ph2 tc">
-        <label for="zoneSel" class="f6 b">Select A Zone:</label>
-        <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
-            
-            <option value="BAC-3004" title="Bridgeport Avalanche Center" selected="">Bridgeport Avalanche Center</option>
-            
-            <option value="ESAC-128" title="Eastside Region" >Eastside Region</option>
-            
-            <option value="MSAC-3044" title="Mount Shasta" >Mount Shasta</option>
-            
-            <option value="SAC-2458" title="Central Sierra Nevada" >Central Sierra Nevada</option>
-            
-        </select>
+        <span class="avy-picker">
+            <label for="zoneSel">Zone</label>
+            <select class="avy-select" id="zoneSel">
+                
+                <option value="BAC-3004" title="Bridgeport Avalanche Center" selected="">Bridgeport Avalanche Center</option>
+                
+                <option value="ESAC-128" title="Eastside Region" >Eastside Region</option>
+                
+                <option value="MSAC-3044" title="Mount Shasta" >Mount Shasta</option>
+                
+                <option value="SAC-2458" title="Central Sierra Nevada" >Central Sierra Nevada</option>
+                
+            </select>
+        </span>
+        <span class="avy-picker">
+            <label for="regionSel">Region</label>
+            <select class="avy-select" id="regionSel">
+                <option value="/avy/">All Regions</option>
+                <optgroup label="US">
+                    
+                    
+                    <option value="/avy/ak.html">Alaska</option>
+                    
+                    
+                    
+                    <option value="/avy/az.html">Arizona</option>
+                    
+                    
+                    
+                    <option value="/avy/ca.html" selected="">California</option>
+                    
+                    
+                    
+                    <option value="/avy/co.html">Colorado</option>
+                    
+                    
+                    
+                    <option value="/avy/id.html">Idaho</option>
+                    
+                    
+                    
+                    <option value="/avy/mt.html">Montana</option>
+                    
+                    
+                    
+                    <option value="/avy/nh.html">New Hampshire</option>
+                    
+                    
+                    
+                    <option value="/avy/nm.html">New Mexico</option>
+                    
+                    
+                    
+                    <option value="/avy/ny.html">New York</option>
+                    
+                    
+                    
+                    <option value="/avy/or.html">Oregon</option>
+                    
+                    
+                    
+                    <option value="/avy/ut.html">Utah</option>
+                    
+                    
+                    
+                    <option value="/avy/wa.html">Washington</option>
+                    
+                    
+                    
+                    <option value="/avy/wy.html">Wyoming</option>
+                    
+                    
+                </optgroup>
+                <optgroup label="Canada">
+                    <option value="/avy/canada.html">Canada</option>
+                </optgroup>
+            </select>
+        </span>
     </div>
 </div>
 
@@ -98,7 +164,7 @@ css_includes:
             
             
             <div id="ESAC-128-title" class="mv4 tc">
-                <div><a id="ESAC-128-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=37.55589080519621,-118.85603362526295&z=10&b=mbt&a=sc_a0-0e0-9500fc50b848pa0-0e9501-10500fcfff200pa0-0e10501-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-9500fc50b848pa0-0e9501-10500fcfff200pa0-0e10501-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2255cd5150-c2e3-40f8-a33c-c78a83663396%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e9501-10500fcA200FFpa293-113e10501-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="ESAC-128-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=37.55589080519621,-118.85603362526295&z=10&b=mbt&a=sc_a0-0e0-9500fc50b848pa0-0e9501-10500fcfff200pa0-0e10501-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-9500fc50b848pa0-0e9501-10500fcfff200pa0-0e10501-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%228584fdea-adc1-470e-a2eb-29ee8574dde3%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e9501-10500fcA200FFpa293-113e10501-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
@@ -213,7 +279,7 @@ css_includes:
             
             
             <div id="SAC-2458-title" class="mv4 tc">
-                <div><a id="SAC-2458-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.09562427335995,-120.11836720161703&z=10&b=mbt&a=sc_a0-0e0-7800fcfff200pa0-0e7801-9200fcfff200pa0-0e9201-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-7800fcfff200pa0-0e7801-9200fcfff200pa0-0e9201-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2294b03c37-cae1-4cd0-8efa-3327958a67bc%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-68e0-7800fcA200FFpa293-68e7801-9200fcA200FFpa293-68e9201-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
+                <div><a id="SAC-2458-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll=39.09562427335995,-120.11836720161703&z=10&b=mbt&a=sc_a0-0e0-7800fcfff200pa0-0e7801-9200fcfff200pa0-0e9201-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-7800fcfff200pa0-0e7801-9200fcfff200pa0-0e9201-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22a884c5a2-6f20-46c2-820d-3890579cee6a%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-68e0-7800fcA200FFpa293-68e7801-9200fcA200FFpa293-68e9201-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Pre-populated CalTopo Map</a></div>
             </div>
             <dl class="f6">
                 <dt>
@@ -328,70 +394,6 @@ css_includes:
 </div>
 
 <hr id="hr-0" class="mw5 p0 mv4 o-70 b0 bt b--light-red light-red bg-light-red">
-<section class="tc lh-copy">
-    <label for="regionSel" class="f6 b">Change Regions:</label>
-    <select class="f6 ma1 bg-near-white pa2" id="regionSel">
-        <option value="/avy/">All Regions</option>
-        <optgroup label="US">
-            
-            
-            <option value="/avy/ak.html">Alaska</option>
-            
-            
-            
-            <option value="/avy/az.html">Arizona</option>
-            
-            
-            
-            <option value="/avy/ca.html" selected="">California</option>
-            
-            
-            
-            <option value="/avy/co.html">Colorado</option>
-            
-            
-            
-            <option value="/avy/id.html">Idaho</option>
-            
-            
-            
-            <option value="/avy/mt.html">Montana</option>
-            
-            
-            
-            <option value="/avy/nh.html">New Hampshire</option>
-            
-            
-            
-            <option value="/avy/nm.html">New Mexico</option>
-            
-            
-            
-            <option value="/avy/ny.html">New York</option>
-            
-            
-            
-            <option value="/avy/or.html">Oregon</option>
-            
-            
-            
-            <option value="/avy/ut.html">Utah</option>
-            
-            
-            
-            <option value="/avy/wa.html">Washington</option>
-            
-            
-            
-            <option value="/avy/wy.html">Wyoming</option>
-            
-            
-        </optgroup>
-        <optgroup label="Canada">
-            <option value="/avy/canada.html">Canada</option>
-        </optgroup>
-    </select>
-</section>
 
 
 {% include feedback.html %}

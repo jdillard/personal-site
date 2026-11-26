@@ -51,28 +51,94 @@ css_includes:
 
 <div>
     <div class="mt4 ph2 tc">
-        <label for="zoneSel" class="f6 b">Select A Zone:</label>
-        <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
-            
-            <option value="NWAC-3030" title="East Slopes Central" selected="">East Slopes Central</option>
-            
-            <option value="NWAC-3029" title="East Slopes North" >East Slopes North</option>
-            
-            <option value="NWAC-3031" title="East Slopes South" >East Slopes South</option>
-            
-            <option value="NWAC-3020" title="Olympics" >Olympics</option>
-            
-            <option value="NWAC-3028" title="Snoqualmie Pass" >Snoqualmie Pass</option>
-            
-            <option value="NWAC-3024" title="Stevens Pass" >Stevens Pass</option>
-            
-            <option value="NWAC-3022" title="West Slopes Central" >West Slopes Central</option>
-            
-            <option value="NWAC-3021" title="West Slopes North" >West Slopes North</option>
-            
-            <option value="NWAC-3023" title="West Slopes South" >West Slopes South</option>
-            
-        </select>
+        <span class="avy-picker">
+            <label for="zoneSel">Zone</label>
+            <select class="avy-select" id="zoneSel">
+                
+                <option value="NWAC-3030" title="East Slopes Central" selected="">East Slopes Central</option>
+                
+                <option value="NWAC-3029" title="East Slopes North" >East Slopes North</option>
+                
+                <option value="NWAC-3031" title="East Slopes South" >East Slopes South</option>
+                
+                <option value="NWAC-3020" title="Olympics" >Olympics</option>
+                
+                <option value="NWAC-3028" title="Snoqualmie Pass" >Snoqualmie Pass</option>
+                
+                <option value="NWAC-3024" title="Stevens Pass" >Stevens Pass</option>
+                
+                <option value="NWAC-3022" title="West Slopes Central" >West Slopes Central</option>
+                
+                <option value="NWAC-3021" title="West Slopes North" >West Slopes North</option>
+                
+                <option value="NWAC-3023" title="West Slopes South" >West Slopes South</option>
+                
+            </select>
+        </span>
+        <span class="avy-picker">
+            <label for="regionSel">Region</label>
+            <select class="avy-select" id="regionSel">
+                <option value="/avy/">All Regions</option>
+                <optgroup label="US">
+                    
+                    
+                    <option value="/avy/ak.html">Alaska</option>
+                    
+                    
+                    
+                    <option value="/avy/az.html">Arizona</option>
+                    
+                    
+                    
+                    <option value="/avy/ca.html">California</option>
+                    
+                    
+                    
+                    <option value="/avy/co.html">Colorado</option>
+                    
+                    
+                    
+                    <option value="/avy/id.html">Idaho</option>
+                    
+                    
+                    
+                    <option value="/avy/mt.html">Montana</option>
+                    
+                    
+                    
+                    <option value="/avy/nh.html">New Hampshire</option>
+                    
+                    
+                    
+                    <option value="/avy/nm.html">New Mexico</option>
+                    
+                    
+                    
+                    <option value="/avy/ny.html">New York</option>
+                    
+                    
+                    
+                    <option value="/avy/or.html">Oregon</option>
+                    
+                    
+                    
+                    <option value="/avy/ut.html">Utah</option>
+                    
+                    
+                    
+                    <option value="/avy/wa.html" selected="">Washington</option>
+                    
+                    
+                    
+                    <option value="/avy/wy.html">Wyoming</option>
+                    
+                    
+                </optgroup>
+                <optgroup label="Canada">
+                    <option value="/avy/canada.html">Canada</option>
+                </optgroup>
+            </select>
+        </span>
     </div>
 </div>
 
@@ -340,70 +406,6 @@ css_includes:
 </div>
 
 <hr id="hr-0" class="mw5 p0 mv4 o-70 b0 bt b--light-red light-red bg-light-red">
-<section class="tc lh-copy">
-    <label for="regionSel" class="f6 b">Change Regions:</label>
-    <select class="f6 ma1 bg-near-white pa2" id="regionSel">
-        <option value="/avy/">All Regions</option>
-        <optgroup label="US">
-            
-            
-            <option value="/avy/ak.html">Alaska</option>
-            
-            
-            
-            <option value="/avy/az.html">Arizona</option>
-            
-            
-            
-            <option value="/avy/ca.html">California</option>
-            
-            
-            
-            <option value="/avy/co.html">Colorado</option>
-            
-            
-            
-            <option value="/avy/id.html">Idaho</option>
-            
-            
-            
-            <option value="/avy/mt.html">Montana</option>
-            
-            
-            
-            <option value="/avy/nh.html">New Hampshire</option>
-            
-            
-            
-            <option value="/avy/nm.html">New Mexico</option>
-            
-            
-            
-            <option value="/avy/ny.html">New York</option>
-            
-            
-            
-            <option value="/avy/or.html">Oregon</option>
-            
-            
-            
-            <option value="/avy/ut.html">Utah</option>
-            
-            
-            
-            <option value="/avy/wa.html" selected="">Washington</option>
-            
-            
-            
-            <option value="/avy/wy.html">Wyoming</option>
-            
-            
-        </optgroup>
-        <optgroup label="Canada">
-            <option value="/avy/canada.html">Canada</option>
-        </optgroup>
-    </select>
-</section>
 
 
 {% include feedback.html %}
