@@ -26,12 +26,16 @@ css_includes:
             <label for="indexSel">Region</label>
             <select class="avy-select" id="indexSel">
                 <option value="all" selected="">All Regions</option>
-                {% for state in states %}
-                {% if state.active %}
-                <option value="{{ state.state | lower }}">{{ state.name }}</option>
-                {% endif %}
-                {% endfor %}
-                <option value="canada">Canada</option>
+                <optgroup label="US">
+                    {% for state in states %}
+                    {% if state.active %}
+                    <option value="{{ state.state | lower }}">{{ state.name }}</option>
+                    {% endif %}
+                    {% endfor %}
+                </optgroup>
+                <optgroup label="Canada">
+                    <option value="canada">Canada</option>
+                </optgroup>
             </select>
         </span>
     </div>
@@ -70,7 +74,7 @@ css_includes:
     </div>
     <div class="ph3 w-100 w-50-ns">
         <h3 class="tc bb b--moon-gray">Zones</h3>
-        <div style="height: 300px;" id="map"></div>
+        <div class="avy-map" id="map"></div>
     </div>
 </div>
 

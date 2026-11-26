@@ -559,6 +559,7 @@ header.post-cover {
 .tippy-popper[x-placement^=top] .tippy-tooltip.light-theme .tippy-arrow{border-top:7px solid #fff;border-right:7px solid transparent;border-left:7px solid transparent}.tippy-popper[x-placement^=bottom] .tippy-tooltip.light-theme .tippy-arrow{border-bottom:7px solid #fff;border-right:7px solid transparent;border-left:7px solid transparent}.tippy-popper[x-placement^=left] .tippy-tooltip.light-theme .tippy-arrow{border-left:7px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent}.tippy-popper[x-placement^=right] .tippy-tooltip.light-theme .tippy-arrow{border-right:7px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent}.tippy-tooltip.light-theme{color:#26323d;box-shadow:0 0 20px 4px rgba(154,161,177,.15),0 4px 80px -8px rgba(36,40,47,.25),0 4px 4px -2px rgba(91,94,105,.15);background-color:#fff}.tippy-tooltip.light-theme .tippy-backdrop{background-color:#fff}.tippy-tooltip.light-theme .tippy-roundarrow{fill:#fff}.tippy-tooltip.light-theme[data-animatefill]{background-color:transparent}
 
 // Brutalist dropdowns (avy zone/region pickers)
+$avy-gray: #666;
 .avy-picker {
     display: inline-block;
     text-align: left;
@@ -588,13 +589,13 @@ header.post-cover {
     font-weight: 700;
     color: #4d4d4d;
     background-color: #fff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%234d4d4d' stroke-width='2.5' stroke-linecap='square'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23666666' stroke-width='2.5' stroke-linecap='square'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right .8rem center;
     background-size: .75rem;
-    border: 3px solid #4d4d4d;
+    border: 3px solid $avy-gray;
     border-radius: 0;
-    box-shadow: 5px 5px 0 #4d4d4d;
+    box-shadow: 5px 5px 0 $avy-gray;
     cursor: pointer;
     transition: transform .08s ease-out, box-shadow .08s ease-out, background-color .08s ease-out;
 }
@@ -606,17 +607,46 @@ header.post-cover {
 // override Tailwind forms' blue focus border/ring; a deeper shadow marks focus
 .avy-select:focus {
     outline: none;
-    border-color: #4d4d4d;
-    box-shadow: 7px 7px 0 #4d4d4d;
+    border-color: $avy-gray;
+    box-shadow: 7px 7px 0 $avy-gray;
 }
 
 .avy-select:active {
     transform: translate(3px, 3px);
-    box-shadow: 2px 2px 0 #4d4d4d;
+    box-shadow: 2px 2px 0 $avy-gray;
 }
 
-// avy region page map: short when stacked on mobile, taller beside the report
-.avy-region-map {
+// CalTopo map button, matches .avy-select but filled as the primary action
+.avy-button {
+    display: inline-block;
+    padding: .7rem 1.2rem;
+    font-size: .875rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background: $avy-gray;
+    border: 3px solid $avy-gray;
+    border-radius: 0;
+    box-shadow: 5px 5px 0 #FF725C;
+    transition: transform .08s ease-out, box-shadow .08s ease-out;
+}
+
+.avy-button:hover,
+.avy-button:focus-visible {
+    outline: none;
+    color: #fff;
+    box-shadow: 7px 7px 0 #FF725C;
+}
+
+.avy-button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 #FF725C;
+}
+
+// avy index and region page maps: short when stacked on mobile, taller beside the list/report
+.avy-map {
     height: 300px;
     @media screen and (min-width: 30em) {
         height: 420px;

@@ -52,6 +52,19 @@ function showRegion(region_id, updateHash = true) {
   return true;
 }
 
+// region page: list every area in the selected zone under the map when its dropdown label is shortened
+function showZoneAreas() {
+  const areas = document.getElementById("zone-areas");
+  const list = document.getElementById("zone-areas-list");
+  const option = zoneSel && zoneSel.selectedOptions[0];
+  if (!areas || !list || !option) return;
+
+  const full = option.title;
+  const shortened = full && full !== option.textContent.trim();
+  list.textContent = shortened ? full : "";
+  areas.classList.toggle('dn', !shortened);
+}
+
 // region page: show zone details (report/map)
 function showZone(zone_id, updateHash = true) {
   const report = document.getElementById(`${zone_id}-report`);
@@ -65,6 +78,7 @@ function showZone(zone_id, updateHash = true) {
 
   if(updateHash) setHash(`zone-${zone_id}`);
   if(zoneSel) zoneSel.value = zone_id;
+  showZoneAreas();
 
   highlightLayer(zone_id);
   return true;

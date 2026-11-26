@@ -78,21 +78,16 @@ css_includes:
     </div>
 </div>
 
-<div class="flex flex-column flex-row-ns">
+<div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         {% for zone in zones %}
         <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}" data-color="{{ zone.color }}"{% if zone.has_subregions %} data-subregions="true"{% endif %} data-published="{{ zone.published }}">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
-            {% if zone.short_name and zone.short_name != zone.name %}
-            <details class="tc f6 black-70 mt0 mb3">
-                <summary class="pointer" title="Show all areas">{{ zone.short_name }}</summary>
-                <p class="mt2 mb0 lh-copy">{{ zone.name }}</p>
-            </details>
+            {% if zone.danger %}
+            <div id="{{ zone.slug }}-title" class="mb4 tc">
+                <div><a id="{{ zone.slug }}-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
             {% endif %}
             {% if zone.danger %}
-            <div id="{{ zone.slug }}-title" class="mv4 tc">
-                <div><a id="{{ zone.slug }}-url" class="no-underline black-70 pa2 hover-light-red b--moon-gray bg-light-gray ba" target="_blank" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Pre-populated CalTopo Map</a></div>
-            </div>
             <dl class="f6">
                 <dt>
                     <strong>{{ sun_day }} Avalanche Danger</strong>
@@ -178,8 +173,8 @@ css_includes:
         {% endfor %}
     </div>
     <div class="ph3 w-100 w-50-ns">
-        <h3 class="tc bb b--moon-gray">Zone</h3>
-        <div class="avy-region-map" id="map"></div>
+        <div class="avy-map" id="map"></div>
+        <p id="zone-areas" class="f6 black-70 lh-copy tc mt3 dn"><b>This zone covers:</b> <span id="zone-areas-list"></span></p>
     </div>
 </div>
 
