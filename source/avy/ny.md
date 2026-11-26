@@ -144,7 +144,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="None">Department of Environmental Conservation Avalanche Forecast</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://dec.ny.gov/things-to-do/hiking/adirondack-backcountry/backcountry-information-for-adirondack-park">full forecast</a> before heading out.
             </p>
             

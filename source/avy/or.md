@@ -158,7 +158,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.coavalanche.org/">Central Oregon Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://coavalanche.org/pages/forecasts/#/central-cascades">full forecast</a> before heading out.
             </p>
             
@@ -181,7 +181,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.coavalanche.org/">Central Oregon Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://coavalanche.org/pages/forecasts/#/newberry">full forecast</a> before heading out.
             </p>
             
@@ -204,7 +204,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://www.nwac.us/">Northwest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://nwac.us/forecasts/avalanche/mt-hood">full forecast</a> before heading out.
             </p>
             
@@ -227,7 +227,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://www.oregonsnow.org/observations/#/">Southern Oregon Avalanche Info Exchange</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.oregonsnow.org/observations/#/view/observations">full forecast</a> before heading out.
             </p>
             
@@ -250,7 +250,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://wallowaavalanchecenter.org/">Wallowa Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.wallowaavalanchecenter.org/forecasts/#/blues">full forecast</a> before heading out.
             </p>
             
@@ -273,7 +273,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://wallowaavalanchecenter.org/">Wallowa Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.wallowaavalanchecenter.org/forecasts/#/elkhorns">full forecast</a> before heading out.
             </p>
             
@@ -296,7 +296,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://wallowaavalanchecenter.org/">Wallowa Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://wallowaavalanchecenter.org/forecasts/#/northern-wallowas">full forecast</a> before heading out.
             </p>
             
@@ -319,7 +319,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://wallowaavalanchecenter.org/">Wallowa Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://wallowaavalanchecenter.org/forecasts/#/southern-wallowas">full forecast</a> before heading out.
             </p>
             

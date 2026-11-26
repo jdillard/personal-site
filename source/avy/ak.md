@@ -174,7 +174,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.cnfaic.org/">Chugach National Forest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.cnfaic.org/forecast/#/chugach-state-park/">full forecast</a> before heading out.
             </p>
             
@@ -197,7 +197,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.cnfaic.org/">Chugach National Forest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.cnfaic.org/forecast/#/seward-and-lost-lake/">full forecast</a> before heading out.
             </p>
             
@@ -220,7 +220,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.cnfaic.org/">Chugach National Forest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.cnfaic.org/forecast/#/summit-lake/">full forecast</a> before heading out.
             </p>
             
@@ -243,7 +243,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="http://www.cnfaic.org/">Chugach National Forest Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.cnfaic.org/forecast/#/turnagain-pass-and-girdwood/">full forecast</a> before heading out.
             </p>
             
@@ -266,7 +266,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://www.coastalakavalanche.org/">Coastal Alaska Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.coastalakavalanche.org/forecast/#/douglas-island/">full forecast</a> before heading out.
             </p>
             
@@ -289,7 +289,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://www.coastalakavalanche.org/">Coastal Alaska Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://www.coastalakavalanche.org/forecast/#/juneau-mainland/">full forecast</a> before heading out.
             </p>
             
@@ -312,7 +312,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/cordova/">Cordova Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/cordova/">full forecast</a> before heading out.
             </p>
             
@@ -335,7 +335,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">Eastern Alaska Range Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">full forecast</a> before heading out.
             </p>
             
@@ -358,7 +358,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">Eastern Alaska Range Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">full forecast</a> before heading out.
             </p>
             
@@ -366,7 +366,7 @@ css_includes:
             
         </div>
         
-        <div id="HAC-3049-report" class="avy-zone dn" data-id="HAC-3049" data-color="#939598" data-published="Wednesday, November 25, 2026 9:29PM">
+        <div id="HAC-3049-report" class="avy-zone dn" data-id="HAC-3049" data-color="#939598" data-published="False">
             
             
             
@@ -381,7 +381,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/haines-hac/">Haines Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/haines-forecast/#/chilkat-pass">full forecast</a> before heading out.
             </p>
             
@@ -389,7 +389,7 @@ css_includes:
             
         </div>
         
-        <div id="HAC-3047-report" class="avy-zone dn" data-id="HAC-3047" data-color="#939598" data-published="Wednesday, November 25, 2026 7:29PM">
+        <div id="HAC-3047-report" class="avy-zone dn" data-id="HAC-3047" data-color="#939598" data-published="False">
             
             
             
@@ -404,7 +404,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/haines-hac/">Haines Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/haines-forecast/#/lutak">full forecast</a> before heading out.
             </p>
             
@@ -412,7 +412,7 @@ css_includes:
             
         </div>
         
-        <div id="HAC-3048-report" class="avy-zone dn" data-id="HAC-3048" data-color="#939598" data-published="Wednesday, November 25, 2026 7:29PM">
+        <div id="HAC-3048-report" class="avy-zone dn" data-id="HAC-3048" data-color="#939598" data-published="False">
             
             
             
@@ -427,7 +427,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/haines-hac/">Haines Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/haines-forecast/#/transitional">full forecast</a> before heading out.
             </p>
             
@@ -450,7 +450,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://hpavalanche.org">Hatcher Pass Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://hpavalanche.org/forecast/#/hatcher-pass/">full forecast</a> before heading out.
             </p>
             
@@ -473,7 +473,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/valdez/">Valdez Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/valdez-forecast/#/continental/">full forecast</a> before heading out.
             </p>
             
@@ -496,7 +496,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/valdez/">Valdez Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/valdez-forecast/#/intermountain/">full forecast</a> before heading out.
             </p>
             
@@ -519,7 +519,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/valdez/">Valdez Avalanche Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://alaskasnow.org/valdez-forecast/#/maritime/">full forecast</a> before heading out.
             </p>
             
