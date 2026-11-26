@@ -572,76 +572,7 @@ css_includes:
     </div>
     <div class="ph3 w-100 w-50-ns">
         <h3 class="tc bb b--moon-gray">Zone</h3>
-        <div style="height: 300px;" id="map"></div>
-        
-        <div id="FAC-3043-shape" data-geojson="/assets/json/avalanche-zones/FAC-3043.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/FAC-3043.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="FAC-3040-shape" data-geojson="/assets/json/avalanche-zones/FAC-3040.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/FAC-3040.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="FAC-3041-shape" data-geojson="/assets/json/avalanche-zones/FAC-3041.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/FAC-3041.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="FAC-3042-shape" data-geojson="/assets/json/avalanche-zones/FAC-3042.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/FAC-3042.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="GNFAC-2819-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2819.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2819.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="GNFAC-2827-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2827.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2827.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="GNFAC-2826-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2826.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2826.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="GNFAC-2825-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2825.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2825.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="GNFAC-2821-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2821.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2821.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="GNFAC-2822-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2822.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2822.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="GNFAC-2824-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2824.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2824.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="GNFAC-2823-shape" data-geojson="/assets/json/avalanche-zones/GNFAC-2823.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/GNFAC-2823.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="IPAC-1901-shape" data-geojson="/assets/json/avalanche-zones/IPAC-1901.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/IPAC-1901.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="IPAC-3019-shape" data-geojson="/assets/json/avalanche-zones/IPAC-3019.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/IPAC-3019.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="WCMAC-1724-shape" data-geojson="/assets/json/avalanche-zones/WCMAC-1724.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WCMAC-1724.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="WCMAC-1723-shape" data-geojson="/assets/json/avalanche-zones/WCMAC-1723.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WCMAC-1723.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="WCMAC-1722-shape" data-geojson="/assets/json/avalanche-zones/WCMAC-1722.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WCMAC-1722.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
+        <div class="avy-region-map" id="map"></div>
     </div>
 </div>
 

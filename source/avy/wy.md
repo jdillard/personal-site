@@ -312,36 +312,7 @@ css_includes:
     </div>
     <div class="ph3 w-100 w-50-ns">
         <h3 class="tc bb b--moon-gray">Zone</h3>
-        <div style="height: 300px;" id="map"></div>
-        
-        <div id="BTAC-2856-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2856.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2856.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="BTAC-2860-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2860.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2860.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="BTAC-2855-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2855.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2855.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="BTAC-2852-shape" data-geojson="/assets/json/avalanche-zones/BTAC-2852.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/BTAC-2852.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="EWYAIX-2841-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-2841.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-2841.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="EWYAIX-3045-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-3045.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-3045.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="EWYAIX-3046-shape" data-geojson="/assets/json/avalanche-zones/EWYAIX-3046.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EWYAIX-3046.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
+        <div class="avy-region-map" id="map"></div>
     </div>
 </div>
 

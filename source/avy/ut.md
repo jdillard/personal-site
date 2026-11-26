@@ -319,44 +319,7 @@ css_includes:
     </div>
     <div class="ph3 w-100 w-50-ns">
         <h3 class="tc bb b--moon-gray">Zone</h3>
-        <div style="height: 300px;" id="map"></div>
-        
-        <div id="UAC-1744-shape" data-geojson="/assets/json/avalanche-zones/UAC-1744.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1744.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="UAC-1736-shape" data-geojson="/assets/json/avalanche-zones/UAC-1736.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1736.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="UAC-1742-shape" data-geojson="/assets/json/avalanche-zones/UAC-1742.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1742.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="UAC-1737-shape" data-geojson="/assets/json/avalanche-zones/UAC-1737.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1737.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="UAC-1739-shape" data-geojson="/assets/json/avalanche-zones/UAC-1739.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1739.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="UAC-1738-shape" data-geojson="/assets/json/avalanche-zones/UAC-1738.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1738.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="UAC-1741-shape" data-geojson="/assets/json/avalanche-zones/UAC-1741.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1741.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="UAC-1743-shape" data-geojson="/assets/json/avalanche-zones/UAC-1743.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1743.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="UAC-1740-shape" data-geojson="/assets/json/avalanche-zones/UAC-1740.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/UAC-1740.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
+        <div class="avy-region-map" id="map"></div>
     </div>
 </div>
 
