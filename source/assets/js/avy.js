@@ -55,15 +55,13 @@ function showRegion(region_id, updateHash = true) {
 // region page: show zone details (report/map)
 function showZone(zone_id, updateHash = true) {
   const report = document.getElementById(`${zone_id}-report`);
-  const shape = document.getElementById(`${zone_id}-shape`);
-  if (!report || !shape) return false;
+  if (!report) return false;
 
   document.querySelectorAll('.avy-zone').forEach(function(div) {
     div.classList.add('dn');
   });
 
   report.classList.remove('dn');
-  shape.classList.remove('dn');
 
   if(updateHash) setHash(`zone-${zone_id}`);
   if(zoneSel) zoneSel.value = zone_id;

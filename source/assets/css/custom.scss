@@ -614,3 +614,11 @@ header.post-cover {
     transform: translate(3px, 3px);
     box-shadow: 2px 2px 0 #4d4d4d;
 }
+
+// avy region page map: short when stacked on mobile, taller beside the report
+.avy-region-map {
+    height: 300px;
+    @media screen and (min-width: 30em) {
+        height: 420px;
+    }
+}
