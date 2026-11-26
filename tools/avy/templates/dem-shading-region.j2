@@ -174,12 +174,17 @@ css_includes:
 <section class="tc lh-copy">
     <label for="regionSel" class="f6 b">Change Regions:</label>
     <select class="f6 ma1 bg-near-white pa2" id="regionSel">
-        {% for state in states %}
-        {% if state.active %}
-        <option value="{{ state.page }}.html"{% if state.name == page %} selected=""{% endif %}>{{ state.name }}</option>
-        {% endif %}
-        {% endfor %}
-        <option value="/avy/canada.html"{% if page == "Canada" %} selected=""{% endif %}>Canada</option>
+        <option value="/avy/">All Regions</option>
+        <optgroup label="US">
+            {% for state in states | sort(attribute="name") %}
+            {% if state.active %}
+            <option value="{{ state.page }}.html"{% if state.name == page %} selected=""{% endif %}>{{ state.name }}</option>
+            {% endif %}
+            {% endfor %}
+        </optgroup>
+        <optgroup label="Canada">
+            <option value="/avy/canada.html"{% if page == "Canada" %} selected=""{% endif %}>Canada</option>
+        </optgroup>
     </select>
 </section>
 
