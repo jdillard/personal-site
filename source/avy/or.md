@@ -51,34 +51,99 @@ css_includes:
 
 <div>
     <div class="mt4 ph2 tc">
-        <label for="zoneSel" class="f6 b">Select A Zone:</label>
-        <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
-            
-            <option value="COAA-2470" title="Central Cascades" selected="">Central Cascades</option>
-            
-            <option value="COAA-2471" title="Newberry" >Newberry</option>
-            
-            <option value="NWAC-3032" title="Mt Hood" >Mt Hood</option>
-            
-            <option value="SOAIX-1369" title="Southern Oregon" >Southern Oregon</option>
-            
-            <option value="WAC-2985" title="Blues" >Blues</option>
-            
-            <option value="WAC-2984" title="Elkhorns" >Elkhorns</option>
-            
-            <option value="WAC-2982" title="Northern Wallowas" >Northern Wallowas</option>
-            
-            <option value="WAC-2983" title="Southern Wallowas" >Southern Wallowas</option>
-            
-        </select>
+        <span class="avy-picker">
+            <label for="zoneSel">Zone</label>
+            <select class="avy-select" id="zoneSel">
+                
+                <option value="COAA-2470" title="Central Cascades" selected="">Central Cascades</option>
+                
+                <option value="COAA-2471" title="Newberry" >Newberry</option>
+                
+                <option value="NWAC-3032" title="Mt Hood" >Mt Hood</option>
+                
+                <option value="SOAIX-1369" title="Southern Oregon" >Southern Oregon</option>
+                
+                <option value="WAC-2985" title="Blues" >Blues</option>
+                
+                <option value="WAC-2984" title="Elkhorns" >Elkhorns</option>
+                
+                <option value="WAC-2982" title="Northern Wallowas" >Northern Wallowas</option>
+                
+                <option value="WAC-2983" title="Southern Wallowas" >Southern Wallowas</option>
+                
+            </select>
+        </span>
+        <span class="avy-picker">
+            <label for="regionSel">Region</label>
+            <select class="avy-select" id="regionSel">
+                <option value="/avy/">All Regions</option>
+                <optgroup label="US">
+                    
+                    
+                    <option value="/avy/#region-ak">Alaska</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-az">Arizona</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-ca">California</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-co">Colorado</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-id">Idaho</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-mt">Montana</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-nh">New Hampshire</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-nm">New Mexico</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-ny">New York</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-or" selected="">Oregon</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-ut">Utah</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-wa">Washington</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-wy">Wyoming</option>
+                    
+                    
+                </optgroup>
+                <optgroup label="Canada">
+                    <option value="/avy/#region-canada">Canada</option>
+                </optgroup>
+            </select>
+        </span>
     </div>
 </div>
 
-<div class="flex flex-column flex-row-ns">
+<div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="COAA-2470-report" class="avy-zone" data-id="COAA-2470" data-color="#939598" data-published="Tuesday, November 03, 2026 10:25AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -102,7 +167,6 @@ css_includes:
         </div>
         
         <div id="COAA-2471-report" class="avy-zone dn" data-id="COAA-2471" data-color="#939598" data-published="Tuesday, November 03, 2026 10:39AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -126,7 +190,6 @@ css_includes:
         </div>
         
         <div id="NWAC-3032-report" class="avy-zone dn" data-id="NWAC-3032" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -150,7 +213,6 @@ css_includes:
         </div>
         
         <div id="SOAIX-1369-report" class="avy-zone dn" data-id="SOAIX-1369" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -174,7 +236,6 @@ css_includes:
         </div>
         
         <div id="WAC-2985-report" class="avy-zone dn" data-id="WAC-2985" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -198,7 +259,6 @@ css_includes:
         </div>
         
         <div id="WAC-2984-report" class="avy-zone dn" data-id="WAC-2984" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -222,7 +282,6 @@ css_includes:
         </div>
         
         <div id="WAC-2982-report" class="avy-zone dn" data-id="WAC-2982" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -246,7 +305,6 @@ css_includes:
         </div>
         
         <div id="WAC-2983-report" class="avy-zone dn" data-id="WAC-2983" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -271,104 +329,12 @@ css_includes:
         
     </div>
     <div class="ph3 w-100 w-50-ns">
-        <h3 class="tc bb b--moon-gray">Zone</h3>
-        <div style="height: 300px;" id="map"></div>
-        
-        <div id="COAA-2470-shape" data-geojson="/assets/json/avalanche-zones/COAA-2470.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/COAA-2470.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="COAA-2471-shape" data-geojson="/assets/json/avalanche-zones/COAA-2471.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/COAA-2471.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="NWAC-3032-shape" data-geojson="/assets/json/avalanche-zones/NWAC-3032.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/NWAC-3032.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="SOAIX-1369-shape" data-geojson="/assets/json/avalanche-zones/SOAIX-1369.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/SOAIX-1369.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="WAC-2985-shape" data-geojson="/assets/json/avalanche-zones/WAC-2985.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WAC-2985.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="WAC-2984-shape" data-geojson="/assets/json/avalanche-zones/WAC-2984.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WAC-2984.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="WAC-2982-shape" data-geojson="/assets/json/avalanche-zones/WAC-2982.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WAC-2982.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="WAC-2983-shape" data-geojson="/assets/json/avalanche-zones/WAC-2983.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/WAC-2983.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
+        <div class="avy-map" id="map"></div>
+        <p id="zone-areas" class="f6 black-70 lh-copy tc mt3 dn"><b>This zone covers:</b> <span id="zone-areas-list"></span></p>
     </div>
 </div>
 
 <hr id="hr-0" class="mw5 p0 mv4 o-70 b0 bt b--light-red light-red bg-light-red">
-<section class="tc lh-copy">
-    <label for="regionSel" class="f6 b">Change Regions:</label>
-    <select class="f6 ma1 bg-near-white pa2" id="regionSel">
-        
-        
-        <option value="/avy/ca.html">California</option>
-        
-        
-        
-        <option value="/avy/wy.html">Wyoming</option>
-        
-        
-        
-        <option value="/avy/or.html" selected="">Oregon</option>
-        
-        
-        
-        <option value="/avy/ak.html">Alaska</option>
-        
-        
-        
-        <option value="/avy/ny.html">New York</option>
-        
-        
-        
-        <option value="/avy/mt.html">Montana</option>
-        
-        
-        
-        <option value="/avy/id.html">Idaho</option>
-        
-        
-        
-        <option value="/avy/az.html">Arizona</option>
-        
-        
-        
-        <option value="/avy/nh.html">New Hampshire</option>
-        
-        
-        
-        <option value="/avy/wa.html">Washington</option>
-        
-        
-        
-        <option value="/avy/nm.html">New Mexico</option>
-        
-        
-        
-        <option value="/avy/ut.html">Utah</option>
-        
-        
-        
-        <option value="/avy/co.html">Colorado</option>
-        
-        
-        <option value="/avy/canada.html">Canada</option>
-    </select>
-</section>
 
 
 {% include feedback.html %}

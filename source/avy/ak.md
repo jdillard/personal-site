@@ -51,50 +51,115 @@ css_includes:
 
 <div>
     <div class="mt4 ph2 tc">
-        <label for="zoneSel" class="f6 b">Select A Zone:</label>
-        <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
-            
-            <option value="CNFAIC-2818" title="Chugach State Park" selected="">Chugach State Park</option>
-            
-            <option value="CNFAIC-2817" title="Seward and Lost Lake" >Seward and Lost Lake</option>
-            
-            <option value="CNFAIC-2816" title="Summit Lake" >Summit Lake</option>
-            
-            <option value="CNFAIC-2815" title="Turnagain Pass and Girdwood" >Turnagain Pass and Girdwood</option>
-            
-            <option value="CAAC-2165" title="Douglas Island" >Douglas Island</option>
-            
-            <option value="CAAC-2164" title="Juneau" >Juneau</option>
-            
-            <option value="CAC-1421" title="Cordova" >Cordova</option>
-            
-            <option value="EARAC-3002" title="North (Castner-Canwell) Eastern Alaska Range" >North (Castner-Canwell) Eastern Alaska Range</option>
-            
-            <option value="EARAC-3003" title="South (Summit) Eastern Alaska Range" >South (Summit) Eastern Alaska Range</option>
-            
-            <option value="HAC-3007" title="Chilkat Pass" >Chilkat Pass</option>
-            
-            <option value="HAC-3005" title="Lutak" >Lutak</option>
-            
-            <option value="HAC-3006" title="Transitional" >Transitional</option>
-            
-            <option value="HPAC-2152" title="Hatcher Pass" >Hatcher Pass</option>
-            
-            <option value="VAC-1611" title="Continental" >Continental</option>
-            
-            <option value="VAC-1610" title="Intermountain" >Intermountain</option>
-            
-            <option value="VAC-1609" title="Maritime" >Maritime</option>
-            
-        </select>
+        <span class="avy-picker">
+            <label for="zoneSel">Zone</label>
+            <select class="avy-select" id="zoneSel">
+                
+                <option value="CNFAIC-2818" title="Chugach State Park" selected="">Chugach State Park</option>
+                
+                <option value="CNFAIC-2817" title="Seward and Lost Lake" >Seward and Lost Lake</option>
+                
+                <option value="CNFAIC-2816" title="Summit Lake" >Summit Lake</option>
+                
+                <option value="CNFAIC-2815" title="Turnagain Pass and Girdwood" >Turnagain Pass and Girdwood</option>
+                
+                <option value="CAAC-2165" title="Douglas Island" >Douglas Island</option>
+                
+                <option value="CAAC-2164" title="Juneau" >Juneau</option>
+                
+                <option value="CAC-1421" title="Cordova" >Cordova</option>
+                
+                <option value="EARAC-3002" title="North (Castner-Canwell) Eastern Alaska Range" >North (Castner-Canwell) Eastern Alaska Range</option>
+                
+                <option value="EARAC-3003" title="South (Summit) Eastern Alaska Range" >South (Summit) Eastern Alaska Range</option>
+                
+                <option value="HAC-3007" title="Chilkat Pass" >Chilkat Pass</option>
+                
+                <option value="HAC-3005" title="Lutak" >Lutak</option>
+                
+                <option value="HAC-3006" title="Transitional" >Transitional</option>
+                
+                <option value="HPAC-2152" title="Hatcher Pass" >Hatcher Pass</option>
+                
+                <option value="VAC-1611" title="Continental" >Continental</option>
+                
+                <option value="VAC-1610" title="Intermountain" >Intermountain</option>
+                
+                <option value="VAC-1609" title="Maritime" >Maritime</option>
+                
+            </select>
+        </span>
+        <span class="avy-picker">
+            <label for="regionSel">Region</label>
+            <select class="avy-select" id="regionSel">
+                <option value="/avy/">All Regions</option>
+                <optgroup label="US">
+                    
+                    
+                    <option value="/avy/#region-ak" selected="">Alaska</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-az">Arizona</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-ca">California</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-co">Colorado</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-id">Idaho</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-mt">Montana</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-nh">New Hampshire</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-nm">New Mexico</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-ny">New York</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-or">Oregon</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-ut">Utah</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-wa">Washington</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-wy">Wyoming</option>
+                    
+                    
+                </optgroup>
+                <optgroup label="Canada">
+                    <option value="/avy/#region-canada">Canada</option>
+                </optgroup>
+            </select>
+        </span>
     </div>
 </div>
 
-<div class="flex flex-column flex-row-ns">
+<div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="CNFAIC-2818-report" class="avy-zone" data-id="CNFAIC-2818" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -118,7 +183,6 @@ css_includes:
         </div>
         
         <div id="CNFAIC-2817-report" class="avy-zone dn" data-id="CNFAIC-2817" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -142,7 +206,6 @@ css_includes:
         </div>
         
         <div id="CNFAIC-2816-report" class="avy-zone dn" data-id="CNFAIC-2816" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -166,7 +229,6 @@ css_includes:
         </div>
         
         <div id="CNFAIC-2815-report" class="avy-zone dn" data-id="CNFAIC-2815" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -190,7 +252,6 @@ css_includes:
         </div>
         
         <div id="CAAC-2165-report" class="avy-zone dn" data-id="CAAC-2165" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -214,7 +275,6 @@ css_includes:
         </div>
         
         <div id="CAAC-2164-report" class="avy-zone dn" data-id="CAAC-2164" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -238,7 +298,6 @@ css_includes:
         </div>
         
         <div id="CAC-1421-report" class="avy-zone dn" data-id="CAC-1421" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -262,7 +321,6 @@ css_includes:
         </div>
         
         <div id="EARAC-3002-report" class="avy-zone dn" data-id="EARAC-3002" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -286,7 +344,6 @@ css_includes:
         </div>
         
         <div id="EARAC-3003-report" class="avy-zone dn" data-id="EARAC-3003" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -310,7 +367,6 @@ css_includes:
         </div>
         
         <div id="HAC-3007-report" class="avy-zone dn" data-id="HAC-3007" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -334,7 +390,6 @@ css_includes:
         </div>
         
         <div id="HAC-3005-report" class="avy-zone dn" data-id="HAC-3005" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -358,7 +413,6 @@ css_includes:
         </div>
         
         <div id="HAC-3006-report" class="avy-zone dn" data-id="HAC-3006" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -382,7 +436,6 @@ css_includes:
         </div>
         
         <div id="HPAC-2152-report" class="avy-zone dn" data-id="HPAC-2152" data-color="#939598" data-published="Monday, November 23, 2026 7:00AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -406,7 +459,6 @@ css_includes:
         </div>
         
         <div id="VAC-1611-report" class="avy-zone dn" data-id="VAC-1611" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -430,7 +482,6 @@ css_includes:
         </div>
         
         <div id="VAC-1610-report" class="avy-zone dn" data-id="VAC-1610" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -454,7 +505,6 @@ css_includes:
         </div>
         
         <div id="VAC-1609-report" class="avy-zone dn" data-id="VAC-1609" data-color="#939598" data-published="False">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -479,136 +529,12 @@ css_includes:
         
     </div>
     <div class="ph3 w-100 w-50-ns">
-        <h3 class="tc bb b--moon-gray">Zone</h3>
-        <div style="height: 300px;" id="map"></div>
-        
-        <div id="CNFAIC-2818-shape" data-geojson="/assets/json/avalanche-zones/CNFAIC-2818.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CNFAIC-2818.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="CNFAIC-2817-shape" data-geojson="/assets/json/avalanche-zones/CNFAIC-2817.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CNFAIC-2817.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="CNFAIC-2816-shape" data-geojson="/assets/json/avalanche-zones/CNFAIC-2816.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CNFAIC-2816.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="CNFAIC-2815-shape" data-geojson="/assets/json/avalanche-zones/CNFAIC-2815.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CNFAIC-2815.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="CAAC-2165-shape" data-geojson="/assets/json/avalanche-zones/CAAC-2165.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CAAC-2165.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="CAAC-2164-shape" data-geojson="/assets/json/avalanche-zones/CAAC-2164.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CAAC-2164.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="CAC-1421-shape" data-geojson="/assets/json/avalanche-zones/CAC-1421.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/CAC-1421.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="EARAC-3002-shape" data-geojson="/assets/json/avalanche-zones/EARAC-3002.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EARAC-3002.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="EARAC-3003-shape" data-geojson="/assets/json/avalanche-zones/EARAC-3003.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/EARAC-3003.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="HAC-3007-shape" data-geojson="/assets/json/avalanche-zones/HAC-3007.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/HAC-3007.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="HAC-3005-shape" data-geojson="/assets/json/avalanche-zones/HAC-3005.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/HAC-3005.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="HAC-3006-shape" data-geojson="/assets/json/avalanche-zones/HAC-3006.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/HAC-3006.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="HPAC-2152-shape" data-geojson="/assets/json/avalanche-zones/HPAC-2152.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/HPAC-2152.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="VAC-1611-shape" data-geojson="/assets/json/avalanche-zones/VAC-1611.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/VAC-1611.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="VAC-1610-shape" data-geojson="/assets/json/avalanche-zones/VAC-1610.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/VAC-1610.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
-        <div id="VAC-1609-shape" data-geojson="/assets/json/avalanche-zones/VAC-1609.geojson" class="avy-zone dn">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/VAC-1609.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
+        <div class="avy-map" id="map"></div>
+        <p id="zone-areas" class="f6 black-70 lh-copy tc mt3 dn"><b>This zone covers:</b> <span id="zone-areas-list"></span></p>
     </div>
 </div>
 
 <hr id="hr-0" class="mw5 p0 mv4 o-70 b0 bt b--light-red light-red bg-light-red">
-<section class="tc lh-copy">
-    <label for="regionSel" class="f6 b">Change Regions:</label>
-    <select class="f6 ma1 bg-near-white pa2" id="regionSel">
-        
-        
-        <option value="/avy/ca.html">California</option>
-        
-        
-        
-        <option value="/avy/wy.html">Wyoming</option>
-        
-        
-        
-        <option value="/avy/or.html">Oregon</option>
-        
-        
-        
-        <option value="/avy/ak.html" selected="">Alaska</option>
-        
-        
-        
-        <option value="/avy/ny.html">New York</option>
-        
-        
-        
-        <option value="/avy/mt.html">Montana</option>
-        
-        
-        
-        <option value="/avy/id.html">Idaho</option>
-        
-        
-        
-        <option value="/avy/az.html">Arizona</option>
-        
-        
-        
-        <option value="/avy/nh.html">New Hampshire</option>
-        
-        
-        
-        <option value="/avy/wa.html">Washington</option>
-        
-        
-        
-        <option value="/avy/nm.html">New Mexico</option>
-        
-        
-        
-        <option value="/avy/ut.html">Utah</option>
-        
-        
-        
-        <option value="/avy/co.html">Colorado</option>
-        
-        
-        <option value="/avy/canada.html">Canada</option>
-    </select>
-</section>
 
 
 {% include feedback.html %}

@@ -51,20 +51,85 @@ css_includes:
 
 <div>
     <div class="mt4 ph2 tc">
-        <label for="zoneSel" class="f6 b">Select A Zone:</label>
-        <select class="f6 ma1 bg-near-white pa2" id="zoneSel">
-            
-            <option value="TAC-490" title="Northern New Mexico" selected="">Northern New Mexico</option>
-            
-        </select>
+        <span class="avy-picker">
+            <label for="zoneSel">Zone</label>
+            <select class="avy-select" id="zoneSel">
+                
+                <option value="TAC-490" title="Northern New Mexico" selected="">Northern New Mexico</option>
+                
+            </select>
+        </span>
+        <span class="avy-picker">
+            <label for="regionSel">Region</label>
+            <select class="avy-select" id="regionSel">
+                <option value="/avy/">All Regions</option>
+                <optgroup label="US">
+                    
+                    
+                    <option value="/avy/#region-ak">Alaska</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-az">Arizona</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-ca">California</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-co">Colorado</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-id">Idaho</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-mt">Montana</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-nh">New Hampshire</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-nm" selected="">New Mexico</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-ny">New York</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-or">Oregon</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-ut">Utah</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-wa">Washington</option>
+                    
+                    
+                    
+                    <option value="/avy/#region-wy">Wyoming</option>
+                    
+                    
+                </optgroup>
+                <optgroup label="Canada">
+                    <option value="/avy/#region-canada">Canada</option>
+                </optgroup>
+            </select>
+        </span>
     </div>
 </div>
 
-<div class="flex flex-column flex-row-ns">
+<div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="TAC-490-report" class="avy-zone" data-id="TAC-490" data-color="#939598" data-published="Friday, November 20, 2026 6:50AM">
-            <h3 class="tc bb b--moon-gray">Avalanche Report</h3>
             
             
             
@@ -89,76 +154,12 @@ css_includes:
         
     </div>
     <div class="ph3 w-100 w-50-ns">
-        <h3 class="tc bb b--moon-gray">Zone</h3>
-        <div style="height: 300px;" id="map"></div>
-        
-        <div id="TAC-490-shape" data-geojson="/assets/json/avalanche-zones/TAC-490.geojson" class="avy-zone">
-            <div class="mt1 tc"><a class="no-underline fancy-link relative light-red f6" target="_blank" href="/assets/json/avalanche-zones/TAC-490.geojson" download="">Download GeoJSON</a></div>
-        </div>
-        
+        <div class="avy-map" id="map"></div>
+        <p id="zone-areas" class="f6 black-70 lh-copy tc mt3 dn"><b>This zone covers:</b> <span id="zone-areas-list"></span></p>
     </div>
 </div>
 
 <hr id="hr-0" class="mw5 p0 mv4 o-70 b0 bt b--light-red light-red bg-light-red">
-<section class="tc lh-copy">
-    <label for="regionSel" class="f6 b">Change Regions:</label>
-    <select class="f6 ma1 bg-near-white pa2" id="regionSel">
-        
-        
-        <option value="/avy/ca.html">California</option>
-        
-        
-        
-        <option value="/avy/wy.html">Wyoming</option>
-        
-        
-        
-        <option value="/avy/or.html">Oregon</option>
-        
-        
-        
-        <option value="/avy/ak.html">Alaska</option>
-        
-        
-        
-        <option value="/avy/ny.html">New York</option>
-        
-        
-        
-        <option value="/avy/mt.html">Montana</option>
-        
-        
-        
-        <option value="/avy/id.html">Idaho</option>
-        
-        
-        
-        <option value="/avy/az.html">Arizona</option>
-        
-        
-        
-        <option value="/avy/nh.html">New Hampshire</option>
-        
-        
-        
-        <option value="/avy/wa.html">Washington</option>
-        
-        
-        
-        <option value="/avy/nm.html" selected="">New Mexico</option>
-        
-        
-        
-        <option value="/avy/ut.html">Utah</option>
-        
-        
-        
-        <option value="/avy/co.html">Colorado</option>
-        
-        
-        <option value="/avy/canada.html">Canada</option>
-    </select>
-</section>
 
 
 {% include feedback.html %}

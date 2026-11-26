@@ -46,27 +46,46 @@ function showRegion(region_id, updateHash = true) {
     region.classList.remove('dn');
   }
 
+  // single region: list beside the map; all: full-width map with lists below
+  const layout = document.getElementById('avy-layout');
+  if (layout) {
+    layout.classList.toggle('avy-single', region_id != "all");
+    map.invalidateSize();
+  }
+
   if(updateHash) setHash(region_id == "all" ? "" : `region-${region_id}`);
   if(indexSel) indexSel.value = region_id;
   showRegionLayers(region_id);
   return true;
 }
 
+// region page: list every area in the selected zone under the map when its dropdown label is shortened
+function showZoneAreas() {
+  const areas = document.getElementById("zone-areas");
+  const list = document.getElementById("zone-areas-list");
+  const option = zoneSel && zoneSel.selectedOptions[0];
+  if (!areas || !list || !option) return;
+
+  const full = option.title;
+  const shortened = full && full !== option.textContent.trim();
+  list.textContent = shortened ? full : "";
+  areas.classList.toggle('dn', !shortened);
+}
+
 // region page: show zone details (report/map)
 function showZone(zone_id, updateHash = true) {
   const report = document.getElementById(`${zone_id}-report`);
-  const shape = document.getElementById(`${zone_id}-shape`);
-  if (!report || !shape) return false;
+  if (!report) return false;
 
   document.querySelectorAll('.avy-zone').forEach(function(div) {
     div.classList.add('dn');
   });
 
   report.classList.remove('dn');
-  shape.classList.remove('dn');
 
   if(updateHash) setHash(`zone-${zone_id}`);
   if(zoneSel) zoneSel.value = zone_id;
+  showZoneAreas();
 
   highlightLayer(zone_id);
   return true;
