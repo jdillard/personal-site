@@ -82,60 +82,60 @@ css_includes:
                 <optgroup label="US">
                     
                     
-                    <option value="/avy/ak.html">Alaska</option>
+                    <option value="/avy/#region-ak">Alaska</option>
                     
                     
                     
-                    <option value="/avy/az.html">Arizona</option>
+                    <option value="/avy/#region-az">Arizona</option>
                     
                     
                     
-                    <option value="/avy/ca.html">California</option>
+                    <option value="/avy/#region-ca">California</option>
                     
                     
                     
-                    <option value="/avy/co.html">Colorado</option>
+                    <option value="/avy/#region-co">Colorado</option>
                     
                     
                     
-                    <option value="/avy/id.html" selected="">Idaho</option>
+                    <option value="/avy/#region-id" selected="">Idaho</option>
                     
                     
                     
-                    <option value="/avy/mt.html">Montana</option>
+                    <option value="/avy/#region-mt">Montana</option>
                     
                     
                     
-                    <option value="/avy/nh.html">New Hampshire</option>
+                    <option value="/avy/#region-nh">New Hampshire</option>
                     
                     
                     
-                    <option value="/avy/nm.html">New Mexico</option>
+                    <option value="/avy/#region-nm">New Mexico</option>
                     
                     
                     
-                    <option value="/avy/ny.html">New York</option>
+                    <option value="/avy/#region-ny">New York</option>
                     
                     
                     
-                    <option value="/avy/or.html">Oregon</option>
+                    <option value="/avy/#region-or">Oregon</option>
                     
                     
                     
-                    <option value="/avy/ut.html">Utah</option>
+                    <option value="/avy/#region-ut">Utah</option>
                     
                     
                     
-                    <option value="/avy/wa.html">Washington</option>
+                    <option value="/avy/#region-wa">Washington</option>
                     
                     
                     
-                    <option value="/avy/wy.html">Wyoming</option>
+                    <option value="/avy/#region-wy">Wyoming</option>
                     
                     
                 </optgroup>
                 <optgroup label="Canada">
-                    <option value="/avy/canada.html">Canada</option>
+                    <option value="/avy/#region-canada">Canada</option>
                 </optgroup>
             </select>
         </span>
