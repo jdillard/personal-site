@@ -158,12 +158,12 @@ css_includes:
             {% if (zone.danger and zone.published) or zone.report_access is not sameas false %}
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             {% if zone.danger and zone.published %}
-            <p class="f7 mv1">
+            <p class="f6 mv1">
                 <strong>Issued at:</strong> {{ zone.published }}
             </p>
             {% endif %}
             {% if zone.report_access is not sameas false %}
-            <p class="f7 mv1 measure center">
+            <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="{{ zone.center_link }}">{{ zone.center_name }}</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="{{ zone.url }}">full forecast</a> before heading out.
             </p>
             {% endif %}
