@@ -171,19 +171,19 @@ def canada_area_elevations(subregions, subregion_ranges, elevations):
     return elevations[0]
 
 
-def short_area_name(subregions, max_chars=36):
-    """Readable short name for an area, e.g. "Blue River, Clearwater +8 more".
+def short_area_name(subregions, max_chars=28):
+    """Readable short name for an area, e.g. "Blue River +9 more".
 
-    Names are added whole until the next one would push the joined names past
-    max_chars; the rest collapse into "+N more". At least one name is shown.
+    Shows as many whole names as fit in max_chars, counting the "+N more"
+    suffix for the rest, so dropdowns stay narrow. At least one name is shown.
     """
-    shown = []
-    for name in subregions:
-        if shown and len(", ".join(shown + [name])) > max_chars:
-            break
-        shown.append(name)
-    remaining = len(subregions) - len(shown)
-    return ", ".join(shown) + (f" +{remaining} more" if remaining else "")
+    if not subregions:
+        return ""
+    for count in range(len(subregions), 0, -1):
+        remaining = len(subregions) - count
+        name = ", ".join(subregions[:count]) + (f" +{remaining} more" if remaining else "")
+        if len(name) <= max_chars or count == 1:
+            return name
 
 
 def forecast_zone_names(report, zone_id):
