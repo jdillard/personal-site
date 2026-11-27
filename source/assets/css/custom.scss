@@ -561,6 +561,8 @@ header.post-cover {
 // Brutalist dropdowns (avy zone/region pickers)
 $avy-gray: #666;
 $avy-line-gray: #bbb; // separators inside avy layer cards
+$avy-tab-bg: #f5f5f5; // card tab fill
+$avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its opened text
 .avy-picker {
     display: inline-block;
     text-align: left;
@@ -666,7 +668,7 @@ $avy-line-gray: #bbb; // separators inside avy layer cards
     padding: .6rem .8rem;
     background: #fff;
     border: var(--avy-card-bw) solid #b0b0b0;
-    box-shadow: 5px 5px 0 #e4e4e4;
+    box-shadow: 5px 5px 0 #ececec;
 }
 
 // card titles as manila-folder tabs sitting on the card's top border, slant flaring toward the card.
@@ -692,7 +694,7 @@ $avy-line-gray: #bbb; // separators inside avy layer cards
     position: absolute;
     inset: var(--avy-card-bw) var(--avy-card-bw) 0;
     z-index: -1;
-    background: #f5f5f5;
+    background: $avy-tab-bg;
     clip-path: polygon(0 0, calc(100% - .8rem) 0, 100% 100%, 0 100%);
 }
 
@@ -823,6 +825,7 @@ $avy-line-gray: #bbb; // separators inside avy layer cards
     text-transform: uppercase;
     color: #333;
     cursor: pointer;
+    background: $avy-howto-bg;
     list-style: none;
 }
 
@@ -849,12 +852,7 @@ $avy-line-gray: #bbb; // separators inside avy layer cards
     content: "\2212";
 }
 
-// open: the dashes match the body fill, so its top edge reads as a perforated tear-off
-$avy-howto-bg: #f4f4f4;
 
-.avy-howto[open] summary {
-    border-bottom: 2px dashed $avy-howto-bg;
-}
 
 .avy-howto-body {
     padding: .1rem .8rem;
