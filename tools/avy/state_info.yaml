@@ -592,13 +592,22 @@
   # (or `polygon_name`, which wins) in tools/avy/data/canadian_subregions.geojson. An
   # area uses the bands more than half of its subregions map to, else the default.
   #
-  # DERIVED, NOT PUBLISHED: rough treeline by range from general knowledge, rounded to
-  # 100 ft. Spot-checked against treeline/alpine elevations in the 2023-24 to 2025-26
-  # forecast archives (https://api.avalanche.ca/forecasts/en/products?date=<ISO datetime>,
-  # every 2 days); only 14 usable mentions, which agree with these bands for the
-  # Central Rockies (treeline 2200-2300 m), South Coast (1740-1800 m), Purcells (1900 m)
-  # and North Rockies (alpine above 2000 m). No data for the Cariboos, Monashees,
-  # Selkirks, South Rockies or East Coast.
+  # DERIVED, NOT PUBLISHED. Entries marked `verified: map review` (confidence high) were
+  # set by hand against treeline on the CalTopo topo layer; their comment gives the date.
+  # The rest come from two sources, noted on each entry:
+  # - Forecast mentions: rough treeline by range, spot-checked against treeline/alpine
+  #   elevations in the 2023-24 to 2025-26 forecast archives
+  #   (https://api.avalanche.ca/forecasts/en/products?date=<ISO datetime>, every 2 days);
+  #   only 14 usable mentions, which agree with these bands for the Central Rockies
+  #   (treeline 2200-2300 m), South Coast (1740-1800 m), Purcells (1900 m) and North
+  #   Rockies (alpine above 2000 m). Modeled treeline agrees for the Central Rockies,
+  #   most of the South Coast and the North Rockies.
+  # - Modeled treeline (Cariboos, Monashees, Selkirks, South Rockies, East Coast, and the
+  #   Newfoundland and Vancouver Island subregions): NTL is the median of the
+  #   well-sampled subregions' TL ranges, rounded to 100 ft. Used only where the previous
+  #   estimate was low confidence, or (Vancouver Island) where a second check agreed.
+  # Known gap: modeled treeline sits ~200-300 m higher in the Purcells than this band;
+  # still under review.
   # TODO: replace with Avalanche Canada's numbers if they share them
   elevations:
     # fallback for mixed-range areas (e.g. early-season all-of-BC); Columbia
@@ -614,6 +623,29 @@
       btl: [0, 4900]
       ntl: [4901, 6200]
       atl: [6201, 20310]
+    # Vancouver Island (South Coast range, but ~400 m lower): from modeled treeline,
+    # median TL of North, East and West Island (~1200 / 1450 m), rounded to 100 ft;
+    # matches treeline on the CalTopo topo layer. Shared so the Island area still matches.
+    "North Island":
+      confidence: medium
+      btl: [0, 3900]
+      ntl: [3901, 4800]
+      atl: [4801, 20310]
+    "East Island":
+      confidence: medium
+      btl: [0, 3900]
+      ntl: [3901, 4800]
+      atl: [4801, 20310]
+    "West Island":
+      confidence: medium
+      btl: [0, 3900]
+      ntl: [3901, 4800]
+      atl: [4801, 20310]
+    "South Island":
+      confidence: medium
+      btl: [0, 3900]
+      ntl: [3901, 4800]
+      atl: [4801, 20310]
     # ~1300 / 1700 m; raised from 1000 / 1400 m after Terrace-area forecasts (2026):
     # "at treeline around 1600 m", "Below treeline: ... crust up to roughly 1500 m".
     # Stewart / Haines Pass likely sit lower.
@@ -622,24 +654,112 @@
       btl: [0, 4300]
       ntl: [4301, 5600]
       atl: [5601, 20310]
-    # ~1500 / 2000 m
+    # from modeled treeline: median TL of Blue River, Clearwater, McBride,
+    # Premier, Quesnel (~1800 / 1950 m), rounded to 100 ft
     "Cariboos":
-      confidence: low
-      btl: [0, 4900]
-      ntl: [4901, 6600]
+      confidence: medium
+      btl: [0, 5900]
+      ntl: [5901, 6400]
+      atl: [6401, 20310]
+    # verified by map review, 2026-11-26: NTL 5201-6400 ft
+    "Blue River":
+      confidence: high
+      verified: map review
+      btl: [0, 5200]
+      ntl: [5201, 6400]
+      atl: [6401, 20310]
+    # verified by map review, 2026-11-26: NTL 6101-6700 ft
+    "Clearwater":
+      confidence: high
+      verified: map review
+      btl: [0, 6100]
+      ntl: [6101, 6700]
+      atl: [6701, 20310]
+    # verified by map review, 2026-11-26: NTL 5301-6400 ft
+    "McBride":
+      confidence: high
+      verified: map review
+      btl: [0, 5300]
+      ntl: [5301, 6400]
+      atl: [6401, 20310]
+    # verified by map review, 2026-11-26: NTL 5401-6600 ft
+    "Premier":
+      confidence: high
+      verified: map review
+      btl: [0, 5400]
+      ntl: [5401, 6600]
       atl: [6601, 20310]
-    # ~1500 / 2000 m
+    # verified by map review, 2026-11-26: NTL 5401-6500 ft
+    "Quesnel":
+      confidence: high
+      verified: map review
+      btl: [0, 5400]
+      ntl: [5401, 6500]
+      atl: [6501, 20310]
+    # from modeled treeline: median TL of Clemina, Gold, Jordan, North Monashee,
+    # Rossland, South Okanagan, Whatshan (~1900 / 2000 m), rounded to 100 ft
     "Monashees":
-      confidence: low
-      btl: [0, 4900]
-      ntl: [4901, 6600]
+      confidence: medium
+      btl: [0, 6200]
+      ntl: [6201, 6600]
       atl: [6601, 20310]
-    # ~1700 / 2100 m
-    "Selkirks":
-      confidence: low
+    # verified by map review, 2026-11-26: NTL 5201-6800 ft
+    "Clemina":
+      confidence: high
+      verified: map review
+      btl: [0, 5200]
+      ntl: [5201, 6800]
+      atl: [6801, 20310]
+    # verified by map review, 2026-11-26: NTL 5001-6600 ft
+    "Gold":
+      confidence: high
+      verified: map review
+      btl: [0, 5000]
+      ntl: [5001, 6600]
+      atl: [6601, 20310]
+    # verified by map review, 2026-11-26: NTL 5401-6600 ft
+    "Jordan":
+      confidence: high
+      verified: map review
+      btl: [0, 5400]
+      ntl: [5401, 6600]
+      atl: [6601, 20310]
+    # verified by map review, 2026-11-26: NTL 5001-6600 ft
+    "North Monashee":
+      confidence: high
+      verified: map review
+      btl: [0, 5000]
+      ntl: [5001, 6600]
+      atl: [6601, 20310]
+    # verified by map review, 2026-11-26: NTL 5601-6600 ft
+    "Rossland":
+      confidence: high
+      verified: map review
       btl: [0, 5600]
-      ntl: [5601, 6900]
-      atl: [6901, 20310]
+      ntl: [5601, 6600]
+      atl: [6601, 20310]
+    # verified by map review, 2026-11-26: NTL 5901-7000 ft
+    "South Okanagan":
+      confidence: high
+      verified: map review
+      btl: [0, 5900]
+      ntl: [5901, 7000]
+      atl: [7001, 20310]
+    # verified by map review, 2026-11-26: NTL 5301-6600 ft
+    "Whatshan":
+      confidence: high
+      verified: map review
+      btl: [0, 5300]
+      ntl: [5301, 6600]
+      atl: [6601, 20310]
+    # from modeled treeline: median TL of 12 subregions (Badshot-Battle, Central
+    # Selkirk, Esplanade, Glacier, Goat, Kokanee, Kootenay Pass, Norns, North
+    # Selkirk, Retallack, Valhalla, Ymir) (~2000 / 2150 m), rounded to 100 ft
+    "Selkirks":
+      confidence: medium
+      btl: [0, 6600]
+      ntl: [6601, 7100]
+      atl: [7101, 20310]
     # ~1700 / 2100 m
     "Purcells":
       confidence: medium
@@ -658,31 +778,44 @@
       btl: [0, 6600]
       ntl: [6601, 7500]
       atl: [7501, 20310]
-    # ~1900 / 2200 m
+    # from modeled treeline: median TL of Akamina, Bull, Crowsnest North,
+    # Elkford East, Elkford West, Flathead (~2175 / 2300 m), rounded to 100 ft
     "South Rockies":
-      confidence: low
-      btl: [0, 6200]
-      ntl: [6201, 7200]
-      atl: [7201, 20310]
-    # ~800 / 1000 m (Chic-Chocs)
+      confidence: medium
+      btl: [0, 7100]
+      ntl: [7101, 7500]
+      atl: [7501, 20310]
+    # Chic-Chocs, from modeled treeline: TL ~950 / 1050 m, rounded to 100 ft
     "East Coast":
-      confidence: low
-      btl: [0, 2600]
-      ntl: [2601, 3300]
-      atl: [3301, 20310]
-    # Newfoundland subregions sit well below the Chic-Chocs: ~400 / 600 m
+      confidence: medium
+      btl: [0, 3100]
+      ntl: [3101, 3400]
+      atl: [3401, 20310]
+    # verified by map review, 2026-11-26: NTL 3201-3700 ft
+    "Chic-Chocs":
+      confidence: high
+      verified: map review
+      btl: [0, 3200]
+      ntl: [3201, 3700]
+      atl: [3701, 20310]
+    # verified by map review, 2026-11-26: NTL 1101-1800 ft
     "Corner Brook":
-      confidence: low
-      btl: [0, 1300]
-      ntl: [1301, 2000]
-      atl: [2001, 20310]
+      confidence: high
+      verified: map review
+      btl: [0, 1100]
+      ntl: [1101, 1800]
+      atl: [1801, 20310]
+    # verified by map review, 2026-11-26: NTL 1301-2100 ft
     "Gros Morne":
-      confidence: low
+      confidence: high
+      verified: map review
       btl: [0, 1300]
-      ntl: [1301, 2000]
-      atl: [2001, 20310]
+      ntl: [1301, 2100]
+      atl: [2101, 20310]
+    # verified by map review, 2026-11-26: NTL 1501-2000 ft
     "Northern Peninsula":
-      confidence: low
-      btl: [0, 1300]
-      ntl: [1301, 2000]
+      confidence: high
+      verified: map review
+      btl: [0, 1500]
+      ntl: [1501, 2000]
       atl: [2001, 20310]
