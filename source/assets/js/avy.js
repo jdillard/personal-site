@@ -232,8 +232,24 @@ const SUB_REST = { color: "#555555", weight: 1, opacity: 0, fill: true, fillOpac
 const SUB_AREA_HOVER = { opacity: 0.7, weight: 1, dashArray: "4 3" };
 const SUB_HOVER = { opacity: 1, weight: 2, dashArray: null };
 
+// shapes of a zone (and its subregion outlines), in the order bringToFront leaves them
+function layerPaths(filePath) {
+  return [layers[filePath], subLayers[filePath]]
+    .filter(Boolean)
+    .flatMap(group => group.getLayers().map(layer => layer.getElement && layer.getElement()))
+    .filter(Boolean);
+}
+
 // raise a zone and its subregion outlines above other zones
+// skipped when already on top: re-appending the shape under the cursor drops clicks (mousedown and mouseup
+// land on a moved node) and re-fires mouseover, so multi-shape zones couldn't be clicked
 function raiseLayer(filePath) {
+  const paths = layerPaths(filePath);
+  if (paths.length) {
+    const siblings = Array.from(paths[0].parentNode.children).slice(-paths.length);
+    if (siblings.every((el, i) => el === paths[i])) return;
+  }
+
   if (layers[filePath]) layers[filePath].bringToFront();
   if (subLayers[filePath]) subLayers[filePath].bringToFront();
 }
