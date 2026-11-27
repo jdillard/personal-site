@@ -129,7 +129,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="KPAC-2990-report" class="avy-zone" data-id="KPAC-2990" data-color="#939598" data-published="False">
+        <div id="KPAC-2990-report" class="avy-zone" data-id="KPAC-2990" data-color="#939598" data-published="Friday, November 27, 2026 9:39AM">
             
             
             

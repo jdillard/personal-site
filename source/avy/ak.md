@@ -459,21 +459,90 @@ css_includes:
             
         </div>
         
-        <div id="HPAC-2152-report" class="avy-zone dn" data-id="HPAC-2152" data-color="#939598" data-published="Monday, November 23, 2026 7:00AM">
+        <div id="HPAC-2152-report" class="avy-zone dn" data-id="HPAC-2152" data-color="#fff200" data-published="Friday, November 27, 2026 7:00AM">
+            
+            <div id="HPAC-2152-title" class="mb4 tc">
+                <div><a id="HPAC-2152-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=61.76835763061106,-149.2457324108388&z=10&b=mbt&a=sc_a0-0e0-2500fc50b848pa0-0e2501-3500fc50b848pa0-0e3501-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-2500fc50b848pa0-0e2501-3500fc50b848pa0-0e3501-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22952b5038-6fbe-4ed0-8613-c2e51def8bf7%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e3501-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
             
             
+            <section class="avy-layers" aria-label="CalTopo layers">
             
             
-            <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://hpavalanche.org/forecast/#/hatcher-pass/">HPAC</a> for more information.</div>
-            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e3501-20310f fff200&#10;a0-0e2501-3500f 50b848&#10;a0-0e0-2500f 50b848" onclick="clickFunc(this, 'danger-tooltip-HPAC-2152'); return false;" onmouseout="outFunc('danger-tooltip-HPAC-2152')" onblur="outFunc('danger-tooltip-HPAC-2152')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-HPAC-2152" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-HPAC-2152">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> <span class="desc">Moderate danger (above 3501')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (2501' to 3500')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (below 2500')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
             
 
             
+            <div class="avy-layer">
+            <h3 class="avy-layer-title">Avalanche Problems</h3>
+            <dl class="f6 ma0">
+                
+                <div class="avy-problem">
+                    <dt>
+                        <strong>2026-11-28 Wind Slab</strong>
+                    </dt>
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a158-158e3501-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-HPAC-2152'); return false;" onmouseout="outFunc('problem-1-tooltip-HPAC-2152')" onblur="outFunc('problem-1-tooltip-HPAC-2152')" href="#" role="button" aria-label="Copy 2026-11-28 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-HPAC-2152" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-HPAC-2152">
+                        
+                            <li class="pv1 atl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 3501')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                </div>
+                
+            </dl>
+            </div>
+            
+            
+            </section>
             
 
             
             
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Friday, November 27, 2026 7:00AM
+            </p>
             
             
             <p class="f6 mv1 measure center">
