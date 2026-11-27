@@ -569,6 +569,7 @@ header.post-cover {
 
 // Brutalist dropdowns (avy zone/region pickers)
 $avy-gray: #666;
+$avy-card-border: #c8c8c8; // avy layer cards, their folder tabs and the region map frame
 $avy-line-gray: #bbb; // separators inside avy layer cards
 $avy-tab-bg: #f5f5f5; // card tab fill
 $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its opened text
@@ -676,7 +677,7 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     margin: 3.25rem 0 1.25rem;
     padding: .6rem .8rem;
     background: #fff;
-    border: var(--avy-card-bw) solid #b0b0b0;
+    border: var(--avy-card-bw) solid $avy-card-border;
     box-shadow: 5px 5px 0 #ececec;
 }
 
@@ -693,7 +694,7 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     white-space: nowrap;
     // outer shape in the border color; ::before insets the pale fill by the border width.
     // No bottom inset: the tab opens onto the card's top border
-    background: #b0b0b0;
+    background: $avy-card-border;
     clip-path: polygon(0 0, calc(100% - .8rem) 0, 100% 100%, 0 100%);
 }
 
@@ -910,7 +911,7 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
 
 // region page: map framed like the danger/problem cards beside it
 .avy-map-framed {
-    border: var(--avy-card-bw) solid #b0b0b0;
+    border: var(--avy-card-bw) solid $avy-card-border;
     box-shadow: 5px 5px 0 #ececec;
 }
 
