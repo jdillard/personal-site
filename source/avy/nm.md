@@ -129,7 +129,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="TAC-490-report" class="avy-zone" data-id="TAC-490" data-color="#939598" data-published="Friday, November 20, 2026 6:50AM">
+        <div id="TAC-490-report" class="avy-zone" data-id="TAC-490" data-color="#939598" data-published="Friday, November 27, 2026 7:14AM">
             
             
             

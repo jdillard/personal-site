@@ -253,7 +253,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2819-report" class="avy-zone dn" data-id="GNFAC-2819" data-color="#939598" data-published="Monday, November 23, 2026 7:11AM">
+        <div id="GNFAC-2819-report" class="avy-zone dn" data-id="GNFAC-2819" data-color="#939598" data-published="Friday, November 27, 2026 7:10AM">
             
             
             
@@ -276,7 +276,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2827-report" class="avy-zone dn" data-id="GNFAC-2827" data-color="#939598" data-published="Monday, November 23, 2026 7:11AM">
+        <div id="GNFAC-2827-report" class="avy-zone dn" data-id="GNFAC-2827" data-color="#939598" data-published="Friday, November 27, 2026 7:10AM">
             
             
             
@@ -299,7 +299,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2826-report" class="avy-zone dn" data-id="GNFAC-2826" data-color="#939598" data-published="Monday, November 23, 2026 7:11AM">
+        <div id="GNFAC-2826-report" class="avy-zone dn" data-id="GNFAC-2826" data-color="#939598" data-published="Friday, November 27, 2026 7:10AM">
             
             
             
@@ -322,7 +322,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2825-report" class="avy-zone dn" data-id="GNFAC-2825" data-color="#939598" data-published="Monday, November 23, 2026 7:11AM">
+        <div id="GNFAC-2825-report" class="avy-zone dn" data-id="GNFAC-2825" data-color="#939598" data-published="Friday, November 27, 2026 7:10AM">
             
             
             
@@ -345,7 +345,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2821-report" class="avy-zone dn" data-id="GNFAC-2821" data-color="#939598" data-published="Monday, November 23, 2026 7:11AM">
+        <div id="GNFAC-2821-report" class="avy-zone dn" data-id="GNFAC-2821" data-color="#939598" data-published="Friday, November 27, 2026 7:10AM">
             
             
             
@@ -368,7 +368,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2822-report" class="avy-zone dn" data-id="GNFAC-2822" data-color="#939598" data-published="Monday, November 23, 2026 7:11AM">
+        <div id="GNFAC-2822-report" class="avy-zone dn" data-id="GNFAC-2822" data-color="#939598" data-published="Friday, November 27, 2026 7:10AM">
             
             
             
@@ -391,7 +391,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2824-report" class="avy-zone dn" data-id="GNFAC-2824" data-color="#939598" data-published="Monday, November 23, 2026 7:11AM">
+        <div id="GNFAC-2824-report" class="avy-zone dn" data-id="GNFAC-2824" data-color="#939598" data-published="Friday, November 27, 2026 7:10AM">
             
             
             
@@ -414,7 +414,7 @@ css_includes:
             
         </div>
         
-        <div id="GNFAC-2823-report" class="avy-zone dn" data-id="GNFAC-2823" data-color="#939598" data-published="Monday, November 23, 2026 7:11AM">
+        <div id="GNFAC-2823-report" class="avy-zone dn" data-id="GNFAC-2823" data-color="#939598" data-published="Friday, November 27, 2026 7:10AM">
             
             
             
@@ -483,7 +483,7 @@ css_includes:
             
         </div>
         
-        <div id="WCMAC-1724-report" class="avy-zone dn" data-id="WCMAC-1724" data-color="#939598" data-published="False">
+        <div id="WCMAC-1724-report" class="avy-zone dn" data-id="WCMAC-1724" data-color="#939598" data-published="Friday, November 27, 2026 6:56AM">
             
             
             
@@ -506,7 +506,7 @@ css_includes:
             
         </div>
         
-        <div id="WCMAC-1723-report" class="avy-zone dn" data-id="WCMAC-1723" data-color="#939598" data-published="False">
+        <div id="WCMAC-1723-report" class="avy-zone dn" data-id="WCMAC-1723" data-color="#939598" data-published="Friday, November 27, 2026 6:56AM">
             
             
             
@@ -529,7 +529,7 @@ css_includes:
             
         </div>
         
-        <div id="WCMAC-1722-report" class="avy-zone dn" data-id="WCMAC-1722" data-color="#939598" data-published="False">
+        <div id="WCMAC-1722-report" class="avy-zone dn" data-id="WCMAC-1722" data-color="#939598" data-published="Friday, November 27, 2026 6:56AM">
             
             
             

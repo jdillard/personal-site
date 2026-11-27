@@ -141,7 +141,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="BTAC-2856-report" class="avy-zone" data-id="BTAC-2856" data-color="#939598" data-published="False">
+        <div id="BTAC-2856-report" class="avy-zone" data-id="BTAC-2856" data-color="#939598" data-published="Friday, November 27, 2026 7:00AM">
             
             
             
@@ -164,7 +164,7 @@ css_includes:
             
         </div>
         
-        <div id="BTAC-2860-report" class="avy-zone dn" data-id="BTAC-2860" data-color="#939598" data-published="False">
+        <div id="BTAC-2860-report" class="avy-zone dn" data-id="BTAC-2860" data-color="#939598" data-published="Friday, November 27, 2026 7:00AM">
             
             
             
@@ -187,7 +187,7 @@ css_includes:
             
         </div>
         
-        <div id="BTAC-2855-report" class="avy-zone dn" data-id="BTAC-2855" data-color="#939598" data-published="False">
+        <div id="BTAC-2855-report" class="avy-zone dn" data-id="BTAC-2855" data-color="#939598" data-published="Friday, November 27, 2026 7:00AM">
             
             
             
@@ -210,7 +210,7 @@ css_includes:
             
         </div>
         
-        <div id="BTAC-2852-report" class="avy-zone dn" data-id="BTAC-2852" data-color="#939598" data-published="False">
+        <div id="BTAC-2852-report" class="avy-zone dn" data-id="BTAC-2852" data-color="#939598" data-published="Friday, November 27, 2026 7:00AM">
             
             
             
