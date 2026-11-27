@@ -79,6 +79,12 @@ css_includes:
 </div>
 
 <div class="flex flex-column flex-row-ns mt4">
+    {#- aspect rose for a problem rule: 8 slices clockwise from N, active aspects in the problem color #}
+    {%- macro aspect_rose(active, color) -%}
+    <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true">
+        {%- for d in ["M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z", "M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z", "M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z", "M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z", "M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z", "M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z", "M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z", "M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z"] %}<path d="{{ d }}" fill="{{ color if loop.index0 in active else '#e6e6e6' }}"/>{% endfor -%}
+    </svg>
+    {%- endmacro %}
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         {% for zone in zones %}
         <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}" data-color="{{ zone.color }}"{% if zone.has_subregions %} data-subregions="true"{% endif %} data-published="{{ zone.published }}">
@@ -87,18 +93,22 @@ css_includes:
                 <div><a id="{{ zone.slug }}-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=10&b=mbt&{{ zone.layers }}">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             {% endif %}
+            {% if zone.danger or zone.problems %}
+            <section class="avy-layers" aria-label="CalTopo layers">
+            {% endif %}
             {% if zone.danger %}
-            <dl class="f6">
+            <div class="avy-layer">
+            <dl class="f6 ma0">
                 <dt>
-                    <strong>{{ sun_day }} Avalanche Danger</strong>
+                    <strong>Avalanche Danger</strong>
                     {#- UT stores each band's layer as a list of rules, other centers as one string #}
                     {%- set ns = namespace(lines=[]) %}
                     {%- for rule in zone.danger | reverse %}
                     {%- set ns.lines = ns.lines + ([rule.layer] if rule.layer is string else rule.layer | list) %}
                     {%- endfor %}
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ ns.lines | join('&#10;') }}" onclick="clickFunc(this, 'danger-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('danger-tooltip-{{ zone.slug }}')" onblur="outFunc('danger-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
-                <dd class="ml3">
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="{{ ns.lines | join('&#10;') }}" onclick="clickFunc(this, 'danger-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('danger-tooltip-{{ zone.slug }}')" onblur="outFunc('danger-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                     <ul class="list pl0 mt1 mb0 code f7 rules-{{ zone.slug }}">
                     {% for rule in zone.danger|reverse %}
                         <li class="pv1 {{ rule.id }}">
@@ -112,6 +122,7 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
+            </div>
             {% else %}
             {% if zone.report_access is sameas false %}
             <div class="avy-note-wrap">
@@ -125,23 +136,31 @@ css_includes:
             {% endif %}
 
             {% if zone.problems %}
-            <dl class="f6">
+            <div class="avy-layer">
+            <h3 class="avy-layer-title">Avalanche Problems</h3>
+            <dl class="f6 ma0">
                 {% for problem in zone.problems %}
-                    <dt class="mt3">
-                        <strong>{{ problem.name }}</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="{{ problem.rules | map(attribute='layer') | reverse | join('&#10;') }}" onclick="clickFunc(this, 'problem-{{ loop.index }}-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.slug }}')" onblur="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy {{ problem.name }} rules"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                <div class="avy-problem">
+                    <dt>
+                        <strong>{{ problem.label }}</strong>
                     </dt>
-                    <dd class="ml3">
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="{{ problem.rules | map(attribute='layer') | reverse | join('&#10;') }}" onclick="clickFunc(this, 'problem-{{ loop.index }}-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.slug }}')" onblur="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy {{ problem.label }} rules"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                         <ul class="list pl0 mt1 mb0 code f7 rules-{{ zone.slug }}">
                         {% for rule in problem.rules|reverse %}
                             <li class="pv1 {{ rule.id }}">
-                                <div style="clear: both;background-color: {{ rule.color }}" class="fl mr2 h1 w1"></div> <span class="desc">{{ rule.desc }}</span>
+                                {% if rule.aspects is defined %}{{ aspect_rose(rule.aspects, rule.color) }}{% else %}<div style="clear: both;background-color: {{ rule.color }}" class="fl mr2 h1 w1"></div>{% endif %} <span class="desc">{{ rule.desc }}</span>
                             </li>
                         {% endfor %}
                         </ul>
                     </dd>
+                </div>
                 {% endfor %}
             </dl>
+            </div>
+            {% endif %}
+            {% if zone.danger or zone.problems %}
+            </section>
             {% endif %}
 
             {% if (zone.danger or zone.problems) and zone.confidence in ("medium", "low") %}

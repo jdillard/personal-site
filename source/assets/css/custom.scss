@@ -560,6 +560,9 @@ header.post-cover {
 
 // Brutalist dropdowns (avy zone/region pickers)
 $avy-gray: #666;
+$avy-line-gray: #bbb; // separators inside avy layer cards
+$avy-tab-bg: #f5f5f5; // card tab fill
+$avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its opened text
 .avy-picker {
     display: inline-block;
     text-align: left;
@@ -643,6 +646,238 @@ $avy-gray: #666;
 .avy-button:active {
     transform: translate(3px, 3px);
     box-shadow: 2px 2px 0 #FF725C;
+}
+
+// region page: danger + problem rule lists as brutalist cards, like the pickers
+// card + tab border width. Browsers round a 1.5px border down to 1px on 1x screens but
+// not the tab's inset, so pick a whole pixel there to keep the tab border matching the card
+:root {
+    --avy-card-bw: 1px;
+}
+
+@media (min-resolution: 2dppx) {
+    :root {
+        --avy-card-bw: 1.5px;
+    }
+}
+
+// cards leave room above for their folder tab; sibling margins collapse to the larger top one
+.avy-layer {
+    position: relative;
+    margin: 3.25rem 0 1.25rem;
+    padding: .6rem .8rem;
+    background: #fff;
+    border: var(--avy-card-bw) solid #b0b0b0;
+    box-shadow: 5px 5px 0 #ececec;
+}
+
+// card titles as manila-folder tabs sitting on the card's top border, slant flaring toward the card.
+// GRM/danger use their dt; the problems card gets a .avy-layer-title heading instead
+.avy-layer > dl > dt,
+.avy-layer-title {
+    position: absolute;
+    bottom: calc(100% + var(--avy-card-bw));
+    left: calc(-1 * var(--avy-card-bw));
+    margin: 0;
+    z-index: 0; // own stacking context, so the ::before fill sits between the border and the text
+    padding: .25rem 1.3rem .2rem .7rem;
+    white-space: nowrap;
+    // outer shape in the border color; ::before insets the pale fill by the border width.
+    // No bottom inset: the tab opens onto the card's top border
+    background: #b0b0b0;
+    clip-path: polygon(0 0, calc(100% - .8rem) 0, 100% 100%, 0 100%);
+}
+
+.avy-layer > dl > dt::before,
+.avy-layer-title::before {
+    content: "";
+    position: absolute;
+    inset: var(--avy-card-bw) var(--avy-card-bw) 0;
+    z-index: -1;
+    background: $avy-tab-bg;
+    clip-path: polygon(0 0, calc(100% - .8rem) 0, 100% 100%, 0 100%);
+}
+
+.avy-layer > dl > dt strong,
+.avy-layer-title {
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    line-height: 1.5;
+    color: #333;
+}
+
+// problem aspect rose (replaces the color square): a bit bigger than the squares so the slices read
+.avy-rose {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-top: -.25rem;
+}
+
+// rule rows: extra height so stacked roses don't touch; every card uses it so row spacing matches
+.avy-layer dd li {
+    padding: .4rem 0;
+}
+
+.avy-rose path {
+    stroke: #fff;
+    stroke-width: .6;
+}
+
+// copy-rules button: top right of each layer's rule list. Absolute, not float:
+// the swatches use clear: both, which would drop below a floated button
+.avy-layer dd {
+    position: relative;
+    padding-right: 1.75rem;
+}
+
+.avy-copy {
+    position: absolute;
+    top: .2rem;
+    right: 0;
+}
+
+// icon is an <img>, so lighten with opacity; full strength on hover/focus
+.avy-copy img {
+    opacity: .45;
+    transition: opacity .1s;
+}
+
+.avy-copy a:hover img,
+.avy-copy a:focus-visible img {
+    opacity: 1;
+}
+
+// problems: copy button on the problem's subheading row instead, at the far right.
+// Later problems add .8rem padding (see the separator rule), so offset to match
+.avy-problem {
+    position: relative;
+}
+
+.avy-problem dd {
+    position: static;
+}
+
+// pad the first/last problem so the card edges match the .85rem around separators
+// (card padding .6rem + .25rem; the how-to below adds its own .6rem margin)
+.avy-problem:first-child {
+    padding-top: .25rem;
+}
+
+.avy-problem:last-child {
+    padding-bottom: .25rem;
+}
+
+.avy-problem .avy-copy {
+    top: .55rem;
+}
+
+.avy-problem + .avy-problem .avy-copy {
+    top: 1.15rem;
+    right: .8rem;
+}
+
+// each problem inside the problems card: a lighter subheading than the card tab
+.avy-problem dt strong {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.avy-layer dd ul {
+    font-size: .8125rem;
+}
+
+// rule color swatches (tachyons h1 w1), a bit bigger to match the larger text
+.avy-layer dd ul .h1 {
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-top: 0;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, .13); // faint echo of the card's offset shadow
+}
+
+.avy-layer dd {
+    margin-bottom: 0;
+}
+
+// problems share one card, split by edge-to-edge rules (negative margins cancel the card padding)
+.avy-problem + .avy-problem {
+    margin: .85rem -.8rem 0;
+    // longhands, not the padding shorthand, so .avy-problem:last-child keeps its bottom padding
+    padding-top: .85rem;
+    padding-right: .8rem;
+    padding-left: .8rem;
+    border-top: 1px solid lighten($avy-line-gray, 12%);
+}
+
+// "How to read" notes folded into the bottom of a layer card
+.avy-howto {
+    margin: .6rem -.8rem -.6rem;
+    border-top: 2px dashed lighten($avy-line-gray, 8%);
+}
+
+.avy-howto summary {
+    padding: .5rem .8rem;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #333;
+    cursor: pointer;
+    background: $avy-howto-bg;
+    list-style: none;
+}
+
+.avy-howto summary::-webkit-details-marker {
+    display: none;
+}
+
+// +/- toggle: no box, just a slightly larger, darker coral sign than the label text
+.avy-howto summary::before {
+    content: "+";
+    display: inline-block;
+    width: 1rem;
+    margin-right: .4rem;
+    font-size: 1.15rem;
+    line-height: 1;
+    vertical-align: -.1rem;
+    text-align: center;
+    letter-spacing: 0;
+    color: #e8553f;
+    font-weight: 700;
+}
+
+.avy-howto[open] summary::before {
+    content: "\2212";
+}
+
+
+
+.avy-howto-body {
+    padding: .1rem .8rem;
+    font-size: .9375rem;
+    line-height: 1.5;
+    background: $avy-howto-bg;
+}
+
+.avy-howto-body p {
+    margin: .7em 0;
+}
+
+.avy-howto-body table {
+    border-collapse: collapse;
+    margin: .7em 0;
+}
+
+.avy-howto-body th {
+    text-align: left;
+    padding: 0 1rem .25rem 0;
+    border-bottom: 2px solid $avy-line-gray;
+}
+
+.avy-howto-body td {
+    padding: .25rem 1rem .25rem 0;
 }
 
 // avy index and region page maps: short when stacked on mobile, taller beside the list/report

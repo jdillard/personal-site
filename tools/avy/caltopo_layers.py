@@ -258,6 +258,10 @@ def danger_rule(elevations, band, level):
     }
 
 
+# aspect ranges clockwise from north; a rule's "aspects" holds indexes into this for the template's aspect rose
+ROSE_ASPECTS = [aspect[name] for name in ("north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest")]
+
+
 def problem_rule(elevations, band, aspects, i):
     """Problem rule for the given aspects in a band, colored by problem number."""
     start, end, desc = sort_directions(aspects)
@@ -266,13 +270,15 @@ def problem_rule(elevations, band, aspects, i):
         "layer": shading_rule(elevations, band, problem_color.get(i), start, end),
         "desc": f"{desc} ({band_desc(elevations, band)})",
         "color": f"#{problem_color.get(i)}",
+        "aspects": sorted({ROSE_ASPECTS.index(a) for a in aspects}),
     }
 
 
 def make_problem(i, name, rules, tomorrow, layer_rules=None):
     """Problem entry for the template; layer_rules sets the CalTopo layer order if it differs."""
     return {
-        "name": f"{tomorrow} {name}",
+        "name": f"{tomorrow} {name}",  # CalTopo layer title, dated
+        "label": name,  # region page heading, no date
         "desc": f"Problem #{i+1}",
         "color": f"#{problem_color.get(i)}",
         "rules": rules,
