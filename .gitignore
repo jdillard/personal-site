@@ -15,3 +15,7 @@ __pycache__
 
 # automation
 avalanche-reports-raw
+
+# local model band data and triage tool (not committed)
+tools/avy/data/snowpack_*
+tools/avy/triage.py
