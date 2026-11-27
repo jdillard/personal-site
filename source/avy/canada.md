@@ -55,51 +55,51 @@ css_includes:
             <label for="zoneSel">Zone</label>
             <select class="avy-select" id="zoneSel">
                 
-                <option value="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4" title="Tutshi, Wheaton, White Pass East, White Pass West" selected="">Tutshi, Wheaton +2 more</option>
+                <option value="fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553" title="Clearwater, North Okanagan, Quesnel, Shuswap" selected="">Clearwater +3 more</option>
                 
-                <option value="2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1" title="North Shore, Sasquatch, Sky Pilot, Tetrahedron" >North Shore +3 more</option>
+                <option value="6832021ccd53924459d6723ac8ec1fb45577deff7f5fef50b2c8ebd0b66e671d" title="Brandywine, Garibaldi, Homathko, Powell River, Spearhead, Tantalus" >Brandywine +5 more</option>
                 
-                <option value="22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16" title="Akamina, Bull, Crowsnest North, Crowsnest South, Elkford East, Elkford West, Flathead, Lizard" >Akamina, Bull +6 more</option>
+                <option value="9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609" title="Boundary, Ningunsaw" >Boundary, Ningunsaw</option>
                 
-                <option value="3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1" title="Howson, Kitimat, Microwave-Sinclair, Nass, Rupert, Seven Sisters, Shames, Stewart" >Howson, Kitimat +6 more</option>
+                <option value="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" title="Banff, East Side 93N, Field, Kootenay, Lake Louise, Little Yoho, LLSA, Sunshine, West Side 93N" >Banff, East Side 93N +7 more</option>
+                
+                <option value="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" title="Waterton" >Waterton</option>
                 
                 <option value="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" title="East Island, North Island, South Island, West Island" >East Island +3 more</option>
                 
                 <option value="cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f" title="Badshot-Battle, Blue River, Central Selkirk, Clemina, Esplanade, Goat, Gold, Jordan, North Monashee, North Selkirk, Premier, Robson" >Badshot-Battle +11 more</option>
                 
-                <option value="6832021ccd53924459d6723ac8ec1fb45577deff7f5fef50b2c8ebd0b66e671d" title="Brandywine, Garibaldi, Homathko, Powell River, Spearhead, Tantalus" >Brandywine +5 more</option>
+                <option value="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4" title="Tutshi, Wheaton, White Pass East, White Pass West" >Tutshi, Wheaton +2 more</option>
                 
                 <option value="14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da" title="Birkenhead, Duffey, South Chilcotin, Stein, Taseko" >Birkenhead, Duffey +3 more</option>
                 
-                <option value="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" title="Bow Valley, Highwood Pass, North 40, Spray - KLakes" >Bow Valley +3 more</option>
+                <option value="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" title="Glacier" >Glacier</option>
+                
+                <option value="3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1" title="Howson, Kitimat, Microwave-Sinclair, Nass, Rupert, Seven Sisters, Shames, Stewart" >Howson, Kitimat +6 more</option>
+                
+                <option value="871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7" title="Kispiox, North Bulkley, South Bulkley, Telkwa" >Kispiox +3 more</option>
+                
+                <option value="a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62" title="Coquihalla, Harrison-Fraser, Manning, Skagit" >Coquihalla +3 more</option>
+                
+                <option value="2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1" title="North Shore, Sasquatch, Sky Pilot, Tetrahedron" >North Shore +3 more</option>
+                
+                <option value="5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e" title="Crawford, Dogtooth, East Purcell, Moyie, St. Mary, West Purcell" >Crawford, Dogtooth +4 more</option>
+                
+                <option value="22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16" title="Akamina, Bull, Crowsnest North, Crowsnest South, Elkford East, Elkford West, Flathead, Lizard" >Akamina, Bull +6 more</option>
                 
                 <option value="03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762" title="Chic-Chocs" >Chic-Chocs</option>
+                
+                <option value="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" title="Brazeau, Churchill, Cirrus-Wilson, Fryatt, Icefields, Maligne, Marmot, Miette Lake, Pyramid" >Brazeau, Churchill +7 more</option>
                 
                 <option value="2b27cc579bf40b0d3360a5ffe527102213d07f32526775c4e2f0af58e02f8d3d" title="Corner Brook, Gros Morne, Northern Peninsula" >Corner Brook +2 more</option>
                 
                 <option value="ff27f89a78600ce8622e02e807bc89b31d7f1876832b9dc0ceab5b43cab072e5" title="Haines Pass" >Haines Pass</option>
                 
-                <option value="a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62" title="Coquihalla, Harrison-Fraser, Manning, Skagit" >Coquihalla +3 more</option>
-                
-                <option value="fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553" title="Clearwater, North Okanagan, Quesnel, Shuswap" >Clearwater +3 more</option>
-                
-                <option value="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" title="Banff, East Side 93N, Field, Kootenay, Lake Louise, Little Yoho, LLSA, Sunshine, West Side 93N" >Banff, East Side 93N +7 more</option>
-                
-                <option value="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" title="Glacier" >Glacier</option>
-                
-                <option value="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" title="Brazeau, Churchill, Cirrus-Wilson, Fryatt, Icefields, Maligne, Marmot, Miette Lake, Pyramid" >Brazeau, Churchill +7 more</option>
-                
-                <option value="871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7" title="Kispiox, North Bulkley, South Bulkley, Telkwa" >Kispiox +3 more</option>
-                
-                <option value="9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609" title="Boundary, Ningunsaw" >Boundary, Ningunsaw</option>
-                
                 <option value="479dbbc0268615ac524cb3eb49c702499df9df1dd24684b3d0054699f5e11013" title="East Kakwa, Kakwa, McBride, McGregor, Pine Pass, Renshaw, Sugarbowl, Tumbler" >East Kakwa, Kakwa +6 more</option>
                 
                 <option value="0f23c8baa694da6047b905917ff75428ec8d4422697c6a7d6c297ac5ddeb4e60" title="Bonnington, Grohman, Kokanee, Kootenay Pass, Norns, Retallack, Rossland, South Okanagan, Valhalla, Whatshan, Ymir" >Bonnington, Grohman +9 more</option>
                 
-                <option value="5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e" title="Crawford, Dogtooth, East Purcell, Moyie, St. Mary, West Purcell" >Crawford, Dogtooth +4 more</option>
-                
-                <option value="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" title="Waterton" >Waterton</option>
+                <option value="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" title="Bow Valley, Highwood Pass, North 40, Spray - KLakes" >Bow Valley +3 more</option>
                 
             </select>
         </span>
@@ -173,10 +173,10 @@ css_includes:
 <div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4-report" class="avy-zone" data-id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
+        <div id="fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553-report" class="avy-zone" data-id="fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
             
-            <div id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4-title" class="mb4 tc">
-                <div><a id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=60.00417780780808,-135.1428861670814&z=10&b=mbt&a=sc_a0-0e0-4300fc939598pa0-0e4301-5600fc50b848pa0-0e5601-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4300fc939598pa0-0e4301-5600fc50b848pa0-0e5601-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22640d6091-1d48-486f-9b08-9aff179c1a21%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e5601-20310fcA200FFpa158-158e4301-5600fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            <div id="fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553-title" class="mb4 tc">
+                <div><a id="fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=51.78012692480538,-120.19894397513676&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6600fc50b848pa0-0e6601-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6600fc50b848pa0-0e6601-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22d864904d-6443-4f60-930f-31c63ec960c2%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-113e6601-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
@@ -189,15 +189,15 @@ css_includes:
                     <strong>Avalanche Danger</strong>
                 </dt>
                 <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e5601-20310f 50b848&#10;a0-0e4301-5600f 50b848&#10;a0-0e0-4300f 939598" onclick="clickFunc(this, 'danger-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4'); return false;" onmouseout="outFunc('danger-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4')" onblur="outFunc('danger-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6601-20310f 50b848&#10;a0-0e4901-6600f 50b848&#10;a0-0e0-4900f 50b848" onclick="clickFunc(this, 'danger-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553'); return false;" onmouseout="outFunc('danger-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553')" onblur="outFunc('danger-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553">
                     
                         <li class="pv1 atl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
                                 data-color1="#50b848"
                             
-                            ></div> <span class="desc">Low danger (above 5601')</span>
+                            ></div> <span class="desc">Low danger (above 6601')</span>
                         </li>
                     
                         <li class="pv1 ntl">
@@ -205,396 +205,7 @@ css_includes:
                             
                                 data-color1="#50b848"
                             
-                            ></div> <span class="desc">Low danger (4301' to 5600')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> <span class="desc">No rating (below 4300')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            <div class="avy-layer">
-            <h3 class="avy-layer-title">Avalanche Problems</h3>
-            <dl class="f6 ma0">
-                
-                <div class="avy-problem">
-                    <dt>
-                        <strong>2026-11-27 Wind Slab</strong>
-                    </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a158-158e4301-5600f A200FF&#10;a158-158e5601-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4'); return false;" onmouseout="outFunc('problem-1-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4')" onblur="outFunc('problem-1-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4')" href="#" role="button" aria-label="Copy 2026-11-27 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4">
-                        
-                            <li class="pv1 ntl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (4301' to 5600')</span>
-                            </li>
-                        
-                            <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 5601')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                </div>
-                
-            </dl>
-            </div>
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
-                <b>Medium confidence elevation bands.</b>
-                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/4e171a72-e5a6-4569-8af6-95e5de09f987_2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1-report" class="avy-zone dn" data-id="2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
-            
-            <div id="2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1-title" class="mb4 tc">
-                <div><a id="2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=49.503127466206045,-122.74131543869079&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6200fc50b848pa0-0e6201-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6200fc50b848pa0-0e6201-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6201-20310f 50b848&#10;a0-0e4901-6200f 50b848&#10;a0-0e0-4900f 50b848" onclick="clickFunc(this, 'danger-tooltip-2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1'); return false;" onmouseout="outFunc('danger-tooltip-2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1')" onblur="outFunc('danger-tooltip-2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (above 6201')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (4901' to 6200')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (below 4900')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
-                <b>Medium confidence elevation bands.</b>
-                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/152e072a-b00d-437a-9964-a247b5e277d9_2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16-report" class="avy-zone dn" data-id="22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 5:00PM">
-            
-            <div id="22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16-title" class="mb4 tc">
-                <div><a id="22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=49.677551300395436,-114.88444885982769&z=10&b=mbt&a=sc_a0-0e0-6200fc50b848pa0-0e6201-7200fc50b848pa0-0e7201-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6200fc50b848pa0-0e6201-7200fc50b848pa0-0e7201-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22b9fdbd9e-24e3-4733-8697-fc898152c3ef%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-203e7201-20310fcA200FFpa203-203e6201-7200fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e7201-20310f 50b848&#10;a0-0e6201-7200f 50b848&#10;a0-0e0-6200f 50b848" onclick="clickFunc(this, 'danger-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16'); return false;" onmouseout="outFunc('danger-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16')" onblur="outFunc('danger-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (above 7201')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (6201' to 7200')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (below 6200')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            <div class="avy-layer">
-            <h3 class="avy-layer-title">Avalanche Problems</h3>
-            <dl class="f6 ma0">
-                
-                <div class="avy-problem">
-                    <dt>
-                        <strong>2026-11-27 Storm Slab</strong>
-                    </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a203-203e6201-7200f A200FF&#10;a203-203e7201-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16'); return false;" onmouseout="outFunc('problem-1-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16')" onblur="outFunc('problem-1-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16')" href="#" role="button" aria-label="Copy 2026-11-27 Storm Slab rules"><span class="tooltiptext" id="problem-1-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16">
-                        
-                            <li class="pv1 ntl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (6201' to 7200')</span>
-                            </li>
-                        
-                            <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 7201')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                </div>
-                
-            </dl>
-            </div>
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
-                <b>Low confidence elevation bands.</b>
-                No published elevation bands were found for this zone, so these are a rough estimate.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Thursday, November 26, 2026 5:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/fc77960f-f703-40a9-b086-b336b68bc99a_22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1-report" class="avy-zone dn" data-id="3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1" data-color="#f7941e" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
-            
-            <div id="3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1-title" class="mb4 tc">
-                <div><a id="3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=54.83747393342712,-129.08100895548884&z=10&b=mbt&a=sc_a0-0e0-4300fc50b848pa0-0e4301-5600fcf7941epa0-0e5601-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4300fc50b848pa0-0e4301-5600fcf7941epa0-0e5601-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%224d2feaa8-6cf7-48ff-8f82-cdac6d1e6abe%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a23-23e4301-5600fcA200FFpa23-23e5601-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e5601-20310f f7941e&#10;a0-0e4301-5600f f7941e&#10;a0-0e0-4300f 50b848" onclick="clickFunc(this, 'danger-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1'); return false;" onmouseout="outFunc('danger-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1')" onblur="outFunc('danger-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> <span class="desc">Considerable danger (above 5601')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> <span class="desc">Considerable danger (4301' to 5600')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (below 4300')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            <div class="avy-layer">
-            <h3 class="avy-layer-title">Avalanche Problems</h3>
-            <dl class="f6 ma0">
-                
-                <div class="avy-problem">
-                    <dt>
-                        <strong>2026-11-27 Storm Slab</strong>
-                    </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a23-23e5601-20310f A200FF&#10;a23-23e4301-5600f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1'); return false;" onmouseout="outFunc('problem-1-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1')" onblur="outFunc('problem-1-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1')" href="#" role="button" aria-label="Copy 2026-11-27 Storm Slab rules"><span class="tooltiptext" id="problem-1-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1">
-                        
-                            <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 5601')</span>
-                            </li>
-                        
-                            <li class="pv1 ntl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (4301' to 5600')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                </div>
-                
-            </dl>
-            </div>
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
-                <b>Medium confidence elevation bands.</b>
-                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/4f2c70e8-da56-4860-8467-1f62409d94ca_3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891-report" class="avy-zone dn" data-id="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
-            
-            <div id="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891-title" class="mb4 tc">
-                <div><a id="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=49.66861554427248,-125.7486505757722&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6200fc50b848pa0-0e6201-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6200fc50b848pa0-0e6201-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%223046fbdd-e4bb-46ad-b6b7-73341ec22e4c%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e6201-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6201-20310f 50b848&#10;a0-0e4901-6200f 50b848&#10;a0-0e0-4900f 50b848" onclick="clickFunc(this, 'danger-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891'); return false;" onmouseout="outFunc('danger-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891')" onblur="outFunc('danger-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (above 6201')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (4901' to 6200')</span>
+                            ></div> <span class="desc">Low danger (4901' to 6600')</span>
                         </li>
                     
                         <li class="pv1 btl">
@@ -621,115 +232,11 @@ css_includes:
                         <strong>2026-11-27 Wind Slab</strong>
                     </dt>
                     <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a293-158e6201-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891'); return false;" onmouseout="outFunc('problem-1-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891')" onblur="outFunc('problem-1-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891')" href="#" role="button" aria-label="Copy 2026-11-27 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a339-113e6601-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553'); return false;" onmouseout="outFunc('problem-1-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553')" onblur="outFunc('problem-1-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553')" href="#" role="button" aria-label="Copy 2026-11-27 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553">
                         
                             <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#e6e6e6"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#e6e6e6"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#e6e6e6"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">NW to SE aspects (above 6201')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                </div>
-                
-            </dl>
-            </div>
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
-                <b>Medium confidence elevation bands.</b>
-                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/90aed7d6-f47b-4482-803c-f3065356d837_76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f-report" class="avy-zone dn" data-id="cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f" data-color="#fff200" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
-            
-            <div id="cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f-title" class="mb4 tc">
-                <div><a id="cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=51.54556672460684,-118.59921203137101&z=10&b=mbt&a=sc_a0-0e0-5600fc50b848pa0-0e5601-6900fcfff200pa0-0e6901-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-5600fc50b848pa0-0e5601-6900fcfff200pa0-0e6901-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22f5b5c524-6526-4c34-ac33-54edf81d8532%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-339e6901-20310fcA200FFpa339-339e5601-6900fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6901-20310f fff200&#10;a0-0e5601-6900f fff200&#10;a0-0e0-5600f 50b848" onclick="clickFunc(this, 'danger-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f'); return false;" onmouseout="outFunc('danger-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f')" onblur="outFunc('danger-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> <span class="desc">Moderate danger (above 6901')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> <span class="desc">Moderate danger (5601' to 6900')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (below 5600')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            <div class="avy-layer">
-            <h3 class="avy-layer-title">Avalanche Problems</h3>
-            <dl class="f6 ma0">
-                
-                <div class="avy-problem">
-                    <dt>
-                        <strong>2026-11-27 Storm Slab</strong>
-                    </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a339-339e5601-6900f A200FF&#10;a339-339e6901-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f'); return false;" onmouseout="outFunc('problem-1-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f')" onblur="outFunc('problem-1-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f')" href="#" role="button" aria-label="Copy 2026-11-27 Storm Slab rules"><span class="tooltiptext" id="problem-1-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f">
-                        
-                            <li class="pv1 ntl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (5601' to 6900')</span>
-                            </li>
-                        
-                            <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 6901')</span>
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#e6e6e6"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#e6e6e6"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#e6e6e6"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#e6e6e6"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#e6e6e6"/></svg> <span class="desc">N to E aspects (above 6601')</span>
                             </li>
                         
                         </ul>
@@ -759,7 +266,7 @@ css_includes:
             
             
             <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/6d860330-abf6-47d7-b178-829fa60838ad_cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f">full forecast</a> before heading out.
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/f437d5b9-a5f7-4150-ade9-7f5dc3e49978_fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553">full forecast</a> before heading out.
             </p>
             
             </div>
@@ -769,7 +276,7 @@ css_includes:
         <div id="6832021ccd53924459d6723ac8ec1fb45577deff7f5fef50b2c8ebd0b66e671d-report" class="avy-zone dn" data-id="6832021ccd53924459d6723ac8ec1fb45577deff7f5fef50b2c8ebd0b66e671d" data-color="#f7941e" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
             
             <div id="6832021ccd53924459d6723ac8ec1fb45577deff7f5fef50b2c8ebd0b66e671d-title" class="mb4 tc">
-                <div><a id="6832021ccd53924459d6723ac8ec1fb45577deff7f5fef50b2c8ebd0b66e671d-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=50.37423086114513,-123.82517839380104&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6200fcf7941epa0-0e6201-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6200fcf7941epa0-0e6201-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22e4989d41-2669-448f-bc07-c134f754a26f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-203e4901-6200fcA200FFpa203-203e6201-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+                <div><a id="6832021ccd53924459d6723ac8ec1fb45577deff7f5fef50b2c8ebd0b66e671d-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=50.37423086114513,-123.82517839380104&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6200fcf7941epa0-0e6201-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6200fcf7941epa0-0e6201-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%229a9b838b-2dcd-4ee3-9a89-e8df074e96d7%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-203e4901-6200fcA200FFpa203-203e6201-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
@@ -870,10 +377,615 @@ css_includes:
             
         </div>
         
+        <div id="9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609-report" class="avy-zone dn" data-id="9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609" data-color="#f7941e" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
+            
+            <div id="9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609-title" class="mb4 tc">
+                <div><a id="9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=57.07685282147797,-129.95365245316722&z=10&b=mbt&a=sc_a0-0e0-4300fc50b848pa0-0e4301-5600fcfff200pa0-0e5601-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4300fc50b848pa0-0e4301-5600fcfff200pa0-0e5601-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22186f813c-e9a3-4ac7-8b51-e078931da9dc%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-203e5601-20310fcA200FFpa203-203e4301-5600fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e5601-20310f f7941e&#10;a0-0e4301-5600f fff200&#10;a0-0e0-4300f 50b848" onclick="clickFunc(this, 'danger-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609'); return false;" onmouseout="outFunc('danger-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609')" onblur="outFunc('danger-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> <span class="desc">Considerable danger (above 5601')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> <span class="desc">Moderate danger (4301' to 5600')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (below 4300')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            <div class="avy-layer">
+            <h3 class="avy-layer-title">Avalanche Problems</h3>
+            <dl class="f6 ma0">
+                
+                <div class="avy-problem">
+                    <dt>
+                        <strong>2026-11-27 Storm Slab</strong>
+                    </dt>
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a203-203e4301-5600f A200FF&#10;a203-203e5601-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609'); return false;" onmouseout="outFunc('problem-1-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609')" onblur="outFunc('problem-1-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609')" href="#" role="button" aria-label="Copy 2026-11-27 Storm Slab rules"><span class="tooltiptext" id="problem-1-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609">
+                        
+                            <li class="pv1 ntl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (4301' to 5600')</span>
+                            </li>
+                        
+                            <li class="pv1 atl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 5601')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                </div>
+                
+            </dl>
+            </div>
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
+                <b>Medium confidence elevation bands.</b>
+                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/a0b92969-d054-4b28-b3ff-5fd22642efb2_9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf-report" class="avy-zone dn" data-id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" data-color="#fff200" data-subregions="true" data-published="Thursday, November 26, 2026 5:00PM">
+            
+            <div id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf-title" class="mb4 tc">
+                <div><a id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=51.382373463285056,-116.16044043836781&z=10&b=mbt&a=sc_a0-0e0-6600fc939598pa0-0e6601-7500fc939598pa0-0e7501-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6600fc939598pa0-0e6601-7500fc939598pa0-0e7501-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22af3f179c-c37a-425d-84d7-180d68fe6a65%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Dry%20Loose%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e7501-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%224f3499bf-da67-4784-9c2b-60a56058ee67%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-113e7501-20310fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e7501-20310f fff200&#10;a0-0e6601-7500f 939598&#10;a0-0e0-6600f 939598" onclick="clickFunc(this, 'danger-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf'); return false;" onmouseout="outFunc('danger-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf')" onblur="outFunc('danger-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> <span class="desc">Moderate danger (above 7501')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> <span class="desc">Early season (6601' to 7500')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> <span class="desc">No rating (below 6600')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            <div class="avy-layer">
+            <h3 class="avy-layer-title">Avalanche Problems</h3>
+            <dl class="f6 ma0">
+                
+                <div class="avy-problem">
+                    <dt>
+                        <strong>2026-11-27 Dry Loose</strong>
+                    </dt>
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a158-158e7501-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf'); return false;" onmouseout="outFunc('problem-1-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf')" onblur="outFunc('problem-1-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf')" href="#" role="button" aria-label="Copy 2026-11-27 Dry Loose rules"><span class="tooltiptext" id="problem-1-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">
+                        
+                            <li class="pv1 atl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 7501')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                </div>
+                
+                <div class="avy-problem">
+                    <dt>
+                        <strong>2026-11-27 Wind Slab</strong>
+                    </dt>
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a113-113e7501-20310f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf'); return false;" onmouseout="outFunc('problem-2-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf')" onblur="outFunc('problem-2-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf')" href="#" role="button" aria-label="Copy 2026-11-27 Wind Slab rules"><span class="tooltiptext" id="problem-2-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">
+                        
+                            <li class="pv1 atl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#0000FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#0000FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#0000FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#0000FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#0000FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#0000FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#0000FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#0000FF"/></svg> <span class="desc">All aspects (above 7501')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                </div>
+                
+            </dl>
+            </div>
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
+                <b>Medium confidence elevation bands.</b>
+                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 5:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/37353e6f-ca7f-40a7-aabb-c7437af0c989_afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85-report" class="avy-zone dn" data-id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" data-color="#939598" data-published="Wednesday, October 07, 2026 1:00PM">
+            
+            <div id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85-title" class="mb4 tc">
+                <div><a id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=49.08129207544112,-113.93284710370706&z=10&b=mbt&a=sc_a0-0e0-6200fc939598pa0-0e6201-7200fc939598pa0-0e7201-20310fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-10-08%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6200fc939598pa0-0e6201-7200fc939598pa0-0e7201-20310fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e7201-20310f 939598&#10;a0-0e6201-7200f 939598&#10;a0-0e0-6200f 939598" onclick="clickFunc(this, 'danger-tooltip-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85'); return false;" onmouseout="outFunc('danger-tooltip-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85')" onblur="outFunc('danger-tooltip-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> <span class="desc">Early season (above 7201')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> <span class="desc">Early season (6201' to 7200')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> <span class="desc">Early season (below 6200')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
+                <b>Low confidence elevation bands.</b>
+                No published elevation bands were found for this zone, so these are a rough estimate.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Wednesday, October 07, 2026 1:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/cf50334f-3c6b-478b-b02f-dd9ecb233074_010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891-report" class="avy-zone dn" data-id="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
+            
+            <div id="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891-title" class="mb4 tc">
+                <div><a id="76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=49.66861554427248,-125.7486505757722&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6200fc50b848pa0-0e6201-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6200fc50b848pa0-0e6201-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22774b566c-d74d-4db3-b3c6-7ab3af1dc071%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-158e6201-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6201-20310f 50b848&#10;a0-0e4901-6200f 50b848&#10;a0-0e0-4900f 50b848" onclick="clickFunc(this, 'danger-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891'); return false;" onmouseout="outFunc('danger-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891')" onblur="outFunc('danger-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (above 6201')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (4901' to 6200')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (below 4900')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            <div class="avy-layer">
+            <h3 class="avy-layer-title">Avalanche Problems</h3>
+            <dl class="f6 ma0">
+                
+                <div class="avy-problem">
+                    <dt>
+                        <strong>2026-11-27 Wind Slab</strong>
+                    </dt>
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a293-158e6201-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891'); return false;" onmouseout="outFunc('problem-1-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891')" onblur="outFunc('problem-1-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891')" href="#" role="button" aria-label="Copy 2026-11-27 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891">
+                        
+                            <li class="pv1 atl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#e6e6e6"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#e6e6e6"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#e6e6e6"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">NW to SE aspects (above 6201')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                </div>
+                
+            </dl>
+            </div>
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
+                <b>Medium confidence elevation bands.</b>
+                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/90aed7d6-f47b-4482-803c-f3065356d837_76677f8b456f0efafa1e5d686775434cdc162b64d79f557880b8eefa6ed09891">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f-report" class="avy-zone dn" data-id="cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f" data-color="#fff200" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
+            
+            <div id="cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f-title" class="mb4 tc">
+                <div><a id="cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=51.54556672460684,-118.59921203137101&z=10&b=mbt&a=sc_a0-0e0-5600fc50b848pa0-0e5601-6900fcfff200pa0-0e6901-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-5600fc50b848pa0-0e5601-6900fcfff200pa0-0e6901-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22ff801a25-ef23-46e7-af15-6c2598c6c422%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-339e6901-20310fcA200FFpa339-339e5601-6900fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6901-20310f fff200&#10;a0-0e5601-6900f fff200&#10;a0-0e0-5600f 50b848" onclick="clickFunc(this, 'danger-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f'); return false;" onmouseout="outFunc('danger-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f')" onblur="outFunc('danger-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> <span class="desc">Moderate danger (above 6901')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> <span class="desc">Moderate danger (5601' to 6900')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (below 5600')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            <div class="avy-layer">
+            <h3 class="avy-layer-title">Avalanche Problems</h3>
+            <dl class="f6 ma0">
+                
+                <div class="avy-problem">
+                    <dt>
+                        <strong>2026-11-27 Storm Slab</strong>
+                    </dt>
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a339-339e5601-6900f A200FF&#10;a339-339e6901-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f'); return false;" onmouseout="outFunc('problem-1-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f')" onblur="outFunc('problem-1-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f')" href="#" role="button" aria-label="Copy 2026-11-27 Storm Slab rules"><span class="tooltiptext" id="problem-1-tooltip-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f">
+                        
+                            <li class="pv1 ntl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (5601' to 6900')</span>
+                            </li>
+                        
+                            <li class="pv1 atl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 6901')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                </div>
+                
+            </dl>
+            </div>
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
+                <b>Low confidence elevation bands.</b>
+                No published elevation bands were found for this zone, so these are a rough estimate.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/6d860330-abf6-47d7-b178-829fa60838ad_cc0488b77181621ea6539a8aae5058a9d7f9228455cdb06fd04fc3da767c171f">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4-report" class="avy-zone dn" data-id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
+            
+            <div id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4-title" class="mb4 tc">
+                <div><a id="2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=60.00417780780808,-135.1428861670814&z=10&b=mbt&a=sc_a0-0e0-4300fc939598pa0-0e4301-5600fc50b848pa0-0e5601-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4300fc939598pa0-0e4301-5600fc50b848pa0-0e5601-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22c7b181c0-92f3-4a30-a30a-99776ede8b58%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e5601-20310fcA200FFpa158-158e4301-5600fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e5601-20310f 50b848&#10;a0-0e4301-5600f 50b848&#10;a0-0e0-4300f 939598" onclick="clickFunc(this, 'danger-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4'); return false;" onmouseout="outFunc('danger-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4')" onblur="outFunc('danger-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (above 5601')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (4301' to 5600')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> <span class="desc">No rating (below 4300')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            <div class="avy-layer">
+            <h3 class="avy-layer-title">Avalanche Problems</h3>
+            <dl class="f6 ma0">
+                
+                <div class="avy-problem">
+                    <dt>
+                        <strong>2026-11-27 Wind Slab</strong>
+                    </dt>
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a158-158e4301-5600f A200FF&#10;a158-158e5601-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4'); return false;" onmouseout="outFunc('problem-1-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4')" onblur="outFunc('problem-1-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4')" href="#" role="button" aria-label="Copy 2026-11-27 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4">
+                        
+                            <li class="pv1 ntl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (4301' to 5600')</span>
+                            </li>
+                        
+                            <li class="pv1 atl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 5601')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                </div>
+                
+            </dl>
+            </div>
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
+                <b>Medium confidence elevation bands.</b>
+                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/4e171a72-e5a6-4569-8af6-95e5de09f987_2e2d70ec8c53844ea6a0c0d527884ad3d7f76cb269418a8df28a77bd8bc982b4">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
         <div id="14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da-report" class="avy-zone dn" data-id="14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da" data-color="#f7941e" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
             
             <div id="14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da-title" class="mb4 tc">
-                <div><a id="14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=50.72333375827345,-122.79132066685739&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6200fcfff200pa0-0e6201-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6200fcfff200pa0-0e6201-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22723b3430-b09a-481f-b163-4b13f805af3f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-113e4901-6200fcA200FFpa113-113e6201-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+                <div><a id="14cb3ee8b3d2e2aa8f879077e43aaa6dd865c462104e7f5d161cfc9ba24927da-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=50.72333375827345,-122.79132066685739&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6200fcfff200pa0-0e6201-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6200fcfff200pa0-0e6201-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22391f30a5-eced-4645-88fd-a42d61567a32%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-113e4901-6200fcA200FFpa113-113e6201-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
@@ -974,10 +1086,10 @@ css_includes:
             
         </div>
         
-        <div id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea-report" class="avy-zone dn" data-id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#50b848" data-subregions="true" data-published="Wednesday, November 25, 2026 5:30PM">
+        <div id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a-report" class="avy-zone dn" data-id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" data-color="#fff200" data-published="Thursday, November 26, 2026 4:00PM">
             
-            <div id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea-title" class="mb4 tc">
-                <div><a id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=50.78856882104437,-115.1958225555043&z=10&b=mbt&a=sc_a0-0e0-6600fc939598pa0-0e6601-7500fc939598pa0-0e7501-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6600fc939598pa0-0e6601-7500fc939598pa0-0e7501-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22374c82b9-5b9a-4e37-a367-825cd6e61f95%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a23-248e7501-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            <div id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a-title" class="mb4 tc">
+                <div><a id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=51.26859075131051,-117.52435368057834&z=10&b=mbt&a=sc_a0-0e0-5600fc939598pa0-0e5601-6900fcfff200pa0-0e6901-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-5600fc939598pa0-0e5601-6900fcfff200pa0-0e6901-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22f271e25a-606d-486c-82b3-9b2193193a32%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-203e5601-6900fcA200FFpa203-203e6901-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
@@ -990,23 +1102,23 @@ css_includes:
                     <strong>Avalanche Danger</strong>
                 </dt>
                 <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e7501-20310f 50b848&#10;a0-0e6601-7500f 939598&#10;a0-0e0-6600f 939598" onclick="clickFunc(this, 'danger-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea'); return false;" onmouseout="outFunc('danger-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea')" onblur="outFunc('danger-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6901-20310f fff200&#10;a0-0e5601-6900f fff200&#10;a0-0e0-5600f 939598" onclick="clickFunc(this, 'danger-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a'); return false;" onmouseout="outFunc('danger-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a')" onblur="outFunc('danger-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">
                     
                         <li class="pv1 atl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
-                                data-color1="#50b848"
+                                data-color1="#fff200"
                             
-                            ></div> <span class="desc">Low danger (above 7501')</span>
+                            ></div> <span class="desc">Moderate danger (above 6901')</span>
                         </li>
                     
                         <li class="pv1 ntl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
-                                data-color1="#939598"
+                                data-color1="#fff200"
                             
-                            ></div> <span class="desc">Early season (6601' to 7500')</span>
+                            ></div> <span class="desc">Moderate danger (5601' to 6900')</span>
                         </li>
                     
                         <li class="pv1 btl">
@@ -1014,7 +1126,7 @@ css_includes:
                             
                                 data-color1="#939598"
                             
-                            ></div> <span class="desc">Early season (below 6600')</span>
+                            ></div> <span class="desc">Early season (below 5600')</span>
                         </li>
                     
                     </ul>
@@ -1030,14 +1142,122 @@ css_includes:
                 
                 <div class="avy-problem">
                     <dt>
-                        <strong>2026-11-26 Wind Slab</strong>
+                        <strong>2026-11-27 Storm Slab</strong>
                     </dt>
                     <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a23-248e7501-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea'); return false;" onmouseout="outFunc('problem-1-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea')" onblur="outFunc('problem-1-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea')" href="#" role="button" aria-label="Copy 2026-11-26 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a203-203e6901-20310f A200FF&#10;a203-203e5601-6900f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a'); return false;" onmouseout="outFunc('problem-1-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a')" onblur="outFunc('problem-1-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a')" href="#" role="button" aria-label="Copy 2026-11-27 Storm Slab rules"><span class="tooltiptext" id="problem-1-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">
                         
                             <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#e6e6e6"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#e6e6e6"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#e6e6e6"/></svg> <span class="desc">NE to SW aspects (above 7501')</span>
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 6901')</span>
+                            </li>
+                        
+                            <li class="pv1 ntl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (5601' to 6900')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                </div>
+                
+            </dl>
+            </div>
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
+                <b>Low confidence elevation bands.</b>
+                No published elevation bands were found for this zone, so these are a rough estimate.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/461cb4b3-e91c-4cf0-848b-099c8d02650b_b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1-report" class="avy-zone dn" data-id="3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1" data-color="#f7941e" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
+            
+            <div id="3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1-title" class="mb4 tc">
+                <div><a id="3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=54.83747393342712,-129.08100895548884&z=10&b=mbt&a=sc_a0-0e0-4300fc50b848pa0-0e4301-5600fcf7941epa0-0e5601-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4300fc50b848pa0-0e4301-5600fcf7941epa0-0e5601-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22077cc289-599a-4817-810b-4f0dc8ad9187%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a23-23e4301-5600fcA200FFpa23-23e5601-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e5601-20310f f7941e&#10;a0-0e4301-5600f f7941e&#10;a0-0e0-4300f 50b848" onclick="clickFunc(this, 'danger-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1'); return false;" onmouseout="outFunc('danger-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1')" onblur="outFunc('danger-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> <span class="desc">Considerable danger (above 5601')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#f7941e"
+                            
+                            ></div> <span class="desc">Considerable danger (4301' to 5600')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (below 4300')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            <div class="avy-layer">
+            <h3 class="avy-layer-title">Avalanche Problems</h3>
+            <dl class="f6 ma0">
+                
+                <div class="avy-problem">
+                    <dt>
+                        <strong>2026-11-27 Storm Slab</strong>
+                    </dt>
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a23-23e5601-20310f A200FF&#10;a23-23e4301-5600f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1'); return false;" onmouseout="outFunc('problem-1-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1')" onblur="outFunc('problem-1-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1')" href="#" role="button" aria-label="Copy 2026-11-27 Storm Slab rules"><span class="tooltiptext" id="problem-1-tooltip-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1">
+                        
+                            <li class="pv1 atl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 5601')</span>
+                            </li>
+                        
+                            <li class="pv1 ntl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (4301' to 5600')</span>
                             </li>
                         
                         </ul>
@@ -1062,12 +1282,505 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             <p class="f6 mv1">
-                <strong>Issued at:</strong> Wednesday, November 25, 2026 5:30PM
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
             </p>
             
             
             <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/79e6aad0-f4d5-4702-a379-7fb79e42d8e0_d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">full forecast</a> before heading out.
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/4f2c70e8-da56-4860-8467-1f62409d94ca_3f39aaf57d16d5bfd5cbfbeaedbb007d59ca58b3ee81d7cc141237eeb436e1e1">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7-report" class="avy-zone dn" data-id="871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7" data-color="#fff200" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
+            
+            <div id="871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7-title" class="mb4 tc">
+                <div><a id="871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=55.42879619472748,-127.39294164289278&z=10&b=mbt&a=sc_a0-0e0-4300fc50b848pa0-0e4301-5600fcfff200pa0-0e5601-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4300fc50b848pa0-0e4301-5600fcfff200pa0-0e5601-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22e6f5caa0-3418-42ca-b64e-b3d282952435%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-203e4301-5600fcA200FFpa203-203e5601-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e5601-20310f fff200&#10;a0-0e4301-5600f fff200&#10;a0-0e0-4300f 50b848" onclick="clickFunc(this, 'danger-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7'); return false;" onmouseout="outFunc('danger-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7')" onblur="outFunc('danger-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> <span class="desc">Moderate danger (above 5601')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> <span class="desc">Moderate danger (4301' to 5600')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (below 4300')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            <div class="avy-layer">
+            <h3 class="avy-layer-title">Avalanche Problems</h3>
+            <dl class="f6 ma0">
+                
+                <div class="avy-problem">
+                    <dt>
+                        <strong>2026-11-27 Wind Slab</strong>
+                    </dt>
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a203-203e5601-20310f A200FF&#10;a203-203e4301-5600f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7'); return false;" onmouseout="outFunc('problem-1-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7')" onblur="outFunc('problem-1-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7')" href="#" role="button" aria-label="Copy 2026-11-27 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7">
+                        
+                            <li class="pv1 atl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 5601')</span>
+                            </li>
+                        
+                            <li class="pv1 ntl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (4301' to 5600')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                </div>
+                
+            </dl>
+            </div>
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
+                <b>Medium confidence elevation bands.</b>
+                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/f6fce1dd-f56e-4009-8a65-2ef4518104ed_871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62-report" class="avy-zone dn" data-id="a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62" data-color="#fff200" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
+            
+            <div id="a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62-title" class="mb4 tc">
+                <div><a id="a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=49.46741504532889,-121.2247926704341&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6200fc50b848pa0-0e6201-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6200fc50b848pa0-0e6201-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2257fcd456-dcb0-4d95-acee-8c118858ff63%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e6201-20310fcA200FFpa248-113e4901-6200fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6201-20310f fff200&#10;a0-0e4901-6200f 50b848&#10;a0-0e0-4900f 50b848" onclick="clickFunc(this, 'danger-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62'); return false;" onmouseout="outFunc('danger-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62')" onblur="outFunc('danger-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> <span class="desc">Moderate danger (above 6201')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (4901' to 6200')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (below 4900')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            <div class="avy-layer">
+            <h3 class="avy-layer-title">Avalanche Problems</h3>
+            <dl class="f6 ma0">
+                
+                <div class="avy-problem">
+                    <dt>
+                        <strong>2026-11-27 Wind Slab</strong>
+                    </dt>
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a248-113e4901-6200f A200FF&#10;a248-113e6201-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62'); return false;" onmouseout="outFunc('problem-1-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62')" onblur="outFunc('problem-1-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62')" href="#" role="button" aria-label="Copy 2026-11-27 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62">
+                        
+                            <li class="pv1 ntl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#e6e6e6"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#e6e6e6"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#e6e6e6"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">W to E aspects (4901' to 6200')</span>
+                            </li>
+                        
+                            <li class="pv1 atl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#e6e6e6"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#e6e6e6"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#e6e6e6"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">W to E aspects (above 6201')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                </div>
+                
+            </dl>
+            </div>
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
+                <b>Medium confidence elevation bands.</b>
+                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/47e482b1-2c92-4fff-bb9d-677222e0f219_a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1-report" class="avy-zone dn" data-id="2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
+            
+            <div id="2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1-title" class="mb4 tc">
+                <div><a id="2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=49.503127466206045,-122.74131543869079&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6200fc50b848pa0-0e6201-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6200fc50b848pa0-0e6201-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6201-20310f 50b848&#10;a0-0e4901-6200f 50b848&#10;a0-0e0-4900f 50b848" onclick="clickFunc(this, 'danger-tooltip-2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1'); return false;" onmouseout="outFunc('danger-tooltip-2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1')" onblur="outFunc('danger-tooltip-2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (above 6201')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (4901' to 6200')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (below 4900')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
+                <b>Medium confidence elevation bands.</b>
+                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/152e072a-b00d-437a-9964-a247b5e277d9_2c9088bd3656cc50dde613e8988aa032bb054cfb3c2601e1a9e050b8dc2169b1">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e-report" class="avy-zone dn" data-id="5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 5:00PM">
+            
+            <div id="5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e-title" class="mb4 tc">
+                <div><a id="5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=50.01051968382965,-116.33764199458888&z=10&b=mbt&a=sc_a0-0e0-5600fc50b848pa0-0e5601-6900fc50b848pa0-0e6901-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-5600fc50b848pa0-0e5601-6900fc50b848pa0-0e6901-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%222c037d31-e219-44cb-b5c5-543bfda2371e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-68e6901-20310fcA200FFpa68-68e5601-6900fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6901-20310f 50b848&#10;a0-0e5601-6900f 50b848&#10;a0-0e0-5600f 50b848" onclick="clickFunc(this, 'danger-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e'); return false;" onmouseout="outFunc('danger-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e')" onblur="outFunc('danger-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (above 6901')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (5601' to 6900')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (below 5600')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            <div class="avy-layer">
+            <h3 class="avy-layer-title">Avalanche Problems</h3>
+            <dl class="f6 ma0">
+                
+                <div class="avy-problem">
+                    <dt>
+                        <strong>2026-11-27 Storm Slab</strong>
+                    </dt>
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a68-68e5601-6900f A200FF&#10;a68-68e6901-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e'); return false;" onmouseout="outFunc('problem-1-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e')" onblur="outFunc('problem-1-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e')" href="#" role="button" aria-label="Copy 2026-11-27 Storm Slab rules"><span class="tooltiptext" id="problem-1-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e">
+                        
+                            <li class="pv1 ntl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (5601' to 6900')</span>
+                            </li>
+                        
+                            <li class="pv1 atl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 6901')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                </div>
+                
+            </dl>
+            </div>
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
+                <b>Medium confidence elevation bands.</b>
+                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 5:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/1b0a3c27-11cf-4ee6-bbf0-7974423dd577_5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16-report" class="avy-zone dn" data-id="22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 5:00PM">
+            
+            <div id="22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16-title" class="mb4 tc">
+                <div><a id="22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=49.677551300395436,-114.88444885982769&z=10&b=mbt&a=sc_a0-0e0-6200fc50b848pa0-0e6201-7200fc50b848pa0-0e7201-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6200fc50b848pa0-0e6201-7200fc50b848pa0-0e7201-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2239e829c7-ae89-4996-928c-42cffa6a6387%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-203e7201-20310fcA200FFpa203-203e6201-7200fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e7201-20310f 50b848&#10;a0-0e6201-7200f 50b848&#10;a0-0e0-6200f 50b848" onclick="clickFunc(this, 'danger-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16'); return false;" onmouseout="outFunc('danger-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16')" onblur="outFunc('danger-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (above 7201')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (6201' to 7200')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (below 6200')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            <div class="avy-layer">
+            <h3 class="avy-layer-title">Avalanche Problems</h3>
+            <dl class="f6 ma0">
+                
+                <div class="avy-problem">
+                    <dt>
+                        <strong>2026-11-27 Storm Slab</strong>
+                    </dt>
+                    <dd class="ml0">
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a203-203e6201-7200f A200FF&#10;a203-203e7201-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16'); return false;" onmouseout="outFunc('problem-1-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16')" onblur="outFunc('problem-1-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16')" href="#" role="button" aria-label="Copy 2026-11-27 Storm Slab rules"><span class="tooltiptext" id="problem-1-tooltip-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16">
+                        
+                            <li class="pv1 ntl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (6201' to 7200')</span>
+                            </li>
+                        
+                            <li class="pv1 atl">
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 7201')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                </div>
+                
+            </dl>
+            </div>
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
+                <b>Low confidence elevation bands.</b>
+                No published elevation bands were found for this zone, so these are a rough estimate.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 5:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/fc77960f-f703-40a9-b086-b336b68bc99a_22f8effd952a627fef02a5c8a7d562795ca1143e8c0a28fa68d13ede54a73d16">full forecast</a> before heading out.
             </p>
             
             </div>
@@ -1145,6 +1858,83 @@ css_includes:
             
             <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/f0c31cb6-b22b-41d2-8b8d-e3e95bf35bc0_03eb3e06c31ffda095ce133e8c6974197efdccd29c7723d078ef27742ff6a762">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e-report" class="avy-zone dn" data-id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" data-color="#939598" data-subregions="true" data-published="Friday, October 02, 2026 4:00PM">
+            
+            <div id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e-title" class="mb4 tc">
+                <div><a id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=52.55611523237941,-117.62626152142234&z=10&b=mbt&a=sc_a0-0e0-6600fc939598pa0-0e6601-7500fc939598pa0-0e7501-20310fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-10-03%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6600fc939598pa0-0e6601-7500fc939598pa0-0e7501-20310fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <section class="avy-layers" aria-label="CalTopo layers">
+            
+            
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Avalanche Danger</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e7501-20310f 939598&#10;a0-0e6601-7500f 939598&#10;a0-0e0-6600f 939598" onclick="clickFunc(this, 'danger-tooltip-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e'); return false;" onmouseout="outFunc('danger-tooltip-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e')" onblur="outFunc('danger-tooltip-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> <span class="desc">Early season (above 7501')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> <span class="desc">Early season (6601' to 7500')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#939598"
+                            
+                            ></div> <span class="desc">No rating (below 6600')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            </div>
+            
+
+            
+            
+            </section>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
+                <b>Medium confidence elevation bands.</b>
+                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Friday, October 02, 2026 4:00PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/7de2860d-58a5-4cbd-94a4-519c762b1b79_426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">full forecast</a> before heading out.
             </p>
             
             </div>
@@ -1305,719 +2095,10 @@ css_includes:
             
         </div>
         
-        <div id="a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62-report" class="avy-zone dn" data-id="a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62" data-color="#fff200" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
-            
-            <div id="a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62-title" class="mb4 tc">
-                <div><a id="a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=49.46741504532889,-121.2247926704341&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6200fc50b848pa0-0e6201-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6200fc50b848pa0-0e6201-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22e1633388-1a2f-49a2-ac3e-ab8ca3cb557d%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e6201-20310fcA200FFpa248-113e4901-6200fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6201-20310f fff200&#10;a0-0e4901-6200f 50b848&#10;a0-0e0-4900f 50b848" onclick="clickFunc(this, 'danger-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62'); return false;" onmouseout="outFunc('danger-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62')" onblur="outFunc('danger-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> <span class="desc">Moderate danger (above 6201')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (4901' to 6200')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (below 4900')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            <div class="avy-layer">
-            <h3 class="avy-layer-title">Avalanche Problems</h3>
-            <dl class="f6 ma0">
-                
-                <div class="avy-problem">
-                    <dt>
-                        <strong>2026-11-27 Wind Slab</strong>
-                    </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a248-113e4901-6200f A200FF&#10;a248-113e6201-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62'); return false;" onmouseout="outFunc('problem-1-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62')" onblur="outFunc('problem-1-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62')" href="#" role="button" aria-label="Copy 2026-11-27 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62">
-                        
-                            <li class="pv1 ntl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#e6e6e6"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#e6e6e6"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#e6e6e6"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">W to E aspects (4901' to 6200')</span>
-                            </li>
-                        
-                            <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#e6e6e6"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#e6e6e6"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#e6e6e6"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">W to E aspects (above 6201')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                </div>
-                
-            </dl>
-            </div>
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
-                <b>Medium confidence elevation bands.</b>
-                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/47e482b1-2c92-4fff-bb9d-677222e0f219_a6eaa6fc749af511729c647e3225934acf3cc711efdc09d2e673515f4fa2ca62">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553-report" class="avy-zone dn" data-id="fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
-            
-            <div id="fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553-title" class="mb4 tc">
-                <div><a id="fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=51.78012692480538,-120.19894397513676&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6600fc50b848pa0-0e6601-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6600fc50b848pa0-0e6601-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%220b1cdf28-661d-4859-8d65-6d920d9d0570%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-113e6601-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6601-20310f 50b848&#10;a0-0e4901-6600f 50b848&#10;a0-0e0-4900f 50b848" onclick="clickFunc(this, 'danger-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553'); return false;" onmouseout="outFunc('danger-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553')" onblur="outFunc('danger-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (above 6601')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (4901' to 6600')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (below 4900')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            <div class="avy-layer">
-            <h3 class="avy-layer-title">Avalanche Problems</h3>
-            <dl class="f6 ma0">
-                
-                <div class="avy-problem">
-                    <dt>
-                        <strong>2026-11-27 Wind Slab</strong>
-                    </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a339-113e6601-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553'); return false;" onmouseout="outFunc('problem-1-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553')" onblur="outFunc('problem-1-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553')" href="#" role="button" aria-label="Copy 2026-11-27 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553">
-                        
-                            <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#e6e6e6"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#e6e6e6"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#e6e6e6"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#e6e6e6"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#e6e6e6"/></svg> <span class="desc">N to E aspects (above 6601')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                </div>
-                
-            </dl>
-            </div>
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
-                <b>Low confidence elevation bands.</b>
-                No published elevation bands were found for this zone, so these are a rough estimate.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/f437d5b9-a5f7-4150-ade9-7f5dc3e49978_fd81d6f6be094ef894f6931c9e0097fc137deae7a10c62aaff8ea96a3b133553">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf-report" class="avy-zone dn" data-id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" data-color="#fff200" data-subregions="true" data-published="Thursday, November 26, 2026 5:00PM">
-            
-            <div id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf-title" class="mb4 tc">
-                <div><a id="afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=51.382373463285056,-116.16044043836781&z=10&b=mbt&a=sc_a0-0e0-6600fc939598pa0-0e6601-7500fc939598pa0-0e7501-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6600fc939598pa0-0e6601-7500fc939598pa0-0e7501-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22ebfbc35c-e2f3-4627-acfb-daa7f632622f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Dry%20Loose%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e7501-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%222fc4caeb-9d49-4f0d-8b73-83bd5c2ec250%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a113-113e7501-20310fc0000FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e7501-20310f fff200&#10;a0-0e6601-7500f 939598&#10;a0-0e0-6600f 939598" onclick="clickFunc(this, 'danger-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf'); return false;" onmouseout="outFunc('danger-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf')" onblur="outFunc('danger-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> <span class="desc">Moderate danger (above 7501')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> <span class="desc">Early season (6601' to 7500')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> <span class="desc">No rating (below 6600')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            <div class="avy-layer">
-            <h3 class="avy-layer-title">Avalanche Problems</h3>
-            <dl class="f6 ma0">
-                
-                <div class="avy-problem">
-                    <dt>
-                        <strong>2026-11-27 Dry Loose</strong>
-                    </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a158-158e7501-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf'); return false;" onmouseout="outFunc('problem-1-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf')" onblur="outFunc('problem-1-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf')" href="#" role="button" aria-label="Copy 2026-11-27 Dry Loose rules"><span class="tooltiptext" id="problem-1-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">
-                        
-                            <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 7501')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                </div>
-                
-                <div class="avy-problem">
-                    <dt>
-                        <strong>2026-11-27 Wind Slab</strong>
-                    </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a113-113e7501-20310f 0000FF" onclick="clickFunc(this, 'problem-2-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf'); return false;" onmouseout="outFunc('problem-2-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf')" onblur="outFunc('problem-2-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf')" href="#" role="button" aria-label="Copy 2026-11-27 Wind Slab rules"><span class="tooltiptext" id="problem-2-tooltip-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">
-                        
-                            <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#0000FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#0000FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#0000FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#0000FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#0000FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#0000FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#0000FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#0000FF"/></svg> <span class="desc">All aspects (above 7501')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                </div>
-                
-            </dl>
-            </div>
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
-                <b>Medium confidence elevation bands.</b>
-                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Thursday, November 26, 2026 5:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/37353e6f-ca7f-40a7-aabb-c7437af0c989_afe9ffd14c0637d10e2530857f8e7a8cba0277f33351d3b31c8f37f4111c6ecf">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a-report" class="avy-zone dn" data-id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" data-color="#fff200" data-published="Thursday, November 26, 2026 4:00PM">
-            
-            <div id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a-title" class="mb4 tc">
-                <div><a id="b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=51.26859075131051,-117.52435368057834&z=10&b=mbt&a=sc_a0-0e0-5600fc939598pa0-0e5601-6900fcfff200pa0-0e6901-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-5600fc939598pa0-0e5601-6900fcfff200pa0-0e6901-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22749caa4e-729d-4b89-be5c-d163759166ff%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-203e5601-6900fcA200FFpa203-203e6901-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6901-20310f fff200&#10;a0-0e5601-6900f fff200&#10;a0-0e0-5600f 939598" onclick="clickFunc(this, 'danger-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a'); return false;" onmouseout="outFunc('danger-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a')" onblur="outFunc('danger-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> <span class="desc">Moderate danger (above 6901')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> <span class="desc">Moderate danger (5601' to 6900')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> <span class="desc">Early season (below 5600')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            <div class="avy-layer">
-            <h3 class="avy-layer-title">Avalanche Problems</h3>
-            <dl class="f6 ma0">
-                
-                <div class="avy-problem">
-                    <dt>
-                        <strong>2026-11-27 Storm Slab</strong>
-                    </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a203-203e6901-20310f A200FF&#10;a203-203e5601-6900f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a'); return false;" onmouseout="outFunc('problem-1-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a')" onblur="outFunc('problem-1-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a')" href="#" role="button" aria-label="Copy 2026-11-27 Storm Slab rules"><span class="tooltiptext" id="problem-1-tooltip-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">
-                        
-                            <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 6901')</span>
-                            </li>
-                        
-                            <li class="pv1 ntl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (5601' to 6900')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                </div>
-                
-            </dl>
-            </div>
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
-                <b>Low confidence elevation bands.</b>
-                No published elevation bands were found for this zone, so these are a rough estimate.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/461cb4b3-e91c-4cf0-848b-099c8d02650b_b2a14eb464567902bcdf5b0cf1efe870416fee4de1d80d5b1f6d9cbc1b3bd73a">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e-report" class="avy-zone dn" data-id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" data-color="#939598" data-subregions="true" data-published="Friday, October 02, 2026 4:00PM">
-            
-            <div id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e-title" class="mb4 tc">
-                <div><a id="426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=52.55611523237941,-117.62626152142234&z=10&b=mbt&a=sc_a0-0e0-6600fc939598pa0-0e6601-7500fc939598pa0-0e7501-20310fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-10-03%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6600fc939598pa0-0e6601-7500fc939598pa0-0e7501-20310fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e7501-20310f 939598&#10;a0-0e6601-7500f 939598&#10;a0-0e0-6600f 939598" onclick="clickFunc(this, 'danger-tooltip-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e'); return false;" onmouseout="outFunc('danger-tooltip-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e')" onblur="outFunc('danger-tooltip-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> <span class="desc">Early season (above 7501')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> <span class="desc">Early season (6601' to 7500')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> <span class="desc">No rating (below 6600')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
-                <b>Medium confidence elevation bands.</b>
-                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Friday, October 02, 2026 4:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/7de2860d-58a5-4cbd-94a4-519c762b1b79_426b4bc4f761f2890921214b32ed3bf9f5de086f39b6f755296daf3a3048587e">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7-report" class="avy-zone dn" data-id="871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7" data-color="#fff200" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
-            
-            <div id="871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7-title" class="mb4 tc">
-                <div><a id="871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=55.42879619472748,-127.39294164289278&z=10&b=mbt&a=sc_a0-0e0-4300fc50b848pa0-0e4301-5600fcfff200pa0-0e5601-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4300fc50b848pa0-0e4301-5600fcfff200pa0-0e5601-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%223456d2a3-aa0b-4028-8cf3-5a0bc6fea7e4%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-203e4301-5600fcA200FFpa203-203e5601-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e5601-20310f fff200&#10;a0-0e4301-5600f fff200&#10;a0-0e0-4300f 50b848" onclick="clickFunc(this, 'danger-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7'); return false;" onmouseout="outFunc('danger-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7')" onblur="outFunc('danger-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> <span class="desc">Moderate danger (above 5601')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> <span class="desc">Moderate danger (4301' to 5600')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (below 4300')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            <div class="avy-layer">
-            <h3 class="avy-layer-title">Avalanche Problems</h3>
-            <dl class="f6 ma0">
-                
-                <div class="avy-problem">
-                    <dt>
-                        <strong>2026-11-27 Wind Slab</strong>
-                    </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a203-203e5601-20310f A200FF&#10;a203-203e4301-5600f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7'); return false;" onmouseout="outFunc('problem-1-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7')" onblur="outFunc('problem-1-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7')" href="#" role="button" aria-label="Copy 2026-11-27 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7">
-                        
-                            <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 5601')</span>
-                            </li>
-                        
-                            <li class="pv1 ntl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (4301' to 5600')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                </div>
-                
-            </dl>
-            </div>
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
-                <b>Medium confidence elevation bands.</b>
-                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/f6fce1dd-f56e-4009-8a65-2ef4518104ed_871c109605381ca82a15f1c3a99ede9092e2ac514e30aee789b3d816986c02e7">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609-report" class="avy-zone dn" data-id="9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609" data-color="#f7941e" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
-            
-            <div id="9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609-title" class="mb4 tc">
-                <div><a id="9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=57.07685282147797,-129.95365245316722&z=10&b=mbt&a=sc_a0-0e0-4300fc50b848pa0-0e4301-5600fcfff200pa0-0e5601-20310fcf7941e&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4300fc50b848pa0-0e4301-5600fcfff200pa0-0e5601-20310fcf7941e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%222f782f80-cc39-437d-a445-008df32a6776%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a203-203e5601-20310fcA200FFpa203-203e4301-5600fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e5601-20310f f7941e&#10;a0-0e4301-5600f fff200&#10;a0-0e0-4300f 50b848" onclick="clickFunc(this, 'danger-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609'); return false;" onmouseout="outFunc('danger-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609')" onblur="outFunc('danger-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#f7941e"
-                            
-                            ></div> <span class="desc">Considerable danger (above 5601')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> <span class="desc">Moderate danger (4301' to 5600')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (below 4300')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            <div class="avy-layer">
-            <h3 class="avy-layer-title">Avalanche Problems</h3>
-            <dl class="f6 ma0">
-                
-                <div class="avy-problem">
-                    <dt>
-                        <strong>2026-11-27 Storm Slab</strong>
-                    </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a203-203e4301-5600f A200FF&#10;a203-203e5601-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609'); return false;" onmouseout="outFunc('problem-1-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609')" onblur="outFunc('problem-1-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609')" href="#" role="button" aria-label="Copy 2026-11-27 Storm Slab rules"><span class="tooltiptext" id="problem-1-tooltip-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609">
-                        
-                            <li class="pv1 ntl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (4301' to 5600')</span>
-                            </li>
-                        
-                            <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 5601')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                </div>
-                
-            </dl>
-            </div>
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--gold bg-washed-yellow pa2 br2 mv3 lh-copy" role="note">
-                <b>Medium confidence elevation bands.</b>
-                Avalanche Canada doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Thursday, November 26, 2026 4:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/a0b92969-d054-4b28-b3ff-5fd22642efb2_9476288b73b38d428c40abcdac4a2bc9efcee359e23c201ff05a5b0b45346609">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
         <div id="479dbbc0268615ac524cb3eb49c702499df9df1dd24684b3d0054699f5e11013-report" class="avy-zone dn" data-id="479dbbc0268615ac524cb3eb49c702499df9df1dd24684b3d0054699f5e11013" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
             
             <div id="479dbbc0268615ac524cb3eb49c702499df9df1dd24684b3d0054699f5e11013-title" class="mb4 tc">
-                <div><a id="479dbbc0268615ac524cb3eb49c702499df9df1dd24684b3d0054699f5e11013-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=54.46408211400717,-121.41271451846092&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6600fc50b848pa0-0e6601-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6600fc50b848pa0-0e6601-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22c3a7bb6a-5d8f-48fa-a467-53adad9781ba%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-113e6601-20310fcA200FFpa339-113e4901-6600fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+                <div><a id="479dbbc0268615ac524cb3eb49c702499df9df1dd24684b3d0054699f5e11013-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=54.46408211400717,-121.41271451846092&z=10&b=mbt&a=sc_a0-0e0-4900fc50b848pa0-0e4901-6600fc50b848pa0-0e6601-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-4900fc50b848pa0-0e4901-6600fc50b848pa0-0e6601-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22680780ad-4bf7-499d-b6cf-2065aa316dba%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a339-113e6601-20310fcA200FFpa339-113e4901-6600fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
@@ -2121,7 +2202,7 @@ css_includes:
         <div id="0f23c8baa694da6047b905917ff75428ec8d4422697c6a7d6c297ac5ddeb4e60-report" class="avy-zone dn" data-id="0f23c8baa694da6047b905917ff75428ec8d4422697c6a7d6c297ac5ddeb4e60" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 4:00PM">
             
             <div id="0f23c8baa694da6047b905917ff75428ec8d4422697c6a7d6c297ac5ddeb4e60-title" class="mb4 tc">
-                <div><a id="0f23c8baa694da6047b905917ff75428ec8d4422697c6a7d6c297ac5ddeb4e60-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=49.60459937261922,-118.1819501416253&z=10&b=mbt&a=sc_a0-0e0-5600fc50b848pa0-0e5601-6900fc50b848pa0-0e6901-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-5600fc50b848pa0-0e5601-6900fc50b848pa0-0e6901-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%2216658f6a-fac3-43f4-a700-a5feb693e96e%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e5601-6900fcA200FFpa158-158e6901-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+                <div><a id="0f23c8baa694da6047b905917ff75428ec8d4422697c6a7d6c297ac5ddeb4e60-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=49.60459937261922,-118.1819501416253&z=10&b=mbt&a=sc_a0-0e0-5600fc50b848pa0-0e5601-6900fc50b848pa0-0e6901-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-5600fc50b848pa0-0e5601-6900fc50b848pa0-0e6901-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22d248d50e-1f59-4f04-98c0-b87f063bdf30%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e5601-6900fcA200FFpa158-158e6901-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
@@ -2222,10 +2303,10 @@ css_includes:
             
         </div>
         
-        <div id="5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e-report" class="avy-zone dn" data-id="5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e" data-color="#50b848" data-subregions="true" data-published="Thursday, November 26, 2026 5:00PM">
+        <div id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea-report" class="avy-zone dn" data-id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" data-color="#50b848" data-subregions="true" data-published="Wednesday, November 25, 2026 5:30PM">
             
-            <div id="5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e-title" class="mb4 tc">
-                <div><a id="5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=50.01051968382965,-116.33764199458888&z=10&b=mbt&a=sc_a0-0e0-5600fc50b848pa0-0e5601-6900fc50b848pa0-0e6901-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-5600fc50b848pa0-0e5601-6900fc50b848pa0-0e6901-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%228f28e484-186f-4230-b240-c9037e4c6195%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Storm%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a68-68e6901-20310fcA200FFpa68-68e5601-6900fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            <div id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea-title" class="mb4 tc">
+                <div><a id="d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=50.78856882104437,-115.1958225555043&z=10&b=mbt&a=sc_a0-0e0-6600fc939598pa0-0e6601-7500fc939598pa0-0e7501-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6600fc939598pa0-0e6601-7500fc939598pa0-0e7501-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22b2f06f6a-f49d-45e6-bb07-71d28916e31b%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a23-248e7501-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
@@ -2238,31 +2319,31 @@ css_includes:
                     <strong>Avalanche Danger</strong>
                 </dt>
                 <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e6901-20310f 50b848&#10;a0-0e5601-6900f 50b848&#10;a0-0e0-5600f 50b848" onclick="clickFunc(this, 'danger-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e'); return false;" onmouseout="outFunc('danger-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e')" onblur="outFunc('danger-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e7501-20310f 50b848&#10;a0-0e6601-7500f 939598&#10;a0-0e0-6600f 939598" onclick="clickFunc(this, 'danger-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea'); return false;" onmouseout="outFunc('danger-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea')" onblur="outFunc('danger-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7 rules-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">
                     
                         <li class="pv1 atl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
                                 data-color1="#50b848"
                             
-                            ></div> <span class="desc">Low danger (above 6901')</span>
+                            ></div> <span class="desc">Low danger (above 7501')</span>
                         </li>
                     
                         <li class="pv1 ntl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
-                                data-color1="#50b848"
+                                data-color1="#939598"
                             
-                            ></div> <span class="desc">Low danger (5601' to 6900')</span>
+                            ></div> <span class="desc">Early season (6601' to 7500')</span>
                         </li>
                     
                         <li class="pv1 btl">
                             <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
                             
-                                data-color1="#50b848"
+                                data-color1="#939598"
                             
-                            ></div> <span class="desc">Low danger (below 5600')</span>
+                            ></div> <span class="desc">Early season (below 6600')</span>
                         </li>
                     
                     </ul>
@@ -2278,18 +2359,14 @@ css_includes:
                 
                 <div class="avy-problem">
                     <dt>
-                        <strong>2026-11-27 Storm Slab</strong>
+                        <strong>2026-11-26 Wind Slab</strong>
                     </dt>
                     <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a68-68e5601-6900f A200FF&#10;a68-68e6901-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e'); return false;" onmouseout="outFunc('problem-1-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e')" onblur="outFunc('problem-1-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e')" href="#" role="button" aria-label="Copy 2026-11-27 Storm Slab rules"><span class="tooltiptext" id="problem-1-tooltip-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                        <ul class="list pl0 mt1 mb0 code f7 rules-5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e">
-                        
-                            <li class="pv1 ntl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (5601' to 6900')</span>
-                            </li>
+                        <div class="tooltip avy-copy"><a data-clipboard-text="a23-248e7501-20310f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea'); return false;" onmouseout="outFunc('problem-1-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea')" onblur="outFunc('problem-1-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea')" href="#" role="button" aria-label="Copy 2026-11-26 Wind Slab rules"><span class="tooltiptext" id="problem-1-tooltip-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <ul class="list pl0 mt1 mb0 code f7 rules-d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">
                         
                             <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">All aspects (above 6901')</span>
+                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#e6e6e6"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#A200FF"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#A200FF"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#A200FF"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#e6e6e6"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#e6e6e6"/></svg> <span class="desc">NE to SW aspects (above 7501')</span>
                             </li>
                         
                         </ul>
@@ -2314,89 +2391,12 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             <p class="f6 mv1">
-                <strong>Issued at:</strong> Thursday, November 26, 2026 5:00PM
+                <strong>Issued at:</strong> Wednesday, November 25, 2026 5:30PM
             </p>
             
             
             <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/1b0a3c27-11cf-4ee6-bbf0-7974423dd577_5eef47a6f069ff87be8c099f45593abef02fd067da030b538750ab4bff19d02e">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85-report" class="avy-zone dn" data-id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" data-color="#939598" data-published="Wednesday, October 07, 2026 1:00PM">
-            
-            <div id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85-title" class="mb4 tc">
-                <div><a id="010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=49.08129207544112,-113.93284710370706&z=10&b=mbt&a=sc_a0-0e0-6200fc939598pa0-0e6201-7200fc939598pa0-0e7201-20310fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-10-08%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-6200fc939598pa0-0e6201-7200fc939598pa0-0e7201-20310fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
-                <dt>
-                    <strong>Avalanche Danger</strong>
-                </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e7201-20310f 939598&#10;a0-0e6201-7200f 939598&#10;a0-0e0-6200f 939598" onclick="clickFunc(this, 'danger-tooltip-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85'); return false;" onmouseout="outFunc('danger-tooltip-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85')" onblur="outFunc('danger-tooltip-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    <ul class="list pl0 mt1 mb0 code f7 rules-010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> <span class="desc">Early season (above 7201')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> <span class="desc">Early season (6201' to 7200')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#939598"
-                            
-                            ></div> <span class="desc">Early season (below 6200')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            </div>
-            
-
-            
-            
-            </section>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
-                <b>Low confidence elevation bands.</b>
-                No published elevation bands were found for this zone, so these are a rough estimate.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Wednesday, October 07, 2026 1:00PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/cf50334f-3c6b-478b-b02f-dd9ecb233074_010016cb778a7962e0174e68d5a278372db93924e19e450052de07b95eb72c85">full forecast</a> before heading out.
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/">Avalanche Canada</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.ca/forecasts/79e6aad0-f4d5-4702-a379-7fb79e42d8e0_d15dff296f550c29a26e3203191d60ed0a36eeda9361320a324047b0850d77ea">full forecast</a> before heading out.
             </p>
             
             </div>
