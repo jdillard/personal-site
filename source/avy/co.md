@@ -146,16 +146,12 @@ css_includes:
             </div>
             
             
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
+            <dl class="f6">
                 <dt>
-                    <strong>Avalanche Danger</strong>
+                    <strong>2026-11-27 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e10801-20310f 939598&#10;a0-0e10001-10800f 50b848&#10;a0-0e0-10000f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2747'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2747')" onblur="outFunc('danger-tooltip-CAIC-2747')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2747" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e10801-20310f 939598&#10;a0-0e10001-10800f 50b848&#10;a0-0e0-10000f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2747'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2747')" onblur="outFunc('danger-tooltip-CAIC-2747')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2747" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2747">
                     
                         <li class="pv1 atl">
@@ -185,12 +181,8 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
-            </div>
             
 
-            
-            
-            </section>
             
 
             
@@ -223,16 +215,12 @@ css_includes:
             </div>
             
             
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
+            <dl class="f6">
                 <dt>
-                    <strong>Avalanche Danger</strong>
+                    <strong>2026-11-27 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e12201-20310f 50b848&#10;a0-0e11201-12200f 50b848&#10;a0-0e0-11200f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2754'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2754')" onblur="outFunc('danger-tooltip-CAIC-2754')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2754" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e12201-20310f 50b848&#10;a0-0e11201-12200f 50b848&#10;a0-0e0-11200f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2754'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2754')" onblur="outFunc('danger-tooltip-CAIC-2754')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2754" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2754">
                     
                         <li class="pv1 atl">
@@ -262,12 +250,8 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
-            </div>
             
 
-            
-            
-            </section>
             
 
             
@@ -300,16 +284,12 @@ css_includes:
             </div>
             
             
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
+            <dl class="f6">
                 <dt>
-                    <strong>Avalanche Danger</strong>
+                    <strong>2026-11-27 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11301-20310f 50b848&#10;a0-0e10301-11300f 50b848&#10;a0-0e0-10300f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2697'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2697')" onblur="outFunc('danger-tooltip-CAIC-2697')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2697" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e11301-20310f 50b848&#10;a0-0e10301-11300f 50b848&#10;a0-0e0-10300f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2697'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2697')" onblur="outFunc('danger-tooltip-CAIC-2697')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2697" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2697">
                     
                         <li class="pv1 atl">
@@ -339,12 +319,8 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
-            </div>
             
 
-            
-            
-            </section>
             
 
             
@@ -377,16 +353,12 @@ css_includes:
             </div>
             
             
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
+            <dl class="f6">
                 <dt>
-                    <strong>Avalanche Danger</strong>
+                    <strong>2026-11-27 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11801-20310f 50b848&#10;a0-0e10801-11800f 50b848&#10;a0-0e0-10800f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2755'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2755')" onblur="outFunc('danger-tooltip-CAIC-2755')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2755" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e11801-20310f 50b848&#10;a0-0e10801-11800f 50b848&#10;a0-0e0-10800f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2755'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2755')" onblur="outFunc('danger-tooltip-CAIC-2755')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2755" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2755">
                     
                         <li class="pv1 atl">
@@ -416,12 +388,8 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
-            </div>
             
 
-            
-            
-            </section>
             
 
             
@@ -450,20 +418,16 @@ css_includes:
         <div id="CAIC-2660-report" class="avy-zone dn" data-id="CAIC-2660" data-color="#fff200" data-published="Thursday, November 26, 2026 4:30PM">
             
             <div id="CAIC-2660-title" class="mb4 tc">
-                <div><a id="CAIC-2660-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=37.636766674935274,-107.33232497014352&z=10&b=mbt&a=sc_a0-0e0-11200fc50b848pa0-0e11201-12200fcfff200pa0-0e12201-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-11200fc50b848pa0-0e11201-12200fcfff200pa0-0e12201-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226d7851ff-f957-451c-b61c-d8cabd3fadc2%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e11201-12200fcA200FFpa248-113e12201-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+                <div><a id="CAIC-2660-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=37.636766674935274,-107.33232497014352&z=10&b=mbt&a=sc_a0-0e0-11200fc50b848pa0-0e11201-12200fcfff200pa0-0e12201-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-11200fc50b848pa0-0e11201-12200fcfff200pa0-0e12201-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%221ab77e72-1b95-4ac7-9ef1-9f5e641494f6%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e11201-12200fcA200FFpa248-113e12201-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
+            <dl class="f6">
                 <dt>
-                    <strong>Avalanche Danger</strong>
+                    <strong>2026-11-27 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e12201-20310f fff200&#10;a0-0e11201-12200f fff200&#10;a0-0e0-11200f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2660'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2660')" onblur="outFunc('danger-tooltip-CAIC-2660')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2660" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e12201-20310f fff200&#10;a0-0e11201-12200f fff200&#10;a0-0e0-11200f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2660'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2660')" onblur="outFunc('danger-tooltip-CAIC-2660')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2660" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2660">
                     
                         <li class="pv1 atl">
@@ -493,39 +457,30 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
-            </div>
             
 
             
-            <div class="avy-layer">
-            <h3 class="avy-layer-title">Avalanche Problems</h3>
-            <dl class="f6 ma0">
+            <dl class="f6">
                 
-                <div class="avy-problem">
-                    <dt>
+                    <dt class="mt3">
                         <strong>2026-11-27 Persistent Slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-113e12201-20310f A200FF&#10;a248-113e11201-12200f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2660'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2660')" onblur="outFunc('problem-1-tooltip-CAIC-2660')" href="#" role="button" aria-label="Copy 2026-11-27 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2660" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                     </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a248-113e12201-20310f A200FF&#10;a248-113e11201-12200f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2660'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2660')" onblur="outFunc('problem-1-tooltip-CAIC-2660')" href="#" role="button" aria-label="Copy 2026-11-27 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2660" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2660">
                         
                             <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#e6e6e6"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#e6e6e6"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#e6e6e6"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">W to E aspects (above 12201')</span>
+                                <div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> <span class="desc">W to E aspects (above 12201')</span>
                             </li>
                         
                             <li class="pv1 ntl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#e6e6e6"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#e6e6e6"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#e6e6e6"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#A200FF"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">W to E aspects (11201' to 12200')</span>
+                                <div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> <span class="desc">W to E aspects (11201' to 12200')</span>
                             </li>
                         
                         </ul>
                     </dd>
-                </div>
                 
             </dl>
-            </div>
-            
-            
-            </section>
             
 
             
@@ -554,20 +509,16 @@ css_includes:
         <div id="CAIC-2753-report" class="avy-zone dn" data-id="CAIC-2753" data-color="#fff200" data-published="Thursday, November 26, 2026 4:30PM">
             
             <div id="CAIC-2753-title" class="mb4 tc">
-                <div><a id="CAIC-2753-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=38.95535671864757,-106.9511441987443&z=10&b=mbt&a=sc_a0-0e0-10800fc50b848pa0-0e10801-11800fcfff200pa0-0e11801-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-10800fc50b848pa0-0e10801-11800fcfff200pa0-0e11801-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%228e40e294-5324-44a0-8149-f0d4454b9b6f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e10801-11800fcA200FFpa293-113e11801-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+                <div><a id="CAIC-2753-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=38.95535671864757,-106.9511441987443&z=10&b=mbt&a=sc_a0-0e0-10800fc50b848pa0-0e10801-11800fcfff200pa0-0e11801-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-10800fc50b848pa0-0e10801-11800fcfff200pa0-0e11801-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22163ab930-da80-4d3b-a939-edfeb3bcb1f2%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e10801-11800fcA200FFpa293-113e11801-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
-            <section class="avy-layers" aria-label="CalTopo layers">
-            
-            
-            <div class="avy-layer">
-            <dl class="f6 ma0">
+            <dl class="f6">
                 <dt>
-                    <strong>Avalanche Danger</strong>
+                    <strong>2026-11-27 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11801-20310f fff200&#10;a0-0e10801-11800f fff200&#10;a0-0e0-10800f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2753')" onblur="outFunc('danger-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
-                <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="a0-0e11801-20310f fff200&#10;a0-0e10801-11800f fff200&#10;a0-0e0-10800f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2753')" onblur="outFunc('danger-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                <dd class="ml3">
                     <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2753">
                     
                         <li class="pv1 atl">
@@ -597,39 +548,30 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
-            </div>
             
 
             
-            <div class="avy-layer">
-            <h3 class="avy-layer-title">Avalanche Problems</h3>
-            <dl class="f6 ma0">
+            <dl class="f6">
                 
-                <div class="avy-problem">
-                    <dt>
+                    <dt class="mt3">
                         <strong>2026-11-27 Persistent Slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-113e11801-20310f A200FF&#10;a293-113e10801-11800f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2753')" onblur="outFunc('problem-1-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy 2026-11-27 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                     </dt>
-                    <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="a293-113e11801-20310f A200FF&#10;a293-113e10801-11800f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2753')" onblur="outFunc('problem-1-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy 2026-11-27 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2753">
                         
                             <li class="pv1 atl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#e6e6e6"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#e6e6e6"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#e6e6e6"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#e6e6e6"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">NW to E aspects (above 11801')</span>
+                                <div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> <span class="desc">NW to E aspects (above 11801')</span>
                             </li>
                         
                             <li class="pv1 ntl">
-                                <svg class="avy-rose fl mr2" style="clear: both;" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10L6.36 1.22A9.5 9.5 0 0 1 13.64 1.22Z" fill="#A200FF"/><path d="M10 10L13.64 1.22A9.5 9.5 0 0 1 18.78 6.36Z" fill="#A200FF"/><path d="M10 10L18.78 6.36A9.5 9.5 0 0 1 18.78 13.64Z" fill="#A200FF"/><path d="M10 10L18.78 13.64A9.5 9.5 0 0 1 13.64 18.78Z" fill="#e6e6e6"/><path d="M10 10L13.64 18.78A9.5 9.5 0 0 1 6.36 18.78Z" fill="#e6e6e6"/><path d="M10 10L6.36 18.78A9.5 9.5 0 0 1 1.22 13.64Z" fill="#e6e6e6"/><path d="M10 10L1.22 13.64A9.5 9.5 0 0 1 1.22 6.36Z" fill="#e6e6e6"/><path d="M10 10L1.22 6.36A9.5 9.5 0 0 1 6.36 1.22Z" fill="#A200FF"/></svg> <span class="desc">NW to E aspects (10801' to 11800')</span>
+                                <div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> <span class="desc">NW to E aspects (10801' to 11800')</span>
                             </li>
                         
                         </ul>
                     </dd>
-                </div>
                 
             </dl>
-            </div>
-            
-            
-            </section>
             
 
             
