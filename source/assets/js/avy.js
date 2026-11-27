@@ -227,8 +227,9 @@ function layerStyle(fillColor, fillOpacity = 0.4) {
 }
 
 // region page: every zone in its danger color, the selected one strong and the others faint
-const SELECTED_OPACITY = 0.5;
-const OTHER_OPACITY = 0.3;
+const SELECTED_OPACITY = 0.6;
+const HOVER_OPACITY = 0.5;
+const OTHER_OPACITY = 0.4;
 
 // resting style of a zone (restored after hover)
 function restStyle(filePath) {
@@ -239,7 +240,8 @@ function restStyle(filePath) {
 
 // hovered zone: its danger color at full hover strength (never weaker than when selected)
 function hoverStyle(filePath, color) {
-  return { fillColor: color || GRAY, fillOpacity: filePath === currentLayer ? SELECTED_OPACITY : 0.4 };
+  if (!zoneSel) return { fillColor: color || GRAY, fillOpacity: 0.4 };
+  return { fillColor: color || GRAY, fillOpacity: filePath === currentLayer ? SELECTED_OPACITY : HOVER_OPACITY };
 }
 
 // subregion outlines (Canada areas grouped from several subregions), filename as key
