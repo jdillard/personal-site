@@ -213,6 +213,27 @@ function fetchGeoJSON(path) {
   });
 }
 
+// one hovered shape at a time: mouseout is sometimes missed (shapes are re-ordered under the cursor
+// by bringToFront), so a new hover, leaving the map, or moving over empty map resets the last one
+let hovered = null;  // {layer, reset}
+
+function hoverStart(layer, reset) {
+  if (hovered && hovered.layer !== layer) hoverEnd(hovered.layer);
+  hovered = { layer, reset };
+}
+
+function hoverEnd(layer) {
+  if (!hovered || (layer && hovered.layer !== layer)) return;
+  hovered.reset();
+  hovered.layer.closeTooltip();
+  hovered = null;
+}
+
+map.on('mousemove', (e) => {
+  if (hovered && !e.originalEvent.target.classList.contains('leaflet-interactive')) hoverEnd();
+});
+map.getContainer().addEventListener('mouseleave', () => hoverEnd());
+
 // load the subregion outlines for an area and keep them on the map whenever the area is
 function loadSubregions(zone, layer, onClick) {
   const filePath = zone.value;
@@ -226,15 +247,16 @@ function loadSubregions(zone, layer, onClick) {
           featureLayer.bindTooltip(feature.properties.name, { sticky: true, direction: "top", offset: [0, -8] });
 
           featureLayer.on('mouseover', function(e) {
+            hoverStart(featureLayer, () => {
+              layer.setStyle(layerStyle(baseColors[filePath] || GRAY));
+              subLayer.setStyle(SUB_REST);
+            });
             layer.setStyle({ fillColor: zone.color || GRAY });
             subLayer.setStyle(SUB_AREA_HOVER);
             e.target.setStyle(SUB_HOVER);
           });
 
-          featureLayer.on('mouseout', function() {
-            layer.setStyle(layerStyle(baseColors[filePath] || GRAY));
-            subLayer.setStyle(SUB_REST);
-          });
+          featureLayer.on('mouseout', () => hoverEnd(featureLayer));
         }
       });
       subLayers[filePath] = subLayer;
@@ -280,13 +302,12 @@ function loadLayer(zone, type) {
             }
 
             featureLayer.on('mouseover', function(e) {
+              hoverStart(featureLayer, () => featureLayer.setStyle(layerStyle(baseColors[filePath] || GRAY)));
               e.target.setStyle({ fillColor: zone.color || GRAY });
               raiseLayer(filePath);
             });
 
-            featureLayer.on('mouseout', function(e) {
-              e.target.setStyle(layerStyle(baseColors[filePath] || GRAY));
-            });
+            featureLayer.on('mouseout', () => hoverEnd(featureLayer));
           }
         });
         layers[filePath] = layer;
