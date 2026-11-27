@@ -161,7 +161,8 @@ css_includes:
 <div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="FAC-3043-report" class="avy-zone" data-id="FAC-3043" data-color="#939598" data-published="Tuesday, November 24, 2026 3:23PM">
+        <div id="FAC-3043-report" class="avy-zone" data-id="FAC-3043" data-color="#939598" data-published="Friday, November 27, 2026 1:52PM">
+            
             
             
             
@@ -169,6 +170,7 @@ css_includes:
             
             
 
+            
             
 
             
@@ -184,7 +186,8 @@ css_includes:
             
         </div>
         
-        <div id="FAC-3040-report" class="avy-zone dn" data-id="FAC-3040" data-color="#939598" data-published="Tuesday, November 24, 2026 3:23PM">
+        <div id="FAC-3040-report" class="avy-zone dn" data-id="FAC-3040" data-color="#939598" data-published="Friday, November 27, 2026 1:52PM">
+            
             
             
             
@@ -192,6 +195,7 @@ css_includes:
             
             
 
+            
             
 
             
@@ -207,7 +211,8 @@ css_includes:
             
         </div>
         
-        <div id="FAC-3041-report" class="avy-zone dn" data-id="FAC-3041" data-color="#939598" data-published="Tuesday, November 24, 2026 3:23PM">
+        <div id="FAC-3041-report" class="avy-zone dn" data-id="FAC-3041" data-color="#939598" data-published="Friday, November 27, 2026 1:52PM">
+            
             
             
             
@@ -215,6 +220,7 @@ css_includes:
             
             
 
+            
             
 
             
@@ -230,7 +236,8 @@ css_includes:
             
         </div>
         
-        <div id="FAC-3042-report" class="avy-zone dn" data-id="FAC-3042" data-color="#939598" data-published="Tuesday, November 24, 2026 3:23PM">
+        <div id="FAC-3042-report" class="avy-zone dn" data-id="FAC-3042" data-color="#939598" data-published="Friday, November 27, 2026 1:52PM">
+            
             
             
             
@@ -238,6 +245,7 @@ css_includes:
             
             
 
+            
             
 
             
@@ -257,10 +265,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/bridger-range/">GNFAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -280,10 +290,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/cooke-city/">GNFAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -303,10 +315,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/island-park/">GNFAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -326,10 +340,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/lionhead-area/">GNFAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -349,10 +365,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-gallatin-range/">GNFAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -372,10 +390,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-madison-range/">GNFAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -395,10 +415,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-gallatin-range/">GNFAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -418,10 +440,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-madison-range/">GNFAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -437,7 +461,8 @@ css_includes:
             
         </div>
         
-        <div id="IPAC-1901-report" class="avy-zone dn" data-id="IPAC-1901" data-color="#939598" data-published="Friday, November 20, 2026 11:15AM">
+        <div id="IPAC-1901-report" class="avy-zone dn" data-id="IPAC-1901" data-color="#939598" data-published="False">
+            
             
             
             
@@ -445,6 +470,7 @@ css_includes:
             
             
 
+            
             
 
             
@@ -460,7 +486,8 @@ css_includes:
             
         </div>
         
-        <div id="IPAC-3019-report" class="avy-zone dn" data-id="IPAC-3019" data-color="#939598" data-published="Friday, November 20, 2026 11:15AM">
+        <div id="IPAC-3019-report" class="avy-zone dn" data-id="IPAC-3019" data-color="#939598" data-published="False">
+            
             
             
             
@@ -468,6 +495,7 @@ css_includes:
             
             
 
+            
             
 
             
@@ -487,10 +515,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/Bitterroot">WCMAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -510,10 +540,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/rattlesnake">WCMAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -533,10 +565,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.missoulaavalanche.org/forecasts/#/seeley-lake">WCMAC</a> for more information.</div>
             
             
 
+            
             
 
             
