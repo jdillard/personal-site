@@ -161,7 +161,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="FAC-3043-report" class="avy-zone" data-id="FAC-3043" data-color="#939598" data-published="Tuesday, November 24, 2026 3:23PM">
+        <div id="FAC-3043-report" class="avy-zone" data-id="FAC-3043" data-color="#939598" data-published="Friday, November 27, 2026 1:52PM">
             
             
             
@@ -186,7 +186,7 @@ css_includes:
             
         </div>
         
-        <div id="FAC-3040-report" class="avy-zone dn" data-id="FAC-3040" data-color="#939598" data-published="Tuesday, November 24, 2026 3:23PM">
+        <div id="FAC-3040-report" class="avy-zone dn" data-id="FAC-3040" data-color="#939598" data-published="Friday, November 27, 2026 1:52PM">
             
             
             
@@ -211,7 +211,7 @@ css_includes:
             
         </div>
         
-        <div id="FAC-3041-report" class="avy-zone dn" data-id="FAC-3041" data-color="#939598" data-published="Tuesday, November 24, 2026 3:23PM">
+        <div id="FAC-3041-report" class="avy-zone dn" data-id="FAC-3041" data-color="#939598" data-published="Friday, November 27, 2026 1:52PM">
             
             
             
@@ -236,7 +236,7 @@ css_includes:
             
         </div>
         
-        <div id="FAC-3042-report" class="avy-zone dn" data-id="FAC-3042" data-color="#939598" data-published="Tuesday, November 24, 2026 3:23PM">
+        <div id="FAC-3042-report" class="avy-zone dn" data-id="FAC-3042" data-color="#939598" data-published="Friday, November 27, 2026 1:52PM">
             
             
             
@@ -587,7 +587,7 @@ css_includes:
         </div>
         
     </div>
-    <div class="ph3 w-100 w-50-ns">
+    <div class="ph3 w-100 w-50-ns mt4 mt0-ns">
         <div class="avy-map" id="map"></div>
         <p id="zone-areas" class="f6 black-70 lh-copy tc mt3 dn"><b>This zone covers:</b> <span id="zone-areas-list"></span></p>
     </div>
