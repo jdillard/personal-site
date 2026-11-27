@@ -80,17 +80,15 @@ function showRegion(region_id, updateHash = true) {
   return true;
 }
 
-// region page: list every area in the selected zone under the map when its dropdown label is shortened
+// region page: list every area in the selected zone under the map (full name; the dropdown label may be shortened)
 function showZoneAreas() {
   const areas = document.getElementById("zone-areas");
   const list = document.getElementById("zone-areas-list");
   const option = zoneSel && zoneSel.selectedOptions[0];
   if (!areas || !list || !option) return;
 
-  const full = option.title;
-  const shortened = full && full !== option.textContent.trim();
-  list.textContent = shortened ? full : "";
-  areas.classList.toggle('dn', !shortened);
+  list.textContent = option.title || option.textContent.trim();
+  areas.classList.remove('dn');
 }
 
 // region page: show zone details (report/map)
