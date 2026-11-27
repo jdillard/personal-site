@@ -666,7 +666,7 @@ $avy-line-gray: #bbb; // separators inside avy layer cards
     padding: .6rem .8rem;
     background: #fff;
     border: var(--avy-card-bw) solid #b0b0b0;
-    box-shadow: 5px 5px 0 #d6d6d6;
+    box-shadow: 5px 5px 0 #e4e4e4;
 }
 
 // card titles as manila-folder tabs sitting on the card's top border, slant flaring toward the card.
@@ -692,13 +692,13 @@ $avy-line-gray: #bbb; // separators inside avy layer cards
     position: absolute;
     inset: var(--avy-card-bw) var(--avy-card-bw) 0;
     z-index: -1;
-    background: #eeeeee;
+    background: #f5f5f5;
     clip-path: polygon(0 0, calc(100% - .8rem) 0, 100% 100%, 0 100%);
 }
 
 .avy-layer > dl > dt strong,
 .avy-layer-title {
-    font-size: .925rem;
+    font-size: .85rem;
     font-weight: 700;
     letter-spacing: .06em;
     text-transform: uppercase;
@@ -784,14 +784,14 @@ $avy-line-gray: #bbb; // separators inside avy layer cards
 }
 
 .avy-layer dd ul {
-    font-size: .9375rem;
+    font-size: .875rem;
 }
 
 // rule color swatches (tachyons h1 w1), a bit bigger to match the larger text
 .avy-layer dd ul .h1 {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-top: -.05rem;
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-top: 0;
     box-shadow: 3px 3px 0 rgba(0, 0, 0, .13); // faint echo of the card's offset shadow
 }
 
