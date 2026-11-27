@@ -812,10 +812,10 @@
       btl: [0, 1300]
       ntl: [1301, 2100]
       atl: [2101, 20310]
-    # Newfoundland, from modeled treeline: median TL of the three Newfoundland
-    # subregions (~450 / 550 m), rounded to 100 ft
+    # verified by map review, 2026-11-26: NTL 1501-2000 ft
     "Northern Peninsula":
-      confidence: medium
+      confidence: high
+      verified: map review
       btl: [0, 1500]
-      ntl: [1501, 1800]
-      atl: [1801, 20310]
+      ntl: [1501, 2000]
+      atl: [2001, 20310]
