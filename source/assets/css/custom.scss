@@ -891,6 +891,9 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
 
 // avy index and region page maps: short when stacked on mobile, taller beside the list/report
 .avy-map {
+    // own stacking context: Leaflet's panes/controls (z-index 400-1000) stay below the mobile menu (z-50)
+    position: relative;
+    z-index: 0;
     height: 300px;
     @media screen and (min-width: 30em) {
         height: 420px;
