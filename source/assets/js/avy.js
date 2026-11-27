@@ -5,21 +5,42 @@ const indexSel = document.getElementById("indexSel");
 const zoneSel = document.getElementById("zoneSel");
 const regionSel = document.getElementById("regionSel");
 
+// known issues (open GitHub issues labeled avy), fetched once and reused on later toggles
+let issuesRequest = null;
+
 function getIssues() {
-  axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=avy&state=open')
-    .then(function (response) {
-      if(response.data.length) {
-          for (let c in response.data) {
-          let temp_html = '<div class="mv2"><a class="no-underline relative f6 black-70 hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
-          document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
-          }
-      } else {
-          let temp_html = '<div class="pa4 tc silver ma3 ba b--light-gray">No Issues Found.</div>';
-          document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
-      }
-    })
-    .catch(function (error) {
-      console.log(error);
+  if (!issuesRequest) {
+    issuesRequest = axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=avy&state=open')
+      .then(response => response.data)
+      .catch(error => {
+        console.log(error);
+        issuesRequest = null; // retry on the next open
+        return null;
+      });
+  }
+
+  issuesRequest.then(issues => {
+    const section = document.getElementById("issues");
+    if (!section.classList.contains('open')) return; // closed while loading
+    section.innerHTML = "";
+
+    if (issues && issues.length) {
+      issues.forEach(issue => {
+        const div = document.createElement("div");
+        div.className = "mv2";
+        const link = document.createElement("a");
+        link.className = "no-underline relative f6 black-70 hover-light-red";
+        link.href = issue.html_url;
+        link.textContent = issue.title;
+        div.appendChild(link);
+        section.appendChild(div);
+      });
+    } else {
+      const div = document.createElement("div");
+      div.className = "pa4 tc silver ma3 ba b--light-gray";
+      div.textContent = issues ? "No Issues Found." : "Couldn't load issues. Try again later.";
+      section.appendChild(div);
+    }
   });
 }
 
@@ -285,7 +306,7 @@ function loadLayer(zone, type) {
         showZone(filePath);
         revealZone(filePath);
       } else {
-        window.location.assign(`${zone.region}.html#zone-${filePath}`);
+        window.location.assign(`/avy/${zone.region}.html#zone-${filePath}`);
       }
     };
 
