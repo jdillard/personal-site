@@ -145,12 +145,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/">BTAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -170,12 +168,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/snake-river-range">BTAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -195,12 +191,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">BTAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -220,12 +214,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/togwotee-pass">BTAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -245,12 +237,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">EWYAIX</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -270,12 +260,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">EWYAIX</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -295,12 +283,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">EWYAIX</a> for more information.</div>
             
             
 
-            
             
 
             

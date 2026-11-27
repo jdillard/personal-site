@@ -165,12 +165,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/flathead-range-&-glacier-np">FAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -190,12 +188,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/northern-whitefish-range">FAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -215,12 +211,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/southern-whitefish-range">FAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -240,12 +234,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.flatheadavalanche.org/avalanche-forecast/#/swan-range">FAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -265,12 +257,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/bridger-range/">GNFAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -290,12 +280,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/cooke-city/">GNFAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -315,12 +303,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/island-park/">GNFAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -340,12 +326,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/lionhead-area/">GNFAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -365,12 +349,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-gallatin-range/">GNFAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -390,12 +372,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/northern-madison-range/">GNFAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -415,12 +395,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-gallatin-range/">GNFAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -440,12 +418,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.mtavalanche.com/avalanche-forecast#/southern-madison-range/">GNFAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -465,12 +441,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/east-cabinet-mountains/">IPAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -490,12 +464,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/purcell-mountains/">IPAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -515,12 +487,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/Bitterroot">WCMAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -540,12 +510,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://missoulaavalanche.org/forecasts/#/rattlesnake">WCMAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -565,12 +533,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="http://www.missoulaavalanche.org/forecasts/#/seeley-lake">WCMAC</a> for more information.</div>
             
             
 
-            
             
 
             

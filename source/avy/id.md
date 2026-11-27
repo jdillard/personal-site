@@ -149,12 +149,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/selkirk-mountains/">IPAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -174,12 +172,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/silver-valley-&-bitterroot-mountains/">IPAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -199,12 +195,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.idahopanhandleavalanche.org/forecasts/#/west-cabinet-mountains/">IPAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -224,12 +218,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/avalanche/salmon-river-mountains">PAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -249,12 +241,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/avalanche/west-mountains">PAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -274,12 +264,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/banner-summit">SNFAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -299,12 +287,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/galena-summit-&-eastern-mtns">SNFAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -324,12 +310,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/sawtooth-&-western-smoky-mtns">SNFAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -349,12 +333,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.sawtoothavalanche.com/forecasts/avalanche/soldier-&-wood-river-valley-mtns">SNFAC</a> for more information.</div>
             
             
 
-            
             
 
             

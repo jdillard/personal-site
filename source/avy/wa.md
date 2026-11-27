@@ -149,12 +149,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-central">NWAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -174,12 +172,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-north">NWAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -199,12 +195,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-south">NWAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -224,12 +218,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/olympics">NWAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -249,12 +241,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/snoqualmie-pass">NWAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -274,12 +264,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/stevens-pass">NWAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -299,12 +287,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-central">NWAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -324,12 +310,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-north">NWAC</a> for more information.</div>
             
             
 
-            
             
 
             
@@ -349,12 +333,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-south">NWAC</a> for more information.</div>
             
             
 
-            
             
 
             

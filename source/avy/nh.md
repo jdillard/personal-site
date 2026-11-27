@@ -133,12 +133,10 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://mountwashingtonavalanchecenter.org/forecasts/#/presidential-range ">MWAC</a> for more information.</div>
             
             
 
-            
             
 
             
