@@ -57,13 +57,15 @@ css_includes:
                 
                 <option value="CAIC-2747" title="Grand Mesa, Battlement Mesa" selected="">Grand Mesa, Battlement Mesa</option>
                 
-                <option value="CAIC-2754" title="Sawatch Mountains, Sangre de Cristo Mountains, Cochetopa Hills, Northern San Juan Mountains, La Garita Mountains" >Sawatch Mountains +4 more</option>
+                <option value="CAIC-2754" title="Sawatch Mountains, Sangre de Cristo Mountains, Pikes Peak Massif, Cochetopa Hills, Northern San Juan Mountains, La Garita Mountains" >Sawatch Mountains +5 more</option>
                 
-                <option value="CAIC-2755" title="Mosquito Range, Front Range, Elkhead Mountains, Pikes Peak Massif, Red Table and Hardscrabble, Ten Mile Range, Flat Top Mountains, Park Range, Sawatch Mountains, Medicine Bow Mountains, Gore Range, Rabbit Ears Mountains, Never Summer Mountains" >Mosquito Range +12 more</option>
+                <option value="CAIC-2697" title="Flat Top Mountains, Front Range, Park Range, Gore Range, Rabbit Ears Mountains, Never Summer Mountains" >Flat Top Mountains +5 more</option>
                 
-                <option value="CAIC-2753" title="Elk Mountains, Sawatch Mountains, West Elk Mountains" >Elk Mountains +2 more</option>
+                <option value="CAIC-2755" title="Mosquito Range, Front Range, Elkhead Mountains, Red Table and Hardscrabble, Ten Mile Range, Sawatch Mountains, Park Range, Medicine Bow Mountains, Gore Range" >Mosquito Range +8 more</option>
                 
                 <option value="CAIC-2660" title="La Plata Mountains, Northern San Juan Mountains, Rico Mountains, La Garita Mountains, Southern San Juan Mountains" >La Plata Mountains +4 more</option>
+                
+                <option value="CAIC-2753" title="Elk Mountains, Sawatch Mountains, West Elk Mountains" >Elk Mountains +2 more</option>
                 
             </select>
         </span>
@@ -137,16 +139,16 @@ css_includes:
 <div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="CAIC-2747-report" class="avy-zone" data-id="CAIC-2747" data-color="#50b848" data-published="Wednesday, November 25, 2026 4:30PM">
+        <div id="CAIC-2747-report" class="avy-zone" data-id="CAIC-2747" data-color="#50b848" data-published="Thursday, November 26, 2026 4:30PM">
             
             <div id="CAIC-2747-title" class="mb4 tc">
-                <div><a id="CAIC-2747-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=39.181875505109026,-107.76300339810068&z=10&b=mbt&a=sc_a0-0e0-10000fc50b848pa0-0e10001-10800fc50b848pa0-0e10801-20310fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-10000fc50b848pa0-0e10001-10800fc50b848pa0-0e10801-20310fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+                <div><a id="CAIC-2747-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=39.181875505109026,-107.76300339810068&z=10&b=mbt&a=sc_a0-0e0-10000fc50b848pa0-0e10001-10800fc50b848pa0-0e10801-20310fc939598&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-10000fc50b848pa0-0e10001-10800fc50b848pa0-0e10801-20310fc939598%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
             <dl class="f6">
                 <dt>
-                    <strong>2026-11-26 Avalanche Danger</strong>
+                    <strong>2026-11-27 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e10801-20310f 939598&#10;a0-0e10001-10800f 50b848&#10;a0-0e0-10000f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2747'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2747')" onblur="outFunc('danger-tooltip-CAIC-2747')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2747" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
                 <dd class="ml3">
@@ -194,7 +196,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             <p class="f6 mv1">
-                <strong>Issued at:</strong> Wednesday, November 25, 2026 4:30PM
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:30PM
             </p>
             
             
@@ -206,16 +208,16 @@ css_includes:
             
         </div>
         
-        <div id="CAIC-2754-report" class="avy-zone dn" data-id="CAIC-2754" data-color="#50b848" data-published="Wednesday, November 25, 2026 4:30PM">
+        <div id="CAIC-2754-report" class="avy-zone dn" data-id="CAIC-2754" data-color="#50b848" data-published="Thursday, November 26, 2026 4:30PM">
             
             <div id="CAIC-2754-title" class="mb4 tc">
-                <div><a id="CAIC-2754-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=38.31745249796981,-106.52463801609142&z=10&b=mbt&a=sc_a0-0e0-11200fc50b848pa0-0e11201-12200fc50b848pa0-0e12201-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-11200fc50b848pa0-0e11201-12200fc50b848pa0-0e12201-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+                <div><a id="CAIC-2754-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=38.31745249796981,-106.52463801609142&z=10&b=mbt&a=sc_a0-0e0-11200fc50b848pa0-0e11201-12200fc50b848pa0-0e12201-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-11200fc50b848pa0-0e11201-12200fc50b848pa0-0e12201-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
             <dl class="f6">
                 <dt>
-                    <strong>2026-11-26 Avalanche Danger</strong>
+                    <strong>2026-11-27 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e12201-20310f 50b848&#10;a0-0e11201-12200f 50b848&#10;a0-0e0-11200f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2754'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2754')" onblur="outFunc('danger-tooltip-CAIC-2754')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2754" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
                 <dd class="ml3">
@@ -263,7 +265,7 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             <p class="f6 mv1">
-                <strong>Issued at:</strong> Wednesday, November 25, 2026 4:30PM
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:30PM
             </p>
             
             
@@ -275,16 +277,85 @@ css_includes:
             
         </div>
         
-        <div id="CAIC-2755-report" class="avy-zone dn" data-id="CAIC-2755" data-color="#50b848" data-published="Wednesday, November 25, 2026 4:30PM">
+        <div id="CAIC-2697-report" class="avy-zone dn" data-id="CAIC-2697" data-color="#50b848" data-published="Thursday, November 26, 2026 4:30PM">
             
-            <div id="CAIC-2755-title" class="mb4 tc">
-                <div><a id="CAIC-2755-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=40.118907962155774,-106.26586409188813&z=10&b=mbt&a=sc_a0-0e0-10800fc50b848pa0-0e10801-11800fc50b848pa0-0e11801-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-10800fc50b848pa0-0e10801-11800fc50b848pa0-0e11801-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            <div id="CAIC-2697-title" class="mb4 tc">
+                <div><a id="CAIC-2697-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=39.92844085233544,-107.36418631878794&z=10&b=mbt&a=sc_a0-0e0-10300fc50b848pa0-0e10301-11300fc50b848pa0-0e11301-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-10300fc50b848pa0-0e10301-11300fc50b848pa0-0e11301-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
             <dl class="f6">
                 <dt>
-                    <strong>2026-11-26 Avalanche Danger</strong>
+                    <strong>2026-11-27 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11301-20310f 50b848&#10;a0-0e10301-11300f 50b848&#10;a0-0e0-10300f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2697'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2697')" onblur="outFunc('danger-tooltip-CAIC-2697')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2697" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2697">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (above 11301')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (10301' to 11300')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (below 10300')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
+                <b>Low confidence elevation bands.</b>
+                No published elevation bands were found for this zone, so these are a rough estimate.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:30PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/?lat=39.92844085233544&lng=-107.36418631878794">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="CAIC-2755-report" class="avy-zone dn" data-id="CAIC-2755" data-color="#50b848" data-published="Thursday, November 26, 2026 4:30PM">
+            
+            <div id="CAIC-2755-title" class="mb4 tc">
+                <div><a id="CAIC-2755-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=39.87951251500433,-106.03478476134555&z=10&b=mbt&a=sc_a0-0e0-10800fc50b848pa0-0e10801-11800fc50b848pa0-0e11801-20310fc50b848&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-10800fc50b848pa0-0e10801-11800fc50b848pa0-0e11801-20310fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <dl class="f6">
+                <dt>
+                    <strong>2026-11-27 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11801-20310f 50b848&#10;a0-0e10801-11800f 50b848&#10;a0-0e0-10800f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2755'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2755')" onblur="outFunc('danger-tooltip-CAIC-2755')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2755" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
                 <dd class="ml3">
@@ -332,119 +403,28 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             <p class="f6 mv1">
-                <strong>Issued at:</strong> Wednesday, November 25, 2026 4:30PM
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:30PM
             </p>
             
             
             <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/?lat=40.118907962155774&lng=-106.26586409188813">full forecast</a> before heading out.
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/?lat=39.87951251500433&lng=-106.03478476134555">full forecast</a> before heading out.
             </p>
             
             </div>
             
         </div>
         
-        <div id="CAIC-2753-report" class="avy-zone dn" data-id="CAIC-2753" data-color="#fff200" data-published="Wednesday, November 25, 2026 4:30PM">
-            
-            <div id="CAIC-2753-title" class="mb4 tc">
-                <div><a id="CAIC-2753-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=38.95535671864757,-106.9511441987443&z=10&b=mbt&a=sc_a0-0e0-10800fc50b848pa0-0e10801-11800fcfff200pa0-0e11801-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-10800fc50b848pa0-0e10801-11800fcfff200pa0-0e11801-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%222831343e-5830-4608-9595-8eeb0320adf4%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e10801-11800fcA200FFpa293-113e11801-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
-            
-            <dl class="f6">
-                <dt>
-                    <strong>2026-11-26 Avalanche Danger</strong>
-                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11801-20310f fff200&#10;a0-0e10801-11800f fff200&#10;a0-0e0-10800f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2753')" onblur="outFunc('danger-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                </dt>
-                <dd class="ml3">
-                    <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2753">
-                    
-                        <li class="pv1 atl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> <span class="desc">Moderate danger (above 11801')</span>
-                        </li>
-                    
-                        <li class="pv1 ntl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#fff200"
-                            
-                            ></div> <span class="desc">Moderate danger (10801' to 11800')</span>
-                        </li>
-                    
-                        <li class="pv1 btl">
-                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
-                            
-                                data-color1="#50b848"
-                            
-                            ></div> <span class="desc">Low danger (below 10800')</span>
-                        </li>
-                    
-                    </ul>
-                </dd>
-            </dl>
-            
-
-            
-            <dl class="f6">
-                
-                    <dt class="mt3">
-                        <strong>2026-11-26 Persistent Slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-113e11801-20310f A200FF&#10;a293-113e10801-11800f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2753')" onblur="outFunc('problem-1-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy 2026-11-26 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
-                    </dt>
-                    <dd class="ml3">
-                        <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2753">
-                        
-                            <li class="pv1 atl">
-                                <div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> <span class="desc">NW to E aspects (above 11801')</span>
-                            </li>
-                        
-                            <li class="pv1 ntl">
-                                <div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> <span class="desc">NW to E aspects (10801' to 11800')</span>
-                            </li>
-                        
-                        </ul>
-                    </dd>
-                
-            </dl>
-            
-
-            
-            <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
-                <b>Low confidence elevation bands.</b>
-                No published elevation bands were found for this zone, so these are a rough estimate.
-                Adjust them in CalTopo by editing the layer.
-            </div>
-            
-            
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
-            
-            <p class="f6 mv1">
-                <strong>Issued at:</strong> Wednesday, November 25, 2026 4:30PM
-            </p>
-            
-            
-            <p class="f6 mv1 measure center">
-                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/?lat=38.95535671864757&lng=-106.9511441987443">full forecast</a> before heading out.
-            </p>
-            
-            </div>
-            
-        </div>
-        
-        <div id="CAIC-2660-report" class="avy-zone dn" data-id="CAIC-2660" data-color="#fff200" data-published="Wednesday, November 25, 2026 4:30PM">
+        <div id="CAIC-2660-report" class="avy-zone dn" data-id="CAIC-2660" data-color="#fff200" data-published="Thursday, November 26, 2026 4:30PM">
             
             <div id="CAIC-2660-title" class="mb4 tc">
-                <div><a id="CAIC-2660-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=37.636766674935274,-107.33232497014352&z=10&b=mbt&a=sc_a0-0e0-11200fc50b848pa0-0e11201-12200fcfff200pa0-0e12201-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-11200fc50b848pa0-0e11201-12200fcfff200pa0-0e12201-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22e275c045-8472-4aee-8174-60cc0cf148aa%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-26%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e11201-12200fcA200FFpa248-113e12201-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+                <div><a id="CAIC-2660-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=37.636766674935274,-107.33232497014352&z=10&b=mbt&a=sc_a0-0e0-11200fc50b848pa0-0e11201-12200fcfff200pa0-0e12201-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-11200fc50b848pa0-0e11201-12200fcfff200pa0-0e12201-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22662011a2-f275-413f-ab40-388d9ee69cb5%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a248-113e11201-12200fcA200FFpa248-113e12201-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
             </div>
             
             
             <dl class="f6">
                 <dt>
-                    <strong>2026-11-26 Avalanche Danger</strong>
+                    <strong>2026-11-27 Avalanche Danger</strong>
                     <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e12201-20310f fff200&#10;a0-0e11201-12200f fff200&#10;a0-0e0-11200f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2660'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2660')" onblur="outFunc('danger-tooltip-CAIC-2660')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2660" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                 </dt>
                 <dd class="ml3">
@@ -483,8 +463,8 @@ css_includes:
             <dl class="f6">
                 
                     <dt class="mt3">
-                        <strong>2026-11-26 Persistent Slab</strong>
-                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-113e12201-20310f A200FF&#10;a248-113e11201-12200f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2660'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2660')" onblur="outFunc('problem-1-tooltip-CAIC-2660')" href="#" role="button" aria-label="Copy 2026-11-26 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2660" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <strong>2026-11-27 Persistent Slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a248-113e12201-20310f A200FF&#10;a248-113e11201-12200f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2660'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2660')" onblur="outFunc('problem-1-tooltip-CAIC-2660')" href="#" role="button" aria-label="Copy 2026-11-27 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2660" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                     </dt>
                     <dd class="ml3">
                         <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2660">
@@ -514,12 +494,103 @@ css_includes:
             <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
             
             <p class="f6 mv1">
-                <strong>Issued at:</strong> Wednesday, November 25, 2026 4:30PM
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:30PM
             </p>
             
             
             <p class="f6 mv1 measure center">
                 Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/?lat=37.636766674935274&lng=-107.33232497014352">full forecast</a> before heading out.
+            </p>
+            
+            </div>
+            
+        </div>
+        
+        <div id="CAIC-2753-report" class="avy-zone dn" data-id="CAIC-2753" data-color="#fff200" data-published="Thursday, November 26, 2026 4:30PM">
+            
+            <div id="CAIC-2753-title" class="mb4 tc">
+                <div><a id="CAIC-2753-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=38.95535671864757,-106.9511441987443&z=10&b=mbt&a=sc_a0-0e0-10800fc50b848pa0-0e10801-11800fcfff200pa0-0e11801-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-10800fc50b848pa0-0e10801-11800fcfff200pa0-0e11801-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%222357db4f-c1ce-405d-bdae-5659945843c0%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-27%20Persistent%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a293-113e10801-11800fcA200FFpa293-113e11801-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
+            </div>
+            
+            
+            <dl class="f6">
+                <dt>
+                    <strong>2026-11-27 Avalanche Danger</strong>
+                    <div class="tooltip dib v-top pl2"><a data-clipboard-text="a0-0e11801-20310f fff200&#10;a0-0e10801-11800f fff200&#10;a0-0e0-10800f 50b848" onclick="clickFunc(this, 'danger-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('danger-tooltip-CAIC-2753')" onblur="outFunc('danger-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                </dt>
+                <dd class="ml3">
+                    <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2753">
+                    
+                        <li class="pv1 atl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> <span class="desc">Moderate danger (above 11801')</span>
+                        </li>
+                    
+                        <li class="pv1 ntl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#fff200"
+                            
+                            ></div> <span class="desc">Moderate danger (10801' to 11800')</span>
+                        </li>
+                    
+                        <li class="pv1 btl">
+                            <div style="clear: both;" class="dynamic-color fl mr2 h1 w1"
+                            
+                                data-color1="#50b848"
+                            
+                            ></div> <span class="desc">Low danger (below 10800')</span>
+                        </li>
+                    
+                    </ul>
+                </dd>
+            </dl>
+            
+
+            
+            <dl class="f6">
+                
+                    <dt class="mt3">
+                        <strong>2026-11-27 Persistent Slab</strong>
+                        <div class="tooltip dib v-top pl2"><a data-clipboard-text="a293-113e11801-20310f A200FF&#10;a293-113e10801-11800f A200FF" onclick="clickFunc(this, 'problem-1-tooltip-CAIC-2753'); return false;" onmouseout="outFunc('problem-1-tooltip-CAIC-2753')" onblur="outFunc('problem-1-tooltip-CAIC-2753')" href="#" role="button" aria-label="Copy 2026-11-27 Persistent Slab rules"><span class="tooltiptext" id="problem-1-tooltip-CAIC-2753" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    </dt>
+                    <dd class="ml3">
+                        <ul class="list pl0 mt1 mb0 code f7 rules-CAIC-2753">
+                        
+                            <li class="pv1 atl">
+                                <div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> <span class="desc">NW to E aspects (above 11801')</span>
+                            </li>
+                        
+                            <li class="pv1 ntl">
+                                <div style="clear: both;background-color: #A200FF" class="fl mr2 h1 w1"></div> <span class="desc">NW to E aspects (10801' to 11800')</span>
+                            </li>
+                        
+                        </ul>
+                    </dd>
+                
+            </dl>
+            
+
+            
+            <div class="f6 black-70 bl bw2 b--light-red bg-washed-red pa2 br2 mv3 lh-copy" role="note">
+                <b>Low confidence elevation bands.</b>
+                No published elevation bands were found for this zone, so these are a rough estimate.
+                Adjust them in CalTopo by editing the layer.
+            </div>
+            
+            
+            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <p class="f6 mv1">
+                <strong>Issued at:</strong> Thursday, November 26, 2026 4:30PM
+            </p>
+            
+            
+            <p class="f6 mv1 measure center">
+                Forecast data from <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/">Colorado Avalanche Information Center</a>. This site is not affiliated with or endorsed by them. Read the <a class="no-underline fancy-link relative dark-gray b" href="https://avalanche.state.co.us/?lat=38.95535671864757&lng=-106.9511441987443">full forecast</a> before heading out.
             </p>
             
             </div>
