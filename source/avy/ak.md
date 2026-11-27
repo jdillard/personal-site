@@ -163,10 +163,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/chugach-state-park/">CNFAIC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -186,10 +188,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/seward-and-lost-lake/">CNFAIC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -209,10 +213,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/summit-lake/">CNFAIC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -232,10 +238,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/turnagain-pass-and-girdwood/">CNFAIC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -255,10 +263,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.coastalakavalanche.org/forecast/#/douglas-island/">CAAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -278,10 +288,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.coastalakavalanche.org/forecast/#/juneau-mainland/">CAAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -301,10 +313,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/cordova/">CAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -324,10 +338,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">EARAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -347,10 +363,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">EARAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -370,10 +388,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/chilkat-pass">HAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -393,10 +413,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/lutak">HAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -416,10 +438,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/transitional">HAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -439,10 +463,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://hpavalanche.org/forecast/#/hatcher-pass/">HPAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -462,10 +488,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/continental/">VAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -485,10 +513,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/intermountain/">VAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -508,10 +538,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/maritime/">VAC</a> for more information.</div>
             
             
 
+            
             
 
             
