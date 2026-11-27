@@ -227,15 +227,17 @@ function layerStyle(fillColor, fillOpacity = 0.4) {
 }
 
 // region page: every zone in its danger color, the selected one strong and the others faint
-const SELECTED_OPACITY = 0.6;
-const HOVER_OPACITY = 0.5;
-const OTHER_OPACITY = 0.4;
+const SELECTED_OPACITY = 0.5;
+const HOVER_OPACITY = 0.4;
+const SELECTED_OUTLINE = { color: "#333333", weight: 2.5 };
+const OTHER_OPACITY = 0.2;
 
 // resting style of a zone (restored after hover)
 function restStyle(filePath) {
   const color = baseColors[filePath] || GRAY;
   if (!zoneSel) return layerStyle(color);
-  return layerStyle(color, filePath === currentLayer ? SELECTED_OPACITY : OTHER_OPACITY);
+  if (filePath === currentLayer) return { ...layerStyle(color, SELECTED_OPACITY), ...SELECTED_OUTLINE };
+  return layerStyle(color, OTHER_OPACITY);
 }
 
 // hovered zone: its danger color at full hover strength (never weaker than when selected)
@@ -369,7 +371,11 @@ function loadLayer(zone, type) {
             }
 
             featureLayer.on('mouseover', function(e) {
-              hoverStart(featureLayer, () => featureLayer.setStyle(restStyle(filePath)));
+              hoverStart(featureLayer, () => {
+                featureLayer.setStyle(restStyle(filePath));
+                // keep the selected zone's outline on top of the neighbor that was just raised
+                if (currentLayer && currentLayer !== filePath) raiseLayer(currentLayer);
+              });
               e.target.setStyle(hoverStyle(filePath, zone.color));
               raiseLayer(filePath);
             });

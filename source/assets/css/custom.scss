@@ -908,6 +908,12 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     gap: 1rem;
 }
 
+// region page: map framed like the danger/problem cards beside it
+.avy-map-framed {
+    border: var(--avy-card-bw) solid #b0b0b0;
+    box-shadow: 5px 5px 0 #ececec;
+}
+
 #map.avy-map {
     @media screen and (min-width: 30em) {
         height: min(380px, 50vh);
