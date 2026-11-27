@@ -228,7 +228,7 @@ function layerStyle(fillColor, fillOpacity = 0.4) {
 
 // region page: every zone in its danger color, the selected one strong and the others faint
 const SELECTED_OPACITY = 0.5;
-const OTHER_OPACITY = 0.2;
+const OTHER_OPACITY = 0.3;
 
 // resting style of a zone (restored after hover)
 function restStyle(filePath) {
