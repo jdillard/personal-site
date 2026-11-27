@@ -230,7 +230,7 @@ function layerStyle(fillColor, fillOpacity = 0.4) {
 const SELECTED_OPACITY = 0.5;
 const HOVER_OPACITY = 0.4;
 const SELECTED_OUTLINE = { color: "#333333", weight: 2.5 };
-const OTHER_OPACITY = 0.2;
+const OTHER_OPACITY = 0.3;
 
 // resting style of a zone (restored after hover)
 function restStyle(filePath) {
