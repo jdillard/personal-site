@@ -162,21 +162,64 @@ def canada_area_elevations(subregions, subregion_ranges, elevations):
             keys.append(name)
         elif subregion_ranges.get(name) in elevations:
             keys.append(subregion_ranges[name])
-    # count identical band sets together (e.g. several subregions with their own equal entries)
+    return majority_elevations(keys, len(subregions), elevations) or elevations[0]
+
+
+def majority_elevations(keys, total, elevations):
+    """Bands that more than half of total parts map to, else None.
+
+    keys holds the elevations key of each part that has one. Identical band
+    sets count together (e.g. several ranges sharing the same entry).
+    """
     by_bands = Counter(json.dumps(elevations[key], sort_keys=True) for key in keys)
     if by_bands:
         bands, count = by_bands.most_common(1)[0]
-        if count * 2 > len(subregions):
+        if count * 2 > total:
             return next(elevations[key] for key in keys if json.dumps(elevations[key], sort_keys=True) == bands)
-    return elevations[0]
+    return None
 
 
-def short_area_name(subregions, max_shown=3):
-    """Readable short name for an area, e.g. "Blue River, Clearwater +8 more"."""
-    if len(subregions) <= max_shown:
-        return ", ".join(subregions)
-    shown = max_shown - 1
-    return f"{', '.join(subregions[:shown])} +{len(subregions) - shown} more"
+def zone_elevations(zone_id, ranges, elevations):
+    """Elevation bands for a US zone and whether they are the state default.
+
+    The zone's own entry wins. Else, for centers like CAIC that merge many
+    subzones into one forecast, ranges lists each subzone's range name and
+    the zone uses the range bands more than half of its subzones map to.
+    Else the state default (key 0).
+    """
+    if zone_id in elevations:
+        return elevations[zone_id], False
+    bands = majority_elevations([r for r in ranges if r in elevations], len(ranges), elevations)
+    if bands:
+        return bands, False
+    return elevations.get(0), True
+
+
+def short_area_name(subregions, max_chars=28):
+    """Readable short name for an area, e.g. "Blue River +9 more".
+
+    Shows as many whole names as fit in max_chars, counting the "+N more"
+    suffix for the rest, so dropdowns stay narrow. At least one name is shown.
+    """
+    if not subregions:
+        return ""
+    for count in range(len(subregions), 0, -1):
+        remaining = len(subregions) - count
+        name = ", ".join(subregions[:count]) + (f" +{remaining} more" if remaining else "")
+        if len(name) <= max_chars or count == 1:
+            return name
+
+
+def forecast_zone_names(report, zone_id):
+    """Distinct range names a forecast covers, from its forecast_zone list.
+
+    Centers like CAIC merge many small zones into one forecast, and the
+    map layer names them all generically ("CAIC zone"). The zone's own
+    entry comes first, then the rest in order of appearance.
+    """
+    zones = report.get("forecast_zone") or []
+    ordered = [z for z in zones if z.get("id") == zone_id] + [z for z in zones if z.get("id") != zone_id]
+    return list(dict.fromkeys(z["name"] for z in ordered if z.get("name")))
 
 
 #TODO better variable names
@@ -208,6 +251,10 @@ def danger_rule(elevations, band, level):
     }
 
 
+# aspect ranges clockwise from north; a problem rule's "rose" holds indexes into this for the template's aspect rose
+ROSE_ASPECTS = [aspect[name] for name in ("north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest")]
+
+
 def problem_rule(elevations, band, aspects, i):
     """Problem rule for the given aspects in a band, colored by problem number."""
     _, _, desc = sort_directions(aspects)
@@ -215,7 +262,8 @@ def problem_rule(elevations, band, aspects, i):
         "id": band,
         "desc": f"{desc} ({band_desc(elevations, band)})",
         "color": f"#{problem_color.get(i)}",
-        "aspects": list(aspects),
+        "aspects": list(aspects),  # raw aspect ranges, for the blurred layers
+        "rose": sorted({ROSE_ASPECTS.index(a) for a in aspects}),  # octant indexes, for the page's aspect rose
     }
 
 
@@ -392,7 +440,8 @@ def make_problem(i, name, rules, tomorrow, elevations):
     """
     layer_rules = blurred_problem_rules(rules, elevations, problem_color.get(i))
     return {
-        "name": f"{tomorrow} {name}",
+        "name": f"{tomorrow} {name}",  # CalTopo layer title, dated
+        "label": name,  # region page heading, no date
         "desc": f"Problem #{i+1}",
         "color": f"#{problem_color.get(i)}",
         "rules": rules,
@@ -526,6 +575,18 @@ def main():
             "danger": [],
             "problems": [],
         }
+
+        # CAIC zones are all named "CAIC zone" in the map layer; name them by the ranges their forecast covers
+        report_path = f"tools/avy/avalanche-reports-raw/{zone_info['slug']}.json"
+        if "CAIC" in zone_info["center_id"] and os.path.isfile(report_path):
+            with open(report_path) as fp:
+                report = json.load(fp)
+            ranges = forecast_zone_names(report, item["id"])
+            # one range name per subzone, for picking elevation bands by majority
+            zone_info["ranges"] = [z["name"] for z in report.get("forecast_zone") or [] if z.get("name")]
+            if ranges:
+                zone_info["name"] = ", ".join(ranges)
+                zone_info["short_name"] = short_area_name(ranges)
 
         # check if the zone's state already exists and append to it if so
         found = False
@@ -703,9 +764,8 @@ def main():
                             if is_expired(data.get("expires_time")):
                                 data = {}
                                 published = False
-                # use zone elevation profile if exists, else use the state level elevation profile
-                fallback = zone["zone_id"] not in state["elevations"]
-                elevations = state["elevations"].get(zone["zone_id"], state["elevations"].get(0))
+                # zone bands, else its subzones' majority range bands, else the state default
+                elevations, fallback = zone_elevations(zone["zone_id"], zone.get("ranges", []), state["elevations"])
                 zone["elevations"] = elevations
                 zone["confidence"] = band_confidence(elevations, fallback)
 

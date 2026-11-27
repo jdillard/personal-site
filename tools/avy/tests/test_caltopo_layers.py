@@ -9,7 +9,9 @@ from caltopo_layers import (
     split_area_name,
     subregions_geojson,
     short_area_name,
+    forecast_zone_names,
     canada_area_elevations,
+    zone_elevations,
     band_confidence,
 )
 
@@ -271,7 +273,20 @@ class TestShortAreaName:
         assert short_area_name(["Coquihalla", "Manning", "Skagit"]) == "Coquihalla, Manning, Skagit"
 
     def test_long_list_truncated_with_count(self):
-        assert short_area_name(["A", "B", "C", "D", "E"]) == "A, B +3 more"
+        assert short_area_name(["A", "B", "C", "D", "E"], max_chars=12) == "A, B +3 more"
+
+    def test_name_crossing_limit_collapses(self):
+        assert short_area_name(["Corner Brook", "Gros Morne", "Northern Peninsula"]) == "Corner Brook +2 more"
+
+    def test_suffix_counts_toward_limit(self):
+        # "Clearwater, North Okanagan +2 more" is 34 chars, over the default 28
+        assert short_area_name(["Clearwater", "North Okanagan", "A", "B"]) == "Clearwater +3 more"
+
+    def test_full_list_at_limit(self):
+        assert short_area_name(["Grand Mesa", "Battlement Mesa"]) == "Grand Mesa, Battlement Mesa"
+
+    def test_first_name_always_shown(self):
+        assert short_area_name(["A" * 40, "B"]) == "A" * 40 + " +1 more"
 
     def test_empty(self):
         assert short_area_name([]) == ""
@@ -328,6 +343,26 @@ class TestCanadaAreaElevations:
         assert canada_area_elevations([], self.RANGES, self.ELEVATIONS) == "default"
 
 
+class TestZoneElevations:
+    """Tests for zone_elevations()"""
+
+    ELEVATIONS = {0: "default", 2747: "mesa-zone", "Front Range": "central", "Gore Range": "central",
+                  "Park Range": "north"}
+
+    def test_zone_entry_wins(self):
+        assert zone_elevations(2747, ["Park Range"], self.ELEVATIONS) == ("mesa-zone", False)
+
+    def test_majority_of_subzones(self):
+        ranges = ["Front Range", "Gore Range", "Park Range", "Park Range"]
+        assert zone_elevations(1, ranges, {**self.ELEVATIONS, "Gore Range": "gore"}) == ("default", True)
+        ranges = ["Front Range", "Gore Range", "Park Range"]
+        assert zone_elevations(1, ranges, self.ELEVATIONS) == ("central", False)
+
+    def test_falls_back_to_default(self):
+        assert zone_elevations(1, [], self.ELEVATIONS) == ("default", True)
+        assert zone_elevations(1, ["Unknown", "Park Range"], self.ELEVATIONS) == ("default", True)
+
+
 class TestBandConfidence:
     BANDS = {"btl": [0, 1], "ntl": [2, 3], "atl": [4, 5]}
 
@@ -339,3 +374,20 @@ class TestBandConfidence:
 
     def test_state_default_fallback_is_low(self):
         assert band_confidence(self.BANDS, fallback=True) == "low"
+
+
+class TestForecastZoneNames:
+    """Tests for forecast_zone_names()"""
+
+    def test_own_zone_first_then_distinct(self):
+        report = {"forecast_zone": [
+            {"id": 2720, "name": "Battlement Mesa"},
+            {"id": 2747, "name": "Grand Mesa"},
+            {"id": 2719, "name": "Battlement Mesa"},
+            {"id": 2744, "name": "Grand Mesa"},
+        ]}
+        assert forecast_zone_names(report, 2747) == ["Grand Mesa", "Battlement Mesa"]
+
+    def test_missing_or_empty(self):
+        assert forecast_zone_names({}, 1) == []
+        assert forecast_zone_names({"forecast_zone": None}, 1) == []
