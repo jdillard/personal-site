@@ -222,8 +222,24 @@ let regionRequest = 0;    // guards against out-of-order region renders on the i
 // region page: pad around the selected zone so neighboring zones stay visible to click
 const ZONE_FIT = { padding: [60, 60] };
 
-function layerStyle(fillColor) {
-  return { color: "#777777", fillColor: fillColor, weight: 1, fillOpacity: 0.4 };
+function layerStyle(fillColor, fillOpacity = 0.4) {
+  return { color: "#777777", fillColor: fillColor, weight: 1, fillOpacity: fillOpacity };
+}
+
+// region page: every zone in its danger color, the selected one strong and the others faint
+const SELECTED_OPACITY = 0.5;
+const OTHER_OPACITY = 0.2;
+
+// resting style of a zone (restored after hover)
+function restStyle(filePath) {
+  const color = baseColors[filePath] || GRAY;
+  if (!zoneSel) return layerStyle(color);
+  return layerStyle(color, filePath === currentLayer ? SELECTED_OPACITY : OTHER_OPACITY);
+}
+
+// hovered zone: its danger color at full hover strength (never weaker than when selected)
+function hoverStyle(filePath, color) {
+  return { fillColor: color || GRAY, fillOpacity: filePath === currentLayer ? SELECTED_OPACITY : 0.4 };
 }
 
 // subregion outlines (Canada areas grouped from several subregions), filename as key
@@ -297,10 +313,10 @@ function loadSubregions(zone, layer, onClick) {
 
           featureLayer.on('mouseover', function(e) {
             hoverStart(featureLayer, () => {
-              layer.setStyle(layerStyle(baseColors[filePath] || GRAY));
+              layer.setStyle(restStyle(filePath));
               subLayer.setStyle(SUB_REST);
             });
-            layer.setStyle({ fillColor: zone.color || GRAY });
+            layer.setStyle(hoverStyle(filePath, zone.color));
             subLayer.setStyle(SUB_AREA_HOVER);
             e.target.setStyle(SUB_HOVER);
           });
@@ -341,7 +357,7 @@ function loadLayer(zone, type) {
     layerLoads[filePath] = fetchGeoJSON(filePath)
       .then(data => {
         const layer = L.geoJSON(data, {
-          style: () => layerStyle(baseColors[filePath] || GRAY),
+          style: () => restStyle(filePath),
           onEachFeature: function(feature, featureLayer) {
             featureLayer.on('click', onClick);
             if (touchOnly) return;
@@ -351,8 +367,8 @@ function loadLayer(zone, type) {
             }
 
             featureLayer.on('mouseover', function(e) {
-              hoverStart(featureLayer, () => featureLayer.setStyle(layerStyle(baseColors[filePath] || GRAY)));
-              e.target.setStyle({ fillColor: zone.color || GRAY });
+              hoverStart(featureLayer, () => featureLayer.setStyle(restStyle(filePath)));
+              e.target.setStyle(hoverStyle(filePath, zone.color));
               raiseLayer(filePath);
             });
 
@@ -376,20 +392,18 @@ function ensureMapPositioned() {
   if(!mapPositioned) map.setView([45, -115], 4);
 }
 
-// region page: color the selected zone with its danger color, gray out the previous one
+// region page: strengthen the selected zone's danger color, fade the previous one
 function highlightLayer(filePath) {
-  if (currentLayer && currentLayer !== filePath) {
-    baseColors[currentLayer] = GRAY;
-    if (layers[currentLayer]) layers[currentLayer].setStyle({ fillColor: GRAY });
-  }
-
+  const previous = currentLayer;
   const report = document.getElementById(`${filePath}-report`);
   baseColors[filePath] = (report && report.getAttribute("data-color")) || GRAY;
   currentLayer = filePath;
 
+  if (previous && previous !== filePath && layers[previous]) layers[previous].setStyle(restStyle(previous));
+
   // if the layer is still loading, loadZoneLayers zooms to it once it arrives
   if (layers[filePath]) {
-    layers[filePath].setStyle({ fillColor: baseColors[filePath] });
+    layers[filePath].setStyle(restStyle(filePath));
     raiseLayer(filePath);
     map.fitBounds(layers[filePath].getBounds(), ZONE_FIT);
   }
@@ -406,6 +420,8 @@ function loadZoneLayers() {
       color: report.getAttribute("data-color"),
       subregions: report.hasAttribute("data-subregions")
     }));
+
+  zones.forEach(zone => { baseColors[zone.value] = zone.color; });
 
   Promise.all(zones.map(zone =>
     loadLayer(zone, "zone").then(layer => {
