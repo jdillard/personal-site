@@ -141,10 +141,21 @@ window.clickFunc = async function(element, tooltipId) {
     console.error("Copy failed:", error);
     tooltip.textContent = "Copy failed";
   }
+
+  // show the result briefly (touch screens have no hover), then reset the text
+  const wrap = element.closest('.tooltip');
+  if (wrap) wrap.classList.add('show');
+  clearTimeout(element.copyTimer);
+  element.copyTimer = setTimeout(() => {
+    if (wrap) wrap.classList.remove('show');
+    window.outFunc(tooltipId);
+  }, 1500);
 }
 
 window.outFunc = function(tooltipId) {
-  document.getElementById(tooltipId).textContent = "Copy rules";
+  const tooltip = document.getElementById(tooltipId);
+  if (tooltip.closest('.tooltip.show')) return; // keep "Copied!" until clickFunc's timer resets it
+  tooltip.textContent = "Copy rules";
 }
 
 // style danger layer colors

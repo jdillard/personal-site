@@ -41,10 +41,19 @@
   border-color: #555 transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext,
-.tooltip:focus-within .tooltiptext {
+// hover only where there's a mouse (touch screens keep :hover stuck after a tap), focus only from the keyboard
+// (a clicked link keeps focus); .show is set briefly after a copy
+.tooltip:has(:focus-visible) .tooltiptext,
+.tooltip.show .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+@media (hover: hover) {
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .top-nav {
