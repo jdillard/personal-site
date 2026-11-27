@@ -592,7 +592,9 @@
   # (or `polygon_name`, which wins) in tools/avy/data/canadian_subregions.geojson. An
   # area uses the bands more than half of its subregions map to, else the default.
   #
-  # DERIVED, NOT PUBLISHED. Two sources, noted on each entry:
+  # DERIVED, NOT PUBLISHED. Entries marked `verified: map review` (confidence high) were
+  # set by hand against treeline on the CalTopo topo layer; their comment gives the date.
+  # The rest come from two sources, noted on each entry:
   # - Forecast mentions: rough treeline by range, spot-checked against treeline/alpine
   #   elevations in the 2023-24 to 2025-26 forecast archives
   #   (https://api.avalanche.ca/forecasts/en/products?date=<ISO datetime>, every 2 days);
@@ -659,6 +661,41 @@
       btl: [0, 5900]
       ntl: [5901, 6400]
       atl: [6401, 20310]
+    # verified by map review, 2026-11-26: NTL 5201-6400 ft
+    "Blue River":
+      confidence: high
+      verified: map review
+      btl: [0, 5200]
+      ntl: [5201, 6400]
+      atl: [6401, 20310]
+    # verified by map review, 2026-11-26: NTL 6101-6700 ft
+    "Clearwater":
+      confidence: high
+      verified: map review
+      btl: [0, 6100]
+      ntl: [6101, 6700]
+      atl: [6701, 20310]
+    # verified by map review, 2026-11-26: NTL 5301-6400 ft
+    "McBride":
+      confidence: high
+      verified: map review
+      btl: [0, 5300]
+      ntl: [5301, 6400]
+      atl: [6401, 20310]
+    # verified by map review, 2026-11-26: NTL 5401-6600 ft
+    "Premier":
+      confidence: high
+      verified: map review
+      btl: [0, 5400]
+      ntl: [5401, 6600]
+      atl: [6601, 20310]
+    # verified by map review, 2026-11-26: NTL 5401-6500 ft
+    "Quesnel":
+      confidence: high
+      verified: map review
+      btl: [0, 5400]
+      ntl: [5401, 6500]
+      atl: [6501, 20310]
     # from modeled treeline: median TL of Clemina, Gold, Jordan, North Monashee,
     # Rossland, South Okanagan, Whatshan (~1900 / 2000 m), rounded to 100 ft
     "Monashees":
@@ -705,18 +742,29 @@
       btl: [0, 3100]
       ntl: [3101, 3400]
       atl: [3401, 20310]
-    # Newfoundland, from modeled treeline: median TL of the three subregions
-    # (~450 / 550 m), shared so an area combining them still matches
+    # verified by map review, 2026-11-26: NTL 3201-3700 ft
+    "Chic-Chocs":
+      confidence: high
+      verified: map review
+      btl: [0, 3200]
+      ntl: [3201, 3700]
+      atl: [3701, 20310]
+    # verified by map review, 2026-11-26: NTL 1101-1800 ft
     "Corner Brook":
-      confidence: medium
-      btl: [0, 1500]
-      ntl: [1501, 1800]
+      confidence: high
+      verified: map review
+      btl: [0, 1100]
+      ntl: [1101, 1800]
       atl: [1801, 20310]
+    # verified by map review, 2026-11-26: NTL 1301-2100 ft
     "Gros Morne":
-      confidence: medium
-      btl: [0, 1500]
-      ntl: [1501, 1800]
-      atl: [1801, 20310]
+      confidence: high
+      verified: map review
+      btl: [0, 1300]
+      ntl: [1301, 2100]
+      atl: [2101, 20310]
+    # Newfoundland, from modeled treeline: median TL of the three Newfoundland
+    # subregions (~450 / 550 m), rounded to 100 ft
     "Northern Peninsula":
       confidence: medium
       btl: [0, 1500]
