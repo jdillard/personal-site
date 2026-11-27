@@ -258,6 +258,10 @@ def danger_rule(elevations, band, level):
     }
 
 
+# aspect ranges clockwise from north; a rule's "aspects" holds indexes into this for the template's aspect rose
+ROSE_ASPECTS = [aspect[name] for name in ("north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest")]
+
+
 def problem_rule(elevations, band, aspects, i):
     """Problem rule for the given aspects in a band, colored by problem number."""
     start, end, desc = sort_directions(aspects)
@@ -266,6 +270,7 @@ def problem_rule(elevations, band, aspects, i):
         "layer": shading_rule(elevations, band, problem_color.get(i), start, end),
         "desc": f"{desc} ({band_desc(elevations, band)})",
         "color": f"#{problem_color.get(i)}",
+        "aspects": sorted({ROSE_ASPECTS.index(a) for a in aspects}),
     }
 
 
