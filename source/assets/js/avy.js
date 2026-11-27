@@ -157,8 +157,23 @@ document.querySelectorAll('.dynamic-color').forEach(el => {
 // initialize the zones map
 // no initial view: Leaflet queues layers until the first fitBounds positions the map,
 // which avoids a visible jump from a placeholder location
-const map = L.map('map');
+// touch screens: one finger scrolls the page, two fingers pan/pinch the map (Leaflet's pinch also pans);
+// hover highlights/tooltips are skipped since a tap would leave them stuck on
+const touchOnly = window.matchMedia('(hover: none)').matches;
+const map = L.map('map', { dragging: !touchOnly });
 let mapPositioned = false;
+
+if (touchOnly) {
+  const hint = L.DomUtil.create('div', 'avy-map-hint', map.getContainer());
+  hint.textContent = 'Use two fingers to move the map';
+  let hintTimer = null;
+  map.getContainer().addEventListener('touchmove', (e) => {
+    if (e.touches.length !== 1) return;
+    hint.classList.add('show');
+    clearTimeout(hintTimer);
+    hintTimer = setTimeout(() => hint.classList.remove('show'), 1500);
+  }, { passive: true });
+}
 map.whenReady(() => { mapPositioned = true; });
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_489n_1_38909aed6058ce0068372c23', {
@@ -206,8 +221,9 @@ function loadSubregions(zone, layer, onClick) {
       const subLayer = L.geoJSON(data, {
         style: () => SUB_REST,
         onEachFeature: function(feature, featureLayer) {
-          featureLayer.bindTooltip(feature.properties.name, { sticky: true, direction: "top", offset: [0, -8] });
           featureLayer.on('click', onClick);
+          if (touchOnly) return;
+          featureLayer.bindTooltip(feature.properties.name, { sticky: true, direction: "top", offset: [0, -8] });
 
           featureLayer.on('mouseover', function(e) {
             layer.setStyle({ fillColor: zone.color || GRAY });
@@ -229,6 +245,14 @@ function loadSubregions(zone, layer, onClick) {
     .catch(error => console.error("Error loading subregions:", error));
 }
 
+// region page: after a map tap, scroll up to the zone picker if the report is above the screen (stacked mobile layout)
+function revealZone(filePath) {
+  const report = document.getElementById(`${filePath}-report`);
+  if (!report || report.getBoundingClientRect().top >= 0) return;
+  const target = (zoneSel && zoneSel.closest('.avy-picker')) || report;
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 // load a GeoJSON file once and build its layer (not added to the map)
 // zone: {value, name, color, region, subregions}; type: "zone" (region page) or "region" (index page)
 function loadLayer(zone, type) {
@@ -237,6 +261,7 @@ function loadLayer(zone, type) {
     const onClick = function() {
       if(type == "zone") {
         showZone(filePath);
+        revealZone(filePath);
       } else {
         window.location.assign(`${zone.region}.html#zone-${filePath}`);
       }
@@ -248,6 +273,7 @@ function loadLayer(zone, type) {
           style: () => layerStyle(baseColors[filePath] || GRAY),
           onEachFeature: function(feature, featureLayer) {
             featureLayer.on('click', onClick);
+            if (touchOnly) return;
             // areas split into subregions get their names from the subregion outlines
             if (zone.name && !zone.subregions) {
               featureLayer.bindTooltip(zone.name, { sticky: true, direction: "top", offset: [0, -8] });

@@ -901,6 +901,26 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
         height: min(380px, 50vh);
     }
 
+    // touch screens: shown briefly when a one-finger swipe scrolls past the map
+    .avy-map-hint {
+        position: absolute;
+        inset: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, .45);
+        color: #fff;
+        font-weight: bold;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity .3s;
+
+        &.show {
+            opacity: 1;
+        }
+    }
+
     // tapped zones take focus; hide the browser's focus/tap box around the shape
     .leaflet-interactive {
         -webkit-tap-highlight-color: transparent;
