@@ -277,7 +277,8 @@ def problem_rule(elevations, band, aspects, i):
 def make_problem(i, name, rules, tomorrow, layer_rules=None):
     """Problem entry for the template; layer_rules sets the CalTopo layer order if it differs."""
     return {
-        "name": f"{tomorrow} {name}",
+        "name": f"{tomorrow} {name}",  # CalTopo layer title, dated
+        "label": name,  # region page heading, no date
         "desc": f"Problem #{i+1}",
         "color": f"#{problem_color.get(i)}",
         "rules": rules,

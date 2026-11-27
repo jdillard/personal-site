@@ -142,10 +142,10 @@ css_includes:
                 {% for problem in zone.problems %}
                 <div class="avy-problem">
                     <dt>
-                        <strong>{{ problem.name }}</strong>
+                        <strong>{{ problem.label }}</strong>
                     </dt>
                     <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="{{ problem.rules | map(attribute='layer') | reverse | join('&#10;') }}" onclick="clickFunc(this, 'problem-{{ loop.index }}-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.slug }}')" onblur="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy {{ problem.name }} rules"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <div class="tooltip avy-copy"><a data-clipboard-text="{{ problem.rules | map(attribute='layer') | reverse | join('&#10;') }}" onclick="clickFunc(this, 'problem-{{ loop.index }}-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.slug }}')" onblur="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy {{ problem.label }} rules"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                         <ul class="list pl0 mt1 mb0 code f7 rules-{{ zone.slug }}">
                         {% for rule in problem.rules|reverse %}
                             <li class="pv1 {{ rule.id }}">
