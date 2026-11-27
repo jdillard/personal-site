@@ -219,6 +219,9 @@ const baseColors = {};    // resting fill color per layer, restored on mouseout
 let currentLayer = null;  // selected zone on region pages, filename as key
 let regionRequest = 0;    // guards against out-of-order region renders on the index page
 
+// region page: pad around the selected zone so neighboring zones stay visible to click
+const ZONE_FIT = { padding: [60, 60] };
+
 function layerStyle(fillColor) {
   return { color: "#777777", fillColor: fillColor, weight: 1, fillOpacity: 0.4 };
 }
@@ -388,7 +391,7 @@ function highlightLayer(filePath) {
   if (layers[filePath]) {
     layers[filePath].setStyle({ fillColor: baseColors[filePath] });
     raiseLayer(filePath);
-    map.fitBounds(layers[filePath].getBounds());
+    map.fitBounds(layers[filePath].getBounds(), ZONE_FIT);
   }
 }
 
@@ -410,7 +413,7 @@ function loadZoneLayers() {
       layer.addTo(map);
       if (zone.value === currentLayer) {
         raiseLayer(zone.value);
-        map.fitBounds(layer.getBounds());
+        map.fitBounds(layer.getBounds(), ZONE_FIT);
       }
     })
   )).then(ensureMapPositioned);
