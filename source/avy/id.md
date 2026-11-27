@@ -145,7 +145,8 @@ css_includes:
 <div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="IPAC-3018-report" class="avy-zone" data-id="IPAC-3018" data-color="#939598" data-published="Friday, November 20, 2026 10:15AM">
+        <div id="IPAC-3018-report" class="avy-zone" data-id="IPAC-3018" data-color="#939598" data-published="False">
+            
             
             
             
@@ -153,6 +154,7 @@ css_includes:
             
             
 
+            
             
 
             
@@ -168,7 +170,8 @@ css_includes:
             
         </div>
         
-        <div id="IPAC-1902-report" class="avy-zone dn" data-id="IPAC-1902" data-color="#939598" data-published="Friday, November 20, 2026 10:15AM">
+        <div id="IPAC-1902-report" class="avy-zone dn" data-id="IPAC-1902" data-color="#939598" data-published="False">
+            
             
             
             
@@ -176,6 +179,7 @@ css_includes:
             
             
 
+            
             
 
             
@@ -191,7 +195,8 @@ css_includes:
             
         </div>
         
-        <div id="IPAC-1900-report" class="avy-zone dn" data-id="IPAC-1900" data-color="#939598" data-published="Friday, November 20, 2026 10:15AM">
+        <div id="IPAC-1900-report" class="avy-zone dn" data-id="IPAC-1900" data-color="#939598" data-published="False">
+            
             
             
             
@@ -199,6 +204,7 @@ css_includes:
             
             
 
+            
             
 
             
@@ -218,10 +224,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/avalanche/salmon-river-mountains">PAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -241,10 +249,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://payetteavalanche.org/forecasts/avalanche/west-mountains">PAC</a> for more information.</div>
             
             
 
+            
             
 
             
@@ -260,7 +270,8 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-2907-report" class="avy-zone dn" data-id="SNFAC-2907" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
+        <div id="SNFAC-2907-report" class="avy-zone dn" data-id="SNFAC-2907" data-color="#939598" data-published="Friday, November 27, 2026 12:00PM">
+            
             
             
             
@@ -268,6 +279,7 @@ css_includes:
             
             
 
+            
             
 
             
@@ -283,7 +295,8 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-2904-report" class="avy-zone dn" data-id="SNFAC-2904" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
+        <div id="SNFAC-2904-report" class="avy-zone dn" data-id="SNFAC-2904" data-color="#939598" data-published="Friday, November 27, 2026 12:00PM">
+            
             
             
             
@@ -291,6 +304,7 @@ css_includes:
             
             
 
+            
             
 
             
@@ -306,7 +320,8 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-2906-report" class="avy-zone dn" data-id="SNFAC-2906" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
+        <div id="SNFAC-2906-report" class="avy-zone dn" data-id="SNFAC-2906" data-color="#939598" data-published="Friday, November 27, 2026 12:00PM">
+            
             
             
             
@@ -314,6 +329,7 @@ css_includes:
             
             
 
+            
             
 
             
@@ -329,7 +345,8 @@ css_includes:
             
         </div>
         
-        <div id="SNFAC-2905-report" class="avy-zone dn" data-id="SNFAC-2905" data-color="#939598" data-published="Wednesday, November 25, 2026 9:09AM">
+        <div id="SNFAC-2905-report" class="avy-zone dn" data-id="SNFAC-2905" data-color="#939598" data-published="Friday, November 27, 2026 12:00PM">
+            
             
             
             
@@ -337,6 +354,7 @@ css_includes:
             
             
 
+            
             
 
             

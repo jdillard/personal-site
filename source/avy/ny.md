@@ -133,10 +133,12 @@ css_includes:
             
             
             
+            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://dec.ny.gov/things-to-do/hiking/adirondack-backcountry/backcountry-information-for-adirondack-park">NYSAC</a> for more information.</div>
             
             
 
+            
             
 
             
