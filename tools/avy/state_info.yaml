@@ -703,6 +703,55 @@
       btl: [0, 6200]
       ntl: [6201, 6600]
       atl: [6601, 20310]
+    # verified by map review, 2026-11-26: NTL 5201-6800 ft
+    "Clemina":
+      confidence: high
+      verified: map review
+      btl: [0, 5200]
+      ntl: [5201, 6800]
+      atl: [6801, 20310]
+    # verified by map review, 2026-11-26: NTL 5001-6600 ft
+    "Gold":
+      confidence: high
+      verified: map review
+      btl: [0, 5000]
+      ntl: [5001, 6600]
+      atl: [6601, 20310]
+    # verified by map review, 2026-11-26: NTL 5401-6600 ft
+    "Jordan":
+      confidence: high
+      verified: map review
+      btl: [0, 5400]
+      ntl: [5401, 6600]
+      atl: [6601, 20310]
+    # verified by map review, 2026-11-26: NTL 5001-6600 ft
+    "North Monashee":
+      confidence: high
+      verified: map review
+      btl: [0, 5000]
+      ntl: [5001, 6600]
+      atl: [6601, 20310]
+    # verified by map review, 2026-11-26: NTL 5601-6600 ft
+    "Rossland":
+      confidence: high
+      verified: map review
+      btl: [0, 5600]
+      ntl: [5601, 6600]
+      atl: [6601, 20310]
+    # verified by map review, 2026-11-26: NTL 5901-7000 ft
+    "South Okanagan":
+      confidence: high
+      verified: map review
+      btl: [0, 5900]
+      ntl: [5901, 7000]
+      atl: [7001, 20310]
+    # verified by map review, 2026-11-26: NTL 5301-6600 ft
+    "Whatshan":
+      confidence: high
+      verified: map review
+      btl: [0, 5300]
+      ntl: [5301, 6600]
+      atl: [6601, 20310]
     # from modeled treeline: median TL of 12 subregions (Badshot-Battle, Central
     # Selkirk, Esplanade, Glacier, Goat, Kokanee, Kootenay Pass, Norns, North
     # Selkirk, Retallack, Valhalla, Ymir) (~2000 / 2150 m), rounded to 100 ft
