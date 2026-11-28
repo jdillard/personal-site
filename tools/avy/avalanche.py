@@ -111,7 +111,6 @@ def main():
                 with open(f'{dir}/{center_id}-{zone_id}.json','w') as out:
                     out.write(json.dumps(data))
 
-            #TODO add `"offSeason": false,`
             # create Canada based avalanche reports
             if avy_lat and avy_long and not os.path.exists(f"{dir}/{avy_lat}-{avy_long}.json"):
                 time.sleep(5.5)
@@ -141,6 +140,7 @@ def main():
                     })
 
                 data = {
+                    "offSeason": False,
                     "published": published,
                     "expires": expires,
                     "expires_at": dateutil.parser.parse(
