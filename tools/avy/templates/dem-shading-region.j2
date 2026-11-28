@@ -127,6 +127,7 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
+            <details class="avy-howto"><summary>How to use this <span class="clip">danger </span>layer</summary><div class="avy-howto-body"><p>Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Treeline shifts with aspect, terrain and local weather, so band edges aren't lines.</p><p>A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p></div></details>
             </div>
             {% else %}
             {% if zone.report_access is sameas false %}
@@ -162,6 +163,7 @@ css_includes:
                 </div>
                 {% endfor %}
             </dl>
+            <details class="avy-howto"><summary>{% if zone.problems | length > 1 %}How to use these <span class="clip">problem </span>layers{% else %}How to use this <span class="clip">problem </span>layer{% endif %}</summary><div class="avy-howto-body"><p>Problem aspects and elevations show where the forecaster expects each problem to be most widespread or most sensitive, not hard boundaries. A problem can also exist on neighboring aspects and elevations, and unshaded slopes aren't free of it.</p><p>Gullies, ridges and convex rolls face many directions within one slope, so one slope can fall partly inside and partly outside the shading. A slope outside the shading can still be threatened by a shaded slope above it. Read the forecast's problem description for likelihood, size and distribution.</p></div></details>
             </div>
             {% endif %}
             {% if zone.danger or zone.problems %}
