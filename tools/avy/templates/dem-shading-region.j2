@@ -183,7 +183,7 @@ css_includes:
             {% endif %}
 
             {% if zone.danger or zone.problems %}
-            <div class="f6 black-70 bl bw2 {{ 'b--gold bg-washed-yellow' if zone.confidence == 'medium' else 'b--light-red bg-washed-red' if zone.confidence == 'low' else 'b--light-gray bg-near-white' }} pa2 br2 mv3 lh-copy" role="note">
+            <div class="f6 black-70 bl bw2 {{ 'b--gold bg-washed-yellow' if zone.confidence == 'medium' else 'b--light-red bg-washed-red' if zone.confidence == 'low' else 'b--green bg-washed-green' }} pa2 br2 mv3 lh-copy" role="note">
                 <b>Confidence level:</b>
                 {% if zone.confidence == "medium" -%}
                 {{ zone.center_name }} doesn't publish numeric elevation bands, so these are derived from elevations mentioned in its past forecasts.
