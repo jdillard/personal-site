@@ -5,21 +5,42 @@ const indexSel = document.getElementById("indexSel");
 const zoneSel = document.getElementById("zoneSel");
 const regionSel = document.getElementById("regionSel");
 
+// known issues (open GitHub issues labeled avy), fetched once and reused on later toggles
+let issuesRequest = null;
+
 function getIssues() {
-  axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=avy&state=open')
-    .then(function (response) {
-      if(response.data.length) {
-          for (let c in response.data) {
-          let temp_html = '<div class="mv2"><a class="no-underline relative f6 black-70 hover-light-red" href="'+response.data[c].html_url+'">'+response.data[c].title+'</a></div>';
-          document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
-          }
-      } else {
-          let temp_html = '<div class="pa4 tc silver ma3 ba b--light-gray">No Issues Found.</div>';
-          document.getElementById("issues").insertAdjacentHTML("beforeend", temp_html);
-      }
-    })
-    .catch(function (error) {
-      console.log(error);
+  if (!issuesRequest) {
+    issuesRequest = axios.get('https://api.github.com/repos/jdillard/personal-site/issues?labels=avy&state=open')
+      .then(response => response.data)
+      .catch(error => {
+        console.log(error);
+        issuesRequest = null; // retry on the next open
+        return null;
+      });
+  }
+
+  issuesRequest.then(issues => {
+    const section = document.getElementById("issues");
+    if (!section.classList.contains('open')) return; // closed while loading
+    section.innerHTML = "";
+
+    if (issues && issues.length) {
+      issues.forEach(issue => {
+        const div = document.createElement("div");
+        div.className = "mv2";
+        const link = document.createElement("a");
+        link.className = "no-underline relative f6 black-70 hover-light-red";
+        link.href = issue.html_url;
+        link.textContent = issue.title;
+        div.appendChild(link);
+        section.appendChild(div);
+      });
+    } else {
+      const div = document.createElement("div");
+      div.className = "pa4 tc silver ma3 ba b--light-gray";
+      div.textContent = issues ? "No Issues Found." : "Couldn't load issues. Try again later.";
+      section.appendChild(div);
+    }
   });
 }
 
@@ -55,21 +76,27 @@ function showRegion(region_id, updateHash = true) {
 
   if(updateHash) setHash(region_id == "all" ? "" : `region-${region_id}`);
   if(indexSel) indexSel.value = region_id;
+
+  // map card's tab names the shown region (the region card's heading)
+  const title = document.getElementById('map-title');
+  if (title) {
+    const heading = region_id != "all" && document.querySelector(`#${region_id}-region h3`);
+    title.textContent = heading ? `${heading.textContent.trim()} Forecast Zones` : "All Forecast Zones";
+  }
+
   showRegionLayers(region_id);
   return true;
 }
 
-// region page: list every area in the selected zone under the map when its dropdown label is shortened
+// region page: list every area in the selected zone under the map (full name; the dropdown label may be shortened)
 function showZoneAreas() {
   const areas = document.getElementById("zone-areas");
   const list = document.getElementById("zone-areas-list");
   const option = zoneSel && zoneSel.selectedOptions[0];
   if (!areas || !list || !option) return;
 
-  const full = option.title;
-  const shortened = full && full !== option.textContent.trim();
-  list.textContent = shortened ? full : "";
-  areas.classList.toggle('dn', !shortened);
+  list.textContent = option.title || option.textContent.trim();
+  areas.classList.remove('dn');
 }
 
 // region page: show zone details (report/map)
@@ -82,6 +109,10 @@ function showZone(zone_id, updateHash = true) {
   });
 
   report.classList.remove('dn');
+
+  document.querySelectorAll('.avy-zone-link').forEach(function(div) {
+    div.classList.toggle('dn', div.dataset.id !== zone_id);
+  });
 
   if(updateHash) setHash(`zone-${zone_id}`);
   if(zoneSel) zoneSel.value = zone_id;
@@ -120,10 +151,21 @@ window.clickFunc = async function(element, tooltipId) {
     console.error("Copy failed:", error);
     tooltip.textContent = "Copy failed";
   }
+
+  // show the result briefly (touch screens have no hover), then reset the text
+  const wrap = element.closest('.tooltip');
+  if (wrap) wrap.classList.add('show');
+  clearTimeout(element.copyTimer);
+  element.copyTimer = setTimeout(() => {
+    if (wrap) wrap.classList.remove('show');
+    window.outFunc(tooltipId);
+  }, 1500);
 }
 
 window.outFunc = function(tooltipId) {
-  document.getElementById(tooltipId).textContent = "Copy rules";
+  const tooltip = document.getElementById(tooltipId);
+  if (tooltip.closest('.tooltip.show')) return; // keep "Copied!" until clickFunc's timer resets it
+  tooltip.textContent = "Copy rules";
 }
 
 // style danger layer colors
@@ -157,8 +199,23 @@ document.querySelectorAll('.dynamic-color').forEach(el => {
 // initialize the zones map
 // no initial view: Leaflet queues layers until the first fitBounds positions the map,
 // which avoids a visible jump from a placeholder location
-const map = L.map('map');
+// touch screens: one finger scrolls the page, two fingers pan/pinch the map (Leaflet's pinch also pans);
+// hover highlights/tooltips are skipped since a tap would leave them stuck on
+const touchOnly = window.matchMedia('(hover: none)').matches;
+const map = L.map('map', { dragging: !touchOnly });
 let mapPositioned = false;
+
+if (touchOnly) {
+  const hint = L.DomUtil.create('div', 'avy-map-hint', map.getContainer());
+  hint.textContent = 'Use two fingers to move the map';
+  let hintTimer = null;
+  map.getContainer().addEventListener('touchmove', (e) => {
+    if (e.touches.length !== 1) return;
+    hint.classList.add('show');
+    clearTimeout(hintTimer);
+    hintTimer = setTimeout(() => hint.classList.remove('show'), 1500);
+  }, { passive: true });
+}
 map.whenReady(() => { mapPositioned = true; });
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_489n_1_38909aed6058ce0068372c23', {
@@ -174,8 +231,32 @@ const baseColors = {};    // resting fill color per layer, restored on mouseout
 let currentLayer = null;  // selected zone on region pages, filename as key
 let regionRequest = 0;    // guards against out-of-order region renders on the index page
 
-function layerStyle(fillColor) {
-  return { color: "#777777", fillColor: fillColor, weight: 1, fillOpacity: 0.4 };
+// region page: pad around the selected zone so neighboring zones stay visible to click
+const ZONE_FIT = { padding: [60, 60] };
+
+function layerStyle(fillColor, fillOpacity = 0.4) {
+  return { color: "#777777", fillColor: fillColor, weight: 1, fillOpacity: fillOpacity };
+}
+
+// region page: every zone in its danger color, the selected one strong and the others faint
+const SELECTED_OPACITY = 0.5;
+const HOVER_OPACITY = 0.4;
+const SELECTED_OUTLINE = { color: "#333333", weight: 2.5 };
+const OTHER_OPACITY = 0.3;
+
+// resting style of a zone (restored after hover)
+function restStyle(filePath) {
+  const color = baseColors[filePath] || GRAY;
+  if (!zoneSel) return layerStyle(color);
+  if (filePath === currentLayer) return { ...layerStyle(color, SELECTED_OPACITY), ...SELECTED_OUTLINE };
+  return layerStyle(color, OTHER_OPACITY);
+}
+
+// hovered zone: its danger color at full hover strength (never weaker than when selected)
+// index page: no selected zone, so the hovered one gets the selected outline
+function hoverStyle(filePath, color) {
+  if (!zoneSel) return { fillColor: color || GRAY, fillOpacity: 0.4, ...SELECTED_OUTLINE };
+  return { fillColor: color || GRAY, fillOpacity: filePath === currentLayer ? SELECTED_OPACITY : HOVER_OPACITY };
 }
 
 // subregion outlines (Canada areas grouped from several subregions), filename as key
@@ -185,8 +266,24 @@ const SUB_REST = { color: "#555555", weight: 1, opacity: 0, fill: true, fillOpac
 const SUB_AREA_HOVER = { opacity: 0.7, weight: 1, dashArray: "4 3" };
 const SUB_HOVER = { opacity: 1, weight: 2, dashArray: null };
 
+// shapes of a zone (and its subregion outlines), in the order bringToFront leaves them
+function layerPaths(filePath) {
+  return [layers[filePath], subLayers[filePath]]
+    .filter(Boolean)
+    .flatMap(group => group.getLayers().map(layer => layer.getElement && layer.getElement()))
+    .filter(Boolean);
+}
+
 // raise a zone and its subregion outlines above other zones
+// skipped when already on top: re-appending the shape under the cursor drops clicks (mousedown and mouseup
+// land on a moved node) and re-fires mouseover, so multi-shape zones couldn't be clicked
 function raiseLayer(filePath) {
+  const paths = layerPaths(filePath);
+  if (paths.length) {
+    const siblings = Array.from(paths[0].parentNode.children).slice(-paths.length);
+    if (siblings.every((el, i) => el === paths[i])) return;
+  }
+
   if (layers[filePath]) layers[filePath].bringToFront();
   if (subLayers[filePath]) subLayers[filePath].bringToFront();
 }
@@ -198,6 +295,27 @@ function fetchGeoJSON(path) {
   });
 }
 
+// one hovered shape at a time: mouseout is sometimes missed (shapes are re-ordered under the cursor
+// by bringToFront), so a new hover, leaving the map, or moving over empty map resets the last one
+let hovered = null;  // {layer, reset}
+
+function hoverStart(layer, reset) {
+  if (hovered && hovered.layer !== layer) hoverEnd(hovered.layer);
+  hovered = { layer, reset };
+}
+
+function hoverEnd(layer) {
+  if (!hovered || (layer && hovered.layer !== layer)) return;
+  hovered.reset();
+  hovered.layer.closeTooltip();
+  hovered = null;
+}
+
+map.on('mousemove', (e) => {
+  if (hovered && !e.originalEvent.target.classList.contains('leaflet-interactive')) hoverEnd();
+});
+map.getContainer().addEventListener('mouseleave', () => hoverEnd());
+
 // load the subregion outlines for an area and keep them on the map whenever the area is
 function loadSubregions(zone, layer, onClick) {
   const filePath = zone.value;
@@ -206,19 +324,21 @@ function loadSubregions(zone, layer, onClick) {
       const subLayer = L.geoJSON(data, {
         style: () => SUB_REST,
         onEachFeature: function(feature, featureLayer) {
-          featureLayer.bindTooltip(feature.properties.name, { sticky: true, direction: "top", offset: [0, -8] });
           featureLayer.on('click', onClick);
+          if (touchOnly) return;
+          featureLayer.bindTooltip(feature.properties.name, { sticky: true, direction: "top", offset: [0, -8] });
 
           featureLayer.on('mouseover', function(e) {
-            layer.setStyle({ fillColor: zone.color || GRAY });
+            hoverStart(featureLayer, () => {
+              layer.setStyle(restStyle(filePath));
+              subLayer.setStyle(SUB_REST);
+            });
+            layer.setStyle(hoverStyle(filePath, zone.color));
             subLayer.setStyle(SUB_AREA_HOVER);
             e.target.setStyle(SUB_HOVER);
           });
 
-          featureLayer.on('mouseout', function() {
-            layer.setStyle(layerStyle(baseColors[filePath] || GRAY));
-            subLayer.setStyle(SUB_REST);
-          });
+          featureLayer.on('mouseout', () => hoverEnd(featureLayer));
         }
       });
       subLayers[filePath] = subLayer;
@@ -229,6 +349,14 @@ function loadSubregions(zone, layer, onClick) {
     .catch(error => console.error("Error loading subregions:", error));
 }
 
+// region page: after a map tap, scroll up to the zone picker if the report is above the screen (stacked mobile layout)
+function revealZone(filePath) {
+  const report = document.getElementById(`${filePath}-report`);
+  if (!report || report.getBoundingClientRect().top >= 0) return;
+  const target = (zoneSel && zoneSel.closest('.avy-picker')) || report;
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 // load a GeoJSON file once and build its layer (not added to the map)
 // zone: {value, name, color, region, subregions}; type: "zone" (region page) or "region" (index page)
 function loadLayer(zone, type) {
@@ -237,30 +365,35 @@ function loadLayer(zone, type) {
     const onClick = function() {
       if(type == "zone") {
         showZone(filePath);
+        revealZone(filePath);
       } else {
-        window.location.assign(`${zone.region}.html#zone-${filePath}`);
+        window.location.assign(`/avy/${zone.region}.html#zone-${filePath}`);
       }
     };
 
     layerLoads[filePath] = fetchGeoJSON(filePath)
       .then(data => {
         const layer = L.geoJSON(data, {
-          style: () => layerStyle(baseColors[filePath] || GRAY),
+          style: () => restStyle(filePath),
           onEachFeature: function(feature, featureLayer) {
             featureLayer.on('click', onClick);
+            if (touchOnly) return;
             // areas split into subregions get their names from the subregion outlines
             if (zone.name && !zone.subregions) {
               featureLayer.bindTooltip(zone.name, { sticky: true, direction: "top", offset: [0, -8] });
             }
 
             featureLayer.on('mouseover', function(e) {
-              e.target.setStyle({ fillColor: zone.color || GRAY });
+              hoverStart(featureLayer, () => {
+                featureLayer.setStyle(restStyle(filePath));
+                // keep the selected zone's outline on top of the neighbor that was just raised
+                if (currentLayer && currentLayer !== filePath) raiseLayer(currentLayer);
+              });
+              e.target.setStyle(hoverStyle(filePath, zone.color));
               raiseLayer(filePath);
             });
 
-            featureLayer.on('mouseout', function(e) {
-              e.target.setStyle(layerStyle(baseColors[filePath] || GRAY));
-            });
+            featureLayer.on('mouseout', () => hoverEnd(featureLayer));
           }
         });
         layers[filePath] = layer;
@@ -280,22 +413,20 @@ function ensureMapPositioned() {
   if(!mapPositioned) map.setView([45, -115], 4);
 }
 
-// region page: color the selected zone with its danger color, gray out the previous one
+// region page: strengthen the selected zone's danger color, fade the previous one
 function highlightLayer(filePath) {
-  if (currentLayer && currentLayer !== filePath) {
-    baseColors[currentLayer] = GRAY;
-    if (layers[currentLayer]) layers[currentLayer].setStyle({ fillColor: GRAY });
-  }
-
+  const previous = currentLayer;
   const report = document.getElementById(`${filePath}-report`);
   baseColors[filePath] = (report && report.getAttribute("data-color")) || GRAY;
   currentLayer = filePath;
 
+  if (previous && previous !== filePath && layers[previous]) layers[previous].setStyle(restStyle(previous));
+
   // if the layer is still loading, loadZoneLayers zooms to it once it arrives
   if (layers[filePath]) {
-    layers[filePath].setStyle({ fillColor: baseColors[filePath] });
+    layers[filePath].setStyle(restStyle(filePath));
     raiseLayer(filePath);
-    map.fitBounds(layers[filePath].getBounds());
+    map.fitBounds(layers[filePath].getBounds(), ZONE_FIT);
   }
 }
 
@@ -311,13 +442,15 @@ function loadZoneLayers() {
       subregions: report.hasAttribute("data-subregions")
     }));
 
+  zones.forEach(zone => { baseColors[zone.value] = zone.color; });
+
   Promise.all(zones.map(zone =>
     loadLayer(zone, "zone").then(layer => {
       if (!layer) return;
       layer.addTo(map);
       if (zone.value === currentLayer) {
         raiseLayer(zone.value);
-        map.fitBounds(layer.getBounds());
+        map.fitBounds(layer.getBounds(), ZONE_FIT);
       }
     })
   )).then(ensureMapPositioned);
@@ -364,6 +497,21 @@ function showRegionLayers(region) {
 
     if (bounds.isValid()) map.fitBounds(bounds);
     ensureMapPositioned();
+  });
+}
+
+// index page: hovering a zone in the region lists highlights its shape on the map
+if (indexSel && !touchOnly) {
+  document.querySelectorAll('.avy-region li[data-zone]').forEach(li => {
+    const filePath = li.getAttribute('data-zone');
+    li.addEventListener('mouseenter', () => {
+      const layer = layers[filePath];
+      if (!layer || !map.hasLayer(layer)) return;
+      hoverStart(layer, () => layer.setStyle(restStyle(filePath)));
+      layer.setStyle(hoverStyle(filePath, li.getAttribute('data-color')));
+      raiseLayer(filePath);
+    });
+    li.addEventListener('mouseleave', () => hoverEnd(layers[filePath]));
   });
 }
 

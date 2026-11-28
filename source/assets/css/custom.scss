@@ -41,10 +41,19 @@
   border-color: #555 transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext,
-.tooltip:focus-within .tooltiptext {
+// hover only where there's a mouse (touch screens keep :hover stuck after a tap), focus only from the keyboard
+// (a clicked link keeps focus); .show is set briefly after a copy
+.tooltip:has(:focus-visible) .tooltiptext,
+.tooltip.show .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+@media (hover: hover) {
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .top-nav {
@@ -560,6 +569,7 @@ header.post-cover {
 
 // Brutalist dropdowns (avy zone/region pickers)
 $avy-gray: #666;
+$avy-card-border: #c8c8c8; // avy layer cards, their folder tabs and the region map frame
 $avy-line-gray: #bbb; // separators inside avy layer cards
 $avy-tab-bg: #f5f5f5; // card tab fill
 $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its opened text
@@ -667,7 +677,7 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     margin: 3.25rem 0 1.25rem;
     padding: .6rem .8rem;
     background: #fff;
-    border: var(--avy-card-bw) solid #b0b0b0;
+    border: var(--avy-card-bw) solid $avy-card-border;
     box-shadow: 5px 5px 0 #ececec;
 }
 
@@ -684,7 +694,7 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     white-space: nowrap;
     // outer shape in the border color; ::before insets the pale fill by the border width.
     // No bottom inset: the tab opens onto the card's top border
-    background: #b0b0b0;
+    background: $avy-card-border;
     clip-path: polygon(0 0, calc(100% - .8rem) 0, 100% 100%, 0 100%);
 }
 
@@ -852,6 +862,11 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     content: "\2212";
 }
 
+// map card has no padding, so the fold sits flush under the map
+.avy-map-card .avy-howto {
+    margin: 0;
+}
+
 
 
 .avy-howto-body {
@@ -882,6 +897,9 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
 
 // avy index and region page maps: short when stacked on mobile, taller beside the list/report
 .avy-map {
+    // own stacking context: Leaflet's panes/controls (z-index 400-1000) stay below the mobile menu (z-50)
+    position: relative;
+    z-index: 0;
     height: 300px;
     @media screen and (min-width: 30em) {
         height: 420px;
@@ -896,9 +914,68 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     gap: 1rem;
 }
 
+// index + region page maps: framed like the region page danger/problem cards
+.avy-map-framed {
+    border: var(--avy-card-bw) solid $avy-card-border;
+    box-shadow: 5px 5px 0 #ececec;
+}
+
+// map card: folder tab title (.avy-layer-title) on its top border, like the cards; room above for the tab
+.avy-map-card {
+    position: relative;
+    margin-top: 2.25rem;
+
+    .avy-layer-title {
+        max-width: calc(100% - 1rem);
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    // leave room for the hint, so a long region name is cut short instead of running under it
+    // (hint is hidden on touch, so the title gets the full width there)
+    @media (hover: hover) {
+        &:has(.avy-map-tip) .avy-layer-title {
+            max-width: calc(100% - 8.5rem);
+        }
+    }
+}
+
+// index + region pages: hint across from the tab, above the map's top-right corner; no hover/click hint on touch
+.avy-map-tip {
+    position: absolute;
+    bottom: calc(100% + var(--avy-card-bw) + .25rem);
+    right: 0;
+    font-size: .8rem;
+    color: #777;
+
+    @media (hover: none) {
+        display: none;
+    }
+}
+
 #map.avy-map {
     @media screen and (min-width: 30em) {
         height: min(380px, 50vh);
+    }
+
+    // touch screens: shown briefly when a one-finger swipe scrolls past the map
+    .avy-map-hint {
+        position: absolute;
+        inset: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, .45);
+        color: #fff;
+        font-weight: bold;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity .3s;
+
+        &.show {
+            opacity: 1;
+        }
     }
 
     // tapped zones take focus; hide the browser's focus/tap box around the shape
@@ -911,11 +988,36 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     }
 }
 
+// masonry: columns instead of a grid, so a short card doesn't leave a gap under it until the row's tallest ends
 .avy-regions {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    columns: 16rem;
     column-gap: 2rem;
-    align-items: start;
+
+    // region lists as cards with folder tabs. inline-block keeps the top margin (room for the tab)
+    // at the top of each column, where a block's margin would be truncated
+    .avy-region.avy-layer {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        break-inside: avoid;
+        margin: 2.25rem 0 .5rem;
+
+        // index region picker hides the other regions with .dn, which this selector outranks
+        &.dn {
+            display: none;
+        }
+    }
+
+    // swatch in its own column so long zone names wrap under the text, not the swatch;
+    // centered on the first line
+    .avy-region li {
+        display: flex;
+
+        > div {
+            flex: none;
+            margin-top: calc((1lh - 1rem) / 2);
+        }
+    }
 }
 
 .avy-layout.avy-single {
@@ -931,7 +1033,7 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
         }
 
         .avy-regions {
-            grid-template-columns: 1fr;
+            columns: 1;
         }
 
         #map.avy-map {

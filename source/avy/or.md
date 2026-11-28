@@ -140,6 +140,26 @@ css_includes:
     </div>
 </div>
 
+<div class="tc mt4">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+
 <div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
@@ -193,7 +213,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-3032-report" class="avy-zone dn" data-id="NWAC-3032" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
+        <div id="NWAC-3032-report" class="avy-zone dn" data-id="NWAC-3032" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
             
             
             
@@ -344,9 +364,13 @@ css_includes:
         </div>
         
     </div>
-    <div class="ph3 w-100 w-50-ns">
-        <div class="avy-map" id="map"></div>
-        <p id="zone-areas" class="f6 black-70 lh-copy tc mt3 dn"><b>This zone covers:</b> <span id="zone-areas-list"></span></p>
+    <div class="ph3 w-100 w-50-ns mt4 mt0-ns">
+        <div class="avy-map-card avy-map-framed">
+            <h3 class="avy-layer-title">Oregon Forecast Zones</h3>
+            <span class="avy-map-tip">Click a zone to view</span>
+            <div class="avy-map" id="map"></div>
+            <details id="zone-areas" class="avy-howto dn"><summary>Areas in this zone</summary><div class="avy-howto-body"><p><b>This zone covers:</b> <span id="zone-areas-list"></span></p></div></details>
+        </div>
     </div>
 </div>
 
