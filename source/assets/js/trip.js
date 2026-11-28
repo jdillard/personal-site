@@ -53,6 +53,10 @@ if(report_element) {
     try {
       const response = await axios.get(`/assets/json/avalanche-reports/${left}-${right}.json`);
       const data = response.data;
+      // Canada reports link to their forecast area on the Canada region page
+      if (data && data.area_id) {
+        avyMapUrl = `/avy/canada.html#zone-${data.area_id}`;
+      }
       // avalanche.org asks that danger ratings be expired accordingly;
       // if the forecast has passed its expiration time, say so instead of
       // presenting stale ratings as current.

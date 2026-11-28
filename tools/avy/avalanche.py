@@ -147,6 +147,7 @@ def main():
                         jsonResponse["report"]["validUntil"]
                     ).isoformat(),
                     "url": url,
+                    "area_id": jsonResponse["area"]["id"],
                     "name": "Avalanche Canada",
                     "danger": danger_ratings
                 }
