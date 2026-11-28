@@ -932,8 +932,11 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     }
 
     // leave room for the hint, so a long region name is cut short instead of running under it
-    &:has(.avy-map-tip) .avy-layer-title {
-        max-width: calc(100% - 8.5rem);
+    // (hint is hidden on touch, so the title gets the full width there)
+    @media (hover: hover) {
+        &:has(.avy-map-tip) .avy-layer-title {
+            max-width: calc(100% - 8.5rem);
+        }
     }
 }
 
