@@ -752,7 +752,6 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     right: 0;
 }
 
-// icon is an <img>, so lighten with opacity; full strength on hover/focus
 // tooltip is centered by default, which hangs past the right edge (and widens the page on
 // mobile) since the button sits flush right; anchor it to the button's right side instead
 .avy-copy .tooltiptext {
@@ -767,6 +766,7 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     margin-left: 0;
 }
 
+// icon is an <img>, so lighten with opacity; full strength on hover/focus
 .avy-copy img {
     opacity: .45;
     transition: opacity .1s;
