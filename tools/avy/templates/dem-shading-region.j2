@@ -78,6 +78,16 @@ css_includes:
     </div>
 </div>
 
+<div class="tc mt4">
+    {% for zone in zones %}
+    {% if zone.danger %}
+    <div id="{{ zone.slug }}-title" class="avy-zone-link{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}">
+        <a id="{{ zone.slug }}-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=12&b=mbt&{{ zone.layers }}">Open in CalTopo <span aria-hidden="true">↗</span></a>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
 <div class="flex flex-column flex-row-ns mt4">
     {#- aspect rose for a problem rule: 8 slices clockwise from N, active aspects in the problem color #}
     {%- macro aspect_rose(active, color) -%}
@@ -88,11 +98,6 @@ css_includes:
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         {% for zone in zones %}
         <div id="{{ zone.slug }}-report" class="avy-zone{% if not loop.first %} dn{% endif %}" data-id="{{ zone.slug }}" data-color="{{ zone.color }}"{% if zone.has_subregions %} data-subregions="true"{% endif %} data-published="{{ zone.published }}">
-            {% if zone.danger %}
-            <div id="{{ zone.slug }}-title" class="mb4 tc">
-                <div><a id="{{ zone.slug }}-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll={{ zone.geo[1] }},{{ zone.geo[0] }}&z=12&b=mbt&{{ zone.layers }}">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            {% endif %}
             {% if zone.danger or zone.problems %}
             <section class="avy-layers" aria-label="CalTopo layers">
             {% endif %}

@@ -110,6 +110,10 @@ function showZone(zone_id, updateHash = true) {
 
   report.classList.remove('dn');
 
+  document.querySelectorAll('.avy-zone-link').forEach(function(div) {
+    div.classList.toggle('dn', div.dataset.id !== zone_id);
+  });
+
   if(updateHash) setHash(`zone-${zone_id}`);
   if(zoneSel) zoneSel.value = zone_id;
   showZoneAreas();
