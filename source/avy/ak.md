@@ -184,7 +184,7 @@ css_includes:
     
     
     <div id="HPAC-2152-title" class="avy-zone-link dn" data-id="HPAC-2152">
-        <a id="HPAC-2152-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=61.76835763061106,-149.2457324108388&z=12&b=mbt&a=sc_a0-0e0-2500fc50b848pa0-0e2501-3500fc50b848pa0-0e3501-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-2500fc50b848pa0-0e2501-3500fc50b848pa0-0e3501-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%223c6a28ef-5d21-4fe3-bf78-fc62c84612a5%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e3501-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a>
+        <a id="HPAC-2152-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=61.76835763061106,-149.2457324108388&z=12&b=mbt&a=sc_a0-0e0-2500fc50b848pa0-0e2501-3500fc50b848pa0-0e3501-20310fcfff200&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e0-2500fc50b848pa0-0e2501-3500fc50b848pa0-0e3501-20310fcfff200%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22896d4fae-2a5f-45f9-82f4-bcf70de7b89a%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a158-158e3501-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a>
     </div>
     
     
@@ -212,7 +212,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -236,7 +236,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -260,7 +260,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -284,7 +284,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -308,7 +308,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -332,7 +332,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -356,7 +356,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -380,7 +380,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -404,7 +404,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -428,7 +428,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -452,7 +452,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -476,7 +476,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -506,7 +506,7 @@ css_includes:
                             
                                 data-color1="#fff200"
                             
-                            ></div> <span class="desc">Moderate danger (above 3501')</span>
+                            ></div> <span class="desc">Moderate (above 3501')</span>
                         </li>
                     
                         <li class="pv1 ntl">
@@ -514,7 +514,7 @@ css_includes:
                             
                                 data-color1="#50b848"
                             
-                            ></div> <span class="desc">Low danger (2501' to 3500')</span>
+                            ></div> <span class="desc">Low (2501' to 3500')</span>
                         </li>
                     
                         <li class="pv1 btl">
@@ -522,7 +522,7 @@ css_includes:
                             
                                 data-color1="#50b848"
                             
-                            ></div> <span class="desc">Low danger (below 2500')</span>
+                            ></div> <span class="desc">Low (below 2500')</span>
                         </li>
                     
                     </ul>
@@ -563,9 +563,9 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
-            <p class="f6 mv1">
+            <p class="f7 f6-ns code mt1 mb2">
                 <strong>Issued at:</strong> Friday, November 27, 2026 7:00AM
             </p>
             
@@ -591,7 +591,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -615,7 +615,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -639,7 +639,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -656,7 +656,8 @@ css_includes:
             <h3 class="avy-layer-title">Alaska Forecast Zones</h3>
             <span class="avy-map-tip">Click a zone to view</span>
             <div class="avy-map" id="map"></div>
-            <details id="zone-areas" class="avy-howto dn"><summary>Areas in this zone</summary><div class="avy-howto-body"><p><b>This zone covers:</b> <span id="zone-areas-list"></span></p></div></details>
+            
+            
         </div>
     </div>
 </div>

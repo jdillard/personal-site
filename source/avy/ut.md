@@ -344,7 +344,8 @@ css_includes:
             <h3 class="avy-layer-title">Utah Forecast Zones</h3>
             <span class="avy-map-tip">Click a zone to view</span>
             <div class="avy-map" id="map"></div>
-            <details id="zone-areas" class="avy-howto dn"><summary>Areas in this zone</summary><div class="avy-howto-body"><p><b>This zone covers:</b> <span id="zone-areas-list"></span></p></div></details>
+            
+            
         </div>
     </div>
 </div>
