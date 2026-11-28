@@ -171,7 +171,6 @@ css_includes:
             
             
             
-            
             <div class="avy-note-wrap">
                 <div class="shadow-5 dark-blue bg-lightest-blue bl bw3 b--dark-blue mv3 tl lh-copy" style="border-radius: 5px; font-size: 1.05em; padding: .1em 1.75em;" role="note">
                     <p class="i" style="margin: .8em 0;"><b>Note:</b> Danger and problem layers aren't available here, as this site doesn't have access to the Utah Avalanche Center's forecast data. Please visit the <a class="no-underline fancy-link relative dark-blue b" href="https://utahavalanchecenter.org/forecast/abajos">Utah Avalanche Center</a> for the latest forecast.</p>
@@ -188,7 +187,6 @@ css_includes:
         </div>
         
         <div id="UAC-1736-report" class="avy-zone dn" data-id="UAC-1736" data-color="#939598" data-published="False">
-            
             
             
             
@@ -211,7 +209,6 @@ css_includes:
             
             
             
-            
             <div class="avy-note-wrap">
                 <div class="shadow-5 dark-blue bg-lightest-blue bl bw3 b--dark-blue mv3 tl lh-copy" style="border-radius: 5px; font-size: 1.05em; padding: .1em 1.75em;" role="note">
                     <p class="i" style="margin: .8em 0;"><b>Note:</b> Danger and problem layers aren't available here, as this site doesn't have access to the Utah Avalanche Center's forecast data. Please visit the <a class="no-underline fancy-link relative dark-blue b" href="https://utahavalanchecenter.org/forecast/moab">Utah Avalanche Center</a> for the latest forecast.</p>
@@ -228,7 +225,6 @@ css_includes:
         </div>
         
         <div id="UAC-1737-report" class="avy-zone dn" data-id="UAC-1737" data-color="#939598" data-published="False">
-            
             
             
             
@@ -251,7 +247,6 @@ css_includes:
             
             
             
-            
             <div class="avy-note-wrap">
                 <div class="shadow-5 dark-blue bg-lightest-blue bl bw3 b--dark-blue mv3 tl lh-copy" style="border-radius: 5px; font-size: 1.05em; padding: .1em 1.75em;" role="note">
                     <p class="i" style="margin: .8em 0;"><b>Note:</b> Danger and problem layers aren't available here, as this site doesn't have access to the Utah Avalanche Center's forecast data. Please visit the <a class="no-underline fancy-link relative dark-blue b" href="https://utahavalanchecenter.org/forecast/provo">Utah Avalanche Center</a> for the latest forecast.</p>
@@ -268,7 +263,6 @@ css_includes:
         </div>
         
         <div id="UAC-1738-report" class="avy-zone dn" data-id="UAC-1738" data-color="#939598" data-published="False">
-            
             
             
             
@@ -291,7 +285,6 @@ css_includes:
             
             
             
-            
             <div class="avy-note-wrap">
                 <div class="shadow-5 dark-blue bg-lightest-blue bl bw3 b--dark-blue mv3 tl lh-copy" style="border-radius: 5px; font-size: 1.05em; padding: .1em 1.75em;" role="note">
                     <p class="i" style="margin: .8em 0;"><b>Note:</b> Danger and problem layers aren't available here, as this site doesn't have access to the Utah Avalanche Center's forecast data. Please visit the <a class="no-underline fancy-link relative dark-blue b" href="https://utahavalanchecenter.org/forecast/skyline">Utah Avalanche Center</a> for the latest forecast.</p>
@@ -311,7 +304,6 @@ css_includes:
             
             
             
-            
             <div class="avy-note-wrap">
                 <div class="shadow-5 dark-blue bg-lightest-blue bl bw3 b--dark-blue mv3 tl lh-copy" style="border-radius: 5px; font-size: 1.05em; padding: .1em 1.75em;" role="note">
                     <p class="i" style="margin: .8em 0;"><b>Note:</b> Danger and problem layers aren't available here, as this site doesn't have access to the Utah Avalanche Center's forecast data. Please visit the <a class="no-underline fancy-link relative dark-blue b" href="https://utahavalanchecenter.org/forecast/southwest">Utah Avalanche Center</a> for the latest forecast.</p>
@@ -328,7 +320,6 @@ css_includes:
         </div>
         
         <div id="UAC-1740-report" class="avy-zone dn" data-id="UAC-1740" data-color="#939598" data-published="False">
-            
             
             
             

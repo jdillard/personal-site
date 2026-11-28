@@ -163,7 +163,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/salt-river-and-wyoming-ranges/">BTAC</a> for more information.</div>
             
             
@@ -185,7 +184,6 @@ css_includes:
         </div>
         
         <div id="BTAC-2860-report" class="avy-zone dn" data-id="BTAC-2860" data-color="#939598" data-published="Friday, November 27, 2026 7:00AM">
-            
             
             
             
@@ -213,7 +211,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://bridgertetonavalanchecenter.org/forecasts/#/tetons">BTAC</a> for more information.</div>
             
             
@@ -235,7 +232,6 @@ css_includes:
         </div>
         
         <div id="BTAC-2852-report" class="avy-zone dn" data-id="BTAC-2852" data-color="#939598" data-published="Friday, November 27, 2026 7:00AM">
-            
             
             
             
@@ -263,7 +259,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">EWYAIX</a> for more information.</div>
             
             
@@ -288,7 +283,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://ewyoavalanche.org">EWYAIX</a> for more information.</div>
             
             
@@ -310,7 +304,6 @@ css_includes:
         </div>
         
         <div id="EWYAIX-3046-report" class="avy-zone dn" data-id="EWYAIX-3046" data-color="#939598" data-published="False">
-            
             
             
             

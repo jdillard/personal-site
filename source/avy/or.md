@@ -167,7 +167,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://coavalanche.org/pages/forecasts/#/central-cascades">COAA</a> for more information.</div>
             
             
@@ -189,7 +188,6 @@ css_includes:
         </div>
         
         <div id="COAA-2471-report" class="avy-zone dn" data-id="COAA-2471" data-color="#939598" data-published="Tuesday, November 03, 2026 10:39AM">
-            
             
             
             
@@ -217,7 +215,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/mt-hood">NWAC</a> for more information.</div>
             
             
@@ -239,7 +236,6 @@ css_includes:
         </div>
         
         <div id="SOAIX-1369-report" class="avy-zone dn" data-id="SOAIX-1369" data-color="#939598" data-published="False">
-            
             
             
             
@@ -267,7 +263,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.wallowaavalanchecenter.org/forecasts/#/blues">WAC</a> for more information.</div>
             
             
@@ -289,7 +284,6 @@ css_includes:
         </div>
         
         <div id="WAC-2984-report" class="avy-zone dn" data-id="WAC-2984" data-color="#939598" data-published="False">
-            
             
             
             
@@ -317,7 +311,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://wallowaavalanchecenter.org/forecasts/#/northern-wallowas">WAC</a> for more information.</div>
             
             
@@ -339,7 +332,6 @@ css_includes:
         </div>
         
         <div id="WAC-2983-report" class="avy-zone dn" data-id="WAC-2983" data-color="#939598" data-published="False">
-            
             
             
             

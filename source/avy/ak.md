@@ -156,11 +156,50 @@ css_includes:
     </div>
 </div>
 
+<div class="tc mt4">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="HPAC-2152-title" class="avy-zone-link dn" data-id="HPAC-2152">
+        <a id="HPAC-2152-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=61.76835763061106,-149.2457324108388&z=12&b=mbt&a=sc_s40-90a0-0e0-3000fcFF9900ps35-40a0-0e3001-20310fcFF9900ps40-90a0-0e3001-20310fcE00000&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226a1f3c2e-5b7d-4e8a-9c0f-2d4b6e8a1c3f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Steep%20Terrain%20%28GRM%29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_s40-90a0-0e0-3000fcFF9900ps35-40a0-0e3001-20310fcFF9900ps40-90a0-0e3001-20310fcE00000%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e3001-20310fcfff200pa0-0e0-3000fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22c0230537-7847-4980-8b99-e6c0c9d1176c%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e3001-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+
 <div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="CNFAIC-2818-report" class="avy-zone" data-id="CNFAIC-2818" data-color="#939598" data-published="False">
-            
             
             
             
@@ -188,7 +227,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/seward-and-lost-lake/">CNFAIC</a> for more information.</div>
             
             
@@ -210,7 +248,6 @@ css_includes:
         </div>
         
         <div id="CNFAIC-2816-report" class="avy-zone dn" data-id="CNFAIC-2816" data-color="#939598" data-published="False">
-            
             
             
             
@@ -238,7 +275,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.cnfaic.org/forecast/#/turnagain-pass-and-girdwood/">CNFAIC</a> for more information.</div>
             
             
@@ -260,7 +296,6 @@ css_includes:
         </div>
         
         <div id="CAAC-2165-report" class="avy-zone dn" data-id="CAAC-2165" data-color="#939598" data-published="False">
-            
             
             
             
@@ -288,7 +323,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://www.coastalakavalanche.org/forecast/#/juneau-mainland/">CAAC</a> for more information.</div>
             
             
@@ -310,7 +344,6 @@ css_includes:
         </div>
         
         <div id="CAC-1421-report" class="avy-zone dn" data-id="CAC-1421" data-color="#939598" data-published="False">
-            
             
             
             
@@ -338,7 +371,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/eastern-ak-range/#/view/observations">EARAC</a> for more information.</div>
             
             
@@ -360,7 +392,6 @@ css_includes:
         </div>
         
         <div id="EARAC-3003-report" class="avy-zone dn" data-id="EARAC-3003" data-color="#939598" data-published="False">
-            
             
             
             
@@ -388,7 +419,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/chilkat-pass">HAC</a> for more information.</div>
             
             
@@ -410,7 +440,6 @@ css_includes:
         </div>
         
         <div id="HAC-3047-report" class="avy-zone dn" data-id="HAC-3047" data-color="#939598" data-published="False">
-            
             
             
             
@@ -438,7 +467,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/haines-forecast/#/transitional">HAC</a> for more information.</div>
             
             
@@ -460,11 +488,6 @@ css_includes:
         </div>
         
         <div id="HPAC-2152-report" class="avy-zone dn" data-id="HPAC-2152" data-color="#fff200" data-published="Friday, November 27, 2026 7:00AM">
-            
-            <div id="HPAC-2152-title" class="mb4 tc">
-                <div><a id="HPAC-2152-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=61.76835763061106,-149.2457324108388&z=10&b=mbt&a=sc_s40-90a0-0e0-3000fcFF9900ps35-40a0-0e3001-20310fcFF9900ps40-90a0-0e3001-20310fcE00000&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226a1f3c2e-5b7d-4e8a-9c0f-2d4b6e8a1c3f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Steep%20Terrain%20%28GRM%29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_s40-90a0-0e0-3000fcFF9900ps35-40a0-0e3001-20310fcFF9900ps40-90a0-0e3001-20310fcE00000%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e3001-20310fcfff200pa0-0e0-3000fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22a529e229-a9a0-453f-96b1-e31c4103ca94%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e3001-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a></div>
-            </div>
-            
             
             <section class="avy-layers" aria-label="CalTopo layers">
             
@@ -576,7 +599,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/continental/">VAC</a> for more information.</div>
             
             
@@ -598,7 +620,6 @@ css_includes:
         </div>
         
         <div id="VAC-1610-report" class="avy-zone dn" data-id="VAC-1610" data-color="#939598" data-published="False">
-            
             
             
             
@@ -626,7 +647,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://alaskasnow.org/valdez-forecast/#/maritime/">VAC</a> for more information.</div>
             
             
@@ -648,9 +668,13 @@ css_includes:
         </div>
         
     </div>
-    <div class="ph3 w-100 w-50-ns">
-        <div class="avy-map" id="map"></div>
-        <p id="zone-areas" class="f6 black-70 lh-copy tc mt3 dn"><b>This zone covers:</b> <span id="zone-areas-list"></span></p>
+    <div class="ph3 w-100 w-50-ns mt4 mt0-ns">
+        <div class="avy-map-card avy-map-framed">
+            <h3 class="avy-layer-title">Alaska Forecast Zones</h3>
+            <span class="avy-map-tip">Click a zone to view</span>
+            <div class="avy-map" id="map"></div>
+            <details id="zone-areas" class="avy-howto dn"><summary>Areas in this zone</summary><div class="avy-howto-body"><p><b>This zone covers:</b> <span id="zone-areas-list"></span></p></div></details>
+        </div>
     </div>
 </div>
 

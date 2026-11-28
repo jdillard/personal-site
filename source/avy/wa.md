@@ -171,7 +171,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-central">NWAC</a> for more information.</div>
             
             
@@ -193,7 +192,6 @@ css_includes:
         </div>
         
         <div id="NWAC-3029-report" class="avy-zone dn" data-id="NWAC-3029" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
-            
             
             
             
@@ -221,7 +219,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-south">NWAC</a> for more information.</div>
             
             
@@ -243,7 +240,6 @@ css_includes:
         </div>
         
         <div id="NWAC-3020-report" class="avy-zone dn" data-id="NWAC-3020" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
-            
             
             
             
@@ -271,7 +267,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/snoqualmie-pass">NWAC</a> for more information.</div>
             
             
@@ -293,7 +288,6 @@ css_includes:
         </div>
         
         <div id="NWAC-3024-report" class="avy-zone dn" data-id="NWAC-3024" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
-            
             
             
             
@@ -321,7 +315,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-central">NWAC</a> for more information.</div>
             
             
@@ -346,7 +339,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-north">NWAC</a> for more information.</div>
             
             
@@ -368,7 +360,6 @@ css_includes:
         </div>
         
         <div id="NWAC-3023-report" class="avy-zone dn" data-id="NWAC-3023" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
-            
             
             
             
