@@ -13,6 +13,7 @@ from caltopo_layers import (
     canada_area_elevations,
     zone_elevations,
     band_confidence,
+    band_verified,
 )
 
 
@@ -374,6 +375,19 @@ class TestBandConfidence:
 
     def test_state_default_fallback_is_low(self):
         assert band_confidence(self.BANDS, fallback=True) == "low"
+
+
+class TestBandVerified:
+    BANDS = {"btl": [0, 1], "ntl": [2, 3], "atl": [4, 5]}
+
+    def test_unverified_is_none(self):
+        assert band_verified(self.BANDS) is None
+
+    def test_map_review(self):
+        assert band_verified({**self.BANDS, "confidence": "high", "verified": "map review"}) == "map review"
+
+    def test_state_default_fallback_is_none(self):
+        assert band_verified({**self.BANDS, "verified": "map review"}, fallback=True) is None
 
 
 class TestForecastZoneNames:

@@ -476,6 +476,13 @@ def band_confidence(elevations, fallback=False):
     return elevations.get("confidence", "high")
 
 
+def band_verified(elevations, fallback=False):
+    """How a bands entry was verified (e.g. "map review"), else None."""
+    if fallback:
+        return None
+    return elevations.get("verified")
+
+
 def center_message(prefix, zone):
     return f'{prefix} See <a class="no-underline fancy-link relative light-red" href="{zone["url"]}">{zone["center_id"]}</a> for more information.'
 
@@ -658,6 +665,7 @@ def main():
         subregions = split_area_name(product["product"].get("title") or "")
         area["elevations"] = canada_area_elevations(subregions, subregion_ranges, canada_elevations)
         area["confidence"] = band_confidence(area["elevations"])
+        area["verified"] = band_verified(area["elevations"])
 
         # avy danger
         danger_rules = []
@@ -768,6 +776,7 @@ def main():
                 elevations, fallback = zone_elevations(zone["zone_id"], zone.get("ranges", []), state["elevations"])
                 zone["elevations"] = elevations
                 zone["confidence"] = band_confidence(elevations, fallback)
+                zone["verified"] = band_verified(elevations, fallback)
 
                 # avy danger
                 danger_rules = []
