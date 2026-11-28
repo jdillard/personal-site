@@ -578,6 +578,7 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     text-align: left;
     margin: .5rem .75rem;
     vertical-align: top;
+    max-width: calc(100% - 1.5rem); // long zone names otherwise push the select past the screen edge
 }
 
 .avy-picker label {
@@ -726,8 +727,11 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
 }
 
 // rule rows: extra height so stacked roses don't touch; every card uses it so row spacing matches
+// min-height (border-box) sets the row pitch from the 1.7rem rose, not the text's line height,
+// so the gap between roses holds at the smaller mobile font size
 .avy-layer dd li {
     padding: .4rem 0;
+    min-height: 1.95rem;
 }
 
 .avy-rose path {
@@ -749,6 +753,20 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
 }
 
 // icon is an <img>, so lighten with opacity; full strength on hover/focus
+// tooltip is centered by default, which hangs past the right edge (and widens the page on
+// mobile) since the button sits flush right; anchor it to the button's right side instead
+.avy-copy .tooltiptext {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+}
+
+.avy-copy .tooltiptext::after {
+    left: auto;
+    right: 2px; // under the 15px icon's center (7.5px minus the 5px arrow half-width)
+    margin-left: 0;
+}
+
 .avy-copy img {
     opacity: .45;
     transition: opacity .1s;
@@ -797,6 +815,12 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
 
 .avy-layer dd ul {
     font-size: .8125rem;
+}
+
+@media only screen and (max-width: 29.9em) {
+    .avy-layer dd ul {
+        font-size: .75rem;
+    }
 }
 
 // rule color swatches (tachyons h1 w1), a bit bigger to match the larger text
