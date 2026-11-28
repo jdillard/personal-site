@@ -76,6 +76,14 @@ function showRegion(region_id, updateHash = true) {
 
   if(updateHash) setHash(region_id == "all" ? "" : `region-${region_id}`);
   if(indexSel) indexSel.value = region_id;
+
+  // map card's tab names the shown region (the region card's heading)
+  const title = document.getElementById('map-title');
+  if (title) {
+    const heading = region_id != "all" && document.querySelector(`#${region_id}-region h3`);
+    title.textContent = heading ? `${heading.textContent.trim()} Forecast Zones` : "All Forecast Zones";
+  }
+
   showRegionLayers(region_id);
   return true;
 }
@@ -241,8 +249,9 @@ function restStyle(filePath) {
 }
 
 // hovered zone: its danger color at full hover strength (never weaker than when selected)
+// index page: no selected zone, so the hovered one gets the selected outline
 function hoverStyle(filePath, color) {
-  if (!zoneSel) return { fillColor: color || GRAY, fillOpacity: 0.4 };
+  if (!zoneSel) return { fillColor: color || GRAY, fillOpacity: 0.4, ...SELECTED_OUTLINE };
   return { fillColor: color || GRAY, fillOpacity: filePath === currentLayer ? SELECTED_OPACITY : HOVER_OPACITY };
 }
 
@@ -484,6 +493,21 @@ function showRegionLayers(region) {
 
     if (bounds.isValid()) map.fitBounds(bounds);
     ensureMapPositioned();
+  });
+}
+
+// index page: hovering a zone in the region lists highlights its shape on the map
+if (indexSel && !touchOnly) {
+  document.querySelectorAll('.avy-region li[data-zone]').forEach(li => {
+    const filePath = li.getAttribute('data-zone');
+    li.addEventListener('mouseenter', () => {
+      const layer = layers[filePath];
+      if (!layer || !map.hasLayer(layer)) return;
+      hoverStart(layer, () => layer.setStyle(restStyle(filePath)));
+      layer.setStyle(hoverStyle(filePath, li.getAttribute('data-color')));
+      raiseLayer(filePath);
+    });
+    li.addEventListener('mouseleave', () => hoverEnd(layers[filePath]));
   });
 }
 
