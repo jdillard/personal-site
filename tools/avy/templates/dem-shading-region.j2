@@ -102,18 +102,30 @@ css_includes:
             <section class="avy-layers" aria-label="CalTopo layers">
             {% endif %}
             {% if zone.danger %}
+            {% if zone.grm %}
+            <div class="avy-layer">
+            <dl class="f6 ma0">
+                <dt>
+                    <strong>Steep Terrain (GRM)</strong>
+                </dt>
+                <dd class="ml0">
+                    <div class="tooltip avy-copy"><a data-clipboard-text="{{ zone.grm[0] | join('&#10;') }}" onclick="clickFunc(this, 'grm-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('grm-tooltip-{{ zone.slug }}')" onblur="outFunc('grm-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy GRM rules"><span class="tooltiptext" id="grm-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <ul class="list pl0 mt1 mb0 code f7">
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #{{ grm_colors.caution }}"></span><b>Caution</b>: steep for the rating</li>
+                        <li class="pv1"><span class="dib v-mid h1 w1 mr2" style="background-color: #{{ grm_colors.avoid }}"></span><b>Avoid</b>: too steep for the rating</li>
+                    </ul>
+                </dd>
+            </dl>
+            <details class="avy-howto"><summary>How to use this <span class="clip">GRM </span>layer</summary><div class="avy-howto-body"><p>This layer shows how steep is too steep for the forecast danger level. It uses the <a class="no-underline fancy-link relative dark-gray b" href="https://www.wsl.ch/en/publications/caution-avalanches/">Graphical Reduction Method</a> (GRM), a Swiss planning rule of thumb: the higher the danger, the gentler the terrain you should stick to.</p><p>Orange slopes are steep enough to need extra caution at the rating for that elevation and aspect, and riders with limited experience should stay off them. Red slopes are steep enough that the method says to avoid them. Unshaded doesn't mean safe. Judge a slope by its steepest part, not its average angle.</p><table><thead><tr><th>Level</th><th><span class="dib v-mid h1 w1 mr2" style="background-color: #{{ grm_colors.caution }}"></span>Caution</th><th><span class="dib v-mid h1 w1 mr2" style="background-color: #{{ grm_colors.avoid }}"></span>Avoid</th></tr></thead><tbody>{% for row in zone.grm[2] %}<tr{% if row.forecast %} class="b"{% endif %}><td>{{ row.level }}{% if row.forecast %} (forecast){% endif %}</td><td>{% if row.caution is none %}&ndash;{% elif row.avoid is none %}{{ row.caution }}&deg;+{% else %}{{ row.caution }}&ndash;{{ row.avoid }}&deg;{% endif %}</td><td>{% if row.avoid is none %}&ndash;{% elif row.avoid == 0 %}All slopes{% else %}{{ row.avoid }}&deg;+{% endif %}</td></tr>{% endfor %}</tbody></table><p>Use this layer to narrow down which terrain to consider while planning, not to judge the danger on any one slope. It's based on the regional rating, so it doesn't account for spatial variability, connected terrain or runouts. Check the terrain above and below you.</p><p>Forecast elevation bands and aspects blend together rather than meeting at a sharp line, so the shading blurs band edges by &plusmn;{{ elevation_blur }}' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
+            </div>
+            {% endif %}
             <div class="avy-layer">
             <dl class="f6 ma0">
                 <dt>
                     <strong>Avalanche Danger</strong>
-                    {#- UT stores each band's layer as a list of rules, other centers as one string #}
-                    {%- set ns = namespace(lines=[]) %}
-                    {%- for rule in zone.danger | reverse %}
-                    {%- set ns.lines = ns.lines + ([rule.layer] if rule.layer is string else rule.layer | list) %}
-                    {%- endfor %}
                 </dt>
                 <dd class="ml0">
-                    <div class="tooltip avy-copy"><a data-clipboard-text="{{ ns.lines | join('&#10;') }}" onclick="clickFunc(this, 'danger-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('danger-tooltip-{{ zone.slug }}')" onblur="outFunc('danger-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                    <div class="tooltip avy-copy"><a data-clipboard-text="{{ zone.danger_layer_rules | join('&#10;') }}" onclick="clickFunc(this, 'danger-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('danger-tooltip-{{ zone.slug }}')" onblur="outFunc('danger-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy danger rules"><span class="tooltiptext" id="danger-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                     <ul class="list pl0 mt1 mb0 code f7 rules-{{ zone.slug }}">
                     {% for rule in zone.danger|reverse %}
                         <li class="pv1 {{ rule.id }}">
@@ -127,7 +139,7 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
-            <details class="avy-howto"><summary>How to use this <span class="clip">danger </span>layer</summary><div class="avy-howto-body"><p>Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Treeline shifts with aspect, terrain and local weather, so band edges aren't lines.</p><p>A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p></div></details>
+            <details class="avy-howto"><summary>How to use this <span class="clip">danger </span>layer</summary><div class="avy-howto-body"><p>Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Treeline shifts with aspect, terrain and local weather, so band edges aren't lines.</p><p>A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p><p>Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the ratings as forecast, but the map layer and copied rules blur band edges by &plusmn;{{ elevation_blur }}' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
             </div>
             {% else %}
             {% if zone.report_access is sameas false %}
@@ -151,11 +163,11 @@ css_includes:
                         <strong>{{ problem.label }}</strong>
                     </dt>
                     <dd class="ml0">
-                        <div class="tooltip avy-copy"><a data-clipboard-text="{{ problem.rules | map(attribute='layer') | reverse | join('&#10;') }}" onclick="clickFunc(this, 'problem-{{ loop.index }}-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.slug }}')" onblur="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy {{ problem.label }} rules"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
+                        <div class="tooltip avy-copy"><a data-clipboard-text="{{ problem.layer_rules | join('&#10;') }}" onclick="clickFunc(this, 'problem-{{ loop.index }}-tooltip-{{ zone.slug }}'); return false;" onmouseout="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.slug }}')" onblur="outFunc('problem-{{ loop.index }}-tooltip-{{ zone.slug }}')" href="#" role="button" aria-label="Copy {{ problem.label }} rules"><span class="tooltiptext" id="problem-{{ loop.index }}-tooltip-{{ zone.slug }}" aria-live="polite">Copy rules</span><img style="width: 15px;" src="/assets/images/svg/copy-icon.svg" alt=""></a></div>
                         <ul class="list pl0 mt1 mb0 code f7 rules-{{ zone.slug }}">
                         {% for rule in problem.rules|reverse %}
                             <li class="pv1 {{ rule.id }}">
-                                {% if rule.aspects is defined %}{{ aspect_rose(rule.aspects, rule.color) }}{% else %}<div style="clear: both;background-color: {{ rule.color }}" class="fl mr2 h1 w1"></div>{% endif %} <span class="desc">{{ rule.desc }}</span>
+                                {% if rule.rose is defined %}{{ aspect_rose(rule.rose, rule.color) }}{% else %}<div style="clear: both;background-color: {{ rule.color }}" class="fl mr2 h1 w1"></div>{% endif %} <span class="desc">{{ rule.desc }}</span>
                             </li>
                         {% endfor %}
                         </ul>
@@ -163,7 +175,7 @@ css_includes:
                 </div>
                 {% endfor %}
             </dl>
-            <details class="avy-howto"><summary>{% if zone.problems | length > 1 %}How to use these <span class="clip">problem </span>layers{% else %}How to use this <span class="clip">problem </span>layer{% endif %}</summary><div class="avy-howto-body"><p>Problem aspects and elevations show where the forecaster expects each problem to be most widespread or most sensitive, not hard boundaries. A problem can also exist on neighboring aspects and elevations, and unshaded slopes aren't free of it.</p><p>Gullies, ridges and convex rolls face many directions within one slope, so one slope can fall partly inside and partly outside the shading. A slope outside the shading can still be threatened by a shaded slope above it. Read the forecast's problem description for likelihood, size and distribution.</p></div></details>
+            <details class="avy-howto"><summary>{% if zone.problems | length > 1 %}How to use these <span class="clip">problem </span>layers{% else %}How to use this <span class="clip">problem </span>layer{% endif %}</summary><div class="avy-howto-body"><p>Problem aspects and elevations show where the forecaster expects each problem to be most widespread or most sensitive, not hard boundaries. A problem can also exist on neighboring aspects and elevations, and unshaded slopes aren't free of it.</p><p>Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the problem's aspects and elevations as forecast, but the map layer and copied rules blur band edges by &plusmn;{{ elevation_blur }}' and aspect edges by &plusmn;22.5&deg;, so the shaded area is larger than the list.</p><p>Gullies, ridges and convex rolls face many directions within one slope, so one slope can fall partly inside and partly outside the shading. A slope outside the shading can still be threatened by a shaded slope above it. Read the forecast's problem description for likelihood, size and distribution.</p></div></details>
             </div>
             {% endif %}
             {% if zone.danger or zone.problems %}

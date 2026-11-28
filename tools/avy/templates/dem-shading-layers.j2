@@ -1,5 +1,16 @@
 {
     "cfglayers": [
+        {% if grm_layer %}
+        {
+            "type": "Feature",
+            "id": "6a1f3c2e-5b7d-4e8a-9c0f-2d4b6e8a1c3f",
+            "geometry": null,
+            "properties": {
+                "title": "{{ sun_day }} Steep Terrain (GRM)",
+                "alias": "{{ grm_layer }}",
+                "class": "ConfiguredLayer"
+            }
+        }{% if danger_layer %},{% endif %}{% endif %}
         {% if danger_layer %}
         {
             "type": "Feature",

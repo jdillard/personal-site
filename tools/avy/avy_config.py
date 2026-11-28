@@ -83,6 +83,28 @@ avy_danger_levels = {
     "extreme": 5,
 }
 
+# Graphical Reduction Method (GRM) style slope thresholds by danger scale.
+# (caution_from, avoid_from) in degrees: slopes at or above caution_from are
+# shaded orange, at or above avoid_from red. Approximates the Swiss rule of
+# thumb (Moderate: avoid >40, Considerable: >35, High: >30). At Low the chart
+# only turns red in the steepest corner of the column, i.e. Swiss "Low+". NA
+# ratings have no +/=/- sub-levels, so Low gets caution (40+) only. None = no
+# shading; a caution of None skips the caution band, an avoid of None the
+# avoid band.
+grm_slope_thresholds = {
+    0: None,
+    1: (40, None),
+    2: (35, 40),
+    3: (30, 35),
+    4: (25, 30),
+    5: (None, 0),  # off-limits: shade every slope
+}
+grm_colors = {"caution": "FF9900", "avoid": "E00000"}
+# feet of elevation band edge blur (each side) for the GRM, danger and problem
+# layers; the SLF interpretation guide treats altitudes as "often about 200 m
+# up or down"
+elevation_blur = 650
+
 # problems color codes
 problem_color = {
     0: "A200FF",
