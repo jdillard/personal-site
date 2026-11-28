@@ -862,6 +862,11 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     content: "\2212";
 }
 
+// map card has no padding, so the fold sits flush under the map
+.avy-map-card .avy-howto {
+    margin: 0;
+}
+
 
 
 .avy-howto-body {
