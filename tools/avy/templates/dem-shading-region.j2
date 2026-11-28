@@ -203,7 +203,10 @@ css_includes:
             <h3 class="avy-layer-title">{{ page }} Forecast Zones</h3>
             <span class="avy-map-tip">Click a zone to view</span>
             <div class="avy-map" id="map"></div>
+            {# only when a zone on this page covers several areas, then for every zone so the page is consistent #}
+            {% if zones | selectattr("areas", "defined") | map(attribute="areas") | map("length") | select(">", 1) | list %}
             <details id="zone-areas" class="avy-howto dn"><summary>Areas in this zone</summary><div class="avy-howto-body"><p><b>This zone covers:</b> <span id="zone-areas-list"></span></p></div></details>
+            {% endif %}
         </div>
     </div>
 </div>

@@ -426,6 +426,7 @@ def main():
             zone_info["ranges"] = [z["name"] for z in report.get("forecast_zone") or [] if z.get("name")]
             if ranges:
                 zone_info["name"] = ", ".join(ranges)
+                zone_info["areas"] = ranges
                 zone_info["short_name"] = short_area_name(ranges)
 
         # check if the zone's state already exists and append to it if so
@@ -528,6 +529,7 @@ def main():
         area["color"] = f"#{danger_levels[zone_color]['color']}"
         area["geo"] = found_value['properties']['centroid']
         area["name"] = ", ".join(subregions) or "Canada zone"
+        area["areas"] = subregions
         area["short_name"] = short_area_name(subregions) or "Canada zone"
         subregion_layer = subregions_geojson(subregions, subregion_shapes)
         area["has_subregions"] = bool(subregion_layer)
