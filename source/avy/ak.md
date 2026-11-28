@@ -184,7 +184,7 @@ css_includes:
     
     
     <div id="HPAC-2152-title" class="avy-zone-link dn" data-id="HPAC-2152">
-        <a id="HPAC-2152-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=61.76835763061106,-149.2457324108388&z=12&b=mbt&a=sc_s40-90a0-0e0-3000fcFF9900ps35-40a0-0e3001-20310fcFF9900ps40-90a0-0e3001-20310fcE00000&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226a1f3c2e-5b7d-4e8a-9c0f-2d4b6e8a1c3f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Steep%20Terrain%20%28GRM%29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_s40-90a0-0e0-3000fcFF9900ps35-40a0-0e3001-20310fcFF9900ps40-90a0-0e3001-20310fcE00000%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e3001-20310fcfff200pa0-0e0-3000fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22c0230537-7847-4980-8b99-e6c0c9d1176c%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e3001-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a>
+        <a id="HPAC-2152-url" class="avy-button" target="_blank" rel="noopener" href="https://caltopo.com/map.html#ll=61.76835763061106,-149.2457324108388&z=12&b=mbt&a=sc_s40-90a0-0e0-3000fcFF9900ps35-40a0-0e3001-20310fcFF9900ps40-90a0-0e3001-20310fcE00000&cl=%7B%0A%20%20%20%20%22cfglayers%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%226a1f3c2e-5b7d-4e8a-9c0f-2d4b6e8a1c3f%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Steep%20Terrain%20%28GRM%29%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_s40-90a0-0e0-3000fcFF9900ps35-40a0-0e3001-20310fcFF9900ps40-90a0-0e3001-20310fcE00000%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22fbfd2235-dc90-4f6f-bead-4826d4983f82%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Avalanche%20Danger%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e3001-20310fcfff200pa0-0e0-3000fc50b848%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%3A%20%22Feature%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22id%22%3A%20%22b58fc63a-d88d-49e5-af49-c8e530fd599d%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22geometry%22%3A%20null%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%22properties%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22title%22%3A%20%222026-11-28%20Wind%20Slab%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22alias%22%3A%20%22sc_a0-0e3001-20310fcA200FF%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22class%22%3A%20%22ConfiguredLayer%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%7D">Open in CalTopo <span aria-hidden="true">↗</span></a>
     </div>
     
     
@@ -212,7 +212,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -236,7 +236,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -260,7 +260,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -284,7 +284,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -308,7 +308,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -332,7 +332,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -356,7 +356,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -380,7 +380,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -404,7 +404,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -428,7 +428,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -452,7 +452,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -476,7 +476,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -506,7 +506,7 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
-            <details class="avy-howto"><summary>How to use this <span class="clip">GRM </span>layer</summary><div class="avy-howto-body"><p>This layer shows how steep is too steep for the forecast danger level. It uses the <a class="no-underline fancy-link relative dark-gray b" href="https://www.wsl.ch/en/publications/caution-avalanches/">Graphical Reduction Method</a> (GRM), a Swiss planning rule of thumb: the higher the danger, the gentler the terrain you should stick to.</p><p>Orange slopes are steep enough to need extra caution at the rating for that elevation and aspect, and riders with limited experience should stay off them. Red slopes are steep enough that the method says to avoid them. Unshaded doesn't mean safe. Judge a slope by its steepest part, not its average angle.</p><table><thead><tr><th>Level</th><th><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span>Caution</th><th><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span>Avoid</th></tr></thead><tbody><tr class="b"><td>Low (forecast)</td><td>40&deg;+</td><td>&ndash;</td></tr><tr class="b"><td>Moderate (forecast)</td><td>35&ndash;40&deg;</td><td>40&deg;+</td></tr><tr><td>Considerable</td><td>30&ndash;35&deg;</td><td>35&deg;+</td></tr><tr><td>High</td><td>25&ndash;30&deg;</td><td>30&deg;+</td></tr><tr><td>Extreme</td><td>&ndash;</td><td>All slopes</td></tr></tbody></table><p>Use this layer to narrow down which terrain to consider while planning, not to judge the danger on any one slope. It's based on the regional rating, so it doesn't account for spatial variability, connected terrain or runouts. Check the terrain above and below you.</p><p>Forecast elevation bands and aspects blend together rather than meeting at a sharp line, so the shading blurs band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
+            <details class="avy-howto"><summary>How to use this <span class="clip">GRM </span>layer</summary><div class="avy-howto-body"><p>This layer shows how steep is too steep for the forecast danger level. It uses the <a class="no-underline fancy-link relative dark-gray b" href="https://www.wsl.ch/en/publications/caution-avalanches/">Graphical Reduction Method</a> (GRM), a Swiss planning rule of thumb: the higher the danger, the gentler the terrain you should stick to.</p><p>Orange slopes are steep enough to need extra caution at the rating for that elevation and aspect, and riders with limited experience should stay off them. Red slopes are steep enough that the method says to avoid them. Unshaded doesn't mean safe. Judge a slope by its steepest part, not its average angle.</p><table><thead><tr><th>Level</th><th><span class="dib v-mid h1 w1 mr2" style="background-color: #FF9900"></span>Caution</th><th><span class="dib v-mid h1 w1 mr2" style="background-color: #E00000"></span>Avoid</th></tr></thead><tbody><tr class="b"><td>Low (forecast)</td><td>40&deg;+</td><td>&ndash;</td></tr><tr class="b"><td>Moderate (forecast)</td><td>35&ndash;40&deg;</td><td>40&deg;+</td></tr><tr><td>Considerable</td><td>30&ndash;35&deg;</td><td>35&deg;+</td></tr><tr><td>High</td><td>25&ndash;30&deg;</td><td>30&deg;+</td></tr><tr><td>Extreme</td><td>&ndash;</td><td>All slopes</td></tr></tbody></table><p>Use this layer to narrow down which terrain to consider while planning, not to judge the danger on any one slope. It's based on the regional rating, so it doesn't account for spatial variability, connected terrain or runouts. Check the terrain above and below you.</p></div></details>
             </div>
             
             <div class="avy-layer">
@@ -545,7 +545,7 @@ css_includes:
                     </ul>
                 </dd>
             </dl>
-            <details class="avy-howto"><summary>How to use this <span class="clip">danger </span>layer</summary><div class="avy-howto-body"><p>Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Treeline shifts with aspect, terrain and local weather, so band edges aren't lines.</p><p>A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p><p>Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the ratings as forecast, but the map layer and copied rules blur band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p></div></details>
+            <details class="avy-howto"><summary>How to use this <span class="clip">danger </span>layer</summary><div class="avy-howto-body"><p>Danger ratings are regional. Each rating covers a whole elevation band across the forecast zone, not any single slope, and danger varies within a band. Treeline shifts with aspect, terrain and local weather, so band edges aren't lines.</p><p>A Low or Moderate rating doesn't mean every slope is safe: isolated dangerous slopes can exist at any level. Use the rating to set expectations for the day, not to pick slopes.</p></div></details>
             </div>
             
 
@@ -571,7 +571,7 @@ css_includes:
                 </div>
                 
             </dl>
-            <details class="avy-howto"><summary>How to use this <span class="clip">problem </span>layer</summary><div class="avy-howto-body"><p>Problem aspects and elevations show where the forecaster expects each problem to be most widespread or most sensitive, not hard boundaries. A problem can also exist on neighboring aspects and elevations, and unshaded slopes aren't free of it.</p><p>Forecast elevation bands and aspects blend together rather than meeting at a sharp line. The list shows the problem's aspects and elevations as forecast, but the map layer and copied rules blur band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, so the shaded area is larger than the list.</p><p>Gullies, ridges and convex rolls face many directions within one slope, so one slope can fall partly inside and partly outside the shading. A slope outside the shading can still be threatened by a shaded slope above it. Read the forecast's problem description for likelihood, size and distribution.</p></div></details>
+            <details class="avy-howto"><summary>How to use this <span class="clip">problem </span>layer</summary><div class="avy-howto-body"><p>Problem aspects and elevations show where the forecaster expects each problem to be most widespread or most sensitive, not hard boundaries. A problem can also exist on neighboring aspects and elevations, and unshaded slopes aren't free of it.</p><p>Gullies, ridges and convex rolls face many directions within one slope, so one slope can fall partly inside and partly outside the shading. A slope outside the shading can still be threatened by a shaded slope above it. Read the forecast's problem description for likelihood, size and distribution.</p></div></details>
             </div>
             
             
@@ -579,8 +579,14 @@ css_includes:
             
 
             
+            <div class="f6 black-70 bl bw2 b--green bg-washed-green pa2 br2 mv3 lh-copy" role="note">
+                <b>Confidence level:</b>
+                These are the numeric elevation bands Hatcher Pass Avalanche Center publishes for this zone.
+                <p class="mt2 mb0"><b>Soft edges:</b> Forecast elevation bands and aspects blend into each other rather than meeting at a sharp line. While the list shows the ratings and problems as forecast, the map layers and copied rules blur band edges by &plusmn;650' and aspect edges by &plusmn;22.5&deg;, using the worse rating where they overlap.</p>
+            </div>
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             <p class="f6 mv1">
                 <strong>Issued at:</strong> Friday, November 27, 2026 7:00AM
@@ -608,7 +614,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -632,7 +638,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -656,7 +662,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">

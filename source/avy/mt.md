@@ -212,7 +212,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -236,7 +236,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -260,7 +260,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -284,7 +284,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -308,7 +308,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -332,7 +332,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -356,7 +356,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -380,7 +380,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -404,7 +404,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -428,7 +428,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -452,7 +452,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -476,7 +476,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -500,7 +500,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -524,7 +524,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -548,7 +548,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -572,7 +572,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
@@ -596,7 +596,7 @@ css_includes:
 
             
             
-            <div class="bg-near-white br2 ph3 pv2 mt4 tc black-60">
+            <div class="bg-near-white br2 ph3 pv2 mt3 tc black-60">
             
             
             <p class="f6 mv1 measure center">
