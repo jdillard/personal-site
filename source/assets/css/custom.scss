@@ -682,6 +682,14 @@ $avy-howto-bg: lighten($avy-tab-bg, 2%); // "How to use this layer" row and its 
     box-shadow: 5px 5px 0 #ececec;
 }
 
+// beside the map (not stacked), the first card's top lines up with the map card's 2.25rem;
+// the extra 1rem above is only there to space stacked cards apart
+@media screen and (min-width: 30em) {
+    .avy-layers > .avy-layer:first-child {
+        margin-top: 2.25rem;
+    }
+}
+
 // card titles as manila-folder tabs sitting on the card's top border, slant flaring toward the card.
 // GRM/danger use their dt; the problems card gets a .avy-layer-title heading instead
 .avy-layer > dl > dt,
