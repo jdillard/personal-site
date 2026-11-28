@@ -142,11 +142,32 @@ css_includes:
     </div>
 </div>
 
+<div class="tc mt4">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+
 <div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
         <div id="NWAC-3030-report" class="avy-zone" data-id="NWAC-3030" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
-            
             
             
             
@@ -174,7 +195,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/east-slopes-north">NWAC</a> for more information.</div>
             
             
@@ -196,7 +216,6 @@ css_includes:
         </div>
         
         <div id="NWAC-3031-report" class="avy-zone dn" data-id="NWAC-3031" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
-            
             
             
             
@@ -224,7 +243,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/olympics">NWAC</a> for more information.</div>
             
             
@@ -246,7 +264,6 @@ css_includes:
         </div>
         
         <div id="NWAC-3028-report" class="avy-zone dn" data-id="NWAC-3028" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
-            
             
             
             
@@ -274,7 +291,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/stevens-pass">NWAC</a> for more information.</div>
             
             
@@ -296,7 +312,6 @@ css_includes:
         </div>
         
         <div id="NWAC-3022-report" class="avy-zone dn" data-id="NWAC-3022" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
-            
             
             
             
@@ -324,7 +339,6 @@ css_includes:
             
             
             
-            
             <div class="pv4 ph2 tc ba b--moon-gray">Report not available. See <a class="no-underline fancy-link relative light-red" href="https://nwac.us/forecasts/avalanche/west-slopes-north">NWAC</a> for more information.</div>
             
             
@@ -346,7 +360,6 @@ css_includes:
         </div>
         
         <div id="NWAC-3023-report" class="avy-zone dn" data-id="NWAC-3023" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
-            
             
             
             
@@ -376,8 +389,8 @@ css_includes:
             <h3 class="avy-layer-title">Washington Forecast Zones</h3>
             <span class="avy-map-tip">Click a zone to view</span>
             <div class="avy-map" id="map"></div>
+            <details id="zone-areas" class="avy-howto dn"><summary>Areas in this zone</summary><div class="avy-howto-body"><p><b>This zone covers:</b> <span id="zone-areas-list"></span></p></div></details>
         </div>
-        <p id="zone-areas" class="f6 black-70 lh-copy tc mt3 dn"><b>This zone covers:</b> <span id="zone-areas-list"></span></p>
     </div>
 </div>
 
