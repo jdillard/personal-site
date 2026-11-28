@@ -253,7 +253,7 @@ def danger_rule(elevations, band, level):
     return {
         "id": band,
         "layer": shading_rule(elevations, band, level["color"]),
-        "desc": f"{level['desc']} ({band_desc(elevations, band)})",
+        "desc": f"{level['desc'].removesuffix(' danger')} ({band_desc(elevations, band)})",
         "colors": [f"#{level['color']}"],
     }
 
@@ -341,7 +341,7 @@ def utah_danger(rose, elevations):
         danger_rules.append({
             "id": band,
             "layer": layer_rules,
-            "desc": f"{low_desc} to {high_desc} danger ({band_desc(elevations, band)})",
+            "desc": f"{low_desc} to {high_desc} ({band_desc(elevations, band)})",
             "colors": layer_colors,
         })
 
