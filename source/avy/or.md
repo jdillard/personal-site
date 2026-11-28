@@ -211,7 +211,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-3032-report" class="avy-zone dn" data-id="NWAC-3032" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
+        <div id="NWAC-3032-report" class="avy-zone dn" data-id="NWAC-3032" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
             
             
             

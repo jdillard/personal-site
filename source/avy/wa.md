@@ -167,7 +167,7 @@ css_includes:
 <div class="flex flex-column flex-row-ns mt4">
     <div id="regional_zones" class="ph3 w-100 w-50-ns">
         
-        <div id="NWAC-3030-report" class="avy-zone" data-id="NWAC-3030" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
+        <div id="NWAC-3030-report" class="avy-zone" data-id="NWAC-3030" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
             
             
             
@@ -191,7 +191,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-3029-report" class="avy-zone dn" data-id="NWAC-3029" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
+        <div id="NWAC-3029-report" class="avy-zone dn" data-id="NWAC-3029" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
             
             
             
@@ -215,7 +215,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-3031-report" class="avy-zone dn" data-id="NWAC-3031" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
+        <div id="NWAC-3031-report" class="avy-zone dn" data-id="NWAC-3031" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
             
             
             
@@ -239,7 +239,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-3020-report" class="avy-zone dn" data-id="NWAC-3020" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
+        <div id="NWAC-3020-report" class="avy-zone dn" data-id="NWAC-3020" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
             
             
             
@@ -263,7 +263,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-3028-report" class="avy-zone dn" data-id="NWAC-3028" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
+        <div id="NWAC-3028-report" class="avy-zone dn" data-id="NWAC-3028" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
             
             
             
@@ -287,7 +287,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-3024-report" class="avy-zone dn" data-id="NWAC-3024" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
+        <div id="NWAC-3024-report" class="avy-zone dn" data-id="NWAC-3024" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
             
             
             
@@ -311,7 +311,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-3022-report" class="avy-zone dn" data-id="NWAC-3022" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
+        <div id="NWAC-3022-report" class="avy-zone dn" data-id="NWAC-3022" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
             
             
             
@@ -335,7 +335,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-3021-report" class="avy-zone dn" data-id="NWAC-3021" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
+        <div id="NWAC-3021-report" class="avy-zone dn" data-id="NWAC-3021" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
             
             
             
@@ -359,7 +359,7 @@ css_includes:
             
         </div>
         
-        <div id="NWAC-3023-report" class="avy-zone dn" data-id="NWAC-3023" data-color="#939598" data-published="Wednesday, November 25, 2026 6:00PM">
+        <div id="NWAC-3023-report" class="avy-zone dn" data-id="NWAC-3023" data-color="#939598" data-published="Friday, November 27, 2026 6:00PM">
             
             
             
